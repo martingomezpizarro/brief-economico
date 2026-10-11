@@ -1,47 +1,78 @@
 <!doctype html>
 <html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Logos Prebisch</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#FAF5EC;--surface:#FFFDF8;--line:#E8DCC9;--ink:#3A2A22;--muted:#6A4940;--accent:#8A4F2A;--cream:#FAF5EC}
-@media (prefers-color-scheme:dark){:root{--bg:#1C1612;--surface:#241D18;--line:#352A22;--ink:#EFE6DA;--muted:#C2AE9D}}
+:root{--bg:#FAF5EC;--surface:#FFFDF8;--line:#E8DCC9;--ink:#3A2A22;--muted:#6A4940;--accent:#8A4F2A}
+@media (prefers-color-scheme:dark){:root{--bg:#1C1612;--surface:#241D18;--line:#352A22;--ink:#EFE6DA;--muted:#C2AE9D;--accent:#D9A06A}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Serif 4",Georgia,serif}
-main{max-width:1000px;margin:0 auto;padding:24px 16px 48px}
-h1{font-size:28px;margin:0 0 4px}p.lead{color:var(--muted);margin:0 0 24px}
-.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+main{max-width:1040px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:28px;font-weight:600;margin:0 0 4px}p.lead{color:var(--muted);margin:0 0 24px;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:16px}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
-.card h2{font-size:18px;margin:0 0 2px}.n{font:500 12px "IBM Plex Mono",monospace;color:var(--muted)}
-.row{display:flex;align-items:flex-end;gap:12px;margin:12px 0}
-.row svg{display:block}.cap{font:11px "IBM Plex Mono",monospace;color:var(--muted);text-align:center;margin-top:4px}
-.badge{background:#5f6368;border-radius:50%;padding:4px}
-.card p{margin:6px 0 0;font-size:14px}.chip{display:inline-block;font:11px "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin-top:8px}
-.rec{outline:2px solid var(--accent)}
+.card h2{font-size:19px;font-weight:600;margin:0 0 2px}.n{font:500 12px "IBM Plex Mono",monospace;color:var(--muted)}
+.hero{display:flex;justify-content:center;padding:12px 0}
+.row{display:flex;align-items:center;justify-content:center;gap:12px;margin:4px 0 8px}
+svg{display:block}.cap{font:11px "IBM Plex Mono",monospace;color:var(--muted);text-align:center;margin-top:4px}
+.card p{margin:6px 0 0;font-size:14px}
 </style></head><body><main>
-<h1>Prebisch: 10 logos</h1>
-<p class="lead">Cada uno en tres tamaños (app, pestaña, favicon), en modo oscuro y como insignia de notificación (silueta de un color, como la muestra Android).</p>
+<h1>Prebisch: sello con oferta y demanda</h1>
+<p class="lead">Diez variantes de la opción 9. Trazos finos, serif con contraste (Cormorant Garamond) y el diagrama de oferta y demanda dentro del sello. Cada una en crema, invertida, en modo oscuro y a 48 px.</p>
 <div class="grid" id="g"></div>
 </main>
 <script>
-const SERIF='Source Serif 4,Georgia,serif';
+const GAR="Cormorant Garamond,Source Serif 4,Georgia,serif";
+let uid=0;
+const ring=(r,w,c,extra="")=>`<circle cx="60" cy="60" r="${r}" fill="none" stroke="${c}" stroke-width="${w}" ${extra}/>`;
+// texto en arco: arriba (glifos hacia afuera) o abajo (glifos hacia adentro)
+function arc(txt,r,c,{pos="top",size=7.4,ls=2.2,w=600}={}){
+  const id="a"+(uid++);
+  const d=pos==="top"?`M${60-r} 60A${r} ${r} 0 0 1 ${60+r} 60`:`M${60-r} 60A${r} ${r} 0 0 0 ${60+r} 60`;
+  return `<path id="${id}" d="${d}" fill="none"/><text font-family="${GAR}" font-weight="${w}" font-size="${size}" letter-spacing="${ls}" fill="${c}"><textPath href="#${id}" startOffset="50%" text-anchor="middle">${txt}</textPath></text>`;
+}
+// curvas: D cae, S sube; se cruzan en (60,60)
+const D="M40 40Q50 64 82 76", S="M38 78Q62 70 80 38";
+const q=(p0,p1,p2,t)=>[(1-t)**2*p0[0]+2*(1-t)*t*p1[0]+t*t*p2[0],(1-t)**2*p0[1]+2*(1-t)*t*p1[1]+t*t*p2[1]];
+const E=(()=>{let b=[0,0,1e9];for(let i=0;i<=400;i++)for(let j=0;j<=400;j++){const a=q([40,40],[50,64],[82,76],i/400),c=q([38,78],[62,70],[80,38],j/400);const d=Math.hypot(a[0]-c[0],a[1]-c[1]);if(d<b[2])b=[a[0],a[1],d]}return[+b[0].toFixed(2),+b[1].toFixed(2)]})();
+const curves=(c,w=1.3)=>`<path d="${D}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/><path d="${S}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;
+const axes=(c,{o=[34,86],t=[34,32],x=[90,86],w=.8}={})=>`<path d="M${t[0]} ${t[1]}V${o[1]}H${x[0]}" fill="none" stroke="${c}" stroke-width="${w}" stroke-linecap="round"/>`;
+const guides=(c,o=[34,86])=>`<path d="M${o[0]} ${E[1]}H${E[0]}V${o[1]}" fill="none" stroke="${c}" stroke-width=".6" stroke-dasharray="1.6 1.8"/>`;
+const dot=(c,r=2.2)=>`<circle cx="${E[0]}" cy="${E[1]}" r="${r}" fill="${c}"/>`;
+const ticks=(r1,r2,n,c,w=.5)=>Array.from({length:n},(_,i)=>{const a=i/n*2*Math.PI;return `<line x1="${60+r1*Math.cos(a)}" y1="${60+r1*Math.sin(a)}" x2="${60+r2*Math.cos(a)}" y2="${60+r2*Math.sin(a)}" stroke="${c}" stroke-width="${w}"/>`}).join("");
+const it=(t,x,y,s,c,anchor="middle")=>`<text x="${x}" y="${y}" text-anchor="${anchor}" font-family="${GAR}" font-style="italic" font-weight="500" font-size="${s}" fill="${c}">${t}</text>`;
+const star=(x,y,c,s=1.6)=>`<path d="M${x} ${y-s}L${x+s*.35} ${y}L${x} ${y+s}L${x-s*.35} ${y}Z" fill="${c}"/>`;
+const leaves=(c,side)=>{const R=47,a0=side>0?12:168,a1=side>0?78:102,rad=x=>x*Math.PI/180;const P=a=>[60+R*Math.cos(rad(a)),60+R*Math.sin(rad(a))];const[x0,y0]=P(a0),[x1,y1]=P(a1);let o=`<path d="M${x0} ${y0}A${R} ${R} 0 0 ${side>0?1:0} ${x1} ${y1}" fill="none" stroke="${c}" stroke-width=".6"/>`;for(let i=0;i<6;i++){const a=a0+(a1-a0)*(i+.5)/6;const[x,y]=P(a);const tan=a+(side>0?90:-90);for(const k of[-1,1]){const rot=tan+k*38*side;const dx=3.2*Math.cos(rad(rot)),dy=3.2*Math.sin(rad(rot));o+=`<ellipse cx="${x+dx}" cy="${y+dy}" rx="3.4" ry="1.15" transform="rotate(${rot} ${x+dx} ${y+dy})" fill="${c}" opacity=".9"/>`}}return o};
+const scallop=(c,w)=>{let d="";const n=32;for(let i=0;i<=n*2;i++){const a=i/(n*2)*2*Math.PI;const r=i%2?55:57.5;d+=(i?"L":"M")+(60+r*Math.cos(a)).toFixed(2)+" "+(60+r*Math.sin(a)).toFixed(2)}return `<path d="${d}Z" fill="none" stroke="${c}" stroke-width="${w}" stroke-linejoin="round"/>`};
+
 const L=[
-{t:"Monograma P",d:"Una P en serif, como el lomo de un libro. Lo más académico y sobrio.",m:f=>`<text x="32" y="47" text-anchor="middle" font-family="${SERIF}" font-weight="600" font-size="42" fill="${f}">P</text>`,nota:"Con letra: hay que pasarla a trazos para que no dependa de la fuente."},
-{t:"Centro y periferia",d:"El concepto central de Prebisch: un núcleo y los puntos que giran a su alrededor.",m:f=>`<circle cx="32" cy="32" r="6" fill="${f}"/><circle cx="32" cy="32" r="16" fill="none" stroke="${f}" stroke-width="3.5"/>${[45,135,225,315].map(a=>{const r=a*Math.PI/180;return `<circle cx="${32+24*Math.cos(r)}" cy="${32+24*Math.sin(r)}" r="3.5" fill="${f}"/>`}).join("")}`,nota:"Se lee bien hasta 16 px."},
-{t:"Términos de intercambio",d:"Ejes y una curva que cae: la tesis Prebisch-Singer en un trazo.",m:f=>`<path d="M14 12V50H52" fill="none" stroke="${f}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 20C30 24 34 38 48 42" fill="none" stroke="${f}" stroke-width="4.5" stroke-linecap="round"/><circle cx="48" cy="42" r="4" fill="${f}"/>`,nota:"Es el más \"economía\" de un vistazo."},
-{t:"Oferta y demanda",d:"El cruce que todo estudiante dibujó primero, con el punto de equilibrio marcado.",m:f=>`<path d="M12 12V52H52" fill="none" stroke="${f}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 18L48 46M20 46L48 18" stroke="${f}" stroke-width="4" stroke-linecap="round"/><circle cx="34" cy="32" r="4.5" fill="${f}"/>`,nota:"Universal, pero lo usan muchas apps de economía."},
-{t:"Libro con gráfico",d:"Un libro abierto con una serie en la página: lectura y datos.",m:f=>`<path d="M8 18Q20 14 32 20Q44 14 56 18V48Q44 44 32 50Q20 44 8 48Z" fill="none" stroke="${f}" stroke-width="3.5" stroke-linejoin="round"/><path d="M32 20V50" stroke="${f}" stroke-width="3"/><path d="M38 40L43 33L47 36L52 28" fill="none" stroke="${f}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`,nota:"El gráfico se pierde por debajo de 24 px."},
-{t:"Ficha de 15 minutos",d:"Dos fichas apiladas con «15′»: el formato brief y el repaso.",m:f=>`<rect x="18" y="12" width="34" height="26" rx="4" fill="none" stroke="${f}" stroke-width="3" opacity=".55"/><rect x="12" y="22" width="36" height="28" rx="4" fill="none" stroke="${f}" stroke-width="3.5"/><text x="30" y="42" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="500" font-size="12" fill="${f}">15′</text>`,nota:"Con texto chico: no sirve como favicon."},
-{t:"Cuarto de hora",d:"Un reloj con el cuarto lleno: 15 minutos por día, de a poco.",m:f=>`<circle cx="32" cy="32" r="20" fill="none" stroke="${f}" stroke-width="3.5"/><path d="M32 32V12A20 20 0 0 1 52 32Z" fill="${f}"/>`,nota:"La silueta más limpia: perfecta para notificaciones."},
-{t:"P de ejes",d:"Una P geométrica: el palo es el eje vertical y la panza es una curva.",m:f=>`<path d="M22 52V12H34A12 12 0 0 1 34 36H22" fill="none" stroke="${f}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 52H48" stroke="${f}" stroke-width="3.5" stroke-linecap="round"/>`,nota:"Junta el nombre con un gráfico. Funciona a 16 px."},
-{t:"Sello académico",d:"Un sello de doble anillo con la P: biblioteca, cátedra, ex libris.",m:f=>`<circle cx="32" cy="32" r="25" fill="none" stroke="${f}" stroke-width="2.5"/><circle cx="32" cy="32" r="20" fill="none" stroke="${f}" stroke-width="1.5"/><text x="32" y="42" text-anchor="middle" font-family="${SERIF}" font-weight="600" font-size="28" fill="${f}">P</text>`,nota:"Los anillos finos se empastan en tamaño chico."},
-{t:"Escalones",d:"Peldaños que suben hasta un punto: avanzar de a poco, brief a brief.",m:f=>`<path d="M10 52H22V42H34V32H46V22" fill="none" stroke="${f}" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="14" r="5" fill="${f}"/>`,nota:"Liviano y claro en cualquier tamaño."}
+{t:"Sello clásico",d:"Doble anillo con «PREBISCH» arriba y «ECONOMÍA DE A POCO» abajo. Adentro, el diagrama completo con las líneas punteadas hacia P* y Q*.",
+ m:c=>ring(56,1.1,c)+ring(53.6,.5,c)+ring(38,.5,c)+arc("PREBISCH",43.5,c)+arc("ECONOMÍA · DE A POCO",50.5,c,{pos:"bottom",size:6,ls:1.6})+star(18.5,60,c)+star(101.5,60,c)+`<g transform="translate(60 60) scale(.62) translate(-60 -60)">${axes(c,{w:1.1})+guides(c)+curves(c,1.8)+dot(c,2.8)}</g>`},
+{t:"La P es el precio",d:"El eje vertical de todo diagrama de oferta y demanda se llama P. Acá esa P es también la de Prebisch, en itálica grande.",
+ m:c=>ring(56,1.1,c)+ring(52.5,.5,c)+axes(c,{o:[40,84],t:[40,40],x:[88,84]})+`<path d="M46 44Q54 66 84 76" fill="none" stroke="${c}" stroke-width="1.2" stroke-linecap="round"/><path d="M44 78Q66 70 82 42" fill="none" stroke="${c}" stroke-width="1.2" stroke-linecap="round"/>`+it("P",40,36,22,c)+it("Q",93,86,10,c,"start")},
+{t:"Canto de moneda",d:"Un anillo con 72 muescas, como el canto de una moneda. El diagrama queda limpio en el centro, con el equilibrio marcado por un punto con aro.",
+ m:c=>ticks(51,56,72,c,.6)+ring(56.6,.6,c)+ring(49,.8,c)+axes(c)+curves(c,1.2)+`<circle cx="${E[0]}" cy="${E[1]}" r="4" fill="none" stroke="${c}" stroke-width=".6"/>`+dot(c,1.6)},
+{t:"Laureles",d:"Dos ramas finas abrazan el diagrama desde abajo y una P pequeña lo corona. Tiene el tono de una medalla o un diploma.",
+ m:c=>ring(56,.6,c)+leaves(c,1)+leaves(c,-1)+it("P",60,25,13,c)+`<g transform="translate(60 62) scale(.7) translate(-60 -60)">${axes(c,{w:1})+curves(c,1.7)+dot(c,2.6)}</g>`},
+{t:"Cuadrantes",d:"Las curvas cruzan todo el círculo y lo dividen en cuatro sectores: arriba la P, abajo la Q. Es la más geométrica y la que mejor aguanta el tamaño chico.",
+ m:c=>`<defs><clipPath id="k${uid}"><circle cx="60" cy="60" r="50"/></clipPath></defs><g clip-path="url(#k${uid++})"><path d="M14 22L106 98M14 98L106 22" stroke="${c}" stroke-width="1.1"/></g>`+ring(56,1.1,c)+ring(50,.5,c)+it("P",60,44,22,c)+it("Q",60,96,13,c)+`<circle cx="60" cy="60" r="2.4" fill="${c}"/>`},
+{t:"Ex libris",d:"El nombre arriba y «MMXXVI» abajo, con rombos de separador. Parece el sello de una biblioteca.",
+ m:c=>ring(56,1.4,c)+ring(54,.4,c)+ring(40,.4,c)+ring(38.6,.4,c)+arc("PREBISCH",44.5,c,{size:8.2,ls:3})+arc("MMXXVI",51.4,c,{pos:"bottom",size:6.6,ls:3})+star(20,60,c,2)+star(100,60,c,2)+`<g transform="translate(60 60) scale(.58) translate(-60 -60)">${axes(c,{w:1.2})+curves(c,2)+dot(c,3)}</g>`},
+{t:"Línea de pelo",d:"Un solo anillo, sin ejes. Las curvas nacen y mueren en el borde del círculo y una P itálica chica las nombra. Es la más moderna de las diez.",
+ m:c=>`<defs><clipPath id="k${uid}"><circle cx="60" cy="60" r="52"/></clipPath></defs><g clip-path="url(#k${uid++})"><path d="M22 20Q42 62 104 84" fill="none" stroke="${c}" stroke-width="1"/><path d="M18 92Q62 76 90 14" fill="none" stroke="${c}" stroke-width="1"/></g>`+ring(52,.8,c)+it("P",58,40,15,c)+`<circle cx="57.5" cy="59" r="2" fill="${c}"/>`},
+{t:"Equilibrio con guías",d:"Las líneas punteadas llevan el punto de equilibrio a los ejes, con sus etiquetas P* y Q* en itálica. Es la versión más «de cátedra».",
+ m:c=>ring(56,1,c)+ring(53,.4,c)+axes(c,{w:.9})+guides(c)+curves(c,1.3)+dot(c,2.2)+it("P*",31,E[1]+2.5,8,c,"end")+it("Q*",E[0],95,8,c)},
+{t:"Sello de lacre",d:"Borde festoneado como un sello de lacre o una estampilla, con el diagrama y la P adentro. Tiene más carácter y menos sobriedad.",
+ m:c=>scallop(c,.8)+ring(48,.5,c)+`<g transform="translate(62 62) scale(.66) translate(-60 -60)">${axes(c,{w:1})+curves(c,1.7)+dot(c,2.6)}</g>`+it("P",37,46,17,c)},
+{t:"Nombre al pie",d:"Un sello sin texto en el borde, con el diagrama centrado y «Prebisch» en versalitas debajo. Sirve como logo horizontal para el encabezado.",
+ m:c=>ring(44,.9,c,'cy="50"').replace('cy="60"','')+`<g transform="translate(60 50) scale(.6) translate(-60 -60)">${axes(c,{w:1.2})+curves(c,2)+dot(c,3)}</g>`+`<text x="60" y="110" text-anchor="middle" font-family="${GAR}" font-weight="600" font-size="11" letter-spacing="3.2" fill="${c}">PREBISCH</text>`}
 ];
-const REC=[6,7,1];
-const tile=(m,bg,fg,s,rx=14)=>`<svg width="${s}" height="${s}" viewBox="0 0 64 64"><rect width="64" height="64" rx="${rx}" fill="${bg}"/>${m(fg)}</svg>`;
-document.getElementById("g").innerHTML=L.map((o,i)=>`<div class="card${REC.includes(i)?" rec":""}"><div class="n">${String(i+1).padStart(2,"0")}${REC.includes(i)?" · recomendado":""}</div><h2>${o.t}</h2>
+const tile=(m,bg,fg,s,rx=0)=>`<svg width="${s}" height="${s}" viewBox="0 0 120 120">${bg?`<rect width="120" height="120" rx="${rx}" fill="${bg}"/>`:""}${m(fg)}</svg>`;
+document.getElementById("g").innerHTML=L.map((o,i)=>`<div class="card"><div class="n">${String(i+1).padStart(2,"0")}</div><h2>${o.t}</h2>
+<div class="hero">${tile(o.m,"#FAF5EC","#5A3420",200,16)}</div>
 <div class="row">
-<div>${tile(o.m,"#8A4F2A","#FAF5EC",88)}<div class="cap">app</div></div>
-<div>${tile(o.m,"#241D18","#D9A06A",56)}<div class="cap">oscuro</div></div>
-<div>${tile(o.m,"#8A4F2A","#FAF5EC",32,10)}<div class="cap">32</div></div>
-<div>${tile(o.m,"#8A4F2A","#FAF5EC",16,10)}<div class="cap">16</div></div>
-<div><div class="badge"><svg width="24" height="24" viewBox="0 0 64 64">${o.m("#fff")}</svg></div><div class="cap">notif.</div></div>
-</div><p>${o.d}</p><span class="chip">${o.nota}</span></div>`).join("");
+<div>${tile(o.m,"#8A4F2A","#FAF5EC",72,14)}<div class="cap">invertido</div></div>
+<div>${tile(o.m,"#1C1612","#D9A06A",72,14)}<div class="cap">oscuro</div></div>
+<div>${tile(o.m,"#FAF5EC","#5A3420",48,10)}<div class="cap">48 px</div></div>
+</div><p>${o.d}</p></div>`).join("");
 </script></body></html>
