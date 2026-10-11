@@ -1,0 +1,1046 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Breve Económico</title>
+<meta name="description" content="Briefs diarios de economía: lecturas de 15 minutos sobre papers y libros, preguntas de control y repaso espaciado. Armá tu propia ruta de estudio con tus PDFs.">
+<meta name="theme-color" content="#FAF5EC">
+<link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: una columna de lectura (≈38rem) estilo paper anotado; en pantallas anchas la ficha abre una columna de notas al margen. */
+:root{
+  --bg:#FAF5EC; --surface:#FFFDF8; --honey:#F3E4CC; --line:#E8DCC9; --line2:#D6C6B0;
+  --ink:#3A2A22; --ink2:#4E3A30; --muted:#6A4940; --accent:#8A4F2A; --accent-ink:#FFFFFF; --again:#A33A22;
+  --serif:"Source Serif 4", Georgia, "Times New Roman", serif;
+  --mono:"IBM Plex Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#1C1612; --surface:#241D18; --honey:#3A2C20; --line:#352A22; --line2:#4A3B30;
+  --ink:#EFE6DA; --ink2:#DCCDBE; --muted:#C2AE9D; --accent:#D9A06A; --accent-ink:#1C1612; --again:#F08A6C; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --bg:#1C1612; --surface:#241D18; --honey:#3A2C20; --line:#352A22; --line2:#4A3B30;
+  --ink:#EFE6DA; --ink2:#DCCDBE; --muted:#C2AE9D; --accent:#D9A06A; --accent-ink:#1C1612; --again:#F08A6C; color-scheme:dark }
+
+html,body{background:var(--bg)}
+body{color:var(--ink);font-family:var(--serif);font-size:17px;line-height:1.55;padding-inline:16px;padding-block:0 48px}
+a{color:var(--accent);text-underline-offset:2px;text-decoration-thickness:1px}
+a:hover{color:var(--ink)}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.wrap{max-width:40rem;margin:0 auto;display:flex;flex-direction:column;gap:28px}
+.mono{font-family:var(--mono)}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.c{text-align:center}
+.j{text-align:justify;hyphens:auto;-webkit-hyphens:auto}
+h1,h2,h3{margin:0;font-weight:600;text-wrap:balance}
+p{margin:0}
+ul,ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;text-align:left}
+
+/* barra */
+.bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:16px 12px;border-bottom:1px solid var(--line)}
+.brand{font-weight:600;font-size:19px;text-decoration:none;color:var(--ink)}
+.nav{display:flex;gap:4px;flex-wrap:wrap;font-family:var(--mono);font-size:12px}
+.nav a{padding:8px 10px;text-decoration:none;color:var(--muted);border-radius:2px}
+.nav a[aria-current="page"]{color:var(--ink);background:var(--honey)}
+.lang{display:flex;gap:4px;font-family:var(--mono);font-size:12px}
+.lang button{min-width:44px;min-height:32px;border:1px solid var(--line2);background:transparent;color:var(--muted);border-radius:2px}
+.lang button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+
+/* bloques */
+.block{display:flex;flex-direction:column;gap:12px}
+.rule{border-top:1px solid var(--line);padding-top:20px}
+.box{background:var(--honey);padding:14px 16px;border-radius:2px}
+.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;text-align:center}
+.stat b{display:block;font-size:30px;font-weight:600;line-height:1.1;font-variant-numeric:tabular-nums}
+.stat span{font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.btn{min-height:48px;border:0;background:var(--accent);color:var(--accent-ink);border-radius:2px;font-size:16px;padding:0 20px}
+.btn:disabled{opacity:.45;cursor:default}
+.btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line2)}
+.cajas{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:6px;text-align:center;font-family:var(--mono);font-size:12px}
+.caja{border:1px solid var(--line);padding:8px 2px;border-radius:2px;color:var(--muted)}
+.caja b{display:block;font-size:16px;color:var(--ink);font-weight:500;font-variant-numeric:tabular-nums}
+.muted{color:var(--muted)}
+.small{font-size:14px}
+.note{font-size:14px;color:var(--muted)}
+
+/* sesión */
+.card{display:flex;flex-direction:column;gap:16px;padding-top:4px}
+.card h2{font-size:23px;line-height:1.3;text-align:center}
+.cita{font-style:italic;color:var(--muted);text-align:center;font-size:15px}
+.ans{border-top:1px solid var(--line);padding-top:16px;display:flex;flex-direction:column;gap:10px}
+.ans p{font-size:17px}
+.fuente{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center}
+.grades{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;font-family:var(--mono);font-size:12px}
+.grades button{min-height:48px;border:1px solid var(--line2);background:transparent;border-radius:2px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px}
+.grades button small{color:var(--muted);font-size:10px}
+.grades .g1{color:var(--again)}
+.top{display:flex;justify-content:space-between;align-items:center;font-family:var(--mono);font-size:12px;color:var(--muted);gap:8px}
+.meter{height:3px;background:var(--line);border-radius:2px;overflow:hidden}
+.meter i{display:block;height:100%;background:var(--accent);transition:width .25s}
+
+/* ficha */
+.ficha{display:grid;grid-template-columns:minmax(0,1fr);gap:24px}
+@media (min-width:640px){ .ficha.margen{grid-template-columns:minmax(0,1fr) 10rem} .wrap.ancha{max-width:52rem} }
+.ficha section{display:flex;flex-direction:column;gap:8px}
+.ficha h3{font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--accent);text-align:center}
+.aside{font-size:13px;line-height:1.45;color:var(--muted);display:flex;flex-direction:column;gap:14px;text-align:left}
+.aside b{font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);display:block;margin-bottom:2px}
+.eq{background:var(--honey);padding:12px 14px;border-radius:2px;overflow-x:auto;display:flex;flex-direction:column;gap:8px;align-items:center}
+.eq .raw{font-family:var(--mono);font-size:13px;white-space:pre-wrap;word-break:break-word}
+dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+dt{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
+dd{margin:0}
+.critica{color:var(--ink2)}
+
+/* rack */
+.area{display:flex;flex-direction:column;gap:10px;scroll-margin-top:16px}
+.area h2{font-size:20px;text-align:center}
+.area .cnt{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center}
+.plist{list-style:none;padding:0;gap:0}
+.plist li{display:flex;justify-content:space-between;gap:12px;padding:9px 0;border-top:1px solid var(--line);align-items:baseline}
+.plist li .t{min-width:0;overflow-wrap:anywhere}
+.tag{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.tag.on{color:var(--accent)}
+.leccion{display:flex;flex-direction:column;gap:14px}
+.leccion h1{font-size:27px;line-height:1.22}
+.leccion h2{font-size:19px;margin-top:10px}
+.leccion section{display:flex;flex-direction:column;gap:10px}
+.leccion .lead{font-size:18px}
+.leccion .box h2{margin-top:0}
+.ops{display:flex;flex-direction:column;gap:8px}
+.op{display:flex;gap:12px;align-items:flex-start;text-align:left;border:1px solid var(--line2);background:var(--surface);border-radius:2px;padding:12px 14px;min-height:48px;font-size:16px;line-height:1.4}
+.op .let{font-family:var(--mono);font-size:12px;color:var(--muted);padding-top:3px;flex:none}
+.op:not(:disabled):hover{border-color:var(--accent)}
+.op:disabled{cursor:default}
+.op.ok{border-color:var(--accent);background:var(--honey)}
+.op.mal{border-color:var(--again);color:var(--again)}
+.bien{color:var(--accent);font-weight:600}
+p.mal{color:var(--again);font-weight:600}
+.fila2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.campo{display:flex;flex-direction:column;gap:6px;border-top:1px solid var(--line);padding-top:12px}
+.campo label,.campo .lbl{font-size:15px}
+.campo textarea,.campo input[type=text],.campo input[type=password],.campo input[type=number],.campo select{font:15px var(--serif);background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:2px;padding:10px;width:100%;box-sizing:border-box}
+.campo textarea{min-height:96px;resize:vertical}
+.docs{list-style:none;padding:0;display:flex;flex-direction:column;gap:0}
+.docs li{display:flex;gap:10px;align-items:center;border-top:1px solid var(--line);padding:9px 0}
+.docs li .t{flex:1;min-width:0;overflow-wrap:anywhere}
+.docs .meta{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px}
+.campo select,#main select{max-width:100%}
+main select{width:100%}
+.row>*{min-width:0}
+.row select{max-width:100%}
+.eq{max-width:100%;box-sizing:border-box}
+.leccion,.leccion section{min-width:0;max-width:100%}
+.tex{max-width:100%;overflow-x:auto}
+.eq .raw{overflow-wrap:anywhere}
+#main,#main>*{min-width:0;max-width:100%}
+select{min-width:0;max-width:100%}
+.docs input[type=text]{width:6.5rem;font:13px var(--mono);padding:6px;border:1px solid var(--line2);border-radius:2px;background:var(--surface);color:var(--ink)}
+.mini{font:12px var(--mono);border:1px solid var(--line2);background:transparent;border-radius:2px;padding:6px 8px;min-height:32px;color:var(--muted)}
+.estado{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;white-space:pre-wrap}
+.estado.error{color:var(--again)}
+.drop{border:1px dashed var(--line2);border-radius:2px;padding:18px;text-align:center;color:var(--muted);cursor:pointer}
+.drop.sobre{border-color:var(--accent);background:var(--honey)}
+.pasoplan{border-top:1px solid var(--line);padding:10px 0;display:flex;gap:10px;align-items:flex-start}
+.pasoplan .t{flex:1}
+.pasoplan input[type=text]{width:100%;font:600 15px var(--serif);border:1px solid var(--line2);border-radius:2px;padding:6px;background:var(--surface);color:var(--ink);box-sizing:border-box}
+.plist .num{font-family:var(--mono);font-size:11px;color:var(--muted);min-width:1.8rem;flex:none}
+.plist .t{flex:1}
+.plist .meta,.rutas .meta{display:block;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:2px}
+.plist a.sinficha{color:var(--ink2);text-decoration-color:var(--line2)}
+.tag.leido{color:var(--accent)}
+.rutas{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:10px}
+.rutas li{border:1px solid var(--line);border-radius:2px;padding:12px;display:flex;flex-direction:column;gap:8px}
+.rutas li.foco{border-color:var(--accent);background:var(--honey)}
+.rutas li>a{font-weight:600;text-decoration:none;color:var(--ink)}
+.rutas li>a:hover{color:var(--accent)}
+.leer{display:flex;gap:8px;align-items:center;justify-content:center;font-size:15px}
+.leer input{accent-color:var(--accent);width:18px;height:18px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
+.chip{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);padding:3px 8px;border-radius:2px;color:var(--muted)}
+
+/* ajustes */
+.form{display:flex;flex-direction:column;gap:14px}
+.row{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px;flex-wrap:wrap}
+.row label{flex:1;min-width:10rem}
+.row input[type=time],.row input[type=number],.row select{font:500 15px var(--mono);background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:2px;padding:8px;min-height:40px;width:8rem}
+.checks{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(14rem,100%),1fr));gap:8px;border-top:1px solid var(--line);padding-top:12px}
+.checks label{display:flex;gap:8px;align-items:center;font-size:15px}
+.checks input{accent-color:var(--accent);width:18px;height:18px}
+.empty{border:1px dashed var(--line2);padding:20px;border-radius:2px;text-align:center;color:var(--muted)}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap" id="wrap">
+  <header class="bar">
+    <a class="brand" href="#hoy">Breve Económico</a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#hoy" id="n-hoy">Hoy</a>
+      <a href="#rutas" id="n-rutas">Rutas</a>
+      <a href="#estudio" id="n-estudio">Mi estudio</a>
+      <a href="#rack" id="n-rack">Rack</a>
+      <a href="#ajustes" id="n-ajustes">Ajustes</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Idioma de las tarjetas">
+      <button type="button" id="l-es" aria-pressed="true">ES</button>
+      <button type="button" id="l-en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <main id="main" class="wrap">
+    <div class="empty" id="boot">
+      <p class="c">Cargando Breve Económico…</p>
+      <p class="note c">Acá van a aparecer el paper del día, las tarjetas pendientes y tu progreso por caja.</p>
+    </div>
+  </main>
+</div>
+
+<script src="prompts/prompts.js"></script>
+<script>
+window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},svg:{fontCache:"global"},startup:{typeset:false}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg-full.js" async></script>
+<script>
+(function(){
+"use strict";
+const APP_URL="https://briefeconomico.martingomezpizarro.com.ar/#hoy";
+const REPO="martingomezpizarro/brief-economico";
+/* Cuenta y nube (opcional). Mientras FIREBASE_CONFIG sea null, todo queda en el navegador. */
+const FIREBASE_CONFIG={apiKey:"AIzaSyCHr-SsywyK6LjR7I-lL7CTFx5mMl5onac",authDomain:"idoneidad-48c77.firebaseapp.com",projectId:"idoneidad-48c77",storageBucket:"idoneidad-48c77.firebasestorage.app",messagingSenderId:"464715523781",appId:"1:464715523781:web:5681f01516c999a239f2ac"};
+const FB_VER="12.17.1";
+/* Worker que genera briefs con la key del sitio y cupos por persona (ver worker/ACTIVAR.md). */
+const WORKER_URL="https://brief-economico.gomezpizarromartin.workers.dev";
+const LIM_CHARS={servidor:200000,gemini:700000,anthropic:400000};
+const INT=[1,3,7,16,35,90];
+const T={
+ es:{hoy:"Hoy",rack:"Rack",rutas:"Rutas",estudio:"Mi estudio",ajustes:"Ajustes",pdd:"Paper del día",verFicha:"Ver ficha completa",sesion:"Sesión de hoy",venc:"Vencidas",nuevas:"Nuevas",min:"Minutos",empezar:"Empezar sesión",nada:"No hay tarjetas pendientes hoy.",cajas:"Tarjetas por caja",mostrar:"Mostrar respuesta",otra:"Otra vez",dificil:"Difícil",bien:"Bien",facil:"Fácil",salir:"Salir",fin:"Sesión terminada",volver:"Volver al inicio",fuente:"Fuente",caja:"caja",nueva:"nueva",pista:"Intentá responder antes de mirar. Atajos: espacio y 1–4."},
+ en:{hoy:"Today",rack:"Rack",rutas:"Paths",estudio:"My study",ajustes:"Settings",pdd:"Paper of the day",verFicha:"Open full summary",sesion:"Today's session",venc:"Due",nuevas:"New",min:"Minutes",empezar:"Start session",nada:"No cards due today.",cajas:"Cards per box",mostrar:"Show answer",otra:"Again",dificil:"Hard",bien:"Good",facil:"Easy",salir:"Exit",fin:"Session complete",volver:"Back to start",fuente:"Source",caja:"box",nueva:"new",pista:"Try to answer before looking. Shortcuts: space and 1–4."}
+};
+const TIPO={idea:"idea central",concepto:"concepto",mecanismo:"mecanismo",modelo:"modelo",econometria:"econometría",resultado:"resultado",critica:"crítica",aplicacion:"aplicación"};
+const S={areas:null,indice:[],byId:{},niveles:{},rutas:[],papers:{},cards:[],lecciones:[],lecById:{},lecFull:{},mis:{rutas:[],lecciones:{}},est:null,lang:"es",ses:null,quiz:null,ready:false,nube:{listo:false,user:null,db:null,cargando:false,error:"",subidas:new Set()}};
+const NIV_ORD=["E","A","C","I","R"];
+const NIV_EN={E:"Essential",A:"Coursework (lecture notes)",C:"Complementary",I:"Research",R:"Reference and data"};
+const NIV_DESC={E:{es:"Lo que hay que leer primero: los manuales y clásicos que ordenan el tema.",en:"Read these first: the textbooks and classics that frame the topic."},
+ A:{es:"Las clases y apuntes de la cursada, en el orden del programa.",en:"Lectures and course notes, in syllabus order."},
+ C:{es:"Surveys y trabajos importantes que amplían lo esencial.",en:"Surveys and key papers that extend the essentials."},
+ I:{es:"Papers de investigación aplicada: casos, estimaciones y evidencia puntual.",en:"Applied research papers: cases, estimates and specific evidence."},
+ R:{es:"Manuales metodológicos, estadísticas y documentos para consultar.",en:"Methodology manuals, statistics and documents to consult."}};
+const TIPO_ITEM={libro:["libro","book"],paper:["paper","paper"],capitulo:["capítulo","chapter"],apunte:["apunte","notes"],informe:["informe","report"],dato:["datos","data"]};
+
+/* ---------- utilidades ---------- */
+function h(tag,attrs,...kids){const e=document.createElement(tag);if(attrs)for(const k in attrs){const v=attrs[k];if(v==null||v===false)continue;if(k==="on")for(const ev in v)e.addEventListener(ev,v[ev]);else if(k==="class")e.className=v;else e.setAttribute(k,v===true?"":v)}for(const c of kids.flat()){if(c==null||c===false)continue;e.append(c.nodeType?c:String(c))}return e}
+const today=()=>{const d=new Date();return Math.floor((d-d.getTimezoneOffset()*6e4)/864e5)};
+const tr=k=>T[S.lang][k]||k;
+const lsGet=k=>{try{return JSON.parse(localStorage.getItem(k))}catch(e){return null}};
+const lsSet=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+function areaName(code){return (S.areas&&S.areas.nombres[code])||code}
+function cita(pid){const p=S.papers["p"+pid];return p?(p.cita||p.titulo):"#"+pid}
+function defaultEst(){return{lecciones:{},cards:{},cfg:{hora:"08:00",minutos:10,nuevas:8,areas:(S.areas?S.areas.orden.slice():[]),vistas:(S.areas?S.areas.orden.slice():[]),lang:"es",foco:""},dia:{f:0,n:0},hist:{},leidos:{}}}
+function nivName(n){return S.lang==="es"?(S.niveles[n]||n):(NIV_EN[n]||n)}
+function ruta(id){return S.rutas.find(r=>r.id===id)||S.mis.rutas.find(r=>r.id===id)}
+function rutaNombre(r){if(!r)return"";return r.tipo==="area"?areaName(r.id):r.nombre}
+function rutaEtiqueta(r){if(!r)return"";return r.tipo==="mia"?(S.lang==="es"?"Mi estudio":"My study")+" › "+r.nombre:areaName(rutaArea(r))+" › "+rutaNombre(r)}
+function rutaArea(r){return !r?"":(r.tipo==="area"?r.id:(r.area||""))}
+function lecMin(l){return Math.max(5,Math.round((l.palabras||1500)/130))}
+function lecDone(l){return S.est.lecciones[l.id]}
+function lecDeRuta(r){if(!r)return[];if(r.tipo==="mia")return r.pasos.map(p=>p.lec&&S.lecById[p.lec]).filter(Boolean);return S.lecciones.filter(l=>r.tipo==="cat"?l.cat===r.id:(ruta(l.cat)||{}).area===r.id)}
+function nextLeccion(){
+  const t=today();const hoy=S.lecciones.find(l=>{const d=lecDone(l);return d&&d.d===t});
+  const foco=S.est.cfg.foco?ruta(S.est.cfg.foco):null;
+  const pend=ls=>ls.find(l=>!lecDone(l));
+  const pasoPend=foco&&foco.tipo==="mia"?foco.pasos.find(p=>!p.lec):null;
+  return{hoy,sig:(foco&&pend(lecDeRuta(foco)))||(pasoPend?null:pend(S.lecciones.filter(l=>!l.mia)))||null,paso:pasoPend,foco};
+}
+function itemLabel(p){return p.cita?p.cita+" · "+p.titulo:p.titulo}
+
+/* ---------- carga ---------- */
+const getJSON=p=>fetch(p,{cache:"no-cache"}).then(r=>{if(!r.ok)throw new Error(p+" "+r.status);return r.json()});
+function cardsDe(l){
+  const area=(ruta(l.cat)||{}).area||"";
+  (l.preguntas||[]).forEach((q,i)=>{const id=q.id||(l.id+"-q"+(i+1));if(S.cards.some(c=>c.id===id))return;
+    S.cards.push({id,leccion:l.id,paper:(l.fuentes||[])[0],area,nivel:2,tipo:"control",q:q.q,a:{es:q.op.es[q.ok]+". "+q.exp.es,en:(q.op.en||q.op.es)[q.ok]+". "+(q.exp.en||q.exp.es)},fuente:l.titulo})});
+}
+async function getLec(id){
+  if(S.lecFull[id])return S.lecFull[id];
+  if(S.mis.lecciones[id])return S.lecFull[id]=S.mis.lecciones[id];
+  const l=await getJSON("data/lecciones/"+encodeURIComponent(id)+".json");
+  (l.preguntas||[]).forEach((q,i)=>{if(!q.id)q.id=l.id+"-q"+(i+1)});
+  S.lecFull[id]=l;cardsDe(l);return l;
+}
+function registrarMia(l){
+  const meta={id:l.id,cat:l.cat,orden:l.orden||0,titulo:l.titulo,bajada:l.bajada,cita:l.cita,palabras:l.palabras,fuentes:[],nPreg:l.preguntas.length,mia:true};
+  S.lecById[l.id]=meta;if(!S.lecciones.some(x=>x.id===l.id))S.lecciones.push(meta);
+  S.lecFull[l.id]=l;cardsDe(l);
+}
+function cargarMis(){
+  const m=lsGet("breve-mis");if(m&&m.rutas)S.mis={rutas:m.rutas||[],lecciones:m.lecciones||{}};
+  Object.values(S.mis.lecciones).forEach(registrarMia);
+}
+function guardarMis(){lsSet("breve-mis",S.mis);nubeGuardarMis()}
+async function boot(){
+  try{
+    const [a,ix,ru,fi,de,li]=await Promise.all([getJSON("data/areas.json"),getJSON("data/indice.json"),getJSON("data/rutas.json"),getJSON("data/fichas.json"),getJSON("data/decks.json"),getJSON("data/lecciones/index.json")]);
+    S.areas=a;S.indice=ix.papers||[];S.niveles=ix.niveles||{};S.rutas=ru.rutas||[];
+    S.indice.forEach(p=>S.byId[p.id]=p);
+    S.papers=fi;
+    S.cards=[];Object.values(de).forEach(x=>{const area=(S.byId[x.paper]||{}).area||"";(x.cards||[]).forEach(cd=>S.cards.push(Object.assign({},cd,{area})))});
+    const rord={};S.rutas.forEach((r,i)=>rord[r.id]=i);
+    S.lecciones=li.slice().sort((a,b)=>((rord[a.cat]??999)-(rord[b.cat]??999))||(a.orden-b.orden));
+    S.lecciones.forEach(l=>S.lecById[l.id]=l);
+    S.est=Object.assign(defaultEst(),lsGet("breve-estado")||{});
+    S.est.cfg=Object.assign(defaultEst().cfg,S.est.cfg||{});
+    S.est.leidos=S.est.leidos||{};S.est.lecciones=S.est.lecciones||{};
+    (S.areas?S.areas.orden:[]).forEach(code=>{if(!S.est.cfg.vistas.includes(code)){S.est.cfg.vistas.push(code);if(!S.est.cfg.areas.includes(code))S.est.cfg.areas.push(code)}});
+    S.lang=S.est.cfg.lang||"es";
+    cargarMis();
+    await Promise.all(Object.keys(S.est.lecciones).filter(id=>S.lecById[id]&&!S.lecById[id].mia).map(id=>getLec(id).catch(()=>null)));
+  }catch(err){console.error(err);renderError();return}
+  S.ready=true;route();
+  nubeIniciar();
+}
+let saveTimer=null;
+function save(now){
+  S.est.t=Date.now();
+  lsSet("breve-estado",S.est);
+  clearTimeout(saveTimer);
+  const go=()=>nubeGuardarEstado();
+  if(now)go();else saveTimer=setTimeout(go,1500);
+}
+
+/* ---------- cuenta y nube (Firebase, opcional) ---------- */
+function cargarScript(src){return new Promise((ok,mal)=>{const x=document.createElement("script");x.src=src;x.onload=ok;x.onerror=mal;document.head.appendChild(x)})}
+async function nubeIniciar(){
+  const N=S.nube;if(!FIREBASE_CONFIG||N.listo||N.cargando)return;N.cargando=true;
+  try{
+    const b="https://www.gstatic.com/firebasejs/"+FB_VER+"/";
+    await cargarScript(b+"firebase-app-compat.js");
+    await Promise.all([cargarScript(b+"firebase-auth-compat.js"),cargarScript(b+"firebase-firestore-compat.js")]);
+    firebase.initializeApp(FIREBASE_CONFIG);N.db=firebase.firestore();N.listo=true;
+    const auth=firebase.auth();auth.languageCode="es";
+    auth.getRedirectResult().catch(e=>{N.error=e.message});
+    auth.onAuthStateChanged(async u=>{N.user=u;if(u)await nubeTraer();if(S.ready&&/^#(ajustes|estudio)?$/.test(location.hash||"#"))route()});
+  }catch(e){N.error="No se pudo cargar el inicio de sesión.";}
+  N.cargando=false;
+}
+function nubeEntrar(){const p=new firebase.auth.GoogleAuthProvider();firebase.auth().signInWithPopup(p).catch(e=>{if(/popup-blocked|operation-not-supported/.test(e.code||""))firebase.auth().signInWithRedirect(p);else{S.nube.error=e.message;route()}})}
+function nubeSalir(){firebase.auth().signOut().then(()=>route())}
+const docU=()=>S.nube.db.collection("brief").doc(S.nube.user.uid);
+async function nubeTraer(){
+  try{
+    const d=await docU().get();const r=d.exists?d.data():{};
+    if(r.estado){const est=JSON.parse(r.estado);if(!S.est.t||(est.t||0)>S.est.t){S.est=Object.assign(defaultEst(),est);S.est.cfg=Object.assign(defaultEst().cfg,est.cfg||{});lsSet("breve-estado",S.est)}}
+    if(r.rutas){const rs=JSON.parse(r.rutas);rs.forEach(x=>{const i=S.mis.rutas.findIndex(y=>y.id===x.id);if(i<0)S.mis.rutas.push(x);else if((x.t||0)>(S.mis.rutas[i].t||0))S.mis.rutas[i]=x})}
+    const ls=await docU().collection("lecciones").get();
+    ls.forEach(d=>{const l=d.data();S.nube.subidas.add(l.id);if(!S.mis.lecciones[l.id]){S.mis.lecciones[l.id]=l;registrarMia(l)}});
+    lsSet("breve-mis",S.mis);
+    await Promise.all(Object.keys(S.est.lecciones).filter(id=>S.lecById[id]&&!S.lecById[id].mia).map(id=>getLec(id).catch(()=>null)));
+    nubeGuardarEstado();nubeGuardarMis();
+  }catch(e){S.nube.error="No se pudo leer tu progreso guardado.";}
+}
+function nubeGuardarEstado(){if(!S.nube.user||!S.nube.db)return;docU().set({estado:JSON.stringify(S.est),actualizado:Date.now()},{merge:true}).catch(()=>{})}
+function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
+  docU().set({rutas:JSON.stringify(S.mis.rutas)},{merge:true}).catch(()=>{});
+  Object.values(S.mis.lecciones).forEach(l=>{if(!S.nube.subidas.has(l.id)){S.nube.subidas.add(l.id);docU().collection("lecciones").doc(l.id).set(l).catch(()=>S.nube.subidas.delete(l.id))}});}
+
+/* ---------- navegación ---------- */
+function setNav(v){["hoy","rutas","estudio","rack","ajustes"].forEach(k=>{const a=document.getElementById("n-"+k);a.textContent=tr(k);if(k===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
+  document.getElementById("l-es").setAttribute("aria-pressed",S.lang==="es");document.getElementById("l-en").setAttribute("aria-pressed",S.lang==="en")}
+function mount(...nodes){const m=document.getElementById("main");m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
+function route(){
+  if(!S.ready)return;
+  const hs=(location.hash||"#hoy").slice(1);
+  if(hs==="rack"){setNav("rack");return viewRack()}
+  if(hs==="rutas"){setNav("rutas");return viewRutas()}
+  if(hs.startsWith("ruta-")){const id=decodeURIComponent(hs.slice(5));const r=ruta(id);if(r&&r.tipo==="mia"){setNav("estudio");return viewMiRuta(r)}setNav("rutas");return viewRuta(id)}
+  if(hs.startsWith("area-")){setNav("rack");viewRack();const el=document.getElementById(hs);if(el)el.scrollIntoView();return}
+  if(hs==="ajustes"){setNav("ajustes");return viewAjustes()}
+  if(hs==="estudio"){setNav("estudio");return viewEstudio()}
+  if(/^p\d+$/.test(hs)){setNav("rack");return viewFicha(hs)}
+  if(hs==="sesion"){setNav("hoy");return S.ses?viewCard():viewHoy()}
+  if(hs.startsWith("l-")){setNav("hoy");return viewLeccion(decodeURIComponent(hs.slice(2)))}
+  if(hs.startsWith("q-")){setNav("hoy");return viewQuiz(decodeURIComponent(hs.slice(2)))}
+  setNav("hoy");viewHoy();
+}
+window.addEventListener("hashchange",route);
+document.getElementById("l-es").addEventListener("click",()=>setLang("es"));
+document.getElementById("l-en").addEventListener("click",()=>setLang("en"));
+function setLang(l){S.lang=l;if(S.est){S.est.cfg.lang=l;save()}if(S.ready)route();else setNav("hoy")}
+
+/* ---------- repetición espaciada ---------- */
+function interleave(list){const g={};list.forEach(c=>{(g[c.area]=g[c.area]||[]).push(c)});const keys=Object.keys(g);const out=[];let i=0;while(out.length<list.length){const k=keys[i%keys.length];if(g[k].length)out.push(g[k].shift());i++}return out}
+function plan(onlyPaper){
+  const t=today(),cfg=S.est.cfg,st=S.est.cards;
+  const fr=cfg.foco?ruta(cfg.foco):null;const pos={};if(fr)fr.pasos.forEach((id,i)=>pos[id]=i);
+  const pool=S.cards.filter(c=>(st[c.id]||(!c.leccion&&S.est.leidos[c.paper]))&&(onlyPaper?c.paper===onlyPaper:(cfg.areas.includes(c.area)||(c.paper in pos)||c.leccion)));
+  const due=pool.filter(c=>st[c.id]&&st[c.id].d<=t).sort((a,b)=>st[a.id].d-st[b.id].d);
+  const usadas=S.est.dia.f===t?S.est.dia.n:0;
+  const cupoNuevas=onlyPaper?99:Math.max(0,cfg.nuevas-usadas);
+  const rk=c=>(c.paper in pos)?pos[c.paper]:1e6;
+  const nuevas=pool.filter(c=>!st[c.id]).sort((a,b)=>(rk(a)-rk(b))||(a.nivel-b.nivel)||(a.paper-b.paper)).slice(0,cupoNuevas);
+  const cap=onlyPaper?999:Math.max(4,cfg.minutos*2);
+  const d=due.slice(0,cap);const n=nuevas.slice(0,Math.max(0,cap-d.length));
+  return{due:d,nuevas:n,items:interleave(d.concat(n))};
+}
+function startSession(onlyPaper){
+  const p=plan(onlyPaper);if(!p.items.length)return;
+  S.ses={q:p.items.slice(),i:0,shown:false,total:p.items.length,done:0,g:{1:0,2:0,3:0,4:0}};
+  location.hash="#sesion";if(location.hash==="#sesion")viewCard();
+}
+function grade(g){
+  const ses=S.ses;const c=ses.q[ses.i];const t=today();const st=S.est.cards;const prev=st[c.id];
+  if(!prev){if(S.est.dia.f!==t)S.est.dia={f:t,n:0};S.est.dia.n++}
+  let b=prev?prev.b:0,d;
+  if(g===1){b=1;d=t}else if(g===2){b=Math.max(1,b);d=t+Math.ceil(INT[b-1]/2)}else if(g===3){b=Math.min(6,b+1);d=t+INT[b-1]}else{b=Math.min(6,b+2);d=t+INT[b-1]}
+  st[c.id]={b,d};ses.g[g]++;
+  S.est.hist[t]=(S.est.hist[t]||0)+1;
+  if(g===1){ses.q.splice(Math.min(ses.q.length,ses.i+4),0,c)}else ses.done++;
+  ses.i++;ses.shown=false;save();
+  if(ses.i>=ses.q.length){save(true);viewFin()}else viewCard();
+}
+
+/* ---------- vistas ---------- */
+function viewHoy(){
+  const t=today();
+  const nodes=[];const es=S.lang==="es";
+  const fecha=new Date().toLocaleDateString(es?"es-AR":"en-US",{weekday:"long",day:"numeric",month:"long"});
+  nodes.push(h("p",{class:"eyebrow c"},fecha));
+  const nl=nextLeccion();
+  const brief=h("section",{class:"block"},h("p",{class:"eyebrow c"},es?"Brief de hoy":"Today's brief"));
+  if(nl.hoy){const d=lecDone(nl.hoy);
+    brief.append(h("h1",{class:"c",style:"font-size:24px;line-height:1.25"},nl.hoy.titulo),
+      h("p",{class:"c box"},(es?"Leído. Preguntas de control: ":"Done. Check questions: ")+d.ok+" / "+d.n),
+      nl.sig?h("p",{class:"c small"},(es?"¿Querés seguir? Próxima: ":"Want more? Next: "),h("a",{href:"#l-"+nl.sig.id},nl.sig.titulo)):null);
+  }else if(nl.sig){const l=nl.sig;const r=ruta(l.cat);
+    brief.append(h("p",{class:"c note"},rutaEtiqueta(r)),
+      h("h1",{class:"c",style:"font-size:25px;line-height:1.25"},l.titulo),
+      h("p",{class:"cita"},l.cita),
+      h("p",{class:"j"},l.bajada),
+      h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.nPreg+(es?" preguntas de control":" check questions")),
+      h("a",{class:"btn",href:"#l-"+l.id,style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Leer el brief":"Read the brief"));
+  }else if(nl.paso){const r=nl.foco;
+    brief.append(h("p",{class:"c note"},rutaEtiqueta(r)),
+      h("h1",{class:"c",style:"font-size:25px;line-height:1.25"},nl.paso.titulo),
+      h("p",{class:"j"},nl.paso.foco),
+      h("a",{class:"btn",href:"#ruta-"+encodeURIComponent(r.id),style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Generar el brief de hoy":"Generate today's brief"));
+  }else{brief.append(h("p",{class:"c muted"},es?"Leíste todos los briefs disponibles. Mañana se suman nuevos, o armá tu propia ruta en Mi estudio.":"You have read every available brief. New ones arrive tomorrow, or build your own path in My study."))}
+  nodes.push(brief);
+  const foco=S.est.cfg.foco?ruta(S.est.cfg.foco):null;
+  if(foco&&foco.tipo==="mia"){
+    const n=foco.pasos.length,gen=foco.pasos.filter(p=>p.lec).length,lei=foco.pasos.filter(p=>p.lec&&S.est.lecciones[p.lec]).length;
+    nodes.push(h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},(S.lang==="es"?"Tu ruta · ":"Your path · ")+foco.nombre),
+      h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+Math.round(100*lei/Math.max(1,n))+"%"})),
+      h("p",{class:"c note"},lei+" / "+n+(S.lang==="es"?" leídos · ":" read · ")+gen+(S.lang==="es"?" generados":" generated")),
+      h("p",{class:"c small"},h("a",{href:"#ruta-"+encodeURIComponent(foco.id)},(S.lang==="es"?"Ver la ruta":"Open the path")+" →"))));
+  }else if(foco){
+    const lr=lecDeRuta(foco);const sig=foco.pasos.map(id=>S.byId[id]).filter(p=>p&&!S.est.leidos[p.id]).slice(0,3);const g=progreso(foco);
+    nodes.push(h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},(S.lang==="es"?"Tu ruta · ":"Your path · ")+rutaNombre(foco)),
+      h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+(g.tot?Math.round(100*g.leidos/g.tot):0)+"%"})),
+      h("p",{class:"c note"},(lr.length?lr.filter(lecDone).length+" / "+lr.length+(S.lang==="es"?" briefs · ":" briefs · "):"")+g.leidos+" / "+g.tot+(S.lang==="es"?" lecturas marcadas · lo que sigue:":" readings marked · up next:")),
+      h("ul",{class:"plist"},sig.map(p=>itemRow(p,foco.pasos.indexOf(p.id)+1))),
+      h("p",{class:"c small"},h("a",{href:"#ruta-"+encodeURIComponent(foco.id)},(S.lang==="es"?"Ver la ruta":"Open the path")+" →"))));
+  }else{
+    nodes.push(h("p",{class:"c small"},h("a",{href:"#rutas"},S.lang==="es"?"Elegí una ruta de lectura para orientar tu estudio →":"Pick a reading path to steer your study →")));
+  }
+  const pl=plan();
+  const minutos=Math.max(1,Math.round(pl.items.length/2));
+  const ses=h("section",{class:"block rule"},
+    h("p",{class:"eyebrow c"},S.lang==="es"?"Repaso espaciado":"Spaced review"),
+    h("p",{class:"c note"},S.lang==="es"?"Las preguntas de los briefs que ya leíste vuelven según su caja.":"Questions from briefs you have read come back by box."),
+    h("div",{class:"stats"},
+      h("div",{class:"stat"},h("b",null,pl.due.length),h("span",null,tr("venc"))),
+      h("div",{class:"stat"},h("b",null,pl.nuevas.length),h("span",null,tr("nuevas"))),
+      h("div",{class:"stat"},h("b",null,pl.items.length?"≈"+minutos:"0"),h("span",null,tr("min")))));
+  if(pl.items.length)ses.append(h("button",{class:"btn",type:"button",on:{click:()=>startSession()}},tr("empezar")));
+  else{
+    const st=S.est.cards;const prox=Object.values(st).map(x=>x.d).filter(d=>d>t).sort((a,b)=>a-b)[0];
+    ses.append(h("p",{class:"c muted"},tr("nada")+(prox?(S.lang==="es"?" Las próximas vencen en "+(prox-t)+" día(s).":" Next ones due in "+(prox-t)+" day(s)."):"")));
+  }
+  nodes.push(ses);
+  const box=[0,0,0,0,0,0];let enRepaso=0;
+  S.cards.forEach(c=>{const s=S.est.cards[c.id];if(s){box[s.b-1]++;enRepaso++}});
+  const leidas=S.lecciones.filter(lecDone).length;
+  nodes.push(h("section",{class:"block rule"},
+    h("p",{class:"eyebrow c"},tr("cajas")),
+    h("div",{class:"cajas"},box.map((n,i)=>h("div",{class:"caja"},h("b",null,n),(S.lang==="es"?"caja ":"box ")+(i+1),h("br"),INT[i]+" d"))),
+    h("p",{class:"note c"},S.lang==="es"?(leidas+" de "+S.lecciones.length+" briefs leídos · "+enRepaso+" preguntas en repaso. Las preguntas entran al repaso después de leer, nunca antes."):(leidas+" of "+S.lecciones.length+" briefs read · "+enRepaso+" questions in review. Questions join the review after you read, never before."))));
+  mount(...nodes);
+}
+
+function viewCard(){
+  const ses=S.ses;const c=ses.q[ses.i];const p=S.papers["p"+c.paper]||{};
+  const L=S.lang;const st=S.est.cards[c.id];
+  const pct=Math.round(100*ses.done/ses.total);
+  const nodes=[
+    h("div",{class:"top"},h("span",null,(ses.done+1>ses.total?ses.total:ses.done+1)+" / "+ses.total+" · "+(st?tr("caja")+" "+st.b:tr("nueva"))),h("a",{href:"#hoy",on:{click:()=>{S.ses=null}}},tr("salir"))),
+    h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+pct+"%"})),
+    h("article",{class:"card"},
+      h("p",{class:"eyebrow c"},areaName(c.area)+" › "+(c.leccion?(L==="es"?"pregunta de control":"check question"):(TIPO[c.tipo]||c.tipo)+" · N"+c.nivel)),
+      h("h2",{lang:L},c.q[L]||c.q.es),
+      h("p",{class:"cita"},c.leccion?h("a",{href:"#l-"+c.leccion},c.fuente):h("a",{href:"#p"+c.paper},p.cita||("#"+c.paper)))),
+  ];
+  const art=nodes[2];
+  if(!ses.shown){
+    art.append(h("button",{class:"btn",type:"button",id:"reveal",on:{click:()=>{ses.shown=true;viewCard()}}},tr("mostrar")),h("p",{class:"note c"},tr("pista")));
+  }else{
+    art.append(h("div",{class:"ans"},h("p",{class:"j",lang:L},c.a[L]||c.a.es),c.leccion?null:h("p",{class:"fuente"},tr("fuente")+": "+c.fuente)));
+    const g=h("div",{class:"grades",role:"group","aria-label":"Calificación"});
+    [[1,"otra","g1"],[2,"dificil",""],[3,"bien",""],[4,"facil",""]].forEach(([n,k,cl])=>g.append(h("button",{type:"button",class:cl,on:{click:()=>grade(n)}},tr(k),h("small",null,String(n)))));
+    art.append(g);
+  }
+  mount(...nodes);
+  const r=document.getElementById("reveal");if(r)r.focus();
+}
+document.addEventListener("keydown",e=>{
+  if(location.hash!=="#sesion"||!S.ses||e.target.closest("input,select,textarea"))return;
+  if(!S.ses.shown&&(e.key===" "||e.key==="Enter")){e.preventDefault();S.ses.shown=true;viewCard()}
+  else if(S.ses.shown&&/^[1-4]$/.test(e.key)){e.preventDefault();grade(+e.key)}
+});
+function viewFin(){
+  const g=S.ses.g;S.ses=null;
+  mount(h("section",{class:"block"},
+    h("p",{class:"eyebrow c"},tr("fin")),
+    h("div",{class:"stats",style:"grid-template-columns:repeat(4,minmax(0,1fr))"},[[1,"otra"],[2,"dificil"],[3,"bien"],[4,"facil"]].map(([n,k])=>h("div",{class:"stat"},h("b",null,g[n]),h("span",null,tr(k))))),
+    h("p",{class:"c muted"},S.lang==="es"?"Lo que marcaste como «Otra vez» vuelve mañana. El resto, según su caja.":"Cards marked Again come back tomorrow; the rest follow their box."),
+    h("a",{class:"btn ghost",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver"))));
+}
+
+function viewRack(){
+  const es=S.lang==="es";
+  const nodes=[h("p",{class:"eyebrow c"},es?S.indice.length+" lecturas en el rack":S.indice.length+" readings in the rack"),
+    h("p",{class:"j note"},es?"Cada área muestra primero sus lecturas esenciales. La lista completa, ordenada para leer de lo fundamental a lo puntual, está en su ruta.":"Each area lists its essential readings first. The full list, ordered from the fundamentals to the specifics, lives in its path.")];
+  (S.areas?S.areas.orden:[]).forEach(code=>{
+    const r=ruta(code);
+    const items=r?r.pasos.map(id=>S.byId[id]).filter(Boolean):S.indice.filter(p=>p.area===code);
+    if(!items.length)return;
+    const cnt={};items.forEach(p=>cnt[p.nivel]=(cnt[p.nivel]||0)+1);
+    const conFicha=items.filter(p=>p.ficha).length;
+    let destacados=items.filter(p=>p.nivel==="E"||p.ficha);
+    if(!destacados.length)destacados=items.slice(0,5);
+    nodes.push(h("section",{class:"area rule",id:"area-"+code},
+      h("h2",null,areaName(code)),
+      h("p",{class:"cnt"},items.length+(es?" lecturas · ":" readings · ")+NIV_ORD.filter(n=>cnt[n]).map(n=>cnt[n]+" "+nivName(n).split(" ")[0].toLowerCase()).join(" · ")+(conFicha?" · "+conFicha+(es?" con ficha":" summarized"):"")),
+      h("ul",{class:"plist"},destacados.map(p=>itemRow(p))),
+      h("p",{class:"c small"},h("a",{href:"#ruta-"+code},(es?"Ver la ruta completa":"Open the full path")+" →"))));
+  });
+  mount(...nodes);
+}
+function itemRow(p,num){
+  const es=S.lang==="es";const leido=S.est.leidos[p.id];
+  const tag=p.tarjetas?p.tarjetas+(es?" tarj.":" cards"):(p.ficha?"ficha":(TIPO_ITEM[p.tipo]||[p.tipo,p.tipo])[es?0:1]);
+  return h("li",null,
+    num!=null?h("span",{class:"num"},String(num)):null,
+    h("span",{class:"t"},h("a",{href:"#p"+p.id,class:p.ficha?"":"sinficha"},itemLabel(p)),
+      p.paginas?h("span",{class:"meta"},p.paginas+" p."+(p.curso?" · "+p.curso:"")+(p.escaneado?(es?" · escaneado":" · scanned"):"")):null),
+    h("span",{class:"tag"+(p.tarjetas||p.ficha?" on":"")+(leido?" leido":"")},leido?(es?"leído":"read"):tag));
+}
+function progreso(r){const items=r.pasos.map(id=>S.byId[id]).filter(Boolean);return{tot:items.length,leidos:items.filter(p=>S.est.leidos[p.id]).length,fichas:items.filter(p=>p.ficha).length,ess:items.filter(p=>p.nivel==="E").length}}
+function viewRutas(){
+  const es=S.lang==="es";const foco=S.est.cfg.foco;
+  const cat=r=>{const g=progreso(r);const lr=lecDeRuta(r);const ld=lr.filter(lecDone).length;
+    return h("li",{class:"ruta"+(foco===r.id?" foco":"")},
+      h("a",{href:"#ruta-"+encodeURIComponent(r.id)},rutaNombre(r)),
+      h("span",{class:"meta"},g.tot+(es?" lecturas":" readings")+(lr.length?" · "+ld+"/"+lr.length+" briefs":"")+(foco===r.id?(es?" · en foco":" · in focus"):"")),
+      lr.length?h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+Math.round(100*ld/lr.length)+"%"})):null)};
+  const nodes=[h("p",{class:"eyebrow c"},es?"Rutas de lectura":"Reading paths"),
+    h("p",{class:"j"},es?"Cada área se abre en categorías. Elegí una y ponela en foco: el brief diario sale de ahí, las preguntas de control alimentan tu repaso y las lecturas se ordenan de lo esencial a lo puntual.":"Each area opens into categories. Pick one and put it in focus: the daily brief comes from there, check questions feed your review, and readings run from essentials to specifics."),
+    foco&&ruta(foco)?h("p",{class:"box c"},(es?"En foco: ":"In focus: "),h("a",{href:"#ruta-"+encodeURIComponent(foco)},rutaNombre(ruta(foco)))):null,
+    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:20px"},es?"Tus rutas":"Your paths"),
+      S.mis.rutas.length?h("ul",{class:"rutas"},S.mis.rutas.map(r=>{const n=r.pasos.length,g=r.pasos.filter(p=>p.lec).length,d=r.pasos.filter(p=>p.lec&&S.est.lecciones[p.lec]).length;
+        return h("li",{class:"ruta"+(foco===r.id?" foco":"")},h("a",{href:"#ruta-"+encodeURIComponent(r.id)},r.nombre),h("span",{class:"meta"},n+(es?" pasos · ":" steps · ")+g+(es?" generados · ":" generated · ")+d+(es?" leídos":" read")),h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+Math.round(100*d/Math.max(1,n))+"%"})))})):null,
+      h("p",{class:"c small"},h("a",{href:"#estudio"},es?"Armar una ruta con tus PDFs →":"Build a path from your PDFs →")))];
+  (S.areas?S.areas.orden:[]).forEach(code=>{
+    const ra=ruta(code);const cats=S.rutas.filter(r=>r.tipo==="cat"&&r.area===code&&r.pasos.length);
+    nodes.push(h("section",{class:"block rule",id:"rutas-"+code},
+      h("h2",{class:"c",style:"font-size:20px"},areaName(code)),
+      ra?h("p",{class:"c small"},h("a",{href:"#ruta-"+code},(es?"Ruta completa del área":"Full area path")+" · "+ra.pasos.length+(es?" lecturas":" readings"))):null,
+      h("ul",{class:"rutas"},cats.map(cat))));
+  });
+  mount(...nodes);
+}
+function viewRuta(id){
+  const es=S.lang==="es";const r=ruta(id);
+  if(!r){mount(h("div",{class:"empty"},es?"Esa ruta no existe.":"That path does not exist."));return}
+  const items=r.pasos.map(x=>S.byId[x]).filter(Boolean);const g=progreso(r);
+  const enFoco=S.est.cfg.foco===r.id;
+  const btn=h("button",{class:"btn"+(enFoco?" ghost":""),type:"button",on:{click:()=>{S.est.cfg.foco=enFoco?"":r.id;save(true);viewRuta(id)}}},
+    enFoco?(es?"Quitar el foco de esta ruta":"Remove focus from this path"):(es?"Estudiar con foco en esta ruta":"Focus my study on this path"));
+  const lr=lecDeRuta(r);
+  const nodes=[h("p",{class:"eyebrow c"},r.tipo==="area"?(es?"Ruta por área":"Area path"):h("a",{href:"#ruta-"+r.area},areaName(r.area))),
+    h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},rutaNombre(r)),
+    r.desc?h("p",{class:"j"},r.desc):null,
+    h("p",{class:"c note"},g.tot+(es?" lecturas · ":" readings · ")+g.leidos+(es?" leídas · ":" read · ")+g.fichas+(es?" con ficha":" summarized")),
+    btn,
+    lr.length?h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"Briefs de esta ruta":"Briefs in this path"),
+      h("p",{class:"c note"},es?"Lecturas de 15 minutos con preguntas de control, en orden.":"15-minute readings with check questions, in order."),
+      h("ul",{class:"plist pasos"},lr.map((l,i)=>{const d=lecDone(l);return h("li",null,h("span",{class:"num"},String(i+1)),h("span",{class:"t"},h("a",{href:"#l-"+l.id},l.titulo),h("span",{class:"meta"},"≈"+lecMin(l)+" min · "+l.cita)),h("span",{class:"tag"+(d?" leido":" on")},d?d.ok+"/"+d.n:(es?"pendiente":"to do")))}))):
+      h("p",{class:"c note"},es?"Todavía no hay briefs en esta ruta; se escriben en orden, empezando por la ruta en foco.":"No briefs in this path yet; they are written in order, starting with the path in focus."),
+    h("h2",{class:"c",style:"font-size:19px;margin-top:8px"},es?"Lecturas":"Readings")];
+  let n=0;
+  NIV_ORD.forEach(nv=>{
+    const grp=items.filter(p=>p.nivel===nv);if(!grp.length)return;
+    nodes.push(h("section",{class:"block rule"},
+      h("h2",{class:"c",style:"font-size:19px"},nivName(nv)),
+      h("p",{class:"c note"},NIV_DESC[nv][S.lang]),
+      h("ul",{class:"plist pasos"},grp.map(p=>itemRow(p,++n)))));
+  });
+  mount(...nodes);
+}
+
+function linkConexion(x){
+  if(typeof x==="number"){const ix=S.indice.find(p=>p.id===x);if(!ix)return h("span",null,"#"+x);return h("a",{href:"#p"+x},ix.cita||ix.titulo)}
+  return h("span",null,x);
+}
+function viewFicha(key){
+  const p=S.papers[key];
+  if(!p){viewItem(+key.slice(1));return}
+  const cards=S.cards.filter(c=>c.paper===p.id);
+  const head=h("header",{class:"block"},
+    h("p",{class:"eyebrow c"},areaName(p.area)),
+    h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},p.titulo),
+    h("p",{class:"cita"},p.autores+" · "+p.anio),
+    h("p",{class:"c note"},p.fuente),
+    h("label",{class:"leer"},h("input",{type:"checkbox",checked:!!S.est.leidos[p.id],on:{change:e=>{if(e.target.checked)S.est.leidos[p.id]=today();else delete S.est.leidos[p.id];save(true)}}}),S.lang==="es"?"Ya leí la ficha: sumar sus tarjetas al repaso":"I have read this summary: add its cards to review"));
+  if(p.tipo==="libro"){
+    mount(head,h("p",{class:"j"},p.nota),h("section",{class:"block rule"},h("p",{class:"eyebrow c"},S.lang==="es"?"Capítulos":"Chapters"),h("ol",{style:"list-style:none;padding:0"},(p.capitulos||[]).map(c=>h("li",null,c)))));
+    return;
+  }
+  const main=h("div",{class:"block",style:"gap:24px;min-width:0"},
+    sec("Pregunta",h("p",{class:"j"},p.pregunta)),
+    sec("Tesis",h("p",{class:"box j"},p.tesis)),
+    sec("Mecanismo",h("p",{class:"j"},p.mecanismo)),
+    (p.modelo&&p.modelo.length)?sec("Modelo",h("div",{class:"eq",id:"eqs"},p.modelo.map(m=>h("div",{class:"tex"},"\\["+m+"\\]"))),h("p",{class:"j note"},p.modelo_nota)):sec("Modelo",h("p",{class:"j note"},p.modelo_nota)),
+    sec("Econometría",h("dl",null,h("dt",null,"Datos"),h("dd",{class:"j"},p.econometria.datos),h("dt",null,"Método"),h("dd",{class:"j"},p.econometria.metodo),h("dt",null,"Identificación"),h("dd",{class:"j"},p.econometria.identificacion))),
+    sec("Resultados",h("ul",null,p.resultados.map(r=>h("li",null,r)))),
+    sec("Críticas",h("ul",null,p.criticas.map(r=>h("li",{class:"critica"},r)))),
+    sec("Para Argentina",h("p",{class:"j"},p.argentina)),
+    cards.length?h("button",{class:"btn",type:"button",on:{click:()=>startSession(p.id)}},(S.lang==="es"?"Repasar las "+cards.length+" tarjetas de este paper":"Review this paper's "+cards.length+" cards")):null);
+  const et=p.etiquetas||{};
+  const aside=h("aside",{class:"aside"},
+    h("div",null,h("b",null,"Región"),et.region),
+    h("div",null,h("b",null,"Método"),et.metodo),
+    h("div",null,h("b",null,"Período"),et.periodo),
+    h("div",null,h("b",null,"Área"),h("a",{href:"#area-"+p.area},areaName(p.area))),
+    h("div",null,h("b",null,"Conexiones"),h("ul",{style:"padding-left:0;list-style:none;gap:4px"},(p.conexiones||[]).map(x=>h("li",null,linkConexion(x))))));
+  mount(head,h("div",{class:"ficha margen"},main,aside));
+  document.getElementById("wrap").classList.add("ancha");
+  typeset();
+}
+function cargando(){mount(h("div",{class:"empty"},S.lang==="es"?"Cargando…":"Loading…"))}
+function viewLeccion(id){
+  const es=S.lang==="es";
+  if(!S.lecById[id]){mount(h("div",{class:"empty"},es?"Ese brief no existe.":"That brief does not exist."));return}
+  if(!S.lecFull[id]){cargando();getLec(id).then(()=>{if(location.hash==="#l-"+encodeURIComponent(id)||location.hash==="#l-"+id)viewLeccion(id)}).catch(renderError);return}
+  const l=S.lecFull[id];
+  const r=ruta(l.cat);const d=lecDone(l);
+  const body=h("article",{class:"leccion",id:"lec",lang:"es"},
+    h("p",{class:"eyebrow c"},h("a",{href:"#ruta-"+encodeURIComponent(l.cat)},rutaEtiqueta(r))),
+    h("h1",{class:"c"},l.titulo),
+    h("p",{class:"cita"},l.cita),
+    h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.preguntas.length+(es?" preguntas de control":" check questions")+(d?(es?" · leído":" · read"):"")),
+    es?null:h("p",{class:"c note",lang:"en"},"This reading is in Spanish; the check questions follow your language setting."),
+    h("p",{class:"j lead"},l.intro),
+    l.secciones.map((sc,i)=>h("section",null,
+      h("h2",null,(i+1)+". "+sc.t),
+      sc.p.map(x=>h("p",{class:"j"},x)),
+      (sc.eq&&sc.eq.length)?h("div",{class:"eq"},sc.eq.map(e=>h("div",{class:"tex"},"\\["+e+"\\]"))):null,
+      sc.nota?h("p",{class:"note j"},sc.nota):null)),
+    h("section",{class:"box"},h("h2",null,es?"Para llevarse":"Key takeaways"),h("ul",null,l.claves.map(k=>h("li",null,k)))),
+    (l.fuentes&&l.fuentes.length)?h("section",null,h("h2",null,es?"Fuentes en el rack":"Sources in the rack"),
+      h("ul",{class:"plist"},l.fuentes.map(fid=>{const p=S.byId[fid];return p?itemRow(p):null}))):null,
+    (l.docs&&l.docs.length)?h("section",null,h("h2",null,es?"Tus documentos":"Your documents"),h("ul",null,l.docs.map(d=>h("li",null,d)))):null,
+    l.mia?h("p",{class:"note j"},es?"Brief generado por IA a partir de tus documentos. Revisá los números contra el original antes de citarlos.":"AI-generated brief from your documents. Check figures against the original before citing them."):null,
+    h("a",{class:"btn",href:"#q-"+l.id,style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},(d?(es?"Volver a hacer las preguntas":"Retake the questions"):(es?"Preguntas de control":"Check questions"))+" ("+l.preguntas.length+")"));
+  body.append(h("p",{class:"c small"},h("a",{href:"https://github.com/"+REPO+"/issues/new?"+new URLSearchParams({title:"Error en el brief: "+l.titulo,body:"Brief: "+l.id+"\nSección:\nQué está mal:\nQué debería decir (con página de la fuente si la tenés):\n"}),target:"_blank",rel:"noopener"},es?"Reportar un error en este brief":"Report an error in this brief")));
+  mount(body);
+  typeset("lec");
+}
+function viewQuiz(id){
+  const es=S.lang==="es";const L=S.lang;
+  if(!S.lecById[id]){location.hash="#hoy";return}
+  if(!S.lecFull[id]){cargando();getLec(id).then(()=>viewQuiz(id)).catch(renderError);return}
+  const l=S.lecFull[id];
+  if(!S.quiz||S.quiz.id!==id)S.quiz={id,i:0,pick:null,ok:0,res:[]};
+  const z=S.quiz;
+  if(z.i>=l.preguntas.length){
+    mount(h("section",{class:"block"},
+      h("p",{class:"eyebrow c"},es?"Preguntas de control":"Check questions"),
+      h("h1",{class:"c",style:"font-size:24px"},l.titulo),
+      h("div",{class:"stats",style:"grid-template-columns:repeat(2,minmax(0,1fr))"},h("div",{class:"stat"},h("b",null,z.ok),h("span",null,es?"correctas":"correct")),h("div",{class:"stat"},h("b",null,l.preguntas.length-z.ok),h("span",null,es?"a repasar":"to review"))),
+      h("p",{class:"j"},es?"Las preguntas pasan a tu repaso espaciado: las que erraste vuelven mañana y las que acertaste, en tres días. Después suben de caja como cualquier tarjeta.":"The questions now join your spaced review: missed ones return tomorrow, correct ones in three days. Then they move up boxes like any card."),
+      h("a",{class:"btn",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver")),
+      h("p",{class:"c small"},h("a",{href:"#l-"+l.id},es?"Releer el brief":"Reread the brief"))));
+    return;
+  }
+  const q=l.preguntas[z.i];const ops=q.op[L]||q.op.es;
+  const answered=z.pick!==null;
+  const pick=k=>{if(z.pick!==null)return;z.pick=k;const good=k===q.ok;if(good)z.ok++;z.res.push(good);viewQuiz(id)};
+  const next=()=>{z.i++;z.pick=null;if(z.i>=l.preguntas.length)finQuiz(l);viewQuiz(id)};
+  mount(
+    h("div",{class:"top"},h("span",null,(z.i+1)+" / "+l.preguntas.length),h("a",{href:"#l-"+l.id},es?"Volver al brief":"Back to the brief")),
+    h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+Math.round(100*z.i/l.preguntas.length)+"%"})),
+    h("article",{class:"card"},
+      h("p",{class:"eyebrow c"},es?"Pregunta de control":"Check question"),
+      h("h2",{lang:L},q.q[L]||q.q.es),
+      h("div",{class:"ops",role:"group"},ops.map((o,k)=>h("button",{type:"button",class:"op"+(answered?(k===q.ok?" ok":(k===z.pick?" mal":"")):""),disabled:answered,on:{click:()=>pick(k)}},h("span",{class:"let"},"ABCD"[k]),h("span",null,o)))),
+      answered?h("div",{class:"ans"},h("p",{class:"c "+(z.pick===q.ok?"bien":"mal")},z.pick===q.ok?(es?"Correcto.":"Correct."):(es?"No es esa.":"Not quite.")),h("p",{class:"j",lang:L},q.exp[L]||q.exp.es),
+        h("button",{class:"btn",type:"button",id:"next",on:{click:next}},z.i+1<l.preguntas.length?(es?"Siguiente":"Next"):(es?"Terminar":"Finish"))):null));
+  const nb=document.getElementById("next");if(nb)nb.focus();
+}
+function finQuiz(l){
+  const t=today();const z=S.quiz;const st=S.est.cards;
+  cardsDe(l);
+  l.preguntas.forEach((q,i)=>{const good=z.res[i];const prev=st[q.id];
+    if(good){const b=Math.max(2,prev?prev.b:0);st[q.id]={b,d:t+INT[b-1]}}else st[q.id]={b:1,d:t+1}});
+  S.est.lecciones[l.id]={d:t,ok:z.ok,n:l.preguntas.length};
+  S.est.hist[t]=(S.est.hist[t]||0)+l.preguntas.length;
+  save(true);
+}
+document.addEventListener("keydown",e=>{
+  if(!location.hash.startsWith("#q-")||!S.quiz||e.target.closest("input,select,textarea"))return;
+  if(S.quiz.pick===null&&/^[1-4a-dA-D]$/.test(e.key)){const k=/[1-4]/.test(e.key)?+e.key-1:"abcd".indexOf(e.key.toLowerCase());const b=document.querySelectorAll(".op")[k];if(b){e.preventDefault();b.click()}}
+});
+function viewItem(id){
+  const es=S.lang==="es";const p=S.byId[id];
+  if(!p){mount(h("div",{class:"empty"},es?"Esa lectura no está en el rack.":"That reading is not in the rack."));return}
+  const leido=!!S.est.leidos[id];
+  const rs=S.rutas.filter(r=>r.pasos.includes(id));
+  const tipo=(TIPO_ITEM[p.tipo]||[p.tipo,p.tipo])[es?0:1];
+  const chk=h("label",{class:"leer"},h("input",{type:"checkbox",checked:leido,on:{change:e=>{if(e.target.checked)S.est.leidos[id]=today();else delete S.est.leidos[id];save(true)}}}),es?"Ya la leí":"I have read it");
+  mount(h("header",{class:"block"},
+      h("p",{class:"eyebrow c"},areaName(p.area)+(p.sub?" › "+p.sub:"")),
+      h("h1",{class:"c",style:"font-size:25px;line-height:1.25"},p.titulo),
+      p.cita?h("p",{class:"cita"},p.cita):null,
+      h("div",{class:"chips"},h("span",{class:"chip"},nivName(p.nivel)),h("span",{class:"chip"},tipo),p.paginas?h("span",{class:"chip"},p.paginas+" p."):null,p.curso?h("span",{class:"chip"},p.curso):null)),
+    h("section",{class:"block rule"},
+      h("p",{class:"j"},es?"Todavía no tiene brief. Los briefs del rack se escriben en el orden de las rutas; mientras tanto podés generar uno con tu copia del PDF en Mi estudio.":"No brief yet. Rack briefs are written in path order; meanwhile you can generate one from your own copy in My study."),
+      chk),
+    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},es?"Conseguir el texto":"Get the text"),
+      p.url?h("p",{class:"c"},h("a",{href:p.url,target:"_blank",rel:"noopener"},es?"Abrir la fuente":"Open the source")):null,
+      h("p",{class:"c small"},h("a",{href:"https://scholar.google.com/scholar?"+new URLSearchParams({q:(p.cita?p.cita.replace(/\(\d{4}\)/,"")+" ":"")+p.titulo}),target:"_blank",rel:"noopener"},es?"Buscarlo en Google Académico":"Search on Google Scholar")),
+      h("p",{class:"c small"},h("a",{href:"#estudio"},es?"¿Lo tenés en PDF? Subilo en Mi estudio y armá el brief a tu medida":"Have the PDF? Upload it in My study for a tailored brief"))),
+    rs.length?h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Aparece en las rutas":"Appears in paths"),
+      h("ul",{class:"plist"},rs.map(r=>h("li",null,h("span",{class:"t"},h("a",{href:"#ruta-"+encodeURIComponent(r.id)},rutaNombre(r))),h("span",{class:"tag"},(r.pasos.indexOf(id)+1)+" / "+r.pasos.length))))):null);
+}
+function sec(t,...kids){return h("section",null,h("h3",null,t),...kids)}
+function typeset(id){
+  const el=document.getElementById(id||"eqs");if(!el)return;
+  const run=()=>{if(window.MathJax&&MathJax.typesetPromise){MathJax.typesetPromise([el]).catch(()=>fallback(el))}else return false;return true};
+  if(!run()){let n=0;const iv=setInterval(()=>{if(run()||++n>40){clearInterval(iv);if(n>40)fallback(el)}},250)}
+}
+function fallback(el){el.querySelectorAll(".tex").forEach(d=>{d.className="raw"});
+  const G={varphi:"φ",sigma:"σ",tau:"τ",alpha:"α",delta:"δ",lambda:"λ",beta:"β",gamma:"γ",rho:"ρ",pi:"π"};
+  el.querySelectorAll("p,li,dd").forEach(n=>{if(!n.textContent.includes("\\("))return;
+    n.textContent=n.textContent.replace(/\\\((.*?)\\\)/g,(m,x)=>x.replace(/\\(tilde|bar)\s*/g,"").replace(/\\([a-z]+)/g,(q,w)=>G[w]||w).replace(/[{}]/g,"").replace(/_/g,""))})}
+
+function viewAjustes(){
+  const cfg=S.est.cfg;const es=S.lang==="es";
+  const upd=(k,v)=>{cfg[k]=v;save();cal.href=calUrl()};
+  const hora=h("input",{type:"time",id:"cfg-hora",value:cfg.hora,on:{change:e=>upd("hora",e.target.value||"08:00")}});
+  const mins=h("input",{type:"number",id:"cfg-min",min:"3",max:"60",value:cfg.minutos,on:{change:e=>upd("minutos",Math.max(3,Math.min(60,+e.target.value||10)))}});
+  const nue=h("input",{type:"number",id:"cfg-nuevas",min:"0",max:"50",value:cfg.nuevas,on:{change:e=>upd("nuevas",Math.max(0,Math.min(50,+e.target.value||0)))}});
+  const sel=h("select",{id:"cfg-foco",style:"width:auto;max-width:100%",on:{change:e=>{cfg.foco=e.target.value;save()}}},
+    h("option",{value:""},es?"Sin foco (todas las áreas)":"No focus (all areas)"),
+    (S.areas?S.areas.orden:[]).map(code=>h("optgroup",{label:areaName(code)},
+      [ruta(code)].concat(S.rutas.filter(r=>r.tipo==="cat"&&r.area===code&&r.pasos.length)).filter(Boolean).map(r=>{const o=h("option",{value:r.id},r.tipo==="area"?(es?"Toda el área":"Whole area"):rutaNombre(r));if(cfg.foco===r.id)o.selected=true;return o}))),
+    S.mis.rutas.length?h("optgroup",{label:es?"Mi estudio":"My study"},S.mis.rutas.map(r=>{const o=h("option",{value:r.id},r.nombre);if(cfg.foco===r.id)o.selected=true;return o})):null);
+  const checks=h("div",{class:"checks"},(S.areas?S.areas.orden:[]).map(code=>{
+    const n=S.cards.filter(c=>c.area===code).length;
+    return h("label",{for:"cfg-a-"+code},h("input",{type:"checkbox",id:"cfg-a-"+code,checked:cfg.areas.includes(code),on:{change:e=>{const s=new Set(cfg.areas);e.target.checked?s.add(code):s.delete(code);cfg.areas=[...s];save()}}}),areaName(code)+" ("+n+")")}));
+  const cal=h("a",{class:"btn ghost",href:calUrl(),target:"_blank",rel:"noopener",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Agregar recordatorio diario a Google Calendar":"Add a daily reminder to Google Calendar");
+  mount(h("p",{class:"eyebrow c"},tr("ajustes")),
+    h("div",{class:"form"},
+      h("div",{class:"row"},h("label",{for:"cfg-hora"},es?"Hora del repaso":"Review time"),hora),
+      h("div",{class:"row"},h("label",{for:"cfg-min"},es?"Minutos por sesión (≈2 tarjetas por minuto)":"Minutes per session (≈2 cards/min)"),mins),
+      h("div",{class:"row"},h("label",{for:"cfg-nuevas"},es?"Tarjetas nuevas por día":"New cards per day"),nue),
+      h("div",{class:"row"},h("label",{for:"cfg-foco"},es?"Ruta en foco: las tarjetas nuevas salen primero de ahí":"Path in focus: new cards come from it first"),sel),
+      h("p",{class:"eyebrow",style:"margin-top:8px"},es?"Áreas incluidas":"Included areas"),checks),
+    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},es?"Aviso diario":"Daily reminder"),
+      h("p",{class:"j"},es?"El evento se repite todos los días a la hora elegida y dura lo que dura la sesión. Si cambiás la hora, volvé a agregarlo.":"The event repeats daily at the chosen time and lasts one session. If you change the time, add it again."),
+      cal),
+    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},es?"Cómo funciona":"How it works"),
+      h("p",{class:"j"},es?"Cada tarjeta vive en una de seis cajas. Si la recordás bien sube de caja y vuelve más tarde: 1, 3, 7, 16, 35 y 90 días. «Otra vez» la devuelve a la caja 1 y la repite en la misma sesión; «Difícil» la deja en su caja con la mitad del intervalo; «Fácil» la sube dos cajas. La sesión mezcla áreas para que practiques distinguir temas, no solo recordarlos.":"Each card lives in one of six boxes. Recall it well and it moves up and returns later: 1, 3, 7, 16, 35 and 90 days. Again sends it to box 1 and repeats it this session; Hard keeps its box at half the interval; Easy moves it up two boxes. Sessions mix areas so you practice telling topics apart, not just recalling them.")),
+    seccionCuenta(),
+    seccionIA(),
+    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},es?"Tus datos":"Your data"),
+      h("p",{class:"j"},es?"Sin cuenta, el progreso y tus briefs quedan en este navegador. Podés bajar una copia y cargarla en otro dispositivo.":"Without an account, progress and your briefs stay in this browser. You can download a copy and load it elsewhere."),
+      h("div",{class:"fila2"},
+        h("button",{class:"btn ghost",type:"button",on:{click:exportar}},es?"Bajar copia":"Download copy"),
+        h("label",{class:"btn ghost",style:"display:flex;align-items:center;justify-content:center"},es?"Cargar copia":"Load copy",h("input",{type:"file",accept:".json,application/json",style:"display:none",on:{change:importar}})))));
+}
+function calUrl(){
+  const cfg=S.est.cfg;const [H,M]=(cfg.hora||"08:00").split(":").map(Number);
+  const d=new Date();d.setDate(d.getDate()+1);
+  const p=n=>String(n).padStart(2,"0");
+  const ini=d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"T"+p(H)+p(M)+"00";
+  const e=new Date(d.getFullYear(),d.getMonth(),d.getDate(),H,M+cfg.minutos);
+  const fin=e.getFullYear()+p(e.getMonth()+1)+p(e.getDate())+"T"+p(e.getHours())+p(e.getMinutes())+"00";
+  const q=new URLSearchParams({action:"TEMPLATE",text:"Breve Económico · repaso",details:"Sesión de microlearning de papers"+(APP_URL?": "+APP_URL:"."),dates:ini+"/"+fin,ctz:"America/Argentina/Cordoba",recur:"RRULE:FREQ=DAILY"});
+  return "https://calendar.google.com/calendar/render?"+q.toString();
+}
+
+function renderError(){setNav("hoy");mount(h("div",{class:"empty"},h("p",null,"No se pudo cargar el contenido."),h("p",{class:"note"},"Revisá la conexión y recargá la página.")))}
+/* ================= Mi estudio: documentos propios, ruta y briefs a pedido ================= */
+const P=window.BREVE_PROMPTS;
+const PDFJS="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/";
+const E={docs:[],objetivo:"",nivel:"intermedio",enfasis:["mecanismo","modelo","econometría"],dias:"",plan:null,estado:"",error:false,ocupado:false};
+
+/* --- documentos en IndexedDB (el texto queda solo en este dispositivo) --- */
+function idb(){return new Promise((ok,mal)=>{const r=indexedDB.open("breve-docs",1);r.onupgradeneeded=()=>r.result.createObjectStore("docs",{keyPath:"id"});r.onsuccess=()=>ok(r.result);r.onerror=()=>mal(r.error)})}
+async function docGuardar(d){const db=await idb();return new Promise((ok,mal)=>{const t=db.transaction("docs","readwrite");t.objectStore("docs").put(d);t.oncomplete=ok;t.onerror=()=>mal(t.error)})}
+async function docLeer(id){const db=await idb();return new Promise(ok=>{const q=db.transaction("docs").objectStore("docs").get(id);q.onsuccess=()=>ok(q.result||null);q.onerror=()=>ok(null)})}
+
+async function pdfjs(){if(window.pdfjsLib)return window.pdfjsLib;await cargarScript(PDFJS+"pdf.min.js");pdfjsLib.GlobalWorkerOptions.workerSrc=PDFJS+"pdf.worker.min.js";return pdfjsLib}
+async function leerArchivo(f,avance){
+  const id="d"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
+  const titulo=f.name.replace(/\.(pdf|txt|md)$/i,"").replace(/[_]+/g," ");
+  if(!/\.pdf$/i.test(f.name)){const t=await f.text();return{id,titulo,paginas:[t],n:1,chars:t.length}}
+  const lib=await pdfjs();const pdf=await lib.getDocument({data:await f.arrayBuffer()}).promise;const paginas=[];
+  for(let i=1;i<=pdf.numPages;i++){const pg=await pdf.getPage(i);const c=await pg.getTextContent();
+    paginas.push(c.items.map(x=>x.str+(x.hasEOL?"\n":" ")).join("").replace(/[ \t]+/g," ").trim());if(avance)avance(i,pdf.numPages)}
+  return{id,titulo,paginas,n:pdf.numPages,chars:paginas.reduce((a,b)=>a+b.length,0)};
+}
+function rango(str,n){const m=String(str||"").match(/(\d+)\s*[-–a]\s*(\d+)/);if(!m)return[1,n];const a=Math.max(1,+m[1]),b=Math.min(n,+m[2]);return a<=b?[a,b]:[1,n]}
+function textoDoc(d,r){const [a,b]=rango(r,d.paginas.length);return d.paginas.slice(a-1,b).map((t,i)=>"[p. "+(a+i)+"]\n"+t).join("\n")}
+
+/* --- motor de IA --- */
+function iaCfg(){return Object.assign({modo:"servidor",gkey:"",gmodelo:"gemini-3.8-flash",akey:"",amodelo:"claude-sonnet-5-5"},lsGet("breve-ia")||{})}
+function iaGuardar(c){lsSet("breve-ia",c)}
+function iaNombre(c){return c.modo==="gemini"?"Gemini con tu key":c.modo==="anthropic"?"Claude con tu key":"el servidor de Breve Económico (cupo diario)"}
+async function iaLlamar(tipo,docs,pedido){
+  const c=iaCfg();const lim=LIM_CHARS[c.modo]||200000;
+  if(c.modo==="servidor"){
+    if(!S.nube.user)throw new Error(S.lang==="es"?"Para usar el servidor iniciá sesión en Ajustes (es gratis), o cargá tu propia key.":"Sign in under Settings to use the server, or add your own key.");
+    const tok=await S.nube.user.getIdToken();
+    const r=await fetch(WORKER_URL+"/generar",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+tok},body:JSON.stringify({tipo,docs:docs.map(d=>({titulo:d.titulo,texto:d.texto.slice(0,lim),paginas:d.paginas})),pedido})});
+    const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||("El servidor respondió "+r.status));return j.texto;
+  }
+  const pr=tipo==="ruta"?P.promptRuta(docs,pedido,lim):P.promptBrief(docs,pedido,lim);
+  if(c.modo==="gemini"){
+    if(!c.gkey)throw new Error("Falta tu key de Gemini en Ajustes.");
+    const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(c.gmodelo)+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":c.gkey},
+      body:JSON.stringify({systemInstruction:{parts:[{text:pr.sistema}]},contents:[{role:"user",parts:[{text:pr.usuario}]}],generationConfig:{temperature:0.4,maxOutputTokens:16384,responseMimeType:"application/json"}})});
+    const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Gemini respondió "+r.status));
+    const ps=(((j.candidates||[])[0]||{}).content||{}).parts||[];return ps.filter(p=>p.text&&!p.thought).map(p=>p.text).join("");
+  }
+  if(!c.akey)throw new Error("Falta tu key de Anthropic en Ajustes.");
+  const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":c.akey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+    body:JSON.stringify({model:c.amodelo,max_tokens:16000,system:pr.sistema,messages:[{role:"user",content:pr.usuario}]})});
+  const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Anthropic respondió "+r.status));
+  return (j.content||[]).filter(x=>x.type==="text").map(x=>x.text).join("");
+}
+async function iaJSON(tipo,docs,pedido,validar){
+  let ultimo;
+  for(let intento=0;intento<2;intento++){
+    const t=await iaLlamar(tipo,docs,pedido);
+    try{return validar(P.extraerJSON(t))}catch(e){ultimo=e}
+  }
+  throw new Error((S.lang==="es"?"La respuesta del modelo no sirvió: ":"The model's answer was unusable: ")+ultimo.message);
+}
+
+/* --- vistas --- */
+function campo(lbl,ctrl,nota){return h("div",{class:"campo"},h("span",{class:"lbl"},lbl),ctrl,nota?h("p",{class:"note"},nota):null)}
+function setEstado(t,err){E.estado=t;E.error=!!err;const el=document.getElementById("estado");if(el){el.textContent=t;el.className="estado"+(err?" error":"")}}
+function viewEstudio(){
+  const es=S.lang==="es";const c=iaCfg();
+  const lista=h("ul",{class:"docs"},E.docs.map((d,i)=>h("li",null,
+    h("span",{class:"t"},d.titulo,h("span",{class:"meta"},(d.rack?(es?"brief del rack · ":"rack brief · "):(d.n+(es?" págs · ":" pp · ")))+Math.round(d.chars/1000)+"k car."+(d.chars<200*d.n&&!d.rack?(es?" · parece escaneado: sin texto":" · looks scanned: no text"):""))),
+    d.rack?null:h("input",{type:"text",placeholder:es?"págs. 1-"+d.n:"pp. 1-"+d.n,value:d.rango||"",title:es?"Rango de páginas a usar":"Page range to use",on:{change:e=>{d.rango=e.target.value}}}),
+    h("button",{class:"mini",type:"button",on:{click:()=>{E.docs.splice(i,1);viewEstudio()}}},"✕"))));
+  const fileIn=h("input",{type:"file",accept:".pdf,.txt,.md",multiple:true,style:"display:none",on:{change:e=>subir([...e.target.files])}});
+  const drop=h("div",{class:"drop",tabindex:"0",role:"button",on:{click:()=>fileIn.click(),keydown:e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();fileIn.click()}},
+    dragover:e=>{e.preventDefault();drop.classList.add("sobre")},dragleave:()=>drop.classList.remove("sobre"),drop:e=>{e.preventDefault();drop.classList.remove("sobre");subir([...e.dataTransfer.files])}}},
+    es?"Tocá o arrastrá acá tus PDF (papers, capítulos, apuntes). Se leen en tu navegador; no se suben a ningún lado.":"Tap or drop your PDFs here. They are read in your browser and never uploaded.");
+  const conBrief=S.lecciones.filter(l=>!l.mia);
+  const selRack=h("select",{on:{change:async e=>{const id=e.target.value;if(!id)return;const l=await getLec(id);const t=briefATexto(l);E.docs.push({id:"r-"+id,titulo:l.titulo,rack:true,n:1,chars:t.length,texto:t});viewEstudio()}}},
+    h("option",{value:""},es?"Sumar un brief del rack como material…":"Add a rack brief as material…"),conBrief.map(l=>h("option",{value:l.id},l.titulo)));
+  const obj=h("textarea",{placeholder:es?"Ej.: quiero entender el traspaso del tipo de cambio a precios y cómo se estima con VAR, con foco en Argentina":"E.g.: I want to understand exchange-rate pass-through and how it is estimated with VARs",on:{input:e=>E.objetivo=e.target.value}},E.objetivo);
+  const niv=h("select",{on:{change:e=>E.nivel=e.target.value}},["introductorio","intermedio","avanzado"].map(n=>{const o=h("option",{value:n},n);if(E.nivel===n)o.selected=true;return o}));
+  const ENF=["intuición","mecanismo","modelo","matemática","econometría","evidencia empírica","Argentina","historia del pensamiento"];
+  const enf=h("div",{class:"checks"},ENF.map(x=>h("label",null,h("input",{type:"checkbox",checked:E.enfasis.includes(x),on:{change:e=>{const s=new Set(E.enfasis);e.target.checked?s.add(x):s.delete(x);E.enfasis=[...s]}}}),x)));
+  const dias=h("input",{type:"number",min:"1",max:"60",placeholder:es?"opcional":"optional",value:E.dias,on:{input:e=>E.dias=e.target.value}});
+  const listo=E.docs.length>0;
+  const nodes=[h("p",{class:"eyebrow c"},es?"Mi estudio":"My study"),
+    h("h1",{class:"c",style:"font-size:26px"},es?"Armá tu ruta con tus documentos":"Build a path from your documents"),
+    h("p",{class:"j"},es?"Subí los PDF que tengas (papers, capítulos de libros, apuntes de cátedra), contá qué querés aprender y la app arma una ruta de briefs de 15 minutos con preguntas de control. Cada brief se genera cuando lo vas a leer y queda guardado.":"Upload your PDFs, say what you want to learn, and the app builds a path of 15-minute briefs with check questions. Each brief is generated when you are about to read it and is saved."),
+    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"1. Material":"1. Material"),drop,fileIn,selRack,lista),
+    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"2. Qué querés aprender":"2. What you want to learn"),
+      campo(es?"Objetivo y qué profundizar":"Goal and what to go deeper on",obj),
+      campo(es?"Nivel":"Level",niv),
+      campo(es?"Énfasis":"Emphasis",enf),
+      campo(es?"Días que tenés (opcional)":"Days available (optional)",dias)),
+    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"3. Armar":"3. Build"),
+      h("p",{class:"c note"},(es?"Motor: ":"Engine: ")+iaNombre(c)+". ",h("a",{href:"#ajustes"},es?"Cambiar":"Change")),
+      h("div",{class:"fila2"},
+        h("button",{class:"btn",type:"button",disabled:!listo||E.ocupado,on:{click:armarRuta}},es?"Armar la ruta":"Build the path"),
+        h("button",{class:"btn ghost",type:"button",disabled:!listo||E.ocupado,on:{click:briefUnico}},es?"Un solo brief":"Single brief")),
+      h("p",{id:"estado",class:"estado"+(E.error?" error":"")},E.estado)),
+    E.plan?vistaPlan():null];
+  mount(...nodes);
+}
+function briefATexto(l){return [l.titulo,l.intro].concat(...l.secciones.map(s=>[s.t].concat(s.p,(s.eq||[]).map(e=>"$$"+e+"$$")))).concat(l.claves).join("\n\n")}
+async function subir(fs){
+  const es=S.lang==="es";E.ocupado=true;
+  for(const f of fs){
+    if(!/\.(pdf|txt|md)$/i.test(f.name)){setEstado((es?"Formato no admitido: ":"Unsupported: ")+f.name,true);continue}
+    try{setEstado((es?"Leyendo ":"Reading ")+f.name+"…");
+      const d=await leerArchivo(f,(i,n)=>setEstado((es?"Leyendo ":"Reading ")+f.name+" · "+i+"/"+n));
+      await docGuardar(d);E.docs.push({id:d.id,titulo:d.titulo,n:d.n,chars:d.chars});
+    }catch(e){setEstado((es?"No pude leer ":"Could not read ")+f.name+": "+e.message,true)}
+  }
+  E.ocupado=false;if(!E.error)E.estado="";viewEstudio();
+}
+async function materialDe(idxs,rangos){
+  const out=[];
+  for(const i of idxs){const d=E.docs[i];if(!d)continue;
+    if(d.rack){out.push({titulo:d.titulo,texto:d.texto,paginas:1});continue}
+    const full=await docLeer(d.id);if(!full)continue;
+    out.push({titulo:d.titulo,texto:textoDoc(full,(rangos&&rangos[i])||d.rango),paginas:full.n});
+  }
+  return out;
+}
+function pedidoBase(){return{objetivo:E.objetivo,nivel:E.nivel,enfasis:E.enfasis,dias:E.dias}}
+async function armarRuta(){
+  const es=S.lang==="es";E.ocupado=true;setEstado(es?"Armando la ruta… (puede tardar un minuto)":"Building the path…");
+  try{
+    const docs=await materialDe(E.docs.map((_,i)=>i));
+    const plan=await iaJSON("ruta",docs.map(d=>({titulo:d.titulo,texto:d.texto,paginas:d.paginas})),pedidoBase(),P.validarRuta);
+    plan.pasos.forEach(p=>{p.docs=p.docs.filter(n=>n>=0&&n<E.docs.length);if(!p.docs.length)p.docs=[0];p.usar=true});
+    E.plan=plan;setEstado("");
+  }catch(e){setEstado(e.message,true)}
+  E.ocupado=false;viewEstudio();
+}
+function vistaPlan(){
+  const es=S.lang==="es";const p=E.plan;
+  const nombre=h("input",{type:"text",value:p.titulo,on:{input:e=>p.titulo=e.target.value}});
+  return h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"4. Revisá la ruta":"4. Review the path"),
+    campo(es?"Nombre":"Name",nombre),h("p",{class:"j"},p.descripcion),
+    p.pasos.map((x,i)=>h("div",{class:"pasoplan"},h("input",{type:"checkbox",checked:x.usar,title:es?"Incluir":"Include",on:{change:e=>x.usar=e.target.checked}}),
+      h("div",{class:"t"},h("input",{type:"text",value:x.titulo,on:{input:e=>x.titulo=e.target.value}}),
+        h("p",{class:"note"},(i+1)+". "+x.foco),h("p",{class:"meta"},x.docs.map(n=>(E.docs[n]||{}).titulo).join(" · ")+(x.paginas?" · p. "+x.paginas:"")+" · "+nivName(x.nivel))))),
+    h("button",{class:"btn",type:"button",on:{click:guardarPlan}},es?"Guardar la ruta y ponerla en foco":"Save the path and focus it"));
+}
+function nuevaRuta(titulo,descripcion,pasos){
+  const r={id:"mi-"+Date.now().toString(36),tipo:"mia",nombre:titulo,desc:descripcion,pedido:pedidoBase(),
+    docs:E.docs.map(d=>d.rack?{id:d.id,titulo:d.titulo,rack:true,texto:d.texto,n:1,chars:d.chars}:{id:d.id,titulo:d.titulo,n:d.n,chars:d.chars,rango:d.rango||""}),
+    pasos,pasos_t:Date.now(),t:Date.now()};
+  S.mis.rutas.push(r);S.est.cfg.foco=r.id;guardarMis();save(true);return r;
+}
+function guardarPlan(){
+  const p=E.plan;const pasos=p.pasos.filter(x=>x.usar).map(x=>({titulo:x.titulo,foco:x.foco,docs:x.docs,paginas:x.paginas,nivel:x.nivel,lec:null}));
+  if(!pasos.length)return;
+  const r=nuevaRuta(p.titulo,p.descripcion,pasos);E.plan=null;E.docs=[];location.hash="#ruta-"+encodeURIComponent(r.id);
+}
+async function briefUnico(){
+  const titulo=E.docs.length===1?E.docs[0].titulo:(S.lang==="es"?"Brief a medida":"Custom brief");
+  const r=nuevaRuta(titulo,E.objetivo,[{titulo,foco:E.objetivo,docs:E.docs.map((_,i)=>i),paginas:"",nivel:"C",lec:null}]);
+  E.docs=[];E.plan=null;location.hash="#ruta-"+encodeURIComponent(r.id);setTimeout(()=>generarPaso(r,0),50);
+}
+async function generarPaso(r,i){
+  const es=S.lang==="es";const p=r.pasos[i];if(p.lec||E.ocupado)return;E.ocupado=true;
+  setEstado(es?"Escribiendo el brief… suele tardar entre 30 segundos y 2 minutos.":"Writing the brief… usually 30 s to 2 min.");
+  try{
+    const docs=[];const faltan=[];
+    for(const n of p.docs){const d=r.docs[n];if(!d)continue;
+      if(d.rack){docs.push({titulo:d.titulo,texto:d.texto,paginas:1});continue}
+      const full=await docLeer(d.id);if(!full){faltan.push(d.titulo);continue}
+      docs.push({titulo:d.titulo,texto:textoDoc(full,p.paginas||d.rango),paginas:full.n});
+    }
+    if(!docs.length)throw new Error((es?"Este dispositivo no tiene el texto de: ":"This device lacks the text of: ")+faltan.join(", ")+(es?". Volvé a subir el PDF en esta ruta.":". Re-upload the PDF in this path."));
+    const pedido=Object.assign({},r.pedido||{},{foco:p.titulo+". "+p.foco});
+    const b=await iaJSON("brief",docs,pedido,P.validarBrief);
+    const l=Object.assign(b,{id:r.id+"-"+(i+1),cat:r.id,orden:i+1,mia:true,docs:docs.map(d=>d.titulo),fuentes:[],creado:Date.now(),motor:iaNombre(iaCfg())});
+    l.preguntas.forEach((q,k)=>q.id=l.id+"-q"+(k+1));
+    S.mis.lecciones[l.id]=l;registrarMia(l);p.lec=l.id;r.t=Date.now();guardarMis();
+    E.ocupado=false;setEstado("");location.hash="#l-"+encodeURIComponent(l.id);return;
+  }catch(e){setEstado(e.message,true)}
+  E.ocupado=false;
+}
+async function resubir(r,fs){
+  const es=S.lang==="es";
+  for(const f of fs){const d=await leerArchivo(f).catch(()=>null);if(!d)continue;
+    const k=r.docs.findIndex(x=>!x.rack&&x.titulo===d.titulo)>=0?r.docs.findIndex(x=>!x.rack&&x.titulo===d.titulo):r.docs.findIndex(x=>!x.rack&&x.n===d.n);
+    if(k<0){setEstado((es?"No coincide con ningún documento de la ruta: ":"Matches no document in this path: ")+f.name,true);continue}
+    d.id=r.docs[k].id;await docGuardar(d);
+  }
+  viewMiRuta(r);
+}
+function viewMiRuta(r){
+  const es=S.lang==="es";const enFoco=S.est.cfg.foco===r.id;
+  const reup=h("input",{type:"file",accept:".pdf,.txt,.md",multiple:true,style:"display:none",on:{change:e=>resubir(r,[...e.target.files])}});
+  mount(h("p",{class:"eyebrow c"},h("a",{href:"#rutas"},es?"Mi estudio":"My study")),
+    h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},r.nombre),
+    r.desc?h("p",{class:"j"},r.desc):null,
+    h("button",{class:"btn"+(enFoco?" ghost":""),type:"button",on:{click:()=>{S.est.cfg.foco=enFoco?"":r.id;save(true);viewMiRuta(r)}}},enFoco?(es?"Quitar el foco":"Remove focus"):(es?"Poner en foco":"Focus this path")),
+    h("section",{class:"block rule"},
+      h("ul",{class:"plist pasos"},r.pasos.map((p,i)=>{const l=p.lec&&S.lecById[p.lec];const d=l&&S.est.lecciones[l.id];
+        return h("li",null,h("span",{class:"num"},String(i+1)),
+          h("span",{class:"t"},l?h("a",{href:"#l-"+encodeURIComponent(l.id)},l.titulo):h("span",null,p.titulo),h("span",{class:"meta"},p.foco)),
+          l?h("span",{class:"tag"+(d?" leido":" on")},d?d.ok+"/"+d.n:(es?"para leer":"to read")):
+            h("button",{class:"mini",type:"button",disabled:E.ocupado,on:{click:()=>generarPaso(r,i)}},es?"Generar":"Generate"))})),
+      h("p",{id:"estado",class:"estado"+(E.error?" error":"")},E.estado)),
+    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow c"},es?"Documentos de la ruta":"Documents in this path"),
+      h("ul",null,r.docs.map(d=>h("li",null,d.titulo+(d.rack?(es?" (brief del rack)":" (rack brief)"):"")))),
+      h("p",{class:"note j"},es?"El texto de tus PDF queda solo en este dispositivo. Si cambiás de compu o de celular, volvé a subirlos acá para generar los pasos que faltan; los briefs ya generados se sincronizan si iniciaste sesión.":"Your PDFs' text stays on this device. On another device, re-upload them here to generate the remaining steps; generated briefs sync if you are signed in."),
+      h("button",{class:"btn ghost",type:"button",on:{click:()=>reup.click()}},es?"Volver a subir los PDF":"Re-upload the PDFs"),reup,
+      h("p",{class:"c small"},h("a",{href:"#",on:{click:e=>{e.preventDefault();if(confirmarBorrar(r))location.hash="#rutas"}}},es?"Borrar esta ruta":"Delete this path"))));
+}
+function confirmarBorrar(r){
+  const i=S.mis.rutas.indexOf(r);if(i<0)return false;
+  S.mis.rutas.splice(i,1);r.pasos.forEach(p=>{if(p.lec){delete S.mis.lecciones[p.lec];const k=S.lecciones.findIndex(x=>x.id===p.lec);if(k>=0)S.lecciones.splice(k,1);delete S.lecById[p.lec];
+    if(S.nube.user&&S.nube.db)docU().collection("lecciones").doc(p.lec).delete().catch(()=>{})}});
+  if(S.est.cfg.foco===r.id)S.est.cfg.foco="";guardarMis();save(true);return true;
+}
+
+/* --- Ajustes: cuenta, IA y copia --- */
+function seccionCuenta(){
+  const es=S.lang==="es";const N=S.nube;
+  if(!FIREBASE_CONFIG)return null;
+  return h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Cuenta":"Account"),
+    N.user?h("p",{class:"c"},(es?"Sesión iniciada como ":"Signed in as ")+(N.user.email||N.user.displayName||"")+". "+(es?"Tu progreso y tus briefs se guardan en la nube.":"Your progress and briefs are saved to the cloud.")):
+      h("p",{class:"j"},es?"Iniciá sesión con Google para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo y generar briefs con el servidor de la app (gratis, con un cupo diario).":"Sign in with Google to sync progress and briefs and to generate briefs with the app's server (free, daily quota)."),
+    N.error?h("p",{class:"estado error"},N.error):null,
+    N.listo?(N.user?h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"):h("button",{class:"btn",type:"button",on:{click:nubeEntrar}},es?"Entrar con Google":"Sign in with Google")):(N.error?null:h("p",{class:"c note"},es?"Cargando…":"Loading…")));
+}
+function seccionIA(){
+  const es=S.lang==="es";const c=iaCfg();
+  const g=k=>e=>{c[k]=e.target.value.trim();iaGuardar(c)};
+  const modo=h("select",{on:{change:e=>{c.modo=e.target.value;iaGuardar(c);viewAjustes()}}},
+    [["servidor",es?"Servidor de la app (gratis, con cupo diario; requiere iniciar sesión)":"App server (free, daily quota; sign-in required)"],["gemini",es?"Mi propia key de Gemini (Google AI Studio)":"My own Gemini key"],["anthropic",es?"Mi propia key de Anthropic (Claude)":"My own Anthropic key"]].map(([v,t])=>{const o=h("option",{value:v},t);if(c.modo===v)o.selected=true;return o}));
+  return h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Inteligencia artificial":"AI engine"),
+    h("p",{class:"j"},es?"Con qué modelo se escriben los briefs de Mi estudio. Con una key propia el uso corre por tu cuenta y no tiene cupo; la key se guarda solo en este navegador y viaja directo al proveedor.":"Which model writes My study briefs. With your own key usage is on you and has no quota; the key stays in this browser and goes straight to the provider."),
+    campo(es?"Motor":"Engine",modo),
+    c.modo==="gemini"?[campo("Key de Gemini",h("input",{type:"password",value:c.gkey,placeholder:"AIza…",on:{change:g("gkey")}}),es?"Se saca gratis en aistudio.google.com/apikey. En el nivel gratuito Google puede usar los datos para mejorar sus modelos.":"Free at aistudio.google.com/apikey. On the free tier Google may use the data."),
+      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.gmodelo,on:{change:g("gmodelo")}}))]:null,
+    c.modo==="anthropic"?[campo("Key de Anthropic",h("input",{type:"password",value:c.akey,placeholder:"sk-ant-…",on:{change:g("akey")}}),es?"Se crea en console.anthropic.com. Es de pago por uso.":"Create it at console.anthropic.com. Pay as you go."),
+      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.amodelo,on:{change:g("amodelo")}}))]:null);
+}
+function exportar(){
+  const blob=new Blob([JSON.stringify({version:1,estado:S.est,mis:S.mis},null,0)],{type:"application/json"});
+  const a=h("a",{href:URL.createObjectURL(blob),download:"breve-economico-"+new Date().toISOString().slice(0,10)+".json"});document.body.append(a);a.click();a.remove();
+}
+async function importar(e){
+  const f=e.target.files[0];if(!f)return;
+  try{const j=JSON.parse(await f.text());if(!j.estado)throw new Error("archivo inválido");
+    S.est=Object.assign(defaultEst(),j.estado);S.est.cfg=Object.assign(defaultEst().cfg,j.estado.cfg||{});
+    if(j.mis){j.mis.rutas.forEach(x=>{if(!S.mis.rutas.some(y=>y.id===x.id))S.mis.rutas.push(x)});Object.values(j.mis.lecciones||{}).forEach(l=>{S.mis.lecciones[l.id]=l;registrarMia(l)})}
+    guardarMis();save(true);S.lang=S.est.cfg.lang||"es";route();
+  }catch(err){mount(h("div",{class:"empty"},h("p",null,(S.lang==="es"?"No se pudo cargar la copia: ":"Could not load the copy: ")+err.message),h("p",null,h("a",{href:"#ajustes"},tr("volver")))))}
+}
+
+
+setNav("hoy");
+boot();
+})();
+</script>
+</body>
+</html>
