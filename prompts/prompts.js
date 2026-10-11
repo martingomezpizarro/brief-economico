@@ -22,6 +22,11 @@
      "op": {"es": ["A", "B", "C", "D"], "en": ["A", "B", "C", "D"]},
      "ok": 0,
      "exp": {"es": "por qué es la correcta", "en": "why it is correct"}}
+  ],
+  "tarjetas": [
+    {"tipo": "concepto | idea | mecanismo | modelo | econometria | resultado | critica | aplicacion",
+     "q": {"es": "pregunta corta", "en": "short question"},
+     "a": {"es": "respuesta de una a tres oraciones", "en": "one-to-three sentence answer"}}
   ]
 }`;
 
@@ -45,6 +50,12 @@ PREGUNTAS DE CONTROL
 - Se tienen que poder responder con lo que dice el brief. Mezclá: idea central, mecanismo, modelo, datos y método, resultados con números, y una de aplicación.
 - Distractores plausibles (errores típicos), nunca absurdos. Variá la posición de la correcta ("ok" es el índice 0 a 3).
 - "exp" explica en una o dos oraciones por qué es la correcta.
+
+TARJETAS DE APRENDIZAJE
+- Entre 6 y 8 tarjetas de pregunta y respuesta abierta, en castellano y en inglés, para el repaso espaciado de los días siguientes.
+- Cada tarjeta fija una sola idea: un concepto, un mecanismo, un supuesto del modelo, un dato o un resultado con su número.
+- No repitas las preguntas de control: las tarjetas se responden de memoria, sin opciones.
+- La respuesta tiene que poder recordarse: de una a tres oraciones, con el número o el nombre exacto cuando lo haya.
 
 FORMATO
 Respondé SOLO con un objeto JSON válido, sin texto antes ni después, con esta forma:
@@ -131,6 +142,12 @@ ${ESQUEMA_RUTA}`;
       exp: { es: (q.exp && q.exp.es) || "", en: (q.exp && (q.exp.en || q.exp.es)) || "" },
     }));
     if (b.preguntas.length < 4) throw new Error("Tiene menos de 4 preguntas válidas.");
+    const TIPOS = ["concepto", "idea", "mecanismo", "modelo", "econometria", "resultado", "critica", "aplicacion"];
+    b.tarjetas = (Array.isArray(b.tarjetas) ? b.tarjetas : []).filter(c => c && c.q && c.a && txt(c.q.es) && txt(c.a.es)).slice(0, 10).map(c => ({
+      tipo: TIPOS.includes(c.tipo) ? c.tipo : "concepto",
+      q: { es: c.q.es, en: txt(c.q.en) ? c.q.en : c.q.es },
+      a: { es: c.a.es, en: txt(c.a.en) ? c.a.en : c.a.es },
+    }));
     b.bajada = txt(b.bajada) ? b.bajada : "";
     b.cita = txt(b.cita) ? b.cita : "";
     b.palabras = [b.intro].concat(...b.secciones.map(s => s.p)).join(" ").split(/\s+/).length;
