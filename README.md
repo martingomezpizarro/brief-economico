@@ -1,8 +1,8 @@
-# Breve Económico
+# Prebisch
 
 Briefs diarios de economía: lecturas de 15 minutos que enseñan un paper, un capítulo o un tema desde cero, con preguntas de control y repaso espaciado. Y **Mi estudio**: subís tus PDF, contás qué querés aprender y la app arma una ruta de briefs a tu medida.
 
-**https://briefeconomico.martingomezpizarro.com.ar**
+**https://prebisch.martingomezpizarro.com.ar**
 
 ## Qué tiene
 - **Hoy**: el brief del día (de la ruta que tengas en foco) y el repaso de las preguntas que ya respondiste.

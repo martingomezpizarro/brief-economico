@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Breve Económico</title>
+<title>Prebisch</title>
 <meta name="description" content="Briefs diarios de economía: lecturas de 15 minutos sobre papers y libros, preguntas de control y repaso espaciado. Armá tu propia ruta de estudio con tus PDFs.">
 <meta name="theme-color" content="#FAF5EC">
 <link rel="icon" href="icono.svg" type="image/svg+xml">
@@ -177,7 +177,7 @@ select{min-width:0;max-width:100%}
 <body>
 <div class="wrap" id="wrap">
   <header class="bar">
-    <a class="brand" href="#hoy">Breve Económico</a>
+    <a class="brand" href="#hoy">Prebisch</a>
     <nav class="nav" aria-label="Secciones">
       <a href="#hoy" id="n-hoy">Hoy</a>
       <a href="#rutas" id="n-rutas">Rutas</a>
@@ -192,7 +192,7 @@ select{min-width:0;max-width:100%}
   </header>
   <main id="main" class="wrap">
     <div class="empty" id="boot">
-      <p class="c">Cargando Breve Económico…</p>
+      <p class="c">Cargando Prebisch…</p>
       <p class="note c">Acá van a aparecer el paper del día, las tarjetas pendientes y tu progreso por caja.</p>
     </div>
   </main>
@@ -206,7 +206,7 @@ window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},svg:{fontCache:"global"},startu
 <script>
 (function(){
 "use strict";
-const APP_URL="https://briefeconomico.martingomezpizarro.com.ar/#hoy";
+const APP_URL="https://prebisch.martingomezpizarro.com.ar/#hoy";
 const REPO="martingomezpizarro/brief-economico";
 /* Cuenta y nube (opcional). Mientras FIREBASE_CONFIG sea null, todo queda en el navegador. */
 const FIREBASE_CONFIG={apiKey:"AIzaSyCHr-SsywyK6LjR7I-lL7CTFx5mMl5onac",authDomain:"idoneidad-48c77.firebaseapp.com",projectId:"idoneidad-48c77",storageBucket:"idoneidad-48c77.firebasestorage.app",messagingSenderId:"464715523781",appId:"1:464715523781:web:5681f01516c999a239f2ac"};
@@ -783,7 +783,7 @@ function calUrl(){
   const ini=d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"T"+p(H)+p(M)+"00";
   const e=new Date(d.getFullYear(),d.getMonth(),d.getDate(),H,M+cfg.minutos);
   const fin=e.getFullYear()+p(e.getMonth()+1)+p(e.getDate())+"T"+p(e.getHours())+p(e.getMinutes())+"00";
-  const q=new URLSearchParams({action:"TEMPLATE",text:"Breve Económico · repaso",details:"Sesión de microlearning de papers"+(APP_URL?": "+APP_URL:"."),dates:ini+"/"+fin,ctz:"America/Argentina/Cordoba",recur:"RRULE:FREQ=DAILY"});
+  const q=new URLSearchParams({action:"TEMPLATE",text:"Prebisch · repaso",details:"Sesión de microlearning de papers"+(APP_URL?": "+APP_URL:"."),dates:ini+"/"+fin,ctz:"America/Argentina/Cordoba",recur:"RRULE:FREQ=DAILY"});
   return "https://calendar.google.com/calendar/render?"+q.toString();
 }
 
@@ -814,7 +814,7 @@ function textoDoc(d,r){const [a,b]=rango(r,d.paginas.length);return d.paginas.sl
 /* --- motor de IA --- */
 function iaCfg(){return Object.assign({modo:"servidor",gkey:"",gmodelo:"gemini-3.8-flash",akey:"",amodelo:"claude-sonnet-5-5"},lsGet("breve-ia")||{})}
 function iaGuardar(c){lsSet("breve-ia",c)}
-function iaNombre(c){return c.modo==="gemini"?"Gemini con tu key":c.modo==="anthropic"?"Claude con tu key":"el servidor de Breve Económico (cupo diario)"}
+function iaNombre(c){return c.modo==="gemini"?"Gemini con tu key":c.modo==="anthropic"?"Claude con tu key":"el servidor de Prebisch (cupo diario)"}
 async function iaLlamar(tipo,docs,pedido){
   const c=iaCfg();const lim=LIM_CHARS[c.modo]||200000;
   if(c.modo==="servidor"){

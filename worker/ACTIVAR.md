@@ -32,7 +32,7 @@ Con el nivel gratuito de Gemini hay límites por minuto y por día; si se supera
 ## 5. Firebase (las cuentas)
 La página usa el mismo proyecto que idoneidad (`idoneidad-48c77`), así una cuenta sirve para las dos páginas.
 
-1. **Authentication → Settings → Authorized domains → Add domain** → `briefeconomico.martingomezpizarro.com.ar`.
+1. **Authentication → Settings → Authorized domains → Add domain** → `prebisch.martingomezpizarro.com.ar`.
 2. **Firestore → Rules**: sumá el bloque `brief` sin borrar el de `usuarios` y **Publish**. Quedan así:
 
 ```
@@ -46,7 +46,7 @@ service cloud.firestore {
                            && doc in ['quiz', 'micro'];
       }
     }
-    // Breve Económico: cada persona lee y escribe solo lo suyo.
+    // Prebisch: cada persona lee y escribe solo lo suyo.
     match /brief/{uid} {
       allow read, write: if request.auth != null && request.auth.uid == uid;
       match /lecciones/{id} {
