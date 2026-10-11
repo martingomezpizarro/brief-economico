@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Logos Prebisch</title>
+<style>
+:root{--bg:#FAF5EC;--surface:#FFFDF8;--line:#E8DCC9;--ink:#3A2A22;--muted:#6A4940;--accent:#8A4F2A;--cream:#FAF5EC}
+@media (prefers-color-scheme:dark){:root{--bg:#1C1612;--surface:#241D18;--line:#352A22;--ink:#EFE6DA;--muted:#C2AE9D}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 "Source Serif 4",Georgia,serif}
+main{max-width:1000px;margin:0 auto;padding:24px 16px 48px}
+h1{font-size:28px;margin:0 0 4px}p.lead{color:var(--muted);margin:0 0 24px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:16px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:16px}
+.card h2{font-size:18px;margin:0 0 2px}.n{font:500 12px "IBM Plex Mono",monospace;color:var(--muted)}
+.row{display:flex;align-items:flex-end;gap:12px;margin:12px 0}
+.row svg{display:block}.cap{font:11px "IBM Plex Mono",monospace;color:var(--muted);text-align:center;margin-top:4px}
+.badge{background:#5f6368;border-radius:50%;padding:4px}
+.card p{margin:6px 0 0;font-size:14px}.chip{display:inline-block;font:11px "IBM Plex Mono",monospace;border:1px solid var(--line);border-radius:99px;padding:1px 8px;margin-top:8px}
+.rec{outline:2px solid var(--accent)}
+</style></head><body><main>
+<h1>Prebisch: 10 logos</h1>
+<p class="lead">Cada uno en tres tamaños (app, pestaña, favicon), en modo oscuro y como insignia de notificación (silueta de un color, como la muestra Android).</p>
+<div class="grid" id="g"></div>
+</main>
+<script>
+const SERIF='Source Serif 4,Georgia,serif';
+const L=[
+{t:"Monograma P",d:"Una P en serif, como el lomo de un libro. Lo más académico y sobrio.",m:f=>`<text x="32" y="47" text-anchor="middle" font-family="${SERIF}" font-weight="600" font-size="42" fill="${f}">P</text>`,nota:"Con letra: hay que pasarla a trazos para que no dependa de la fuente."},
+{t:"Centro y periferia",d:"El concepto central de Prebisch: un núcleo y los puntos que giran a su alrededor.",m:f=>`<circle cx="32" cy="32" r="6" fill="${f}"/><circle cx="32" cy="32" r="16" fill="none" stroke="${f}" stroke-width="3.5"/>${[45,135,225,315].map(a=>{const r=a*Math.PI/180;return `<circle cx="${32+24*Math.cos(r)}" cy="${32+24*Math.sin(r)}" r="3.5" fill="${f}"/>`}).join("")}`,nota:"Se lee bien hasta 16 px."},
+{t:"Términos de intercambio",d:"Ejes y una curva que cae: la tesis Prebisch-Singer en un trazo.",m:f=>`<path d="M14 12V50H52" fill="none" stroke="${f}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 20C30 24 34 38 48 42" fill="none" stroke="${f}" stroke-width="4.5" stroke-linecap="round"/><circle cx="48" cy="42" r="4" fill="${f}"/>`,nota:"Es el más \"economía\" de un vistazo."},
+{t:"Oferta y demanda",d:"El cruce que todo estudiante dibujó primero, con el punto de equilibrio marcado.",m:f=>`<path d="M12 12V52H52" fill="none" stroke="${f}" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 18L48 46M20 46L48 18" stroke="${f}" stroke-width="4" stroke-linecap="round"/><circle cx="34" cy="32" r="4.5" fill="${f}"/>`,nota:"Universal, pero lo usan muchas apps de economía."},
+{t:"Libro con gráfico",d:"Un libro abierto con una serie en la página: lectura y datos.",m:f=>`<path d="M8 18Q20 14 32 20Q44 14 56 18V48Q44 44 32 50Q20 44 8 48Z" fill="none" stroke="${f}" stroke-width="3.5" stroke-linejoin="round"/><path d="M32 20V50" stroke="${f}" stroke-width="3"/><path d="M38 40L43 33L47 36L52 28" fill="none" stroke="${f}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>`,nota:"El gráfico se pierde por debajo de 24 px."},
+{t:"Ficha de 15 minutos",d:"Dos fichas apiladas con «15′»: el formato brief y el repaso.",m:f=>`<rect x="18" y="12" width="34" height="26" rx="4" fill="none" stroke="${f}" stroke-width="3" opacity=".55"/><rect x="12" y="22" width="36" height="28" rx="4" fill="none" stroke="${f}" stroke-width="3.5"/><text x="30" y="42" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-weight="500" font-size="12" fill="${f}">15′</text>`,nota:"Con texto chico: no sirve como favicon."},
+{t:"Cuarto de hora",d:"Un reloj con el cuarto lleno: 15 minutos por día, de a poco.",m:f=>`<circle cx="32" cy="32" r="20" fill="none" stroke="${f}" stroke-width="3.5"/><path d="M32 32V12A20 20 0 0 1 52 32Z" fill="${f}"/>`,nota:"La silueta más limpia: perfecta para notificaciones."},
+{t:"P de ejes",d:"Una P geométrica: el palo es el eje vertical y la panza es una curva.",m:f=>`<path d="M22 52V12H34A12 12 0 0 1 34 36H22" fill="none" stroke="${f}" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><path d="M16 52H48" stroke="${f}" stroke-width="3.5" stroke-linecap="round"/>`,nota:"Junta el nombre con un gráfico. Funciona a 16 px."},
+{t:"Sello académico",d:"Un sello de doble anillo con la P: biblioteca, cátedra, ex libris.",m:f=>`<circle cx="32" cy="32" r="25" fill="none" stroke="${f}" stroke-width="2.5"/><circle cx="32" cy="32" r="20" fill="none" stroke="${f}" stroke-width="1.5"/><text x="32" y="42" text-anchor="middle" font-family="${SERIF}" font-weight="600" font-size="28" fill="${f}">P</text>`,nota:"Los anillos finos se empastan en tamaño chico."},
+{t:"Escalones",d:"Peldaños que suben hasta un punto: avanzar de a poco, brief a brief.",m:f=>`<path d="M10 52H22V42H34V32H46V22" fill="none" stroke="${f}" stroke-width="4.5" stroke-linejoin="round" stroke-linecap="round"/><circle cx="50" cy="14" r="5" fill="${f}"/>`,nota:"Liviano y claro en cualquier tamaño."}
+];
+const REC=[6,7,1];
+const tile=(m,bg,fg,s,rx=14)=>`<svg width="${s}" height="${s}" viewBox="0 0 64 64"><rect width="64" height="64" rx="${rx}" fill="${bg}"/>${m(fg)}</svg>`;
+document.getElementById("g").innerHTML=L.map((o,i)=>`<div class="card${REC.includes(i)?" rec":""}"><div class="n">${String(i+1).padStart(2,"0")}${REC.includes(i)?" · recomendado":""}</div><h2>${o.t}</h2>
+<div class="row">
+<div>${tile(o.m,"#8A4F2A","#FAF5EC",88)}<div class="cap">app</div></div>
+<div>${tile(o.m,"#241D18","#D9A06A",56)}<div class="cap">oscuro</div></div>
+<div>${tile(o.m,"#8A4F2A","#FAF5EC",32,10)}<div class="cap">32</div></div>
+<div>${tile(o.m,"#8A4F2A","#FAF5EC",16,10)}<div class="cap">16</div></div>
+<div><div class="badge"><svg width="24" height="24" viewBox="0 0 64 64">${o.m("#fff")}</svg></div><div class="cap">notif.</div></div>
+</div><p>${o.d}</p><span class="chip">${o.nota}</span></div>`).join("");
+</script></body></html>
