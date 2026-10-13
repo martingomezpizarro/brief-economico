@@ -1,0 +1,358 @@
+{
+ "id": "ext-riesgo-07",
+ "cat": "ext-riesgo",
+ "orden": 11,
+ "minutos": 15,
+ "titulo": "Fundamentos en el largo plazo, estrés financiero en el corto: Bellas, Papaioannou y Petrova (2010)",
+ "bajada": "Un trabajo del FMI separa lo permanente de lo transitorio en los spreads emergentes: la deuda, la liquidez y el riesgo político fijan el nivel; el estrés financiero y la volatilidad global lo sacuden.",
+ "fuentes": [
+  1359
+ ],
+ "cita": "Bellas, Papaioannou y Petrova (2010)",
+ "intro": "En la crisis financiera de 2008-2009, los spreads soberanos de países desarrollados y emergentes se dispararon, y la explicación más común fue el aumento de la deuda pública por los rescates bancarios y los estímulos fiscales. Pero ¿los spreads siguen a los fundamentos o al pánico? Dimitri Bellas, Michael Papaioannou e Iva Petrova, economistas del FMI, responden que depende del horizonte. Con datos trimestrales de 14 emergentes entre 1997 y 2009 y un estimador que distingue largo y corto plazo, encuentran que los fundamentos macroeconómicos determinan el nivel de los spreads en el largo plazo, mientras que en el corto plazo pesa más la volatilidad financiera, medida por un índice de estrés financiero del propio FMI.",
+ "secciones": [
+  {
+   "t": "Qué agrega este trabajo",
+   "p": [
+    "La literatura estudió mucho la relación entre spreads e indicadores como la deuda, el déficit, las reservas, el crecimiento y las tasas, con regularidades poco estables. Ferrucci (2003) usó un modelo de corrección de errores y encontró que los mercados sí miran los fundamentos: deuda externa sobre PIB, apertura, amortizaciones sobre reservas y cuenta corriente, además de factores externos. Otros trabajos mostraron que en las crisis los fundamentos pierden peso frente a la volatilidad, la inestabilidad política y lo global.",
+    "El aporte de Bellas, Papaioannou y Petrova es incorporar al marco de Ferrucci un índice de estrés financiero de cada país, que mide la salud de su sistema financiero, y distinguir explícitamente su efecto de corto plazo del efecto de largo plazo de los fundamentos."
+   ]
+  },
+  {
+   "t": "El modelo: el estrés como amplificador transitorio",
+   "p": [
+    "Parten de la paridad de un bono emergente con el bono del Tesoro de Estados Unidos: el rendimiento esperado del bono emergente, descontando la probabilidad de default, debe igualar la tasa libre de riesgo. La novedad es que la probabilidad de default se multiplica por un índice de estrés financiero, que en el corto plazo puede amplificar o atenuar el riesgo y en el largo plazo vale uno. Un período de alto estrés sube transitoriamente la probabilidad de default y obliga a subir la tasa del país para mantener la paridad; en el largo plazo, la probabilidad depende solo de los fundamentos.",
+    "Con una restricción presupuestaria del gobierno en la que un default cierra el acceso al mercado por dos períodos, obtienen tres predicciones para el largo plazo: una mejor posición fiscal baja la probabilidad de default y el spread; una mayor deuda sobre el PIB los sube; y, mientras el stock de deuda supere al déficit fiscal (algo que se cumplía en todos los países de la muestra), una suba de la tasa libre de riesgo también los sube."
+   ],
+   "eq": [
+    "1 + r = (1+i)(1 - p\\,I_t)"
+   ],
+   "nota": "\\(r\\) es la tasa libre de riesgo, \\(i\\) la tasa del bono emergente, \\(p\\) la probabilidad de default e \\(I_t\\) el índice de estrés financiero, que vale uno en el largo plazo."
+  },
+  {
+   "t": "Variables y datos",
+   "p": [
+    "La variable a explicar es el spread del EMBI de J. P. Morgan para 14 países, del primer trimestre de 1997 al segundo de 2009. Los fundamentos son la deuda externa sobre el PIB, el balance fiscal y la cuenta corriente; los indicadores de liquidez, medidos contra las reservas: amortizaciones, intereses y deuda de corto plazo; la apertura comercial; y un índice de riesgo político. Las condiciones globales se miden con el VIX, la tasa de las Letras del Tesoro a tres meses y la pendiente de la curva estadounidense (diez años menos tres meses).",
+    "El índice de estrés financiero para emergentes del FMI combina la presión cambiaria, la beta del sector bancario (si las acciones de bancos se mueven más que el mercado, el sector se percibe más riesgoso), la caída de los precios de las acciones y la volatilidad bursátil. Para evitar endogeneidad, los autores le quitan su componente de spreads soberanos. Un índice continuo, a diferencia de las dummies de crisis, capta también los casi-accidentes, como la venta masiva de emergentes de junio de 2006."
+   ],
+   "nota": "Las deudas externa y pública tienen una correlación de 0,8, y los tres indicadores de liquidez están muy correlacionados entre sí, por lo que se incluyen de a uno en varias especificaciones."
+  },
+  {
+   "t": "Método: efectos fijos y Pooled Mean Group",
+   "p": [
+    "Estiman primero un modelo estático de efectos fijos y luego el estimador Pooled Mean Group de Pesaran, Shin y Smith. Este parte de un modelo dinámico con el spread rezagado, lo reescribe como corrección de errores e impone que los coeficientes de largo plazo sean iguales para todos los países, mientras deja que los de corto plazo y la velocidad de ajuste varíen por país. La idea es económicamente razonable: los mercados valúan los mismos fundamentos en el largo plazo, pero cada país reacciona distinto en la coyuntura."
+   ],
+   "eq": [
+    "\\Delta \\log s_{it} = \\phi_i\\left(\\log s_{i,t-1} - \\theta_i - \\sum_j \\beta_j x_{jit}\\right) + \\sum_j \\delta_{ji}\\,\\Delta x_{jit} + u_{it}"
+   ],
+   "nota": "\\(\\beta_j\\) son las elasticidades de largo plazo, comunes a todos los países; \\(\\delta_{ji}\\) y \\(\\phi_i\\) (la velocidad de ajuste) pueden variar por país. Que \\(\\phi_i\\) sea negativo indica que existe la relación de largo plazo."
+  },
+  {
+   "t": "Qué encontraron",
+   "p": [
+    "En efectos fijos, la especificación completa explica el 82,4% de la variación de los spreads. La deuda externa sobre el PIB y los indicadores de liquidez son significativos, y la suma de estos últimos es positiva: más necesidades de financiamiento frente a recursos líquidos suben el spread. Un punto más de deuda sobre el PIB sube el spread unos 2,8 puntos básicos. El VIX es positivo y significativo. Las tasas de Estados Unidos solo aparecen cuando se sacan algunas variables de liquidez, y entonces con fuerza: según los autores, un punto más en la tasa a tres meses sube el spread unos 7,5 puntos porcentuales, y un punto más de pendiente, otros 7. El índice de estrés es muy significativo: sin él, el poder explicativo cae 5 puntos. El balance fiscal no es significativo de manera consistente.",
+    "El Pooled Mean Group aclara los tiempos. La deuda, la cuenta corriente, la liquidez y el riesgo político son significativos en el largo plazo pero no en el corto: fijan el nivel de equilibrio. La apertura baja los spreads en el largo plazo, aunque en el corto agrega volatilidad. El VIX y las tasas de Estados Unidos importan también en el largo plazo. En cambio, el índice de estrés financiero solo es significativo en el corto plazo, junto con la volatilidad: sus efectos son transitorios. La velocidad de ajuste promedio es −0,53, es decir, alrededor de la mitad del desvío se corrige cada trimestre y cerca del 95% de un shock de estrés se disipa en un año."
+   ],
+   "nota": "La variable dependiente está en logaritmos, así que los efectos de las tasas expresados como puntos porcentuales probablemente deban leerse como variaciones porcentuales del spread; el texto del paper no lo aclara."
+  },
+  {
+   "t": "Lecturas y límites",
+   "p": [
+    "El resultado reconcilia dos visiones que parecían opuestas: la de que los spreads siguen a los fundamentos y la de que siguen al humor del mercado. Ambas tienen razón en distintos horizontes. Para un país emergente, mejorar la deuda, la liquidez y la estabilidad política baja el nivel de equilibrio del spread, pero no lo protege de los sacudones de corto plazo de su propio sistema financiero y de la volatilidad global.",
+    "Una objeción posible (lectura propia) es que 14 países y unos 50 trimestres es poco para imponer elasticidades comunes y a la vez estimar dinámicas por país; y que el índice de riesgo político y el de estrés pueden reflejar en parte lo mismo que el spread, aunque se haya quitado su componente soberano. Comparado con González-Rozada y Levy Yeyati, este trabajo le da más peso a lo doméstico en el largo plazo, lo que refuerza que la respuesta depende de la muestra y del método."
+   ]
+  }
+ ],
+ "claves": [
+  "Bellas, Papaioannou y Petrova separan el efecto de largo plazo de los fundamentos del efecto de corto plazo del estrés financiero.",
+  "En su modelo, el estrés multiplica la probabilidad de default solo en el corto plazo; en el largo plazo mandan la deuda, el déficit y la tasa libre de riesgo.",
+  "El estimador Pooled Mean Group impone elasticidades de largo plazo comunes y deja variar el corto plazo y la velocidad de ajuste por país.",
+  "Deuda, liquidez, cuenta corriente y riesgo político fijan el nivel del spread; el índice de estrés solo es significativo en el corto plazo.",
+  "Cerca de la mitad del desvío se corrige cada trimestre; un shock de estrés se disipa en alrededor de un año."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué conclusión central obtienen los autores sobre los determinantes de los spreads emergentes?",
+    "en": "What central conclusion do the authors reach on the determinants of emerging spreads?"
+   },
+   "op": {
+    "es": [
+     "Que solo importan los factores globales",
+     "Que los fundamentos importan en el largo plazo y el estrés financiero en el corto",
+     "Que los spreads son aleatorios",
+     "Que solo importa el balance fiscal"
+    ],
+    "en": [
+     "That only global factors matter",
+     "That fundamentals matter in the long run and financial stress in the short run",
+     "That spreads are random",
+     "That only the fiscal balance matters"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El estrés y la volatilidad sacuden los spreads en la coyuntura; la deuda, la liquidez y el riesgo político fijan su nivel de equilibrio.",
+    "en": "Stress and volatility shake spreads short term; debt, liquidity and political risk set their equilibrium level."
+   },
+   "id": "ext-riesgo-07-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo teórico, ¿qué papel cumple el índice de estrés financiero?",
+    "en": "In the theoretical model, what role does the financial stress index play?"
+   },
+   "op": {
+    "es": [
+     "Multiplica la probabilidad de default en el corto plazo y vale uno en el largo plazo",
+     "Reemplaza a la tasa libre de riesgo",
+     "Determina la deuda de largo plazo",
+     "Es igual al spread"
+    ],
+    "en": [
+     "It multiplies the default probability short term and equals one in the long run",
+     "It replaces the risk-free rate",
+     "It determines long-run debt",
+     "It equals the spread"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Así, el estrés puede amplificar transitoriamente el riesgo sin cambiar el equilibrio de largo plazo.",
+    "en": "Thus stress can temporarily amplify risk without changing the long-run equilibrium."
+   },
+   "id": "ext-riesgo-07-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue al estimador Pooled Mean Group de un modelo de efectos fijos estático?",
+    "en": "What distinguishes the Pooled Mean Group estimator from a static fixed-effects model?"
+   },
+   "op": {
+    "es": [
+     "Que no usa datos de panel",
+     "Que impone coeficientes de corto plazo iguales para todos",
+     "Que impone elasticidades de largo plazo comunes y deja variar el corto plazo por país",
+     "Que solo estima el corto plazo"
+    ],
+    "en": [
+     "It does not use panel data",
+     "It imposes common short-run coefficients",
+     "It imposes common long-run elasticities and lets the short run vary by country",
+     "It only estimates the short run"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Combina la dinámica de corrección de errores con la homogeneidad de largo plazo, más plausible económicamente.",
+    "en": "It combines error-correction dynamics with long-run homogeneity, which is economically more plausible."
+   },
+   "id": "ext-riesgo-07-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los autores le quitan al índice de estrés su componente de spreads soberanos?",
+    "en": "Why do the authors remove the sovereign-spread component from the stress index?"
+   },
+   "op": {
+    "es": [
+     "Para aumentar el R²",
+     "Porque no había datos",
+     "Porque los spreads son estacionarios",
+     "Para evitar endogeneidad, ya que el spread es la variable a explicar"
+    ],
+    "en": [
+     "To raise the R²",
+     "Because data were missing",
+     "Because spreads are stationary",
+     "To avoid endogeneity, since the spread is the dependent variable"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si el índice incluyera el spread, explicaría el spread con el propio spread.",
+    "en": "If the index included the spread, it would explain the spread with itself."
+   },
+   "id": "ext-riesgo-07-q4"
+  },
+  {
+   "q": {
+    "es": "Según la estimación de efectos fijos, ¿cuánto sube el spread un punto más de deuda sobre el PIB?",
+    "en": "According to the fixed-effects estimate, how much does one more point of debt over GDP raise the spread?"
+   },
+   "op": {
+    "es": [
+     "Unos 2,8 puntos básicos",
+     "Unos 280 puntos básicos",
+     "Nada",
+     "Un 50%"
+    ],
+    "en": [
+     "About 2.8 basis points",
+     "About 280 basis points",
+     "Nothing",
+     "50%"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El efecto es positivo y significativo, aunque modesto por punto de deuda.",
+    "en": "The effect is positive and significant, though modest per point of debt."
+   },
+   "id": "ext-riesgo-07-q5"
+  },
+  {
+   "q": {
+    "es": "En el Pooled Mean Group, ¿en qué horizonte es significativo el índice de estrés financiero?",
+    "en": "In the Pooled Mean Group, at which horizon is the financial stress index significant?"
+   },
+   "op": {
+    "es": [
+     "Solo en el largo plazo",
+     "En ambos",
+     "En ninguno",
+     "Solo en el corto plazo"
+    ],
+    "en": [
+     "Only in the long run",
+     "In both",
+     "In neither",
+     "Only in the short run"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Como predice el modelo, sus efectos son transitorios y no cambian el nivel de equilibrio del spread.",
+    "en": "As the model predicts, its effects are transitory and do not change the spread's equilibrium level."
+   },
+   "id": "ext-riesgo-07-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué implica una velocidad de ajuste promedio de −0,53 en datos trimestrales?",
+    "en": "What does an average adjustment speed of −0.53 in quarterly data imply?"
+   },
+   "op": {
+    "es": [
+     "Que el spread nunca vuelve al equilibrio",
+     "Que se corrige el 5% por año",
+     "Que cerca de la mitad del desvío se corrige cada trimestre",
+     "Que el ajuste es instantáneo"
+    ],
+    "en": [
+     "The spread never returns to equilibrium",
+     "5% corrects per year",
+     "About half the gap corrects each quarter",
+     "Adjustment is instantaneous"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con esa velocidad, cerca del 95% de un shock de estrés se disipa en un año.",
+    "en": "At that speed, about 95% of a stress shock dissipates within a year."
+   },
+   "id": "ext-riesgo-07-q7"
+  },
+  {
+   "q": {
+    "es": "Un emergente sufre una fuerte caída bursátil y presión cambiaria, sin cambios en su deuda. Según el trabajo, ¿qué esperar de su spread?",
+    "en": "An emerging economy suffers a sharp stock fall and currency pressure, with no change in debt. According to the paper, what should be expected for its spread?"
+   },
+   "op": {
+    "es": [
+     "Una suba transitoria que se disipa en alrededor de un año",
+     "Una suba permanente",
+     "Ningún cambio",
+     "Una baja inmediata"
+    ],
+    "en": [
+     "A transitory rise that fades in about a year",
+     "A permanent rise",
+     "No change",
+     "An immediate fall"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El estrés financiero solo afecta el corto plazo; el nivel de largo plazo depende de los fundamentos, que no cambiaron.",
+    "en": "Financial stress affects only the short run; the long-run level depends on fundamentals, which did not change."
+   },
+   "id": "ext-riesgo-07-q8"
+  }
+ ],
+ "palabras": 1100,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Los spreads soberanos siguen a los fundamentos o al humor del mercado?",
+    "en": "Do sovereign spreads follow fundamentals or market mood?"
+   },
+   "a": {
+    "es": "A ambos, en distintos horizontes: los fundamentos (deuda, liquidez, riesgo político) fijan el nivel de largo plazo y el estrés financiero y la volatilidad los mueven en el corto. Lo muestran Bellas, Papaioannou y Petrova (2010) para 14 emergentes, 1997-2009.",
+    "en": "Both, at different horizons: fundamentals (debt, liquidity, political risk) set the long-run level and financial stress and volatility move them short term. Bellas, Papaioannou and Petrova (2010) show it for 14 emerging economies, 1997-2009."
+   },
+   "id": "ext-riesgo-07-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se puede medir la salud del sistema financiero de un país con datos de alta frecuencia?",
+    "en": "How can a country's financial health be measured with high-frequency data?"
+   },
+   "a": {
+    "es": "Con un índice de estrés que combine presión cambiaria, la beta del sector bancario, la caída de las acciones y su volatilidad. Bellas, Papaioannou y Petrova (2010) usan el índice del FMI para emergentes, sin su componente de spreads.",
+    "en": "With a stress index combining exchange-market pressure, the banking-sector beta, falling stock prices and their volatility. Bellas, Papaioannou and Petrova (2010) use the IMF index for emerging markets, minus its spread component."
+   },
+   "id": "ext-riesgo-07-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué estimador de panel permite que los países compartan las elasticidades de largo plazo pero tengan dinámicas propias de corto plazo?",
+    "en": "Which panel estimator lets countries share long-run elasticities but have their own short-run dynamics?"
+   },
+   "a": {
+    "es": "El Pooled Mean Group de Pesaran, Shin y Smith: un modelo de corrección de errores con coeficientes de largo plazo comunes y de corto plazo heterogéneos. Bellas, Papaioannou y Petrova (2010) lo aplican a los spreads del EMBI.",
+    "en": "Pesaran, Shin and Smith's Pooled Mean Group: an error-correction model with common long-run and heterogeneous short-run coefficients. Bellas, Papaioannou and Petrova (2010) apply it to EMBI spreads."
+   },
+   "id": "ext-riesgo-07-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto dura el efecto de un shock de estrés financiero sobre el spread soberano?",
+    "en": "How long does a financial-stress shock last on the sovereign spread?"
+   },
+   "a": {
+    "es": "Poco: con una velocidad de ajuste de −0,53 por trimestre, cerca del 95% del efecto se disipa en un año, según Bellas, Papaioannou y Petrova (2010).",
+    "en": "Not long: with an adjustment speed of −0.53 per quarter, about 95% of the effect fades within a year, according to Bellas, Papaioannou and Petrova (2010)."
+   },
+   "id": "ext-riesgo-07-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué más amortizaciones o intereses en relación con las reservas suben el spread de un emergente?",
+    "en": "Why do higher amortizations or interest relative to reserves raise an emerging spread?"
+   },
+   "a": {
+    "es": "Porque miden necesidades de financiamiento frente a recursos líquidos: si los vencimientos superan el colchón de reservas, crece el riesgo de no poder pagar. Bellas, Papaioannou y Petrova (2010) encuentran que la suma de esos indicadores es positiva y significativa en el largo plazo.",
+    "en": "Because they measure financing needs against liquid resources: if maturities exceed the reserve buffer, the risk of being unable to pay rises. Bellas, Papaioannou and Petrova (2010) find their sum positive and significant in the long run."
+   },
+   "id": "ext-riesgo-07-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la apertura comercial puede bajar el riesgo soberano en el largo plazo y aumentarlo en el corto?",
+    "en": "Why can trade openness lower sovereign risk in the long run but raise it in the short run?"
+   },
+   "a": {
+    "es": "Porque a largo plazo mejora el desempeño y la capacidad de generar divisas, pero en el corto expone más a los shocks externos. Bellas, Papaioannou y Petrova (2010) encuentran un efecto negativo de largo plazo y volatilidad en el corto.",
+    "en": "Because in the long run it improves performance and the ability to earn foreign exchange, but short term it raises exposure to external shocks. Bellas, Papaioannou and Petrova (2010) find a negative long-run effect and short-run volatility."
+   },
+   "id": "ext-riesgo-07-t6"
+  }
+ ]
+}

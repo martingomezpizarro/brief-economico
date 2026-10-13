@@ -1,0 +1,358 @@
+{
+ "id": "ext-riesgo-06",
+ "cat": "ext-riesgo",
+ "orden": 10,
+ "minutos": 15,
+ "titulo": "El riesgo país después del default y el costo de manipular el IPC: Caride (2010)",
+ "bajada": "¿Qué movió el EMBI argentino entre 2002 y 2008? Términos de intercambio, reservas y la tasa de EE.UU., pero también la reputación: la intervención del INDEC subió el riesgo país.",
+ "fuentes": [
+  1358
+ ],
+ "cita": "Caride (2010)",
+ "intro": "En enero de 2007 el INDEC cambió la forma de medir el índice de precios al consumidor y la inflación oficial empezó a separarse de las mediciones provinciales. Para el Tesoro había un beneficio inmediato: buena parte de la deuda en pesos ajustaba por CER, un coeficiente que sigue al IPC, y una inflación medida más baja reducía los pagos. Pero también había un costo posible: si los inversores interpretaban el cambio como una señal de que el gobierno manipulaba los datos para pagar menos, podían cobrar más por toda la deuda. Verónica Caride, en su tesis de la Maestría en Economía de la UBA, estima los determinantes del riesgo país argentino entre 2002 y 2008 y mide cuál de los dos efectos predominó.",
+ "secciones": [
+  {
+   "t": "El contexto: default, canje y una nueva deuda en pesos",
+   "p": [
+    "El 24 de diciembre de 2001 la Argentina declaró la mayor moratoria de la historia contemporánea, que abarcaba 70.000 de los 144.000 millones de dólares que debía el Estado. Vinieron la devaluación y la pesificación asimétrica de depósitos y préstamos. En 2005 se concretó el canje, con una aceptación del 76,15%: se cambiaron 62.300 millones en default por 35.300 millones de nueva deuda, y quedaron afuera 19.500 millones. La deuda pública bajó del 131% del PIB en 2004 al 74% en 2005, y en julio de 2005 el EMBI+ argentino estaba en 426 puntos básicos.",
+    "Un detalle clave para la pregunta del trabajo: en 2002 toda la deuda en moneda extranjera bajo ley argentina se convirtió a pesos ajustados por CER. Desde entonces conviven bonos en pesos indexados y bonos en dólares bajo ley extranjera. El EMBI+ solo incluye estos últimos, así que el cambio en el IPC no podía afectarlo de forma directa vía rendimiento: si lo afectó, fue por efectos indirectos."
+   ]
+  },
+  {
+   "t": "Dos efectos que tiran en sentidos opuestos",
+   "p": [
+    "El efecto solvencia y liquidez: si el IPC oficial subestima la inflación, el Estado paga menos intereses sobre los bonos ajustados por CER. Mejoran sus finanzas, baja la probabilidad de default del resto de la deuda y el riesgo país debería caer.",
+    "El efecto reputación: los mercados pueden leer que la nueva metodología subestima la inflación real y, con ella, los rendimientos de los bonos en pesos. Eso es una forma de no pagar lo pactado, erosiona la reputación del deudor y baja la probabilidad percibida de repago de toda la deuda: el riesgo país debería subir. El signo del efecto neto es una pregunta empírica.",
+    "Para medirlo, Caride construye una brecha entre la inflación del IPC del Gran Buenos Aires, el índice intervenido, y la de un IPC del resto de las provincias, ponderando los índices provinciales por su producto bruto geográfico."
+   ]
+  },
+  {
+   "t": "El marco teórico",
+   "p": [
+    "La tesis repasa dos familias de modelos. Los de solvencia y liquidez, desde Domar y Avramovic hasta Kharas y Sachs, miran la capacidad de pago: un país puede pagar mientras la tasa de su deuda sea menor que su crecimiento, y la restricción externa vincula la deuda con el déficit de cuenta corriente, los intereses y las reservas. Los de repudio y reputación, como Eaton, Gersovitz y Stiglitz (1986), miran la voluntad de pago, porque no hay quien obligue a un soberano a cumplir. El riesgo soberano combina así un riesgo económico (no poder pagar) y uno político (no querer).",
+    "Para estimar, sigue a Edwards (1985): con alta movilidad de capitales y un inversor que pierde todo en caso de default, el riesgo país depende de la probabilidad de default y explota cuando esta se acerca a uno. Con una probabilidad logística, el logaritmo del riesgo país queda lineal en sus determinantes."
+   ],
+   "eq": [
+    "\\ln cr_t = \\sum_i \\beta_i X_{it} + \\ln(1+i^*_t)"
+   ],
+   "nota": "\\(cr_t\\) es el riesgo país (EMBI+ Argentina), \\(X\\) los determinantes e \\(i^*\\) la tasa libre de riesgo. La constante del modelo absorbe el segundo término y factores de largo plazo."
+  },
+  {
+   "t": "Variables y método",
+   "p": [
+    "Usa datos mensuales de enero de 2002 a diciembre de 2008. Además de la brecha del IPC, incluye una dummy del canje de deuda, una dummy para el conflicto del gobierno con el campo de 2008, las reservas sobre el PIB (mensualizado con el EMAE o con el índice de Ferreres), el saldo comercial sobre el PIB, los términos de intercambio (aproximados por el índice de precios de materias primas del BCRA), el tipo de cambio real multilateral y la tasa del Tesoro estadounidense a 30 años, que también captura la aversión global al riesgo.",
+    "Estima primero un modelo semilogarítmico por mínimos cuadrados con errores corregidos por autocorrelación (Newey-West), y después un modelo autorregresivo de rezagos distribuidos ADL(1,1), que permite calcular cómo se diluye en el tiempo el efecto de cada shock. Probó modelos de corrección de errores y VAR, pero sin resultados estables."
+   ],
+   "eq": [
+    "y_t = m + \\alpha\\,y_{t-1} + \\beta_0 x_t + \\beta_1 x_{t-1} + u_t"
+   ],
+   "nota": "En un ADL(1,1), el efecto de largo plazo de \\(x\\) sobre \\(y\\) es \\((\\beta_0+\\beta_1)/(1-\\alpha)\\); el efecto se reparte en el tiempo con pesos que decaen según \\(\\alpha\\)."
+  },
+  {
+   "t": "Qué encontró",
+   "p": [
+    "La brecha del IPC es positiva y significativa en todas las especificaciones, en el modelo estático y en el dinámico: el efecto reputación primó sobre el de solvencia y liquidez. El cambio de metodología subió el riesgo país, y con él el costo de la nueva deuda, compensando el ahorro en intereses de los bonos ajustados por CER.",
+    "Los demás resultados van en línea con la literatura. Los términos de intercambio y las reservas sobre el PIB tienen relación negativa y significativa, como en Oks y Padilla. La tasa del Tesoro a 30 años tiene signo negativo, como en Nogués y Grandes: en el contexto de la crisis hipotecaria de Estados Unidos predominó la huida a la calidad sobre el efecto sustitución. El saldo comercial no es significativo, el conflicto con el campo tiene el signo esperado pero no es significativo, y el tipo de cambio real tiene el signo opuesto al esperado, algo que la autora atribuye a efectos de hoja de balance que la literatura no considera."
+   ]
+  },
+  {
+   "t": "Implicancias y límites",
+   "p": [
+    "La pregunta que queda abierta es el efecto financiero neto: menores pagos por CER contra un mayor costo de la deuda nueva. Caride apunta un dato que inclina la balanza: cuando se cambió la metodología, la deuda ajustable por CER era el 41,3% de la deuda pública nacional; en el segundo trimestre de 2009 era apenas el 14,4%. Con menos deuda indexada, el ahorro se achica y el costo reputacional pesa más, por lo que volver a la metodología anterior podría mejorar las finanzas públicas.",
+    "Una objeción posible (lectura propia) es que la brecha entre el IPC del Gran Buenos Aires y el de las provincias puede capturar otras cosas que ocurrieron en 2007 y 2008, como el aumento de la inflación y el deterioro del clima político; y que el período mezcla dos regímenes muy distintos, el default hasta 2005 y la deuda reestructurada después, que solo una dummy separa. Aun así, el trabajo deja una lección valiosa para pensar el riesgo país: la calidad de las estadísticas públicas también tiene precio."
+   ]
+  }
+ ],
+ "claves": [
+  "El cambio de metodología del IPC en 2007 tenía dos efectos opuestos: menos pagos por CER (baja el riesgo) y pérdida de reputación (lo sube).",
+  "Caride mide el cambio con la brecha entre el IPC del Gran Buenos Aires y un IPC de las provincias ponderado por PBG.",
+  "Con datos mensuales de 2002 a 2008, la brecha sube el riesgo país en todas las especificaciones: predominó el efecto reputación.",
+  "Términos de intercambio y reservas bajan el riesgo; la tasa de EE.UU. tiene signo negativo por la huida a la calidad.",
+  "La deuda indexada por CER cayó del 41,3% al 14,4% del total, lo que achica el ahorro de subestimar la inflación."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué el cambio de metodología del IPC no podía afectar directamente el rendimiento de los bonos del EMBI+?",
+    "en": "Why could the change in CPI methodology not directly affect the yield of EMBI+ bonds?"
+   },
+   "op": {
+    "es": [
+     "Porque el EMBI+ solo incluye bonos en moneda extranjera bajo ley extranjera, no los ajustados por CER",
+     "Porque el EMBI+ no existía en 2007",
+     "Porque el CER no depende del IPC",
+     "Porque los bonos estaban en default"
+    ],
+    "en": [
+     "Because EMBI+ only includes foreign-currency bonds under foreign law, not CER-indexed ones",
+     "Because EMBI+ did not exist in 2007",
+     "Because CER does not depend on the CPI",
+     "Because the bonds were in default"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si el cambio afectó al EMBI+, fue por efectos indirectos como la reputación del deudor.",
+    "en": "If the change affected EMBI+, it was through indirect effects such as the debtor's reputation."
+   },
+   "id": "ext-riesgo-06-q1"
+  },
+  {
+   "q": {
+    "es": "¿En qué consiste el efecto solvencia y liquidez de subestimar la inflación?",
+    "en": "What is the solvency and liquidity effect of understating inflation?"
+   },
+   "op": {
+    "es": [
+     "En que suben los pagos de deuda",
+     "En que se pagan menos intereses por los bonos ajustados por CER y mejoran las finanzas públicas",
+     "En que aumentan las reservas",
+     "En que se aprecia el tipo de cambio"
+    ],
+    "en": [
+     "Debt payments rise",
+     "Less interest is paid on CER-indexed bonds and public finances improve",
+     "Reserves increase",
+     "The exchange rate appreciates"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con menos pagos, baja la probabilidad de default del resto de la deuda, lo que tendería a bajar el riesgo país.",
+    "en": "With lower payments the default probability on the rest of the debt falls, which would tend to lower country risk."
+   },
+   "id": "ext-riesgo-06-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cómo mide Caride el efecto del cambio metodológico?",
+    "en": "How does Caride measure the effect of the methodological change?"
+   },
+   "op": {
+    "es": [
+     "Con una dummy de 2007",
+     "Con el nivel del CER",
+     "Con la brecha entre el IPC del Gran Buenos Aires y un IPC de las provincias ponderado por PBG",
+     "Con encuestas de expectativas"
+    ],
+    "en": [
+     "With a 2007 dummy",
+     "With the CER level",
+     "With the gap between Greater Buenos Aires CPI and a provincial CPI weighted by gross geographic product",
+     "With expectation surveys"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los IPC provinciales no fueron intervenidos, así que la brecha refleja la subestimación del índice oficial.",
+    "en": "Provincial CPIs were not manipulated, so the gap reflects the understatement of the official index."
+   },
+   "id": "ext-riesgo-06-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué resultado obtiene la brecha del IPC en las estimaciones?",
+    "en": "What result does the CPI gap obtain in the estimates?"
+   },
+   "op": {
+    "es": [
+     "Negativa y significativa",
+     "No significativa",
+     "Significativa solo en 2002",
+     "Positiva y significativa en todas las especificaciones"
+    ],
+    "en": [
+     "Negative and significant",
+     "Not significant",
+     "Significant only in 2002",
+     "Positive and significant in every specification"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El efecto reputación primó: el cambio subió el riesgo país, también en el modelo dinámico.",
+    "en": "The reputation effect dominated: the change raised country risk, also in the dynamic model."
+   },
+   "id": "ext-riesgo-06-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué signo tiene la tasa del Tesoro a 30 años y por qué?",
+    "en": "What sign does the 30-year Treasury rate have and why?"
+   },
+   "op": {
+    "es": [
+     "Negativo, porque con la crisis hipotecaria predominó la huida a la calidad",
+     "Positivo, porque predominó el efecto sustitución",
+     "Nulo, porque no varió",
+     "Positivo, porque la Argentina se endeudaba a tasa fija"
+    ],
+    "en": [
+     "Negative, because the mortgage crisis made the flight to quality dominate",
+     "Positive, because the substitution effect dominated",
+     "Zero, because it did not move",
+     "Positive, because Argentina borrowed at fixed rates"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En las crisis los inversores compran bonos del Tesoro, cae su tasa y suben los spreads emergentes.",
+    "en": "In crises investors buy Treasuries, their yield falls and emerging spreads rise."
+   },
+   "id": "ext-riesgo-06-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué variable tuvo el signo opuesto al esperado?",
+    "en": "Which variable had the opposite sign to the expected one?"
+   },
+   "op": {
+    "es": [
+     "Las reservas sobre el PIB",
+     "El tipo de cambio real multilateral",
+     "Los términos de intercambio",
+     "La dummy del canje"
+    ],
+    "en": [
+     "Reserves over GDP",
+     "The multilateral real exchange rate",
+     "The terms of trade",
+     "The swap dummy"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La autora sugiere que la literatura omite efectos de hoja de balance al tratar al tipo de cambio real solo como competitividad.",
+    "en": "The author suggests the literature omits balance-sheet effects by treating the real exchange rate only as competitiveness."
+   },
+   "id": "ext-riesgo-06-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja tiene el modelo ADL(1,1) frente a la regresión estática?",
+    "en": "What advantage does the ADL(1,1) model have over the static regression?"
+   },
+   "op": {
+    "es": [
+     "Elimina la constante",
+     "No necesita datos mensuales",
+     "Permite ver cómo se diluye en el tiempo el efecto de cada shock",
+     "Garantiza la causalidad"
+    ],
+    "en": [
+     "It removes the constant",
+     "It needs no monthly data",
+     "It shows how each shock's effect fades over time",
+     "It guarantees causality"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con el riesgo país rezagado y los regresores rezagados, se calculan efectos de corto y de largo plazo.",
+    "en": "With lagged country risk and lagged regressors, short- and long-run effects can be computed."
+   },
+   "id": "ext-riesgo-06-q7"
+  },
+  {
+   "q": {
+    "es": "Si la deuda indexada por inflación es una parte cada vez menor del total, ¿qué pasa con el saldo de subestimar el IPC según el trabajo?",
+    "en": "If inflation-indexed debt becomes an ever smaller share of the total, what happens to the net balance of understating the CPI, according to the paper?"
+   },
+   "op": {
+    "es": [
+     "Mejora, porque se ahorra más",
+     "No cambia",
+     "Se vuelve siempre positivo",
+     "Empeora: el ahorro por CER se achica y el costo reputacional pesa más"
+    ],
+    "en": [
+     "It improves, as more is saved",
+     "It does not change",
+     "It always turns positive",
+     "It worsens: CER savings shrink and the reputational cost weighs more"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La deuda CER pasó del 41,3% al 14,4% del total; el efecto neto tiende a reducirse o volverse negativo.",
+    "en": "CER debt fell from 41.3% to 14.4% of the total; the net effect tends to shrink or turn negative."
+   },
+   "id": "ext-riesgo-06-q8"
+  }
+ ],
+ "palabras": 1068,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿De qué dos riesgos se compone el riesgo soberano?",
+    "en": "Which two risks make up sovereign risk?"
+   },
+   "a": {
+    "es": "Del riesgo económico (no poder pagar, que estudian los modelos de solvencia y liquidez) y del riesgo político (no querer pagar, que estudian los modelos de repudio y reputación). Caride (2010) usa ambos para explicar el riesgo argentino post default.",
+    "en": "Economic risk (being unable to pay, studied by solvency and liquidity models) and political risk (being unwilling, studied by repudiation and reputation models). Caride (2010) uses both to explain post-default Argentine risk."
+   },
+   "id": "ext-riesgo-06-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué subestimar la inflación oficial puede bajar y a la vez subir el riesgo país?",
+    "en": "Why can understating official inflation both lower and raise country risk?"
+   },
+   "a": {
+    "es": "Lo baja porque reduce los pagos de la deuda indexada y mejora la solvencia; lo sube porque daña la reputación del deudor ante toda la deuda. Caride (2010) encuentra que en la Argentina de 2007-08 predominó el segundo efecto.",
+    "en": "It lowers it by cutting indexed-debt payments and improving solvency; it raises it by damaging the debtor's reputation across all debt. Caride (2010) finds the second effect dominated in 2007-08 Argentina."
+   },
+   "id": "ext-riesgo-06-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué efecto tuvo la intervención del INDEC sobre el riesgo país argentino?",
+    "en": "What effect did the INDEC intervention have on Argentine country risk?"
+   },
+   "a": {
+    "es": "Lo subió: la brecha entre el IPC oficial y un IPC provincial es positiva y significativa en todas las especificaciones para 2002-2008, en modelos estáticos y ADL (Caride, 2010).",
+    "en": "It raised it: the gap between the official CPI and a provincial CPI is positive and significant in every specification for 2002-2008, in static and ADL models (Caride, 2010)."
+   },
+   "id": "ext-riesgo-06-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En la Argentina post default, ¿qué variables externas y de liquidez bajaban el riesgo país?",
+    "en": "In post-default Argentina, which external and liquidity variables lowered country risk?"
+   },
+   "a": {
+    "es": "Los términos de intercambio y las reservas sobre el PIB, con coeficientes negativos y significativos entre 2002 y 2008, en línea con Oks y Padilla para los noventa (Caride, 2010).",
+    "en": "The terms of trade and reserves over GDP, with negative significant coefficients over 2002-2008, in line with Oks and Padilla for the 1990s (Caride, 2010)."
+   },
+   "id": "ext-riesgo-06-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "En un modelo ADL(1,1), ¿cómo se obtiene el efecto de largo plazo de una variable?",
+    "en": "In an ADL(1,1) model, how is a variable's long-run effect obtained?"
+   },
+   "a": {
+    "es": "Sumando los coeficientes de la variable corriente y rezagada y dividiendo por uno menos el coeficiente del rezago de la dependiente. Caride (2010) lo usa para ver cómo se diluyen los shocks sobre el riesgo país.",
+    "en": "By adding the current and lagged coefficients of the variable and dividing by one minus the coefficient on the lagged dependent variable. Caride (2010) uses it to see how shocks to country risk fade."
+   },
+   "id": "ext-riesgo-06-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la calidad de las estadísticas públicas puede tener un precio en los mercados de deuda?",
+    "en": "Why can the quality of public statistics have a price in debt markets?"
+   },
+   "a": {
+    "es": "Porque los inversores leen la manipulación como una señal de que el deudor está dispuesto a no cumplir lo pactado, y cobran más por toda su deuda. Caride (2010) lo muestra con el cambio del IPC argentino de 2007.",
+    "en": "Because investors read manipulation as a sign the debtor is willing to renege, and charge more on all its debt. Caride (2010) shows it with Argentina's 2007 CPI change."
+   },
+   "id": "ext-riesgo-06-t6"
+  }
+ ]
+}
