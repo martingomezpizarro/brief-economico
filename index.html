@@ -6,10 +6,11 @@
 <title>Prebisch</title>
 <meta name="description" content="Briefs diarios de economía: lecturas de 15 minutos sobre papers y libros, preguntas de control y repaso espaciado. Armá tu propia ruta de estudio con tus PDFs.">
 <meta name="theme-color" content="#FAF5EC">
-<link rel="icon" href="icono.svg" type="image/svg+xml">
-<link rel="icon" href="iconos/favicon-32.png" type="image/png" sizes="32x32">
-<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
-<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icono.svg?v=3" type="image/svg+xml">
+<link rel="icon" href="iconos/favicon-32.png?v=3" type="image/png" sizes="32x32">
+<link rel="icon" href="iconos/icono-192.png?v=3" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png?v=3">
+<link rel="manifest" href="manifest.webmanifest?v=3">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Prebisch">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -568,6 +569,7 @@ function scholarUrl(pid){const f=S.papers["p"+pid],p=S.byId[pid]||{};const q=f?f
   return "https://scholar.google.com/scholar?"+new URLSearchParams({q})}
 function refLectura(pid,pagina){const es=S.lang==="es";
   return h("p",{class:"ref"},citaCompleta(pid)+(pagina?" "+(es?"Ver ":"See ")+pagina+".":"")," ",
+    BIB.mapa[pid]?[h("button",{class:"linkbtn",type:"button",on:{click:()=>bibAbrir(pid)}},es?"Abrir mi PDF":"Open my PDF")," · "]:null,
     h("a",{href:"#p"+pid},S.papers["p"+pid]?(es?"Abrir la ficha":"Open the summary"):(es?"Ver en el rack":"See in the rack"))," · ",
     h("a",{href:scholarUrl(pid),target:"_blank",rel:"noopener"},es?"Buscar el texto":"Find the text"))}
 function fuenteCard(c){
@@ -734,7 +736,7 @@ function viewFicha(key){
     h("div",null,h("b",null,"Período"),et.periodo),
     h("div",null,h("b",null,"Área"),h("a",{href:"#area-"+p.area},areaName(p.area))),
     h("div",null,h("b",null,"Conexiones"),h("ul",{style:"padding-left:0;list-style:none;gap:4px"},(p.conexiones||[]).map(x=>h("li",null,linkConexion(x))))));
-  mount(head,h("div",{class:"ficha margen"},main,aside));
+  mount(head,bloqueMiPDF(p.id),h("div",{class:"ficha margen"},main,aside));
   document.getElementById("wrap").classList.add("ancha");
   typeset();
 }
@@ -831,6 +833,7 @@ function viewItem(id){
     h("section",{class:"block rule"},
       h("p",{class:"j"},es?"Todavía no tiene brief. Los briefs del rack se escriben en el orden de las rutas; mientras tanto podés generar uno con tu copia del PDF en Mi estudio.":"No brief yet. Rack briefs are written in path order; meanwhile you can generate one from your own copy in My study."),
       chk),
+    bloqueMiPDF(id),
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Conseguir el texto":"Get the text"),
       p.url?h("p",{class:"c"},h("a",{href:p.url,target:"_blank",rel:"noopener"},es?"Abrir la fuente":"Open the source")):null,
@@ -872,6 +875,7 @@ function viewAjustes(){
       h("div",{class:"row"},h("label",{for:"cfg-foco"},es?"Ruta en foco: las tarjetas nuevas salen primero de ahí":"Path in focus: new cards come from it first"),sel),
       h("p",{class:"eyebrow",style:"margin-top:8px"},es?"Áreas incluidas":"Included areas"),checks),
     seccionCuenta(),
+    seccionBiblioteca(),
     seccionAvisos(),
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Cómo funciona":"How it works"),
@@ -1210,6 +1214,102 @@ function confirmarBorrar(r){
 }
 
 /* --- Ajustes: cuenta, IA y copia --- */
+/* ---------- Mi biblioteca: la carpeta de PDF de la compu, vinculada al rack ----------
+   Chrome y Edge de escritorio dejan elegir una carpeta (File System Access). Los archivos no se suben:
+   la app guarda el permiso en este navegador y, para cada lectura, la ruta del archivo que le corresponde. */
+const BIB={dir:null,archivos:[],mapa:lsGet("prebisch-bib")||{},permiso:false,estado:""};
+const bibSoportada=()=>"showDirectoryPicker" in window;
+const normal=t=>String(t||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9]+/g," ").trim();
+const VACIAS=new Set("de la el los las del en y a the of and in on for to an un una por con sobre para que su sus al se es como entre from with at by".split(" "));
+const ROM={i:1,ii:2,iii:3,iv:4,v:5,vi:6,vii:7,viii:8,ix:9,x:10};
+function fichas(t){return normal(t).split(" ").map(w=>ROM[w]?String(ROM[w]):w).filter(w=>/^\d+$/.test(w)||(w.length>2&&!VACIAS.has(w)))}
+async function bibIDB(){return new Promise((ok,mal)=>{const r=indexedDB.open("prebisch-bib",1);r.onupgradeneeded=()=>r.result.createObjectStore("h");r.onsuccess=()=>ok(r.result);r.onerror=()=>mal(r.error)})}
+async function bibGuardarDir(d){const db=await bibIDB();return new Promise(ok=>{const t=db.transaction("h","readwrite");t.objectStore("h").put(d,"dir");t.oncomplete=ok})}
+async function bibLeerDir(){try{const db=await bibIDB();return await new Promise(ok=>{const q=db.transaction("h").objectStore("h").get("dir");q.onsuccess=()=>ok(q.result||null);q.onerror=()=>ok(null)})}catch(e){return null}}
+async function bibListar(dir,pre,out){for await(const [n,hd] of dir.entries()){if(hd.kind==="directory")await bibListar(hd,pre+n+"/",out);else if(/\.pdf$/i.test(n))out.push({ruta:pre+n,nombre:n,h:hd,t:fichas((pre+n).replace(/\.pdf$/i,""))})}return out}
+// puntaje: palabras del título encontradas en el nombre del archivo, más autor y año
+function bibPuntaje(p,f){
+  const tt=fichas(p.titulo);if(!tt.length)return 0;const fs=new Set(f.t);
+  const pal=tt.filter(w=>!/^\d+$/.test(w)),num=tt.filter(w=>/^\d+$/.test(w));
+  let s=pal.length?pal.filter(w=>fs.has(w)).length/Math.min(pal.length,8):.5;
+  // los números del título (unidad, clase, capítulo) tienen que estar en el nombre del archivo
+  if(num.length&&!num.every(w=>fs.has(w)))s*=.3;
+  if(p.curso&&fichas(p.curso).some(w=>w.length>3&&fs.has(w)))s+=.2;
+  const au=fichas((p.cita||"").replace(/\(.*?\)/g," ")).filter(w=>!/^\d+$/.test(w)&&w!=="eds"&&w!=="et"&&w!=="al");
+  if(au.some(w=>fs.has(w)))s+=.35;
+  const y=(p.cita||"").match(/\d{4}/);if(y&&f.t.includes(y[0]))s+=.15;
+  return s;
+}
+function bibEmparejar(){
+  const libres=new Set(BIB.archivos.map(f=>f.ruta));Object.values(BIB.mapa).forEach(r=>libres.delete(r));
+  const cand=[];S.indice.forEach(p=>{if(BIB.mapa[p.id])return;BIB.archivos.forEach(f=>{if(!libres.has(f.ruta))return;const s=bibPuntaje(p,f);if(s>=.6)cand.push([s,p.id,f.ruta])})});
+  cand.sort((a,b)=>b[0]-a[0]);let n=0;
+  for(const [,id,r] of cand){if(BIB.mapa[id]||!libres.has(r))continue;BIB.mapa[id]=r;libres.delete(r);n++}
+  lsSet("prebisch-bib",BIB.mapa);return n;
+}
+async function bibAbrirDir(pedir){
+  if(!BIB.dir)BIB.dir=await bibLeerDir();if(!BIB.dir)return false;
+  let p=await BIB.dir.queryPermission({mode:"read"});
+  if(p!=="granted"&&pedir)p=await BIB.dir.requestPermission({mode:"read"});
+  BIB.permiso=p==="granted";if(!BIB.permiso)return false;
+  if(!BIB.archivos.length)BIB.archivos=await bibListar(BIB.dir,"",[]);
+  return true;
+}
+async function bibConectar(){
+  const es=S.lang==="es";const d=await window.showDirectoryPicker({id:"prebisch-pdf",mode:"read"});
+  BIB.dir=d;BIB.archivos=[];await bibGuardarDir(d);BIB.permiso=true;
+  BIB.archivos=await bibListar(d,"",[]);const n=bibEmparejar();
+  return (es?"Encontré "+BIB.archivos.length+" PDF y vinculé "+Object.keys(BIB.mapa).length+" lecturas del rack":"Found "+BIB.archivos.length+" PDFs and linked "+Object.keys(BIB.mapa).length+" rack readings")+(n?(es?" ("+n+" nuevas).":" ("+n+" new)."):".");
+}
+async function bibArchivo(id){
+  const r=BIB.mapa[id];if(!r||!(await bibAbrirDir(true)))return null;
+  const f=BIB.archivos.find(x=>x.ruta===r);return f?f.h.getFile():null;
+}
+async function bibAbrir(id){
+  const w=window.open("","_blank");
+  try{const f=await bibArchivo(id);if(!f)throw new Error("no");w.location=URL.createObjectURL(f)}catch(e){w.close();alert(S.lang==="es"?"No encontré el archivo en la carpeta conectada. Volvé a conectarla en Ajustes.":"File not found in the linked folder. Reconnect it in Settings.")}
+}
+async function bibBrief(id){
+  const f=await bibArchivo(id);if(!f)return;
+  const p=S.byId[id];location.hash="#estudio";
+  E.objetivo=E.objetivo||(S.lang==="es"?"Entender "+(p.cita?p.cita+": ":"")+p.titulo:"Understand "+p.titulo);
+  await subir([f]);
+}
+// bloque para la página de una lectura: abrir mi PDF, armar el brief, o elegir el archivo a mano
+function bloqueMiPDF(id){
+  const es=S.lang==="es";if(!bibSoportada())return null;
+  const sec=h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Mi PDF":"My PDF"));
+  if(BIB.mapa[id]){
+    sec.append(h("p",{class:"c note"},BIB.mapa[id]),
+      h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:()=>bibAbrir(id)}},es?"Abrir mi PDF":"Open my PDF"),
+        h("button",{class:"btn ghost",type:"button",on:{click:()=>bibBrief(id)}},es?"Armar el brief":"Build the brief")),
+      h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete BIB.mapa[id];lsSet("prebisch-bib",BIB.mapa);route()}}},es?"No es este archivo":"Wrong file")));
+  }else if(!Object.keys(BIB.mapa).length&&!BIB.archivos.length){
+    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF en Ajustes para abrirlo desde acá →":"Link your PDF folder in Settings to open it from here →")));
+  }else{
+    const sel=h("select",{"aria-label":es?"Elegir el archivo":"Choose the file"},h("option",{value:""},es?"Elegí el archivo de tu carpeta…":"Choose the file from your folder…"));
+    const llenar=()=>{const usados=new Set(Object.values(BIB.mapa));const p=S.byId[id];
+      BIB.archivos.filter(f=>!usados.has(f.ruta)).map(f=>[bibPuntaje(p,f),f]).sort((a,b)=>b[0]-a[0]).slice(0,40).forEach(([,f])=>sel.append(h("option",{value:f.ruta},f.ruta)))};
+    sec.append(h("p",{class:"c note"},es?"No encontré este texto en tu carpeta automáticamente.":"This text was not matched automatically."),sel,
+      h("button",{class:"btn ghost",type:"button",on:{click:async()=>{if(!BIB.archivos.length){if(!(await bibAbrirDir(true)))return;llenar();return}if(sel.value){BIB.mapa[id]=sel.value;lsSet("prebisch-bib",BIB.mapa);route()}}}},es?"Vincular":"Link"));
+    if(BIB.archivos.length)llenar();
+  }
+  return sec;
+}
+function seccionBiblioteca(){
+  const es=S.lang==="es";const n=Object.keys(BIB.mapa).length;
+  const correr=fn=>async()=>{BIB.estado=es?"Leyendo la carpeta…":"Reading the folder…";refrescar();try{BIB.estado=await fn()}catch(e){BIB.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
+  const sec=h("section",{class:"block rule",id:"sec-bib"},h("p",{class:"eyebrow c"},es?"Mi biblioteca":"My library"),
+    h("p",{class:"j"},es?"Conectá la carpeta donde tenés los PDF del rack. Cada lectura queda vinculada a su archivo: lo abrís con un toque o armás su brief sin buscarlo. Los archivos no se suben a ningún lado; el vínculo queda en este navegador.":"Link the folder with your rack PDFs. Each reading gets linked to its file: open it in one tap or build its brief. Files are not uploaded anywhere; the links stay in this browser."),
+    !bibSoportada()?h("p",{class:"note j"},es?"Este navegador no permite conectar carpetas. Funciona en Chrome o Edge de escritorio. En el celular, podés subir un PDF suelto en Mi estudio.":"This browser cannot link folders. It works in desktop Chrome or Edge. On a phone, upload a single PDF in My study."):
+    [h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF":" of "+S.indice.length+" readings linked to a PDF")),
+     h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:correr(bibConectar)}},n?(es?"Volver a conectar":"Reconnect"):(es?"Conectar mi carpeta":"Link my folder")),
+       h("button",{class:"btn ghost",type:"button",disabled:!n,on:{click:()=>{const sin=S.indice.filter(p=>!BIB.mapa[p.id]);BIB.estado=(es?"Sin PDF vinculado (":"No linked PDF (")+sin.length+"): "+sin.slice(0,30).map(p=>(p.cita?p.cita+" · ":"")+p.titulo).join(" | ")+(sin.length>30?" …":"");refrescar()}}},es?"Ver cuáles faltan":"See missing"))],
+    BIB.estado?h("p",{class:"estado"},BIB.estado):null);
+  function refrescar(){const el=document.getElementById("sec-bib");if(el)el.replaceWith(seccionBiblioteca())}
+  return sec;
+}
+
 /* ---------- cuenta: Google o mail y contraseña ---------- */
 function pintarCuenta(){
   const b=document.getElementById("btn-cuenta");if(!b)return;const es=S.lang==="es";const u=S.nube.user;
