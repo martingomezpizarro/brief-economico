@@ -11,7 +11,7 @@
 //
 //  Variables (Settings → Variables and Secrets):
 //    GEMINI_API_KEY   secreto — la key de Google AI Studio
-//    FIREBASE_PROJECT idoneidad-48c77
+//    FIREBASE_PROJECT prebisch-785b1
 //    MODELO           gemini-3.8-flash            (opcional)
 //    LIMITE_DIARIO    4    briefs por persona y día (opcional)
 //    LIMITE_RUTAS     5    rutas por persona y día (opcional)
@@ -93,8 +93,11 @@ PREGUNTAS DE CONTROL
 TARJETAS DE APRENDIZAJE
 - Entre 6 y 8 tarjetas de pregunta y respuesta abierta, en castellano y en inglés, para el repaso espaciado de los días siguientes.
 - Cada tarjeta fija una sola idea: un concepto, un mecanismo, un supuesto del modelo, un dato o un resultado con su número.
+- La PREGUNTA es de economía, no del texto: tiene que poder pensarse con conocimientos de economía aunque no se haya leído el documento. No empieces con «Según X…» ni nombres al autor en la pregunta. Bien: «¿Por qué una depreciación real puede subir el riesgo soberano?». Mal: «¿Qué dicen Michel y Díaz sobre el tipo de cambio?».
+- La RESPUESTA explica la economía y después atribuye: quién lo muestra, dónde y con qué número (por ejemplo «Michel y Díaz (2015) estiman 0,276 puntos para República Dominicana»).
+- Si la pregunta pide un dato, pedí el orden de magnitud o el signo, no la cifra exacta, y dala en la respuesta.
 - No repitas las preguntas de control: las tarjetas se responden de memoria, sin opciones.
-- La respuesta tiene que poder recordarse: de una a tres oraciones, con el número o el nombre exacto cuando lo haya.
+- La respuesta tiene que poder recordarse: de una a tres oraciones.
 
 FORMATO
 Respondé SOLO con un objeto JSON válido, sin texto antes ni después, con esta forma:
@@ -264,7 +267,7 @@ async function usuario(req, env) {
   const ok = await crypto.subtle.verify("RSASSA-PKCS1-v1_5", llave, b64u(partes[2]),
     new TextEncoder().encode(partes[0] + "." + partes[1]));
   if (!ok) return null;
-  const proy = env.FIREBASE_PROJECT || "idoneidad-48c77";
+  const proy = env.FIREBASE_PROJECT || "prebisch-785b1";
   const ahora = Math.floor(Date.now() / 1000);
   if (p.aud !== proy || p.iss !== "https://securetoken.google.com/" + proy) return null;
   if (!p.sub || p.exp < ahora || p.iat > ahora + 300) return null;
