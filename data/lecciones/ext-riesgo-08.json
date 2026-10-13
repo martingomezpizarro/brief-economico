@@ -1,0 +1,354 @@
+{
+ "id": "ext-riesgo-08",
+ "cat": "ext-riesgo",
+ "orden": 12,
+ "minutos": 15,
+ "titulo": "La marea levanta todos los botes: Csonto e Ivaschenko (2013) sobre spreads emergentes",
+ "bajada": "Con 18 emergentes entre 2001 y 2013, dos economistas del FMI muestran que en el corto plazo mandan los factores globales, que los buenos fundamentos amortiguan los shocks y cómo medir cuándo un spread está desalineado.",
+ "fuentes": [
+  1360
+ ],
+ "cita": "Csonto e Ivaschenko (2013)",
+ "intro": "En la segunda mitad de 2012, con tasas casi nulas en los países desarrollados y el anuncio del programa OMT del Banco Central Europeo, los fondos de bonos emergentes recibieron casi 1.000 millones de dólares por semana y el spread del EMBI Global cayó unos 180 puntos básicos entre junio de 2012 y enero de 2013. Bajó para casi todos, con fundamentos fuertes o débiles. Balázs Csonto e Iryna Ivaschenko, del FMI, usan ese episodio como punto de partida para tres preguntas: cuánto pesan lo global y lo doméstico en el corto y en el largo plazo, si los países con mejores fundamentos son menos sensibles a los vaivenes globales, y qué parte de los movimientos de los spreads no se explica por ninguno de los dos.",
+ "secciones": [
+  {
+   "t": "Datos: calificaciones de riesgo del ICRG y dos factores globales",
+   "p": [
+    "Arman un panel de 147 meses, de enero de 2001 a marzo de 2013, para 18 emergentes de Asia, Europa central y oriental y América Latina, incluida la Argentina. La variable a explicar es el spread del EMBI Global de cada país.",
+    "Para los fundamentos usan tres índices mensuales de la International Country Risk Guide. El de riesgo económico pondera el PIB per cápita, el crecimiento, la inflación, el balance fiscal y la cuenta corriente. El de riesgo financiero pondera la deuda externa sobre el PIB, el servicio de la deuda sobre exportaciones, la cuenta corriente sobre exportaciones, las reservas y la estabilidad cambiaria. El de riesgo político combina estabilidad del gobierno, conflictos, corrupción, calidad institucional y otros componentes. En los tres, un valor más alto significa menos riesgo. Los factores globales son el VIX, como medida de la aversión al riesgo, y la tasa de fondos federales de Estados Unidos, como medida de la liquidez."
+   ]
+  },
+  {
+   "t": "El marco y el método",
+   "p": [
+    "Siguen a Edwards (1985): un inversor neutral al riesgo exige una prima que compense la probabilidad de default; con una probabilidad logística, el logaritmo del spread queda lineal en sus determinantes. Estiman primero con efectos fijos por país, con errores estándar de Driscoll y Kraay, robustos a heterocedasticidad, autocorrelación y dependencia entre países, porque un test de Breusch y Pagan detecta esa dependencia.",
+    "Después usan el estimador Pooled Mean Group, que impone coeficientes de largo plazo comunes y deja variar los de corto plazo por país. Es un punto medio útil: las regresiones país por país tienden a subestimar el papel de los fundamentos, porque estos cambian poco en el tiempo comparados con los spreads; imponer homogeneidad de largo plazo aprovecha la variación entre países."
+   ],
+   "eq": [
+    "\\ln s_{it} = \\alpha_i + \\beta' \\ln F_{it} + \\gamma' \\ln G_t + \\varepsilon_{it}"
+   ],
+   "nota": "\\(s_{it}\\) es el spread del EMBI Global, \\(F_{it}\\) los tres índices de riesgo del ICRG del país y \\(G_t\\) los factores globales (VIX y tasa de fondos federales). Los coeficientes se leen como elasticidades."
+  },
+  {
+   "t": "Resultados con efectos fijos",
+   "p": [
+    "Los tres índices de riesgo tienen coeficientes negativos y significativos: mejores fundamentos, menor spread. Los spreads son más sensibles al riesgo financiero y político que al económico. Un 1% de mejora en el índice financiero baja el spread entre 2,8% y 3,5%, y un 1% en el político, entre 2,3% y 2,5%; el económico, apenas entre 0,5% y 0,6%. Los autores interpretan que, al menos en el corto plazo, los inversores miran más la liquidez (reservas, servicio de la deuda) y el riesgo político que los indicadores de solvencia como el crecimiento o el balance fiscal.",
+    "El VIX es positivo y muy significativo: un 1% más de aversión global al riesgo sube el spread un 0,7%. La tasa de fondos federales tiene signo negativo pero deja de ser significativa cuando entra el VIX, porque la política monetaria de Estados Unidos refleja en parte la aversión al riesgo global. El modelo explica entre la mitad y el 60% de la variación de los spreads. El resultado se mantiene usando rezagos de los fundamentos para controlar endogeneidad."
+   ]
+  },
+  {
+   "t": "Mejores fundamentos, menos sensibilidad",
+   "p": [
+    "Para ver si los fundamentos amortiguan los shocks globales, dividen a los países según estén por encima o por debajo de la mediana de cada índice. El VIX es significativo en todos los grupos, pero los países con mayor riesgo económico y financiero son más sensibles a los cambios en la aversión global. Con el Pooled Mean Group llegan a lo mismo por otra vía: el coeficiente de corto plazo del VIX de cada país es menor cuanto mejores son sus fundamentos promedio.",
+    "La conclusión de política es clara: los buenos fundamentos dan un doble premio, un spread más bajo y una menor exposición a los cambios bruscos del humor global. Por regiones, los países europeos son los más expuestos al VIX; en Europa los inversores miran más la liquidez y en Asia y América Latina, el riesgo político."
+   ]
+  },
+  {
+   "t": "Largo y corto plazo",
+   "p": [
+    "Con el Pooled Mean Group, en el largo plazo importan tanto los fundamentos (los índices financiero y político, con signo negativo) como el VIX, que eleva el nivel de equilibrio del spread. En el corto plazo, en cambio, mandan los factores globales: el VIX sube los spreads y la tasa de fondos federales tiene un efecto negativo de corto plazo, mientras que los índices de riesgo casi no son significativos. La explicación es intuitiva: los fundamentos cambian despacio, porque las políticas y las reformas tardan en dar frutos, así que lo que varía mes a mes es el contexto global.",
+    "Hay un resultado incómodo que los autores reportan: en el largo plazo, el índice de riesgo económico cambia de signo y parece asociarse a spreads más altos. La corrección de los desvíos hacia el equilibrio es significativa pero lenta."
+   ],
+   "nota": "Los tests de raíz unitaria dan resultados mixtos para los spreads y no encuentran cointegración; los autores se apoyan en Phillips y Moon (2000), que muestran que una regresión agrupada entre series no estacionarias no cointegradas no es espuria y estima de forma consistente el coeficiente promedio de largo plazo."
+  },
+  {
+   "t": "Descomponer los cambios: lo explicado y el desalineamiento",
+   "p": [
+    "La parte más original es descomponer los cambios del spread en siete subperíodos. La parte explicada se divide entre fundamentos y factores globales; el residuo, entre la corrección de un desalineamiento previo y la acumulación de uno nuevo. Antes de la crisis, hasta agosto de 2007, el modelo explica cerca de la mitad de la baja de los spreads, con fundamentos y factores globales en papeles importantes; lo no explicado combina la corrección de la subvaluación heredada de las crisis de fines de los noventa con un desalineamiento acumulado en los años de auge.",
+    "En los períodos de estrés severo, como la fase aguda de la crisis de deuda europea, los factores globales dominan los cambios y el desalineamiento crece en tamaño y en peso dentro del spread. La fuerte baja de 2012 se explica sobre todo por la mejora global, de riesgo y de liquidez; lo no explicado fue principalmente la corrección de una subvaluación. Una objeción posible (lectura propia) es que los índices del ICRG son evaluaciones de expertos que pueden reaccionar a los propios spreads, y que llamar desalineamiento al residuo supone que el modelo captura todo lo relevante."
+   ]
+  }
+ ],
+ "claves": [
+  "Con 18 emergentes y datos mensuales de 2001 a 2013, fundamentos y factores globales importan en el largo plazo; en el corto, mandan los globales.",
+  "Los spreads son más sensibles al riesgo financiero (−2,8% a −3,5% por 1%) y político que al económico (−0,5% a −0,6%).",
+  "Un 1% más de VIX sube el spread un 0,7%; la tasa de la Fed pierde significatividad cuando entra el VIX.",
+  "Los países con mejores fundamentos son menos sensibles a la aversión global: los buenos fundamentos dan un doble premio.",
+  "En las crisis severas, los factores globales dominan y crece el desalineamiento de los spreads respecto de lo que explica el modelo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cómo miden los fundamentos de cada país?",
+    "en": "How do they measure each country's fundamentals?"
+   },
+   "op": {
+    "es": [
+     "Con la calificación de S&P",
+     "Con los índices de riesgo económico, financiero y político de la International Country Risk Guide",
+     "Con el PIB trimestral",
+     "Con encuestas a inversores"
+    ],
+    "en": [
+     "With the S&P rating",
+     "With the International Country Risk Guide economic, financial and political risk indices",
+     "With quarterly GDP",
+     "With investor surveys"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Son índices mensuales; un valor más alto indica menos riesgo.",
+    "en": "They are monthly indices; a higher value indicates less risk."
+   },
+   "id": "ext-riesgo-08-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué usan errores estándar de Driscoll y Kraay?",
+    "en": "Why do they use Driscoll-Kraay standard errors?"
+   },
+   "op": {
+    "es": [
+     "Porque detectan dependencia entre países, además de heterocedasticidad y autocorrelación",
+     "Porque los datos son anuales",
+     "Porque no hay efectos fijos",
+     "Porque los spreads son estacionarios"
+    ],
+    "en": [
+     "Because they detect cross-country dependence, besides heteroskedasticity and autocorrelation",
+     "Because data are annual",
+     "Because there are no fixed effects",
+     "Because spreads are stationary"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un test de Breusch y Pagan indicó dependencia transversal en los errores, algo esperable cuando todos los países reaccionan a lo global.",
+    "en": "A Breusch-Pagan test indicated cross-sectional dependence, expected when all countries react to global factors."
+   },
+   "id": "ext-riesgo-08-q2"
+  },
+  {
+   "q": {
+    "es": "¿A qué tipo de riesgo son más sensibles los spreads según los efectos fijos?",
+    "en": "To which kind of risk are spreads most sensitive according to the fixed effects?"
+   },
+   "op": {
+    "es": [
+     "Al económico",
+     "Solo al global",
+     "Al financiero y al político",
+     "A ninguno"
+    ],
+    "en": [
+     "Economic",
+     "Only global",
+     "Financial and political",
+     "None"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Un 1% de mejora en el índice financiero baja el spread 2,8% a 3,5%, contra 0,5% a 0,6% del económico.",
+    "en": "A 1% improvement in the financial index cuts the spread 2.8% to 3.5%, versus 0.5% to 0.6% for the economic one."
+   },
+   "id": "ext-riesgo-08-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto tiene un aumento del 1% del VIX sobre el spread?",
+    "en": "What effect does a 1% rise in the VIX have on the spread?"
+   },
+   "op": {
+    "es": [
+     "Lo baja un 0,7%",
+     "No tiene efecto",
+     "Lo sube un 7%",
+     "Lo sube un 0,7%"
+    ],
+    "en": [
+     "It lowers it 0.7%",
+     "No effect",
+     "It raises it 7%",
+     "It raises it 0.7%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El VIX mide la aversión global al riesgo y es el factor global más robusto del trabajo.",
+    "en": "The VIX measures global risk aversion and is the paper's most robust global factor."
+   },
+   "id": "ext-riesgo-08-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la tasa de fondos federales deja de ser significativa cuando se incluye el VIX?",
+    "en": "Why does the Fed funds rate lose significance when the VIX is included?"
+   },
+   "op": {
+    "es": [
+     "Porque la política monetaria de EE.UU. refleja en parte la aversión global al riesgo",
+     "Porque la tasa no varió",
+     "Porque los emergentes no se endeudan en dólares",
+     "Porque el VIX se calcula con la tasa"
+    ],
+    "en": [
+     "Because US monetary policy partly reflects global risk aversion",
+     "Because the rate did not move",
+     "Because emerging economies do not borrow in dollars",
+     "Because the VIX is computed from the rate"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Ambas variables están correlacionadas negativamente, así que el VIX absorbe buena parte del efecto.",
+    "en": "Both variables are negatively correlated, so the VIX absorbs much of the effect."
+   },
+   "id": "ext-riesgo-08-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué relación encuentran entre la calidad de los fundamentos y la sensibilidad al VIX?",
+    "en": "What relationship do they find between the quality of fundamentals and sensitivity to the VIX?"
+   },
+   "op": {
+    "es": [
+     "Los países con mejores fundamentos son más sensibles",
+     "No hay relación",
+     "Los países con mejores fundamentos son menos sensibles",
+     "Solo los países europeos reaccionan"
+    ],
+    "en": [
+     "Countries with better fundamentals are more sensitive",
+     "No relationship",
+     "Countries with better fundamentals are less sensitive",
+     "Only European countries react"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Lo muestran dividiendo la muestra por mediana y con los coeficientes de corto plazo por país del Pooled Mean Group.",
+    "en": "They show it by median splits and with country-level short-run coefficients from the Pooled Mean Group."
+   },
+   "id": "ext-riesgo-08-q6"
+  },
+  {
+   "q": {
+    "es": "En el Pooled Mean Group, ¿qué determina los spreads en el corto plazo?",
+    "en": "In the Pooled Mean Group, what determines spreads in the short run?"
+   },
+   "op": {
+    "es": [
+     "Sobre todo los índices de riesgo económico",
+     "Sobre todo los factores globales",
+     "Solo el riesgo político",
+     "Nada: los spreads no se mueven en el corto plazo"
+    ],
+    "en": [
+     "Mainly economic risk indices",
+     "Mainly global factors",
+     "Only political risk",
+     "Nothing: spreads do not move short term"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los fundamentos cambian despacio; lo que varía mes a mes es el contexto global.",
+    "en": "Fundamentals change slowly; what varies month to month is the global context."
+   },
+   "id": "ext-riesgo-08-q7"
+  },
+  {
+   "q": {
+    "es": "En 2012 los spreads de casi todos los emergentes cayeron con fuerza. Según el trabajo, ¿qué riesgo deja ese episodio para los países con fundamentos débiles?",
+    "en": "In 2012 nearly all emerging spreads fell sharply. According to the paper, what risk does that leave for countries with weak fundamentals?"
+   },
+   "op": {
+    "es": [
+     "Ninguno, porque los spreads bajos son permanentes",
+     "Que suba su calificación automáticamente",
+     "Que pierdan acceso al FMI",
+     "Quedar expuestos a una corrección cuando los spreads vuelvan a su valor de largo plazo"
+    ],
+    "en": [
+     "None, since low spreads are permanent",
+     "An automatic rating upgrade",
+     "Losing IMF access",
+     "Being exposed to a correction when spreads return to their long-run value"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La liquidez levantó todos los botes, sólidos y frágiles; los frágiles quedan vulnerables cuando cambia el viento.",
+    "en": "Liquidity lifted all boats, sturdy and shaky; the shaky ones are vulnerable when the wind changes."
+   },
+   "id": "ext-riesgo-08-q8"
+  }
+ ],
+ "palabras": 1053,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué en el corto plazo los spreads emergentes dependen más de lo global que de los fundamentos de cada país?",
+    "en": "Why do emerging spreads depend more on global factors than on country fundamentals in the short run?"
+   },
+   "a": {
+    "es": "Porque los fundamentos cambian despacio y lo que varía mes a mes es el contexto global; en el largo plazo pesan ambos. Csonto e Ivaschenko (2013) lo muestran con 18 emergentes entre 2001 y 2013.",
+    "en": "Because fundamentals change slowly and what varies month to month is the global context; in the long run both matter. Csonto and Ivaschenko (2013) show it with 18 emerging economies, 2001-2013."
+   },
+   "id": "ext-riesgo-08-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué miran más los inversores al valuar un bono emergente: la liquidez y el riesgo político, o la solvencia macroeconómica?",
+    "en": "What do investors watch more when pricing an emerging bond: liquidity and political risk, or macro solvency?"
+   },
+   "a": {
+    "es": "La liquidez y el riesgo político: un 1% de mejora en el índice de riesgo financiero baja el spread 2,8% a 3,5% y en el político 2,3% a 2,5%, contra 0,5% a 0,6% del económico (Csonto e Ivaschenko, 2013).",
+    "en": "Liquidity and political risk: a 1% improvement in the financial risk index cuts the spread 2.8% to 3.5% and the political one 2.3% to 2.5%, versus 0.5% to 0.6% for the economic one (Csonto and Ivaschenko, 2013)."
+   },
+   "id": "ext-riesgo-08-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto sube el spread de un emergente cuando aumenta la aversión global al riesgo?",
+    "en": "How much does an emerging spread rise when global risk aversion increases?"
+   },
+   "a": {
+    "es": "Un 1% más de VIX se asocia con un 0,7% más de spread, según Csonto e Ivaschenko (2013); la tasa de la Fed pierde significatividad cuando se incluye el VIX.",
+    "en": "1% more VIX is associated with 0.7% more spread, according to Csonto and Ivaschenko (2013); the Fed rate loses significance once the VIX is included."
+   },
+   "id": "ext-riesgo-08-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué doble beneficio obtiene un emergente al mejorar sus fundamentos?",
+    "en": "What double benefit does an emerging economy get from improving its fundamentals?"
+   },
+   "a": {
+    "es": "Un spread de equilibrio más bajo y una menor sensibilidad a los cambios en la aversión global al riesgo. Csonto e Ivaschenko (2013) encuentran que los países con mejores índices de riesgo tienen un coeficiente de corto plazo del VIX más chico.",
+    "en": "A lower equilibrium spread and lower sensitivity to swings in global risk aversion. Csonto and Ivaschenko (2013) find countries with better risk indices have a smaller short-run VIX coefficient."
+   },
+   "id": "ext-riesgo-08-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué las regresiones país por país pueden subestimar el papel de los fundamentos en los spreads?",
+    "en": "Why can country-by-country regressions understate the role of fundamentals in spreads?"
+   },
+   "a": {
+    "es": "Porque los fundamentos varían poco en el tiempo comparados con los spreads; imponer coeficientes de largo plazo comunes, como hace el Pooled Mean Group, aprovecha la variación entre países. Csonto e Ivaschenko (2013) usan ese argumento.",
+    "en": "Because fundamentals vary little over time compared with spreads; imposing common long-run coefficients, as the Pooled Mean Group does, exploits cross-country variation. Csonto and Ivaschenko (2013) use that argument."
+   },
+   "id": "ext-riesgo-08-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa que un spread soberano esté desalineado?",
+    "en": "What does it mean for a sovereign spread to be misaligned?"
+   },
+   "a": {
+    "es": "Que se aparta del valor que predicen sus determinantes. Csonto e Ivaschenko (2013) descomponen el residuo en corrección de desalineamientos previos y acumulación de nuevos, y encuentran que crece en las crisis severas, como la europea.",
+    "en": "That it departs from the value its determinants predict. Csonto and Ivaschenko (2013) split the residual into correction of past misalignment and build-up of new misalignment, which grows in severe crises such as Europe's."
+   },
+   "id": "ext-riesgo-08-t6"
+  }
+ ]
+}
