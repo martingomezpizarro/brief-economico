@@ -42,10 +42,14 @@ button{font:inherit;color:inherit;cursor:pointer}
 #wrap #main{max-width:40rem;width:100%;margin:0 auto}
 #wrap.ancha #main{max-width:52rem}
 @media (min-width:900px){ #wrap #main.ancho{max-width:74rem} }
-.cols,.col,.grid2{display:flex;flex-direction:column;gap:28px;min-width:0}
+.cols,.col,.grid2,.hoy,.hoy-top,.hoy-par{display:flex;flex-direction:column;gap:28px;min-width:0}
 @media (min-width:900px){
   .cols{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:56px;align-items:start}
   .grid2{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 56px;align-items:start}
+  /* Hoy: brief y tarjetas en mitades iguales, con los botones en la misma fila */
+  .hoy-par{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:28px 56px;align-items:stretch}
+  .hoy-par>.block>.btn,.hoy-par>.block>.muted:last-child{margin-top:auto}
+  .hoy-par>.rule{border-top:0;padding-top:0}
 }
 .volver{font-family:var(--mono);font-size:12px;margin-bottom:-12px}
 .volver a{text-decoration:none;color:var(--muted);display:inline-flex;align-items:center;min-height:32px}
@@ -555,9 +559,12 @@ function viewHoy(){
     h("p",{class:"eyebrow c"},tr("cajas")),
     h("div",{class:"cajas"},box.map((n,i)=>h("div",{class:"caja"},h("b",null,n),(S.lang==="es"?"caja ":"box ")+(i+1),h("br"),INT[i]+" d"))),
     h("p",{class:"note c"},S.lang==="es"?(leidas+" de "+S.lecciones.length+" briefs leídos · "+enRepaso+" preguntas en repaso. Las preguntas entran al repaso después de leer, nunca antes."):(leidas+" of "+S.lecciones.length+" briefs read · "+enRepaso+" questions in review. Questions join the review after you read, never before."))));
-  // en compu: brief a la izquierda; tarjetas, ruta y cajas a la derecha
-  const i=nodes.indexOf(brief)+1;
-  mount(h("div",{class:"cols"},h("div",{class:"col"},...nodes.slice(0,i)),h("div",{class:"col"},...nodes.slice(i))));
+  // en compu: logo, fecha y aviso a todo el ancho; abajo brief | tarjetas en mitades, y ruta | cajas debajo
+  const ib=nodes.indexOf(brief),is=nodes.indexOf(ses);
+  mount(h("div",{class:"hoy"},
+    h("div",{class:"hoy-top"},...nodes.slice(0,ib)),
+    h("div",{class:"hoy-par"},brief,ses),
+    h("div",{class:"grid2"},...nodes.slice(is+1))));
   avisoTexto();
 }
 
