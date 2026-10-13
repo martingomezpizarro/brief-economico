@@ -18,8 +18,11 @@
 //    TOPE_GLOBAL      300  pedidos entre todos por día (opcional)
 //    ADMINS           mails sin límite, separados por coma (opcional)
 //    ORIGENES         dominios permitidos, separados por coma (opcional)
-//  Enlace KV (Settings → Bindings → KV namespace):  CUPOS
-//  El bloque del prompt es copia de prompts/prompts.js: si cambiás uno, copiá el otro.
+//    VAPID_JWK        secreto opcional — clave privada de los avisos (JWK). Si no está,
+//                     el Worker crea una la primera vez y la guarda en el KV.
+//  Enlace KV (Settings → Bindings → KV namespace):  CUPOS  (cupos y suscripciones a avisos)
+//  Disparador (Settings → Triggers → Cron Triggers):  */30 * * * *   (manda los avisos diarios)
+//  El bloque del prompt es copia de prompts/prompts.js: para actualizarlo, node worker/armar.js
 // =====================================================================
 
 const ORIGENES_DEF = [
@@ -33,6 +36,7 @@ const JWKS_URL = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken
 const MAX_CHARS = 200000;   // texto de documentos por pedido
 
 // ---------------------------------------------------------------- prompt maestro (copiado de prompts/prompts.js)
+
 /* Prompt maestro de Prebisch.
    Lo usan la página (con key propia) y el Worker (con la key del sitio): es la misma
    instrucción en los dos lados para que los briefs salgan iguales. Si lo cambiás, corré
@@ -57,6 +61,11 @@ const MAX_CHARS = 200000;   // texto de documentos por pedido
      "op": {"es": ["A", "B", "C", "D"], "en": ["A", "B", "C", "D"]},
      "ok": 0,
      "exp": {"es": "por qué es la correcta", "en": "why it is correct"}}
+  ],
+  "tarjetas": [
+    {"tipo": "concepto | idea | mecanismo | modelo | econometria | resultado | critica | aplicacion",
+     "q": {"es": "pregunta corta", "en": "short question"},
+     "a": {"es": "respuesta de una a tres oraciones", "en": "one-to-three sentence answer"}}
   ]
 }`;
 
@@ -80,6 +89,12 @@ PREGUNTAS DE CONTROL
 - Se tienen que poder responder con lo que dice el brief. Mezclá: idea central, mecanismo, modelo, datos y método, resultados con números, y una de aplicación.
 - Distractores plausibles (errores típicos), nunca absurdos. Variá la posición de la correcta ("ok" es el índice 0 a 3).
 - "exp" explica en una o dos oraciones por qué es la correcta.
+
+TARJETAS DE APRENDIZAJE
+- Entre 6 y 8 tarjetas de pregunta y respuesta abierta, en castellano y en inglés, para el repaso espaciado de los días siguientes.
+- Cada tarjeta fija una sola idea: un concepto, un mecanismo, un supuesto del modelo, un dato o un resultado con su número.
+- No repitas las preguntas de control: las tarjetas se responden de memoria, sin opciones.
+- La respuesta tiene que poder recordarse: de una a tres oraciones, con el número o el nombre exacto cuando lo haya.
 
 FORMATO
 Respondé SOLO con un objeto JSON válido, sin texto antes ni después, con esta forma:
@@ -166,6 +181,12 @@ ${ESQUEMA_RUTA}`;
       exp: { es: (q.exp && q.exp.es) || "", en: (q.exp && (q.exp.en || q.exp.es)) || "" },
     }));
     if (b.preguntas.length < 4) throw new Error("Tiene menos de 4 preguntas válidas.");
+    const TIPOS = ["concepto", "idea", "mecanismo", "modelo", "econometria", "resultado", "critica", "aplicacion"];
+    b.tarjetas = (Array.isArray(b.tarjetas) ? b.tarjetas : []).filter(c => c && c.q && c.a && txt(c.q.es) && txt(c.a.es)).slice(0, 10).map(c => ({
+      tipo: TIPOS.includes(c.tipo) ? c.tipo : "concepto",
+      q: { es: c.q.es, en: txt(c.q.en) ? c.q.en : c.q.es },
+      a: { es: c.a.es, en: txt(c.a.en) ? c.a.en : c.a.es },
+    }));
     b.bajada = txt(b.bajada) ? b.bajada : "";
     b.cita = txt(b.cita) ? b.cita : "";
     b.palabras = [b.intro].concat(...b.secciones.map(s => s.p)).join(" ").split(/\s+/).length;
@@ -303,6 +324,7 @@ function textoDe(j) {
 const PR = globalThis.BREVE_PROMPTS;
 
 async function generar(req, env, u) {
+  if (!u.verificado) return json(req, env, { error: "Verificá tu mail para usar el servidor: abrí el enlace que te mandamos al crear la cuenta (en Ajustes podés pedir que te lo reenviemos)." }, 403);
   const d = await req.json().catch(() => null);
   if (!d || (d.tipo !== "ruta" && d.tipo !== "brief")) return json(req, env, { error: "Pedido inválido." }, 400);
   const docs = (Array.isArray(d.docs) ? d.docs : []).slice(0, 12)
@@ -331,6 +353,98 @@ async function generar(req, env, u) {
   return json(req, env, { texto, quedan: c.quedan });
 }
 
+// ---------------------------------------------------------------- avisos (Web Push con VAPID, sin contenido)
+// La página se suscribe con la clave pública y elige una franja de media hora en UTC.
+// En el KV queda «push:HH:MM:<id>» → {endpoint, uid} y «pushid:<id>» → franja actual.
+// El cron de cada media hora lista la franja y manda un push vacío; el texto lo arma el service worker.
+const b64uEnc = a => btoa(String.fromCharCode(...new Uint8Array(a))).replace(/\+/g, "-").replace(/\//g, "_").replace(/=+$/, "");
+let VAPID = null;
+async function vapid(env) {
+  if (VAPID) return VAPID;
+  if (!env.CUPOS && !env.VAPID_JWK) throw Object.assign(new Error("Falta enlazar el KV CUPOS para los avisos."), { status: 500 });
+  let jwk = env.VAPID_JWK ? JSON.parse(env.VAPID_JWK) : await env.CUPOS.get("vapid:jwk", "json");
+  if (!jwk) {
+    const par = await crypto.subtle.generateKey({ name: "ECDSA", namedCurve: "P-256" }, true, ["sign", "verify"]);
+    jwk = await crypto.subtle.exportKey("jwk", par.privateKey);
+    await env.CUPOS.put("vapid:jwk", JSON.stringify(jwk));
+  }
+  const privada = await crypto.subtle.importKey("jwk", { kty: "EC", crv: "P-256", d: jwk.d, x: jwk.x, y: jwk.y }, { name: "ECDSA", namedCurve: "P-256" }, false, ["sign"]);
+  const pub = new Uint8Array(65); pub[0] = 4; pub.set(b64u(jwk.x), 1); pub.set(b64u(jwk.y), 33);
+  return VAPID = { privada, publica: b64uEnc(pub), jwts: new Map() };
+}
+async function cabeceraVapid(env, endpoint) {
+  const v = await vapid(env), aud = new URL(endpoint).origin, ahora = Math.floor(Date.now() / 1000);
+  const guardado = v.jwts.get(aud);
+  if (guardado && guardado.vence > ahora + 600) return guardado.cab;
+  const enc = o => b64uEnc(new TextEncoder().encode(JSON.stringify(o)));
+  const cuerpo = enc({ typ: "JWT", alg: "ES256" }) + "." + enc({ aud, exp: ahora + 12 * 3600, sub: env.VAPID_SUB || ORIGENES_DEF[0] });
+  const firma = await crypto.subtle.sign({ name: "ECDSA", hash: "SHA-256" }, v.privada, new TextEncoder().encode(cuerpo));
+  const cab = `vapid t=${cuerpo}.${b64uEnc(firma)}, k=${v.publica}`;
+  v.jwts.set(aud, { cab, vence: ahora + 12 * 3600 });
+  return cab;
+}
+async function mandarPush(env, endpoint) {
+  const r = await fetch(endpoint, { method: "POST", headers: { Authorization: await cabeceraVapid(env, endpoint), TTL: "43200", Urgency: "normal", "Content-Length": "0" } });
+  return r.status;
+}
+async function idDe(endpoint) {
+  const h = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(endpoint));
+  return [...new Uint8Array(h)].slice(0, 12).map(b => b.toString(16).padStart(2, "0")).join("");
+}
+function endpointValido(e) {
+  try { const u = new URL(e); return u.protocol === "https:" && e.length < 1000; } catch (_) { return false; }
+}
+async function borrarSus(env, id) {
+  const franja = await env.CUPOS.get("pushid:" + id);
+  if (franja) await env.CUPOS.delete(`push:${franja}:${id}`);
+  await env.CUPOS.delete("pushid:" + id);
+}
+async function push(req, env, ruta) {
+  if (!env.CUPOS) return json(req, env, { error: "Falta enlazar el KV CUPOS en el Worker." }, 500);
+  if (ruta === "/push/clave") return json(req, env, { clave: (await vapid(env)).publica });
+  const u = await usuario(req, env);
+  if (!u) return json(req, env, { error: "Tenés que iniciar sesión para activar los avisos.", login: true }, 401);
+  const d = await req.json().catch(() => null) || {};
+  const endpoint = String((d.sub && d.sub.endpoint) || d.endpoint || "");
+  if (!endpointValido(endpoint)) return json(req, env, { error: "Suscripción inválida." }, 400);
+  const id = await idDe(endpoint);
+  if (ruta === "/push/alta") {
+    const franja = String(d.slot || "");
+    if (!/^([01]\d|2[0-3]):(00|30)$/.test(franja)) return json(req, env, { error: "Horario inválido." }, 400);
+    const anterior = await env.CUPOS.get("pushid:" + id);
+    if (anterior && anterior !== franja) await env.CUPOS.delete(`push:${anterior}:${id}`);
+    await env.CUPOS.put(`push:${franja}:${id}`, JSON.stringify({ endpoint, uid: u.uid, t: Date.now() }));
+    await env.CUPOS.put("pushid:" + id, franja);
+    return json(req, env, { ok: true, franja });
+  }
+  const guardada = await env.CUPOS.get("pushid:" + id);
+  if (ruta === "/push/baja") { await borrarSus(env, id); return json(req, env, { ok: true }); }
+  if (ruta === "/push/probar") {
+    if (!guardada) return json(req, env, { error: "Este dispositivo no figura suscripto: desactivá y volvé a activar los avisos." }, 404);
+    const st = await mandarPush(env, endpoint);
+    if (st === 404 || st === 410) { await borrarSus(env, id); return json(req, env, { error: "La suscripción venció: volvé a activar los avisos." }, 410); }
+    if (st >= 400) return json(req, env, { error: "El servicio de avisos del navegador respondió " + st + "." }, 502);
+    return json(req, env, { ok: true });
+  }
+  return json(req, env, { error: "No existe." }, 404);
+}
+async function avisosDeLaFranja(env) {
+  if (!env.CUPOS) return;
+  const ahora = new Date(), m = Math.round((ahora.getUTCHours() * 60 + ahora.getUTCMinutes()) / 30) * 30 % 1440;
+  const franja = String(Math.floor(m / 60)).padStart(2, "0") + ":" + String(m % 60).padStart(2, "0");
+  let cursor;
+  do {
+    const l = await env.CUPOS.list({ prefix: `push:${franja}:`, cursor });
+    for (const k of l.keys) {
+      const v = await env.CUPOS.get(k.name, "json");
+      if (!v) continue;
+      const st = await mandarPush(env, v.endpoint).catch(() => 0);
+      if (st === 404 || st === 410) await borrarSus(env, k.name.split(":").pop());
+    }
+    cursor = l.list_complete ? null : l.cursor;
+  } while (cursor);
+}
+
 // ---------------------------------------------------------------- entrada
 export default {
   async fetch(req, env) {
@@ -343,6 +457,10 @@ export default {
           limite: +env.LIMITE_DIARIO || 4, kv: !!env.CUPOS,
         });
       }
+      if (ruta.startsWith("/push/")) {
+        if (ruta === "/push/clave" ? req.method !== "GET" : req.method !== "POST") return json(req, env, { error: "No existe." }, 404);
+        return await push(req, env, ruta);
+      }
       if (req.method !== "POST" || ruta !== "/generar") return json(req, env, { error: "No existe." }, 404);
       if (!env.GEMINI_API_KEY) return json(req, env, { error: "Falta cargar la GEMINI_API_KEY en el Worker." }, 500);
       const u = await usuario(req, env);
@@ -351,5 +469,8 @@ export default {
     } catch (e) {
       return json(req, env, { error: (e && e.message) || "Algo salió mal en el servidor." }, e.status || 500);
     }
+  },
+  async scheduled(evento, env, ctx) {
+    ctx.waitUntil(avisosDeLaFranja(env));
   },
 };

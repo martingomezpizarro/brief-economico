@@ -7,8 +7,13 @@
 <meta name="description" content="Briefs diarios de economía: lecturas de 15 minutos sobre papers y libros, preguntas de control y repaso espaciado. Armá tu propia ruta de estudio con tus PDFs.">
 <meta name="theme-color" content="#FAF5EC">
 <link rel="icon" href="icono.svg" type="image/svg+xml">
+<link rel="icon" href="iconos/favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="iconos/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prebisch">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
 /* Layout: una columna de lectura (≈38rem) estilo paper anotado; en pantallas anchas la ficha abre una columna de notas al margen. */
 :root{
@@ -41,7 +46,18 @@ ul,ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;tex
 
 /* barra */
 .bar{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:16px 12px;border-bottom:1px solid var(--line)}
-.brand{font-weight:600;font-size:19px;text-decoration:none;color:var(--ink)}
+.brand{display:flex;align-items:center;gap:8px;font:600 25px/1 "Cormorant Garamond",var(--serif);letter-spacing:.04em;text-decoration:none;color:var(--ink)}
+.brand svg{color:var(--accent);flex:none}
+.sello{display:flex;justify-content:center;color:var(--accent)}
+.sello svg{max-width:100%;height:auto}
+.orn{display:flex;align-items:center;gap:12px;color:var(--line2)}
+.orn::before,.orn::after{content:"";flex:1;border-top:1px solid var(--line)}
+.orn svg{color:var(--accent);opacity:.8}
+.cuenta{display:flex;flex-direction:column;gap:10px}
+.cuenta input{font:15px var(--serif);background:var(--surface);color:var(--ink);border:1px solid var(--line2);border-radius:2px;padding:10px;width:100%;box-sizing:border-box;min-height:44px}
+.sep{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+.sep::before,.sep::after{content:"";flex:1;border-top:1px solid var(--line)}
+.linkbtn{background:none;border:0;padding:0;color:var(--accent);text-decoration:underline;text-underline-offset:2px;font-size:14px}
 .nav{display:flex;gap:4px;flex-wrap:wrap;font-family:var(--mono);font-size:12px}
 .nav a{padding:8px 10px;text-decoration:none;color:var(--muted);border-radius:2px}
 .nav a[aria-current="page"]{color:var(--ink);background:var(--honey)}
@@ -177,7 +193,7 @@ select{min-width:0;max-width:100%}
 <body>
 <div class="wrap" id="wrap">
   <header class="bar">
-    <a class="brand" href="#hoy">Prebisch</a>
+    <a class="brand" href="#hoy" id="brand">Prebisch</a>
     <nav class="nav" aria-label="Secciones">
       <a href="#hoy" id="n-hoy">Hoy</a>
       <a href="#rutas" id="n-rutas">Rutas</a>
@@ -192,6 +208,7 @@ select{min-width:0;max-width:100%}
   </header>
   <main id="main" class="wrap">
     <div class="empty" id="boot">
+      <div class="sello" id="boot-sello"></div>
       <p class="c">Cargando Prebisch…</p>
       <p class="note c">Acá van a aparecer el paper del día, las tarjetas pendientes y tu progreso por caja.</p>
     </div>
@@ -199,6 +216,7 @@ select{min-width:0;max-width:100%}
 </div>
 
 <script src="prompts/prompts.js"></script>
+<script src="logo.js"></script>
 <script>
 window.MathJax={tex:{inlineMath:[["\\(","\\)"]]},svg:{fontCache:"global"},startup:{typeset:false}};
 </script>
@@ -262,16 +280,20 @@ function cardsDe(l){
   const area=(ruta(l.cat)||{}).area||"";
   (l.preguntas||[]).forEach((q,i)=>{const id=q.id||(l.id+"-q"+(i+1));if(S.cards.some(c=>c.id===id))return;
     S.cards.push({id,leccion:l.id,paper:(l.fuentes||[])[0],area,nivel:2,tipo:"control",q:q.q,a:{es:q.op.es[q.ok]+". "+q.exp.es,en:(q.op.en||q.op.es)[q.ok]+". "+(q.exp.en||q.exp.es)},fuente:l.titulo})});
+  // tarjetas de aprendizaje del brief: entran al repaso del día en que se lee
+  (l.tarjetas||[]).forEach((t,i)=>{const id=t.id||(l.id+"-t"+(i+1));if(S.cards.some(c=>c.id===id))return;
+    S.cards.push({id,leccion:l.id,tarjeta:true,paper:(l.fuentes||[])[0],area,nivel:1,tipo:t.tipo||"concepto",q:t.q,a:t.a,fuente:l.titulo})});
 }
 async function getLec(id){
   if(S.lecFull[id])return S.lecFull[id];
   if(S.mis.lecciones[id])return S.lecFull[id]=S.mis.lecciones[id];
   const l=await getJSON("data/lecciones/"+encodeURIComponent(id)+".json");
   (l.preguntas||[]).forEach((q,i)=>{if(!q.id)q.id=l.id+"-q"+(i+1)});
+  (l.tarjetas||[]).forEach((t,i)=>{if(!t.id)t.id=l.id+"-t"+(i+1)});
   S.lecFull[id]=l;cardsDe(l);return l;
 }
 function registrarMia(l){
-  const meta={id:l.id,cat:l.cat,orden:l.orden||0,titulo:l.titulo,bajada:l.bajada,cita:l.cita,palabras:l.palabras,fuentes:[],nPreg:l.preguntas.length,mia:true};
+  const meta={id:l.id,cat:l.cat,orden:l.orden||0,titulo:l.titulo,bajada:l.bajada,cita:l.cita,palabras:l.palabras,fuentes:[],nPreg:l.preguntas.length,nTarj:(l.tarjetas||[]).length,mia:true};
   S.lecById[l.id]=meta;if(!S.lecciones.some(x=>x.id===l.id))S.lecciones.push(meta);
   S.lecFull[l.id]=l;cardsDe(l);
 }
@@ -371,27 +393,31 @@ function setLang(l){S.lang=l;if(S.est){S.est.cfg.lang=l;save()}if(S.ready)route(
 
 /* ---------- repetición espaciada ---------- */
 function interleave(list){const g={};list.forEach(c=>{(g[c.area]=g[c.area]||[]).push(c)});const keys=Object.keys(g);const out=[];let i=0;while(out.length<list.length){const k=keys[i%keys.length];if(g[k].length)out.push(g[k].shift());i++}return out}
+/* Qué tarjetas pueden aparecer: las que ya están en repaso; las de los mazos del rack, desde el
+   primer día; las de cada brief, desde que se lee. Las preguntas de control entran al terminar el quiz. */
+function elegible(c){if(S.est.cards[c.id])return true;if(c.tarjeta)return !!S.est.lecciones[c.leccion];return !c.leccion}
 function plan(onlyPaper){
   const t=today(),cfg=S.est.cfg,st=S.est.cards;
-  const fr=cfg.foco?ruta(cfg.foco):null;const pos={};if(fr)fr.pasos.forEach((id,i)=>pos[id]=i);
-  const pool=S.cards.filter(c=>(st[c.id]||(!c.leccion&&S.est.leidos[c.paper]))&&(onlyPaper?c.paper===onlyPaper:(cfg.areas.includes(c.area)||(c.paper in pos)||c.leccion)));
+  const fr=cfg.foco?ruta(cfg.foco):null;const pos={};if(fr&&fr.tipo!=="mia")fr.pasos.forEach((id,i)=>pos[id]=i);
+  const pool=S.cards.filter(c=>elegible(c)&&(onlyPaper?c.paper===onlyPaper:(cfg.areas.includes(c.area)||(c.paper in pos)||c.leccion)));
   const due=pool.filter(c=>st[c.id]&&st[c.id].d<=t).sort((a,b)=>st[a.id].d-st[b.id].d);
   const usadas=S.est.dia.f===t?S.est.dia.n:0;
   const cupoNuevas=onlyPaper?99:Math.max(0,cfg.nuevas-usadas);
   const rk=c=>(c.paper in pos)?pos[c.paper]:1e6;
-  const nuevas=pool.filter(c=>!st[c.id]).sort((a,b)=>(rk(a)-rk(b))||(a.nivel-b.nivel)||(a.paper-b.paper)).slice(0,cupoNuevas);
+  const deBrief=pool.filter(c=>!st[c.id]&&c.tarjeta).sort((a,b)=>((S.est.lecciones[b.leccion]||{}).d||0)-((S.est.lecciones[a.leccion]||{}).d||0)||a.id.localeCompare(b.id));
+  const nuevas=deBrief.concat(pool.filter(c=>!st[c.id]&&!c.tarjeta).sort((a,b)=>(rk(a)-rk(b))||(a.nivel-b.nivel)||((a.paper||0)-(b.paper||0))).slice(0,cupoNuevas));
   const cap=onlyPaper?999:Math.max(4,cfg.minutos*2);
   const d=due.slice(0,cap);const n=nuevas.slice(0,Math.max(0,cap-d.length));
   return{due:d,nuevas:n,items:interleave(d.concat(n))};
 }
 function startSession(onlyPaper){
   const p=plan(onlyPaper);if(!p.items.length)return;
-  S.ses={q:p.items.slice(),i:0,shown:false,total:p.items.length,done:0,g:{1:0,2:0,3:0,4:0}};
+  S.ses={q:p.items.slice(),i:0,shown:false,total:p.items.length,done:0,g:{1:0,2:0,3:0,4:0},ini:Date.now()};
   location.hash="#sesion";if(location.hash==="#sesion")viewCard();
 }
 function grade(g){
   const ses=S.ses;const c=ses.q[ses.i];const t=today();const st=S.est.cards;const prev=st[c.id];
-  if(!prev){if(S.est.dia.f!==t)S.est.dia={f:t,n:0};S.est.dia.n++}
+  if(!prev&&!c.leccion){if(S.est.dia.f!==t)S.est.dia={f:t,n:0};S.est.dia.n++}
   let b=prev?prev.b:0,d;
   if(g===1){b=1;d=t}else if(g===2){b=Math.max(1,b);d=t+Math.ceil(INT[b-1]/2)}else if(g===3){b=Math.min(6,b+1);d=t+INT[b-1]}else{b=Math.min(6,b+2);d=t+INT[b-1]}
   st[c.id]={b,d};ses.g[g]++;
@@ -406,7 +432,7 @@ function viewHoy(){
   const t=today();
   const nodes=[];const es=S.lang==="es";
   const fecha=new Date().toLocaleDateString(es?"es-AR":"en-US",{weekday:"long",day:"numeric",month:"long"});
-  nodes.push(h("p",{class:"eyebrow c"},fecha));
+  nodes.push(selloNodo(84),h("p",{class:"eyebrow c"},fecha));
   const nl=nextLeccion();
   const brief=h("section",{class:"block"},h("p",{class:"eyebrow c"},es?"Brief de hoy":"Today's brief"));
   if(nl.hoy){const d=lecDone(nl.hoy);
@@ -418,7 +444,7 @@ function viewHoy(){
       h("h1",{class:"c",style:"font-size:25px;line-height:1.25"},l.titulo),
       h("p",{class:"cita"},l.cita),
       h("p",{class:"j"},l.bajada),
-      h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.nPreg+(es?" preguntas de control":" check questions")),
+      h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.nPreg+(es?" preguntas de control":" check questions")+(l.nTarj?" · "+l.nTarj+(es?" tarjetas":" cards"):"")),
       h("a",{class:"btn",href:"#l-"+l.id,style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Leer el brief":"Read the brief"));
   }else if(nl.paso){const r=nl.foco;
     brief.append(h("p",{class:"c note"},rutaEtiqueta(r)),
@@ -427,6 +453,23 @@ function viewHoy(){
       h("a",{class:"btn",href:"#ruta-"+encodeURIComponent(r.id),style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Generar el brief de hoy":"Generate today's brief"));
   }else{brief.append(h("p",{class:"c muted"},es?"Leíste todos los briefs disponibles. Mañana se suman nuevos, o armá tu propia ruta en Mi estudio.":"You have read every available brief. New ones arrive tomorrow, or build your own path in My study."))}
   nodes.push(brief);
+  const pl=plan();
+  const minutos=Math.max(1,Math.round(pl.items.length/2));
+  const pendTarj=(!nl.hoy&&nl.sig&&nl.sig.nTarj)?nl.sig.nTarj:0;
+  const ses=h("section",{class:"block rule"},
+    h("p",{class:"eyebrow c"},es?"Tarjetas de hoy":"Today's cards"),
+    h("p",{class:"c note"},es?"Repaso espaciado: las nuevas salen de tus áreas y de los briefs que leíste; las que ya viste vuelven según su caja.":"Spaced review: new cards come from your areas and the briefs you read; seen ones return by box."),
+    h("div",{class:"stats"},
+      h("div",{class:"stat"},h("b",null,pl.due.length),h("span",null,tr("venc"))),
+      h("div",{class:"stat"},h("b",null,pl.nuevas.length),h("span",null,tr("nuevas"))),
+      h("div",{class:"stat"},h("b",null,pl.items.length?"≈"+minutos:"0"),h("span",null,tr("min")))),
+    pendTarj?h("p",{class:"c small"},es?"Cuando termines el brief se suman sus "+pendTarj+" tarjetas.":"Finishing the brief adds its "+pendTarj+" cards."):null);
+  if(pl.items.length)ses.append(h("button",{class:"btn",type:"button",on:{click:()=>startSession()}},(es?"Empezar las tarjetas":"Start the cards")+" ("+pl.items.length+")"));
+  else{
+    const st=S.est.cards;const prox=Object.values(st).map(x=>x.d).filter(d=>d>t).sort((a,b)=>a-b)[0];
+    ses.append(h("p",{class:"c muted"},tr("nada")+(prox?(S.lang==="es"?" Las próximas vencen en "+(prox-t)+" día(s).":" Next ones due in "+(prox-t)+" day(s)."):"")));
+  }
+  nodes.push(ses);
   const foco=S.est.cfg.foco?ruta(S.est.cfg.foco):null;
   if(foco&&foco.tipo==="mia"){
     const n=foco.pasos.length,gen=foco.pasos.filter(p=>p.lec).length,lei=foco.pasos.filter(p=>p.lec&&S.est.lecciones[p.lec]).length;
@@ -446,21 +489,6 @@ function viewHoy(){
   }else{
     nodes.push(h("p",{class:"c small"},h("a",{href:"#rutas"},S.lang==="es"?"Elegí una ruta de lectura para orientar tu estudio →":"Pick a reading path to steer your study →")));
   }
-  const pl=plan();
-  const minutos=Math.max(1,Math.round(pl.items.length/2));
-  const ses=h("section",{class:"block rule"},
-    h("p",{class:"eyebrow c"},S.lang==="es"?"Repaso espaciado":"Spaced review"),
-    h("p",{class:"c note"},S.lang==="es"?"Las preguntas de los briefs que ya leíste vuelven según su caja.":"Questions from briefs you have read come back by box."),
-    h("div",{class:"stats"},
-      h("div",{class:"stat"},h("b",null,pl.due.length),h("span",null,tr("venc"))),
-      h("div",{class:"stat"},h("b",null,pl.nuevas.length),h("span",null,tr("nuevas"))),
-      h("div",{class:"stat"},h("b",null,pl.items.length?"≈"+minutos:"0"),h("span",null,tr("min")))));
-  if(pl.items.length)ses.append(h("button",{class:"btn",type:"button",on:{click:()=>startSession()}},tr("empezar")));
-  else{
-    const st=S.est.cards;const prox=Object.values(st).map(x=>x.d).filter(d=>d>t).sort((a,b)=>a-b)[0];
-    ses.append(h("p",{class:"c muted"},tr("nada")+(prox?(S.lang==="es"?" Las próximas vencen en "+(prox-t)+" día(s).":" Next ones due in "+(prox-t)+" day(s)."):"")));
-  }
-  nodes.push(ses);
   const box=[0,0,0,0,0,0];let enRepaso=0;
   S.cards.forEach(c=>{const s=S.est.cards[c.id];if(s){box[s.b-1]++;enRepaso++}});
   const leidas=S.lecciones.filter(lecDone).length;
@@ -469,6 +497,7 @@ function viewHoy(){
     h("div",{class:"cajas"},box.map((n,i)=>h("div",{class:"caja"},h("b",null,n),(S.lang==="es"?"caja ":"box ")+(i+1),h("br"),INT[i]+" d"))),
     h("p",{class:"note c"},S.lang==="es"?(leidas+" de "+S.lecciones.length+" briefs leídos · "+enRepaso+" preguntas en repaso. Las preguntas entran al repaso después de leer, nunca antes."):(leidas+" of "+S.lecciones.length+" briefs read · "+enRepaso+" questions in review. Questions join the review after you read, never before."))));
   mount(...nodes);
+  avisoTexto();
 }
 
 function viewCard(){
@@ -479,7 +508,7 @@ function viewCard(){
     h("div",{class:"top"},h("span",null,(ses.done+1>ses.total?ses.total:ses.done+1)+" / "+ses.total+" · "+(st?tr("caja")+" "+st.b:tr("nueva"))),h("a",{href:"#hoy",on:{click:()=>{S.ses=null}}},tr("salir"))),
     h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+pct+"%"})),
     h("article",{class:"card"},
-      h("p",{class:"eyebrow c"},areaName(c.area)+" › "+(c.leccion?(L==="es"?"pregunta de control":"check question"):(TIPO[c.tipo]||c.tipo)+" · N"+c.nivel)),
+      h("p",{class:"eyebrow c"},areaName(c.area)+" › "+(c.tarjeta?(L==="es"?"tarjeta · ":"card · ")+(TIPO[c.tipo]||c.tipo):c.leccion?(L==="es"?"pregunta de control":"check question"):(TIPO[c.tipo]||c.tipo)+" · N"+c.nivel)),
       h("h2",{lang:L},c.q[L]||c.q.es),
       h("p",{class:"cita"},c.leccion?h("a",{href:"#l-"+c.leccion},c.fuente):h("a",{href:"#p"+c.paper},p.cita||("#"+c.paper)))),
   ];
@@ -501,12 +530,14 @@ document.addEventListener("keydown",e=>{
   else if(S.ses.shown&&/^[1-4]$/.test(e.key)){e.preventDefault();grade(+e.key)}
 });
 function viewFin(){
-  const g=S.ses.g;S.ses=null;
-  mount(h("section",{class:"block"},
+  const g=S.ses.g,ini=S.ses.ini,n=S.ses.done;S.ses=null;const es=S.lang==="es";
+  mount(selloNodo(72),h("section",{class:"block"},
     h("p",{class:"eyebrow c"},tr("fin")),
     h("div",{class:"stats",style:"grid-template-columns:repeat(4,minmax(0,1fr))"},[[1,"otra"],[2,"dificil"],[3,"bien"],[4,"facil"]].map(([n,k])=>h("div",{class:"stat"},h("b",null,g[n]),h("span",null,tr(k))))),
     h("p",{class:"c muted"},S.lang==="es"?"Lo que marcaste como «Otra vez» vuelve mañana. El resto, según su caja.":"Cards marked Again come back tomorrow; the rest follow their box."),
-    h("a",{class:"btn ghost",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver"))));
+    h("a",{class:"btn ghost",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver")),
+    linkRegistro(es?"Prebisch · "+n+" tarjetas":"Prebisch · "+n+" cards",
+      (es?"Repaso espaciado: "+n+" tarjetas (Otra vez "+g[1]+", Difícil "+g[2]+", Bien "+g[3]+", Fácil "+g[4]+").":"Spaced review: "+n+" cards (Again "+g[1]+", Hard "+g[2]+", Good "+g[3]+", Easy "+g[4]+")."),ini)));
 }
 
 function viewRack(){
@@ -641,7 +672,7 @@ function viewLeccion(id){
     h("p",{class:"eyebrow c"},h("a",{href:"#ruta-"+encodeURIComponent(l.cat)},rutaEtiqueta(r))),
     h("h1",{class:"c"},l.titulo),
     h("p",{class:"cita"},l.cita),
-    h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.preguntas.length+(es?" preguntas de control":" check questions")+(d?(es?" · leído":" · read"):"")),
+    h("p",{class:"c note"},"≈"+lecMin(l)+(es?" min de lectura · ":" min reading · ")+l.preguntas.length+(es?" preguntas de control":" check questions")+((l.tarjetas||[]).length?" · "+l.tarjetas.length+(es?" tarjetas":" cards"):"")+(d?(es?" · leído":" · read"):"")),
     es?null:h("p",{class:"c note",lang:"en"},"This reading is in Spanish; the check questions follow your language setting."),
     h("p",{class:"j lead"},l.intro),
     l.secciones.map((sc,i)=>h("section",null,
@@ -649,12 +680,14 @@ function viewLeccion(id){
       sc.p.map(x=>h("p",{class:"j"},x)),
       (sc.eq&&sc.eq.length)?h("div",{class:"eq"},sc.eq.map(e=>h("div",{class:"tex"},"\\["+e+"\\]"))):null,
       sc.nota?h("p",{class:"note j"},sc.nota):null)),
+    ornamento(),
     h("section",{class:"box"},h("h2",null,es?"Para llevarse":"Key takeaways"),h("ul",null,l.claves.map(k=>h("li",null,k)))),
     (l.fuentes&&l.fuentes.length)?h("section",null,h("h2",null,es?"Fuentes en el rack":"Sources in the rack"),
       h("ul",{class:"plist"},l.fuentes.map(fid=>{const p=S.byId[fid];return p?itemRow(p):null}))):null,
     (l.docs&&l.docs.length)?h("section",null,h("h2",null,es?"Tus documentos":"Your documents"),h("ul",null,l.docs.map(d=>h("li",null,d)))):null,
     l.mia?h("p",{class:"note j"},es?"Brief generado por IA a partir de tus documentos. Revisá los números contra el original antes de citarlos.":"AI-generated brief from your documents. Check figures against the original before citing them."):null,
-    h("a",{class:"btn",href:"#q-"+l.id,style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},(d?(es?"Volver a hacer las preguntas":"Retake the questions"):(es?"Preguntas de control":"Check questions"))+" ("+l.preguntas.length+")"));
+    h("a",{class:"btn",href:"#q-"+l.id,style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},(d?(es?"Volver a hacer las preguntas":"Retake the questions"):(es?"Preguntas de control":"Check questions"))+" ("+l.preguntas.length+")"),
+    (!d&&(l.tarjetas||[]).length)?h("p",{class:"c note"},es?"Al terminar las preguntas, las "+l.tarjetas.length+" tarjetas de este brief se suman a tus tarjetas de hoy.":"After the questions, this brief's "+l.tarjetas.length+" cards join today's cards."):null);
   body.append(h("p",{class:"c small"},h("a",{href:"https://github.com/"+REPO+"/issues/new?"+new URLSearchParams({title:"Error en el brief: "+l.titulo,body:"Brief: "+l.id+"\nSección:\nQué está mal:\nQué debería decir (con página de la fuente si la tenés):\n"}),target:"_blank",rel:"noopener"},es?"Reportar un error en este brief":"Report an error in this brief")));
   mount(body);
   typeset("lec");
@@ -664,7 +697,7 @@ function viewQuiz(id){
   if(!S.lecById[id]){location.hash="#hoy";return}
   if(!S.lecFull[id]){cargando();getLec(id).then(()=>viewQuiz(id)).catch(renderError);return}
   const l=S.lecFull[id];
-  if(!S.quiz||S.quiz.id!==id)S.quiz={id,i:0,pick:null,ok:0,res:[]};
+  if(!S.quiz||S.quiz.id!==id)S.quiz={id,i:0,pick:null,ok:0,res:[],ini:Date.now()};
   const z=S.quiz;
   if(z.i>=l.preguntas.length){
     mount(h("section",{class:"block"},
@@ -672,7 +705,9 @@ function viewQuiz(id){
       h("h1",{class:"c",style:"font-size:24px"},l.titulo),
       h("div",{class:"stats",style:"grid-template-columns:repeat(2,minmax(0,1fr))"},h("div",{class:"stat"},h("b",null,z.ok),h("span",null,es?"correctas":"correct")),h("div",{class:"stat"},h("b",null,l.preguntas.length-z.ok),h("span",null,es?"a repasar":"to review"))),
       h("p",{class:"j"},es?"Las preguntas pasan a tu repaso espaciado: las que erraste vuelven mañana y las que acertaste, en tres días. Después suben de caja como cualquier tarjeta.":"The questions now join your spaced review: missed ones return tomorrow, correct ones in three days. Then they move up boxes like any card."),
-      h("a",{class:"btn",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver")),
+      (()=>{const pl=plan();return pl.items.length?h("button",{class:"btn",type:"button",on:{click:()=>startSession()}},(es?"Seguir con las tarjetas de hoy":"Continue with today's cards")+" ("+pl.items.length+")"):null})(),
+      h("a",{class:"btn ghost",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},tr("volver")),
+      linkRegistro("Prebisch · "+l.titulo,(es?"Brief leído: ":"Brief read: ")+l.titulo+" ("+l.cita+"). "+(es?"Preguntas de control: ":"Check questions: ")+z.ok+" / "+l.preguntas.length+".",z.ini),
       h("p",{class:"c small"},h("a",{href:"#l-"+l.id},es?"Releer el brief":"Reread the brief"))));
     return;
   }
@@ -740,7 +775,7 @@ function fallback(el){el.querySelectorAll(".tex").forEach(d=>{d.className="raw"}
 
 function viewAjustes(){
   const cfg=S.est.cfg;const es=S.lang==="es";
-  const upd=(k,v)=>{cfg[k]=v;save();cal.href=calUrl()};
+  const upd=(k,v)=>{cfg[k]=v;save();if(k==="hora")avisosHora();const c=document.getElementById("cal-google");if(c)c.href=calUrl()};
   const hora=h("input",{type:"time",id:"cfg-hora",value:cfg.hora,on:{change:e=>upd("hora",e.target.value||"08:00")}});
   const mins=h("input",{type:"number",id:"cfg-min",min:"3",max:"60",value:cfg.minutos,on:{change:e=>upd("minutos",Math.max(3,Math.min(60,+e.target.value||10)))}});
   const nue=h("input",{type:"number",id:"cfg-nuevas",min:"0",max:"50",value:cfg.nuevas,on:{change:e=>upd("nuevas",Math.max(0,Math.min(50,+e.target.value||0)))}});
@@ -752,7 +787,6 @@ function viewAjustes(){
   const checks=h("div",{class:"checks"},(S.areas?S.areas.orden:[]).map(code=>{
     const n=S.cards.filter(c=>c.area===code).length;
     return h("label",{for:"cfg-a-"+code},h("input",{type:"checkbox",id:"cfg-a-"+code,checked:cfg.areas.includes(code),on:{change:e=>{const s=new Set(cfg.areas);e.target.checked?s.add(code):s.delete(code);cfg.areas=[...s];save()}}}),areaName(code)+" ("+n+")")}));
-  const cal=h("a",{class:"btn ghost",href:calUrl(),target:"_blank",rel:"noopener",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Agregar recordatorio diario a Google Calendar":"Add a daily reminder to Google Calendar");
   mount(h("p",{class:"eyebrow c"},tr("ajustes")),
     h("div",{class:"form"},
       h("div",{class:"row"},h("label",{for:"cfg-hora"},es?"Hora del repaso":"Review time"),hora),
@@ -760,14 +794,11 @@ function viewAjustes(){
       h("div",{class:"row"},h("label",{for:"cfg-nuevas"},es?"Tarjetas nuevas por día":"New cards per day"),nue),
       h("div",{class:"row"},h("label",{for:"cfg-foco"},es?"Ruta en foco: las tarjetas nuevas salen primero de ahí":"Path in focus: new cards come from it first"),sel),
       h("p",{class:"eyebrow",style:"margin-top:8px"},es?"Áreas incluidas":"Included areas"),checks),
-    h("section",{class:"block rule"},
-      h("p",{class:"eyebrow c"},es?"Aviso diario":"Daily reminder"),
-      h("p",{class:"j"},es?"El evento se repite todos los días a la hora elegida y dura lo que dura la sesión. Si cambiás la hora, volvé a agregarlo.":"The event repeats daily at the chosen time and lasts one session. If you change the time, add it again."),
-      cal),
+    seccionCuenta(),
+    seccionAvisos(),
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Cómo funciona":"How it works"),
       h("p",{class:"j"},es?"Cada tarjeta vive en una de seis cajas. Si la recordás bien sube de caja y vuelve más tarde: 1, 3, 7, 16, 35 y 90 días. «Otra vez» la devuelve a la caja 1 y la repite en la misma sesión; «Difícil» la deja en su caja con la mitad del intervalo; «Fácil» la sube dos cajas. La sesión mezcla áreas para que practiques distinguir temas, no solo recordarlos.":"Each card lives in one of six boxes. Recall it well and it moves up and returns later: 1, 3, 7, 16, 35 and 90 days. Again sends it to box 1 and repeats it this session; Hard keeps its box at half the interval; Easy moves it up two boxes. Sessions mix areas so you practice telling topics apart, not just recalling them.")),
-    seccionCuenta(),
     seccionIA(),
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Tus datos":"Your data"),
@@ -776,15 +807,115 @@ function viewAjustes(){
         h("button",{class:"btn ghost",type:"button",on:{click:exportar}},es?"Bajar copia":"Download copy"),
         h("label",{class:"btn ghost",style:"display:flex;align-items:center;justify-content:center"},es?"Cargar copia":"Load copy",h("input",{type:"file",accept:".json,application/json",style:"display:none",on:{change:importar}})))));
 }
-function calUrl(){
+/* ---------- calendario ---------- */
+const fmtUTC=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
+const DESC_DIARIO=()=>S.lang==="es"?"Economía de a poco: el brief del día (≈15 min) y tus tarjetas de repaso.":"Economics, bit by bit: today's brief (≈15 min) and your review cards.";
+function proximoEstudio(){
   const cfg=S.est.cfg;const [H,M]=(cfg.hora||"08:00").split(":").map(Number);
-  const d=new Date();d.setDate(d.getDate()+1);
-  const p=n=>String(n).padStart(2,"0");
-  const ini=d.getFullYear()+p(d.getMonth()+1)+p(d.getDate())+"T"+p(H)+p(M)+"00";
-  const e=new Date(d.getFullYear(),d.getMonth(),d.getDate(),H,M+cfg.minutos);
-  const fin=e.getFullYear()+p(e.getMonth()+1)+p(e.getDate())+"T"+p(e.getHours())+p(e.getMinutes())+"00";
-  const q=new URLSearchParams({action:"TEMPLATE",text:"Prebisch · repaso",details:"Sesión de microlearning de papers"+(APP_URL?": "+APP_URL:"."),dates:ini+"/"+fin,ctz:"America/Argentina/Cordoba",recur:"RRULE:FREQ=DAILY"});
+  const ini=new Date();ini.setHours(H,M,0,0);if(ini<=new Date())ini.setDate(ini.getDate()+1);
+  return{ini,fin:new Date(ini.getTime()+(15+cfg.minutos)*6e4)};
+}
+// evento que se repite todos los días a la hora del repaso
+function calUrl(){
+  const {ini,fin}=proximoEstudio();
+  const q=new URLSearchParams({action:"TEMPLATE",text:"Prebisch · brief y tarjetas",details:DESC_DIARIO()+"\n"+APP_URL,dates:fmtUTC(ini)+"/"+fmtUTC(fin),recur:"RRULE:FREQ=DAILY"});
   return "https://calendar.google.com/calendar/render?"+q.toString();
+}
+// el mismo evento como archivo .ics, para Apple, Outlook y otros calendarios
+function icsBajar(){
+  const {ini,fin}=proximoEstudio();
+  const esc=t=>String(t).replace(/[\\;,]/g,m=>"\\"+m);
+  const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Prebisch//Estudio diario//ES","CALSCALE:GREGORIAN","METHOD:PUBLISH","BEGIN:VEVENT",
+    "UID:prebisch-"+Date.now()+"@prebisch.martingomezpizarro.com.ar","DTSTAMP:"+fmtUTC(new Date()),"DTSTART:"+fmtUTC(ini),"DTEND:"+fmtUTC(fin),"RRULE:FREQ=DAILY",
+    "SUMMARY:Prebisch · brief y tarjetas","DESCRIPTION:"+esc(DESC_DIARIO())+"\\n"+APP_URL,"URL:"+APP_URL,
+    "BEGIN:VALARM","ACTION:DISPLAY","DESCRIPTION:Prebisch","TRIGGER:PT0M","END:VALARM","END:VEVENT","END:VCALENDAR"].join("\r\n");
+  const a=h("a",{href:URL.createObjectURL(new Blob([ics],{type:"text/calendar"})),download:"prebisch-diario.ics"});document.body.append(a);a.click();a.remove();
+}
+// registra una actividad ya hecha (brief o sesión de tarjetas) con su horario real
+function linkRegistro(titulo,detalle,ini){
+  const fin=new Date();const a=new Date(Math.min(ini||fin-6e5,fin-5*6e4));
+  const q=new URLSearchParams({action:"TEMPLATE",text:titulo,details:detalle+"\n"+APP_URL,dates:fmtUTC(a)+"/"+fmtUTC(fin)});
+  return h("a",{class:"c small",href:"https://calendar.google.com/calendar/render?"+q.toString(),target:"_blank",rel:"noopener"},S.lang==="es"?"Registrar esta actividad en Google Calendar":"Log this activity in Google Calendar");
+}
+
+/* ---------- logo ---------- */
+const LOGO=window.PREBISCH_LOGO;
+function selloNodo(tam){const d=h("div",{class:"sello","aria-hidden":"true"});d.innerHTML=LOGO.sello({tam});return d}
+function ornamento(){const d=h("div",{class:"orn","aria-hidden":"true"});d.innerHTML=LOGO.marca({tam:22,grosor:2.4});return d}
+function logoInicial(){
+  const b=document.getElementById("brand");b.innerHTML=LOGO.marca({tam:30,grosor:2.4});b.append(h("span",null,"Prebisch"));
+  const bs=document.getElementById("boot-sello");if(bs)bs.innerHTML=LOGO.sello({tam:120});
+}
+
+/* ---------- avisos (Web Push con el Worker) ---------- */
+const AV={estado:"",error:false};
+const avisosSoportados=()=>"serviceWorker" in navigator&&"PushManager" in window&&"Notification" in window;
+const avisosActivos=()=>!!lsGet("prebisch-avisos");
+function b64uBytes(t){const b=atob(t.replace(/-/g,"+").replace(/_/g,"/")+"===".slice((t.length+3)%4));return Uint8Array.from(b,c=>c.charCodeAt(0))}
+// el Worker revisa cada media hora (UTC): la hora local se redondea a la media hora más cercana
+function slotUTC(hora){const [H,M]=(hora||"08:00").split(":").map(Number);const d=new Date();d.setHours(H,M,0,0);
+  const m=Math.round((d.getUTCHours()*60+d.getUTCMinutes())/30)*30%1440;const p=n=>String(n).padStart(2,"0");return p(Math.floor(m/60))+":"+p(m%60)}
+async function swReg(){if(!("serviceWorker" in navigator))return null;try{return await navigator.serviceWorker.register("sw.js")}catch(e){return null}}
+async function suscripcion(){const reg=await navigator.serviceWorker.getRegistration();return reg?reg.pushManager.getSubscription():null}
+async function workerPost(ruta,cuerpo){
+  const tok=await tokenNube();
+  const r=await fetch(WORKER_URL+ruta,{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+tok},body:JSON.stringify(cuerpo)});
+  const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||("El servidor respondió "+r.status));return j;
+}
+async function avisosActivar(){
+  const es=S.lang==="es";
+  if(!S.nube.user)throw new Error(es?"Primero iniciá sesión en la sección Cuenta.":"Sign in first, in the Account section.");
+  if(await Notification.requestPermission()!=="granted")throw new Error(es?"El navegador no dio permiso para avisar. Habilitalo en la configuración del sitio y probá de nuevo.":"The browser did not allow notifications. Enable them in site settings and try again.");
+  const reg=await swReg();if(!reg)throw new Error(es?"No se pudo instalar el servicio de avisos.":"Could not install the notification service.");
+  await navigator.serviceWorker.ready;
+  const r=await fetch(WORKER_URL+"/push/clave");const k=await r.json().catch(()=>({}));
+  if(!r.ok||!k.clave)throw new Error(k.error||(es?"El servidor de avisos todavía no está activo.":"The notification server is not active yet."));
+  const clave=b64uBytes(k.clave);let sub=await reg.pushManager.getSubscription();
+  if(sub&&sub.options&&sub.options.applicationServerKey){const v=new Uint8Array(sub.options.applicationServerKey);if(v.length!==clave.length||v.some((x,i)=>x!==clave[i])){await sub.unsubscribe();sub=null}}
+  if(!sub)sub=await reg.pushManager.subscribe({userVisibleOnly:true,applicationServerKey:clave});
+  await workerPost("/push/alta",{sub:sub.toJSON(),slot:slotUTC(S.est.cfg.hora)});
+  lsSet("prebisch-avisos",true);await avisoTexto();
+  return es?"Listo: vas a recibir un aviso por día a las "+S.est.cfg.hora+".":"Done: one notification a day at "+S.est.cfg.hora+".";
+}
+async function avisosDesactivar(){
+  const sub=await suscripcion();
+  if(sub){await workerPost("/push/baja",{endpoint:sub.endpoint}).catch(()=>{});await sub.unsubscribe().catch(()=>{})}
+  lsSet("prebisch-avisos",false);return S.lang==="es"?"Avisos desactivados en este dispositivo.":"Notifications turned off on this device.";
+}
+async function avisosProbar(){
+  const sub=await suscripcion();if(!sub)throw new Error(S.lang==="es"?"Este dispositivo no tiene los avisos activos.":"Notifications are not active on this device.");
+  await avisoTexto();await workerPost("/push/probar",{endpoint:sub.endpoint});
+  return S.lang==="es"?"Aviso enviado: tendría que llegar en unos segundos.":"Sent: it should arrive in a few seconds.";
+}
+function avisosHora(){if(!avisosActivos()||!S.nube.user)return;suscripcion().then(sub=>{if(sub)workerPost("/push/alta",{sub:sub.toJSON(),slot:slotUTC(S.est.cfg.hora)}).catch(()=>{})}).catch(()=>{})}
+// deja preparado el texto del próximo aviso: el service worker lo lee cuando llega el push
+async function avisoTexto(){
+  try{
+    if(!("caches" in window)||!S.ready)return;
+    const es=S.lang==="es";const nl=nextLeccion();const b=nl.sig||nl.paso;
+    const cuerpo=b?(es?"Brief de hoy: «"+b.titulo+"». Después, tus tarjetas de repaso.":"Today's brief: “"+b.titulo+"”. Then your review cards."):(es?"Tus tarjetas de repaso te esperan.":"Your review cards are waiting.");
+    await (await caches.open("prebisch-aviso")).put("aviso",new Response(JSON.stringify({titulo:es?"Prebisch · tu estudio de hoy":"Prebisch · today's study",cuerpo}),{headers:{"Content-Type":"application/json"}}));
+  }catch(e){}
+}
+function seccionAvisos(){
+  const es=S.lang==="es";const on=avisosActivos();
+  const correr=fn=>async()=>{AV.estado=es?"Un momento…":"One moment…";AV.error=false;refrescar();
+    try{AV.estado=await fn()}catch(e){AV.estado=e.message||String(e);AV.error=true}refrescar()};
+  const boton=(txt,fn,ghost)=>h("button",{class:"btn"+(ghost?" ghost":""),type:"button",on:{click:correr(fn)}},txt);
+  const sec=h("section",{class:"block rule",id:"sec-avisos"},
+    h("p",{class:"eyebrow c"},es?"Avisos y calendario":"Notifications and calendar"),
+    h("p",{class:"j"},es?"Un aviso por día a la hora del repaso, con el brief que sigue. Se manda en la media hora más cercana a la que elegiste.":"One notification a day at review time, naming the next brief. It goes out on the nearest half hour."),
+    !avisosSoportados()?h("p",{class:"note j"},es?"Este navegador no permite avisos. En iPhone y iPad: abrí Prebisch en Safari, tocá Compartir → Agregar a inicio, y activá los avisos desde el ícono.":"This browser cannot show notifications. On iPhone and iPad: open Prebisch in Safari, tap Share → Add to Home Screen, and turn them on from the icon."):
+      on?h("div",{class:"fila2"},boton(es?"Probar aviso":"Send a test",avisosProbar,true),boton(es?"Desactivar":"Turn off",avisosDesactivar,true)):
+      [boton(es?"Activar avisos":"Turn on notifications",avisosActivar),S.nube.user?null:h("p",{class:"c note"},es?"Requiere iniciar sesión (con Google o con tu mail).":"Requires signing in (Google or email).")],
+    AV.estado?h("p",{class:"estado"+(AV.error?" error":"")},AV.estado):null,
+    h("p",{class:"j",style:"margin-top:8px"},es?"También podés agendarlo: un evento que se repite todos los días a la hora del repaso. Si cambiás la hora, volvé a agregarlo.":"You can also schedule it: an event that repeats daily at review time. If you change the time, add it again."),
+    h("div",{class:"fila2"},
+      h("a",{class:"btn ghost",id:"cal-google",href:calUrl(),target:"_blank",rel:"noopener",style:"display:flex;align-items:center;justify-content:center;text-decoration:none;text-align:center"},"Google Calendar"),
+      h("button",{class:"btn ghost",type:"button",on:{click:icsBajar}},es?"Otro calendario (.ics)":"Other calendar (.ics)")),
+    h("p",{class:"note j"},es?"Al terminar un brief o una sesión de tarjetas aparece «Registrar esta actividad en Google Calendar», que anota lo que hiciste con su horario real.":"When you finish a brief or a card session, “Log this activity in Google Calendar” records what you did with its actual time."));
+  function refrescar(){const el=document.getElementById("sec-avisos");if(el)el.replaceWith(seccionAvisos())}
+  return sec;
 }
 
 function renderError(){setNav("hoy");mount(h("div",{class:"empty"},h("p",null,"No se pudo cargar el contenido."),h("p",{class:"note"},"Revisá la conexión y recargá la página.")))}
@@ -819,7 +950,7 @@ async function iaLlamar(tipo,docs,pedido){
   const c=iaCfg();const lim=LIM_CHARS[c.modo]||200000;
   if(c.modo==="servidor"){
     if(!S.nube.user)throw new Error(S.lang==="es"?"Para usar el servidor iniciá sesión en Ajustes (es gratis), o cargá tu propia key.":"Sign in under Settings to use the server, or add your own key.");
-    const tok=await S.nube.user.getIdToken();
+    const tok=await tokenNube();
     const r=await fetch(WORKER_URL+"/generar",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+tok},body:JSON.stringify({tipo,docs:docs.map(d=>({titulo:d.titulo,texto:d.texto.slice(0,lim),paginas:d.paginas})),pedido})});
     const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||("El servidor respondió "+r.status));return j.texto;
   }
@@ -1002,14 +1133,53 @@ function confirmarBorrar(r){
 }
 
 /* --- Ajustes: cuenta, IA y copia --- */
+/* ---------- cuenta: Google o mail y contraseña ---------- */
+const CU={estado:"",error:false,mail:"",clave:""};
+async function tokenNube(){
+  const u=S.nube.user;if(!u)throw new Error(S.lang==="es"?"Iniciá sesión en Ajustes.":"Sign in under Settings.");
+  if(!u.emailVerified){await u.reload().catch(()=>{});const v=firebase.auth().currentUser;if(v&&v.emailVerified)return v.getIdToken(true)}
+  return u.getIdToken();
+}
+function errAuth(e){
+  const es=S.lang==="es";const m={"auth/invalid-email":["El mail no es válido.","Invalid email."],"auth/missing-password":["Falta la contraseña.","Password missing."],
+    "auth/weak-password":["La contraseña tiene que tener al menos 6 caracteres.","Password must have at least 6 characters."],
+    "auth/email-already-in-use":["Ya hay una cuenta con ese mail. Entrá, o pedí una contraseña nueva.","That email already has an account. Sign in or reset the password."],
+    "auth/invalid-credential":["Mail o contraseña incorrectos.","Wrong email or password."],"auth/wrong-password":["Mail o contraseña incorrectos.","Wrong email or password."],
+    "auth/user-not-found":["No hay una cuenta con ese mail.","No account with that email."],"auth/too-many-requests":["Demasiados intentos. Esperá unos minutos.","Too many attempts. Wait a few minutes."],
+    "auth/operation-not-allowed":["El ingreso con mail todavía no está habilitado.","Email sign-in is not enabled yet."],"auth/network-request-failed":["Sin conexión.","No connection."]}[e&&e.code];
+  return m?m[es?0:1]:((e&&e.message)||String(e));
+}
 function seccionCuenta(){
   const es=S.lang==="es";const N=S.nube;
   if(!FIREBASE_CONFIG)return null;
-  return h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Cuenta":"Account"),
-    N.user?h("p",{class:"c"},(es?"Sesión iniciada como ":"Signed in as ")+(N.user.email||N.user.displayName||"")+". "+(es?"Tu progreso y tus briefs se guardan en la nube.":"Your progress and briefs are saved to the cloud.")):
-      h("p",{class:"j"},es?"Iniciá sesión con Google para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo y generar briefs con el servidor de la app (gratis, con un cupo diario).":"Sign in with Google to sync progress and briefs and to generate briefs with the app's server (free, daily quota)."),
-    N.error?h("p",{class:"estado error"},N.error):null,
-    N.listo?(N.user?h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"):h("button",{class:"btn",type:"button",on:{click:nubeEntrar}},es?"Entrar con Google":"Sign in with Google")):(N.error?null:h("p",{class:"c note"},es?"Cargando…":"Loading…")));
+  const refrescar=()=>{const el=document.getElementById("sec-cuenta");if(el)el.replaceWith(seccionCuenta())};
+  const correr=fn=>async()=>{CU.estado=es?"Un momento…":"One moment…";CU.error=false;refrescar();
+    try{CU.estado=(await fn())||""}catch(e){CU.estado=errAuth(e);CU.error=true}refrescar()};
+  const estado=CU.estado?h("p",{class:"estado"+(CU.error?" error":"")},CU.estado):null;
+  const sec=h("section",{class:"block rule cuenta",id:"sec-cuenta"},h("p",{class:"eyebrow c"},es?"Cuenta":"Account"));
+  if(N.user){
+    CU.clave="";const u=N.user;const conClave=(u.providerData||[]).some(p=>p.providerId==="password");
+    sec.append(h("p",{class:"c"},(es?"Sesión iniciada como ":"Signed in as ")+(u.email||u.displayName||"")+". "+(es?"Tu progreso y tus briefs se guardan en la nube.":"Your progress and briefs are saved to the cloud.")));
+    if(conClave&&!u.emailVerified)sec.append(h("p",{class:"note j"},es?"Falta verificar tu mail: abrí el enlace que te mandamos. Hasta entonces no podés usar el servidor de briefs.":"Your email is not verified yet: open the link we sent. Until then you cannot use the brief server."),
+      h("div",{class:"fila2"},h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.sendEmailVerification({url:APP_URL});return es?"Te reenviamos el mail.":"Email sent again."})}},es?"Reenviar mail":"Resend email"),
+        h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.reload();if(!firebase.auth().currentUser.emailVerified)throw new Error(es?"Todavía figura sin verificar.":"Still not verified.");N.user=firebase.auth().currentUser;return es?"Mail verificado.":"Email verified."})}},es?"Ya lo verifiqué":"I verified it")));
+    sec.append(estado,h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"));
+    return sec;
+  }
+  sec.append(h("p",{class:"j"},es?"Iniciá sesión para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo, recibir avisos y generar briefs con el servidor de la app (gratis, con un cupo diario).":"Sign in to sync progress and briefs across devices, get notifications and generate briefs with the app's server (free, daily quota)."));
+  if(N.error)sec.append(h("p",{class:"estado error"},N.error));
+  if(!N.listo){if(!N.error)sec.append(h("p",{class:"c note"},es?"Cargando…":"Loading…"));return sec}
+  const mail=h("input",{type:"email",autocomplete:"email",placeholder:es?"tu@mail.com":"you@email.com","aria-label":"Mail",value:CU.mail,on:{input:e=>CU.mail=e.target.value.trim()}});
+  const clave=h("input",{type:"password",autocomplete:"current-password",placeholder:es?"Contraseña (mínimo 6 caracteres)":"Password (6+ characters)","aria-label":es?"Contraseña":"Password",value:CU.clave||"",on:{input:e=>CU.clave=e.target.value}});
+  const auth=()=>firebase.auth();
+  sec.append(h("button",{class:"btn",type:"button",on:{click:nubeEntrar}},es?"Entrar con Google":"Sign in with Google"),
+    h("p",{class:"sep"},es?"o con tu mail":"or with email"),mail,clave,
+    h("div",{class:"fila2"},
+      h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await auth().signInWithEmailAndPassword(CU.mail,clave.value);return""})}},es?"Entrar":"Sign in"),
+      h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{const r=await auth().createUserWithEmailAndPassword(CU.mail,clave.value);await r.user.sendEmailVerification({url:APP_URL}).catch(()=>{});return es?"Cuenta creada. Te mandamos un mail para verificarla.":"Account created. Check your inbox to verify it."})}},es?"Crear cuenta":"Create account")),
+    h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:correr(async()=>{if(!CU.mail)throw new Error(es?"Escribí tu mail arriba.":"Type your email above.");await auth().sendPasswordResetEmail(CU.mail,{url:APP_URL});return es?"Si hay una cuenta con ese mail, te llegó un enlace para elegir otra contraseña.":"If an account exists, a reset link is on its way."})}},es?"Olvidé mi contraseña":"Forgot my password")),
+    estado);
+  return sec;
 }
 function seccionIA(){
   const es=S.lang==="es";const c=iaCfg();
@@ -1038,8 +1208,10 @@ async function importar(e){
 }
 
 
+logoInicial();
 setNav("hoy");
 boot();
+if("serviceWorker" in navigator)window.addEventListener("load",()=>swReg());
 })();
 </script>
 </body>

@@ -1,4 +1,4 @@
-# Activar el servidor de briefs
+# Activar el servidor de briefs y los avisos
 
 La página funciona sin esto: el rack, los briefs, las preguntas y el repaso andan igual, y en **Mi estudio** cualquiera puede generar briefs con su propia key de Gemini o de Anthropic. Este Worker agrega la tercera opción: **generar con tu key de Gemini, gratis para quien inicie sesión, con cupo diario**. Es el mismo esquema del tutor de idoneidad.
 
@@ -33,7 +33,11 @@ Con el nivel gratuito de Gemini hay límites por minuto y por día; si se supera
 La página usa el mismo proyecto que idoneidad (`idoneidad-48c77`), así una cuenta sirve para las dos páginas.
 
 1. **Authentication → Settings → Authorized domains → Add domain** → `prebisch.martingomezpizarro.com.ar`.
-2. **Firestore → Rules**: sumá el bloque `brief` sin borrar el de `usuarios` y **Publish**. Quedan así:
+2. **Authentication → Sign-in method → Add new provider → Email/Password** → activá **Email/Password** (el primer interruptor; «Email link» no hace falta) → **Save**. Con eso aparece «o con tu mail» en Ajustes: crear cuenta, entrar y «Olvidé mi contraseña».
+3. Opcional: **Authentication → Templates** → cambiá el idioma de los mails a español y, en «Email address verification» y «Password reset», el nombre del remitente a «Prebisch».
+
+Las cuentas con mail tienen que verificarlo (abrir el enlace que les llega) antes de usar el servidor de briefs; las de Google ya vienen verificadas.
+4. **Firestore → Rules**: sumá el bloque `brief` sin borrar el de `usuarios` y **Publish**. Quedan así:
 
 ```
 rules_version = '2';
@@ -58,11 +62,23 @@ service cloud.firestore {
 ```
 Copiá también este archivo en `firestore.rules` del repo de idoneidad para que no quede desactualizado.
 
-## 6. Probar
+## 6. Avisos diarios (notificaciones)
+Usan el mismo Worker y el mismo KV. La clave de los avisos (VAPID) la crea el Worker solo, la primera vez, y la guarda en el KV.
+
+1. Si ya tenías el Worker creado, **Edit code** → pegá de nuevo `worker/worker.js` completo → **Deploy** (esta versión trae los avisos).
+2. Worker → **Settings → Triggers → Cron Triggers → Add** → `*/30 * * * *` → **Add**. Cada media hora el Worker manda el aviso a quienes eligieron esa hora.
+3. Abrí `https://brief-economico.gomezpizarromartin.workers.dev/push/clave` una vez: tiene que mostrar `{"clave":"B…"}`. Eso crea la clave; no la cambies después, porque las suscripciones existentes dejarían de funcionar.
+4. En la página: **Ajustes → Cuenta** (iniciá sesión) → **Avisos y calendario → Activar avisos** → aceptá el permiso → **Probar aviso**.
+
+En iPhone y iPad los avisos solo funcionan con la app agregada a la pantalla de inicio (Safari → Compartir → Agregar a inicio). En compu y Android funcionan desde el navegador.
+
+## 7. Probar
 1. `https://brief-economico.gomezpizarromartin.workers.dev/estado` → `"ok":true` y `"kv":true`.
 2. En la página: **Ajustes → Entrar con Google**, motor «Servidor de la app» → **Mi estudio** → subí un PDF → **Un solo brief**.
 
 ## Cómo funciona
 - La página lee el PDF en el navegador (pdf.js). El archivo no se sube: solo viaja el texto, y solo cuando generás.
 - El Worker verifica el token de la cuenta, controla el cupo, arma el prompt maestro (el mismo de `prompts/prompts.js`) y le pide a Gemini la ruta o el brief en JSON.
-- La página valida el JSON (secciones, 8 preguntas con 4 opciones), y si no sirve reintenta una vez. El brief queda en el navegador y, con sesión iniciada, en Firestore.
+- La página valida el JSON (secciones, 8 preguntas con 4 opciones y de 6 a 8 tarjetas), y si no sirve reintenta una vez. El brief queda en el navegador y, con sesión iniciada, en Firestore.
+- Avisos: la página se suscribe (Web Push) con la clave pública del Worker y le pasa la hora elegida, redondeada a la media hora en UTC. El cron manda un push sin contenido; el texto («Brief de hoy: …») lo deja preparado la propia página en el navegador y lo muestra `sw.js`.
+- Si cambiás `prompts/prompts.js`, corré `node worker/armar.js` para copiarlo dentro de `worker/worker.js` y volvé a pegar el Worker.
