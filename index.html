@@ -1258,7 +1258,10 @@ async function bibAbrirDir(pedir){
 async function bibConectar(){
   const es=S.lang==="es";const d=await window.showDirectoryPicker({id:"prebisch-pdf",mode:"read"});
   BIB.dir=d;BIB.archivos=[];await bibGuardarDir(d);BIB.permiso=true;
-  BIB.archivos=await bibListar(d,"",[]);const n=bibEmparejar();
+  BIB.archivos=await bibListar(d,"",[]);
+  // si reorganizaste la carpeta, los vínculos a rutas que ya no existen se rehacen
+  const rutas=new Set(BIB.archivos.map(f=>f.ruta));Object.keys(BIB.mapa).forEach(id=>{if(!rutas.has(BIB.mapa[id]))delete BIB.mapa[id]});
+  const n=bibEmparejar();
   return (es?"Encontré "+BIB.archivos.length+" PDF y vinculé "+Object.keys(BIB.mapa).length+" lecturas del rack":"Found "+BIB.archivos.length+" PDFs and linked "+Object.keys(BIB.mapa).length+" rack readings")+(n?(es?" ("+n+" nuevas).":" ("+n+" new)."):".");
 }
 async function bibArchivo(id){
