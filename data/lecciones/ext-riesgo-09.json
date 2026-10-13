@@ -1,0 +1,373 @@
+{
+ "id": "ext-riesgo-09",
+ "cat": "ext-riesgo",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Fundamentos, contagio y corrupción: Guevara García (2015) sobre el spread de seis latinoamericanos",
+ "bajada": "Una tesis de maestría en finanzas estima con efectos fijos los determinantes del EMBI Global de Argentina, Brasil, Chile, Colombia, México y Perú entre 1998 y 2013: los fundamentos macro responden como se espera; las variables financieras globales, casi nada.",
+ "fuentes": [
+  1363
+ ],
+ "cita": "Guevara García (2015)",
+ "intro": "La literatura empírica sobre riesgo país arranca con Edwards (1984), que modela la prima como función log-lineal de indicadores de liquidez, solvencia y fundamentos macroeconómicos, bajo prestamistas neutrales al riesgo y mercados competitivos. Desde entonces se acumularon estudios de corte transversal, de paneles y de países individuales. María Cristina Guevara García, en su tesis de Magíster en Finanzas presentada en Santiago de Chile en 2015 con la guía de José Luis Ruiz Vergara, replica y extiende un trabajo de Navarrete, Gregoire y Ruiz (2015) para seis economías latinoamericanas. La extensión tiene tres partes: un período más largo, un índice de percepción de la corrupción y dummies para los años de crisis. Es un buen ejemplo de cómo se arma un panel de determinantes del spread y de los problemas típicos de interpretación que aparecen en este tipo de ejercicio.",
+ "secciones": [
+  {
+   "t": "Qué mide el spread y por qué importa",
+   "p": [
+    "El spread soberano es el diferencial de rendimiento que un país emergente paga sobre un instrumento de renta fija de similar duración emitido por una economía desarrollada, en este caso los bonos del Tesoro de Estados Unidos. Representa el costo de endeudamiento externo del país y depende tanto de sus características propias como del contexto global. Para el soberano lo óptimo es que sea lo más bajo posible, porque de él depende el costo del servicio de la deuda.",
+    "La tesis repasa también la historia del mercado. Citando a Rowland (2004), recuerda que a fines de los ochenta los bancos tenían el 97% de la deuda de los mercados emergentes y que recién a mediados de los noventa esa participación bajó a menos de dos tercios. El cambio empezó con el bono Azteca de México en 1988 y siguió con el Plan Brady de 1989, que permitió canjear préstamos bancarios reprogramados por bonos garantizados en parte con títulos estadounidenses. Por eso los spreads de la región sólo existen como serie de mercado desde los noventa, y muchos estudios trabajan con ventanas cortas que corren el riesgo de confundir tendencias con ciclos."
+   ]
+  },
+  {
+   "t": "El modelo: posición externa, posición interna y mercados globales",
+   "p": [
+    "Siguiendo la tradición de Edwards, las variables explicativas se agrupan en tres bloques. La posición externa se mide con las reservas internacionales sobre el PIB, como indicador de liquidez, y la deuda externa sobre el PIB, como indicador de solvencia. La posición interna incluye inflación, crecimiento del PIB, crecimiento de exportaciones e importaciones, gasto fiscal sobre PIB, saldo de cuenta corriente sobre PIB y exportaciones más importaciones sobre PIB como medida de apertura comercial.",
+    "El tercer bloque recoge las condiciones de los mercados internacionales. La aversión al riesgo se aproxima con el premio de los bonos corporativos estadounidenses de clasificación B, el high yield. La incertidumbre se mide con el VIX. La liquidez internacional entra por dos vías: el swap spread a 10 años y la tasa de fondos federales. El contagio se captura con el EMBI agregado de la región.",
+    "A eso se suman tres agregados de la autora. Primero, el índice de percepción de la corrupción de Transparencia Internacional, que va de 0 (alta corrupción percibida) a 100 (muy baja), por lo que se espera un signo negativo. Segundo, una dummy de pertenencia a la OCDE; en la muestra sólo México, desde 1994, y Chile, desde 2010, son miembros. Tercero, dummies para 2002, 2007, 2008 y 2009."
+   ],
+   "eq": "s_{it} = \\alpha_i + \\beta' X_{it} + \\gamma' G_t + \\delta\\, D_t + \\varepsilon_{it}"
+  },
+  {
+   "t": "Datos y estrategia de estimación",
+   "p": [
+    "La variable dependiente es el spread del EMBI Global de J.P. Morgan. Lo prefiere al EMBI+ porque cubre más países y comprende sobre todo bonos Brady y eurobonos con un valor nominal mínimo de 500 millones de dólares y madurez de al menos dos años y medio. El panel es trimestral, del primer trimestre de 1998 al tercero de 2013, para Argentina, Brasil, Chile, Colombia, México y Perú. Para Chile la serie comienza en el segundo trimestre de 1999, porque su primera emisión fue en abril de ese año.",
+    "Las estadísticas descriptivas muestran la heterogeneidad de la muestra. El spread medio de Argentina es 23,5 puntos porcentuales, con un máximo de 71,0, contra 1,7 de Chile, 2,6 de México y 3,5 de Perú.",
+    "La autora estima efectos fijos y aleatorios y elige entre ellos con el test de Hausman. Ese test compara ambos estimadores: si los efectos individuales están correlacionados con los regresores, el de efectos aleatorios es inconsistente y conviene el de efectos fijos, que sigue siendo consistente. El test rechaza la hipótesis nula y el análisis se basa en efectos fijos. Presenta un modelo general y otro anidado, que excluye las variables no significativas tras un test de significancia conjunta.",
+    "Hay un problema técnico con la dummy OCDE: casi no varía en el tiempo, y por eso la transformación de efectos fijos impide estimarla. La autora la recupera con una regresión pooled, donde obtiene coeficientes de 10.4 y 10.0."
+   ]
+  },
+  {
+   "t": "Resultados: los fundamentos macro",
+   "p": [
+    "En el modelo anidado, la mayoría de los fundamentos tienen el signo esperado y son significativos:",
+    "La inflación tiene un coeficiente de 0.918: un punto más de inflación se asocia con casi un punto más de spread. El crecimiento de las importaciones da 0.054, positivo, porque más importaciones implican más salida de divisas. El crecimiento del PIB da −0.391. Las reservas sobre PIB dan −0.071, con un p-valor de 0.063, significativas sólo al 10%. La deuda externa sobre PIB da 0.109.",
+    "La autora lee estos números como elasticidades porcentuales («un aumento de 1% se traduce en 0.918% de spread»). Como tanto el spread como las variables están medidos en porcentaje y en niveles, la lectura correcta es en puntos porcentuales (lectura propia).",
+    "Tres variables salen con signo contrario al esperado. El crecimiento de las exportaciones es positivo y significativo, al revés del trabajo de referencia. El gasto fiscal sobre PIB es negativo, alrededor de −0.5. La apertura comercial es positiva en todas las especificaciones.",
+    "La cuenta corriente sobre PIB da 0.507 y la autora lo presenta como el signo esperado, porque los déficits persistentes aumentan el endeudamiento. Pero si la variable es el saldo de cuenta corriente, un coeficiente positivo significa que un superávit más grande se asocia con más spread, lo opuesto al argumento. O la variable está definida como déficit, cosa que el texto no aclara, o el signo es otra anomalía (lectura propia)."
+   ]
+  },
+  {
+   "t": "Resultados: el bloque global casi no aparece",
+   "p": [
+    "El contraste con la literatura internacional está en las variables globales. El VIX sale negativo y no significativo. El swap spread es positivo pero no significativo. La tasa de fondos federales tiene signo contrario al esperado. El riesgo de crédito high yield es negativo y no significativo. El EMBI regional, la medida de contagio, es positivo pero no significativo.",
+    "El índice de corrupción tampoco tiene el signo esperado. De las dummies de crisis sólo la de 2008 es significativa, y con signo negativo, contrario a lo esperado.",
+    "La autora señala que las variables financieras resultan significativas en conjunto, aunque no una por una.",
+    "El texto se contradice sobre el contagio. En la discusión de resultados dice que los coeficientes «dan indicio que no hay efecto contagio». En el resumen y las conclusiones afirma que existe y que hay alta interdependencia entre los países de la región. El lector debe quedarse con la tabla: el coeficiente del EMBI regional no es significativo.",
+    "La dummy OCDE, con coeficiente positivo en la regresión pooled, se presenta como el resultado esperado. Pero un coeficiente positivo sobre el spread indicaría que pertenecer a la OCDE lo eleva. Lo más probable es que capture diferencias entre países que el pooled no controla (lectura propia)."
+   ]
+  },
+  {
+   "t": "Cómo leer este trabajo",
+   "p": [
+    "La tesis sirve sobre todo como mapa. Su revisión de literatura ordena con claridad la tradición empírica: Edwards, Min (1998), Kamin y von Kleist (1999), Ferrucci (2003) con pooled mean group, Rowland (2004) para Colombia, Jaque y Rojas (2003) para Chile y Bellas et al. (2010). Su modelo es una plantilla típica: liquidez y solvencia externas, desempeño interno y condiciones globales.",
+    "Varias decisiones metodológicas limitan los resultados (lectura propia). La primera es estimar en niveles un panel de series que probablemente no son estacionarias, sin discutir raíces unitarias ni cointegración, cuando Bellas et al. o Csonto e Ivaschenko separan corto y largo plazo con modelos de corrección de errores. La segunda es incluir a la Argentina del default de 2001, cuyo spread llegó a 71 puntos, sin tratamiento especial; un solo país en default puede dominar las estimaciones. La tercera es que la muestra de seis países en un panel trimestral deja pocos grados de libertad para tantas variables globales que no varían entre países y que quedan muy correlacionadas con las dummies anuales.",
+    "Leída junto a los trabajos del FMI de la misma ruta, la tesis muestra que los fundamentos domésticos aparecen con fuerza en especificaciones de niveles. En cambio, el peso de los factores globales que esos trabajos encuentran depende mucho del método."
+   ]
+  }
+ ],
+ "claves": [
+  "El spread soberano mide el costo del endeudamiento externo y se explica por la posición externa (reservas, deuda), la posición interna (inflación, crecimiento, comercio, fiscal) y las condiciones globales.",
+  "Con un panel de efectos fijos de seis latinoamericanos entre 1998 y 2013, la inflación (0.918), la deuda externa/PIB (0.109) y el crecimiento de importaciones elevan el spread; el crecimiento del PIB (−0.391) y las reservas lo reducen.",
+  "El test de Hausman rechaza efectos aleatorios; una dummy casi constante como la OCDE no puede estimarse con efectos fijos.",
+  "Las variables globales (VIX, fondos federales, high yield, swap spread) y el contagio regional no resultan significativas individualmente.",
+  "Exportaciones, gasto fiscal, apertura y corrupción salen con signo contrario al esperado; el texto se contradice sobre el contagio.",
+  "Estimar en niveles sin tratar la no estacionariedad e incluir a la Argentina en default limita la interpretación (lectura propia)."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué índice usa como variable dependiente y por qué lo prefiere?",
+    "en": "Which index is the dependent variable and why is it preferred?"
+   },
+   "op": {
+    "es": [
+     "El EMBI+, porque incluye sólo a Argentina, Brasil y México",
+     "El EMBI Global, porque cubre más países e incluye bonos Brady y eurobonos",
+     "El CDS a cinco años, porque es más líquido",
+     "La calificación de Moody's, porque es trimestral"
+    ],
+    "en": [
+     "The EMBI+, because it only includes Argentina, Brazil and Mexico",
+     "The EMBI Global, because it covers more countries and includes Brady bonds and Eurobonds",
+     "The five-year CDS, because it is more liquid",
+     "The Moody's rating, because it is quarterly"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El EMBI Global exige un nominal mínimo de 500 millones de dólares y madurez de al menos dos años y medio.",
+    "en": "The EMBI Global requires a minimum face value of 500 million dollars and maturity of at least two and a half years."
+   },
+   "id": "ext-riesgo-09-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué concluye el test de Hausman en este trabajo?",
+    "en": "What does the Hausman test conclude in this work?"
+   },
+   "op": {
+    "es": [
+     "Que los efectos aleatorios son consistentes y eficientes",
+     "Que conviene usar MCO agrupados",
+     "Que se rechaza la nula y el estimador de efectos aleatorios es inconsistente, por lo que se usan efectos fijos",
+     "Que no hay heterogeneidad entre países"
+    ],
+    "en": [
+     "That random effects are consistent and efficient",
+     "That pooled OLS should be used",
+     "That the null is rejected and the random-effects estimator is inconsistent, so fixed effects are used",
+     "That there is no heterogeneity across countries"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si los efectos individuales se correlacionan con los regresores, sólo efectos fijos sigue siendo consistente.",
+    "en": "If individual effects correlate with the regressors, only fixed effects remains consistent."
+   },
+   "id": "ext-riesgo-09-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la dummy OCDE se estima con una regresión pooled?",
+    "en": "Why is the OECD dummy estimated with a pooled regression?"
+   },
+   "op": {
+    "es": [
+     "Porque casi no varía en el tiempo y la transformación de efectos fijos la elimina",
+     "Porque es una variable continua",
+     "Porque el test de Hausman lo exige",
+     "Porque sólo Argentina es miembro"
+    ],
+    "en": [
+     "Because it barely varies over time and the fixed-effects transformation removes it",
+     "Because it is a continuous variable",
+     "Because the Hausman test requires it",
+     "Because only Argentina is a member"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En la muestra sólo México (desde 1994) y Chile (desde 2010) son miembros.",
+    "en": "In the sample only Mexico (since 1994) and Chile (since 2010) are members."
+   },
+   "id": "ext-riesgo-09-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué coeficiente obtiene la inflación en el modelo anidado?",
+    "en": "What coefficient does inflation get in the nested model?"
+   },
+   "op": {
+    "es": [
+     "−0.391",
+     "0.054",
+     "0.109",
+     "0.918"
+    ],
+    "en": [
+     "−0.391",
+     "0.054",
+     "0.109",
+     "0.918"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Positivo y significativo: más inflación, más spread. −0.391 corresponde al crecimiento del PIB.",
+    "en": "Positive and significant: more inflation, higher spread. −0.391 is GDP growth."
+   },
+   "id": "ext-riesgo-09-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasa con las variables financieras globales (VIX, fondos federales, high yield)?",
+    "en": "What happens with the global financial variables (VIX, fed funds, high yield)?"
+   },
+   "op": {
+    "es": [
+     "Son las más significativas del modelo",
+     "No son significativas individualmente o tienen signo contrario, aunque en conjunto resultan significativas",
+     "Sólo el VIX es significativo y positivo",
+     "Se excluyen por falta de datos"
+    ],
+    "en": [
+     "They are the most significant in the model",
+     "They are not individually significant or have the wrong sign, although jointly they are significant",
+     "Only the VIX is significant and positive",
+     "They are excluded for lack of data"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el principal contraste con estudios como Csonto e Ivaschenko o González-Rozada y Levy Yeyati.",
+    "en": "This is the main contrast with studies such as Csonto and Ivaschenko or González-Rozada and Levy Yeyati."
+   },
+   "id": "ext-riesgo-09-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué contradicción aparece en el texto sobre el contagio?",
+    "en": "What contradiction appears in the text regarding contagion?"
+   },
+   "op": {
+    "es": [
+     "Que el EMBI regional da negativo y significativo",
+     "Que no se incluye ninguna medida de contagio",
+     "Que la discusión de resultados dice que no hay contagio y el resumen y las conclusiones afirman que existe",
+     "Que el contagio se mide con el VIX"
+    ],
+    "en": [
+     "That the regional EMBI is negative and significant",
+     "That no measure of contagion is included",
+     "That the results discussion says there is no contagion while the abstract and conclusions say there is",
+     "That contagion is measured with the VIX"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El coeficiente del EMBI regional es positivo pero no significativo.",
+    "en": "The regional EMBI coefficient is positive but not significant."
+   },
+   "id": "ext-riesgo-09-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la lectura correcta de un coeficiente de 0.918 cuando spread e inflación están en porcentaje?",
+    "en": "What is the correct reading of a 0.918 coefficient when spread and inflation are both in percent?"
+   },
+   "op": {
+    "es": [
+     "Un punto porcentual más de inflación se asocia con 0,918 puntos porcentuales más de spread",
+     "Una suba de 1% de la inflación sube el spread un 0,918% de su valor",
+     "Una suba de 1% de la inflación sube el spread 91,8%",
+     "No tiene interpretación"
+    ],
+    "en": [
+     "One percentage point more inflation is associated with 0.918 percentage points more spread",
+     "A 1% rise in inflation raises the spread by 0.918% of its value",
+     "A 1% rise in inflation raises the spread by 91.8%",
+     "It has no interpretation"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En niveles, el efecto es en puntos porcentuales; sería una elasticidad sólo con ambas variables en logaritmos.",
+    "en": "In levels, the effect is in percentage points; it would be an elasticity only with both variables in logs."
+   },
+   "id": "ext-riesgo-09-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué variable agrega la autora respecto del trabajo de referencia de Navarrete, Gregoire y Ruiz?",
+    "en": "Which variable does the author add relative to the reference work by Navarrete, Gregoire and Ruiz?"
+   },
+   "op": {
+    "es": [
+     "El precio del petróleo",
+     "El tipo de cambio real",
+     "La calificación crediticia",
+     "El índice de percepción de la corrupción de Transparencia Internacional"
+    ],
+    "en": [
+     "The oil price",
+     "The real exchange rate",
+     "The credit rating",
+     "Transparency International's corruption perceptions index"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "También amplía el período y agrega dummies de crisis; el índice de corrupción no tiene el signo esperado.",
+    "en": "She also extends the period and adds crisis dummies; the corruption index does not have the expected sign."
+   },
+   "id": "ext-riesgo-09-q8"
+  }
+ ],
+ "palabras": 1439,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el spread soberano y qué representa para un país emergente?",
+    "en": "What is the sovereign spread and what does it represent for an emerging country?"
+   },
+   "a": {
+    "es": "Es el exceso de rendimiento de sus bonos en dólares sobre un bono del Tesoro estadounidense de duración similar; representa el costo de su endeudamiento externo. Guevara García (2015) lo mide con el EMBI Global.",
+    "en": "It is the excess yield of its dollar bonds over a US Treasury of similar duration; it represents the cost of its external borrowing. Guevara García (2015) measures it with the EMBI Global."
+   },
+   "id": "ext-riesgo-09-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿En qué tres bloques se agrupan habitualmente los determinantes del spread soberano?",
+    "en": "Into which three blocks are the determinants of the sovereign spread usually grouped?"
+   },
+   "a": {
+    "es": "Posición externa (reservas y deuda externa sobre PIB), posición interna (inflación, crecimiento, comercio, cuentas fiscales y corrientes) y condiciones globales (aversión al riesgo, liquidez, volatilidad, contagio). Guevara García (2015) sigue ese esquema, heredado de Edwards (1984).",
+    "en": "External position (reserves and external debt to GDP), domestic position (inflation, growth, trade, fiscal and current accounts) and global conditions (risk aversion, liquidity, volatility, contagion). Guevara García (2015) follows this scheme, inherited from Edwards (1984)."
+   },
+   "id": "ext-riesgo-09-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Para qué sirve el test de Hausman en un panel de spreads?",
+    "en": "What is the Hausman test for in a panel of spreads?"
+   },
+   "a": {
+    "es": "Para elegir entre efectos fijos y aleatorios: si los efectos de cada país se correlacionan con los regresores, efectos aleatorios es inconsistente. Guevara García (2015) rechaza la nula y usa efectos fijos.",
+    "en": "To choose between fixed and random effects: if country effects correlate with the regressors, random effects is inconsistent. Guevara García (2015) rejects the null and uses fixed effects."
+   },
+   "id": "ext-riesgo-09-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué no se puede estimar el efecto de pertenecer a la OCDE con efectos fijos en un panel corto de países?",
+    "en": "Why can't the effect of OECD membership be estimated with fixed effects in a short country panel?"
+   },
+   "a": {
+    "es": "Porque una variable casi constante en el tiempo queda absorbida por el efecto fijo del país. Guevara García (2015) recurre a una regresión pooled, cuyo coeficiente puede mezclar diferencias entre países.",
+    "en": "Because a variable nearly constant over time is absorbed by the country fixed effect. Guevara García (2015) resorts to a pooled regression, whose coefficient may mix cross-country differences."
+   },
+   "id": "ext-riesgo-09-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué fundamentos macro elevan y cuáles reducen el spread en los seis grandes de América Latina entre 1998 y 2013?",
+    "en": "Which macro fundamentals raise and which lower the spread in Latin America's six largest economies, 1998-2013?"
+   },
+   "a": {
+    "es": "Lo elevan la inflación (0.918), la deuda externa sobre PIB (0.109) y el crecimiento de las importaciones (0.054); lo reducen el crecimiento del PIB (−0.391) y las reservas sobre PIB (−0.071). Guevara García (2015), efectos fijos.",
+    "en": "Inflation (0.918), external debt to GDP (0.109) and import growth (0.054) raise it; GDP growth (−0.391) and reserves to GDP (−0.071) lower it. Guevara García (2015), fixed effects."
+   },
+   "id": "ext-riesgo-09-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Siempre aparecen los factores globales como determinantes del spread latinoamericano?",
+    "en": "Do global factors always show up as determinants of Latin American spreads?"
+   },
+   "a": {
+    "es": "No: en un panel de niveles con efectos fijos, Guevara García (2015) no encuentra significativos el VIX, la tasa de fondos federales, el high yield ni el contagio regional, aunque en conjunto el bloque es significativo.",
+    "en": "No: in a fixed-effects panel in levels, Guevara García (2015) finds the VIX, the fed funds rate, high yield and regional contagion individually insignificant, although the block is jointly significant."
+   },
+   "id": "ext-riesgo-09-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problemas metodológicos debilitan un panel de spreads estimado en niveles con pocos países?",
+    "en": "What methodological problems weaken a spread panel estimated in levels with few countries?"
+   },
+   "a": {
+    "es": "Posible no estacionariedad sin tratamiento, el peso de un país en default (Argentina llegó a 71 puntos) y variables globales colineales con dummies anuales. Son observaciones propias sobre Guevara García (2015).",
+    "en": "Possible untreated non-stationarity, the weight of a defaulting country (Argentina reached 71 points) and global variables collinear with annual dummies. These are our own remarks on Guevara García (2015)."
+   },
+   "id": "ext-riesgo-09-t7"
+  }
+ ]
+}

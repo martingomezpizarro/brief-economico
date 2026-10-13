@@ -1,0 +1,388 @@
+{
+ "id": "ext-riesgo-10",
+ "cat": "ext-riesgo",
+ "orden": 15,
+ "minutos": 15,
+ "titulo": "Los acreedores tienen memoria: Bongiorni (2020) sobre el spread argentino frente a sus vecinos",
+ "bajada": "Una tesis de maestría de la UBA compara los determinantes del EMBI de Argentina con los de Chile, Perú y Colombia entre 1995 y 2016, y encuentra que la diferencia principal es haber defaulteado.",
+ "fuentes": [
+  1357
+ ],
+ "cita": "Bongiorni (2020)",
+ "intro": "En 2016, tras el cambio de gobierno, la salida del cepo y el acuerdo con los holdouts, la Argentina volvió a los mercados internacionales con colocaciones sobresuscriptas. Lo hizo a una tasa promedio de 7%, con máximos de 9% y mínimos de 5%, mientras Chile, Colombia, Bolivia y Perú se financiaban al 4%: un diferencial de unos 300 puntos básicos. Mariano Bongiorni toma esa brecha como punto de partida de su trabajo final de la Maestría en Gestión Económica y Financiera de la Universidad de Buenos Aires. Se pregunta si las tasas argentinas eran coherentes con sus variables macro o si pesaban factores difíciles de cuantificar como la reputación, el historial de pagos o la aversión al riesgo. Para responder, busca por separado los determinantes de la prima de riesgo argentina y los de un grupo de comparación, Chile, Perú y Colombia, en datos anuales de 1995 a 2016. Su conclusión cabe en el epígrafe del capítulo econométrico: «los acreedores tienen mejor memoria que los deudores».",
+ "secciones": [
+  {
+   "t": "El marco: tasa libre de riesgo más prima",
+   "p": [
+    "El capítulo teórico ordena los conceptos que se superponen en el lenguaje cotidiano. Para el autor, la tasa que paga un soberano es la tasa libre de riesgo, en general la del Tesoro estadounidense, más una prima de riesgo que compensa al inversor por aceptar una exposición mayor que la mínima disponible.",
+    "Esa prima mezcla varios componentes. El riesgo de crédito es la probabilidad de que el deudor incumpla. El riesgo de iliquidez es la dificultad de vender el activo rápido, barato y sin perder valor, que se evalúa en tres dimensiones: profundidad, estrechez y resiliencia del mercado. Los riesgos cambiario y político completan la lista.",
+    "Retoma también la distinción que hace S&P entre riesgo país y riesgo soberano. El primero abarca el clima de negocios, el marco legal y la corrupción. El segundo es estrictamente la probabilidad de default de la deuda del Estado. Ambos se mueven juntos en el largo plazo, pero no necesariamente en el corto: un país puede mejorar su liquidez y bajar su riesgo soberano mientras sus instituciones siguen generando desconfianza.",
+    "Entre los antecedentes argentinos, rescata dos trabajos. Nogués y Grandes, para quienes el riesgo país depende del servicio de la deuda sobre exportaciones, el déficit fiscal, las expectativas de crecimiento, la tasa estadounidense, el contagio y el clima político. Y Kiguel y Lopetegui (1997), que ordenan las variables en salud de la economía, transferencia interna y transferencia externa, y subrayan que haber incumplido dispara el riesgo."
+   ],
+   "eq": "i_{\\text{soberano}} = i_{\\text{libre de riesgo}} + \\text{prima de riesgo}"
+  },
+  {
+   "t": "La historia argentina detrás de los números",
+   "p": [
+    "El capítulo descriptivo reconstruye el endeudamiento argentino. Tras el canje de 2005, con una adhesión inicial de 76% y una quita de más de 65%, y el de 2010, que llevó la adhesión al 92%, quedó un 8% de holdouts con quienes recién se acordó en 2016. El autor señala que para algunos organismos recién entonces el país salió del default iniciado en 2001.",
+    "Entre 2009 y 2015 el financiamiento externo se volvió cada vez más difícil y el gobierno optó por el endeudamiento interno. Varios indicadores se deterioraron en ese período. El índice de apertura de la Fundación Heritage cayó de 73% a 44% y clasificó al país como «reprimido». La inflación tocó el 40% anual. Las reservas bajaron a 25 mil millones de dólares desde un máximo de 52 mil millones en 2007. La deuda pública bruta volvió al 53% del PIB.",
+    "Durante todo ese lapso el cupón de los bonos largos en moneda extranjera nunca bajó de 7%. En 2016 el cupón promedio de los títulos a más de 8 años fue de 6,78%."
+   ]
+  },
+  {
+   "t": "El método: correlaciones, clusters y regresión backward",
+   "p": [
+    "La variable dependiente es la prima EMBI de J.P. Morgan, usada como proxy de la tasa de los bonos soberanos a 10 años. El autor la prefiere a los plazos cortos porque refleja la percepción sobre la salud estructural del Estado y no la liquidez coyuntural.",
+    "Parte de una lista amplia de candidatas: rendimiento del Treasury a 10 años, VIX, Merval en dólares, capitalización bursátil, inversión extranjera directa, comercio sobre PIB, apertura, cuenta corriente, inflación, desempleo, deuda de distintos tipos, reservas, precios de commodities, riesgo político y dummies de default.",
+    "Como son muchas variables para pocas observaciones, la selección se hace en tres pasos. Primero, una matriz de correlaciones. Segundo, un análisis de clusters de variables: las agrupa según cuánto se parecen y, dentro de cada grupo, retiene las dos con menor cociente 1−R², es decir, las más correlacionadas con su propio cluster y menos con el más cercano. Tercero, una regresión backward que va descartando las no significativas.",
+    "El ejercicio se corre por separado para la Argentina y para el grupo Chile–Perú–Colombia. En ambos casos, seis clusters explican cerca de tres cuartos de la varianza de las variables candidatas: 75% y 74% respectivamente."
+   ]
+  },
+  {
+   "t": "Resultados: Chile, Perú y Colombia",
+   "p": [
+    "Para los tres vecinos, la regresión backward deja ocho variables y la regresión final tiene 46 observaciones, con una prima media de unos 226 puntos básicos.",
+    "Cuatro variables reducen la prima y son significativas: un menor riesgo político, un mayor precio de los commodities medido con el índice de precios primarios del FMI, y una mejor cuenta corriente sobre PIB. Del lado contrario, el VIX y la inflación la elevan con significatividad. La deuda del gobierno sobre PIB tiene el signo esperado pero no es significativa.",
+    "El precio del maíz y el Treasury a 10 años salen con signo contrario al esperado y no significativos, y el autor los descarta. El R² es 0,7691: la ecuación explica el 76% de la varianza.",
+    "En términos económicos, la región aparece gobernada por tres cosas: los precios de lo que exporta, la aversión global al riesgo y un puñado de fundamentos macro e institucionales."
+   ]
+  },
+  {
+   "t": "Resultados: Argentina y la variable default",
+   "p": [
+    "Para la Argentina el autor fuerza la inclusión de una dummy de default, apoyándose en la teoría y en Kiguel y Lopetegui. La regresión final tiene 20 observaciones anuales, siete regresores y un R² de 0,9766.",
+    "El spread sube con la deuda externa sobre exportaciones y con haber estado en default el año anterior. Baja con una mejor cuenta corriente sobre PIB y con un mayor PIB per cápita.",
+    "El Treasury a 10 años aparece con signo negativo y muy significativo. El autor lo interpreta como un flujo de fondos que sale de los bonos estadounidenses hacia los emergentes. El precio de los commodities y el riesgo político también salen con el signo «equivocado», pero en este caso los elimina.",
+    "Su conclusión es que, salvo el default, no hay una diferencia sustancial entre lo que mueve la prima argentina y la de los vecinos. Lo que separa a la Argentina es su historial: los países con mucha deuda pero que siempre pagaron no son penalizados como los que tienen historial de defaults aunque su deuda actual sea baja.",
+    "La lista final coincide en parte con los estudios de los noventa. Comparte dos variables con Nogués y Grandes (tres si se cuenta el riesgo político) y tres de las ocho de Kiguel y Lopetegui. El autor lo lee como señal de que algunos determinantes persisten en el tiempo."
+   ]
+  },
+  {
+   "t": "Qué tomar y qué no de este trabajo",
+   "p": [
+    "La idea central está bien planteada y conversa con la literatura sobre reputación e intolerancia a la deuda de Reinhart, Rogoff y Savastano: el historial de incumplimientos explica parte del diferencial que los fundamentos corrientes no explican. El capítulo descriptivo también es útil como cronología del endeudamiento argentino entre la convertibilidad y 2016.",
+    "La parte econométrica, en cambio, debe leerse con cautela, y el propio autor lo admite en las limitaciones: pocas observaciones, pocos grados de libertad, estimadores dispersos y parámetros fuera de rango.",
+    "Hay además tres problemas metodológicos (lectura propia). El primero es el tamaño muestral: con 20 años y siete regresores, un R² de 0,9766 es más un síntoma de sobreajuste que una virtud. La selección automática por backward agrava el problema, porque las pruebas de significatividad posteriores ya no tienen su tamaño nominal.",
+    "El segundo es que descartar variables porque su signo no gusta, después de estimar, convierte la regresión en una confirmación de lo que se esperaba. Encima el criterio se aplica de forma asimétrica: el Treasury se descarta para los vecinos y se racionaliza para la Argentina.",
+    "El tercero es que se trabaja en niveles anuales, sin discutir la no estacionariedad de series como la prima o el PIB per cápita, y con una dummy de default que coincide con los años de spreads de miles de puntos. La regresión no puede distinguir si el default eleva el spread o si el spread extremo y el default son la misma crisis."
+   ]
+  }
+ ],
+ "claves": [
+  "En 2016 la Argentina se endeudaba al 7% promedio contra 4% de sus vecinos: unos 300 puntos básicos de diferencial.",
+  "La selección de variables combina correlaciones, análisis de clusters (criterio 1−R²) y regresión backward, por separado para Argentina y para Chile–Perú–Colombia.",
+  "En los vecinos, la prima baja con mejores precios de commodities, mejor cuenta corriente y menor riesgo político, y sube con el VIX y la inflación (R² 0,7691).",
+  "En la Argentina, la prima sube con la deuda externa sobre exportaciones y con el default del año previo, y baja con la cuenta corriente y el PIB per cápita (R² 0,9766 con 20 observaciones).",
+  "La conclusión: salvo el default, los determinantes son parecidos; lo que separa a la Argentina es su historial.",
+  "Pocas observaciones, selección automática y descarte de variables por signo hacen que las estimaciones sean frágiles (lectura propia)."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué diferencial de tasas motiva el trabajo?",
+    "en": "What rate differential motivates the work?"
+   },
+   "op": {
+    "es": [
+     "Argentina se endeudaba al 7% promedio en 2016 contra 4% de Chile, Colombia, Bolivia y Perú",
+     "Argentina pagaba menos que Chile en 2016",
+     "Argentina pagaba 1.500 puntos más que Brasil",
+     "Ninguno: Argentina no emitió en 2016"
+    ],
+    "en": [
+     "Argentina borrowed at an average 7% in 2016 versus 4% for Chile, Colombia, Bolivia and Peru",
+     "Argentina paid less than Chile in 2016",
+     "Argentina paid 1,500 points more than Brazil",
+     "None: Argentina did not issue in 2016"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Unos 300 puntos básicos de diferencial al volver a los mercados tras el acuerdo con los holdouts.",
+    "en": "About 300 basis points of differential on returning to markets after the holdout settlement."
+   },
+   "id": "ext-riesgo-10-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se eligen dentro de cada cluster las variables que pasan a la regresión?",
+    "en": "How are the variables that enter the regression chosen within each cluster?"
+   },
+   "op": {
+    "es": [
+     "Las de mayor varianza",
+     "Al azar",
+     "Las dos con menor cociente 1−R²: muy correlacionadas con su cluster y poco con el más cercano",
+     "Las que tienen mayor correlación con la prima"
+    ],
+    "en": [
+     "Those with the highest variance",
+     "At random",
+     "The two with the lowest 1−R² ratio: highly correlated with their cluster and weakly with the nearest one",
+     "Those most correlated with the premium"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Después se aplica una regresión backward sobre la preselección.",
+    "en": "A backward regression is then applied to the preselection."
+   },
+   "id": "ext-riesgo-10-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué variable fuerza el autor en el caso argentino aunque la selección automática pudiera no elegirla?",
+    "en": "Which variable does the author force into the Argentine case even if automatic selection might not choose it?"
+   },
+   "op": {
+    "es": [
+     "El VIX",
+     "La dummy de default",
+     "La inflación",
+     "El precio del maíz"
+    ],
+    "en": [
+     "The VIX",
+     "The default dummy",
+     "Inflation",
+     "The price of corn"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Se apoya en la teoría y en Kiguel y Lopetegui (1997), que también la encontraban determinante.",
+    "en": "He relies on theory and on Kiguel and Lopetegui (1997), who also found it decisive."
+   },
+   "id": "ext-riesgo-10-q3"
+  },
+  {
+   "q": {
+    "es": "En el grupo Chile–Perú–Colombia, ¿qué variables globales y de comercio resultan significativas?",
+    "en": "In the Chile–Peru–Colombia group, which global and trade variables are significant?"
+   },
+   "op": {
+    "es": [
+     "El Treasury a 10 años y el maíz",
+     "Sólo la inversión extranjera directa",
+     "La capitalización bursátil y el Merval",
+     "El índice de precios de commodities del FMI (reduce la prima) y el VIX (la eleva)"
+    ],
+    "en": [
+     "The 10-year Treasury and corn",
+     "Only foreign direct investment",
+     "Market capitalization and the Merval",
+     "The IMF commodity price index (lowers the premium) and the VIX (raises it)"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El Treasury y el maíz salen con signo contrario y se descartan.",
+    "en": "The Treasury and corn have the wrong sign and are dropped."
+   },
+   "id": "ext-riesgo-10-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué variables elevan la prima argentina en la ecuación final?",
+    "en": "Which variables raise the Argentine premium in the final equation?"
+   },
+   "op": {
+    "es": [
+     "El PIB per cápita y la cuenta corriente",
+     "La deuda externa sobre exportaciones y el default del año anterior",
+     "El VIX y la inflación",
+     "El riesgo político y los commodities"
+    ],
+    "en": [
+     "GDP per capita and the current account",
+     "External debt to exports and default in the previous year",
+     "The VIX and inflation",
+     "Political risk and commodities"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La cuenta corriente y el PIB per cápita la reducen; el Treasury aparece con signo negativo.",
+    "en": "The current account and GDP per capita lower it; the Treasury appears with a negative sign."
+   },
+   "id": "ext-riesgo-10-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué un R² de 0,9766 no es necesariamente una buena noticia en la regresión argentina?",
+    "en": "Why is an R² of 0.9766 not necessarily good news in the Argentine regression?"
+   },
+   "op": {
+    "es": [
+     "Porque con 20 observaciones, siete regresores y selección automática es síntoma de sobreajuste",
+     "Porque el R² debe ser menor a 0,5 en finanzas",
+     "Porque la variable dependiente es binaria",
+     "Porque el R² no se puede calcular con datos anuales"
+    ],
+    "en": [
+     "Because with 20 observations, seven regressors and automatic selection it signals overfitting",
+     "Because R² must be below 0.5 in finance",
+     "Because the dependent variable is binary",
+     "Because R² cannot be computed with annual data"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El propio autor reconoce pocos grados de libertad y parámetros fuera de rango.",
+    "en": "The author himself acknowledges few degrees of freedom and out-of-range parameters."
+   },
+   "id": "ext-riesgo-10-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué distinción toma el autor de S&P entre riesgo país y riesgo soberano?",
+    "en": "What distinction does the author take from S&P between country risk and sovereign risk?"
+   },
+   "op": {
+    "es": [
+     "Son sinónimos",
+     "El riesgo soberano incluye la corrupción y el riesgo país no",
+     "El riesgo país abarca clima de negocios, marco legal y corrupción; el soberano es el riesgo de default del Estado",
+     "El riesgo país sólo mide el tipo de cambio"
+    ],
+    "en": [
+     "They are synonyms",
+     "Sovereign risk includes corruption and country risk does not",
+     "Country risk covers business climate, legal framework and corruption; sovereign risk is the state's default risk",
+     "Country risk only measures the exchange rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Se relacionan en el largo plazo pero pueden divergir en el corto.",
+    "en": "They are related in the long run but can diverge in the short run."
+   },
+   "id": "ext-riesgo-10-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el problema de descartar variables porque su signo es contrario al esperado?",
+    "en": "What is the problem with dropping variables because their sign is unexpected?"
+   },
+   "op": {
+    "es": [
+     "Ninguno, es una práctica estándar",
+     "Que reduce el R²",
+     "Que obliga a usar efectos fijos",
+     "Que convierte la estimación en una confirmación de lo esperado, y aquí se aplica de forma asimétrica entre los dos grupos"
+    ],
+    "en": [
+     "None, it is standard practice",
+     "That it lowers R²",
+     "That it forces fixed effects",
+     "That it turns estimation into confirmation of expectations, and here it is applied asymmetrically between the two groups"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El Treasury se descarta para los vecinos y se racionaliza para la Argentina (lectura propia).",
+    "en": "The Treasury is dropped for the neighbors and rationalized for Argentina (our own reading)."
+   },
+   "id": "ext-riesgo-10-q8"
+  }
+ ],
+ "palabras": 1403,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué separa la prima de riesgo argentina de la de Chile, Perú y Colombia, más allá de los fundamentos corrientes?",
+    "en": "What separates Argentina's risk premium from that of Chile, Peru and Colombia, beyond current fundamentals?"
+   },
+   "a": {
+    "es": "El historial de default: los determinantes macro y globales son parecidos, pero haber incumplido eleva la prima. Bongiorni (2020) lo resume en que los acreedores tienen mejor memoria que los deudores.",
+    "en": "The default history: macro and global determinants are similar, but having defaulted raises the premium. Bongiorni (2020) sums it up as creditors having better memories than debtors."
+   },
+   "id": "ext-riesgo-10-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿En qué se diferencia el riesgo país del riesgo soberano?",
+    "en": "How does country risk differ from sovereign risk?"
+   },
+   "a": {
+    "es": "El riesgo país abarca clima de negocios, marco legal y corrupción; el soberano es el riesgo de default de la deuda del Estado. Pueden divergir en el corto plazo. Bongiorni (2020) toma la distinción de S&P.",
+    "en": "Country risk covers the business climate, legal framework and corruption; sovereign risk is the default risk of state debt. They can diverge in the short run. Bongiorni (2020) takes the distinction from S&P."
+   },
+   "id": "ext-riesgo-10-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cuáles son las tres dimensiones con que se evalúa la liquidez de un mercado?",
+    "en": "What are the three dimensions used to assess market liquidity?"
+   },
+   "a": {
+    "es": "Profundidad, estrechez y resiliencia; cuando faltan, los inversores cobran una prima de liquidez que se suma a la de riesgo. Bongiorni (2020) la incluye entre los componentes de la tasa soberana.",
+    "en": "Depth, tightness and resilience; when they are missing, investors charge a liquidity premium on top of the risk premium. Bongiorni (2020) includes it among the components of the sovereign rate."
+   },
+   "id": "ext-riesgo-10-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede reducir una lista larga de candidatas a determinantes del spread con pocas observaciones?",
+    "en": "How can a long list of candidate spread determinants be reduced with few observations?"
+   },
+   "a": {
+    "es": "Agrupando variables en clusters, reteniendo por grupo las de menor cociente 1−R² y luego aplicando una regresión backward. Bongiorni (2020) lo hace así, al costo de que la inferencia posterior pierde validez.",
+    "en": "By grouping variables into clusters, keeping those with the lowest 1−R² ratio in each, and then running a backward regression. Bongiorni (2020) does this, at the cost of invalidating subsequent inference."
+   },
+   "id": "ext-riesgo-10-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué explica la prima de riesgo de Chile, Perú y Colombia entre 1995 y 2016?",
+    "en": "What explains the risk premium of Chile, Peru and Colombia, 1995-2016?"
+   },
+   "a": {
+    "es": "Baja con mejores precios de commodities, mejor cuenta corriente y menor riesgo político; sube con el VIX y la inflación. R² de 0,7691. Bongiorni (2020).",
+    "en": "It falls with better commodity prices, a better current account and lower political risk; it rises with the VIX and inflation. R² of 0.7691. Bongiorni (2020)."
+   },
+   "id": "ext-riesgo-10-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué explica la prima de riesgo argentina entre 1995 y 2016?",
+    "en": "What explains Argentina's risk premium, 1995-2016?"
+   },
+   "a": {
+    "es": "La deuda externa sobre exportaciones y el default del año previo la elevan; la cuenta corriente y el PIB per cápita la reducen. Bongiorni (2020), con 20 observaciones anuales.",
+    "en": "External debt to exports and default in the previous year raise it; the current account and GDP per capita lower it. Bongiorni (2020), with 20 annual observations."
+   },
+   "id": "ext-riesgo-10-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo evolucionaron los indicadores externos argentinos entre 2009 y 2015, antes del regreso a los mercados?",
+    "en": "How did Argentina's external indicators evolve between 2009 and 2015, before returning to markets?"
+   },
+   "a": {
+    "es": "La apertura de Heritage cayó de 73% a 44%, la inflación tocó 40%, las reservas bajaron a 25 mil millones desde 52 mil millones en 2007 y el cupón de los bonos largos nunca bajó de 7%. Bongiorni (2020).",
+    "en": "The Heritage openness index fell from 73% to 44%, inflation reached 40%, reserves fell to 25 billion from 52 billion in 2007 and long-bond coupons never fell below 7%. Bongiorni (2020)."
+   },
+   "id": "ext-riesgo-10-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué una dummy de default en una regresión anual del spread argentino tiene problemas de identificación?",
+    "en": "Why does a default dummy in an annual regression of the Argentine spread have identification problems?"
+   },
+   "a": {
+    "es": "Porque coincide con los años de spreads de miles de puntos: la regresión no distingue si el default causa el spread o si ambos son la misma crisis. Es una observación propia sobre Bongiorni (2020).",
+    "en": "Because it coincides with years of spreads in the thousands of points: the regression cannot tell whether default causes the spread or both are the same crisis. This is our own remark on Bongiorni (2020)."
+   },
+   "id": "ext-riesgo-10-t8"
+  }
+ ]
+}
