@@ -1,0 +1,374 @@
+{
+ "id": "ext-deuda-03",
+ "cat": "ext-deuda",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "Se le presta a quien se le vende: Rose y Spiegel (2004) y la gravedad del crédito soberano",
+ "bajada": "Si el castigo por el default es perder comercio, los acreedores con más comercio con el deudor deberían prestarle más. Un modelo simple y un panel de 20 acreedores y 149 deudores lo confirman.",
+ "fuentes": [
+  1352
+ ],
+ "cita": "Rose y Spiegel (2004)",
+ "intro": "¿Por qué pagan los países su deuda externa si ningún tribunal puede obligarlos? La era de la diplomacia de cañoneras terminó hace mucho y, sin embargo, el default soberano sigue siendo un evento excepcional. La literatura ofrece dos grandes respuestas. Una es la reputación: quien no paga pierde acceso al crédito futuro, como en Eaton y Gersovitz (1981). La otra son las sanciones directas, sobre todo comerciales: Bulow y Rogoff (1989) describen las complicaciones que enfrenta un país en default para comerciar, desde evitar embargos hasta perder el crédito comercial de corto plazo. Andrew Rose y Mark Spiegel, en un artículo publicado en IMF Staff Papers en 2004, derivan una implicación contrastable de la segunda respuesta. Si el castigo por no pagar es perder comercio, el castigo es mayor frente a los socios comerciales más importantes. Entonces esos socios deberían tener una ventaja comparativa para prestar, y el mapa del crédito internacional debería parecerse al mapa del comercio.",
+ "secciones": [
+  {
+   "t": "El problema: ¿existen las penalidades por default?",
+   "p": [
+    "Los modelos de deuda soberana suelen necesitar alguna penalidad explícita para explicar por qué los países pagan. Pero hay razones para dudar de que esas penalidades sean creíbles.",
+    "Bulow y Rogoff admiten que no está claro que los acreedores privados puedan lograr que sus gobiernos castiguen a un soberano incumplidor. Kletzer y Wright (2000) van más lejos: muchas penalidades no son «a prueba de renegociación». Después del default, ambas partes estarían mejor si el acreedor se abstuviera de aplicar un castigo destructivo que no le reporta ningún beneficio inmediato.",
+    "La evidencia empírica directa es escasa. Ozler (1993) encuentra primas positivas pero pequeñas para países con historial de default. Rose (2002) muestra que las reprogramaciones en el Club de París son seguidas por caídas significativas del comercio internacional. Rose y Spiegel usan esa línea para generar una predicción nueva, esta vez sobre la composición del crédito y no sobre su precio."
+   ]
+  },
+  {
+   "t": "El modelo: un deudor, dos acreedores, castigo comercial",
+   "p": [
+    "El modelo tiene tres países pequeños: un deudor \\(i\\) y dos acreedores \\(a\\) y \\(b\\), cuyos bancos son neutrales al riesgo y prestan sin límite mientras el retorno esperado iguale la tasa libre de riesgo \\(r\\). Hay dos períodos. En el primero, el banco del país \\(j\\) presta \\(L_{ij}\\) a cambio de la promesa de pagar \\(D_{ij}\\) en el segundo.",
+    "Si el deudor no le paga al país \\(j\\), pierde una fracción \\(\\theta\\) de sus ganancias del comercio bilateral con ese país. Esas ganancias son \\(\\gamma T_{ij}\\), donde \\(T_{ij}\\) es el comercio realizado, que tiene un componente aleatorio. Los dos acreedores son idénticos salvo en el comercio que se espera que tengan con el deudor.",
+    "La regla de default es la de abajo: el deudor no le paga a \\(j\\) cuando lo que debe supera lo que perdería en comercio. Como el comercio es aleatorio, la probabilidad de default con cada acreedor depende de cuánto le debe y de cuánto comercia con él, y los bancos cobran primas acordes con esa probabilidad."
+   ],
+   "eq": "\\text{default con } j \\iff D_{ij} > \\theta\\,\\gamma\\,T_{ij}"
+  },
+  {
+   "t": "Qué predice el modelo",
+   "p": [
+    "La primera decisión del deudor es cómo repartir un monto total de deuda entre los dos acreedores. En el óptimo iguala el costo marginal del último dólar en cada país. Eso lo lleva a pedir más al acreedor frente al cual un dólar adicional de deuda aumenta menos la probabilidad de default, que es el acreedor con más comercio esperado. Por eso, manteniendo constante el préstamo total, la participación del país \\(a\\) crece con el comercio esperado con \\(a\\).",
+    "La segunda decisión es cuánto pedir en total. Más comercio esperado con un socio también aumenta el endeudamiento total.",
+    "El modelo deja además un resultado lateral interesante. La asignación óptima tiende a igualar las probabilidades de default entre acreedores, y en el caso límite de shocks uniformes el deudor incumple con todos o con ninguno. Los autores lo vinculan con la experiencia histórica: los países suelen entrar en default con todos sus acreedores a la vez.",
+    "La predicción testeable es una correlación positiva entre comercio bilateral y préstamo bilateral."
+   ]
+  },
+  {
+   "t": "La estrategia empírica: gravedad e instrumentos",
+   "p": [
+    "La correlación entre comercio y crédito podría deberse a otras cosas. El crédito puede financiar comercio, o ambos pueden responder a factores comunes. Para atacar esa endogeneidad, los autores usan variables instrumentales tomadas del modelo de gravedad del comercio.",
+    "La idea es que ciertos rasgos geográficos determinan cuánto comercian dos países pero difícilmente afecten directamente cuánto se prestan. Dos países sin salida al mar comercian menos, dos países grandes o con frontera común comercian más, pero no hay razón obvia para que eso cambie el crédito bancario por otra vía.",
+    "La ecuación de crédito sigue la forma de la gravedad. El logaritmo del crédito bancario del país acreedor al deudor depende del logaritmo del comercio bilateral y de los controles habituales: producto y producto per cápita de ambos, distancia, idioma común, frontera, acuerdos comerciales, historia colonial y unión monetaria, además de efectos por año.",
+    "Los datos son los reclamos consolidados de los bancos que reportan al BIS, para 20 países acreedores y 149 deudores entre 1986 y 1999, deflactados por el IPC estadounidense. El comercio bilateral viene de las Direction of Trade Statistics del FMI. Casi la mitad de los reclamos son cero, lo que obliga a verificar que el resultado no dependa de la transformación logarítmica."
+   ]
+  },
+  {
+   "t": "Resultados",
+   "p": [
+    "La estimación por mínimos cuadrados con todos los controles da una elasticidad del crédito al comercio de 0.54, con error estándar robusto de 0.04 y un estadístico t de más de 15: un 1% más de comercio se asocia con algo más de 0,5% más de préstamo bancario. Los autores la consideran una cota inferior, porque el crédito bancario es sólo una parte de los flujos de capital.",
+    "El resultado sobrevive a todas las variantes que prueban. Se mantiene sin controles, en niveles en lugar de logaritmos (los tests de Box-Cox favorecen la forma logarítmica), en cortes transversales de 1990 y 1995, y sólo entre países industriales. También se mantiene sólo con deudores en desarrollo, donde la estimación es de 0.53.",
+    "Con variables instrumentales (distancia, frontera, número de países sin litoral, número de islas y área), la elasticidad baja a alrededor de 0.4, pero sigue siendo significativa. Cambiar el conjunto de instrumentos por idioma común, acuerdo comercial y misma nación no altera la conclusión. Tampoco la alteran los controles por el crédito total del acreedor o la deuda total del deudor.",
+    "Con estimadores de panel, la elasticidad es 0.31 con efectos aleatorios, 0.19 con efectos fijos por par de países y 0.52 con variables instrumentales y efectos aleatorios. El de efectos fijos es el más exigente, porque absorbe todo lo que distingue permanentemente a cada par.",
+    "Por último, agregar la inversión extranjera directa del acreedor como control, para descartar que el crédito siga a la IED y no al comercio, deja una elasticidad de 0.62."
+   ]
+  },
+  {
+   "t": "Alcance y límites",
+   "p": [
+    "Los autores son cuidadosos con lo que prueban. La evidencia es coherente con el modelo de sanciones comerciales, pero no refuta los modelos de pura reputación, donde el castigo es la exclusión del crédito futuro.",
+    "Para que esos modelos expliquen el mismo patrón hay que agregar alguna fricción. Por ejemplo, que los socios comerciales tengan mejor información sobre el deudor, idea que Mark Wright desarrolla en su comentario. También reconocen que, si parte del crédito bancario es financiamiento del comercio, la estimación instrumental podría estar sesgada hacia arriba, aunque el efecto es demasiado grande para que ese sesgo lo elimine.",
+    "Desde la perspectiva de esta ruta hay dos observaciones adicionales (lectura propia). La primera: el trabajo explica la composición del crédito, no su precio, de modo que complementa la literatura sobre spreads en lugar de competir con ella. La segunda: la validez de los instrumentos depende de que la geografía no afecte el crédito por canales distintos del comercio. La distancia, por ejemplo, también encarece la información y la supervisión bancaria, y en ese caso el instrumento capturaría algo más que comercio.",
+    "Para la Argentina, el mecanismo sugiere una lectura del costo del default: además del cierre del mercado de bonos, el incumplimiento pone en juego la relación comercial y financiera con los principales socios. Y una economía poco abierta tiene, según este modelo, menos colateral implícito para endeudarse (lectura propia)."
+   ]
+  }
+ ],
+ "claves": [
+  "Los modelos de deuda soberana necesitan una penalidad por default; una candidata es la pérdida de comercio con los acreedores.",
+  "En el modelo, el deudor incumple con j si lo que debe supera θγT: la fracción de las ganancias comerciales que perdería.",
+  "El deudor pide más a quien comercia más con él, porque allí cada dólar de deuda aumenta menos la probabilidad de default; además, tiende a incumplir con todos o con ninguno.",
+  "Con datos del BIS de 20 acreedores y 149 deudores (1986–1999), la elasticidad del crédito bancario al comercio bilateral es 0.54 por MCO y alrededor de 0.4 con instrumentos de gravedad.",
+  "El resultado resiste efectos fijos (0.19), variantes en niveles, submuestras y el control por IED (0.62).",
+  "La evidencia es consistente con sanciones comerciales, pero no descarta modelos de reputación con ventajas informativas de los socios comerciales."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué penalidad por default supone el modelo de Rose y Spiegel?",
+    "en": "What default penalty does the Rose and Spiegel model assume?"
+   },
+   "op": {
+    "es": [
+     "El embargo de reservas",
+     "La pérdida de una fracción de las ganancias del comercio bilateral con el acreedor",
+     "La exclusión permanente del mercado de crédito",
+     "Una invasión militar"
+    ],
+    "en": [
+     "Seizure of reserves",
+     "Loss of a fraction of the gains from bilateral trade with the creditor",
+     "Permanent exclusion from credit markets",
+     "A military invasion"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El deudor incumple con j cuando D supera θγT.",
+    "en": "The debtor defaults on j when D exceeds θγT."
+   },
+   "id": "ext-deuda-03-q1"
+  },
+  {
+   "q": {
+    "es": "Según el modelo, ¿a qué acreedor le pide más el deudor?",
+    "en": "According to the model, from which creditor does the debtor borrow more?"
+   },
+   "op": {
+    "es": [
+     "Al que cobra la tasa libre de riesgo más baja",
+     "Al más lejano geográficamente",
+     "Al que tiene más comercio esperado con él",
+     "A ambos por igual siempre"
+    ],
+    "en": [
+     "The one charging the lowest risk-free rate",
+     "The most geographically distant one",
+     "The one with more expected trade with it",
+     "To both equally, always"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con ese acreedor un dólar adicional de deuda eleva menos la probabilidad de default.",
+    "en": "With that creditor an extra dollar of debt raises the default probability less."
+   },
+   "id": "ext-deuda-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué resultado lateral del modelo coincide con la experiencia histórica?",
+    "en": "What side result of the model matches historical experience?"
+   },
+   "op": {
+    "es": [
+     "Que los países tienden a entrar en default con todos sus acreedores a la vez",
+     "Que los países nunca entran en default",
+     "Que el default sólo afecta a acreedores lejanos",
+     "Que el spread es independiente de la deuda"
+    ],
+    "en": [
+     "That countries tend to default on all their creditors at once",
+     "That countries never default",
+     "That default only affects distant creditors",
+     "That the spread is independent of debt"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La asignación óptima iguala las probabilidades de default entre acreedores.",
+    "en": "The optimal allocation equalizes default probabilities across creditors."
+   },
+   "id": "ext-deuda-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué usan variables instrumentales?",
+    "en": "Why do they use instrumental variables?"
+   },
+   "op": {
+    "es": [
+     "Porque faltan datos de comercio",
+     "Porque los datos son cualitativos",
+     "Para corregir la inflación",
+     "Porque el crédito puede causar comercio o ambos responder a factores comunes"
+    ],
+    "en": [
+     "Because trade data are missing",
+     "Because the data are qualitative",
+     "To correct for inflation",
+     "Because credit may cause trade or both may respond to common factors"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Instrumentan el comercio con variables geográficas del modelo de gravedad.",
+    "en": "They instrument trade with geographic variables from the gravity model."
+   },
+   "id": "ext-deuda-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la elasticidad del crédito al comercio en la estimación por MCO con todos los controles?",
+    "en": "What is the elasticity of credit to trade in the OLS estimate with all controls?"
+   },
+   "op": {
+    "es": [
+     "0.04",
+     "0.19",
+     "0.54",
+     "0.96"
+    ],
+    "en": [
+     "0.04",
+     "0.19",
+     "0.54",
+     "0.96"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con error estándar 0.04 y t mayor que 15; con instrumentos baja a alrededor de 0.4.",
+    "en": "With standard error 0.04 and t above 15; with instruments it falls to about 0.4."
+   },
+   "id": "ext-deuda-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué variables usan como instrumentos del comercio en la especificación principal?",
+    "en": "Which variables do they use as instruments for trade in the main specification?"
+   },
+   "op": {
+    "es": [
+     "Distancia, frontera común, países sin litoral, islas y área",
+     "Inflación y tipo de cambio",
+     "Calificaciones crediticias",
+     "Tasas de interés de EE. UU."
+    ],
+    "en": [
+     "Distance, common border, landlocked countries, islands and area",
+     "Inflation and the exchange rate",
+     "Credit ratings",
+     "US interest rates"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Afectan el comercio pero, en principio, no el crédito por otras vías.",
+    "en": "They affect trade but, in principle, not credit through other channels."
+   },
+   "id": "ext-deuda-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasa con la elasticidad al usar efectos fijos por par de países?",
+    "en": "What happens to the elasticity with country-pair fixed effects?"
+   },
+   "op": {
+    "es": [
+     "Se vuelve negativa",
+     "Baja a 0.19 pero sigue siendo significativa",
+     "Sube a 2",
+     "No se puede estimar"
+    ],
+    "en": [
+     "It turns negative",
+     "It falls to 0.19 but remains significant",
+     "It rises to 2",
+     "It cannot be estimated"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la prueba más exigente porque absorbe todo lo permanente de cada par.",
+    "en": "It is the most demanding test because it absorbs everything permanent about each pair."
+   },
+   "id": "ext-deuda-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Refuta el trabajo los modelos de deuda basados en reputación?",
+    "en": "Does the paper refute reputation-based debt models?"
+   },
+   "op": {
+    "es": [
+     "Sí, por completo",
+     "Sí, pero sólo para países industriales",
+     "No; para reconciliarlos con los datos habría que agregar alguna fricción, como mejor información de los socios comerciales",
+     "No los menciona"
+    ],
+    "en": [
+     "Yes, completely",
+     "Yes, but only for industrial countries",
+     "No; reconciling them with the data requires some friction, such as better information held by trading partners",
+     "It does not mention them"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los autores lo aclaran explícitamente y citan el comentario de Wright.",
+    "en": "The authors state this explicitly and cite Wright's comment."
+   },
+   "id": "ext-deuda-03-q8"
+  }
+ ],
+ "palabras": 1341,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "Si el castigo por default es perder comercio, ¿cómo debería verse el mapa del crédito internacional?",
+    "en": "If the penalty for default is lost trade, what should the map of international credit look like?"
+   },
+   "a": {
+    "es": "Debería seguir al del comercio: los socios comerciales tienen ventaja para prestar porque frente a ellos el castigo es mayor. Rose y Spiegel (2004) formalizan y testean esa idea.",
+    "en": "It should follow the trade map: trading partners have an advantage in lending because the penalty against them is larger. Rose and Spiegel (2004) formalize and test this idea."
+   },
+   "id": "ext-deuda-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa que una penalidad por default no sea «a prueba de renegociación»?",
+    "en": "What does it mean for a default penalty not to be «renegotiation-proof»?"
+   },
+   "a": {
+    "es": "Que después del default ambas partes estarían mejor si el acreedor no aplicara el castigo, por lo que la amenaza no es creíble. Rose y Spiegel (2004) citan a Kletzer y Wright (2000).",
+    "en": "That after default both parties would be better off if the creditor did not impose the penalty, so the threat is not credible. Rose and Spiegel (2004) cite Kletzer and Wright (2000)."
+   },
+   "id": "ext-deuda-03-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "En un modelo con castigo comercial, ¿cuándo conviene incumplir con un acreedor?",
+    "en": "In a model with trade sanctions, when is it optimal to default on a creditor?"
+   },
+   "a": {
+    "es": "Cuando lo adeudado supera lo que se perdería en comercio: D > θγT. Rose y Spiegel (2004) muestran que el deudor reparte la deuda para igualar el costo marginal entre acreedores.",
+    "en": "When what is owed exceeds what would be lost in trade: D > θγT. Rose and Spiegel (2004) show the debtor allocates debt to equalize the marginal cost across creditors."
+   },
+   "id": "ext-deuda-03-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué los países tienden a entrar en default con todos sus acreedores a la vez?",
+    "en": "Why do countries tend to default on all their creditors at once?"
+   },
+   "a": {
+    "es": "Porque la asignación óptima de la deuda iguala las probabilidades de default entre acreedores; con shocks uniformes, se incumple con todos o con ninguno. Resultado del modelo de Rose y Spiegel (2004).",
+    "en": "Because the optimal debt allocation equalizes default probabilities across creditors; with uniform shocks, the debtor defaults on all or none. A result of the Rose and Spiegel (2004) model."
+   },
+   "id": "ext-deuda-03-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede usar el modelo de gravedad para identificar el efecto del comercio sobre el crédito?",
+    "en": "How can the gravity model be used to identify the effect of trade on credit?"
+   },
+   "a": {
+    "es": "Usando como instrumentos rasgos geográficos (distancia, frontera, litoral, islas, área) que afectan el comercio pero no directamente el crédito. Rose y Spiegel (2004) lo aplican con datos del BIS.",
+    "en": "By using geographic features (distance, border, landlocked status, islands, area) that affect trade but not credit directly as instruments. Rose and Spiegel (2004) apply it with BIS data."
+   },
+   "id": "ext-deuda-03-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto aumenta el crédito bancario bilateral cuando aumenta el comercio bilateral?",
+    "en": "How much does bilateral bank credit rise when bilateral trade rises?"
+   },
+   "a": {
+    "es": "Elasticidad de 0.54 por MCO, alrededor de 0.4 con instrumentos y 0.19 con efectos fijos por par, siempre significativa. Rose y Spiegel (2004), 20 acreedores y 149 deudores, 1986–1999.",
+    "en": "Elasticity of 0.54 by OLS, about 0.4 with instruments and 0.19 with pair fixed effects, always significant. Rose and Spiegel (2004), 20 creditors and 149 debtors, 1986-1999."
+   },
+   "id": "ext-deuda-03-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué amenaza la validez de la distancia como instrumento del comercio en una ecuación de crédito?",
+    "en": "What threatens the validity of distance as an instrument for trade in a credit equation?"
+   },
+   "a": {
+    "es": "Que la distancia también encarezca la información y la supervisión bancaria, afectando el crédito por un canal distinto del comercio. Es una observación propia sobre Rose y Spiegel (2004).",
+    "en": "That distance also raises information and monitoring costs for banks, affecting credit through a channel other than trade. This is our own remark on Rose and Spiegel (2004)."
+   },
+   "id": "ext-deuda-03-t7"
+  }
+ ]
+}
