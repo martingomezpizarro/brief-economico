@@ -1,0 +1,361 @@
+{
+ "id": "ext-riesgo-05",
+ "cat": "ext-riesgo",
+ "orden": 8,
+ "minutos": 15,
+ "titulo": "Fundamentos, contagio o ruido político: el riesgo país argentino según Nogués y Grandes (2001)",
+ "bajada": "Con datos mensuales de 1994 a 1998, Nogués y Grandes estiman qué movía el spread del bono FRB. Y advierten que dolarizar no bajaría el riesgo si no mejoran los fundamentos.",
+ "fuentes": [
+  1355
+ ],
+ "cita": "Nogués y Grandes (2001)",
+ "intro": "La apertura de la cuenta capital fue una de las reformas centrales de los noventa en la Argentina, y ató la economía real a las condiciones de los mercados financieros internacionales. Julio Nogués y Martín Grandes muestran cuánto: entre 1994 y 1998, la correlación entre el riesgo país rezagado y las variaciones del consumo privado y de la inversión en equipo fue de −0,61 y −0,80. Si el riesgo país mueve el ciclo, entender qué mueve al riesgo país es entender el ciclo. El trabajo estima sus determinantes y encuentra seis: las expectativas de crecimiento, el déficit fiscal, el servicio de la deuda sobre exportaciones, el contagio, los shocks externos y el ruido político. Al final discute una propuesta de moda en 1999: dolarizar para eliminar el riesgo cambiario.",
+ "secciones": [
+  {
+   "t": "Por qué el riesgo país mueve la economía",
+   "p": [
+    "En una economía abierta a los capitales, las tasas internas siguen al riesgo país: la tasa prime en dólares a 30 días se movió con el spread durante todo el período. Siendo un país chico, la Argentina enfrenta una oferta de financiamiento muy elástica, salvo en momentos de racionamiento, y los desplazamientos de esa oferta fijan la tasa de equilibrio. Por eso estudiar los determinantes del riesgo país es estudiar qué desplaza la oferta de fondos prestables, y las subas del riesgo deberían asociarse con salidas de capitales del sector privado, como efectivamente ocurrió.",
+    "El gobierno podía compensar parte de esas salidas tomando deuda con organismos multilaterales, cuyos flujos se mueven al revés del riesgo, pero con un límite al que la Argentina se estaba acercando."
+   ]
+  },
+  {
+   "t": "El marco: arbitraje con riesgo de default",
+   "p": [
+    "Con inversores neutrales al riesgo, el rendimiento esperado de un bono soberano debe igualar al del bono del Tesoro estadounidense. Si el inversor pierde todo en caso de default, el spread depende de la probabilidad de default y tiende a infinito cuando esa probabilidad se acerca a uno: el país queda racionado. Siguiendo a Edwards (1986), modelan la probabilidad con una función logística de sus determinantes; tomando logaritmos queda una ecuación lineal estimable.",
+    "La variable a explicar es el spread del bono FRB sobre un bono comparable del Tesoro, elegido por su liquidez y porque marcaba la tendencia de la deuda argentina. Los autores reconocen que el EMBI agrupa bonos de distintas madurez y garantías, y que su correlación con el FRB es alta."
+   ],
+   "eq": [
+    "(1+i^*+s)(1-p) = 1+i^*\\;\\Rightarrow\\; s = \\frac{p}{1-p}\\,(1+i^*)"
+   ],
+   "nota": "\\(i^*\\) es la tasa libre de riesgo, \\(s\\) el spread y \\(p\\) la probabilidad de default. Si el inversor recupera una parte, \\(p\\) se multiplica por un factor entre 0 y 1."
+  },
+  {
+   "t": "Los candidatos",
+   "p": [
+    "Siguiendo las tres dimensiones que miran las calificadoras (liquidez y solvencia, incertidumbre política y factores externos), proponen: el superávit o déficit fiscal federal sin privatizaciones, porque bajo convertibilidad la política fiscal es el principal instrumento macro; las expectativas de crecimiento, aproximadas por el crecimiento efectivo del trimestre bajo previsión perfecta; el servicio de la deuda externa sobre las exportaciones como indicador de liquidez intertemporal; la cuenta corriente sobre el PIB y los términos de intercambio.",
+    "Para el contagio usan el índice de precios de los bonos de México del EMBI, por las similitudes de política y de respuesta a los shocks, y un índice de emergentes no latinoamericanos. Como shock externo, la tasa del Tesoro a 30 años, con signo ambiguo: una suba atrae fondos hacia Estados Unidos (sube el riesgo), pero en las crisis los inversores huyen hacia los bonos del Tesoro y su tasa cae mientras el riesgo emergente sube. Agregan una dummy para el Tequila y otra de ruido político para los rumores y la renuncia de Cavallo en 1996."
+   ]
+  },
+  {
+   "t": "Qué encontraron",
+   "p": [
+    "Estiman por mínimos cuadrados en logaritmos, con datos mensuales de enero de 1994 a diciembre de 1998, después de verificar raíces unitarias y una relación de largo plazo con el método de Pesaran. En el modelo final, todos los coeficientes son significativos al 1% y no hay problemas de autocorrelación, heterocedasticidad ni inestabilidad. La cuenta corriente, los términos de intercambio y el índice de emergentes no latinoamericanos quedan afuera.",
+    "El contagio pesa mucho: un aumento del 1% en el precio de los bonos mexicanos (menos riesgo emergente) baja el riesgo argentino un 2,16%; esa variable explica casi la mitad del R². Un aumento del 1% en el servicio de la deuda sobre exportaciones del mes previo y en su tasa de crecimiento sube el riesgo 0,17% y 0,5%: un aumento permanente de ese 1% sube el spread un 0,67%.",
+    "Los fundamentos también importan. Un punto más de crecimiento esperado (2% en lugar de 1%) reduciría el riesgo país casi un 20%. Por cada 300 millones de pesos menos de déficit acumulado en tres meses, el riesgo baja alrededor de un 5,4%, y los inversores miran también la variación del déficit, no solo su nivel."
+   ],
+   "nota": "Los autores aclaran que crecimiento y riesgo país son probablemente endógenos: un test de causalidad de Granger no permitió concluir en qué dirección va la causalidad, y creen que va en ambas."
+  },
+  {
+   "t": "Dos signos inesperados",
+   "p": [
+    "La tasa del Tesoro a 30 años resulta con signo negativo. La correlación con el spread es baja en general, pero claramente inversa en las crisis de México, Asia y Rusia, cuando los inversores corrieron a la calidad. Eichengreen y Mody encuentran algo parecido y lo explican por el lado de la oferta: si la tasa sube, el servicio de la deuda se encarece, los emergentes emiten menos y sus bonos suben de precio.",
+    "La dummy del Tequila también es negativa. Su hipótesis es que la determinación política para superar la crisis, junto con las señales del FMI, el Banco Mundial y el BID, que armaron su asistencia en tiempo récord, atenuó el contagio. Una lectura alternativa (propia) es que la dummy captura el rebote posterior al pico de enero de 1995."
+   ]
+  },
+  {
+   "t": "¿Dolarizar baja el riesgo país?",
+   "p": [
+    "El riesgo soberano puede pensarse como la suma del riesgo de default, el cambiario, el político y otros. Los defensores de la dolarización argumentaban que, al eliminar el riesgo cambiario, el riesgo país caería. Nogués y Grandes plantean tres objeciones a la medición usual, que toma la diferencia entre los rendimientos del Bocon en pesos y en dólares: esa diferencia incluye también riesgo de default y político; hay simultaneidad, porque el riesgo cambiario es parte del riesgo país; y el orden temporal no es el supuesto.",
+    "Con un test de causalidad de Granger encuentran, al 1%, que es el spread del FRB el que causa la brecha entre los Bocones, no al revés. Y en su modelo, esa brecha y sus rezagos resultan redundantes para explicar el riesgo país. Su explicación es que el riesgo cambiario depende casi de las mismas variables que el riesgo país. No dicen que dolarizar nunca bajaría el riesgo, sino que sin mejores fundamentos no lo revertiría."
+   ]
+  },
+  {
+   "t": "Qué recomendaban",
+   "p": [
+    "De los resultados se desprende una agenda para bajar el spread y acercarse al grado de inversión: crecimiento sostenido, reducción sostenible del déficit y, sobre todo, controlar la relación entre servicio de la deuda y exportaciones, cuyo aumento tenía efectos permanentes. Leído junto con Oks y Padilla, el brief anterior, se ve que en esos años los economistas argentinos miraban fundamentos parecidos, pero discutían cómo medir el contagio: el riesgo mexicano, que aquí explica medio R², está a su vez influido por el argentino."
+   ]
+  }
+ ],
+ "claves": [
+  "Entre 1994 y 1998, el riesgo país rezagado se correlaciona −0,61 con el consumo y −0,80 con la inversión en equipo.",
+  "Seis determinantes del spread del FRB: crecimiento esperado, déficit fiscal, servicio de la deuda/exportaciones, contagio, shocks externos y ruido político.",
+  "Un 1% más en el precio de los bonos mexicanos baja el riesgo argentino 2,16%; un punto más de crecimiento lo baja casi 20%.",
+  "La tasa del Tesoro a 30 años tiene signo negativo: en las crisis, los inversores huyen a la calidad.",
+  "El spread del FRB causa en sentido de Granger la brecha de riesgo cambiario: dolarizar sin mejores fundamentos no bajaría el riesgo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué estudiar los determinantes del riesgo país equivale a estudiar el ciclo argentino según los autores?",
+    "en": "Why does studying the determinants of country risk amount to studying the Argentine cycle, according to the authors?"
+   },
+   "op": {
+    "es": [
+     "Porque el riesgo país lo fija el gobierno",
+     "Porque el riesgo país desplaza la oferta de fondos, mueve las tasas internas y los flujos de capital",
+     "Porque el PIB se calcula con el riesgo país",
+     "Porque la inflación depende del riesgo país"
+    ],
+    "en": [
+     "Because the government sets country risk",
+     "Because country risk shifts the supply of funds, moving domestic rates and capital flows",
+     "Because GDP is computed with country risk",
+     "Because inflation depends on country risk"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Un país chico enfrenta una oferta de fondos muy elástica; sus desplazamientos fijan la tasa y afectan consumo e inversión.",
+    "en": "A small country faces a very elastic supply of funds; its shifts set the rate and affect consumption and investment."
+   },
+   "id": "ext-riesgo-05-q1"
+  },
+  {
+   "q": {
+    "es": "En la condición de arbitraje con inversores neutrales al riesgo, ¿qué pasa con el spread cuando la probabilidad de default se acerca a uno?",
+    "en": "In the arbitrage condition with risk-neutral investors, what happens to the spread as the default probability approaches one?"
+   },
+   "op": {
+    "es": [
+     "Tiende a cero",
+     "Se mantiene constante",
+     "Tiende a infinito: el país queda racionado",
+     "Se iguala a la tasa de EE.UU."
+    ],
+    "en": [
+     "It tends to zero",
+     "It stays constant",
+     "It tends to infinity: the country is rationed",
+     "It equals the US rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El spread es proporcional a p/(1−p), que explota cuando p tiende a uno.",
+    "en": "The spread is proportional to p/(1−p), which explodes as p goes to one."
+   },
+   "id": "ext-riesgo-05-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué variable usan para medir el contagio?",
+    "en": "Which variable do they use to measure contagion?"
+   },
+   "op": {
+    "es": [
+     "El índice de precios de los bonos de México del EMBI",
+     "La tasa de interés de Japón",
+     "El precio de la soja",
+     "La calificación de Brasil"
+    ],
+    "en": [
+     "The EMBI price index of Mexican bonds",
+     "Japan's interest rate",
+     "The soybean price",
+     "Brazil's rating"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Eligen México por las similitudes de política y de respuesta a los shocks; esa variable explica casi la mitad del R².",
+    "en": "They choose Mexico for its policy similarities and shock responses; that variable explains almost half the R²."
+   },
+   "id": "ext-riesgo-05-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuánto reduciría el riesgo país un punto más de crecimiento esperado?",
+    "en": "How much would one more point of expected growth reduce country risk?"
+   },
+   "op": {
+    "es": [
+     "Un 0,17%",
+     "Un 2,16%",
+     "Un 5,4%",
+     "Casi un 20%"
+    ],
+    "en": [
+     "0.17%",
+     "2.16%",
+     "5.4%",
+     "Almost 20%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Pasar de 1% a 2% de crecimiento esperado baja el spread del FRB casi un 20%.",
+    "en": "Going from 1% to 2% expected growth lowers the FRB spread by almost 20%."
+   },
+   "id": "ext-riesgo-05-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto tiene un aumento permanente del 1% en el servicio de la deuda sobre exportaciones?",
+    "en": "What is the effect of a permanent 1% rise in debt service over exports?"
+   },
+   "op": {
+    "es": [
+     "Baja el spread 0,67%",
+     "Sube el spread 0,67%",
+     "No tiene efecto",
+     "Sube el spread 20%"
+    ],
+    "en": [
+     "It lowers the spread 0.67%",
+     "It raises the spread 0.67%",
+     "It has no effect",
+     "It raises the spread 20%"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Suma el efecto del nivel rezagado (0,17%) y de su tasa de crecimiento (0,5%).",
+    "en": "It adds the lagged level effect (0.17%) and its growth-rate effect (0.5%)."
+   },
+   "id": "ext-riesgo-05-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la tasa del Tesoro a 30 años resulta con signo negativo?",
+    "en": "Why does the 30-year Treasury rate have a negative sign?"
+   },
+   "op": {
+    "es": [
+     "Porque en las crisis los inversores compran bonos del Tesoro (cae su tasa) mientras sube el riesgo emergente",
+     "Porque la Argentina presta a EE.UU.",
+     "Por un error de datos",
+     "Porque la tasa de EE.UU. no varió en el período"
+    ],
+    "en": [
+     "Because in crises investors buy Treasuries (their yield falls) while emerging risk rises",
+     "Because Argentina lends to the US",
+     "Because of a data error",
+     "Because the US rate did not move in the period"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La correlación es baja en general pero claramente inversa en las crisis de México, Asia y Rusia: la huida a la calidad.",
+    "en": "The correlation is low in general but clearly inverse in the Mexico, Asia and Russia crises: the flight to quality."
+   },
+   "id": "ext-riesgo-05-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué encuentran sobre la relación entre el spread del FRB y la brecha entre los Bocones en pesos y en dólares?",
+    "en": "What do they find about the link between the FRB spread and the gap between peso and dollar Bocones?"
+   },
+   "op": {
+    "es": [
+     "Que la brecha causa el spread",
+     "Que no tienen ninguna relación",
+     "Que el spread del FRB causa la brecha en sentido de Granger",
+     "Que son la misma variable"
+    ],
+    "en": [
+     "That the gap causes the spread",
+     "That they are unrelated",
+     "That the FRB spread Granger-causes the gap",
+     "That they are the same variable"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La causalidad va al revés de lo supuesto por quienes defendían la dolarización, y la brecha es redundante en el modelo.",
+    "en": "Causality runs opposite to what dollarization advocates assumed, and the gap is redundant in the model."
+   },
+   "id": "ext-riesgo-05-q7"
+  },
+  {
+   "q": {
+    "es": "Un gobierno propone dolarizar para bajar el riesgo país sin cambiar su política fiscal. ¿Qué diría este trabajo?",
+    "en": "A government proposes dollarizing to cut country risk without changing fiscal policy. What would this paper say?"
+   },
+   "op": {
+    "es": [
+     "Que el riesgo país desaparecería",
+     "Que el riesgo cambiario es el principal componente del riesgo",
+     "Que el contagio dejaría de existir",
+     "Que sin mejores fundamentos la dolarización no revertiría el riesgo país"
+    ],
+    "en": [
+     "That country risk would disappear",
+     "That currency risk is the main component of risk",
+     "That contagion would stop",
+     "That without better fundamentals dollarization would not reverse country risk"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El riesgo cambiario depende casi de las mismas variables que el riesgo país; eliminarlo no corrige esas variables.",
+    "en": "Currency risk depends on nearly the same variables as country risk; removing it does not fix those variables."
+   },
+   "id": "ext-riesgo-05-q8"
+  }
+ ],
+ "palabras": 1124,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "En una economía chica y abierta a los capitales, ¿por qué una suba del riesgo país puede provocar una recesión?",
+    "en": "In a small economy open to capital, why can a rise in country risk cause a recession?"
+   },
+   "a": {
+    "es": "Porque desplaza la oferta de fondos externos: suben las tasas internas, salen capitales y caen el consumo y la inversión. Nogués y Grandes (2001) muestran correlaciones de −0,61 y −0,80 entre el riesgo rezagado y el consumo y la inversión en equipo en la Argentina de 1994-98.",
+    "en": "Because it shifts the supply of external funds: domestic rates rise, capital leaves, and consumption and investment fall. Nogués and Grandes (2001) show correlations of −0.61 and −0.80 between lagged risk and consumption and equipment investment in 1994-98 Argentina."
+   },
+   "id": "ext-riesgo-05-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "Con inversores neutrales al riesgo y pérdida total en caso de default, ¿cómo se relaciona el spread con la probabilidad de default?",
+    "en": "With risk-neutral investors and total loss on default, how does the spread relate to the default probability?"
+   },
+   "a": {
+    "es": "El spread es proporcional a p/(1−p): crece cada vez más rápido y tiende a infinito cuando p se acerca a uno, lo que implica racionamiento. Nogués y Grandes (2001) usan esta condición, siguiendo a Edwards, para estimar el riesgo argentino.",
+    "en": "The spread is proportional to p/(1−p): it rises ever faster and goes to infinity as p approaches one, implying rationing. Nogués and Grandes (2001) use this condition, following Edwards, to estimate Argentine risk."
+   },
+   "id": "ext-riesgo-05-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En la Argentina de los noventa, ¿cuánto pesaba el contagio emergente sobre el riesgo país?",
+    "en": "In 1990s Argentina, how much did emerging-market contagion weigh on country risk?"
+   },
+   "a": {
+    "es": "Mucho: un 1% más en el precio de los bonos mexicanos bajaba el riesgo argentino un 2,16%, y esa variable explicaba casi la mitad del ajuste del modelo (Nogués y Grandes, 2001, datos de 1994 a 1998).",
+    "en": "A lot: 1% higher Mexican bond prices cut Argentine risk 2.16%, and that variable explained almost half of the model's fit (Nogués and Grandes, 2001, 1994-1998 data)."
+   },
+   "id": "ext-riesgo-05-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto puede bajar el riesgo país una mejora en las expectativas de crecimiento?",
+    "en": "How much can better growth expectations lower country risk?"
+   },
+   "a": {
+    "es": "Bastante: Nogués y Grandes (2001) estiman que un punto más de crecimiento esperado reducía el spread argentino casi un 20%, y que 300 millones menos de déficit trimestral lo bajaban alrededor de un 5,4%.",
+    "en": "Considerably: Nogués and Grandes (2001) estimate one more point of expected growth cut Argentina's spread almost 20%, and 300 million less quarterly deficit lowered it about 5.4%."
+   },
+   "id": "ext-riesgo-05-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una suba de la tasa del Tesoro de EE.UU. puede coincidir con una baja del riesgo emergente, y una caída con una suba?",
+    "en": "Why can a rise in the US Treasury rate coincide with lower emerging risk, and a fall with higher risk?"
+   },
+   "a": {
+    "es": "Porque en las crisis los inversores huyen a la calidad: compran bonos del Tesoro (cae su tasa) y venden emergentes (sube su spread). Nogués y Grandes (2001) encuentran un coeficiente negativo de la tasa a 30 años por las crisis de México, Asia y Rusia.",
+    "en": "Because in crises investors fly to quality: they buy Treasuries (yields fall) and sell emerging bonds (spreads rise). Nogués and Grandes (2001) find a negative 30-year rate coefficient due to the Mexico, Asia and Russia crises."
+   },
+   "id": "ext-riesgo-05-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué eliminar el riesgo cambiario con la dolarización no garantiza un menor riesgo país?",
+    "en": "Why doesn't removing currency risk through dollarization guarantee lower country risk?"
+   },
+   "a": {
+    "es": "Porque el riesgo cambiario depende casi de los mismos fundamentos que el riesgo país, y en los datos es el riesgo país el que lo causa. Nogués y Grandes (2001) encuentran que el spread del FRB causa en sentido de Granger la brecha entre Bocones, al 1%.",
+    "en": "Because currency risk depends on nearly the same fundamentals as country risk, and in the data country risk causes it. Nogués and Grandes (2001) find the FRB spread Granger-causes the Bocon gap at 1%."
+   },
+   "id": "ext-riesgo-05-t6"
+  }
+ ]
+}

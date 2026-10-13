@@ -1,0 +1,362 @@
+{
+ "id": "ext-riesgo-04",
+ "cat": "ext-riesgo",
+ "orden": 7,
+ "minutos": 15,
+ "titulo": "Liquidez, contagio y elecciones: el riesgo país argentino 1994-99 según Oks y Padilla (2000)",
+ "bajada": "Dos economistas del BCRA estiman qué movía el EMBI argentino durante la Convertibilidad. La liquidez del Tesoro y del sistema financiero pesó más que el déficit y la deuda.",
+ "fuentes": [
+  1354
+ ],
+ "cita": "Oks y Padilla (2000)",
+ "intro": "Durante la Convertibilidad la Argentina se integró a los mercados de capitales: entre 1992 y 1998 la inflación promedió 2,2% anual y el producto creció 4,3% por año. Pero el crecimiento fue muy volátil, con recesiones en 1995 y 1999, y el riesgo país también. Daniel Oks y Gustavo Padilla, de la Gerencia de Análisis Económico del Banco Central, se preguntan qué explicaba ese riesgo país mes a mes entre 1994 y 1999. Su aporte es incorporar algo que los trabajos previos no medían: la liquidez del Tesoro y del sistema financiero, que el BCRA había reforzado después del Tequila. Encuentran que, en el corto plazo, la liquidez y los factores externos pesaron más que los indicadores fiscales clásicos.",
+ "secciones": [
+  {
+   "t": "Por qué el riesgo país puede moverse aunque los fundamentos no",
+   "p": [
+    "Los autores parten de una observación: en las crisis de Hong Kong (1997), Rusia (1998) y Brasil (1999), las políticas domésticas eran relativamente estables y aun así el riesgo país saltó. Proponen tres explicaciones posibles. Que la lista de fundamentos que miran los inversores sea incompleta o esté mal medida. Que haya información incompleta o asimétrica entre deudores y acreedores, lo que facilita el contagio. Y que cambie la aversión al riesgo de los inversores internacionales.",
+    "Sobre el contagio, siguen a Calvo y Mendoza (1995): el incentivo a obtener información cara sobre cada país cae cuando aumentan las posibilidades de diversificar la cartera. Antes de una crisis los inversores discriminan poco entre emergentes; ante una noticia, reasignan en manada y solo con el tiempo, al procesar información nueva, vuelven a diferenciar. Eso explicaría la alta volatilidad del riesgo país."
+   ]
+  },
+  {
+   "t": "Cinco grupos de determinantes",
+   "p": [
+    "La variable a explicar es el spread mensual del EMBI Argentina, formado por los bonos Brady (FRB, Par y Discount) con el colateral descontado, de enero de 1994 a diciembre de 1999. Los determinantes se ordenan en cinco grupos. Desempeño macroeconómico: el crecimiento esperado del PIB, aproximado por el crecimiento efectivo bajo previsión perfecta. Solvencia fiscal: la necesidad de financiamiento del sector público neta de privatizaciones, la deuda pública sobre el PIB y el servicio de la deuda externa sobre las exportaciones.",
+    "Liquidez: la cobertura del Tesoro (créditos contingentes de organismos multilaterales sobre la suma de déficit y amortizaciones), la madurez de la deuda y la liquidez sistémica, es decir, las reservas del sistema financiero (las del BCRA más los requisitos de liquidez de los bancos y el seguro de liquidez) sobre los depósitos. Factores externos y de contagio: la tasa del Tesoro de Estados Unidos a 30 años, la aversión al riesgo, los términos de intercambio y dummies para el Tequila, Hong Kong, Rusia y Brasil. Y otros factores domésticos: dummies para las elecciones de 1995 y 1999 y para el efecto año 2000."
+   ],
+   "nota": "El signo esperado de la tasa de Estados Unidos es ambiguo: una suba encarece el servicio de la deuda (sube el riesgo), pero también vuelve menos atractivos a los bonos emergentes y el efecto sobre el diferencial depende de cuán sustitutos sean."
+  },
+  {
+   "t": "La política de liquidez del BCRA",
+   "p": [
+    "Para entender el papel de la liquidez hay que recordar el diseño del sistema. La Convertibilidad respaldaba la base monetaria, pero no los depósitos ni el servicio de la deuda pública, y las reservas del BCRA no eran un activo del Tesoro: la Carta Orgánica limitaba el financiamiento al gobierno. Por eso, después del Tequila, el BCRA armó un colchón de liquidez con tres pilares: requisitos de liquidez en activos internacionales equivalentes en promedio a cerca del 20% de los depósitos, las reservas excedentes del propio BCRA y un seguro de liquidez contratado en 1996 con bancos privados del exterior, el Programa Contingente de Pases, que cubría entre el 8% y el 10% de los depósitos.",
+    "La lógica es la de las crisis autocumplidas: basta que los inversores crean que un país no tiene recursos líquidos para resistir una corrida para que, si la corrida ocurre, sea exitosa, lo que a su vez la vuelve más probable. La liquidez es tan importante como la solvencia."
+   ]
+  },
+  {
+   "t": "El método: de lo general a lo particular",
+   "p": [
+    "Siguen la estrategia de ir de lo general a lo particular. Parten de un modelo autorregresivo de rezagos distribuidos con 11 variables explicativas y 9 dummies, con valores corrientes y rezagados de cada variable y el spread rezagado, y lo estiman por mínimos cuadrados. Comprueban con tests de Dickey-Fuller aumentados que la mayoría de las series no son estacionarias y, como mezclan órdenes de integración, usan el test de Pesaran, Shin y Smith para verificar que existe una relación de largo plazo.",
+    "Después eliminan las variables que no son significativas en conjunto, con un test de Wald. El modelo inicial explica el 96% de la varianza del spread, y la reducción no empeora el ajuste: el test de multiplicadores de Lagrange de la restricción da 0,92, claramente no significativo. El modelo final no muestra autocorrelación, heterocedasticidad ni inestabilidad de parámetros."
+   ],
+   "eq": [
+    "a(L)\\,\\ln EMBI_t = \\sum_{k} b_k(L)\\,X_{k,t} + \\sum_j \\delta_j D_{j,t} + \\varepsilon_t"
+   ],
+   "nota": "\\(a(L)\\) y \\(b_k(L)\\) son polinomios de rezagos; \\(X_k\\), los determinantes continuos; \\(D_j\\), las dummies de crisis, elecciones y año 2000. La notación es nuestra."
+  },
+  {
+   "t": "Qué encontraron",
+   "p": [
+    "En el modelo final, los coeficientes de las variables en logaritmos se leen como elasticidades y los demás, como semielasticidades. Un aumento de 100 millones de pesos en los préstamos contingentes al Tesoro reduce el riesgo país un 1,34%. Un aumento del 1% en la liquidez sistémica lo reduce un 1,47%. Un aumento del 1% en la aversión al riesgo de los inversores estadounidenses lo sube un 0,62%. Una caída de un punto en los términos de intercambio lo sube un 0,018%.",
+    "Las crisis de Rusia, Brasil y Hong Kong tienen efectos positivos sobre el riesgo argentino (coeficientes de 0,43, 0,134 y 0,135), y la elección presidencial de 1999, de 0,18. Las dummies de Brasil y Rusia quedan cerca del límite de significatividad.",
+    "Igual de interesante es lo que no resultó significativo: el crecimiento esperado, el déficit, la madurez de la deuda, la tasa del Tesoro de Estados Unidos y, llamativamente, la deuda pública sobre el PIB y el servicio de la deuda sobre exportaciones."
+   ],
+   "nota": "El paper presenta los efectos de las dummies como porcentajes (0,43%, 0,134%...). En una regresión en logaritmos, un coeficiente de 0,43 en una dummy implicaría un efecto cercano al 43%; conviene leer esas cifras como coeficientes."
+  },
+  {
+   "t": "Cómo interpretarlo",
+   "p": [
+    "Los autores aclaran que la primacía de lo financiero no le quita importancia a lo fiscal: en el corto plazo, la liquidez decide si una insolvencia potencial se vuelve efectiva. Y la cobertura del Tesoro, que es en parte una variable fiscal porque mide el déficit y los vencimientos, sí importa. Si el servicio de la deuda sobre exportaciones no aparece, es porque ya está captado por la cobertura del Tesoro y porque, en un país integrado a los mercados, en el corto plazo las exportaciones no son la principal restricción para pagar.",
+    "Discuten con Nogués y Grandes, que usaban el riesgo país de México como medida de contagio: esa serie está influida por el propio riesgo argentino y por otras cosas. Oks y Padilla prefieren identificar los shocks y darles un plazo corto, hasta que los inversores vuelven a diferenciar. Una objeción posible (lectura propia) es que con unas 70 observaciones mensuales, 11 variables y 9 dummies el modelo general está muy cargado, y que la deuda no significativa en 1994-99 terminó siendo el centro de la crisis de 2001."
+   ]
+  },
+  {
+   "t": "Recomendaciones",
+   "p": [
+    "Las conclusiones de política apuntan a seguir reforzando la liquidez, sobre todo la del Tesoro, ya que la del sistema financiero era alta: alcanzar el equilibrio fiscal, conseguir nuevas facilidades de financiamiento contingente, alargar la madurez de la deuda y evitar picos de vencimientos. Esas políticas, dicen, también reducen la vulnerabilidad frente a factores políticos, a los términos de intercambio y a nuevas crisis emergentes, y la transparencia de la información puede atenuar el contagio. Leído hoy, el trabajo es una foto del enfoque del BCRA a fines de la Convertibilidad, dos años antes de su derrumbe."
+   ]
+  }
+ ],
+ "claves": [
+  "Oks y Padilla explican el EMBI argentino mensual de 1994 a 1999 con cinco grupos: desempeño, solvencia fiscal, liquidez, factores externos y contagio, y política.",
+  "Su aporte es medir la liquidez del Tesoro (créditos contingentes) y del sistema financiero (reservas sobre depósitos).",
+  "Un 1% más de liquidez sistémica baja el riesgo país 1,47%; 100 millones más de crédito contingente al Tesoro, 1,34%.",
+  "La aversión al riesgo global (elasticidad 0,62), los términos de intercambio, las crisis de Rusia, Brasil y Hong Kong y la elección de 1999 también pesan.",
+  "La deuda/PIB, el déficit y la tasa de EE.UU. no resultaron significativos en el corto plazo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué variable a explicar usan Oks y Padilla?",
+    "en": "Which dependent variable do Oks and Padilla use?"
+   },
+   "op": {
+    "es": [
+     "La calificación de S&P",
+     "La tasa de los depósitos en pesos",
+     "El spread mensual del EMBI Argentina, 1994-1999",
+     "El rendimiento del bono del Tesoro de EE.UU."
+    ],
+    "en": [
+     "The S&P rating",
+     "The peso deposit rate",
+     "The monthly EMBI Argentina spread, 1994-1999",
+     "The US Treasury yield"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El EMBI Argentina, compuesto por los bonos Brady con el colateral descontado, es más representativo que un solo bono.",
+    "en": "EMBI Argentina, made of Brady bonds with collateral stripped, is more representative than a single bond."
+   },
+   "id": "ext-riesgo-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la liquidez puede ser tan importante como la solvencia para un emergente?",
+    "en": "Why can liquidity be as important as solvency for an emerging economy?"
+   },
+   "op": {
+    "es": [
+     "Porque si los inversores creen que no hay liquidez para resistir una corrida, la corrida puede ser exitosa y por eso más probable",
+     "Porque la liquidez reemplaza al superávit fiscal",
+     "Porque la liquidez baja la tasa de EE.UU.",
+     "Porque los inversores no miran la deuda"
+    ],
+    "en": [
+     "Because if investors believe there is no liquidity to withstand a run, the run can succeed and is thus more likely",
+     "Because liquidity replaces a fiscal surplus",
+     "Because liquidity lowers the US rate",
+     "Because investors ignore debt"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es la lógica de las crisis autocumplidas: la falta de un colchón líquido hace creíble y rentable la corrida.",
+    "en": "It is the logic of self-fulfilling crises: lacking a liquid cushion makes a run credible and profitable."
+   },
+   "id": "ext-riesgo-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué pilares tenía la política de liquidez sistémica del BCRA después del Tequila?",
+    "en": "What pillars did the BCRA's systemic liquidity policy have after the Tequila crisis?"
+   },
+   "op": {
+    "es": [
+     "Control de cambios y encajes en pesos",
+     "Requisitos de liquidez de cerca del 20% de los depósitos, reservas excedentes y un seguro de liquidez con bancos del exterior",
+     "Emisión ilimitada y garantía de depósitos",
+     "Un fondo anticíclico del Tesoro"
+    ],
+    "en": [
+     "Exchange controls and peso reserve requirements",
+     "Liquidity requirements of about 20% of deposits, excess reserves and a liquidity insurance with foreign banks",
+     "Unlimited issuance and a deposit guarantee",
+     "A countercyclical Treasury fund"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El Programa Contingente de Pases cubría entre el 8% y el 10% de los depósitos.",
+    "en": "The Contingent Repo Program covered 8% to 10% of deposits."
+   },
+   "id": "ext-riesgo-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué estrategia econométrica siguen?",
+    "en": "Which econometric strategy do they follow?"
+   },
+   "op": {
+    "es": [
+     "Un VAR estructural con restricciones de largo plazo",
+     "Un probit de crisis",
+     "Un panel de 33 países",
+     "De lo general a lo particular: un modelo ADL amplio que se reduce con tests de restricciones"
+    ],
+    "en": [
+     "A structural VAR with long-run restrictions",
+     "A crisis probit",
+     "A 33-country panel",
+     "General-to-specific: a broad ADL model reduced with restriction tests"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Parten de 11 variables y 9 dummies con rezagos y eliminan las no significativas en conjunto con un test de Wald.",
+    "en": "They start with 11 variables and 9 dummies with lags and drop those jointly insignificant via a Wald test."
+   },
+   "id": "ext-riesgo-04-q4"
+  },
+  {
+   "q": {
+    "es": "Según el modelo final, ¿qué efecto tiene un aumento del 1% en la liquidez sistémica?",
+    "en": "According to the final model, what is the effect of a 1% rise in systemic liquidity?"
+   },
+   "op": {
+    "es": [
+     "Sube el riesgo país 0,62%",
+     "No tiene efecto",
+     "Reduce el riesgo país 1,47%",
+     "Reduce el riesgo país 43%"
+    ],
+    "en": [
+     "It raises country risk 0.62%",
+     "It has no effect",
+     "It lowers country risk 1.47%",
+     "It lowers country risk 43%"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La liquidez del sistema financiero frente a una corrida de depósitos es uno de los determinantes más fuertes.",
+    "en": "The financial system's liquidity against a deposit run is one of the strongest determinants."
+   },
+   "id": "ext-riesgo-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas variables NO resultó significativa?",
+    "en": "Which of these variables was NOT significant?"
+   },
+   "op": {
+    "es": [
+     "La aversión al riesgo de los inversores",
+     "La deuda pública sobre el PIB",
+     "La elección de 1999",
+     "Los términos de intercambio"
+    ],
+    "en": [
+     "Investor risk aversion",
+     "Public debt over GDP",
+     "The 1999 election",
+     "The terms of trade"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los autores lo atribuyen en parte a que la cobertura del Tesoro ya capta el servicio de la deuda.",
+    "en": "The authors partly attribute it to Treasury coverage already capturing debt service."
+   },
+   "id": "ext-riesgo-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué no usan el riesgo país de México como medida de contagio, como hacían Nogués y Grandes?",
+    "en": "Why don't they use Mexico's country risk as a contagion measure, as Nogués and Grandes did?"
+   },
+   "op": {
+    "es": [
+     "Porque esa serie está influida por el propio riesgo argentino y por otros factores",
+     "Porque México no tiene bonos",
+     "Porque no hay datos mensuales de México",
+     "Porque México nunca tuvo crisis"
+    ],
+    "en": [
+     "Because that series is influenced by Argentina's own risk and other factors",
+     "Because Mexico has no bonds",
+     "Because there are no monthly Mexican data",
+     "Because Mexico never had crises"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Prefieren dummies para cada crisis con un plazo corto, hasta que los inversores vuelven a diferenciar.",
+    "en": "They prefer dummies for each crisis with a short window, until investors differentiate again."
+   },
+   "id": "ext-riesgo-04-q7"
+  },
+  {
+   "q": {
+    "es": "Siguiendo a los autores, ¿qué recomendaría a un Tesoro que quiere bajar el riesgo país en el corto plazo?",
+    "en": "Following the authors, what would you recommend to a Treasury wanting to lower country risk in the short run?"
+   },
+   "op": {
+    "es": [
+     "Emitir más deuda de corto plazo",
+     "Abandonar la convertibilidad",
+     "Bajar los requisitos de liquidez de los bancos",
+     "Conseguir financiamiento contingente, alargar la madurez de la deuda y evitar picos de vencimientos"
+    ],
+    "en": [
+     "Issue more short-term debt",
+     "Abandon convertibility",
+     "Lower bank liquidity requirements",
+     "Secure contingent financing, lengthen debt maturity and avoid repayment peaks"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Son las recomendaciones del trabajo, junto con el equilibrio fiscal y la transparencia informativa.",
+    "en": "These are the paper's recommendations, along with fiscal balance and information transparency."
+   },
+   "id": "ext-riesgo-04-q8"
+  }
+ ],
+ "palabras": 1190,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "En un régimen de convertibilidad, ¿por qué no alcanza con respaldar la base monetaria para evitar una crisis?",
+    "en": "Under a currency board, why is backing the monetary base not enough to prevent a crisis?"
+   },
+   "a": {
+    "es": "Porque la convertibilidad no respalda los depósitos ni el servicio de la deuda pública: hacen falta colchones adicionales de liquidez. Oks y Padilla (2000) describen el esquema del BCRA: requisitos de cerca del 20% de los depósitos, reservas excedentes y un seguro de liquidez del 8% al 10%.",
+    "en": "Because a currency board backs neither deposits nor public debt service: extra liquidity buffers are needed. Oks and Padilla (2000) describe the BCRA scheme: requirements of about 20% of deposits, excess reserves and liquidity insurance of 8% to 10%."
+   },
+   "id": "ext-riesgo-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué los inversores pueden tratar a todos los emergentes igual al estallar una crisis y diferenciarlos después?",
+    "en": "Why may investors treat all emerging markets alike when a crisis hits and differentiate them later?"
+   },
+   "a": {
+    "es": "Porque la información específica de cada país es cara y, con carteras diversificadas, conviene poco obtenerla; ante una noticia reasignan en manada y solo después discriminan. Oks y Padilla (2000) lo toman de Calvo y Mendoza para explicar el contagio.",
+    "en": "Because country-specific information is costly and, with diversified portfolios, hardly worth acquiring; on news they reallocate in herds and only later discriminate. Oks and Padilla (2000) take it from Calvo and Mendoza to explain contagion."
+   },
+   "id": "ext-riesgo-04-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En la Argentina de 1994-99, ¿qué pesaba más sobre el riesgo país en el corto plazo, la liquidez o la deuda?",
+    "en": "In 1994-99 Argentina, what weighed more on short-run country risk, liquidity or debt?"
+   },
+   "a": {
+    "es": "La liquidez: un 1% más de liquidez sistémica bajaba el riesgo país 1,47% y 100 millones más de crédito contingente al Tesoro, 1,34%, mientras la deuda/PIB no resultaba significativa (Oks y Padilla, 2000).",
+    "en": "Liquidity: 1% more systemic liquidity cut country risk 1.47% and 100 million more contingent credit to the Treasury, 1.34%, while debt/GDP was insignificant (Oks and Padilla, 2000)."
+   },
+   "id": "ext-riesgo-04-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo afecta la aversión al riesgo de los inversores internacionales al riesgo país argentino?",
+    "en": "How does international investors' risk aversion affect Argentine country risk?"
+   },
+   "a": {
+    "es": "Lo sube: Oks y Padilla (2000) estiman que un 1% más de aversión al riesgo de los inversores estadounidenses eleva el riesgo argentino un 0,62%, en datos mensuales de 1994 a 1999.",
+    "en": "It raises it: Oks and Padilla (2000) estimate that 1% more risk aversion among US investors raises Argentine risk 0.62%, in monthly data for 1994-1999."
+   },
+   "id": "ext-riesgo-04-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se verifica una relación de largo plazo cuando las variables tienen distinto orden de integración?",
+    "en": "How can a long-run relationship be tested when variables have different orders of integration?"
+   },
+   "a": {
+    "es": "Con el test de límites de Pesaran, Shin y Smith, que usa los estadísticos F y t de los niveles rezagados en una ecuación de corrección de errores. Oks y Padilla (2000) lo aplican antes de reducir su modelo ADL.",
+    "en": "With the Pesaran, Shin and Smith bounds test, using F and t statistics on lagged levels in an error-correction equation. Oks and Padilla (2000) apply it before reducing their ADL model."
+   },
+   "id": "ext-riesgo-04-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué que la deuda/PIB no explique el riesgo país en un período corto no prueba que la deuda no importe?",
+    "en": "Why does debt/GDP failing to explain country risk over a short period not prove that debt does not matter?"
+   },
+   "a": {
+    "es": "Porque su efecto puede estar captado por otras variables (la cobertura del Tesoro mide déficit y vencimientos) y porque la deuda opera en plazos más largos. Oks y Padilla (2000) lo advierten, y la crisis de 2001 lo confirmó.",
+    "en": "Because its effect may be captured by other variables (Treasury coverage measures deficits and maturities) and debt works over longer horizons. Oks and Padilla (2000) warn of this, and the 2001 crisis confirmed it."
+   },
+   "id": "ext-riesgo-04-t6"
+  }
+ ]
+}
