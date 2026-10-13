@@ -1,0 +1,360 @@
+{
+ "id": "tc-reg-04",
+ "cat": "tc-reg",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "¿Flotar hace crecer? Bermúdez y Dabús (2015) re-estiman a Levy Yeyati y Sturzenegger",
+ "bajada": "Con los mismos datos y la misma clasificación, pero con System-GMM, el efecto del régimen sobre el crecimiento desaparece. En América Latina, sin embargo, cada régimen cambia cómo funcionan los motores del crecimiento.",
+ "fuentes": [
+  1212
+ ],
+ "cita": "Bermúdez y Dabús (2015)",
+ "intro": "El trabajo más citado a favor de la flotación es el de Levy Yeyati y Sturzenegger (2003), publicado en la American Economic Review: para 154 países entre 1974 y 1999, encuentran que los regímenes flexibles se asocian con más crecimiento en los países no industriales. Cecilia Bermúdez y Carlos Dabús, de la Universidad Nacional del Sur, se preguntan si ese resultado sobrevive a un estimador más exigente con la endogeneidad. Usan la misma clasificación de facto y la misma base de datos, actualizada a 2004, y reemplazan el método por System-GMM. Después hacen algo que el trabajo original no hacía: estiman por separado para cada régimen en América Latina, para ver si el régimen, aunque no mueva el crecimiento directamente, cambia el papel de sus determinantes.",
+ "secciones": [
+  {
+   "t": "El dilema: estabilidad de precios contra volatilidad del producto",
+   "p": [
+    "La evidencia muestra dos regularidades. Los regímenes fijos se asocian con menos inflación y más volatilidad del producto, y los flexibles, con lo contrario. Según Levy Yeyati y Sturzenegger, sin ajuste del tipo de cambio y con rigideces nominales, los shocks reales generan distorsiones de precios y fluctuaciones del producto; con mercados de capital abiertos, además, fijar el tipo de cambio implica perder la política monetaria para responder a los shocks. Del otro lado, el tipo fijo es un ancla nominal: da credibilidad, frena la emisión y aumenta la demanda de dinero.",
+    "Como la inflación y las fluctuaciones dañan el crecimiento (De Gregorio, 1992; Barro, 1997; Ramey y Ramey, 1995), la pregunta natural es si los beneficios de la flexibilidad superan sus costos. La literatura con clasificaciones de jure no llegó a un consenso; con las clasificaciones de facto, en cambio, los resultados tendieron a favorecer la flotación en los países en desarrollo."
+   ]
+  },
+  {
+   "t": "El problema del método original",
+   "p": [
+    "Levy Yeyati y Sturzenegger reconocen que el régimen puede ser endógeno: el crecimiento puede influir en qué régimen elige un país. Para controlarlo usan un modelo de efectos de tratamiento en dos etapas: primero estiman la probabilidad de cada régimen con un probit o un logit y después usan esos valores ajustados como instrumentos en la ecuación de crecimiento.",
+    "El problema, señalado por Angrist y Krueger (2001), es que usar una primera etapa no lineal para generar instrumentos da estimaciones inconsistentes si ese modelo no lineal no es exactamente el correcto. Bermúdez y Dabús reemplazan ese procedimiento por System-GMM (Arellano y Bover, 1995; Blundell y Bond, 1998). El estimador combina las ecuaciones en primeras diferencias, instrumentadas con rezagos en niveles, con las ecuaciones en niveles, instrumentadas con rezagos en diferencias. La segunda parte gana eficiencia cuando las series son persistentes, porque entonces los niveles rezagados están poco correlacionados con las diferencias posteriores y son malos instrumentos por sí solos."
+   ],
+   "eq": [
+    "g_{it} = \\rho\\, g_{i,t-1} + X_{it}'\\beta + \\gamma_1 INT_{it} + \\gamma_2 FIX_{it} + \\eta_i + \\varepsilon_{it}"
+   ],
+   "nota": "\\(g_{it}\\) es el crecimiento del PIB per cápita; \\(X_{it}\\), los controles (inversión, población, educación, consumo público, términos de intercambio, apertura); \\(INT\\) y \\(FIX\\), dummies de régimen intermedio y fijo según LYS, con la flotación como categoría base; \\(\\eta_i\\), el efecto de cada país. El rezago del crecimiento aparece explícitamente en el modelo para América Latina. La notación es nuestra."
+  },
+  {
+   "t": "Datos anuales: el efecto desaparece",
+   "p": [
+    "Con datos anuales, Levy Yeyati y Sturzenegger obtienen para toda la muestra coeficientes negativos y significativos para los regímenes fijos (−0,78) e intermedios (−0,9), y más grandes en los países no industriales (−1,13 y −1,19). Con System-GMM, ninguno es significativo: el de los fijos pasa a −0,40 con un error estándar de 5,6, y en los no industriales incluso cambia de signo. Las pruebas del estimador son aceptables: el test de Hansen no rechaza los instrumentos y el de autocorrelación de segundo orden da un p-valor de 0,06 para toda la muestra.",
+    "También cambian los controles. Solo dos se comportan como en el original: la inversión, positiva (aunque significativa solo en los países industriales), y la variación de los términos de intercambio, positiva y significativa. El PIB inicial deja de indicar convergencia condicional, y la educación, el crecimiento de la población, la apertura, el consumo público y las dummies regionales dejan de ser significativos.",
+    "Los autores atribuyen la diferencia al método, más robusto frente a la endogeneidad, pero también a la frecuencia. Levy Yeyati y Sturzenegger defienden los datos anuales porque los regímenes cambian rápido, pero no es habitual estudiar crecimiento de largo plazo con datos anuales, porque mezclan el ciclo con la tendencia."
+   ],
+   "nota": "Omiten una variable del original, la de derechos civiles, porque la fuente citada no tiene datos suficientes para todo el período, y agregan una constante para detectar variables omitidas."
+  },
+  {
+   "t": "Promedios de cinco años: tampoco",
+   "p": [
+    "En la especificación con promedios de cinco años, el régimen entra como un índice: en cada año vale 0 si el país flota, 1 si es intermedio y 2 si es fijo, y se promedia por quinquenio. En el trabajo original el índice es negativo y significativo: −1,08 para todos los países y −1,88 para los no industriales. Con System-GMM resulta positivo y no significativo en ambos casos. Solo la inversión es robusta en las dos frecuencias.",
+    "Proponen dos explicaciones. La primera es técnica: promediar el índice supone que la relación entre regímenes es lineal, con el intermedio exactamente a mitad de camino entre la flotación y el tipo fijo, un supuesto fuerte. La segunda es conceptual: cada régimen de facto viene con otras políticas difíciles de observar. Una flotación de facto puede ser parte de un esquema de metas de inflación, y un tipo fijo de facto puede ser un mercado muy intervenido y no un ancla estable. Si es así, la estimación no puede separar el efecto del régimen del de esas políticas. Miles (2006) va en la misma línea: al interactuar el índice con la prima del mercado paralelo, el índice deja de ser significativo y la interacción resulta negativa."
+   ],
+   "eq": [
+    "LYSAVG_{i\\tau} = \\frac{1}{5}\\sum_{t \\in \\tau} r_{it},\\qquad r_{it} \\in \\{0, 1, 2\\}"
+   ],
+   "nota": "\\(r_{it}\\) es el régimen del país en cada año (0 flotante, 1 intermedio, 2 fijo) y \\(\\tau\\) es el quinquenio. El artículo describe el índice como 0, 1 y 2 y más adelante habla de valores de 1 a 3; la escala cambia el nivel, no el supuesto de linealidad que discuten."
+  },
+  {
+   "t": "América Latina: el régimen cambia los motores",
+   "p": [
+    "Para América Latina estiman un modelo más austero, basado en trabajos previos de los autores: inversión sobre PIB y apertura (dos variables que Levine y Renelt encontraron robustas), el crecimiento rezagado y dos medidas de inestabilidad, la inflación y la volatilidad del crecimiento. Las dos últimas están ligadas al régimen: la flotación debería absorber shocks a costa de más inflación, y el tipo fijo debería contener la inflación a costa de sufrir más los shocks.",
+    "Con toda la muestra (30 países, 1974-2004) la inflación reduce el crecimiento y las dummies de régimen no son significativas. El interés está en las estimaciones por régimen. Con flotación, la inversión tiene un coeficiente alto (0,52, al 1%) y ni la inflación ni la volatilidad afectan el crecimiento. Con regímenes intermedios, la inversión también suma (0,41) pero la volatilidad pega fuerte (−0,97, al 1%). Con tipo fijo, la inversión deja de ser significativa, la apertura pasa a ser positiva y la inflación resta crecimiento, mientras que la volatilidad, contra lo esperado, no es significativa.",
+    "La inflación negativa bajo tipo fijo admite una lectura: en la región, los tipos fijos llegaron muchas veces después de grandes inflaciones, y la desinflación ocurrió bajo el régimen fijo. La conclusión de los autores es que, aunque el régimen no tenga un efecto directo sobre el crecimiento, eso no significa que no importe: la flotación parece manejar mejor la inestabilidad y deja que la inversión funcione como motor."
+   ]
+  },
+  {
+   "t": "Límites y cierre de la ruta",
+   "p": [
+    "Los propios autores aclaran que los resultados no son concluyentes. Hay límites adicionales que conviene tener presentes (lectura propia). Las estimaciones por régimen usan muestras chicas: 50 observaciones con flotación, 30 con regímenes intermedios y 104 con tipo fijo. Partir la muestra por régimen supone que el régimen es exógeno justo en el ejercicio que busca mostrar sus efectos. Y que un coeficiente sea significativo en un grupo y no en otro no prueba que los coeficientes sean distintos entre grupos; para eso haría falta un test de diferencia.",
+    "Con este trabajo se cierra el núcleo de la ruta. Sturzenegger (2003) partía del hecho de que los fijos crecen menos y buscaba el canal en los sudden stops; Grandes y Reisen (2005) mostraban esos canales en Argentina, Brasil y México; Lasarte y Pérez (2011) y Bermúdez y Dabús (2015) encuentran que, con clasificaciones más cuidadosas o estimadores más robustos, el efecto directo sobre el crecimiento se desvanece. Lo que queda en pie es más sutil: el régimen importa por cómo se absorben los shocks, qué flujos de capital llegan y qué tan bien funciona la inversión."
+   ]
+  }
+ ],
+ "claves": [
+  "Levy Yeyati y Sturzenegger (2003) encuentran que flotar se asocia con más crecimiento en países no industriales; corrigen la endogeneidad con un modelo de efectos de tratamiento.",
+  "Una primera etapa no lineal da instrumentos inconsistentes si el modelo no es exacto; Bermúdez y Dabús usan System-GMM con la misma base y clasificación.",
+  "Con datos anuales y con promedios de cinco años, el efecto del régimen sobre el crecimiento deja de ser significativo; solo la inversión es robusta.",
+  "Promediar un índice 0-1-2 supone que el régimen intermedio está exactamente a mitad de camino; un régimen de facto también arrastra otras políticas.",
+  "En América Latina, con flotación la inversión impulsa el crecimiento y la inestabilidad no lo daña; con tipo fijo pesan la apertura y la inflación."
+ ],
+ "preguntas": [
+  {
+   "id": "tc-reg-04-q1",
+   "q": {
+    "es": "¿Qué encontraron Levy Yeyati y Sturzenegger (2003) sobre régimen cambiario y crecimiento?",
+    "en": "What did Levy Yeyati and Sturzenegger (2003) find on exchange-rate regimes and growth?"
+   },
+   "op": {
+    "es": [
+     "Que los fijos crecen más en todos los países",
+     "Que el régimen no importa en ningún grupo",
+     "Que la flotación se asocia con más crecimiento en los países no industriales",
+     "Que los intermedios son los que más crecen"
+    ],
+    "en": [
+     "That pegs grow more everywhere",
+     "That the regime does not matter in any group",
+     "That floating is associated with more growth in non-industrial countries",
+     "That intermediate regimes grow the most"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Para 154 países entre 1974 y 1999, la relación es fuerte en los no industriales y débil en los industriales.",
+    "en": "For 154 countries over 1974-1999, the link is strong in non-industrial countries and weak in industrial ones."
+   }
+  },
+  {
+   "id": "tc-reg-04-q2",
+   "q": {
+    "es": "¿Qué problema tiene el modelo de efectos de tratamiento usado en el trabajo original?",
+    "en": "What is the problem with the treatment-effects model used in the original paper?"
+   },
+   "op": {
+    "es": [
+     "Si la primera etapa no lineal no es exactamente correcta, las estimaciones son inconsistentes",
+     "No permite incluir controles",
+     "Solo funciona con datos de corte transversal",
+     "Exige que todos los países tengan el mismo régimen"
+    ],
+    "en": [
+     "If the nonlinear first stage is not exactly right, the estimates are inconsistent",
+     "It does not allow controls",
+     "It only works with cross-section data",
+     "It requires all countries to have the same regime"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es la crítica de Angrist y Krueger (2001) a usar valores ajustados de un probit o logit como instrumentos.",
+    "en": "It is Angrist and Krueger's (2001) critique of using fitted values from a probit or logit as instruments."
+   }
+  },
+  {
+   "id": "tc-reg-04-q3",
+   "q": {
+    "es": "¿Por qué System-GMM agrega las ecuaciones en niveles a las ecuaciones en diferencias?",
+    "en": "Why does System-GMM add level equations to the differenced equations?"
+   },
+   "op": {
+    "es": [
+     "Para eliminar los efectos fijos",
+     "Para poder usar datos anuales",
+     "Para evitar incluir rezagos del crecimiento",
+     "Porque con series persistentes los niveles rezagados son malos instrumentos de las diferencias"
+    ],
+    "en": [
+     "To remove fixed effects",
+     "To be able to use annual data",
+     "To avoid including lagged growth",
+     "Because with persistent series lagged levels are poor instruments for differences"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Combinar ambas ecuaciones mejora la eficiencia cuando las variables son persistentes (Blundell y Bond, 1998).",
+    "en": "Combining both equations improves efficiency when variables are persistent (Blundell and Bond, 1998)."
+   }
+  },
+  {
+   "id": "tc-reg-04-q4",
+   "q": {
+    "es": "Con datos anuales y System-GMM, ¿qué pasa con el coeficiente del régimen fijo para toda la muestra?",
+    "en": "With annual data and System-GMM, what happens to the fixed-regime coefficient for the full sample?"
+   },
+   "op": {
+    "es": [
+     "Sigue siendo −0,78 y significativo",
+     "Deja de ser significativo (−0,40 con un error estándar de 5,6)",
+     "Se vuelve positivo y significativo al 1%",
+     "No se puede estimar"
+    ],
+    "en": [
+     "It remains −0.78 and significant",
+     "It becomes insignificant (−0.40 with a standard error of 5.6)",
+     "It turns positive and significant at 1%",
+     "It cannot be estimated"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El efecto negativo de los fijos que encontraban Levy Yeyati y Sturzenegger no sobrevive al cambio de estimador.",
+    "en": "The negative effect of pegs found by Levy Yeyati and Sturzenegger does not survive the change of estimator."
+   }
+  },
+  {
+   "id": "tc-reg-04-q5",
+   "q": {
+    "es": "¿Qué supuesto implícito tiene promediar un índice de régimen que vale 0, 1 o 2?",
+    "en": "What implicit assumption does averaging a regime index of 0, 1 or 2 carry?"
+   },
+   "op": {
+    "es": [
+     "Que los regímenes no cambian dentro del quinquenio",
+     "Que los países industriales no flotan",
+     "Que el régimen intermedio está exactamente a mitad de camino entre flotar y fijar",
+     "Que la inflación no depende del régimen"
+    ],
+    "en": [
+     "That regimes do not change within the five years",
+     "That industrial countries do not float",
+     "That the intermediate regime lies exactly halfway between floating and pegging",
+     "That inflation does not depend on the regime"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El promedio trata al índice como una escala lineal, y ese supuesto puede explicar por qué el resultado cambia.",
+    "en": "Averaging treats the index as a linear scale, and that assumption may explain why the result changes."
+   }
+  },
+  {
+   "id": "tc-reg-04-q6",
+   "q": {
+    "es": "¿Por qué un régimen de facto puede no permitir identificar el efecto propio del régimen?",
+    "en": "Why may a de facto regime not allow identifying the regime's own effect?"
+   },
+   "op": {
+    "es": [
+     "Porque viene con otras políticas difíciles de observar, como metas de inflación o mucha intervención",
+     "Porque las clasificaciones de facto no tienen datos anteriores a 2000",
+     "Porque los países siempre declaran su régimen correctamente",
+     "Porque el crecimiento no depende de la política monetaria"
+    ],
+    "en": [
+     "Because it comes with other hard-to-observe policies, such as inflation targeting or heavy intervention",
+     "Because de facto classifications have no data before 2000",
+     "Because countries always declare their regime correctly",
+     "Because growth does not depend on monetary policy"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Una flotación de facto puede reflejar metas de inflación y un fijo de facto, un mercado intervenido; el coeficiente mezcla régimen y políticas.",
+    "en": "A de facto float may reflect inflation targeting and a de facto peg an intervened market; the coefficient mixes regime and policies."
+   }
+  },
+  {
+   "id": "tc-reg-04-q7",
+   "q": {
+    "es": "En América Latina, ¿qué variable afecta negativamente el crecimiento bajo regímenes intermedios, según las estimaciones por régimen?",
+    "en": "In Latin America, which variable reduces growth under intermediate regimes, according to the regime-by-regime estimates?"
+   },
+   "op": {
+    "es": [
+     "La apertura",
+     "La inversión",
+     "La inflación",
+     "La volatilidad del crecimiento"
+    ],
+    "en": [
+     "Openness",
+     "Investment",
+     "Inflation",
+     "Growth volatility"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Bajo regímenes intermedios la volatilidad tiene un coeficiente de −0,97, significativo al 1%; con flotación no es significativa.",
+    "en": "Under intermediate regimes volatility has a coefficient of −0.97, significant at 1%; under floating it is insignificant."
+   }
+  },
+  {
+   "id": "tc-reg-04-q8",
+   "q": {
+    "es": "Un país latinoamericano flota y quiere crecer más. Según estos resultados, ¿en qué variable conviene concentrarse?",
+    "en": "A Latin American country floats and wants to grow faster. According to these results, which variable should it focus on?"
+   },
+   "op": {
+    "es": [
+     "En bajar la volatilidad del producto, que es lo que más pesa",
+     "En la inversión, que bajo flotación tiene un efecto alto y significativo",
+     "En cerrar la economía para reducir shocks",
+     "En adoptar un tipo fijo para bajar la inflación"
+    ],
+    "en": [
+     "Lowering output volatility, which matters most",
+     "Investment, which has a large and significant effect under floating",
+     "Closing the economy to reduce shocks",
+     "Adopting a peg to lower inflation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con flotación la inversión tiene un coeficiente de 0,52 (al 1%) y la inestabilidad no resulta significativa.",
+    "en": "Under floating investment has a coefficient of 0.52 (at 1%) and instability is not significant."
+   }
+  }
+ ],
+ "palabras": 1270,
+ "tarjetas": [
+  {
+   "id": "tc-reg-04-t1",
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué intercambio enfrenta un país al elegir entre tipo de cambio fijo y flexible, y por qué afecta el crecimiento?",
+    "en": "What trade-off does a country face when choosing between a fixed and a flexible exchange rate, and why does it affect growth?"
+   },
+   "a": {
+    "es": "El fijo da estabilidad de precios a costa de más volatilidad del producto; el flexible absorbe los shocks a costa de más inflación. Como ambas cosas dañan el crecimiento, la pregunta es cuál pesa más (Bermúdez y Dabús, 2015, a partir de Levy Yeyati y Sturzenegger, 2003).",
+    "en": "A peg delivers price stability at the cost of more output volatility; a float absorbs shocks at the cost of more inflation. Since both harm growth, the question is which weighs more (Bermúdez and Dabús, 2015, building on Levy Yeyati and Sturzenegger, 2003)."
+   }
+  },
+  {
+   "id": "tc-reg-04-t2",
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué es riesgoso usar los valores ajustados de un probit como instrumentos en una ecuación de crecimiento?",
+    "en": "Why is it risky to use fitted values from a probit as instruments in a growth equation?"
+   },
+   "a": {
+    "es": "Porque si la primera etapa no lineal no está exactamente bien especificada, las estimaciones son inconsistentes (Angrist y Krueger, 2001). Por eso Bermúdez y Dabús (2015) re-estiman el modelo de Levy Yeyati y Sturzenegger con System-GMM.",
+    "en": "Because if the nonlinear first stage is not exactly right, the estimates are inconsistent (Angrist and Krueger, 2001). That is why Bermúdez and Dabús (2015) re-estimate Levy Yeyati and Sturzenegger's model with System-GMM."
+   }
+  },
+  {
+   "id": "tc-reg-04-t3",
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Sobrevive a System-GMM el hallazgo de que los tipos fijos crecen menos en los países no industriales?",
+    "en": "Does the finding that pegs grow less in non-industrial countries survive System-GMM?"
+   },
+   "a": {
+    "es": "No. Con la misma base y clasificación, el coeficiente de los fijos deja de ser significativo con datos anuales y con promedios de cinco años; solo la inversión es robusta (Bermúdez y Dabús, 2015).",
+    "en": "No. With the same database and classification, the peg coefficient becomes insignificant with annual data and five-year averages; only investment is robust (Bermúdez and Dabús, 2015)."
+   }
+  },
+  {
+   "id": "tc-reg-04-t4",
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué supuesto se introduce al resumir el régimen cambiario en un índice promedio de 0 (flota), 1 (intermedio) y 2 (fijo)?",
+    "en": "What assumption is introduced by summarizing the regime as an average index of 0 (float), 1 (intermediate) and 2 (peg)?"
+   },
+   "a": {
+    "es": "Que la relación es lineal y el intermedio queda exactamente a mitad de camino entre flotar y fijar. Bermúdez y Dabús (2015) lo señalan como una razón por la que el efecto encontrado por Levy Yeyati y Sturzenegger desaparece.",
+    "en": "That the relation is linear and the intermediate regime sits exactly halfway between floating and pegging. Bermúdez and Dabús (2015) cite it as one reason the effect found by Levy Yeyati and Sturzenegger disappears."
+   }
+  },
+  {
+   "id": "tc-reg-04-t5",
+   "tipo": "resultado",
+   "q": {
+    "es": "En América Latina, ¿cómo cambia el papel de la inversión y de la inestabilidad según el régimen cambiario?",
+    "en": "In Latin America, how do the roles of investment and instability change with the exchange-rate regime?"
+   },
+   "a": {
+    "es": "Con flotación la inversión impulsa el crecimiento (0,52) y la inestabilidad no lo daña; con regímenes intermedios la volatilidad pega fuerte (−0,97); con tipo fijo pesan la apertura y la inflación. Lo estiman Bermúdez y Dabús (2015) para 1974-2004.",
+    "en": "Under floating, investment drives growth (0.52) and instability does not hurt it; under intermediate regimes volatility hits hard (−0.97); under pegs openness and inflation matter. Bermúdez and Dabús (2015) estimate it for 1974-2004."
+   }
+  },
+  {
+   "id": "tc-reg-04-t6",
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué en América Latina la inflación puede restar crecimiento justamente bajo tipos de cambio fijos?",
+    "en": "Why might inflation reduce growth precisely under pegs in Latin America?"
+   },
+   "a": {
+    "es": "Porque muchos tipos fijos de la región llegaron después de grandes inflaciones y la desinflación ocurrió bajo el régimen fijo. Es la interpretación de Bermúdez y Dabús (2015) para un coeficiente negativo de la inflación solo en los regímenes fijos.",
+    "en": "Because many of the region's pegs came after high inflations and disinflation happened under the peg. It is Bermúdez and Dabús's (2015) interpretation of a negative inflation coefficient only under pegs."
+   }
+  }
+ ]
+}

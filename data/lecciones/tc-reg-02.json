@@ -1,0 +1,369 @@
+{
+ "id": "tc-reg-02",
+ "cat": "tc-reg",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Convertibilidad contra flotación administrada: Grandes y Reisen (2005)",
+ "bajada": "Argentina, Brasil y México entre 1994 y 2003: por qué cuatro canales (inversión, comercio, tipo de flujos de capital y solvencia fiscal) explican que el régimen cambiario sí haya importado.",
+ "fuentes": [
+  1218
+ ],
+ "cita": "Grandes y Reisen (2005)",
+ "intro": "En marzo de 1995, en plena crisis del Tequila, Domingo Cavallo afirmaba que la Argentina no era México. Tenía razón, aunque no como esperaba: siete años después México tenía grado inversor y la Argentina estaba en default. Martín Grandes y Helmut Reisen, en un trabajo para la CEPAL y la OCDE, comparan los regímenes cambiarios de Argentina, Brasil y México entre 1994 y 2003. Saben que con tres países no se puede aislar el efecto del régimen sobre el crecimiento, así que hacen otra cosa: miran las vías por las que la literatura dice que el régimen afecta el desempeño y comparan cómo se comportó cada una. Su tesis es que 1998 fue un año de empate y que, desde entonces, la flotación administrada mexicana rindió más que la Convertibilidad frente a los shocks externos.",
+ "secciones": [
+  {
+   "t": "El debate: extremos o intermedios",
+   "p": [
+    "Durante los noventa se impuso la visión bipolar: con mercados de capital integrados, la trinidad imposible de Mundell dejaba solo dos opciones sostenibles, flotar del todo o fijar de manera rigurosa (dolarización o unión monetaria). Los defensores del tipo fijo duro argumentaban que en las economías emergentes la política monetaria independiente no funcionaba: falta de credibilidad; dolarización de los pasivos y «pecado original», es decir, la imposibilidad de endeudarse a largo plazo en moneda propia, que produce descalces de monedas y plazos; tasas altas y volatilidad de reservas que llevan al miedo a flotar; y la sustitución del ajuste de precios relativos por financiamiento de mercado.",
+    "Los defensores de la flexibilidad respondían con las rigideces de salarios y precios, el predominio de shocks reales en los emergentes y el riesgo moral que crea un tipo fijo. Señalaban los problemas típicos de las fijaciones: spreads soberanos más altos y volátiles, mayor volatilidad del producto, disciplina fiscal insuficiente y el incumplimiento de las condiciones de un área monetaria óptima. Y algunos autores, como Williamson (2000), volvieron a defender opciones intermedias."
+   ]
+  },
+  {
+   "t": "Cuatro vías del régimen al crecimiento",
+   "p": [
+    "Como los modelos de expectativas racionales predicen que el régimen no afecta las variables reales de largo plazo, los autores trabajan con cuatro canales que la teoría y la evidencia vinculan con el crecimiento.",
+    "Inversión contra consumo. Los tipos fijos suelen venir con auges de crédito bancario que alimentan auges de consumo (Sachs, Tornell y Velasco, 1996): al bajar la inflación sube la demanda de dinero, y la intervención no esterilizada del banco central se intermedia por los bancos. Con flotación, en cambio, la entrada de capitales aprecia la moneda y no expande tanto el dinero.",
+    "Apertura comercial. Las economías abiertas absorben mejor la tecnología. Un tipo fijo puede acercarse a desalineamientos persistentes del tipo de cambio real y frenar las exportaciones; Nilsson y Nilsson (2000), con un modelo de gravedad para más de 100 países, encuentran que los regímenes flexibles favorecen la exportación. Rose (2000) muestra que una unión monetaria aumenta el comercio, pero solo si la mayor parte del comercio se hace dentro de la unión, que no era el caso argentino.",
+    "Composición de los flujos de capital. La inversión extranjera directa y la de cartera tuvieron efectos positivos sobre el crecimiento en los noventa; los bonos, ninguno; y los préstamos de bancos extranjeros, negativos salvo con bancos locales bien capitalizados (Reisen y Soto, 2001). El tipo fijo atrae capital especulativo que aprovecha diferenciales de tasas, porque el riesgo cambiario queda implícitamente en manos del banco central.",
+    "Rigideces fiscales e institucionales. Con rigideces, un régimen flexible absorbe mejor los shocks reales y deja margen para una política anticíclica. El tipo fijo debería disciplinar al fisco, porque elimina el impuesto inflacionario, pero puede hacer lo contrario si los auges de crédito y consumo terminan inflando el gasto público (Sun, 2003)."
+   ],
+   "nota": "La evidencia previa que reseñan: Ghosh, Gulde y otros (1996) encuentran más inversión con tipos fijos pero más productividad con flotación; excluyendo los sesenta, la flotación crece 1,5 puntos más en países de menores ingresos, y pasar de fijo a flexible suma 0,3 puntos de crecimiento al año y más de uno a los tres años."
+  },
+  {
+   "t": "Tres regímenes",
+   "p": [
+    "La Convertibilidad empezó en abril de 1991, tras dos hiperinflaciones, con un peso igual a un dólar fijado por ley. No era una caja de conversión pura: el mecanismo estaba dentro del Banco Central; hasta un 33% de la base monetaria podía respaldarse con deuda de corto plazo del gobierno en dólares; los bancos debían mantener el 21% de los depósitos como reservas líquidas internacionales; y había una línea de crédito contingente con una docena de bancos internacionales por el 10% de los depósitos. Esas piezas buscaban compensar la pérdida del prestamista de última instancia.",
+    "México dejó su tipo semifijo a fines de 1994 y adoptó una flotación bastante libre, con intervenciones transparentes que no defendían un nivel: opciones de venta para acumular reservas, ventas contingentes ante depreciaciones bruscas y esterilización de las entradas de capital. Desde 1997-98 convergió a metas de inflación, con un instrumento propio, «el corto», que actúa sobre las reservas de los bancos y vuelve más volátiles las tasas de corto plazo a cambio de un tipo de cambio más estable.",
+    "Brasil estabilizó en 1994 con el Plan Real: ajuste fiscal, una unidad de valor indexada, reforma monetaria y control de la demanda. Como la demanda de dinero creció mucho más de lo previsto, abandonó las metas monetarias y pasó a un ancla cambiaria semifija. La inflación cayó a un dígito, pero crecieron los déficit comerciales y la deuda. Tras la presión de 1998, en enero de 1999 pasó a una flotación administrada."
+   ]
+  },
+  {
+   "t": "Crecimiento e inversión",
+   "p": [
+    "Entre 1996 y 2003, México creció casi cuatro veces más que la Argentina: 3,67% contra 0,86% anual (4,5% contra 1,5% hasta 2001). En el período completo 1994-2003 las diferencias son menores: 0,98% en la Argentina, 2,5% en Brasil y 2,76% en México. Lo que sí distingue a la Argentina es la volatilidad: su crecimiento pasó de 8,1% en 1997 a −4,4% en 2001.",
+    "La diferencia está en la inversión. La inversión bruta argentina cayó en 2001 al 15,6% del PIB, el nivel más bajo desde 1993, y aumentó la dependencia del ahorro externo. Su crecimiento medio en 1994-2003 fue prácticamente nulo (0,03%) con una desviación estándar de 21 puntos; el de México fue 4% con 14 puntos de desvío. La paradoja argentina era que hacía falta exportar más para depender menos del ahorro externo, y esa dependencia creció en los últimos años del régimen. Primera conclusión: la flotación mexicana mostró más inversión, menos volátil y menos dependiente del ahorro externo, con un crecimiento liderado por la demanda externa."
+   ]
+  },
+  {
+   "t": "Comercio y tipo de cambio real",
+   "p": [
+    "El comercio mexicano se cuadruplicó al menos en los noventa; las exportaciones llegaron a ser cerca del 28% del PIB en promedio y la maquila generó entre el 40% y el 48% de las exportaciones reales. La Argentina siguió relativamente cerrada: su coeficiente de apertura pasó de 15% del PIB en 1993 a casi 25% en 1997 y osciló en torno al 20% hasta 2002, y sus exportaciones eran el 12,2% del PIB en 2001. México también cambió su especialización: el petróleo pasó del 68% de sus exportaciones en 1985 al 8% en 2001. El costo fue la dependencia de Estados Unidos, destino de casi el 90% de sus ventas, que explica su frenada de 2001.",
+    "En la Argentina, la apreciación real coincidió con una fuerte mejora de productividad: los costos laborales unitarios en dólares cayeron más del 30% entre 1993 y 1998. Pero con una industria que pesaba el 16% del PIB y exportaba cerca del 4% del PIB, no alcanzó para compensar la apreciación, y los vaivenes de los términos de intercambio, sin tipo de cambio que los amortiguara, agrandaron los desequilibrios externos. Para México, en cambio, los autores consideran que la apreciación hasta 2003 fue de equilibrio: costos laborales relativos más bajos que en Estados Unidos (efecto Balassa-Samuelson), más manufacturas en las exportaciones y más flexibilidad ante los shocks."
+   ],
+   "eq": [
+    "\\text{Apertura} = \\frac{X + M}{PIB}"
+   ],
+   "nota": "X son las exportaciones y M las importaciones. Una devaluación sube este coeficiente de golpe porque achica el PIB medido en dólares: por eso la apertura argentina casi se duplicó en 2002 sin que el comercio real cambiara tanto."
+  },
+  {
+   "t": "Flujos de capital y solvencia",
+   "p": [
+    "Los spreads del EMBI y las calificaciones de los tres países se movían juntos hasta el default ruso de 1998; desde entonces los mercados empezaron a discriminar. La composición de los flujos explica parte de esa divergencia. México y Brasil se financiaron más con inversión extranjera directa; la Argentina dependió de flujos de corto plazo o, cuando no los hubo, de financiamiento oficial. La relación entre IED y déficit de cuenta corriente parece similar (0,9 en México, 0,8 en Brasil y 0,9 en la Argentina en 1994-2001), pero la argentina baja si se excluyen las privatizaciones de 1998 y 1999, como la de YPF. Y el destino importa: la industria mexicana recibió el 61% de la IED en 1995-1999, la argentina el 34% y la brasileña el 47%.",
+    "La solvencia completa el cuadro. Una economía es insolvente si el valor presente de sus ingresos netos esperados es menor que su deuda. La deuda externa argentina pasó del 33% del PIB en 1994 al 52% en 2001, mientras la mexicana bajó del 32% al 24%; en 2001 la deuda equivalía a 4,5 años de exportaciones en la Argentina y a menos de uno en México. El tipo fijo debía traer disciplina fiscal, pero cuando se cierran los mercados y cae el PIB, la indisciplina puede terminar en insolvencia, como en la Argentina en 2001."
+   ],
+   "eq": [
+    "B_0 \\le \\sum_{t=1}^{\\infty} \\frac{S_t}{(1+r)^t}"
+   ],
+   "nota": "\\(B_0\\) es la deuda actual, \\(S_t\\) los ingresos netos esperados (el superávit) de cada período y \\(r\\) la tasa de descuento. Es la condición de solvencia que el artículo enuncia en palabras; la notación es nuestra."
+  },
+  {
+   "t": "Conclusiones y límites",
+   "p": [
+    "Los autores no prueban que el régimen cause el crecimiento, y lo dicen: con tres países no se puede aislar su efecto, y el TLCAN y la locomotora estadounidense, que creció al 3% anual hasta 2000, explican buena parte del éxito mexicano. Lo que sí hacen es confirmar los canales. De ahí salen cuatro preguntas para elegir régimen: si incentiva la inversión y el ahorro más que el consumo sin disparar la volatilidad; si ayuda a integrar el sector transable con un tipo de cambio competitivo y sin desalineamientos; si atrae flujos de capital que suman y no los que vuelven al país vulnerable; y si es compatible con las rigideces del país, en especial las fiscales.",
+    "Una objeción posible (lectura propia) es que buena parte de la comparación se juega en la composición de los flujos y en la política fiscal, que no dependen solo del régimen. Para un lector argentino, la lección es que la Convertibilidad no falló por un único canal sino por varios a la vez: poca apertura, financiamiento de corto plazo, deuda creciente y ningún amortiguador frente a los shocks de 1998 y 1999."
+   ]
+  }
+ ],
+ "claves": [
+  "Con tres países no se aísla el efecto del régimen; se comparan cuatro canales: inversión, comercio, composición de los flujos y rigideces fiscales.",
+  "La Convertibilidad no era una caja pura: 33% de la base podía respaldarse con deuda en dólares, encajes del 21% y una línea contingente por el 10% de los depósitos.",
+  "México invirtió más y con menos volatilidad; la inversión argentina cayó al 15,6% del PIB en 2001 y creció la dependencia del ahorro externo.",
+  "La productividad argentina subió (costos laborales unitarios −30%), pero con poca industria exportadora no compensó la apreciación real.",
+  "Desde el default ruso los mercados discriminaron: México se financió con IED en transables y la Argentina con flujos de corto plazo y deuda creciente."
+ ],
+ "preguntas": [
+  {
+   "id": "tc-reg-02-q1",
+   "q": {
+    "es": "¿Por qué Grandes y Reisen analizan canales de transmisión en lugar de estimar directamente el efecto del régimen sobre el crecimiento?",
+    "en": "Why do Grandes and Reisen analyze transmission channels instead of directly estimating the regime's effect on growth?"
+   },
+   "op": {
+    "es": [
+     "Porque no había datos de PIB para Brasil",
+     "Porque en una comparación de tres países no se puede aislar el efecto del régimen",
+     "Porque la teoría dice que el régimen siempre causa el crecimiento",
+     "Porque el FMI prohíbe ese tipo de estimaciones"
+    ],
+    "en": [
+     "Because there were no GDP data for Brazil",
+     "Because a three-country comparison cannot isolate the regime's effect",
+     "Because theory says the regime always causes growth",
+     "Because the IMF forbids such estimates"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con tan pocos casos, el régimen se confunde con otros factores; por eso miran las variables que la literatura identifica como vías de transmisión.",
+    "en": "With so few cases the regime is confounded with other factors, so they look at the variables the literature identifies as transmission channels."
+   }
+  },
+  {
+   "id": "tc-reg-02-q2",
+   "q": {
+    "es": "¿Qué es el «pecado original» que invocan los defensores del tipo fijo duro?",
+    "en": "What is the 'original sin' invoked by defenders of hard pegs?"
+   },
+   "op": {
+    "es": [
+     "La imposibilidad de endeudarse a largo plazo en moneda propia",
+     "La emisión para financiar al Tesoro",
+     "El déficit comercial crónico",
+     "La falta de un banco central independiente"
+    ],
+    "en": [
+     "The inability to borrow long term in one's own currency",
+     "Printing money to finance the Treasury",
+     "A chronic trade deficit",
+     "The lack of an independent central bank"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Al no poder endeudarse a largo plazo en su moneda, los emergentes acumulan descalces de monedas y plazos que vuelven peligrosa una depreciación.",
+    "en": "Unable to borrow long term in their currency, emerging economies build currency and maturity mismatches that make depreciation dangerous."
+   }
+  },
+  {
+   "id": "tc-reg-02-q3",
+   "q": {
+    "es": "¿Por qué la Convertibilidad no era una caja de conversión en sentido estricto?",
+    "en": "Why was Convertibility not a currency board in the strict sense?"
+   },
+   "op": {
+    "es": [
+     "Porque el tipo de cambio podía moverse en una banda",
+     "Porque no estaba fijada por ley",
+     "Porque hasta un 33% de la base podía respaldarse con deuda del gobierno en dólares",
+     "Porque el peso flotaba frente al euro pero no frente al dólar"
+    ],
+    "en": [
+     "Because the exchange rate could move within a band",
+     "Because it was not set by law",
+     "Because up to 33% of the base could be backed by government dollar debt",
+     "Because the peso floated against the euro but not the dollar"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Además, el mecanismo estaba integrado al Banco Central y había encajes y una línea contingente, para compensar la falta de prestamista de última instancia.",
+    "en": "The mechanism was also inside the central bank, with reserve requirements and a contingent credit line to make up for the lack of a lender of last resort."
+   }
+  },
+  {
+   "id": "tc-reg-02-q4",
+   "q": {
+    "es": "¿Cuánto creció en promedio anual México frente a la Argentina entre 1996 y 2003?",
+    "en": "What was Mexico's average annual growth versus Argentina's between 1996 and 2003?"
+   },
+   "op": {
+    "es": [
+     "2,76% contra 0,98%",
+     "4,5% contra 4,0%",
+     "1,5% contra 3,0%",
+     "3,67% contra 0,86%"
+    ],
+    "en": [
+     "2.76% versus 0.98%",
+     "4.5% versus 4.0%",
+     "1.5% versus 3.0%",
+     "3.67% versus 0.86%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Casi cuatro veces más. Las cifras de 2,76% y 0,98% corresponden al período completo 1994-2003, donde la diferencia es menor.",
+    "en": "Almost four times as much. The 2.76% and 0.98% figures are for the full 1994-2003 period, where the gap is smaller."
+   }
+  },
+  {
+   "id": "tc-reg-02-q5",
+   "q": {
+    "es": "¿Por qué un tipo de cambio fijo tiende a desviar recursos hacia el consumo en lugar de la inversión?",
+    "en": "Why does a fixed exchange rate tend to divert resources toward consumption rather than investment?"
+   },
+   "op": {
+    "es": [
+     "Porque sube los aranceles a los bienes de capital",
+     "Porque la intervención no esterilizada se intermedia por los bancos y alimenta auges de crédito y consumo",
+     "Porque obliga a subir los impuestos al consumo",
+     "Porque prohíbe la inversión extranjera"
+    ],
+    "en": [
+     "Because it raises tariffs on capital goods",
+     "Because unsterilized intervention is intermediated by banks and feeds credit and consumption booms",
+     "Because it forces higher consumption taxes",
+     "Because it bans foreign investment"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La baja de la inflación sube la demanda de dinero y la compra de divisas expande el crédito bancario, que se vuelca al gasto (Sachs, Tornell y Velasco, 1996).",
+    "en": "Lower inflation raises money demand and foreign-exchange purchases expand bank credit, which flows into spending (Sachs, Tornell and Velasco, 1996)."
+   }
+  },
+  {
+   "id": "tc-reg-02-q6",
+   "q": {
+    "es": "Los costos laborales unitarios argentinos en dólares cayeron más del 30% entre 1993 y 1998. ¿Por qué no alcanzó?",
+    "en": "Argentina's dollar unit labor costs fell by more than 30% between 1993 and 1998. Why was it not enough?"
+   },
+   "op": {
+    "es": [
+     "Porque la industria pesaba poco (16% del PIB) y exportaba cerca del 4% del PIB",
+     "Porque los salarios reales subieron un 50%",
+     "Porque la productividad cayó en el mismo período",
+     "Porque el peso se depreció frente al dólar"
+    ],
+    "en": [
+     "Because industry was small (16% of GDP) and exported about 4% of GDP",
+     "Because real wages rose 50%",
+     "Because productivity fell in the same period",
+     "Because the peso depreciated against the dollar"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La mejora de productividad era real, pero en un sector transable chico no compensó la apreciación real, y los shocks de términos de intercambio no tenían amortiguador.",
+    "en": "The productivity gain was real, but in a small tradable sector it did not offset the real appreciation, and terms-of-trade shocks had no cushion."
+   }
+  },
+  {
+   "id": "tc-reg-02-q7",
+   "q": {
+    "es": "¿Desde cuándo los mercados empiezan a diferenciar a la Argentina de México y Brasil en spreads y calificaciones?",
+    "en": "From when do markets start to differentiate Argentina from Mexico and Brazil in spreads and ratings?"
+   },
+   "op": {
+    "es": [
+     "Desde el Tequila de 1995",
+     "Desde el Plan Real de 1994",
+     "Desde el default ruso de 1998",
+     "Desde la devaluación argentina de 2002"
+    ],
+    "en": [
+     "From the 1995 Tequila crisis",
+     "From the 1994 Real Plan",
+     "From the 1998 Russian default",
+     "From the 2002 Argentine devaluation"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Hasta 1998 los tres se movían juntos; después del default ruso los mercados analizaron con más cuidado a cada emergente.",
+    "en": "Until 1998 the three moved together; after the Russian default markets assessed each emerging economy more carefully."
+   }
+  },
+  {
+   "id": "tc-reg-02-q8",
+   "q": {
+    "es": "Un país evalúa adoptar un tipo fijo. Según los criterios de Grandes y Reisen, ¿qué señal debería preocuparlo más?",
+    "en": "A country is considering a peg. Under Grandes and Reisen's criteria, which sign should worry it most?"
+   },
+   "op": {
+    "es": [
+     "Que su inflación sea baja",
+     "Que tenga un superávit primario alto",
+     "Que su comercio esté concentrado dentro de una unión monetaria",
+     "Que se financie con flujos de corto plazo y tenga un sector exportador chico"
+    ],
+    "en": [
+     "That its inflation is low",
+     "That it runs a high primary surplus",
+     "That its trade is concentrated within a currency union",
+     "That it relies on short-term flows and has a small export sector"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Flujos volátiles y poca integración del sector transable fueron dos de los canales por los que la Convertibilidad terminó mal.",
+    "en": "Volatile flows and weak integration of the tradable sector were two of the channels through which Convertibility ended badly."
+   }
+  }
+ ],
+ "palabras": 1653,
+ "tarjetas": [
+  {
+   "id": "tc-reg-02-t1",
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué canales puede un régimen cambiario afectar el crecimiento si en el largo plazo el dinero es neutral?",
+    "en": "Through which channels can an exchange-rate regime affect growth if money is neutral in the long run?"
+   },
+   "a": {
+    "es": "Por cuatro: la división entre inversión y consumo, la integración del sector transable al comercio, la composición de los flujos de capital y la interacción con las rigideces fiscales e institucionales. Es el marco de Grandes y Reisen (2005) para comparar Argentina, Brasil y México.",
+    "en": "Through four: the split between investment and consumption, the integration of tradables into trade, the composition of capital flows and the interaction with fiscal and institutional rigidities. It is Grandes and Reisen's (2005) framework for comparing Argentina, Brazil and Mexico."
+   }
+  },
+  {
+   "id": "tc-reg-02-t2",
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un tipo de cambio fijo puede atraer capital especulativo de corto plazo?",
+    "en": "Why can a fixed exchange rate attract short-term speculative capital?"
+   },
+   "a": {
+    "es": "Porque los inversores aprovechan el diferencial de tasas sin cubrir el riesgo cambiario, que queda implícitamente en manos del banco central. Grandes y Reisen (2005) muestran que la Argentina dependió de esos flujos, mientras México se financió con IED en transables.",
+    "en": "Because investors exploit the interest differential without hedging currency risk, which implicitly falls on the central bank. Grandes and Reisen (2005) show Argentina relied on such flows, while Mexico was financed with FDI in tradables."
+   }
+  },
+  {
+   "id": "tc-reg-02-t3",
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia una caja de conversión pura de un régimen como la Convertibilidad argentina?",
+    "en": "What distinguishes a pure currency board from a regime like Argentina's Convertibility?"
+   },
+   "a": {
+    "es": "En la caja pura, la base monetaria se respalda íntegramente con divisas y no hay prestamista de última instancia. La Convertibilidad permitía respaldar hasta un 33% de la base con deuda del gobierno en dólares, exigía encajes del 21% y tenía una línea contingente por el 10% de los depósitos (Grandes y Reisen, 2005).",
+    "en": "In a pure board, the monetary base is fully backed by foreign currency and there is no lender of last resort. Convertibility allowed up to 33% of the base to be backed by government dollar debt, required 21% reserves and had a contingent line for 10% of deposits (Grandes and Reisen, 2005)."
+   }
+  },
+  {
+   "id": "tc-reg-02-t4",
+   "tipo": "resultado",
+   "q": {
+    "es": "En la segunda mitad de los noventa, ¿qué pasó con la inversión en la Argentina de la Convertibilidad comparada con México?",
+    "en": "In the late 1990s, what happened to investment in Convertibility-era Argentina compared with Mexico?"
+   },
+   "a": {
+    "es": "Fue más baja, mucho más volátil y más dependiente del ahorro externo: cayó al 15,6% del PIB en 2001, el mínimo desde 1993, mientras México aumentaba su tasa de inversión con menor ahorro externo (Grandes y Reisen, 2005).",
+    "en": "It was lower, far more volatile and more dependent on foreign saving: it fell to 15.6% of GDP in 2001, the lowest since 1993, while Mexico raised its investment rate with less foreign saving (Grandes and Reisen, 2005)."
+   }
+  },
+  {
+   "id": "tc-reg-02-t5",
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Puede una suba de productividad compensar una apreciación real en una economía con tipo fijo?",
+    "en": "Can a productivity gain offset a real appreciation in a pegged economy?"
+   },
+   "a": {
+    "es": "Solo si el sector transable es grande. En la Argentina los costos laborales unitarios en dólares cayeron más del 30% entre 1993 y 1998, pero con una industria del 16% del PIB que exportaba cerca del 4% del PIB no alcanzó (Grandes y Reisen, 2005).",
+    "en": "Only if the tradable sector is large. In Argentina, dollar unit labor costs fell more than 30% between 1993 and 1998, but with industry at 16% of GDP exporting about 4% of GDP it was not enough (Grandes and Reisen, 2005)."
+   }
+  },
+  {
+   "id": "tc-reg-02-t6",
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el éxito mexicano posterior a 1995 no prueba por sí solo que la flotación cause más crecimiento?",
+    "en": "Why does Mexico's post-1995 success not by itself prove that floating causes more growth?"
+   },
+   "a": {
+    "es": "Porque coincide con el TLCAN y con una economía estadounidense que crecía cerca del 3% anual, destino de casi el 90% de sus exportaciones. Grandes y Reisen (2005) lo reconocen: con tres países no se aísla el efecto del régimen, solo se confirman sus canales.",
+    "en": "Because it coincides with NAFTA and a US economy growing about 3% a year, the destination of almost 90% of its exports. Grandes and Reisen (2005) acknowledge it: with three countries the regime's effect cannot be isolated, only its channels confirmed."
+   }
+  }
+ ]
+}

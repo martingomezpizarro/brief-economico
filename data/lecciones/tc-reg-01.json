@@ -1,0 +1,371 @@
+{
+ "id": "tc-reg-01",
+ "cat": "tc-reg",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "¿Por qué crecen menos los tipos de cambio fijos? Sturzenegger (2003)",
+ "bajada": "Los regímenes fijos aparecen asociados a menor crecimiento. Sturzenegger pone a prueba una explicación: que fijar el tipo de cambio expone más a las frenadas súbitas de capitales.",
+ "fuentes": [
+  1303
+ ],
+ "cita": "Sturzenegger (2003)",
+ "intro": "Elegir el régimen cambiario es una de las decisiones de política más importantes que enfrenta un país: define cómo absorbe los shocks, cuánta credibilidad gana su banco central y cómo se desarrolla su sistema financiero. Sin embargo, la teoría dice que, en el largo plazo, una decisión nominal no debería cambiar resultados reales como el crecimiento. Los datos posteriores a Bretton Woods no acompañan esa intuición: los países con tipo de cambio fijo crecen menos. Este artículo corto de Federico Sturzenegger, publicado en Cuadernos de Economía en 2003, no discute si el hecho existe sino por qué existe, y prueba una hipótesis concreta de Guillermo Calvo: que los regímenes fijos sufren más sudden stops, es decir, frenadas bruscas en la entrada de capitales.",
+ "secciones": [
+  {
+   "t": "El hecho a explicar",
+   "p": [
+    "La literatura no encontraba una relación fuerte entre régimen cambiario y crecimiento, y era lógico: con rigideces de precios, la elección del régimen importa en el corto plazo, pero esos efectos deberían diluirse en el mediano y largo plazo. Un grupo de trabajos empíricos cambió la discusión. Rolnick y Weber (1997) encontraron, con datos históricos, más crecimiento en los períodos de papel moneda que bajo patrones metálicos como el oro. Mundell (1995) sostuvo lo contrario para los países industriales: el período previo a la caída de Bretton Woods, con tipos fijos, tuvo más crecimiento.",
+    "Para el período posterior a Bretton Woods, Levy Yeyati y Sturzenegger (2001, 2003a) encuentran que los regímenes fijos están asociados a un crecimiento del producto entre 0,7 y 1 punto porcentual menor por año, en una amplia gama de especificaciones y con controles por endogeneidad. También están asociados a mayor volatilidad del producto. Larraín y Parro (2003) llegan a algo parecido, aunque para ellos los peores son los intermedios y los mejores, los flexibles.",
+    "El cuadro que replica el artículo lo muestra en números. En los países no industriales, el crecimiento medio del PIB es 1,7% con flotación, 0,9% con regímenes intermedios y 1,3% con fijos, y la desviación estándar del crecimiento sube de 4,0 a 4,4 y a 4,7. En los industriales, en cambio, fijos y flotantes crecen igual (2,3%). El autor aclara que los fijos son mucho más eficaces para bajar la inflación, lo que explica su popularidad a comienzos de los noventa."
+   ],
+   "nota": "La clasificación usada es la de facto de Levy Yeyati y Sturzenegger (LYS): un régimen es fijo si el tipo de cambio nominal se mueve poco y las reservas se mueven mucho, y flotante si pasa lo contrario. Se basa en lo que los países hacen, no en lo que declaran al FMI. Con la clasificación del FMI los resultados son los mismos."
+  },
+  {
+   "t": "Tres explicaciones posibles",
+   "p": [
+    "La primera es la volatilidad. Ramey y Ramey (1995) muestran que las economías con ingreso más volátil crecen menos. No hace falta que los países con tipo fijo reciban shocks más grandes: alcanza con que el régimen los amplifique. Con tipo de cambio fijo y precios rígidos, un shock real no puede absorberse vía el precio de la moneda y se traslada a las cantidades.",
+    "La segunda es la asimetría. Con precios rígidos a la baja, un shock negativo puede requerir un ajuste largo en cantidades, mientras que uno positivo se ajusta rápido por precios. Bajo tipo fijo, lo malo pega en el producto y lo bueno se va en inflación, y eso sesga el crecimiento hacia abajo. Edwards y Levy Yeyati (2003) encuentran que los regímenes más rígidos amplifican los shocks de términos de intercambio, más los negativos; Broda (2001) llega a un resultado similar con otra metodología.",
+    "La tercera, de Calvo (1998), es la que pone a prueba el artículo: los regímenes fijos estarían más expuestos a shocks como una corrida especulativa o un sudden stop. Se vincula con la visión de Eichengreen (1994) y Fischer (2001): con capitales más volátiles, los tipos fijos convencionales se vuelven insostenibles y los países terminan en los extremos, la libre flotación o un ancla dura como la Convertibilidad, la dolarización o una unión monetaria. Lo novedoso es que los shocks dejan de ser independientes del régimen: el régimen no solo amplifica los golpes, también los atrae."
+   ]
+  },
+  {
+   "t": "Qué es un sudden stop y cómo identificarlo",
+   "p": [
+    "Un sudden stop es una caída violenta en la entrada de capitales que obliga a un ajuste interno rápido y grande. Calvo (2001) da el ejemplo de Tailandia: en 1997 la caída de los flujos equivalió al 26% de su PIB. El daño no está tanto en la salida de capitales como en lo que viene después: para ajustarse, el país tiene que achicar su déficit de cuenta corriente, y eso implica recortar el gasto total, con fuertes caídas del producto y del empleo.",
+    "El autor identifica los episodios con dos filtros, para todos los países del mundo desde 1974. Primero busca los años en que la cuenta capital se comprime al menos un 5% del PIB: de 4.932 observaciones país-año posibles hay datos para 3.579, y aparecen 449 casos, el 95% en países no industriales. Pero una caída de la cuenta capital financiada con reservas no es un sudden stop, porque no fuerza el ajuste. Por eso el segundo filtro exige que la cuenta corriente mejore al menos un 2% del PIB ese año, el siguiente o en ambos. Quedan 376 episodios.",
+    "La lista es heterogénea. Los más grandes incluyen a Kuwait en 1992, con una caída de la cuenta capital del 235% del PIB; entre las economías grandes aparecen México en 1982 (8,6%) y 1995 (6,5%), Corea en 1997 (7,5%) e Indonesia en 1997 (6,8%)."
+   ],
+   "eq": [
+    "SS_{it} = 1 \\iff \\Delta\\left(\\frac{KA}{Y}\\right)_{it} \\le -5\\% \\;\\text{ y }\\; \\Delta\\left(\\frac{CA}{Y}\\right)_{it} \\ge 2\\%"
+   ],
+   "nota": "KA/Y es la cuenta capital sobre el PIB y CA/Y la cuenta corriente sobre el PIB. La mejora de la cuenta corriente puede darse en el año del episodio, en el siguiente o sumando ambos. La notación es nuestra; el artículo describe los filtros en palabras."
+  },
+  {
+   "t": "El modelo: un probit con los fundamentos",
+   "p": [
+    "Para saber si el régimen importa, primero hay que controlar por lo que ya sabemos que causa un sudden stop: los fundamentos. La variable dependiente vale 1 si hay episodio. Los regresores son el crecimiento del PIB del año y del anterior, el resultado fiscal sobre el PIB rezagado, la variación de los términos de intercambio rezagada, la cuenta corriente sobre el PIB rezagada y el tamaño del país, medido como su PIB en dólares sobre el de Estados Unidos. Todas las regresiones incluyen dummies por año.",
+    "Sobre esa base se agrega una dummy de tipo de cambio fijo según LYS, en tres versiones: fijo en el año del episodio, fijo en el año anterior, o fijo en ambos años. La última es la más exigente, porque evita contar como fijos a países que abandonaron el régimen justo durante la crisis. En otra especificación se agrega una dummy de crisis bancaria, un fenómeno que suele acompañar a los sudden stops y a la caída de los tipos fijos."
+   ],
+   "eq": [
+    "\\Pr(SS_{it}=1) = \\Phi\\left(\\beta_0 + \\gamma\\,FIX_{it} + \\beta_1 \\frac{CA}{Y}_{i,t-1} + \\beta_2 g_{it} + \\beta_3 g_{i,t-1} + \\beta_4 \\frac{DEF}{Y}_{i,t-1} + \\beta_5 \\Delta \\ln TT_{i,t-1} + \\beta_6 SIZE_{it} + \\delta_t\\right)"
+   ],
+   "nota": "\\(\\Phi\\) es la función de distribución normal; \\(g\\) es el crecimiento del PIB; \\(DEF/Y\\), el resultado fiscal; \\(TT\\), los términos de intercambio; \\(\\delta_t\\), las dummies por año. La hipótesis de Calvo implica \\(\\gamma>0\\)."
+  },
+  {
+   "t": "Qué encontró",
+   "p": [
+    "Los fundamentos funcionan como se espera, salvo el resultado fiscal. Un déficit de cuenta corriente y un menor crecimiento aumentan la probabilidad de un sudden stop; una mejora de los términos de intercambio la reduce, aunque no es significativa. El coeficiente del tamaño es negativo y significativo: los sudden stops son un fenómeno de países chicos. El ajuste es bajo, con un R² entre 0,04 y 0,11, algo habitual en modelos de eventos raros.",
+    "A primera vista, el régimen importa. Tener tipo fijo el año anterior aumenta la probabilidad de un episodio (coeficiente de 0,026, significativo al 10%), y la dummy de fijo en ambos años se mantiene positiva (0,025, también al 10%) cuando se controla por crisis bancarias, que tienen un efecto fuerte (0,073, al 1%).",
+    "El resultado clave aparece al partir la muestra. Si se restringe a países cuyo PIB supera el 2% o el 1% del de Estados Unidos, el efecto del régimen desaparece (coeficientes de 0,004 y −0,005). En los países chicos, en cambio, se refuerza: 0,040, significativo al 5%. La conclusión es que un tipo de cambio fijo deja más expuestos a flujos de capital volátiles solo a los países pequeños.",
+    "El resultado discute con Calvo, Izquierdo y Mejía (2003), para quienes solo importan la capacidad de la economía real para absorber shocks y la dolarización financiera. Aquí el crecimiento y las cuentas externas son siempre significativos, y una medida de dolarización (los pasivos externos de los bancos locales) no tiene efecto. Coinciden en que el régimen es irrelevante para los países relativamente grandes."
+   ],
+   "nota": "En el texto, las submuestras de países grandes se mencionan como columnas (vii) y (viii), pero en el cuadro los coeficientes no significativos están en (vi) y (vii), con 404 y 582 observaciones, y el de países chicos en (viii), con 1.269. El brief sigue lo que muestra el cuadro."
+  },
+  {
+   "t": "Límites y lectura crítica",
+   "p": [
+    "El autor discute la objeción obvia: la causalidad podría ir al revés. Los países chicos, que sufren grandes oscilaciones en sus flujos, podrían elegir un régimen pensando en esos shocks. Pero, argumenta, si eligieran pensando en amortiguarlos, elegirían flotar. Por eso es difícil que la relación entre régimen fijo y sudden stop venga de los flujos hacia el régimen.",
+    "Hay otros límites que conviene tener presentes (lectura propia). Los efectos son pequeños y en su mayoría significativos solo al 10%. El artículo muestra que los fijos sufren más sudden stops, pero no estima cuánto del diferencial de crecimiento de 0,7 a 1 punto se explica por ese canal: el paso de la frenada al menor crecimiento queda apoyado en la literatura, no medido. Y el corte entre país grande y chico depende de un umbral (1% o 2% del PIB de Estados Unidos) elegido por el autor."
+   ]
+  },
+  {
+   "t": "Qué implica",
+   "p": [
+    "La recomendación es concreta. Muchos países chicos eligen un tipo fijo por motivos atendibles: porque su comercio está concentrado con un socio o porque necesitan credibilidad. Si el canal que reduce el crecimiento es la mayor exposición a los sudden stops, esos países no tienen por qué abandonar el régimen; tienen que concentrarse en reducir la volatilidad a la que quedan expuestos por haberlo elegido.",
+    "Para la Argentina, el artículo dialoga con la experiencia de la Convertibilidad, citada como ejemplo de ancla dura dentro de la visión bipolar. El siguiente brief de esta ruta, Grandes y Reisen (2005), compara justamente ese régimen con la flotación administrada de México y Brasil, y mira por qué canales el régimen pudo afectar el crecimiento."
+   ]
+  }
+ ],
+ "claves": [
+  "Después de Bretton Woods, los regímenes fijos crecen entre 0,7 y 1 punto por año menos y tienen un producto más volátil (Levy Yeyati y Sturzenegger).",
+  "Tres explicaciones: amplificación de los shocks, respuesta asimétrica con precios rígidos y mayor exposición a sudden stops (Calvo).",
+  "Un sudden stop exige dos cosas: la cuenta capital cae al menos 5% del PIB y la cuenta corriente mejora al menos 2%. Hay 376 episodios desde 1974.",
+  "En un probit con fundamentos, el tipo fijo eleva la probabilidad de sudden stop solo en países chicos; en los grandes el efecto desaparece.",
+  "Implicancia: el país chico que fija por otros motivos debe trabajar en reducir su exposición a flujos volátiles."
+ ],
+ "preguntas": [
+  {
+   "id": "tc-reg-01-q1",
+   "q": {
+    "es": "¿Qué hipótesis pone a prueba Sturzenegger para explicar el menor crecimiento de los regímenes fijos?",
+    "en": "Which hypothesis does Sturzenegger test to explain the lower growth of fixed regimes?"
+   },
+   "op": {
+    "es": [
+     "Que los fijos generan más inflación",
+     "Que los fijos están más expuestos a sudden stops",
+     "Que los fijos tienen menos comercio exterior",
+     "Que los fijos eligen peores políticas fiscales"
+    ],
+    "en": [
+     "That pegs generate more inflation",
+     "That pegs are more exposed to sudden stops",
+     "That pegs trade less",
+     "That pegs choose worse fiscal policies"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la hipótesis de Calvo (1998): los shocks no serían independientes del régimen, y los fijos atraerían más frenadas de capitales.",
+    "en": "It is Calvo's (1998) hypothesis: shocks would not be independent of the regime, and pegs would attract more capital stops."
+   }
+  },
+  {
+   "id": "tc-reg-01-q2",
+   "q": {
+    "es": "¿Por qué una caída de la cuenta capital financiada con reservas no cuenta como sudden stop?",
+    "en": "Why does a fall in the capital account financed with reserves not count as a sudden stop?"
+   },
+   "op": {
+    "es": [
+     "Porque las reservas no figuran en la balanza de pagos",
+     "Porque solo ocurre en países industriales",
+     "Porque no obliga al ajuste interno que define al sudden stop",
+     "Porque siempre es menor al 5% del PIB"
+    ],
+    "en": [
+     "Because reserves are not in the balance of payments",
+     "Because it only happens in industrial countries",
+     "Because it does not force the domestic adjustment that defines a sudden stop",
+     "Because it is always below 5% of GDP"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si las reservas cubren la salida, la economía no tiene que achicar el gasto. Por eso el segundo filtro exige que la cuenta corriente mejore al menos 2% del PIB.",
+    "en": "If reserves cover the outflow, the economy does not need to cut spending. That is why the second filter requires the current account to improve by at least 2% of GDP."
+   }
+  },
+  {
+   "id": "tc-reg-01-q3",
+   "q": {
+    "es": "Según Calvo (2001), ¿qué parte de un sudden stop causa el mayor daño a la economía?",
+    "en": "According to Calvo (2001), which part of a sudden stop does the most damage to the economy?"
+   },
+   "op": {
+    "es": [
+     "La reducción del déficit de cuenta corriente, que obliga a recortar la demanda agregada",
+     "La suba de los términos de intercambio",
+     "La entrada previa de capitales",
+     "La depreciación del dólar en el mundo"
+    ],
+    "en": [
+     "Cutting the current-account deficit, which forces aggregate demand down",
+     "The rise in the terms of trade",
+     "The previous capital inflow",
+     "The global depreciation of the dollar"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Para ajustarse a la interrupción de los flujos, el país reduce su gasto total, y eso se traduce en caídas profundas del producto y del empleo.",
+    "en": "To adjust to the interruption of flows, the country cuts total spending, which translates into deep falls in output and employment."
+   }
+  },
+  {
+   "id": "tc-reg-01-q4",
+   "q": {
+    "es": "¿Cuántos episodios de sudden stop quedan después de aplicar los dos filtros, desde 1974?",
+    "en": "How many sudden-stop episodes remain after applying both filters, since 1974?"
+   },
+   "op": {
+    "es": [
+     "3.579",
+     "449",
+     "1.027",
+     "376"
+    ],
+    "en": [
+     "3,579",
+     "449",
+     "1,027",
+     "376"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El primer filtro (caída de la cuenta capital de al menos 5% del PIB) deja 449 casos; el segundo (mejora de la cuenta corriente) los reduce a 376.",
+    "en": "The first filter (capital account down at least 5% of GDP) leaves 449 cases; the second (current-account improvement) cuts them to 376."
+   }
+  },
+  {
+   "id": "tc-reg-01-q5",
+   "q": {
+    "es": "¿Qué indica el coeficiente negativo y significativo de la variable de tamaño en el probit?",
+    "en": "What does the negative and significant coefficient on the size variable in the probit indicate?"
+   },
+   "op": {
+    "es": [
+     "Que los países grandes sufren más sudden stops",
+     "Que los sudden stops son un fenómeno de países chicos",
+     "Que el tamaño no importa",
+     "Que los países chicos tienen menos déficit fiscal"
+    ],
+    "en": [
+     "That large countries suffer more sudden stops",
+     "That sudden stops are a small-country phenomenon",
+     "That size does not matter",
+     "That small countries have smaller fiscal deficits"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "A mayor PIB relativo al de Estados Unidos, menor probabilidad de un episodio: los flujos de capital pesan más en las economías pequeñas.",
+    "en": "The larger GDP relative to the US, the lower the probability of an episode: capital flows weigh more in small economies."
+   }
+  },
+  {
+   "id": "tc-reg-01-q6",
+   "q": {
+    "es": "¿Qué pasa con el efecto del tipo de cambio fijo cuando la muestra se limita a países grandes?",
+    "en": "What happens to the effect of a fixed exchange rate when the sample is limited to large countries?"
+   },
+   "op": {
+    "es": [
+     "Se duplica",
+     "Se vuelve negativo y significativo",
+     "Desaparece",
+     "Solo aparece con la clasificación del FMI"
+    ],
+    "en": [
+     "It doubles",
+     "It turns negative and significant",
+     "It disappears",
+     "It only appears with the IMF classification"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con países cuyo PIB supera el 1% o el 2% del de Estados Unidos, el coeficiente es casi cero; en los chicos sube a 0,040, significativo al 5%.",
+    "en": "With countries whose GDP exceeds 1% or 2% of the US, the coefficient is near zero; for small ones it rises to 0.040, significant at 5%."
+   }
+  },
+  {
+   "id": "tc-reg-01-q7",
+   "q": {
+    "es": "¿Cómo responde el autor a la objeción de causalidad inversa?",
+    "en": "How does the author answer the reverse-causality objection?"
+   },
+   "op": {
+    "es": [
+     "Si los países eligieran el régimen por sus flujos volátiles, elegirían flotar, no fijar",
+     "Usando variables instrumentales",
+     "Excluyendo a los países chicos",
+     "Diciendo que el régimen no se puede elegir"
+    ],
+    "en": [
+     "If countries chose the regime because of volatile flows, they would float, not peg",
+     "By using instrumental variables",
+     "By excluding small countries",
+     "By saying the regime cannot be chosen"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un régimen elegido para atemperar shocks de capitales sería flexible, así que la asociación entre tipo fijo y sudden stop difícilmente venga de los flujos hacia el régimen.",
+    "en": "A regime chosen to cushion capital shocks would be flexible, so the link between pegs and sudden stops is unlikely to run from flows to the regime."
+   }
+  },
+  {
+   "id": "tc-reg-01-q8",
+   "q": {
+    "es": "Un país chico fija su tipo de cambio porque casi todo su comercio es con un socio. ¿Qué recomienda el artículo?",
+    "en": "A small country pegs because almost all its trade is with one partner. What does the article recommend?"
+   },
+   "op": {
+    "es": [
+     "Abandonar el tipo fijo de inmediato",
+     "Dolarizar para eliminar el riesgo",
+     "Aumentar el déficit fiscal para sostener la demanda",
+     "Mantener el régimen y trabajar en reducir su exposición a flujos volátiles"
+    ],
+    "en": [
+     "Abandon the peg immediately",
+     "Dollarize to remove the risk",
+     "Raise the fiscal deficit to support demand",
+     "Keep the regime and work on reducing its exposure to volatile flows"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si el canal es la exposición a sudden stops, quien fija por otros motivos debe neutralizar ese canal en lugar de cambiar de régimen.",
+    "en": "If the channel is exposure to sudden stops, a country that pegs for other reasons should neutralize that channel rather than switch regimes."
+   }
+  }
+ ],
+ "palabras": 1539,
+ "tarjetas": [
+  {
+   "id": "tc-reg-01-t1",
+   "tipo": "resultado",
+   "q": {
+    "es": "Después de Bretton Woods, ¿los regímenes de tipo de cambio fijo crecieron más o menos que los flexibles, y en qué orden de magnitud?",
+    "en": "After Bretton Woods, did fixed exchange-rate regimes grow more or less than flexible ones, and by roughly how much?"
+   },
+   "a": {
+    "es": "Menos: entre 0,7 y 1 punto porcentual por año, con un producto más volátil, sobre todo en países no industriales. Lo estiman Levy Yeyati y Sturzenegger (2001, 2003), y Sturzenegger (2003) lo toma como el hecho a explicar.",
+    "en": "Less: between 0.7 and 1 percentage point a year, with more volatile output, especially in non-industrial countries. Levy Yeyati and Sturzenegger (2001, 2003) estimate it, and Sturzenegger (2003) takes it as the fact to explain."
+   }
+  },
+  {
+   "id": "tc-reg-01-t2",
+   "tipo": "mecanismo",
+   "q": {
+    "es": "Con precios rígidos, ¿por qué un tipo de cambio fijo puede sesgar el crecimiento hacia abajo aunque los shocks sean simétricos?",
+    "en": "With sticky prices, why can a fixed exchange rate bias growth downward even if shocks are symmetric?"
+   },
+   "a": {
+    "es": "Porque los shocks negativos se ajustan por cantidades (cae el producto) y los positivos por precios (sube la inflación). Edwards y Levy Yeyati (2003) muestran que los regímenes rígidos amplifican más los shocks negativos de términos de intercambio, como resume Sturzenegger (2003).",
+    "en": "Because negative shocks adjust through quantities (output falls) and positive ones through prices (inflation rises). Edwards and Levy Yeyati (2003) show that rigid regimes amplify negative terms-of-trade shocks more, as Sturzenegger (2003) summarizes."
+   }
+  },
+  {
+   "id": "tc-reg-01-t3",
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un sudden stop y por qué es tan costoso para una economía emergente?",
+    "en": "What is a sudden stop and why is it so costly for an emerging economy?"
+   },
+   "a": {
+    "es": "Una caída violenta en la entrada de capitales que obliga a achicar rápido el déficit de cuenta corriente, recortando el gasto total, con caídas fuertes del producto y del empleo. En Tailandia, en 1997, la caída de los flujos equivalió al 26% del PIB (Calvo, 2001, citado por Sturzenegger, 2003).",
+    "en": "A violent fall in capital inflows that forces a rapid cut in the current-account deficit by reducing total spending, with sharp falls in output and employment. In Thailand in 1997 the fall in flows equaled 26% of GDP (Calvo, 2001, cited by Sturzenegger, 2003)."
+   }
+  },
+  {
+   "id": "tc-reg-01-t4",
+   "tipo": "econometria",
+   "q": {
+    "es": "Para identificar sudden stops en los datos, ¿por qué no alcanza con una caída grande de la cuenta capital?",
+    "en": "To identify sudden stops in the data, why is a large fall in the capital account not enough?"
+   },
+   "a": {
+    "es": "Porque si se financia con reservas no fuerza el ajuste. Sturzenegger (2003) exige además que la cuenta corriente mejore al menos 2% del PIB; así, de 449 caídas de la cuenta capital de 5% del PIB o más, quedan 376 episodios.",
+    "en": "Because if it is financed with reserves it forces no adjustment. Sturzenegger (2003) also requires the current account to improve by at least 2% of GDP; of 449 capital-account falls of 5% of GDP or more, 376 episodes remain."
+   }
+  },
+  {
+   "id": "tc-reg-01-t5",
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Fijar el tipo de cambio aumenta la probabilidad de un sudden stop en cualquier país?",
+    "en": "Does pegging raise the probability of a sudden stop in any country?"
+   },
+   "a": {
+    "es": "No: solo en los países chicos. Sturzenegger (2003) encuentra un efecto de 0,040, significativo al 5%, en los países pequeños, y ninguno cuando la muestra se limita a países con un PIB mayor al 1% o al 2% del de Estados Unidos.",
+    "en": "No: only in small countries. Sturzenegger (2003) finds an effect of 0.040, significant at 5%, in small countries, and none when the sample is limited to countries with GDP above 1% or 2% of the US."
+   }
+  },
+  {
+   "id": "tc-reg-01-t6",
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Si un país chico necesita un tipo fijo por credibilidad, ¿qué debería atender para no sacrificar crecimiento?",
+    "en": "If a small country needs a peg for credibility, what should it address to avoid sacrificing growth?"
+   },
+   "a": {
+    "es": "Su exposición a flujos de capital volátiles, que es el canal por el que el tipo fijo reduciría el crecimiento. Es la conclusión de Sturzenegger (2003): neutralizar el canal en lugar de abandonar el régimen.",
+    "en": "Its exposure to volatile capital flows, the channel through which the peg would reduce growth. That is Sturzenegger's (2003) conclusion: neutralize the channel rather than abandon the regime."
+   }
+  }
+ ]
+}

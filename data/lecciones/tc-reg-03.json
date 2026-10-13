@@ -1,0 +1,367 @@
+{
+ "id": "tc-reg-03",
+ "cat": "tc-reg",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "¿Qué es un tipo de cambio fijo? Clasificar regímenes: Lasarte y Pérez (2011)",
+ "bajada": "Cada clasificación de regímenes cambiarios da un resultado distinto sobre el crecimiento. Lasarte y Pérez arman una clasificación de consenso, estiman con System-GMM y no encuentran efecto.",
+ "fuentes": [
+  1221,
+  90
+ ],
+ "cita": "Lasarte y Pérez (2011)",
+ "intro": "Si se pregunta si los países con tipo de cambio fijo crecen más o menos, la literatura responde de todas las formas posibles. Elena Lasarte y José Luis Pérez, de la Universidad de Oviedo, revisan 26 trabajos y encuentran unos diez sin efecto, ocho con efecto positivo de los regímenes fijos y siete con efecto negativo. Su diagnóstico es que el problema principal no está en los datos ni en la econometría sino en algo previo: qué cuenta como tipo de cambio fijo. Cada clasificación etiqueta de manera distinta a los mismos países. La propuesta del trabajo es quedarse solo con los casos en los que todas las clasificaciones coinciden, estimar con un método robusto a la endogeneidad y ver qué queda. Para 147 países en desarrollo entre 1970 y 2007, la respuesta es: nada.",
+ "secciones": [
+  {
+   "t": "Por qué la teoría no alcanza",
+   "p": [
+    "La teoría ofrece argumentos para todos los gustos. La neutralidad del dinero dice que en el largo plazo una variable nominal como el régimen cambiario no afecta el crecimiento. En plazos más cortos, un régimen fijo podría ayudar al crecimiento al bajar la inflación, aumentar el comercio, reducir las tasas de interés, atraer inversión extranjera o profundizar el sistema financiero. Pero también podría dañarlo, por la mayor propensión a las crisis cambiarias, por las políticas que exige sostenerlo o por la mayor volatilidad del producto. Los regímenes flexibles absorben mejor los shocks reales, a cambio de más volatilidad de los tipos de cambio nominal y real.",
+    "Como desde la teoría casi todo es posible, la pregunta se volvió empírica. La forma habitual de responderla es agregar una variable de régimen cambiario a una regresión de determinantes del crecimiento al estilo de Barro (1991). Ahí apareció el primer problema serio: muchos países no hacían lo que declaraban al FMI (Calvo y Reinhart, 2002), y cada autor tuvo que construir su propia manera de identificar el régimen efectivo. Solo en los trabajos que revisan aparecen 14 clasificaciones distintas."
+   ]
+  },
+  {
+   "t": "Tres sospechosos para tanta discrepancia",
+   "p": [
+    "Las diferencias de resultados podrían venir de tres fuentes. La primera son los datos: países, períodos, frecuencias y fuentes distintas. Pero los trabajos que hacen pruebas de robustez sobre esas dimensiones, como Aghion y otros (2006) o Petreski (2009), no ven cambiar sus resultados básicos. La segunda son los métodos de estimación, y tampoco parecen ser la causa: quienes prueban varios métodos llegan a las mismas conclusiones.",
+    "La tercera es la clasificación, y la evidencia la señala con fuerza. Levy Yeyati y Sturzenegger obtienen resultados distintos con su clasificación y con la del FMI. Harms y Kretschmann (2009) hacen el experimento más claro: con la misma muestra, el mismo método y la misma especificación, cada clasificación da un resultado distinto, y cada una reproduce el que habían encontrado sus propios autores. Rose (2010) confirma el hallazgo y lo califica de inquietante: o esta literatura es irrelevante, o hay que encontrar una salida al laberinto de las clasificaciones."
+   ]
+  },
+  {
+   "t": "Cinco maneras de decir «fijo»",
+   "p": [
+    "El trabajo usa las cinco clasificaciones más influyentes y con más datos. El FMI publicó hasta 1998 una clasificación de jure, basada en lo que cada país declaraba; desde noviembre de 1998 publica una de facto, revisada en 2009. Ghosh, Gulde y Wolf (GGW, 2002) arman una de consenso: solo aceptan una observación cuando la clasificación de jure y su propia clasificación de facto coinciden. Levy Yeyati y Sturzenegger (LYS, 2005) clasifican según el grado de intervención: un tipo fijo se reconoce porque las reservas se mueven y el tipo de cambio no; usan la volatilidad del tipo de cambio, la de sus variaciones y la de las reservas respecto del dinero, para 183 países. Reinhart y Rogoff (RR, 2004) construyen una clasificación «natural» que usa el tipo de cambio relevante, el oficial o el paralelo si este existe y tiene peso, para 153 países desde 1946. Klein y Shambaugh (KS) parten de la idea de que solo el tipo fijo está bien definido: un país fija si su tipo de cambio se mantiene dentro de una banda de ±2% mensual durante al menos un año.",
+    "Los desacuerdos son grandes. Nepal en 1988 es un ancla dura para el FMI, un régimen intermedio para LYS, un ancla blanda para RR, un tipo fijo para KS y un no fijo para GGW. Zambia en 1976 es ancla dura para el FMI y flotante para LYS. Si se pasan todas las clasificaciones a la dicotomía fijo/no fijo, la del FMI es la que más se aparta: su correlación con las demás va de 0,33 a 0,55. Las más parecidas son GGW, KS y LYS, con correlaciones entre 0,63 y 0,73."
+   ],
+   "nota": "Una correlación de 0,33 entre FMI y RR indica un acuerdo débil sobre qué años de qué países fueron de tipo fijo. Con ese grado de desacuerdo, cambiar de clasificación se parece mucho a cambiar de muestra."
+  },
+  {
+   "t": "La propuesta: una clasificación inequívoca",
+   "p": [
+    "La salida es exigir unanimidad. Primero cada clasificación se lleva a dos categorías, fijo y no fijo. Después se construye la variable Fix_all, que considera fijo a un país en un año solo si lo clasifican como fijo todas las clasificaciones disponibles, con un mínimo de tres. Con este criterio estricto, el 31% de las observaciones son de tipo fijo. Como esto achica la muestra, se construye una versión relajada, Fix, que acepta una disidencia: fijo en cuatro de cinco, en tres de cuatro o en dos de tres clasificaciones. Así el porcentaje de fijos sube a algo más del 43%.",
+    "Para los promedios de cinco y de diez años, un período cuenta como fijo si el país fue fijo al menos el 60% del tiempo. Un índice de rigidez, el porcentaje de años en que el país fue fijo, va de 0 a 92,1%: ningún país en desarrollo tuvo tipo fijo en todo el período 1970-2007."
+   ],
+   "eq": [
+    "Fix\\_all_{it} = 1 \\iff \\sum_{k=1}^{n_{it}} F_{kit} = n_{it},\\quad n_{it} \\ge 3"
+   ],
+   "nota": "\\(F_{kit}\\) vale 1 si la clasificación \\(k\\) considera fijo al país \\(i\\) en el año \\(t\\), y \\(n_{it}\\) es la cantidad de clasificaciones con dato para esa observación. La versión relajada Fix exige \\(\\sum F_{kit} \\ge n_{it}-1\\). La notación es nuestra; el trabajo describe el criterio en palabras."
+  },
+  {
+   "t": "El modelo y por qué System-GMM",
+   "p": [
+    "La ecuación es la estándar de la literatura de crecimiento: el crecimiento del PIB real per cápita depende de efectos fijos por país, dummies por año, un conjunto de controles y la variable de régimen cambiario. Los controles son la inflación, la tasa de inversión, el crecimiento y el tamaño de la población, el PIB per cápita inicial, la apertura, el consumo del gobierno y los años de educación secundaria de la población adulta.",
+    "La elección del estimador importa porque los controles son endógenos: el crecimiento afecta a la inversión tanto como la inversión al crecimiento. El MCO agrupado ignora el problema. Los efectos fijos corrigen la heterogeneidad no observada pero no la endogeneidad. Las variables instrumentales necesitan instrumentos para el régimen que la literatura no encontró. El método generalizado de momentos usa como instrumentos los rezagos de las propias variables y no requiere normalidad, pero exige que no haya autocorrelación de segundo orden en los errores. Su variante System-GMM, que estima a la vez en niveles y en diferencias, es la menos sesgada y la más eficiente; los autores la usan como estimación principal y muestran MCO y efectos fijos como contraste."
+   ],
+   "eq": [
+    "g_{it} = \\alpha_i + \\lambda_t + X_{it}'\\beta + \\gamma\\,RC_{it} + \\varepsilon_{it}"
+   ],
+   "nota": "\\(g_{it}\\) es el crecimiento del PIB real per cápita del país \\(i\\) en el período \\(t\\); \\(\\alpha_i\\), los efectos fijos de país; \\(\\lambda_t\\), las dummies temporales; \\(X_{it}\\), los controles; \\(RC_{it}\\), la dummy de régimen fijo (Fix o Fix_all); \\(\\varepsilon_{it}\\), el error. La pregunta es si \\(\\gamma\\) es distinto de cero."
+  },
+  {
+   "t": "Resultados: el régimen no aparece",
+   "p": [
+    "La estimación de referencia es System-GMM con promedios de cinco años, que evita que el ciclo económico contamine los resultados y deja suficientes períodos. Las pruebas son correctas: el test de Arellano-Bond no detecta autocorrelación de segundo orden (p-valor de 0,19 y 0,26) y el de Hansen no rechaza la validez de los instrumentos. Los controles se comportan como en la literatura: la inversión (coeficiente 0,21) y la educación suman al crecimiento; la inflación (−0,08) y el consumo del gobierno (−0,17) restan. Y el régimen no importa: Fix tiene un coeficiente de 0,0000 (p-valor 0,99) y Fix_all de 0,005 (p-valor 0,36).",
+    "El resultado se sostiene con MCO y efectos fijos, con promedios de diez años y con una regresión de corte transversal para todo el período a la Barro. Solo con datos anuales aparecen dos coeficientes significativos y débiles, y los datos anuales son los menos adecuados para estudiar crecimiento de largo plazo.",
+    "Por último, buscan efectos indirectos con términos de interacción. Con la inversión no aparece nada. Con la inflación, la interacción con Fix_all es positiva y significativa (0,14 en System-GMM, al 10%). Los autores lo leen como un posible efecto positivo de los regímenes fijos más nítidos a través de su contribución a bajar la inflación. Dicho de otro modo (lectura propia), en los casos de tipo fijo inequívoco la inflación parece dañar menos al crecimiento."
+   ]
+  },
+  {
+   "t": "Qué deja y qué falta",
+   "p": [
+    "La conclusión es fuerte: cuando el régimen fijo se identifica sin ambigüedad, no tiene una influencia directa apreciable sobre el crecimiento de los países en desarrollo. Los propios autores marcan lo que queda pendiente. Puede haber efectos de corto plazo, pero su lugar es la relación entre shocks y régimen cambiario, no una ecuación de crecimiento. El miedo a flotar de Calvo y Reinhart merece revisarse con esta clasificación. Y la categoría «no fijo» es todavía un cajón de sastre que mezcla intermedios y flotantes.",
+    "Una objeción posible (lectura propia) es que quedarse solo con los casos de unanimidad selecciona los tipos fijos más claros, que pueden ser distintos del resto: países que fijan de verdad durante mucho tiempo. Y comparar contra un «no fijo» heterogéneo puede esconder diferencias entre flotar e intervenir. El cuarto brief de esta ruta, Bermúdez y Dabús (2015), vuelve sobre el resultado de Levy Yeyati y Sturzenegger con la misma herramienta, System-GMM, y mira qué pasa en América Latina."
+   ]
+  }
+ ],
+ "claves": [
+  "De 26 trabajos, unos diez no encuentran efecto, ocho encuentran efecto positivo de los fijos y siete negativo: la literatura no se pone de acuerdo.",
+  "La causa principal de la discrepancia es la clasificación: con la misma muestra y el mismo método, cada clasificación reproduce el resultado de sus autores.",
+  "Fix_all exige que todas las clasificaciones (al menos tres) digan «fijo»: 31% de las observaciones. Fix acepta una disidencia: algo más del 43%.",
+  "Con System-GMM y promedios de cinco años, el régimen fijo no tiene efecto sobre el crecimiento (Fix: p = 0,99; Fix_all: p = 0,36).",
+  "La única pista de efecto indirecto es la interacción con la inflación en los fijos inequívocos."
+ ],
+ "preguntas": [
+  {
+   "id": "tc-reg-03-q1",
+   "q": {
+    "es": "Según Lasarte y Pérez, ¿cuál es la causa más probable de los resultados contradictorios sobre régimen cambiario y crecimiento?",
+    "en": "According to Lasarte and Pérez, what is the most likely cause of the contradictory results on exchange-rate regimes and growth?"
+   },
+   "op": {
+    "es": [
+     "Los distintos períodos de los datos",
+     "Los distintos métodos de estimación",
+     "Las distintas formas de clasificar el régimen cambiario",
+     "El uso de datos anuales en lugar de quinquenales"
+    ],
+    "en": [
+     "The different data periods",
+     "The different estimation methods",
+     "The different ways of classifying the exchange-rate regime",
+     "Using annual instead of five-year data"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las pruebas de robustez sobre datos y métodos no cambian los resultados; cambiar de clasificación, sí.",
+    "en": "Robustness checks on data and methods do not change the results; changing the classification does."
+   }
+  },
+  {
+   "id": "tc-reg-03-q2",
+   "q": {
+    "es": "¿Qué mostró el experimento de Harms y Kretschmann (2009)?",
+    "en": "What did Harms and Kretschmann's (2009) experiment show?"
+   },
+   "op": {
+    "es": [
+     "Con la misma muestra y método, cada clasificación da el resultado que habían encontrado sus autores",
+     "Que todas las clasificaciones de facto coinciden",
+     "Que el FMI clasifica mejor que los académicos",
+     "Que los regímenes fijos siempre crecen menos"
+    ],
+    "en": [
+     "With the same sample and method, each classification yields the result its authors had found",
+     "That all de facto classifications agree",
+     "That the IMF classifies better than academics",
+     "That fixed regimes always grow less"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Al fijar todo lo demás y cambiar solo la clasificación, el resultado cambia: la clasificación es la que manda.",
+    "en": "Holding everything else fixed and changing only the classification, the result changes: the classification drives it."
+   }
+  },
+  {
+   "id": "tc-reg-03-q3",
+   "q": {
+    "es": "¿Cómo identifica un tipo de cambio fijo la clasificación de Levy Yeyati y Sturzenegger?",
+    "en": "How does the Levy Yeyati and Sturzenegger classification identify a fixed exchange rate?"
+   },
+   "op": {
+    "es": [
+     "Por lo que el país declara al FMI",
+     "Por la existencia de un mercado paralelo",
+     "Por una banda de ±2% durante un año",
+     "Porque el tipo de cambio se mueve poco y las reservas se mueven mucho"
+    ],
+    "en": [
+     "By what the country declares to the IMF",
+     "By the existence of a parallel market",
+     "By a ±2% band for a year",
+     "Because the exchange rate moves little and reserves move a lot"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "LYS miden el grado de intervención: para sostener el tipo de cambio, el banco central tiene que usar sus reservas. La banda de ±2% es el criterio de Klein y Shambaugh.",
+    "en": "LYS measure intervention: to hold the rate, the central bank must use its reserves. The ±2% band is Klein and Shambaugh's criterion."
+   }
+  },
+  {
+   "id": "tc-reg-03-q4",
+   "q": {
+    "es": "¿Qué exige la variable Fix_all para considerar fijo a un país en un año?",
+    "en": "What does the Fix_all variable require to classify a country as fixed in a year?"
+   },
+   "op": {
+    "es": [
+     "Que al menos una clasificación lo considere fijo",
+     "Que todas las clasificaciones disponibles, con un mínimo de tres, lo consideren fijo",
+     "Que lo considere fijo el FMI",
+     "Que haya sido fijo durante todo el período 1970-2007"
+    ],
+    "en": [
+     "That at least one classification calls it fixed",
+     "That all available classifications, at least three, call it fixed",
+     "That the IMF calls it fixed",
+     "That it was fixed throughout 1970-2007"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el criterio de unanimidad; con él, el 31% de las observaciones son fijas. La versión Fix acepta una clasificación en desacuerdo.",
+    "en": "It is the unanimity criterion; with it, 31% of observations are fixed. The Fix version allows one dissenting classification."
+   }
+  },
+  {
+   "id": "tc-reg-03-q5",
+   "q": {
+    "es": "¿Por qué los autores prefieren System-GMM a los efectos fijos?",
+    "en": "Why do the authors prefer System-GMM to fixed effects?"
+   },
+   "op": {
+    "es": [
+     "Porque los efectos fijos corrigen la heterogeneidad no observada pero no la endogeneidad de los controles",
+     "Porque los efectos fijos no pueden incluir dummies",
+     "Porque System-GMM no necesita controles",
+     "Porque System-GMM funciona mejor con pocas observaciones por país"
+    ],
+    "en": [
+     "Because fixed effects correct unobserved heterogeneity but not the endogeneity of the controls",
+     "Because fixed effects cannot include dummies",
+     "Because System-GMM needs no controls",
+     "Because System-GMM works better with few observations per country"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "System-GMM usa rezagos de las variables como instrumentos para tratar la endogeneidad, y estima en niveles y diferencias para ganar eficiencia.",
+    "en": "System-GMM uses lagged variables as instruments to address endogeneity, and estimates in levels and differences to gain efficiency."
+   }
+  },
+  {
+   "id": "tc-reg-03-q6",
+   "q": {
+    "es": "¿Qué supuesto sobre los errores necesita el estimador GMM y cómo lo verifican?",
+    "en": "What assumption about the errors does the GMM estimator need, and how is it checked?"
+   },
+   "op": {
+    "es": [
+     "Normalidad, con el test de Jarque-Bera",
+     "Homocedasticidad, con el test de White",
+     "Ausencia de autocorrelación de segundo orden, con el test de Arellano-Bond",
+     "Estacionariedad, con el test de Dickey-Fuller"
+    ],
+    "en": [
+     "Normality, with the Jarque-Bera test",
+     "Homoskedasticity, with the White test",
+     "No second-order autocorrelation, with the Arellano-Bond test",
+     "Stationarity, with the Dickey-Fuller test"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "GMM no requiere normalidad y admite heterocedasticidad, pero si hubiera autocorrelación de segundo orden los rezagos dejarían de ser instrumentos válidos.",
+    "en": "GMM requires neither normality nor homoskedasticity, but with second-order autocorrelation the lags would no longer be valid instruments."
+   }
+  },
+  {
+   "id": "tc-reg-03-q7",
+   "q": {
+    "es": "En la estimación principal (System-GMM, promedios de cinco años), ¿qué resultado obtiene la variable de régimen fijo?",
+    "en": "In the main estimate (System-GMM, five-year averages), what result does the fixed-regime variable obtain?"
+   },
+   "op": {
+    "es": [
+     "Positiva y significativa al 1%",
+     "Negativa y significativa al 5%",
+     "Significativa solo para Fix_all",
+     "No significativa en ninguna de las dos versiones"
+    ],
+    "en": [
+     "Positive and significant at 1%",
+     "Negative and significant at 5%",
+     "Significant only for Fix_all",
+     "Not significant in either version"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Fix tiene un p-valor de 0,99 y Fix_all de 0,36, mientras inversión, inflación y consumo público sí son significativos.",
+    "en": "Fix has a p-value of 0.99 and Fix_all of 0.36, while investment, inflation and government consumption are significant."
+   }
+  },
+  {
+   "id": "tc-reg-03-q8",
+   "q": {
+    "es": "Un estudio encuentra que los tipos fijos crecen menos usando una sola clasificación. Según este trabajo, ¿qué conviene hacer antes de creerlo?",
+    "en": "A study finds that pegs grow less using a single classification. According to this paper, what should be done before believing it?"
+   },
+   "op": {
+    "es": [
+     "Repetirlo con datos anuales",
+     "Ver si el resultado sobrevive con otras clasificaciones o con una de consenso",
+     "Agregar más países industriales",
+     "Eliminar la inflación de los controles"
+    ],
+    "en": [
+     "Repeat it with annual data",
+     "Check whether the result survives other classifications or a consensus one",
+     "Add more industrial countries",
+     "Drop inflation from the controls"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Como cada clasificación etiqueta distinto a los mismos países, un resultado que depende de una sola puede ser un artefacto de la clasificación.",
+    "en": "Since each classification labels the same countries differently, a result that depends on one may be an artifact of the classification."
+   }
+  }
+ ],
+ "palabras": 1498,
+ "tarjetas": [
+  {
+   "id": "tc-reg-03-t1",
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia una clasificación de régimen cambiario de jure de una de facto?",
+    "en": "What distinguishes a de jure exchange-rate regime classification from a de facto one?"
+   },
+   "a": {
+    "es": "La de jure registra lo que el país declara (al FMI); la de facto, lo que efectivamente hace con su tipo de cambio y sus reservas. Muchos países no hacen lo que declaran (Calvo y Reinhart, 2002), y de ahí la proliferación de clasificaciones que revisan Lasarte y Pérez (2011).",
+    "en": "De jure records what the country declares (to the IMF); de facto, what it actually does with its exchange rate and reserves. Many countries do not do what they declare (Calvo and Reinhart, 2002), hence the many classifications reviewed by Lasarte and Pérez (2011)."
+   }
+  },
+  {
+   "id": "tc-reg-03-t2",
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué los estudios sobre régimen cambiario y crecimiento llegan a conclusiones opuestas?",
+    "en": "Why do studies on exchange-rate regimes and growth reach opposite conclusions?"
+   },
+   "a": {
+    "es": "Sobre todo porque clasifican distinto a los mismos países: con la misma muestra y el mismo método, cada clasificación reproduce el resultado de sus autores (Harms y Kretschmann, 2009). Lasarte y Pérez (2011) cuentan unos diez trabajos sin efecto, ocho positivos y siete negativos.",
+    "en": "Mainly because they classify the same countries differently: with the same sample and method, each classification reproduces its authors' result (Harms and Kretschmann, 2009). Lasarte and Pérez (2011) count about ten studies with no effect, eight positive and seven negative."
+   }
+  },
+  {
+   "id": "tc-reg-03-t3",
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se puede reconocer en los datos que un país sostiene un tipo de cambio fijo aunque no lo declare?",
+    "en": "How can the data reveal that a country holds a fixed exchange rate even if it does not declare it?"
+   },
+   "a": {
+    "es": "Porque su tipo de cambio se mueve poco mientras sus reservas se mueven mucho: el banco central interviene para sostenerlo. Es la idea de la clasificación de Levy Yeyati y Sturzenegger; Klein y Shambaugh usan en cambio una banda de ±2% mensual durante un año (Lasarte y Pérez, 2011).",
+    "en": "Because its exchange rate moves little while its reserves move a lot: the central bank intervenes to hold it. That is the idea of the Levy Yeyati and Sturzenegger classification; Klein and Shambaugh instead use a ±2% monthly band for a year (Lasarte and Pérez, 2011)."
+   }
+  },
+  {
+   "id": "tc-reg-03-t4",
+   "tipo": "econometria",
+   "q": {
+    "es": "En una regresión de crecimiento con panel, ¿qué problema resuelve System-GMM que no resuelven los efectos fijos?",
+    "en": "In a panel growth regression, what problem does System-GMM solve that fixed effects do not?"
+   },
+   "a": {
+    "es": "La endogeneidad de los regresores, como la inversión: usa sus rezagos como instrumentos y estima en niveles y en diferencias. Exige que no haya autocorrelación de segundo orden. Lasarte y Pérez (2011) lo usan como estimación principal.",
+    "en": "The endogeneity of regressors such as investment: it uses their lags as instruments and estimates in levels and differences. It requires no second-order autocorrelation. Lasarte and Pérez (2011) use it as their main estimate."
+   }
+  },
+  {
+   "id": "tc-reg-03-t5",
+   "tipo": "resultado",
+   "q": {
+    "es": "Cuando el tipo fijo se identifica sin ambigüedad, ¿afecta el crecimiento de los países en desarrollo?",
+    "en": "When a peg is identified unambiguously, does it affect growth in developing countries?"
+   },
+   "a": {
+    "es": "No de manera directa. Con 147 países en desarrollo entre 1970 y 2007 y System-GMM, Lasarte y Pérez (2011) obtienen coeficientes no significativos (p-valores de 0,99 y 0,36), robustos a métodos y frecuencias.",
+    "en": "Not directly. With 147 developing countries over 1970-2007 and System-GMM, Lasarte and Pérez (2011) get insignificant coefficients (p-values of 0.99 and 0.36), robust across methods and frequencies."
+   }
+  },
+  {
+   "id": "tc-reg-03-t6",
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué canal indirecto podría un tipo de cambio fijo favorecer el crecimiento?",
+    "en": "Through which indirect channel could a peg favor growth?"
+   },
+   "a": {
+    "es": "Por la reducción de la inflación. Lasarte y Pérez (2011) encuentran una interacción positiva entre inflación y régimen fijo inequívoco (0,14, significativa al 10% en System-GMM); con la inversión no aparece efecto indirecto.",
+    "en": "Through lower inflation. Lasarte and Pérez (2011) find a positive interaction between inflation and an unambiguous peg (0.14, significant at 10% in System-GMM); no indirect effect appears through investment."
+   }
+  }
+ ]
+}
