@@ -1,0 +1,365 @@
+{
+ "id": "ext-riesgo-02",
+ "cat": "ext-riesgo",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "¿Los bancos ponían precio al riesgo? Edwards (1983) y los spreads de los eurocréditos",
+ "bajada": "Con 727 préstamos a 19 países en desarrollo entre 1976 y 1980, Sebastian Edwards mide qué miraban los bancos al fijar el spread sobre la LIBOR, y por qué no vieron venir la crisis de la deuda.",
+ "fuentes": [
+  1353
+ ],
+ "cita": "Edwards (1983)",
+ "intro": "A comienzos de 1983 México, Brasil y la Argentina estaban en el centro de la crisis de la deuda, y los bancos estadounidenses les habían prestado más de 50.000 millones de dólares, más del 80% de su capital. La pregunta era incómoda para los acreedores: ¿habían tenido en cuenta el riesgo de cada país al prestar? Sebastian Edwards, entonces en UCLA, responde con un trabajo pionero en la medición del riesgo país: arma un pequeño modelo de la probabilidad de default de un soberano y lo estima con los spreads que los bancos cobraban sobre la LIBOR. La respuesta es matizada: miraban algunas cosas, sobrevaloraban otras y, hasta 1980, no anticipaban los problemas de los países que después cayeron.",
+ "secciones": [
+  {
+   "t": "Por qué un soberano paga, o no",
+   "p": [
+    "La diferencia entre un deudor soberano y uno privado es que no hay un juez que pueda embargar al país. Por eso, siguiendo a Eaton y Gersovitz, Edwards modela la decisión de repudiar la deuda como una comparación: el país deja de pagar si el valor de la deuda supera el valor presente del costo esperado de repudiarla. Ese costo puede tomar varias formas, la principal es quedar excluido del crédito internacional.",
+    "Si el costo es una variable aleatoria, la probabilidad de default es la probabilidad de que el costo resulte menor que la deuda. Esa expresión crece con la deuda y cae con el costo esperado de no pagar. Todo lo demás depende de qué se suponga sobre ese costo."
+   ],
+   "eq": [
+    "p = \\Pr(C < D)"
+   ],
+   "nota": "\\(D\\) es el valor de la deuda y \\(C\\) el costo (aleatorio) de repudiarla. Distintos supuestos sobre \\(C\\) dan distintos determinantes del riesgo."
+  },
+  {
+   "t": "Un ejemplo: el costo como fracción del producto futuro",
+   "p": [
+    "Para dar contenido al modelo, Edwards sigue a Sachs y Cohen (1982): supone un mundo de dos períodos en el que el costo de repudiar es una fracción del producto del segundo período, que depende de la inversión del primero. De ahí salen dos determinantes: la probabilidad de default sube con la relación deuda/producto y baja con la propensión a invertir, porque más inversión hoy significa más producto mañana y, por lo tanto, más que perder si se deja de pagar.",
+    "Agrega un tercero: la fracción del producto que se pierde puede depender de las reservas internacionales. Las reservas suelen estar en bancos del exterior, donde el acreedor puede embargarlas, y la comunidad financiera castigaría más a quien no paga teniendo liquidez. Por eso más reservas en relación con el producto deberían bajar la probabilidad de default."
+   ]
+  },
+  {
+   "t": "Del modelo a los datos",
+   "p": [
+    "El supuesto puente es que el spread sobre la LIBOR refleja la probabilidad de default percibida por los bancos. Siguiendo a Feder y Just, si esa probabilidad tiene forma logística, el logaritmo del spread queda como una función lineal de sus determinantes, y se puede estimar por mínimos cuadrados.",
+    "Los datos son 727 préstamos en eurodólares, públicos o con garantía pública, a 19 países en desarrollo entre 1976 y 1980. Restringirse a préstamos en dólares evita el problema de las distintas monedas, y a préstamos públicos, separar el riesgo país del riesgo de cada empresa. Para cada país y año construye el spread promedio ponderado. Una curiosidad: dentro de cada año los spreads varían poco entre países; en 1979 la diferencia entre el más alto (Costa de Marfil, 1,603 puntos) y el más bajo (Grecia, 0,517) era de apenas 1,1 puntos.",
+    "Estima con un panel de errores compuestos (Fuller y Battese), que separa un componente específico de cada país y otro de cada año; este último captura la liquidez mundial, que cambió mucho en el período."
+   ],
+   "eq": [
+    "\\ln s_{nt} = k + \\sum_i \\beta_i X_{int} + u_{nt},\\qquad u_{nt} = v_n + w_t + e_{nt}"
+   ],
+   "nota": "\\(s_{nt}\\) es el spread del país \\(n\\) en el año \\(t\\); \\(X\\) incluye deuda/PIB, servicio de la deuda/exportaciones, reservas/PIB, inversión/PIB, cuenta corriente, apertura, crecimiento, plazo y monto de los préstamos; \\(v_n\\) y \\(w_t\\) son los componentes de país y de año."
+  },
+  {
+   "t": "Qué miraban los bancos",
+   "p": [
+    "Los resultados confirman que los bancos tenían en cuenta parte del riesgo. La relación deuda/PIB es positiva y significativa en todas las regresiones, igual que el servicio de la deuda sobre exportaciones. El coeficiente de las reservas sobre el PIB es negativo y significativo al 5%, y de mayor tamaño absoluto que el de la deuda. La inversión sobre el PIB tiene signo negativo, como predice el modelo.",
+    "Otras variables no importan: el plazo y el monto del préstamo, la apertura y el crecimiento tienen coeficientes no significativos. Y aparece un resultado desconcertante: la cuenta corriente tiene signo positivo, es decir, un déficit menor se asocia con un spread mayor, cuando un déficit más alto implica financiar la inversión con más ahorro externo y debería preocupar más."
+   ]
+  },
+  {
+   "t": "El experimento de endeudarse para acumular reservas",
+   "p": [
+    "Con los coeficientes, Edwards se pregunta qué pasa si un país toma deuda para acumular reservas. Se mueven tres cosas: sube la deuda/PIB (presiona el spread hacia arriba), suben las reservas/PIB (lo presionan hacia abajo) y sube el servicio de la deuda (hacia arriba). La suma, según la especificación, va de −0,069 a −0,050: prácticamente nula.",
+    "Es decir, aumentar un 10% la deuda y un 10% las reservas deja el spread casi igual. Al autor le resulta sorprendente, porque las reservas son un activo de corto plazo que puede evaporarse rápido y la deuda un pasivo de largo plazo. Su lectura es que los bancos le dieron un peso excesivo a las reservas."
+   ]
+  },
+  {
+   "t": "Las probabilidades implícitas: nadie vio venir la crisis",
+   "p": [
+    "Invirtiendo la ecuación se obtienen las probabilidades de default percibidas. En 1976 iban de 5,9% (Venezuela) a 10,6% (Uruguay). En algunos países subieron con el tiempo (Ecuador, entre 1976 y 1979; Brasil, alrededor de un punto), pero la de la Argentina incluso bajó. Hasta 1980, el mercado no anticipaba en forma importante las dificultades de pago que la Argentina, México, Uruguay y Venezuela enfrentarían en 1981 y 1982.",
+    "Una explicación es que la crisis se desató por hechos inesperados: la suba del petróleo de 1979-80, la recesión mundial y el salto de las tasas internacionales. Edwards acepta que importaron, pero sus resultados sugieren que también hubo prácticas de préstamo que pasaron por alto aspectos de las economías deudoras. Al analizar los residuos, además, encuentra señales de que el riesgo político pesaba en los spreads."
+   ],
+   "nota": "Las probabilidades dependen de un supuesto sobre la constante del modelo; el autor presenta dos variantes y en ambas se mantiene el patrón."
+  },
+  {
+   "t": "Qué queda",
+   "p": [
+    "El trabajo fija tres ideas que reaparecen en toda la literatura posterior sobre riesgo país, incluida la que estudia los spreads del EMBI: el spread se puede leer como una probabilidad de default percibida; la deuda, el servicio de la deuda, las reservas y la inversión son sus determinantes básicos; y los mercados pueden subestimar el riesgo en los períodos de abundancia de liquidez. Una objeción posible (lectura propia) es que con 19 países y cinco años, y spreads que varían poco entre países, la potencia para distinguir determinantes es limitada."
+   ]
+  }
+ ],
+ "claves": [
+  "Un soberano no paga si la deuda supera el costo esperado de repudiarla; la probabilidad de default es la de que ese costo resulte menor que la deuda.",
+  "Si el costo es una fracción del producto futuro, el riesgo sube con la deuda/PIB y baja con la inversión y las reservas.",
+  "Con 727 eurocréditos (1976-1980), el spread sube con la deuda/PIB y el servicio de la deuda, y baja con las reservas y la inversión.",
+  "Endeudarse 10% más para acumular 10% más de reservas deja el spread casi igual: los bancos sobrevaloraban las reservas.",
+  "Hasta 1980 las probabilidades implícitas no anticipaban la crisis de la Argentina, México, Uruguay y Venezuela."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En el modelo de Edwards, ¿cuándo repudia un país su deuda?",
+    "en": "In Edwards's model, when does a country repudiate its debt?"
+   },
+   "op": {
+    "es": [
+     "Cuando sube la LIBOR",
+     "Cuando el valor de la deuda supera el costo esperado de repudiarla",
+     "Cuando el déficit fiscal supera el 3% del PIB",
+     "Cuando un juez lo ordena"
+    ],
+    "en": [
+     "When LIBOR rises",
+     "When the debt's value exceeds the expected cost of repudiating it",
+     "When the fiscal deficit exceeds 3% of GDP",
+     "When a judge orders it"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "No hay un tribunal que obligue al soberano; paga mientras no pagar le cueste más que la deuda.",
+    "en": "No court can force a sovereign; it pays as long as not paying costs more than the debt."
+   },
+   "id": "ext-riesgo-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una mayor propensión a invertir debería bajar la probabilidad de default?",
+    "en": "Why should a higher propensity to invest lower the probability of default?"
+   },
+   "op": {
+    "es": [
+     "Porque baja la inflación",
+     "Porque reduce las importaciones",
+     "Porque más producto futuro aumenta lo que se pierde si se deja de pagar",
+     "Porque los bancos prestan menos"
+    ],
+    "en": [
+     "Because it lowers inflation",
+     "Because it reduces imports",
+     "Because more future output raises what is lost by defaulting",
+     "Because banks lend less"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si el costo del default es una fracción del producto futuro, invertir más hoy hace más caro no pagar.",
+    "en": "If the cost of default is a share of future output, investing more today makes defaulting costlier."
+   },
+   "id": "ext-riesgo-02-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto conecta el spread observado con la probabilidad de default?",
+    "en": "Which assumption links the observed spread to the probability of default?"
+   },
+   "op": {
+    "es": [
+     "Que el spread refleja la probabilidad de default percibida por los bancos",
+     "Que el spread es igual a la inflación",
+     "Que todos los países tienen el mismo spread",
+     "Que la LIBOR es constante"
+    ],
+    "en": [
+     "That the spread reflects banks' perceived probability of default",
+     "That the spread equals inflation",
+     "That all countries have the same spread",
+     "That LIBOR is constant"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con una probabilidad logística, el logaritmo del spread queda lineal en los determinantes y se puede estimar.",
+    "en": "With a logistic probability, the log spread becomes linear in the determinants and can be estimated."
+   },
+   "id": "ext-riesgo-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué datos usa Edwards?",
+    "en": "What data does Edwards use?"
+   },
+   "op": {
+    "es": [
+     "Bonos del EMBI entre 1994 y 2001",
+     "Calificaciones crediticias de 1990",
+     "Préstamos privados en varias monedas",
+     "727 préstamos en eurodólares públicos o con garantía pública a 19 países, 1976-1980"
+    ],
+    "en": [
+     "EMBI bonds over 1994-2001",
+     "1990 credit ratings",
+     "Private loans in several currencies",
+     "727 public or publicly guaranteed Eurodollar loans to 19 countries, 1976-1980"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Restringirse a dólares y a préstamos públicos aísla el riesgo país del riesgo cambiario y empresarial.",
+    "en": "Restricting to dollars and public loans isolates country risk from currency and firm risk."
+   },
+   "id": "ext-riesgo-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué signo tienen las reservas sobre el PIB en la ecuación del spread?",
+    "en": "What sign do reserves over GDP have in the spread equation?"
+   },
+   "op": {
+    "es": [
+     "Positivo y significativo",
+     "Negativo y significativo al 5%",
+     "Nulo",
+     "Positivo pero no significativo"
+    ],
+    "en": [
+     "Positive and significant",
+     "Negative and significant at 5%",
+     "Zero",
+     "Positive but insignificant"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Más reservas bajan el spread, y su coeficiente supera en valor absoluto al de la deuda.",
+    "en": "More reserves lower the spread, and their coefficient exceeds the debt coefficient in absolute value."
+   },
+   "id": "ext-riesgo-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué resultado le parece desconcertante al propio autor?",
+    "en": "Which result does the author himself find puzzling?"
+   },
+   "op": {
+    "es": [
+     "Que la cuenta corriente tenga signo positivo: menos déficit, más spread",
+     "Que la deuda suba el spread",
+     "Que la inversión baje el spread",
+     "Que haya un efecto año"
+    ],
+    "en": [
+     "That the current account has a positive sign: less deficit, higher spread",
+     "That debt raises the spread",
+     "That investment lowers the spread",
+     "That there is a year effect"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un déficit mayor implica financiar la inversión con más ahorro externo; uno esperaría que aumente el riesgo, no que lo baje.",
+    "en": "A larger deficit means funding investment with more foreign saving; one would expect it to raise risk, not lower it."
+   },
+   "id": "ext-riesgo-02-q6"
+  },
+  {
+   "q": {
+    "es": "Según las estimaciones, ¿qué pasa con el spread si un país aumenta 10% su deuda para acumular 10% más de reservas?",
+    "en": "According to the estimates, what happens to the spread if a country raises its debt 10% to build 10% more reserves?"
+   },
+   "op": {
+    "es": [
+     "Se duplica",
+     "Cae a la mitad",
+     "Queda prácticamente igual",
+     "Sube un punto"
+    ],
+    "en": [
+     "It doubles",
+     "It halves",
+     "It stays practically unchanged",
+     "It rises one point"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los efectos de deuda, reservas y servicio de la deuda se compensan (la suma va de −0,069 a −0,050).",
+    "en": "The effects of debt, reserves and debt service offset each other (the sum ranges from −0.069 to −0.050)."
+   },
+   "id": "ext-riesgo-02-q7"
+  },
+  {
+   "q": {
+    "es": "Un analista hoy ve spreads bajos y estables en un período de mucha liquidez mundial. ¿Qué lección del trabajo aplica?",
+    "en": "An analyst today sees low, stable spreads in a period of abundant global liquidity. Which lesson from the paper applies?"
+   },
+   "op": {
+    "es": [
+     "Que los spreads bajos garantizan que no habrá default",
+     "Que la liquidez no influye en los spreads",
+     "Que solo importan las reservas",
+     "Que los mercados pueden subestimar riesgos: hasta 1980 no anticiparon la crisis"
+    ],
+    "en": [
+     "That low spreads guarantee no default",
+     "That liquidity does not affect spreads",
+     "That only reserves matter",
+     "That markets can underprice risk: until 1980 they did not foresee the crisis"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las probabilidades implícitas de la Argentina incluso bajaron antes de la crisis de 1981-82.",
+    "en": "Argentina's implied probabilities even fell before the 1981-82 crisis."
+   },
+   "id": "ext-riesgo-02-q8"
+  }
+ ],
+ "palabras": 1018,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "Si nadie puede obligar a un Estado a pagar, ¿qué determina su probabilidad de default?",
+    "en": "If no one can force a state to pay, what determines its probability of default?"
+   },
+   "a": {
+    "es": "La comparación entre el valor de la deuda y el costo esperado de repudiarla (exclusión del crédito, sanciones): defaultea si el costo resulta menor. Edwards (1983) lo formaliza siguiendo a Eaton y Gersovitz.",
+    "en": "The comparison between the debt's value and the expected cost of repudiation (credit exclusion, sanctions): it defaults if the cost turns out smaller. Edwards (1983) formalizes it following Eaton and Gersovitz."
+   },
+   "id": "ext-riesgo-02-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué tener más reservas internacionales podría bajar el riesgo país?",
+    "en": "Why could holding more international reserves lower country risk?"
+   },
+   "a": {
+    "es": "Porque suelen estar en bancos del exterior, donde el acreedor puede embargarlas, y porque no pagar teniendo liquidez sería castigado más duro: suben el costo del default. Edwards (1983) encuentra un coeficiente negativo y significativo de reservas/PIB en el spread.",
+    "en": "Because they usually sit in foreign banks where creditors can seize them, and defaulting while liquid would be punished harder: they raise the cost of default. Edwards (1983) finds a negative, significant reserves/GDP coefficient in the spread."
+   },
+   "id": "ext-riesgo-02-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede estimar una probabilidad de default que no se observa?",
+    "en": "How can an unobserved probability of default be estimated?"
+   },
+   "a": {
+    "es": "Suponiendo que el spread refleja esa probabilidad y que tiene forma logística: entonces el logaritmo del spread es lineal en sus determinantes. Edwards (1983) lo estima con 727 eurocréditos a 19 países en desarrollo, 1976-1980.",
+    "en": "By assuming the spread reflects that probability and that it is logistic: then the log spread is linear in its determinants. Edwards (1983) estimates it with 727 Eurocredits to 19 developing countries, 1976-1980."
+   },
+   "id": "ext-riesgo-02-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En los eurocréditos de fines de los setenta, ¿qué variables subían el spread de un país en desarrollo?",
+    "en": "In late-1970s Eurocredits, which variables raised a developing country's spread?"
+   },
+   "a": {
+    "es": "La deuda pública sobre el PIB y el servicio de la deuda sobre exportaciones; lo bajaban las reservas y la inversión sobre el PIB. Plazo, monto, apertura y crecimiento no eran significativos (Edwards, 1983).",
+    "en": "Public debt over GDP and debt service over exports; reserves and investment over GDP lowered it. Maturity, size, openness and growth were not significant (Edwards, 1983)."
+   },
+   "id": "ext-riesgo-02-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué endeudarse para acumular reservas no debería ser neutral para el riesgo país, aunque los bancos lo trataran así?",
+    "en": "Why should borrowing to build reserves not be risk-neutral, even if banks treated it that way?"
+   },
+   "a": {
+    "es": "Porque las reservas son un activo de corto plazo que se puede agotar rápido y la deuda un pasivo de largo plazo. Edwards (1983) estima que subir 10% deuda y reservas dejaba el spread igual y concluye que los bancos sobrevaloraban las reservas.",
+    "en": "Because reserves are a short-term asset that can be depleted quickly while debt is a long-term liability. Edwards (1983) estimates that raising debt and reserves 10% left the spread unchanged and concludes banks overvalued reserves."
+   },
+   "id": "ext-riesgo-02-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Anticipaban los spreads de 1976-1980 la crisis latinoamericana de la deuda de 1982?",
+    "en": "Did 1976-1980 spreads anticipate the 1982 Latin American debt crisis?"
+   },
+   "a": {
+    "es": "No en forma importante: la probabilidad implícita de la Argentina incluso bajó, y hasta 1980 el mercado no preveía las dificultades de la Argentina, México, Uruguay y Venezuela (Edwards, 1983).",
+    "en": "Not in any important way: Argentina's implied probability even fell, and until 1980 the market did not foresee the troubles of Argentina, Mexico, Uruguay and Venezuela (Edwards, 1983)."
+   },
+   "id": "ext-riesgo-02-t6"
+  }
+ ]
+}

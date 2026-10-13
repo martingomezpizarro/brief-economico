@@ -1,0 +1,361 @@
+{
+ "id": "ext-riesgo-01",
+ "cat": "ext-riesgo",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "¿Quién mueve a quién? Riesgo país y ciclo en Uribe y Yue (2006)",
+ "bajada": "Las tasas que pagan los emergentes suben en las recesiones y bajan en los auges. Uribe y Yue separan cuánto del ciclo viene de afuera (la tasa de EE.UU. y el spread) y cuánto el spread responde al propio ciclo.",
+ "fuentes": [
+  1365
+ ],
+ "cita": "Uribe y Yue (2006)",
+ "intro": "En los emergentes, la tasa a la que se endeuda el país en dólares y el nivel de actividad se mueven en espejo: cuando la tasa sube, la economía se enfría. Entre 1994 y 2001 la correlación entre producto y tasa país fue de −0,67 en la Argentina, −0,80 en Ecuador y −0,58 en México. Pero una correlación no dice quién causa a quién. ¿El riesgo país provoca las recesiones, o las recesiones suben el riesgo país? ¿La tasa de Estados Unidos golpea directamente o a través del spread? Martín Uribe y Vivian Yue responden con un VAR en panel para siete emergentes y lo contrastan con un modelo teórico de economía pequeña y abierta. Es una lectura central para cualquiera que estudie riesgo país, porque obliga a tratar al spread como variable endógena.",
+ "secciones": [
+  {
+   "t": "El problema de la causalidad",
+   "p": [
+    "Una parte de la literatura mira cómo los fundamentos domésticos determinan el spread: Cline y Barnes encuentran que el crecimiento del PIB y de las exportaciones lo explican, y Cantor y Packer (1996) estiman que alrededor del 80% de la variación de las calificaciones crediticias se explica por el ingreso per cápita, la deuda externa, la inflación, la historia de defaults y el nivel de desarrollo. Esos trabajos casi no controlan por el hecho de que los fundamentos también pueden reaccionar a la tasa.",
+    "En el otro extremo, Neumeyer y Perri (2001) tratan al spread como completamente exógeno y concluyen que los shocks de tasa explican el 50% de las fluctuaciones del producto en la Argentina. Uribe y Yue muestran por qué eso puede ser una cota superior: si un shock de productividad hace crecer la economía y, de paso, baja el spread, quien suponga que el spread es exógeno atribuirá a la tasa una expansión que en realidad vino de la productividad."
+   ]
+  },
+  {
+   "t": "El modelo empírico: un VAR con una restricción de timing",
+   "p": [
+    "Usan datos trimestrales de 1994 a 2001 para Argentina, Brasil, Ecuador, México, Perú, Filipinas y Sudáfrica, los países del EMBI+ con datos suficientes. Las variables son el producto y la inversión (desvíos de tendencia), la balanza comercial sobre el PIB, la tasa real de Estados Unidos (Letras a tres meses deflactadas por la inflación de los últimos cuatro trimestres) y la tasa país, igual al spread del EMBI+ más la tasa real estadounidense.",
+    "La identificación descansa en un supuesto de timing: los shocks financieros externos tardan un trimestre en afectar a las variables reales, porque las decisiones de empleo, inversión y consumo durable llevan tiempo; en cambio, los mercados financieros reaccionan en el mismo trimestre a las noticias sobre la economía real. Por eso las tasas van al final de un sistema recursivo. La tasa de Estados Unidos sigue un AR(1) propio, estimado entre 1987 y 2002 (la era Greenspan): un país chico no mueve la tasa de la Reserva Federal. Estiman por variables instrumentales para paneles dinámicos (Anderson y Hsiao) con efectos fijos por país."
+   ],
+   "eq": [
+    "A\\,x_t = B\\,x_{t-1} + \\varepsilon_t,\\qquad x_t = \\left[\\hat y_t,\\ \\hat\\imath_t,\\ tby_t,\\ \\hat R^{us}_t,\\ \\hat R_t\\right]'"
+   ],
+   "nota": "\\(A\\) es triangular inferior con unos en la diagonal: las variables de arriba (producto \\(\\hat y\\), inversión \\(\\hat\\imath\\), balanza comercial \\(tby\\)) no reaccionan en el período a las tasas de abajo (\\(R^{us}\\) y la tasa país \\(R\\)). Como \\(R = R^{us} + \\text{spread}\\), el shock a la tasa país es idéntico a un shock al spread."
+  },
+  {
+   "t": "Qué hacen los shocks",
+   "p": [
+    "Un shock al spread lo sube y lo hace volver a su nivel con una vida media de alrededor de un año. Producto e inversión no se mueven en el trimestre del shock, caen en los dos siguientes y después se recuperan; la balanza comercial mejora, porque la absorción cae más que el producto.",
+    "Un shock a la tasa de Estados Unidos tiene un efecto más grande: el piso de la caída del producto es el doble que con un shock al spread de igual tamaño. Y muestra el hallazgo más llamativo del trabajo: el spread primero baja, porque la tasa país sube menos que la tasa estadounidense, y a los dos trimestres se dispara a más de un punto porcentual por encima de su nivel previo. Es un sobreajuste demorado.",
+    "Un shock de producto (de productividad o de términos de intercambio) se comporta como en un modelo de ciclo real de economía abierta: la inversión responde unas tres veces más que el producto, la balanza comercial empeora y el spread baja alrededor de 0,6 puntos, con una vida media de cinco trimestres. El spread es contracíclico también frente a lo doméstico."
+   ]
+  },
+  {
+   "t": "Cuánto explica cada cosa",
+   "p": [
+    "Tomando un horizonte de unos cinco años como frecuencia del ciclo, los shocks a la tasa de Estados Unidos explican cerca del 20% de las fluctuaciones de la actividad en los emergentes y los shocks al spread, alrededor del 12%. Es decir, cerca de un tercio del ciclo viene de variables financieras externas. En la balanza comercial el peso es mayor: 43%.",
+    "Sobre el propio spread, la tasa de Estados Unidos y los shocks al spread explican juntos cerca del 85% de sus movimientos, y unos 60 puntos de eso corresponden a shocks al spread mismo, que Eichengreen y Mody interpretan como cambios en el humor de los inversores. Las variables domésticas explican alrededor del 15% de la varianza del spread."
+   ]
+  },
+  {
+   "t": "Dos contrafácticos",
+   "p": [
+    "¿Cuánto agrava la volatilidad que el spread reaccione al ciclo doméstico? Si se apagan esos coeficientes, la volatilidad del producto cae un 16%, la de la inversión y la balanza comercial alrededor de un 20% y la de la tasa país, cerca de un tercio. Con el modelo teórico, la volatilidad explicada por los dos shocks externos cae alrededor de un cuarto.",
+    "¿La tasa de Estados Unidos pega directamente o a través del spread? Si el spread no respondiera a la tasa estadounidense, el desvío estándar del producto, la inversión y la balanza comercial explicado por esos shocks sería unos dos tercios menor. La tasa de la Reserva Federal golpea a los emergentes sobre todo porque mueve su spread."
+   ],
+   "nota": "Los autores reconocen que estos ejercicios están sujetos a la crítica de Lucas: si cambiara la regla con que se fija el spread, también podrían cambiar los demás coeficientes del sistema."
+  },
+  {
+   "t": "El modelo teórico como prueba de plausibilidad",
+   "p": [
+    "Para chequear que los shocks identificados tienen sentido, construyen un modelo de economía pequeña y abierta con cuatro rasgos: rezagos de gestación en la producción de capital, formación de hábitos externos (compararse con los vecinos), una restricción de capital de trabajo que obliga a las firmas a tener liquidez proporcional a su masa salarial y una estructura de información en la que producción y gasto se deciden antes de conocer las condiciones financieras del período, igual que en el VAR. Calibrado a regularidades de los emergentes, el modelo produce respuestas a los dos shocks parecidas a las empíricas.",
+    "Una objeción posible (lectura propia) es que la muestra es corta, 1994-2001, y concentra crisis grandes (Tequila, Asia, Rusia, Brasil); y que la identificación depende del supuesto de que lo financiero tarda un trimestre en llegar a lo real. En un apéndice prueban la alternativa y el producto subiría ante una suba de la tasa externa, algo poco creíble, lo que refuerza su elección."
+   ]
+  },
+  {
+   "t": "Por qué importa para la Argentina",
+   "p": [
+    "La Argentina es el caso con correlación más fuerte de la muestra junto con Ecuador. El trabajo da tres lecciones para pensar el riesgo país: que el spread es a la vez causa y consecuencia del ciclo, y estimarlo como exógeno exagera su papel; que la política de la Reserva Federal llega amplificada a través del spread, con un rezago; y que la respuesta del spread a los fundamentos domésticos agrega volatilidad, un argumento para políticas que corten ese círculo."
+   ]
+  }
+ ],
+ "claves": [
+  "En emergentes, tasa país y producto se mueven en espejo (−0,67 en la Argentina, 1994-2001), pero la causalidad va en ambos sentidos.",
+  "Identificación: los shocks financieros tardan un trimestre en llegar a lo real; los mercados reaccionan en el período a lo doméstico.",
+  "La tasa de EE.UU. explica cerca del 20% del ciclo emergente y el spread cerca del 12%; juntos, un tercio.",
+  "Ante una suba de la tasa de EE.UU., el spread primero cae y luego sobrerreacciona; la tasa externa pega sobre todo a través del spread.",
+  "Que el spread responda al ciclo doméstico agrava la volatilidad: sin esa retroalimentación, la del producto cae un 16%."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué tratar al spread como exógeno puede exagerar su importancia en el ciclo?",
+    "en": "Why can treating the spread as exogenous exaggerate its importance for the cycle?"
+   },
+   "op": {
+    "es": [
+     "Porque el spread no se mide bien",
+     "Porque parte de su caída responde a mejoras domésticas, que se le atribuirían erróneamente al spread",
+     "Porque la tasa de EE.UU. no cambia",
+     "Porque el producto no tiene tendencia"
+    ],
+    "en": [
+     "Because the spread is poorly measured",
+     "Because part of its fall responds to domestic improvements, which would be wrongly attributed to the spread",
+     "Because the US rate does not change",
+     "Because output has no trend"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si un shock de productividad baja el spread, quien lo suponga exógeno le adjudicará al spread una expansión que vino de la productividad.",
+    "en": "If a productivity shock lowers the spread, assuming it exogenous attributes to the spread an expansion that came from productivity."
+   },
+   "id": "ext-riesgo-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto permite identificar los shocks en el VAR?",
+    "en": "Which assumption identifies the shocks in the VAR?"
+   },
+   "op": {
+    "es": [
+     "Que el spread no responde a nada",
+     "Que el producto es exógeno",
+     "Que los shocks financieros tardan un trimestre en afectar a lo real, y los mercados reaccionan en el período",
+     "Que todos los países tienen la misma tasa"
+    ],
+    "en": [
+     "That the spread responds to nothing",
+     "That output is exogenous",
+     "That financial shocks take a quarter to affect real variables, while markets react within the period",
+     "That all countries share the same rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Por eso las tasas van al final de un sistema recursivo con matriz triangular inferior.",
+    "en": "That is why rates go last in a recursive system with a lower-triangular matrix."
+   },
+   "id": "ext-riesgo-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cómo construyen la tasa país?",
+    "en": "How do they build the country interest rate?"
+   },
+   "op": {
+    "es": [
+     "Como el spread del EMBI+ más la tasa real de EE.UU.",
+     "Como la tasa de política monetaria local",
+     "Como el rendimiento de los depósitos en pesos",
+     "Como la tasa de los bonos del Tesoro de EE.UU."
+    ],
+    "en": [
+     "As the EMBI+ spread plus the US real rate",
+     "As the local policy rate",
+     "As the yield on peso deposits",
+     "As the US Treasury yield"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por eso un shock a la tasa país, condicional en la tasa de EE.UU., equivale a un shock al spread.",
+    "en": "Hence a shock to the country rate, conditional on the US rate, equals a shock to the spread."
+   },
+   "id": "ext-riesgo-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasa con el spread ante una suba de la tasa de EE.UU.?",
+    "en": "What happens to the spread after a rise in the US rate?"
+   },
+   "op": {
+    "es": [
+     "Sube de inmediato y se queda",
+     "No cambia",
+     "Baja y se queda baja",
+     "Primero baja y a los dos trimestres sobrerreacciona por encima de un punto"
+    ],
+    "en": [
+     "It rises at once and stays",
+     "It does not change",
+     "It falls and stays low",
+     "It first falls and two quarters later overshoots by more than a point"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En el impacto la tasa país sube menos que la de EE.UU.; después el spread se dispara: un sobreajuste demorado.",
+    "en": "On impact the country rate rises less than the US rate; then the spread jumps: a delayed overshooting."
+   },
+   "id": "ext-riesgo-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué parte del ciclo emergente explican juntos los shocks a la tasa de EE.UU. y al spread?",
+    "en": "What share of the emerging-market cycle do US-rate and spread shocks explain together?"
+   },
+   "op": {
+    "es": [
+     "Casi todo",
+     "Alrededor de un tercio",
+     "Menos del 5%",
+     "Exactamente la mitad"
+    ],
+    "en": [
+     "Almost all",
+     "About a third",
+     "Less than 5%",
+     "Exactly half"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Cerca del 20% la tasa de EE.UU. y cerca del 12% el spread, a frecuencia de ciclo.",
+    "en": "About 20% from the US rate and about 12% from the spread, at business-cycle frequency."
+   },
+   "id": "ext-riesgo-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo responde el spread a un shock positivo de producto doméstico?",
+    "en": "How does the spread respond to a positive domestic output shock?"
+   },
+   "op": {
+    "es": [
+     "Baja alrededor de 0,6 puntos: es contracíclico",
+     "Sube 0,6 puntos",
+     "No responde",
+     "Sube y luego se vuelve negativo"
+    ],
+    "en": [
+     "It falls about 0.6 points: it is countercyclical",
+     "It rises 0.6 points",
+     "It does not respond",
+     "It rises and then turns negative"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El spread reacciona a lo doméstico de un modo que amplifica el ciclo, con una vida media de unos cinco trimestres.",
+    "en": "The spread reacts to domestic conditions in a way that amplifies the cycle, with a half-life of about five quarters."
+   },
+   "id": "ext-riesgo-01-q6"
+  },
+  {
+   "q": {
+    "es": "Si el spread no respondiera al ciclo doméstico, ¿qué pasaría con la volatilidad del producto?",
+    "en": "If the spread did not respond to the domestic cycle, what would happen to output volatility?"
+   },
+   "op": {
+    "es": [
+     "Subiría un 50%",
+     "No cambiaría",
+     "Caería un 16%",
+     "Caería a cero"
+    ],
+    "en": [
+     "It would rise 50%",
+     "It would not change",
+     "It would fall 16%",
+     "It would fall to zero"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La retroalimentación del ciclo al spread agrava la volatilidad; sin ella también cae un tercio la de la tasa país.",
+    "en": "Feedback from the cycle to the spread worsens volatility; without it the country rate's volatility also falls by a third."
+   },
+   "id": "ext-riesgo-01-q7"
+  },
+  {
+   "q": {
+    "es": "Sube la tasa de la Reserva Federal. Según el trabajo, ¿por qué canal pega más en un emergente?",
+    "en": "The Fed raises rates. According to the paper, through which channel does it hit an emerging economy most?"
+   },
+   "op": {
+    "es": [
+     "Por el comercio con EE.UU.",
+     "Por la inflación importada",
+     "Por el tipo de cambio nominal",
+     "Por su efecto sobre el spread del país"
+    ],
+    "en": [
+     "Through trade with the US",
+     "Through imported inflation",
+     "Through the nominal exchange rate",
+     "Through its effect on the country's spread"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si el spread no reaccionara a la tasa de EE.UU., la volatilidad explicada por esos shocks sería unos dos tercios menor.",
+    "en": "If the spread did not react to the US rate, the volatility explained by those shocks would be about two thirds smaller."
+   },
+   "id": "ext-riesgo-01-q8"
+  }
+ ],
+ "palabras": 1147,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa que la tasa país sea contracíclica en los emergentes?",
+    "en": "What does it mean that the country interest rate is countercyclical in emerging economies?"
+   },
+   "a": {
+    "es": "Que sube en las recesiones y baja en los auges. Uribe y Yue (2006) documentan correlaciones de −0,67 en la Argentina, −0,80 en Ecuador y −0,58 en México entre 1994 y 2001.",
+    "en": "That it rises in recessions and falls in booms. Uribe and Yue (2006) document correlations of −0.67 in Argentina, −0.80 in Ecuador and −0.58 in Mexico over 1994-2001."
+   },
+   "id": "ext-riesgo-01-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "En un VAR con variables reales y financieras, ¿qué supuesto de timing permite separar los shocks financieros externos?",
+    "en": "In a VAR with real and financial variables, which timing assumption separates external financial shocks?"
+   },
+   "a": {
+    "es": "Que lo financiero tarda un período en afectar a lo real, mientras los mercados reaccionan en el período a lo real. Uribe y Yue (2006) ubican las tasas al final de un sistema recursivo con datos trimestrales.",
+    "en": "That finance takes a period to affect real variables while markets react within the period to real news. Uribe and Yue (2006) place rates last in a recursive quarterly system."
+   },
+   "id": "ext-riesgo-01-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué parte del ciclo de los emergentes explican los shocks financieros externos?",
+    "en": "What share of the emerging-market cycle do external financial shocks explain?"
+   },
+   "a": {
+    "es": "Alrededor de un tercio: cerca del 20% la tasa de EE.UU. y cerca del 12% el spread, a frecuencia de ciclo. Lo estiman Uribe y Yue (2006) para siete emergentes.",
+    "en": "About a third: roughly 20% the US rate and 12% the spread, at business-cycle frequency. Uribe and Yue (2006) estimate it for seven emerging economies."
+   },
+   "id": "ext-riesgo-01-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una suba de la tasa de EE.UU. puede bajar el spread de un emergente al principio y subirlo después?",
+    "en": "Why can a rise in the US rate first lower an emerging-market spread and later raise it?"
+   },
+   "a": {
+    "es": "Porque la tasa del país sube menos que la de EE.UU. en el impacto, y luego el spread sobrerreacciona: a los dos trimestres está más de un punto arriba. Es el sobreajuste demorado de Uribe y Yue (2006).",
+    "en": "Because the country rate rises less than the US rate on impact, and then the spread overshoots: two quarters later it is over a point higher. It is Uribe and Yue's (2006) delayed overshooting."
+   },
+   "id": "ext-riesgo-01-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la respuesta del riesgo país a los fundamentos domésticos puede amplificar el ciclo?",
+    "en": "Why can the response of country risk to domestic fundamentals amplify the cycle?"
+   },
+   "a": {
+    "es": "Porque en una recesión el spread sube, encarece el crédito y profundiza la caída. Uribe y Yue (2006) estiman que sin esa retroalimentación la volatilidad del producto caería un 16% y la de la tasa país, un tercio.",
+    "en": "Because in a recession the spread rises, making credit dearer and deepening the fall. Uribe and Yue (2006) estimate that without that feedback output volatility would fall 16% and the country rate's by a third."
+   },
+   "id": "ext-riesgo-01-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué los modelos que tratan al spread como exógeno sobreestiman el papel de los shocks de tasa?",
+    "en": "Why do models that treat the spread as exogenous overstate the role of interest-rate shocks?"
+   },
+   "a": {
+    "es": "Porque parte de los movimientos del spread responde al propio ciclo, y se los atribuyen al spread. Uribe y Yue (2006) sugieren leer el 50% de Neumeyer y Perri (2001) para la Argentina como una cota superior.",
+    "en": "Because part of spread movements responds to the cycle itself and gets attributed to the spread. Uribe and Yue (2006) suggest reading Neumeyer and Perri's (2001) 50% for Argentina as an upper bound."
+   },
+   "id": "ext-riesgo-01-t6"
+  }
+ ]
+}

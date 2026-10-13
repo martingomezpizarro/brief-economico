@@ -1,0 +1,365 @@
+{
+ "id": "ext-riesgo-03",
+ "cat": "ext-riesgo",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "El riesgo país viene de afuera: González-Rozada y Levy Yeyati (2008)",
+ "bajada": "El apetito por riesgo de los inversores globales, la tasa de EE.UU. y el contagio explican buena parte de los spreads emergentes. Y las calificadoras siguen al mercado más de lo que lo guían.",
+ "fuentes": [
+  1362
+ ],
+ "cita": "González-Rozada y Levy Yeyati (2008)",
+ "intro": "Cuando sube el riesgo país, la primera reacción en la Argentina es buscar la causa adentro: el déficit, una elección, una medida. Martín González-Rozada y Eduardo Levy Yeyati, de la Universidad Torcuato Di Tella, muestran con datos de 33 emergentes entre 1994 y 2005 que una parte grande de los movimientos de los spreads se explica por factores externos: el apetito por riesgo de los inversores internacionales, medido por el spread de los bonos corporativos de alto rendimiento de los países desarrollados, la liquidez global, medida por la tasa a diez años de Estados Unidos, y el contagio de crisis sistémicas como la rusa. La consecuencia es que la discusión sobre deuda debería pasar de la sostenibilidad a la vulnerabilidad: los fundamentos de cada país no determinan tanto el nivel de su costo de endeudamiento como su exposición a los vaivenes externos.",
+ "secciones": [
+  {
+   "t": "La idea: un bono emergente es un bono de alto riesgo más",
+   "p": [
+    "Si un país emergente está integrado financieramente, su deuda debería valuarse como cualquier activo sin grado de inversión. El precio de esa deuda refleja dos cosas: cuánto riesgo tiene el bono y cuánto pagan los inversores por cargar riesgo, que depende de su aversión o apetito por él. Si el apetito global cambia, cambian a la vez los spreads de los bonos basura de Estados Unidos y los de los emergentes.",
+    "A eso se suma la liquidez global: la tasa internacional fija el costo del capital y afecta la sostenibilidad de la deuda emergente. Y está el contagio, que los autores definen como una crisis en otro lugar que golpea a una economía sin vínculos reales con el país en crisis ni un deterioro visible de sus fundamentos; sus ejemplos son México en 1994 y Rusia en 1998."
+   ]
+  },
+  {
+   "t": "El modelo: separar el precio del riesgo del riesgo",
+   "p": [
+    "Parten del arbitraje de un inversor averso al riesgo: el spread depende de la probabilidad de default, del valor de recupero y de un parámetro de aversión al riesgo. Generalizando, el spread de un emisor es el producto de tres factores: el precio del riesgo de crédito (que depende de la tasa libre de riesgo y de la aversión), la incidencia del riesgo propio del emisor (función de sus fundamentos) y un factor de escala para lo global que afecta distinto a emergentes y corporativos, como la liquidez y las crisis sistémicas.",
+    "El truco es usar el spread de alto rendimiento corporativo como medida del precio del riesgo: como el riesgo de esos bonos se mantiene estable, sus movimientos reflejan sobre todo el precio. Restando, el logaritmo del spread emergente queda en función del spread de alto rendimiento, de la tasa internacional, de una dummy de contagio y de la calificación crediticia como medida del riesgo propio."
+   ],
+   "eq": [
+    "spread_{it} = \\rho(r^f_t,\\phi_t)\\;\\theta[q(X_{it})]\\;\\varphi_i(r^f_t, d^c_t)",
+    "\\ln embi_{it} = \\ln HY_t + \\alpha \\ln r^f_t + \\beta\\, d^c_t + \\gamma \\ln rating_{it}"
+   ],
+   "nota": "\\(\\rho\\) es el precio del riesgo, que depende de la tasa libre de riesgo \\(r^f\\) y de la aversión \\(\\phi\\); \\(\\theta[q(X)]\\), la incidencia de la probabilidad de default \\(q\\), que depende de los fundamentos \\(X\\); \\(\\varphi\\), el factor global con la liquidez y la dummy de crisis \\(d^c\\). \\(HY\\) es el spread de alto rendimiento y \\(embi\\), el spread del EMBI Global."
+  },
+  {
+   "t": "Datos y método: cointegración en panel",
+   "p": [
+    "Usan el índice de alto rendimiento de Credit Suisse First Boston, los spreads del EMBI Global de J. P. Morgan para 33 emergentes, la calificación de Standard & Poor's para deuda de largo plazo en moneda extranjera y la tasa a diez años del Tesoro de Estados Unidos, con datos diarios, semanales y mensuales.",
+    "Primero comprueban con tests de raíz unitaria en panel (Maddala y Wu, Choi) que todas las series tienen raíz unitaria. Si las variables se relacionan, entonces, tiene que ser porque están cointegradas, y los tests sobre los residuos de la relación de largo plazo lo confirman. Siguiendo el teorema de representación de Granger, estiman un modelo de corrección de errores en panel en dos etapas, a la Engle y Granger: primero la relación de largo plazo con efectos fijos por país, después la dinámica de corto plazo, en la que el residuo rezagado mide qué parte del desvío se corrige cada período."
+   ],
+   "eq": [
+    "\\Delta \\ln embi_{it} = \\gamma_{0i} + \\gamma_1 \\hat z_{i,t-1} + \\sum_j \\Gamma_{0j}\\,\\Delta \\ln HY_{t-j} + \\sum_j \\Gamma_{1j}\\,\\Delta \\ln r^f_{t-j} + \\dots + u_{it}"
+   ],
+   "nota": "\\(\\hat z_{i,t-1}\\) es el desvío del período anterior respecto de la relación de largo plazo; \\(\\gamma_1\\) negativo indica que el spread vuelve a su nivel de equilibrio."
+  },
+  {
+   "t": "Qué encontraron",
+   "p": [
+    "Con datos mensuales, el apetito por riesgo y la tasa internacional explican cerca del 30% de la variabilidad de largo plazo de los spreads dentro de cada país; el 37% si se suma el contagio, y cerca del 60% al agregar la calificación. En el corto plazo los factores globales explican entre el 15% y el 23%. Todas las variables actúan en el mismo mes, sin efectos demorados, y cada mes se corrige alrededor del 7% del desvío respecto del largo plazo: un rezago medio de unos catorce meses.",
+    "Un test de quiebre estructural ubica un cambio en septiembre de 1999. En la relación estimada, la elasticidad del spread emergente al de alto rendimiento es 1,01 antes y 0,94 después; la de la tasa a diez años, 0,64; la de la calificación, −1,51; y la crisis rusa suma 0,27 al logaritmo del spread. Aunque el poder explicativo de lo global es mayor después de 1999 (cerca del 50%), el vínculo existe desde el comienzo de la clase de activos. El resultado se repite con una muestra balanceada de Argentina, Brasil y México.",
+    "Hay asimetría: con datos mensuales, una suba del 100% del spread de alto rendimiento sube el emergente un 105%, mientras que una baja igual lo reduce solo un 47%. Los spreads suben en ascensor y bajan por la escalera."
+   ]
+  },
+  {
+   "t": "Las calificadoras van detrás del mercado",
+   "p": [
+    "Un hallazgo lateral pero muy citado: las calificaciones responden a los spreads más de lo que los influyen. Con un estudio de eventos alrededor de cada cambio de calificación, los autores muestran que las bajas están precedidas por subas de los spreads y que, aparte de un ajuste de unos 50 puntos básicos en el momento, no tienen un efecto sustancial. Lo mismo pasa con los cambios de perspectiva, que deberían anticipar información nueva. Además, doce meses antes de varios defaults recientes, las calificaciones no habían dado la alarma.",
+    "La implicancia es que atribuir la fuerte asociación entre calificaciones y spreads a los fundamentos de cada país puede exagerar el papel de lo doméstico y subestimar el de lo global. Agregar dummies por país y mes, que capturan los fundamentos que se miden con esa frecuencia, no cambia los coeficientes de los factores globales."
+   ]
+  },
+  {
+   "t": "Robustez y límites",
+   "p": [
+    "El resultado se sostiene usando el VIX, la volatilidad implícita de las opciones sobre acciones de Estados Unidos, como medida alternativa del apetito por riesgo, aunque con algo menos de poder explicativo; cuando entran ambos, el spread de alto rendimiento absorbe buena parte del efecto del VIX. También revisan que el índice de alto rendimiento no refleje cambios en el riesgo de las empresas: su calificación promedio se mueve menos de medio escalón.",
+    "Una objeción posible (lectura propia) es que usar la calificación como control, sabiendo que es en parte endógena al spread, puede contaminar la relación de largo plazo; los autores argumentan que no sesga los demás coeficientes. Otra es que la estimación por efectos fijos con variable dependiente rezagada es ineficiente, algo que reconocen y justifican con la gran dimensión temporal del panel."
+   ]
+  },
+  {
+   "t": "Implicancias para la Argentina",
+   "p": [
+    "Para un país que vive pendiente del riesgo país, el mensaje es doble. Primero, buena parte de sus movimientos no depende de lo que haga el gobierno: si suben la tasa de Estados Unidos o la aversión global, el spread sube igual. Segundo, eso no vuelve irrelevantes a los fundamentos, sino que cambia su papel: determinan cuán expuesto queda el país a esos shocks. Es el complemento natural de Uribe y Yue, el primer brief de esta ruta, y una base para cualquier modelo de determinantes del riesgo país argentino."
+   ]
+  }
+ ],
+ "claves": [
+  "El apetito por riesgo (spread de alto rendimiento), la liquidez (tasa a 10 años de EE.UU.) y el contagio mueven los spreads emergentes.",
+  "Método: tests de raíz unitaria y cointegración en panel, y un modelo de corrección de errores en dos etapas para 33 emergentes, 1994-2005.",
+  "Los factores globales explican cerca del 30% de la variabilidad de largo plazo (37% con contagio); cada mes se corrige un 7% del desvío.",
+  "Asimetría: una suba del 100% del spread de alto rendimiento sube el emergente un 105%; una baja igual lo reduce un 47%.",
+  "Las calificaciones siguen a los spreads: las bajas llegan después de que el spread ya subió."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué variable usan los autores como medida del apetito por riesgo global?",
+    "en": "Which variable do the authors use to measure global risk appetite?"
+   },
+   "op": {
+    "es": [
+     "El precio del petróleo",
+     "La inflación de EE.UU.",
+     "El spread de los bonos corporativos de alto rendimiento de los países desarrollados",
+     "El tipo de cambio euro-dólar"
+    ],
+    "en": [
+     "The oil price",
+     "US inflation",
+     "The spread on high-yield corporate bonds in developed countries",
+     "The euro-dollar exchange rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Como el riesgo de esos bonos es estable, sus movimientos reflejan sobre todo el precio que los inversores cobran por el riesgo.",
+    "en": "Since the risk of those bonds is stable, their movements mainly reflect the price investors charge for risk."
+   },
+   "id": "ext-riesgo-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué estiman un modelo de corrección de errores?",
+    "en": "Why do they estimate an error-correction model?"
+   },
+   "op": {
+    "es": [
+     "Porque las series tienen raíz unitaria y están cointegradas",
+     "Porque no hay datos de largo plazo",
+     "Porque las series son estacionarias",
+     "Porque solo tienen datos anuales"
+    ],
+    "en": [
+     "Because the series have unit roots and are cointegrated",
+     "Because there are no long-run data",
+     "Because the series are stationary",
+     "Because they only have annual data"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por el teorema de representación de Granger, variables cointegradas admiten una representación con corrección de errores que separa largo y corto plazo.",
+    "en": "By the Granger representation theorem, cointegrated variables admit an error-correction form separating long and short run."
+   },
+   "id": "ext-riesgo-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué parte de la variabilidad de largo plazo de los spreads explican el apetito por riesgo y la tasa internacional?",
+    "en": "What share of the long-run variability of spreads do risk appetite and the international rate explain?"
+   },
+   "op": {
+    "es": [
+     "Casi toda",
+     "Menos del 5%",
+     "Exactamente la mitad",
+     "Cerca del 30%"
+    ],
+    "en": [
+     "Almost all",
+     "Less than 5%",
+     "Exactly half",
+     "About 30%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sube al 37% con el contagio y cerca del 60% al agregar las calificaciones.",
+    "en": "It rises to 37% with contagion and about 60% when ratings are added."
+   },
+   "id": "ext-riesgo-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la velocidad de ajuste del spread a su nivel de largo plazo con datos mensuales?",
+    "en": "What is the speed of adjustment of the spread toward its long-run level with monthly data?"
+   },
+   "op": {
+    "es": [
+     "Se corrige todo en un mes",
+     "Se corrige cerca del 7% del desvío por mes, unos catorce meses de rezago medio",
+     "No hay corrección",
+     "Se corrige el 50% por semana"
+    ],
+    "en": [
+     "All of it corrects in a month",
+     "About 7% of the gap corrects per month, an average lag of about fourteen months",
+     "There is no correction",
+     "50% corrects per week"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El coeficiente del término de corrección implica que alrededor del 7% del desvío se elimina cada mes.",
+    "en": "The error-correction coefficient implies that about 7% of the gap is eliminated each month."
+   },
+   "id": "ext-riesgo-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué asimetría encuentran con datos mensuales?",
+    "en": "What asymmetry do they find with monthly data?"
+   },
+   "op": {
+    "es": [
+     "Los spreads reaccionan más a las bajas que a las subas del apetito por riesgo",
+     "No hay asimetría",
+     "Una suba del 100% del HY sube el spread 105%; una baja igual lo baja 47%",
+     "Solo reaccionan a la tasa de EE.UU."
+    ],
+    "en": [
+     "Spreads react more to falls than rises in risk appetite",
+     "There is no asymmetry",
+     "A 100% rise in HY raises the spread 105%; an equal fall lowers it 47%",
+     "They only react to the US rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los spreads suben rápido y bajan despacio; con datos semanales, en cambio, la asimetría no aparece.",
+    "en": "Spreads rise fast and fall slowly; with weekly data, though, the asymmetry does not appear."
+   },
+   "id": "ext-riesgo-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestra el estudio de eventos sobre las calificaciones?",
+    "en": "What does the event study show about ratings?"
+   },
+   "op": {
+    "es": [
+     "Que las bajas de calificación están precedidas por subas de spreads y tienen poco efecto propio",
+     "Que las calificaciones anticipan siempre los defaults",
+     "Que los spreads no reaccionan a nada",
+     "Que las subas de calificación duplican los spreads"
+    ],
+    "en": [
+     "That downgrades are preceded by spread rises and have little effect of their own",
+     "That ratings always anticipate defaults",
+     "That spreads react to nothing",
+     "That upgrades double spreads"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Aparte de unos 50 puntos básicos en el momento, la baja no cambia mucho: las calificadoras convalidan lo que el mercado ya incorporó.",
+    "en": "Apart from about 50 basis points on the day, the downgrade changes little: agencies validate what the market already priced in."
+   },
+   "id": "ext-riesgo-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cuándo ubica el test el quiebre estructural de la relación?",
+    "en": "When does the test place the structural break in the relationship?"
+   },
+   "op": {
+    "es": [
+     "Enero de 1995",
+     "Septiembre de 2001",
+     "Diciembre de 2005",
+     "Septiembre de 1999"
+    ],
+    "en": [
+     "January 1995",
+     "September 2001",
+     "December 2005",
+     "September 1999"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Coincide con el período posterior a la crisis rusa; después del quiebre lo global explica cerca del 50% de la variabilidad.",
+    "en": "It coincides with the aftermath of the Russian crisis; after the break global factors explain about 50% of variability."
+   },
+   "id": "ext-riesgo-03-q7"
+  },
+  {
+   "q": {
+    "es": "Sube con fuerza el spread de los bonos basura de EE.UU. sin noticias locales. ¿Qué esperaría para el riesgo país argentino según este trabajo?",
+    "en": "US junk-bond spreads jump with no local news. What would this paper lead you to expect for Argentina's country risk?"
+   },
+   "op": {
+    "es": [
+     "Que no cambie, porque solo importan los fundamentos",
+     "Que suba casi en la misma proporción, y que tarde más en bajar",
+     "Que baje, porque los capitales huyen de EE.UU.",
+     "Que dependa solo de la calificación"
+    ],
+    "en": [
+     "No change, since only fundamentals matter",
+     "A rise in nearly the same proportion, and a slower decline",
+     "A fall, as capital flees the US",
+     "It depends only on the rating"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La elasticidad al spread de alto rendimiento es cercana a uno, y los spreads suben más rápido de lo que bajan.",
+    "en": "The elasticity to the high-yield spread is close to one, and spreads rise faster than they fall."
+   },
+   "id": "ext-riesgo-03-q8"
+  }
+ ],
+ "palabras": 1183,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el apetito por riesgo de los inversores globales puede mover el riesgo país de un emergente aunque nada cambie en ese país?",
+    "en": "Why can global investors' risk appetite move an emerging country's risk even if nothing changes in that country?"
+   },
+   "a": {
+    "es": "Porque su deuda se valúa como cualquier activo de alto riesgo: si sube el precio que se cobra por el riesgo, sube su spread. González-Rozada y Levy Yeyati (2008) encuentran una elasticidad cercana a uno respecto del spread de los bonos corporativos de alto rendimiento.",
+    "en": "Because its debt is priced like any high-risk asset: if the price of risk rises, its spread rises. González-Rozada and Levy Yeyati (2008) find an elasticity close to one to the high-yield corporate spread."
+   },
+   "id": "ext-riesgo-03-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué parte de la variabilidad de largo plazo de los spreads emergentes explican los factores globales?",
+    "en": "What share of the long-run variability of emerging spreads do global factors explain?"
+   },
+   "a": {
+    "es": "Alrededor del 30% el apetito por riesgo y la tasa a diez años de EE.UU., y 37% con el contagio, según González-Rozada y Levy Yeyati (2008) para 33 emergentes entre 1994 y 2005.",
+    "en": "About 30% risk appetite and the US 10-year rate, and 37% with contagion, according to González-Rozada and Levy Yeyati (2008) for 33 emerging economies, 1994-2005."
+   },
+   "id": "ext-riesgo-03-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "Si dos series no estacionarias se mueven juntas en el largo plazo, ¿qué modelo permite separar el ajuste de largo y de corto plazo?",
+    "en": "If two non-stationary series move together in the long run, which model separates long- and short-run adjustment?"
+   },
+   "a": {
+    "es": "Un modelo de corrección de errores: primero se estima la relación de cointegración y después la dinámica de corto plazo con el desvío rezagado. González-Rozada y Levy Yeyati (2008) estiman que cada mes se corrige cerca del 7% del desvío del spread.",
+    "en": "An error-correction model: first the cointegrating relation, then short-run dynamics with the lagged deviation. González-Rozada and Levy Yeyati (2008) estimate about 7% of the spread gap corrects each month."
+   },
+   "id": "ext-riesgo-03-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Reaccionan igual los spreads emergentes a las subas y a las bajas de la aversión global al riesgo?",
+    "en": "Do emerging spreads react equally to rises and falls in global risk aversion?"
+   },
+   "a": {
+    "es": "No: con datos mensuales, una suba del 100% del spread de alto rendimiento sube el emergente un 105%, y una baja igual lo reduce solo un 47% (González-Rozada y Levy Yeyati, 2008).",
+    "en": "No: with monthly data, a 100% rise in the high-yield spread raises the emerging spread 105%, while an equal fall cuts it only 47% (González-Rozada and Levy Yeyati, 2008)."
+   },
+   "id": "ext-riesgo-03-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Las calificaciones crediticias mueven los spreads o los siguen?",
+    "en": "Do credit ratings move spreads or follow them?"
+   },
+   "a": {
+    "es": "Más bien los siguen: las bajas están precedidas por subas del spread y, salvo unos 50 puntos básicos el día del cambio, tienen poco efecto propio. Lo muestran González-Rozada y Levy Yeyati (2008) con un estudio de eventos.",
+    "en": "They mostly follow them: downgrades are preceded by spread rises and, apart from about 50 basis points on the day, have little effect of their own. González-Rozada and Levy Yeyati (2008) show it with an event study."
+   },
+   "id": "ext-riesgo-03-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Si buena parte del riesgo país es exógeno, ¿para qué sirven los buenos fundamentos?",
+    "en": "If much of country risk is exogenous, what are good fundamentals for?"
+   },
+   "a": {
+    "es": "Para reducir la exposición del país a los shocks externos, más que para fijar su costo de endeudamiento. González-Rozada y Levy Yeyati (2008) proponen pasar de la discusión de sostenibilidad a la de vulnerabilidad.",
+    "en": "To reduce the country's exposure to external shocks, rather than to set its borrowing cost. González-Rozada and Levy Yeyati (2008) propose shifting from a sustainability to a vulnerability debate."
+   },
+   "id": "ext-riesgo-03-t6"
+  }
+ ]
+}
