@@ -1,0 +1,363 @@
+{
+ "id": "ext-riesgo-11",
+ "cat": "ext-riesgo",
+ "orden": 16,
+ "minutos": 15,
+ "titulo": "Cinco VAR para cinco países: Aza Alegría y Fort Bazán (2024) sobre el riesgo país latinoamericano",
+ "bajada": "Una tesis de la Universidad de Lima estima modelos VAR para Brasil, Chile, Colombia, México y Perú con datos mensuales de 2008 a 2022: el producto, la inflación y la tasa de política aparecen; el déficit fiscal, la balanza comercial y el contagio, casi nunca.",
+ "fuentes": [
+  1364
+ ],
+ "cita": "Aza Alegría y Fort Bazán (2024)",
+ "intro": "Casi todos los trabajos de esta ruta estiman una ecuación del spread, en un panel o país por país, y preguntan qué variables lo explican. Rodrigo Aza Alegría y Jean Paul Fort Bazán, en su tesis de licenciatura en Economía presentada en la Universidad de Lima en septiembre de 2024, prueban otra herramienta: el vector autorregresivo. En lugar de una regresión con el EMBI a la izquierda, estiman un sistema donde el riesgo país, el producto, la inflación, la tasa de política monetaria, la balanza comercial, el déficit fiscal y los EMBI de Brasil y México se explican unos a otros a partir de sus propios rezagos. Luego miran cómo responde el EMBI a un shock en cada variable. La pregunta de fondo es si los determinantes que la literatura encuentra para las economías desarrolladas operan igual en una región más volátil y riesgosa. (El rack registra este trabajo como «Alegría y Bazán (2023)»; los autores son Aza Alegría y Fort Bazán y la fecha de la tesis es 2024.)",
+ "secciones": [
+  {
+   "t": "El punto de partida teórico: Edwards y la probabilidad de impago",
+   "p": [
+    "El marco teórico retoma la formulación de Edwards (1986). Un prestamista neutral al riesgo que presta por un período y pierde todo si hay default sólo acepta prestar si el retorno esperado con riesgo iguala al libre de riesgo. Si \\(p\\) es la probabilidad de impago, \\(i\\) la tasa libre de riesgo y \\(s\\) la prima, debe cumplirse la ecuación de abajo.",
+    "La probabilidad de impago se modela como una función logística de un conjunto de variables: deuda, cuenta corriente, importaciones, crecimiento y otras. Combinando ambas ecuaciones, el logaritmo de la prima resulta lineal en esas variables. De ahí sale la especificación log-lineal que domina la literatura empírica desde los ochenta.",
+    "La revisión de antecedentes recorre trabajos que esta ruta ya leyó: Min (1998), Rowland y Torres (2004) para Colombia, Guevara García (2015) para seis latinoamericanos, Bellas et al. (2010) y Csonto e Ivaschenko (2013). Suma otros: Cantor y Packer (1996), que encuentran que el PIB es el principal determinante de las calificaciones de Moody's y S&P en 49 países, y Gupta et al. (2008), para quienes la tasa de política no afecta significativamente el riesgo país porque la inflación ya capta ese efecto."
+   ],
+   "eq": "(1-p)\\,[1+(i+s)] = 1+i \\quad\\Rightarrow\\quad s = \\frac{p\\,(1+i)}{1-p}"
+  },
+  {
+   "t": "Datos y estrategia: un VAR por país",
+   "p": [
+    "La muestra cubre de enero de 2008 a diciembre de 2022, con datos mensuales, para Brasil, Chile, Colombia, México y Perú, elegidos por su peso económico en la región.",
+    "Las variables son la variación del EMBI, la variación anual de un índice de producción, la inflación interanual, la tasa de política monetaria, y los valores acumulados de la balanza comercial y del déficit fiscal. En los modelos de los otros países se suman las variaciones del EMBI de Brasil y de México, como medida de contagio desde las dos economías más grandes.",
+    "El procedimiento sigue el manual de Enders. Primero, pruebas de raíz unitaria: Dickey-Fuller, Dickey-Fuller aumentada y Phillips-Perron. Segundo, la elección de rezagos con Akaike y Schwarz, prefiriendo el segundo por más parsimonioso. Tercero, verificar la estabilidad, es decir, que las raíces del polinomio característico estén fuera del círculo unitario, y la ausencia de autocorrelación. Cuarto, identificar los shocks con una descomposición de Cholesky. Y por último, calcular funciones de impulso-respuesta y la descomposición de varianza.",
+    "El orden de Cholesky va de lo más exógeno a lo más endógeno: déficit fiscal, balanza comercial, inflación, tasa, producto, EMBI de México, EMBI de Brasil y, al final, el EMBI propio. En la práctica, esto supone que el riesgo país reacciona en el mismo mes a todas las demás variables, pero ninguna reacciona en ese mes al riesgo país."
+   ]
+  },
+  {
+   "t": "Resultados: el producto, el único que aparece en casi todos",
+   "p": [
+    "La conclusión general es la heterogeneidad: cada país responde distinto.",
+    "La variable más robusta es el producto. Un shock de crecimiento reduce la variación del EMBI en todos los países salvo Chile, con un impacto de alrededor de −0.4 puntos básicos en los primeros quince meses. Los autores vinculan el caso chileno con trabajos que encuentran que el efecto del PIB en países de ingreso medio está moderado por la inflación.",
+    "Más adelante en el horizonte la respuesta se vuelve positiva y mayor, entre 0.45 y 0.85 puntos básicos. El texto no discute este cambio de signo, que contradice la interpretación de que más crecimiento siempre reduce el riesgo."
+   ]
+  },
+  {
+   "t": "Resultados: política monetaria, comercio, fiscal y contagio",
+   "p": [
+    "La inflación y la tasa de política sólo resultan significativas en Brasil y México. En la sección de resultados, la inflación tiene un impacto de −0.5 puntos básicos en Brasil y de 0.5 en México. La tasa de política tiene un impacto de unos −0.7 en ambos.",
+    "En las conclusiones, el mismo hallazgo aparece como un efecto positivo de largo plazo de 0.5 y 0.75, con signo inverso al esperado en el corto plazo. Los autores atribuyen la falta de significatividad en el resto a la credibilidad de cada banco central y a la pandemia, durante la cual la política monetaria convencional perdió eficacia.",
+    "La balanza comercial y el déficit fiscal no son significativos en ningún país. Para el déficit, citan a Baldacci y coautores: el déficit importa menos donde las instituciones fiscales son mejores, y la efectividad fiscal depende de las condiciones iniciales.",
+    "El contagio aparece en un solo caso por cada fuente. El EMBI de Brasil sólo afecta al de Perú, con un impacto positivo que se explica por vínculos comerciales y de inversión. El de México sólo afecta al de Brasil, y con signo negativo: −1 punto básico en los resultados, −1.5 en las conclusiones."
+   ]
+  },
+  {
+   "t": "Qué dicen los autores y qué conviene matizar",
+   "p": [
+    "Los autores concluyen que América Latina debe aplicar políticas distintas de las de los países desarrollados. Recomiendan concentrarse en el producto, la inflación y la tasa de política para influir sobre el riesgo país, y como extensiones proponen excluir la pandemia y la crisis de 2009, usar métodos más complejos e incluir variables sociales y políticas.",
+    "El trabajo es útil como introducción aplicada a los VAR. Pero varias decisiones limitan lo que se puede concluir (lectura propia).",
+    "Primero, las pruebas indican que el EMBI sólo es estacionario en Brasil, Chile y Perú. Aun así, los autores mantienen en niveles la inflación, la tasa, la balanza y el déficit «para obtener funciones impulso respuesta más de acorde con la realidad». Mezclar series integradas y estacionarias en un VAR sin discutir cointegración puede generar respuestas espurias. El propio método que describen indicaría pasar a un VECM.",
+    "Segundo, no hay ninguna variable global: ni VIX, ni tasas estadounidenses, ni precios de commodities. Esto contrasta con Csonto e Ivaschenko o González-Rozada y Levy Yeyati, que encuentran que lo global domina en el corto plazo. En un VAR mensual, esa omisión probablemente contamina los shocks domésticos.",
+    "Tercero, los resultados se expresan en «puntos básicos» de respuesta a shocks de «1 pb» cuando las variables son tasas de variación y valores acumulados en moneda. Con eso es difícil saber qué magnitud tienen.",
+    "Cuarto, las cifras cambian entre la sección de resultados y las conclusiones, y la hipótesis se formula con magnitudes muy precisas que el diseño no permite contrastar."
+   ]
+  },
+  {
+   "t": "El VAR como herramienta para estudiar el riesgo país",
+   "p": [
+    "Más allá de los resultados, el trabajo muestra qué agrega un VAR frente a la regresión estática.",
+    "La primera ventaja es que permite que el riesgo país afecte a las demás variables y no sólo al revés. La retroalimentación entre spread, tasa y actividad es justamente el mecanismo de Uribe y Yue (2006), al comienzo de esta ruta.",
+    "La segunda ventaja es que describe la dinámica: cuánto tarda un shock en pasar al spread y cuánto dura.",
+    "El costo es que la identificación depende del orden de Cholesky, que es un supuesto y no un resultado. Además, con siete u ocho variables y pocos años de datos, los intervalos de confianza se ensanchan y la mayoría de las respuestas dejan de ser significativas. La heterogeneidad que los autores encuentran puede reflejar diferencias reales entre países o, en buena medida, imprecisión estadística (lectura propia)."
+   ]
+  }
+ ],
+ "claves": [
+  "En el modelo de Edwards, la prima compensa la probabilidad de impago, y su logaritmo resulta lineal en los determinantes cuando esa probabilidad es logística.",
+  "Los autores estiman un VAR mensual por país (Brasil, Chile, Colombia, México, Perú, 2008–2022), identificado con Cholesky, y analizan funciones de impulso-respuesta.",
+  "El producto reduce el EMBI en todos los países salvo Chile, con alrededor de −0.4 pb en los primeros quince meses, aunque la respuesta se vuelve positiva más adelante.",
+  "La inflación y la tasa de política sólo son significativas en Brasil y México; la balanza comercial y el déficit fiscal, en ningún país.",
+  "El contagio es escaso: el EMBI de Brasil sólo afecta a Perú y el de México sólo a Brasil.",
+  "Variables no estacionarias en niveles, la ausencia de factores globales y unidades confusas limitan la interpretación (lectura propia)."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué método usan para estudiar los determinantes del riesgo país?",
+    "en": "What method do they use to study country risk determinants?"
+   },
+   "op": {
+    "es": [
+     "Un panel de efectos fijos",
+     "Un modelo probit de default",
+     "Un VAR por país con funciones de impulso-respuesta",
+     "Un modelo de equilibrio general"
+    ],
+    "en": [
+     "A fixed-effects panel",
+     "A default probit model",
+     "A country-by-country VAR with impulse-response functions",
+     "A general equilibrium model"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Estiman cinco VAR, uno para cada país, con datos mensuales de 2008 a 2022.",
+    "en": "They estimate five VARs, one per country, with monthly data from 2008 to 2022."
+   },
+   "id": "ext-riesgo-11-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Edwards, ¿qué condición fija la prima de riesgo?",
+    "en": "In Edwards's model, what condition pins down the risk premium?"
+   },
+   "op": {
+    "es": [
+     "Que el retorno esperado del préstamo riesgoso iguale al libre de riesgo: (1−p)[1+(i+s)] = 1+i",
+     "Que la prima iguale la inflación",
+     "Que el spread sea igual al déficit fiscal",
+     "Que la probabilidad de impago sea cero"
+    ],
+    "en": [
+     "That the expected return on the risky loan equals the risk-free one: (1−p)[1+(i+s)] = 1+i",
+     "That the premium equals inflation",
+     "That the spread equals the fiscal deficit",
+     "That the default probability is zero"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con prestamistas neutrales al riesgo y pérdida total en default.",
+    "en": "With risk-neutral lenders and total loss in default."
+   },
+   "id": "ext-riesgo-11-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué implica el orden de Cholesky elegido, con el EMBI propio al final?",
+    "en": "What does the chosen Cholesky ordering, with the own EMBI last, imply?"
+   },
+   "op": {
+    "es": [
+     "Que el EMBI no responde a ninguna variable",
+     "Que el EMBI responde en el mismo mes a todas las demás, pero ninguna responde en ese mes al EMBI",
+     "Que todas las variables son exógenas",
+     "Que el déficit fiscal responde primero al EMBI"
+    ],
+    "en": [
+     "That the EMBI responds to no variable",
+     "That the EMBI responds within the month to all others, but none responds within the month to the EMBI",
+     "That all variables are exogenous",
+     "That the fiscal deficit responds first to the EMBI"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La identificación recursiva es un supuesto, no un resultado.",
+    "en": "Recursive identification is an assumption, not a result."
+   },
+   "id": "ext-riesgo-11-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la variable con impacto significativo en más países?",
+    "en": "Which variable has a significant impact in the most countries?"
+   },
+   "op": {
+    "es": [
+     "El déficit fiscal",
+     "La balanza comercial",
+     "El EMBI de México",
+     "El producto, en todos salvo Chile"
+    ],
+    "en": [
+     "The fiscal deficit",
+     "The trade balance",
+     "Mexico's EMBI",
+     "Output, in all but Chile"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con alrededor de −0.4 pb en los primeros quince meses.",
+    "en": "With about −0.4 bp in the first fifteen months."
+   },
+   "id": "ext-riesgo-11-q4"
+  },
+  {
+   "q": {
+    "es": "¿Dónde resultan significativas la inflación y la tasa de política monetaria?",
+    "en": "Where are inflation and the policy rate significant?"
+   },
+   "op": {
+    "es": [
+     "En los cinco países",
+     "Sólo en Brasil y México",
+     "Sólo en Chile",
+     "En ninguno"
+    ],
+    "en": [
+     "In all five countries",
+     "Only in Brazil and Mexico",
+     "Only in Chile",
+     "In none"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los autores lo vinculan con la credibilidad de los bancos centrales y con la pandemia.",
+    "en": "The authors link it to central bank credibility and the pandemic."
+   },
+   "id": "ext-riesgo-11-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué encuentran sobre el contagio desde Brasil y México?",
+    "en": "What do they find about contagion from Brazil and Mexico?"
+   },
+   "op": {
+    "es": [
+     "Es fuerte y positivo en toda la región",
+     "No lo pueden medir",
+     "El EMBI de Brasil sólo afecta a Perú y el de México sólo a Brasil, con signo negativo",
+     "Sólo Chile recibe contagio"
+    ],
+    "en": [
+     "It is strong and positive throughout the region",
+     "They cannot measure it",
+     "Brazil's EMBI only affects Peru and Mexico's only affects Brazil, with a negative sign",
+     "Only Chile receives contagion"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La magnitud del efecto de México cambia entre resultados (−1) y conclusiones (−1.5).",
+    "en": "The magnitude of Mexico's effect changes between results (−1) and conclusions (−1.5)."
+   },
+   "id": "ext-riesgo-11-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué problema tiene dejar en niveles series que las pruebas no muestran estacionarias?",
+    "en": "What is the problem with leaving in levels series that tests do not show to be stationary?"
+   },
+   "op": {
+    "es": [
+     "Ninguno si se usa Cholesky",
+     "Puede generar respuestas espurias; correspondería discutir cointegración o un VECM",
+     "Hace que el VAR no tenga rezagos",
+     "Reduce el número de países"
+    ],
+    "en": [
+     "None if Cholesky is used",
+     "It can produce spurious responses; cointegration or a VECM should be discussed",
+     "It makes the VAR have no lags",
+     "It reduces the number of countries"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los autores lo hacen para obtener respuestas «más de acorde con la realidad» (lectura propia).",
+    "en": "The authors do it to obtain responses «more in line with reality» (our own reading)."
+   },
+   "id": "ext-riesgo-11-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de variable falta en estos VAR en comparación con la literatura del FMI de la ruta?",
+    "en": "What kind of variable is missing from these VARs compared with the IMF literature on this route?"
+   },
+   "op": {
+    "es": [
+     "El producto",
+     "La inflación",
+     "La tasa de política",
+     "Factores globales como el VIX, las tasas de EE. UU. o los commodities"
+    ],
+    "en": [
+     "Output",
+     "Inflation",
+     "The policy rate",
+     "Global factors such as the VIX, US rates or commodities"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Csonto e Ivaschenko y González-Rozada y Levy Yeyati muestran que lo global domina el corto plazo.",
+    "en": "Csonto and Ivaschenko and González-Rozada and Levy Yeyati show that global factors dominate the short run."
+   },
+   "id": "ext-riesgo-11-q8"
+  }
+ ],
+ "palabras": 1294,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se deriva la prima de riesgo país de la probabilidad de impago en el modelo de Edwards?",
+    "en": "How is the country risk premium derived from the default probability in Edwards's model?"
+   },
+   "a": {
+    "es": "Con prestamistas neutrales al riesgo y pérdida total en default, (1−p)[1+(i+s)] = 1+i; si p es logística en los fundamentos, el log de la prima es lineal en ellos. Aza Alegría y Fort Bazán (2024) parten de esa formulación.",
+    "en": "With risk-neutral lenders and total loss on default, (1−p)[1+(i+s)] = 1+i; if p is logistic in fundamentals, the log premium is linear in them. Aza Alegría and Fort Bazán (2024) start from that formulation."
+   },
+   "id": "ext-riesgo-11-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué agrega un VAR frente a una regresión estática del spread?",
+    "en": "What does a VAR add relative to a static spread regression?"
+   },
+   "a": {
+    "es": "Permite retroalimentación entre spread, tasas y actividad y describe la dinámica de los shocks; a cambio, la identificación depende del orden de Cholesky. Aza Alegría y Fort Bazán (2024) lo aplican a cinco latinoamericanos.",
+    "en": "It allows feedback among spread, rates and activity and describes shock dynamics; in exchange, identification depends on the Cholesky ordering. Aza Alegría and Fort Bazán (2024) apply it to five Latin American countries."
+   },
+   "id": "ext-riesgo-11-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué supone ubicar al riesgo país en el último lugar de un orden de Cholesky?",
+    "en": "What does placing country risk last in a Cholesky ordering assume?"
+   },
+   "a": {
+    "es": "Que el riesgo país reacciona en el mismo período a todas las demás variables, pero ninguna reacciona contemporáneamente a él. Aza Alegría y Fort Bazán (2024) ordenan déficit, balanza, inflación, tasa, producto, contagio y EMBI.",
+    "en": "That country risk reacts within the period to all other variables, but none reacts contemporaneously to it. Aza Alegría and Fort Bazán (2024) order deficit, trade balance, inflation, rate, output, contagion and EMBI."
+   },
+   "id": "ext-riesgo-11-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué variable doméstica mueve con más regularidad el EMBI en los grandes latinoamericanos entre 2008 y 2022?",
+    "en": "Which domestic variable most regularly moves the EMBI in large Latin American economies, 2008-2022?"
+   },
+   "a": {
+    "es": "El producto: un shock de crecimiento lo reduce en todos salvo Chile, con alrededor de −0.4 pb en quince meses. Aza Alegría y Fort Bazán (2024).",
+    "en": "Output: a growth shock lowers it in all but Chile, by about −0.4 bp over fifteen months. Aza Alegría and Fort Bazán (2024)."
+   },
+   "id": "ext-riesgo-11-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Importan el déficit fiscal y la balanza comercial para el riesgo país latinoamericano en un VAR mensual?",
+    "en": "Do the fiscal deficit and trade balance matter for Latin American country risk in a monthly VAR?"
+   },
+   "a": {
+    "es": "En Aza Alegría y Fort Bazán (2024) no son significativos en ningún país; citan a Baldacci y coautores: el déficit pesa menos con mejores instituciones fiscales.",
+    "en": "In Aza Alegría and Fort Bazán (2024) they are not significant in any country; they cite Baldacci and coauthors: deficits matter less with better fiscal institutions."
+   },
+   "id": "ext-riesgo-11-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la heterogeneidad entre países en un VAR de muchas variables puede ser en parte un artefacto?",
+    "en": "Why might cross-country heterogeneity in a many-variable VAR be partly an artifact?"
+   },
+   "a": {
+    "es": "Porque con siete u ocho variables y pocos años los intervalos se ensanchan, y omitir factores globales o dejar series no estacionarias en niveles distorsiona las respuestas. Es una observación propia sobre Aza Alegría y Fort Bazán (2024).",
+    "en": "Because with seven or eight variables and few years intervals widen, and omitting global factors or leaving non-stationary series in levels distorts responses. This is our own remark on Aza Alegría and Fort Bazán (2024)."
+   },
+   "id": "ext-riesgo-11-t6"
+  }
+ ]
+}

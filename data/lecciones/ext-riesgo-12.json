@@ -1,0 +1,359 @@
+{
+ "id": "ext-riesgo-12",
+ "cat": "ext-riesgo",
+ "orden": 20,
+ "minutos": 15,
+ "titulo": "Reservas, deuda y déficit: Valeriano Apaza (2024) sobre el riesgo país del Perú",
+ "bajada": "Una tesis de la Universidad Nacional del Altiplano estima un VAR trimestral para el Perú entre 2007 y 2022: las reservas reducen el riesgo país, la deuda lo eleva y el déficit no aparece. Sirve también para practicar la lectura crítica de un VAR.",
+ "fuentes": [
+  1361
+ ],
+ "cita": "Valeriano Apaza (2024)",
+ "intro": "El Perú es un caso llamativo en una ruta dominada por la Argentina. Hasta mediados de los noventa arrastró problemas de deuda; en 2007 cambió de perfil y pudo prepagar al Club de París. Para fines de 2022 tenía la menor deuda pública de la región, 35% del PIB, uno de los déficits más bajos, 1,7% del PIB, y la segunda mejor calificación de América Latina después de Chile, aun en medio de una fuerte inestabilidad política. Ronal Valeriano Apaza, en su tesis de Ingeniería Económica en la Universidad Nacional del Altiplano (Puno, 2024), dirigida por Roberto Arpi Mayta, pregunta cuánto de esa imagen se explica por tres variables de las finanzas públicas y externas: el déficit fiscal, las reservas internacionales netas y la deuda pública. Los resultados son razonables. La forma de llegar a ellos ofrece varias lecciones sobre lo que no hay que hacer con un VAR.",
+ "secciones": [
+  {
+   "t": "Por qué esas tres variables",
+   "p": [
+    "El marco conceptual define el riesgo país como el conjunto de riesgos económicos, sociales, legales y políticos que pueden llevar al incumplimiento de los préstamos internacionales. Lo mide, como es habitual, con el diferencial entre el rendimiento de los bonos soberanos y el de los bonos del Tesoro estadounidense.",
+    "Cada variable entra por un canal distinto. La deuda pública es, siguiendo a Damodaran, el punto de partida lógico para evaluar el riesgo de incumplimiento: cuánto debe el soberano, tanto a acreedores externos como a sus propios ciudadanos. Las reservas internacionales son el ahorro externo con que el país enfrenta shocks; en el Perú las administra el Banco Central de Reserva y a diciembre de 2023 sumaban 72,880 millones de dólares. El déficit fiscal, por último, reduce el ahorro público y alimenta la deuda.",
+    "El autor también marca un costo de las reservas: endeudarse cuesta más de lo que rinde mantener reservas, así que ambas cosas deben vigilarse juntas. Y recuerda una vulnerabilidad: una depreciación eleva la deuda medida en moneda local y, con ella, el riesgo de impago."
+   ]
+  },
+  {
+   "t": "Datos y modelo",
+   "p": [
+    "La base es trimestral, de 2007 a 2022, con 64 observaciones por variable tomadas del BCRP. El riesgo país y las reservas entran en logaritmos. El déficit y la deuda entran en millones de soles: en promedio 2 222.27 y 150 493.2 millones respectivamente. Esas dos últimas series se suavizan con el filtro de Hodrick-Prescott para quedarse con su componente de tendencia.",
+    "El procedimiento declarado es el estándar. Primero, pruebas de raíz unitaria ADF y Phillips-Perron. Segundo, la selección de rezagos por FPE, AIC, HQIC y SBIC, que coinciden en cuatro. Tercero, la estimación de un VAR(4) por mínimos cuadrados y pruebas de diagnóstico: heterocedasticidad, normalidad (Jarque-Bera) y estabilidad, es decir, autovalores dentro del círculo unitario. Por último, causalidad de Granger y funciones de impulso-respuesta a diez trimestres."
+   ]
+  },
+  {
+   "t": "Resultados",
+   "p": [
+    "La causalidad de Granger sobre la ecuación del riesgo país muestra que las reservas anticipan sus movimientos con p = 0.000 y la deuda pública con p = 0.026. El déficit fiscal no lo hace (p = 0.179). Las tres variables juntas son significativas al 1%.",
+    "Las funciones de impulso-respuesta van en el mismo sentido. Un shock de reservas reduce el riesgo país de manera significativa en los primeros trimestres y luego el efecto se disipa. Un shock de deuda lo eleva en el corto plazo y también se desvanece. Un shock de déficit nunca sale de la banda de confianza.",
+    "De ahí salen las recomendaciones del autor: límites al endeudamiento y mayor eficiencia del gasto, seguir acumulando reservas, sobre todo en contextos de volatilidad global, y mantener la disciplina fiscal aunque el déficit no aparezca como determinante directo. Son conclusiones coherentes con la literatura: reservas y deuda son los fundamentos que más se repiten en los trabajos de esta ruta."
+   ]
+  },
+  {
+   "t": "Errores de interpretación que conviene reconocer",
+   "p": [
+    "La tesis contiene varios errores frecuentes en trabajos aplicados. Identificarlos es un buen ejercicio (lectura propia).",
+    "Primero, la prueba de heterocedasticidad. El texto dice que el estadístico rechaza la nula al 1% y 5% y que eso «confirma que los residuos son homocedásticos». En las pruebas habituales, como White o Breusch-Pagan, la nula es justamente la homocedasticidad, así que rechazarla indica heterocedasticidad.",
+    "Segundo, los R². Las conclusiones dicen que la deuda «explicó un 87.7%» de la variación del riesgo país y las reservas «un 98.5%». Esos números son los R² de las ecuaciones de cada variable dentro del VAR, es decir, cuánto explican sus propios rezagos y los del resto. No miden la contribución de cada variable al riesgo país. La herramienta para eso es la descomposición de varianza del error de pronóstico, que la tesis no reporta.",
+    "Tercero, los estadísticos chi² que se citan como prueba del efecto de reservas y deuda (427.93 y 318.39) son las pruebas de significatividad conjunta de esas ecuaciones, no de su efecto sobre el riesgo país.",
+    "Cuarto, la descripción estadística dice que el riesgo país «creció en un promedio de 5.16%». Pero 5.16 es la media del logaritmo del nivel, no una tasa de crecimiento. Equivale a un spread de unos 170 puntos básicos."
+   ]
+  },
+  {
+   "t": "El problema de fondo: qué es estacionario",
+   "p": [
+    "El error más serio está en el tratamiento de las series (lectura propia).",
+    "El déficit y la deuda se miden en millones de soles nominales y luego se reemplazan por su tendencia de Hodrick-Prescott. La deuda nominal crece de forma sostenida durante todo el período, y el propio texto lo muestra con un salto desde 2015 y otro desde 2020. Su tendencia HP es, por construcción, una curva suave y creciente.",
+    "Que las pruebas ADF y PP rechacen la raíz unitaria para esa serie es sospechoso. Y aun si fuera estacionaria alrededor de una tendencia, regresar el riesgo país sobre una curva suave que sube casi monótonamente mide sobre todo una correlación de tendencias. La literatura usa ratios sobre el PIB, como deuda/PIB o déficit/PIB, precisamente para evitar este problema y para que la escala tenga sentido económico.",
+    "Además, el filtro HP es de dos colas: el valor filtrado en cada trimestre usa datos futuros. En un modelo que pretende medir qué variables anticipan al riesgo país en el sentido de Granger, eso introduce información que el inversor no tenía en ese momento.",
+    "Por último, el modelo no incluye ninguna variable global: ni VIX, ni tasas estadounidenses, ni precio del cobre. Para una economía pequeña y abierta como la peruana, cuyo spread se mueve con el ciclo financiero mundial, esa omisión puede atribuir a reservas y deuda movimientos que en realidad son globales."
+   ]
+  },
+  {
+   "t": "Cómo usar este trabajo",
+   "p": [
+    "La tesis sirve como ficha del caso peruano. Muestra el paso de deudor problemático a uno de los mejores créditos de la región, con deuda baja, reservas altas y un spread que se mantuvo bajo pese a la inestabilidad política, y apunta a las reservas y la deuda como anclas de esa percepción.",
+    "Como ejercicio de método, vale releerla junto con Aza Alegría y Fort Bazán (2024), que aplica la misma herramienta a cinco países. En ambos casos el VAR sin variables globales y con series mal transformadas produce resultados razonables en dirección, pero difíciles de interpretar en magnitud.",
+    "La lección práctica es una lista de control para cualquier VAR. Verificar qué hipótesis nula tiene cada prueba de diagnóstico. No confundir el R² de una ecuación con la contribución de una variable. Reportar la descomposición de varianza. Expresar las variables fiscales en proporción del PIB. Evitar filtros de dos colas cuando se estudia causalidad temporal."
+   ]
+  }
+ ],
+ "claves": [
+  "Entre 2007 y 2022 el Perú pasó a tener la menor deuda pública de la región (35% del PIB en 2022) y la segunda mejor calificación de América Latina.",
+  "En un VAR(4) trimestral, las reservas (p = 0.000) y la deuda pública (p = 0.026) causan en el sentido de Granger al riesgo país; el déficit fiscal no (p = 0.179).",
+  "Un shock de reservas reduce el riesgo país y uno de deuda lo eleva, ambos de forma transitoria.",
+  "Rechazar la nula de una prueba de heterocedasticidad indica heterocedasticidad, no lo contrario.",
+  "El R² de la ecuación de una variable dentro de un VAR no mide su contribución al riesgo país; para eso está la descomposición de varianza.",
+  "Usar la tendencia HP de series nominales en millones de soles y omitir factores globales limita la interpretación (lectura propia)."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué tres variables estudia la tesis como determinantes del riesgo país peruano?",
+    "en": "Which three variables does the thesis study as determinants of Peruvian country risk?"
+   },
+   "op": {
+    "es": [
+     "Inflación, tipo de cambio y tasa de política",
+     "VIX, cobre y tasa de la Fed",
+     "Déficit fiscal, reservas internacionales netas y deuda pública",
+     "PIB, exportaciones e importaciones"
+    ],
+    "en": [
+     "Inflation, exchange rate and policy rate",
+     "VIX, copper and the Fed rate",
+     "Fiscal deficit, net international reserves and public debt",
+     "GDP, exports and imports"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con datos trimestrales del BCRP entre 2007 y 2022.",
+    "en": "With quarterly BCRP data from 2007 to 2022."
+   },
+   "id": "ext-riesgo-12-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestra la prueba de causalidad de Granger sobre el riesgo país?",
+    "en": "What does the Granger causality test show for country risk?"
+   },
+   "op": {
+    "es": [
+     "Que las reservas y la deuda lo anticipan y el déficit no",
+     "Que sólo el déficit lo anticipa",
+     "Que ninguna variable lo anticipa",
+     "Que el riesgo país causa a las tres"
+    ],
+    "en": [
+     "That reserves and debt anticipate it and the deficit does not",
+     "That only the deficit anticipates it",
+     "That no variable anticipates it",
+     "That country risk causes all three"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "p = 0.000 para reservas, 0.026 para deuda y 0.179 para déficit.",
+    "en": "p = 0.000 for reserves, 0.026 for debt and 0.179 for the deficit."
+   },
+   "id": "ext-riesgo-12-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cómo responde el riesgo país a un shock de reservas según las funciones de impulso-respuesta?",
+    "en": "How does country risk respond to a reserves shock according to the impulse responses?"
+   },
+   "op": {
+    "es": [
+     "Sube de forma permanente",
+     "No responde",
+     "Baja de forma permanente",
+     "Baja significativamente en los primeros trimestres y luego el efecto se disipa"
+    ],
+    "en": [
+     "It rises permanently",
+     "It does not respond",
+     "It falls permanently",
+     "It falls significantly in the first quarters and then the effect fades"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El shock de deuda tiene el efecto opuesto, también transitorio.",
+    "en": "The debt shock has the opposite effect, also transitory."
+   },
+   "id": "ext-riesgo-12-q3"
+  },
+  {
+   "q": {
+    "es": "En una prueba de White o Breusch-Pagan, ¿qué significa rechazar la hipótesis nula?",
+    "en": "In a White or Breusch-Pagan test, what does rejecting the null hypothesis mean?"
+   },
+   "op": {
+    "es": [
+     "Que los residuos son homocedásticos",
+     "Que hay evidencia de heterocedasticidad",
+     "Que los residuos son normales",
+     "Que el modelo es estable"
+    ],
+    "en": [
+     "That the residuals are homoskedastic",
+     "That there is evidence of heteroskedasticity",
+     "That the residuals are normal",
+     "That the model is stable"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La nula es la homocedasticidad; la tesis interpreta el rechazo al revés.",
+    "en": "The null is homoskedasticity; the thesis reads the rejection backwards."
+   },
+   "id": "ext-riesgo-12-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué mide el R² de la ecuación de reservas dentro de un VAR?",
+    "en": "What does the R² of the reserves equation within a VAR measure?"
+   },
+   "op": {
+    "es": [
+     "Cuánto explican las reservas del riesgo país",
+     "La probabilidad de default",
+     "Cuánto de la variación de las reservas explican los rezagos del sistema",
+     "La elasticidad del spread a las reservas"
+    ],
+    "en": [
+     "How much of country risk reserves explain",
+     "The probability of default",
+     "How much of the variation in reserves the system's lags explain",
+     "The spread elasticity to reserves"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Para atribuir variación del riesgo país a cada shock se usa la descomposición de varianza.",
+    "en": "To attribute country-risk variation to each shock one uses the variance decomposition."
+   },
+   "id": "ext-riesgo-12-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué es problemático usar la tendencia HP de la deuda en millones de soles nominales?",
+    "en": "Why is using the HP trend of debt in nominal millions of soles problematic?"
+   },
+   "op": {
+    "es": [
+     "Porque es una curva suave y creciente, sin escala económica, y el filtro de dos colas usa datos futuros",
+     "Porque el filtro HP elimina la tendencia",
+     "Porque la deuda peruana es en dólares",
+     "No es problemático"
+    ],
+    "en": [
+     "Because it is a smooth, rising curve with no economic scale, and the two-sided filter uses future data",
+     "Because the HP filter removes the trend",
+     "Because Peruvian debt is in dollars",
+     "It is not problematic"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La literatura usa deuda/PIB y déficit/PIB (lectura propia).",
+    "en": "The literature uses debt/GDP and deficit/GDP (our own reading)."
+   },
+   "id": "ext-riesgo-12-q6"
+  },
+  {
+   "q": {
+    "es": "Si la media del logaritmo del riesgo país es 5.16, ¿qué significa?",
+    "en": "If the mean of log country risk is 5.16, what does it mean?"
+   },
+   "op": {
+    "es": [
+     "Que el riesgo país creció 5,16% por trimestre",
+     "Que el spread promedio fue de 5,16 puntos básicos",
+     "Que el spread cayó 5,16%",
+     "Que el spread típico ronda e^5.16, unos 170 puntos básicos"
+    ],
+    "en": [
+     "That country risk grew 5.16% per quarter",
+     "That the average spread was 5.16 basis points",
+     "That the spread fell 5.16%",
+     "That the typical spread is around e^5.16, about 170 basis points"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La tesis lo lee como tasa de crecimiento, lo cual es un error.",
+    "en": "The thesis reads it as a growth rate, which is a mistake."
+   },
+   "id": "ext-riesgo-12-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué variables relevantes para una economía pequeña y abierta faltan en el modelo?",
+    "en": "Which variables relevant to a small open economy are missing from the model?"
+   },
+   "op": {
+    "es": [
+     "La deuda pública",
+     "Factores globales como el VIX, las tasas de EE. UU. o el precio del cobre",
+     "Las reservas",
+     "El riesgo país rezagado"
+    ],
+    "en": [
+     "Public debt",
+     "Global factors such as the VIX, US rates or the copper price",
+     "Reserves",
+     "Lagged country risk"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Su omisión puede atribuir a reservas y deuda movimientos globales (lectura propia).",
+    "en": "Omitting them can attribute global movements to reserves and debt (our own reading)."
+   },
+   "id": "ext-riesgo-12-q8"
+  }
+ ],
+ "palabras": 1215,
+ "tarjetas": [
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué fundamentos acompañaron el bajo riesgo país del Perú hacia 2022?",
+    "en": "What fundamentals accompanied Peru's low country risk around 2022?"
+   },
+   "a": {
+    "es": "La menor deuda pública de la región (35% del PIB), un déficit de 1,7% del PIB, reservas elevadas y la segunda mejor calificación de América Latina. Valeriano Apaza (2024).",
+    "en": "The region's lowest public debt (35% of GDP), a deficit of 1.7% of GDP, high reserves and the second-best rating in Latin America. Valeriano Apaza (2024)."
+   },
+   "id": "ext-riesgo-12-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué variables de las finanzas públicas y externas anticipan el riesgo país peruano entre 2007 y 2022?",
+    "en": "Which public and external finance variables anticipate Peruvian country risk, 2007-2022?"
+   },
+   "a": {
+    "es": "Las reservas (lo reducen) y la deuda pública (lo eleva), con efectos transitorios; el déficit fiscal no. Valeriano Apaza (2024), VAR(4) trimestral.",
+    "en": "Reserves (which lower it) and public debt (which raises it), with transitory effects; the fiscal deficit does not. Valeriano Apaza (2024), quarterly VAR(4)."
+   },
+   "id": "ext-riesgo-12-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cuál es la hipótesis nula de las pruebas habituales de heterocedasticidad?",
+    "en": "What is the null hypothesis of the usual heteroskedasticity tests?"
+   },
+   "a": {
+    "es": "Homocedasticidad: rechazarla indica heterocedasticidad. Valeriano Apaza (2024) lo interpreta al revés, un error frecuente.",
+    "en": "Homoskedasticity: rejecting it indicates heteroskedasticity. Valeriano Apaza (2024) reads it the other way round, a common mistake."
+   },
+   "id": "ext-riesgo-12-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Con qué herramienta se mide cuánto contribuye cada variable a la variación del riesgo país en un VAR?",
+    "en": "Which tool measures how much each variable contributes to country-risk variation in a VAR?"
+   },
+   "a": {
+    "es": "Con la descomposición de varianza del error de pronóstico, no con el R² de cada ecuación. Valeriano Apaza (2024) reporta R² de 87.7% y 98.5% como si fueran contribuciones.",
+    "en": "With the forecast-error variance decomposition, not with each equation's R². Valeriano Apaza (2024) reports R² of 87.7% and 98.5% as if they were contributions."
+   },
+   "id": "ext-riesgo-12-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué un filtro de Hodrick-Prescott es problemático en un análisis de causalidad de Granger?",
+    "en": "Why is a Hodrick-Prescott filter problematic in a Granger causality analysis?"
+   },
+   "a": {
+    "es": "Porque es de dos colas: el valor filtrado en t usa datos posteriores, de modo que la serie incorpora información futura. Es una observación propia sobre Valeriano Apaza (2024).",
+    "en": "Because it is two-sided: the filtered value at t uses later data, so the series embeds future information. This is our own remark on Valeriano Apaza (2024)."
+   },
+   "id": "ext-riesgo-12-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué conviene expresar deuda y déficit como proporción del PIB al estudiar el riesgo país?",
+    "en": "Why should debt and deficits be expressed as a share of GDP when studying country risk?"
+   },
+   "a": {
+    "es": "Porque las series nominales crecen con precios y producto, generan correlaciones de tendencia y carecen de escala económica comparable. Es una observación propia sobre Valeriano Apaza (2024), que las usa en millones de soles.",
+    "en": "Because nominal series grow with prices and output, create trend correlations and lack a comparable economic scale. This is our own remark on Valeriano Apaza (2024), who uses them in millions of soles."
+   },
+   "id": "ext-riesgo-12-t6"
+  }
+ ]
+}
