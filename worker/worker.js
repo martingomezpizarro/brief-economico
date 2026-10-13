@@ -11,7 +11,7 @@
 //
 //  Variables (Settings → Variables and Secrets):
 //    GEMINI_API_KEY   secreto — la key de Google AI Studio
-//    FIREBASE_PROJECT idoneidad-48c77
+//    FIREBASE_PROJECT prebisch-785b1
 //    MODELO           gemini-3.8-flash            (opcional)
 //    LIMITE_DIARIO    4    briefs por persona y día (opcional)
 //    LIMITE_RUTAS     5    rutas por persona y día (opcional)
@@ -264,7 +264,7 @@ async function usuario(req, env) {
   const ok = await crypto.subtle.verify("RSASSA-PKCS1-v1_5", llave, b64u(partes[2]),
     new TextEncoder().encode(partes[0] + "." + partes[1]));
   if (!ok) return null;
-  const proy = env.FIREBASE_PROJECT || "idoneidad-48c77";
+  const proy = env.FIREBASE_PROJECT || "prebisch-785b1";
   const ahora = Math.floor(Date.now() / 1000);
   if (p.aud !== proy || p.iss !== "https://securetoken.google.com/" + proy) return null;
   if (!p.sub || p.exp < ahora || p.iat > ahora + 300) return null;

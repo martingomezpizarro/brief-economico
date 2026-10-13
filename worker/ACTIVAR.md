@@ -1,6 +1,6 @@
 # Activar el servidor de briefs y los avisos
 
-La página funciona sin esto: el rack, los briefs, las preguntas y el repaso andan igual, y en **Mi estudio** cualquiera puede generar briefs con su propia key de Gemini o de Anthropic. Este Worker agrega la tercera opción: **generar con tu key de Gemini, gratis para quien inicie sesión, con cupo diario**. Es el mismo esquema del tutor de idoneidad.
+La página funciona sin esto: el rack, los briefs, las preguntas y el repaso andan igual, y en **Mi estudio** cualquiera puede generar briefs con su propia key de Gemini o de Anthropic. Este Worker agrega la tercera opción: **generar con tu key de Gemini, gratis para quien inicie sesión, con cupo diario**. Es el mismo esquema del tutor de idoneidad, pero con su propio proyecto de Firebase.
 
 ## 1. Key de Gemini
 Podés reusar la del tutor de idoneidad o crear otra en https://aistudio.google.com/apikey (por ejemplo, en un proyecto `brief-economico`, así ves el consumo por separado). No va en la página ni en el código: se carga como secreto en el paso 4.
@@ -20,7 +20,7 @@ Worker → **Settings → Variables and Secrets → + Add**, una fila por variab
 | Nombre | Tipo | Valor |
 |---|---|---|
 | `GEMINI_API_KEY` | **Secret** | la key del paso 1 |
-| `FIREBASE_PROJECT` | Text | `idoneidad-48c77` |
+| `FIREBASE_PROJECT` | Text | `prebisch-785b1` |
 | `ADMINS` | Text | `gomezpizarromartin@gmail.com` (vos, sin tope) |
 | `LIMITE_DIARIO` | Text | `4` (briefs por persona y día) |
 | `LIMITE_RUTAS` | Text | `5` (rutas por persona y día) |
@@ -30,27 +30,16 @@ Worker → **Settings → Variables and Secrets → + Add**, una fila por variab
 Con el nivel gratuito de Gemini hay límites por minuto y por día; si se superan, la página avisa «saturado» y sugiere usar una key propia. En el nivel gratuito Google puede usar los textos para mejorar sus modelos: está dicho en Ajustes.
 
 ## 5. Firebase (las cuentas)
-La página usa el mismo proyecto que idoneidad (`idoneidad-48c77`), así una cuenta sirve para las dos páginas.
+La página usa su propio proyecto de Firebase, **`prebisch-785b1`**, separado del de idoneidad: cuentas, mails, reglas y cupos no se comparten.
 
-1. **Authentication → Settings → Authorized domains → Add domain** → `prebisch.martingomezpizarro.com.ar`.
-2. **Authentication → Sign-in method → Add new provider → Email/Password** → activá **Email/Password** (el primer interruptor; «Email link» no hace falta) → **Save**. Con eso aparece «o con tu mail» en Ajustes: crear cuenta, entrar y «Olvidé mi contraseña».
-3. Opcional: **Authentication → Templates** → cambiá el idioma de los mails a español y, en «Email address verification» y «Password reset», el nombre del remitente a «Prebisch».
-
-Las cuentas con mail tienen que verificarlo (abrir el enlace que les llega) antes de usar el servidor de briefs; las de Google ya vienen verificadas.
-4. **Firestore → Rules**: sumá el bloque `brief` sin borrar el de `usuarios` y **Publish**. Quedan así:
+1. **Authentication → Sign-in method**: activá **Google** (con tu mail como mail de soporte) y **Email/Password** (solo el primer interruptor).
+2. **Authentication → Settings → Authorized domains → Add domain** → `prebisch.martingomezpizarro.com.ar`.
+3. **Firestore Database → Create database** (ubicación `southamerica-east1`, modo production) → pestaña **Rules** → pegá esto y **Publish**:
 
 ```
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
-    match /usuarios/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
-      match /datos/{doc} {
-        allow read, write: if request.auth != null && request.auth.uid == uid
-                           && doc in ['quiz', 'micro'];
-      }
-    }
-    // Prebisch: cada persona lee y escribe solo lo suyo.
     match /brief/{uid} {
       allow read, write: if request.auth != null && request.auth.uid == uid;
       match /lecciones/{id} {
@@ -60,7 +49,9 @@ service cloud.firestore {
   }
 }
 ```
-Copiá también este archivo en `firestore.rules` del repo de idoneidad para que no quede desactualizado.
+4. Opcional: **Authentication → Templates** → idioma español y remitente «Prebisch»; **Project settings → General → Public-facing name** → «Prebisch» (es el nombre que muestra la ventana de Google).
+
+Las cuentas con mail tienen que verificarlo (abrir el enlace que les llega) antes de usar el servidor de briefs; las de Google ya vienen verificadas.
 
 ## 6. Avisos diarios (notificaciones)
 Usan el mismo Worker y el mismo KV. La clave de los avisos (VAPID) la crea el Worker solo, la primera vez, y la guarda en el KV.
