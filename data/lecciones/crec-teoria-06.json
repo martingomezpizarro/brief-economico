@@ -1,0 +1,372 @@
+{
+ "id": "crec-teoria-06",
+ "cat": "crec-teoria",
+ "orden": 3,
+ "minutos": 14,
+ "titulo": "Levadura u hongos: la visión del crecimiento de Harberger (1998)",
+ "bajada": "Por qué conviene llamar al residuo de Solow «reducción de costos reales», qué muestran los diagramas de amanecer y ocaso sobre industrias y firmas, y qué políticas habilitan el crecimiento.",
+ "fuentes": [
+  1219
+ ],
+ "cita": "Harberger (1998), «A vision of the growth process», American Economic Review 88(1), discurso presidencial de la American Economic Association",
+ "intro": "La contabilidad del crecimiento esperaba que los aumentos del producto se explicaran por aumentos de los insumos, cada uno pagado según su producto marginal. Pero los insumos tradicionales quedaban cortos: el residuo explicaba una fracción importante del crecimiento, muchas veces la mitad o más. En su discurso presidencial ante la American Economic Association, Arnold Harberger propone mirar ese residuo con otro nombre, «reducción de costos reales», y saca de esa etiqueta una visión entera del proceso de crecimiento: dónde ocurre, cómo se distribuye entre industrias y firmas, y qué puede hacer la política.",
+ "secciones": [
+  {
+   "t": "El residuo con nombre, domicilio y cara",
+   "p": [
+    "Si el trabajo se desagrega por categorías y cada una se pondera por su salario, como hicieron Griliches, Denison, Kendrick y Jorgenson, la contribución directa del capital humano queda capturada en el término del trabajo: los médicos ganan más que las enfermeras y eso ya se cuenta ahí. El residuo que sobra no contiene cambios de calidad del trabajo, y puede leerse como cambio técnico, mejora de la productividad total de los factores (PTF) o reducción de costos reales.",
+    "Analíticamente las tres etiquetas son equivalentes, pero no evocan lo mismo. «Cambio técnico» hace pensar en inventos e I+D; «PTF», en externalidades. «Reducción de costos reales» hace pensar como un empresario o un gerente de producción. Harberger insiste en que hay al menos 1001 maneras de reducir costos: una fábrica de ropa en Centroamérica que bajó 20% sus costos al poner música de fondo, o dos fabricantes chilenos de heladeras que, al fusionarse, pasaron de unos 24 modelos a dos y más que duplicaron la producción con menos de la mitad de los trabajadores.",
+    "Por eso critica a los primeros modelos de crecimiento endógeno: Romer con el conocimiento y Lucas con las externalidades del capital humano endogeneizaron el residuo con un único mecanismo de retroalimentación, que no representa bien su naturaleza múltiple. La etiqueta además revela algo útil: la reducción de costos es aditiva. Si tres industrias con valor agregado inicial de 100, 200 y 300 mil millones mejoran su PTF 80%, 60% y 50% en una década, ahorran 80, 120 y 150 mil millones: 350 en total. El residuo gana un nombre, un domicilio (la firma) y una cara (la del empresario)."
+   ]
+  },
+  {
+   "t": "Levadura versus hongos",
+   "p": [
+    "La levadura hace crecer el pan de manera pareja; los hongos brotan de golpe, donde no se esperaba. Un proceso de levadura encaja con externalidades amplias, ligadas al stock total de conocimiento o de capital humano, o a economías de escala de toda la economía. Un proceso de hongos encaja con reducciones de costos de 1001 causas distintas.",
+    "Los datos de Kendrick y Grossman para Estados Unidos en 1958-1967 apuntan a los hongos. El 10% de las industrias, medido por valor agregado inicial, explica el 30% de la reducción de costos; el 22% de las industrias explica más de la mitad. Dieciocho industrias que sumaban casi el 60% del producto inicial aportaron apenas el 10%. Además, las líderes cambian de período a período: de doce puestos en los cuatro primeros lugares de 1948-1958, 1958-1967 y 1967-1976, solo Comunicaciones aparece dos veces. Eso es difícil de conciliar con una externalidad general de la educación, con un vínculo fuerte con la I+D o con economías de escala, que deberían mostrar persistencia.",
+    "Para mostrarlo, Harberger ordena las industrias de mayor a menor mejora de PTF y grafica la reducción de costos acumulada contra el valor agregado inicial acumulado, con el eje vertical expresado como tasa anual. Llamó a estos gráficos «diagramas de amanecer», y por sugerencia de Yoram Barzel, «de ocaso» cuando la pendiente agregada es negativa. Casi siempre la curva sobrepasa el total: en la manufactura estadounidense de 1970-1975, el 25% de las industrias alcanzaba por sí solo para explicar toda la reducción de costos del sector; el resto se repartía entre ganadoras y perdedoras que se compensaban."
+   ]
+  },
+  {
+   "t": "Ganadores y perdedores, también entre firmas",
+   "p": [
+    "El patrón general: una fracción chica o moderada de unidades explica el 100% de la reducción agregada; el resto se cancela entre sí; las perdedoras pesan mucho y explican buena parte de las variaciones del agregado; y hay poca persistencia de las líderes. En los datos de Jorgenson, si las perdedoras hubieran tenido cambio nulo de PTF, las contribuciones acumuladas habrían estado entre 0,5% y 0,8% anual en todos los subperíodos; en cambio, fueron de −0,9% en 1973-1979 a más de 0,5% en otros. La parte creativa de la «destrucción creadora» fue más estable que la destructiva.",
+    "Con datos de firmas, el mismo patrón aparece dentro de cada industria. Leonardo Torre analizó unas 1.900 firmas manufactureras mexicanas en 44 ramas para 1984-1994, y Edgar Robles, 12 petroleras estadounidenses: tres de ellas bastaban para generar toda la reducción de costos del grupo, y alrededor de la mitad tuvo PTF negativa en cada período.",
+    "¿Es todo error de medición? Harberger responde que «el ruido blanco no canta una melodía»: si los resultados se explican con principios económicos sensatos, eso es evidencia contra el azar. Y argumenta que el error, si algo, subestima la dispersión. Su lectura: «es una selva allá afuera». Las firmas con PTF negativa pueden ser innovadoras que apostaron al caballo equivocado o que pelean por sobrevivir ante shocks de precios o de demanda. Es la destrucción creadora de Schumpeter, y la PTF negativa es, para él, el terreno más fértil para investigar."
+   ]
+  },
+  {
+   "t": "Método: separar componentes y mirar la firma",
+   "p": [
+    "Harberger recomienda estudiar por separado los componentes del crecimiento: inversión, tasa de retorno, fuerza de trabajo, capital humano y reducción de costos. Pide medir la tasa de retorno y escribir la contribución del capital como (ρ+δ)·ΔK/y, para que no quede escondida; mirar la inversión antes que el ahorro, porque en economías abiertas, regiones o firmas el ahorro tiene poco que ver con la inversión; y averiguar por qué canal operan las externalidades del capital humano y las economías de escala, en vez de atribuirlas vagamente a toda la economía.",
+    "Desconfía de las regresiones de crecimiento entre países: le parecen ingenuas cuando la pendiente sale de comparar Sudán con Suiza o Bangladesh con Brasil. Prefiere estudiar episodios dentro de cada país y buscar qué tienen en común los pasajes de mal a buen crecimiento.",
+    "Los datos de Harald Beyer para 32 países entre 1971 y 1991 muestran un síndrome: los diez de mayor crecimiento tuvieron una tasa de retorno media de 12,63%, una contribución del capital de 2,91 puntos y una mejora de PTF de 1,74% anual; los diez más lentos, 6,93%, 1,09 y 0,661. Harberger lee que la reducción de costos es la fuerza impulsora: eleva la rentabilidad, atrae inversión y acelera el crecimiento."
+   ]
+  },
+  {
+   "t": "Políticas que obstruyen y políticas que habilitan",
+   "p": [
+    "No hay bala de plata; las palabras clave son obstruir y habilitar. El punto de partida más fácil es una economía antes próspera que sufrió malas políticas: liberarla puede desatar milagros como los de Taiwán, España, Corea, Brasil, Indonesia, Malasia o China.",
+    "Primero, para reducir costos hay que verlos. El costo más serio de la inflación no es el triángulo bajo la demanda de dinero ni el impuesto inflacionario, sino que nubla la percepción de los precios relativos: con inflación de 20% a 50% anual se ven como en una bruma matinal; con 20% a 50% mensual, como en la niebla de Londres. Segundo, evitar los «precios mentirosos» que generan aranceles de 50% o 100% con protección efectiva de 200% o 300%, controles de precios e intervención del crédito. Tercero, podar regulaciones y trámites, incluidas leyes laborales que encarecen despedir y desalientan contratar. Cuarto, apertura comercial, que facilita la transferencia de tecnología y obliga a competir. Quinto, privatizaciones, aunque advierte contra las hechas con apuro y por motivos fiscales. Sexto, un marco legal que proteja la propiedad. Séptimo, consenso político: Chile mantuvo sus reformas a través de dos elecciones ganadas por la vereda opuesta, y esa expectativa de continuidad es clave para inversiones de largo plazo.",
+    "La convergencia, para Harberger, es producto por producto, no país por país, y las buenas políticas no producen un salto de nivel sino una tasa de crecimiento más alta por mucho tiempo. Su analogía: dos recipientes conectados por un tubo fino; las buenas políticas destapan y ensanchan el tubo, pero igual lleva décadas que se igualen los niveles."
+   ]
+  }
+ ],
+ "claves": [
+  "Medido con trabajo desagregado por salarios, el residuo excluye el capital humano y puede leerse como reducción de costos reales.",
+  "La reducción de costos tiene 1001 causas y es aditiva en dólares a precios iniciales.",
+  "El crecimiento de la PTF se parece a hongos, no a levadura: pocas industrias o firmas explican todo y las líderes cambian de período a período.",
+  "Las unidades con PTF negativa pesan mucho en el resultado agregado y merecen investigación propia.",
+  "Los países de crecimiento rápido combinan alta rentabilidad, alta inversión y alta mejora de PTF.",
+  "La inflación es el principal obstáculo porque nubla los precios relativos; las buenas políticas aceleran una convergencia que lleva décadas."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué el residuo medido con trabajo desagregado por salarios no incluye la contribución directa del capital humano?",
+    "en": "Why does a residual measured with wage-weighted labor categories exclude human capital's direct contribution?"
+   },
+   "op": {
+    "es": [
+     "Porque el capital humano no afecta el producto",
+     "Porque ya está capturada en el término del trabajo, ponderado por salarios",
+     "Porque se incluye en el capital físico",
+     "Porque se mide aparte con encuestas"
+    ],
+    "en": [
+     "Because human capital does not affect output",
+     "Because it is already captured in the wage-weighted labor term",
+     "Because it is included in physical capital",
+     "Because it is measured separately with surveys"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Lo que se paga por mayor calificación entra en la suma de salarios por cambios de trabajo de cada categoría.",
+    "en": "Pay for higher skills enters the sum of wages times changes in each labor category."
+   },
+   "id": "crec-teoria-06-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja le encuentra Harberger a la etiqueta «reducción de costos reales»?",
+    "en": "What advantage does Harberger see in the label 'real cost reduction'?"
+   },
+   "op": {
+    "es": [
+     "Que cambia la medición del residuo",
+     "Que elimina la necesidad de medir el capital",
+     "Que transmite la multiplicidad de causas y la aditividad del proceso",
+     "Que permite usar regresiones entre países"
+    ],
+    "en": [
+     "That it changes how the residual is measured",
+     "That it removes the need to measure capital",
+     "That it conveys the process's many causes and additivity",
+     "That it allows cross-country regressions"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las tres etiquetas son equivalentes en lo mecánico; esta comunica mejor la naturaleza del proceso.",
+    "en": "The three labels are mechanically equivalent; this one better conveys the process's nature."
+   },
+   "id": "crec-teoria-06-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué significa la dicotomía «levadura versus hongos»?",
+    "en": "What does the 'yeast versus mushrooms' dichotomy mean?"
+   },
+   "op": {
+    "es": [
+     "Crecimiento parejo por externalidades generales versus mejoras concentradas e impredecibles",
+     "Agricultura versus industria",
+     "Países ricos versus pobres",
+     "Corto versus largo plazo"
+    ],
+    "en": [
+     "Even growth from general externalities versus concentrated, unpredictable gains",
+     "Agriculture versus industry",
+     "Rich versus poor countries",
+     "Short versus long run"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los datos de industrias y firmas favorecen la imagen de hongos.",
+    "en": "Industry and firm data favor the mushroom image."
+   },
+   "id": "crec-teoria-06-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué evidencia contradice que la PTF se deba sobre todo a I+D o economías de escala?",
+    "en": "What evidence contradicts TFP being mostly due to R&D or scale economies?"
+   },
+   "op": {
+    "es": [
+     "Que la PTF es siempre positiva",
+     "Que la PTF es igual en todas las industrias",
+     "Que solo crece en servicios",
+     "Que las industrias líderes cambian casi por completo de un período a otro"
+    ],
+    "en": [
+     "That TFP is always positive",
+     "That TFP is the same in all industries",
+     "That it only grows in services",
+     "That leading industries change almost completely from one period to the next"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Esas fuentes deberían mostrar persistencia; de 12 lugares en tres décadas, solo Comunicaciones se repite.",
+    "en": "Those sources should show persistence; of 12 slots across three periods, only Communications repeats."
+   },
+   "id": "crec-teoria-06-q4"
+  },
+  {
+   "q": {
+    "es": "En un diagrama de amanecer, ¿qué indica el «sobrepaso» de la curva?",
+    "en": "In a sunrise diagram, what does the curve's 'overshooting' indicate?"
+   },
+   "op": {
+    "es": [
+     "Que hubo error de medición",
+     "Que una fracción de industrias explica más del total y otras tienen PTF negativa",
+     "Que la economía creció más que su potencial",
+     "Que la inflación fue alta"
+    ],
+    "en": [
+     "That there was measurement error",
+     "That a fraction of industries explains more than the total and others have negative TFP",
+     "That the economy grew above potential",
+     "That inflation was high"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En 1970-1975, el 25% de las industrias manufactureras igualaba toda la reducción de costos del sector.",
+    "en": "In 1970-1975, 25% of manufacturing industries matched the sector's entire cost reduction."
+   },
+   "id": "crec-teoria-06-q5"
+  },
+  {
+   "q": {
+    "es": "Según Harberger, ¿cuál es el costo más serio de la inflación?",
+    "en": "According to Harberger, what is inflation's most serious cost?"
+   },
+   "op": {
+    "es": [
+     "El triángulo bajo la demanda de saldos reales",
+     "El impuesto inflacionario",
+     "Que nubla la percepción de los precios relativos",
+     "El aumento de la tasa de interés"
+    ],
+    "en": [
+     "The triangle under real-balance demand",
+     "The inflation tax",
+     "That it blurs perception of relative prices",
+     "The rise in interest rates"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Sin ver bien los costos, las firmas no pueden reducirlos; por eso la inflación frena el crecimiento.",
+    "en": "Without seeing costs clearly, firms cannot reduce them; hence inflation slows growth."
+   },
+   "id": "crec-teoria-06-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestran los datos de Beyer para 32 países entre 1971 y 1991?",
+    "en": "What do Beyer's data for 32 countries, 1971-1991, show?"
+   },
+   "op": {
+    "es": [
+     "Que los países de crecimiento rápido tienen a la vez alta rentabilidad, alta contribución del capital y alta mejora de PTF",
+     "Que la PTF no difiere entre países",
+     "Que el ahorro explica todo el crecimiento",
+     "Que la rentabilidad es mayor en los países lentos"
+    ],
+    "en": [
+     "That fast-growing countries have high returns, high capital contribution and high TFP gains at once",
+     "That TFP does not differ across countries",
+     "That saving explains all growth",
+     "That returns are higher in slow countries"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Harberger lo lee como un síndrome impulsado por la reducción de costos.",
+    "en": "Harberger reads it as a syndrome driven by cost reduction."
+   },
+   "id": "crec-teoria-06-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué ilustra la analogía de los dos recipientes conectados?",
+    "en": "What does the analogy of two connected vessels illustrate?"
+   },
+   "op": {
+    "es": [
+     "Que los países pobres nunca convergen",
+     "Que las buenas políticas producen un salto inmediato de nivel",
+     "Que el comercio iguala salarios al instante",
+     "Que las buenas políticas aceleran una convergencia que igual lleva décadas"
+    ],
+    "en": [
+     "That poor countries never converge",
+     "That good policies produce an immediate level jump",
+     "That trade equalizes wages instantly",
+     "That good policies speed up a convergence that still takes decades"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las políticas destapan y ensanchan el tubo; el efecto visible es una tasa de crecimiento mayor por mucho tiempo.",
+    "en": "Policies unclog and widen the tube; the visible effect is a higher growth rate for a long time."
+   },
+   "id": "crec-teoria-06-q8"
+  }
+ ],
+ "palabras": 1342,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo puede interpretarse el residuo de la contabilidad del crecimiento?",
+    "en": "How can the growth-accounting residual be interpreted?"
+   },
+   "a": {
+    "es": "Una vez que el trabajo se pondera por salarios, el residuo puede leerse como reducción de costos reales: el ahorro de recursos logrado por las firmas por 1001 vías distintas. Es la propuesta de Harberger (1998).",
+    "en": "Once labor is weighted by wages, the residual can be read as real cost reduction: resource savings firms achieve in 1001 different ways. This is Harberger's (1998) proposal."
+   },
+   "id": "crec-teoria-06-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Se distribuye de manera pareja la mejora de productividad entre industrias?",
+    "en": "Are productivity gains spread evenly across industries?"
+   },
+   "a": {
+    "es": "No: en Estados Unidos 1958-1967, el 22% de las industrias explicó más de la mitad de la reducción de costos y las líderes cambian de período a período. Harberger (1998) lo llama un proceso de «hongos», no de «levadura».",
+    "en": "No: in the US in 1958-1967, 22% of industries explained over half of cost reduction, and the leaders change between periods. Harberger (1998) calls it a 'mushroom' rather than 'yeast' process."
+   },
+   "id": "crec-teoria-06-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede visualizar la concentración de la mejora de PTF entre industrias o firmas?",
+    "en": "How can the concentration of TFP gains across industries or firms be visualized?"
+   },
+   "a": {
+    "es": "Ordenando las unidades de mayor a menor mejora y graficando la reducción de costos acumulada contra el valor agregado inicial acumulado, con el eje vertical en tasa anual. Harberger (1998) llama a esto diagramas de amanecer y ocaso.",
+    "en": "By ranking units from highest to lowest gain and plotting cumulative cost reduction against cumulative initial value added, with the vertical axis as an annual rate. Harberger (1998) calls these sunrise and sunset diagrams."
+   },
+   "id": "crec-teoria-06-t3"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué importa estudiar las firmas con productividad decreciente?",
+    "en": "Why does studying firms with declining productivity matter?"
+   },
+   "a": {
+    "es": "Porque son omnipresentes y explican buena parte de la variación del crecimiento agregado de la PTF; pueden ser innovadoras que apostaron mal o firmas golpeadas por shocks. Harberger (1998) lo considera el terreno más fértil para investigar el crecimiento.",
+    "en": "Because they are pervasive and explain much of the variation in aggregate TFP growth; they may be innovators that bet wrong or firms hit by shocks. Harberger (1998) considers it the most fertile ground for growth research."
+   },
+   "id": "crec-teoria-06-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la inflación alta frena el crecimiento más allá del impuesto inflacionario?",
+    "en": "Why does high inflation slow growth beyond the inflation tax?"
+   },
+   "a": {
+    "es": "Porque los precios se ajustan a ritmos distintos y las señales de precios relativos se vuelven efímeras; sin percibir bien los costos, las firmas no pueden reducirlos. Harberger (1998) lo considera el costo más serio de la inflación.",
+    "en": "Because prices adjust at different rates and relative-price signals become fleeting; without perceiving costs clearly, firms cannot cut them. Harberger (1998) considers this inflation's most serious cost."
+   },
+   "id": "crec-teoria-06-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problema tienen las regresiones de crecimiento entre países?",
+    "en": "What problem do cross-country growth regressions have?"
+   },
+   "a": {
+    "es": "Sacan su pendiente de comparar países muy dispares, como Sudán y Suiza, y pretenden lecciones para cada uno. Harberger (1998) prefiere estudiar episodios dentro de cada país y usar las regresiones, a lo sumo, como resumen de hechos estilizados.",
+    "en": "They draw their slope from comparing very different countries, like Sudan and Switzerland, and claim lessons for each. Harberger (1998) prefers studying episodes within countries and using regressions at most to summarize stylized facts."
+   },
+   "id": "crec-teoria-06-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la continuidad política de las reformas puede importar tanto como las reformas mismas?",
+    "en": "Why can political continuity of reforms matter as much as the reforms themselves?"
+   },
+   "a": {
+    "es": "Porque las inversiones de largo plazo dependen de esperar que el marco siga siendo bueno; si se teme una reversión, solo se invierte a corto plazo. Harberger (1998) destaca que Chile mantuvo sus reformas a través de dos elecciones ganadas por la oposición.",
+    "en": "Because long-term investment depends on expecting the framework to stay good; if reversal is feared, only short-horizon projects get done. Harberger (1998) notes Chile kept its reforms through two elections won by the opposition."
+   },
+   "id": "crec-teoria-06-t7"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Las buenas políticas generan un salto de nivel o un crecimiento más rápido?",
+    "en": "Do good policies produce a level jump or faster growth?"
+   },
+   "a": {
+    "es": "Sobre todo una tasa de crecimiento más alta durante décadas, porque adoptar técnicas más eficientes lleva tiempo, como agua que pasa por un tubo fino entre dos recipientes. Es la analogía hidráulica de Harberger (1998).",
+    "en": "Mainly a higher growth rate for decades, because adopting more efficient techniques takes time, like water flowing through a thin tube between two vessels. This is Harberger's (1998) hydraulic analogy."
+   },
+   "id": "crec-teoria-06-t8"
+  }
+ ]
+}
