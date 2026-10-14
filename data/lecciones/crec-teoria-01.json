@@ -1,0 +1,356 @@
+{
+ "id": "crec-teoria-01",
+ "cat": "crec-teoria",
+ "orden": 6,
+ "minutos": 15,
+ "titulo": "La década perdida con un modelo de crecimiento: Kydland y Zarazaga (2002)",
+ "bajada": "En 1990 el PIB per cápita argentino estaba 33% por debajo de su tendencia, una caída comparable a la Gran Depresión de Estados Unidos. Un modelo neoclásico alimentado solo con la productividad medida explica buena parte.",
+ "fuentes": [
+  1220
+ ],
+ "cita": "Kydland y Zarazaga (2002), «Argentina's lost decade», Review of Economic Dynamics 5",
+ "intro": "Las depresiones suelen estudiarse como casos únicos, como si durante ellas los agentes dejaran de comportarse como en tiempos normales. Finn Kydland, premio Nobel 2004, y Carlos Zarazaga, del Fed de Dallas, discuten esa visión de «discontinuidad» con un caso que creen poco conocido: la Argentina de los ochenta sufrió una depresión tan grave como la Gran Depresión estadounidense, y más larga. Siguiendo el programa de Cole y Ohanian (1999), aplican a la década perdida un modelo neoclásico de crecimiento calibrado para tiempos normales y le dan como único insumo la productividad total de los factores efectivamente medida. La pregunta es cuánto de la depresión puede explicar.",
+ "secciones": [
+  {
+   "t": "Una depresión del tamaño de la de 1930",
+   "p": [
+    "Con una tendencia de crecimiento de 1,44% anual, la que implicaba el progreso técnico de 1950-1970, el PIB per cápita argentino estaba en 1990 un 33% por debajo de la tendencia. En el piso de la Gran Depresión de 1933, Estados Unidos estaba 35% por debajo. Y la contracción argentina duró diez años, 2,5 veces más que la estadounidense de 1929-1933. Durante la década perdida el PIB per cápita cayó más de 20%."
+   ]
+  },
+  {
+   "t": "Contabilidad del crecimiento",
+   "p": [
+    "Suponen una función de producción Cobb-Douglas con una participación del capital de 0,4 y descomponen el producto por persona en tres factores: el de productividad total de los factores (PTF), la intensidad de empleo (ocupados sobre población adulta) y la intensidad de capital (capital sobre producto). La ventaja de esta forma es que, si empleo y capital por producto son constantes, el producto por adulto crece exactamente al ritmo del factor de productividad.",
+    "Los resultados son contundentes. En 1950-1970 el PIB per cápita creció casi 2% anual (1,93%), tres cuartos por la PTF (1,44%) y el resto por más capital por unidad de producto. En 1970-1979 creció menos (0,99%) porque la productividad retrocedió (−0,31%), compensada por más capital. En 1979-1990 cayó 2,22% anual, y la PTF explica más del 95%: cayó a −2,11% anual. En 1990-1997 el PIB creció 4,94% anual, con la productividad creciendo aún más rápido (5,79%) y el capital por producto cayendo."
+   ],
+   "eq": [
+    "Y_t = A_t K_t^{\\theta} L_t^{1-\\theta}",
+    "\\frac{Y_t}{N_t} = A_t^{\\frac{1}{1-\\theta}} \\left(\\frac{K_t}{Y_t}\\right)^{\\frac{\\theta}{1-\\theta}} \\frac{L_t}{N_t}"
+   ],
+   "nota": "A es la productividad total de los factores (residuo de Solow), K el capital, L el empleo, N la población adulta y θ = 0,4 la participación del capital. El primer factor es el de productividad; el segundo, la intensidad de capital; el tercero, la de empleo."
+  },
+  {
+   "t": "El modelo y su calibración",
+   "p": [
+    "Es el modelo estocástico de crecimiento de Brock y Mirman: hogares que eligen consumo y ocio, una tecnología con progreso técnico aumentador de trabajo y un shock de productividad persistente. Se calibra con los rasgos de 1950-1970, considerado el «tiempo normal»: crecimiento poblacional de 1,70% y técnico de 1,44%. Como la Argentina no tenía cuentas de ingreso que separaran salarios y beneficios, fijan la participación del trabajo en 0,60: algunas estimaciones la ubican en 40%, pero la subdeclaración en el sector informal la hace subestimar. La relación capital-producto se fija en 2 (su valor de 1979) y la de inversión-producto en 0,20, lo que implica una depreciación del 10% y una tasa de interés real de estado estacionario de 0,10. La persistencia del shock, estimada sobre los residuos de Solow de 1950-1979, es 0,73.",
+    "El experimento consiste en calcular las reglas de decisión de los agentes con una aproximación lineal-cuadrática, como Kydland y Prescott (1982), y alimentarlas con la PTF medida, sin ningún otro cambio en el entorno."
+   ],
+   "eq": [
+    "z_{t+1} = \\rho z_t + \\varepsilon_t, \\quad \\rho = 0{,}73"
+   ]
+  },
+  {
+   "t": "Qué explica la productividad",
+   "p": [
+    "Producto: la PTF medida explica alrededor de tres quintos de la caída del producto respecto de la tendencia. Para los noventa, el modelo predice crecimiento, pero a un ritmo dos quintos mayor que el observado.",
+    "Capital: el capital por persona sin tendencia cayó 4,4% anual en la década perdida; el modelo predice 1,9%, es decir, la PTF explica alrededor de 40% de la caída. El modelo sobreestima el capital en unos 37% hacia el final de la década, una discrepancia del mismo orden que la que Cole y Ohanian reportan para la Gran Depresión. Los autores sugieren una razón: el modelo es de economía cerrada, y en una economía abierta pequeña la tasa de interés está fijada afuera, así que el capital debe caer más ante un shock negativo.",
+    "Empleo: el modelo predice una caída anual de 0,5% en el número de trabajadores; en los datos el empleo quedó casi plano (−0,1%). La anomalía grande está en los noventa, cuando el modelo predice un fuerte aumento del empleo y los datos no lo muestran."
+   ]
+  },
+  {
+   "t": "El rompecabezas del empleo en los noventa",
+   "p": [
+    "La conjetura es que el empleo en provincias y empresas públicas funcionó como un seguro de desempleo encubierto. Fuentes no oficiales sugieren que el empleo en administraciones provinciales y nacional representaba entre 10% y 13% del total, sin contar las empresas públicas. Si todo el aumento del desempleo entre 1990 y 1995 se debiera a la pérdida de esos empleos con las privatizaciones, una cota superior extrema ubica al sector público en 20% a 25% del empleo durante la década perdida. Terminar esos empleos artificiales explicaría por qué el empleo no subió en la recuperación como predice el modelo. Advierten que evaluarlo exigiría modelar cómo se financiaban esos empleos, posiblemente con impuesto inflacionario."
+   ]
+  },
+  {
+   "t": "Conclusión y límites",
+   "p": [
+    "El modelo neoclásico de tiempos normales puede dar cuenta de buena parte de la depresión argentina; no hay apoyo para la idea de una «discontinuidad». Pero la pregunta de fondo queda abierta: por qué la PTF cayó cerca de 2% anual durante una década entera y por qué después se recuperó a un ritmo espectacular. Los autores mismos señalan un límite de medición: la utilización del capital cayó mucho en los ochenta, y si no se corrige por ella, parte de la caída medida de la PTF podría ser en realidad capital ocioso.",
+    "Una objeción posible (lectura propia) es que tomar la PTF como exógena traslada el problema: la productividad medida es un residuo que puede reflejar inflación alta, distorsiones de precios, crisis financieras o menor uso de capacidad, justamente lo que otros enfoques (como el de Buera y Nicolini sobre la historia fiscal) ponen en el centro."
+   ]
+  }
+ ],
+ "claves": [
+  "En 1990 el PIB per cápita estaba 33% bajo la tendencia, contra 35% de EE.UU. en 1933; la contracción argentina duró diez años.",
+  "En 1979-1990 el PIB per cápita cayó 2,22% anual y la PTF explica más del 95% (−2,11% anual).",
+  "Alimentando un modelo neoclásico calibrado a 1950-1970 solo con la PTF medida se explican tres quintos de la caída del producto.",
+  "El modelo subestima la caída del capital (posible efecto de economía abierta) y sobreestima el empleo de los noventa.",
+  "Conjetura: el empleo público funcionó como seguro de desempleo encubierto hasta las privatizaciones."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuánto estaba el PIB per cápita argentino por debajo de su tendencia en 1990, según Kydland y Zarazaga?",
+    "en": "How far below trend was Argentina's per capita GDP in 1990, per Kydland and Zarazaga?"
+   },
+   "op": {
+    "es": [
+     "10%",
+     "33%",
+     "50%",
+     "2,22%"
+    ],
+    "en": [
+     "10%",
+     "33%",
+     "50%",
+     "2.22%"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Comparable al 35% de Estados Unidos en 1933, y con una contracción que duró 2,5 veces más.",
+    "en": "Comparable to the US 35% in 1933, with a contraction lasting 2.5 times longer."
+   },
+   "id": "crec-teoria-01-q1"
+  },
+  {
+   "q": {
+    "es": "En la contabilidad del crecimiento, ¿qué factor explica la caída del PIB per cápita en 1979-1990?",
+    "en": "In growth accounting, which factor explains the fall in per capita GDP in 1979-1990?"
+   },
+   "op": {
+    "es": [
+     "La caída de la productividad total de los factores, más del 95%",
+     "La caída del empleo",
+     "La caída de la intensidad de capital",
+     "El crecimiento de la población"
+    ],
+    "en": [
+     "The fall in total factor productivity, over 95%",
+     "The fall in employment",
+     "The fall in capital intensity",
+     "Population growth"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El factor de productividad cayó 2,11% anual frente a una caída del PIB per cápita de 2,22%.",
+    "en": "The productivity factor fell 2.11% a year against a per capita GDP fall of 2.22%."
+   },
+   "id": "crec-teoria-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué período usan para calibrar el modelo como «tiempo normal»?",
+    "en": "Which period do they use to calibrate the model as 'normal times'?"
+   },
+   "op": {
+    "es": [
+     "1979-1990",
+     "1990-1997",
+     "1950-1970",
+     "1930-1945"
+    ],
+    "en": [
+     "1979-1990",
+     "1990-1997",
+     "1950-1970",
+     "1930-1945"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "De ahí salen el crecimiento poblacional de 1,70% y el técnico de 1,44%.",
+    "en": "It yields population growth of 1.70% and technical progress of 1.44%."
+   },
+   "id": "crec-teoria-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué fijan la participación del trabajo en 0,60 si algunas estimaciones dan 40%?",
+    "en": "Why do they set the labour share at 0.60 when some estimates give 40%?"
+   },
+   "op": {
+    "es": [
+     "Porque usan datos de Estados Unidos",
+     "Porque el modelo no funciona con otro valor",
+     "Porque es el promedio regional",
+     "Porque la subdeclaración de ingresos laborales en el sector informal hace subestimarla"
+    ],
+    "en": [
+     "Because they use US data",
+     "Because the model fails with another value",
+     "Because it is the regional average",
+     "Because under-reporting of informal labour income biases it down"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La Argentina no tenía cuentas que separaran salarios y beneficios; otros estudios la ubican hasta en 0,7.",
+    "en": "Argentina lacked accounts splitting wages and profits; other studies put it as high as 0.7."
+   },
+   "id": "crec-teoria-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué parte de la caída del producto respecto de la tendencia explica la PTF medida en el modelo?",
+    "en": "What share of the output fall relative to trend does measured TFP explain in the model?"
+   },
+   "op": {
+    "es": [
+     "Toda",
+     "Alrededor de tres quintos",
+     "Menos de un décimo",
+     "Nada"
+    ],
+    "en": [
+     "All of it",
+     "About three-fifths",
+     "Less than a tenth",
+     "None"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Por eso los autores rechazan la interpretación de una «discontinuidad» del comportamiento.",
+    "en": "Hence the authors reject the 'discontinuity' interpretation."
+   },
+   "id": "crec-teoria-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué podría el modelo subestimar la caída del capital?",
+    "en": "Why might the model underestimate the fall in capital?"
+   },
+   "op": {
+    "es": [
+     "Porque es de economía cerrada: en una economía abierta pequeña la tasa de interés está fijada afuera y el capital debe caer más",
+     "Porque supone depreciación cero",
+     "Porque no tiene shocks",
+     "Porque la PTF sube en el modelo"
+    ],
+    "en": [
+     "Because it is closed: in a small open economy the interest rate is set abroad, so capital must fall more",
+     "Because it assumes zero depreciation",
+     "Because it has no shocks",
+     "Because TFP rises in the model"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En una economía cerrada, la baja de la tasa de interés amortigua la caída del capital.",
+    "en": "In a closed economy, the fall in the interest rate cushions the decline in capital."
+   },
+   "id": "crec-teoria-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo explican que el empleo no subiera en los noventa como predecía el modelo?",
+    "en": "How do they explain employment not rising in the 1990s as the model predicted?"
+   },
+   "op": {
+    "es": [
+     "Por la apreciación del peso",
+     "Por la inmigración",
+     "Por el fin, con las privatizaciones, de empleos públicos que funcionaban como seguro de desempleo encubierto",
+     "Por la caída de la PTF"
+    ],
+    "en": [
+     "By peso appreciation",
+     "By immigration",
+     "By the end, through privatization, of public jobs acting as covert unemployment insurance",
+     "By falling TFP"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Estiman que el sector público pudo representar entre 20% y 25% del empleo como cota superior extrema.",
+    "en": "They estimate the public sector may have been 20-25% of employment as an extreme upper bound."
+   },
+   "id": "crec-teoria-01-q7"
+  },
+  {
+   "q": {
+    "es": "Si la utilización del capital cayó mucho durante la recesión y no se la corrige, ¿qué sesgo tiene la PTF medida?",
+    "en": "If capital utilization fell sharply in the recession and is not corrected for, how is measured TFP biased?"
+   },
+   "op": {
+    "es": [
+     "Sobreestima la productividad",
+     "No tiene sesgo",
+     "Sobreestima el empleo",
+     "Exagera la caída de la productividad, porque atribuye a ella capital ocioso"
+    ],
+    "en": [
+     "It overstates productivity",
+     "It has no bias",
+     "It overstates employment",
+     "It exaggerates the productivity fall, attributing idle capital to it"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es el límite de medición que los propios autores señalan.",
+    "en": "It is the measurement caveat the authors themselves raise."
+   },
+   "id": "crec-teoria-01-q8"
+  }
+ ],
+ "palabras": 938,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el residuo de Solow?",
+    "en": "What is the Solow residual?"
+   },
+   "a": {
+    "es": "La parte del crecimiento del producto que no se explica por el crecimiento de capital y trabajo ponderados por sus participaciones: una medida de la productividad total de los factores. Kydland y Zarazaga (2002) lo usan como único insumo para simular la década perdida argentina.",
+    "en": "The part of output growth not explained by capital and labour growth weighted by their shares: a measure of total factor productivity. Kydland and Zarazaga (2002) use it as the only input to simulate Argentina's lost decade."
+   },
+   "id": "crec-teoria-01-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué explica la caída del PIB per cápita argentino en los ochenta según la contabilidad del crecimiento?",
+    "en": "What explains Argentina's per capita GDP fall in the 1980s according to growth accounting?"
+   },
+   "a": {
+    "es": "Casi toda la caída es de productividad: el PIB per cápita cayó 2,22% anual entre 1979 y 1990 y el factor de productividad, 2,11%. Lo calculan Kydland y Zarazaga (2002).",
+    "en": "Almost all of it is productivity: per capita GDP fell 2.22% a year in 1979-90 and the productivity factor 2.11%. Kydland and Zarazaga (2002) compute it."
+   },
+   "id": "crec-teoria-01-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede evaluar si un modelo de crecimiento «normal» explica una depresión?",
+    "en": "How can one test whether a 'normal times' growth model explains a depression?"
+   },
+   "a": {
+    "es": "Calibrándolo con los rasgos de largo plazo de un período normal, alimentándolo solo con la productividad medida y comparando las trayectorias simuladas de producto, capital y empleo con las observadas. Es el método de Cole y Ohanian que aplican Kydland y Zarazaga (2002).",
+    "en": "By calibrating it to long-run features of a normal period, feeding it only measured productivity and comparing simulated paths of output, capital and employment with the data. It is the Cole-Ohanian method applied by Kydland and Zarazaga (2002)."
+   },
+   "id": "crec-teoria-01-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "Ante un shock negativo de productividad, ¿por qué el capital cae más en una economía abierta pequeña que en una cerrada?",
+    "en": "After a negative productivity shock, why does capital fall more in a small open economy than in a closed one?"
+   },
+   "a": {
+    "es": "Porque en la cerrada la tasa de interés baja y amortigua la caída de la inversión, mientras que en la abierta la tasa está fijada afuera. Kydland y Zarazaga (2002) lo usan para explicar por qué su modelo cerrado subestima la caída del capital.",
+    "en": "Because in a closed economy the interest rate falls and cushions investment, while in an open one the rate is set abroad. Kydland and Zarazaga (2002) use it to explain why their closed model underestimates the capital decline."
+   },
+   "id": "crec-teoria-01-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué tomar la productividad total como exógena deja una pregunta abierta al explicar una depresión?",
+    "en": "Why does treating TFP as exogenous leave an open question in explaining a depression?"
+   },
+   "a": {
+    "es": "Porque traslada el enigma a por qué cayó la productividad; además, si cae la utilización del capital, la PTF medida exagera la caída. Kydland y Zarazaga (2002) reconocen ambos límites.",
+    "en": "Because it shifts the puzzle to why productivity fell; moreover, if capital utilization drops, measured TFP overstates the fall. Kydland and Zarazaga (2002) acknowledge both limits."
+   },
+   "id": "crec-teoria-01-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede el empleo público ocultar desempleo en las estadísticas?",
+    "en": "How can public employment hide unemployment in statistics?"
+   },
+   "a": {
+    "es": "Funcionando como un seguro de desempleo encubierto: se mantiene a trabajadores en empleos poco productivos, y al privatizar o cerrar esos puestos el desempleo aparece. Kydland y Zarazaga (2002) lo proponen para el empleo argentino de los noventa.",
+    "en": "By acting as covert unemployment insurance: workers are kept in unproductive jobs, and when those are privatized or closed, unemployment appears. Kydland and Zarazaga (2002) propose it for Argentine employment in the 1990s."
+   },
+   "id": "crec-teoria-01-t6"
+  }
+ ]
+}
