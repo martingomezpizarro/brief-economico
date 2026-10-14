@@ -1,0 +1,351 @@
+{
+ "id": "macro-arg-02",
+ "cat": "macro-arg",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Un marco para la historia fiscal y monetaria de América Latina: Kehoe, Nicolini y Sargent (2021)",
+ "bajada": "Por qué América Latina no convergió y qué tienen en común sus crisis: la restricción presupuestaria del gobierno, la demanda de dinero y las extensiones para crisis de balanza de pagos, default y equilibrios múltiples.",
+ "fuentes": [
+  1293
+ ],
+ "cita": "Kehoe, Nicolini y Sargent (2021), «A framework for studying the monetary and fiscal history of Latin America», en Kehoe y Nicolini (eds.), A Monetary and Fiscal History of Latin America, 1960-2017",
+ "intro": "Galeano en Las venas abiertas de América Latina y Vargas Llosa en Conversación en la catedral («¿En qué momento se había jodido el Perú?») ofrecieron explicaciones opuestas de un mismo diagnóstico: la región no logró prosperar. Timothy Kehoe, Juan Pablo Nicolini y Thomas Sargent abren con ellos el libro que coordinaron sobre once países latinoamericanos entre 1960 y 2017. Admiten que los economistas no saben del todo por qué la región no convergió, pero proponen una hipótesis de trabajo: detrás de crisis muy distintas hay siempre políticas macrofiscales mal diseñadas o mal implementadas. Este capítulo presenta los datos y el marco que todos los capítulos de países, incluido el de la Argentina de Buera y Nicolini, usan para contar su historia.",
+ "secciones": [
+  {
+   "t": "El hecho: convergencia, retroceso y vuelta",
+   "p": [
+    "Los autores miden el ingreso per cápita de los diez países más grandes de Sudamérica y México contra una tendencia de Estados Unidos que crece 2% anual desde su valor de 1960 (datos del Maddison Project). El promedio regional, ponderado por población, pasó de 21% de esa referencia en 1935 a 26% en 1973: una convergencia mínima, de unos 0,13 puntos por año. En el mismo lapso, los doce países originales de la Unión Europea pasaron de 58% a 76%, con una guerra en el medio.",
+    "Detrás del promedio hay experiencias distintas: divergencia de los tres países más ricos al comienzo (Argentina, Chile y Uruguay) y de dos muy pobres (Bolivia y Paraguay), y convergencia de los de ingreso medio, con éxitos notables en Brasil, México y Venezuela. Entre 1973 y 2000 la región retrocedió a 23%, apenas por encima de 1935; de haber mantenido el ritmo previo habría llegado a casi 30%, un ingreso cerca de 30% más alto. Recién en 2016 volvió al 26% de 1973. Es el fenómeno que en las regresiones de crecimiento de Barro aparecía como la «dummy latinoamericana»: un efecto negativo propio de la región."
+   ]
+  },
+  {
+   "t": "La coincidencia con la inestabilidad",
+   "p": [
+    "Los peores años de crecimiento coinciden con la mayor inestabilidad macroeconómica de la historia regional: inflación crónica, crisis de balanza de pagos, crisis financieras, defaults, hiperinflaciones, confiscaciones y rescates de deudas privadas. Cinco países (Argentina, Bolivia, Brasil, Chile y Perú) tuvieron una o más hiperinflaciones entre 1973 y 1994, y Venezuela atravesaba otra al cerrarse el libro. Se ensayó de todo: tipos de cambio múltiples en todos los países, una caja de conversión que terminó en crisis en la Argentina, dolarización plena en Ecuador, flotaciones, nacionalizaciones y privatizaciones de bancos.",
+    "La hipótesis central es que, pese a sus distintas manifestaciones, todas las crisis resultan de políticas macrofiscales deficientes. El escenario prototípico: por presiones sociales el gobierno aumenta el gasto sin aumentar los ingresos, financia el déficit con deuda, en buena parte externa, hasta que los prestamistas dejan de prestar y estalla la crisis, que dura hasta una reforma. La conjetura es que la frecuencia de las crisis explica una parte importante del estancamiento. Los autores aclaran que el marco no tiene una teoría del crecimiento: solo puede mostrar la coincidencia temporal entre crisis y recesiones."
+   ]
+  },
+  {
+   "t": "El marco básico: Sargent (1986)",
+   "p": [
+    "El punto de partida es el marco que Sargent usó para la política de Estados Unidos a comienzos de los ochenta, con dos ideas. La primera es la restricción presupuestaria del gobierno consolidado: las fuentes de financiamiento son impuestos, deuda con interés y deuda sin interés (dinero). Gasto, recaudación, aumento de la deuda y aumento del dinero no pueden decidirse por separado: fijados tres, el cuarto se ajusta. Un déficit implica más deuda, más dinero o ambos. El marco toma el déficit como la fuerza exógena; que la región tenga más desigualdad y tensiones sociales podría explicar déficits más altos, pero eso queda para otra investigación.",
+    "La segunda es la demanda de dinero: aumentos sistemáticos de la cantidad de dinero generan inflación. Juntas, las dos ideas no implican que todo déficit cause inflación, porque puede financiarse con deuda. Pero la deuda es una promesa de superávits futuros; si la promesa no es creíble, el gobierno enfrenta un límite para endeudarse y, a partir de ahí, el déficit se convierte en inflación. Por eso la relación entre deuda y producto ocupa un lugar central."
+   ],
+   "eq": [
+    "B_t + P_t b_t + E_t B^*_t + M_t = P_t(D_t + T_t) + B_{t-1}R_{t-1} + P_t b_{t-1} r_{t-1} + E_t B^*_{t-1} R^*_{t-1} + M_{t-1}"
+   ],
+   "nota": "B es la deuda nominal en pesos, b la indexada, B* la deuda en dólares (valuada al tipo de cambio E), M el dinero, P el deflactor del PIB, D el déficit primario real y R, r, R* los rendimientos brutos de cada tipo de deuda. T se calcula como residuo para que la identidad cierre: capta gastos fuera de presupuesto, como rescates bancarios con bonos o pérdidas de bancos y empresas públicas cubiertas con emisión."
+  },
+  {
+   "t": "Qué hay que agregar para América Latina",
+   "p": [
+    "El marco de Sargent fue pensado para una economía con inflación moderada como único problema. América Latina tuvo otros tipos de crisis, así que el capítulo lo extiende en cuatro direcciones. Primero, una versión de economía abierta para estudiar las crisis de balanza de pagos: con tipo de cambio fijo y déficit financiado con crédito del banco central, se pierden reservas hasta que la paridad cae. Segundo, modelos con default en equilibrio, una opción que el gobierno de Estados Unidos no consideraba pero varios latinoamericanos eligieron. Tercero, modelos en los que importan las características de la deuda y no solo su tamaño: el plazo (cuánto vence en el corto plazo) y la moneda (pesos, indexada o dólares). Cuarto, modelos con equilibrios múltiples, donde una crisis puede ocurrir solo por expectativas aunque los fundamentos sean buenos (Calvo, 1988; Cole y Kehoe, 1996 y 2000).",
+    "Los autores mencionan además la teoría de contratos dinámicos óptimos con restricciones de cumplimiento como forma de pensar los límites al endeudamiento total."
+   ]
+  },
+  {
+   "t": "La deuda en dólares y el tipo de cambio real",
+   "p": [
+    "Una pieza clave del marco es escribir la restricción en proporción del PIB y separar la deuda en dólares. Su valor sobre el PIB depende del tipo de cambio real: si se deprecia la moneda, la deuda en dólares crece en relación con el producto aunque no haya déficit. Así, la restricción en términos de cambios muestra que la deuda/PIB aumenta con el déficit primario, con los intereses reales netos del crecimiento y con la depreciación real, y disminuye con el señoreaje. Las historias de cada país usan esa descomposición, año por año, para separar qué parte de la deuda vino de los déficits registrados y qué parte de «accidentes» fuera de presupuesto."
+   ]
+  },
+  {
+   "t": "Cómo usarlo y sus límites",
+   "p": [
+    "El marco se aplica de manera sistemática pero no dogmática: los propios autores advierten que hay episodios que no se ajustan a su lógica, y piden a los capítulos de países señalarlos. Su utilidad para un lector argentino (lectura propia) es que obliga a hacer siempre la misma pregunta frente a cualquier episodio: cuál era el déficit, cómo se financiaba, cuánto podía endeudarse el gobierno, en qué moneda y a qué plazo. Con esas cuatro respuestas, buena parte de la historia de crisis de la región se vuelve legible."
+   ]
+  }
+ ],
+ "claves": [
+  "América Latina pasó de 21% a 26% del ingreso de referencia de EE.UU. entre 1935 y 1973, cayó a 23% en 2000 y volvió a 26% en 2016.",
+  "Hipótesis: todas las crisis (inflación, balanza de pagos, bancarias, defaults) vienen de políticas macrofiscales deficientes.",
+  "Marco de Sargent: restricción presupuestaria más demanda de dinero; si el gobierno no puede endeudarse, el déficit es inflación.",
+  "Extensiones: economía abierta, default, plazo y moneda de la deuda, equilibrios múltiples.",
+  "Un término residual en la restricción capta gastos fuera de presupuesto como los rescates bancarios."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué pasó con el ingreso per cápita latinoamericano relativo a la referencia de EE.UU. entre 1973 y 2000?",
+    "en": "What happened to Latin American per capita income relative to the US benchmark between 1973 and 2000?"
+   },
+   "op": {
+    "es": [
+     "Subió de 26% a 30%",
+     "Bajó de 26% a 23%",
+     "Se mantuvo en 26%",
+     "Bajó de 58% a 23%"
+    ],
+    "en": [
+     "It rose from 26% to 30%",
+     "It fell from 26% to 23%",
+     "It stayed at 26%",
+     "It fell from 58% to 23%"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Quedó apenas por encima del 21% de 1935; recién en 2016 volvió al 26%.",
+    "en": "It ended barely above 1935's 21%; only in 2016 did it return to 26%."
+   },
+   "id": "macro-arg-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la hipótesis central del libro sobre las crisis latinoamericanas?",
+    "en": "What is the book's central hypothesis on Latin American crises?"
+   },
+   "op": {
+    "es": [
+     "Que resultan de shocks externos",
+     "Que resultan de la falta de industrialización",
+     "Que todas resultan de políticas macrofiscales mal diseñadas o mal implementadas",
+     "Que son producto de la desigualdad"
+    ],
+    "en": [
+     "That they stem from external shocks",
+     "That they stem from lack of industrialization",
+     "That they all stem from poorly designed or implemented macro-fiscal policies",
+     "That they are caused by inequality"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El escenario típico: más gasto sin más ingresos, deuda hasta que se corta el crédito y crisis.",
+    "en": "The typical scenario: more spending without revenue, debt until credit is cut, and crisis."
+   },
+   "id": "macro-arg-02-q2"
+  },
+  {
+   "q": {
+    "es": "En el marco de Sargent, ¿cuándo un déficit se traduce directamente en inflación?",
+    "en": "In Sargent's framework, when does a deficit translate directly into inflation?"
+   },
+   "op": {
+    "es": [
+     "Siempre",
+     "Nunca, si hay tipo de cambio fijo",
+     "Cuando el banco central es independiente",
+     "Cuando el gobierno enfrenta un límite para endeudarse porque su promesa de superávits futuros no es creíble"
+    ],
+    "en": [
+     "Always",
+     "Never under a fixed rate",
+     "When the central bank is independent",
+     "When the government faces a borrowing limit because its promise of future surpluses is not credible"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Mientras pueda endeudarse, el déficit puede no ser inflacionario.",
+    "en": "As long as it can borrow, the deficit need not be inflationary."
+   },
+   "id": "macro-arg-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué capta el término residual T en la restricción presupuestaria?",
+    "en": "What does the residual term T in the budget constraint capture?"
+   },
+   "op": {
+    "es": [
+     "Gastos fuera de presupuesto, como rescates bancarios con bonos",
+     "La recaudación del IVA",
+     "El señoreaje",
+     "Los intereses de la deuda en dólares"
+    ],
+    "en": [
+     "Off-budget spending, such as bank bailouts with bonds",
+     "VAT revenue",
+     "Seigniorage",
+     "Interest on dollar debt"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Se calcula para que la identidad cierre dados los demás términos medidos de forma independiente.",
+    "en": "It is computed so the identity holds given the other independently measured terms."
+   },
+   "id": "macro-arg-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el marco separa la deuda en dólares?",
+    "en": "Why does the framework separate dollar debt?"
+   },
+   "op": {
+    "es": [
+     "Porque no paga intereses",
+     "Porque su peso sobre el PIB cambia con el tipo de cambio real, aun sin déficit",
+     "Porque nunca se defaultea",
+     "Porque la emite el banco central"
+    ],
+    "en": [
+     "Because it pays no interest",
+     "Because its weight in GDP changes with the real exchange rate, even without deficits",
+     "Because it is never defaulted on",
+     "Because the central bank issues it"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Una depreciación real aumenta la deuda/PIB sin que cambie el déficit.",
+    "en": "A real depreciation raises debt/GDP without any change in the deficit."
+   },
+   "id": "macro-arg-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué agregan los modelos de equilibrios múltiples al marco?",
+    "en": "What do multiple-equilibria models add to the framework?"
+   },
+   "op": {
+    "es": [
+     "Que las crisis solo ocurren con malos fundamentos",
+     "Que la inflación no depende del dinero",
+     "Que una crisis puede ocurrir solo por expectativas aunque los fundamentos sean buenos",
+     "Que el default es imposible"
+    ],
+    "en": [
+     "That crises only occur with bad fundamentals",
+     "That inflation does not depend on money",
+     "That a crisis can occur from expectations alone despite good fundamentals",
+     "That default is impossible"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es la línea de Calvo (1988) y Cole y Kehoe (1996, 2000).",
+    "en": "It is the line of Calvo (1988) and Cole and Kehoe (1996, 2000)."
+   },
+   "id": "macro-arg-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la «dummy latinoamericana»?",
+    "en": "What is the 'Latin American dummy'?"
+   },
+   "op": {
+    "es": [
+     "Un efecto negativo sobre el crecimiento propio de la región en regresiones de crecimiento, aun con controles",
+     "Un índice de inflación regional",
+     "Un tipo de cambio de referencia",
+     "La proporción de deuda en dólares"
+    ],
+    "en": [
+     "A negative region-specific growth effect in growth regressions, even with controls",
+     "A regional inflation index",
+     "A reference exchange rate",
+     "The share of dollar debt"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Aparecía en las regresiones à la Barro para 1960-1985; el libro busca sus causas.",
+    "en": "It appeared in Barro-style regressions for 1960-1985; the book seeks its causes."
+   },
+   "id": "macro-arg-02-q7"
+  },
+  {
+   "q": {
+    "es": "Al analizar un episodio de crisis con este marco, ¿qué preguntas conviene hacer?",
+    "en": "When analyzing a crisis episode with this framework, which questions should be asked?"
+   },
+   "op": {
+    "es": [
+     "Solo cuál fue la inflación",
+     "Cuál era el déficit, cómo se financiaba, cuánto podía endeudarse el gobierno y en qué moneda y plazo",
+     "Quién gobernaba",
+     "Cuál era el precio de las materias primas"
+    ],
+    "en": [
+     "Only what inflation was",
+     "What the deficit was, how it was financed, how much the government could borrow, and in what currency and maturity",
+     "Who governed",
+     "What commodity prices were"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Son las piezas del marco: restricción presupuestaria, acceso al crédito y características de la deuda.",
+    "en": "These are the framework's pieces: budget constraint, credit access and debt characteristics."
+   },
+   "id": "macro-arg-02-q8"
+  }
+ ],
+ "palabras": 1048,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice la restricción presupuestaria del gobierno consolidado?",
+    "en": "What does the consolidated government budget constraint say?"
+   },
+   "a": {
+    "es": "Que el déficit debe financiarse con más deuda, más dinero o ambos: gasto, recaudación, deuda y emisión no pueden decidirse por separado. Kehoe, Nicolini y Sargent (2021) la toman de Sargent (1986) como base de la historia fiscal y monetaria latinoamericana.",
+    "en": "That the deficit must be financed with more debt, more money or both: spending, revenue, debt and money cannot be set independently. Kehoe, Nicolini and Sargent (2021) take it from Sargent (1986) as the basis of Latin American fiscal and monetary history."
+   },
+   "id": "macro-arg-02-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un déficit financiado con deuda puede terminar igual en inflación?",
+    "en": "Why can a debt-financed deficit still end in inflation?"
+   },
+   "a": {
+    "es": "Porque la deuda promete superávits futuros; si esa promesa pierde credibilidad, el gobierno no puede seguir endeudándose y el déficit pasa a financiarse con emisión. Es el argumento del marco de Kehoe, Nicolini y Sargent (2021).",
+    "en": "Because debt promises future surpluses; if that promise loses credibility, the government cannot keep borrowing and the deficit shifts to money financing. It is the argument of Kehoe, Nicolini and Sargent's (2021) framework."
+   },
+   "id": "macro-arg-02-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto convergió América Latina al ingreso de Estados Unidos entre 1935 y 1973, comparada con Europa occidental?",
+    "en": "How much did Latin America converge to US income between 1935 and 1973, compared with Western Europe?"
+   },
+   "a": {
+    "es": "Muy poco: de 21% a 26%, mientras la Europa de los doce pasó de 58% a 76%. Después retrocedió a 23% en 2000. Son los datos de Kehoe, Nicolini y Sargent (2021) con el Maddison Project.",
+    "en": "Very little: from 21% to 26%, while the EU-12 went from 58% to 76%. It then fell back to 23% in 2000. These are Kehoe, Nicolini and Sargent's (2021) Maddison Project figures."
+   },
+   "id": "macro-arg-02-t3"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué tienen en común una hiperinflación, una crisis de balanza de pagos y un default soberano?",
+    "en": "What do a hyperinflation, a balance-of-payments crisis and a sovereign default have in common?"
+   },
+   "a": {
+    "es": "Que pueden ser síntomas de un mismo problema: déficits que el gobierno no puede financiar de manera sostenible. Kehoe, Nicolini y Sargent (2021) proponen que todas las crisis latinoamericanas surgen de políticas macrofiscales deficientes.",
+    "en": "That they can be symptoms of one problem: deficits the government cannot finance sustainably. Kehoe, Nicolini and Sargent (2021) propose that all Latin American crises stem from deficient macro-fiscal policy."
+   },
+   "id": "macro-arg-02-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué factores hacen crecer la deuda pública como proporción del PIB?",
+    "en": "Which factors raise public debt as a share of GDP?"
+   },
+   "a": {
+    "es": "El déficit primario, los intereses reales netos del crecimiento, la depreciación real si hay deuda en dólares y los gastos fuera de presupuesto; el señoreaje la reduce. Kehoe, Nicolini y Sargent (2021) escriben así la restricción para descomponerla año por año.",
+    "en": "The primary deficit, real interest net of growth, real depreciation if there is dollar debt, and off-budget spending; seigniorage reduces it. Kehoe, Nicolini and Sargent (2021) write the constraint this way to decompose it year by year."
+   },
+   "id": "macro-arg-02-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué no puede explicar un marco basado en la restricción presupuestaria y la demanda de dinero?",
+    "en": "What can a framework based on the budget constraint and money demand not explain?"
+   },
+   "a": {
+    "es": "El crecimiento de largo plazo: no tiene teoría de la actividad real, así que solo muestra la coincidencia entre crisis y recesiones. Kehoe, Nicolini y Sargent (2021) lo reconocen, igual que la existencia de episodios que no se ajustan a su lógica.",
+    "en": "Long-run growth: it has no theory of real activity, so it only shows the coincidence of crises and recessions. Kehoe, Nicolini and Sargent (2021) acknowledge this, as well as episodes that do not fit its logic."
+   },
+   "id": "macro-arg-02-t6"
+  }
+ ]
+}
