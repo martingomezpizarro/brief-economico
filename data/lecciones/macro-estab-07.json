@@ -1,0 +1,352 @@
+{
+ "id": "macro-estab-07",
+ "cat": "macro-estab",
+ "orden": 7,
+ "minutos": 15,
+ "titulo": "¿Por qué fijar el tipo de cambio con déficit? Oviedo (2022)",
+ "bajada": "Los modelos de crisis cambiarias de primera generación dicen que tipo de cambio fijo y déficit monetizado terminan en crisis. Oviedo pregunta por qué un gobierno lo haría igual, y encuentra dos respuestas: bienestar de corto plazo y cálculo político.",
+ "fuentes": [
+  1273
+ ],
+ "cita": "Oviedo (2022), «Déficit fiscal y tipo de cambio fijo: racionalizando una combinación insostenible», Young Researchers WP 3, Universidad de San Andrés",
+ "intro": "Si un gobierno fija el tipo de cambio y tiene un déficit financiado con emisión, tarde o temprano pierde las reservas y sobreviene una crisis cambiaria. Es la enseñanza de los modelos de Krugman (1979) y Flood y Garber (1984). Sin embargo, muchos gobiernos recorrieron ese camino durante años. Nicolás Oviedo, en su tesis de maestría en la Universidad de San Andrés, construye un modelo de equilibrio general para racionalizar esa conducta, calibrado con datos de la Argentina de fines de 2011, cuando el país inició cuatro años de déficit con tipo de cambio intervenido y controles de capitales. El epígrafe es de Guillermo Calvo: si está bien calibrada, la bomba explota en manos del sucesor.",
+ "secciones": [
+  {
+   "t": "Tres generaciones de modelos de crisis",
+   "p": [
+    "Una crisis cambiaria es un episodio en el que el tipo de cambio se deprecia sustancialmente en poco tiempo. Los modelos de primera generación (Krugman, Flood y Garber) la explican por políticas fiscales o monetarias inconsistentes con la paridad: las reservas se agotan, el público corre contra la moneda y el gobierno debe flotar. Suponen neutralidad del dinero, así que por construcción no hay ninguna ganancia de expandir el gasto con tipo fijo.",
+    "Los de segunda generación (Obstfeld, Calvo y Mendoza) muestran que no hacen falta malos fundamentos: con reservas ni muy sólidas ni muy frágiles hay equilibrios múltiples y crisis autocumplidas. Los de tercera generación ponen el foco en el sector financiero y los descalces de monedas en los balances. Una línea transversal estudia factores políticos: países con instituciones débiles abandonan antes sus paridades, y hay evidencia de que los gobiernos postergan devaluaciones hasta después del fin de sus mandatos (Garofalo y Streb, 2020) y de que las depreciaciones reales en América Latina se acentúan tras las elecciones. El trabajo de Oviedo extiende la primera generación con efectos reales y suma una lectura política."
+   ]
+  },
+  {
+   "t": "El modelo",
+   "p": [
+    "Es un modelo de equilibrio general en tiempo continuo, con dinero en la función de utilidad, adaptado de Calvo (1981, 1987) y Talvi (1997) y siguiendo a Végh (2013) y Uribe y Schmitt-Grohé (2017), con controles de capitales. El experimento es siempre el mismo: desde un estado estacionario con equilibrio fiscal, el gobierno aumenta las transferencias en un monto constante en divisas, lo financia íntegramente con emisión y mantiene fijo el tipo de cambio. Cuando se queda sin reservas, deja flotar, y la deuda interna pasa a crecer a una tasa igual a la nueva tasa de devaluación.",
+    "La calibración usa las reservas brutas del Banco Central a fines de 2011 y el valor agregado de la producción transable (agro, pesca, minería e industria) en dólares de 2011. La tasa de descuento se construye con una tasa real de 1,095: la tasa real de los bonos del Tesoro estadounidense a diez años (0,5%) más el EMBI+ argentino de fin de 2011 (921,82 puntos básicos), lo que permite leer el momento de la crisis en años. El autor aclara que no se trata de un contrafáctico verosímil de lo que pasó en el país."
+   ],
+   "eq": [
+    "1 + r = \\int_0^1 e^{\\beta t}\\, dt = 1{,}095"
+   ],
+   "nota": "β es la tasa de descuento intertemporal de los hogares; r, la tasa de interés real local construida como tasa libre de riesgo más prima de riesgo país."
+  },
+  {
+   "t": "Sin efectos reales, siempre pierde",
+   "p": [
+    "En la versión sin efectos reales, a la Krugman, el consumo depende solo del ingreso permanente y no cambia con la política. Hasta la crisis, el consumo y los saldos reales son iguales que sin déficit; después de la crisis, la devaluación sube la tasa de interés nominal y la demanda de dinero cae para siempre. Como los agentes valoran tener dinero, el bienestar es menor. Fijar con déficit monetizado está estrictamente dominado por el equilibrio fiscal."
+   ]
+  },
+  {
+   "t": "Con efectos reales, un boom que se paga después",
+   "p": [
+    "Cuando la política monetaria puede tener efectos reales (aquí, por los controles de capitales que impiden suavizar el consumo), la expansión fiscal genera tres fases: un boom de consumo con pérdida de reservas, porque parte de la emisión que la demanda de dinero no absorbe se gasta en transables y genera déficit comercial; una crisis cambiaria cuando las reservas se agotan; y una flotación con inflación, con una devaluación igual al ritmo de crecimiento de la deuda pública.",
+    "En una economía de dotaciones, hay rangos de déficit en los que el boom compensa con creces las pérdidas posteriores y el bienestar intertemporal sube. El rendimiento es decreciente: un déficit muy alto hace el boom intenso pero cortísimo; uno muy bajo deja margen para subirlo. Existe un déficit óptimo. Las ganancias son mayores cuanto más reservas hay respecto del producto, porque el boom dura más, y cuanto más impaciente es el público, porque valora más el consumo presente que la inflación futura. El resultado no cambia al agregar no transables, y no requiere suponer que el gasto público tenga valor en sí mismo."
+   ]
+  },
+  {
+   "t": "El hallazgo clave: con producción, desaparece",
+   "p": [
+    "Cuando la producción es endógena y el trabajo se mueve libremente entre sectores, el resultado se invierte: para cualquier nivel de déficit, el equilibrio fiscal domina. Durante el boom, la mayor demanda de no transables atrae trabajadores desde el sector transable. La capacidad exportable se contrae, el déficit comercial se agrava, las reservas se agotan más rápido y el boom se acorta. La economía sufre síntomas parecidos a la enfermedad holandesa sin que se aprecie el tipo de cambio real, sin descubrimientos de recursos y sin shocks externos.",
+    "El autor matiza: el caso de funciones de producción lineales y movilidad perfecta es extremo. Con sustitución limitada entre sectores o un sector no transable mucho más productivo, podría quedar algún margen, pero las ganancias serían mucho más modestas. Los resultados son compatibles con la literatura que trata los controles de capitales como un impuesto a los exportadores (Mosquera y Sturzenegger, 2021)."
+   ]
+  },
+  {
+   "t": "La segunda respuesta: el cálculo político",
+   "p": [
+    "Como la crisis es inevitable pero su momento es calculable, un gobierno puede programar un déficit tal que mejore el bienestar respecto del equilibrio fiscal y que la paridad dure exactamente lo que dura su mandato. Si el apoyo electoral sigue al ciclo, gobernar durante el boom construye capital político, y el sucesor hereda la corrida, con menos margen de política. Para que eso funcione, los votantes no deben atribuir la crisis al presidente del boom.",
+    "Oviedo reconoce los límites: el modelo es determinístico, no incorpora un modelo de ciclo político ni explora la opción de un ajuste fiscal súbito para evitar la corrida. Una lectura posible (lectura propia) es que el trabajo convierte en un cálculo explícito la intuición de Dornbusch y Edwards sobre el ciclo populista: el boom no es un error de diagnóstico sino una decisión con costos diferidos."
+   ]
+  }
+ ],
+ "claves": [
+  "Primera generación: tipo fijo con déficit monetizado agota reservas y termina en crisis; sin efectos reales no hay ninguna ganancia.",
+  "Con efectos reales (controles de capitales): boom de consumo, crisis y flotación con inflación igual al crecimiento de la deuda.",
+  "En economías de dotaciones hay un déficit óptimo; las ganancias crecen con las reservas iniciales y la impaciencia del público.",
+  "Con producción endógena las ganancias desaparecen: el boom desplaza trabajo de transables a no transables y acelera la crisis.",
+  "Cálculo político: programar el déficit para que la crisis estalle en el mandato siguiente."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué predicen los modelos de crisis cambiaria de primera generación sobre un tipo de cambio fijo con déficit monetizado?",
+    "en": "What do first-generation currency-crisis models predict for a peg with a monetized deficit?"
+   },
+   "op": {
+    "es": [
+     "Que es sostenible si hay controles de capitales",
+     "Que tarde o temprano se agotan las reservas y sobreviene una crisis",
+     "Que genera deflación",
+     "Que mejora siempre el bienestar"
+    ],
+    "en": [
+     "That it is sustainable with capital controls",
+     "That reserves eventually run out and a crisis follows",
+     "That it causes deflation",
+     "That it always raises welfare"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el resultado canónico de Krugman (1979) y Flood y Garber (1984).",
+    "en": "It is the canonical result of Krugman (1979) and Flood and Garber (1984)."
+   },
+   "id": "macro-estab-07-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue a los modelos de segunda generación?",
+    "en": "What distinguishes second-generation models?"
+   },
+   "op": {
+    "es": [
+     "Ponen el foco en los bancos",
+     "Suponen dinero neutral",
+     "Admiten equilibrios múltiples y crisis autocumplidas sin malos fundamentos",
+     "Ignoran las expectativas"
+    ],
+    "en": [
+     "They focus on banks",
+     "They assume neutral money",
+     "They allow multiple equilibria and self-fulfilling crises without bad fundamentals",
+     "They ignore expectations"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con reservas intermedias, el resultado depende de las expectativas; los de tercera generación se centran en el sector financiero.",
+    "en": "With intermediate reserves, the outcome depends on expectations; third-generation models focus on finance."
+   },
+   "id": "macro-estab-07-q2"
+  },
+  {
+   "q": {
+    "es": "En la versión sin efectos reales del modelo, ¿por qué baja el bienestar?",
+    "en": "In the no-real-effects version, why does welfare fall?"
+   },
+   "op": {
+    "es": [
+     "Porque la demanda de dinero cae para siempre tras la crisis, sin ganancia previa de consumo",
+     "Porque el consumo cae antes de la crisis",
+     "Porque suben los impuestos",
+     "Porque aumenta el desempleo"
+    ],
+    "en": [
+     "Because money demand falls permanently after the crisis, with no prior consumption gain",
+     "Because consumption falls before the crisis",
+     "Because taxes rise",
+     "Because unemployment rises"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El consumo depende del ingreso permanente; la única diferencia es la pérdida de saldos reales con inflación más alta.",
+    "en": "Consumption depends on permanent income; the only difference is lost real balances under higher inflation."
+   },
+   "id": "macro-estab-07-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué permite que la política monetaria tenga efectos reales en el modelo base?",
+    "en": "What allows monetary policy to have real effects in the base model?"
+   },
+   "op": {
+    "es": [
+     "Precios rígidos",
+     "Salarios indexados",
+     "La política fiscal contractiva",
+     "Los controles de capitales, que impiden suavizar el consumo"
+    ],
+    "en": [
+     "Sticky prices",
+     "Indexed wages",
+     "Contractionary fiscal policy",
+     "Capital controls, which prevent consumption smoothing"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El autor muestra que resultados análogos pueden obtenerse con otras especificaciones de la demanda de dinero.",
+    "en": "The author shows similar results can arise with other money-demand specifications."
+   },
+   "id": "macro-estab-07-q4"
+  },
+  {
+   "q": {
+    "es": "En economías de dotaciones, ¿cuándo son mayores las ganancias de bienestar de la expansión con tipo fijo?",
+    "en": "In endowment economies, when are welfare gains from expansion under a peg larger?"
+   },
+   "op": {
+    "es": [
+     "Con pocas reservas y un público paciente",
+     "Con muchas reservas respecto del producto y un público impaciente",
+     "Con tipo de cambio flotante",
+     "Nunca hay ganancias"
+    ],
+    "en": [
+     "With few reserves and a patient public",
+     "With high reserves relative to output and an impatient public",
+     "With a floating rate",
+     "There are never gains"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Más reservas alargan el boom; más impaciencia valora más el consumo presente que la inflación futura.",
+    "en": "More reserves lengthen the boom; more impatience values present consumption over future inflation."
+   },
+   "id": "macro-estab-07-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las ganancias desaparecen cuando la producción es endógena?",
+    "en": "Why do the gains vanish when production is endogenous?"
+   },
+   "op": {
+    "es": [
+     "Porque el tipo de cambio real se aprecia mucho",
+     "Porque sube la tasa de interés internacional",
+     "Porque el boom desplaza trabajo hacia no transables, cae la capacidad exportable y las reservas se agotan antes",
+     "Porque baja la demanda de dinero"
+    ],
+    "en": [
+     "Because the real exchange rate appreciates a lot",
+     "Because world rates rise",
+     "Because the boom shifts labour to non-tradables, export capacity falls and reserves run out sooner",
+     "Because money demand falls"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Son síntomas parecidos a la enfermedad holandesa aun sin apreciación real.",
+    "en": "These are Dutch-disease-like symptoms even without real appreciation."
+   },
+   "id": "macro-estab-07-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se calibra la tasa de descuento en el trabajo?",
+    "en": "How is the discount rate calibrated in the paper?"
+   },
+   "op": {
+    "es": [
+     "Con la tasa real de los bonos del Tesoro estadounidense más el EMBI+ argentino de fin de 2011",
+     "Con la tasa de política del BCRA",
+     "Con la inflación de 2011",
+     "Con la tasa de crecimiento del PIB"
+    ],
+    "en": [
+     "With the US Treasury real yield plus Argentina's end-2011 EMBI+",
+     "With the BCRA policy rate",
+     "With 2011 inflation",
+     "With GDP growth"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "0,5% más 921,82 puntos básicos da 1 + r = 1,095.",
+    "en": "0.5% plus 921.82 basis points gives 1 + r = 1.095."
+   },
+   "id": "macro-estab-07-q7"
+  },
+  {
+   "q": {
+    "es": "Un gobierno elige un déficit tal que la paridad dure exactamente su mandato. ¿Qué motivación capta el modelo?",
+    "en": "A government picks a deficit so the peg lasts exactly its term. What motivation does the model capture?"
+   },
+   "op": {
+    "es": [
+     "Reducir la inflación permanente",
+     "Acumular reservas",
+     "Gobernar durante el boom y dejar la crisis al sucesor para construir capital político",
+     "Mejorar la competitividad exportadora"
+    ],
+    "en": [
+     "Reducing permanent inflation",
+     "Accumulating reserves",
+     "Governing during the boom and leaving the crisis to the successor to build political capital",
+     "Improving export competitiveness"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es la «bomba» de Calvo (1987): requiere que los votantes no culpen al presidente del boom.",
+    "en": "It is Calvo's (1987) 'bomb': it requires voters not to blame the boom-time president."
+   },
+   "id": "macro-estab-07-q8"
+  }
+ ],
+ "palabras": 1045,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué explican los modelos de crisis cambiaria de primera generación?",
+    "en": "What do first-generation currency-crisis models explain?"
+   },
+   "a": {
+    "es": "Que un tipo de cambio fijo con déficit financiado con emisión agota las reservas y termina en un ataque especulativo y una flotación forzada. Oviedo (2022) los extiende con efectos reales para entender por qué igual se eligen.",
+    "en": "That a peg with a money-financed deficit drains reserves and ends in a speculative attack and forced float. Oviedo (2022) extends them with real effects to understand why they are chosen anyway."
+   },
+   "id": "macro-estab-07-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "Con tipo de cambio fijo y controles de capitales, ¿por qué un déficit monetizado provoca pérdida de reservas?",
+    "en": "With a peg and capital controls, why does a monetized deficit cause reserve losses?"
+   },
+   "a": {
+    "es": "Porque la emisión que la demanda de dinero no absorbe se gasta en bienes transables, genera déficit comercial y el banco central vende divisas para sostener la paridad. Es la fase de boom en el modelo de Oviedo (2022).",
+    "en": "Because money not absorbed by money demand is spent on tradables, creating a trade deficit, and the central bank sells reserves to hold the peg. It is the boom phase in Oviedo's (2022) model."
+   },
+   "id": "macro-estab-07-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Puede un déficit monetizado con tipo fijo mejorar el bienestar intertemporal aunque termine en crisis?",
+    "en": "Can a monetized deficit under a peg raise intertemporal welfare even though it ends in crisis?"
+   },
+   "a": {
+    "es": "En economías de dotaciones sí, para ciertos rangos de déficit, si el boom compensa la inflación posterior; con producción endógena y movilidad laboral, no. Lo muestra Oviedo (2022) calibrando con la Argentina de 2011.",
+    "en": "In endowment economies yes, for some deficit ranges, if the boom offsets later inflation; with endogenous production and labour mobility, no. Oviedo (2022) shows it calibrating to Argentina in 2011."
+   },
+   "id": "macro-estab-07-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede un boom de consumo producir síntomas de enfermedad holandesa sin que se aprecie el tipo de cambio real?",
+    "en": "How can a consumption boom produce Dutch-disease symptoms without real appreciation?"
+   },
+   "a": {
+    "es": "Porque la mayor demanda de no transables atrae trabajadores desde los transables, se contrae la capacidad exportable y se agrava el déficit comercial. Oviedo (2022) encuentra que eso acelera la crisis cambiaria.",
+    "en": "Because higher non-tradable demand pulls workers from tradables, export capacity shrinks and the trade deficit worsens. Oviedo (2022) finds this accelerates the currency crisis."
+   },
+   "id": "macro-estab-07-t4"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué un gobierno podría elegir una política que sabe insostenible?",
+    "en": "Why might a government choose a policy it knows is unsustainable?"
+   },
+   "a": {
+    "es": "Porque puede subir el bienestar de corto plazo y, si se calibra, hacer que la crisis estalle en el mandato siguiente, dejando al gobierno del boom con capital político. Es la segunda respuesta de Oviedo (2022), inspirada en la «bomba» de Calvo.",
+    "en": "Because it can raise short-run welfare and, if calibrated, make the crisis erupt in the next term, leaving the boom government with political capital. It is Oviedo's (2022) second answer, inspired by Calvo's 'bomb'."
+   },
+   "id": "macro-estab-07-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué evidencia hay de que los ciclos electorales afectan las devaluaciones?",
+    "en": "What evidence is there that electoral cycles affect devaluations?"
+   },
+   "a": {
+    "es": "Garofalo y Streb (2020) encuentran que con tipo fijo de jure los gobiernos postergan devaluaciones hasta después de sus mandatos, y Cermeño y otros (2010) que las depreciaciones reales en América Latina se acentúan tras las elecciones. Las reseña Oviedo (2022).",
+    "en": "Garofalo and Streb (2020) find de jure pegs see devaluations postponed until after terms end, and Cermeño et al. (2010) that real depreciations in Latin America intensify after elections. Oviedo (2022) reviews them."
+   },
+   "id": "macro-estab-07-t6"
+  }
+ ]
+}
