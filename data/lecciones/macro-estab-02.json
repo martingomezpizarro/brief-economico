@@ -1,0 +1,357 @@
+{
+ "id": "macro-estab-02",
+ "cat": "macro-estab",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "Por qué no dura la redistribución vía salarios: Canitrot (1975)",
+ "bajada": "Un modelo de dos sectores de la economía argentina: el agro exportador con pleno empleo y una industria que importa y admite desempleo. Por qué la devaluación es recesiva, por qué subir salarios acelera la inflación y qué límite impone la restricción externa.",
+ "fuentes": [
+  1274
+ ],
+ "cita": "Canitrot (1975), «La experiencia populista de redistribución de ingresos», Desarrollo Económico 15(59)",
+ "intro": "Adolfo Canitrot escribió este artículo en 1975, en pleno tercer gobierno peronista. Parte de un hecho: en la Argentina hubo tres intentos explícitos de redistribuir ingresos a favor de los trabajadores subiendo salarios (el primer peronismo de 1946-52, el gobierno radical de 1963-66 y el peronismo desde 1973), y en los tres la mejora duró uno o dos años y después retrocedió, comida por la inflación o revertida por políticas de signo contrario. La pregunta es si el retroceso se debe a la reacción deliberada de grupos que pierden privilegios, como sostenían peronistas y radicales, o a que las propias experiencias generan los elementos que les ponen fin. Canitrot defiende la segunda tesis con un modelo que se volvió clásico en la macroeconomía argentina.",
+ "secciones": [
+  {
+   "t": "Qué dice la teoría sobre subir salarios",
+   "p": [
+    "El pensamiento económico es en general escéptico. En la teoría neoclásica, salarios y beneficios salen del equilibrio general: un aumento de salarios es una perturbación transitoria y además ineficiente, porque el sistema tiende a volver a su posición original. Para Marx, como para los clásicos, el salario tiende en el largo plazo a un nivel de subsistencia histórico compatible con la acumulación. Solo el pensamiento keynesiano admite un cambio permanente: el ingreso puede repartirse entre salarios y beneficios según la tasa de acumulación elegida, pero subir salarios frena la acumulación y se paga con salarios futuros.",
+    "Todo eso vale para economías cerradas. Si el capital es móvil entre países, la redistribución permanente desaparece: ante un aumento de salarios la inversión se va, cae a cero y crece el desempleo, porque la tasa de beneficio se fija internacionalmente y el salario es un residuo que depende de la productividad y de los términos de intercambio. En la práctica la movilidad del capital es máxima en grandes grupos y multinacionales y menor en pequeñas empresas, trabajadores independientes y rentistas. Por eso la oposición más dura suele venir de la pequeña burguesía, que no puede irse y debe aceptar menor rentabilidad, subir precios o recurrir al mercado negro.",
+    "Canitrot agrega que la transición es todavía más difícil que la comparación entre equilibrios, y que el gasto público probablemente sea un medio más eficiente que el salario para redistribuir, tema que deja fuera del análisis."
+   ]
+  },
+  {
+   "t": "Inflación: quién paga la redistribución de corto plazo",
+   "p": [
+    "Cerca del pleno empleo y sin intervención, el aumento de salarios se traslada a precios y el salario real vuelve a su valor de equilibrio o baja. El control de precios es solo un mecanismo de corto plazo. Pero hay tres precios que el Estado sí puede controlar con firmeza: los agropecuarios (con el tipo de cambio, los impuestos y la compra estatal), las tarifas públicas y los alquileres, cuya oferta es inelástica en el corto plazo.",
+    "La observación central es que en la experiencia argentina el aumento coyuntural del salario real se debe sobre todo a la caída de esos tres precios relativos. La redistribución de corto plazo la pagan los productores agropecuarios, las empresas públicas y los rentistas. No dura: como los demás precios siguen subiendo, la inversión en esas tres actividades cae, aparecen estrecheces y una crisis obliga a corregir sus precios. Se vuelve a la posición inicial, con pérdida neta en el camino.",
+    "La inflación además tiende a acelerarse. Como los precios se ajustan en cadena y no simultáneamente, las empresas, que valúan su capital circulante a costo de reposición, se adelantan a los costos futuros; como sus compradores son a la vez sus proveedores indirectos, ese adelanto vuelve sobre ellas. El freno es que adelantarse mucho deprime las ventas, y eso es lo que permite actuar a la política de estabilización."
+   ]
+  },
+  {
+   "t": "El modelo de dos sectores",
+   "p": [
+    "La economía tiene dos sectores. El agropecuario es exportador, trabaja en pleno empleo y su producción es fija en el corto plazo: lo que se consume adentro se resta de lo que se exporta. Su precio interno lo fijan el precio internacional y el tipo de cambio, porque la demanda externa se supone infinitamente elástica. La demanda interna de alimentos es inelástica. El sector industrial solo vende al mercado interno, importa insumos y bienes de capital, admite desempleo y sus empresarios mantienen el beneficio por unidad: ante caídas de demanda ajustan cantidades; ante subas de costos, suben precios.",
+    "Los asalariados gastan todo su ingreso en bienes de los dos sectores y no ahorran; el consumo de los capitalistas es fijo; la inversión es inducida por la actividad industrial. Hay tres variables que se mueven por decisión de política o desde afuera: el precio agropecuario, el precio de los insumos importados y el salario nominal."
+   ],
+   "eq": [
+    "G = s\\,T = p_A Q_A + p_I Q_I"
+   ],
+   "nota": "G es el gasto de consumo de los asalariados, igual a su ingreso: el salario s por el número de ocupados T. Se reparte entre bienes agropecuarios (precio p_A, cantidad Q_A) e industriales (p_I, Q_I). Canitrot estima un multiplicador del orden de 1/(1 − α), donde α es la elasticidad del empleo industrial ante cambios en la demanda."
+  },
+  {
+   "t": "Por qué la devaluación es recesiva",
+   "p": [
+    "Si sube el precio agropecuario, por devaluación o por precios internacionales, los asalariados compran menos alimentos y aumentan los saldos exportables. Pero como la demanda es inelástica, gastan más en ellos y, con el salario nominal fijo, les queda menos para los bienes industriales. La industria, que defiende su margen, reduce actividad y empleo; cae el ingreso de los trabajadores y vuelve a caer la demanda industrial. El proceso multiplicador converge a una caída total que es un múltiplo de la inicial. En el agro no hay multiplicador porque el mercado externo absorbe lo que no se consume adentro.",
+    "Si sube el precio de los insumos importados, la industria lo traslada a precios, los asalariados compran menos y se repite la multiplicación. En los dos casos el resultado es recesivo para la actividad y el empleo urbano y positivo para la balanza comercial. La diferencia es distributiva: la suba agropecuaria aumenta los beneficios rurales; la de importaciones no. En ambos casos pierden los asalariados y los empresarios industriales.",
+    "Subir el salario nominal tiene los efectos opuestos: expande la demanda de los dos sectores y la actividad industrial, y deteriora la balanza comercial por menos exportaciones y más importaciones. Su peculiaridad es que crea un contexto expansivo donde la inflación de costos y de demanda no encuentra freno y tiende a acelerarse."
+   ]
+  },
+  {
+   "t": "La restricción externa y la demanda autónoma",
+   "p": [
+    "Hay otras fuentes de demanda que generan empleo sin pasar por el salario real: la inversión autónoma, las exportaciones industriales y la sustitución de importaciones. Canitrot llama populistas a las políticas que crean demanda subiendo el salario nominal frente al tipo de cambio, y eficientistas o modernizantes a las que usan esas fuentes autónomas, mucho más favorables a los beneficios industriales y con mejor control de la inflación.",
+    "En el largo plazo, con mano de obra excedente, el empleo máximo lo define la restricción externa: la actividad industrial fija las importaciones necesarias, y la capacidad de importar depende de los saldos exportables, que dependen del precio de los exportables respecto del salario. Más empleo exige crecer en exportables, y el agro crece lento; por eso la sustitución de importaciones y, a futuro, la demanda externa de manufacturas son claves. Dentro de ese máximo, la distribución no está determinada: el salario real puede ser más alto cuanto menor sea el peso de la demanda autónoma."
+   ]
+  },
+  {
+   "t": "La alianza que se rompe",
+   "p": [
+    "El conflicto entre salarios y beneficios rige cerca del pleno empleo; con recursos ociosos, la expansión favorece a los dos. Por eso la alianza populista nace en la recesión: asalariados y burguesía industrial tienen intereses complementarios y los empresarios rurales quedan en la oposición. El éxito del programa destruye la alianza: al acercarse al pleno empleo, en un contexto inflacionario explosivo, los intereses chocan, la burguesía industrial se acerca a la rural y emerge un programa de orden y recesión.",
+    "Canitrot admite que se podría calcular un conjunto de precios relativos (salarios, tipo de cambio, precios agrícolas e industriales) que permita crecer de forma continua dentro de la restricción externa, pero sería soberbia o inocencia creer que ignorarlos es la causa de la inestabilidad: la inestabilidad expresa el conflicto de clases. La burguesía industrial, débil frente a multinacionales y sindicatos fuertes, nunca logró imponer su propio proyecto de demanda autónoma, salvo los pocos años de Krieger Vasena.",
+    "El modelo se inscribe en una tradición argentina: la devaluación contractiva de Díaz Alejandro (1963), el modelo de estancamiento de Braun y Joy (1968), y los aportes de Sidrauski, Porto y Villanueva."
+   ]
+  }
+ ],
+ "claves": [
+  "Tres intentos de redistribuir vía salarios (1946-52, 1963-66, desde 1973) duraron uno o dos años.",
+  "La mejora de corto plazo la pagan el agro, las empresas públicas y los rentistas, cuyos precios se controlan; luego cae su inversión y hay crisis.",
+  "Con demanda inelástica de alimentos, devaluar reduce el gasto en bienes industriales y genera una recesión multiplicada.",
+  "Subir salarios nominales expande la actividad pero deteriora la balanza comercial y acelera la inflación.",
+  "El empleo máximo lo fija la restricción externa; la alianza populista nace en la recesión y se rompe cerca del pleno empleo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué tesis defiende Canitrot sobre el fracaso de la redistribución vía salarios?",
+    "en": "What thesis does Canitrot defend on the failure of wage-led redistribution?"
+   },
+   "op": {
+    "es": [
+     "Que fracasó por la acción deliberada de los grupos perjudicados",
+     "Que las propias experiencias generan los elementos que les ponen fin",
+     "Que fracasó por shocks externos",
+     "Que no fracasó"
+    ],
+    "en": [
+     "That it failed because of deliberate action by losing groups",
+     "That the experiences themselves generate what ends them",
+     "That it failed because of external shocks",
+     "That it did not fail"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La tesis de la conspiración la sostenían peronistas y radicales; Canitrot busca las razones económicas internas.",
+    "en": "The conspiracy thesis was held by Peronists and Radicals; Canitrot looks for internal economic reasons."
+   },
+   "id": "macro-estab-02-q1"
+  },
+  {
+   "q": {
+    "es": "Según Canitrot, ¿quién paga la redistribución de corto plazo hacia los asalariados?",
+    "en": "According to Canitrot, who pays for short-run redistribution toward wage earners?"
+   },
+   "op": {
+    "es": [
+     "Las multinacionales",
+     "El sistema financiero",
+     "Los productores agropecuarios, las empresas públicas y los rentistas de vivienda",
+     "Los trabajadores independientes"
+    ],
+    "en": [
+     "Multinationals",
+     "The financial system",
+     "Farm producers, public enterprises and housing landlords",
+     "Self-employed workers"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Son los tres precios que el Estado puede controlar; su caída relativa explica la suba coyuntural del salario real.",
+    "en": "These are the three prices the state can control; their relative fall explains the temporary real-wage rise."
+   },
+   "id": "macro-estab-02-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo, ¿por qué una suba del precio agropecuario reduce la demanda de bienes industriales?",
+    "en": "In the model, why does a rise in farm prices reduce demand for industrial goods?"
+   },
+   "op": {
+    "es": [
+     "Porque la demanda de alimentos es inelástica y los asalariados gastan más en ellos con el mismo salario",
+     "Porque los empresarios rurales consumen más bienes industriales",
+     "Porque sube la tasa de interés",
+     "Porque se encarecen los insumos importados"
+    ],
+    "en": [
+     "Because food demand is inelastic and workers spend more on it with the same wage",
+     "Because rural owners buy more industrial goods",
+     "Because interest rates rise",
+     "Because imported inputs become dearer"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con salario nominal fijo, lo que se gasta de más en alimentos se resta del gasto industrial.",
+    "en": "With a fixed nominal wage, extra spending on food comes out of industrial spending."
+   },
+   "id": "macro-estab-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué no hay proceso multiplicador en el sector agropecuario?",
+    "en": "Why is there no multiplier process in the farm sector?"
+   },
+   "op": {
+    "es": [
+     "Porque no tiene trabajadores",
+     "Porque sus precios son fijos por ley",
+     "Porque no importa insumos",
+     "Porque el mercado externo absorbe lo que no se consume adentro y se mantiene el pleno empleo"
+    ],
+    "en": [
+     "Because it has no workers",
+     "Because its prices are fixed by law",
+     "Because it imports no inputs",
+     "Because the export market absorbs what is not consumed at home, keeping full employment"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La industria, en cambio, depende de la demanda que generan sus propios trabajadores.",
+    "en": "Industry, by contrast, depends on the demand its own workers generate."
+   },
+   "id": "macro-estab-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué efectos tiene una devaluación en el modelo de Canitrot?",
+    "en": "What effects does a devaluation have in Canitrot's model?"
+   },
+   "op": {
+    "es": [
+     "Expansiva para la actividad y negativa para la balanza comercial",
+     "Recesiva para la actividad y el empleo urbano y positiva para la balanza comercial",
+     "Neutral",
+     "Expansiva para todos los sectores"
+    ],
+    "en": [
+     "Expansionary for activity and negative for the trade balance",
+     "Recessionary for activity and urban employment and positive for the trade balance",
+     "Neutral",
+     "Expansionary for all sectors"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la devaluación contractiva que formalizó Díaz Alejandro (1963), con efecto redistributivo hacia el agro.",
+    "en": "It is the contractionary devaluation Díaz Alejandro (1963) formalized, redistributing toward farming."
+   },
+   "id": "macro-estab-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué define el empleo máximo de la economía en el largo plazo, según el modelo?",
+    "en": "What sets the economy's maximum employment in the long run, according to the model?"
+   },
+   "op": {
+    "es": [
+     "La restricción externa: la capacidad de importar que dan las exportaciones",
+     "La oferta de dinero",
+     "El nivel de los salarios mínimos",
+     "El tamaño del sector público"
+    ],
+    "en": [
+     "The external constraint: the import capacity exports provide",
+     "The money supply",
+     "The minimum-wage level",
+     "The size of the public sector"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La actividad industrial fija las importaciones necesarias, y estas dependen de los saldos exportables.",
+    "en": "Industrial activity fixes required imports, which depend on exportable surpluses."
+   },
+   "id": "macro-estab-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue a las políticas «populistas» de las «eficientistas» en el texto?",
+    "en": "What distinguishes 'populist' from 'efficiency-oriented' policies in the text?"
+   },
+   "op": {
+    "es": [
+     "Las populistas devalúan y las eficientistas no",
+     "Las populistas bajan el gasto público",
+     "Las populistas crean demanda con subas de salarios; las eficientistas, con inversión, exportaciones industriales y sustitución de importaciones",
+     "No hay diferencia distributiva"
+    ],
+    "en": [
+     "Populist ones devalue and efficiency ones do not",
+     "Populist ones cut public spending",
+     "Populist ones create demand through wage rises; efficiency ones through investment, industrial exports and import substitution",
+     "There is no distributive difference"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Ambas pueden generar empleo, pero con distribuciones opuestas; la demanda autónoma controla mejor la inflación.",
+    "en": "Both can create jobs but with opposite distributions; autonomous demand controls inflation better."
+   },
+   "id": "macro-estab-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la alianza populista entre asalariados e industriales se rompe, según Canitrot?",
+    "en": "Why does the populist alliance between workers and industrialists break down, per Canitrot?"
+   },
+   "op": {
+    "es": [
+     "Porque el FMI la prohíbe",
+     "Porque al acercarse al pleno empleo los intereses complementarios se vuelven conflictivos, en un contexto de inflación explosiva",
+     "Porque los salarios bajan desde el comienzo",
+     "Porque los empresarios rurales se suman a ella"
+    ],
+    "en": [
+     "Because the IMF forbids it",
+     "Because near full employment complementary interests turn conflicting amid explosive inflation",
+     "Because wages fall from the start",
+     "Because rural owners join it"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con recursos ociosos, crecer favorece a salarios y beneficios; en pleno empleo, chocan.",
+    "en": "With idle resources, growth favours both wages and profits; at full employment they clash."
+   },
+   "id": "macro-estab-02-q8"
+  }
+ ],
+ "palabras": 1319,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una devaluación puede ser recesiva en una economía que exporta alimentos?",
+    "en": "Why can a devaluation be recessionary in an economy that exports food?"
+   },
+   "a": {
+    "es": "Porque sube el precio interno de los alimentos, cuya demanda es inelástica: los asalariados gastan más en ellos y menos en bienes industriales, y la caída se multiplica en la industria. Lo formaliza Canitrot (1975), siguiendo a Díaz Alejandro (1963).",
+    "en": "Because it raises the domestic price of food, whose demand is inelastic: workers spend more on food and less on industrial goods, and the fall multiplies in industry. Canitrot (1975) formalizes it, following Díaz Alejandro (1963)."
+   },
+   "id": "macro-estab-02-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En los intentos argentinos de redistribuir vía salarios, ¿cuánto duró la mejora del salario real?",
+    "en": "In Argentina's attempts to redistribute through wages, how long did the real-wage gain last?"
+   },
+   "a": {
+    "es": "Uno o dos años; después retrocedió, comida por la inflación o revertida por políticas contrarias. Canitrot (1975) lo observa en 1946-52, 1963-66 y desde 1973.",
+    "en": "One or two years; then it reversed, eaten by inflation or undone by opposite policies. Canitrot (1975) observes it in 1946-52, 1963-66 and from 1973."
+   },
+   "id": "macro-estab-02-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la restricción externa al crecimiento?",
+    "en": "What is the external constraint on growth?"
+   },
+   "a": {
+    "es": "El límite que impone la capacidad de importar: si la industria necesita insumos y bienes de capital importados, el empleo máximo depende de las divisas que generan las exportaciones. En el modelo de Canitrot (1975) define el empleo máximo de largo plazo.",
+    "en": "The limit set by import capacity: if industry needs imported inputs and capital goods, maximum employment depends on the foreign exchange exports generate. In Canitrot's (1975) model it sets long-run maximum employment."
+   },
+   "id": "macro-estab-02-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la inflación tiende a acelerarse cuando los precios se ajustan de forma escalonada?",
+    "en": "Why does inflation tend to accelerate when prices adjust in a staggered way?"
+   },
+   "a": {
+    "es": "Porque las empresas, para no perder capital circulante valuado a costo de reposición, se adelantan a los costos futuros, y como sus clientes son también sus proveedores indirectos, ese adelanto les vuelve. El freno es la caída de ventas. Es el argumento de Canitrot (1975).",
+    "en": "Because firms, to avoid losing working capital valued at replacement cost, front-load expected future costs, and since customers are also indirect suppliers, that front-loading comes back to them. The brake is falling sales. It is Canitrot's (1975) argument."
+   },
+   "id": "macro-estab-02-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Si el gobierno congela tarifas, alquileres y precios agropecuarios para subir el salario real, ¿qué cabe esperar a mediano plazo?",
+    "en": "If the government freezes utility rates, rents and farm prices to raise real wages, what should be expected in the medium run?"
+   },
+   "a": {
+    "es": "Que caiga la inversión en esos sectores, aparezcan estrecheces y una crisis obligue a corregir esos precios, devolviendo el salario real a su punto de partida con pérdida neta. Canitrot (1975) lo describe para la experiencia argentina.",
+    "en": "That investment in those sectors falls, shortages appear and a crisis forces those prices up, returning the real wage to its starting point with a net loss. Canitrot (1975) describes it for Argentina."
+   },
+   "id": "macro-estab-02-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué una alianza entre trabajadores e industriales puede funcionar en la recesión y romperse en el auge?",
+    "en": "Why can a worker-industrialist alliance work in recession and break in a boom?"
+   },
+   "a": {
+    "es": "Con recursos ociosos, expandir la demanda sube salarios y beneficios a la vez; cerca del pleno empleo, salarios y beneficios compiten. Canitrot (1975) lo usa para explicar el ciclo entre programas populistas y programas de orden y recesión.",
+    "en": "With idle resources, expanding demand raises wages and profits together; near full employment they compete. Canitrot (1975) uses it to explain the cycle between populist and order-and-recession programmes."
+   },
+   "id": "macro-estab-02-t6"
+  }
+ ]
+}
