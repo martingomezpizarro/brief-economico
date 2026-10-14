@@ -1,0 +1,353 @@
+{
+ "id": "crec-teoria-02",
+ "cat": "crec-teoria",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Qué explica el crecimiento entre países: Barro (1996)",
+ "bajada": "Convergencia condicional, escolaridad, salud, fecundidad, gasto público, Estado de derecho, términos de intercambio e inflación: la regresión de crecimiento más influyente de los noventa, con sus resultados y sus trampas.",
+ "fuentes": [
+  1230
+ ],
+ "cita": "Barro (1996), «Determinants of economic growth: a cross-country empirical study», NBER WP 5698 / MIT Press",
+ "intro": "Robert Barro popularizó en los noventa las regresiones de crecimiento entre países: tomar unos cien países, medir cuánto crecieron y relacionarlo con un conjunto de variables iniciales y de política. Este trabajo, base de sus conferencias Lionel Robbins, resume el programa. Parte de la teoría neoclásica ampliada (con capital humano, políticas públicas y difusión de tecnología) y obtiene una lista de resultados que marcaron la discusión sobre desarrollo, incluida la que se da en la Argentina. También muestra por qué hay que interpretar con cuidado: varias variables, como la inversión, son en parte consecuencia del crecimiento.",
+ "secciones": [
+  {
+   "t": "Teoría: convergencia condicional",
+   "p": [
+    "En el modelo neoclásico (Ramsey, Solow, Swan, Cass, Koopmans), los rendimientos decrecientes del capital hacen que las economías con poco capital por trabajador, respecto de su nivel de largo plazo, rindan más y crezcan más rápido. Si todas fueran iguales salvo en su capital inicial, habría convergencia absoluta: los pobres crecerían más que los ricos. Pero difieren en ahorro, fecundidad, disposición a trabajar, acceso a la tecnología y políticas, así que la convergencia es condicional: crece rápido quien está lejos de su propio estado estacionario. Un país pobre con malas políticas, y por lo tanto un estado estacionario bajo, no tiene por qué crecer rápido.",
+    "El modelo neoclásico tiene un defecto: sin progreso técnico, el crecimiento per cápita se detiene. Las teorías de crecimiento endógeno (Romer, Lucas, Rebelo, y luego Aghion y Howitt, Grossman y Helpman) explican el progreso técnico con investigación premiada por poder de mercado transitorio. Barro sostiene que esas teorías explican por qué el mundo crece indefinidamente, pero que para comparar países el marco más útil sigue siendo el neoclásico ampliado, sumando la difusión: imitar es más barato que innovar, lo que restaura la convergencia condicional."
+   ],
+   "eq": [
+    "Dy = f(y, y^*)"
+   ],
+   "nota": "Dy es la tasa de crecimiento del producto per cápita, y su nivel actual e y* su nivel de estado estacionario. El crecimiento cae con y dado y* y sube con y* dado y. y* depende de ahorro, fecundidad, oferta de trabajo, gasto público, impuestos, distorsiones, Estado de derecho, democracia y términos de intercambio."
+  },
+  {
+   "t": "Por qué no se ve convergencia a simple vista",
+   "p": [
+    "Entre 1960 y 1990 la correlación simple entre el crecimiento y el nivel inicial del PIB per cápita es prácticamente nula; la pendiente incluso tiene el signo equivocado, levemente positivo, aunque no significativo. La interpretación neoclásica es que los países pobres no están sistemáticamente lejos de su propio estado estacionario. Por eso hay que condicionar.",
+    "Además, que los pobres crezcan más rápido no implica que la desigualdad entre países baje: es la falacia de Galton. La dispersión depende de la velocidad de convergencia y del tamaño de los shocks. De hecho, para 114 países, el desvío estándar del logaritmo del PIB per cápita subió de 0,89 en 1960 a 1,14 en 1990."
+   ]
+  },
+  {
+   "t": "El método",
+   "p": [
+    "Usa un panel de alrededor de cien países con tres períodos: 1965-75, 1975-85 y 1985-90. Los períodos largos evitan que el análisis quede dominado por el ciclo y por errores de sincronización, y varias variables (fecundidad, esperanza de vida, educación) no se miden con más frecuencia. Estima por variables instrumentales usando valores rezagados de los regresores como instrumentos, de modo que las regresiones relacionan el crecimiento con valores previos de las variables explicativas. Barro prefiere este enfoque a los efectos fijos por país: diferenciar elimina la información entre países, que es la principal fortaleza de los datos, y amplifica el error de medición."
+   ]
+  },
+  {
+   "t": "Los resultados",
+   "p": [
+    "Convergencia: el coeficiente del logaritmo del PIB inicial es −0,025, muy significativo. Implica una convergencia condicional de 2,5% por año: una economía tarda 27 años en recorrer la mitad del camino a su estado estacionario y 89 años para el 90%.",
+    "Capital humano: cada año adicional de escolaridad secundaria y superior de los varones de 25 años o más sube el crecimiento en 1,2 puntos porcentuales por año. La primaria y la educación femenina no son significativas directamente; la primaria femenina reduce la fecundidad. La interacción con el PIB inicial indica que más educación aumenta la velocidad de convergencia, en línea con las teorías que destacan la absorción de tecnología. La esperanza de vida tiene un efecto positivo (0,042).",
+    "Fecundidad: efecto negativo (−0,016), porque parte de la inversión se destina a equipar a nuevos trabajadores y más recursos van a la crianza. Gasto público: el consumo del gobierno sin educación ni defensa, aproximación del gasto improductivo, tiene un coeficiente de −0,136: «el gobierno grande es malo para el crecimiento». Estado de derecho: el índice de International Country Risk Guide tiene coeficiente 0,0293; subir un escalón en la escala original aumenta el crecimiento en 0,5 puntos. Términos de intercambio: su mejora estimula el producto (0,14).",
+    "Las dummies regionales de África subsahariana, América Latina y Asia oriental dejan de ser significativas: sus experiencias se explican por las variables. Para América Latina, la clave para que la dummy desaparezca es incluir la inflación."
+   ]
+  },
+  {
+   "t": "Inversión e inflación",
+   "p": [
+    "La inversión merece cautela. Con instrumentos rezagados, su coeficiente es positivo pero no significativo (0,027); si se usa la inversión contemporánea como instrumento, casi se duplica (0,043) y se vuelve significativo. Barro concluye que buena parte del efecto que se suele encontrar refleja causalidad inversa: los países con buenas oportunidades de crecimiento invierten más. Las mismas políticas que favorecen el crecimiento (Estado de derecho, menos gasto improductivo, estabilidad de precios) operan en parte estimulando la inversión.",
+    "Sobre la inflación, la mediana entre países fue 3,3% anual en los sesenta, 10,1% en los setenta y 8,9% en los ochenta, y su variabilidad subió junto con su nivel. En la primera estimación, el coeficiente de la inflación sobre el crecimiento es −0,029, significativo. Barro advierte que la regresión no necesariamente refleja causalidad de la inflación al crecimiento y discute instrumentos como la independencia del banco central y el estatus colonial previo."
+   ]
+  },
+  {
+   "t": "Cómo leerlo",
+   "p": [
+    "El trabajo dejó una agenda clara: instituciones, capital humano, estabilidad y gasto público como determinantes del crecimiento. Pero sus límites son importantes (lectura propia): los resultados dependen de qué variables se incluyen y de las fuentes de datos, algo que Ciccone y Jarociński (2010) examinan en el brief siguiente de esta ruta; la medición del Estado de derecho es subjetiva y posterior al inicio del período; y la causalidad, como muestra el propio caso de la inversión, es difícil de establecer con datos entre países."
+   ]
+  }
+ ],
+ "claves": [
+  "Convergencia condicional: crecen más rápido los países lejos de su propio estado estacionario, no los pobres en general.",
+  "Sin condicionar, la relación entre crecimiento y PIB inicial es nula; la dispersión entre países subió de 0,89 a 1,14 entre 1960 y 1990.",
+  "Velocidad de convergencia de 2,5% anual: 27 años para recorrer la mitad del camino.",
+  "Suman crecimiento la escolaridad secundaria y superior, la salud, el Estado de derecho y mejores términos de intercambio; restan la fecundidad, el gasto improductivo y la inflación.",
+  "El efecto de la inversión refleja en buena parte causalidad inversa."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué significa convergencia condicional?",
+    "en": "What does conditional convergence mean?"
+   },
+   "op": {
+    "es": [
+     "Que todos los países terminan con el mismo ingreso",
+     "Que un país crece más rápido cuanto más lejos está de su propio estado estacionario",
+     "Que los países ricos crecen más",
+     "Que la desigualdad entre países siempre baja"
+    ],
+    "en": [
+     "That all countries end with the same income",
+     "That a country grows faster the further it is from its own steady state",
+     "That rich countries grow faster",
+     "That cross-country inequality always falls"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El estado estacionario depende de ahorro, fecundidad, políticas e instituciones, que difieren entre países.",
+    "en": "The steady state depends on saving, fertility, policies and institutions, which differ across countries."
+   },
+   "id": "crec-teoria-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la correlación simple entre crecimiento y PIB inicial es nula entre 1960 y 1990?",
+    "en": "Why is the simple correlation between growth and initial GDP nil in 1960-1990?"
+   },
+   "op": {
+    "es": [
+     "Porque los datos están mal",
+     "Porque no existen rendimientos decrecientes",
+     "Porque los países pobres no están sistemáticamente lejos de su propio estado estacionario",
+     "Porque los ricos invierten menos"
+    ],
+    "en": [
+     "Because the data are wrong",
+     "Because there are no diminishing returns",
+     "Because poor countries are not systematically far from their own steady states",
+     "Because the rich invest less"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Al condicionar por los determinantes de y*, aparece una relación negativa clara.",
+    "en": "Once y*'s determinants are controlled for, a clear negative relation appears."
+   },
+   "id": "crec-teoria-02-q2"
+  },
+  {
+   "q": {
+    "es": "Con una convergencia de 2,5% anual, ¿cuánto tarda una economía en recorrer la mitad del camino a su estado estacionario?",
+    "en": "With 2.5% annual convergence, how long does an economy take to cover half the gap to its steady state?"
+   },
+   "op": {
+    "es": [
+     "27 años",
+     "5 años",
+     "89 años",
+     "10 años"
+    ],
+    "en": [
+     "27 years",
+     "5 years",
+     "89 years",
+     "10 years"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Y 89 años para el 90% del camino: la convergencia es lenta.",
+    "en": "And 89 years for 90% of the way: convergence is slow."
+   },
+   "id": "crec-teoria-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de educación tiene efecto directo significativo sobre el crecimiento en Barro (1996)?",
+    "en": "Which type of schooling has a significant direct growth effect in Barro (1996)?"
+   },
+   "op": {
+    "es": [
+     "La primaria femenina",
+     "La primaria masculina",
+     "La secundaria femenina",
+     "La secundaria y superior masculina de mayores de 25 años"
+    ],
+    "en": [
+     "Female primary",
+     "Male primary",
+     "Female secondary",
+     "Male secondary and higher among those over 25"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Un año más eleva el crecimiento 1,2 puntos; la educación femenina actúa sobre todo vía menor fecundidad.",
+    "en": "One more year raises growth 1.2 points; female schooling acts mainly via lower fertility."
+   },
+   "id": "crec-teoria-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué mide la variable de gasto público con efecto negativo?",
+    "en": "What does the government spending variable with a negative effect measure?"
+   },
+   "op": {
+    "es": [
+     "El gasto total incluyendo educación",
+     "El consumo del gobierno excluyendo educación y defensa, como aproximación del gasto improductivo",
+     "La inversión pública",
+     "El gasto en defensa"
+    ],
+    "en": [
+     "Total spending including education",
+     "Government consumption excluding education and defence, proxying unproductive spending",
+     "Public investment",
+     "Defence spending"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Su coeficiente es −0,136: más gasto improductivo y los impuestos asociados reducen el crecimiento.",
+    "en": "Its coefficient is −0.136: more unproductive spending and associated taxes reduce growth."
+   },
+   "id": "crec-teoria-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasa con la dummy de América Latina en la especificación de Barro (1996)?",
+    "en": "What happens to the Latin America dummy in Barro's (1996) specification?"
+   },
+   "op": {
+    "es": [
+     "Es negativa y muy significativa",
+     "Es positiva",
+     "Deja de ser significativa, y la inflación es clave para que eso ocurra",
+     "No se incluye"
+    ],
+    "en": [
+     "It is negative and highly significant",
+     "It is positive",
+     "It becomes insignificant, and inflation is key to that",
+     "It is not included"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El bajo crecimiento latinoamericano queda explicado por las variables, en especial la inflación.",
+    "en": "Latin America's low growth is explained by the variables, especially inflation."
+   },
+   "id": "crec-teoria-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Barro desconfía del efecto de la inversión sobre el crecimiento?",
+    "en": "Why does Barro distrust the effect of investment on growth?"
+   },
+   "op": {
+    "es": [
+     "Porque refleja en buena parte causalidad inversa: los países con buenas oportunidades invierten más",
+     "Porque la inversión no se mide",
+     "Porque siempre es negativa",
+     "Porque los países pobres no invierten"
+    ],
+    "en": [
+     "Because it largely reflects reverse causality: countries with good prospects invest more",
+     "Because investment is not measured",
+     "Because it is always negative",
+     "Because poor countries do not invest"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con instrumentos rezagados su efecto es 0,027 y no significativo; con la inversión contemporánea, 0,043.",
+    "en": "With lagged instruments its effect is 0.027 and insignificant; with contemporaneous investment, 0.043."
+   },
+   "id": "crec-teoria-02-q7"
+  },
+  {
+   "q": {
+    "es": "Un país pobre crece lento pese a tener poco capital. Según el marco de Barro, ¿qué es lo más probable?",
+    "en": "A poor country grows slowly despite little capital. Under Barro's framework, what is most likely?"
+   },
+   "op": {
+    "es": [
+     "Que los rendimientos del capital sean crecientes",
+     "Que tenga demasiada educación",
+     "Que la teoría neoclásica sea falsa",
+     "Que esté cerca de un estado estacionario bajo por sus políticas e instituciones"
+    ],
+    "en": [
+     "That returns to capital are increasing",
+     "That it has too much education",
+     "That neoclassical theory is false",
+     "That it is near a low steady state due to its policies and institutions"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin un y* más alto (mejores instituciones, menos gasto improductivo, estabilidad) no hay convergencia.",
+    "en": "Without a higher y* (better institutions, less unproductive spending, stability) there is no convergence."
+   },
+   "id": "crec-teoria-02-q8"
+  }
+ ],
+ "palabras": 974,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre convergencia absoluta y condicional?",
+    "en": "What is the difference between absolute and conditional convergence?"
+   },
+   "a": {
+    "es": "La absoluta dice que los pobres crecen más que los ricos; la condicional, que cada país crece más cuanto más lejos está de su propio estado estacionario. Barro (1996) muestra que en los datos de 1960-90 solo aparece la condicional.",
+    "en": "Absolute says the poor grow faster than the rich; conditional, that each country grows faster the further it is from its own steady state. Barro (1996) shows only the conditional kind appears in 1960-90 data."
+   },
+   "id": "crec-teoria-02-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿A qué velocidad convergen las economías a su estado estacionario según las regresiones entre países?",
+    "en": "How fast do economies converge to their steady state according to cross-country regressions?"
+   },
+   "a": {
+    "es": "A alrededor de 2,5% por año: 27 años para cerrar la mitad de la brecha y 89 para el 90%. Lo estima Barro (1996), y velocidades parecidas aparecen entre regiones dentro de países.",
+    "en": "About 2.5% a year: 27 years to close half the gap and 89 for 90%. Barro (1996) estimates it, and similar speeds appear across regions within countries."
+   },
+   "id": "crec-teoria-02-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué que los países pobres crezcan más rápido no implica que baje la desigualdad entre países?",
+    "en": "Why does faster growth of poor countries not imply falling cross-country inequality?"
+   },
+   "a": {
+    "es": "Porque la dispersión también depende de los shocks que afectan a cada economía; es la falacia de Galton. Barro (1996) muestra que el desvío del log del PIB per cápita subió de 0,89 en 1960 a 1,14 en 1990.",
+    "en": "Because dispersion also depends on country-specific shocks; it is Galton's fallacy. Barro (1996) shows the standard deviation of log per capita GDP rose from 0.89 in 1960 to 1.14 in 1990."
+   },
+   "id": "crec-teoria-02-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "En una regresión de crecimiento, ¿por qué usar valores rezagados como instrumentos?",
+    "en": "In a growth regression, why use lagged values as instruments?"
+   },
+   "a": {
+    "es": "Para mitigar la causalidad inversa y el error de medición: el crecimiento puede afectar variables como la inversión. Barro (1996) muestra que con la inversión contemporánea como instrumento su efecto casi se duplica, señal de causalidad inversa.",
+    "en": "To mitigate reverse causality and measurement error: growth can affect variables such as investment. Barro (1996) shows that using contemporaneous investment as an instrument nearly doubles its effect, a sign of reverse causality."
+   },
+   "id": "crec-teoria-02-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué efecto tiene en las regresiones de Barro un año más de escolaridad secundaria y superior de los varones adultos?",
+    "en": "What effect does one more year of adult male secondary and higher schooling have in Barro's regressions?"
+   },
+   "a": {
+    "es": "Sube el crecimiento en 1,2 puntos porcentuales por año y además acelera la convergencia, coherente con que la educación facilita absorber tecnología. La primaria y la educación femenina no tienen efecto directo significativo (Barro, 1996).",
+    "en": "It raises growth by 1.2 percentage points a year and speeds convergence, consistent with education aiding technology absorption. Primary and female schooling have no significant direct effect (Barro, 1996)."
+   },
+   "id": "crec-teoria-02-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una mayor fecundidad reduce el crecimiento del producto per cápita en el modelo neoclásico?",
+    "en": "Why does higher fertility reduce per capita output growth in the neoclassical model?"
+   },
+   "a": {
+    "es": "Porque parte de la inversión se usa para equipar a los nuevos trabajadores en lugar de aumentar el capital por trabajador, y más recursos se dedican a la crianza. Barro (1996) estima un coeficiente de −0,016 para el logaritmo de la fecundidad.",
+    "en": "Because part of investment equips new workers rather than raising capital per worker, and more resources go to child rearing. Barro (1996) estimates a coefficient of −0.016 on log fertility."
+   },
+   "id": "crec-teoria-02-t6"
+  }
+ ]
+}
