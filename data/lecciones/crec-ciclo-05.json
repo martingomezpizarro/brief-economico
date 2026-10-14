@@ -1,0 +1,338 @@
+{
+ "id": "crec-ciclo-05",
+ "cat": "crec-ciclo",
+ "orden": 5,
+ "minutos": 11,
+ "titulo": "Shocks, propagación y un ciclo real en miniatura: Doepke, Lehnert y Sellgren (1999)",
+ "bajada": "Qué shocks pueden originar los ciclos, qué mecanismos los amplifican, y cómo un modelo de generaciones superpuestas con shocks de productividad reproduce booms, recesiones y una inversión más volátil que el consumo.",
+ "fuentes": [
+  1346
+ ],
+ "cita": "Doepke, Lehnert y Sellgren (1999), Macroeconomics, cap. 9 «Business cycles», apuntes de la Universidad de Chicago",
+ "intro": "Los ciclos económicos son las fluctuaciones recurrentes del PIB real. Toda teoría del ciclo combina dos piezas: un shock o perturbación que lo origina, y un mecanismo de propagación que convierte shocks chicos y breves en fluctuaciones grandes y persistentes. En Estados Unidos el PIB real cayó 2,8% entre octubre de 1981 y 1982; cuesta imaginar un shock que por sí solo destruya casi 3% del producto en un año sin que nos enteremos. Este capítulo del manual de Doepke, Lehnert y Sellgren repasa los candidatos y arma un modelo de ciclo real lo bastante simple para resolverlo a mano.",
+ "secciones": [
+  {
+   "t": "Shocks y mecanismos de propagación",
+   "p": [
+    "Los shocks candidatos son cinco: tecnológicos (nuevas tecnologías que suben la productividad, o fallas que la bajan), climáticos y desastres naturales (que pueden verse como un tipo de shock tecnológico), monetarios (cambios aleatorios en la oferta de dinero o las tasas), políticos (impuestos, regulación, gasto) y de preferencias (modas y gustos).",
+    "Los mecanismos de propagación también son varios. La sustitución intertemporal: si un shock baja la productividad, baja el producto marginal del trabajo, la gente trabaja menos y ahorra menos para suavizar su consumo, y la menor inversión reduce el capital futuro. Los precios rígidos: si el salario no puede bajar, aparece desempleo y la caída del producto supera el efecto directo del shock. Las fricciones financieras: quiebras que arrastran a otras firmas y a los bancos."
+   ]
+  },
+  {
+   "t": "Dos visiones del ciclo",
+   "p": [
+    "Una familia de modelos ve el ciclo como una falla del sistema económico: por fricciones o imperfecciones, la economía no alcanza el producto y el empleo eficientes. El modelo keynesiano está en este grupo. La otra ve el ciclo como la reacción óptima de una economía eficiente a shocks inevitables, propagados por sustitución intertemporal, con los shocks tecnológicos como causa principal: son los modelos de ciclo real, llamados así porque los shocks son reales y no hay ajuste nominal lento.",
+    "Los autores creen que ambas visiones tienen algo de verdad. Las grandes crisis, como la Gran Depresión o la crisis asiática, parecen ligadas a disrupciones financieras. Pero en la posguerra ni Estados Unidos ni Europa occidental sufrieron una caída comparable a la de 1929-1933. La pregunta es si los ciclos normales responden a las mismas fricciones; los teóricos del ciclo real sostienen que no, y que se explican como reacción eficiente a los shocks."
+   ]
+  },
+  {
+   "t": "Un modelo de generaciones superpuestas",
+   "p": [
+    "Para que el modelo se pueda resolver, cada persona vive dos períodos: trabaja de joven, ofreciendo una unidad de trabajo, y vive de sus ahorros de vieja. Su utilidad es logarítmica en el consumo de ambos períodos. Una firma competitiva produce con una Cobb-Douglas, con la productividad A_t como única fuente de shocks; el salario resulta proporcional a A_t, así que es procíclico, como en los datos.",
+    "Con utilidad logarítmica, los efectos ingreso y sustitución se cancelan: el joven ahorra siempre la mitad de su salario, sin importar el retorno futuro. Eso evita lidiar con la incertidumbre y da la ecuación clave del modelo: el capital de mañana es la mitad del salario de hoy.",
+    "Esa ecuación muestra la propagación: un shock a A_t cambia el salario, por lo tanto el ahorro y el capital del período siguiente, y con él la producción futura. El joven reparte el efecto del shock entre los dos períodos de su vida para suavizar el consumo, y así un único shock genera un ciclo de varios períodos."
+   ]
+  },
+  {
+   "t": "Consumo, inversión y simulaciones",
+   "p": [
+    "En los datos, la inversión es mucho más volátil que el consumo. En el modelo, la elasticidad del consumo respecto de la productividad es menor que uno y la de la inversión mayor que uno: en términos relativos, el modelo acierta. En términos absolutos falla: el consumo cambia más que la inversión, porque la gente vive demasiado poco para suavizar; el viejo no puede hacerlo y el joven tiene un solo año por delante. Con consumidores de vida infinita, el problema desaparece.",
+    "Los autores calibran la participación del trabajo en 0,7 y la depreciación en 0,05, y generan shocks que mueven la productividad hasta 10% hacia arriba o hacia abajo. Un único shock de 5% tarda unos ocho períodos en disiparse: el capital acumulado en el período del shock sigue afectando la economía cuando ya no vive nadie de los que lo vivieron, y la inversión completa un ciclo entero. Con muchos shocks aparecen booms y recesiones de duración variable, con la inversión como la serie más volátil.",
+    "Según los autores, los modelos de ciclo real de frontera, alimentados con shocks de productividad medidos, explican alrededor del 70% de la amplitud de los ciclos reales. Desde esa óptica, lo sorprendente sería que no hubiera ciclos. Pero como no explican el 100%, otros shocks y mecanismos, como el keynesiano o las fricciones financieras, también deben jugar algún papel."
+   ]
+  }
+ ],
+ "claves": [
+  "Toda teoría del ciclo combina un shock originario con un mecanismo de propagación que lo amplifica y lo hace persistir.",
+  "Los modelos keynesianos ven el ciclo como falla de mercado; los de ciclo real, como respuesta eficiente a shocks tecnológicos.",
+  "Con utilidad logarítmica, el joven ahorra la mitad del salario: el capital de mañana depende del shock de hoy.",
+  "El modelo reproduce salarios procíclicos y una inversión relativamente más volátil que el consumo.",
+  "Un único shock de 5% tarda unos ocho períodos en disiparse.",
+  "Los modelos de ciclo real de frontera explican cerca del 70% de la amplitud de los ciclos observados."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué hace falta un mecanismo de propagación para explicar los ciclos?",
+    "en": "Why is a propagation mechanism needed to explain cycles?"
+   },
+   "op": {
+    "es": [
+     "Porque los shocks son siempre monetarios",
+     "Porque los ciclos no existen sin gobierno",
+     "Porque los shocks directos parecen demasiado chicos para explicar caídas como la de 1981-1982",
+     "Porque la productividad nunca cambia"
+    ],
+    "en": [
+     "Because shocks are always monetary",
+     "Because cycles do not exist without government",
+     "Because direct shocks seem too small to explain falls like 1981-1982",
+     "Because productivity never changes"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El PIB de EE.UU. cayó 2,8% en un año; cuesta encontrar un shock directo de ese tamaño.",
+    "en": "US GDP fell 2.8% in a year; a direct shock of that size is hard to find."
+   },
+   "id": "crec-ciclo-05-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué caracteriza a los modelos de ciclo real?",
+    "en": "What characterizes real business cycle models?"
+   },
+   "op": {
+    "es": [
+     "Ven el ciclo como respuesta óptima de mercados eficientes a shocks reales, sobre todo tecnológicos",
+     "Explican el ciclo con precios rígidos",
+     "Atribuyen todo a la política monetaria",
+     "Niegan que existan fluctuaciones"
+    ],
+    "en": [
+     "They see the cycle as the optimal response of efficient markets to real, mainly technology, shocks",
+     "They explain the cycle with sticky prices",
+     "They attribute everything to monetary policy",
+     "They deny fluctuations exist"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El nombre viene de que los shocks son reales y no hay ajuste nominal lento.",
+    "en": "The name comes from shocks being real and there being no sluggish nominal adjustment."
+   },
+   "id": "crec-ciclo-05-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo, ¿cuánto ahorra el consumidor joven y por qué?",
+    "en": "In the model, how much does the young consumer save and why?"
+   },
+   "op": {
+    "es": [
+     "Todo su salario, porque no valora el consumo presente",
+     "Depende de la tasa de interés esperada",
+     "Nada, porque vive de la herencia",
+     "La mitad, porque con utilidad logarítmica los efectos ingreso y sustitución se cancelan"
+    ],
+    "en": [
+     "All of his wage, because he does not value present consumption",
+     "It depends on the expected interest rate",
+     "Nothing, because he lives on inheritance",
+     "Half, because with log utility income and substitution effects cancel"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Por eso no hay que modelar la incertidumbre sobre el retorno futuro.",
+    "en": "That is why uncertainty about the future return need not be modeled."
+   },
+   "id": "crec-ciclo-05-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los salarios son procíclicos en el modelo?",
+    "en": "Why are wages procyclical in the model?"
+   },
+   "op": {
+    "es": [
+     "Porque hay sindicatos",
+     "Porque el salario es proporcional a la productividad, que es la fuente de los shocks",
+     "Porque el gobierno los indexa",
+     "Porque la oferta de trabajo es muy elástica"
+    ],
+    "en": [
+     "Because of unions",
+     "Because the wage is proportional to productivity, the source of shocks",
+     "Because the government indexes them",
+     "Because labor supply is very elastic"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Un shock positivo a la productividad sube el salario, como en la evidencia empírica.",
+    "en": "A positive productivity shock raises the wage, as in the evidence."
+   },
+   "id": "crec-ciclo-05-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se propaga un shock en el tiempo en este modelo?",
+    "en": "How does a shock propagate over time in this model?"
+   },
+   "op": {
+    "es": [
+     "A través del ahorro: el shock cambia el salario, el ahorro y el capital del período siguiente",
+     "A través de la rigidez de precios",
+     "A través de quiebras bancarias",
+     "No se propaga: dura un solo período"
+    ],
+    "en": [
+     "Through saving: the shock changes the wage, saving and next period's capital",
+     "Through price rigidity",
+     "Through bank failures",
+     "It does not: it lasts a single period"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El consumidor reparte el shock entre sus dos períodos de vida para suavizar el consumo.",
+    "en": "The consumer spreads the shock over both periods of life to smooth consumption."
+   },
+   "id": "crec-ciclo-05-q5"
+  },
+  {
+   "q": {
+    "es": "¿En qué aspecto falla el modelo simple de dos períodos?",
+    "en": "Where does the simple two-period model fail?"
+   },
+   "op": {
+    "es": [
+     "Los salarios son contracíclicos",
+     "No genera ciclos",
+     "En términos absolutos, el consumo cambia más que la inversión",
+     "La inversión es menos volátil en términos relativos"
+    ],
+    "en": [
+     "Wages are countercyclical",
+     "It generates no cycles",
+     "In absolute terms, consumption moves more than investment",
+     "Investment is less volatile in relative terms"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La gente vive muy poco para suavizar; con consumidores de vida infinita se corrige.",
+    "en": "People live too briefly to smooth; infinitely lived consumers fix it."
+   },
+   "id": "crec-ciclo-05-q6"
+  },
+  {
+   "q": {
+    "es": "En la simulación, ¿cuánto tarda en disiparse un único shock de productividad de 5%?",
+    "en": "In the simulation, how long does a single 5% productivity shock take to fade?"
+   },
+   "op": {
+    "es": [
+     "Un período",
+     "Dos períodos",
+     "Nunca se disipa",
+     "Unos ocho períodos"
+    ],
+    "en": [
+     "One period",
+     "Two periods",
+     "It never fades",
+     "About eight periods"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El capital acumulado en el período del shock sigue afectando a generaciones que no lo vivieron.",
+    "en": "Capital built up in the shock period keeps affecting generations that did not live through it."
+   },
+   "id": "crec-ciclo-05-q7"
+  },
+  {
+   "q": {
+    "es": "Según los autores, ¿qué fracción de la amplitud de los ciclos explican los modelos de ciclo real de frontera?",
+    "en": "According to the authors, what share of cycle amplitude do state-of-the-art RBC models explain?"
+   },
+   "op": {
+    "es": [
+     "Cerca del 10%",
+     "Cerca del 70%",
+     "El 100%",
+     "Nada"
+    ],
+    "en": [
+     "About 10%",
+     "About 70%",
+     "100%",
+     "None"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Como no llegan al 100%, otros shocks y mecanismos también deben importar.",
+    "en": "Since they fall short of 100%, other shocks and mechanisms must also matter."
+   },
+   "id": "crec-ciclo-05-q8"
+  }
+ ],
+ "palabras": 781,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dos piezas comparte toda teoría del ciclo económico?",
+    "en": "What two pieces does every business cycle theory share?"
+   },
+   "a": {
+    "es": "Un shock que origina la fluctuación y un mecanismo de propagación que convierte shocks chicos y breves en fluctuaciones grandes y persistentes. Doepke, Lehnert y Sellgren (1999) ordenan la discusión del ciclo con esa distinción.",
+    "en": "A shock that starts the fluctuation and a propagation mechanism that turns small, brief shocks into large, persistent fluctuations. Doepke, Lehnert and Sellgren (1999) organize the cycle discussion around that distinction."
+   },
+   "id": "crec-ciclo-05-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo amplifica la sustitución intertemporal un shock de productividad negativo?",
+    "en": "How does intertemporal substitution amplify a negative productivity shock?"
+   },
+   "a": {
+    "es": "Al bajar el producto marginal, la gente trabaja menos y ahorra menos para suavizar su consumo; la menor inversión reduce el capital futuro y prolonga el efecto. Es uno de los mecanismos que describen Doepke, Lehnert y Sellgren (1999).",
+    "en": "With a lower marginal product, people work less and save less to smooth consumption; lower investment reduces future capital and prolongs the effect. It is one of the mechanisms Doepke, Lehnert and Sellgren (1999) describe."
+   },
+   "id": "crec-ciclo-05-t2"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Es el ciclo una falla de mercado o una respuesta eficiente?",
+    "en": "Is the cycle a market failure or an efficient response?"
+   },
+   "a": {
+    "es": "Probablemente ambas cosas: las grandes depresiones parecen ligadas a disrupciones financieras, mientras que los ciclos normales podrían ser la respuesta eficiente a shocks tecnológicos. Es la posición de Doepke, Lehnert y Sellgren (1999).",
+    "en": "Probably both: great depressions seem tied to financial disruptions, while normal cycles may be the efficient response to technology shocks. That is Doepke, Lehnert and Sellgren's (1999) position."
+   },
+   "id": "crec-ciclo-05-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo puede un shock de un solo período tener efectos durante muchos períodos?",
+    "en": "How can a one-period shock have effects for many periods?"
+   },
+   "a": {
+    "es": "Si el shock cambia el ahorro y, por lo tanto, el capital disponible mañana, la producción futura también cambia aunque la productividad haya vuelto a la normalidad. En el modelo de Doepke, Lehnert y Sellgren (1999), un shock de 5% tarda unos ocho períodos en disiparse.",
+    "en": "If the shock changes saving and therefore tomorrow's capital, future output also changes even after productivity returns to normal. In Doepke, Lehnert and Sellgren's (1999) model, a 5% shock takes about eight periods to fade."
+   },
+   "id": "crec-ciclo-05-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué hechos del ciclo reproduce un modelo simple de ciclo real?",
+    "en": "What cycle facts does a simple RBC model reproduce?"
+   },
+   "a": {
+    "es": "Booms y recesiones de duración variable, salarios procíclicos y una inversión relativamente más volátil que el consumo. Doepke, Lehnert y Sellgren (1999) lo muestran con un modelo de generaciones superpuestas.",
+    "en": "Booms and recessions of varying length, procyclical wages and investment relatively more volatile than consumption. Doepke, Lehnert and Sellgren (1999) show this with an overlapping-generations model."
+   },
+   "id": "crec-ciclo-05-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué un modelo con vidas cortas exagera la volatilidad del consumo?",
+    "en": "Why does a short-lived-agent model exaggerate consumption volatility?"
+   },
+   "a": {
+    "es": "Porque las personas tienen poco tiempo para suavizar: el viejo no puede hacerlo y el joven tiene un solo año por delante, así que gran parte del shock cae sobre el consumo. Doepke, Lehnert y Sellgren (1999) señalan que con vidas infinitas se corrige.",
+    "en": "Because people have little time to smooth: the old cannot and the young have one year ahead, so much of the shock falls on consumption. Doepke, Lehnert and Sellgren (1999) note that infinite lives fix it."
+   },
+   "id": "crec-ciclo-05-t6"
+  }
+ ]
+}
