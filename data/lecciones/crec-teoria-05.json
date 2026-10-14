@@ -1,0 +1,375 @@
+{
+ "id": "crec-teoria-05",
+ "cat": "crec-teoria",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "Estrategias de crecimiento: Rodrik (2005)",
+ "bajada": "Por qué los principios económicos no definen un único paquete de políticas, por qué China y Corea crecieron con instituciones heterodoxas, y por qué encender el crecimiento es más fácil que sostenerlo.",
+ "fuentes": [
+  1301
+ ],
+ "cita": "Rodrik (2005), «Growth strategies», en Aghion y Durlauf (eds.), Handbook of Economic Growth, vol. 1A, cap. 14",
+ "intro": "Rodrik arranca con un dato: entre 1960 y 2000 el ingreso per cápita real del mundo en desarrollo creció 2,3% anual, más rápido que Gran Bretaña en su apogeo (1,3%) o que Estados Unidos antes de la Primera Guerra (1,8%). Pero los países ricos crecieron 2,7%, así que pocos cerraron la brecha. Solo el Este y Sudeste asiático, excluida China, convergió de forma sostenida, con 4,4% anual. El capítulo pregunta qué enseña esa experiencia tan dispar sobre las estrategias de crecimiento, y responde con dos argumentos. Primero, los principios económicos de primer orden no se traducen en un paquete único de políticas. Segundo, encender el crecimiento y sostenerlo son tareas distintas.",
+ "secciones": [
+  {
+   "t": "El marciano y el Consenso de Washington",
+   "p": [
+    "Rodrik toma la lista original de diez reformas de Williamson (1990): disciplina fiscal, reorientación del gasto, reforma tributaria, liberalización de tasas de interés, tipo de cambio unificado y competitivo, apertura comercial, apertura a la inversión extranjera, privatización, desregulación y derechos de propiedad. A fines de los noventa se le agregaron reformas de «segunda generación»: gobierno corporativo, anticorrupción, mercados laborales flexibles, bancos centrales independientes, redes de protección social, entre otras.",
+    "Propone un experimento mental: darle esa lista a un marciano inteligente y pedirle que adivine qué regiones la siguieron, mirando solo el crecimiento. Se equivocaría. Corea del Sur y Taiwán no liberalizaron comercio ni finanzas hasta bien entrados los ochenta, usaron empresas públicas y crédito dirigido; Rodrik les pone 5 y 6 sobre 10 en la lista original. China no adoptó siquiera un régimen de propiedad privada. India desreguló despacio y privatizó muy poco.",
+    "En cambio, América Latina fue la región que más se esforzó en parecerse a la lista. El índice de reforma estructural de Lora subió de 0,34 en 1985 a 0,58 en 1999, y sin embargo el crecimiento quedó por debajo de su nivel anterior a 1980. La conclusión del marciano: los principios generales (propiedad, moneda sana, solvencia fiscal, incentivos de mercado) aparecen en todos los casos exitosos, pero la relación entre la lista detallada y el éxito es muy imperfecta."
+   ]
+  },
+  {
+   "t": "Principios universales, formas institucionales diversas",
+   "p": [
+    "Segundo experimento: un economista occidental asesora a China en 1978. Empieza por liberalizar precios agrícolas; como eso no alcanza con tierra comunal, recomienda privatizar la tierra; como el Estado pierde el impuesto implícito, reforma tributaria; como suben los alimentos, hay que corporatizar empresas para ajustar salarios; como esas empresas tienen poder monopólico, apertura comercial; y así hasta reproducir el Consenso de Washington. El razonamiento es plausible, pero no es el único camino.",
+    "China eligió otro. Con el sistema de doble vía, los campesinos cumplían su cuota con el Estado y vendían el excedente a precio de mercado. Si la cuota quedaba por debajo del resultado de mercado y no se elevaba, el margen operaba a precios libres y se lograba eficiencia asignativa sin crear perdedores, preservando los ingresos de quienes ya tenían derechos. Las empresas de municipios y aldeas (TVE), de propiedad de gobiernos locales, llegaron a más del 50% del valor agregado industrial a comienzos de los noventa: en ese contexto, la propiedad local daba más seguridad que un régimen legal de propiedad privada.",
+    "Otros ejemplos siguen la misma lógica: la «represión financiera moderada» de Asia, que crea rentas para que los bancos monitoreen mejor y capten más depósitos; la política industrial coreana como dispositivo de coordinación; la zona franca de exportación de Mauricio, creada en 1970, que abrió oportunidades nuevas sin quitarle protección a la industria sustitutiva. La lección es que propiedad, incentivos, moneda sana y solvencia fiscal vienen «sin institución» incorporada: hay muchas formas de implementarlos y el arte de la reforma es elegir la que encaja con las restricciones locales.",
+    "Incluso la recomendación más aceptada, abrir el comercio, requiere condiciones: liberalización completa o cuidadosa con sustitutos y complementos, ausencia de otras distorsiones con efectos adversos de segundo óptimo, país pequeño, pleno empleo o herramientas de demanda, compensación distributiva viable, sin efectos fiscales no cubiertos y credibilidad política. Rodrik aclara que esto no es un alegato por el gradualismo: el gradualismo supone que se sabe a dónde ir; su argumento es que hace falta «búsqueda y descubrimiento»."
+   ]
+  },
+  {
+   "t": "Cuatro hechos estilizados",
+   "p": [
+    "Primero, encender el crecimiento suele requerir poco. Con Hausmann y Pritchett, Rodrik identifica 83 aceleraciones: subas de al menos 2 puntos en el crecimiento per cápita sostenidas durante 8 años o más, con crecimiento posterior de al menos 3,5%. Muchas, como Pakistán 1979 o Siria 1969, ocurrieron sin reformas notables. A veces pesa más un cambio de actitud del liderazgo hacia el sector privado que la reforma misma, como en India a comienzos de los ochenta, una década antes de la liberalización de 1991.",
+    "Segundo, las reformas exitosas combinan ortodoxia con prácticas institucionales heterodoxas. Taiwán y Corea redujeron el sesgo antiexportador subsidiando exportaciones en vez de liberar importaciones; Singapur atrajo inversión expandiendo la inversión pública; Chile mantuvo el cobre en manos del Estado y controles a la entrada de capitales. Hong Kong es casi el único caso de laissez-faire, y partía de condiciones excepcionales: a comienzos de los sesenta su tasa de inversión triplicaba la de Corea o Taiwán.",
+    "Tercero, las innovaciones institucionales no viajan bien. Gorbachov intentó imitar la doble vía china y no obtuvo sus resultados. Casi todos los países en desarrollo tienen zonas francas, pero pocas funcionan como la de Mauricio. La sustitución de importaciones funcionó en Brasil y no en Argentina: entre 1960 y 1973 la productividad total de factores creció 2,9% anual en Brasil y 0,2% en Argentina.",
+    "Cuarto, sostener el crecimiento es más difícil que encenderlo. La mayoría de las aceleraciones se agotan. Rodrik atribuye los colapsos de mediados de los setenta y comienzos de los ochenta en África y América Latina menos a los regímenes de incentivos que a instituciones débiles de manejo del conflicto, que amplificaron los shocks de términos de intercambio y de tasas de interés."
+   ]
+  },
+  {
+   "t": "Encender: una estrategia de inversión",
+   "p": [
+    "La pregunta de corto plazo es cómo entusiasmar a los empresarios para invertir en la economía local. Hay dos visiones. La de fallas de gobierno (Stern) pone el foco en barreras impuestas por el Estado: inflación, regulaciones arbitrarias, licencias, corrupción; la receta es detectar cuál muerde más y removerla. La de fallas de mercado sostiene que una economía puede quedar atrapada en un equilibrio bajo aunque el Estado no castigue la iniciativa privada.",
+    "Las fallas de mercado son de dos tipos: externalidades de aprendizaje (aprender haciendo, capital humano, aprender sobre los propios costos) y fallas de coordinación inducidas por economías de escala, como en el «gran empujón» de Rosenstein-Rodan formalizado por Murphy, Shleifer y Vishny. En la versión general, si la rentabilidad moderna depende de cuántos ya están en el sector moderno, pueden coexistir dos equilibrios, y una economía que arranca sin industria puede no despegar nunca.",
+    "Para el autodescubrimiento de costos, Hausmann y Rodrik proponen premio y castigo: incentivos condicionados al desempeño. Según ellos, Asia del Este combinó subsidios con disciplina vía metas de exportación; la industria latinoamericana de sustitución tuvo incentivos sin disciplina y en los noventa disciplina sin incentivos. Un instrumento muy efectivo puede ser una depreciación real sostenida: favorece a todos los transables, que enfrentan competencia externa, y no requiere microgestión. Rodrik la llama quizás «la política industrial más efectiva que existe», con Chile tras la crisis de 1982-1983 y Uganda como ejemplos.",
+    "¿Por dónde empezar? Con inflación de tres dígitos o regulación asfixiante, removerlas es el primer paso obvio; más allá de eso depende del caso, y el marco de «diagnóstico del crecimiento» busca la restricción más activa. Rodrik advierte que el enfoque de fallas de mercado exige un gobierno razonablemente competente y no corrupto, aunque también recuerda que las políticas del Consenso pueden ser capturadas, como en la privatización masiva rusa."
+   ]
+  },
+  {
+   "t": "Sostener: construir instituciones",
+   "p": [
+    "En el largo plazo, lo que asegura la convergencia son instituciones de calidad. Rodrik las clasifica en cuatro funciones: crear mercados (propiedad, cumplimiento de contratos), regularlos (organismos reguladores, corrección de fallas), estabilizarlos (instituciones monetarias y fiscales, regulación prudencial) y legitimarlos (democracia, protección y seguro social). El dilema central: un Estado bastante fuerte para garantizar la propiedad también lo es para violarla.",
+    "Otra vez, la función no define la forma. Estados Unidos, Japón y Europa alcanzaron niveles de riqueza parecidos con reglas muy distintas, y la convergencia entre ellos fue mayor en finanzas y menor en mercado laboral. Las instituciones no convergen por diferencias en preferencias sociales, por complementariedades que generan dependencia de la trayectoria y porque lo que sirve para desarrollarse cambia según el país. Copiar puede servir a quien se parece al modelo, como Polonia frente a la Unión Europea; para Ucrania o Kirguistán es mucho menos claro.",
+    "El cierre es una defensa de la economía de seminario: tomarse la economía más en serio, no menos. Los principios grandes (incentivos, mercados, restricciones presupuestarias, derechos de propiedad) siguen vigentes, pero traducirlos en políticas exige conocimiento local. La «economía de reglas prácticas» que dominó las políticas de crecimiento, concluye, se puede descartar."
+   ]
+  }
+ ],
+ "claves": [
+  "Propiedad, incentivos, moneda sana y solvencia fiscal son universales, pero no determinan un paquete único de políticas.",
+  "Corea, Taiwán, China e India crecieron con fuertes desvíos del Consenso de Washington; América Latina lo siguió y creció menos que antes de 1980.",
+  "La doble vía china y las TVE lograron resultados ortodoxos con instituciones heterodoxas.",
+  "Encender el crecimiento suele requerir pocas reformas; sostenerlo exige construir instituciones.",
+  "Las innovaciones institucionales no se trasplantan bien: lo que funcionó en un país puede fallar en otro.",
+  "Para encender, Rodrik propone una estrategia de inversión que combine incentivos con disciplina; una depreciación real sostenida puede ser la política industrial más efectiva."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuál es el primer argumento central de Rodrik (2005)?",
+    "en": "What is the first central argument of Rodrik (2005)?"
+   },
+   "op": {
+    "es": [
+     "Que el Consenso de Washington es lógicamente incoherente",
+     "Que los principios económicos de primer orden no se traducen en un paquete único de políticas",
+     "Que el crecimiento depende sobre todo de la geografía",
+     "Que la planificación central es una alternativa creíble"
+    ],
+    "en": [
+     "That the Washington Consensus is logically incoherent",
+     "That first-order economic principles do not map into a unique policy package",
+     "That growth depends mostly on geography",
+     "That central planning is a credible alternative"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los principios vienen «sin institución»: hay muchas formas de implementarlos según el contexto.",
+    "en": "The principles come 'institution free': there are many ways to implement them depending on context."
+   },
+   "id": "crec-teoria-05-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo funcionaba el sistema de doble vía en la agricultura china?",
+    "en": "How did China's dual-track system in agriculture work?"
+   },
+   "op": {
+    "es": [
+     "Los campesinos cumplían una cuota estatal y vendían el excedente a precio de mercado",
+     "El Estado privatizó la tierra y liberó todos los precios",
+     "Se fijaron precios máximos para todos los cultivos",
+     "Los campesinos exportaban directamente sin pasar por el Estado"
+    ],
+    "en": [
+     "Farmers met a state quota and sold the surplus at market prices",
+     "The state privatized land and freed all prices",
+     "Price ceilings were set for all crops",
+     "Farmers exported directly, bypassing the state"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con la cuota fija y por debajo del resultado de mercado, el margen operaba a precios libres sin crear perdedores.",
+    "en": "With the quota fixed and below the market outcome, the margin operated at free prices without creating losers."
+   },
+   "id": "crec-teoria-05-q2"
+  },
+  {
+   "q": {
+    "es": "Según Rodrik, ¿qué pasó con América Latina, la región que más siguió la lista de reformas?",
+    "en": "According to Rodrik, what happened to Latin America, the region that followed the reform list most closely?"
+   },
+   "op": {
+    "es": [
+     "Convergió rápidamente con los países ricos",
+     "Creció igual que Asia del Este",
+     "Su crecimiento quedó por debajo del nivel previo a 1980",
+     "Evitó toda crisis financiera"
+    ],
+    "en": [
+     "It quickly converged with rich countries",
+     "It grew as fast as East Asia",
+     "Its growth stayed below its pre-1980 level",
+     "It avoided all financial crises"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El índice de reformas de Lora subió de 0,34 a 0,58 entre 1985 y 1999, sin recuperar el crecimiento anterior.",
+    "en": "Lora's reform index rose from 0.34 to 0.58 between 1985 and 1999 without restoring earlier growth."
+   },
+   "id": "crec-teoria-05-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cómo definen Hausmann, Pritchett y Rodrik una aceleración del crecimiento?",
+    "en": "How do Hausmann, Pritchett and Rodrik define a growth acceleration?"
+   },
+   "op": {
+    "es": [
+     "Un año con crecimiento mayor a 5%",
+     "Una suba de 2 puntos o más en el crecimiento per cápita sostenida al menos 8 años",
+     "Una recuperación posterior a una crisis",
+     "Una década sin recesiones"
+    ],
+    "en": [
+     "A year with growth above 5%",
+     "A rise of 2 points or more in per-capita growth sustained for at least 8 years",
+     "A recovery after a crisis",
+     "A decade with no recessions"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Además exigen crecimiento posterior de al menos 3,5% y excluyen las recuperaciones de crisis; encuentran 83 episodios.",
+    "en": "They also require post-acceleration growth of at least 3.5% and exclude crisis recoveries; they find 83 episodes."
+   },
+   "id": "crec-teoria-05-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué ejemplo usa Rodrik para mostrar que las innovaciones institucionales no viajan bien?",
+    "en": "What example does Rodrik use to show institutional innovations do not travel well?"
+   },
+   "op": {
+    "es": [
+     "El éxito de la convertibilidad argentina",
+     "La apertura de Hong Kong",
+     "El intento de Gorbachov de imitar la doble vía china",
+     "La adopción del euro"
+    ],
+    "en": [
+     "The success of Argentina's convertibility",
+     "Hong Kong's openness",
+     "Gorbachev's attempt to imitate China's dual track",
+     "The adoption of the euro"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En la Unión Soviética la doble vía no dio los resultados de China; también menciona zonas francas y la sustitución de importaciones en Brasil frente a Argentina.",
+    "en": "In the Soviet Union the dual track did not deliver China's results; he also cites export zones and import substitution in Brazil versus Argentina."
+   },
+   "id": "crec-teoria-05-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una depreciación real sostenida puede ser, para Rodrik, la política industrial más efectiva?",
+    "en": "Why can a sustained real depreciation be, for Rodrik, the most effective industrial policy?"
+   },
+   "op": {
+    "es": [
+     "Porque reduce la inflación",
+     "Porque favorece a los no transables",
+     "Porque elimina la necesidad de instituciones",
+     "Porque favorece a todos los transables, expuestos a competencia externa, sin microgestión"
+    ],
+    "en": [
+     "Because it lowers inflation",
+     "Because it favors non-tradables",
+     "Because it removes the need for institutions",
+     "Because it favors all tradables, exposed to foreign competition, without micromanagement"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los transables concentran las ganancias de diversificación y enfrentan disciplina de mercado; Chile y Uganda son sus ejemplos.",
+    "en": "Tradables concentrate diversification gains and face market discipline; Chile and Uganda are his examples."
+   },
+   "id": "crec-teoria-05-q6"
+  },
+  {
+   "q": {
+    "es": "Según Hausmann y Rodrik, ¿qué diferenció la política industrial de Asia del Este de la sustitución de importaciones latinoamericana?",
+    "en": "According to Hausmann and Rodrik, what set East Asian industrial policy apart from Latin American import substitution?"
+   },
+   "op": {
+    "es": [
+     "Asia combinó incentivos con disciplina vía desempeño exportador",
+     "Asia no dio subsidios",
+     "América Latina tuvo más disciplina y menos incentivos",
+     "Asia privatizó todas sus empresas"
+    ],
+    "en": [
+     "Asia combined incentives with discipline via export performance",
+     "Asia gave no subsidies",
+     "Latin America had more discipline and fewer incentives",
+     "Asia privatized all its firms"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La industria latinoamericana tuvo incentivos sin disciplina bajo la sustitución, y disciplina sin incentivos en los noventa.",
+    "en": "Latin American industry had incentives without discipline under import substitution, and discipline without incentives in the 1990s."
+   },
+   "id": "crec-teoria-05-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Rodrik dice que su argumento no es una defensa del gradualismo?",
+    "en": "Why does Rodrik say his argument is not a defense of gradualism?"
+   },
+   "op": {
+    "es": [
+     "Porque prefiere la terapia de shock",
+     "Porque el gradualismo supone saber a dónde ir, y él sostiene que hace falta búsqueda y descubrimiento",
+     "Porque el gradualismo fracasó en India",
+     "Porque cree que las instituciones no importan"
+    ],
+    "en": [
+     "Because he prefers shock therapy",
+     "Because gradualism assumes knowing the destination, and he argues search and discovery are needed",
+     "Because gradualism failed in India",
+     "Because he thinks institutions do not matter"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Hay mucha incertidumbre sobre cuáles son las instituciones adecuadas; ambos enfoques solo coinciden cuando los cambios pequeños revelan información.",
+    "en": "There is much uncertainty about which institutions are right; the two only coincide when small changes reveal information."
+   },
+   "id": "crec-teoria-05-q8"
+  }
+ ],
+ "palabras": 1467,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué los mismos principios económicos pueden llevar a políticas muy distintas en distintos países?",
+    "en": "Why can the same economic principles lead to very different policies across countries?"
+   },
+   "a": {
+    "es": "Porque principios como derechos de propiedad, incentivos, moneda sana y solvencia fiscal no traen una forma institucional incorporada; implementarlos exige conocimiento local. Rodrik (2005) lo resume en que la función no determina la forma.",
+    "en": "Because principles like property rights, incentives, sound money and fiscal solvency carry no built-in institutional form; implementing them requires local knowledge. Rodrik (2005) sums it up as function not determining form."
+   },
+   "id": "crec-teoria-05-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede una reforma de precios generar eficiencia sin crear perdedores?",
+    "en": "How can a price reform deliver efficiency without creating losers?"
+   },
+   "a": {
+    "es": "Con una doble vía: se mantiene una cuota a precio fijo por debajo del resultado de mercado y se liberaliza el margen. Las decisiones marginales se toman a precios libres y los ingresos inframarginales de los beneficiarios previos se preservan. Rodrik (2005) lo ilustra con la agricultura china.",
+    "en": "Through a dual track: keep a fixed-price quota below the market outcome and liberalize the margin. Marginal decisions occur at free prices while incumbents' inframarginal income is preserved. Rodrik (2005) illustrates it with Chinese agriculture."
+   },
+   "id": "crec-teoria-05-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Hace falta un paquete amplio de reformas para que una economía empiece a crecer rápido?",
+    "en": "Does an economy need a broad reform package to start growing fast?"
+   },
+   "a": {
+    "es": "No necesariamente: Hausmann, Pritchett y Rodrik encuentran 83 aceleraciones del crecimiento, muchas sin reformas notables. Rodrik (2005) concluye que encender el crecimiento requiere poco, pero sostenerlo exige instituciones.",
+    "en": "Not necessarily: Hausmann, Pritchett and Rodrik find 83 growth accelerations, many without notable reforms. Rodrik (2005) concludes that igniting growth takes little, but sustaining it requires institutions."
+   },
+   "id": "crec-teoria-05-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo puede una economía quedar atrapada sin industria aunque el Estado no castigue la inversión?",
+    "en": "How can an economy stay stuck without industry even if the state does not penalize investment?"
+   },
+   "a": {
+    "es": "Si la rentabilidad de la actividad moderna crece con la proporción de la economía ya modernizada, puede ser no rentable entrar solo y muy rentable si entran muchos: hay dos equilibrios. Rodrik (2005) presenta así la falla de coordinación del gran empujón.",
+    "en": "If modern-sector profits rise with the share of the economy already modern, entering alone can be unprofitable while mass entry is very profitable: two equilibria. Rodrik (2005) presents the big-push coordination failure this way."
+   },
+   "id": "crec-teoria-05-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué una depreciación real sostenida puede funcionar como política industrial?",
+    "en": "Why can a sustained real depreciation work as industrial policy?"
+   },
+   "a": {
+    "es": "Porque sube la rentabilidad de todos los transables, donde están las ganancias de diversificación, premia actividades expuestas a competencia externa y no requiere microgestión. Rodrik (2005) cita Chile tras 1982-1983 y Uganda.",
+    "en": "Because it raises profitability across tradables, where diversification gains lie, rewards activities facing foreign competition and needs no micromanagement. Rodrik (2005) cites Chile after 1982-1983 and Uganda."
+   },
+   "id": "crec-teoria-05-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el Consenso de Washington correlaciona mal con el crecimiento observado?",
+    "en": "Why does the Washington Consensus correlate poorly with observed growth?"
+   },
+   "a": {
+    "es": "Porque salta de principios generales a recomendaciones operativas incondicionales, y cada una depende de supuestos sobre el contexto. Rodrik (2005) dice que así se entregó buena economía en forma inadecuada.",
+    "en": "Because it jumps from general principles to unconditional operational recommendations, each depending on contextual assumptions. Rodrik (2005) says sound economics was thus delivered in unsound form."
+   },
+   "id": "crec-teoria-05-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué cuatro funciones deben cumplir las instituciones que sostienen una economía de mercado?",
+    "en": "What four functions must institutions that sustain a market economy perform?"
+   },
+   "a": {
+    "es": "Crear mercados (propiedad, contratos), regularlos (fallas de mercado), estabilizarlos (instituciones monetarias, fiscales y prudenciales) y legitimarlos (democracia, protección social). Es la taxonomía de Rodrik (2005).",
+    "en": "Create markets (property, contracts), regulate them (market failures), stabilize them (monetary, fiscal and prudential institutions) and legitimize them (democracy, social protection). This is Rodrik's (2005) taxonomy."
+   },
+   "id": "crec-teoria-05-t7"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué combinación de incentivos hace eficaz una política industrial?",
+    "en": "What mix makes industrial policy effective?"
+   },
+   "a": {
+    "es": "Incentivos (subsidios, protección) junto con disciplina condicionada al desempeño, por ejemplo metas de exportación. Según Hausmann y Rodrik, citados en Rodrik (2005), Asia del Este lo logró y la sustitución latinoamericana dio incentivos sin disciplina.",
+    "en": "Incentives (subsidies, protection) together with performance-based discipline, such as export targets. According to Hausmann and Rodrik, cited in Rodrik (2005), East Asia achieved it while Latin American import substitution gave incentives without discipline."
+   },
+   "id": "crec-teoria-05-t8"
+  }
+ ]
+}
