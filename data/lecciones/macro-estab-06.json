@@ -1,0 +1,365 @@
+{
+ "id": "macro-estab-06",
+ "cat": "macro-estab",
+ "orden": 6,
+ "minutos": 15,
+ "titulo": "Inercia y credibilidad en la desinflación: Agénor (2004)",
+ "bajada": "Por qué la inflación crónica persiste aunque se corrija el déficit (indexación, devaluación, frecuencia de ajuste, sesgo inflacionario), de dónde vienen los problemas de credibilidad y qué sirve y qué no para ganarla.",
+ "fuentes": [
+  1277
+ ],
+ "cita": "Agénor (2004), The Economics of Adjustment and Growth, cap. 6, «Inflation and disinflation programs»",
+ "intro": "El capítulo 6 del manual de Pierre-Richard Agénor es la base teórica de las clases de estabilidad de precios de la UNC. El brief sobre inflación y señoreaje ya recorrió su modelo de déficit y trampa de alta inflación, y el de planes de estabilización, la elección del ancla. Este brief se concentra en el resto del capítulo: las fuentes de inflación crónica que no son el déficit, el problema de credibilidad que enfrenta cualquier desinflación y las cuatro herramientas que la literatura propone para resolverlo, con sus límites. La conclusión del autor es tan simple como exigente: el ancla importa, pero sin ajuste fiscal la estabilización suele fracasar.",
+ "secciones": [
+  {
+   "t": "Inercia salarial",
+   "p": [
+    "La indexación de los salarios a la inflación pasada es una fuente central de persistencia. Agénor lo muestra con un modelo simple de una economía con bienes no transables y transables. La inflación es un promedio ponderado de la inflación de no transables y de transables (inflación externa más devaluación). Los precios de los no transables se fijan como un margen sobre el crecimiento de los salarios nominales más el exceso de demanda, y los salarios se indexan a la inflación del período anterior.",
+    "Combinando las tres ecuaciones, la inflación de hoy depende de la de ayer multiplicada por el grado de indexación y la participación de los no transables. Cuanto mayor es la indexación, mayor es la persistencia. La evidencia de Chile a comienzos de los ochenta y de Brasil lo confirma. Además, en algunos países la frecuencia de los ajustes salariales aumenta con la inflación pasada, lo que eleva la inflación misma."
+   ],
+   "eq": [
+    "\\pi = \\delta\\, \\pi_N + (1-\\delta)(\\epsilon + \\pi_T^*)",
+    "\\pi_N = \\omega + \\alpha d_N, \\qquad \\omega = \\gamma\\, \\pi_{-1}",
+    "\\pi = \\delta\\gamma\\, \\pi_{-1} + \\alpha\\delta\\, d_N + (1-\\delta)(\\epsilon + \\pi_T^*)"
+   ],
+   "nota": "δ es la participación de los no transables en el índice; π_N y π_T* son la inflación de no transables y la externa de transables; ε, la devaluación; ω, el crecimiento de los salarios nominales; d_N, el exceso de demanda de no transables; γ, el grado de indexación (1 = indexación plena)."
+  },
+  {
+   "t": "Otras fuentes de inflación crónica",
+   "p": [
+    "El tipo de cambio. Una devaluación afecta el presupuesto (vía ingresos y pagos en divisas, como el servicio de la deuda externa, y aranceles ad valorem) y sube los precios de importados e insumos. Con salarios indexados al costo de vida, la suba se propaga y puede borrar la ganancia de competitividad, llevando a devaluar otra vez: una espiral devaluación-inflación. Con tipo oficial fijo y un mercado paralelo grande pasa algo parecido: la expectativa de devaluación deprecia el paralelo, que es el costo marginal relevante de las divisas, y suben los precios.",
+    "Los términos de intercambio. Donde el Estado controla una exportación primaria, como el petróleo en Nigeria, una caída de precios reduce la recaudación y presiona a monetizar. Incluso un auge puede terminar en inflación si el gasto sube con el boom y después no se puede bajar.",
+    "La frecuencia de ajuste de precios. Con inflación alta y variable, los precios se ajustan cada vez más seguido, lo que sube la inflación y acorta aún más los intervalos; los precios terminan fijándose en moneda extranjera. Dornbusch, Sturzenegger y Wolf (1990) encontraron mayor sincronización entre precios y tipo de cambio a medida que subía la inflación en Bolivia, Israel, la Argentina y Brasil.",
+    "Los alimentos. En Nigeria representan 69% de la canasta del índice de precios, y Moser (1995) encontró que la lluvia tenía un efecto significativo sobre la inflación entre 1960 y 1993."
+   ]
+  },
+  {
+   "t": "El sesgo inflacionario",
+   "p": [
+    "La falta de credibilidad también puede imprimir un sesgo a la política monetaria, por inconsistencia temporal: una política óptima antes de que el público forme sus expectativas deja de serlo después. En el modelo de Barro y Gordon (1983), las autoridades quieren inflación baja pero también un producto por encima de su nivel de capacidad, y la economía tiene una curva de Phillips aumentada por expectativas. Si el público espera inflación baja, las autoridades tienen incentivo a sorprenderlo para subir el producto; el público lo sabe y no cree el anuncio.",
+    "El resultado: con discreción, el producto queda igual en su nivel de capacidad (salvo shocks), pero la inflación de equilibrio es mayor que la deseada. El sesgo es mayor cuanto más grande es la brecha entre el producto deseado y el de capacidad, cuanto más empinada es la curva de Phillips y cuanto menos peso tiene la inflación en las preferencias del gobierno. Con un compromiso creíble, el producto sería el mismo y la inflación, menor. Otra motivación del sesgo, señalada por Barro (1983), es la necesidad de señoreaje o de licuar la deuda."
+   ],
+   "eq": [
+    "L = \\tfrac{1}{2}(y-\\tilde{y})^2 + \\tfrac{\\theta}{2}(\\pi-\\tilde{\\pi})^2",
+    "y = y_L + \\alpha(\\pi - \\pi^e) + u",
+    "\\text{Discreción: } \\pi = \\tilde{\\pi} + \\frac{\\alpha}{\\theta}(\\tilde{y} - y_L)"
+   ],
+   "nota": "ỹ es el producto deseado, mayor que el de capacidad y_L; π̃ la inflación deseada; θ el peso de la inflación en la función de pérdida; α la pendiente de la curva de Phillips; π^e la inflación esperada."
+  },
+  {
+   "t": "De dónde vienen los problemas de credibilidad",
+   "p": [
+    "La literatura distingue cuatro fuentes. La inconsistencia entre el objetivo y los instrumentos: si la inflación viene del déficit y el programa no dice cómo restaurar la disciplina fiscal, no es creíble. La incertidumbre sobre el entorno y los shocks externos (términos de intercambio, tasas internacionales) que pueden invalidar incluso un programa bien diseñado. La inconsistencia temporal de los anuncios. Y la información incompleta o asimétrica sobre cuán comprometidas están las autoridades: el público aprende solo con el tiempo, y aprende más lento donde hay tradición de políticas de idas y vueltas y alta rotación de funcionarios.",
+    "Agénor propone dos maneras de medir la credibilidad. Una es estimar recursivamente un modelo de inflación con su rezago: si la credibilidad aumenta, el coeficiente de persistencia debería bajar con el tiempo; Edwards (1995) lo aplicó a Venezuela. La otra es seguir en una demanda de dinero el coeficiente del costo de oportunidad de tener moneda local: más credibilidad debería llevar a más activos en moneda local y a un coeficiente menor. En el apéndice, un modelo con contratos salariales escalonados muestra que la persistencia de la inflación aumenta con la acomodación monetaria y disminuye con la probabilidad que el público asigna a que la política anunciada se cumpla."
+   ]
+  },
+  {
+   "t": "Cuatro maneras de ganar credibilidad",
+   "p": [
+    "Un programa de shock con sobreajuste inicial puede señalar el compromiso, sobre todo con un gobierno nuevo con mandato antiinflacionario. Pero si los costos en producto y empleo son grandes y el consenso político es frágil, puede generar expectativas de reversión y agravar el problema: a veces sirven más medidas sostenibles y difíciles de revertir.",
+    "La independencia del banco central con mandato de estabilidad de precios ayuda donde el financiamiento al Tesoro es la fuente de inflación, como hicieron Chile y México. Pero la independencia legal no garantiza ausencia de presiones, el gobierno puede revocarla y, si la política fiscal es inconsistente con la meta, la credibilidad es imposible. La evidencia es mixta: los primeros estudios en países industriales encontraban menos inflación con más independencia, pero revisiones posteriores no hallaron una relación robusta, y Sikken y De Haan, con 30 países en desarrollo entre 1950 y 1994, no encontraron que la independencia redujera déficits o su monetización.",
+    "Los controles de precios temporarios pueden realinear precios, coordinar expectativas y mejorar la recaudación por el efecto Olivera-Tanzi inverso. El caso exitoso más citado es Israel 1985, donde se congelaron todas las variables nominales junto con un fuerte ajuste fiscal y monetario. Pero los controles impiden saber si la inflación se frenó o solo se reprimió, y muchas veces reemplazaron al ajuste en lugar de complementarlo: en Brasil, los planes Cruzado (1986), Bresser (1987) y Verano (1989) terminaron cada vez con más inflación.",
+    "La ayuda condicionada de un organismo como el FMI puede funcionar como compromiso externo. Pero las consideraciones políticas restan valor a la señal, y una condicionalidad excesiva puede aumentar la incertidumbre y demorar la estabilización."
+   ]
+  },
+  {
+   "t": "La lección fiscal",
+   "p": [
+    "Agénor ilustra con dos experiencias: Egipto (1992-97), más cercana a una estabilización con ancla cambiaria, que partía de una inflación media de 20%, un déficit fiscal de 15% del PIB y una dolarización de depósitos del 46% en 1990; y Uganda (1987-95), con ancla monetaria. En ambas el ajuste fiscal fue clave. La elección del ancla no es irrelevante, pero sin una reducción significativa del desequilibrio fiscal la estabilización suele fracasar, sea cual sea el ancla.",
+    "También importa la composición del ajuste. En América Latina los recortes cayeron primero sobre la inversión pública y el mantenimiento, porque salarios, jubilaciones y transferencias eran rígidos en el corto plazo. Recortar capital físico o subir impuestos muy distorsivos sobre bases estrechas puede agravar los desequilibrios en el largo plazo, por su efecto sobre el crecimiento y la evasión."
+   ]
+  }
+ ],
+ "claves": [
+  "Con salarios indexados a la inflación pasada, la persistencia de la inflación crece con el grado de indexación.",
+  "Devaluación con indexación puede generar una espiral; la frecuencia de ajuste de precios se acelera con la inflación.",
+  "Barro-Gordon: con discreción, la inflación es mayor que la deseada sin ganar producto; un compromiso creíble la baja.",
+  "Fuentes de baja credibilidad: inconsistencia, shocks, inconsistencia temporal e información asimétrica.",
+  "Shock, independencia del banco central, controles y ayuda condicionada ayudan con límites; sin ajuste fiscal, ningún ancla alcanza."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En el modelo de inercia salarial de Agénor, ¿qué determina la persistencia de la inflación?",
+    "en": "In Agénor's wage-inertia model, what determines inflation persistence?"
+   },
+   "op": {
+    "es": [
+     "El nivel de reservas",
+     "El grado de indexación de los salarios a la inflación pasada, junto con el peso de los no transables",
+     "La tasa de interés internacional",
+     "El tamaño del déficit fiscal únicamente"
+    ],
+    "en": [
+     "The level of reserves",
+     "The degree of wage indexation to past inflation, together with the non-tradables weight",
+     "The world interest rate",
+     "The fiscal deficit alone"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La inflación rezagada entra multiplicada por δγ: más indexación, más persistencia.",
+    "en": "Lagged inflation enters multiplied by δγ: more indexation, more persistence."
+   },
+   "id": "macro-estab-06-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se genera una espiral devaluación-inflación?",
+    "en": "How does a devaluation-inflation spiral arise?"
+   },
+   "op": {
+    "es": [
+     "La devaluación baja los salarios y los precios",
+     "La devaluación sube precios; con salarios indexados se propaga y borra la ganancia de competitividad, lo que lleva a devaluar otra vez",
+     "El banco central compra reservas",
+     "Suben las exportaciones y baja la inflación"
+    ],
+    "en": [
+     "Devaluation lowers wages and prices",
+     "Devaluation raises prices; with indexed wages it spreads and erases the competitiveness gain, prompting another devaluation",
+     "The central bank buys reserves",
+     "Exports rise and inflation falls"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La indexación transforma cada devaluación en inflación que exige una nueva devaluación.",
+    "en": "Indexation turns each devaluation into inflation that demands a new devaluation."
+   },
+   "id": "macro-estab-06-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué encontraron Dornbusch, Sturzenegger y Wolf (1990) a medida que subía la inflación?",
+    "en": "What did Dornbusch, Sturzenegger and Wolf (1990) find as inflation rose?"
+   },
+   "op": {
+    "es": [
+     "Mayor sincronización entre precios internos y tipo de cambio",
+     "Menor frecuencia de ajuste de precios",
+     "Que los alimentos dejaban de importar",
+     "Que la demanda de dinero subía"
+    ],
+    "en": [
+     "Greater synchronization between domestic prices and the exchange rate",
+     "Less frequent price adjustment",
+     "That food stopped mattering",
+     "That money demand rose"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los intervalos de ajuste se acortan y los precios se fijan en moneda extranjera.",
+    "en": "Adjustment intervals shorten and prices get set in foreign currency."
+   },
+   "id": "macro-estab-06-q3"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Barro y Gordon, ¿qué pasa en equilibrio bajo discreción?",
+    "en": "In the Barro-Gordon model, what happens in equilibrium under discretion?"
+   },
+   "op": {
+    "es": [
+     "El producto supera su nivel de capacidad de manera permanente",
+     "La inflación es igual a la deseada",
+     "La inflación es nula",
+     "El producto queda en su nivel de capacidad y la inflación es mayor que la deseada"
+    ],
+    "en": [
+     "Output permanently exceeds capacity",
+     "Inflation equals the desired rate",
+     "Inflation is zero",
+     "Output stays at capacity and inflation exceeds the desired rate"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El público anticipa el incentivo a sorprender; no hay ganancia de producto y queda un sesgo inflacionario.",
+    "en": "The public anticipates the incentive to surprise; there is no output gain and an inflation bias remains."
+   },
+   "id": "macro-estab-06-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cómo podría medirse un aumento de credibilidad con un modelo de inflación?",
+    "en": "How could rising credibility be measured with an inflation model?"
+   },
+   "op": {
+    "es": [
+     "Viendo si sube el coeficiente de la inflación rezagada",
+     "Viendo si baja con el tiempo el coeficiente de la inflación rezagada en una estimación recursiva",
+     "Midiendo la tasa de desempleo",
+     "Contando los anuncios oficiales"
+    ],
+    "en": [
+     "Checking whether the lagged-inflation coefficient rises",
+     "Checking whether the lagged-inflation coefficient falls over time in recursive estimation",
+     "Measuring unemployment",
+     "Counting official announcements"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Más credibilidad implica menos persistencia; Edwards (1995) lo aplicó a Venezuela.",
+    "en": "More credibility means less persistence; Edwards (1995) applied it to Venezuela."
+   },
+   "id": "macro-estab-06-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué un programa de shock puede reducir la credibilidad en lugar de aumentarla?",
+    "en": "Why can a shock programme reduce credibility rather than raise it?"
+   },
+   "op": {
+    "es": [
+     "Porque baja la inflación demasiado rápido",
+     "Porque aumenta las reservas",
+     "Porque si los costos en producto y empleo son altos y el consenso es frágil, genera expectativas de reversión",
+     "Porque elimina el déficit fiscal"
+    ],
+    "en": [
+     "Because it lowers inflation too fast",
+     "Because it raises reserves",
+     "Because if output and job costs are high and consensus fragile, it creates expectations of reversal",
+     "Because it eliminates the deficit"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El público descuenta mucho los beneficios futuros y ve los costos inmediatos.",
+    "en": "The public heavily discounts future benefits and sees the immediate costs."
+   },
+   "id": "macro-estab-06-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestran los planes Cruzado, Bresser y Verano en Brasil?",
+    "en": "What do Brazil's Cruzado, Bresser and Verano plans show?"
+   },
+   "op": {
+    "es": [
+     "Que los controles de precios sin ajuste fiscal y monetario terminan en más inflación",
+     "Que el congelamiento siempre funciona",
+     "Que la independencia del banco central basta",
+     "Que el ancla cambiaria es imprescindible"
+    ],
+    "en": [
+     "That price controls without fiscal and monetary adjustment end in more inflation",
+     "That freezes always work",
+     "That central bank independence suffices",
+     "That an exchange-rate anchor is essential"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Contrastan con Israel 1985, donde el congelamiento acompañó un fuerte ajuste.",
+    "en": "They contrast with Israel 1985, where the freeze accompanied a strong adjustment."
+   },
+   "id": "macro-estab-06-q7"
+  },
+  {
+   "q": {
+    "es": "Un país baja su déficit recortando inversión pública y subiendo impuestos distorsivos sobre bases estrechas. ¿Qué advierte Agénor?",
+    "en": "A country cuts its deficit by slashing public investment and raising distortionary taxes on narrow bases. What does Agénor warn?"
+   },
+   "op": {
+    "es": [
+     "Que es la mejor composición posible",
+     "Que el ancla cambiaria compensa el problema",
+     "Que la inflación bajará más rápido",
+     "Que puede agravar los desequilibrios a largo plazo por menor crecimiento y más evasión"
+    ],
+    "en": [
+     "That it is the best composition",
+     "That an exchange-rate anchor offsets it",
+     "That inflation will fall faster",
+     "That it can worsen imbalances in the long run through lower growth and more evasion"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La composición del ajuste importa tanto como su tamaño.",
+    "en": "The composition of adjustment matters as much as its size."
+   },
+   "id": "macro-estab-06-q8"
+  }
+ ],
+ "palabras": 1298,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "Si los salarios se indexan plenamente a la inflación pasada, ¿qué le pasa a la persistencia de la inflación?",
+    "en": "If wages are fully indexed to past inflation, what happens to inflation persistence?"
+   },
+   "a": {
+    "es": "Se maximiza: la inflación de hoy arrastra la de ayer en proporción al grado de indexación y al peso de los no transables. Agénor (2004) lo muestra combinando precios con margen sobre salarios y salarios indexados.",
+    "en": "It is maximized: today's inflation carries yesterday's in proportion to indexation and the non-tradables weight. Agénor (2004) shows it combining mark-up pricing on wages with indexed wages."
+   },
+   "id": "macro-estab-06-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "Con tipo de cambio oficial fijo y un mercado paralelo grande, ¿por qué la expectativa de devaluación sube los precios?",
+    "en": "With a fixed official rate and a large parallel market, why does an expected devaluation raise prices?"
+   },
+   "a": {
+    "es": "Porque deprecia de inmediato el paralelo, que es el costo marginal relevante de las divisas; los precios suben, se erosiona la competitividad y crece la expectativa de devaluación. Agénor (2004) lo ilustra con Zaire.",
+    "en": "Because it immediately depreciates the parallel rate, the relevant marginal cost of foreign exchange; prices rise, competitiveness erodes and devaluation expectations grow. Agénor (2004) illustrates it with Zaire."
+   },
+   "id": "macro-estab-06-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el sesgo inflacionario por inconsistencia temporal?",
+    "en": "What is the time-inconsistency inflation bias?"
+   },
+   "a": {
+    "es": "La inflación excesiva que surge porque, una vez formadas las expectativas, las autoridades tienen incentivo a sorprender para subir el producto; el público lo anticipa y el resultado es más inflación sin más producto. Es el modelo de Barro y Gordon (1983) que presenta Agénor (2004).",
+    "en": "Excess inflation arising because, once expectations are set, authorities have an incentive to surprise to raise output; the public anticipates it, yielding more inflation without more output. It is the Barro-Gordon (1983) model Agénor (2004) presents."
+   },
+   "id": "macro-estab-06-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la independencia legal del banco central no garantiza credibilidad antiinflacionaria?",
+    "en": "Why does legal central bank independence not guarantee anti-inflation credibility?"
+   },
+   "a": {
+    "es": "Porque puede haber presiones políticas, el gobierno puede revocarla y, si la política fiscal es inconsistente con la meta, nada la salva. Agénor (2004) cita que Sikken y De Haan, con 30 países en desarrollo entre 1950 y 1994, no hallaron que redujera déficits.",
+    "en": "Because political pressure persists, the government can revoke it and, if fiscal policy is inconsistent with the target, nothing saves it. Agénor (2004) cites Sikken and De Haan, who found with 30 developing countries over 1950-94 that it did not reduce deficits."
+   },
+   "id": "macro-estab-06-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cuándo un congelamiento de precios puede ayudar a desinflar y cuándo es contraproducente?",
+    "en": "When can a price freeze help disinflation and when is it counterproductive?"
+   },
+   "a": {
+    "es": "Ayuda si acompaña un ajuste fiscal y monetario fuerte, como en Israel 1985; es contraproducente si lo reemplaza, como en los planes Cruzado, Bresser y Verano de Brasil, que terminaron con más inflación. Es el balance de Agénor (2004).",
+    "en": "It helps if it accompanies strong fiscal and monetary adjustment, as in Israel 1985; it backfires if it replaces it, as in Brazil's Cruzado, Bresser and Verano plans, which ended with more inflation. That is Agénor's (2004) assessment."
+   },
+   "id": "macro-estab-06-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué lección comparten las estabilizaciones de Egipto (1992-97) y Uganda (1987-95), una con ancla cambiaria y otra monetaria?",
+    "en": "What lesson do Egypt's (1992-97) and Uganda's (1987-95) stabilizations share, one exchange-rate based and the other money based?"
+   },
+   "a": {
+    "es": "Que el ajuste fiscal fue la clave en ambas: el ancla importa, pero sin reducir el desequilibrio fiscal la estabilización suele fracasar. Egipto partía de un déficit de 15% del PIB. Es la conclusión de Agénor (2004).",
+    "en": "That fiscal adjustment was key in both: the anchor matters, but without cutting the fiscal imbalance stabilization usually fails. Egypt started from a deficit of 15% of GDP. It is Agénor's (2004) conclusion."
+   },
+   "id": "macro-estab-06-t6"
+  }
+ ]
+}
