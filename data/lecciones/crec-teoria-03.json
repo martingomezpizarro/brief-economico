@@ -1,0 +1,346 @@
+{
+ "id": "crec-teoria-03",
+ "cat": "crec-teoria",
+ "orden": 7,
+ "minutos": 15,
+ "titulo": "¿Nos dicen los datos qué causa el crecimiento? Ciccone y Jarociński (2010)",
+ "bajada": "El promedio bayesiano de modelos prometía encontrar determinantes robustos del crecimiento sin prejuicios del investigador. Con revisiones menores de los datos de ingreso, los resultados cambian drásticamente.",
+ "fuentes": [
+  1232
+ ],
+ "cita": "Ciccone y Jarociński (2010), «Determinants of economic growth: will data tell?», American Economic Journal: Macroeconomics 2(4)",
+ "intro": "Después de Barro, la literatura de regresiones de crecimiento chocó con un problema: hay casi tantas variables candidatas como países, cada investigador elige unas pocas y los resultados dependen de esa elección (Levine y Renelt, 1992). Muchos economistas, como Rodrik o la Comisión de Crecimiento y Desarrollo, empezaron a descontar la evidencia entre países. Una respuesta fue el promedio bayesiano de modelos con priors «agnósticos» (Fernández, Ley y Steel, 2001; Sala-i-Martin, Doppelhofer y Miller, 2004): dejar que los datos digan qué importa. Antonio Ciccone y Marek Jarociński muestran que esa promesa tiene un talón de Aquiles: los errores de medición del ingreso.",
+ "secciones": [
+  {
+   "t": "El problema de la selección de variables",
+   "p": [
+    "Si el número de países fuera grande respecto del de variables, bastaría con regresar el crecimiento sobre todas las candidatas. Con casi tantas variables como países, las estimaciones son demasiado imprecisas o directamente imposibles. Por eso cada trabajo elige pocas variables, y esa elección refleja priors muy distintos sobre qué explica el crecimiento, además de dejar espacio para buscar la especificación que «funcione». Con dos o tres medidas posibles para cada explicación, el riesgo de minería de datos es alto."
+   ]
+  },
+  {
+   "t": "Promedio bayesiano de modelos con priors agnósticos",
+   "p": [
+    "El enfoque bayesiano trata el problema como incertidumbre sobre el modelo. Con K variables candidatas hay 2^K modelos posibles, cada uno con un subconjunto de variables. Se asigna una probabilidad previa a cada modelo, se calcula su verosimilitud marginal con los datos y, por el teorema de Bayes, se obtiene su probabilidad posterior. La probabilidad posterior de inclusión de una variable es la suma de las probabilidades de todos los modelos que la contienen.",
+    "La versión agnóstica busca minimizar la subjetividad: muchas variables tratadas simétricamente, igual probabilidad previa para todos los modelos y priors poco informativos sobre los coeficientes. Sala-i-Martin, Doppelhofer y Miller (2004) usaron 67 variables candidatas para 88 países entre 1960 y 1996, y consideran robusta toda variable cuya probabilidad posterior de inclusión supere el 10% (7 sobre 67). Encontraron varios determinantes robustos, entre ellos un efecto negativo de la prevalencia de malaria."
+   ],
+   "eq": [
+    "p(M_j \\mid y) \\propto l_y(M_j)\\, p_j",
+    "l_y(M_j) \\propto N^{-k_j/2}\\, SSE_j^{-N/2}"
+   ],
+   "nota": "p_j es la probabilidad previa del modelo j; l_y su verosimilitud marginal; k_j el número de variables que incluye; N el número de países; SSE_j la suma de residuos al cuadrado de su regresión por MCO. La segunda expresión es la aproximación de Sala-i-Martin, Doppelhofer y Miller (2004)."
+  },
+  {
+   "t": "Por qué es tan sensible",
+   "p": [
+    "La clave está en el exponente: la suma de residuos al cuadrado se eleva a −N/2, que con 88 países es −44. Pequeñas diferencias de ajuste se convierten en enormes diferencias de probabilidad. Si una revisión de datos reduce 1,5% los residuos de los modelos que incluyen una variable, su probabilidad de inclusión casi se duplica respecto de las demás.",
+    "Con un solo regresor por modelo, la variable que mejor ajusta (años de apertura comercial) tiene un R² de 33% y una probabilidad de inclusión de 84%; la sexta tiene un R² de 25% y una probabilidad de alrededor de 0,6%. Con modelos de tres variables, cada variable aparece en 2.145 modelos, pero su probabilidad depende casi solo del modelo que mejor ajusta: los residuos del mejor modelo y del primer percentil explican el 99% de la variación de las probabilidades, y una caída de 1% en el mínimo de residuos se asocia con un aumento de al menos 28% en la probabilidad de inclusión. Es decir, todo se decide en alrededor del 1% de las especificaciones."
+   ]
+  },
+  {
+   "t": "El experimento: revisar la Penn World Table",
+   "p": [
+    "Los autores repiten el ejercicio con distintas versiones de la Penn World Table, la base de ingresos más usada, que se revisa periódicamente para corregir errores e incorporar nuevos precios de referencia. Con PWT 6.1 y 6.2 para 1960-1996, hay 10 variables con probabilidad de inclusión mayor a 50% en alguna de las dos versiones; en 8 de ellas la revisión cambia la probabilidad en más de 40 puntos. Con el criterio del 10%, hay 23 determinantes robustos según alguna de las dos versiones, pero en 13 las versiones no coinciden.",
+    "Los cambios afectan variables centrales de la literatura. Los años de apertura pasan de 84% a 3%; la dummy de Asia oriental, de 6% a 97%. Entre PWT 6.0 y 6.2, el precio relativo de los bienes de inversión pasa de 77% a 2% y la ubicación en el trópico de 57% a 5%; la fecundidad, en cambio, sube de 3% a 91%. La malaria deja de ser robusta con PWT 6.1 o 6.2. Aun entre la PWT y los indicadores del Banco Mundial, cuyas tasas de crecimiento 1975-1996 tienen correlaciones de 93,5% y 96,2%, cambian mucho las conclusiones."
+   ]
+  },
+  {
+   "t": "Qué concluyen",
+   "p": [
+    "No hay un método único correcto para comparar ingresos reales entre países, y las estimaciones difieren aun partiendo de los mismos datos básicos. Con márgenes de error de ese tamaño, el promedio bayesiano agnóstico no puede discriminar qué variables importan: sus resultados dependen de la versión de los datos. Los autores proponen modificaciones para reducir la sensibilidad y señalan que su análisis es conservador, porque solo considera errores en el ingreso y no en las variables explicativas.",
+    "La lección práctica (lectura propia) es que un hallazgo de una regresión entre países, por más sofisticado que sea el método, debería mostrarse robusto a cambios razonables en los datos antes de usarse para recomendar políticas. Es el mismo tipo de advertencia que Lasarte y Pérez hacen con las clasificaciones de regímenes cambiarios en la ruta de tipo de cambio."
+   ]
+  }
+ ],
+ "claves": [
+  "Con casi tantas variables como países, la elección de regresores determina los resultados (Levine y Renelt).",
+  "El promedio bayesiano agnóstico pondera 2^K modelos y suma probabilidades para obtener la probabilidad de inclusión de cada variable.",
+  "Como los residuos se elevan a −N/2, pequeñas diferencias de ajuste se vuelven enormes diferencias de probabilidad.",
+  "Revisar la Penn World Table cambia en más de 40 puntos la probabilidad de 8 de las 10 variables principales.",
+  "Los márgenes de error del ingreso internacional son demasiado grandes para este tipo de empiria agnóstica."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué problema intenta resolver el promedio bayesiano de modelos en las regresiones de crecimiento?",
+    "en": "What problem does Bayesian model averaging try to solve in growth regressions?"
+   },
+   "op": {
+    "es": [
+     "La falta de datos de inflación",
+     "La incertidumbre sobre qué variables incluir cuando hay casi tantas candidatas como países",
+     "La endogeneidad de la inversión",
+     "La medición del capital humano"
+    ],
+    "en": [
+     "Lack of inflation data",
+     "Uncertainty about which variables to include when candidates nearly equal countries",
+     "Endogeneity of investment",
+     "Measuring human capital"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En lugar de elegir unas pocas variables, promedia sobre todos los modelos posibles.",
+    "en": "Instead of picking a few variables, it averages over all possible models."
+   },
+   "id": "crec-teoria-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se calcula la probabilidad posterior de inclusión de una variable?",
+    "en": "How is a variable's posterior inclusion probability computed?"
+   },
+   "op": {
+    "es": [
+     "Sumando las probabilidades posteriores de todos los modelos que la contienen",
+     "Con su estadístico t",
+     "Con su correlación simple con el crecimiento",
+     "Con su R² en una regresión univariada"
+    ],
+    "en": [
+     "By summing the posterior probabilities of all models containing it",
+     "With its t-statistic",
+     "With its simple correlation with growth",
+     "With its R² in a univariate regression"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Cada modelo tiene una probabilidad posterior por el teorema de Bayes.",
+    "en": "Each model gets a posterior probability via Bayes' theorem."
+   },
+   "id": "crec-teoria-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los resultados son tan sensibles a pequeñas diferencias de ajuste?",
+    "en": "Why are results so sensitive to small differences in fit?"
+   },
+   "op": {
+    "es": [
+     "Porque el prior favorece modelos grandes",
+     "Porque no hay constante",
+     "Porque la suma de residuos se eleva a −N/2, que con 88 países es −44",
+     "Porque se usan datos trimestrales"
+    ],
+    "en": [
+     "Because the prior favours large models",
+     "Because there is no constant",
+     "Because the sum of squared residuals is raised to −N/2, which is −44 with 88 countries",
+     "Because quarterly data are used"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Una caída de 1,5% en los residuos casi duplica la probabilidad relativa de inclusión.",
+    "en": "A 1.5% fall in residuals nearly doubles the relative inclusion probability."
+   },
+   "id": "crec-teoria-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué criterio usan Sala-i-Martin, Doppelhofer y Miller para llamar robusta a una variable?",
+    "en": "What criterion do Sala-i-Martin, Doppelhofer and Miller use to call a variable robust?"
+   },
+   "op": {
+    "es": [
+     "Que sea significativa al 5%",
+     "Que aparezca en todos los modelos",
+     "Que su coeficiente sea positivo",
+     "Que su probabilidad posterior de inclusión supere el 10%, la previa"
+    ],
+    "en": [
+     "Significance at 5%",
+     "Appearing in every model",
+     "A positive coefficient",
+     "A posterior inclusion probability above 10%, the prior"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El umbral 7/67 es la probabilidad previa de inclusión en su diseño.",
+    "en": "The 7/67 threshold is the prior inclusion probability in their design."
+   },
+   "id": "crec-teoria-03-q4"
+  },
+  {
+   "q": {
+    "es": "Al pasar de PWT 6.1 a 6.2, ¿qué pasó con los años de apertura comercial en modelos de una variable?",
+    "en": "Moving from PWT 6.1 to 6.2, what happened to years of trade openness in one-variable models?"
+   },
+   "op": {
+    "es": [
+     "Su probabilidad subió de 3% a 84%",
+     "Su probabilidad cayó de 84% a 3%",
+     "No cambió",
+     "Dejó de estar en la base"
+    ],
+    "en": [
+     "Its probability rose from 3% to 84%",
+     "Its probability fell from 84% to 3%",
+     "No change",
+     "It was dropped"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "A la vez, la dummy de Asia oriental pasó de 6% a 97%.",
+    "en": "Meanwhile the East Asia dummy went from 6% to 97%."
+   },
+   "id": "crec-teoria-03-q5"
+  },
+  {
+   "q": {
+    "es": "Con PWT 6.1 o 6.2 hay 23 determinantes robustos según alguna versión. ¿En cuántos discrepan las versiones?",
+    "en": "With PWT 6.1 or 6.2 there are 23 robust determinants under some version. In how many do they disagree?"
+   },
+   "op": {
+    "es": [
+     "13",
+     "2",
+     "23",
+     "0"
+    ],
+    "en": [
+     "13",
+     "2",
+     "23",
+     "0"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Más de la mitad: la revisión de datos cambia qué se considera robusto.",
+    "en": "More than half: the data revision changes what counts as robust."
+   },
+   "id": "crec-teoria-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué ocurre con la prevalencia de malaria como determinante del crecimiento?",
+    "en": "What happens to malaria prevalence as a growth determinant?"
+   },
+   "op": {
+    "es": [
+     "Se vuelve más robusta con cada revisión",
+     "Siempre fue irrelevante",
+     "Era robusta con PWT 6.0 pero deja de serlo con PWT 6.1 o 6.2",
+     "Solo importa en América Latina"
+    ],
+    "en": [
+     "It becomes more robust with each revision",
+     "It was always irrelevant",
+     "It was robust with PWT 6.0 but not with PWT 6.1 or 6.2",
+     "It only matters in Latin America"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Ese hallazgo se había usado para estimar el costo económico de la malaria.",
+    "en": "That finding had been used to estimate malaria's economic cost."
+   },
+   "id": "crec-teoria-03-q7"
+  },
+  {
+   "q": {
+    "es": "Un estudio encuentra con promedio bayesiano que una variable es clave para crecer, usando una sola versión de los datos. ¿Qué sugiere este paper antes de recomendar políticas?",
+    "en": "A study finds via BMA that a variable is key for growth using one data version. What does this paper suggest before recommending policy?"
+   },
+   "op": {
+    "es": [
+     "Confiar en el resultado porque el método es agnóstico",
+     "Agregar más variables",
+     "Usar datos anuales",
+     "Verificar que el resultado sea robusto a revisiones y fuentes alternativas de ingreso"
+    ],
+    "en": [
+     "Trust it because the method is agnostic",
+     "Add more variables",
+     "Use annual data",
+     "Check robustness to revisions and alternative income sources"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las conclusiones pueden cambiar con revisiones menores de los datos.",
+    "en": "Conclusions can change with minor data revisions."
+   },
+   "id": "crec-teoria-03-q8"
+  }
+ ],
+ "palabras": 831,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la probabilidad posterior de inclusión en un promedio bayesiano de modelos?",
+    "en": "What is the posterior inclusion probability in Bayesian model averaging?"
+   },
+   "a": {
+    "es": "La suma de las probabilidades posteriores de todos los modelos que contienen la variable: cuán probable es que deba estar en el modelo verdadero. Ciccone y Jarociński (2010) muestran que en las regresiones de crecimiento es muy sensible a los datos.",
+    "en": "The sum of posterior probabilities of all models containing the variable: how likely it belongs in the true model. Ciccone and Jarociński (2010) show it is very sensitive to the data in growth regressions."
+   },
+   "id": "crec-teoria-03-t1"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué las regresiones de crecimiento entre países son frágiles aun con métodos que promedian modelos?",
+    "en": "Why are cross-country growth regressions fragile even with model-averaging methods?"
+   },
+   "a": {
+    "es": "Porque las probabilidades dependen de pequeñas diferencias de ajuste de pocos modelos, y los errores de medición del ingreso bastan para invertirlas. Ciccone y Jarociński (2010) lo muestran revisando la Penn World Table.",
+    "en": "Because probabilities depend on small fit differences in a few models, and income measurement errors suffice to flip them. Ciccone and Jarociński (2010) show it by revising the Penn World Table."
+   },
+   "id": "crec-teoria-03-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "Entre dos versiones de la Penn World Table, ¿cuánto cambian las variables principales en un promedio bayesiano de modelos?",
+    "en": "Between two Penn World Table versions, how much do the main variables change in Bayesian model averaging?"
+   },
+   "a": {
+    "es": "Mucho: de las 10 variables con probabilidad mayor a 50% en alguna versión, 8 cambian más de 40 puntos, y de 23 determinantes robustos las versiones discrepan en 13 (Ciccone y Jarociński, 2010).",
+    "en": "A lot: of the 10 variables above 50% in some version, 8 change by over 40 points, and of 23 robust determinants the versions disagree on 13 (Ciccone and Jarociński, 2010)."
+   },
+   "id": "crec-teoria-03-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "En la aproximación de Sala-i-Martin, Doppelhofer y Miller, ¿cómo pesa la suma de residuos al cuadrado en la verosimilitud de un modelo?",
+    "en": "In the Sala-i-Martin, Doppelhofer and Miller approximation, how does the sum of squared residuals weigh in a model's likelihood?"
+   },
+   "a": {
+    "es": "Elevada a −N/2: con 88 países, a −44, de modo que una caída de 1,5% en los residuos casi duplica la probabilidad relativa de una variable. Lo destacan Ciccone y Jarociński (2010).",
+    "en": "Raised to −N/2: with 88 countries, to −44, so a 1.5% fall in residuals nearly doubles a variable's relative probability. Ciccone and Jarociński (2010) highlight it."
+   },
+   "id": "crec-teoria-03-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué con muchos modelos las probabilidades dependen casi solo del mejor ajuste?",
+    "en": "Why, with many models, do probabilities depend almost only on the best fit?"
+   },
+   "a": {
+    "es": "Porque al elevar los residuos a una potencia muy negativa, el modelo con menor error domina la suma. Ciccone y Jarociński (2010) encuentran que el mejor modelo y el primer percentil explican el 99% de la variación de las probabilidades.",
+    "en": "Because raising residuals to a very negative power lets the lowest-error model dominate the sum. Ciccone and Jarociński (2010) find the best model and the first percentile explain 99% of the variation in probabilities."
+   },
+   "id": "crec-teoria-03-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué debería mostrar un resultado empírico sobre determinantes del crecimiento antes de guiar una política?",
+    "en": "What should an empirical result on growth determinants show before guiding policy?"
+   },
+   "a": {
+    "es": "Que es robusto a revisiones razonables de los datos y a fuentes alternativas de ingreso, no solo a la elección de variables. Es la lección de Ciccone y Jarociński (2010).",
+    "en": "That it is robust to reasonable data revisions and alternative income sources, not only to variable choice. It is Ciccone and Jarociński's (2010) lesson."
+   },
+   "id": "crec-teoria-03-t6"
+  }
+ ]
+}
