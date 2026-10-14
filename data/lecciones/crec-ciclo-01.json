@@ -1,0 +1,357 @@
+{
+ "id": "crec-ciclo-01",
+ "cat": "crec-ciclo",
+ "orden": 8,
+ "minutos": 12,
+ "titulo": "Producto potencial con oferta y demanda: Gay (2018)",
+ "bajada": "Cómo estimar el producto potencial argentino sin filtrar una productividad contaminada por la demanda, qué participaciones de capital, trabajo y tierra salen de un VAR cointegrado para 1900-2018, y cómo se ve la brecha del producto desde 1970.",
+ "fuentes": [
+  1275
+ ],
+ "cita": "Gay (2018), «Producto potencial en un modelo de corrección al equilibrio macroeconómico: Argentina 1900-2018», Anales de la AAEP",
+ "intro": "La brecha del producto, la distancia entre el PIB observado y el potencial, es el termómetro del desequilibrio en el mercado de bienes. Medirla exige estimar el potencial, y el método más usado tiene un eslabón débil: calcula la productividad total de los factores (PTF) como residuo de una función de producción y la suaviza con un filtro, aunque ese residuo está contaminado por los shocks de demanda. En una economía con expansiones y recesiones tan marcadas como la argentina, el problema se agrava. Alejandro Gay propone un modelo de corrección al equilibrio en el que oferta y demanda interactúan, para que el filtrado de la PTF deje de ser necesario.",
+ "secciones": [
+  {
+   "t": "El problema del residuo",
+   "p": [
+    "El enfoque de función de producción estima una Cobb-Douglas, obtiene la PTF como residuo, la suaviza con un filtro (habitualmente Hodrick-Prescott) y la reintroduce para calcular el producto con plena utilización de los factores. El problema es que ese residuo recoge también los ciclos de demanda: cuando la economía está en auge, la PTF medida sube aunque la tecnología no haya cambiado.",
+    "Gay busca «netear» ese componente espurio. En un trabajo previo había estimado el potencial con una función de producción aislada; aquí la integra a un sistema en el que también hay una ecuación de demanda, de modo que las interacciones entre ambas absorban lo que antes había que filtrar."
+   ]
+  },
+  {
+   "t": "Las ecuaciones: tierra, consumo y términos del intercambio",
+   "p": [
+    "Por el lado de la oferta hay una Cobb-Douglas con tres factores: capital y trabajo ajustados por calidad, y tierra, medida como millones de hectáreas cultivadas con cereales y oleaginosas. El supuesto distintivo es que los términos del intercambio mejoran la calidad de la tierra: cuando suben, se usan más fertilizantes, riego y otras mejoras. Por eso aparecen en la función de producción con el mismo coeficiente que la tierra.",
+    "Por el lado de la demanda, el componente principal es el consumo, que se especifica en función del PIB y de los términos del intercambio: una mejora de estos aumenta los ingresos del comercio y el consumo del agente representativo.",
+    "La calidad del trabajo se mide como promedio de trabajadores de distintos niveles educativos ponderados por salarios relativos, con datos de la EPH desde 1980 y estimaciones censales de Elías para 1940-1970. La calidad del capital pondera máquinas y equipos frente a construcciones según sus tasas de retorno relativas, porque los primeros son más productivos."
+   ]
+  },
+  {
+   "t": "Un VAR cointegrado I(2)",
+   "p": [
+    "Con seis variables (producto, capital, trabajo, tierra, términos del intercambio y consumo) y datos 1900-2018 a precios de 1993, Gay estima un VAR cointegrado. El capital se construye acumulando inversión, que es I(1), así que el capital resulta I(2): hay que diferenciarlo dos veces para que sea estacionario. Eso obliga a usar el modelo I(2) de Johansen, en el que algunas relaciones de largo plazo necesitan las variables en diferencias para ser estacionarias (multicointegración).",
+    "Un siglo de crisis exige quiebres: se incluyen quiebres de tendencia en 1959 y 1973 (este último, el shock del petróleo) y variables dummy para anomalías como 1914 y 1931. Los tests de rango indican tres relaciones de largo plazo, que el autor identifica como una función de consumo, una función de producción con rendimientos constantes y una relación capital-producto interpretable como acelerador."
+   ]
+  },
+  {
+   "t": "Los parámetros",
+   "p": [
+    "Las restricciones conjuntas no se rechazan (χ² con 5 grados de libertad = 3,893, p = 0,565): rendimientos constantes a escala, coeficiente de los términos del intercambio igual a la participación de la tierra, y consumo dependiente del PIB y de los términos del intercambio.",
+    "Las participaciones estimadas son 0,45 para el capital, 0,49 para el trabajo y 0,06 para la tierra. En la función de consumo, el coeficiente de los términos del intercambio es 0,18. El quiebre de 1973 aumenta la tendencia a consumir en 0,6% anual y reduce en el mismo porcentaje el crecimiento tendencial de la producción.",
+    "Para simular, Gay reestima el sistema como VAR I(1) con la misma especificación, lo corre desde 1970 y filtra con Hodrick-Prescott el producto que genera el modelo. El filtro sigue siendo necesario porque los insumos no se corrigieron por utilización, pero se aplica en una etapa superior: sobre el producto que el sistema genera, no sobre un residuo."
+   ]
+  },
+  {
+   "t": "Medio siglo de brecha",
+   "p": [
+    "La brecha resultante cuenta una historia de mala administración macroeconómica, en palabras del autor. Con la tablita cambiaria, el producto llegó a estar 13% por encima del potencial en 1980; en la hiperinflación de 1990, 14% por debajo. En la Convertibilidad, 10,7% por encima en 1998, para caer a una brecha de −20,3% en 2002.",
+    "Más cerca, la brecha fue de 6,5% en 2011 y de 3% en 2017. Con supuestos para 2018 (caída del PIB de 1,2% y del consumo de 3%), el autor proyecta un producto 1,4% por encima del potencial a fines de ese año."
+   ]
+  }
+ ],
+ "claves": [
+  "La PTF calculada como residuo está contaminada por shocks de demanda; filtrarla no corrige el problema de fondo.",
+  "Gay integra una función de producción y una de consumo en un VAR cointegrado, y filtra el producto que genera el modelo, no el residuo.",
+  "Los términos del intercambio entran en la producción como mejoras en la calidad de la tierra y en el consumo como mayor ingreso.",
+  "Participaciones estimadas para 1900-2018: capital 0,45, trabajo 0,49, tierra 0,06.",
+  "Desde 1973 la tendencia del consumo sube y la de la producción baja 0,6% anual.",
+  "La brecha osciló entre +13% en 1980 y −20,3% en 2002."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuál es el eslabón débil del método tradicional de función de producción, según Gay?",
+    "en": "What is the weak link of the traditional production-function method, according to Gay?"
+   },
+   "op": {
+    "es": [
+     "Que supone rendimientos crecientes",
+     "Que no incluye el capital",
+     "Que la PTF, calculada como residuo, está sesgada por shocks de demanda y hay que suavizarla",
+     "Que usa datos trimestrales"
+    ],
+    "en": [
+     "That it assumes increasing returns",
+     "That it omits capital",
+     "That TFP, computed as a residual, is biased by demand shocks and must be smoothed",
+     "That it uses quarterly data"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En una economía con ciclos marcados, el residuo recoge demanda además de tecnología.",
+    "en": "In an economy with sharp cycles, the residual captures demand as well as technology."
+   },
+   "id": "crec-ciclo-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo entran los términos del intercambio en la función de producción del modelo?",
+    "en": "How do the terms of trade enter the model's production function?"
+   },
+   "op": {
+    "es": [
+     "Como mejoras en la calidad de la tierra",
+     "Como un insumo independiente con su propio coeficiente libre",
+     "Como determinante del empleo",
+     "No entran"
+    ],
+    "en": [
+     "As improvements in land quality",
+     "As a separate input with its own free coefficient",
+     "As a determinant of employment",
+     "They do not enter"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Mejores términos del intercambio inducen fertilizantes, riego y otras mejoras; por eso comparten coeficiente con la tierra.",
+    "en": "Better terms of trade induce fertilizer, irrigation and other improvements; hence they share the land coefficient."
+   },
+   "id": "crec-ciclo-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el modelo debe tratarse como I(2)?",
+    "en": "Why must the model be treated as I(2)?"
+   },
+   "op": {
+    "es": [
+     "Porque el consumo no tiene tendencia",
+     "Porque el capital se construye acumulando inversión, que ya es I(1)",
+     "Porque la tierra es constante",
+     "Porque los datos son trimestrales"
+    ],
+    "en": [
+     "Because consumption has no trend",
+     "Because capital is built by accumulating investment, which is already I(1)",
+     "Because land is constant",
+     "Because the data are quarterly"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Acumular una variable I(1) da una I(2): hay que diferenciar dos veces el capital para volverlo estacionario.",
+    "en": "Accumulating an I(1) variable yields I(2): capital must be differenced twice to become stationary."
+   },
+   "id": "crec-ciclo-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué participaciones de los factores estima Gay para Argentina?",
+    "en": "What factor shares does Gay estimate for Argentina?"
+   },
+   "op": {
+    "es": [
+     "Capital 0,30, trabajo 0,70, tierra 0",
+     "Capital 0,60, trabajo 0,30, tierra 0,10",
+     "Capital 0,49, trabajo 0,45, tierra 0,06",
+     "Capital 0,45, trabajo 0,49, tierra 0,06"
+    ],
+    "en": [
+     "Capital 0.30, labor 0.70, land 0",
+     "Capital 0.60, labor 0.30, land 0.10",
+     "Capital 0.49, labor 0.45, land 0.06",
+     "Capital 0.45, labor 0.49, land 0.06"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con rendimientos constantes a escala, restricción que los datos no rechazan.",
+    "en": "With constant returns to scale, a restriction the data do not reject."
+   },
+   "id": "crec-ciclo-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto tiene el quiebre de 1973 en el modelo?",
+    "en": "What effect does the 1973 break have in the model?"
+   },
+   "op": {
+    "es": [
+     "Ninguno significativo",
+     "Sube la tendencia a consumir y baja el crecimiento tendencial de la producción, ambos 0,6% anual",
+     "Duplica la participación de la tierra",
+     "Elimina la relación entre consumo y términos del intercambio"
+    ],
+    "en": [
+     "No significant effect",
+     "It raises the consumption trend and lowers output's trend growth, both by 0.6% a year",
+     "It doubles land's share",
+     "It removes the link between consumption and terms of trade"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El autor lo asocia al shock del petróleo; afecta consumo y producción en la misma magnitud absoluta.",
+    "en": "The author links it to the oil shock; it affects consumption and output by the same absolute amount."
+   },
+   "id": "crec-ciclo-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Gay sigue usando el filtro de Hodrick-Prescott al final?",
+    "en": "Why does Gay still use the Hodrick-Prescott filter at the end?"
+   },
+   "op": {
+    "es": [
+     "Porque no confía en el VAR",
+     "Para eliminar los términos del intercambio",
+     "Porque los insumos no se corrigieron por su nivel de utilización",
+     "Para convertir datos anuales en trimestrales"
+    ],
+    "en": [
+     "Because he distrusts the VAR",
+     "To remove the terms of trade",
+     "Because inputs were not corrected for utilization",
+     "To convert annual data into quarterly"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Pero filtra el producto que genera el modelo, no el residuo de PTF.",
+    "en": "But he filters the output generated by the model, not the TFP residual."
+   },
+   "id": "crec-ciclo-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿En qué año estima Gay la brecha negativa más profunda del período 1970-2018?",
+    "en": "In which year does Gay estimate the deepest negative gap of 1970-2018?"
+   },
+   "op": {
+    "es": [
+     "1990",
+     "1980",
+     "2018",
+     "2002"
+    ],
+    "en": [
+     "1990",
+     "1980",
+     "2018",
+     "2002"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En 2002 la brecha fue de −20,3%; en 1990, con la hiperinflación, de −14%.",
+    "en": "In 2002 the gap was −20.3%; in 1990, with hyperinflation, −14%."
+   },
+   "id": "crec-ciclo-01-q7"
+  },
+  {
+   "q": {
+    "es": "En la función de consumo del modelo, ¿qué signo y valor tiene el coeficiente de los términos del intercambio?",
+    "en": "In the model's consumption function, what sign and value does the terms-of-trade coefficient have?"
+   },
+   "op": {
+    "es": [
+     "Positivo, 0,18",
+     "Negativo, −0,18",
+     "Cero",
+     "Positivo, 0,49"
+    ],
+    "en": [
+     "Positive, 0.18",
+     "Negative, −0.18",
+     "Zero",
+     "Positive, 0.49"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Una mejora en los términos del intercambio aumenta los ingresos y el consumo.",
+    "en": "Better terms of trade raise income and consumption."
+   },
+   "id": "crec-ciclo-01-q8"
+  }
+ ],
+ "palabras": 780,
+ "tarjetas": [
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué la productividad total de los factores medida como residuo puede engañar sobre el producto potencial?",
+    "en": "Why can TFP measured as a residual mislead about potential output?"
+   },
+   "a": {
+    "es": "Porque el residuo absorbe los shocks de demanda: en un auge la PTF medida sube aunque la tecnología no cambie. Gay (2018) propone integrar oferta y demanda en un VAR cointegrado para no depender de filtrar ese residuo.",
+    "en": "Because the residual absorbs demand shocks: in a boom measured TFP rises even if technology does not. Gay (2018) proposes integrating supply and demand in a cointegrated VAR so as not to rely on filtering that residual."
+   },
+   "id": "crec-ciclo-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la brecha del producto?",
+    "en": "What is the output gap?"
+   },
+   "a": {
+    "es": "La diferencia, en logaritmos, entre el PIB observado y el producto potencial; indica desequilibrio en el mercado de bienes. Gay (2018) la estima para Argentina desde 1970.",
+    "en": "The log difference between observed GDP and potential output; it signals disequilibrium in the goods market. Gay (2018) estimates it for Argentina since 1970."
+   },
+   "id": "crec-ciclo-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué los términos del intercambio pueden afectar la capacidad productiva de un país agroexportador?",
+    "en": "Why can the terms of trade affect an agro-exporter's productive capacity?"
+   },
+   "a": {
+    "es": "Porque precios externos más altos estimulan fertilizantes, riego y otras mejoras que aumentan la calidad efectiva de la tierra. Gay (2018) los incluye así en la función de producción argentina, con el mismo coeficiente que la tierra.",
+    "en": "Because higher external prices encourage fertilizer, irrigation and other improvements that raise land's effective quality. Gay (2018) includes them this way in Argentina's production function, with land's coefficient."
+   },
+   "id": "crec-ciclo-01-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué una serie de capital construida por inventario permanente suele ser I(2)?",
+    "en": "Why is a capital series built by perpetual inventory often I(2)?"
+   },
+   "a": {
+    "es": "Porque acumula inversión, que ya es I(1): hay que diferenciarla dos veces para volverla estacionaria. Por eso Gay (2018) usa el modelo VAR I(2) de Johansen.",
+    "en": "Because it accumulates investment, which is already I(1): it must be differenced twice to become stationary. That is why Gay (2018) uses Johansen's I(2) VAR."
+   },
+   "id": "crec-ciclo-01-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué participaciones tienen capital, trabajo y tierra en el producto argentino de largo plazo?",
+    "en": "What shares do capital, labor and land have in Argentina's long-run output?"
+   },
+   "a": {
+    "es": "Gay (2018) estima 0,45 para el capital, 0,49 para el trabajo y 0,06 para la tierra, con datos de 1900 a 2018 y rendimientos constantes a escala.",
+    "en": "Gay (2018) estimates 0.45 for capital, 0.49 for labor and 0.06 for land, with 1900-2018 data and constant returns to scale."
+   },
+   "id": "crec-ciclo-01-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué muestra la brecha del producto sobre la macroeconomía argentina desde 1970?",
+    "en": "What does the output gap show about Argentine macroeconomics since 1970?"
+   },
+   "a": {
+    "es": "Oscilaciones enormes: +13% en 1980 con la tablita, −14% en la hiperinflación de 1990, +10,7% en 1998 y −20,3% en 2002. Gay (2018) lo lee como medio siglo de mala administración macroeconómica.",
+    "en": "Huge swings: +13% in 1980 under the tablita, −14% in the 1990 hyperinflation, +10.7% in 1998 and −20.3% in 2002. Gay (2018) reads this as half a century of macroeconomic mismanagement."
+   },
+   "id": "crec-ciclo-01-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Elimina un modelo de corrección al equilibrio la necesidad de filtrar para obtener el potencial?",
+    "en": "Does an equilibrium-correction model remove the need to filter for potential output?"
+   },
+   "a": {
+    "es": "No del todo: Gay (2018) reconoce que filtra el producto simulado porque no corrigió los insumos por utilización. La ventaja que reclama es filtrar en una etapa superior, no un residuo contaminado.",
+    "en": "Not entirely: Gay (2018) acknowledges filtering the simulated output because inputs were not corrected for utilization. The advantage he claims is filtering at a later stage, not a contaminated residual."
+   },
+   "id": "crec-ciclo-01-t7"
+  }
+ ]
+}
