@@ -14,7 +14,7 @@ Resumen de lo hecho en la sesión web de Claude Code (octubre 2026), para seguir
 ## Qué tiene la app
 - **Hoy**: brief del día + «Tarjetas de hoy» (repaso espaciado, cajas de Leitner). En compu, dos columnas.
 - **Tarjetas**: 37 de los mazos del rack (`data/decks.json`) y 6 por brief (`tarjetas` en `data/lecciones/*.json`). Criterio: la pregunta es de economía (se puede pensar sin haber leído el paper) y la respuesta atribuye al autor; abajo, la cita completa con «Abrir la ficha», «Buscar el texto» y «Abrir mi PDF».
-- **Briefs**: 10 escritos, cada uno con 8 preguntas de control y 6 tarjetas: comercio (2), deuda externa (2), tipo de cambio real (2) y regímenes cambiarios (4: Sturzenegger 2003, Grandes y Reisen 2005, Lasarte y Pérez 2011, Bermúdez y Dabús 2015).
+- **Briefs**: 48 escritos (ver `data/lecciones/index.json`), cada uno con 8 preguntas de control y 6 a 8 tarjetas.
 - **Cuenta**: botón arriba a la derecha; Google o mail y contraseña (con verificación). Se puede usar sin cuenta.
 - **Avisos** (Web Push vía el Worker) y **calendario** (evento diario en Google Calendar o .ics, y «Registrar esta actividad»).
 - **Mi biblioteca** (Ajustes): conecta la carpeta local de PDF en Chrome/Edge de compu, recorre subcarpetas y vincula cada PDF con su lectura del rack. No sube archivos. No funciona en celular.
@@ -26,10 +26,12 @@ Resumen de lo hecho en la sesión web de Claude Code (octubre 2026), para seguir
 - Los papers de origen `academia` (los que llegan por mail) **no están en esa carpeta**: hay que juntarlos aparte (por ejemplo, desde Gmail) antes de escribir sus briefs.
 - Cada brief sale solo del texto del PDF (cifras verificadas contra el texto extraído); críticas propias marcadas como «lectura propia».
 - `palabras` = palabras de `intro` + párrafos de `secciones` (sin notas). Hay que agregar la entrada en `data/lecciones/index.json`.
+- Herramientas en `herramientas/`: `extraer.sh <pdf> <txt>` (pdftotext; si sale vacío, OCR con tesseract spa+eng, lento: correrlo en segundo plano), `publicar_brief.py <id> --fuente <id>=<txt>` (valida, calcula palabras y orden, actualiza el índice y lista cifras que no aparecen en la fuente), `mover_correcta.py` (rota la opción correcta) y `subir.sh "mensaje"` (commit y push a main).
+- Si un PDF de la compu no se puede copiar a la sesión (archivos con hardlink), se lee con pdftotext directamente en la compu.
 - Duplicados en el rack: 90 y 1221 son el mismo trabajo (Lasarte y Pérez); el brief tc-reg-03 cita los dos ids.
 
 ## Pendiente
 1. Terminar Firebase y Cloudflare (ver arriba).
 2. Probar «Mi biblioteca» con la carpeta real y ver cuántas de las 484 lecturas vincula.
-3. **Los 474 briefs restantes**: seguir ruta por ruta (un brief por capítulo en libros y por unidad en apuntes). Regímenes cambiarios: faltan 83, 85, 89 y 92 (origen `academia`). 46 PDF están escaneados y pueden necesitar OCR.
+3. **Los 474 briefs restantes**: seguir ruta por ruta (un brief por capítulo en libros y por unidad en apuntes). Regímenes cambiarios: faltan 83, 85, 89 y 92 (origen `academia`). Crecimiento (crec-teoria y crec-ciclo): hechos 12 de 21; falta Sala-i-Martin, Apuntes de crecimiento (1344, libro escaneado de 263 páginas, va un brief por capítulo y necesita la compu conectada) y los 8 de Academia (23, 27, 62, 63, 69, 140, 166, 174). Los mails de Academia no aparecen en el Gmail conectado: hay que ubicar los PDF. 46 PDF están escaneados y pueden necesitar OCR.
 4. Subir la carpeta a Google Drive, con sus subcarpetas, para abrir los PDF desde el celular y poder escribir briefs sin la compu prendida; vínculos a Drive por lectura, guardados en la cuenta del usuario (no en el repo).
