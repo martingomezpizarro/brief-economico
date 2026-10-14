@@ -1,0 +1,361 @@
+{
+ "id": "macro-estab-03",
+ "cat": "macro-estab",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Inflación: costos, tipos y la trampa del señoreaje",
+ "bajada": "Por qué la inflación daña, qué distingue una hiperinflación de una inflación crónica, qué la mueve en el corto y en el largo plazo, y cómo un déficit financiado con emisión puede llevar a una trampa de alta inflación.",
+ "fuentes": [
+  1285
+ ],
+ "cita": "Cohen Arazi (2025), «Estabilidad de precios I», Política Macroeconómica en Argentina (UNC); sobre De Gregorio (2003) y Agénor (2004, cap. 6)",
+ "intro": "La estabilidad de precios, decía Alan Greenspan, existe cuando la inflación es tan baja que familias y empresas no necesitan considerarla en sus decisiones cotidianas. La Argentina vivió casi todo el último siglo lejos de esa situación. Esta clase de la materia Política Macroeconómica en Argentina de la UNC ordena el tema en cuatro preguntas: cuánto cuesta la inflación, qué tipos hay, qué la determina y cómo se conecta con el déficit fiscal. La última pregunta lleva a uno de los modelos más útiles para entender la historia argentina: la curva de Laffer del señoreaje y la trampa de alta inflación.",
+ "secciones": [
+  {
+   "t": "Los costos de la inflación",
+   "p": [
+    "La inflación destruye el sistema de información que necesita una economía de mercado: cuando todos los precios suben, cuesta distinguir cambios en los precios relativos de cambios en el nivel general, y los recursos se asignan mal. Genera incertidumbre, que eleva el costo financiero porque se exigen primas por riesgo. Favorece conductas especulativas frente a las productivas, como canalizar el ahorro hacia activos seguros como los inmuebles. Y el impuesto inflacionario es regresivo: los hogares de menores recursos guardan una proporción mayor de su riqueza en dinero y tienen menos protección por indexación.",
+    "Eso no significa que el objetivo deba ser cero. La clase sostiene que es preferible algo de inflación, siempre que sea menor al 5%, por dos razones. Con inflación cero, la tasa de interés real no puede bajar de cero, y a veces conviene una tasa real negativa para estimular la demanda. Y si los salarios nominales son rígidos a la baja, un poco de inflación facilita ajustar los salarios reales.",
+    "Sobre la curva de Phillips, la idea de un intercambio permanente entre inflación y desempleo fue descartada después de la alta inflación y la recesión de los setenta y de la revolución de las expectativas racionales. Hoy hay acuerdo en que en el largo plazo no existe una relación positiva entre inflación y actividad; al contrario, las economías con alta inflación crecen menos."
+   ]
+  },
+  {
+   "t": "Cuatro tipos de inflación",
+   "p": [
+    "La hiperinflación, según el criterio de Cagan, es una inflación de al menos 50% mensual, equivalente a 12.975% anual. Tiene tres rasgos: suele originarse en grandes desequilibrios fiscales; la inercia nominal desaparece porque los contratos se indexan o se acortan; y genera un ambiente económico y social caótico.",
+    "La inflación crónica tiene desequilibrios fiscales menos agudos en el corto plazo, lo que hace más difícil movilizar apoyo político para reformas. Tiene mucha inercia por la indexación de salarios y activos financieros, y el público es escéptico ante nuevos intentos de estabilización, sobre todo si hubo fracasos previos: la falta de credibilidad es en sí misma una fuente de inercia. A estos dos tipos se suman la inflación reprimida, contenida con controles de precios, y la inflación moderada."
+   ]
+  },
+  {
+   "t": "Qué la mueve en el corto plazo",
+   "p": [
+    "En el corto plazo la inflación fluctúa por shocks de demanda agregada (políticas fiscal, monetaria o cambiaria expansivas, cambios en los términos de intercambio, cambios de expectativas que mueven consumo o inversión) y por shocks de oferta (precios de insumos como el petróleo o el tipo de cambio, salarios, productividad).",
+    "La variable clave es la brecha del producto: la diferencia entre el producto efectivo y el potencial, como proporción del potencial. Un shock que empuja el producto por encima de su potencial sube producto e inflación; con poca demanda y actividad, no hay presión sobre salarios ni márgenes. La clase usa las estimaciones de producto potencial para la Argentina de Gay (2018)."
+   ],
+   "eq": [
+    "\\text{Brecha} = \\frac{Y - Y^*}{Y^*}"
+   ]
+  },
+  {
+   "t": "Qué la determina en el largo plazo",
+   "p": [
+    "En el largo plazo la inflación es un fenómeno monetario, y la pregunta relevante es por qué se emite. La respuesta habitual es cerrar la brecha fiscal: quien emite puede pagar con ese dinero, y eso es un ingreso, el señoreaje. Un gráfico de la clase muestra que en la Argentina, desde 1915, el crecimiento de M1 y la inflación medida por el deflactor del PIB se mueven juntos.",
+    "A eso se suman debilidades institucionales: la tentación de las autoridades de generar sorpresas inflacionarias para expandir el producto transitoriamente o licuar deuda, y políticas que convierten los shocks en inercia, como la indexación, porque no anclan la inflación en el mediano plazo. Otras fuentes de inflación crónica son la inercia salarial, el tipo de cambio y los términos de intercambio, la frecuencia de ajuste de precios, los precios de los alimentos y la inconsistencia temporal."
+   ]
+  },
+  {
+   "t": "El modelo: déficit, señoreaje y la curva de Laffer",
+   "p": [
+    "Donde la recaudación, los mercados de capital y las instituciones son débiles, los desequilibrios fiscales están en la raíz de la hiperinflación y de la inflación crónica, porque los gobiernos muchas veces no tienen otra opción que monetizar el déficit. El modelo de Agénor (2004) lo formaliza con dos piezas.",
+    "La primera es la demanda real de dinero, que cae con la inflación esperada; con previsión perfecta, la esperada es igual a la efectiva. La segunda es el déficit real, que tiene un componente autónomo y otro que crece con la inflación: es el efecto Olivera-Tanzi, por el cual la inflación reduce el valor real de la recaudación debido al rezago con que se cobran los impuestos. El déficit se financia con señoreaje: el crecimiento del dinero por los saldos reales.",
+    "Como el señoreaje es una tasa (la inflación) por una base (los saldos reales) que se achica cuando la tasa sube, la recaudación por señoreaje primero crece y después cae: es una curva de Laffer. Para un déficit dado hay dos equilibrios, uno de inflación baja y otro de inflación alta. Si el déficit supera el máximo que el señoreaje puede recaudar, no hay equilibrio y la inflación se dispara. Y el efecto Olivera-Tanzi agrava todo: más inflación agranda el déficit que hay que financiar."
+   ],
+   "eq": [
+    "m^d = m_0\\, e^{-\\alpha \\pi}",
+    "d = d_A + \\theta \\pi, \\quad \\theta > 0",
+    "d = \\mu\\, m, \\qquad \\mu = \\frac{\\dot M}{M}",
+    "\\text{En estado estacionario: } \\pi = \\mu = \\frac{d_A}{m - \\theta}"
+   ],
+   "nota": "m son los saldos monetarios reales, π la inflación, α la semielasticidad de la demanda de dinero, d_A el déficit autónomo, θ el efecto Olivera-Tanzi y μ la tasa de crecimiento del dinero nominal. La última ecuación muestra que, en equilibrio, inflación y saldos reales se relacionan negativamente."
+  },
+  {
+   "t": "La Argentina de los ochenta en números",
+   "p": [
+    "La clase muestra el señoreaje y la inflación entre 1981 y 1986. En 1981 el señoreaje fue 4,5% del PIB con inflación de 104%; en 1982 saltó a 24,4% con 165%; en 1983 fue 19,8% con 344%; en 1984, 17,9% con 627%; en 1985, 9,9% con 672%; y en 1986, tras el Plan Austral, 2,2% con 90%.",
+    "Los números ilustran la curva de Laffer: entre 1983 y 1985 la inflación siguió subiendo mientras el señoreaje caía, porque la gente se desprendía del dinero y la base del impuesto se achicaba. Con saldos reales cada vez menores, financiar el mismo déficit exige inflaciones cada vez más altas. Es la mecánica que, según Heymann (1991), llevó dos veces a la Argentina de una desinflación abrupta a la hiperinflación entre 1985 y 1989 (lectura propia de la tabla, a partir de las fuentes que cita la clase)."
+   ]
+  }
+ ],
+ "claves": [
+  "La inflación confunde precios relativos, eleva primas de riesgo, premia la especulación y es un impuesto regresivo.",
+  "No conviene inflación cero: impide tasas reales negativas y dificulta ajustar salarios reales; mejor algo positivo y menor al 5%.",
+  "Hiperinflación (Cagan): al menos 50% mensual; la crónica tiene más inercia y menos urgencia fiscal visible.",
+  "Corto plazo: shocks y brecha del producto. Largo plazo: emisión, en general para cerrar la brecha fiscal.",
+  "El señoreaje sigue una curva de Laffer; con el efecto Olivera-Tanzi aparece la trampa de alta inflación."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué el impuesto inflacionario es regresivo?",
+    "en": "Why is the inflation tax regressive?"
+   },
+   "op": {
+    "es": [
+     "Porque los ricos pagan más impuestos a las ganancias",
+     "Porque los hogares de menores recursos tienen más riqueza en dinero y menos protección por indexación",
+     "Porque suben los precios de los bienes de lujo",
+     "Porque baja el tipo de cambio"
+    ],
+    "en": [
+     "Because the rich pay more income tax",
+     "Because poorer households hold more wealth in money and have less indexation protection",
+     "Because luxury prices rise",
+     "Because the exchange rate falls"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El impuesto recae sobre las tenencias de dinero, proporcionalmente mayores en los hogares pobres.",
+    "en": "The tax falls on money holdings, proportionally larger among poor households."
+   },
+   "id": "macro-estab-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la clase considera mala idea una meta de inflación cero?",
+    "en": "Why does the class consider a zero-inflation target a bad idea?"
+   },
+   "op": {
+    "es": [
+     "Porque reduce la recaudación",
+     "Porque aumenta el desempleo para siempre",
+     "Porque impide tasas de interés reales negativas y dificulta ajustar salarios reales si los nominales no bajan",
+     "Porque aprecia el tipo de cambio"
+    ],
+    "en": [
+     "Because it lowers revenue",
+     "Because it raises unemployment forever",
+     "Because it rules out negative real rates and hinders real-wage adjustment if nominal wages do not fall",
+     "Because it appreciates the currency"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Por eso se prefiere algo de inflación, siempre menor al 5%.",
+    "en": "Hence some inflation is preferred, always below 5%."
+   },
+   "id": "macro-estab-03-q2"
+  },
+  {
+   "q": {
+    "es": "Según el criterio de Cagan, ¿qué define una hiperinflación?",
+    "en": "Under Cagan's criterion, what defines hyperinflation?"
+   },
+   "op": {
+    "es": [
+     "Inflación de al menos 50% mensual",
+     "Inflación de 100% anual",
+     "Inflación superior a la de los socios comerciales",
+     "Inflación con controles de precios"
+    ],
+    "en": [
+     "Inflation of at least 50% per month",
+     "Inflation of 100% per year",
+     "Inflation above trading partners'",
+     "Inflation under price controls"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Equivale a unos 12.975% anuales.",
+    "en": "It is equivalent to about 12,975% a year."
+   },
+   "id": "macro-estab-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué rasgo distingue a la inflación crónica de la hiperinflación?",
+    "en": "What distinguishes chronic inflation from hyperinflation?"
+   },
+   "op": {
+    "es": [
+     "No tiene causas fiscales",
+     "Desaparece la inercia",
+     "Siempre termina en default",
+     "Tiene mucha inercia por indexación y los desequilibrios fiscales son menos agudos en el corto plazo"
+    ],
+    "en": [
+     "It has no fiscal causes",
+     "Inertia disappears",
+     "It always ends in default",
+     "It has strong indexation-driven inertia and less acute short-run fiscal imbalances"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En la hiperinflación, en cambio, la inercia desaparece porque todo se indexa o se acorta.",
+    "en": "In hyperinflation, by contrast, inertia disappears as everything indexes or shortens."
+   },
+   "id": "macro-estab-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué es el efecto Olivera-Tanzi?",
+    "en": "What is the Olivera-Tanzi effect?"
+   },
+   "op": {
+    "es": [
+     "La caída de la demanda de dinero con la inflación",
+     "La pérdida de valor real de la recaudación por el rezago en el cobro de impuestos cuando sube la inflación",
+     "La suba del tipo de cambio por la emisión",
+     "El aumento del salario real por la inflación"
+    ],
+    "en": [
+     "The fall in money demand with inflation",
+     "The loss in real tax revenue from collection lags when inflation rises",
+     "Exchange-rate rise from money printing",
+     "Real-wage gains from inflation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En el modelo, el déficit crece con la inflación: d = d_A + θπ.",
+    "en": "In the model, the deficit grows with inflation: d = d_A + θπ."
+   },
+   "id": "macro-estab-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el señoreaje sigue una curva de Laffer?",
+    "en": "Why does seigniorage follow a Laffer curve?"
+   },
+   "op": {
+    "es": [
+     "Porque la base (los saldos reales) se achica a medida que sube la tasa (la inflación)",
+     "Porque el banco central limita la emisión",
+     "Porque los impuestos suben con la inflación",
+     "Porque la inflación es siempre constante"
+    ],
+    "en": [
+     "Because the base (real balances) shrinks as the rate (inflation) rises",
+     "Because the central bank caps issuance",
+     "Because taxes rise with inflation",
+     "Because inflation is always constant"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Al principio la tasa domina y la recaudación sube; después domina la caída de la base y baja.",
+    "en": "At first the rate dominates and revenue rises; later the shrinking base dominates and it falls."
+   },
+   "id": "macro-estab-03-q6"
+  },
+  {
+   "q": {
+    "es": "En la Argentina, ¿qué pasó con el señoreaje entre 1983 y 1985?",
+    "en": "In Argentina, what happened to seigniorage between 1983 and 1985?"
+   },
+   "op": {
+    "es": [
+     "Subió junto con la inflación",
+     "Fue cero",
+     "Cayó de 19,8% a 9,9% del PIB mientras la inflación subía de 344% a 672%",
+     "Se mantuvo en 24,4% del PIB"
+    ],
+    "en": [
+     "It rose with inflation",
+     "It was zero",
+     "It fell from 19.8% to 9.9% of GDP while inflation rose from 344% to 672%",
+     "It stayed at 24.4% of GDP"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el tramo descendente de la curva de Laffer: más inflación, menos recaudación.",
+    "en": "It is the downward slope of the Laffer curve: more inflation, less revenue."
+   },
+   "id": "macro-estab-03-q7"
+  },
+  {
+   "q": {
+    "es": "Un gobierno tiene un déficit mayor que el máximo señoreaje posible y lo financia con emisión. ¿Qué predice el modelo?",
+    "en": "A government's deficit exceeds maximum possible seigniorage and it prints money. What does the model predict?"
+   },
+   "op": {
+    "es": [
+     "Un equilibrio de inflación baja",
+     "Que la demanda de dinero aumente",
+     "Que la inflación se estabilice sola",
+     "Que no haya equilibrio y la inflación se dispare"
+    ],
+    "en": [
+     "A low-inflation equilibrium",
+     "That money demand rises",
+     "That inflation stabilizes on its own",
+     "That there is no equilibrium and inflation explodes"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin un ajuste del déficit, ninguna tasa de inflación alcanza para financiarlo.",
+    "en": "Without cutting the deficit, no inflation rate can finance it."
+   },
+   "id": "macro-estab-03-q8"
+  }
+ ],
+ "palabras": 1072,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el señoreaje?",
+    "en": "What is seigniorage?"
+   },
+   "a": {
+    "es": "El ingreso que obtiene quien emite dinero, porque puede pagar con él; equivale al crecimiento del dinero por los saldos reales. La clase de Estabilidad de precios I (UNC, 2025) lo presenta como la vía por la que el déficit fiscal genera inflación en el largo plazo.",
+    "en": "The revenue the money issuer earns because it can pay with new money; it equals money growth times real balances. The UNC (2025) Price Stability I class presents it as the channel through which fiscal deficits generate long-run inflation."
+   },
+   "id": "macro-estab-03-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué financiar un déficit con emisión puede llevar a una trampa de alta inflación?",
+    "en": "Why can financing a deficit by printing money lead to a high-inflation trap?"
+   },
+   "a": {
+    "es": "Porque con más inflación la gente tiene menos dinero (cae la base del impuesto) y la recaudación real cae por el rezago impositivo (efecto Olivera-Tanzi), así que hace falta aún más inflación para el mismo déficit. Es el modelo de Agénor (2004) que usa la clase de la UNC.",
+    "en": "Because with more inflation people hold less money (the tax base shrinks) and real revenue falls through collection lags (Olivera-Tanzi), so even more inflation is needed for the same deficit. It is Agénor's (2004) model used in the UNC class."
+   },
+   "id": "macro-estab-03-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "En la Argentina de 1982, ¿de qué orden fue el señoreaje como porcentaje del PIB?",
+    "en": "In Argentina in 1982, roughly how large was seigniorage as a share of GDP?"
+   },
+   "a": {
+    "es": "Altísimo: 24,4% del PIB, con inflación de 165%. En 1985 había bajado a 9,9% con inflación de 672%, señal del tramo descendente de la curva de Laffer. Son los datos que muestra la clase de Estabilidad de precios I (UNC).",
+    "en": "Extremely high: 24.4% of GDP, with 165% inflation. By 1985 it had fallen to 9.9% with 672% inflation, a sign of the Laffer curve's downward slope. These are the figures shown in the UNC Price Stability I class."
+   },
+   "id": "macro-estab-03-t3"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué mide la brecha del producto y por qué importa para la inflación de corto plazo?",
+    "en": "What does the output gap measure and why does it matter for short-run inflation?"
+   },
+   "a": {
+    "es": "La distancia entre el producto efectivo y el potencial, en proporción del potencial. Si es positiva presiona sobre salarios y márgenes; si es negativa, no. La clase de la UNC usa las estimaciones de Gay (2018) para la Argentina.",
+    "en": "The distance between actual and potential output, relative to potential. If positive it pressures wages and margins; if negative it does not. The UNC class uses Gay's (2018) estimates for Argentina."
+   },
+   "id": "macro-estab-03-t4"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Existe en el largo plazo un intercambio entre más inflación y menos desempleo?",
+    "en": "Is there a long-run trade-off between higher inflation and lower unemployment?"
+   },
+   "a": {
+    "es": "No: tras la estanflación de los setenta y las expectativas racionales se descartó; en el largo plazo la relación es más bien negativa, porque las economías con alta inflación crecen menos. Así lo resume la clase de Estabilidad de precios I (UNC), siguiendo a De Gregorio (2003).",
+    "en": "No: after 1970s stagflation and rational expectations it was discarded; in the long run the relation is rather negative, since high-inflation economies grow less. So the UNC Price Stability I class summarizes, following De Gregorio (2003)."
+   },
+   "id": "macro-estab-03-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la falta de credibilidad puede sostener una inflación aunque se corrijan las causas fiscales?",
+    "en": "Why can lack of credibility sustain inflation even after fiscal causes are fixed?"
+   },
+   "a": {
+    "es": "Porque si el público, después de fracasos previos, no cree en la estabilización, sigue indexando y fijando precios con la inflación pasada: la desconfianza se vuelve inercia. Es un rasgo de la inflación crónica según la clase de la UNC, basada en Agénor (2004).",
+    "en": "Because if the public, after past failures, does not believe in stabilization, it keeps indexing and pricing on past inflation: distrust becomes inertia. It is a feature of chronic inflation per the UNC class, based on Agénor (2004)."
+   },
+   "id": "macro-estab-03-t6"
+  }
+ ]
+}

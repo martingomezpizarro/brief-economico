@@ -1,0 +1,351 @@
+{
+ "id": "macro-estab-04",
+ "cat": "macro-estab",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "Planes de estabilización en la Argentina: anclas, heterodoxia y metas",
+ "bajada": "Ancla cambiaria o monetaria, shock o gradualismo, ortodoxia o heterodoxia: los criterios para elegir y lo que enseñan la Tablita, el Austral, el Bonex, la Convertibilidad, el esquema de 2018 y las metas de inflación.",
+ "fuentes": [
+  1286
+ ],
+ "cita": "Grión (2025), «Estabilidad de precios II», Política Macroeconómica en Argentina (UNC); sobre Dornbusch y Edwards (1992), Agénor (2004), Rodríguez (1995) y Svensson (2010)",
+ "intro": "La Argentina tiene una larga historia de programas para bajar la inflación, y casi todos terminaron en crisis de balanza de pagos y maxidevaluación. Según Kiguel (1999), citado en esta clase, la razón de fondo fue la incapacidad de reducir de manera sostenible el déficit fiscal y de mantener políticas monetarias y crediticias consistentes. La clase de Néstor Grión en la UNC recorre primero la mecánica de la alta inflación bajo el populismo y después las herramientas para salir de ella: qué ancla nominal elegir, cuándo sumar componentes heterodoxos y qué exigen las metas de inflación. Con eso repasa los planes aplicados en el país.",
+ "secciones": [
+  {
+   "t": "La mecánica de la alta inflación",
+   "p": [
+    "Las políticas basadas en subas de salarios y aumentos del déficit enfrentan intercambios duros. Se puede subir el salario real atrasando el tipo de cambio real o con subsidios, pero el atraso genera problemas de solvencia externa y los subsidios son inflacionarios. Se puede aumentar el empleo con subsidios o con una depreciación real, pero lo primero es inflacionario y lo segundo baja el salario real. Mientras hay reservas, esos intercambios no se ven; cuando se agotan, aparecen con crueldad y la inflación se acelera rápido.",
+    "Una vez que empieza, la aceleración se magnifica por el lado financiero. La velocidad de circulación del dinero sube con la inflación, lo que achica la base del impuesto inflacionario; con menos saldos reales, financiar el mismo déficit exige más inflación. A la vez, la inflación erosiona la recaudación y agranda el déficit. Cuando la inflación es muy alta, la relación entre déficit e inflación domina todo, y los déficits que se pueden financiar a una inflación dada caen estrepitosamente: un círculo vicioso que solo corta un plan de estabilización."
+   ]
+  },
+  {
+   "t": "¿Ancla cambiaria o monetaria?",
+   "p": [
+    "La elección depende de tres consideraciones (Agénor, 2004). La primera es la controlabilidad y la efectividad. La autoridad no controla directamente la cantidad de dinero, pero puede fijar el tipo de cambio rápido y sin grandes costos. Si la demanda de dinero tiene shocks grandes y la velocidad es inestable, el ancla monetaria pierde eficacia, mientras que fijar el tipo de cambio ancla los precios de los transables y las expectativas. El límite es que hay que convencer al público de que se puede defender la paridad, algo difícil con un déficit de cuenta corriente grande o reservas bajas, que invitan a ataques especulativos.",
+    "La segunda es la trayectoria de ajuste y sus costos. Los planes con ancla cambiaria suelen traer una expansión inicial y una recesión posterior: si el programa se percibe como temporal, la gente aprovecha los transables baratos y gasta más; el déficit de cuenta corriente y la apreciación real terminan forzando el abandono. Los planes con ancla monetaria, en cambio, empiezan con una contracción, y bajo flotación suelen ser más contractivos.",
+    "La tercera es la credibilidad. El tipo de cambio es más fácil de observar que los agregados monetarios, lo que da credibilidad al ancla cambiaria; un ancla monetaria con recesión inmediata puede perder apoyo si el costo en producto y empleo es alto. Además, el ancla cambiaria puede inducir más compromiso fiscal, porque una salida de capitales amenaza directamente el programa. Es preferible siempre que el compromiso con la disciplina fiscal sea alto. Y una vez estabilizada la economía conviene flexibilizar: sostener el tipo fijo con inflación mayor que la de los socios aprecia el tipo de cambio real y erosiona la competitividad."
+   ]
+  },
+  {
+   "t": "Planes heterodoxos",
+   "p": [
+    "Si la inflación tiene un componente inercial fuerte, por indexación explícita o implícita o por falta de credibilidad, corregir los fundamentos fiscales y monetarios no alcanza: la inflación sigue alta y la contracción de la demanda produce una recesión profunda y larga, cuyos costos políticos ponen en duda la perseverancia de las autoridades.",
+    "La respuesta fue combinar la corrección fiscal con una política de ingresos (congelamientos de precios y salarios, desindexación). A eso se lo llamó estabilización heterodoxa, en contraposición a los programas convencionales del FMI, centrados exclusivamente en la contracción monetaria y fiscal. La conclusión de la clase es que la combinación tiene sentido solo con un compromiso suficiente con un ajuste fiscal permanente: así, la desindexación y la política de ingresos pueden evitar parte de la caída de la actividad."
+   ]
+  },
+  {
+   "t": "Los planes argentinos con ancla cambiaria",
+   "p": [
+    "La Tablita (1979-1980) fue un crawling peg activo: el tipo de cambio se devaluaba según una tabla preanunciada, no indexada a la inflación pasada, para converger a la inflación mundial. Sin reducción del déficit, generaba un atraso cambiario importante.",
+    "El Plan Austral, anunciado por Juan Sourrouille en junio de 1985, combinó ancla y heterodoxia. En los meses previos se subieron el tipo de cambio real y las tarifas para generar un colchón; luego se fijó el tipo de cambio, se congelaron precios del sector público y salarios, se aumentaron retenciones, se buscó reducir el déficit para cortar el financiamiento monetario y se usó una escala de conversión (desagio) para los contratos. A mediados de 1988 estaba agotado: no se pudo hacer el ajuste fiscal necesario.",
+    "El Plan Bonex (enero de 1990 a enero de 1991) convirtió casi toda la deuda del gobierno y los depósitos bancarios en un bono en dólares a diez años. El M2 real cayó a 3,1% del PIB, muy lejos del 18% de 1986. Eliminó el déficit cuasifiscal, pero hubo nueva corrida: persistían los problemas de credibilidad.",
+    "La Convertibilidad (1991-2001) atacó la credibilidad con un tipo de cambio fijo por ley y una nueva carta orgánica del Banco Central que limitaba mucho el financiamiento al Tesoro, acompañados de reformas fiscal, del Estado (privatizaciones y desregulaciones), previsional y comercial (Mercosur, plenamente vigente desde enero de 1995), la renegociación de la deuda del Plan Brady y libre movilidad de capitales. La gran crisis previa hizo posibles reformas profundas."
+   ]
+  },
+  {
+   "t": "Ancla monetaria y metas de inflación",
+   "p": [
+    "Entre 2003 y 2012 hubo en los papeles un ancla monetaria con metas de agregados, pero con tasas de crecimiento elevadas, una inflación que no era prioridad, la intervención del INDEC y un cambio de carta orgánica que amplió los objetivos del Banco Central. El 1 de octubre de 2018 la Argentina adoptó formalmente un régimen de control de agregados, con la base monetaria como ancla porque es el agregado que controla directamente el Banco Central, junto con una zona de no intervención cambiaria; el esquema fue cambiando en las bandas, los montos de intervención y las metas de sobrecumplimiento.",
+    "Las metas de inflación (Svensson, 2010) dan al banco central un mandato claro de estabilidad de precios, una meta numérica puntual o en rango, un papel central para las proyecciones y las expectativas, mucha transparencia y rendición de cuentas, e independencia operativa. Pueden ser estrictas, si solo importa la inflación, o flexibles, si también pesan la brecha de producto, las tasas o el tipo de cambio. Un régimen nuevo debe priorizar la credibilidad; una vez ganada, tiene más margen para estabilizar la economía real. Según la clase, las metas de inflación de comienzos de la gestión de Cambiemos fracasaron porque no se resolvió la dominancia fiscal."
+   ]
+  },
+  {
+   "t": "La lección",
+   "p": [
+    "La conclusión de la clase es que el ajuste fiscal es necesario en cualquier plan de estabilización: sin un ajuste fiscal permanente, la inflación no se mantiene baja. El ancla elegida y los componentes heterodoxos pueden reducir el costo del camino, pero no reemplazan esa condición. Leídos en conjunto (lectura propia), los planes argentinos muestran el mismo patrón: el ancla compra tiempo y credibilidad inicial, y el resultado depende de si ese tiempo se usa para resolver el problema fiscal."
+   ]
+  }
+ ],
+ "claves": [
+  "Sin reservas, los intercambios entre salario real, empleo, tipo de cambio e inflación aparecen de golpe y la inflación se acelera.",
+  "El ancla cambiaria es más controlable y visible pero tiende a un ciclo de auge y recesión; la monetaria empieza con contracción.",
+  "Heterodoxia: corrección fiscal más política de ingresos para cortar la inercia; solo funciona con ajuste fiscal permanente.",
+  "Austral (1985) fracasó por falta de ajuste fiscal; el Bonex bajó el M2 real a 3,1% del PIB; la Convertibilidad combinó ancla legal y reformas.",
+  "Metas de inflación: mandato claro, transparencia e independencia; sin resolver la dominancia fiscal no funcionan."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Kiguel (1999), ¿por qué fracasaron los planes de estabilización argentinos?",
+    "en": "According to Kiguel (1999), why did Argentina's stabilization plans fail?"
+   },
+   "op": {
+    "es": [
+     "Por la caída de los términos de intercambio",
+     "Por la incapacidad de reducir sosteniblemente el déficit fiscal y mantener políticas monetarias consistentes",
+     "Por el exceso de reservas",
+     "Por la flotación cambiaria"
+    ],
+    "en": [
+     "Falling terms of trade",
+     "Inability to sustainably cut the fiscal deficit and keep consistent monetary policy",
+     "Excess reserves",
+     "Floating exchange rates"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Terminaban en crisis de balanza de pagos y maxidevaluación.",
+    "en": "They ended in balance-of-payments crises and maxi-devaluations."
+   },
+   "id": "macro-estab-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la aceleración de la inflación se magnifica por el lado financiero?",
+    "en": "Why is inflation acceleration magnified on the financial side?"
+   },
+   "op": {
+    "es": [
+     "Porque baja la velocidad del dinero",
+     "Porque suben los depósitos",
+     "Porque sube la velocidad del dinero, se achica la base del impuesto inflacionario y se necesita más inflación para el mismo déficit",
+     "Porque el banco central compra reservas"
+    ],
+    "en": [
+     "Because money velocity falls",
+     "Because deposits rise",
+     "Because velocity rises, the inflation-tax base shrinks and more inflation is needed for the same deficit",
+     "Because the central bank buys reserves"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Además la inflación reduce la recaudación y agranda el déficit: un círculo vicioso.",
+    "en": "Inflation also cuts revenue and enlarges the deficit: a vicious circle."
+   },
+   "id": "macro-estab-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué trayectoria suelen tener los planes con ancla cambiaria?",
+    "en": "What path do exchange-rate-based plans usually follow?"
+   },
+   "op": {
+    "es": [
+     "Una expansión inicial y una recesión posterior",
+     "Una recesión inicial y una expansión posterior",
+     "Crecimiento estable",
+     "Deflación permanente"
+    ],
+    "en": [
+     "An initial boom and a later recession",
+     "An initial recession and a later boom",
+     "Stable growth",
+     "Permanent deflation"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si el plan parece temporal, se adelanta el gasto en transables baratos; el déficit externo y la apreciación terminan forzando su abandono.",
+    "en": "If the plan looks temporary, spending on cheap tradables is front-loaded; the external deficit and appreciation eventually force its end."
+   },
+   "id": "macro-estab-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuándo es preferible un ancla cambiaria, según la clase?",
+    "en": "When is an exchange-rate anchor preferable, according to the class?"
+   },
+   "op": {
+    "es": [
+     "Cuando las reservas son bajas",
+     "Cuando el déficit de cuenta corriente es grande",
+     "Cuando la demanda de dinero es muy estable",
+     "Cuando el compromiso con la disciplina fiscal es alto"
+    ],
+    "en": [
+     "When reserves are low",
+     "When the current-account deficit is large",
+     "When money demand is very stable",
+     "When commitment to fiscal discipline is high"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La visibilidad del tipo de cambio da credibilidad y la amenaza de salida de capitales disciplina al fisco.",
+    "en": "The exchange rate's visibility builds credibility and the threat of capital flight disciplines fiscal policy."
+   },
+   "id": "macro-estab-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué combina un plan heterodoxo?",
+    "en": "What does a heterodox plan combine?"
+   },
+   "op": {
+    "es": [
+     "Emisión y devaluación",
+     "Corrección fiscal con política de ingresos para cortar la inercia",
+     "Solo contracción monetaria",
+     "Dolarización y default"
+    ],
+    "en": [
+     "Money printing and devaluation",
+     "Fiscal correction with incomes policy to break inertia",
+     "Monetary contraction only",
+     "Dollarization and default"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Busca evitar la recesión profunda que generaría solo contraer la demanda con inflación inercial.",
+    "en": "It seeks to avoid the deep recession that demand contraction alone would cause with inertial inflation."
+   },
+   "id": "macro-estab-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué se agotó el Plan Austral hacia mediados de 1988?",
+    "en": "Why was the Austral Plan exhausted by mid-1988?"
+   },
+   "op": {
+    "es": [
+     "Porque no se pudo hacer el ajuste fiscal necesario",
+     "Porque se fijó el tipo de cambio por ley",
+     "Porque se dolarizaron los depósitos",
+     "Porque se adoptaron metas de inflación"
+    ],
+    "en": [
+     "Because the necessary fiscal adjustment could not be made",
+     "Because the exchange rate was fixed by law",
+     "Because deposits were dollarized",
+     "Because inflation targeting was adopted"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El congelamiento y el ancla compraron tiempo, pero sin ajuste fiscal la inflación volvió.",
+    "en": "The freeze and the anchor bought time, but without fiscal adjustment inflation returned."
+   },
+   "id": "macro-estab-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto tuvo el Plan Bonex sobre la liquidez?",
+    "en": "What effect did the Bonex Plan have on liquidity?"
+   },
+   "op": {
+    "es": [
+     "El M2 real subió a 18% del PIB",
+     "No cambió",
+     "El M2 real cayó a 3,1% del PIB",
+     "Se triplicaron los depósitos"
+    ],
+    "en": [
+     "Real M2 rose to 18% of GDP",
+     "It did not change",
+     "Real M2 fell to 3.1% of GDP",
+     "Deposits tripled"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Convirtió deuda pública y depósitos en un bono a diez años; eliminó el déficit cuasifiscal pero no la desconfianza.",
+    "en": "It converted public debt and deposits into a ten-year bond; it ended the quasi-fiscal deficit but not mistrust."
+   },
+   "id": "macro-estab-04-q7"
+  },
+  {
+   "q": {
+    "es": "Un banco central adopta metas de inflación con un Tesoro que depende de su financiamiento. ¿Qué predice la clase?",
+    "en": "A central bank adopts inflation targeting while the Treasury depends on its financing. What does the class predict?"
+   },
+   "op": {
+    "es": [
+     "Éxito rápido por la transparencia",
+     "Que las metas fracasen por dominancia fiscal",
+     "Que baje el déficit automáticamente",
+     "Que el tipo de cambio se aprecie para siempre"
+    ],
+    "en": [
+     "Quick success thanks to transparency",
+     "That the targets fail due to fiscal dominance",
+     "That the deficit falls automatically",
+     "That the currency appreciates forever"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el diagnóstico que hace la clase sobre las metas de inflación de comienzos de la gestión de Cambiemos.",
+    "en": "It is the class's diagnosis of inflation targeting at the start of the Cambiemos administration."
+   },
+   "id": "macro-estab-04-q8"
+  }
+ ],
+ "palabras": 1227,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una estabilización con tipo de cambio fijo suele empezar con un auge de consumo?",
+    "en": "Why does an exchange-rate-based stabilization often start with a consumption boom?"
+   },
+   "a": {
+    "es": "Porque si el público cree que el plan es temporal, adelanta compras de transables mientras están baratos; luego el déficit externo y la apreciación real fuerzan el abandono. Lo resume la clase de Estabilidad de precios II (UNC), basada en Agénor (2004).",
+    "en": "Because if the public thinks the plan is temporary, it front-loads purchases of tradables while cheap; then the external deficit and real appreciation force its abandonment. The UNC Price Stability II class summarizes it, based on Agénor (2004)."
+   },
+   "id": "macro-estab-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es una estabilización heterodoxa?",
+    "en": "What is a heterodox stabilization?"
+   },
+   "a": {
+    "es": "La que combina corrección fiscal y monetaria con una política de ingresos (congelamientos, desindexación) para cortar la inercia inflacionaria sin una recesión profunda. El Plan Austral de 1985 es el ejemplo argentino que analiza la clase de la UNC.",
+    "en": "One that combines fiscal and monetary correction with an incomes policy (freezes, de-indexation) to break inflation inertia without a deep recession. The 1985 Austral Plan is the Argentine example analyzed in the UNC class."
+   },
+   "id": "macro-estab-04-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué fijar el tipo de cambio por mucho tiempo puede volverse un problema aunque haya bajado la inflación?",
+    "en": "Why can keeping a fixed exchange rate too long become a problem even after inflation falls?"
+   },
+   "a": {
+    "es": "Porque si la inflación interna sigue por encima de la de los socios, el tipo de cambio real se aprecia, se pierde competitividad y luego hay que devaluar, reavivando la inflación. Por eso la clase de la UNC recomienda flexibilizar una vez estabilizada la economía.",
+    "en": "Because if domestic inflation stays above partners', the real exchange rate appreciates, competitiveness erodes and a devaluation follows, reigniting inflation. Hence the UNC class recommends flexibilizing once stability is achieved."
+   },
+   "id": "macro-estab-04-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto cayó la liquidez de la economía argentina con el Plan Bonex de 1990?",
+    "en": "How much did Argentina's liquidity fall with the 1990 Bonex Plan?"
+   },
+   "a": {
+    "es": "El M2 real cayó a 3,1% del PIB, frente al 18% de 1986, porque depósitos y deuda pública se canjearon por un bono en dólares a diez años. Lo muestra la clase de Estabilidad de precios II (UNC).",
+    "en": "Real M2 fell to 3.1% of GDP, versus 18% in 1986, because deposits and public debt were swapped for a ten-year dollar bond. The UNC Price Stability II class shows it."
+   },
+   "id": "macro-estab-04-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia una meta de inflación estricta de una flexible?",
+    "en": "What distinguishes strict from flexible inflation targeting?"
+   },
+   "a": {
+    "es": "En la estricta, al banco central solo le importa acercar la inflación a la meta; en la flexible también pesa la brecha de producto, las tasas o el tipo de cambio. Según Svensson (2010), citado en la clase de la UNC, la credibilidad ganada da margen para ser flexible.",
+    "en": "Under strict targeting the central bank only cares about bringing inflation to target; under flexible, the output gap, rates or the exchange rate also matter. Per Svensson (2010), cited in the UNC class, earned credibility allows flexibility."
+   },
+   "id": "macro-estab-04-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué condición es necesaria en cualquier plan de estabilización, sea cual sea el ancla?",
+    "en": "What condition is necessary in any stabilization plan, whatever the anchor?"
+   },
+   "a": {
+    "es": "Un ajuste fiscal permanente: sin él la inflación no se mantiene baja, y el ancla solo compra tiempo. Es la conclusión de la clase de Estabilidad de precios II (UNC) tras repasar la Tablita, el Austral, el Bonex y la Convertibilidad.",
+    "en": "A permanent fiscal adjustment: without it inflation does not stay low, and the anchor only buys time. It is the UNC Price Stability II class's conclusion after reviewing the Tablita, Austral, Bonex and Convertibility."
+   },
+   "id": "macro-estab-04-t6"
+  }
+ ]
+}
