@@ -1,0 +1,351 @@
+{
+ "id": "macro-estab-05",
+ "cat": "macro-estab",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "El Plan de Convertibilidad visto en 1994: Rodríguez (1995)",
+ "bajada": "De la hiperinflación de 1989-90 a la caja de conversión de Cavallo: cómo funcionaba la ley, qué cambió en impuestos, privatizaciones y comercio, y por qué la apreciación real era «la sombra más oscura» del plan.",
+ "fuentes": [
+  1295
+ ],
+ "cita": "Rodríguez (1995), «Ensayo sobre el Plan de Convertibilidad», Documento de Trabajo 105, CEMA",
+ "intro": "Carlos Alfredo Rodríguez, fundador del CEMA, escribió este ensayo mayormente en el segundo semestre de 1994, en el mejor momento de la Convertibilidad y justo antes del efecto Tequila. Es un testimonio valioso por eso: muestra lo que un economista simpatizante del plan veía como logros y como riesgos cuando todavía no se sabía cómo iba a terminar. Su balance es muy favorable en estabilización y reformas, pero señala con claridad dos problemas: un Estado que no se achicó tanto como se cree y un tipo de cambio real apreciado sostenido por la entrada de capitales.",
+ "secciones": [
+  {
+   "t": "De la hiperinflación al plan",
+   "p": [
+    "El 6 de febrero de 1989 la demanda en las subastas de divisas obligó al Banco Central a suspender la convertibilidad del austral. Fue el fin de cinco años de intentos de estabilización del gobierno radical. La prima del mercado negro se disparó y empezó la hiperinflación: 33% en abril, 78% en mayo, 114% en junio y 197% en julio, cuando Alfonsín entregó el poder anticipadamente a Menem. Tras una pausa, en diciembre de 1989 hubo una nueva corrida y la hiperinflación volvió: 40% en diciembre, 79% en enero de 1990, 61% en febrero y 95% en marzo.",
+    "En enero de 1990 el Plan Bonex de Erman González convirtió casi toda la deuda del gobierno y los depósitos en un bono en dólares a diez años. El M2 real cayó a 3,1% del PBI, frente al 18% de 1986; eso eliminó el déficit cuasifiscal. Pero en febrero de 1991 una nueva corrida trajo devaluación y más inflación, y Domingo Cavallo reemplazó a González. Según Rodríguez, el ajuste estructural respondió a un deseo genuino de las autoridades, y la debacle de la hiperinflación lo hizo políticamente posible."
+   ]
+  },
+  {
+   "t": "Cómo funcionaba la Ley de Convertibilidad",
+   "p": [
+    "El nuevo sistema se anunció el 21 de marzo de 1991 y la ley se aprobó el 1 de abril: el austral se fijó en 10.000 por dólar y en enero de 1992 fue reemplazado por el peso, uno a uno. La base monetaria no podía superar el valor en dólares de las reservas, y se prohibió la indexación en los mercados de bienes y de trabajo, aunque se permitió en el crédito. En la práctica el Banco Central se convirtió en una caja de conversión con respaldo del 100%. Al pasar el poder de devaluar del Ministerio de Economía al Congreso, la ley sacaba la devaluación de los instrumentos fáciles de usar y daba credibilidad a la moneda.",
+    "La nueva Carta Orgánica de septiembre de 1992 dio independencia al directorio, con acuerdo del Congreso y mandatos fijos. Permitía que hasta un 20% de las reservas, y excepcionalmente un 30%, fueran bonos del gobierno en dólares (Bonex) valuados a precio de mercado; en la práctica rondaban el 10%. Prohibía al Banco Central asumir pasivos con interés y remunerar encajes, lo que eliminaba el déficit cuasifiscal, y no le permitía garantizar depósitos: dejaba de ser prestamista de última instancia. Rodríguez sostiene que ese rol nunca fue relevante en la Argentina, porque las corridas fueron contra la moneda y no contra los bancos: si se imprime dinero para dar liquidez en una corrida cambiaria, la corrida sigue hasta agotar las reservas."
+   ],
+   "nota": "La regla central puede escribirse como Base monetaria ≤ Reservas en dólares × tipo de cambio fijo. La notación es nuestra; el texto la describe en palabras."
+  },
+  {
+   "t": "Resultados: estabilidad con crecimiento",
+   "p": [
+    "La inflación minorista cayó de 1.343% en 1990 a 7,3% en 1993, y para 1994 se esperaba alrededor de 4%. El PBI real creció 9% en 1991, 8,6% en 1992 y 6% en 1993. Las finanzas públicas mejoraron y hubo superávits primarios desde 1991.",
+    "La estabilidad ayudó a recaudar. El IVA pasó de 2,2% del PBI en el primer trimestre de 1991 a cerca de 4,5% a fin de ese año y se estabilizó alrededor de 6%, más del doble del promedio de 2,5% de los ochenta. La recaudación nacional pasó de un promedio de 12% del PBI en 1990 a cerca de 16% desde 1992. Ayudaron la generalización del IVA con una tasa del 18%, la exigencia de factura, una nueva ley penal tributaria con prisión por evasión y una DGI más eficiente. A la vez se eliminaron impuestos muy distorsivos como el impuesto a los débitos bancarios y casi todas las retenciones a la exportación."
+   ]
+  },
+  {
+   "t": "Privatizaciones y un Estado que no se achicó",
+   "p": [
+    "Entre 1990 y 1993 las privatizaciones (YPF, ENTEL, Aerolíneas, Gas del Estado, SEGBA y otras) aportaron unos 9.000 millones en efectivo y casi 6.000 millones en títulos; el empleo en empresas públicas cayó en unos 280.000 puestos. Para Rodríguez, eso desmanteló un «Estado empresario» incompetente.",
+    "Pero el resto del Estado no se achicó. El empleo de la administración nacional cayó 27,3%, en parte porque unos 80.000 puestos se transfirieron a las provincias, donde el empleo subió 8,2%: sumando nación y provincias, apenas bajó de 1.532.000 a 1.501.800. El gasto total cayó de 32,3% del PBI en 1980-83 a 27,5% en 1993, pero la baja se produjo con la hiperinflación de 1989; desde entonces se mantuvo cerca del 27%. El gasto real sin intereses del sector público no financiero fue 50% más alto en 1994 que en 1990, y 130% más medido en dólares. El ítem que más creció fue la seguridad social: de 4,5% del PBI en 1989 a 8,5% en 1993. La conclusión del autor es que el ajuste del tamaño del Estado se hizo exclusivamente vendiendo empresas públicas."
+   ]
+  },
+  {
+   "t": "Apertura comercial",
+   "p": [
+    "Desde los años treinta la sustitución de importaciones cerró la economía: el comercio pasó de alrededor de 40% del PBI en 1910-30 a 10% en las décadas siguientes, y toda restricción a las importaciones terminó reduciendo también las exportaciones. La participación argentina en el comercio mundial cayó de 2% en 1950 a 0,3%. En 1992 su coeficiente de apertura (7,3%) estaba al pie de una muestra de países en desarrollo, junto a India y Brasil.",
+    "La apertura empezó en 1988 con la eliminación gradual de las licencias de importación, que en 1984 cubrían más de la mitad de las posiciones arancelarias. El arancel promedio cayó de casi 29% a fines de 1989 a menos de 10% en abril de 1991, aunque con más dispersión (0% materias primas, 11% insumos, 22% manufacturas), lo que protege más a lo producido localmente. Rodríguez critica las marchas y contramarchas, los reembolsos a la exportación de hasta 20% y la suba de la tasa de estadística, que lee como una devaluación encubierta. Las importaciones crecieron 103% en 1991 y 80% en 1992, desde un piso de 4.000 millones en 1990; las exportaciones cayeron 3% en 1991 y crecieron solo 2,2% en 1992 y 7% en 1993."
+   ]
+  },
+  {
+   "t": "La sombra más oscura",
+   "p": [
+    "El mayor riesgo, para Rodríguez, era la sobrevaluación del peso, sostenida durante tres años por una gran entrada de capitales: repatriación de fondos fugados en los ochenta (los depósitos en dólares crecieron unos 11.000 millones tras la hiperinflación), unos 5.000 millones de privatizaciones usados para financiar gasto local y tasas bajas en Estados Unidos, que empezaron a subir en marzo de 1994.",
+    "Los hechos estilizados que propone son estos: la percepción del ajuste estructural bajó la prima de riesgo país, eso atrajo capitales, que aumentaron el crédito y la demanda, financiaron el déficit de cuenta corriente y exigieron una apreciación real para que se transfirieran los recursos. Como los mercados de bienes y factores eran muy rígidos, pequeñas entradas de capital requerían grandes cambios de precios relativos, y la tasa de interés real y el desempleo oscilaban violentamente. Las importaciones respondían rápido al crédito externo; las exportaciones dependían del ajuste estructural pendiente y del «costo argentino»: impuestos al trabajo que superaban el 50% del costo laboral, regulaciones, tarifas monopólicas y protección a insumos como el transporte o el papel.",
+    "Su receta era profundizar las reformas para dar flexibilidad: Estado, mercado de trabajo, sistema judicial y la batalla contra los lobbies. Escrito antes del Tequila, el texto anticipa con bastante precisión el talón de Aquiles que terminaría con el régimen en 2001 (lectura propia)."
+   ]
+  }
+ ],
+ "claves": [
+  "Hiperinflaciones de 1989 y 1990; el Plan Bonex bajó el M2 real a 3,1% del PBI y eliminó el déficit cuasifiscal.",
+  "La ley fijó 10.000 australes (luego un peso) por dólar con respaldo del 100% y pasó el poder de devaluar al Congreso.",
+  "La Carta Orgánica de 1992 dio independencia al Central y eliminó su rol de prestamista de última instancia.",
+  "La inflación cayó de 1.343% en 1990 a 7,3% en 1993; el IVA subió a cerca de 6% del PBI.",
+  "El Estado se achicó solo vendiendo empresas; el riesgo principal era la apreciación real sostenida por la entrada de capitales."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué hizo el Plan Bonex de 1990?",
+    "en": "What did the 1990 Bonex Plan do?"
+   },
+   "op": {
+    "es": [
+     "Fijó el tipo de cambio por ley",
+     "Convirtió casi toda la deuda del gobierno y los depósitos en un bono en dólares a diez años",
+     "Creó el peso",
+     "Privatizó YPF"
+    ],
+    "en": [
+     "Fixed the exchange rate by law",
+     "Converted almost all government debt and deposits into a ten-year dollar bond",
+     "Created the peso",
+     "Privatized YPF"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El M2 real cayó a 3,1% del PBI y desapareció el déficit cuasifiscal, pero hubo otra corrida en febrero de 1991.",
+    "en": "Real M2 fell to 3.1% of GDP and the quasi-fiscal deficit vanished, but another run came in February 1991."
+   },
+   "id": "macro-estab-05-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la Ley de Convertibilidad daba credibilidad a la moneda, según Rodríguez?",
+    "en": "Why did the Convertibility Law give the currency credibility, per Rodríguez?"
+   },
+   "op": {
+    "es": [
+     "Porque subía las tasas de interés",
+     "Porque permitía indexar salarios",
+     "Porque pasaba el poder de devaluar del Ministerio de Economía al Congreso y exigía respaldo del 100%",
+     "Porque prohibía los depósitos en dólares"
+    ],
+    "en": [
+     "Because it raised interest rates",
+     "Because it allowed wage indexation",
+     "Because it moved devaluation power from the Economy Ministry to Congress and required 100% backing",
+     "Because it banned dollar deposits"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Sacaba la devaluación de los instrumentos fáciles de usar y garantizaba el respaldo en moneda fuerte.",
+    "en": "It removed devaluation from easily used tools and guaranteed hard-currency backing."
+   },
+   "id": "macro-estab-05-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, según Rodríguez, el rol de prestamista de última instancia nunca fue relevante en la Argentina?",
+    "en": "Why, per Rodríguez, was the lender-of-last-resort role never relevant in Argentina?"
+   },
+   "op": {
+    "es": [
+     "Porque las corridas eran contra la moneda, no contra los bancos",
+     "Porque no había bancos privados",
+     "Porque los depósitos estaban garantizados por el FMI",
+     "Porque nunca hubo corridas"
+    ],
+    "en": [
+     "Because runs were against the currency, not the banks",
+     "Because there were no private banks",
+     "Because the IMF guaranteed deposits",
+     "Because there were never runs"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Imprimir pesos para dar liquidez en una corrida cambiaria solo alimenta la compra de dólares hasta agotar reservas.",
+    "en": "Printing pesos for liquidity in a currency run only feeds dollar purchases until reserves run out."
+   },
+   "id": "macro-estab-05-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuánto cayó la inflación minorista entre 1990 y 1993?",
+    "en": "How much did consumer inflation fall between 1990 and 1993?"
+   },
+   "op": {
+    "es": [
+     "De 197% a 33%",
+     "De 95% a 40%",
+     "De 627% a 90%",
+     "De 1.343% a 7,3%"
+    ],
+    "en": [
+     "From 197% to 33%",
+     "From 95% to 40%",
+     "From 627% to 90%",
+     "From 1,343% to 7.3%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con crecimiento de 9%, 8,6% y 6% en 1991, 1992 y 1993.",
+    "en": "With growth of 9%, 8.6% and 6% in 1991, 1992 and 1993."
+   },
+   "id": "macro-estab-05-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué concluye Rodríguez sobre el tamaño del Estado bajo la Convertibilidad?",
+    "en": "What does Rodríguez conclude about the size of the state under Convertibility?"
+   },
+   "op": {
+    "es": [
+     "Que se redujo en todas sus áreas",
+     "Que el ajuste se hizo exclusivamente vendiendo empresas públicas; nación y provincias casi no redujeron empleo",
+     "Que las provincias redujeron más que la nación",
+     "Que el gasto en seguridad social cayó"
+    ],
+    "en": [
+     "That it shrank in all areas",
+     "That adjustment came only from selling state firms; nation and provinces barely cut jobs",
+     "That provinces cut more than the nation",
+     "That social security spending fell"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El empleo conjunto de nación y provincias apenas bajó 2%, y el gasto en seguridad social subió de 4,5% a 8,5% del PBI.",
+    "en": "Combined national and provincial employment fell only 2%, and social security spending rose from 4.5% to 8.5% of GDP."
+   },
+   "id": "macro-estab-05-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la estabilidad mejoró la recaudación?",
+    "en": "Why did stability improve tax collection?"
+   },
+   "op": {
+    "es": [
+     "Porque subieron las retenciones a la exportación",
+     "Porque se creó el impuesto a los débitos bancarios",
+     "Porque con precios estables se facilitó combatir la evasión, y el IVA pasó de 2,2% a cerca de 6% del PBI",
+     "Porque se eliminó el IVA"
+    ],
+    "en": [
+     "Because export taxes rose",
+     "Because a bank-debit tax was created",
+     "Because stable prices eased the fight against evasion, and VAT rose from 2.2% to about 6% of GDP",
+     "Because VAT was abolished"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "También ayudaron la factura obligatoria, la ley penal tributaria y una DGI más eficiente.",
+    "en": "Mandatory invoicing, the tax-crime law and a more efficient DGI also helped."
+   },
+   "id": "macro-estab-05-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué mecanismo describe Rodríguez detrás de la apreciación real?",
+    "en": "What mechanism does Rodríguez describe behind the real appreciation?"
+   },
+   "op": {
+    "es": [
+     "Menor riesgo país atrae capitales, que expanden crédito y demanda y financian el déficit de cuenta corriente, lo que exige apreciación real",
+     "La suba de los aranceles",
+     "La caída del gasto público",
+     "La emisión del Banco Central"
+    ],
+    "en": [
+     "Lower country risk attracts capital, which expands credit and demand and finances the current-account deficit, requiring real appreciation",
+     "Higher tariffs",
+     "Lower public spending",
+     "Central bank money printing"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con mercados muy rígidos, pequeñas entradas de capital exigían grandes cambios de precios relativos.",
+    "en": "With rigid markets, small capital inflows required large relative-price changes."
+   },
+   "id": "macro-estab-05-q7"
+  },
+  {
+   "q": {
+    "es": "Si suben las tasas en Estados Unidos y se frena la entrada de capitales a una economía con caja de conversión y mercados rígidos, ¿qué anticipa el texto?",
+    "en": "If US rates rise and inflows stop for a currency-board economy with rigid markets, what does the text anticipate?"
+   },
+   "op": {
+    "es": [
+     "Una devaluación automática",
+     "Una mejora inmediata del empleo",
+     "Más inflación por emisión",
+     "Fuertes oscilaciones de la tasa de interés real y del desempleo"
+    ],
+    "en": [
+     "An automatic devaluation",
+     "An immediate rise in employment",
+     "More inflation from printing",
+     "Violent swings in real interest rates and unemployment"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin tipo de cambio ni emisión para ajustar, el ajuste recae sobre tasas y cantidades.",
+    "en": "With neither exchange rate nor money printing to adjust, the burden falls on rates and quantities."
+   },
+   "id": "macro-estab-05-q8"
+  }
+ ],
+ "palabras": 1282,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es una caja de conversión?",
+    "en": "What is a currency board?"
+   },
+   "a": {
+    "es": "Un régimen en el que la base monetaria debe estar respaldada al 100% por reservas en divisas a un tipo de cambio fijo, sin financiamiento al Tesoro ni prestamista de última instancia. Rodríguez (1995) describe así al Banco Central argentino bajo la Ley de Convertibilidad de 1991.",
+    "en": "A regime where the monetary base must be 100% backed by foreign reserves at a fixed rate, with no Treasury financing or lender of last resort. Rodríguez (1995) describes Argentina's central bank under the 1991 Convertibility Law this way."
+   },
+   "id": "macro-estab-05-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "En una corrida contra la moneda, ¿por qué dar liquidez a los bancos no la detiene?",
+    "en": "In a run against the currency, why does giving banks liquidity not stop it?"
+   },
+   "a": {
+    "es": "Porque la gente retira depósitos para comprar dólares: los pesos que se emiten terminan en el mercado cambiario hasta agotar las reservas. Rodríguez (1995) lo usa para argumentar que el prestamista de última instancia nunca fue relevante en la Argentina.",
+    "en": "Because people withdraw deposits to buy dollars: newly issued pesos end up in the currency market until reserves run out. Rodríguez (1995) uses it to argue the lender of last resort was never relevant in Argentina."
+   },
+   "id": "macro-estab-05-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la estabilización de precios puede aumentar la recaudación tributaria?",
+    "en": "Why can price stabilization raise tax revenue?"
+   },
+   "a": {
+    "es": "Porque desaparece la licuación de impuestos cobrados con rezago y se facilita controlar la evasión. Con la Convertibilidad el IVA pasó de 2,2% del PBI a comienzos de 1991 a cerca de 6%, según Rodríguez (1995).",
+    "en": "Because erosion of lagged tax payments disappears and evasion becomes easier to control. Under Convertibility VAT rose from 2.2% of GDP in early 1991 to about 6%, per Rodríguez (1995)."
+   },
+   "id": "macro-estab-05-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto cambió el empleo público conjunto de nación y provincias entre 1989 y 1993?",
+    "en": "How much did combined national and provincial public employment change from 1989 to 1993?"
+   },
+   "a": {
+    "es": "Casi nada: bajó cerca de 2%, de 1.532.000 a 1.501.800, porque la nación transfirió puestos a las provincias, donde el empleo subió 8,2%. El gran recorte (unos 280.000 puestos) fue en empresas públicas privatizadas (Rodríguez, 1995).",
+    "en": "Barely: it fell about 2%, from 1,532,000 to 1,501,800, as the nation transferred jobs to provinces, where employment rose 8.2%. The big cut (about 280,000 jobs) was in privatized state firms (Rodríguez, 1995)."
+   },
+   "id": "macro-estab-05-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una entrada de capitales a una economía con tipo de cambio fijo aprecia el tipo de cambio real?",
+    "en": "Why does a capital inflow into a fixed-rate economy appreciate the real exchange rate?"
+   },
+   "a": {
+    "es": "Porque expande crédito y demanda; para que los recursos se transfieran, suben los precios de los no transables frente a los transables. Rodríguez (1995) agrega que con mercados rígidos bastan entradas chicas para grandes cambios de precios relativos.",
+    "en": "Because it expands credit and demand; for resources to transfer, non-tradable prices rise relative to tradables. Rodríguez (1995) adds that with rigid markets small inflows cause large relative-price changes."
+   },
+   "id": "macro-estab-05-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué combinar reembolsos a la exportación con aranceles más altos puede considerarse una devaluación encubierta?",
+    "en": "Why can export rebates plus higher tariffs be seen as a disguised devaluation?"
+   },
+   "a": {
+    "es": "Porque un impuesto a las importaciones más un subsidio a las exportaciones encarece los transables como lo haría una devaluación, sin tocar el tipo de cambio nominal. Rodríguez (1995) lo dice de los reembolsos de hasta 20% y la suba de la tasa de estadística de 3% a 10%.",
+    "en": "Because an import tax plus an export subsidy raises tradable prices as a devaluation would, without moving the nominal rate. Rodríguez (1995) says so of rebates up to 20% and the statistics fee rising from 3% to 10%."
+   },
+   "id": "macro-estab-05-t6"
+  }
+ ]
+}
