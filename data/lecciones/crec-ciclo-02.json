@@ -1,0 +1,335 @@
+{
+ "id": "crec-ciclo-02",
+ "cat": "crec-ciclo",
+ "orden": 3,
+ "minutos": 9,
+ "titulo": "¿Es distinto el ciclo argentino? Kydland y Zarazaga (1997)",
+ "bajada": "Cómo se miden las regularidades del ciclo económico, qué dicen los datos argentinos sobre consumo, empleo, dinero y precios, y por qué los factores nominales no parecen explicar la mayor parte de las fluctuaciones.",
+ "fuentes": [
+  1280
+ ],
+ "cita": "Grión (2025), «Ciclos económicos II», apunte de Política Macroeconómica en Argentina (FCE-UNC), sobre Kydland y Zarazaga (1997), «Is the business cycle of Argentina different?», Economic Review, Federal Reserve Bank of Dallas",
+ "intro": "Keynesianos y monetaristas discrepaban en mucho, pero coincidían en algo: los factores nominales (oferta de dinero, tasas de interés, rigidez de precios) eran protagonistas de las fluctuaciones. Ambas visiones acumularon anomalías, y Kydland y Prescott (1982) mostraron que un modelo de equilibrio general sin dinero podía «explicar» dos tercios de las fluctuaciones. La investigación giró hacia el lado real. Este apunte de cátedra presenta el trabajo de Kydland y Zarazaga (1997), que se pregunta si el ciclo argentino es realmente diferente del de Estados Unidos y Europa.",
+ "secciones": [
+  {
+   "t": "Ciclos reales y estabilización en América Latina",
+   "p": [
+    "Los ciclos económicos reales atribuyen las fluctuaciones a factores reales: gasto público, impuestos, cambio tecnológico, regulaciones, reglas de intermediación financiera y shocks políticos que alteran derechos de propiedad. Su atractivo teórico es explicar los ciclos con el mismo instrumental que se usa para el crecimiento.",
+    "En América Latina, en cambio, la inflación alta dominó la agenda y buena parte de la literatura sobre planes de estabilización trató a los factores nominales, como el cambio de régimen cambiario, como la fuerza sistemática detrás de las fluctuaciones. Los autores sostienen que una teoría de la estabilización y una del ciclo deben ser consistentes: si los shocks nominales no tuvieran efectos reales durante los planes, sería difícil sostener que importan en otros momentos.",
+    "Revisan los diez planes con ancla cambiaria estudiados por Vegh (1992). La teoría predice un salto del consumo, porque con baja credibilidad la política se percibe como transitoria. Solo en los cuatro primeros casos aparece ese salto positivo. Concluyen que los modelos de inspiración monetarista no explican cuantitativamente una fracción significativa de esas fluctuaciones, y proponen mirar shocks reales con modelos de equilibrio general dinámico."
+   ]
+  },
+  {
+   "t": "Cómo medir regularidades",
+   "p": [
+    "El primer paso es describir los datos sin teoría. Siguiendo a Lucas (1977), el componente cíclico de una variable es su desvío respecto de la tendencia; siguiendo a Kydland y Prescott (1990), la tendencia se obtiene con el filtro de Hodrick-Prescott sobre los logaritmos (salvo las exportaciones netas, en porcentaje del PIB). Se usan dos series de cuentas nacionales: base 1970 (1970-1990) y base 1986 (1980-1995).",
+    "Cada variable se compara con el PIB real en cuatro dimensiones: dirección (procíclica, contracíclica o acíclica), grado de comovimiento (correlación contemporánea), amplitud (volatilidad absoluta y relativa) y fase (líder, coincidente o rezagada). La calidad de los datos importa: el apunte muestra que al pasar de base 1993 a base 2004, el PIB de 2012 resultó 21,9% mayor."
+   ]
+  },
+  {
+   "t": "Lo que muestran los datos",
+   "p": [
+    "En el PIB y sus componentes: alta volatilidad del producto, consumo más volátil que el producto y muy correlacionado con él, gasto público muy volátil, y exportaciones netas condicionadas por los controles de cambio.",
+    "En empleo y productividad industrial, la correlación entre empleo y producto es menor que en Estados Unidos y las horas por trabajador son más volátiles, lo que el apunte asocia al rol de las regulaciones; en general, hay similitud con Estados Unidos. En dinero y precios hay salvedades (controles de precios, dominancia fiscal, crédito informal), y los precios resultan anticíclicos."
+   ]
+  },
+  {
+   "t": "Conclusión",
+   "p": [
+    "Las estadísticas de insumos (trabajo e inversión) son muy parecidas a las de Estados Unidos y Europa. Lo distinto es la mayor volatilidad del producto y la alta correlación del consumo con el PIB. El desafío para un modelo de ciclo real es explicar esa volatilidad; Mendoza (1995) lo intenta incorporando shocks de términos de intercambio. Para los autores, los factores nominales no parecen explicar una fracción significativa de los ciclos latinoamericanos ni del argentino."
+   ]
+  }
+ ],
+ "claves": [
+  "Kydland y Prescott (1982) mostraron que un modelo sin dinero podía explicar dos tercios de las fluctuaciones, y la investigación giró a los factores reales.",
+  "De diez planes con ancla cambiaria, solo cuatro muestran el salto del consumo que predice la teoría.",
+  "El componente cíclico es el desvío respecto de una tendencia de Hodrick-Prescott; se compara dirección, correlación, volatilidad y fase frente al PIB.",
+  "En Argentina el producto es muy volátil y el consumo más volátil que el producto; los precios son anticíclicos.",
+  "Los insumos se comportan como en Estados Unidos; la diferencia está en la volatilidad del producto, que Mendoza (1995) vincula a términos de intercambio."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué mostraron Kydland y Prescott (1982), según el apunte?",
+    "en": "What did Kydland and Prescott (1982) show, according to the notes?"
+   },
+   "op": {
+    "es": [
+     "Que el dinero explica todas las fluctuaciones",
+     "Que un modelo de equilibrio general sin dinero podía explicar dos tercios de las fluctuaciones",
+     "Que la curva de Phillips es estable",
+     "Que los ciclos no existen"
+    ],
+    "en": [
+     "That money explains all fluctuations",
+     "That a general-equilibrium model without money could explain two thirds of fluctuations",
+     "That the Phillips curve is stable",
+     "That cycles do not exist"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Eso reorientó la investigación hacia el lado real de la economía.",
+    "en": "That redirected research toward the real side of the economy."
+   },
+   "id": "crec-ciclo-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué anomalía enfrentó la explicación keynesiana en los setenta?",
+    "en": "What anomaly did the Keynesian explanation face in the 1970s?"
+   },
+   "op": {
+    "es": [
+     "La deflación persistente",
+     "La caída del gasto público",
+     "Inflación creciente acompañada de desempleo creciente",
+     "La estabilidad del tipo de cambio"
+    ],
+    "en": [
+     "Persistent deflation",
+     "Falling public spending",
+     "Rising inflation alongside rising unemployment",
+     "Exchange-rate stability"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Más inflación debería haberse asociado con menos desempleo, no con más.",
+    "en": "Higher inflation should have come with lower unemployment, not higher."
+   },
+   "id": "crec-ciclo-02-q2"
+  },
+  {
+   "q": {
+    "es": "En los diez planes con ancla cambiaria revisados, ¿cuántos muestran el salto del consumo que predice la teoría?",
+    "en": "In the ten exchange-rate-based plans reviewed, how many show the consumption jump theory predicts?"
+   },
+   "op": {
+    "es": [
+     "Los diez",
+     "Ninguno",
+     "Seis",
+     "Cuatro"
+    ],
+    "en": [
+     "All ten",
+     "None",
+     "Six",
+     "Four"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Solo los cuatro primeros; los autores concluyen que los modelos monetaristas no explican esas fluctuaciones cuantitativamente.",
+    "en": "Only the first four; the authors conclude monetarist models do not explain those fluctuations quantitatively."
+   },
+   "id": "crec-ciclo-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se define el componente cíclico de una variable en este enfoque?",
+    "en": "How is a variable's cyclical component defined in this approach?"
+   },
+   "op": {
+    "es": [
+     "Como su desvío respecto de una tendencia obtenida con el filtro de Hodrick-Prescott",
+     "Como su tasa de crecimiento anual",
+     "Como su nivel en dólares",
+     "Como la diferencia con el año base"
+    ],
+    "en": [
+     "As its deviation from a Hodrick-Prescott trend",
+     "As its annual growth rate",
+     "As its dollar level",
+     "As the difference from the base year"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Siguiendo a Lucas (1977) y Kydland y Prescott (1990), sobre variables en logaritmos.",
+    "en": "Following Lucas (1977) and Kydland and Prescott (1990), on log variables."
+   },
+   "id": "crec-ciclo-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas NO es una de las dimensiones con que se compara una variable con el PIB?",
+    "en": "Which of these is NOT one of the dimensions used to compare a variable with GDP?"
+   },
+   "op": {
+    "es": [
+     "Dirección del movimiento",
+     "Correlación contemporánea",
+     "Nivel de precios absoluto",
+     "Fase (líder, coincidente o rezagada)"
+    ],
+    "en": [
+     "Direction of movement",
+     "Contemporaneous correlation",
+     "Absolute price level",
+     "Phase (leading, coincident or lagging)"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las cuatro dimensiones son dirección, correlación, amplitud o volatilidad, y fase.",
+    "en": "The four dimensions are direction, correlation, amplitude or volatility, and phase."
+   },
+   "id": "crec-ciclo-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué regularidad muestra el consumo en Argentina?",
+    "en": "What regularity does consumption show in Argentina?"
+   },
+   "op": {
+    "es": [
+     "Es menos volátil que el PIB y acíclico",
+     "Es más volátil que el PIB y muy correlacionado con él",
+     "Es contracíclico",
+     "No tiene componente cíclico"
+    ],
+    "en": [
+     "Less volatile than GDP and acyclical",
+     "More volatile than GDP and highly correlated with it",
+     "Countercyclical",
+     "Has no cyclical component"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es una de las diferencias respecto de lo que suele observarse en economías avanzadas.",
+    "en": "It is one of the differences from what is usually seen in advanced economies."
+   },
+   "id": "crec-ciclo-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se comportan los precios a lo largo del ciclo argentino según el apunte?",
+    "en": "How do prices behave over the Argentine cycle according to the notes?"
+   },
+   "op": {
+    "es": [
+     "Procíclicos",
+     "Acíclicos",
+     "Siempre rezagados un año",
+     "Anticíclicos"
+    ],
+    "en": [
+     "Procyclical",
+     "Acyclical",
+     "Always lagging by a year",
+     "Countercyclical"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con salvedades por controles de precios, dominancia fiscal y crédito informal.",
+    "en": "With caveats for price controls, fiscal dominance and informal credit."
+   },
+   "id": "crec-ciclo-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el principal desafío para un modelo de ciclo real aplicado a Argentina?",
+    "en": "What is the main challenge for a real business cycle model applied to Argentina?"
+   },
+   "op": {
+    "es": [
+     "Explicar la mayor volatilidad del producto",
+     "Explicar por qué el empleo no fluctúa",
+     "Introducir dinero",
+     "Eliminar el gasto público"
+    ],
+    "en": [
+     "Explaining output's higher volatility",
+     "Explaining why employment does not fluctuate",
+     "Introducing money",
+     "Removing public spending"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Mendoza (1995) incorpora shocks de términos de intercambio para lograrlo.",
+    "en": "Mendoza (1995) adds terms-of-trade shocks to achieve it."
+   },
+   "id": "crec-ciclo-02-q8"
+  }
+ ],
+ "palabras": 564,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué una teoría de los planes de estabilización debe ser consistente con una teoría del ciclo?",
+    "en": "Why must a theory of stabilization plans be consistent with a theory of the cycle?"
+   },
+   "a": {
+    "es": "Porque si los shocks nominales no tienen efectos reales durante los planes de estabilización, es difícil sostener que importan en otros momentos. Es el argumento de Kydland y Zarazaga (1997) contra la visión monetarista del ciclo latinoamericano.",
+    "en": "Because if nominal shocks have no real effects during stabilization plans, it is hard to argue they matter at other times. This is Kydland and Zarazaga's (1997) argument against the monetarist view of the Latin American cycle."
+   },
+   "id": "crec-ciclo-02-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se extrae el componente cíclico de una serie macroeconómica en la tradición de ciclos reales?",
+    "en": "How is the cyclical component of a macro series extracted in the real business cycle tradition?"
+   },
+   "a": {
+    "es": "Se toma el logaritmo, se estima la tendencia con el filtro de Hodrick-Prescott y el ciclo es el desvío respecto de ella. Kydland y Zarazaga (1997) aplican ese método a las cuentas nacionales argentinas.",
+    "en": "Take logs, estimate the trend with the Hodrick-Prescott filter, and the cycle is the deviation from it. Kydland and Zarazaga (1997) apply that method to Argentine national accounts."
+   },
+   "id": "crec-ciclo-02-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Con qué cuatro dimensiones se describe el comportamiento cíclico de una variable?",
+    "en": "Which four dimensions describe a variable's cyclical behavior?"
+   },
+   "a": {
+    "es": "Dirección respecto del PIB (procíclica, contracíclica, acíclica), correlación contemporánea, volatilidad absoluta y relativa, y fase (líder, coincidente, rezagada). Es el esquema que sigue el apunte sobre Kydland y Zarazaga (1997).",
+    "en": "Direction relative to GDP (pro-, counter-, acyclical), contemporaneous correlation, absolute and relative volatility, and phase (leading, coincident, lagging). It is the scheme followed in the notes on Kydland and Zarazaga (1997)."
+   },
+   "id": "crec-ciclo-02-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Producen los planes con ancla cambiaria el salto del consumo que predice la teoría de credibilidad imperfecta?",
+    "en": "Do exchange-rate-anchored plans produce the consumption jump predicted by imperfect-credibility theory?"
+   },
+   "a": {
+    "es": "Solo en parte: de los diez planes estudiados por Vegh (1992), solo cuatro muestran el salto. Kydland y Zarazaga (1997) concluyen que esos modelos no explican cuantitativamente las fluctuaciones asociadas.",
+    "en": "Only partly: of the ten plans studied by Vegh (1992), only four show the jump. Kydland and Zarazaga (1997) conclude those models do not quantitatively explain the associated fluctuations."
+   },
+   "id": "crec-ciclo-02-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿En qué se parece y en qué se diferencia el ciclo argentino del estadounidense?",
+    "en": "How is Argentina's cycle similar to and different from the US cycle?"
+   },
+   "a": {
+    "es": "Los insumos (trabajo e inversión) se comportan de forma muy parecida; lo distinto es la mayor volatilidad del producto y la alta correlación del consumo con el PIB. Es la conclusión de Kydland y Zarazaga (1997).",
+    "en": "Inputs (labor and investment) behave very similarly; what differs is output's higher volatility and consumption's high correlation with GDP. That is Kydland and Zarazaga's (1997) conclusion."
+   },
+   "id": "crec-ciclo-02-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué shock real puede explicar la mayor volatilidad del producto en una economía como la argentina?",
+    "en": "What real shock can explain higher output volatility in an economy like Argentina's?"
+   },
+   "a": {
+    "es": "Los shocks de términos de intercambio, incorporados a la función de producción. El apunte sobre Kydland y Zarazaga (1997) cita a Mendoza (1995) como quien los introduce para enfrentar ese desafío.",
+    "en": "Terms-of-trade shocks, built into the production function. The notes on Kydland and Zarazaga (1997) cite Mendoza (1995) as introducing them to meet that challenge."
+   },
+   "id": "crec-ciclo-02-t6"
+  }
+ ]
+}
