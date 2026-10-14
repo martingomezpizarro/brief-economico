@@ -1,0 +1,352 @@
+{
+ "id": "crec-desarrollo-04",
+ "cat": "crec-desarrollo",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "Una matriz para la prosperidad inclusiva: Rodrik y Stantcheva (2021)",
+ "bajada": "Nueve casilleros para ordenar cualquier política contra la desigualdad: a quién apunta (abajo, medio, arriba) y en qué etapa interviene (antes, durante o después de producir). Y por qué la columna del medio es la que más falta.",
+ "fuentes": [
+  1214
+ ],
+ "cita": "Rodrik y Stantcheva (2021), «A policy matrix for inclusive prosperity»",
+ "intro": "Las discusiones sobre desigualdad suelen mezclar políticas muy distintas: un impuesto a la riqueza, el salario mínimo, la educación inicial, la política industrial. Dani Rodrik y Stefanie Stantcheva, ambos de Harvard, proponen una herramienta simple para ordenarlas: una matriz de tres por tres. No dice qué política es mejor, sino dónde está cada una y qué huecos deja un sistema de políticas. Su argumento de fondo es que los Estados de bienestar tradicionales actuaron antes y después de la producción, pero no durante, y que con la erosión de los buenos empleos eso ya no alcanza.",
+ "secciones": [
+  {
+   "t": "Dos preguntas, tres por tres",
+   "p": [
+    "La primera pregunta es a qué grupo de ingresos apunta la política. Puede ser a los hogares de abajo de la distribución; a la clase media, que tradicionalmente tuvo acceso a buenos empleos pero enfrenta niveles de vida en baja y más inseguridad; o a los de arriba, que concentran cada vez más poder económico, y posiblemente político, como individuos y a través de grandes empresas. Son las filas de la matriz.",
+    "La segunda pregunta es en qué etapa de la economía se interviene, y son las columnas. Los autores parten de la distinción de Hacker (2011) entre predistribución y redistribución, pero dividen la predistribución en dos. Las políticas preproducción definen las dotaciones que la gente lleva al mercado: educación, habilidades, capital financiero, redes sociales. Las de la etapa de producción moldean directamente las decisiones de empleo, inversión e innovación de las empresas. Las posproducción, la redistribución clásica, transfieren ingreso y riqueza una vez generados: transferencias, impuestos progresivos, seguros sociales."
+   ],
+   "nota": "Que una política intervenga en una etapa no significa que solo tenga efectos ahí. Un impuesto o un seguro social (posproducción) puede cambiar conductas en el mercado de trabajo y la eficacia de las políticas activas de empleo."
+  },
+  {
+   "t": "Los nueve casilleros",
+   "p": [
+    "Para los ingresos bajos: antes de producir, educación inicial y primaria y formación profesional; durante, salario mínimo, aprendizajes, menores contribuciones patronales sobre empleos de bajos salarios y beneficios para quien trabaja, como el crédito tributario por ingreso ganado de Estados Unidos (EITC); después, transferencias por vivienda, familia e hijos, ingreso mínimo garantizado y políticas macroeconómicas de pleno empleo.",
+    "Para la clase media: antes, educación superior pública y recapacitación de adultos; durante, políticas industriales y de clusters, apoyo a pymes, licencias ocupacionales, capacitación en el trabajo, negociación colectiva y consejos de salarios, y política comercial; después, seguro de desempleo y jubilaciones.",
+    "Para los ingresos altos: antes, impuestos a la herencia y a las donaciones; durante, créditos fiscales a la investigación y el desarrollo, política de competencia y antimonopolio e impuesto a las sociedades; después, tasas marginales altas del impuesto a la renta e impuestos a la riqueza.",
+    "El texto ilustra cada casillero con casos: el ingreso mínimo francés (Revenu de solidarité active), el KfW alemán, que financió 17.200 millones de euros a pymes en 2018, el gasto público en educación terciaria (en promedio 1% del PIB en la OCDE) o los clusters como Silicon Valley y Sophia Antipolis."
+   ]
+  },
+  {
+   "t": "Por qué la columna del medio",
+   "p": [
+    "Los Estados de bienestar tradicionales se apoyaron en la primera y la tercera columna: educación de un lado, impuestos progresivos y seguro social del otro. Las políticas de la etapa de producción se pensaban aparte, como políticas de competencia, inversión e innovación. Esa separación refleja la vieja dicotomía entre política social, que corrige desigualdad e inseguridad, y política de crecimiento, que mejora la productividad.",
+    "La dicotomía funciona si la economía ofrece buenos empleos a todos los que tienen la educación adecuada. Deja de funcionar cuando los buenos empleos se erosionan por la globalización y el cambio tecnológico, proliferan los malos empleos y hay mercados laborales regionales deprimidos. En ese mundo, actuar antes y después de producir es necesario pero no suficiente: la propia etapa de producción, a través de las decisiones de las empresas, puede perpetuar, atenuar o amplificar las desigualdades."
+   ]
+  },
+  {
+   "t": "El costo de vaciar el medio",
+   "p": [
+    "Un buen empleo es, tradicionalmente, el que paga lo suficiente para vivir decentemente, con beneficios sociales y posibilidades de progresar. En una encuesta a franceses y estadounidenses, los términos más asociados a un buen empleo fueron un buen salario, un buen ambiente, buenas condiciones de trabajo y vida familiar: en síntesis, lo que permite una vida de clase media.",
+    "La falta de buenos empleos tiene costos que las empresas no consideran al decidir: rupturas familiares, delito, abuso de drogas y opioides; costos políticos, como el ascenso del populismo autoritario y etnonacionalista y la polarización; y costos de productividad, porque cuando los beneficios de las nuevas tecnologías quedan encerrados en pocas empresas, sectores y áreas metropolitanas, el crecimiento de la productividad agregada cae. Esas externalidades justifican la intervención pública."
+   ]
+  },
+  {
+   "t": "Más cantidad y más calidad de empleo",
+   "p": [
+    "Muchos países sienten que enfrentan un dilema entre calidad y cantidad del empleo, y aceptan mercados de trabajo duales: enclaves productivos y bien pagos en medio de muchos empleos de bajos salarios y focos de desempleo. Donde el salario mínimo y las regulaciones impiden ingresos muy bajos, como en buena parte de Europa occidental, el desempleo castiga a los jóvenes y a quienes quieren entrar al mercado.",
+    "La salida histórica fue la suba generalizada de la productividad. La mecanización del agro en el siglo XIX y comienzos del XX dejó trabajadores sobrantes en el campo, que encontraron empleo mejor pago en la industria urbana. Pero eso no ocurre mecánicamente: en la segunda mitad del siglo XX la desindustrialización empujó el empleo hacia servicios con peores salarios y condiciones, y las tecnologías actuales tampoco generan buenos empleos por sí solas.",
+    "La idea clave es que buenas empresas y buenos empleos son complementarios. No alcanza con capacitar trabajadores: las empresas de baja productividad tienen que mejorar sus capacidades para poder pagar salarios altos. Por eso proponen integrar las columnas: políticas de empleo que se parezcan a políticas de innovación e industriales, y políticas industriales que se parezcan a políticas laborales."
+   ]
+  },
+  {
+   "t": "Cómo usarla",
+   "p": [
+    "Los autores insisten en que la matriz es un marco organizador, no una receta. Sirve para ordenar debates, encontrar áreas sin intervención, ver cómo encajan las piezas de un sistema y comparar países. Aplicada a la Argentina (lectura propia), invita a preguntar si la política distributiva no está concentrada en la columna de la derecha, con transferencias y subsidios, mientras la columna del medio, la que define cuántos buenos empleos crea el sistema productivo, recibe menos atención sistemática. También muestra que el salario mínimo, la negociación colectiva y la política industrial no son solo «política económica»: son política distributiva en la etapa de producción."
+   ]
+  }
+ ],
+ "claves": [
+  "Filas: a quién apunta la política (ingresos bajos, clase media, ingresos altos). Columnas: cuándo interviene (preproducción, producción, posproducción).",
+  "Preproducción define dotaciones (educación); producción moldea decisiones de las empresas; posproducción redistribuye lo ya generado.",
+  "Los Estados de bienestar usaron la primera y la tercera columna; la erosión de los buenos empleos exige actuar en la del medio.",
+  "La falta de buenos empleos tiene costos sociales, políticos y de productividad que las empresas no internalizan.",
+  "Buenas empresas y buenos empleos son complementarios: además de capacitar, hay que mejorar las capacidades de las firmas."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuáles son las dos dimensiones de la matriz de Rodrik y Stantcheva?",
+    "en": "What are the two dimensions of Rodrik and Stantcheva's matrix?"
+   },
+   "op": {
+    "es": [
+     "Corto y largo plazo",
+     "El grupo de ingresos al que apunta la política y la etapa de la economía en que interviene",
+     "Política fiscal y monetaria",
+     "Países ricos y pobres"
+    ],
+    "en": [
+     "Short and long run",
+     "The income group targeted and the stage of the economy where policy intervenes",
+     "Fiscal and monetary policy",
+     "Rich and poor countries"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las filas son ingresos bajos, medios y altos; las columnas, preproducción, producción y posproducción.",
+    "en": "Rows are bottom, middle and top incomes; columns are pre-production, production and post-production."
+   },
+   "id": "crec-desarrollo-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿En qué columna se ubica el salario mínimo?",
+    "en": "In which column does the minimum wage sit?"
+   },
+   "op": {
+    "es": [
+     "Preproducción",
+     "Posproducción",
+     "Etapa de producción",
+     "No entra en la matriz"
+    ],
+    "en": [
+     "Pre-production",
+     "Post-production",
+     "Production stage",
+     "It is not in the matrix"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Moldea directamente las condiciones de empleo en las empresas, para los ingresos bajos.",
+    "en": "It directly shapes employment conditions in firms, for bottom incomes."
+   },
+   "id": "crec-desarrollo-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue a una política preproducción de una posproducción?",
+    "en": "What distinguishes a pre-production from a post-production policy?"
+   },
+   "op": {
+    "es": [
+     "La primera define las dotaciones que la gente lleva al mercado; la segunda redistribuye ingresos ya generados",
+     "La primera es para ricos y la segunda para pobres",
+     "La primera es monetaria y la segunda fiscal",
+     "No hay diferencia práctica"
+    ],
+    "en": [
+     "The former shapes endowments people bring to the market; the latter redistributes income already generated",
+     "The former targets the rich, the latter the poor",
+     "The former is monetary, the latter fiscal",
+     "There is no practical difference"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Educación y habilidades antes; transferencias, impuestos progresivos y seguros sociales después.",
+    "en": "Education and skills before; transfers, progressive taxes and social insurance after."
+   },
+   "id": "crec-desarrollo-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, según los autores, ya no alcanza con las columnas que usaba el Estado de bienestar tradicional?",
+    "en": "Why, according to the authors, are the traditional welfare-state columns no longer enough?"
+   },
+   "op": {
+    "es": [
+     "Porque los impuestos progresivos dejaron de recaudar",
+     "Porque la educación dejó de importar",
+     "Porque la globalización eliminó la clase alta",
+     "Porque se erosionan los buenos empleos y la etapa de producción puede amplificar la desigualdad"
+    ],
+    "en": [
+     "Because progressive taxes stopped raising revenue",
+     "Because education stopped mattering",
+     "Because globalization eliminated the top",
+     "Because good jobs are eroding and the production stage can amplify inequality"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La dicotomía entre política social y de crecimiento funcionaba si la economía daba buenos empleos a todos los educados.",
+    "en": "The split between social and growth policy worked when the economy offered good jobs to all the educated."
+   },
+   "id": "crec-desarrollo-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estos NO es un costo de la falta de buenos empleos que mencionan los autores?",
+    "en": "Which of these is NOT a cost of the lack of good jobs the authors mention?"
+   },
+   "op": {
+    "es": [
+     "Polarización y populismo autoritario",
+     "Menor crecimiento de la productividad agregada",
+     "Mayor inflación por exceso de demanda",
+     "Rupturas familiares, delito y abuso de drogas"
+    ],
+    "en": [
+     "Polarization and authoritarian populism",
+     "Slower aggregate productivity growth",
+     "Higher demand-driven inflation",
+     "Family breakdown, crime and drug abuse"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El texto habla de costos sociales, políticos y de productividad, no de inflación.",
+    "en": "The text discusses social, political and productivity costs, not inflation."
+   },
+   "id": "crec-desarrollo-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué ejemplo histórico usan para mostrar cómo la productividad generó buenos empleos?",
+    "en": "Which historical example do they use to show productivity creating good jobs?"
+   },
+   "op": {
+    "es": [
+     "La mecanización del agro, que liberó trabajadores hacia la industria urbana mejor paga",
+     "La desindustrialización del siglo XX",
+     "La expansión de los servicios financieros",
+     "La automatización actual"
+    ],
+    "en": [
+     "Farm mechanization, which freed workers for better-paid urban industry",
+     "Twentieth-century deindustrialization",
+     "The expansion of financial services",
+     "Current automation"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La desindustrialización, en cambio, empujó el empleo hacia servicios con peores condiciones.",
+    "en": "Deindustrialization, by contrast, pushed employment toward worse service jobs."
+   },
+   "id": "crec-desarrollo-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué dicen que no alcanza con capacitar a los trabajadores?",
+    "en": "Why do they say training workers is not enough?"
+   },
+   "op": {
+    "es": [
+     "Porque la capacitación es demasiado cara",
+     "Porque los trabajadores no quieren capacitarse",
+     "Porque la educación no influye en los salarios",
+     "Porque las empresas de baja productividad también tienen que mejorar sus capacidades para ofrecer buenos empleos"
+    ],
+    "en": [
+     "Because training is too expensive",
+     "Because workers do not want training",
+     "Because education does not affect wages",
+     "Because low-productivity firms must also upgrade to offer good jobs"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Buenas empresas y buenos empleos son complementarios.",
+    "en": "Good firms and good jobs are complements."
+   },
+   "id": "crec-desarrollo-04-q7"
+  },
+  {
+   "q": {
+    "es": "Un país combate la desigualdad casi solo con transferencias y subsidios. ¿Qué diagnóstico sugiere la matriz?",
+    "en": "A country fights inequality almost only with transfers and subsidies. What does the matrix suggest?"
+   },
+   "op": {
+    "es": [
+     "Que cubre todos los casilleros",
+     "Que concentra su esfuerzo en la posproducción y descuida la etapa de producción, donde se crean los buenos empleos",
+     "Que debería eliminar las transferencias",
+     "Que solo debe preocuparse por los ingresos altos"
+    ],
+    "en": [
+     "That it covers every cell",
+     "That it concentrates on post-production and neglects the production stage, where good jobs are created",
+     "That it should scrap transfers",
+     "That it should only care about top incomes"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La matriz sirve justamente para ver qué columnas quedan vacías en un sistema de políticas.",
+    "en": "The matrix is meant to reveal which columns a policy system leaves empty."
+   },
+   "id": "crec-desarrollo-04-q8"
+  }
+ ],
+ "palabras": 1024,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre predistribución y redistribución?",
+    "en": "What is the difference between pre-distribution and redistribution?"
+   },
+   "a": {
+    "es": "La redistribución transfiere ingreso una vez generado (impuestos, transferencias); la predistribución moldea los resultados del mercado, antes de producir (dotaciones) o durante (decisiones de las empresas). Rodrik y Stantcheva (2021) parten de Hacker (2011) y dividen la predistribución en esas dos etapas.",
+    "en": "Redistribution transfers income once generated (taxes, transfers); pre-distribution shapes market outcomes, before production (endowments) or during it (firm decisions). Rodrik and Stantcheva (2021) build on Hacker (2011) and split pre-distribution into those two stages."
+   },
+   "id": "crec-desarrollo-04-t1"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la política industrial puede ser también una política contra la desigualdad?",
+    "en": "Why can industrial policy also be an anti-inequality policy?"
+   },
+   "a": {
+    "es": "Porque la etapa de producción define cuántos buenos empleos se crean: las decisiones de empleo, inversión e innovación de las empresas pueden amplificar o atenuar la desigualdad. Es el argumento de Rodrik y Stantcheva (2021) para actuar en la columna del medio.",
+    "en": "Because the production stage determines how many good jobs exist: firms' employment, investment and innovation decisions can amplify or dampen inequality. It is Rodrik and Stantcheva's (2021) case for acting in the middle column."
+   },
+   "id": "crec-desarrollo-04-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la concentración de los buenos empleos en pocas empresas y regiones puede bajar la productividad agregada?",
+    "en": "Why can the concentration of good jobs in few firms and regions lower aggregate productivity?"
+   },
+   "a": {
+    "es": "Porque los beneficios de las nuevas tecnologías quedan encerrados en pocos sectores y grupos, mientras el resto de la economía no los adopta. Rodrik y Stantcheva (2021) lo cuentan entre los costos que las empresas no internalizan.",
+    "en": "Because the benefits of new technologies stay bottled up in a few sectors and groups while the rest of the economy does not adopt them. Rodrik and Stantcheva (2021) count it among the costs firms do not internalize."
+   },
+   "id": "crec-desarrollo-04-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿En qué casillero de la matriz ubicarías un impuesto a la herencia, y por qué?",
+    "en": "In which cell would you place an inheritance tax, and why?"
+   },
+   "a": {
+    "es": "Ingresos altos, preproducción: actúa sobre las dotaciones con las que la gente llega al mercado. Rodrik y Stantcheva (2021) ubican ahí también los impuestos a las donaciones; los impuestos a la riqueza y las tasas marginales altas van en la posproducción.",
+    "en": "Top incomes, pre-production: it acts on the endowments people bring to the market. Rodrik and Stantcheva (2021) also put gift taxes there; wealth taxes and top marginal rates go in post-production."
+   },
+   "id": "crec-desarrollo-04-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el aumento de productividad no garantiza por sí solo más buenos empleos?",
+    "en": "Why does productivity growth alone not guarantee more good jobs?"
+   },
+   "a": {
+    "es": "Porque puede desplazar empleo hacia sectores peores: la desindustrialización de la segunda mitad del siglo XX llevó trabajadores a servicios peor pagos. Rodrik y Stantcheva (2021) lo contrastan con la mecanización agrícola, que sí los llevó a la industria.",
+    "en": "Because it can push jobs into worse sectors: late twentieth-century deindustrialization moved workers into lower-paid services. Rodrik and Stantcheva (2021) contrast it with farm mechanization, which moved them into industry."
+   },
+   "id": "crec-desarrollo-04-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un mercado de trabajo dual?",
+    "en": "What is a dual labor market?"
+   },
+   "a": {
+    "es": "Uno con enclaves pequeños de empleos productivos y bien pagos en medio de muchos empleos de bajos salarios y focos de desempleo. Rodrik y Stantcheva (2021), citando a Temin (2017), sostienen que muchos países lo aceptan por temor a un dilema entre calidad y cantidad de empleo.",
+    "en": "One with small enclaves of productive, well-paid jobs amid many low-wage jobs and pockets of unemployment. Rodrik and Stantcheva (2021), citing Temin (2017), argue many countries accept it fearing a quality-quantity trade-off in jobs."
+   },
+   "id": "crec-desarrollo-04-t6"
+  }
+ ]
+}
