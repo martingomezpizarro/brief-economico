@@ -1,0 +1,358 @@
+{
+ "id": "crec-desarrollo-03",
+ "cat": "crec-desarrollo",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "El Consenso de Washington según su autor: Williamson (2002, 2004)",
+ "bajada": "Las diez reformas originales, lo que no incluían (la apertura de la cuenta capital, el Estado mínimo), dónde se equivocó el propio Williamson y por qué rechaza que se lo culpe de la crisis argentina.",
+ "fuentes": [
+  1304,
+  1305
+ ],
+ "cita": "Williamson (2002), «Did the Washington Consensus fail?»; Williamson (2004), «The Washington Consensus as policy prescription for development»",
+ "intro": "Pocas expresiones de la economía cargan tanta pasión como «Consenso de Washington». John Williamson, que la acuñó en 1989, admite que es una marca dañada: hay gente que no puede pronunciarla sin echar espuma por la boca. En dos textos breves, una charla de 2002 y una conferencia en el Banco Mundial de 2004, vuelve sobre su lista de diez reformas para separar lo que él escribió de lo que se le atribuye, evaluar cada punto como receta de desarrollo y reconocer sus errores. Es una lectura útil porque obliga a discutir con precisión: buena parte del debate usa el término para cosas que su autor excluyó a propósito.",
+ "secciones": [
+  {
+   "t": "Tres significados de una misma palabra",
+   "p": [
+    "Williamson distingue tres usos del término. El original: una lista de diez reformas que, según él, en Washington se consideraban deseables para casi todos los países de América Latina en 1989. No era una receta universal de desarrollo, sino un relevamiento de lo que tenía consenso; por eso excluía políticas que él mismo creía buenas pero que no lo tenían. El segundo uso es el conjunto de políticas que el FMI, el Banco Mundial y el Tesoro de Estados Unidos recomendaban a los países en desarrollo hacia fines de los noventa, una versión ampliada con reformas institucionales. El tercero es lo que los críticos creen que esas instituciones imponen: el neoliberalismo y la reducción del Estado al mínimo.",
+    "Williamson rechaza el tercero. Su lista no incluía la liberalización de la cuenta capital, el monetarismo, la economía de la oferta ni el Estado mínimo que se retira de la redistribución, que él considera las ideas típicamente neoliberales. Esas ideas, dice, nunca tuvieron consenso en Washington ni en casi ningún lado."
+   ]
+  },
+  {
+   "t": "Las diez reformas",
+   "p": [
+    "La lista original: (1) disciplina fiscal, en una región donde casi todos los países tenían grandes déficits que terminaban en crisis de balanza de pagos e inflación alta, que golpeaba sobre todo a los pobres porque los ricos podían sacar su dinero al exterior; (2) reordenar las prioridades del gasto público, de subsidios indiscriminados hacia salud y educación básicas e infraestructura; (3) una reforma tributaria con base amplia y tasas marginales moderadas; (4) liberalizar las tasas de interés; (5) un tipo de cambio competitivo; (6) liberalizar el comercio; (7) liberalizar la inversión extranjera directa entrante; (8) privatizar; (9) desregular la entrada y salida de empresas, no las normas de seguridad o ambientales; (10) derechos de propiedad accesibles para el sector informal.",
+    "Detrás hay tres grandes ideas: disciplina macroeconómica, economía de mercado y apertura al mundo, al menos en comercio e inversión directa. Para Williamson, el Consenso marcó el fin de un «apartheid» intelectual que suponía que los países en desarrollo vivían en otro universo, donde se beneficiaban de la inflación, de un Estado que lideraba la industrialización y de la sustitución de importaciones."
+   ]
+  },
+  {
+   "t": "Punto por punto: qué sostiene y qué corrige",
+   "p": [
+    "Disciplina fiscal. La formulación original apuntaba a déficits que pudieran financiarse sin impuesto inflacionario. Williamson no acepta el argumento de Stiglitz de que una inflación moderada no daña el crecimiento, porque en América Latina el impuesto inflacionario es regresivo y la curva de Phillips es vertical en el largo plazo. Pero admite dos críticas: el déficit no solo trae inflación, también puede llevar a una dinámica de deuda insostenible; y la política fiscal debe estabilizar la economía real, ajustada en el auge para poder expandirse en la recesión, como hizo Chile en los noventa.",
+    "Gasto público. La lista nunca pidió recortes generales: pedía reorientar el gasto hacia lo que más rinde y mejor distribuye. Williamson cree que en esto casi no hubo avances y que los recortes drásticos suelen llevarse puesto lo esencial junto con el desperdicio.",
+    "Impuestos. Se da baja nota: la reforma real de los noventa fue extender el IVA para reemplazar la recaudación perdida por la baja de aranceles, y el IVA es regresivo. Una buena agenda debió discutir cómo recaudar más y cómo corregir esa regresividad.",
+    "Finanzas. Liberalizar tasas y crédito puede mejorar la asignación de la inversión, pero los fracasos del Cono Sur a fines de los setenta enseñaron dos cosas: la cuenta capital se abre al final, con un sistema bancario sólido, y la liberalización necesita supervisión. Su error, reconoce, fue no subrayar lo segundo."
+   ]
+  },
+  {
+   "t": "El tipo de cambio: donde fue mal reportero",
+   "p": [
+    "El punto en el que Williamson se considera peor cronista es el cambiario. Escribió que había consenso en un tipo de cambio competitivo, lo que implica un régimen intermedio que limite los desalineamientos. En realidad Washington ya se inclinaba por la doctrina bipolar: flotación libre o fijación dura, dos extremos que aceptan cualquier tipo de cambio real que resulte del mercado. Como discípulo de Bela Balassa, cree que el crecimiento exportador enciende el crecimiento general y que el tipo de cambio competitivo es clave para las exportaciones no tradicionales. Concluye que su versión fue mal periodismo pero buena receta, y que el entusiasmo por la solución bipolar no le hizo ningún favor al desarrollo.",
+    "En comercio, propone empezar reemplazando cuotas por aranceles (que llevan las rentas al Estado y no a importadores privilegiados) y bajarlos hasta un nivel uniforme del 10 al 20%. Advierte que el supuesto de que el tipo de cambio real se ajusta para que la apertura no destruya empleo no se cumplió en los noventa: la entrada de capitales apreció las monedas y hubo pérdida neta de empleo en los transables. Incluso admite casos de industria naciente exitosa, como la automotriz brasileña, y sugiere un registro en la OMC para protecciones temporales con calendario de salida."
+   ]
+  },
+  {
+   "t": "Lo que excluyó a propósito",
+   "p": [
+    "El punto siete hablaba de liberalizar la inversión extranjera directa, no los flujos de capital en general. Stanley Fischer, comentando el texto original, sostuvo que ya había fuerte apoyo a abrir la cuenta capital; a mediados de los noventa eso era la posición del FMI. Williamson considera que la apertura prematura de la cuenta capital fue la principal responsable de la crisis asiática de 1997. La inversión directa, en cambio, es mucho más estable que la de cartera o los préstamos bancarios.",
+    "La privatización fue la única idea de origen específicamente neoliberal que entró a la lista. Las evaluaciones muestran mayor eficiencia y rentabilidad de las empresas privatizadas y más cobertura de los servicios, sin efectos consistentes sobre salarios, precios o empleo. Aun así, en América Latina es cada vez más impopular, y Williamson pide que cualquier privatización futura sea impecable, porque el público puede preferir destruir riqueza antes que verla transferida por medios ilícitos."
+   ]
+  },
+  {
+   "t": "¿Fracasó? El caso argentino y las otras razones",
+   "p": [
+    "Williamson excluye explícitamente a la Argentina del balance. El país hizo muchas buenas reformas, premiadas con el crecimiento más rápido desde al menos los años veinte, pero cometió dos errores fatales: ató su suerte a una caja de conversión que dejó el tipo de cambio muy poco competitivo y no siguió la política fiscal estricta que habría hecho falta para sostenerla. Las dos cosas contradicen su lista, así que culparla de la crisis de 2001 le parece injusto.",
+    "Para el resto de la región, que sí aplicó la agenda con resultados decepcionantes en crecimiento, empleo y pobreza, da tres razones. Primera, las crisis desde México 1994: el Consenso no empujaba a abrir la cuenta capital, a anclar con el tipo de cambio o a gastar de manera procíclica, pero tampoco advertía contra eso. Segunda, reformas incompletas: el mercado de trabajo siguió dual, con informalidad creciente; se eliminaron los déficits pero no se ahorró en las épocas buenas; y faltaron las reformas institucionales de segunda generación. Tercera, un objetivo demasiado estrecho: crecer sin empeorar la distribución, que era todo lo que el Washington de 1989 suscribía."
+   ]
+  },
+  {
+   "t": "Qué queda",
+   "p": [
+    "Su conclusión es doble. Ningún país debió adoptar la lista como ideología, que según Moisés Naím es un mecanismo para ahorrarse pensar. Y cualquier agenda nueva debe incluir cómo evitar crisis y cómo mejorar la distribución, como complemento y no como reemplazo. Una objeción posible (lectura propia) es que separar «la lista» de su aplicación real deja al autor siempre a salvo: si se aplicó mal, la culpa es de la aplicación. Pero la distinción tiene valor práctico para un economista argentino: obliga a preguntar, ante cada reforma, cuál de los diez puntos se está discutiendo y cuál se está omitiendo."
+   ]
+  }
+ ],
+ "claves": [
+  "La lista de 1989 tenía diez reformas con tres ideas: disciplina macro, economía de mercado y apertura al comercio y a la IED.",
+  "Excluía la apertura de la cuenta capital, el monetarismo y el Estado mínimo; la privatización fue la única idea neoliberal incluida.",
+  "Williamson admite errores: el tipo de cambio competitivo no tenía consenso (Washington era bipolar) y la reforma tributaria real fue el IVA regresivo.",
+  "Para él, la Argentina falló por la caja de conversión con tipo de cambio poco competitivo y la falta de disciplina fiscal.",
+  "Causas del desempeño decepcionante: crisis financieras, reformas incompletas y un objetivo demasiado estrecho."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué era originalmente el Consenso de Washington, según Williamson?",
+    "en": "What was the Washington Consensus originally, according to Williamson?"
+   },
+   "op": {
+    "es": [
+     "Un programa del FMI impuesto a los deudores",
+     "Una lista de diez reformas que en Washington se consideraban deseables para América Latina en 1989",
+     "Un tratado firmado por los países latinoamericanos",
+     "La doctrina económica de Reagan y Thatcher"
+    ],
+    "en": [
+     "An IMF programme imposed on debtors",
+     "A list of ten reforms Washington considered desirable for Latin America in 1989",
+     "A treaty signed by Latin American countries",
+     "Reagan and Thatcher's economic doctrine"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Era un relevamiento de lo que tenía consenso, no una receta universal; excluía lo que no lo tenía.",
+    "en": "It was a survey of what commanded consensus, not a universal recipe; it left out what did not."
+   },
+   "id": "crec-desarrollo-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas políticas excluyó Williamson deliberadamente de su lista?",
+    "en": "Which of these policies did Williamson deliberately leave out of his list?"
+   },
+   "op": {
+    "es": [
+     "La privatización",
+     "La disciplina fiscal",
+     "La liberalización completa de la cuenta capital",
+     "La desregulación de la entrada de empresas"
+    ],
+    "en": [
+     "Privatization",
+     "Fiscal discipline",
+     "Full capital-account liberalization",
+     "Deregulating firm entry"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Solo incluyó la inversión extranjera directa; considera que la apertura prematura de la cuenta capital causó la crisis asiática.",
+    "en": "He only included FDI; he blames premature capital-account opening for the Asian crisis."
+   },
+   "id": "crec-desarrollo-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿En qué punto reconoce Williamson haber sido un mal cronista del consenso de 1989?",
+    "en": "On which point does Williamson admit he misreported the 1989 consensus?"
+   },
+   "op": {
+    "es": [
+     "El tipo de cambio competitivo, cuando Washington ya se inclinaba por la doctrina bipolar",
+     "La privatización",
+     "Los derechos de propiedad",
+     "La apertura comercial"
+    ],
+    "en": [
+     "The competitive exchange rate, when Washington already leaned toward the bipolar doctrine",
+     "Privatization",
+     "Property rights",
+     "Trade opening"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un tipo competitivo implica un régimen intermedio; Washington prefería flotar libremente o fijar de manera dura.",
+    "en": "A competitive rate implies an intermediate regime; Washington preferred free floating or hard pegs."
+   },
+   "id": "crec-desarrollo-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Williamson se pone baja nota en la reforma tributaria?",
+    "en": "Why does Williamson give himself a low mark on tax reform?"
+   },
+   "op": {
+    "es": [
+     "Porque propuso subir las tasas marginales",
+     "Porque recomendó eliminar el impuesto a las ganancias",
+     "Porque no previó la inflación",
+     "Porque la reforma real fue extender el IVA, regresivo, y su formulación no abordó cómo recaudar más"
+    ],
+    "en": [
+     "Because he proposed raising marginal rates",
+     "Because he recommended abolishing income tax",
+     "Because he did not foresee inflation",
+     "Because the actual reform was extending the regressive VAT, and his formulation did not address how to raise more revenue"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El IVA se usó para compensar la baja de aranceles; la agenda debió discutir su regresividad.",
+    "en": "VAT was used to offset lower tariffs; the agenda should have discussed its regressivity."
+   },
+   "id": "crec-desarrollo-03-q4"
+  },
+  {
+   "q": {
+    "es": "Según Williamson, ¿por qué no se puede culpar al Consenso de la crisis argentina de 2001?",
+    "en": "According to Williamson, why can't the Consensus be blamed for Argentina's 2001 crisis?"
+   },
+   "op": {
+    "es": [
+     "Porque la Argentina nunca hizo reformas",
+     "Porque la crisis fue solo por factores externos",
+     "Porque los dos errores fatales, la caja de conversión con tipo de cambio poco competitivo y la falta de disciplina fiscal, contradecían la lista",
+     "Porque el FMI no participó"
+    ],
+    "en": [
+     "Because Argentina never reformed",
+     "Because the crisis was purely external",
+     "Because the two fatal errors, a currency board with an uncompetitive rate and lack of fiscal discipline, contradicted the list",
+     "Because the IMF was not involved"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La lista pedía tipo de cambio competitivo y disciplina fiscal; la Argentina hizo lo contrario en ambos puntos.",
+    "en": "The list called for a competitive rate and fiscal discipline; Argentina did the opposite on both."
+   },
+   "id": "crec-desarrollo-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué crítica a su formulación de la disciplina fiscal acepta Williamson?",
+    "en": "Which criticism of his fiscal-discipline formulation does Williamson accept?"
+   },
+   "op": {
+    "es": [
+     "Que la política fiscal también debe estabilizar la economía real: ajustada en el auge y expansiva en la recesión",
+     "Que una inflación del 20% anual es inocua",
+     "Que los déficits nunca generan problemas de deuda",
+     "Que conviene financiar el déficit con emisión"
+    ],
+    "en": [
+     "That fiscal policy should also stabilize the real economy: tight in booms, loose in recessions",
+     "That 20% annual inflation is harmless",
+     "That deficits never create debt problems",
+     "That deficits should be financed with money"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "También acepta que el déficit puede llevar a una dinámica de deuda insostenible, no solo a inflación.",
+    "en": "He also accepts that deficits can lead to unsustainable debt dynamics, not just inflation."
+   },
+   "id": "crec-desarrollo-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué recomendaba la lista en materia de desregulación?",
+    "en": "What did the list recommend on deregulation?"
+   },
+   "op": {
+    "es": [
+     "Eliminar las normas ambientales y de seguridad",
+     "Eliminar barreras a la entrada y salida de empresas para fomentar la competencia",
+     "Desregular el sistema bancario sin supervisión",
+     "Privatizar los organismos de control"
+    ],
+    "en": [
+     "Removing environmental and safety rules",
+     "Removing barriers to firm entry and exit to foster competition",
+     "Deregulating banking without supervision",
+     "Privatizing regulators"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El modelo era la desregulación del transporte de cargas o aéreo, no recortar normas de salud o ambiente.",
+    "en": "The model was deregulating trucking or airlines, not cutting health or environmental rules."
+   },
+   "id": "crec-desarrollo-03-q7"
+  },
+  {
+   "q": {
+    "es": "Un gobierno abre el comercio mientras entran capitales que aprecian el peso. ¿Qué advertiría Williamson?",
+    "en": "A government opens trade while capital inflows appreciate the currency. What would Williamson warn?"
+   },
+   "op": {
+    "es": [
+     "Que no hay riesgo, porque el tipo de cambio real siempre se ajusta",
+     "Que conviene volver a las cuotas",
+     "Que la apertura puede destruir empleo neto en los transables si no se cuida el tipo de cambio real",
+     "Que hay que abrir también la cuenta capital de inmediato"
+    ],
+    "en": [
+     "That there is no risk, since the real exchange rate always adjusts",
+     "That quotas should return",
+     "That opening may destroy net jobs in tradables if the real exchange rate is not watched",
+     "That the capital account should also be opened immediately"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El argumento de que la apertura no destruye empleo supone que el tipo de cambio real se ajusta; en los noventa no pasó.",
+    "en": "The claim that opening does not destroy jobs assumes the real exchange rate adjusts; in the 1990s it did not."
+   },
+   "id": "crec-desarrollo-03-q8"
+  }
+ ],
+ "palabras": 1343,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Cuáles son las tres grandes ideas detrás del Consenso de Washington original?",
+    "en": "What are the three big ideas behind the original Washington Consensus?"
+   },
+   "a": {
+    "es": "Disciplina macroeconómica, economía de mercado y apertura al mundo en comercio e inversión directa. Williamson (2002) sostiene que eran ortodoxia en la OCDE desde hacía mucho y que el Consenso terminó con la idea de que los países en desarrollo seguían otras leyes económicas.",
+    "en": "Macroeconomic discipline, a market economy and openness in trade and direct investment. Williamson (2002) argues they had long been OECD orthodoxy and the Consensus ended the idea that developing countries followed different economic laws."
+   },
+   "id": "crec-desarrollo-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué un tipo de cambio «competitivo» implica un régimen cambiario intermedio?",
+    "en": "Why does a 'competitive' exchange rate imply an intermediate regime?"
+   },
+   "a": {
+    "es": "Porque tanto la flotación libre como la fijación dura aceptan cualquier tipo de cambio real que resulte del mercado; sostener uno competitivo exige intervenir para limitar desalineamientos. Williamson (2004) admite que en 1989 Washington ya prefería los extremos.",
+    "en": "Because both free floating and hard pegs accept whatever real exchange rate the market yields; sustaining a competitive one requires intervention to limit misalignments. Williamson (2004) admits Washington already preferred the corners in 1989."
+   },
+   "id": "crec-desarrollo-03-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué en la liberalización financiera conviene abrir la cuenta capital al final?",
+    "en": "Why should the capital account be opened last in financial liberalization?"
+   },
+   "a": {
+    "es": "Porque hace falta un sistema bancario sólido y supervisado para canalizar bien la entrada de capitales; abrir antes favorece burbujas y crisis. Williamson (2004) lo deriva de los fracasos del Cono Sur a fines de los setenta y culpa a la apertura prematura de la crisis asiática.",
+    "en": "Because a sound, supervised banking system is needed to channel inflows well; opening earlier fosters bubbles and crises. Williamson (2004) draws this from the Southern Cone failures of the late 1970s and blames premature opening for the Asian crisis."
+   },
+   "id": "crec-desarrollo-03-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Al liberalizar el comercio, ¿por qué conviene reemplazar primero las cuotas por aranceles?",
+    "en": "When liberalizing trade, why replace quotas with tariffs first?"
+   },
+   "a": {
+    "es": "Porque los aranceles llevan las rentas al Estado en lugar de a importadores privilegiados y dejan que las importaciones respondan a los shocks. Williamson (2004) propone luego bajarlos hasta un nivel uniforme del 10 al 20%.",
+    "en": "Because tariffs send rents to the state rather than privileged importers and let imports respond to shocks. Williamson (2004) then proposes lowering them to a uniform 10 to 20%."
+   },
+   "id": "crec-desarrollo-03-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la apertura comercial de los noventa en América Latina destruyó empleo neto en los sectores transables?",
+    "en": "Why did 1990s trade opening in Latin America destroy net jobs in tradables?"
+   },
+   "a": {
+    "es": "Porque el argumento estándar supone que el tipo de cambio real se ajusta, y la entrada de capitales lo apreció. Lo reconoce Williamson (2004) al evaluar su propia recomendación de liberalizar el comercio.",
+    "en": "Because the standard argument assumes the real exchange rate adjusts, and capital inflows appreciated it. Williamson (2004) acknowledges it when assessing his own trade-liberalization recommendation."
+   },
+   "id": "crec-desarrollo-03-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué muestran las evaluaciones de las privatizaciones, y por qué igual son impopulares en América Latina?",
+    "en": "What do privatization evaluations show, and why are they still unpopular in Latin America?"
+   },
+   "a": {
+    "es": "Más eficiencia y rentabilidad de las empresas y más cobertura de servicios, sin efectos consistentes en salarios, precios o empleo; son impopulares por sospechas de corrupción, monopolios mal regulados y nacionalismo. Es el balance de Williamson (2004).",
+    "en": "Higher efficiency, profitability and service coverage, with no consistent effects on wages, prices or jobs; they are unpopular because of suspected corruption, poorly regulated monopolies and nationalism. It is Williamson's (2004) assessment."
+   },
+   "id": "crec-desarrollo-03-t6"
+  }
+ ]
+}
