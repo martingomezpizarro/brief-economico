@@ -1,0 +1,360 @@
+{
+ "id": "crec-ciclo-03",
+ "cat": "crec-ciclo",
+ "orden": 6,
+ "minutos": 13,
+ "titulo": "Cócteles explosivos: las 26 crisis argentinas según Amado, Cerro y Meloni (2006)",
+ "bajada": "Cómo se fechan las crisis con un índice de turbulencia, qué cuatro «recetas» encuentra un árbol de clasificación para 1823-2003, cuál es la mezcla más cara y por qué las crisis profundas terminan en crisis institucionales.",
+ "fuentes": [
+  1278,
+  1281
+ ],
+ "cita": "Amado, Cerro y Meloni (2006), «Making explosive cocktails: recipes and costs for 26 crises from 1823 to 2003», XXI Jornadas Anuales de Economía, Banco Central del Uruguay; presentado en Cohen Arazi (2025), «Ciclos económicos I», Política Macroeconómica en Argentina (FCE-UNC)",
+ "intro": "Desde la Independencia, la Argentina tuvo 26 crisis económicas: una cada seis años y medio, más que cualquier otro país, según los autores. El sabor es amargo: cae el producto, se drenan las reservas, se deprecia la moneda y empeora la distribución del ingreso; según los ingredientes, también se rompe el orden político. Amado, Cerro y Meloni se hacen tres preguntas: ¿cuántos ingredientes hacen falta para un «cóctel explosivo»?, ¿son importados (tasas internacionales, precios de exportación) o nacionales (déficit, deuda, atraso cambiario)?, ¿cuál es la mezcla más cara?",
+ "secciones": [
+  {
+   "t": "Fechar crisis: el índice de turbulencia",
+   "p": [
+    "Para identificar crisis cambiarias usan un índice de turbulencia de mercado (MTI) que suma tres tasas de cambio, cada una ponderada por la inversa de su desvío estándar para que ninguna domine: depreciación del tipo de cambio, caída de reservas internacionales y suba de la tasa de interés doméstica. La idea es que la presión aumenta cuando el tipo de cambio sube, cuando suben las tasas y cuando caen las reservas: con tipo de cambio flotante se ve en el precio; con tipo de cambio fijo, antes de devaluar, en tasas y reservas.",
+    "Las crisis se clasifican por la magnitud del desvío del índice: muy profundas, profundas y leves. Entre 1823 y 1913 se usan datos anuales (y hasta 1874 solo el tipo de cambio); desde 1914, mensuales, con 19 crisis: 4 muy profundas, 7 profundas y 8 leves.",
+    "Los números muestran un quiebre en 1975/76: antes las devaluaciones eran de dos o pocos tres dígitos; después, de cuatro dígitos, con un pico en 1989/91. La pérdida de reservas también se agrava: el 49% de 1929/31, la mayor de la primera mitad del siglo, es modesta frente a la mayoría de las crisis de los últimos cincuenta años. Y las crisis se alargan: antes de 1975/76 rara vez llegaban al año; después rondaban los dos."
+   ]
+  },
+  {
+   "t": "El árbol de clasificación",
+   "p": [
+    "Para encontrar los ingredientes usan un árbol de clasificación: una técnica no paramétrica que divide la muestra en dos grupos lo más homogéneos posible, y repite la división hasta que no reduce más la impureza o el grupo queda chico. A diferencia de un logit o un probit, no impone la misma forma funcional a todas las crisis, y permite que la probabilidad de crisis aumente a medida que se acumulan vulnerabilidades.",
+    "La variable a explicar marca 65 años de crisis (incluido el año previo) y 115 sin crisis. Los quince candidatos vienen de las distintas generaciones de modelos de crisis y del enfoque de frenazos súbitos: déficit fiscal, gasto, saldos monetarios en exceso; exportaciones, crecimiento, sobrevaluación cambiaria, cuenta corriente; M2 sobre reservas, depósitos bancarios, deuda externa sobre exportaciones; y la tasa LIBOR. Los autores aclaran que no organizan un torneo entre teorías: buscan la receta.",
+    "Cuatro variables superan el 50% de importancia, todas domésticas: déficit fiscal rezagado (100%), sobrevaluación del tipo de cambio real rezagada (81%), crecimiento de los depósitos bancarios (71%) y deuda externa sobre exportaciones rezagada (55%). La LIBOR, único ingrediente importado, aparece quinta con 39%."
+   ]
+  },
+  {
+   "t": "Cuatro recetas",
+   "p": [
+    "Primera receta: déficit fiscal alto. Si el déficit del año anterior supera 4,4% del PIB, no hace falta ningún otro ingrediente. Abarca 27 años de crisis y la probabilidad de crisis en ese nodo es 54%; es el patrón de los modelos de primera generación.",
+    "Segunda: déficit moderado con atraso cambiario. Si el déficit es menor pero la sobrevaluación del tipo de cambio real está en el 15,7% más extremo de la muestra, la probabilidad es 53%. Incluye 1930, 1991 y 2000-2002.",
+    "Tercera: déficit moderado sin atraso pero con una caída de depósitos reales mayor a 22,8%. La probabilidad sube a 75%; incluye 1890-1891, 1914 y 1990. Cuarta: déficit moderado, caída leve de depósitos y deuda externa superior a 5,2 veces las exportaciones. Solo tres años (1987, 1994 y 1995), pero con probabilidad de crisis de 100%.",
+    "El déficit fiscal es el factor común a todas las mezclas. El árbol clasifica mal alrededor del 25% de las observaciones, y los autores muestran que los indicadores rezagados anticipan la crisis un año antes de que el índice de turbulencia empiece a moverse."
+   ]
+  },
+  {
+   "t": "Cuánto cuestan",
+   "p": [
+    "Siguiendo la metodología del FMI (1998), el costo es la suma de las diferencias entre el crecimiento tendencial y el observado hasta que el crecimiento vuelve a la tendencia. Las más caras fueron 1889/91 (28,1% del producto), 1929/31 (23,7%, con tres años de recuperación) y 2000/2002 (23%). Crisis muy profundas como 1974/76 o 1989/91 costaron «solo» 6,5% y 7%, porque la economía caía desde una tendencia de crecimiento ya muy baja.",
+    "Por receta, entre 1875 y 2002, la de déficit alto es la más frecuente, con un costo total cercano a 64%, pero un costo medio de 2,9% por año de crisis. La más cara es la mezcla de déficit moderado con caída fuerte de depósitos, 8,9% en promedio, presumiblemente porque implica crisis bancaria. Déficit con atraso cambiario cuesta 4,1%, y la receta de deuda externa, 2%."
+   ]
+  },
+  {
+   "t": "Costos que no miden las cuentas nacionales",
+   "p": [
+    "Las crisis también golpean la distribución por varios canales: producto (cae la demanda de trabajo no calificado; la de 2001/02 redujo el PIB real 15%), inflación (el impuesto inflacionario pega sobre los pobres), precios relativos (la depreciación baja el salario real), gasto público (los recortes afectan educación, salud y programas sociales) y finanzas (en 2002, con 70% de los préstamos en dólares, la pesificación uno a uno implicó una transferencia de 32.000 millones de dólares a los deudores).",
+    "Dos canales menos estudiados pesan en la Argentina: la emigración de capital humano calificado y las instituciones. Las seis crisis muy profundas fueron seguidas por un golpe de Estado (1930, 1976) o por la renuncia del presidente antes de terminar su mandato (Rivadavia, Juárez Celman, Alfonsín, De la Rúa). Siguiendo a North, los autores conjeturan que interrumpir las reglas genera incertidumbre y vuelve al país más propenso a la crisis siguiente, aunque no establecen un vínculo formal."
+   ]
+  }
+ ],
+ "claves": [
+  "La Argentina tuvo 26 crisis desde 1823, una cada seis años y medio.",
+  "El índice de turbulencia combina depreciación, caída de reservas y suba de tasas, ponderados por su volatilidad.",
+  "Los ingredientes clave son domésticos: déficit fiscal, atraso cambiario, caída de depósitos y deuda externa alta; la LIBOR es el condimento importado.",
+  "Un déficit superior a 4,4% del PIB basta para generar una crisis; es la receta más frecuente, con costo medio de 2,9% por año de crisis.",
+  "La mezcla más cara combina déficit moderado con caída de depósitos de más de 22,8%: 8,9% en promedio, presumiblemente por crisis bancaria.",
+  "Las seis crisis muy profundas terminaron en golpe de Estado o renuncia presidencial."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué componentes suma el índice de turbulencia de mercado (MTI)?",
+    "en": "What components does the market turbulence index (MTI) add up?"
+   },
+   "op": {
+    "es": [
+     "Inflación, desempleo y déficit fiscal",
+     "Depreciación cambiaria, caída de reservas y suba de la tasa de interés, ponderadas por la inversa de su desvío",
+     "Exportaciones, importaciones y deuda",
+     "Solo la devaluación nominal"
+    ],
+    "en": [
+     "Inflation, unemployment and fiscal deficit",
+     "Currency depreciation, reserve loss and interest-rate rise, weighted by the inverse of their standard deviation",
+     "Exports, imports and debt",
+     "Only the nominal devaluation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La ponderación evita que el componente más volátil domine el índice.",
+    "en": "The weighting keeps the most volatile component from dominating the index."
+   },
+   "id": "crec-ciclo-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja tiene el árbol de clasificación frente a un logit o probit?",
+    "en": "What advantage does the classification tree have over a logit or probit?"
+   },
+   "op": {
+    "es": [
+     "Usa menos datos",
+     "Siempre clasifica bien todas las observaciones",
+     "No impone la misma forma funcional a todas las crisis",
+     "Permite estimar elasticidades"
+    ],
+    "en": [
+     "It uses less data",
+     "It always classifies every observation correctly",
+     "It does not impose the same functional form on all crises",
+     "It allows estimating elasticities"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Además, la probabilidad de crisis aumenta a medida que se acumulan indicadores de vulnerabilidad.",
+    "en": "Also, crisis probability rises as vulnerability indicators accumulate."
+   },
+   "id": "crec-ciclo-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la variable con mayor importancia en el árbol?",
+    "en": "Which variable has the highest importance in the tree?"
+   },
+   "op": {
+    "es": [
+     "La tasa LIBOR",
+     "El crecimiento del PIB",
+     "Los depósitos bancarios",
+     "El déficit fiscal rezagado"
+    ],
+    "en": [
+     "The LIBOR rate",
+     "GDP growth",
+     "Bank deposits",
+     "The lagged fiscal deficit"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Hace la primera división y es el factor común a las cuatro recetas.",
+    "en": "It makes the first split and is common to all four recipes."
+   },
+   "id": "crec-ciclo-03-q3"
+  },
+  {
+   "q": {
+    "es": "En la primera receta, ¿qué umbral de déficit fiscal alcanza por sí solo para clasificar el año como de crisis?",
+    "en": "In the first recipe, what fiscal-deficit threshold alone suffices to classify a year as a crisis?"
+   },
+   "op": {
+    "es": [
+     "Más de 4,4% del PIB el año anterior",
+     "Más de 1% del PIB",
+     "Más de 10% del PIB",
+     "Cualquier déficit"
+    ],
+    "en": [
+     "Over 4.4% of GDP the previous year",
+     "Over 1% of GDP",
+     "Over 10% of GDP",
+     "Any deficit"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "No hace falta otro ingrediente; la probabilidad de crisis en ese nodo es 54%.",
+    "en": "No other ingredient is needed; crisis probability in that node is 54%."
+   },
+   "id": "crec-ciclo-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la receta más cara en costo medio de producto perdido?",
+    "en": "Which recipe is the most expensive in average output lost?"
+   },
+   "op": {
+    "es": [
+     "Déficit alto solo",
+     "Déficit moderado con atraso cambiario",
+     "Déficit moderado con caída fuerte de depósitos reales",
+     "Déficit moderado con deuda externa alta"
+    ],
+    "en": [
+     "High deficit alone",
+     "Moderate deficit with real overvaluation",
+     "Moderate deficit with a sharp fall in real deposits",
+     "Moderate deficit with high external debt"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "8,9% en promedio, presumiblemente porque implica además una crisis bancaria.",
+    "en": "8.9% on average, presumably because it also entails a banking crisis."
+   },
+   "id": "crec-ciclo-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las crisis muy profundas de 1974/76 y 1989/91 tienen un costo medido relativamente bajo?",
+    "en": "Why do the very deep 1974/76 and 1989/91 crises have relatively low measured costs?"
+   },
+   "op": {
+    "es": [
+     "Porque fueron cortas",
+     "Porque la tendencia de crecimiento desde la que se medía la caída ya era muy baja",
+     "Porque hubo ayuda del FMI",
+     "Porque se midieron con datos anuales"
+    ],
+    "en": [
+     "Because they were short",
+     "Because the growth trend against which the fall was measured was already very low",
+     "Because of IMF help",
+     "Because they were measured with annual data"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Recuperar el crecimiento previo exigía poco, tras décadas de crisis continuas.",
+    "en": "Regaining prior growth required little after decades of continual crises."
+   },
+   "id": "crec-ciclo-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué ocurrió tras las seis crisis muy profundas identificadas por el índice?",
+    "en": "What happened after the six very deep crises identified by the index?"
+   },
+   "op": {
+    "es": [
+     "Nada en lo político",
+     "Reformas constitucionales en todos los casos",
+     "Elecciones anticipadas pactadas",
+     "Golpe de Estado o renuncia del presidente antes de terminar su mandato"
+    ],
+    "en": [
+     "Nothing political",
+     "Constitutional reforms every time",
+     "Agreed early elections",
+     "A coup or the president's resignation before the end of the term"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los autores conjeturan, sin establecerlo formalmente, un canal institucional entre crisis.",
+    "en": "The authors conjecture, without formally establishing it, an institutional channel between crises."
+   },
+   "id": "crec-ciclo-03-q7"
+  },
+  {
+   "q": {
+    "es": "En la pesificación de 2002, ¿por qué hubo una gran transferencia a los deudores?",
+    "en": "In the 2002 'pesification', why was there a large transfer to debtors?"
+   },
+   "op": {
+    "es": [
+     "Porque se condonaron todas las deudas",
+     "Porque el 70% de los préstamos estaba en dólares y se convirtieron a pesos uno a uno",
+     "Porque subieron las tasas",
+     "Porque se dolarizó la economía"
+    ],
+    "en": [
+     "Because all debts were forgiven",
+     "Because 70% of loans were in dollars and were converted to pesos one to one",
+     "Because rates rose",
+     "Because the economy was dollarized"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La conversión a la paridad previa implicó una transferencia de 32.000 millones de dólares.",
+    "en": "Conversion at the prior parity implied a 32 billion dollar transfer."
+   },
+   "id": "crec-ciclo-03-q8"
+  }
+ ],
+ "palabras": 965,
+ "tarjetas": [
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede fechar una crisis cambiaria cuando el tipo de cambio está fijo?",
+    "en": "How can a currency crisis be dated when the exchange rate is fixed?"
+   },
+   "a": {
+    "es": "Con un índice de presión que sume depreciación, caída de reservas y suba de tasas, cada una ponderada por la inversa de su desvío: con tipo de cambio fijo la presión aparece primero en reservas y tasas. Amado, Cerro y Meloni (2006) lo usan para fechar 26 crisis argentinas.",
+    "en": "With a pressure index adding depreciation, reserve loss and rate increases, each weighted by the inverse of its standard deviation: under a peg, pressure shows first in reserves and rates. Amado, Cerro and Meloni (2006) use it to date 26 Argentine crises."
+   },
+   "id": "crec-ciclo-03-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué ventaja tiene un árbol de clasificación para estudiar crisis?",
+    "en": "What advantage does a classification tree offer for studying crises?"
+   },
+   "a": {
+    "es": "No impone una forma funcional común a todas las crisis y deja que distintas combinaciones de vulnerabilidades lleven a la crisis. Amado, Cerro y Meloni (2006) lo usan para encontrar cuatro «recetas» de crisis argentinas.",
+    "en": "It imposes no common functional form on all crises and lets different combinations of vulnerabilities lead to crisis. Amado, Cerro and Meloni (2006) use it to find four Argentine crisis 'recipes'."
+   },
+   "id": "crec-ciclo-03-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué ingredientes explican las crisis argentinas desde 1823?",
+    "en": "What ingredients explain Argentine crises since 1823?"
+   },
+   "a": {
+    "es": "Sobre todo domésticos: déficit fiscal, atraso cambiario, caída de depósitos bancarios y deuda externa alta respecto de las exportaciones; la LIBOR es el único condimento importado relevante. Es el hallazgo de Amado, Cerro y Meloni (2006).",
+    "en": "Mostly domestic: fiscal deficit, real overvaluation, falling bank deposits and high external debt relative to exports; LIBOR is the only relevant imported condiment. This is Amado, Cerro and Meloni's (2006) finding."
+   },
+   "id": "crec-ciclo-03-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una crisis cambiaria acompañada de caída de depósitos tiende a ser más costosa?",
+    "en": "Why does a currency crisis with falling deposits tend to be costlier?"
+   },
+   "a": {
+    "es": "Porque presumiblemente implica también una crisis bancaria. Amado, Cerro y Meloni (2006) encuentran que esa receta cuesta 8,9% del producto en promedio, frente a 2,9% de la receta de déficit alto.",
+    "en": "Because it presumably also involves a banking crisis. Amado, Cerro and Meloni (2006) find this recipe costs 8.9% of output on average, versus 2.9% for the high-deficit recipe."
+   },
+   "id": "crec-ciclo-03-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se mide el costo en producto de una crisis según la metodología del FMI (1998)?",
+    "en": "How is a crisis's output cost measured under the IMF (1998) method?"
+   },
+   "a": {
+    "es": "Sumando las diferencias entre el crecimiento tendencial y el observado desde la crisis hasta que el crecimiento vuelve a la tendencia; el tiempo hasta entonces es la recuperación. Amado, Cerro y Meloni (2006) la aplican a las crisis argentinas.",
+    "en": "By summing the gaps between trend and actual growth from the crisis until growth returns to trend; the time taken is the recovery. Amado, Cerro and Meloni (2006) apply it to Argentine crises."
+   },
+   "id": "crec-ciclo-03-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué comparar costos de crisis medidos contra la tendencia puede engañar?",
+    "en": "Why can comparing crisis costs measured against trend be misleading?"
+   },
+   "a": {
+    "es": "Porque si la tendencia ya es baja tras crisis repetidas, una crisis profunda puede registrar poco costo. Amado, Cerro y Meloni (2006) advierten que 1974/76 y 1989/91, muy profundas, costaron «solo» 6,5% y 7%.",
+    "en": "Because if the trend is already low after repeated crises, a deep crisis can register little cost. Amado, Cerro and Meloni (2006) warn that the very deep 1974/76 and 1989/91 crises cost 'only' 6.5% and 7%."
+   },
+   "id": "crec-ciclo-03-t6"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué una crisis económica puede aumentar la probabilidad de la siguiente?",
+    "en": "Why can one economic crisis raise the odds of the next?"
+   },
+   "a": {
+    "es": "Porque daña insumos clave como el capital humano, que emigra, y las instituciones, cuya interrupción genera incertidumbre. Amado, Cerro y Meloni (2006) conjeturan ese canal: las seis crisis muy profundas terminaron en golpe o renuncia presidencial.",
+    "en": "Because it damages key inputs such as human capital, which emigrates, and institutions, whose disruption breeds uncertainty. Amado, Cerro and Meloni (2006) conjecture this channel: all six very deep crises ended in a coup or presidential resignation."
+   },
+   "id": "crec-ciclo-03-t7"
+  }
+ ]
+}
