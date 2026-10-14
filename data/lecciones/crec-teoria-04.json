@@ -1,0 +1,349 @@
+{
+ "id": "crec-teoria-04",
+ "cat": "crec-teoria",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "Política macro, tipo de cambio real y precios del agro: Mundlak, Cavallo y Domenech (1990)",
+ "bajada": "Por qué en la Argentina bajar retenciones mueve poco el precio relativo de lo exportable, cómo el gasto, el déficit y la emisión apreciaron el tipo de cambio real entre 1913 y 1984, y qué habría pasado con una economía abierta desde 1930.",
+ "fuentes": [
+  1272
+ ],
+ "cita": "Mundlak, Cavallo y Domenech (1990), «Effects of macroeconomic policies on sectoral prices», World Bank Economic Review 4(1)",
+ "intro": "Yair Mundlak (Chicago), Domingo Cavallo y Roberto Domenech (Fundación Mediterránea, Córdoba) estudian una pregunta clave para la economía argentina: cómo las políticas que no apuntan a ningún sector en particular (comercio exterior, gasto público, déficit, emisión) terminan determinando los precios relativos del agro y de la industria a través del tipo de cambio real. Con datos de 1913 a 1984, estiman un modelo que reconoce que ningún producto es puramente transable ni puramente no transable, y simulan qué habría pasado con una apertura comercial y políticas macro consistentes desde 1930.",
+ "secciones": [
+  {
+   "t": "Tres bienes y el tipo de cambio real",
+   "p": [
+    "El punto de partida es el modelo de Dornbusch (1974) con tres sectores: exportables, importables y bienes domésticos (no transables). En una economía pequeña, los precios de los transables los fijan el precio mundial, el tipo de cambio nominal y el impuesto al comercio (positivo para importaciones, negativo para exportaciones, como las retenciones). El precio del bien doméstico se ajusta para equilibrar su oferta y su demanda internas.",
+    "De ahí sale que el precio del bien doméstico se mueve como un promedio de los precios de exportables e importables. El peso ω de los importables en ese promedio es clave: si es bajo, el precio de los no transables sigue de cerca al de los exportables. En la Argentina, las estimaciones previas habían encontrado valores bajos de ω."
+   ],
+   "eq": [
+    "P_j = P_j^*\\, E\\, T_j, \\quad j = x, m",
+    "d\\ln P_h = (1-\\omega)\\, d\\ln P_x + \\omega\\, d\\ln P_m"
+   ],
+   "nota": "P_j* es el precio mundial, E el tipo de cambio nominal y T_j = 1 + t_j el factor de impuesto al comercio. P_h es el precio del bien doméstico. ω mide la sustituibilidad entre importables y bienes domésticos."
+  },
+  {
+   "t": "Por qué bajar retenciones rinde poco",
+   "p": [
+    "El valor estimado de ω fue de 0,6 a 0,7 antes de 1925, cuando la economía era muy abierta y el precio de los no transables se movía con el de los importados. Cayó a medida que crecieron las restricciones a las importaciones, tocó sus mínimos a comienzos de los cincuenta y desde fines de esa década osciló alrededor de 0,25.",
+    "La consecuencia es contraintuitiva. Si se baja la retención, el precio interno del exportable sube, pero con ω = 0,25 el precio del bien doméstico sube 75% de ese aumento. El tipo de cambio real para los exportables solo mejora 25% de la suba inicial: una baja de 20% en las retenciones produce apenas un aumento de 5% en el precio del exportable respecto del bien doméstico. El mecanismo: más incentivo a exportar sube el ingreso, aumenta la demanda de todo, y como las restricciones a la importación desvían demanda hacia el bien doméstico, su precio sube y absorbe buena parte de la mejora. Abrir las importaciones permitiría que más demanda se canalice afuera y que la baja de retenciones rinda más."
+   ]
+  },
+  {
+   "t": "La macro también aprecia",
+   "p": [
+    "El modelo se amplía con variables de política macro: consumo del gobierno, déficit financiado con deuda, expansión monetaria por encima del crecimiento real y del tipo de cambio, e ingreso. Sus efectos dependen de la apertura comercial (comercio sobre ingreso) y de la financiera (tipo de cambio oficial sobre el paralelo).",
+    "Los resultados para 1916-1984 muestran que el consumo del gobierno aprecia el tipo de cambio real, porque el Estado gasta más en bienes domésticos que el sector privado al que grava (coeficiente promedio de −0,52). El déficit financiado con deuda también lo aprecia (−1,13 en promedio): con apertura financiera, por la entrada de capitales; con mercado cerrado, por desplazamiento del gasto privado. La expansión monetaria tiene una elasticidad de −0,44 con economía financieramente abierta: un aumento de 10% reduce el tipo de cambio real 4,4%, y el efecto es mayor cuanto más cerrada está la economía, porque los flujos de capital no amortiguan los shocks nominales. La regresión explica el 87% de la variación.",
+    "La conclusión de trabajos previos que confirman aquí es que la sobrevaluación de la moneda argentina no vino solo de la política comercial sino también de las políticas macro y de ingresos."
+   ]
+  },
+  {
+   "t": "Cuán transable es cada sector",
+   "p": [
+    "Como cada sector tiene un componente transable y otro doméstico, su precio es un promedio de ambos, con un peso α que mide su grado de transabilidad. Antes de 1930, el componente transable del agro rondaba 75% y el del resto de la economía, 55%. Ambos cayeron con las restricciones al comercio hasta sus mínimos entre 1947 y 1954. Desde 1955 la transabilidad del agro se recuperó y en los ochenta volvió a valores parecidos a los de antes de 1930, pero la del sector no agrícola quedó alrededor de 42%.",
+    "La apertura comercial, medida como comercio sobre ingreso, se derrumbó tras la Gran Depresión. Salvo en 1946-47, cuando la demanda mundial llevó el comercio a cerca de 40% del ingreso, siguió cayendo hasta un mínimo de alrededor de 20% en 1952-55, y desde 1956 osciló entre 20% y 25%."
+   ]
+  },
+  {
+   "t": "El contrafáctico: abrir en 1930",
+   "p": [
+    "Con todo el sistema estimado simultáneamente, los autores simulan una política alternativa desde 1930: eliminar las retenciones, un arancel uniforme a la importación de 10%, sin los saltos insostenibles del gasto público de 1946-1953 y desde 1973, con menos endeudamiento y apertura financiera sin mercado paralelo. Advierten que el intento de apertura de fines de los setenta fracasó por políticas inconsistentes.",
+    "El resultado: el volumen relativo de comercio habría sido casi 70% mayor, el precio relativo del agro en promedio 40% más alto y el del sector privado no agrícola casi 20% más alto, siempre respecto de los bienes domésticos, en el período 1930-1984. En otro trabajo los autores muestran que esos incentivos habrían tenido un efecto muy positivo sobre la acumulación de capital y el crecimiento.",
+    "Un límite evidente (lectura propia) es que un contrafáctico de más de cincuenta años supone que las relaciones estimadas se mantienen bajo un régimen muy distinto y no modela cómo habría reaccionado la oferta, algo que los propios autores reconocen al señalar que más oferta habría atenuado los cambios de precios. Vale además notar que Cavallo, uno de los autores, aplicaría como ministro una apertura con tipo de cambio fijo en los noventa."
+   ]
+  }
+ ],
+ "claves": [
+  "Ningún bien es puramente transable: el precio de cada sector mezcla componentes transables y domésticos.",
+  "Con ω cerca de 0,25 desde fines de los cincuenta, bajar 20% las retenciones mejora solo 5% el precio relativo del exportable.",
+  "Las restricciones a la importación desvían demanda a los no transables y hacen que su precio absorba la mejora.",
+  "Gasto público, déficit financiado con deuda y emisión apreciaron el tipo de cambio real; el efecto depende de la apertura.",
+  "Abrir desde 1930 habría dado 70% más comercio y precios relativos 40% más altos para el agro y casi 20% para el resto."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué mide ω en el modelo de Mundlak, Cavallo y Domenech?",
+    "en": "What does ω measure in the Mundlak, Cavallo and Domenech model?"
+   },
+   "op": {
+    "es": [
+     "La participación del agro en el PIB",
+     "El peso de los importables en el movimiento del precio del bien doméstico",
+     "La tasa de retención a las exportaciones",
+     "La elasticidad de la demanda de dinero"
+    ],
+    "en": [
+     "Agriculture's share of GDP",
+     "The weight of importables in the movement of the home-good price",
+     "The export tax rate",
+     "Money-demand elasticity"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si ω es bajo, el precio de los no transables sigue de cerca al de los exportables.",
+    "en": "If ω is low, non-tradable prices closely track exportable prices."
+   },
+   "id": "crec-teoria-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo evolucionó ω en la Argentina?",
+    "en": "How did ω evolve in Argentina?"
+   },
+   "op": {
+    "es": [
+     "Estuvo siempre cerca de 1",
+     "Subió continuamente desde 1913",
+     "Fue 0,6-0,7 antes de 1925, cayó con las restricciones y osciló cerca de 0,25 desde fines de los cincuenta",
+     "Fue cero hasta 1955"
+    ],
+    "en": [
+     "Always near 1",
+     "Rose steadily from 1913",
+     "Was 0.6-0.7 before 1925, fell with restrictions and hovered near 0.25 from the late 1950s",
+     "Was zero until 1955"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La economía cerrada redujo la sustitución entre importados y bienes domésticos.",
+    "en": "A closed economy reduced substitution between imports and home goods."
+   },
+   "id": "crec-teoria-04-q2"
+  },
+  {
+   "q": {
+    "es": "Con ω = 0,25, ¿qué produce una baja de 20% en las retenciones?",
+    "en": "With ω = 0.25, what does a 20% cut in export taxes produce?"
+   },
+   "op": {
+    "es": [
+     "Un aumento de 20% del precio relativo del exportable",
+     "Un aumento de solo 5% del precio del exportable respecto del bien doméstico",
+     "Una caída del precio del exportable",
+     "Ningún efecto"
+    ],
+    "en": [
+     "A 20% rise in the exportable's relative price",
+     "Only a 5% rise in the exportable's price relative to the home good",
+     "A fall in the exportable's price",
+     "No effect"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El precio del bien doméstico absorbe 75% de la suba del exportable.",
+    "en": "The home-good price absorbs 75% of the exportable's rise."
+   },
+   "id": "crec-teoria-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el consumo del gobierno aprecia el tipo de cambio real?",
+    "en": "Why does government consumption appreciate the real exchange rate?"
+   },
+   "op": {
+    "es": [
+     "Porque el gobierno gasta proporcionalmente más en bienes domésticos que el sector privado al que grava",
+     "Porque el gobierno importa más",
+     "Porque reduce la emisión",
+     "Porque baja los aranceles"
+    ],
+    "en": [
+     "Because government spends proportionally more on home goods than the private sector it taxes",
+     "Because government imports more",
+     "Because it reduces money growth",
+     "Because it cuts tariffs"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El cambio de composición del gasto sube el precio de los no transables.",
+    "en": "The shift in spending composition raises non-tradable prices."
+   },
+   "id": "crec-teoria-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿De qué depende el efecto de la expansión monetaria sobre el tipo de cambio real?",
+    "en": "What does the effect of monetary expansion on the real exchange rate depend on?"
+   },
+   "op": {
+    "es": [
+     "Solo de la inflación externa",
+     "Del precio de la soja",
+     "De la apertura financiera: es mayor cuando la economía está más cerrada y hay brecha cambiaria",
+     "No tiene efecto"
+    ],
+    "en": [
+     "Only on foreign inflation",
+     "On soybean prices",
+     "On financial openness: it is larger when the economy is more closed with a parallel-market gap",
+     "It has no effect"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con apertura financiera los flujos de capital amortiguan los shocks nominales; la elasticidad es −0,44.",
+    "en": "With financial openness, capital flows dampen nominal shocks; the elasticity is −0.44."
+   },
+   "id": "crec-teoria-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasó con la transabilidad del sector no agrícola desde 1955?",
+    "en": "What happened to non-agricultural tradability from 1955?"
+   },
+   "op": {
+    "es": [
+     "Volvió a 75%",
+     "Quedó alrededor de 42%, por debajo del 55% previo a 1930",
+     "Llegó a 100%",
+     "Fue igual a la del agro"
+    ],
+    "en": [
+     "It returned to 75%",
+     "It stayed around 42%, below the pre-1930 55%",
+     "It reached 100%",
+     "It matched agriculture's"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El agro, en cambio, recuperó en los ochenta niveles parecidos a los de antes de 1930.",
+    "en": "Agriculture, by contrast, recovered pre-1930-like levels in the 1980s."
+   },
+   "id": "crec-teoria-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué incluye la política alternativa que simulan desde 1930?",
+    "en": "What does the alternative policy simulated from 1930 include?"
+   },
+   "op": {
+    "es": [
+     "Cierre total del comercio",
+     "Retenciones de 30% y aranceles altos",
+     "Eliminación de retenciones, arancel uniforme de 10%, sin los saltos insostenibles del gasto y con apertura financiera",
+     "Dolarización"
+    ],
+    "en": [
+     "Full trade closure",
+     "30% export taxes and high tariffs",
+     "No export taxes, a uniform 10% tariff, no unsustainable spending jumps and financial openness",
+     "Dollarization"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Combina apertura comercial con políticas macro consistentes.",
+    "en": "It combines trade opening with consistent macro policies."
+   },
+   "id": "crec-teoria-04-q7"
+  },
+  {
+   "q": {
+    "es": "Un gobierno baja retenciones pero mantiene fuertes restricciones a las importaciones. Según el modelo, ¿qué cabe esperar?",
+    "en": "A government cuts export taxes but keeps tight import restrictions. Per the model, what should be expected?"
+   },
+   "op": {
+    "es": [
+     "Que los no transables absorban buena parte de la mejora y el incentivo exportador suba poco",
+     "Que el precio relativo del exportable suba en la misma proporción",
+     "Que caiga el precio de los no transables",
+     "Que se aprecie el tipo de cambio nominal"
+    ],
+    "en": [
+     "That non-tradables absorb much of the gain and the export incentive rises little",
+     "That the exportable's relative price rises one-for-one",
+     "That non-tradable prices fall",
+     "That the nominal rate appreciates"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Abrir las importaciones permitiría que la mayor demanda se canalice afuera y no al bien doméstico.",
+    "en": "Opening imports would let higher demand go abroad rather than to the home good."
+   },
+   "id": "crec-teoria-04-q8"
+  }
+ ],
+ "palabras": 938,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una baja de retenciones puede mejorar poco el precio relativo de los exportables en una economía con restricciones a importar?",
+    "en": "Why can cutting export taxes do little for exportables' relative price in an economy with import restrictions?"
+   },
+   "a": {
+    "es": "Porque el mayor ingreso eleva la demanda de bienes domésticos y, al no poder canalizarse a importaciones, sube su precio y absorbe la mejora. Mundlak, Cavallo y Domenech (1990) estiman que en la Argentina una baja de 20% solo mejora 5% el precio relativo.",
+    "en": "Because higher income raises demand for home goods and, unable to flow into imports, lifts their price and absorbs the gain. Mundlak, Cavallo and Domenech (1990) estimate a 20% cut improves the relative price by only 5% in Argentina."
+   },
+   "id": "crec-teoria-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa el grado de transabilidad de un sector?",
+    "en": "What does a sector's degree of tradability mean?"
+   },
+   "a": {
+    "es": "La proporción de su precio que corresponde a componentes transables, frente a los domésticos. Mundlak, Cavallo y Domenech (1990) estiman que en la Argentina era de 75% en el agro y 55% en el resto antes de 1930.",
+    "en": "The share of its price due to tradable rather than domestic components. Mundlak, Cavallo and Domenech (1990) estimate it was 75% in agriculture and 55% elsewhere in Argentina before 1930."
+   },
+   "id": "crec-teoria-04-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué efecto tiene la expansión monetaria sobre el tipo de cambio real argentino según Mundlak, Cavallo y Domenech?",
+    "en": "What effect does monetary expansion have on Argentina's real exchange rate per Mundlak, Cavallo and Domenech?"
+   },
+   "a": {
+    "es": "Lo aprecia: con apertura financiera, un aumento de 10% del dinero por encima del ingreso en precios externos reduce el tipo de cambio real 4,4%, y más si la economía está cerrada (Mundlak, Cavallo y Domenech, 1990).",
+    "en": "It appreciates it: with financial openness, a 10% rise in money above income at foreign prices cuts the real exchange rate 4.4%, more if the economy is closed (Mundlak, Cavallo and Domenech, 1990)."
+   },
+   "id": "crec-teoria-04-t3"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Pueden políticas no sectoriales afectar la rentabilidad del agro?",
+    "en": "Can non-sectoral policies affect farm profitability?"
+   },
+   "a": {
+    "es": "Sí: gasto público, déficit y emisión aprecian el tipo de cambio real y bajan el precio relativo de los transables. Mundlak, Cavallo y Domenech (1990) concluyen que la sobrevaluación argentina vino de la política comercial y también de la macro.",
+    "en": "Yes: public spending, deficits and money growth appreciate the real exchange rate and lower tradables' relative price. Mundlak, Cavallo and Domenech (1990) conclude Argentina's overvaluation came from trade policy and from macro policy too."
+   },
+   "id": "crec-teoria-04-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué habría pasado, según la simulación, si la Argentina hubiera abierto su comercio desde 1930 con macro consistente?",
+    "en": "What would have happened, per the simulation, had Argentina opened trade from 1930 with consistent macro policy?"
+   },
+   "a": {
+    "es": "Casi 70% más comercio relativo y precios relativos en promedio 40% más altos para el agro y casi 20% para el sector privado no agrícola en 1930-1984 (Mundlak, Cavallo y Domenech, 1990).",
+    "en": "Almost 70% more relative trade and relative prices on average 40% higher for agriculture and almost 20% for private non-agriculture over 1930-1984 (Mundlak, Cavallo and Domenech, 1990)."
+   },
+   "id": "crec-teoria-04-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué cautela exige un contrafáctico de política de varias décadas estimado con datos históricos?",
+    "en": "What caution does a decades-long policy counterfactual estimated on historical data require?"
+   },
+   "a": {
+    "es": "Supone que las relaciones estimadas siguen valiendo bajo un régimen muy distinto y no captura toda la respuesta de la oferta, que atenuaría los cambios de precios; los propios Mundlak, Cavallo y Domenech (1990) lo señalan.",
+    "en": "It assumes estimated relations hold under a very different regime and misses part of the supply response, which would dampen price changes; Mundlak, Cavallo and Domenech (1990) note this themselves."
+   },
+   "id": "crec-teoria-04-t6"
+  }
+ ]
+}
