@@ -1,0 +1,356 @@
+{
+ "id": "crec-ciclo-06",
+ "cat": "crec-ciclo",
+ "orden": 2,
+ "minutos": 13,
+ "titulo": "Entender los ciclos reales: Plosser (1989)",
+ "bajada": "Por qué la teoría del ciclo real parte del modelo neoclásico de acumulación, cómo responde Robinson Crusoe a los shocks de productividad, qué tan bien reproduce la economía de Estados Unidos entre 1954 y 1985 y qué le falta.",
+ "fuentes": [
+  1347
+ ],
+ "cita": "Plosser (1989), «Understanding real business cycles», Journal of Economic Perspectives 3(3)",
+ "intro": "En los sesenta muchos economistas creían que el ciclo había muerto: el modelo keynesiano indicaba cómo mover las palancas monetarias y fiscales, y el único dilema era elegir un punto en la curva de Phillips. La vuelta del ciclo y de la inflación en los setenta fue un despertar brusco. Para Charles Plosser, el defecto esencial del modelo keynesiano era la falta de fundamentos en la teoría de la elección. Friedman mostró que la curva de Phillips de largo plazo debía ser vertical, y Lucas que las relaciones de comportamiento keynesianas no servían para evaluar cambios de política, porque las expectativas sobre la política futura las alteran. Este ensayo presenta la alternativa: los modelos de ciclo real.",
+ "secciones": [
+  {
+   "t": "Primero, entender una economía que funciona bien",
+   "p": [
+    "La dinámica keynesiana se agregaba con aceleradores y ecuaciones de ajuste de precios que no salían de ninguna maximización: una regla de comportamiento valía tanto como otra. Plosser, siguiendo a Hicks, sostiene que para entender los ciclos primero hay que entender cómo fluctúa una economía dinámica que funciona perfectamente. Es lógicamente imposible atribuir buena parte de las fluctuaciones a fallas de mercado sin saber qué fluctuaciones habría sin ellas.",
+    "Los modelos de ciclo real preguntan cómo responden en el tiempo individuos racionales que maximizan a cambios en su entorno, y qué implica eso para los agregados. Plosser prefiere hablar de «fluctuaciones» antes que de «ciclos», porque casi toda la macroeconomía moderna descarta que haya periodicidad real: siguiendo a Slutsky, los vaivenes son la acumulación de eventos aleatorios."
+   ]
+  },
+  {
+   "t": "Robinson Crusoe y el shock de productividad",
+   "p": [
+    "El punto de partida es el modelo neoclásico de acumulación de capital de Cass, Koopmans y Solow, leído como modelo de dinámica y no solo de crecimiento. Agentes idénticos y de vida infinita valoran consumo y ocio; producen con rendimientos constantes, capital que se deprecia y trabajo, sujetos a cambios temporarios de productividad. Como todos son iguales, basta resolver el problema de un Robinson Crusoe representativo: sus elecciones coinciden con las del equilibrio competitivo.",
+    "Ante un aumento temporario de la productividad, Crusoe no consume todo el excedente: como también valora el futuro, invierte más. El efecto sobre el trabajo es ambiguo, porque la productividad alta lo incentiva y la mayor riqueza lo desalienta; con parámetros plausibles domina la sustitución y trabaja más. El shock se propaga: producto y consumo quedan correlacionados en el tiempo aunque los shocks sean puramente temporarios. Si el shock es más persistente, pesa más el efecto riqueza: sube más el consumo y menos la inversión y el trabajo.",
+    "Clave: no hay fallas de mercado, así que las respuestas son óptimas y la economía es eficiente en todo momento. Un planificador que obligara a Crusoe a trabajar o ahorrar más probablemente reduciría el bienestar. Las fluctuaciones son preferidas a un sendero sin ciclos. Además, como las reglas de decisión dependen explícitamente de las acciones futuras del gobierno, sirven para evaluar políticas sin caer en la crítica de Lucas."
+   ]
+  },
+  {
+   "t": "Oferta, demanda y crecimiento integrados",
+   "p": [
+    "Llamar a estos modelos «de shocks de oferta» es engañoso: un cambio tecnológico mueve la oferta y también la demanda, vía riqueza y decisión trabajo-ocio. Y nada impide meter shocks de preferencias o de gasto público, que algunos llamarían de demanda.",
+    "Plosser integra crecimiento y ciclo. Solow había estimado para 1909-1949 que la productividad creció 1,5% anual y el producto per cápita 1,7%, atribuyendo cerca del 85% del crecimiento al cambio tecnológico. Nelson y Plosser (1982) mostraron que el producto y la tecnología se comportan como paseos aleatorios: los shocks alteran el nivel para siempre y no hay tendencia a volver a una recta. Por eso quitar una tendencia determinística y tratar los desvíos como ciclo puede ser econométricamente incorrecto.",
+    "Con progreso técnico permanente que aumenta la productividad del trabajo, producto, consumo e inversión comparten una misma tendencia estocástica, y las horas no crecen. Un aumento permanente de 1% en la productividad termina subiendo 1% el capital, el consumo, el producto y la inversión; en la transición la inversión sube mucho y el trabajo también. Las fluctuaciones nacen de los mismos factores que generan el crecimiento."
+   ]
+  },
+  {
+   "t": "La prueba con Estados Unidos, 1954-1985",
+   "p": [
+    "Plosser construye una serie de tecnología a la Solow: creció 0,8% anual en promedio, con desvío de 1,9%, un máximo de 4% y un mínimo de −3,5%, y se parece a un paseo aleatorio. La introduce en un modelo con producción Cobb-Douglas y preferencias logarítmicas, y compara las tasas de crecimiento simuladas con las observadas.",
+    "El modelo acierta las medias de producto, consumo y horas, y el orden de volatilidades: inversión, producto, consumo. La correlación entre las series predichas y las reales va de 0,52 para los salarios a 0,87 para el producto. Para muchos economistas, que un modelo sin gobierno, sin dinero, sin fallas de mercado, con expectativas racionales y agentes idénticos replique así la experiencia es sorprendente. La mayor discrepancia está en las horas: el desvío del modelo es menos de la mitad del observado."
+   ]
+  },
+  {
+   "t": "Agenda pendiente",
+   "p": [
+    "Ni los shocks tecnológicos ni la eficiencia son necesarios. Con impuestos distorsivos y gasto público el equilibrio deja de ser óptimo; con presupuesto equilibrado, un shock positivo permite bajar impuestos y vuelve más volátiles el trabajo y la inversión.",
+    "Quedan problemas abiertos: modelos de varios sectores para explicar adelantos y rezagos; mercados laborales que generen la volatilidad de las horas sin contradecir la baja elasticidad de oferta laboral estimada con microdatos (trabajo indivisible, preferencias no separables en el tiempo, heterogeneidad); crecimiento endógeno, donde shocks temporarios tienen efectos permanentes; el papel del dinero, poco entendido; y la estrategia empírica, porque la calibración de Kydland y Prescott no ofrece un criterio formal de ajuste. Plosser concluye que la teoría está en su infancia, pero ya cambió el estándar con que se juzga a la macroeconomía."
+   ]
+  }
+ ],
+ "claves": [
+  "Para atribuir fluctuaciones a fallas de mercado hay que saber primero cómo fluctúa una economía eficiente.",
+  "Ante un shock temporario de productividad, el agente invierte y trabaja más: el shock se propaga y genera persistencia.",
+  "Sin fallas de mercado, las fluctuaciones son óptimas y una política que las suavice puede reducir el bienestar.",
+  "Si la productividad sigue un paseo aleatorio, crecimiento y ciclo tienen la misma fuente y quitar una tendencia determinística es incorrecto.",
+  "Alimentado con la serie de Solow para 1954-1985, el modelo correlaciona 0,87 con el producto real; su punto débil son las horas."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Plosser, ¿cuál era el defecto esencial del modelo keynesiano?",
+    "en": "According to Plosser, what was the Keynesian model's essential flaw?"
+   },
+   "op": {
+    "es": [
+     "Que ignoraba el gasto público",
+     "Que carecía de fundamentos coherentes en la teoría de la elección",
+     "Que suponía precios flexibles",
+     "Que no tenía curva de Phillips"
+    ],
+    "en": [
+     "That it ignored public spending",
+     "That it lacked coherent choice-theoretic foundations",
+     "That it assumed flexible prices",
+     "That it had no Phillips curve"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Friedman y Lucas mostraron ejemplos de ese defecto en la curva de Phillips y la evaluación de políticas.",
+    "en": "Friedman and Lucas showed examples of this flaw in the Phillips curve and policy evaluation."
+   },
+   "id": "crec-ciclo-06-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué hay que entender primero una economía sin fallas de mercado?",
+    "en": "Why must an economy without market failures be understood first?"
+   },
+   "op": {
+    "es": [
+     "Porque las fallas no existen",
+     "Porque es más fácil de estimar",
+     "Porque sin saber cómo fluctuaría, no se puede atribuir parte de las fluctuaciones a fallas",
+     "Porque así lo exige la contabilidad nacional"
+    ],
+    "en": [
+     "Because failures do not exist",
+     "Because it is easier to estimate",
+     "Because without knowing how it would fluctuate, fluctuations cannot be attributed to failures",
+     "Because national accounting requires it"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el programa de Hicks: el equilibrio dinámico idealizado como vara para medir el desequilibrio.",
+    "en": "It is Hicks's program: idealized dynamic equilibrium as the yardstick for disequilibrium."
+   },
+   "id": "crec-ciclo-06-q2"
+  },
+  {
+   "q": {
+    "es": "Ante un aumento temporario de la productividad, ¿qué hace Robinson Crusoe en el modelo?",
+    "en": "Facing a temporary productivity rise, what does Robinson Crusoe do in the model?"
+   },
+   "op": {
+    "es": [
+     "Invierte más y, con parámetros plausibles, trabaja más",
+     "Consume todo el excedente",
+     "Reduce la inversión",
+     "Deja de trabajar"
+    ],
+    "en": [
+     "Invests more and, with plausible parameters, works more",
+     "Consumes the whole surplus",
+     "Cuts investment",
+     "Stops working"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Así el shock se propaga y genera correlación en el tiempo aunque sea temporario.",
+    "en": "That propagates the shock and creates serial correlation even if it is temporary."
+   },
+   "id": "crec-ciclo-06-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué implicancia normativa tiene el modelo básico de ciclo real?",
+    "en": "What normative implication does the basic RBC model have?"
+   },
+   "op": {
+    "es": [
+     "Que conviene estabilizar el producto",
+     "Que la política monetaria debe ser activa",
+     "Que el gobierno debe forzar más ahorro",
+     "Que las fluctuaciones son óptimas y forzar otras decisiones probablemente reduce el bienestar"
+    ],
+    "en": [
+     "That output should be stabilized",
+     "That monetary policy should be active",
+     "That government should force more saving",
+     "That fluctuations are optimal and forcing other choices likely reduces welfare"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin fallas de mercado, la economía es eficiente en todo momento.",
+    "en": "With no market failures, the economy is efficient at all times."
+   },
+   "id": "crec-ciclo-06-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Plosser considera engañoso llamarlos modelos «de shocks de oferta»?",
+    "en": "Why does Plosser find calling them 'supply shock' models misleading?"
+   },
+   "op": {
+    "es": [
+     "Porque no tienen oferta",
+     "Porque un shock tecnológico mueve oferta y demanda, y pueden incluir shocks de preferencias o de gasto",
+     "Porque solo tienen shocks monetarios",
+     "Porque la demanda es fija"
+    ],
+    "en": [
+     "Because they have no supply",
+     "Because a technology shock moves supply and demand, and they can include taste or spending shocks",
+     "Because they only have monetary shocks",
+     "Because demand is fixed"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El cambio tecnológico afecta la demanda vía riqueza y decisión trabajo-ocio.",
+    "en": "Technological change affects demand via wealth and the labor-leisure choice."
+   },
+   "id": "crec-ciclo-06-q5"
+  },
+  {
+   "q": {
+    "es": "Si la productividad sigue un paseo aleatorio, ¿qué problema tiene quitar una tendencia determinística?",
+    "en": "If productivity follows a random walk, what is wrong with removing a deterministic trend?"
+   },
+   "op": {
+    "es": [
+     "Ninguno",
+     "Exagera el crecimiento",
+     "Supone que los desvíos vuelven a la tendencia, cuando los shocks cambian el nivel para siempre",
+     "Elimina la inflación"
+    ],
+    "en": [
+     "Nothing",
+     "It exaggerates growth",
+     "It assumes deviations return to trend, when shocks change the level permanently",
+     "It removes inflation"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Nelson y Plosser (1982) mostraron que muchas series se comportan como paseos aleatorios.",
+    "en": "Nelson and Plosser (1982) showed many series behave like random walks."
+   },
+   "id": "crec-ciclo-06-q6"
+  },
+  {
+   "q": {
+    "es": "Al simular la economía de EE.UU. 1954-1985, ¿cuál es la mayor discrepancia del modelo?",
+    "en": "Simulating the US economy 1954-1985, what is the model's biggest discrepancy?"
+   },
+   "op": {
+    "es": [
+     "La media del consumo",
+     "La correlación del producto",
+     "El orden de volatilidades",
+     "Las horas trabajadas: su volatilidad es menos de la mitad de la observada"
+    ],
+    "en": [
+     "Mean consumption",
+     "Output correlation",
+     "Volatility ranking",
+     "Hours worked: their volatility is under half the observed"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El modelo correlaciona 0,87 con el producto y 0,52 con los salarios, pero subestima la volatilidad de las horas.",
+    "en": "The model correlates 0.87 with output and 0.52 with wages, but understates hours volatility."
+   },
+   "id": "crec-ciclo-06-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué crítica empírica reconoce Plosser a la calibración de Kydland y Prescott?",
+    "en": "What empirical criticism of Kydland and Prescott's calibration does Plosser acknowledge?"
+   },
+   "op": {
+    "es": [
+     "Que no ofrece una definición formal de buen ajuste",
+     "Que usa demasiados datos",
+     "Que exige dinero en el modelo",
+     "Que no usa preferencias"
+    ],
+    "en": [
+     "That it offers no formal definition of good fit",
+     "That it uses too much data",
+     "That it requires money in the model",
+     "That it uses no preferences"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por eso los modelos deberán pasar pruebas empíricas más exigentes.",
+    "en": "Hence the models will need to pass stricter empirical tests."
+   },
+   "id": "crec-ciclo-06-q8"
+  }
+ ],
+ "palabras": 931,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué una teoría del ciclo debería partir de una economía sin fallas de mercado?",
+    "en": "Why should a cycle theory start from an economy without market failures?"
+   },
+   "a": {
+    "es": "Porque no se puede atribuir una parte de las fluctuaciones a fallas sin saber cómo fluctuaría la economía sin ellas. Plosser (1989) retoma así el programa de Hicks y lo convierte en la base del enfoque de ciclo real.",
+    "en": "Because part of fluctuations cannot be attributed to failures without knowing how the economy would fluctuate without them. Plosser (1989) thus revives Hicks's program as the basis of the RBC approach."
+   },
+   "id": "crec-ciclo-06-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo genera persistencia un shock de productividad puramente temporario?",
+    "en": "How does a purely temporary productivity shock generate persistence?"
+   },
+   "a": {
+    "es": "El agente invierte parte del producto extra para consumir más en el futuro y trabaja más por sustitución intertemporal; el mayor capital eleva el producto de los períodos siguientes. Plosser (1989) lo explica con Robinson Crusoe.",
+    "en": "The agent invests part of the extra output to consume more later and works more through intertemporal substitution; the larger capital stock lifts output in later periods. Plosser (1989) explains it with Robinson Crusoe."
+   },
+   "id": "crec-ciclo-06-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué no conviene clasificar los shocks tecnológicos como shocks de oferta?",
+    "en": "Why classify technology shocks as supply shocks with caution?"
+   },
+   "a": {
+    "es": "Porque cambian la oferta y también la demanda, vía riqueza y elección entre trabajo y ocio; y el mismo marco admite shocks de preferencias o de gasto. Plosser (1989) advierte que la evidencia de shocks de demanda no refuta por sí sola el enfoque.",
+    "en": "Because they shift supply and also demand, via wealth and the labor-leisure choice; and the same framework admits taste or spending shocks. Plosser (1989) warns that evidence of demand shocks does not by itself refute the approach."
+   },
+   "id": "crec-ciclo-06-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué implica que el producto tenga un componente de paseo aleatorio?",
+    "en": "What does it imply if output has a random-walk component?"
+   },
+   "a": {
+    "es": "Que los shocks cambian el nivel para siempre y no hay tendencia a volver a una recta, así que quitar una tendencia determinística y llamar ciclo a los desvíos puede ser incorrecto. Plosser (1989) se apoya en Nelson y Plosser (1982).",
+    "en": "That shocks change the level permanently with no reversion to a line, so removing a deterministic trend and calling deviations the cycle can be wrong. Plosser (1989) builds on Nelson and Plosser (1982)."
+   },
+   "id": "crec-ciclo-06-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo integra el modelo de ciclo real el crecimiento y las fluctuaciones?",
+    "en": "How does the RBC model integrate growth and fluctuations?"
+   },
+   "a": {
+    "es": "La misma productividad que aumenta el trabajo y crece como paseo aleatorio genera la tendencia común de producto, consumo e inversión y, en la transición a cada nuevo sendero, las fluctuaciones. Plosser (1989) lo presenta como un enfoque integrado.",
+    "en": "The same labor-augmenting productivity that grows as a random walk creates the common trend of output, consumption and investment and, during transitions to each new path, the fluctuations. Plosser (1989) presents it as an integrated approach."
+   },
+   "id": "crec-ciclo-06-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tan bien replica un modelo de ciclo real simple la economía de EE.UU. de posguerra?",
+    "en": "How well does a simple RBC model replicate the postwar US economy?"
+   },
+   "a": {
+    "es": "Con la serie de Solow para 1954-1985, las series predichas correlacionan entre 0,52 (salarios) y 0,87 (producto) con las reales y respetan el orden de volatilidades; falla en la volatilidad de las horas. Es el ejercicio de Plosser (1989).",
+    "en": "With the Solow series for 1954-1985, predicted series correlate between 0.52 (wages) and 0.87 (output) with actual ones and respect the volatility ranking; it fails on hours volatility. This is Plosser's (1989) exercise."
+   },
+   "id": "crec-ciclo-06-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué pasa en un modelo de ciclo real con presupuesto equilibrado e impuestos distorsivos?",
+    "en": "What happens in an RBC model with a balanced budget and distortionary taxes?"
+   },
+   "a": {
+    "es": "Un shock positivo de productividad permite bajar la tasa del impuesto, lo que refuerza el aumento de la productividad neta del trabajo y vuelve más volátiles las horas y la inversión; el equilibrio deja de ser óptimo. Plosser (1989) cita a King, Plosser y Rebelo.",
+    "en": "A positive productivity shock allows a lower tax rate, reinforcing after-tax labor productivity and making hours and investment more volatile; equilibrium is no longer optimal. Plosser (1989) cites King, Plosser and Rebelo."
+   },
+   "id": "crec-ciclo-06-t7"
+  }
+ ]
+}
