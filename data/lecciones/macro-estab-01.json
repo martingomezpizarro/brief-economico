@@ -1,0 +1,353 @@
+{
+ "id": "macro-estab-01",
+ "cat": "macro-estab",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "La macroeconomía del populismo: Dornbusch y Edwards (1992)",
+ "bajada": "Cuatro fases que se repiten de país en país: reactivación con redistribución, cuellos de botella, crisis y estabilización ortodoxa. Y por qué el salario real termina más bajo que al principio.",
+ "fuentes": [
+  1216
+ ],
+ "cita": "Dornbusch y Edwards (1992), «La macroeconomía del populismo», en Macroeconomía del populismo en la América Latina, FCE",
+ "intro": "Rudiger Dornbusch y Sebastián Edwards organizaron a fines de los ochenta una conferencia con estudios de casos de Argentina, Brasil, Chile, México, Perú y Nicaragua. Este capítulo introductorio, que los demás autores usaron como marco común, propone una tesis fuerte: aunque la política de cada experiencia fue muy distinta, su macroeconomía fue muy parecida. Los autores aclaran que no dudan de la sinceridad de los gobernantes ni de su preocupación por la pobreza; precisamente por eso, dicen, es urgente entender por qué los programas fallaron y por qué el costo recayó sobre los grupos que querían favorecer.",
+ "secciones": [
+  {
+   "t": "Qué entienden por populismo económico",
+   "p": [
+    "El populismo es un concepto discutido. Los politólogos lo asocian con movilización política, retórica y símbolos para inspirar al pueblo, con una coalición heterogénea dominada por la clase trabajadora pero dirigida por sectores medios y altos, y con políticas reformistas que buscan el desarrollo sin conflicto de clases explosivo. Dornbusch y Edwards se concentran en otra cosa: para ellos el «populismo económico» es un enfoque que pone el acento en el crecimiento y la redistribución del ingreso y menosprecia los riesgos de la inflación, del financiamiento deficitario, de las restricciones externas y de la reacción de los agentes ante políticas agresivas ajenas al mercado.",
+    "La advertencia, dicen, no es moralista: las políticas populistas fracasan en última instancia, y su fracaso siempre tiene un costo terrible para los mismos grupos a los que se quería beneficiar. Tampoco niegan que la desestabilización externa pueda contribuir al fracaso, pero sostienen que la vulnerabilidad que la hace posible se debe en buena medida a las propias políticas insostenibles."
+   ]
+  },
+  {
+   "t": "El paradigma: condiciones iniciales y ausencia de restricciones",
+   "p": [
+    "Las condiciones iniciales se repiten. Hay una fuerte insatisfacción con la economía y la sensación de que las cosas podrían estar mejor. El país viene de crecimiento moderado, estancamiento o depresión, a menudo después de un programa de estabilización, muchas veces del FMI, que redujo el crecimiento y el nivel de vida. Una distribución del ingreso muy desigual vuelve atractivo un programa radicalmente distinto. Y, paradójicamente, la estabilización previa dejó mejor el presupuesto y las reservas, lo que da margen para expandir.",
+    "Los gobernantes rechazan las restricciones de la macroeconomía convencional. Creen que la capacidad ociosa da margen para crecer sin inflación; que las reservas y el racionamiento de divisas permiten expandir sin chocar con la restricción externa; que los riesgos del déficit están exagerados; y que, mientras no se devalúe, la expansión no es inflacionaria porque los costos unitarios bajan con más producción y siempre se pueden recortar márgenes con controles de precios. El texto cita un documento oficial peruano de 1987 que sostenía que el déficit que transfiere recursos al consumo de los pobres reduce los costos unitarios y por lo tanto no es inflacionario, sino lo contrario."
+   ]
+  },
+  {
+   "t": "La receta: reactivar, redistribuir, reestructurar",
+   "p": [
+    "Los programas se apoyan en tres elementos: reactivación, redistribución del ingreso y reestructuración de la economía, con el lema común de «reactivación con redistribución». El instrumento central son grandes aumentos del salario real que no se trasladan a precios. Aun con presiones inflacionarias, el gobierno rechaza la devaluación, convencido de que baja el nivel de vida, agrega inflación y no mejora el sector externo. La reestructuración debe ahorrar divisas y sostener salarios más altos.",
+    "Los autores muestran la semejanza de los discursos con dos citas: la del ministro de Allende, Pedro Vuskovic, para quien la reactivación y la redistribución darían impulso a los cambios estructurales, y la del plan de desarrollo del Perú de Alan García (1986-1990), que prometía pasar de una economía de conflicto y especulación a una de producción y consenso, sostenida por recursos internos."
+   ]
+  },
+  {
+   "t": "Las cuatro fases",
+   "p": [
+    "Fase I. Todo parece confirmar el diagnóstico: suben la producción, los salarios reales y el empleo. Los controles contienen la inflación y las importaciones alivian la escasez. La caída de los inventarios y las importaciones financiadas con reservas, o suspendiendo pagos externos, absorben la expansión de la demanda.",
+    "Fase II. Aparecen cuellos de botella, por la fuerte demanda de bienes nacionales y por la falta creciente de divisas. Los inventarios bajos ahora son un problema. Se vuelven necesarios ajustes de precios y devaluación, o control de cambios y más proteccionismo. La inflación sube mucho, pero los salarios se sostienen. El déficit fiscal empeora por los subsidios a los bienes básicos y a las divisas.",
+    "Fase III. Escasez generalizada, inflación en aceleración extrema y falta evidente de divisas llevan a la fuga de capitales y a la desmonetización. El déficit se deteriora violentamente porque cae la recaudación y suben los subsidios. El gobierno intenta estabilizar recortando subsidios y depreciando; los salarios reales caen fuerte y la política se vuelve inestable.",
+    "Fase IV. Un nuevo gobierno aplica una estabilización ortodoxa, a menudo con el FMI. Al final, el salario real queda en un nivel significativamente menor que al comienzo del episodio, y la caída es persistente porque la inversión se deprimió y hubo fuga de capitales."
+   ],
+   "nota": "Los autores señalan que Sturzenegger (1990) formalizó este proceso en un modelo dinámico intertemporal de una economía abierta."
+  },
+  {
+   "t": "Por qué pierden justo los trabajadores",
+   "p": [
+    "La explicación de la caída extrema de los salarios reales es sencilla: el capital es móvil entre países y el trabajo no. El capital puede huir de las malas políticas; los trabajadores quedan atrapados. Por eso el ajuste final recae sobre ellos.",
+    "El final suele traer grandes cambios políticos, incluido el derrocamiento violento del gobierno, legitimado por una clase media que se siente amenazada. Los autores citan una frase dura de Rosenstein-Rodan: Allende no murió por ser socialista, sino por incompetente. Con la excepción de Colombia, donde las políticas macroeconómicas populistas estuvieron en gran medida ausentes durante cuatro décadas, los episodios de Argentina, Brasil, Chile, Perú, México y Nicaragua siguieron muy de cerca las cuatro fases. No todos terminaron en el colapso total, como en Chile, Perú y Nicaragua, pero en todos los efectos fueron desastrosos para los supuestos beneficiarios."
+   ]
+  },
+  {
+   "t": "Memoria, aprendizaje y una salida posible",
+   "p": [
+    "Una regularidad notable es la poca disposición a aprender de otros países: quienes diseñan estos programas insisten en que sus circunstancias son únicas. Distinta es la pregunta de si un país aprende de sus propios errores. Los autores ven señales en Chile: el gobierno democrático que asumió en marzo de 1990, con muchos partidos de la Unidad Popular de Allende, insistía en mantener el equilibrio fiscal y en perseguir la redistribución con políticas microeconómicas específicas.",
+    "Dejan abierta una pregunta: si existe una variante expansiva que pueda funcionar. Su conjetura es que sí, si se mantiene lejos de la restricción externa, limita la reactivación a un período inicial breve y después aplica políticas de crecimiento, con conciencia de los límites de capacidad y con un financiamiento fiscal ortodoxo y una administración tributaria rigurosa.",
+    "Una lectura crítica posible (lectura propia) es que el esquema de cuatro fases es descriptivo y puede encajar casi cualquier episodio expansivo que termine mal; los propios autores reconocen que los factores políticos y externos también cuentan. Su valor está en mostrar la secuencia de restricciones que se activan: inventarios, divisas, fisco y moneda."
+   ]
+  }
+ ],
+ "claves": [
+  "Populismo económico: priorizar crecimiento y redistribución y desestimar inflación, déficit, restricción externa y reacción de los agentes.",
+  "Condiciones iniciales: estancamiento tras una estabilización, desigualdad alta y algo de margen fiscal y de reservas.",
+  "Fase I éxito; fase II cuellos de botella y divisas; fase III inflación, fuga y desmonetización; fase IV ajuste ortodoxo.",
+  "El salario real termina por debajo del inicial: el capital puede huir y el trabajo no.",
+  "Colombia es la excepción en la muestra; Chile en 1990 sugería aprendizaje: equilibrio fiscal y redistribución con políticas micro."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cómo definen Dornbusch y Edwards el «populismo económico»?",
+    "en": "How do Dornbusch and Edwards define 'economic populism'?"
+   },
+   "op": {
+    "es": [
+     "Como cualquier gobierno con apoyo de los trabajadores",
+     "Como un enfoque que prioriza crecimiento y redistribución y desestima la inflación, el déficit y la restricción externa",
+     "Como la aplicación de programas del FMI",
+     "Como una política de tipo de cambio flotante"
+    ],
+    "en": [
+     "Any government backed by workers",
+     "An approach prioritizing growth and redistribution while dismissing inflation, deficits and the external constraint",
+     "Applying IMF programmes",
+     "A floating exchange-rate policy"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La definición es económica, no política: lo central es ignorar las restricciones macro.",
+    "en": "The definition is economic, not political: the core is ignoring macro constraints."
+   },
+   "id": "macro-estab-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, según los gobernantes populistas, la expansión no sería inflacionaria?",
+    "en": "Why, according to populist policymakers, would expansion not be inflationary?"
+   },
+   "op": {
+    "es": [
+     "Porque la demanda de dinero es infinita",
+     "Porque devaluarían la moneda",
+     "Porque la capacidad ociosa y la baja de costos unitarios contienen los costos, y se pueden controlar precios",
+     "Porque suben las tasas de interés"
+    ],
+    "en": [
+     "Because money demand is infinite",
+     "Because they would devalue",
+     "Because idle capacity and falling unit costs restrain costs, and prices can be controlled",
+     "Because interest rates rise"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Creen que mientras no se devalúe, la mayor producción baja costos unitarios y los controles recortan márgenes.",
+    "en": "They believe that without devaluation, more output lowers unit costs and controls cut margins."
+   },
+   "id": "macro-estab-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué caracteriza a la fase I?",
+    "en": "What characterizes phase I?"
+   },
+   "op": {
+    "es": [
+     "Suben producción, salarios reales y empleo, con inflación contenida",
+     "Fuga de capitales y desmonetización",
+     "Estabilización ortodoxa con el FMI",
+     "Escasez generalizada"
+    ],
+    "en": [
+     "Output, real wages and employment rise with inflation contained",
+     "Capital flight and demonetization",
+     "Orthodox stabilization with the IMF",
+     "Widespread shortages"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los inventarios y las importaciones con reservas absorben la demanda; todo parece confirmar el diagnóstico.",
+    "en": "Inventories and reserve-financed imports absorb demand; everything seems to confirm the diagnosis."
+   },
+   "id": "macro-estab-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el déficit fiscal se deteriora violentamente en la fase III?",
+    "en": "Why does the fiscal deficit deteriorate violently in phase III?"
+   },
+   "op": {
+    "es": [
+     "Porque baja el gasto en defensa",
+     "Porque cae la recaudación y suben los costos de los subsidios",
+     "Porque el FMI exige más gasto",
+     "Porque se privatizan empresas públicas"
+    ],
+    "en": [
+     "Because defence spending falls",
+     "Because revenue collapses and subsidy costs rise",
+     "Because the IMF demands more spending",
+     "Because state firms are privatized"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con inflación extrema la recaudación real cae, mientras los subsidios a bienes y divisas se encarecen.",
+    "en": "With extreme inflation real revenue falls while subsidies on goods and foreign exchange grow."
+   },
+   "id": "macro-estab-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cómo terminan los salarios reales al cierre del episodio?",
+    "en": "Where do real wages end up at the close of the episode?"
+   },
+   "op": {
+    "es": [
+     "Por encima del nivel inicial",
+     "En el mismo nivel inicial",
+     "Indexados a la inflación",
+     "Significativamente por debajo del nivel inicial, y la caída es persistente"
+    ],
+    "en": [
+     "Above the initial level",
+     "At the initial level",
+     "Indexed to inflation",
+     "Significantly below the initial level, and persistently so"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La inversión deprimida y la fuga de capitales hacen que la caída dure.",
+    "en": "Depressed investment and capital flight make the fall last."
+   },
+   "id": "macro-estab-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué explicación dan los autores para que el ajuste recaiga sobre los trabajadores?",
+    "en": "What explanation do the authors give for adjustment falling on workers?"
+   },
+   "op": {
+    "es": [
+     "El capital es móvil entre países y el trabajo no",
+     "Los sindicatos aceptan bajas de salarios",
+     "El FMI fija los salarios",
+     "Los trabajadores ahorran en dólares"
+    ],
+    "en": [
+     "Capital is mobile across borders and labour is not",
+     "Unions accept wage cuts",
+     "The IMF sets wages",
+     "Workers save in dollars"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El capital puede huir de las malas políticas; los trabajadores quedan atrapados.",
+    "en": "Capital can flee bad policies; workers are trapped."
+   },
+   "id": "macro-estab-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué país de la muestra aparece como excepción, sin políticas macroeconómicas populistas durante cuatro décadas?",
+    "en": "Which country in the sample is the exception, without populist macro policies for four decades?"
+   },
+   "op": {
+    "es": [
+     "México",
+     "Perú",
+     "Colombia",
+     "Brasil"
+    ],
+    "en": [
+     "Mexico",
+     "Peru",
+     "Colombia",
+     "Brazil"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los demás casos (Argentina, Brasil, Chile, México, Perú y Nicaragua) siguieron de cerca las cuatro fases.",
+    "en": "The other cases (Argentina, Brazil, Chile, Mexico, Peru and Nicaragua) closely followed the four phases."
+   },
+   "id": "macro-estab-01-q7"
+  },
+  {
+   "q": {
+    "es": "Un nuevo gobierno quiere reactivar y redistribuir. Según la conjetura final de los autores, ¿qué variante podría funcionar?",
+    "en": "A new government wants to reactivate and redistribute. Under the authors' closing conjecture, which variant might work?"
+   },
+   "op": {
+    "es": [
+     "Expandir sin límite mientras haya capacidad ociosa",
+     "Fijar el tipo de cambio y subsidiar divisas",
+     "Financiar la expansión con emisión",
+     "Una expansión breve, lejos de la restricción externa, con financiamiento fiscal ortodoxo y luego políticas de crecimiento"
+    ],
+    "en": [
+     "Expand without limit while idle capacity exists",
+     "Peg the currency and subsidize foreign exchange",
+     "Finance expansion by printing money",
+     "A brief expansion, away from the external constraint, with orthodox fiscal financing and then growth policies"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es la hipótesis que dejan para investigación futura, con conciencia de la capacidad y administración tributaria rigurosa.",
+    "en": "It is the hypothesis they leave for future research, mindful of capacity and with rigorous tax administration."
+   },
+   "id": "macro-estab-01-q8"
+  }
+ ],
+ "palabras": 1128,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "En una expansión de demanda con tipo de cambio fijo, ¿por qué la inflación puede tardar en aparecer?",
+    "en": "In a demand expansion with a fixed exchange rate, why can inflation take time to show up?"
+   },
+   "a": {
+    "es": "Porque la caída de inventarios y las importaciones financiadas con reservas absorben la demanda, mientras los controles contienen precios. Dornbusch y Edwards (1992) lo describen como la fase I del ciclo populista, que dura hasta que se agotan inventarios y divisas.",
+    "en": "Because falling inventories and reserve-financed imports absorb demand while controls hold prices. Dornbusch and Edwards (1992) describe it as phase I of the populist cycle, which lasts until inventories and foreign exchange run out."
+   },
+   "id": "macro-estab-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa que una economía «se desmonetiza» en una inflación alta?",
+    "en": "What does it mean for an economy to 'demonetize' in high inflation?"
+   },
+   "a": {
+    "es": "Que la gente reduce sus tenencias de moneda local, que pierde valor rápido, y las reemplaza por divisas u otros activos; cae la demanda de dinero. Dornbusch y Edwards (1992) la ubican en la fase III, junto con la fuga de capitales.",
+    "en": "That people cut holdings of local money, which loses value fast, replacing it with foreign currency or other assets; money demand falls. Dornbusch and Edwards (1992) place it in phase III, alongside capital flight."
+   },
+   "id": "macro-estab-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una inflación muy alta empeora el déficit fiscal aunque no suba el gasto?",
+    "en": "Why does very high inflation worsen the fiscal deficit even without higher spending?"
+   },
+   "a": {
+    "es": "Porque la recaudación real cae (los impuestos se cobran con atraso y se licúan) y los subsidios a bienes y divisas se encarecen. Dornbusch y Edwards (1992) lo describen en la fase III del ciclo populista.",
+    "en": "Because real revenue falls (taxes are collected with a lag and eroded) and subsidies on goods and foreign exchange become costlier. Dornbusch and Edwards (1992) describe it in phase III of the populist cycle."
+   },
+   "id": "macro-estab-01-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "Al final de un episodio de expansión insostenible y posterior ajuste, ¿dónde suele quedar el salario real?",
+    "en": "At the end of an unsustainable expansion and subsequent adjustment, where does the real wage usually end up?"
+   },
+   "a": {
+    "es": "Significativamente por debajo de donde empezó, y de forma persistente, por la caída de la inversión y la fuga de capitales. Es la regularidad que Dornbusch y Edwards (1992) encuentran en Argentina, Brasil, Chile, México, Perú y Nicaragua.",
+    "en": "Significantly below where it started, persistently, because of collapsed investment and capital flight. It is the regularity Dornbusch and Edwards (1992) find in Argentina, Brazil, Chile, Mexico, Peru and Nicaragua."
+   },
+   "id": "macro-estab-01-t4"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el ajuste de una crisis macroeconómica tiende a recaer sobre los trabajadores?",
+    "en": "Why does adjustment after a macro crisis tend to fall on workers?"
+   },
+   "a": {
+    "es": "Porque el capital es móvil entre países y puede huir de las malas políticas, mientras el trabajo queda atrapado. Es la explicación de Dornbusch y Edwards (1992) para la caída extrema del salario real al final de los episodios populistas.",
+    "en": "Because capital is mobile across borders and can flee bad policies, while labour is trapped. It is Dornbusch and Edwards' (1992) explanation for the extreme real-wage fall at the end of populist episodes."
+   },
+   "id": "macro-estab-01-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede un gobierno perseguir objetivos redistributivos sin repetir el ciclo populista?",
+    "en": "How can a government pursue redistribution without repeating the populist cycle?"
+   },
+   "a": {
+    "es": "Manteniendo el equilibrio fiscal y redistribuyendo con políticas microeconómicas específicas, como hizo el gobierno chileno desde 1990. Dornbusch y Edwards (1992) agregan que una expansión breve, lejos de la restricción externa y bien financiada, podría funcionar.",
+    "en": "By keeping fiscal balance and redistributing through specific microeconomic policies, as Chile's government did from 1990. Dornbusch and Edwards (1992) add that a brief, well-financed expansion away from the external constraint might work."
+   },
+   "id": "macro-estab-01-t6"
+  }
+ ]
+}

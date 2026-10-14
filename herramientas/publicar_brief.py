@@ -53,7 +53,7 @@ def validar(d):
 def numeros_ausentes(d, texto):
     plano = re.sub(r"[.,\s]", "", texto)
     cuerpo = json.dumps({k: d[k] for k in ("intro", "secciones", "claves", "preguntas", "tarjetas")}, ensure_ascii=False)
-    cuerpo = re.sub(r"\\\\[a-zA-Z]+|_\{[^}]*\}|\^\{[^}]*\}", " ", cuerpo)
+    cuerpo = re.sub(r"\\\\[a-zA-Z]+|_\{[^}]*\}|\^\{[^}]*\}|\"id\": \"[^\"]*\"", " ", cuerpo)
     nums = set(re.findall(r"\d+(?:[.,]\d+)*", cuerpo))
     return sorted(n for n in nums if len(re.sub(r"[.,]", "", n)) >= 2 and re.sub(r"[.,]", "", n) not in plano)
 
