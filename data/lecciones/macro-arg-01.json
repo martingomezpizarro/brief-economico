@@ -1,0 +1,351 @@
+{
+ "id": "macro-arg-01",
+ "cat": "macro-arg",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Una sola enfermedad: la historia fiscal y monetaria argentina 1960-2017 según Buera y Nicolini (2021)",
+ "bajada": "Hiperinflaciones, crisis de balanza de pagos, crisis bancarias y defaults leídos con la restricción presupuestaria del gobierno: cuatro subperíodos definidos por cuánto podía endeudarse el Estado.",
+ "fuentes": [
+  1290
+ ],
+ "cita": "Buera y Nicolini (2021), «The history of Argentina», en Kehoe y Nicolini (eds.), A Monetary and Fiscal History of Latin America, 1960-2017",
+ "intro": "Entre 1960 y 2017 la Argentina tuvo tres hiperinflaciones, varias crisis de balanza de pagos, tres crisis bancarias, defaults y una caja de conversión. El ingreso per cápita de 2003 era aproximadamente igual al de 1973. Francisco Buera y Juan Pablo Nicolini sostienen que todos esos episodios son síntomas de una misma enfermedad: la incapacidad del gobierno de limitar su gasto a sus recursos tributarios genuinos. El capítulo aplica el marco común del libro (un brief aparte de esta ruta): si el gobierno tiene déficit, lo financia con deuda o con emisión, y cuánto puede endeudarse depende de su acceso a los mercados. Por eso la historia se divide en cuatro subperíodos según esa capacidad de endeudarse.",
+ "secciones": [
+  {
+   "t": "Tres gráficos que cuentan la historia",
+   "p": [
+    "El PIB per cápita siguió una tendencia de 2% anual (la tasa de largo plazo de Estados Unidos) hasta 1974, después entró en tres décadas de estancamiento con crecimiento muy volátil, retomó en 1991, cayó en una depresión entre 1998 y 2002, se recuperó rápido y volvió a estancarse desde 2010. Entre 1960 y 1973 había crecido cerca de 30%; en 1991 estaba en el mismo nivel que en 1960.",
+    "La inflación fue crónica pero moderada en la primera década, incontrolable durante quince años y terminó en 1991. Los noventa fueron la única década con inflación de país desarrollado, 2,7% anual en promedio. El déficit fiscal (incluyendo empresas públicas y provincias) promedió 3,2% del PIB entre 1960 y 1973 y 6% entre 1974 y 1990. En 1991 hay un quiebre: entre 1960 y 1990 promedió 4,7% y casi siempre superó el 2%; entre 1991 y 2010 promedió 0,6% y casi siempre estuvo por debajo. Incluso en la crisis de 1998-2002 tocó apenas algo más de 4%."
+   ]
+  },
+  {
+   "t": "1960-1976: sin crédito, el déficit es inflación",
+   "p": [
+    "La economía estaba cerrada a los movimientos de capital y el sistema financiero, regulado y con tasas fijadas por el gobierno. La deuda pública era apenas 9,8% del PIB en 1960. Con poca capacidad de endeudarse, el déficit se financiaba con emisión. El primer episodio es de manual: un plan de 1959 con ancla cambiaria no tuvo el ajuste fiscal necesario, el déficit subió de 2% a cerca de 5% del PIB, el crédito interno del Banco Central creció mientras se perdía la mitad de las reservas en 1961, y en febrero de 1962 se abandonó el tipo fijo: devaluación de 60% en tres meses e inflación de 30%.",
+    "El déficit bajó gradualmente y la inflación llegó a un dígito en 1969; los argentinos tuvieron que esperar hasta 1993 para volver a verla. Desde 1970 el déficit creció cada año hasta un récord de 11% del PIB en 1975. Los controles de precios de 1973-74 contuvieron la inflación transitoriamente; al levantarse, en julio de 1975, la inflación llegó a tasas anualizadas de entre 300% y 700%. Para entonces más del 90% de la deuda estaba indexada o en dólares: el público había aprendido que el gobierno licuaba la deuda en pesos."
+   ]
+  },
+  {
+   "t": "1977-1990: crédito externo, default y emisión",
+   "p": [
+    "Se liberalizaron el comercio, la cuenta capital y el sistema financiero, con tasas de mercado y seguro de depósitos; entraron muchos bancos. Se adoptó la tablita, con devaluaciones preanunciadas y decrecientes y seguros de cambio. El déficit bajó de más de 8% en 1976 a menos de 4% en 1977, pero volvió a superar el 8% en 1981. Mientras hubo crédito externo la inflación bajó; desde 1980 el Banco Central financió el déficit con crédito interno, se perdieron reservas y en 1981 la devaluación fue inevitable.",
+    "La devaluación obligó a pagar los seguros de cambio y, por el descalce de monedas, quebró bancos ya debilitados por mala regulación y riesgo moral. El Estado nacionalizó deudas bancarias, y con más de 40% de la deuda venciendo en un año llegó el default de 1982. Sin crédito, el déficit se financió con señoreaje: hiperinflación en 1985, Plan Austral que bajó el déficit a 3,7% y 2,9% del PIB en 1985 y 1986, y vuelta a cerca de 5% y a la hiperinflación en 1989.",
+    "El otro financiamiento fueron los encajes remunerados: hacia 1989 casi el 90% de la capacidad prestable de los bancos financiaba al gobierno, con depósitos a una semana. Era deuda en pesos de plazo cortísimo y tasas altísimas. El Plan Bonex de diciembre de 1989 la canjeó compulsivamente por bonos en dólares a diez años, que cotizaron a 30 centavos por dólar la semana siguiente, aunque se pagaron completos. Según los autores pudo evitar un mal equilibrio de tasas altas y riesgo de default que se retroalimentan, y fue un ingrediente clave de la estabilización posterior."
+   ]
+  },
+  {
+   "t": "1991-2001: dominancia monetaria y deuda creciente",
+   "p": [
+    "La caja de conversión hizo por ley igual a cero el término de impuesto inflacionario de la restricción presupuestaria: el Banco Central solo podía emitir comprando dólares, y todo déficit debía financiarse con deuda. Era un intento de pasar de dominancia fiscal a dominancia monetaria, y funcionó en lo fiscal: el déficit casi desapareció en 1991-92 y hubo superávit en 1993, con ayuda de privatizaciones que aportaron 0,7% del PIB por año. El Plan Brady de 1993 devolvió el acceso a los mercados.",
+    "Pero desde 1994 hubo déficits y la deuda se duplicó en unos diez años. En 1995 una corrida bancaria se llevó casi 20% de los depósitos en cinco meses, con la caja de conversión limitando al Banco Central como prestamista de última instancia. Desde 1998 llegó la reversión de la cuenta corriente tras las crisis asiática y rusa, en un momento en que los pagos de deuda reestructurada con el Brady estaban concentrados: en 2001 los intereses superaban el 4% del PIB. La corrida de 2001 se llevó más de 27% de los depósitos; hubo congelamiento, default y fin de la convertibilidad en enero de 2002.",
+    "Un dato llamativo: en los noventa la Argentina cumplía los criterios de Maastricht en inflación, déficit y deuda, pero pagaba un riesgo país de alrededor de 6% anual. Sin ese riesgo, y usando el ahorro para cancelar deuda, la relación deuda/PIB en 2000 habría sido 25% en lugar de 40%. Los autores sugieren que los equilibrios múltiples pudieron ser críticos."
+   ]
+  },
+  {
+   "t": "2002-2017: superávits, exclusión y regreso del déficit",
+   "p": [
+    "La crisis tocó fondo en el primer trimestre de 2002, con una caída del PIB de cerca de 18% desde 1998 y pobreza por encima del 40%. Fue fiscalmente carísima: rescate a los bancos por la pesificación asimétrica (depósitos convertidos a 1,4 pesos por dólar y préstamos a 1), absorción de deudas provinciales y programas sociales. Aun después de la quita de 2005, la deuda era mayor en 2006 que antes del default: la Argentina no obtuvo la deuda más baja que los modelos asocian a un default.",
+    "La recuperación vino con seis años seguidos de superávit fiscal, algo sin precedentes, y por eso la exclusión de los mercados no generó inflación: no hacía falta señoreaje. Entre 2008 y 2010 los superávits desaparecieron; el déficit llegó a 2% en 2013 y cerca de 6% en 2017. Sin crédito externo hasta 2016, se financió con emisión y la inflación subió a alrededor de 25% anual."
+   ]
+  },
+  {
+   "t": "La restricción presupuestaria en números",
+   "p": [
+    "La descomposición de la restricción presupuestaria muestra el patrón. En 1960-75 el déficit primario fue 3,6% del PIB y el señoreaje 2,4%; en 1976-90, déficit de 3,1% con intereses de 2,3% y señoreaje de 3,8%; en 1991-2001, déficit primario cero y señoreaje de 0,3%; en 2002-17, superávit de 0,5% en promedio y señoreaje de 1,8%. Las «transferencias» que cierran la cuenta miden gastos fuera de presupuesto: seguros de cambio y depósitos, deudas no registradas con jubilados, el costo de la crisis de 2002.",
+    "Su conclusión más dura: a fines de 2017 la deuda superaba el 50% del PIB, pero si se hubiera acumulado solo con los déficits registrados habría sido de 20%. Más del 60% de la deuda se explica por «accidentes» y no por decisiones explícitas de gasto. Además, con cerca del 90% de la deuda en dólares, una depreciación real de 50% puede llevar la deuda de 25% a 40% del PIB de un día para el otro, lo mismo que diez años de déficit tres puntos por encima del crecimiento. Escribiendo a fines de 2018, con corrida cambiaria y vuelta al FMI, los autores advertían que la enfermedad había vuelto a activarse."
+   ]
+  }
+ ],
+ "claves": [
+  "Todos los episodios son síntomas de una enfermedad: gastar más que la recaudación genuina.",
+  "El déficit promedió 4,7% del PIB en 1960-90 y 0,6% en 1991-2010: el quiebre de 1991 coincide con el fin de la inflación alta.",
+  "Sin acceso al crédito, el déficit se vuelve emisión e inflación; con crédito, se acumula deuda hasta la crisis.",
+  "Descalces de monedas, deuda de corto plazo y pasivos contingentes (seguros de cambio y depósitos) amplificaron las crisis.",
+  "Más del 60% de la deuda de 2017 se explica por gastos fuera de presupuesto; con 90% en dólares, el tipo de cambio real la mueve mucho."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué criterio usan Buera y Nicolini para dividir la historia en subperíodos?",
+    "en": "What criterion do Buera and Nicolini use to divide history into subperiods?"
+   },
+   "op": {
+    "es": [
+     "Los cambios de gobierno",
+     "La capacidad del gobierno de endeudarse en los mercados",
+     "Los ciclos de precios de la soja",
+     "Los cambios en la tasa de la Reserva Federal"
+    ],
+    "en": [
+     "Changes of government",
+     "The government's ability to borrow in markets",
+     "Soybean price cycles",
+     "Changes in the Fed funds rate"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Cómo se financia un déficit depende del acceso al crédito; sin él, la única fuente es la emisión.",
+    "en": "How a deficit is financed depends on credit access; without it, the only source is printing."
+   },
+   "id": "macro-arg-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestra el quiebre de 1991 en los datos fiscales?",
+    "en": "What does the 1991 break in fiscal data show?"
+   },
+   "op": {
+    "es": [
+     "Que el déficit pasó de promediar 4,7% del PIB a 0,6%, a la vez que terminaba la inflación alta",
+     "Que el déficit subió con la caja de conversión",
+     "Que las provincias dejaron de tener déficit",
+     "Que la deuda desapareció"
+    ],
+    "en": [
+     "That the deficit went from averaging 4.7% of GDP to 0.6%, as high inflation ended",
+     "That the deficit rose with the currency board",
+     "That provinces stopped running deficits",
+     "That debt disappeared"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es lo que predice el marco: sin déficit que monetizar, desaparece la presión inflacionaria.",
+    "en": "It is what the framework predicts: with no deficit to monetize, inflationary pressure disappears."
+   },
+   "id": "macro-arg-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cómo fue la crisis de balanza de pagos de 1962?",
+    "en": "What was the 1962 balance-of-payments crisis like?"
+   },
+   "op": {
+    "es": [
+     "Un ataque especulativo sin causas fiscales",
+     "Una crisis bancaria por descalce de monedas",
+     "Con ancla cambiaria y déficit monetizado, el crédito interno subió, se perdió la mitad de las reservas y hubo que devaluar 60%",
+     "Un default de deuda externa"
+    ],
+    "en": [
+     "A speculative attack without fiscal causes",
+     "A banking crisis from currency mismatch",
+     "With a peg and a monetized deficit, domestic credit rose, half the reserves were lost and a 60% devaluation followed",
+     "An external debt default"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los autores la consideran un ejemplo transparente de la mecánica de primera generación.",
+    "en": "The authors consider it a transparent example of first-generation mechanics."
+   },
+   "id": "macro-arg-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué factores convirtieron la devaluación de 1981 en crisis bancaria y default?",
+    "en": "Which factors turned the 1981 devaluation into a banking crisis and default?"
+   },
+   "op": {
+    "es": [
+     "La suba de la soja",
+     "La caja de conversión",
+     "El Plan Brady",
+     "Los seguros de cambio, el descalce de monedas de los bancos con seguro de depósitos y mucha deuda de corto plazo"
+    ],
+    "en": [
+     "Rising soybean prices",
+     "The currency board",
+     "The Brady Plan",
+     "Exchange-rate insurance, banks' currency mismatch under deposit insurance and much short-term debt"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los pasivos contingentes se volvieron deuda explícita y más de 40% de la deuda vencía en un año.",
+    "en": "Contingent liabilities became explicit debt and over 40% of debt matured within a year."
+   },
+   "id": "macro-arg-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué hizo el Plan Bonex con la deuda del gobierno, según los autores?",
+    "en": "What did the Bonex Plan do to government debt, per the authors?"
+   },
+   "op": {
+    "es": [
+     "La canceló sin costo",
+     "Canjeó deuda en pesos de muy corto plazo (depósitos a una semana) por bonos en dólares a diez años",
+     "La convirtió en acciones de empresas públicas",
+     "La transfirió a las provincias"
+    ],
+    "en": [
+     "Cancelled it at no cost",
+     "Swapped very short-term peso debt (one-week deposits) for ten-year dollar bonds",
+     "Turned it into state-firm shares",
+     "Shifted it to provinces"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Cambió plazo y moneda, y pudo evitar un mal equilibrio, aunque los bonos cotizaron a 30 centavos al principio.",
+    "en": "It changed maturity and currency and may have prevented a bad equilibrium, though the bonds initially traded at 30 cents."
+   },
+   "id": "macro-arg-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la exclusión de los mercados después de 2002 no generó inflación al principio?",
+    "en": "Why did post-2002 market exclusion not create inflation at first?"
+   },
+   "op": {
+    "es": [
+     "Porque hubo seis años seguidos de superávit fiscal y no hacía falta señoreaje",
+     "Porque se mantuvo la caja de conversión",
+     "Porque el FMI financió el déficit",
+     "Porque se congelaron todos los precios"
+    ],
+    "en": [
+     "Because six straight years of fiscal surplus removed the need for seigniorage",
+     "Because the currency board was kept",
+     "Because the IMF financed the deficit",
+     "Because all prices were frozen"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Cuando el déficit volvió, entre 2008 y 2013, y sin crédito externo, volvió la inflación.",
+    "en": "When the deficit returned, between 2008 and 2013, without external credit, inflation returned."
+   },
+   "id": "macro-arg-01-q6"
+  },
+  {
+   "q": {
+    "es": "Según la simulación de los autores, ¿qué deuda/PIB habría tenido la Argentina en 2017 con solo los déficits registrados?",
+    "en": "Per the authors' simulation, what debt-to-GDP ratio would Argentina have had in 2017 with only recorded deficits?"
+   },
+   "op": {
+    "es": [
+     "50%",
+     "40%",
+     "90%",
+     "20%"
+    ],
+    "en": [
+     "50%",
+     "40%",
+     "90%",
+     "20%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La deuda observada superaba el 50%: más del 60% se explica por gastos fuera de presupuesto.",
+    "en": "Observed debt exceeded 50%: over 60% is explained by off-budget spending."
+   },
+   "id": "macro-arg-01-q7"
+  },
+  {
+   "q": {
+    "es": "Un país tiene deuda de 25% del PIB, casi toda en dólares, y sufre una depreciación real de 50%. ¿Qué ilustran los autores con este ejemplo?",
+    "en": "A country has debt of 25% of GDP, almost all in dollars, and suffers a 50% real depreciation. What does the authors' example illustrate?"
+   },
+   "op": {
+    "es": [
+     "Que la deuda baja porque el PIB crece",
+     "Que la deuda/PIB salta a 40% al instante, lo mismo que diez años de déficit tres puntos por encima del crecimiento",
+     "Que no cambia nada",
+     "Que conviene endeudarse en dólares"
+    ],
+    "en": [
+     "That debt falls as GDP grows",
+     "That debt/GDP jumps to 40% instantly, the same as ten years of deficits three points above growth",
+     "That nothing changes",
+     "That borrowing in dollars is advisable"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con 90% de deuda en dólares, el tipo de cambio real pesa mucho en la relación deuda/PIB.",
+    "en": "With 90% dollar debt, the real exchange rate weighs heavily on debt/GDP."
+   },
+   "id": "macro-arg-01-q8"
+  }
+ ],
+ "palabras": 1349,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "Si un gobierno no tiene acceso al crédito, ¿qué implica un déficit fiscal persistente?",
+    "en": "If a government has no access to credit, what does a persistent fiscal deficit imply?"
+   },
+   "a": {
+    "es": "Que se financia con emisión, y por lo tanto con inflación. Buera y Nicolini (2021) muestran que eso explica la inflación argentina de 1960-75 y de los ochenta, tras el default de 1982.",
+    "en": "That it is financed by money creation, and hence inflation. Buera and Nicolini (2021) show this explains Argentine inflation in 1960-75 and in the 1980s, after the 1982 default."
+   },
+   "id": "macro-arg-01-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto fue el déficit fiscal promedio argentino antes y después de 1991?",
+    "en": "What was Argentina's average fiscal deficit before and after 1991?"
+   },
+   "a": {
+    "es": "4,7% del PIB entre 1960 y 1990 y 0,6% entre 1991 y 2010. Buera y Nicolini (2021) ubican ahí el quiebre estructural que coincide con el fin de la inflación alta.",
+    "en": "4.7% of GDP in 1960-90 and 0.6% in 1991-2010. Buera and Nicolini (2021) place the structural break there, coinciding with the end of high inflation."
+   },
+   "id": "macro-arg-01-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué son los pasivos contingentes de un gobierno y por qué importan en una crisis?",
+    "en": "What are a government's contingent liabilities and why do they matter in a crisis?"
+   },
+   "a": {
+    "es": "Obligaciones que no figuran como deuda hasta que ocurre un evento, como un seguro de depósitos o de cambio; en una crisis se vuelven deuda explícita. Buera y Nicolini (2021) los usan para explicar la crisis de 1981-82 y el costo fiscal de 2002.",
+    "en": "Obligations not recorded as debt until an event occurs, such as deposit or exchange-rate insurance; in a crisis they become explicit debt. Buera and Nicolini (2021) use them to explain the 1981-82 crisis and the fiscal cost of 2002."
+   },
+   "id": "macro-arg-01-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una deuda pública mayormente en dólares es peligrosa aunque la relación deuda/PIB sea baja?",
+    "en": "Why is mostly dollar-denominated public debt dangerous even if debt/GDP is low?"
+   },
+   "a": {
+    "es": "Porque una depreciación real aumenta de golpe su valor en relación con el PIB: con 90% en dólares, una depreciación de 50% lleva la deuda de 25% a 40% del PIB al instante. Es el cálculo de Buera y Nicolini (2021).",
+    "en": "Because a real depreciation instantly raises its value relative to GDP: with 90% in dollars, a 50% depreciation takes debt from 25% to 40% of GDP at once. It is Buera and Nicolini's (2021) calculation."
+   },
+   "id": "macro-arg-01-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué logra una caja de conversión en la restricción presupuestaria del gobierno?",
+    "en": "What does a currency board achieve in the government budget constraint?"
+   },
+   "a": {
+    "es": "Hace cero por ley el término de impuesto inflacionario, de modo que todo déficit debe financiarse con deuda: pasa de dominancia fiscal a monetaria. Buera y Nicolini (2021) muestran que en la Argentina de los noventa eso funcionó, pero la deuda siguió creciendo.",
+    "en": "It legally sets the inflation-tax term to zero, so any deficit must be debt-financed: a move from fiscal to monetary dominance. Buera and Nicolini (2021) show it worked in 1990s Argentina, but debt kept growing."
+   },
+   "id": "macro-arg-01-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Garantiza un default una deuda más baja después?",
+    "en": "Does a default guarantee lower debt afterwards?"
+   },
+   "a": {
+    "es": "No necesariamente: en la Argentina, por el costo fiscal de la crisis de 2002, la deuda en 2006 era mayor que antes del default, aun con la quita de 2005. Buera y Nicolini (2021) lo contrastan con lo que suponen muchos modelos de default.",
+    "en": "Not necessarily: in Argentina, because of the fiscal cost of the 2002 crisis, debt in 2006 exceeded pre-default levels despite the 2005 haircut. Buera and Nicolini (2021) contrast this with what many default models assume."
+   },
+   "id": "macro-arg-01-t6"
+  }
+ ]
+}
