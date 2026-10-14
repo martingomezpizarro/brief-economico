@@ -1,0 +1,364 @@
+{
+ "id": "crec-desarrollo-02",
+ "cat": "crec-desarrollo",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "El deterioro de los términos de intercambio: el mecanismo de Prebisch (1950)",
+ "bajada": "Entre 1870 y 1938 la relación de precios se movió contra los productos primarios. Prebisch lo explica con un ejemplo numérico y con la asimetría de salarios y ganancias a lo largo del ciclo.",
+ "fuentes": [
+  1228
+ ],
+ "cita": "Prebisch (1950), «The economic development of Latin America and its principal problems», caps. II y III",
+ "intro": "La tesis Prebisch-Singer es una de las ideas latinoamericanas más discutidas de la economía del desarrollo: los términos de intercambio de los productores de materias primas tienden a deteriorarse frente a los de los países industriales. En el informe de la CEPAL de 1950, Prebisch no se queda en el dato. Arma un argumento en tres pasos: qué debería haber pasado con los precios si la teoría clásica fuera correcta, qué pasó en realidad y por qué. La clave está en cómo se reparte el aumento de la productividad entre precios e ingresos, y en cómo se comportan los salarios en los centros y en la periferia cuando la economía sube y cuando baja.",
+ "secciones": [
+  {
+   "t": "Lo que tendría que haber pasado",
+   "p": [
+    "El progreso técnico fue mayor en la industria que en la producción primaria de la periferia. Si los precios hubieran bajado en proporción al aumento de la productividad, la baja habría sido menor en los productos primarios que en las manufacturas. A medida que creciera la diferencia de productividades, la relación de precios se habría movido de manera sostenida a favor de la periferia.",
+    "Si eso hubiera ocurrido, los países periféricos se habrían beneficiado de la baja de precios de los productos industriales en la misma medida que los centros. Los beneficios del progreso técnico se habrían repartido por igual en el mundo, como supone el esquema de la división internacional del trabajo, y América Latina no habría tenido ninguna ventaja económica en industrializarse: al contrario, habría perdido hasta alcanzar la eficiencia de los países industriales."
+   ]
+  },
+  {
+   "t": "Lo que pasó: la tabla de 1876-1938",
+   "p": [
+    "Los datos no acompañan. Prebisch usa los índices de precios promedio de importación y exportación británicos del Board of Trade, representativos de los precios mundiales de materias primas y manufacturas. Con base 1876-80 igual a 100, la cantidad de productos terminados que se podía obtener con una cantidad dada de productos primarios fue bajando: 90,1 en 1891-95, 84,6 en 1901-05, 67,3 en 1921-25, 62,0 en 1931-35 y 64,1 en 1936-38. Con la misma cantidad de productos primarios, en los años treinta solo se compraba el 63% de las manufacturas que se compraban en los sesenta del siglo XIX; dicho de otro modo, hacía falta en promedio un 58,6% más de productos primarios para comprar las mismas manufacturas. El deterioro entre los años setenta del siglo XIX y los treinta del XX fue del 36,5%.",
+    "En la expansión de la Segunda Guerra, como en toda expansión cíclica, la relación se movió a favor de los productos primarios (68,7 en 1946-47), pero en la posguerra ya se veía el reajuste típico."
+   ],
+   "eq": [
+    "TI_t = \\frac{P^{prim}_t}{P^{manuf}_t} \\times 100"
+   ],
+   "nota": "TI son los términos de intercambio de la periferia: el precio de sus exportaciones primarias sobre el de sus importaciones de manufacturas. La tabla muestra cuántas manufacturas compra una cantidad fija de productos primarios. Prebisch advierte que los índices no capturan las mejoras de calidad de los productos terminados."
+  },
+  {
+   "t": "El razonamiento: precios contra ingresos",
+   "p": [
+    "Los precios no cayeron junto con el progreso técnico porque, mientras los costos bajaban por la mayor productividad, subían los ingresos de los empresarios y de los factores productivos. Cuando el ingreso subía más que la productividad, los precios subían en lugar de bajar.",
+    "Si en los centros y en la periferia los ingresos hubieran subido en proporción a sus respectivas productividades, la relación de precios habría sido la misma que si los precios hubieran bajado en proporción exacta: a favor de los primarios. Como la relación se movió en contra, la conclusión es que en los centros los ingresos subieron más que la productividad y en la periferia menos. Los centros se quedaron con todo el beneficio del progreso técnico de su industria, y la periferia les transfirió una parte de los frutos de su propio progreso técnico."
+   ]
+  },
+  {
+   "t": "El ejemplo numérico",
+   "p": [
+    "Prebisch lo ilustra con un ejemplo. La productividad sube de 100 a 120 en la producción primaria y de 100 a 160 en la industria, y ambas aportan por igual al producto final, cuya productividad sube a 140.",
+    "Primer caso: los ingresos no cambian y los precios bajan con los costos. El índice de precios primarios cae menos que el industrial, y la relación se mueve de 100 a 116,7 a favor de los primarios. Con 100 productos primarios se obtienen ahora 116,7 manufacturas; como además se producen 120 en lugar de 100, los productores primarios acceden a 140 productos finales: exactamente el aumento de la productividad del conjunto, el mismo que obtienen los industriales.",
+    "Segundo caso: en la industria el ingreso sube más que la productividad (a 180) y en la producción primaria igual que ella (a 120). La relación cae de 100 a 93,3: pese a producir un 20% más, los productores primarios solo pueden comprar 112 productos finales, mientras los industriales pasan a comprar 168. Unos ganan menos de lo que aumentó su productividad y otros más. Si el ingreso primario hubiera subido menos que su productividad, la relación habría caído todavía más."
+   ],
+   "eq": [
+    "\\text{Poder de compra primario} = Q^{prim} \\times TI = 120 \\times 0{,}933 \\approx 112"
+   ]
+  },
+  {
+   "t": "Por qué: la asimetría del ciclo",
+   "p": [
+    "El fenómeno solo se entiende en relación con el ciclo, la forma característica de crecimiento de la economía capitalista. En los centros hay una desigualdad continua entre la demanda y la oferta de bienes de consumo terminados: la demanda supera a la oferta en el auge y queda por debajo en la recesión. En el auge suben las ganancias y los precios; como la producción primaria tarda más en expandirse, una parte de esas ganancias se transfiere a los productores de la periferia, y los precios primarios suben más que los industriales.",
+    "En la recesión pasa lo contrario, y ahí está la asimetría. Durante el auge, parte de las ganancias fue absorbida por aumentos de salarios, por la competencia entre empresarios y la presión sindical. Cuando las ganancias tienen que bajar, esa parte pierde fluidez en los centros por la resistencia a bajar salarios. La presión se traslada a la periferia, donde la falta de organización de los trabajadores del sector primario hace más fácil reducir ingresos, sean ganancias o salarios. Los precios primarios suben más en el auge pero caen más en la baja, y a lo largo de los ciclos la brecha se agranda.",
+    "Aun si la periferia tuviera la misma rigidez, el ajuste ocurriría igual: se acumularían existencias en los centros, se contraería la producción industrial y con ella la demanda de productos primarios, hasta forzar la baja de ingresos en la periferia. La crisis mundial de los treinta mostró con qué intensidad."
+   ]
+  },
+  {
+   "t": "Estados Unidos y las reglas del juego",
+   "p": [
+    "En Estados Unidos, el nuevo centro cíclico, los precios tampoco bajaron con la productividad: en los cuarenta años previos a la guerra los costos manufactureros cayeron de forma persistente, pero el aumento de productividad se reflejó en salarios y en jornadas más cortas. La teoría clásica tenía una respuesta para esto: si el progreso no se trasladaba por precios, se extendería por ingresos gracias a la movilidad de factores. Pero esa movilidad no existía entre países; la migración masiva hacia los salarios altos de Estados Unidos habría bajado su nivel de vida, y se protegió ese nivel.",
+    "Las reglas clásicas, concluye Prebisch, forman un todo indivisible: si se elimina una, las demás no pueden servir como norma absoluta entre centro y periferia. Además, el progreso técnico desigual entre industrias llevó a Estados Unidos a proteger sectores eficientes pero menos productivos que su promedio, y su coeficiente de importaciones cayó del 5% en 1929 a no más del 3%."
+   ]
+  },
+  {
+   "t": "Discusión",
+   "p": [
+    "La tesis tuvo una enorme influencia y también críticas (lectura propia): los índices británicos mezclan cambios de calidad, costos de transporte y composición de las canastas, y la tendencia es sensible al período elegido. Lo que sobrevive con más fuerza es la parte del mecanismo: la idea de que la distribución de las ganancias de productividad entre precios e ingresos depende de la estructura de los mercados de trabajo y de bienes, y no solo de la tecnología. Para la Argentina, la discusión sobre términos de intercambio y restricción externa sigue siendo una pieza central del análisis macroeconómico."
+   ]
+  }
+ ],
+ "claves": [
+  "Si los precios bajaran con la productividad, los términos de intercambio se moverían a favor de los primarios, porque la industria progresa más rápido.",
+  "Con base 1876-80 = 100, la relación cayó a 64,1 en 1936-38: un deterioro del 36,5%.",
+  "En los centros los ingresos subieron más que la productividad; en la periferia, menos. La periferia transfiere parte de su progreso técnico.",
+  "Ejemplo: productividad primaria +20%, pero si el ingreso industrial sube a 180 el poder de compra primario solo llega a 112.",
+  "Asimetría del ciclo: los salarios en los centros no bajan en la recesión y el ajuste recae en la periferia."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Si los precios hubieran bajado en proporción a la productividad, ¿hacia dónde se habrían movido los términos de intercambio de la periferia?",
+    "en": "Had prices fallen in proportion to productivity, which way would the periphery's terms of trade have moved?"
+   },
+   "op": {
+    "es": [
+     "En contra, porque los primarios son menos elaborados",
+     "A favor, porque la productividad creció más en la industria",
+     "No se habrían movido",
+     "En contra, por los aranceles de los centros"
+    ],
+    "en": [
+     "Against, because primary goods are less processed",
+     "In favour, because productivity grew faster in industry",
+     "They would not have moved",
+     "Against, because of the centres' tariffs"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las manufacturas se habrían abaratado más que los primarios, mejorando la relación para la periferia.",
+    "en": "Manufactures would have become cheaper than primary goods, improving the ratio for the periphery."
+   },
+   "id": "crec-desarrollo-02-q1"
+  },
+  {
+   "q": {
+    "es": "Con base 1876-80 = 100, ¿qué valor tenía la relación de precios primarios sobre manufacturas en 1936-38?",
+    "en": "With 1876-80 = 100, what was the primary-to-manufactures price ratio in 1936-38?"
+   },
+   "op": {
+    "es": [
+     "116,7",
+     "102,4",
+     "64,1",
+     "93,3"
+    ],
+    "en": [
+     "116.7",
+     "102.4",
+     "64.1",
+     "93.3"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La relación cayó de 100 a 64,1; Prebisch habla de un deterioro del 36,5% entre los setenta del siglo XIX y los treinta.",
+    "en": "The ratio fell from 100 to 64.1; Prebisch speaks of a 36.5% deterioration from the 1870s to the 1930s."
+   },
+   "id": "crec-desarrollo-02-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué conclusión saca Prebisch del deterioro observado?",
+    "en": "What conclusion does Prebisch draw from the observed deterioration?"
+   },
+   "op": {
+    "es": [
+     "Que la productividad primaria creció más rápido",
+     "Que en los centros los ingresos subieron más que la productividad y en la periferia menos",
+     "Que la calidad de los primarios empeoró",
+     "Que el transporte se encareció"
+    ],
+    "en": [
+     "That primary productivity grew faster",
+     "That incomes rose more than productivity in the centres and less in the periphery",
+     "That the quality of primary goods worsened",
+     "That transport became more expensive"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Así los centros retienen el beneficio de su progreso y captan parte del de la periferia.",
+    "en": "That way the centres keep the gains of their progress and capture part of the periphery's."
+   },
+   "id": "crec-desarrollo-02-q3"
+  },
+  {
+   "q": {
+    "es": "En el primer caso del ejemplo (ingresos constantes y precios que bajan con los costos), ¿cuántos productos finales obtienen los productores primarios?",
+    "en": "In the first case of the example (constant incomes, prices falling with costs), how many final products do primary producers obtain?"
+   },
+   "op": {
+    "es": [
+     "112",
+     "168",
+     "100",
+     "140"
+    ],
+    "en": [
+     "112",
+     "168",
+     "100",
+     "140"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Producen 120 y cada unidad compra 1,167 manufacturas: 140, igual que el aumento de la productividad del conjunto.",
+    "en": "They produce 120 and each unit buys 1.167 manufactures: 140, matching overall productivity growth."
+   },
+   "id": "crec-desarrollo-02-q4"
+  },
+  {
+   "q": {
+    "es": "En el segundo caso, ¿qué hace caer la relación de precios a 93,3?",
+    "en": "In the second case, what drives the price ratio down to 93.3?"
+   },
+   "op": {
+    "es": [
+     "Que en la industria el ingreso sube más que la productividad",
+     "Que la productividad industrial deja de crecer",
+     "Que los productores primarios suben sus precios",
+     "Que se devalúa la moneda periférica"
+    ],
+    "en": [
+     "That industrial income rises more than productivity",
+     "That industrial productivity stops growing",
+     "That primary producers raise their prices",
+     "That the peripheral currency is devalued"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El ingreso industrial pasa a 180 con productividad 160, mientras el primario sube igual que su productividad.",
+    "en": "Industrial income goes to 180 with productivity at 160, while primary income rises only with productivity."
+   },
+   "id": "crec-desarrollo-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, según Prebisch, los precios primarios caen más que los industriales en la recesión?",
+    "en": "Why, according to Prebisch, do primary prices fall more than industrial ones in the downswing?"
+   },
+   "op": {
+    "es": [
+     "Porque los centros acumulan oro",
+     "Porque la demanda de alimentos es elástica",
+     "Porque los salarios de los centros resisten la baja y el ajuste se traslada a la periferia",
+     "Porque la periferia produce más en la recesión"
+    ],
+    "en": [
+     "Because the centres hoard gold",
+     "Because food demand is elastic",
+     "Because wages in the centres resist cuts and adjustment shifts to the periphery",
+     "Because the periphery produces more in the downswing"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La rigidez salarial y la organización sindical en los centros, y su ausencia en el sector primario periférico, explican la asimetría.",
+    "en": "Wage rigidity and union organization in the centres, and their absence in peripheral primary sectors, explain the asymmetry."
+   },
+   "id": "crec-desarrollo-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto clásico, según Prebisch, habría permitido repartir el progreso por la vía de los ingresos?",
+    "en": "Which classical assumption, according to Prebisch, would have spread progress through incomes?"
+   },
+   "op": {
+    "es": [
+     "El patrón oro",
+     "La movilidad internacional de los factores de producción",
+     "La competencia perfecta en la periferia",
+     "El libre comercio de manufacturas"
+    ],
+    "en": [
+     "The gold standard",
+     "International mobility of factors of production",
+     "Perfect competition in the periphery",
+     "Free trade in manufactures"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Sin migración masiva hacia los salarios altos, la vía de los ingresos no funcionó entre países.",
+    "en": "Without mass migration toward high wages, the income channel did not work between countries."
+   },
+   "id": "crec-desarrollo-02-q7"
+  },
+  {
+   "q": {
+    "es": "Un país exportador de materias primas ve subir sus precios en un auge mundial. Según este mecanismo, ¿qué debería esperar?",
+    "en": "A raw-material exporter sees its prices rise in a global boom. Under this mechanism, what should it expect?"
+   },
+   "op": {
+    "es": [
+     "Que la mejora sea permanente",
+     "Que los precios industriales suban todavía más en la recesión",
+     "Que en la recesión sus precios caigan más de lo que subieron, ensanchando la brecha",
+     "Que sus salarios suban más que en los centros"
+    ],
+    "en": [
+     "That the improvement is permanent",
+     "That industrial prices rise even more in the downswing",
+     "That in the downswing its prices fall more than they rose, widening the gap",
+     "That its wages rise more than in the centres"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los primarios suben más en el auge, pero caen más en la baja: a lo largo de los ciclos la brecha crece.",
+    "en": "Primary prices rise more in booms but fall more in slumps: over cycles the gap widens."
+   },
+   "id": "crec-desarrollo-02-q8"
+  }
+ ],
+ "palabras": 1256,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué miden los términos de intercambio de un país exportador de materias primas?",
+    "en": "What do the terms of trade of a raw-material exporter measure?"
+   },
+   "a": {
+    "es": "El precio de sus exportaciones relativo al de sus importaciones: cuántas manufacturas compra con una cantidad dada de productos primarios. Prebisch (1950) muestra que esa relación cayó de 100 en 1876-80 a 64,1 en 1936-38.",
+    "en": "The price of its exports relative to its imports: how many manufactures a given amount of primary goods buys. Prebisch (1950) shows the ratio fell from 100 in 1876-80 to 64.1 in 1936-38."
+   },
+   "id": "crec-desarrollo-02-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "Si la industria aumenta su productividad más rápido que el agro, ¿por qué los precios relativos podrían moverse igual en contra del agro?",
+    "en": "If industry raises productivity faster than agriculture, why could relative prices still move against agriculture?"
+   },
+   "a": {
+    "es": "Porque en la industria los ingresos de empresarios y trabajadores pueden subir más que la productividad, de modo que los precios industriales no bajan. Prebisch (1950) concluye que así los centros retienen su progreso y captan parte del de la periferia.",
+    "en": "Because in industry the incomes of firms and workers can rise more than productivity, so industrial prices do not fall. Prebisch (1950) concludes the centres thereby keep their progress and capture part of the periphery's."
+   },
+   "id": "crec-desarrollo-02-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "Con productividad primaria 120 y una relación de precios que pasa de 100 a 93,3, ¿cuánto puede comprar el productor primario?",
+    "en": "With primary productivity at 120 and a price ratio falling from 100 to 93.3, how much can the primary producer buy?"
+   },
+   "a": {
+    "es": "Unos 112 productos finales (120 × 0,933), frente a 168 de los industriales. Es el segundo caso del ejemplo de Prebisch (1950), donde el ingreso industrial sube a 180 con productividad 160.",
+    "en": "About 112 final products (120 × 0.933), versus 168 for industrial producers. It is the second case in Prebisch's (1950) example, where industrial income rises to 180 with productivity at 160."
+   },
+   "id": "crec-desarrollo-02-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la rigidez a la baja de los salarios en los países industriales puede perjudicar a los exportadores de materias primas?",
+    "en": "Why can downward wage rigidity in industrial countries hurt raw-material exporters?"
+   },
+   "a": {
+    "es": "Porque en la recesión, si salarios y ganancias no bajan en los centros, el ajuste de ingresos se traslada a la periferia vía precios primarios más bajos. Prebisch (1950) lo llama la asimetría del ciclo.",
+    "en": "Because in a downswing, if wages and profits do not fall in the centres, the income adjustment shifts to the periphery through lower primary prices. Prebisch (1950) calls it the asymmetry of the cycle."
+   },
+   "id": "crec-desarrollo-02-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "Entre los años 1870 y 1930, ¿cuánto más producto primario hacía falta para comprar las mismas manufacturas?",
+    "en": "Between the 1870s and the 1930s, how much more primary output was needed to buy the same manufactures?"
+   },
+   "a": {
+    "es": "En promedio un 58,6% más; con la misma cantidad de primarios solo se compraba el 63% de las manufacturas. Son los datos del Board of Trade que usa Prebisch (1950).",
+    "en": "On average 58.6% more; the same amount of primary goods bought only 63% of the manufactures. These are the Board of Trade data Prebisch (1950) uses."
+   },
+   "id": "crec-desarrollo-02-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límite tienen los índices de precios de largo plazo para medir el deterioro de los términos de intercambio?",
+    "en": "What limitation do long-run price indexes have for measuring terms-of-trade deterioration?"
+   },
+   "a": {
+    "es": "No capturan las mejoras de calidad de los productos terminados, lo que el propio Prebisch (1950) reconoce al presentar la tabla; la tendencia también depende del período elegido.",
+    "en": "They do not capture quality improvements in finished goods, which Prebisch (1950) himself acknowledges when presenting the table; the trend also depends on the period chosen."
+   },
+   "id": "crec-desarrollo-02-t6"
+  }
+ ]
+}
