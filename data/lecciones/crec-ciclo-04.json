@@ -1,0 +1,334 @@
+{
+ "id": "crec-ciclo-04",
+ "cat": "crec-ciclo",
+ "orden": 1,
+ "minutos": 9,
+ "titulo": "Multiplicador y acelerador: Samuelson (1939)",
+ "bajada": "Cómo combinar la propensión a consumir con el principio de aceleración produce ciclos, por qué el multiplicador keynesiano es un caso especial y qué cuatro comportamientos puede tener el ingreso nacional.",
+ "fuentes": [
+  1342
+ ],
+ "cita": "Samuelson (1939), «Interactions between the multiplier analysis and the principle of acceleration», Review of Economic Statistics",
+ "intro": "En 1939, Samuelson advertía que el multiplicador, útil para pensar el gasto público deficitario, corría el riesgo de endurecerse en dogma. El multiplicador no dice cuánto ingreso genera un peso de gasto público: dice cuánto ingreso genera la inversión total, pública y privada. Si cada peso de gasto desplazara cien de inversión privada, el efecto total sería negativo aunque el multiplicador fuera positivo. Siguiendo una sugerencia de Alvin Hansen, Samuelson analiza un modelo que agrega la respuesta de la inversión privada mediante el principio de aceleración, y muestra que de ahí surgen oscilaciones.",
+ "secciones": [
+  {
+   "t": "Tres componentes del ingreso",
+   "p": [
+    "En el modelo de Hansen, el ingreso de cada período tiene tres partes: el gasto público deficitario, el consumo inducido por el ingreso del período anterior y la inversión privada inducida, que según el principio de aceleración es proporcional al aumento del consumo. La propensión marginal a consumir se llama α; la constante del acelerador, que Samuelson llama «la relación», β.",
+    "El ejemplo numérico usa α igual a un medio y β igual a uno, con un gasto público de un dólar por período desde un momento inicial. En el primer período el ingreso es un dólar. En el segundo, hay cincuenta centavos de consumo, cincuenta de inversión inducida por ese aumento del consumo y un dólar de gasto: dos dólares. En el tercero, un dólar de consumo, cincuenta centavos de inversión y un dólar de gasto: 2,50."
+   ]
+  },
+  {
+   "t": "Aparecen los ciclos",
+   "p": [
+    "Siguiendo el cálculo, el ingreso alcanza un pico en el tercer período, un valle en el séptimo, otro pico en el undécimo, y así: oscila alrededor de dos dólares. Cuando el consumo deja de crecer, la inversión inducida cae, y cuando el consumo baja, la inversión se vuelve negativa. Ese comportamiento oscilatorio no puede ocurrir en las secuencias convencionales del multiplicador.",
+    "Con otros valores el comportamiento cambia por completo. Con α de un medio y β cero, el caso del multiplicador convencional, no hay oscilaciones. Con α de un medio y β de dos, las oscilaciones son regulares y no se amortiguan. Con α de 0,6 y β de dos, son explosivas alrededor de un valor promedio. Con α de 0,8 y β de cuatro, ya no oscila: crece hacia una tasa de interés compuesto. Samuelson confiesa que el investigador termina «algo desorganizado» ante resultados tan distintos por cambios menores en los supuestos."
+   ]
+  },
+  {
+   "t": "La ecuación en diferencias y las cuatro regiones",
+   "p": [
+    "El álgebra ordena el caos. Sustituyendo consumo e inversión, el ingreso de cada período depende de los dos anteriores: es una ecuación en diferencias de segundo orden con coeficientes constantes, cuya solución depende de las raíces de una ecuación cuadrática en α y β. El plano de valores posibles se divide en cuatro regiones, según que las raíces sean reales o complejas y mayores o menores que uno en valor absoluto.",
+    "Región A, con valores chicos del acelerador: un gasto constante lleva el ingreso asintóticamente a 1/(1−α) veces ese gasto, el resultado del multiplicador de Keynes-Kahn-Clark, que queda como caso particular. Región B: el ingreso se acerca a esa misma asíntota con oscilaciones amortiguadas. Región C: oscilaciones explosivas, cada vez mayores, alrededor de la asíntota. Región D, con propensión y acelerador grandes: el ingreso crece sin límite a tasa compuesta; un solo impulso de inversión lo dispara hacia arriba y una mínima desinversión lo hunde, el caso puro de «cebar la bomba»."
+   ]
+  },
+  {
+   "t": "Límites y lección de método",
+   "p": [
+    "Samuelson reconoce que el modelo supone α y β constantes, cuando en realidad cambian con el nivel de ingreso; por eso es un análisis marginal apto para oscilaciones pequeñas. Aun así es más general que el análisis usual. Y cierra con una defensa del método: contra la impresión común, las matemáticas bien usadas no hacen la teoría más abstracta, sino que la liberan para analizar hipótesis más realistas y complicadas."
+   ]
+  }
+ ],
+ "claves": [
+  "El multiplicador da la relación entre el ingreso y la inversión total, no el efecto del gasto público si este desplaza inversión privada.",
+  "Hansen y Samuelson suman al consumo inducido una inversión proporcional al aumento del consumo (acelerador).",
+  "Con α = 0,5 y β = 1, un gasto constante genera oscilaciones amortiguadas alrededor de 2.",
+  "El ingreso sigue una ecuación en diferencias de segundo orden; sus raíces definen cuatro regiones de comportamiento.",
+  "El multiplicador keynesiano es el caso especial con acelerador nulo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Samuelson, ¿qué relación da en rigor el multiplicador?",
+    "en": "According to Samuelson, what ratio does the multiplier strictly give?"
+   },
+   "op": {
+    "es": [
+     "El aumento del ingreso sobre la inversión total, pública y privada",
+     "El ingreso inducido por cada dólar de gasto público",
+     "La relación entre consumo y ahorro",
+     "El efecto del gasto sobre la tasa de interés"
+    ],
+    "en": [
+     "The rise in income relative to total investment, public and private",
+     "Income induced per dollar of public spending",
+     "The consumption-saving ratio",
+     "The effect of spending on the interest rate"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por eso no dice «cuánto hay que multiplicar» si el gasto desplaza inversión privada.",
+    "en": "So it does not say 'how much is to be multiplied' if spending crowds out private investment."
+   },
+   "id": "crec-ciclo-04-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Hansen, ¿cómo se determina la inversión privada inducida?",
+    "en": "In Hansen's model, how is induced private investment determined?"
+   },
+   "op": {
+    "es": [
+     "Es constante",
+     "Depende de la tasa de interés",
+     "Es proporcional al aumento del consumo entre períodos",
+     "Es igual al ahorro"
+    ],
+    "en": [
+     "It is constant",
+     "It depends on the interest rate",
+     "It is proportional to the increase in consumption between periods",
+     "It equals saving"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el principio de aceleración, con constante β.",
+    "en": "This is the acceleration principle, with constant β."
+   },
+   "id": "crec-ciclo-04-q2"
+  },
+  {
+   "q": {
+    "es": "Con α = 0,5 y β = 1 y un gasto constante de un dólar, ¿qué ocurre con el ingreso?",
+    "en": "With α = 0.5, β = 1 and constant spending of one dollar, what happens to income?"
+   },
+   "op": {
+    "es": [
+     "Crece sin límite",
+     "Oscila con picos y valles que se amortiguan alrededor de dos dólares",
+     "Queda fijo en un dólar",
+     "Cae a cero"
+    ],
+    "en": [
+     "It grows without bound",
+     "It oscillates with damped peaks and troughs around two dollars",
+     "It stays at one dollar",
+     "It falls to zero"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Pico en el período 3, valle en el 7, pico en el 11: oscilaciones amortiguadas.",
+    "en": "Peak in period 3, trough in 7, peak in 11: damped oscillations."
+   },
+   "id": "crec-ciclo-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué caso del modelo reproduce el multiplicador convencional?",
+    "en": "Which case of the model reproduces the conventional multiplier?"
+   },
+   "op": {
+    "es": [
+     "β muy grande",
+     "α igual a uno",
+     "α y β iguales",
+     "β igual a cero"
+    ],
+    "en": [
+     "Very large β",
+     "α equal to one",
+     "α equal to β",
+     "β equal to zero"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin acelerador no hay oscilaciones y el ingreso converge a 1/(1−α) veces el gasto.",
+    "en": "Without the accelerator there are no oscillations and income converges to 1/(1−α) times spending."
+   },
+   "id": "crec-ciclo-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de ecuación describe el ingreso en el modelo?",
+    "en": "What kind of equation describes income in the model?"
+   },
+   "op": {
+    "es": [
+     "Una ecuación diferencial de primer orden",
+     "Una ecuación en diferencias de segundo orden con coeficientes constantes",
+     "Una identidad contable sin dinámica",
+     "Una ecuación no lineal estocástica"
+    ],
+    "en": [
+     "A first-order differential equation",
+     "A second-order difference equation with constant coefficients",
+     "An accounting identity with no dynamics",
+     "A stochastic nonlinear equation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El ingreso de cada período depende de los dos anteriores; las raíces de una cuadrática determinan la dinámica.",
+    "en": "Each period's income depends on the two previous ones; the roots of a quadratic determine the dynamics."
+   },
+   "id": "crec-ciclo-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué caracteriza a la región C del diagrama de Samuelson?",
+    "en": "What characterizes region C in Samuelson's diagram?"
+   },
+   "op": {
+    "es": [
+     "Convergencia sin oscilaciones",
+     "Oscilaciones amortiguadas",
+     "Oscilaciones explosivas alrededor de la asíntota",
+     "Crecimiento a tasa compuesta sin oscilaciones"
+    ],
+    "en": [
+     "Convergence without oscillation",
+     "Damped oscillations",
+     "Explosive oscillations around the asymptote",
+     "Compound growth without oscillation"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "A es convergencia, B oscilación amortiguada, C oscilación explosiva y D crecimiento explosivo.",
+    "en": "A is convergence, B damped oscillation, C explosive oscillation and D explosive growth."
+   },
+   "id": "crec-ciclo-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la región D corresponde al caso puro de «cebar la bomba»?",
+    "en": "Why does region D correspond to pure 'pump-priming'?"
+   },
+   "op": {
+    "es": [
+     "Porque un solo impulso de inversión lleva el ingreso a crecer sin límite",
+     "Porque el gasto público no tiene efecto",
+     "Porque el ingreso vuelve siempre a cero",
+     "Porque la propensión a consumir es nula"
+    ],
+    "en": [
+     "Because a single investment impulse sends income growing without bound",
+     "Because public spending has no effect",
+     "Because income always returns to zero",
+     "Because the propensity to consume is zero"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El aumento total del ingreso no guarda relación finita con el estímulo; también es muy inestable a la baja.",
+    "en": "The total income increase bears no finite ratio to the stimulus; it is also very unstable downward."
+   },
+   "id": "crec-ciclo-04-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué limitación del modelo reconoce Samuelson?",
+    "en": "What limitation of the model does Samuelson acknowledge?"
+   },
+   "op": {
+    "es": [
+     "Que ignora el gasto público",
+     "Que supone una economía cerrada sin consumo",
+     "Que solo vale para economías socialistas",
+     "Que supone α y β constantes, cuando cambian con el nivel de ingreso"
+    ],
+    "en": [
+     "That it ignores public spending",
+     "That it assumes a closed economy with no consumption",
+     "That it only applies to socialist economies",
+     "That it assumes constant α and β, which actually vary with income"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Por eso lo presenta como un análisis marginal para oscilaciones pequeñas.",
+    "en": "Hence he presents it as a marginal analysis for small oscillations."
+   },
+   "id": "crec-ciclo-04-q8"
+  }
+ ],
+ "palabras": 616,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo puede una economía generar ciclos sin shocks repetidos?",
+    "en": "How can an economy generate cycles without repeated shocks?"
+   },
+   "a": {
+    "es": "Si la inversión responde al cambio del consumo (acelerador) y el consumo al ingreso pasado (multiplicador), el ingreso sigue una ecuación en diferencias de segundo orden que puede oscilar. Samuelson (1939) lo muestra en el modelo multiplicador-acelerador de Hansen.",
+    "en": "If investment responds to changes in consumption (accelerator) and consumption to past income (multiplier), income follows a second-order difference equation that can oscillate. Samuelson (1939) shows this in Hansen's multiplier-accelerator model."
+   },
+   "id": "crec-ciclo-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el principio de aceleración?",
+    "en": "What is the acceleration principle?"
+   },
+   "a": {
+    "es": "La idea de que la inversión inducida es proporcional al aumento de la demanda (en el modelo, del consumo), no a su nivel. Samuelson (1939) llama «la relación» a esa constante de proporcionalidad.",
+    "en": "The idea that induced investment is proportional to the increase in demand (in the model, in consumption), not its level. Samuelson (1939) calls that proportionality constant 'the relation'."
+   },
+   "id": "crec-ciclo-04-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el multiplicador no alcanza para medir el efecto del gasto público?",
+    "en": "Why is the multiplier not enough to measure the effect of public spending?"
+   },
+   "a": {
+    "es": "Porque relaciona el ingreso con la inversión total; si el gasto público desplaza inversión privada, el efecto neto puede ser negativo aunque el multiplicador sea positivo. Samuelson (1939) advierte así contra convertirlo en dogma.",
+    "en": "Because it relates income to total investment; if public spending crowds out private investment, the net effect can be negative even with a positive multiplier. Samuelson (1939) thus warns against turning it into dogma."
+   },
+   "id": "crec-ciclo-04-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un gasto público constante puede producir un auge seguido de una caída?",
+    "en": "Why can constant public spending produce a boom followed by a slump?"
+   },
+   "a": {
+    "es": "Porque la inversión inducida depende de que el consumo siga creciendo: cuando el consumo se estabiliza, la inversión cae y arrastra el ingreso. En el ejemplo de Samuelson (1939), con α = 0,5 y β = 1, hay un pico en el período 3 y un valle en el 7.",
+    "en": "Because induced investment depends on consumption continuing to grow: when consumption levels off, investment drops and drags income down. In Samuelson's (1939) example, with α = 0.5 and β = 1, there is a peak in period 3 and a trough in period 7."
+   },
+   "id": "crec-ciclo-04-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué comportamientos puede tener el ingreso cuando interactúan multiplicador y acelerador?",
+    "en": "What behaviors can income show when multiplier and accelerator interact?"
+   },
+   "a": {
+    "es": "Cuatro: convergencia directa, oscilaciones amortiguadas, oscilaciones explosivas o crecimiento explosivo a tasa compuesta, según la propensión a consumir y el acelerador. Samuelson (1939) divide así el plano en las regiones A, B, C y D.",
+    "en": "Four: direct convergence, damped oscillations, explosive oscillations or explosive compound growth, depending on the propensity to consume and the accelerator. Samuelson (1939) divides the plane into regions A, B, C and D."
+   },
+   "id": "crec-ciclo-04-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Hacen las matemáticas más abstracta a la teoría económica?",
+    "en": "Does mathematics make economic theory more abstract?"
+   },
+   "a": {
+    "es": "Al contrario: bien usadas permiten analizar hipótesis más realistas y complicadas, como muestra el álgebra que ordena los resultados del multiplicador-acelerador. Es la defensa del método con que cierra Samuelson (1939).",
+    "en": "On the contrary: properly used, they allow analysis of more realistic and complicated hypotheses, as the algebra organizing the multiplier-accelerator results shows. This is the defense of method that closes Samuelson (1939)."
+   },
+   "id": "crec-ciclo-04-t6"
+  }
+ ]
+}
