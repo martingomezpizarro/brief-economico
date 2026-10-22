@@ -242,8 +242,11 @@ select{min-width:0;max-width:100%}
       <p class="note c">Acá van a aparecer el paper del día, las tarjetas pendientes y tu progreso por caja.</p>
     </div>
   </main>
+  <footer id="pie"></footer>
 </div>
 
+<script src="pie/pie.config.js"></script>
+<script src="pie/pie.js"></script>
 <script src="prompts/prompts.js"></script>
 <script src="logo.js"></script>
 <script>
@@ -415,15 +418,25 @@ function etiquetaDe(x){const t=(a,b)=>S.lang==="es"?a:b;
   if(x.startsWith("#q-"))return t("Volver a las preguntas","Back to the questions");
   if(x==="#ajustes")return t("Volver a Ajustes","Back to Settings");
   if(x==="#cuenta")return t("Volver a la cuenta","Back to the account");
+  if(x.startsWith("#terminos"))return t("Volver a los términos","Back to the terms");
   return t("Volver","Back")}
 function volver(defHref,defLbl){
   const prev=NAV.length>1?NAV[NAV.length-2]:null;
   return h("nav",{class:"volver","aria-label":S.lang==="es"?"Volver":"Back"},h("a",{href:prev||defHref,on:{click:e=>{if(prev){e.preventDefault();history.back()}}}},"← "+(prev?etiquetaDe(prev):defLbl)));
 }
 function route(){
+  const hs=(location.hash||"#hoy").slice(1);
+  // términos y privacidad (pie/pie.js): se pueden abrir aunque los datos no hayan cargado
+  if(hs.startsWith("terminos")&&window.PIE){
+    if(S.ready)regNav();
+    S.volver=["#hoy",S.lang==="es"?"Ir a Hoy":"Go to Today"];
+    document.getElementById("main").classList.remove("ancho");
+    setNav("terminos");mount(PIE.terminos());
+    if(hs!=="terminos"){const el=document.getElementById(hs);if(el)el.scrollIntoView()}
+    return;
+  }
   if(!S.ready)return;
   regNav();
-  const hs=(location.hash||"#hoy").slice(1);
   const es=S.lang==="es";
   S.volver=null;
   if(/^p\d+$/.test(hs))S.volver=["#rack",es?"Ir al rack":"Go to the rack"];
@@ -1412,6 +1425,7 @@ async function importar(e){
 
 logoInicial();
 setNav("hoy");
+if((location.hash||"").startsWith("#terminos"))route();
 boot();
 if("serviceWorker" in navigator)window.addEventListener("load",()=>swReg());
 })();

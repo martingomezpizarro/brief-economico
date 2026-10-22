@@ -27,6 +27,7 @@ Una página HTML sin build. Los datos son archivos JSON en `data/`:
 | `worker/worker.js` | servidor de briefs (Cloudflare Worker + Gemini) y de avisos — ver `worker/ACTIVAR.md` |
 | `logo.js`, `iconos/`, `icono.svg` | el logo (sello con oferta y demanda) y los íconos; se regeneran con `node diseno/iconos.js` |
 | `manifest.webmanifest`, `sw.js` | instalación como app y recepción de los avisos |
+| `pie/pie.config.js`, `pie/pie.js` | pie de página institucional y página de términos (`#terminos`): los datos del autor, la colaboración y los descargos se cambian solo en `pie.config.js` |
 
 El progreso queda en el navegador; con sesión iniciada se sincroniza en Firestore. Los PDF de Mi estudio se leen en el navegador y no se suben.
 
