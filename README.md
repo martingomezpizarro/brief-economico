@@ -5,6 +5,7 @@ Briefs diarios de economía: lecturas de 15 minutos que enseñan un paper, un ca
 **https://prebisch.martingomezpizarro.com.ar**
 
 ## Qué tiene
+- **Bienvenida** (`#inicio`): presentación, cómo funciona y recorrido por la app. Se muestra sola en la primera visita y después queda en el pie («Cómo funciona»).
 - **Hoy**: el brief del día (de la ruta que tengas en foco) y las **tarjetas de hoy**: las nuevas de tus áreas, las del brief que acabás de leer y las que te tocan repasar.
 - **Rutas**: 12 áreas abiertas en 49 categorías (por ejemplo, *Tipo de cambio real y competitividad* o *Deuda soberana y default*). Cada ruta ordena las lecturas de lo esencial a lo puntual: manuales y clásicos, cursada, complementarios, investigación y referencia.
 - **Rack**: 484 lecturas de economía clasificadas por área, categoría y nivel.
@@ -27,6 +28,7 @@ Una página HTML sin build. Los datos son archivos JSON en `data/`:
 | `worker/worker.js` | servidor de briefs (Cloudflare Worker + Gemini) y de avisos — ver `worker/ACTIVAR.md` |
 | `logo.js`, `iconos/`, `icono.svg` | el logo (sello con oferta y demanda) y los íconos; se regeneran con `node diseno/iconos.js` |
 | `manifest.webmanifest`, `sw.js` | instalación como app y recepción de los avisos |
+| `pie/pie.config.js`, `pie/pie.js` | pie de página institucional y página de términos (`#terminos`): los datos del autor, la colaboración y los descargos se cambian solo en `pie.config.js` |
 
 El progreso queda en el navegador; con sesión iniciada se sincroniza en Firestore. Los PDF de Mi estudio se leen en el navegador y no se suben.
 

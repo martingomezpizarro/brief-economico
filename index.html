@@ -213,6 +213,35 @@ select{min-width:0;max-width:100%}
 .checks label{display:flex;gap:8px;align-items:center;font-size:15px}
 .checks input{accent-color:var(--accent);width:18px;height:18px}
 .empty{border:1px dashed var(--line2);padding:20px;border-radius:2px;text-align:center;color:var(--muted)}
+/* bienvenida (#inicio) */
+.ini{display:flex;flex-direction:column;gap:40px;max-width:58rem;margin:0 auto;width:100%}
+.ini-hero{display:flex;flex-direction:column;gap:16px;align-items:center;padding-top:8px}
+.ini-h1{font:600 clamp(30px,6vw,46px)/1.1 "Cormorant Garamond",var(--serif);max-width:32rem;letter-spacing:.01em}
+.ini-lead{max-width:38rem;font-size:18px}
+.ini-stats{width:100%;max-width:26rem;margin-block:6px}
+.ini-ctas{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;width:100%}
+.ini-ctas .btn{flex:1 1 14rem;max-width:20rem}
+.ini-pasos{list-style:none;padding:0;display:grid;grid-template-columns:minmax(0,1fr);gap:32px;margin-top:8px}
+@media (min-width:760px){ .ini-pasos{grid-template-columns:repeat(3,minmax(0,1fr));gap:36px} }
+.ini-pasos li{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.ini-pasos h2{font-size:21px}
+.ini-pasos p{max-width:18rem}
+.ini-ilu{color:var(--accent);background:var(--honey);border-radius:50%;width:148px;height:148px;display:flex;align-items:center;justify-content:center;box-shadow:inset 0 0 0 1px var(--line2)}
+.ini-num{font-family:var(--mono);font-size:12px;color:var(--muted);margin-right:6px;font-weight:400}
+.ini-tour{list-style:none;padding:0;gap:0;max-width:48rem;margin:0 auto;width:100%}
+.ini-tour li{display:grid;grid-template-columns:minmax(0,1fr);gap:6px;padding:14px 0;border-top:1px solid var(--line)}
+@media (min-width:760px){ .ini-tour li{grid-template-columns:11rem minmax(0,1fr);gap:28px} }
+.ini-tab{display:flex;align-items:baseline;gap:4px;font-family:var(--mono);font-size:13px}
+.ini-tab a{text-decoration:none;font-weight:500}
+.ini-tip{display:flex;flex-direction:column;gap:8px;max-width:48rem;margin:0 auto;width:100%;box-sizing:border-box}
+.ini-faq{display:flex;flex-direction:column;max-width:48rem;margin:0 auto;width:100%}
+.ini-faq details{border-top:1px solid var(--line)}
+.ini-faq summary{cursor:pointer;padding:12px 0;font-weight:600}
+.ini-faq summary:hover{color:var(--accent)}
+.ini-faq details p{padding-bottom:14px}
+.ini-fin{display:flex;flex-direction:column;gap:18px;align-items:center}
+.ini-fin .orn{width:100%}
+.ini-cierre{font:600 26px/1.2 "Cormorant Garamond",var(--serif)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
@@ -242,8 +271,11 @@ select{min-width:0;max-width:100%}
       <p class="note c">Acá van a aparecer el paper del día, las tarjetas pendientes y tu progreso por caja.</p>
     </div>
   </main>
+  <footer id="pie"></footer>
 </div>
 
+<script src="pie/pie.config.js"></script>
+<script src="pie/pie.js"></script>
 <script src="prompts/prompts.js"></script>
 <script src="logo.js"></script>
 <script>
@@ -341,6 +373,7 @@ async function boot(){
     const rord={};S.rutas.forEach((r,i)=>rord[r.id]=i);
     S.lecciones=li.slice().sort((a,b)=>((rord[a.cat]??999)-(rord[b.cat]??999))||(a.orden-b.orden));
     S.lecciones.forEach(l=>S.lecById[l.id]=l);
+    S.nuevo=!lsGet("breve-estado");
     S.est=Object.assign(defaultEst(),lsGet("breve-estado")||{});
     S.est.cfg=Object.assign(defaultEst().cfg,S.est.cfg||{});
     S.est.leidos=S.est.leidos||{};S.est.lecciones=S.est.lecciones||{};
@@ -415,22 +448,34 @@ function etiquetaDe(x){const t=(a,b)=>S.lang==="es"?a:b;
   if(x.startsWith("#q-"))return t("Volver a las preguntas","Back to the questions");
   if(x==="#ajustes")return t("Volver a Ajustes","Back to Settings");
   if(x==="#cuenta")return t("Volver a la cuenta","Back to the account");
+  if(x.startsWith("#terminos"))return t("Volver a los términos","Back to the terms");
+  if(x==="#inicio")return t("Volver a Cómo funciona","Back to How it works");
   return t("Volver","Back")}
 function volver(defHref,defLbl){
   const prev=NAV.length>1?NAV[NAV.length-2]:null;
   return h("nav",{class:"volver","aria-label":S.lang==="es"?"Volver":"Back"},h("a",{href:prev||defHref,on:{click:e=>{if(prev){e.preventDefault();history.back()}}}},"← "+(prev?etiquetaDe(prev):defLbl)));
 }
 function route(){
+  const hs=(location.hash||"#hoy").slice(1);
+  // términos y privacidad (pie/pie.js): se pueden abrir aunque los datos no hayan cargado
+  if(hs.startsWith("terminos")&&window.PIE){
+    if(S.ready)regNav();
+    S.volver=["#hoy",S.lang==="es"?"Ir a Hoy":"Go to Today"];
+    document.getElementById("main").classList.remove("ancho");
+    setNav("terminos");mount(PIE.terminos());
+    if(hs!=="terminos"){const el=document.getElementById(hs);if(el)el.scrollIntoView()}
+    return;
+  }
   if(!S.ready)return;
   regNav();
-  const hs=(location.hash||"#hoy").slice(1);
   const es=S.lang==="es";
   S.volver=null;
   if(/^p\d+$/.test(hs))S.volver=["#rack",es?"Ir al rack":"Go to the rack"];
   else if(hs.startsWith("ruta-")){const r=ruta(decodeURIComponent(hs.slice(5)));S.volver=r&&r.tipo==="mia"?["#estudio",es?"Ir a Mi estudio":"Go to My study"]:["#rutas",es?"Ir a las rutas":"Go to paths"]}
   else if(hs.startsWith("l-"))S.volver=["#hoy",es?"Ir a Hoy":"Go to Today"];
-  document.getElementById("main").classList.toggle("ancho",["hoy","","rack","rutas"].includes(hs)||hs.startsWith("area-"));
+  document.getElementById("main").classList.toggle("ancho",["hoy","","rack","rutas","inicio"].includes(hs)||hs.startsWith("area-"));
   const bc=document.getElementById("btn-cuenta");if(bc){if(hs==="cuenta")bc.setAttribute("aria-current","page");else bc.removeAttribute("aria-current")}
+  if(hs==="inicio"){setNav("inicio");return viewInicio()}
   if(hs==="cuenta"){setNav("cuenta");return viewCuenta()}
   if(hs==="rack"){setNav("rack");return viewRack()}
   if(hs==="rutas"){setNav("rutas");return viewRutas()}
@@ -442,6 +487,8 @@ function route(){
   if(hs==="sesion"){setNav("hoy");return S.ses?viewCard():viewHoy()}
   if(hs.startsWith("l-")){setNav("hoy");return viewLeccion(decodeURIComponent(hs.slice(2)))}
   if(hs.startsWith("q-")){setNav("hoy");return viewQuiz(decodeURIComponent(hs.slice(2)))}
+  // primera visita sin estado guardado: bienvenida y tutorial, una sola vez
+  if(!location.hash&&S.nuevo&&!lsGet("prebisch-bienvenida")){setNav("inicio");return viewInicio()}
   setNav("hoy");viewHoy();
 }
 window.addEventListener("hashchange",route);
@@ -566,6 +613,68 @@ function viewHoy(){
     h("div",{class:"hoy-par"},brief,ses),
     h("div",{class:"grid2"},...nodes.slice(is+1))));
   avisoTexto();
+}
+
+/* ---------- bienvenida y tutorial (#inicio) ----------
+   Se muestra sola la primera vez que alguien entra sin estado guardado; después queda en el pie («Cómo funciona»). */
+const ILU={
+  leer:'<svg viewBox="0 0 120 84" width="120" height="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="24" y="8" width="54" height="68" rx="2"/><path d="M32 20h38M32 28h38M32 36h30M32 44h38M32 52h22M32 60h34"/><path d="M38 66q8-6 16 0" opacity=".55"/><path d="M86 20h20M86 26h15M86 32h18" stroke-width="1.2" opacity=".6"/><circle cx="82" cy="20" r="1.6" fill="currentColor" stroke="none"/></svg>',
+  responder:'<svg viewBox="0 0 120 84" width="120" height="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="22" y="10" width="76" height="16" rx="2"/><rect x="22" y="34" width="76" height="16" rx="2" fill="currentColor" fill-opacity=".14"/><rect x="22" y="58" width="76" height="16" rx="2"/><path d="M30 18h4M30 66h4" stroke-width="1.2"/><path d="M28.5 42l3 3 6-7"/><path d="M42 18h40M42 42h46M42 66h34" stroke-width="1.2" opacity=".55"/></svg>',
+  repasar:'<svg viewBox="0 0 120 84" width="120" height="84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M10 66h100" opacity=".5"/><rect x="14" y="52" width="12" height="14" rx="1"/><rect x="30" y="46" width="12" height="20" rx="1"/><rect x="46" y="38" width="12" height="28" rx="1"/><rect x="62" y="30" width="12" height="36" rx="1"/><rect x="78" y="22" width="12" height="44" rx="1"/><rect x="94" y="12" width="12" height="54" rx="1" fill="currentColor" fill-opacity=".14"/><g font-family="IBM Plex Mono,monospace" font-size="7" fill="currentColor" stroke="none" text-anchor="middle"><text x="20" y="76">1</text><text x="36" y="76">3</text><text x="52" y="76">7</text><text x="68" y="76">16</text><text x="84" y="76">35</text><text x="100" y="76">90</text></g><path d="M20 46q20-30 78-38" stroke-dasharray="2 3" opacity=".6"/><path d="M93 5l5 3-4 4"/></svg>'};
+function ilu(k){const d=h("div",{class:"ini-ilu","aria-hidden":"true"});d.innerHTML=ILU[k];return d}
+function viewInicio(){
+  const es=S.lang==="es";const t=(a,b)=>es?a:b;
+  lsSet("prebisch-bienvenida",true);
+  const nBriefs=S.lecciones.filter(l=>!l.mia).length,nLect=S.indice.length,nAreas=S.areas?S.areas.orden.length:0,nCat=S.rutas.filter(r=>r.tipo==="cat").length;
+  const cta=(href,txt,ghost)=>h("a",{class:"btn"+(ghost?" ghost":""),href,style:"display:inline-flex;align-items:center;justify-content:center;text-decoration:none"},txt);
+  const hero=h("section",{class:"ini-hero"},
+    selloNodo(150),
+    h("p",{class:"eyebrow c"},t("Briefs diarios de economía","Daily economics briefs")),
+    h("h1",{class:"c ini-h1"},t("Quince minutos por día para estudiar economía en serio.","Fifteen minutes a day to study economics properly.")),
+    h("p",{class:"j ini-lead"},t("Prebisch convierte papers, capítulos y apuntes en lecturas breves que enseñan desde cero: la idea central, el mecanismo, el modelo y la evidencia. Después, preguntas de control y tarjetas de repaso espaciado para que lo que leíste no se pierda. Sin costo y sin necesidad de cuenta.",
+      "Prebisch turns papers, chapters and lecture notes into short readings that teach from scratch: the core idea, the mechanism, the model and the evidence. Then check questions and spaced-review cards so what you read sticks. Free, and no account needed.")),
+    h("div",{class:"stats ini-stats"},
+      h("div",{class:"stat"},h("b",null,nBriefs),h("span",null,t("briefs","briefs"))),
+      h("div",{class:"stat"},h("b",null,nLect),h("span",null,t("lecturas","readings"))),
+      h("div",{class:"stat"},h("b",null,nAreas),h("span",null,t("áreas","areas")))),
+    h("div",{class:"ini-ctas"},cta("#hoy",t("Empezar con el brief de hoy","Start with today's brief")),cta("#estudio",t("Armar mi ruta con mis PDF","Build my path from my PDFs"),true)));
+  const pasos=[
+    ["leer",t("Leé","Read"),t("Un brief de unos 15 minutos sobre un paper o un tema, con sus ecuaciones y la cita de la fuente.","A 15-minute brief on a paper or topic, with its equations and the full citation.")],
+    ["responder",t("Respondé","Answer"),t("Ocho preguntas de control al final, con la explicación de cada respuesta.","Eight check questions at the end, each with its explanation.")],
+    ["repasar",t("Repasá","Review"),t("Las tarjetas vuelven a los 1, 3, 7, 16, 35 y 90 días, según qué tan bien las recuerdes.","Cards come back after 1, 3, 7, 16, 35 and 90 days, depending on how well you recall them.")]];
+  const como=h("section",{class:"block"},
+    h("p",{class:"eyebrow c"},t("Cómo funciona","How it works")),
+    h("ol",{class:"ini-pasos"},pasos.map((p,i)=>h("li",null,ilu(p[0]),h("h2",null,h("span",{class:"ini-num"},(i+1)+"."),p[1]),h("p",null,p[2])))));
+  const rec=[
+    ["#hoy",t("Hoy","Today"),t("Tu punto de partida cada día. Arriba, el brief que toca según la ruta que tengas en foco; al lado, las tarjetas de hoy: las nuevas y las que vencen. Abajo, cuántas tarjetas tenés en cada caja de repaso.","Your daily starting point. Up top, the brief due for your focus path; next to it, today's cards, new and due. Below, how many cards sit in each review box.")],
+    ["#rutas",t("Rutas","Paths"),t(nAreas+" áreas abiertas en "+nCat+" categorías. Cada ruta ordena las lecturas de lo esencial a lo puntual: manuales y clásicos, cursada, complementarios, investigación y referencia. Elegí una como foco y Hoy te va proponiendo sus briefs en orden.",nAreas+" areas split into "+nCat+" categories. Each path orders the readings from essentials to specifics: textbooks and classics, coursework, complementary, research and reference. Pick one as your focus and Today will serve its briefs in order.")],
+    ["#hoy",t("El brief","The brief"),t("Explica el trabajo desde cero y lo vincula con otros temas del rack. Al terminar, las preguntas de control: tus respuestas y las tarjetas del brief recién ahí entran al repaso, nunca antes. Cada brief tiene un enlace para reportar errores.","It explains the work from scratch and links it to other topics in the rack. When you finish, the check questions: only then do your answers and the brief's cards join the review. Every brief has a link to report errors.")],
+    ["#hoy",t("Las tarjetas","The cards"),t("Primero pensá la respuesta; después mirala y calificate: Otra vez, Difícil, Bien o Fácil. De eso depende cuándo vuelve. En compu: espacio para mostrar la respuesta y 1 a 4 para calificar.","Think of the answer first; then reveal it and grade yourself: Again, Hard, Good or Easy. That decides when it comes back. On a computer: space to reveal, 1 to 4 to grade.")],
+    ["#rack",t("Rack","Rack"),t("Las "+nLect+" lecturas, por área, categoría y nivel. Las que tienen ficha muestran un resumen técnico; todas enlazan a su búsqueda pública para encontrar el texto.","All "+nLect+" readings by area, category and level. Those with a summary show a technical card; all link to a public search to find the text.")],
+    ["#estudio",t("Mi estudio","My study"),t("Subí tus PDF, contá qué querés aprender y la app arma una ruta con un brief por día generado con inteligencia artificial. Podés usar el servidor de la app (gratis, con cupo diario e iniciando sesión) o tu propia key de Gemini o Anthropic. Los PDF se leen en tu navegador.","Upload your PDFs, say what you want to learn, and the app builds a path with one AI-generated brief a day. Use the app's server (free, daily quota, signed in) or your own Gemini or Anthropic key. PDFs are read in your browser.")],
+    ["#ajustes",t("Ajustes","Settings"),t("Hora del repaso, minutos por sesión, tarjetas nuevas por día y áreas que te interesan. También el aviso diario, el evento en tu calendario y, en compu, la conexión con tu carpeta de PDF.","Review time, minutes per session, new cards per day and your areas. Also the daily notification, a calendar event and, on a computer, linking your PDF folder.")],
+    ["#cuenta",t("Cuenta","Account"),t("Opcional. Sin cuenta, todo queda en este navegador. Con una cuenta de Google o con tu mail, el progreso se sincroniza entre dispositivos y podés recibir avisos.","Optional. Without one, everything stays in this browser. With a Google account or your email, progress syncs across devices and you can get notifications.")]];
+  const tour=h("section",{class:"block rule"},
+    h("p",{class:"eyebrow c"},t("Recorrido por la app","A tour of the app")),
+    h("ol",{class:"ini-tour"},rec.map(([href,tit,txt],i)=>h("li",null,
+      h("div",{class:"ini-tab"},h("span",{class:"ini-num"},String(i+1).padStart(2,"0")),h("a",{href},tit)),
+      h("p",{class:"j"},txt)))));
+  const tips=h("section",{class:"box ini-tip"},
+    h("p",{class:"eyebrow"},t("Consejo","Tip")),
+    h("p",{class:"j"},t("Instalá Prebisch como app: en el celular, abrí el menú del navegador y elegí «Agregar a la pantalla de inicio» (en iPhone, desde Safari: Compartir → Agregar a inicio). Así abre en un toque y, si activás los avisos, te recuerda el repaso a la hora que elijas.",
+      "Install Prebisch as an app: on your phone, open the browser menu and choose «Add to Home screen» (on iPhone, in Safari: Share → Add to Home Screen). It opens in one tap and, with notifications on, reminds you at the time you choose.")));
+  const faq=[
+    [t("¿Es gratis?","Is it free?"),t("Sí. Es un proyecto independiente y sin fines de lucro. Si te resulta útil, abajo hay formas de colaborar voluntariamente.","Yes. It is an independent, non-profit project. If you find it useful, there are voluntary ways to support it below.")],
+    [t("¿Necesito una cuenta?","Do I need an account?"),t("No. Solo hace falta para sincronizar entre dispositivos, recibir avisos o generar briefs con el servidor de la app.","No. You only need one to sync across devices, get notifications or generate briefs with the app's server.")],
+    [t("¿De dónde salen los briefs?","Where do the briefs come from?"),t("Se escriben a partir del texto de cada obra, con asistencia de inteligencia artificial y control de cifras contra la fuente. Pueden tener errores: no reemplazan la lectura del original.","They are written from each work's text, with AI assistance and figures checked against the source. They may contain errors: they do not replace reading the original.")],
+    [t("¿Qué pasa con mis PDF?","What happens to my PDFs?"),t("Se leen en tu navegador y no se suben. Solo se envía su texto al motor de IA cuando pedís generar un brief.","They are read in your browser and never uploaded. Only their text is sent to the AI engine when you ask for a brief.")]];
+  const preg=h("section",{class:"block rule"},
+    h("p",{class:"eyebrow c"},t("Preguntas frecuentes","FAQ")),
+    h("div",{class:"ini-faq"},faq.map(([q,a])=>h("details",null,h("summary",null,q),h("p",{class:"j"},a)))),
+    h("p",{class:"c small"},h("a",{href:"#terminos"},t("Términos y condiciones de uso","Terms of use"))," · ",h("a",{href:"#terminos-privacidad"},t("Privacidad","Privacy"))));
+  const fin=h("section",{class:"ini-fin"},ornamento(),h("p",{class:"c ini-cierre"},t("Una lectura por día. Un repaso por día.","One reading a day. One review a day.")),
+    h("div",{class:"ini-ctas"},cta("#hoy",t("Empezar ahora","Start now")),cta("#rutas",t("Ver las rutas","See the paths"),true)));
+  mount(h("div",{class:"ini"},hero,ornamento(),como,tour,tips,preg,fin));
 }
 
 /* Cita completa de una lectura del rack, con enlace a su ficha y a Google Académico. */
@@ -1412,6 +1521,7 @@ async function importar(e){
 
 logoInicial();
 setNav("hoy");
+if((location.hash||"").startsWith("#terminos"))route();
 boot();
 if("serviceWorker" in navigator)window.addEventListener("load",()=>swReg());
 })();
