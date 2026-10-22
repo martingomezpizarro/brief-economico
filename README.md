@@ -5,6 +5,7 @@ Briefs diarios de economía: lecturas de 15 minutos que enseñan un paper, un ca
 **https://prebisch.martingomezpizarro.com.ar**
 
 ## Qué tiene
+- **Bienvenida** (`#inicio`): presentación, cómo funciona y recorrido por la app. Se muestra sola en la primera visita y después queda en el pie («Cómo funciona»).
 - **Hoy**: el brief del día (de la ruta que tengas en foco) y las **tarjetas de hoy**: las nuevas de tus áreas, las del brief que acabás de leer y las que te tocan repasar.
 - **Rutas**: 12 áreas abiertas en 49 categorías (por ejemplo, *Tipo de cambio real y competitividad* o *Deuda soberana y default*). Cada ruta ordena las lecturas de lo esencial a lo puntual: manuales y clásicos, cursada, complementarios, investigación y referencia.
 - **Rack**: 484 lecturas de economía clasificadas por área, categoría y nivel.

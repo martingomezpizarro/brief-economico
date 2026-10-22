@@ -119,6 +119,7 @@
         C.descargoCorto ? h("p", { class: "pie-desc" }, C.descargoCorto) : null,
         h("p", { class: "pie-desc" }, "El contenido se ofrece «tal cual», sin garantías de exactitud, integridad ni actualización, y el autor no se responsabiliza por decisiones tomadas ni por daños derivados de su uso."),
         h("nav", { class: "pie-links", "aria-label": "Información legal" },
+          (P.enlaces || []).map(e => h("a", { href: e.href }, e.texto)),
           h("a", { href: rutaTerminos() }, "Términos y condiciones de uso"),
           C.privacidad ? h("a", { href: rutaTerminos("privacidad") }, "Política de privacidad") : null,
           P.repo ? ext(P.repo + "/issues/new", "Reportar un error") : null),

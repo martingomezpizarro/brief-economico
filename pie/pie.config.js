@@ -26,12 +26,14 @@ window.PIE_CONFIG = {
     licencia: null,
     // Ruta interna de la página de términos (en una SPA con hash; en un sitio de varias páginas, "terminos.html").
     terminos: "#terminos",
+    // Enlaces internos extra que aparecen primero en la fila de links del pie.
+    enlaces: [{ texto: "Cómo funciona", href: "#inicio" }],
   },
 
   colaborar: {
     texto: "Este proyecto es gratuito e independiente. Si te resulta útil, podés colaborar voluntariamente para sostenerlo.",
     cafecito: null,                       // p. ej. "https://cafecito.app/usuario"
-    otra: { etiqueta: "Mercado Pago", valor: null, link: null }, // valor = alias o CVU; link = link de pago (opcional)
+    otra: { etiqueta: "Mercado Pago", valor: "martingomezpizarro", link: null }, // valor = alias o CVU; link = link de pago (opcional)
   },
 
   /* Resumen que aparece en el pie (una o dos frases). */
