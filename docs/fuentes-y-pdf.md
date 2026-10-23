@@ -15,6 +15,8 @@ Cómo se abre el texto completo de cada lectura del rack desde la app.
 - `herramientas/aplicar_fuentes.py`: copia a `data/indice.json` los campos `url` y `acceso: "publico"` de las lecturas con estado `publico`. Correrlo después de editar el registro.
 - `herramientas/renombrar_pdfs.py`: propone (`renombrar.csv`), aplica (`--aplicar`) y deshace (`--deshacer`) la convención de nombres en una carpeta de PDF.
 
+- `data/guia-pdf.json`: texto del instructivo «Abrir los PDF» (`#guia-pdf`, enlazado desde el pie, Ajustes y cada lectura). Se edita ahí; cada paso acepta una captura opcional (`"imagen": "guia/img/..."`).
+
 ## Activar Google Drive (una vez)
 
 La app usa el selector de Google con el permiso `drive.file`: solo ve los archivos o la carpeta que el usuario elige. Es un permiso no sensible, así que no requiere la auditoría de seguridad que Google exige para leer todo el Drive.

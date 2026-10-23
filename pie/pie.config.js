@@ -27,7 +27,7 @@ window.PIE_CONFIG = {
     // Ruta interna de la página de términos (en una SPA con hash; en un sitio de varias páginas, "terminos.html").
     terminos: "#terminos",
     // Enlaces internos extra que aparecen primero en la fila de links del pie.
-    enlaces: [{ texto: "Cómo funciona", href: "#inicio" }],
+    enlaces: [{ texto: "Cómo funciona", href: "#inicio" }, { texto: "Abrir los PDF", href: "#guia-pdf" }],
   },
 
   colaborar: {

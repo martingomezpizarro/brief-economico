@@ -183,6 +183,13 @@ select{min-width:0;max-width:100%}
 .docs input[type=text]{width:6.5rem;font:13px var(--mono);padding:6px;border:1px solid var(--line2);border-radius:2px;background:var(--surface);color:var(--ink)}
 .mini{font:12px var(--mono);border:1px solid var(--line2);background:transparent;border-radius:2px;padding:6px 8px;min-height:32px;color:var(--muted)}
 .estado{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;white-space:pre-wrap}
+.guia-indice{max-width:30rem;margin:8px auto 0;padding-left:1.4em}
+.guia-pasos{padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+.guia-pasos li::marker{font-family:var(--mono);color:var(--accent)}
+.guia-img{display:block;max-width:100%;height:auto;margin:8px auto;border:1px solid var(--line);border-radius:6px}
+.link-manual{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.link-manual input{flex:1 1 14rem;min-width:0}
+.link-manual .estado{flex-basis:100%}
 .nombre-pdf{font-family:var(--mono);font-size:12px;word-break:break-word;background:none;color:var(--ink)}
 .estado.error{color:var(--again)}
 .drop{border:1px dashed var(--line2);border-radius:2px;padding:18px;text-align:center;color:var(--muted);cursor:pointer}
@@ -449,6 +456,7 @@ function etiquetaDe(x){const t=(a,b)=>S.lang==="es"?a:b;
   if(x==="#rutas")return t("Volver a las rutas","Back to paths");
   if(x.startsWith("#ruta-"))return t("Volver a la ruta","Back to the path");
   if(x==="#estudio")return t("Volver a Mi estudio","Back to My study");
+  if(x==="#guia-pdf")return t("Volver al instructivo","Back to the guide");
   if(/^#p\d+$/.test(x))return t("Volver a la lectura","Back to the reading");
   if(x.startsWith("#l-"))return t("Volver al brief","Back to the brief");
   if(x.startsWith("#q-"))return t("Volver a las preguntas","Back to the questions");
@@ -482,6 +490,7 @@ function route(){
   document.getElementById("main").classList.toggle("ancho",["hoy","","rack","rutas","inicio"].includes(hs)||hs.startsWith("area-"));
   const bc=document.getElementById("btn-cuenta");if(bc){if(hs==="cuenta")bc.setAttribute("aria-current","page");else bc.removeAttribute("aria-current")}
   if(hs==="inicio"){setNav("inicio");return viewInicio()}
+  if(hs==="guia-pdf"){setNav("guia-pdf");return viewGuiaPDF()}
   if(hs==="cuenta"){setNav("cuenta");return viewCuenta()}
   if(hs==="rack"){setNav("rack");return viewRack()}
   if(hs==="rutas"){setNav("rutas");return viewRutas()}
@@ -696,7 +705,7 @@ function linkPublico(p,texto){const es=S.lang==="es";
   return conSesion()?h("a",{href:p.url,target:"_blank",rel:"noopener"},texto||(es?"Abrir el texto completo":"Open the full text"))
     :h("a",{href:"#cuenta",title:es?"Iniciá sesión para abrir la fuente":"Sign in to open the source"},(texto||(es?"Abrir el texto completo":"Open the full text"))+(es?" (con tu cuenta)":" (sign in)"))}
 function linksTexto(pid){const es=S.lang==="es";const p=S.byId[pid]||{};const out=[];
-  if(DRIVE.mapa[pid])out.push(h("a",{href:urlDrive(DRIVE.mapa[pid].f),target:"_blank",rel:"noopener"},es?"Abrir mi PDF":"Open my PDF"));
+  if(DRIVE.mapa[pid])out.push(h("a",{href:urlMio(DRIVE.mapa[pid]),target:"_blank",rel:"noopener"},es?"Abrir mi PDF":"Open my PDF"));
   else if(BIB.mapa[pid])out.push(h("button",{class:"linkbtn",type:"button",on:{click:()=>bibAbrir(pid)}},es?"Abrir mi PDF":"Open my PDF"));
   if(p.url&&p.acceso==="publico")out.push(linkPublico(p));
   return out}
@@ -1417,15 +1426,21 @@ function bloqueMiPDF(id){
   const es=S.lang==="es";const d=DRIVE.mapa[id];
   const sec=h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Mi PDF":"My PDF"));
   const nombre=()=>h("p",{class:"c small"},(es?"Para que se vincule solo, nombrá el archivo así: ":"To link it automatically, name the file: "),h("code",{class:"nombre-pdf"},nombreSugerido(S.byId[id]||{id})));
+  const guia=()=>h("p",{class:"c small"},h("a",{href:"#guia-pdf"},es?"Cómo cargar y vincular tus PDF →":"How to add and link your PDFs →"));
+  const manual=()=>{const inp=h("input",{type:"url",inputmode:"url",placeholder:es?"Pegá el link de tu PDF (Drive u otro)":"Paste your PDF link (Drive or other)","aria-label":es?"Link de tu PDF":"Your PDF link"});
+    const est=h("p",{class:"estado"});
+    return h("div",{class:"link-manual"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>{const u=inp.value.trim();
+      if(!/^https:\/\/\S+$/i.test(u)){est.textContent=es?"Pegá un link que empiece con https://":"Paste a link starting with https://";return}
+      DRIVE.mapa[id]={u,n:es?"Link cargado a mano":"Link added by hand"};driveGuardar();route()}}},es?"Guardar link":"Save link"),est)};
   if(d){
     sec.append(h("p",{class:"c note"},d.n),
-      h("p",{class:"c"},h("a",{class:"btn",href:urlDrive(d.f),target:"_blank",rel:"noopener",style:"display:inline-block;text-decoration:none"},es?"Abrir mi PDF":"Open my PDF")),
+      h("p",{class:"c"},h("a",{class:"btn",href:urlMio(d),target:"_blank",rel:"noopener",style:"display:inline-block;text-decoration:none"},es?"Abrir mi PDF":"Open my PDF")),
       h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete DRIVE.mapa[id];driveGuardar();route()}}},es?"No es este archivo":"Wrong file")));
     return sec;
   }
   if(!bibSoportada()){
-    if(!DRIVE_CFG.clientId)return null;
-    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de Google Drive en Ajustes para abrirlo desde acá →":"Link your Google Drive folder in Settings to open it from here →")),nombre());
+    if(DRIVE_CFG.clientId)sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de Google Drive en Ajustes para abrirlo desde acá →":"Link your Google Drive folder in Settings to open it from here →")),nombre());
+    sec.append(manual(),guia());
     return sec;
   }
   if(BIB.mapa[id]){
@@ -1434,7 +1449,7 @@ function bloqueMiPDF(id){
         h("button",{class:"btn ghost",type:"button",on:{click:()=>bibBrief(id)}},es?"Armar el brief":"Build the brief")),
       h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete BIB.mapa[id];lsSet("prebisch-bib",BIB.mapa);route()}}},es?"No es este archivo":"Wrong file")));
   }else if(!Object.keys(BIB.mapa).length&&!BIB.archivos.length){
-    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF (Drive o la compu) en Ajustes para abrirlo desde acá →":"Link your PDF folder (Drive or computer) in Settings to open it from here →")),nombre());
+    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF (Drive o la compu) en Ajustes para abrirlo desde acá →":"Link your PDF folder (Drive or computer) in Settings to open it from here →")),nombre(),manual(),guia());
   }else{
     const sel=h("select",{"aria-label":es?"Elegir el archivo":"Choose the file"},h("option",{value:""},es?"Elegí el archivo de tu carpeta…":"Choose the file from your folder…"));
     const llenar=()=>{const usados=new Set(Object.values(BIB.mapa));const p=S.byId[id];
@@ -1442,6 +1457,7 @@ function bloqueMiPDF(id){
     sec.append(h("p",{class:"c note"},es?"No encontré este texto en tu carpeta automáticamente.":"This text was not matched automatically."),sel,
       h("button",{class:"btn ghost",type:"button",on:{click:async()=>{if(!BIB.archivos.length){if(!(await bibAbrirDir(true)))return;llenar();return}if(sel.value){BIB.mapa[id]=sel.value;lsSet("prebisch-bib",BIB.mapa);route()}}}},es?"Vincular":"Link"));
     if(BIB.archivos.length)llenar();
+    sec.append(manual(),guia());
   }
   return sec;
 }
@@ -1450,6 +1466,7 @@ function seccionBiblioteca(){
   const correr=fn=>async()=>{BIB.estado=es?"Leyendo la carpeta…":"Reading the folder…";refrescar();try{BIB.estado=await fn()}catch(e){BIB.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
   const sec=h("section",{class:"block rule",id:"sec-bib"},h("p",{class:"eyebrow c"},es?"Mi biblioteca":"My library"),
     h("p",{class:"j"},es?"Conectá la carpeta donde tenés los PDF del rack. Cada lectura queda vinculada a su archivo y lo abrís con un toque desde su ficha o su brief. Los archivos no se copian ni se suben a la app: solo se guarda qué archivo corresponde a cada lectura.":"Link the folder with your rack PDFs. Each reading gets linked to its file, which you open in one tap from its page or brief. Files are not copied or uploaded: only the link between file and reading is stored."),
+    h("p",{class:"c small"},h("a",{href:"#guia-pdf"},es?"Instructivo: cómo nombrar, cargar y vincular tus PDF →":"Guide: how to name, add and link your PDFs →")),
     bloqueDrive(),
     h("p",{class:"eyebrow c",style:"margin-top:18px"},es?"Carpeta de esta compu":"Folder on this computer"),
     !bibSoportada()?h("p",{class:"note j"},es?"Este navegador no permite conectar carpetas locales (funciona en Chrome o Edge de escritorio). En el celular, usá la carpeta de Drive.":"This browser cannot link local folders (works in desktop Chrome or Edge). On a phone, use the Drive folder."):
@@ -1468,6 +1485,7 @@ function seccionBiblioteca(){
    El mapa {lectura: {f: id del archivo, n: nombre}} queda en el navegador y, con cuenta, en Firestore. */
 const DRIVE={mapa:lsGet("prebisch-drive")||{},estado:""};
 const urlDrive=f=>"https://drive.google.com/file/d/"+encodeURIComponent(f)+"/view";
+const urlMio=d=>d.u||urlDrive(d.f);
 const numLectura=id=>String(id).padStart(4,"0");
 const TIPO_NOMBRE={paper:"paper",libro:"libro",capitulo:"capitulo",apunte:"apunte",informe:"informe",dato:"dato"};
 function nombreSugerido(p){
@@ -1509,7 +1527,7 @@ async function driveHijos(tok,carpeta,out,prof){
     pt=j.nextPageToken||""}while(pt);
   return out}
 function driveEmparejar(pdfs){
-  const usados=new Set(Object.values(DRIVE.mapa).map(x=>x.f));const libres=[];let n=0;
+  const usados=new Set(Object.values(DRIVE.mapa).map(x=>x.f).filter(Boolean));const libres=[];let n=0;
   for(const f of pdfs){if(usados.has(f.id))continue;
     const m=f.name.match(/^\s*(\d{4})\s*-\s/);const id=m?+m[1]:0;
     if(id&&S.byId[id]){if(!DRIVE.mapa[id])n++;DRIVE.mapa[id]={f:f.id,n:f.name};usados.add(f.id)}
@@ -1545,6 +1563,25 @@ function bloqueDrive(){
     DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
   function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
   return box}
+
+/* Instructivo «Abrir los PDF» (#guia-pdf): el contenido sale de data/guia-pdf.json. */
+async function viewGuiaPDF(){
+  const es=S.lang==="es";const L=x=>x?(x[S.lang]||x.es||""):"";
+  if(!S.guiaPDF){mount(h("p",{class:"c note"},es?"Cargando…":"Loading…"));try{S.guiaPDF=await getJSON("data/guia-pdf.json")}catch(e){return mount(h("p",{class:"c note"},es?"No se pudo cargar el instructivo.":"Could not load the guide."))}}
+  if((location.hash||"").slice(1)!=="guia-pdf")return;
+  const g=S.guiaPDF;const ej="0165 - Michel y Díaz (2015) - Determinantes del riesgo soberano en República Dominicana - paper.pdf";
+  const texto=t=>{const p=String(t).split("{ejemplo}");return p.flatMap((x,i)=>i?[h("code",{class:"nombre-pdf"},ej),x]:[x])};
+  const indice=h("ol",{class:"guia-indice"},g.secciones.map(x=>h("li",null,h("a",{href:"#guia-pdf",on:{click:e=>{e.preventDefault();const el=document.getElementById("g-"+x.id);if(el)el.scrollIntoView({behavior:"smooth"})}}},L(x.titulo).replace(/^\d+\.\s*/,"")))));
+  const secs=g.secciones.map(x=>h("section",{class:"block rule",id:"g-"+x.id},
+    h("h2",{class:"c"},L(x.titulo)),
+    L(x.intro)?h("p",{class:"j"},L(x.intro)):null,
+    (x.pasos||[]).length?h("ol",{class:"guia-pasos"},x.pasos.map(p=>h("li",null,h("p",{class:"j"},...texto(L(p))),
+      p.imagen?h("img",{src:p.imagen,alt:L(p.alt)||"",loading:"lazy",class:"guia-img"}):null))):null,
+    L(x.notas)?h("p",{class:"note j"},L(x.notas)):null));
+  mount(h("header",{class:"block"},h("p",{class:"eyebrow c"},es?"Instructivo":"Guide"),h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},L(g.titulo)),h("p",{class:"j"},L(g.bajada)),indice),
+    ...secs,
+    h("p",{class:"c"},h("a",{class:"btn",href:"#ajustes",style:"display:inline-block;text-decoration:none"},es?"Ir a Mi biblioteca":"Go to My library")));
+}
 
 /* ---------- cuenta: Google o mail y contraseña ---------- */
 function pintarCuenta(){
