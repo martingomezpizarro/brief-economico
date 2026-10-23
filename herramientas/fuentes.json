@@ -1,0 +1,1127 @@
+{
+ "_leeme": "Registro de acceso a las lecturas del rack. estado: publico (enlace oficial gratuito verificado), verificar (enlace candidato o caso dudoso, revisar a mano), no_publico (sin versión libre). Solo las 'publico' se copian a data/indice.json con herramientas/aplicar_fuentes.py.",
+ "lecturas": {
+  "1": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/libro-flujos-capitales"
+  },
+  "2": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/col/000438/013486.html"
+  },
+  "3": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/pcp/pucwps/wp00269.html",
+   "nota": "Documento de Trabajo 269 de la PUCP"
+  },
+  "4": {
+   "estado": "publico",
+   "url": "https://www.banrep.gov.co/es/dtser-250"
+  },
+  "7": {
+   "estado": "verificar",
+   "url": "https://repositorio.cepal.org/items/24e47e31-50a7-4273-bdd3-6feac5e7112c/full",
+   "nota": "versión en inglés"
+  },
+  "8": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/flujos-capital-crisis-financiera-internacional-desbalances-macroeconomicos"
+  },
+  "9": {
+   "estado": "publico",
+   "url": "https://repositorio.pucp.edu.pe/index/handle/123456789/46766"
+  },
+  "10": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/borrador-702"
+  },
+  "11": {
+   "estado": "publico",
+   "url": "https://repositorio.cepal.org/entities/publication/ef427b1e-18d3-44f3-abf3-6ded2334526f/full"
+  },
+  "12": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "13": {
+   "estado": "verificar",
+   "url": "https://repository.eia.edu.co/handle/11190/3681"
+  },
+  "14": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "15": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "16": {
+   "estado": "verificar",
+   "url": "https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Moneda/Moneda-145/Moneda-145-05.pdf"
+  },
+  "17": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/chb/bcchec/v8y2005i2p7-44.html"
+  },
+  "18": {
+   "estado": "publico",
+   "url": "https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Estudios-Economicos/24/ree-24-ceballos-didier-hevia-schmukler.pdf"
+  },
+  "19": {
+   "estado": "verificar",
+   "url": "https://libros.iiec.unam.mx/media/165/download"
+  },
+  "20": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "21": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "22": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/en/node/27950"
+  },
+  "23": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/node/25533"
+  },
+  "24": {
+   "estado": "publico",
+   "url": "https://www.banrep.gov.co/en/borrador161"
+  },
+  "25": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/bdr/ensayo/v29y2011i66p128-173.html"
+  },
+  "26": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/borrador-728"
+  },
+  "27": {
+   "estado": "publico",
+   "url": "https://repositorio.banrep.gov.co/handle/20.500.12134/10656"
+  },
+  "28": {
+   "estado": "publico",
+   "url": "https://www.banrep.gov.co/en/node/238"
+  },
+  "29": {
+   "estado": "verificar",
+   "url": "https://www.banrep.gov.co/sites/default/files/publicaciones/archivos/espe_060-1.pdf",
+   "nota": "versión en portugués en ESPE 60"
+  },
+  "30": {
+   "estado": "publico",
+   "url": "https://www.banrep.gov.co/en/node/381"
+  },
+  "31": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/en/borrador-481"
+  },
+  "32": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/en/borrador-759"
+  },
+  "33": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/node/25516"
+  },
+  "34": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/publicaciones-investigaciones/espe/meta-banco-central-persistencia-inflacion-colombia"
+  },
+  "35": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/en/publications-research/espe/non-linear-fiscal-multipliers-for-public-expenditure"
+  },
+  "36": {
+   "estado": "publico",
+   "url": "https://bis.org/publ/work690.htm"
+  },
+  "37": {
+   "estado": "publico",
+   "url": "https://www.banrep.gov.co/es/borrador-850"
+  },
+  "38": {
+   "estado": "publico",
+   "url": "https://repositorio.banrep.gov.co/handle/20.500.12134/2101"
+  },
+  "39": {
+   "estado": "verificar",
+   "url": "https://publications.iadb.org/es/la-politica-de-las-politicas-publicas-progreso-economico-y-social-en-america-latina-informe-2006",
+   "nota": "capítulo del IPES 2006"
+  },
+  "57": {
+   "estado": "publico",
+   "url": "https://publications.iadb.org/en/analysis-several-productive-development-policies-uruguay"
+  },
+  "60": {
+   "estado": "verificar",
+   "nota": "posible DT del IECON (ideas.repec.org/p/ulr/wpaper/dt-05-09.html)"
+  },
+  "62": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/p/zbw/ifwkwp/1066.html"
+  },
+  "63": {
+   "estado": "no_publico",
+   "nota": "no encontrado (WB PRWP 7386)"
+  },
+  "65": {
+   "estado": "no_publico",
+   "nota": "capítulo de libro Routledge"
+  },
+  "66": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/dls/wpaper/0026.html"
+  },
+  "67": {
+   "estado": "publico",
+   "url": "https://repositorio.cepal.org/handle/11362/10763"
+  },
+  "68": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/p/ude/wpaper/2001.html"
+  },
+  "69": {
+   "estado": "publico",
+   "url": "https://revistas.usp.br/ecoa/en/article/view/188185"
+  },
+  "71": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (Latin American Perspectives)"
+  },
+  "72": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "73": {
+   "estado": "no_publico",
+   "nota": "libro Routledge"
+  },
+  "74": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/wbk/wbrwps/5624.html"
+  },
+  "75": {
+   "estado": "publico",
+   "url": "https://repository.upenn.edu/entities/publication/70893382-9139-475e-8c29-3f8563d49ac9/full"
+  },
+  "79": {
+   "estado": "publico",
+   "url": "https://ucema.edu.ar/documento-trabajo/absorcion-de-shocks-en-economias-volatiles-ahorro-traves-de-acciones-en-mercados"
+  },
+  "81": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "82": {
+   "estado": "publico",
+   "url": "https://repositorio.uchile.cl/handle/2250/148205"
+  },
+  "83": {
+   "estado": "verificar",
+   "url": "https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Moneda/Moneda-133/Revista-Moneda-133-03.pdf"
+  },
+  "84": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "85": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/chb/bcchni/v16y2013i1p122-137.html"
+  },
+  "88": {
+   "estado": "publico",
+   "url": "https://lajed.ucb.edu.bo/a/article/view/399"
+  },
+  "89": {
+   "estado": "publico",
+   "url": "https://ensayos.uanl.mx/index.php/ensayos/article/view/68"
+  },
+  "90": {
+   "estado": "verificar",
+   "url": "https://www.funcas.es/wp-content/uploads/Migracion/Publicaciones/PDF/1683.pdf"
+  },
+  "92": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/p/bku/doctra/1996005.html"
+  },
+  "93": {
+   "estado": "publico",
+   "url": "https://bd.aaep.org.ar/anales/works/works1997/carr_fe_pan.pdf"
+  },
+  "94": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/elt/journl/v87y2020i346p403-436.html"
+  },
+  "96": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/bcr/ensayo/v1y2007i48p13-71.html"
+  },
+  "98": {
+   "estado": "publico",
+   "url": "https://latinaer.org/index.php/laer/article/view/62"
+  },
+  "100": {
+   "estado": "publico",
+   "url": "https://www.cedlas.econo.unlp.edu.ar/wp/en/no-300/"
+  },
+  "102": {
+   "estado": "publico",
+   "url": "https://erevistas.uca.edu.ar/index.php/ENSAYOS/article/view/2284"
+  },
+  "103": {
+   "estado": "verificar",
+   "url": "https://bd.aaep.org.ar/anales/works/works2015/Garbero_AAEP2015.pdf"
+  },
+  "105": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/pra/mprapa/110075.html"
+  },
+  "106": {
+   "estado": "publico",
+   "url": "https://depeco.econo.unlp.edu.ar/wp-content/uploads/2018/06/150-tesis-falcone.pdf"
+  },
+  "107": {
+   "estado": "publico",
+   "url": "https://scioteca.caf.com/handle/123456789/1639"
+  },
+  "109": {
+   "estado": "verificar",
+   "url": "https://depeco.econo.unlp.edu.ar/wp-content/uploads/2017/08/110-tesis-Cesar.pdf"
+  },
+  "112": {
+   "estado": "publico",
+   "url": "https://www.cedlas.econo.unlp.edu.ar/wp/en/no-260/"
+  },
+  "113": {
+   "estado": "publico",
+   "url": "https://www.cedlas.econo.unlp.edu.ar/wp/no-281/"
+  },
+  "114": {
+   "estado": "publico",
+   "url": "https://www.cedlas.econo.unlp.edu.ar/wp/no-312/"
+  },
+  "116": {
+   "estado": "publico",
+   "url": "https://www.bcentral.cl/contenido/-/detalle/documentos-de-politica-economica-n-40"
+  },
+  "117": {
+   "estado": "verificar",
+   "url": "https://revistas.csuca.org/Record/RI10278/Details"
+  },
+  "125": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/rbp/moneda/moneda-141-01.html"
+  },
+  "126": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/col/000443/014131.html"
+  },
+  "130": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "136": {
+   "estado": "publico",
+   "url": "https://www.bcrp.gob.pe/docs/Publicaciones/Revista-Estudios-Economicos/26/ree-26-sanchez.pdf"
+  },
+  "138": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/col/000452/013172.html"
+  },
+  "140": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/imx/journl/v11y2016i2p51-75.html"
+  },
+  "141": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "143": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "145": {
+   "estado": "verificar",
+   "url": "https://eumed.net/ce/nahuel-crisis.htm"
+  },
+  "148": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/hal/journl/halshs-00532664.html"
+  },
+  "149": {
+   "estado": "publico",
+   "url": "https://banrep.gov.co/es/borrador-717"
+  },
+  "151": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/chb/bcchwp/734.html"
+  },
+  "152": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "153": {
+   "estado": "verificar",
+   "url": "https://www.dspace.espol.edu.ec/bitstream/123456789/652/1/1211.pdf"
+  },
+  "155": {
+   "estado": "verificar",
+   "url": "https://puceinvestiga.puce.edu.ec/en/publications/an%C3%A1lisis-comparativo-de-las-crisis-del-ecuador-con-las-dos-grande/"
+  },
+  "156": {
+   "estado": "no_publico",
+   "nota": "no buscado aún"
+  },
+  "158": {
+   "estado": "verificar",
+   "url": "https://ciencialatina.org/index.php/cienciala/article/view/1332"
+  },
+  "163": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "164": {
+   "estado": "no_publico",
+   "nota": "tesis de grado, no encontrada"
+  },
+  "165": {
+   "estado": "verificar",
+   "url": "https://www.secmca.org/recard/index.php/foro/article/view/58/52"
+  },
+  "166": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/pra/mprapa/26136.html"
+  },
+  "167": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "169": {
+   "estado": "verificar",
+   "url": "https://digitalrepository.unm.edu/abya_yala/442"
+  },
+  "170": {
+   "estado": "verificar",
+   "url": "https://cl2.ucema.edu.ar/publicaciones/download/documentos/164.pdf"
+  },
+  "174": {
+   "estado": "verificar",
+   "url": "https://dialnet.unirioja.es/descarga/articulo/8635040.pdf"
+  },
+  "177": {
+   "estado": "no_publico",
+   "nota": "tesis de grado, no encontrada"
+  },
+  "178": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "182": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/ehu/cuader/7603.html"
+  },
+  "183": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "184": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "185": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "186": {
+   "estado": "verificar",
+   "url": "https://eco.mdp.edu.ar/revistas/index.php/faces/article/download/180/163/334"
+  },
+  "188": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1002": {
+   "estado": "publico",
+   "url": "https://www.bcra.gob.ar/metodologias-de-las-estadisticas-monetarias-y-financieras/"
+  },
+  "1003": {
+   "estado": "verificar",
+   "url": "https://www.bcra.gob.ar/metodologias-de-las-estadisticas-monetarias-y-financieras/",
+   "nota": "página general del BCRA"
+  },
+  "1013": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1014": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1022": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (Resources Policy)"
+  },
+  "1039": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/col/000131/009098.html"
+  },
+  "1040": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1042": {
+   "estado": "verificar",
+   "url": "https://ddd.uab.cat/record/45123"
+  },
+  "1043": {
+   "estado": "publico",
+   "url": "https://www.jstatsoft.org/article/view/v027i02"
+  },
+  "1044": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/tsj/stataj/v7y2007i3p281-312.html"
+  },
+  "1045": {
+   "estado": "publico",
+   "url": "https://addi.ehu.es/handle/10810/5684"
+  },
+  "1046": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1047": {
+   "estado": "publico",
+   "url": "https://cran.r-project.org/doc/contrib/Farnsworth-EconometricsInR.pdf"
+  },
+  "1048": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1049": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1050": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (Journal of Econometrics)"
+  },
+  "1051": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1052": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1053": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1054": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1055": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1056": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1057": {
+   "estado": "no_publico",
+   "nota": "libro con derechos de autor"
+  },
+  "1058": {
+   "estado": "publico",
+   "url": "https://cran.r-project.org/doc/contrib/rdebuts_es.pdf"
+  },
+  "1059": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1060": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1061": {
+   "estado": "publico",
+   "url": "https://cran.r-project.org/doc/contrib/R-intro-1.1.0-espanol.1.pdf"
+  },
+  "1063": {
+   "estado": "no_publico",
+   "nota": "libro con derechos de autor"
+  },
+  "1064": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1065": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (QJE)"
+  },
+  "1066": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1067": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1072": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1073": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1074": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1078": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/rei/ecoins/v15y2013i28p159-182.html"
+  },
+  "1079": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1080": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1081": {
+   "estado": "verificar",
+   "url": "https://biblioteca-repositorio.clacso.edu.ar/bitstream/CLACSO/8551/1/Teoria-innovacion.pdf",
+   "nota": "libro compilado completo"
+  },
+  "1085": {
+   "estado": "verificar",
+   "nota": "obra en dominio público; falta una traducción libre al español"
+  },
+  "1086": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1087": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1092": {
+   "estado": "no_publico",
+   "nota": "lectura de cátedra"
+  },
+  "1093": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1094": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1095": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1096": {
+   "estado": "no_publico",
+   "nota": "capítulo de libro"
+  },
+  "1099": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1105": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1106": {
+   "estado": "publico",
+   "url": "https://www.tse-fr.eu/publications/gravity-equation-international-trade-explanation",
+   "nota": "versión de trabajo del autor"
+  },
+  "1107": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1108": {
+   "estado": "publico",
+   "url": "https://works.swarthmore.edu/fac-economics/432"
+  },
+  "1109": {
+   "estado": "publico",
+   "url": "https://researchonline.lse.ac.uk/id/eprint/121932"
+  },
+  "1110": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1111": {
+   "estado": "publico",
+   "url": "https://melitz.scholars.harvard.edu/publications/market-size-trade-and-productivity"
+  },
+  "1112": {
+   "estado": "publico",
+   "url": "https://melitz.scholars.harvard.edu/publications/impact-trade-intra-industry-reallocations-and-aggregate-industry-productivity"
+  },
+  "1113": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1114": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1115": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1117": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/ief/reveye/v44y2006i2p81-123.html"
+  },
+  "1126": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1127": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1128": {
+   "estado": "verificar",
+   "nota": "libro del autor, sin enlace oficial encontrado"
+  },
+  "1136": {
+   "estado": "verificar",
+   "nota": "no se sabe qué manual (nacional o provincial)"
+  },
+  "1137": {
+   "estado": "publico",
+   "url": "https://www.nber.org/papers/w8478",
+   "nota": "versión de trabajo (NBER)"
+  },
+  "1138": {
+   "estado": "publico",
+   "url": "https://arxiv.org/abs/1607.00699"
+  },
+  "1139": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/cep/stippp/23.html"
+  },
+  "1140": {
+   "estado": "verificar",
+   "url": "https://sidpa.economicas.uba.ar/wp-content/uploads/2022/05/paperimpact_sidpa.pdf"
+  },
+  "1141": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1142": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1143": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/iza/izadps/dp12595.html"
+  },
+  "1144": {
+   "estado": "verificar",
+   "url": "https://real.mtak.hu/99819"
+  },
+  "1145": {
+   "estado": "publico",
+   "url": "https://cpr.uky.edu/research/welfare-reform/welfare-reform-and-intergenerational-transmission-dependence"
+  },
+  "1146": {
+   "estado": "publico",
+   "url": "https://econpapers.repec.org/RePEc:pri:indrel:379"
+  },
+  "1147": {
+   "estado": "publico",
+   "url": "https://nber.org/papers/w7363",
+   "nota": "versión de trabajo (NBER)"
+  },
+  "1149": {
+   "estado": "verificar",
+   "nota": "falta identificar el trabajo"
+  },
+  "1154": {
+   "estado": "publico",
+   "url": "https://www.cepal.org/es/publicaciones/4740-enfoques-la-medicion-la-pobreza-breve-revision-la-literatura"
+  },
+  "1155": {
+   "estado": "verificar",
+   "nota": "falta identificar el trabajo"
+  },
+  "1156": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1159": {
+   "estado": "verificar",
+   "nota": "falta identificar el trabajo"
+  },
+  "1160": {
+   "estado": "verificar",
+   "url": "https://repositorio.cepal.org/bitstream/handle/11362/5469/1/S1000128_es.pdf"
+  },
+  "1161": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1163": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/akh/wcefip/015.html"
+  },
+  "1164": {
+   "estado": "verificar",
+   "url": "https://www.depeco.econo.unlp.edu.ar/wp-content/uploads/2017/05/doc26.pdf"
+  },
+  "1165": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1170": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1171": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1172": {
+   "estado": "verificar",
+   "url": "https://www.ieral.org/images_db/noticias_archivos/4205-Monitor%20Fiscal.pdf"
+  },
+  "1173": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1174": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1175": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1178": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1179": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1181": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1183": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1184": {
+   "estado": "no_publico",
+   "nota": "falta identificar el paper"
+  },
+  "1186": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/ief/revaec/v32y2022i108p11-17.html"
+  },
+  "1188": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1189": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1190": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1191": {
+   "estado": "no_publico",
+   "nota": "capítulo de libro"
+  },
+  "1192": {
+   "estado": "no_publico",
+   "nota": "capítulo de libro"
+  },
+  "1194": {
+   "estado": "no_publico",
+   "nota": "revista con acceso restringido (Desarrollo Económico, JSTOR)"
+  },
+  "1195": {
+   "estado": "no_publico",
+   "nota": "revista con acceso restringido (Desarrollo Económico, JSTOR)"
+  },
+  "1196": {
+   "estado": "no_publico",
+   "nota": "revista con acceso restringido (Desarrollo Económico, JSTOR)"
+  },
+  "1197": {
+   "estado": "verificar",
+   "url": "https://revistas.utadeo.edu.co/index.php/TyE/article/download/debate-acerca-intentos-estabilizacion-precios-Argentina-1948-1954/2047/6358"
+  },
+  "1198": {
+   "estado": "no_publico",
+   "nota": "libro con derechos de autor"
+  },
+  "1199": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1200": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1202": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1203": {
+   "estado": "verificar",
+   "nota": "falta el enlace a la metodología en indec.gob.ar"
+  },
+  "1210": {
+   "estado": "verificar",
+   "url": "https://www.inet.ox.ac.uk/publications/after-piketty"
+  },
+  "1211": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/bcr/ensayo/v1y2020i75p5-29.html"
+  },
+  "1212": {
+   "estado": "publico",
+   "url": "https://revistas.uns.edu.ar/ee/article/view/729"
+  },
+  "1213": {
+   "estado": "publico",
+   "url": "https://www.newyorkfed.org/medialibrary/media/research/conference/2005/mp_ws/dsgedrBoivinGiannoni.pdf",
+   "nota": "versión de trabajo"
+  },
+  "1214": {
+   "estado": "publico",
+   "url": "https://drodrik.scholars.harvard.edu/publications/policy-matrix-inclusive-prosperity"
+  },
+  "1215": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/p/chb/bcchep/05.html"
+  },
+  "1216": {
+   "estado": "verificar",
+   "url": "https://econpapers.repec.org/RePEc:wbk:wbrwps:316",
+   "nota": "versión en inglés del Banco Mundial"
+  },
+  "1217": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/b/bcr/estudi/05.html"
+  },
+  "1218": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/ecr/col070/11066.html"
+  },
+  "1219": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/a/taf/recsxx/v1y1998i1p1-33.html"
+  },
+  "1220": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/p/fip/feddwp/0107.html",
+   "nota": "versión de trabajo (Fed de Dallas)"
+  },
+  "1221": {
+   "estado": "verificar",
+   "url": "https://www.funcas.es/wp-content/uploads/Migracion/Publicaciones/PDF/1683.pdf",
+   "nota": "mismo trabajo que 90"
+  },
+  "1222": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1223": {
+   "estado": "no_publico",
+   "nota": "revista o paper sin versión libre encontrada"
+  },
+  "1224": {
+   "estado": "publico",
+   "url": "https://revistas.ucm.es/index.php/POSO/article/view/65724"
+  },
+  "1225": {
+   "estado": "verificar",
+   "url": "https://davidhume.org/texts/pld/bt",
+   "nota": "original en inglés (dominio público)"
+  },
+  "1227": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (JIMF)"
+  },
+  "1228": {
+   "estado": "publico",
+   "url": "https://repositorio.cepal.org/handle/11362/29973"
+  },
+  "1229": {
+   "estado": "publico",
+   "url": "https://www.nber.org/papers/w1079",
+   "nota": "versión de trabajo (NBER)"
+  },
+  "1230": {
+   "estado": "publico",
+   "url": "https://www.nber.org/papers/w5698",
+   "nota": "versión de trabajo (NBER)"
+  },
+  "1231": {
+   "estado": "verificar",
+   "url": "https://ideas.repec.org/p/osf/socarx/gxy4n.html",
+   "nota": "preprint en SocArXiv"
+  },
+  "1232": {
+   "estado": "publico",
+   "url": "https://econ-papers.upf.edu/en/onepaper.php?id=1052",
+   "nota": "versión de trabajo (UPF)"
+  },
+  "1233": {
+   "estado": "publico",
+   "url": "https://dspace.mit.edu/handle/1721.1/63894",
+   "nota": "versión de trabajo (MIT)"
+  },
+  "1234": {
+   "estado": "publico",
+   "url": "https://repositorio.cepal.org/handle/11362/29973",
+   "nota": "mismo documento que 1228 (extracto)"
+  },
+  "1235": {
+   "estado": "publico",
+   "url": "https://ideas.repec.org/a/bcr/ensayo/v1y2013i69p37-99.html"
+  },
+  "1236": {
+   "estado": "publico",
+   "url": "https://www.bde.es/wbe/en/publicaciones/analisis-economico-investigacion/documentos-trabajo/on-real-effects-monetary-policy.html"
+  },
+  "1237": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1239": {
+   "estado": "publico",
+   "url": "https://www.stlouisfed.org/publications/review/2018/01/10/a-short-introduction-to-the-world-of-cryptocurrencies"
+  },
+  "1240": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1243": {
+   "estado": "verificar",
+   "nota": "no se encontró el texto de Cohen (2000)"
+  },
+  "1244": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (QREF)"
+  },
+  "1245": {
+   "estado": "publico",
+   "url": "https://ucema.edu.ar/documento-trabajo/dollarization-effective-commitment-device-case-argentina"
+  },
+  "1246": {
+   "estado": "no_publico",
+   "nota": "revista con suscripción (IJPE)"
+  },
+  "1252": {
+   "estado": "publico",
+   "url": "https://www.brookings.edu/wp-content/uploads/2017/12/es_20171201_climatechangeandmonetarypolicy.pdf",
+   "nota": "versión de trabajo (Brookings)"
+  },
+  "1253": {
+   "estado": "verificar",
+   "url": "https://fundamentos.eco.unrc.edu.ar/index.php/fund/article/view/63",
+   "nota": "versión en español"
+  },
+  "1254": {
+   "estado": "verificar",
+   "url": "https://fundamentos.eco.unrc.edu.ar/index.php/fund/article/view/63"
+  },
+  "1257": {
+   "estado": "publico",
+   "url": "https://neweconomics.org/2017/10/green-central-banking-emerging-market-developing-country-economies"
+  },
+  "1266": {
+   "estado": "verificar",
+   "url": "https://www.eco.unc.edu.ar/files/ief/Descalzi-Neder.pdf"
+  },
+  "1271": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1272": {
+   "estado": "publico",
+   "url": "https://cgspace.cgiar.org/items/d2ed5c6e-beb4-435f-96bb-ef1bb6e35e73"
+  },
+  "1273": {
+   "estado": "verificar",
+   "url": "https://repec.udesa.edu.ar/pub/econ/ydoc3.pdf"
+  },
+  "1274": {
+   "estado": "verificar",
+   "url": "https://repositorio.cedes.org/handle/123456789/2901"
+  },
+  "1275": {
+   "estado": "verificar",
+   "url": "https://bd.aaep.org.ar/anales/works/works2018/gay.pdf"
+  },
+  "1278": {
+   "estado": "no_publico",
+   "nota": "no encontrado"
+  },
+  "1288": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1296": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1331": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1333": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1335": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1344": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1345": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1346": {
+   "estado": "no_publico",
+   "nota": "libro con derechos de autor"
+  },
+  "1348": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  },
+  "1371": {
+   "estado": "no_publico",
+   "nota": "libro o capítulo con derechos de autor"
+  }
+ }
+}
