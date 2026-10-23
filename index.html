@@ -183,6 +183,7 @@ select{min-width:0;max-width:100%}
 .docs input[type=text]{width:6.5rem;font:13px var(--mono);padding:6px;border:1px solid var(--line2);border-radius:2px;background:var(--surface);color:var(--ink)}
 .mini{font:12px var(--mono);border:1px solid var(--line2);background:transparent;border-radius:2px;padding:6px 8px;min-height:32px;color:var(--muted)}
 .estado{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;white-space:pre-wrap}
+.nombre-pdf{font-family:var(--mono);font-size:12px;word-break:break-word;background:none;color:var(--ink)}
 .estado.error{color:var(--again)}
 .drop{border:1px dashed var(--line2);border-radius:2px;padding:18px;text-align:center;color:var(--muted);cursor:pointer}
 .drop.sobre{border-color:var(--accent);background:var(--honey)}
@@ -291,6 +292,10 @@ const REPO="martingomezpizarro/brief-economico";
 const FIREBASE_CONFIG={apiKey:"AIzaSyAdvD2_7HuWJ3Q0zORGWh1YfmBAwjEWMx8",authDomain:"prebisch-785b1.firebaseapp.com",projectId:"prebisch-785b1",storageBucket:"prebisch-785b1.firebasestorage.app",messagingSenderId:"533431844100",appId:"1:533431844100:web:2d5b8f57164f73508ca451"};
 const FB_VER="12.17.1";
 /* Worker que genera briefs con la key del sitio y cupos por persona (ver worker/ACTIVAR.md). */
+/* Vincular la carpeta de PDF de Google Drive (selector de Google, permiso drive.file).
+   clientId: el ID de cliente OAuth web del proyecto de Google Cloud de Firebase (ver docs/fuentes-y-pdf.md).
+   Vacío = la conexión con Drive no se muestra. */
+const DRIVE_CFG={clientId:"",apiKey:FIREBASE_CONFIG?FIREBASE_CONFIG.apiKey:"",appId:FIREBASE_CONFIG?FIREBASE_CONFIG.messagingSenderId:""};
 const WORKER_URL="https://brief-economico.gomezpizarromartin.workers.dev";
 const LIM_CHARS={servidor:200000,gemini:700000,anthropic:400000};
 const INT=[1,3,7,16,35,90];
@@ -416,6 +421,7 @@ async function nubeTraer(){
   try{
     const d=await docU().get();const r=d.exists?d.data():{};
     if(r.estado){const est=JSON.parse(r.estado);if(!S.est.t||(est.t||0)>S.est.t){S.est=Object.assign(defaultEst(),est);S.est.cfg=Object.assign(defaultEst().cfg,est.cfg||{});lsSet("breve-estado",S.est)}}
+    if(r.drive){try{DRIVE.mapa=Object.assign(JSON.parse(r.drive),DRIVE.mapa);driveGuardar()}catch(e){}}
     if(r.rutas){const rs=JSON.parse(r.rutas);rs.forEach(x=>{const i=S.mis.rutas.findIndex(y=>y.id===x.id);if(i<0)S.mis.rutas.push(x);else if((x.t||0)>(S.mis.rutas[i].t||0))S.mis.rutas[i]=x})}
     const ls=await docU().collection("lecciones").get();
     ls.forEach(d=>{const l=d.data();S.nube.subidas.add(l.id);if(!S.mis.lecciones[l.id]){S.mis.lecciones[l.id]=l;registrarMia(l)}});
@@ -683,9 +689,20 @@ function citaCompleta(pid){const f=S.papers["p"+pid],p=S.byId[pid]||{};
   return (p.cita?p.cita+". ":"")+(p.titulo||("#"+pid))+"."}
 function scholarUrl(pid){const f=S.papers["p"+pid],p=S.byId[pid]||{};const q=f?f.autores+" "+f.titulo:((p.cita?p.cita.replace(/\(\d{4}\)/,"")+" ":"")+(p.titulo||""));
   return "https://scholar.google.com/scholar?"+new URLSearchParams({q})}
+/* Enlaces al texto completo: el PDF propio (Drive o carpeta de la compu) y, si la lectura es de acceso
+   público, la fuente oficial. La fuente pública se abre con la sesión iniciada. */
+const conSesion=()=>!FIREBASE_CONFIG||!!S.nube.user;
+function linkPublico(p,texto){const es=S.lang==="es";
+  return conSesion()?h("a",{href:p.url,target:"_blank",rel:"noopener"},texto||(es?"Abrir el texto completo":"Open the full text"))
+    :h("a",{href:"#cuenta",title:es?"Iniciá sesión para abrir la fuente":"Sign in to open the source"},(texto||(es?"Abrir el texto completo":"Open the full text"))+(es?" (con tu cuenta)":" (sign in)"))}
+function linksTexto(pid){const es=S.lang==="es";const p=S.byId[pid]||{};const out=[];
+  if(DRIVE.mapa[pid])out.push(h("a",{href:urlDrive(DRIVE.mapa[pid].f),target:"_blank",rel:"noopener"},es?"Abrir mi PDF":"Open my PDF"));
+  else if(BIB.mapa[pid])out.push(h("button",{class:"linkbtn",type:"button",on:{click:()=>bibAbrir(pid)}},es?"Abrir mi PDF":"Open my PDF"));
+  if(p.url&&p.acceso==="publico")out.push(linkPublico(p));
+  return out}
 function refLectura(pid,pagina){const es=S.lang==="es";
   return h("p",{class:"ref"},citaCompleta(pid)+(pagina?" "+(es?"Ver ":"See ")+pagina+".":"")," ",
-    BIB.mapa[pid]?[h("button",{class:"linkbtn",type:"button",on:{click:()=>bibAbrir(pid)}},es?"Abrir mi PDF":"Open my PDF")," · "]:null,
+    ...linksTexto(pid).flatMap(x=>[x," · "]),
     h("a",{href:"#p"+pid},S.papers["p"+pid]?(es?"Abrir la ficha":"Open the summary"):(es?"Ver en el rack":"See in the rack"))," · ",
     h("a",{href:scholarUrl(pid),target:"_blank",rel:"noopener"},es?"Buscar el texto":"Find the text"))}
 function fuenteCard(c){
@@ -830,6 +847,7 @@ function viewFicha(key){
     h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},p.titulo),
     h("p",{class:"cita"},p.autores+" · "+p.anio),
     h("p",{class:"c note"},p.fuente),
+    (S.byId[p.id]&&S.byId[p.id].url&&S.byId[p.id].acceso==="publico")?h("p",{class:"c"},linkPublico(S.byId[p.id])):null,
     h("label",{class:"leer"},h("input",{type:"checkbox",checked:!!S.est.leidos[p.id],on:{change:e=>{if(e.target.checked)S.est.leidos[p.id]=today();else delete S.est.leidos[p.id];save(true)}}}),S.lang==="es"?"Ya la leí":"I have read it"));
   if(p.tipo==="libro"){
     mount(head,h("p",{class:"j"},p.nota),h("section",{class:"block rule"},h("p",{class:"eyebrow c"},S.lang==="es"?"Capítulos":"Chapters"),h("ol",{style:"list-style:none;padding:0"},(p.capitulos||[]).map(c=>h("li",null,c)))));
@@ -945,14 +963,14 @@ function viewItem(id){
       h("p",{class:"eyebrow c"},areaName(p.area)+(p.sub?" › "+p.sub:"")),
       h("h1",{class:"c",style:"font-size:25px;line-height:1.25"},p.titulo),
       p.cita?h("p",{class:"cita"},p.cita):null,
-      h("div",{class:"chips"},h("span",{class:"chip"},nivName(p.nivel)),h("span",{class:"chip"},tipo),p.paginas?h("span",{class:"chip"},p.paginas+" p."):null,p.curso?h("span",{class:"chip"},p.curso):null)),
+      h("div",{class:"chips"},h("span",{class:"chip",title:es?"Número de la lectura: ponelo al principio del nombre del PDF":"Reading number: put it at the start of the PDF file name"},"Nº "+numLectura(id)),h("span",{class:"chip"},nivName(p.nivel)),h("span",{class:"chip"},tipo),p.paginas?h("span",{class:"chip"},p.paginas+" p."):null,p.curso?h("span",{class:"chip"},p.curso):null)),
     h("section",{class:"block rule"},
       h("p",{class:"j"},es?"Todavía no tiene brief. Los briefs del rack se escriben en el orden de las rutas; mientras tanto podés generar uno con tu copia del PDF en Mi estudio.":"No brief yet. Rack briefs are written in path order; meanwhile you can generate one from your own copy in My study."),
       chk),
     bloqueMiPDF(id),
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Conseguir el texto":"Get the text"),
-      p.url?h("p",{class:"c"},h("a",{href:p.url,target:"_blank",rel:"noopener"},es?"Abrir la fuente":"Open the source")):null,
+      p.url&&p.acceso==="publico"?[h("p",{class:"c"},linkPublico(p)),h("p",{class:"c note small"},es?"Documento de acceso libre, en el sitio de quien lo publica.":"Open-access document, on the publisher's site.")]:null,
       h("p",{class:"c small"},h("a",{href:"https://scholar.google.com/scholar?"+new URLSearchParams({q:(p.cita?p.cita.replace(/\(\d{4}\)/,"")+" ":"")+p.titulo}),target:"_blank",rel:"noopener"},es?"Buscarlo en Google Académico":"Search on Google Scholar")),
       h("p",{class:"c small"},h("a",{href:"#estudio"},es?"¿Lo tenés en PDF? Subilo en Mi estudio y armá el brief a tu medida":"Have the PDF? Upload it in My study for a tailored brief"))),
     rs.length?h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Aparece en las rutas":"Appears in paths"),
@@ -1396,15 +1414,27 @@ async function bibBrief(id){
 }
 // bloque para la página de una lectura: abrir mi PDF, armar el brief, o elegir el archivo a mano
 function bloqueMiPDF(id){
-  const es=S.lang==="es";if(!bibSoportada())return null;
+  const es=S.lang==="es";const d=DRIVE.mapa[id];
   const sec=h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Mi PDF":"My PDF"));
+  const nombre=()=>h("p",{class:"c small"},(es?"Para que se vincule solo, nombrá el archivo así: ":"To link it automatically, name the file: "),h("code",{class:"nombre-pdf"},nombreSugerido(S.byId[id]||{id})));
+  if(d){
+    sec.append(h("p",{class:"c note"},d.n),
+      h("p",{class:"c"},h("a",{class:"btn",href:urlDrive(d.f),target:"_blank",rel:"noopener",style:"display:inline-block;text-decoration:none"},es?"Abrir mi PDF":"Open my PDF")),
+      h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete DRIVE.mapa[id];driveGuardar();route()}}},es?"No es este archivo":"Wrong file")));
+    return sec;
+  }
+  if(!bibSoportada()){
+    if(!DRIVE_CFG.clientId)return null;
+    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de Google Drive en Ajustes para abrirlo desde acá →":"Link your Google Drive folder in Settings to open it from here →")),nombre());
+    return sec;
+  }
   if(BIB.mapa[id]){
     sec.append(h("p",{class:"c note"},BIB.mapa[id]),
       h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:()=>bibAbrir(id)}},es?"Abrir mi PDF":"Open my PDF"),
         h("button",{class:"btn ghost",type:"button",on:{click:()=>bibBrief(id)}},es?"Armar el brief":"Build the brief")),
       h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete BIB.mapa[id];lsSet("prebisch-bib",BIB.mapa);route()}}},es?"No es este archivo":"Wrong file")));
   }else if(!Object.keys(BIB.mapa).length&&!BIB.archivos.length){
-    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF en Ajustes para abrirlo desde acá →":"Link your PDF folder in Settings to open it from here →")));
+    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF (Drive o la compu) en Ajustes para abrirlo desde acá →":"Link your PDF folder (Drive or computer) in Settings to open it from here →")),nombre());
   }else{
     const sel=h("select",{"aria-label":es?"Elegir el archivo":"Choose the file"},h("option",{value:""},es?"Elegí el archivo de tu carpeta…":"Choose the file from your folder…"));
     const llenar=()=>{const usados=new Set(Object.values(BIB.mapa));const p=S.byId[id];
@@ -1419,8 +1449,10 @@ function seccionBiblioteca(){
   const es=S.lang==="es";const n=Object.keys(BIB.mapa).length;
   const correr=fn=>async()=>{BIB.estado=es?"Leyendo la carpeta…":"Reading the folder…";refrescar();try{BIB.estado=await fn()}catch(e){BIB.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
   const sec=h("section",{class:"block rule",id:"sec-bib"},h("p",{class:"eyebrow c"},es?"Mi biblioteca":"My library"),
-    h("p",{class:"j"},es?"Conectá la carpeta donde tenés los PDF del rack. Cada lectura queda vinculada a su archivo: lo abrís con un toque o armás su brief sin buscarlo. Los archivos no se suben a ningún lado; el vínculo queda en este navegador.":"Link the folder with your rack PDFs. Each reading gets linked to its file: open it in one tap or build its brief. Files are not uploaded anywhere; the links stay in this browser."),
-    !bibSoportada()?h("p",{class:"note j"},es?"Este navegador no permite conectar carpetas. Funciona en Chrome o Edge de escritorio. En el celular, podés subir un PDF suelto en Mi estudio.":"This browser cannot link folders. It works in desktop Chrome or Edge. On a phone, upload a single PDF in My study."):
+    h("p",{class:"j"},es?"Conectá la carpeta donde tenés los PDF del rack. Cada lectura queda vinculada a su archivo y lo abrís con un toque desde su ficha o su brief. Los archivos no se copian ni se suben a la app: solo se guarda qué archivo corresponde a cada lectura.":"Link the folder with your rack PDFs. Each reading gets linked to its file, which you open in one tap from its page or brief. Files are not copied or uploaded: only the link between file and reading is stored."),
+    bloqueDrive(),
+    h("p",{class:"eyebrow c",style:"margin-top:18px"},es?"Carpeta de esta compu":"Folder on this computer"),
+    !bibSoportada()?h("p",{class:"note j"},es?"Este navegador no permite conectar carpetas locales (funciona en Chrome o Edge de escritorio). En el celular, usá la carpeta de Drive.":"This browser cannot link local folders (works in desktop Chrome or Edge). On a phone, use the Drive folder."):
     [h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF":" of "+S.indice.length+" readings linked to a PDF")),
      h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:correr(bibConectar)}},n?(es?"Volver a conectar":"Reconnect"):(es?"Conectar mi carpeta":"Link my folder")),
        h("button",{class:"btn ghost",type:"button",disabled:!n,on:{click:()=>{const sin=S.indice.filter(p=>!BIB.mapa[p.id]);BIB.estado=(es?"Sin PDF vinculado (":"No linked PDF (")+sin.length+"): "+sin.slice(0,30).map(p=>(p.cita?p.cita+" · ":"")+p.titulo).join(" | ")+(sin.length>30?" …":"");refrescar()}}},es?"Ver cuáles faltan":"See missing"))],
@@ -1428,6 +1460,91 @@ function seccionBiblioteca(){
   function refrescar(){const el=document.getElementById("sec-bib");if(el)el.replaceWith(seccionBiblioteca())}
   return sec;
 }
+
+/* ---------- PDF en Google Drive ----------
+   El usuario elige su carpeta (o los PDF) en el selector de Google con el permiso drive.file: la app solo ve
+   lo que elige. Cada PDF se vincula a su lectura por el número al principio del nombre
+   («0165 - Michel y Díaz (2015) - Título - paper.pdf») o, si no lo tiene, por parecido del nombre.
+   El mapa {lectura: {f: id del archivo, n: nombre}} queda en el navegador y, con cuenta, en Firestore. */
+const DRIVE={mapa:lsGet("prebisch-drive")||{},estado:""};
+const urlDrive=f=>"https://drive.google.com/file/d/"+encodeURIComponent(f)+"/view";
+const numLectura=id=>String(id).padStart(4,"0");
+const TIPO_NOMBRE={paper:"paper",libro:"libro",capitulo:"capitulo",apunte:"apunte",informe:"informe",dato:"dato"};
+function nombreSugerido(p){
+  const limpio=t=>String(t||"").replace(/[\\/:*?"<>|]+/g," ").replace(/\s+/g," ").trim();
+  let tit=limpio(p.titulo);if(tit.length>90)tit=tit.slice(0,90).replace(/\s+\S*$/,"");
+  return [numLectura(p.id),limpio(p.cita),tit,TIPO_NOMBRE[p.tipo]||"paper"].filter(Boolean).join(" - ")+".pdf"}
+function driveGuardar(){lsSet("prebisch-drive",DRIVE.mapa);if(S.nube.user&&S.nube.db)docU().set({drive:JSON.stringify(DRIVE.mapa)},{merge:true}).catch(()=>{})}
+const SCRIPTS={};
+const cargarUna=src=>SCRIPTS[src]||(SCRIPTS[src]=cargarScript(src).catch(e=>{delete SCRIPTS[src];throw e}));
+const driveScripts=()=>Promise.all([cargarUna("https://accounts.google.com/gsi/client"),cargarUna("https://apis.google.com/js/api.js")]);
+let driveTok=null;
+function driveToken(){
+  if(driveTok&&driveTok.exp>Date.now())return Promise.resolve(driveTok.t);
+  return new Promise((ok,mal)=>{
+    const c=google.accounts.oauth2.initTokenClient({client_id:DRIVE_CFG.clientId,scope:"https://www.googleapis.com/auth/drive.file",
+      callback:r=>{if(r.error)return mal(new Error(r.error_description||r.error));driveTok={t:r.access_token,exp:Date.now()+((r.expires_in||3600)-60)*1000};ok(r.access_token)},
+      error_callback:e=>mal(Object.assign(new Error(e.message||e.type||"Drive"),{name:/closed/.test(e.type||"")?"AbortError":"Error"}))});
+    c.requestAccessToken({prompt:"",hint:S.nube.user&&S.nube.user.email||undefined})})}
+async function drivePicker(tok){
+  if(!(window.google&&google.picker))await new Promise(ok=>gapi.load("picker",ok));
+  const es=S.lang==="es";
+  return new Promise(ok=>{
+    const vista=new google.picker.DocsView(google.picker.ViewId.DOCS).setMimeTypes("application/pdf,application/vnd.google-apps.folder").setIncludeFolders(true).setSelectFolderEnabled(true).setMode(google.picker.DocsViewMode.LIST);
+    new google.picker.PickerBuilder().addView(vista).enableFeature(google.picker.Feature.MULTISELECT_ENABLED)
+      .setOAuthToken(tok).setDeveloperKey(DRIVE_CFG.apiKey).setAppId(DRIVE_CFG.appId).setLocale(es?"es-419":"en")
+      .setTitle(es?"Elegí tu carpeta de PDF o los archivos":"Choose your PDF folder or files")
+      .setCallback(d=>{const a=d[google.picker.Response.ACTION];if(a===google.picker.Action.PICKED)ok(d[google.picker.Response.DOCUMENTS]||[]);else if(a===google.picker.Action.CANCEL)ok(null)})
+      .build().setVisible(true)})}
+async function driveHijos(tok,carpeta,out,prof){
+  let pt="";
+  do{const q=new URLSearchParams({q:"'"+carpeta+"' in parents and trashed=false",fields:"nextPageToken,files(id,name,mimeType)",pageSize:"1000",supportsAllDrives:"true",includeItemsFromAllDrives:"true"});
+    if(pt)q.set("pageToken",pt);
+    const r=await fetch("https://www.googleapis.com/drive/v3/files?"+q,{headers:{Authorization:"Bearer "+tok}});
+    if(!r.ok)throw new Error("Drive "+r.status);
+    const j=await r.json();
+    for(const f of j.files||[]){
+      if(f.mimeType==="application/vnd.google-apps.folder"){if(prof<5)await driveHijos(tok,f.id,out,prof+1)}
+      else if(f.mimeType==="application/pdf"||/\.pdf$/i.test(f.name))out.push({id:f.id,name:f.name})}
+    pt=j.nextPageToken||""}while(pt);
+  return out}
+function driveEmparejar(pdfs){
+  const usados=new Set(Object.values(DRIVE.mapa).map(x=>x.f));const libres=[];let n=0;
+  for(const f of pdfs){if(usados.has(f.id))continue;
+    const m=f.name.match(/^\s*(\d{4})\s*-\s/);const id=m?+m[1]:0;
+    if(id&&S.byId[id]){if(!DRIVE.mapa[id])n++;DRIVE.mapa[id]={f:f.id,n:f.name};usados.add(f.id)}
+    else libres.push({id:f.id,name:f.name,t:fichas(f.name.replace(/\.pdf$/i,""))})}
+  const cand=[];S.indice.forEach(p=>{if(DRIVE.mapa[p.id])return;libres.forEach(f=>{const s=bibPuntaje(p,f);if(s>=.6)cand.push([s,p.id,f])})});
+  cand.sort((a,b)=>b[0]-a[0]);
+  for(const [,id,f] of cand){if(DRIVE.mapa[id]||usados.has(f.id))continue;DRIVE.mapa[id]={f:f.id,n:f.name};usados.add(f.id);n++}
+  return n}
+async function driveConectar(){
+  const es=S.lang==="es";
+  await driveScripts();const tok=await driveToken();const docs=await drivePicker(tok);if(!docs)return "";
+  const pdfs=[];let sinLeer=0;
+  for(const d of docs){
+    if(d.mimeType==="application/vnd.google-apps.folder"){const antes=pdfs.length;try{await driveHijos(tok,d.id,pdfs,0)}catch(e){}if(pdfs.length===antes)sinLeer++}
+    else pdfs.push({id:d.id,name:d.name})}
+  const n=driveEmparejar(pdfs);driveGuardar();
+  let msg=es?"Revisé "+pdfs.length+" PDF y vinculé "+n+" lecturas nuevas ("+Object.keys(DRIVE.mapa).length+" en total).":"Checked "+pdfs.length+" PDFs and linked "+n+" new readings ("+Object.keys(DRIVE.mapa).length+" in total).";
+  if(sinLeer)msg+=es?" No pude ver los archivos de la carpeta elegida: volvé a abrir el selector, entrá a la carpeta, marcá todos los PDF y confirmá.":" I could not see the files in the chosen folder: open the picker again, enter the folder, select all PDFs and confirm.";
+  return msg}
+function bloqueDrive(){
+  const es=S.lang==="es";
+  if(!DRIVE_CFG.clientId)return h("p",{class:"note j"},es?"La conexión con Google Drive todavía no está activada en esta versión de la app.":"Google Drive linking is not enabled in this version of the app yet.");
+  driveScripts().catch(()=>{});  // se cargan antes del toque, para que el permiso no lo bloquee el navegador
+  const n=Object.keys(DRIVE.mapa).length;
+  const correr=fn=>async()=>{DRIVE.estado=es?"Abriendo Google Drive…":"Opening Google Drive…";refrescar();try{DRIVE.estado=await fn()}catch(e){DRIVE.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
+  const box=h("div",{id:"sec-drive"},
+    h("p",{class:"eyebrow c"},"Google Drive"),
+    h("p",{class:"j"},es?"Sirve también en el celular. Elegí tu carpeta de PDF (o los archivos) en el selector de Google: la app solo puede ver lo que elijas. Para que cada PDF se vincule solo, empezá su nombre con el número de la lectura, que figura en su ficha:":"Works on phones too. Pick your PDF folder (or the files) in Google's picker: the app can only see what you choose. To link each PDF automatically, start its name with the reading number shown on its page:"),
+    h("p",{class:"c"},h("code",{class:"nombre-pdf"},"0165 - Michel y Díaz (2015) - Determinantes del riesgo soberano en República Dominicana - paper.pdf")),
+    h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF de Drive":" of "+S.indice.length+" readings linked to a Drive PDF")),
+    h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:correr(driveConectar)}},n?(es?"Agregar o actualizar":"Add or update"):(es?"Conectar mi carpeta de Drive":"Link my Drive folder")),
+      h("button",{class:"btn ghost",type:"button",disabled:!n,on:{click:()=>{if(!confirm(es?"¿Quitar todos los vínculos con Drive? Tus archivos no se tocan.":"Remove all Drive links? Your files are not touched."))return;DRIVE.mapa={};driveGuardar();DRIVE.estado=es?"Vínculos quitados.":"Links removed.";refrescar()}}},es?"Quitar vínculos":"Remove links")),
+    DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
+  function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
+  return box}
 
 /* ---------- cuenta: Google o mail y contraseña ---------- */
 function pintarCuenta(){

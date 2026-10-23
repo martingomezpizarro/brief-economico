@@ -55,7 +55,7 @@ window.PIE_CONFIG = {
       titulo: "Material de estudio y obras citadas",
       parrafos: [
         "Prebisch es un proyecto independiente, sin afiliación con la Universidad Nacional de Córdoba ni con ninguna otra universidad, cátedra, autor, editorial o plataforma de distribución de papers. Los briefs explican y citan los trabajos, pero no los reemplazan: ante cualquier duda, la referencia es siempre la obra original.",
-        "El sitio no aloja PDF de terceros: las lecturas del rack enlazan a su búsqueda pública. Los derechos sobre las obras citadas pertenecen a sus autores y editores. Los documentos que cargues en «Mi estudio» son tuyos y sos responsable de contar con el derecho a usarlos.",
+        "El sitio no aloja PDF de terceros: las lecturas del rack enlazan a su búsqueda pública y, cuando el documento es de acceso libre, al sitio oficial de quien lo publica. Los derechos sobre las obras citadas pertenecen a sus autores y editores. Los documentos que cargues en «Mi estudio» son tuyos y sos responsable de contar con el derecho a usarlos.",
       ],
     },
     {
@@ -72,6 +72,7 @@ window.PIE_CONFIG = {
     parrafos: [
       "Sin cuenta, todo queda en tu navegador: el progreso, los ajustes, las rutas propias, los PDF de «Mi estudio» y, si las cargás, tus claves de Gemini o Anthropic. Esos datos no salen de tu dispositivo salvo en los casos que se detallan abajo, y se borran al limpiar los datos del sitio en el navegador.",
       "Con cuenta (Google o mail y contraseña), Firebase, un servicio de Google, guarda tu identificador de usuario, tu mail y, si entrás con Google, el nombre asociado a esa cuenta, junto con tu progreso, tus rutas y los briefs que generes. Se usan solo para sincronizar tu estudio entre dispositivos.",
+      "Si conectás tu carpeta de Google Drive, Google te pide permiso para que la app vea solo los archivos que elijas en su selector. La app guarda el identificador y el nombre de cada PDF vinculado, en tu navegador y, si tenés cuenta, en Firebase, para abrirlo desde la ficha de la lectura. Los PDF no se copian ni se suben al servidor de la app. Podés quitar los vínculos desde Ajustes y revocar el permiso desde tu cuenta de Google.",
       "Si activás los avisos, el servidor de la app (Cloudflare) guarda la suscripción de tu navegador, tu identificador de usuario y la franja horaria elegida, solo para enviarte el aviso diario. Al desactivarlos, la suscripción se elimina.",
       "Cuando generás un brief, el texto extraído de tus PDF y tus indicaciones se envían para su procesamiento: con el servidor de la app, al servidor y a Google Gemini; con tu propia clave, directamente desde tu navegador a Google o a Anthropic, bajo sus propias condiciones. El servidor de la app no guarda esos textos; solo lleva un contador de uso diario por usuario, que se borra a las 48 horas.",
       "El sitio no usa cookies publicitarias ni herramientas de analítica. Carga tipografías, fórmulas y el inicio de sesión desde servicios de terceros (Google Fonts, cdnjs y Google), que reciben los datos técnicos habituales de cualquier visita, como la dirección IP.",
