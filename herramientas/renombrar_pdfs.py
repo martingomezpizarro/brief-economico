@@ -60,11 +60,20 @@ def puntaje(p, f_fichas):
     if p.get("curso") and any(len(w) > 3 and w in fs for w in fichas(p["curso"])):
         s += 0.2
     au = [w for w in fichas(re.sub(r"\(.*?\)", " ", p.get("cita", ""))) if not w.isdigit() and w not in ("eds", "et", "al")]
-    if any(w in fs for w in au):
+    ok_au = any(w in fs for w in au)
+    if ok_au:
         s += 0.35
     y = re.search(r"\d{4}", p.get("cita", ""))
-    if y and y.group(0) in f_fichas:
+    ok_y = bool(y and y.group(0) in f_fichas)
+    if ok_y:
         s += 0.15
+    if ok_au and ok_y and not (num and not all(w in fs for w in num)):
+        s = max(s, 0.65)
+    elif au and not ok_au and not ok_y:
+        s *= 0.75
+    curso_ok = bool(p.get("curso") and any(len(w) > 3 and w in fs for w in fichas(p["curso"])))
+    if len(pal) < 2 and not ok_au and not curso_ok:
+        s *= 0.5
     return s
 
 

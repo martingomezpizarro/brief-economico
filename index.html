@@ -187,6 +187,8 @@ select{min-width:0;max-width:100%}
 .guia-pasos{padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
 .guia-pasos li::marker{font-family:var(--mono);color:var(--accent)}
 .guia-img{display:block;max-width:100%;height:auto;margin:8px auto;border:1px solid var(--line);border-radius:6px}
+.guia-codigo{font-family:var(--mono);font-size:11px;line-height:1.45;max-height:16rem;overflow:auto;white-space:pre;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--paper,transparent)}
+.guia-script{display:flex;flex-direction:column;gap:8px}
 .link-manual{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
 .link-manual input{flex:1 1 14rem;min-width:0}
 .link-manual .estado{flex-basis:100%}
@@ -1379,8 +1381,14 @@ function bibPuntaje(p,f){
   if(num.length&&!num.every(w=>fs.has(w)))s*=.3;
   if(p.curso&&fichas(p.curso).some(w=>w.length>3&&fs.has(w)))s+=.2;
   const au=fichas((p.cita||"").replace(/\(.*?\)/g," ")).filter(w=>!/^\d+$/.test(w)&&w!=="eds"&&w!=="et"&&w!=="al");
-  if(au.some(w=>fs.has(w)))s+=.35;
-  const y=(p.cita||"").match(/\d{4}/);if(y&&f.t.includes(y[0]))s+=.15;
+  const okAu=au.some(w=>fs.has(w));if(okAu)s+=.35;
+  const y=(p.cita||"").match(/\d{4}/);const okY=y&&f.t.includes(y[0]);if(okY)s+=.15;
+  // autor y año juntos alcanzan («Triana (2019).pdf»), salvo que el título pida un número (capítulo, unidad) que falta
+  if(okAu&&okY&&!(num.length&&!num.every(w=>fs.has(w))))s=Math.max(s,.65);
+  // con autor conocido que no figura en el nombre ni el año, el título tiene que coincidir casi entero
+  else if(au.length&&!okAu&&!okY)s*=.75;
+  // títulos muy cortos («Unidad 2») no alcanzan solos
+  if(pal.length<2&&!okAu&&!(p.curso&&fichas(p.curso).some(w=>w.length>3&&fs.has(w))))s*=.5;
   return s;
 }
 function bibEmparejar(){
@@ -1550,18 +1558,41 @@ async function driveConectar(){
 /* Importar vínculos desde un archivo: JSON {lectura:{f,n}|{u,n}|"link"} o texto con «número, link» por línea.
    No necesita permisos de Google: cada link se abre con la cuenta del usuario. */
 function driveIdDeLink(u){const m=String(u).match(/(?:\/d\/|[?&]id=)([\w-]{20,})/);return m?m[1]:""}
+function csvFilas(t){const out=[];let fila=[],c="",q=false;
+  for(let i=0;i<t.length;i++){const ch=t[i];
+    if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}
+    else if(ch==='"')q=true;else if(ch===","||ch===";"||ch==="\t"){fila.push(c);c=""}
+    else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;fila.push(c);c="";if(fila.some(x=>x.trim()))out.push(fila);fila=[]}
+    else c+=ch}
+  fila.push(c);if(fila.some(x=>x.trim()))out.push(fila);return out}
+/* Devuelve {num, nombre, sin, total}: vinculados por número, por parecido del nombre y sin reconocer. */
 function importarVinculos(txt){
-  let n=0;const poner=(k,v,nom)=>{const id=+String(k).replace(/^0+/,"");if(!S.byId[id]||!v)return;
-    const d=typeof v==="string"?(driveIdDeLink(v)?{f:driveIdDeLink(v)}:/^https:\/\//.test(v)?{u:v}:null):(v.f||v.u?{f:v.f,u:v.u}:null);
-    if(!d)return;Object.keys(d).forEach(x=>d[x]===undefined&&delete d[x]);d.n=nom||v.n||(S.lang==="es"?"Vínculo importado":"Imported link");DRIVE.mapa[id]=d;n++};
-  const t=String(txt).trim();
-  if(t.startsWith("{")){const j=JSON.parse(t);Object.entries(j.vinculos||j).forEach(([k,v])=>poner(k,v))}
-  else t.split(/\r?\n/).forEach(l=>{const m=l.match(/^\s*"?(\d{1,4})"?\s*[,;\t]\s*"?(https:\/\/[^\s",;]+)"?(?:\s*[,;\t]\s*"?([^"]*)"?)?/);if(m)poner(m[1],m[2],m[3])});
-  driveGuardar();return n}
+  const es=S.lang==="es";const r={num:0,nombre:0,sin:0,total:0};const sueltos=[];
+  const aDato=v=>{const f=driveIdDeLink(v);return f?{f}:/^https:\/\//.test(v)?{u:v}:null};
+  const poner=(id,d,nom)=>{d.n=nom||(es?"Vínculo importado":"Imported link");DRIVE.mapa[id]=d};
+  const t=String(txt).replace(/^﻿/,"").trim();
+  if(t.startsWith("{")){const j=JSON.parse(t);
+    Object.entries(j.vinculos||j).forEach(([k,v])=>{r.total++;const id=+k;const d=typeof v==="string"?aDato(v):(v&&(v.f||v.u)?(v.f?{f:v.f}:{u:v.u}):null);
+      if(S.byId[id]&&d){poner(id,d,v&&v.n);r.num++}else r.sin++})}
+  else csvFilas(t).forEach(c=>{
+    const link=(c.find(x=>/^\s*https:\/\//.test(x))||"").trim();if(!link)return;r.total++;
+    const num=(c[0]||"").trim().match(/^\d{1,4}$/)?+c[0].trim():0;const nom=(c[2]||"").trim();const carp=(c[3]||"").trim();
+    const d=aDato(link);if(!d){r.sin++;return}
+    if(num&&S.byId[num]){poner(num,d,nom);r.num++}
+    else sueltos.push({d,nom,t:fichas((carp+" "+nom).replace(/\.pdf$/i,""))})});
+  if(sueltos.length){
+    const ya=new Set(Object.values(DRIVE.mapa).map(x=>x.f||x.u));
+    const cand=[];S.indice.forEach(p=>{if(DRIVE.mapa[p.id])return;sueltos.forEach((f,i)=>{if(ya.has(f.d.f||f.d.u))return;const sc=bibPuntaje(p,f);if(sc>=.6)cand.push([sc,p.id,i])})});
+    cand.sort((a,b)=>b[0]-a[0]);const usados=new Set();
+    for(const [,id,i] of cand){if(DRIVE.mapa[id]||usados.has(i))continue;poner(id,sueltos[i].d,sueltos[i].nom);usados.add(i);r.nombre++}
+    r.sin+=sueltos.length-usados.size-sueltos.filter(f=>ya.has(f.d.f||f.d.u)).length}
+  driveGuardar();return r}
 function bloqueImportar(refrescar){
   const es=S.lang==="es";
   const inp=h("input",{type:"file",accept:".json,.csv,.txt,application/json,text/csv,text/plain",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(!f)return;
-    try{const n=importarVinculos(await f.text());DRIVE.estado=es?"Importé "+n+" vínculos ("+Object.keys(DRIVE.mapa).length+" en total).":"Imported "+n+" links ("+Object.keys(DRIVE.mapa).length+" in total)."}
+    try{const r=importarVinculos(await f.text());const tot=Object.keys(DRIVE.mapa).length;
+      DRIVE.estado=es?"Leí "+r.total+" PDF. Vinculé "+(r.num+r.nombre)+" lecturas ("+r.num+" por número, "+r.nombre+" por el nombre del archivo). "+r.sin+" PDF no coincidieron con ninguna lectura del rack. Total vinculadas: "+tot+" de "+S.indice.length+"."
+        :"Read "+r.total+" PDFs. Linked "+(r.num+r.nombre)+" readings ("+r.num+" by number, "+r.nombre+" by file name). "+r.sin+" PDFs matched no rack reading. Total linked: "+tot+" of "+S.indice.length+"."}
     catch(err){DRIVE.estado=es?"No pude leer el archivo: "+err.message:"Could not read the file: "+err.message}refrescar()}}});
   const exp=()=>{const a=h("a",{href:URL.createObjectURL(new Blob([JSON.stringify(DRIVE.mapa,null,1)],{type:"application/json"})),download:"prebisch-vinculos.json"});document.body.append(a);a.click();a.remove()};
   return h("div",{class:"fila2"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>inp.click()}},es?"Importar vínculos":"Import links"),
@@ -1590,6 +1621,13 @@ function bloqueDrive(){
   function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
   return box}
 
+/* Bloque con el script de Apps Script y un botón para copiarlo. */
+function bloqueScript(e){const es=S.lang==="es";const pre=h("pre",{class:"guia-codigo"},es?"Cargando el script…":"Loading the script…");const est=h("p",{class:"estado"});
+  fetch(e.href,{cache:"no-cache"}).then(r=>r.text()).then(t=>{pre.textContent=t}).catch(()=>{pre.textContent=es?"No se pudo cargar: abrilo desde el link.":"Could not load: open it from the link."});
+  return h("div",{class:"guia-script"},
+    h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:async()=>{try{await navigator.clipboard.writeText(pre.textContent);est.textContent=es?"Script copiado. Pegalo en script.google.com.":"Script copied. Paste it in script.google.com."}catch(_){est.textContent=es?"No pude copiar: seleccioná el texto a mano.":"Could not copy: select the text by hand."}}}},es?"Copiar el script":"Copy the script"),
+      h("a",{class:"btn ghost",href:"https://script.google.com/home/projects/create",target:"_blank",rel:"noopener",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Abrir script.google.com":"Open script.google.com")),
+    est,pre)}
 /* Instructivo «Abrir los PDF» (#guia-pdf): el contenido sale de data/guia-pdf.json. */
 async function viewGuiaPDF(){
   const es=S.lang==="es";const L=x=>x?(x[S.lang]||x.es||""):"";
@@ -1603,7 +1641,7 @@ async function viewGuiaPDF(){
     L(x.intro)?h("p",{class:"j"},L(x.intro)):null,
     (x.pasos||[]).length?h("ol",{class:"guia-pasos"},x.pasos.map(p=>h("li",null,h("p",{class:"j"},...texto(L(p))),
       p.imagen?h("img",{src:p.imagen,alt:L(p.alt)||"",loading:"lazy",class:"guia-img"}):null))):null,
-    x.enlace?h("p",{class:"c"},h("a",{href:x.enlace.href,target:"_blank",rel:"noopener"},L(x.enlace))):null,
+    x.enlace?bloqueScript(x.enlace):null,
     L(x.notas)?h("p",{class:"note j"},L(x.notas)):null));
   mount(h("header",{class:"block"},h("p",{class:"eyebrow c"},es?"Instructivo":"Guide"),h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},L(g.titulo)),h("p",{class:"j"},L(g.bajada)),indice),
     ...secs,

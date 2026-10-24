@@ -5,8 +5,8 @@
     "en": "Opening PDFs from the app"
   },
   "bajada": {
-    "es": "Hay tres maneras de abrir el texto completo de una lectura: la fuente pública, tu carpeta de Google Drive o un link que cargás a mano.",
-    "en": "There are three ways to open a reading's full text: the public source, your Google Drive folder, or a link you add by hand."
+    "es": "Hay tres maneras de abrir el texto completo de una lectura: la fuente pública, tu carpeta de Google Drive (vinculás todos tus PDF de una vez) o un link que cargás a mano.",
+    "en": "There are three ways to open a reading's full text: the public source, your Google Drive folder (link all your PDFs at once) or a link you add by hand."
   },
   "secciones": [
     {
@@ -41,12 +41,12 @@
     {
       "id": "nombres",
       "titulo": {
-        "es": "2. Cómo nombrar tus PDF",
-        "en": "2. How to name your PDFs"
+        "es": "2. Nombres de los PDF (opcional, recomendado)",
+        "en": "2. PDF file names (optional, recommended)"
       },
       "intro": {
-        "es": "Para que la app reconozca cada archivo sin que tengas que elegirlo, el nombre empieza con el número de la lectura, de cuatro cifras. El resto del nombre es para vos.",
-        "en": "For the app to recognize each file on its own, the name starts with the reading's four-digit number. The rest of the name is for you."
+        "es": "No hace falta renombrar nada: la app reconoce la mayoría de los PDF por su nombre (título, autor, año). Pero si el nombre empieza con el número de la lectura, de cuatro cifras, la vinculación es exacta.",
+        "en": "You do not need to rename anything: the app recognizes most PDFs by their name (title, author, year). But if the name starts with the reading's four-digit number, the link is exact."
       },
       "pasos": [
         {
@@ -63,8 +63,8 @@
         }
       ],
       "notas": {
-        "es": "Lo único imprescindible es el número seguido de « - » al principio. Si un archivo no lo tiene, la app intenta reconocerlo por el título y el autor, pero puede equivocarse o no encontrarlo.",
-        "en": "The only must is the number followed by « - » at the start. Without it, the app tries to match by title and author, but it may miss or mismatch."
+        "es": "Conviene numerar los PDF que la app no reconoció o que quedaron mal vinculados. Lo imprescindible es el número seguido de « - » al principio.",
+        "en": "Number the PDFs the app did not recognize or mismatched. The must is the number followed by « - » at the start."
       }
     },
     {
@@ -74,39 +74,47 @@
         "en": "3. Link your Google Drive folder"
       },
       "intro": {
-        "es": "Es la opción para usar desde el celular y vincular muchos PDF de una vez. Tus PDF quedan en tu Drive; la app solo guarda qué archivo corresponde a cada lectura y lo abre con tu cuenta de Google.",
-        "en": "The option for phones and for linking many PDFs at once. Your PDFs stay in your Drive; the app only stores which file goes with each reading and opens it with your Google account."
+        "es": "Para vincular todos tus PDF de una vez y abrirlos también desde el celular. Tus PDF quedan en tu Drive: la app solo guarda qué archivo corresponde a cada lectura. Hacé los pasos 2 a 6 desde la compu; tarda unos 10 minutos y se hace una sola vez.",
+        "en": "To link all your PDFs at once and open them from your phone too. Your PDFs stay in your Drive: the app only stores which file goes with each reading. Do steps 2 to 6 on a computer; it takes about 10 minutes, once."
       },
       "pasos": [
         {
-          "es": "Subí tu carpeta de PDF a Google Drive (desde la compu, arrastrala a drive.google.com). Pueden estar en subcarpetas, con los nombres de la sección 2.",
-          "en": "Upload your PDF folder to Google Drive (from a computer, drag it into drive.google.com). Subfolders are fine; use the names from section 2."
+          "es": "Subí tu carpeta de PDF a Google Drive: en drive.google.com, «Nuevo › Subir carpeta», o arrastrala. Puede tener subcarpetas. Usá la cuenta de Google donde quieras tener los PDF (puede ser la de la facultad).",
+          "en": "Upload your PDF folder to Google Drive: at drive.google.com, «New › Folder upload», or drag it in. Subfolders are fine. Use the Google account where you want the PDFs (it can be your university one)."
         },
         {
-          "es": "Abrí script.google.com, tocá «Nuevo proyecto» y pegá el script de Prebisch (link abajo). Poné el nombre de tu carpeta en la línea CARPETA.",
-          "en": "Open script.google.com, tap «New project» and paste the Prebisch script (link below). Put your folder name on the CARPETA line."
+          "es": "Copiá el script de Prebisch con el botón de abajo y tocá «Abrir script.google.com». Si te pregunta la cuenta, elegí la misma donde subiste la carpeta.",
+          "en": "Copy the Prebisch script with the button below and tap «Open script.google.com». If asked for an account, choose the one where you uploaded the folder."
         },
         {
-          "es": "Tocá «Ejecutar» y aceptá el permiso de Google. El script crea «prebisch-vinculos.csv» en tu Drive, con el link de cada PDF numerado.",
-          "en": "Tap «Run» and accept Google's permission. The script creates «prebisch-vinculos.csv» in your Drive, with the link of each numbered PDF."
+          "es": "En el proyecto nuevo, borrá todo lo que aparece en el editor y pegá el script. En la línea CARPETA, entre comillas, poné el nombre exacto de tu carpeta (por ejemplo 'ECONOMICS'). Guardá con el ícono del disquete.",
+          "en": "In the new project, delete everything in the editor and paste the script. On the CARPETA line, between quotes, put your folder's exact name (for example 'ECONOMICS'). Save with the floppy-disk icon."
         },
         {
-          "es": "Descargá ese archivo. En la app: Ajustes › Mi biblioteca › Google Drive › «Importar vínculos» y elegilo.",
-          "en": "Download that file. In the app: Settings › My library › Google Drive › «Import links» and choose it."
+          "es": "Tocá «Ejecutar». Google pide permiso: «Revisar permisos», elegí tu cuenta. Si aparece «Google no verificó esta app», es normal porque el script es tuyo: tocá «Configuración avanzada» y después «Ir a Proyecto sin título (no seguro)». Aceptá el acceso a Drive.",
+          "en": "Tap «Run». Google asks for permission: «Review permissions», choose your account. If you see «Google hasn't verified this app», that is expected since the script is yours: tap «Advanced» then «Go to Untitled project (unsafe)». Allow Drive access."
         },
         {
-          "es": "La app te dice cuántas lecturas vinculó. Desde ahí, cada una muestra «Abrir mi PDF».",
-          "en": "The app tells you how many readings it linked. From then on, each shows «Open my PDF»."
+          "es": "Esperá a que el registro de abajo diga «Listo: N PDF». El script creó «prebisch-vinculos.csv» en «Mi unidad». Descargalo: tres puntos del archivo › Descargar.",
+          "en": "Wait until the log at the bottom says «Listo: N PDF». The script created «prebisch-vinculos.csv» in «My Drive». Download it: the file's three dots › Download."
+        },
+        {
+          "es": "En Prebisch, iniciá sesión y entrá a Ajustes › Mi biblioteca › Google Drive › «Importar vínculos». Elegí el archivo descargado.",
+          "en": "In Prebisch, sign in and go to Settings › My library › Google Drive › «Import links». Choose the downloaded file."
+        },
+        {
+          "es": "La app te dice cuántas lecturas vinculó, por número y por nombre, y cuántos PDF no coincidieron con ninguna lectura del rack. Desde ahí, cada lectura vinculada muestra «Abrir mi PDF», también en el celular.",
+          "en": "The app tells you how many readings it linked, by number and by name, and how many PDFs matched no rack reading. From then on, each linked reading shows «Open my PDF», on your phone too."
         }
       ],
       "notas": {
-        "es": "Cuando sumes PDF nuevos, volvé a ejecutar el script e importá el archivo otra vez: se agregan sin borrar los anteriores. Con la sesión iniciada, los vínculos se sincronizan entre tus dispositivos; también podés exportarlos desde Ajustes.",
-        "en": "When you add PDFs, run the script again and re-import: new links are added without removing old ones. When signed in, links sync across devices; you can also export them from Settings."
+        "es": "Para sumar PDF nuevos, volvé a tocar «Ejecutar» en el mismo proyecto e importá el archivo otra vez: se agregan sin borrar los anteriores. Si una cuenta de la facultad no te deja usar script.google.com, cargá los links a mano (sección 4) o usá la carpeta de la compu (sección 5).",
+        "en": "To add new PDFs, tap «Run» again in the same project and re-import: new links are added without removing old ones. If a university account blocks script.google.com, add links by hand (section 4) or use the computer folder (section 5)."
       },
       "enlace": {
         "href": "guia/prebisch-vinculos.gs.txt",
-        "es": "Ver el script de Prebisch para copiar",
-        "en": "View the Prebisch script to copy"
+        "es": "Script de Prebisch",
+        "en": "Prebisch script"
       }
     },
     {
@@ -134,8 +142,8 @@
         }
       ],
       "notas": {
-        "es": "El link de Drive se abre con tu cuenta de Google; no hace falta compartirlo con nadie. Para cambiarlo, tocá «No es este archivo» y pegá otro.",
-        "en": "A Drive link opens with your Google account; no need to share it with anyone. To change it, tap «Wrong file» and paste another."
+        "es": "El link se abre con tu cuenta de Google; no hace falta compartirlo con nadie. Para cambiarlo, tocá «No es este archivo» y pegá otro.",
+        "en": "The link opens with your Google account; no need to share it. To change it, tap «Wrong file» and paste another."
       }
     },
     {
@@ -179,12 +187,20 @@
           "en": "No «Open the full text»: sign in; if it still does not show, the reading has no known free version."
         },
         {
-          "es": "Una lectura quedó con el PDF equivocado: en su página, «No es este archivo», y corregí el número al principio del nombre.",
-          "en": "A reading got the wrong PDF: on its page, «Wrong file», and fix the number at the start of the file name."
+          "es": "Una lectura quedó con el PDF equivocado: en su página tocá «No es este archivo» y pegá el link correcto, o poné el número de la lectura al principio del nombre del PDF y volvé a importar.",
+          "en": "A reading got the wrong PDF: on its page tap «Wrong file» and paste the right link, or put the reading number at the start of the PDF name and re-import."
         },
         {
-          "es": "Un PDF no se vinculó: revisá que empiece con las cuatro cifras y « - », o cargá el link a mano (sección 4).",
-          "en": "A PDF did not link: check it starts with the four digits and « - », or add the link by hand (section 4)."
+          "es": "Un PDF no se vinculó: el nombre no alcanzó para reconocerlo. Poné el número de la lectura al principio del nombre y volvé a ejecutar e importar, o cargá el link a mano (sección 4).",
+          "en": "A PDF did not link: its name was not enough to recognize it. Put the reading number at the start of the name and run and import again, or add the link by hand (section 4)."
+        },
+        {
+          "es": "«Abrir mi PDF» dice «Necesitás acceso»: el navegador está usando otra cuenta de Google. Tocá tu foto arriba a la derecha en Drive y cambiá a la cuenta donde están los PDF (por ejemplo la de la facultad).",
+          "en": "«Open my PDF» says «You need access»: the browser is using another Google account. Tap your photo at the top right in Drive and switch to the account that holds the PDFs (for example your university one)."
+        },
+        {
+          "es": "El script dice que no encuentra la carpeta: revisá que el nombre en CARPETA sea idéntico al de Drive, con mayúsculas y tildes, y que la carpeta esté en esa cuenta.",
+          "en": "The script cannot find the folder: check that CARPETA matches the Drive name exactly, including capitals and accents, and that the folder is in that account."
         },
         {
           "es": "Un enlace público no funciona o lleva a otro trabajo: avisá con «Reportar un error» al pie de la página.",
