@@ -1,8 +1,10 @@
-# Activar el servidor de briefs y los avisos
+# Activar los avisos (y, opcional, el servidor de briefs)
 
-La página funciona sin esto: el rack, los briefs, las preguntas y el repaso andan igual, y en **Mi estudio** cualquiera puede generar briefs con su propia key de Gemini o de Anthropic. Este Worker agrega la tercera opción: **generar con tu key de Gemini, gratis para quien inicie sesión, con cupo diario**. Es el mismo esquema del tutor de idoneidad, pero con su propio proyecto de Firebase.
+> **Desde octubre 2026 la app no ofrece el servidor de briefs.** En **Mi estudio** cada usuario arma sus briefs con Claude (descarga el prompt, lo usa en claude.ai y carga la respuesta) o con su propia key de Gemini o de Anthropic. El Worker queda para los **avisos diarios** (paso 6). Los pasos 1 y 4 (`GEMINI_API_KEY` y límites) solo hacen falta si algún día se vuelve a activar el servidor; sin la key, `/generar` responde con error y no gasta nada.
 
-## 1. Key de Gemini
+La página funciona sin esto: el rack, los briefs, las preguntas y el repaso andan igual.
+
+## 1. Key de Gemini (opcional, solo para el servidor de briefs)
 Podés reusar la del tutor de idoneidad o crear otra en https://aistudio.google.com/apikey (por ejemplo, en un proyecto `brief-economico`, así ves el consumo por separado). No va en la página ni en el código: se carga como secreto en el paso 4.
 
 ## 2. Crear el Worker
@@ -40,11 +42,24 @@ La página usa su propio proyecto de Firebase, **`prebisch-785b1`**, separado de
 rules_version = '2';
 service cloud.firestore {
   match /databases/{database}/documents {
+    // administradores: ven los briefs de Mi estudio de todos (Ajustes › Administración, #admin).
+    // Tiene que coincidir con ADMINS en index.html.
+    function esAdmin() {
+      return request.auth != null && request.auth.token.email_verified == true
+        && request.auth.token.email in ['gomezpizarromartin@gmail.com'];
+    }
+    function duenio(uid) { return request.auth != null && request.auth.uid == uid; }
     match /brief/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read: if duenio(uid) || esAdmin();
+      allow write: if duenio(uid);
       match /lecciones/{id} {
-        allow read, write: if request.auth != null && request.auth.uid == uid;
+        allow read: if duenio(uid) || esAdmin();
+        allow write: if duenio(uid);
       }
+    }
+    // consulta de grupo de la administración (todas las subcolecciones «lecciones»)
+    match /{ruta=**}/lecciones/{id} {
+      allow read: if esAdmin();
     }
   }
 }
@@ -65,7 +80,8 @@ En iPhone y iPad los avisos solo funcionan con la app agregada a la pantalla de 
 
 ## 7. Probar
 1. `https://brief-economico.gomezpizarromartin.workers.dev/estado` → `"ok":true` y `"kv":true`.
-2. En la página: **Ajustes → Entrar con Google**, motor «Servidor de la app» → **Mi estudio** → subí un PDF → **Un solo brief**.
+2. En la página: **Ajustes → Entrar con Google** → **Avisos y calendario → Probar aviso**.
+3. Administración: con tu cuenta de Google (la de `esAdmin()`), **Ajustes → Administración** tiene que listar los briefs de los usuarios. Si dice que Firestore no te deja, volvé a publicar las reglas de arriba.
 
 ## Cómo funciona
 - La página lee el PDF en el navegador (pdf.js). El archivo no se sube: solo viaja el texto, y solo cuando generás.
