@@ -1547,9 +1547,34 @@ async function driveConectar(){
   let msg=es?"Revisé "+pdfs.length+" PDF y vinculé "+n+" lecturas nuevas ("+Object.keys(DRIVE.mapa).length+" en total).":"Checked "+pdfs.length+" PDFs and linked "+n+" new readings ("+Object.keys(DRIVE.mapa).length+" in total).";
   if(sinLeer)msg+=es?" No pude ver los archivos de la carpeta elegida: volvé a abrir el selector, entrá a la carpeta, marcá todos los PDF y confirmá.":" I could not see the files in the chosen folder: open the picker again, enter the folder, select all PDFs and confirm.";
   return msg}
+/* Importar vínculos desde un archivo: JSON {lectura:{f,n}|{u,n}|"link"} o texto con «número, link» por línea.
+   No necesita permisos de Google: cada link se abre con la cuenta del usuario. */
+function driveIdDeLink(u){const m=String(u).match(/(?:\/d\/|[?&]id=)([\w-]{20,})/);return m?m[1]:""}
+function importarVinculos(txt){
+  let n=0;const poner=(k,v,nom)=>{const id=+String(k).replace(/^0+/,"");if(!S.byId[id]||!v)return;
+    const d=typeof v==="string"?(driveIdDeLink(v)?{f:driveIdDeLink(v)}:/^https:\/\//.test(v)?{u:v}:null):(v.f||v.u?{f:v.f,u:v.u}:null);
+    if(!d)return;Object.keys(d).forEach(x=>d[x]===undefined&&delete d[x]);d.n=nom||v.n||(S.lang==="es"?"Vínculo importado":"Imported link");DRIVE.mapa[id]=d;n++};
+  const t=String(txt).trim();
+  if(t.startsWith("{")){const j=JSON.parse(t);Object.entries(j.vinculos||j).forEach(([k,v])=>poner(k,v))}
+  else t.split(/\r?\n/).forEach(l=>{const m=l.match(/^\s*"?(\d{1,4})"?\s*[,;\t]\s*"?(https:\/\/[^\s",;]+)"?(?:\s*[,;\t]\s*"?([^"]*)"?)?/);if(m)poner(m[1],m[2],m[3])});
+  driveGuardar();return n}
+function bloqueImportar(refrescar){
+  const es=S.lang==="es";
+  const inp=h("input",{type:"file",accept:".json,.csv,.txt,application/json,text/csv,text/plain",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(!f)return;
+    try{const n=importarVinculos(await f.text());DRIVE.estado=es?"Importé "+n+" vínculos ("+Object.keys(DRIVE.mapa).length+" en total).":"Imported "+n+" links ("+Object.keys(DRIVE.mapa).length+" in total)."}
+    catch(err){DRIVE.estado=es?"No pude leer el archivo: "+err.message:"Could not read the file: "+err.message}refrescar()}}});
+  const exp=()=>{const a=h("a",{href:URL.createObjectURL(new Blob([JSON.stringify(DRIVE.mapa,null,1)],{type:"application/json"})),download:"prebisch-vinculos.json"});document.body.append(a);a.click();a.remove()};
+  return h("div",{class:"fila2"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>inp.click()}},es?"Importar vínculos":"Import links"),
+    h("button",{class:"btn ghost",type:"button",disabled:!Object.keys(DRIVE.mapa).length,on:{click:exp}},es?"Exportar vínculos":"Export links"))}
 function bloqueDrive(){
   const es=S.lang==="es";
-  if(!DRIVE_CFG.clientId)return h("p",{class:"note j"},es?"La conexión con Google Drive todavía no está activada en esta versión de la app.":"Google Drive linking is not enabled in this version of the app yet.");
+  if(!DRIVE_CFG.clientId){const n=Object.keys(DRIVE.mapa).length;
+    const box=h("div",{id:"sec-drive"},h("p",{class:"eyebrow c"},"Google Drive"),
+      h("p",{class:"j"},es?"Importá un archivo con los vínculos de tus PDF de Drive (lo genera el instructivo) o pegá el link en cada lectura. Funciona también en el celular.":"Import a file with links to your Drive PDFs (see the guide) or paste the link on each reading. Works on phones too."),
+      h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF de Drive o a un link":" of "+S.indice.length+" readings linked to a Drive PDF or a link")),
+      bloqueImportar(refrescar),DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
+    function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
+    return box}
   driveScripts().catch(()=>{});  // se cargan antes del toque, para que el permiso no lo bloquee el navegador
   const n=Object.keys(DRIVE.mapa).length;
   const correr=fn=>async()=>{DRIVE.estado=es?"Abriendo Google Drive…":"Opening Google Drive…";refrescar();try{DRIVE.estado=await fn()}catch(e){DRIVE.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
@@ -1560,6 +1585,7 @@ function bloqueDrive(){
     h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF de Drive":" of "+S.indice.length+" readings linked to a Drive PDF")),
     h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:correr(driveConectar)}},n?(es?"Agregar o actualizar":"Add or update"):(es?"Conectar mi carpeta de Drive":"Link my Drive folder")),
       h("button",{class:"btn ghost",type:"button",disabled:!n,on:{click:()=>{if(!confirm(es?"¿Quitar todos los vínculos con Drive? Tus archivos no se tocan.":"Remove all Drive links? Your files are not touched."))return;DRIVE.mapa={};driveGuardar();DRIVE.estado=es?"Vínculos quitados.":"Links removed.";refrescar()}}},es?"Quitar vínculos":"Remove links")),
+    bloqueImportar(refrescar),
     DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
   function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
   return box}
@@ -1577,6 +1603,7 @@ async function viewGuiaPDF(){
     L(x.intro)?h("p",{class:"j"},L(x.intro)):null,
     (x.pasos||[]).length?h("ol",{class:"guia-pasos"},x.pasos.map(p=>h("li",null,h("p",{class:"j"},...texto(L(p))),
       p.imagen?h("img",{src:p.imagen,alt:L(p.alt)||"",loading:"lazy",class:"guia-img"}):null))):null,
+    x.enlace?h("p",{class:"c"},h("a",{href:x.enlace.href,target:"_blank",rel:"noopener"},L(x.enlace))):null,
     L(x.notas)?h("p",{class:"note j"},L(x.notas)):null));
   mount(h("header",{class:"block"},h("p",{class:"eyebrow c"},es?"Instructivo":"Guide"),h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},L(g.titulo)),h("p",{class:"j"},L(g.bajada)),indice),
     ...secs,

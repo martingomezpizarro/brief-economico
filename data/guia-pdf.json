@@ -1,6 +1,9 @@
 {
   "_leeme": "Instructivo «Abrir los PDF» (#guia-pdf). Se edita acá, sin tocar index.html. Cada sección tiene título, intro, pasos y notas en es/en. Un paso puede llevar \"imagen\": \"guia/img/archivo.png\" (captura, opcional) y \"alt\". En los textos, {ejemplo} se reemplaza por un nombre de archivo de ejemplo.",
-  "titulo": {"es": "Abrir los PDF desde la app", "en": "Opening PDFs from the app"},
+  "titulo": {
+    "es": "Abrir los PDF desde la app",
+    "en": "Opening PDFs from the app"
+  },
   "bajada": {
     "es": "Hay tres maneras de abrir el texto completo de una lectura: la fuente pública, tu carpeta de Google Drive o un link que cargás a mano.",
     "en": "There are three ways to open a reading's full text: the public source, your Google Drive folder, or a link you add by hand."
@@ -8,15 +11,27 @@
   "secciones": [
     {
       "id": "publicos",
-      "titulo": {"es": "1. Lecturas de acceso público", "en": "1. Open-access readings"},
+      "titulo": {
+        "es": "1. Lecturas de acceso público",
+        "en": "1. Open-access readings"
+      },
       "intro": {
         "es": "Muchas lecturas del rack se publican gratis en el sitio de quien las edita: bancos centrales, CEPAL, BID, revistas abiertas o la página del autor. Esas tienen un enlace directo a la fuente oficial.",
         "en": "Many rack readings are free on the publisher's site: central banks, ECLAC, IDB, open journals or the author's page. Those link straight to the official source."
       },
       "pasos": [
-        {"es": "Iniciá sesión con Google o con tu mail (botón Entrar, arriba a la derecha).", "en": "Sign in with Google or your email (Sign in button, top right)."},
-        {"es": "Abrí la lectura desde el rack, una ruta o un brief.", "en": "Open the reading from the rack, a path or a brief."},
-        {"es": "Tocá «Abrir el texto completo». Se abre en una pestaña nueva, en el sitio oficial.", "en": "Tap «Open the full text». It opens in a new tab, on the official site."}
+        {
+          "es": "Iniciá sesión con Google o con tu mail (botón Entrar, arriba a la derecha).",
+          "en": "Sign in with Google or your email (Sign in button, top right)."
+        },
+        {
+          "es": "Abrí la lectura desde el rack, una ruta o un brief.",
+          "en": "Open the reading from the rack, a path or a brief."
+        },
+        {
+          "es": "Tocá «Abrir el texto completo». Se abre en una pestaña nueva, en el sitio oficial.",
+          "en": "Tap «Open the full text». It opens in a new tab, on the official site."
+        }
       ],
       "notas": {
         "es": "Si no aparece el enlace, la lectura no tiene una versión libre conocida (libros, revistas con suscripción, apuntes de cátedra). Para esas, usá tu propia copia: secciones 2 a 4.",
@@ -25,15 +40,27 @@
     },
     {
       "id": "nombres",
-      "titulo": {"es": "2. Cómo nombrar tus PDF", "en": "2. How to name your PDFs"},
+      "titulo": {
+        "es": "2. Cómo nombrar tus PDF",
+        "en": "2. How to name your PDFs"
+      },
       "intro": {
         "es": "Para que la app reconozca cada archivo sin que tengas que elegirlo, el nombre empieza con el número de la lectura, de cuatro cifras. El resto del nombre es para vos.",
         "en": "For the app to recognize each file on its own, the name starts with the reading's four-digit number. The rest of the name is for you."
       },
       "pasos": [
-        {"es": "Buscá el número: en la página de cada lectura figura como «Nº 0165». Ahí mismo está el nombre completo sugerido.", "en": "Find the number: each reading's page shows it as «Nº 0165», next to the suggested full name."},
-        {"es": "Renombrá el PDF con este formato: Número - Autor (año) - Título - tipo.pdf. Por ejemplo: {ejemplo}", "en": "Rename the PDF with this pattern: Number - Author (year) - Title - type.pdf. For example: {ejemplo}"},
-        {"es": "El tipo es uno de estos: paper, libro, capitulo, apunte, informe o dato.", "en": "The type is one of: paper, libro, capitulo, apunte, informe or dato."}
+        {
+          "es": "Buscá el número: en la página de cada lectura figura como «Nº 0165». Ahí mismo está el nombre completo sugerido.",
+          "en": "Find the number: each reading's page shows it as «Nº 0165», next to the suggested full name."
+        },
+        {
+          "es": "Renombrá el PDF con este formato: Número - Autor (año) - Título - tipo.pdf. Por ejemplo: {ejemplo}",
+          "en": "Rename the PDF with this pattern: Number - Author (year) - Title - type.pdf. For example: {ejemplo}"
+        },
+        {
+          "es": "El tipo es uno de estos: paper, libro, capitulo, apunte, informe o dato.",
+          "en": "The type is one of: paper, libro, capitulo, apunte, informe or dato."
+        }
       ],
       "notas": {
         "es": "Lo único imprescindible es el número seguido de « - » al principio. Si un archivo no lo tiene, la app intenta reconocerlo por el título y el autor, pero puede equivocarse o no encontrarlo.",
@@ -42,34 +69,69 @@
     },
     {
       "id": "drive",
-      "titulo": {"es": "3. Conectar tu carpeta de Google Drive", "en": "3. Link your Google Drive folder"},
+      "titulo": {
+        "es": "3. Vincular tu carpeta de Google Drive",
+        "en": "3. Link your Google Drive folder"
+      },
       "intro": {
-        "es": "Es la opción para usar desde el celular. Tus PDF quedan en tu Drive; la app solo guarda qué archivo corresponde a cada lectura.",
-        "en": "The option for phones. Your PDFs stay in your Drive; the app only stores which file goes with each reading."
+        "es": "Es la opción para usar desde el celular y vincular muchos PDF de una vez. Tus PDF quedan en tu Drive; la app solo guarda qué archivo corresponde a cada lectura y lo abre con tu cuenta de Google.",
+        "en": "The option for phones and for linking many PDFs at once. Your PDFs stay in your Drive; the app only stores which file goes with each reading and opens it with your Google account."
       },
       "pasos": [
-        {"es": "Subí tus PDF a una carpeta de tu Google Drive (pueden estar en subcarpetas), con los nombres de la sección 2.", "en": "Upload your PDFs to a folder in your Google Drive (subfolders are fine), named as in section 2."},
-        {"es": "En la app, entrá a Ajustes › Mi biblioteca › Google Drive y tocá «Conectar mi carpeta de Drive».", "en": "In the app, go to Settings › My library › Google Drive and tap «Link my Drive folder»."},
-        {"es": "Google te pide permiso para que la app vea los archivos que elijas. Aceptá.", "en": "Google asks permission for the app to see the files you choose. Accept."},
-        {"es": "En el selector, elegí la carpeta y confirmá. Si después la app avisa que no pudo ver los archivos, volvé a abrir el selector, entrá a la carpeta, marcá todos los PDF y confirmá.", "en": "In the picker, choose the folder and confirm. If the app says it could not see the files, open the picker again, enter the folder, select all PDFs and confirm."},
-        {"es": "La app te dice cuántas lecturas vinculó. Desde ahí, cada lectura vinculada muestra «Abrir mi PDF».", "en": "The app tells you how many readings it linked. From then on, each linked reading shows «Open my PDF»."}
+        {
+          "es": "Subí tu carpeta de PDF a Google Drive (desde la compu, arrastrala a drive.google.com). Pueden estar en subcarpetas, con los nombres de la sección 2.",
+          "en": "Upload your PDF folder to Google Drive (from a computer, drag it into drive.google.com). Subfolders are fine; use the names from section 2."
+        },
+        {
+          "es": "Abrí script.google.com, tocá «Nuevo proyecto» y pegá el script de Prebisch (link abajo). Poné el nombre de tu carpeta en la línea CARPETA.",
+          "en": "Open script.google.com, tap «New project» and paste the Prebisch script (link below). Put your folder name on the CARPETA line."
+        },
+        {
+          "es": "Tocá «Ejecutar» y aceptá el permiso de Google. El script crea «prebisch-vinculos.csv» en tu Drive, con el link de cada PDF numerado.",
+          "en": "Tap «Run» and accept Google's permission. The script creates «prebisch-vinculos.csv» in your Drive, with the link of each numbered PDF."
+        },
+        {
+          "es": "Descargá ese archivo. En la app: Ajustes › Mi biblioteca › Google Drive › «Importar vínculos» y elegilo.",
+          "en": "Download that file. In the app: Settings › My library › Google Drive › «Import links» and choose it."
+        },
+        {
+          "es": "La app te dice cuántas lecturas vinculó. Desde ahí, cada una muestra «Abrir mi PDF».",
+          "en": "The app tells you how many readings it linked. From then on, each shows «Open my PDF»."
+        }
       ],
       "notas": {
-        "es": "Cuando sumes PDF nuevos a la carpeta, volvé a Ajustes y tocá «Agregar o actualizar». Con la sesión iniciada, los vínculos se sincronizan entre tus dispositivos.",
-        "en": "When you add new PDFs, go back to Settings and tap «Add or update». When signed in, links sync across your devices."
+        "es": "Cuando sumes PDF nuevos, volvé a ejecutar el script e importá el archivo otra vez: se agregan sin borrar los anteriores. Con la sesión iniciada, los vínculos se sincronizan entre tus dispositivos; también podés exportarlos desde Ajustes.",
+        "en": "When you add PDFs, run the script again and re-import: new links are added without removing old ones. When signed in, links sync across devices; you can also export them from Settings."
+      },
+      "enlace": {
+        "href": "guia/prebisch-vinculos.gs.txt",
+        "es": "Ver el script de Prebisch para copiar",
+        "en": "View the Prebisch script to copy"
       }
     },
     {
       "id": "link",
-      "titulo": {"es": "4. Cargar el link a mano", "en": "4. Add the link by hand"},
+      "titulo": {
+        "es": "4. Cargar el link a mano",
+        "en": "4. Add the link by hand"
+      },
       "intro": {
         "es": "Sirve para una lectura suelta, o si tu PDF está en otro lado (OneDrive, Dropbox, la web).",
         "en": "Useful for a single reading, or if your PDF lives elsewhere (OneDrive, Dropbox, the web)."
       },
       "pasos": [
-        {"es": "Copiá el link del PDF. En Drive: tres puntos del archivo › Compartir › Copiar vínculo.", "en": "Copy the PDF's link. In Drive: the file's three dots › Share › Copy link."},
-        {"es": "Abrí la lectura en la app y bajá hasta «Mi PDF».", "en": "Open the reading in the app and scroll to «My PDF»."},
-        {"es": "Pegá el link en «Pegá el link de tu PDF» y tocá «Guardar link».", "en": "Paste the link in «Paste your PDF link» and tap «Save link»."}
+        {
+          "es": "Copiá el link del PDF. En Drive: tres puntos del archivo › Compartir › Copiar vínculo.",
+          "en": "Copy the PDF's link. In Drive: the file's three dots › Share › Copy link."
+        },
+        {
+          "es": "Abrí la lectura en la app y bajá hasta «Mi PDF».",
+          "en": "Open the reading in the app and scroll to «My PDF»."
+        },
+        {
+          "es": "Pegá el link en «Pegá el link de tu PDF» y tocá «Guardar link».",
+          "en": "Paste the link in «Paste your PDF link» and tap «Save link»."
+        }
       ],
       "notas": {
         "es": "El link de Drive se abre con tu cuenta de Google; no hace falta compartirlo con nadie. Para cambiarlo, tocá «No es este archivo» y pegá otro.",
@@ -78,14 +140,23 @@
     },
     {
       "id": "compu",
-      "titulo": {"es": "5. En la compu: carpeta local", "en": "5. On a computer: local folder"},
+      "titulo": {
+        "es": "5. En la compu: carpeta local",
+        "en": "5. On a computer: local folder"
+      },
       "intro": {
         "es": "En Chrome o Edge de escritorio también podés conectar una carpeta de tu compu, sin subir nada a Drive.",
         "en": "In desktop Chrome or Edge you can also link a folder on your computer, without uploading anything."
       },
       "pasos": [
-        {"es": "Ajustes › Mi biblioteca › Carpeta de esta compu › «Conectar mi carpeta».", "en": "Settings › My library › Folder on this computer › «Link my folder»."},
-        {"es": "Elegí la carpeta y aceptá el permiso de lectura del navegador.", "en": "Choose the folder and accept the browser's read permission."}
+        {
+          "es": "Ajustes › Mi biblioteca › Carpeta de esta compu › «Conectar mi carpeta».",
+          "en": "Settings › My library › Folder on this computer › «Link my folder»."
+        },
+        {
+          "es": "Elegí la carpeta y aceptá el permiso de lectura del navegador.",
+          "en": "Choose the folder and accept the browser's read permission."
+        }
       ],
       "notas": {
         "es": "Este vínculo vale solo en esa compu y ese navegador. Desde la compu también podés armar el brief de una lectura con tu PDF.",
@@ -94,15 +165,36 @@
     },
     {
       "id": "problemas",
-      "titulo": {"es": "6. Si algo no funciona", "en": "6. Troubleshooting"},
-      "intro": {"es": "", "en": ""},
+      "titulo": {
+        "es": "6. Si algo no funciona",
+        "en": "6. Troubleshooting"
+      },
+      "intro": {
+        "es": "",
+        "en": ""
+      },
       "pasos": [
-        {"es": "No aparece «Abrir el texto completo»: iniciá sesión; si igual no aparece, la lectura no tiene versión libre conocida.", "en": "No «Open the full text»: sign in; if it still does not show, the reading has no known free version."},
-        {"es": "Una lectura quedó con el PDF equivocado: en su página, «No es este archivo», y corregí el número al principio del nombre.", "en": "A reading got the wrong PDF: on its page, «Wrong file», and fix the number at the start of the file name."},
-        {"es": "Un PDF no se vinculó: revisá que empiece con las cuatro cifras y « - », o cargá el link a mano (sección 4).", "en": "A PDF did not link: check it starts with the four digits and « - », or add the link by hand (section 4)."},
-        {"es": "Un enlace público no funciona o lleva a otro trabajo: avisá con «Reportar un error» al pie de la página.", "en": "A public link is broken or points to another work: report it with «Report an error» in the footer."}
+        {
+          "es": "No aparece «Abrir el texto completo»: iniciá sesión; si igual no aparece, la lectura no tiene versión libre conocida.",
+          "en": "No «Open the full text»: sign in; if it still does not show, the reading has no known free version."
+        },
+        {
+          "es": "Una lectura quedó con el PDF equivocado: en su página, «No es este archivo», y corregí el número al principio del nombre.",
+          "en": "A reading got the wrong PDF: on its page, «Wrong file», and fix the number at the start of the file name."
+        },
+        {
+          "es": "Un PDF no se vinculó: revisá que empiece con las cuatro cifras y « - », o cargá el link a mano (sección 4).",
+          "en": "A PDF did not link: check it starts with the four digits and « - », or add the link by hand (section 4)."
+        },
+        {
+          "es": "Un enlace público no funciona o lleva a otro trabajo: avisá con «Reportar un error» al pie de la página.",
+          "en": "A public link is broken or points to another work: report it with «Report an error» in the footer."
+        }
       ],
-      "notas": {"es": "", "en": ""}
+      "notas": {
+        "es": "",
+        "en": ""
+      }
     }
   ]
 }

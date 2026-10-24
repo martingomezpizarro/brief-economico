@@ -1,0 +1,39 @@
+/**
+ * Prebisch · generar el archivo de vínculos de tus PDF de Google Drive.
+ *
+ * 1. Entrá a https://script.google.com con tu cuenta de Google y tocá «Nuevo proyecto».
+ * 2. Borrá lo que aparece y pegá este código.
+ * 3. En CARPETA, poné el nombre de tu carpeta de PDF tal como figura en Drive.
+ * 4. Tocá «Ejecutar». La primera vez Google pide permiso para leer tu Drive: aceptá
+ *    (el script corre en tu cuenta; no manda nada a ningún lado).
+ * 5. Se crea el archivo «prebisch-vinculos.csv» en la raíz de tu Drive.
+ *    Descargalo y, en Prebisch, Ajustes › Mi biblioteca › Importar vínculos.
+ *
+ * Solo se vinculan los PDF cuyo nombre empieza con el número de la lectura:
+ * «0165 - Michel y Díaz (2015) - Título - paper.pdf».
+ */
+const CARPETA = 'ECONOMICS';
+
+function generarVinculos() {
+  const carpetas = DriveApp.getFoldersByName(CARPETA);
+  if (!carpetas.hasNext()) throw new Error('No encontré la carpeta «' + CARPETA + '» en tu Drive.');
+  const filas = ['numero,link,nombre'];
+  recorrer(carpetas.next(), filas);
+  const viejo = DriveApp.getRootFolder().getFilesByName('prebisch-vinculos.csv');
+  while (viejo.hasNext()) viejo.next().setTrashed(true);
+  DriveApp.getRootFolder().createFile('prebisch-vinculos.csv', filas.join('\n'), MimeType.CSV);
+  Logger.log('Listo: ' + (filas.length - 1) + ' PDF con número. Descargá prebisch-vinculos.csv de tu Drive.');
+}
+
+function recorrer(carpeta, filas) {
+  const archivos = carpeta.getFiles();
+  while (archivos.hasNext()) {
+    const f = archivos.next();
+    const m = f.getName().match(/^\s*(\d{4})\s*-\s/);
+    if (m && /\.pdf$/i.test(f.getName())) {
+      filas.push(m[1] + ',https://drive.google.com/file/d/' + f.getId() + '/view,"' + f.getName().replace(/"/g, "'") + '"');
+    }
+  }
+  const sub = carpeta.getFolders();
+  while (sub.hasNext()) recorrer(sub.next(), filas);
+}
