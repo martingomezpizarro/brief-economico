@@ -1,0 +1,379 @@
+{
+ "id": "crec-teoria-07",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "El modelo de Solow-Swan: por qué invertir no alcanza para crecer siempre",
+ "bajada": "La introducción y el capítulo 1 de los Apuntes de Sala-i-Martin: la ecuación fundamental, el estado estacionario, la regla de oro, la velocidad de convergencia y por qué el progreso técnico tiene que ser exógeno.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), introducción y cap. 1: «El modelo neoclásico de crecimiento de Solow-Swan»",
+ "intro": "Sala-i-Martin abre su manual con una cuenta simple. El PIB per cápita de Estados Unidos pasó de 2.244 dólares en 1870 a 18.258 en 1990 (dólares de 1985): creció al 1,75% anual y se multiplicó por ocho. Con un punto menos, al 0,75%, habría llegado a 5.519 dólares, menos de un tercio, y estaría al nivel de México o Hungría; con un punto más, al 2,75%, a 60.841. Esas tasas no son exóticas: entre 1900 y 1987 India creció al 0,64%, Pakistán al 0,88% y Filipinas al 0,86%, mientras Japón y Taiwán lo hicieron al 2,95% y 2,75%. Frente a esa fuerza, los ciclos son «altibajos minúsculos». La pregunta importante, dice el autor, es cómo convertir una economía B en una economía C. El capítulo 1 empieza a contestarla con el modelo de Solow y Swan (1956), y llega a una conclusión incómoda: acumular capital no alcanza para crecer para siempre.",
+ "secciones": [
+  {
+   "t": "De los clásicos al crecimiento endógeno",
+   "p": [
+    "La introducción ordena la historia del campo. Smith, Ricardo y Malthus ya hablaban de rendimientos decrecientes, especialización y progreso técnico; Ramsey, Young, Knight y Schumpeter aportaron a comienzos del siglo XX. El enfoque del libro, sin embargo, es el neoclásico de la segunda mitad del siglo: Solow (1956) y Swan (1956), completados por Cass (1965) y Koopmans (1965), que recuperaron la optimización intertemporal de Ramsey (1928).",
+    "Como los rendimientos decrecientes hacían insostenible el crecimiento por acumulación de capital, los neoclásicos tuvieron que suponer un progreso técnico exógeno. Para Sala-i-Martin, la teoría se volvió entonces matemática y poco relevante, y a comienzos de los setenta «murió» mientras la macro se iba al ciclo. Renació con la tesis de Paul Romer (publicada en 1986) y con Lucas (1988): primero modelos que eliminan los rendimientos decrecientes con externalidades o capital humano, después modelos de I+D con competencia imperfecta (Romer, Aghion y Howitt, Grossman y Helpman), donde el gobierno importa porque el crecimiento no es óptimo."
+   ]
+  },
+  {
+   "t": "Los supuestos: galletas, hornos y recetas",
+   "p": [
+    "El modelo arranca de la identidad Y = C + I + G + NX y la recorta: economía cerrada (NX = 0) y sin gobierno (G = 0), de modo que el ahorro es igual a la inversión. La producción combina trabajo L, capital K y tecnología A. Una distinción clave: el capital y el trabajo son bienes rivales (un horno no puede usarse en Camprodón y en Rentería a la vez), la tecnología no lo es (la receta sí).",
+    "Una función de producción es neoclásica si cumple tres propiedades: rendimientos constantes a escala en K y L, justificados por el principio de réplica (si se duplica la fábrica no hace falta duplicar la receta); productos marginales positivos y decrecientes; y condiciones de Inada (el producto marginal del capital tiende a infinito cuando K tiende a cero y a cero cuando K tiende a infinito). La Cobb-Douglas las cumple y tiene un origen curioso: Paul Douglas notó que en Estados Unidos los trabajadores se quedaban con alrededor del 70% de la renta y los capitalistas con el 30%, y el matemático Charles Cobb le encontró la función que hace constantes esas participaciones si cada factor cobra su producto marginal.",
+    "Faltan tres supuestos: las familias ahorran una fracción constante s de lo que producen, una fracción constante δ de las máquinas se rompe cada período (las máquinas son como bombitas de luz: funcionan igual hasta que se queman) y la población, igual al empleo, crece a la tasa n. Con tecnología constante se llega a la ecuación fundamental del modelo."
+   ]
+  },
+  {
+   "t": "Estado estacionario y regla de oro",
+   "eq": [
+    "\\dot k = s\\,f(k,A) - (\\delta + n)\\,k",
+    "k^* = \\left(\\frac{sA}{\\delta + n}\\right)^{\\frac{1}{1-\\alpha}}",
+    "c^* = f(k^*) - (\\delta+n)k^* \\;\\Rightarrow\\; f'(k_{oro}) = \\delta + n"
+   ],
+   "nota": "k es el capital per cápita, s la tasa de ahorro, δ la depreciación, n el crecimiento de la población y α la participación del capital en la Cobb-Douglas \\(y = Ak^{\\alpha}\\). El término nk es la «depreciación» que produce la llegada de nuevas personas.",
+   "p": [
+    "El capital per cápita aumenta con la diferencia entre la curva de ahorro, sf(k), y la curva de depreciación, (δ + n)k. Como la curva de ahorro es vertical en el origen y se aplana, las dos se cruzan una sola vez (fuera del origen): ese es el estado estacionario k*, y es estable, porque a su izquierda el capital crece y a su derecha cae. Allí las variables per cápita quedan constantes y las agregadas crecen a la tasa n. Un ahorro mayor o una tecnología mejor suben k*; más depreciación o más crecimiento de la población lo bajan.",
+    "¿Qué tasa de ahorro conviene? La que maximiza el consumo de estado estacionario, que Phelps (1961) bautizó «regla de oro»: la pendiente de la función de producción debe igualar δ + n. Si una economía ahorra más que eso, bajar el ahorro sube el consumo hoy y en todo el camino al nuevo estado estacionario: está en la zona de ineficiencia dinámica, que se reconoce porque la tasa de interés r = f'(k) − δ queda por debajo de la tasa de crecimiento agregada. Si ahorra menos, subir el ahorro exige sacrificar consumo hoy por consumo mañana, y para juzgarlo hace falta una función de utilidad. La lección: ahorrar demasiado es malo sin ambigüedad; ahorrar poco, no necesariamente."
+   ]
+  },
+  {
+   "t": "Por qué el crecimiento se apaga",
+   "eq": [
+    "\\gamma_k \\equiv \\frac{\\dot k}{k} = sAk^{-(1-\\alpha)} - (\\delta + n)"
+   ],
+   "p": [
+    "Dividida por k, la ecuación fundamental da la tasa de crecimiento: la distancia vertical entre una curva de ahorro decreciente y una recta horizontal en δ + n. Una economía pobre crece rápido y desacelera a medida que se acerca a k*, porque cada máquina nueva rinde menos. El autor advierte que la explicación no es que la gente invierta menos al caer la rentabilidad: aquí el ahorro es fijo, y ese canal recién aparece con la optimización del capítulo 3.",
+    "De ahí sale lo esencial. Subir la tasa de ahorro, como suele recomendar el Banco Mundial, acelera el crecimiento en la transición y eleva el nivel de largo plazo, pero no la tasa: el crecimiento vuelve a cero. Tampoco se puede subir s para siempre, porque es una fracción y no puede pasar de uno. Reducir el crecimiento de la población tiene el mismo efecto de nivel y tampoco se puede repetir indefinidamente. Solo la tecnología puede mejorar sin límite: con progreso técnico que aumenta la eficiencia del trabajo a una tasa x, el capital por unidad de trabajo eficiente tiene un estado estacionario y el producto per cápita crece a la tasa x."
+   ]
+  },
+  {
+   "t": "El gran problema: el progreso técnico debe ser exógeno",
+   "eq": [
+    "F(K,L,A) = K\\,\\frac{\\partial F}{\\partial K} + L\\,\\frac{\\partial F}{\\partial L} = RK + wL"
+   ],
+   "nota": "Teorema de Euler para una función homogénea de grado uno en K y L, con factores pagados por su producto marginal en competencia perfecta.",
+   "p": [
+    "El modelo explica muchas cosas, menos lo que debía explicar: el crecimiento. Y no es un olvido. Con rendimientos constantes en los factores rivales y competencia perfecta, pagar a cada factor su producto marginal agota el producto. No queda nada para financiar la investigación, así que los neoclásicos están obligados a suponer que la tecnología cae del cielo. Para Sala-i-Martin eso vuelve al modelo «intelectualmente insatisfactorio», pero también señala el camino: para explicar el crecimiento de largo plazo hay que abandonar la función neoclásica, la competencia perfecta o algún otro supuesto."
+   ]
+  },
+  {
+   "t": "Velocidad de convergencia y la evidencia",
+   "eq": [
+    "\\gamma_k \\approx -(1-\\alpha)(\\delta+n)\\left[\\log k - \\log k^*\\right],\\qquad \\beta^* = (1-\\alpha)(\\delta+n)"
+   ],
+   "p": [
+    "Donde el modelo sí sirve es en la transición. Linealizando alrededor del estado estacionario, la velocidad de convergencia es β* = (1 − α)(δ + n). Con n ≈ 0,01, δ ≈ 0,1 y α ≈ 0,30 da 0,7 × 0,11 = 0,077: cada año se cierra el 7,7% de la brecha, y la mitad desaparece en unos 9 años (log 2/β). Si el capital se entiende en sentido amplio, con α = 0,80, la velocidad cae a 0,022 y la mitad de la brecha tarda 32 años. Barro y Sala-i-Martin (1991, 1992) y Mankiw, Romer y Weil (1992) encuentran que estos valores bajos, alrededor de 0,02, son los que encajan con los datos.",
+    "Eso obliga a separar dos ideas. La convergencia absoluta (los pobres crecen más que los ricos) solo se predice si los países difieren únicamente en su capital inicial. Si difieren en s, n, δ o A, cada uno va a su propio estado estacionario, y el modelo solo predice convergencia condicional: crece más quien está más lejos de su k*. En la regresión, omitir los determinantes de k* sesga el coeficiente del nivel inicial si están correlacionados con él.",
+    "Mankiw, Romer y Weil reconcilian la teoría con los datos agregando capital humano: con participaciones de 0,30 para el físico y 0,50 para el humano, la participación relevante es 0,80 y la velocidad, 0,022. El capítulo cierra con la economía abierta de Barro, Mankiw y Sala-i-Martin (1992), donde solo el capital físico es móvil: la participación efectiva es 0,50/0,7 ≈ 0,71 y la velocidad, 0,031, parecida a la cerrada. Lectura propia: la conclusión práctica es que trabajar con modelos de economía cerrada no es tan descabellado, siempre que la parte del capital que sirve de garantía no sea grande."
+   ]
+  }
+ ],
+ "claves": [
+  "Pequeñas diferencias en la tasa de crecimiento sostenidas un siglo producen diferencias enormes de nivel: el crecimiento importa más que el ciclo.",
+  "La ecuación fundamental \\(\\dot k = sf(k) - (\\delta+n)k\\) tiene un único estado estacionario estable.",
+  "La regla de oro iguala el producto marginal del capital a δ + n; ahorrar por encima de ella es dinámicamente ineficiente (r < crecimiento).",
+  "Más ahorro o menos crecimiento de la población elevan el nivel de largo plazo pero no la tasa: los rendimientos decrecientes apagan el crecimiento.",
+  "Con competencia perfecta y rendimientos constantes, el producto se agota en salarios y rentas: el progreso técnico debe ser exógeno.",
+  "La velocidad de convergencia teórica es (1 − α)(δ + n); los datos, alrededor de 0,02, piden una participación del capital amplia, cercana a 0,80, y apoyan la convergencia condicional."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según la introducción, si Estados Unidos hubiera crecido al 0,75% en vez del 1,75% entre 1870 y 1990, ¿qué habría pasado?",
+    "en": "According to the introduction, had the US grown at 0.75% instead of 1.75% between 1870 and 1990, what would have happened?"
+   },
+   "op": {
+    "es": [
+     "Habría sido igual de rico gracias al ciclo",
+     "Su PIB per cápita habría sido menos de un tercio del efectivo",
+     "Habría superado a Japón",
+     "Su PIB per cápita habría sido la mitad"
+    ],
+    "en": [
+     "It would have been just as rich thanks to the cycle",
+     "Its GDP per capita would have been less than a third of the actual figure",
+     "It would have overtaken Japan",
+     "Its GDP per capita would have been half"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Habría llegado a 5.519 dólares en lugar de 18.258: un punto de diferencia sostenido más de un siglo.",
+    "en": "It would have reached $5,519 instead of $18,258: one point sustained for over a century."
+   },
+   "id": "crec-teoria-07-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los rendimientos constantes a escala se definen sobre K y L, y no sobre la tecnología?",
+    "en": "Why are constant returns to scale defined over K and L, not technology?"
+   },
+   "op": {
+    "es": [
+     "Porque la tecnología es no rival: al replicar una fábrica se puede usar la misma receta",
+     "Porque la tecnología no se puede medir",
+     "Porque la tecnología es exógena",
+     "Porque la tecnología tiene rendimientos crecientes"
+    ],
+    "en": [
+     "Because technology is nonrival: replicating a plant can reuse the same recipe",
+     "Because technology cannot be measured",
+     "Because technology is exogenous",
+     "Because technology has increasing returns"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es el principio de réplica: duplicar K y L duplica Y sin duplicar la fórmula.",
+    "en": "It is the replication argument: doubling K and L doubles Y without doubling the formula."
+   },
+   "id": "crec-teoria-07-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Solow-Swan con tecnología constante, ¿qué efecto tiene un aumento permanente de la tasa de ahorro?",
+    "en": "In the Solow-Swan model with constant technology, what is the effect of a permanent rise in the saving rate?"
+   },
+   "op": {
+    "es": [
+     "Sube para siempre la tasa de crecimiento",
+     "No tiene ningún efecto",
+     "Acelera el crecimiento en la transición y eleva el nivel de largo plazo, pero el crecimiento vuelve a cero",
+     "Reduce el capital de estado estacionario"
+    ],
+    "en": [
+     "It permanently raises the growth rate",
+     "It has no effect",
+     "It speeds growth during the transition and raises the long-run level, but growth returns to zero",
+     "It lowers steady-state capital"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los rendimientos decrecientes del capital cierran la brecha entre la curva de ahorro y la de depreciación.",
+    "en": "Diminishing returns to capital close the gap between the saving and depreciation curves."
+   },
+   "id": "crec-teoria-07-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué caracteriza a la zona de ineficiencia dinámica?",
+    "en": "What characterizes the dynamically inefficient region?"
+   },
+   "op": {
+    "es": [
+     "Que la tasa de ahorro es menor que la de la regla de oro",
+     "Que la población decrece",
+     "Que la tecnología no crece",
+     "Que la tasa de interés es menor que la tasa de crecimiento agregada"
+    ],
+    "en": [
+     "The saving rate is below the golden-rule rate",
+     "Population is shrinking",
+     "Technology does not grow",
+     "The interest rate is below the aggregate growth rate"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "A la derecha de la regla de oro, r* = f'(k*) − δ < n; bajar el ahorro sube el consumo en todo momento.",
+    "en": "Right of the golden rule, r* = f'(k*) − δ < n; lowering saving raises consumption at every date."
+   },
+   "id": "crec-teoria-07-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, según Sala-i-Martin, el progreso técnico debe ser exógeno en el modelo neoclásico?",
+    "en": "Why, according to Sala-i-Martin, must technical progress be exogenous in the neoclassical model?"
+   },
+   "op": {
+    "es": [
+     "Porque los datos no muestran progreso técnico",
+     "Porque con competencia perfecta y rendimientos constantes, pagar a K y L su producto marginal agota el producto",
+     "Porque la tecnología es rival",
+     "Porque el ahorro es constante"
+    ],
+    "en": [
+     "Because data show no technical progress",
+     "Because with perfect competition and constant returns, paying K and L their marginal products exhausts output",
+     "Because technology is rival",
+     "Because saving is constant"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Por el teorema de Euler, Y = RK + wL: no quedan recursos para financiar investigación.",
+    "en": "By Euler's theorem, Y = RK + wL: no resources remain to fund research."
+   },
+   "id": "crec-teoria-07-q5"
+  },
+  {
+   "q": {
+    "es": "Con n = 0,01, δ = 0,1 y α = 0,3, ¿qué velocidad de convergencia predice el modelo?",
+    "en": "With n = 0.01, δ = 0.1 and α = 0.3, what convergence speed does the model predict?"
+   },
+   "op": {
+    "es": [
+     "Alrededor de 2% anual, con media vida de 32 años",
+     "Cero",
+     "Alrededor de 7,7% anual, con media vida de unos 9 años",
+     "Alrededor de 30% anual"
+    ],
+    "en": [
+     "About 2% per year, with a 32-year half-life",
+     "Zero",
+     "About 7.7% per year, with a half-life of about 9 years",
+     "About 30% per year"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "β* = (1 − α)(δ + n) = 0,7 × 0,11 = 0,077; la media vida es log 2/β.",
+    "en": "β* = (1 − α)(δ + n) = 0.7 × 0.11 = 0.077; the half-life is log 2/β."
+   },
+   "id": "crec-teoria-07-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cuándo predice el modelo neoclásico que los países pobres crecen más que los ricos (convergencia absoluta)?",
+    "en": "When does the neoclassical model predict that poor countries grow faster than rich ones (absolute convergence)?"
+   },
+   "op": {
+    "es": [
+     "Solo si los países difieren únicamente en su capital inicial",
+     "Siempre",
+     "Nunca",
+     "Solo si los pobres ahorran menos"
+    ],
+    "en": [
+     "Only if countries differ solely in initial capital",
+     "Always",
+     "Never",
+     "Only if the poor save less"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si difieren en s, n, δ o A, cada uno tiene su estado estacionario y solo hay convergencia condicional.",
+    "en": "If they differ in s, n, δ or A, each has its own steady state and only conditional convergence holds."
+   },
+   "id": "crec-teoria-07-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué hace el modelo de Solow-Swan ampliado de Mankiw, Romer y Weil (1992)?",
+    "en": "What does Mankiw, Romer and Weil's (1992) augmented Solow-Swan model do?"
+   },
+   "op": {
+    "es": [
+     "Hace endógena la tecnología",
+     "Elimina los rendimientos decrecientes",
+     "Introduce gobierno",
+     "Suma capital humano y eleva la participación relevante del capital a cerca de 0,80"
+    ],
+    "en": [
+     "Makes technology endogenous",
+     "Removes diminishing returns",
+     "Introduces government",
+     "Adds human capital and raises the relevant capital share to about 0.80"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con 0,30 de capital físico y 0,50 de humano, la velocidad de convergencia cae a 0,022, cerca de lo estimado.",
+    "en": "With 0.30 physical and 0.50 human capital shares, convergence speed falls to 0.022, near the estimates."
+   },
+   "id": "crec-teoria-07-q8"
+  }
+ ],
+ "palabras": 1369,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el crecimiento de largo plazo importa más que las fluctuaciones del ciclo?",
+    "en": "Why does long-run growth matter more than business-cycle fluctuations?"
+   },
+   "a": {
+    "es": "Porque un punto de diferencia en la tasa de crecimiento, sostenido un siglo, separa a un país rico de uno de ingreso medio, mientras los ciclos son oscilaciones pequeñas alrededor de esa tendencia. Sala-i-Martin lo ilustra con Estados Unidos entre 1870 y 1990 en la introducción de sus Apuntes.",
+    "en": "Because one point of growth sustained for a century separates a rich country from a middle-income one, while cycles are small swings around that trend. Sala-i-Martin illustrates it with the US between 1870 and 1990 in the introduction to his Lecture Notes."
+   },
+   "id": "crec-teoria-07-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué dice la ecuación fundamental del modelo de Solow-Swan?",
+    "en": "What does the fundamental equation of the Solow-Swan model say?"
+   },
+   "a": {
+    "es": "Que el capital per cápita aumenta con la diferencia entre el ahorro por persona, sf(k), y la depreciación ampliada, (δ + n)k, que incluye la dilución del capital entre más personas. Sala-i-Martin (cap. 1) la usa para mostrar que existe un único estado estacionario estable.",
+    "en": "That capital per person rises with the gap between saving per person, sf(k), and broad depreciation, (δ + n)k, which includes capital dilution across more people. Sala-i-Martin (ch. 1) uses it to show there is a unique, stable steady state."
+   },
+   "id": "crec-teoria-07-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la regla de oro de la acumulación de capital?",
+    "en": "What is the golden rule of capital accumulation?"
+   },
+   "a": {
+    "es": "El estado estacionario que maximiza el consumo per cápita, donde el producto marginal del capital iguala δ + n. Sala-i-Martin (cap. 1) muestra que ahorrar por encima de ella es dinámicamente ineficiente, y que ahorrar por debajo no es ineficiente sin ambigüedad.",
+    "en": "The steady state that maximizes consumption per person, where the marginal product of capital equals δ + n. Sala-i-Martin (ch. 1) shows that saving above it is dynamically inefficient, while saving below it is not unambiguously inefficient."
+   },
+   "id": "crec-teoria-07-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un aumento del ahorro no eleva el crecimiento de largo plazo en el modelo neoclásico?",
+    "en": "Why doesn't higher saving raise long-run growth in the neoclassical model?"
+   },
+   "a": {
+    "es": "Porque cada máquina adicional rinde menos: el ahorro extra acelera la acumulación al principio, pero los rendimientos decrecientes llevan la economía a un nuevo estado estacionario con crecimiento nulo, y la tasa de ahorro no puede superar uno. Así lo argumenta Sala-i-Martin (cap. 1).",
+    "en": "Because each extra machine yields less: extra saving speeds accumulation at first, but diminishing returns take the economy to a new zero-growth steady state, and the saving rate cannot exceed one. So argues Sala-i-Martin (ch. 1)."
+   },
+   "id": "crec-teoria-07-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el modelo neoclásico no puede explicar el origen del progreso técnico?",
+    "en": "Why can't the neoclassical model explain where technical progress comes from?"
+   },
+   "a": {
+    "es": "Porque con rendimientos constantes en capital y trabajo y competencia perfecta, el teorema de Euler implica que salarios y rentas agotan el producto: no queda nada para pagar la investigación. Sala-i-Martin (cap. 1) concluye que hay que abandonar algún supuesto neoclásico.",
+    "en": "Because with constant returns in capital and labor and perfect competition, Euler's theorem implies wages and rentals exhaust output, leaving nothing to pay for research. Sala-i-Martin (ch. 1) concludes some neoclassical assumption must go."
+   },
+   "id": "crec-teoria-07-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué velocidad de convergencia predice el modelo y cuál encuentran los datos?",
+    "en": "What convergence speed does the model predict, and what do the data find?"
+   },
+   "a": {
+    "es": "Con capital físico solo (α ≈ 0,3) predice unos 7,7% anuales; los estudios de Barro y Sala-i-Martin y de Mankiw, Romer y Weil encuentran alrededor de 2%, lo que exige una participación del capital amplia, cercana a 0,80. Lo resume Sala-i-Martin (cap. 1).",
+    "en": "With physical capital only (α ≈ 0.3) it predicts about 7.7% a year; the studies by Barro and Sala-i-Martin and by Mankiw, Romer and Weil find about 2%, which requires a broad capital share near 0.80. Sala-i-Martin summarizes it (ch. 1)."
+   },
+   "id": "crec-teoria-07-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre convergencia absoluta y condicional?",
+    "en": "What is the difference between absolute and conditional convergence?"
+   },
+   "a": {
+    "es": "La absoluta dice que los pobres crecen más que los ricos; la condicional, que crece más quien está más lejos de su propio estado estacionario. Sala-i-Martin (cap. 1) explica que el modelo neoclásico solo predice la segunda cuando los países difieren en ahorro, población, depreciación o tecnología.",
+    "en": "Absolute convergence says the poor grow faster than the rich; conditional, that whoever is farther from its own steady state grows faster. Sala-i-Martin (ch. 1) explains the neoclassical model predicts only the latter when countries differ in saving, population, depreciation or technology."
+   },
+   "id": "crec-teoria-07-t7"
+  }
+ ]
+}

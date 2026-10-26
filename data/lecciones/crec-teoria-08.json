@@ -1,0 +1,381 @@
+{
+ "id": "crec-teoria-08",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Del modelo AK a las trampas de pobreza: crecimiento endógeno con ahorro constante",
+ "bajada": "El capítulo 2 de los Apuntes de Sala-i-Martin: qué cambia si el capital no tiene rendimientos decrecientes, por qué la clave es la condición de Inada, el tamaño óptimo del gobierno, el filo de navaja de Harrod-Domar y los clubes de países.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 2: «Crecimiento endógeno y otras extensiones del modelo de Solow-Swan»",
+ "intro": "El capítulo 1 terminó en un callejón: el modelo neoclásico solo crece si la tecnología mejora, pero sus propios supuestos obligan a que esa mejora sea exógena. Para explicar el crecimiento de largo plazo hay que abandonar algún supuesto. En el capítulo 2, Sala-i-Martin mantiene la tasa de ahorro constante de Solow y Swan y cambia solo la función de producción. Con eso arma un recorrido por el modelo AK, las externalidades de Romer (1986), el gasto público productivo de Barro (1990), dos funciones con rendimientos decrecientes que igual crecen para siempre, el viejo modelo de Harrod-Domar, las trampas de pobreza y el vínculo entre desempleo y crecimiento. El hilo conductor: casi todos los modelos de crecimiento endógeno esconden, en algún lado, una tecnología AK.",
+ "secciones": [
+  {
+   "t": "El modelo AK: crecer sin nada exógeno",
+   "eq": [
+    "Y = AK \\;\\Rightarrow\\; \\gamma = \\frac{\\dot k}{k} = sA - (\\delta + n)"
+   ],
+   "nota": "A es una constante. Si sA > δ + n, el capital, el producto y el consumo per cápita crecen a la misma tasa constante; las variables agregadas, a esa tasa más n.",
+   "p": [
+    "La tecnología AK, atribuida a Rebelo (1991) en la literatura moderna, parece descabellada porque no tiene trabajo. Pero si el trabajo productivo también requiere invertir (comida, salud, educación), capital y trabajo son dos formas de capital, y con rendimientos constantes a escala la función tiene que ser AK. Cumple rendimientos constantes a escala, pero no tiene rendimientos decrecientes del capital ni cumple las condiciones de Inada: el producto marginal es siempre A.",
+    "En el gráfico, la curva de ahorro se vuelve una recta horizontal en sA, y si está por encima de δ + n la economía crece siempre a la misma tasa. El autor enumera seis diferencias con el modelo neoclásico: el crecimiento es positivo sin suponer nada exógeno (de ahí el nombre «endógeno»); depende de cosas visibles, y una política que suba el ahorro sube el crecimiento de largo plazo; no hay transición; no hay convergencia, ni absoluta ni condicional; una recesión que destruye capital tiene efectos permanentes; y, como señaló Saint-Paul (1992), la economía nunca puede ser dinámicamente ineficiente, porque r = A − δ siempre supera el crecimiento agregado sA − δ cuando s < 1."
+   ]
+  },
+  {
+   "t": "Romer (1986): externalidades del capital",
+   "eq": [
+    "Y = AK^{\\alpha}L^{1-\\alpha}\\kappa^{\\eta},\\quad \\kappa = k \\;\\Rightarrow\\; y = Ak^{\\alpha+\\eta}"
+   ],
+   "nota": "κ es el capital que genera la externalidad: el capital per cápita (supuesto de Lucas) o el agregado (supuesto de Romer); η mide su importancia.",
+   "p": [
+    "Cuando una firma invierte, aprende, y lo que aprende derrama sobre las demás. Con la externalidad en el capital per cápita, todo depende de α + η. Si es menor que uno, la economía se comporta como la neoclásica, con estado estacionario estable. Si es igual a uno, es exactamente el modelo AK. Si es mayor que uno, el estado estacionario es inestable: o el capital y la tasa de crecimiento se disparan, o la economía se extingue, algo que no se observa.",
+    "El problema es que la tecnología solo se vuelve AK si la externalidad es justo η = 1 − α, tan grande como la participación del trabajo, «supuesto que parece poco razonable». Si en cambio la externalidad viene del capital agregado, como en Romer, la tasa de crecimiento queda \\(sAL^{1-\\alpha} - \\delta\\) (con población constante): aparecen efectos de escala, y China o India deberían crecer mucho más que Hong Kong o Singapur. Con α + η < 1, los países poblados deberían ser más ricos que Suiza, Dinamarca o Bélgica. El autor concluye que esos efectos de escala tienden a no ser validados por los datos."
+   ]
+  },
+  {
+   "t": "Barro (1990): el tamaño óptimo del gobierno",
+   "eq": [
+    "Y = AK^{\\alpha}G^{1-\\alpha},\\quad G = \\tau Y",
+    "\\gamma = s(1-\\tau)A^{1/\\alpha}\\tau^{(1-\\alpha)/\\alpha} - (\\delta+n),\\qquad \\tau^* = 1-\\alpha"
+   ],
+   "p": [
+    "Si el gasto público entra en la producción, el gobierno tiene dos caras: provee un insumo productivo y lo financia con un impuesto proporcional a la renta, que reduce el ingreso disponible y el ahorro. Con presupuesto equilibrado, el gasto crece al mismo ritmo que el capital y la función de producción vuelve a ser AK camuflada: cuando una familia aumenta k, el gobierno aumenta g en la misma proporción.",
+    "La relación entre impuesto y crecimiento es una U invertida. Con τ = 0 no hay bien público y, como es necesario, no hay producción; con τ = 1 no hay renta disponible ni ahorro; en ambos extremos el capital per cápita cae a la tasa δ + n. El máximo está en τ* = 1 − α, justo donde el producto marginal del gasto es igual a uno, como una máquina de galletas que conviene alimentar mientras devuelva más de lo que se le pone. El autor advierte que con ahorro constante se pierde un canal central: los impuestos bajan la rentabilidad neta de invertir, algo que se estudia en el capítulo 6."
+   ]
+  },
+  {
+   "t": "La clave es Inada: Sobelow y CES",
+   "eq": [
+    "Y = AK + BK^{\\alpha}L^{1-\\alpha} \\;\\Rightarrow\\; \\gamma = sA + sBk^{\\alpha-1} - (\\delta+n)"
+   ],
+   "p": [
+    "¿Qué genera crecimiento endógeno: la ausencia de rendimientos decrecientes o la violación de Inada? Para averiguarlo, Sala-i-Martin usa la función de Kurz (1968), reintroducida por Jones y Manuelli (1990), que llama «Sobelow» porque está a caballo entre Solow y Rebelo. Tiene rendimientos constantes a escala y rendimientos decrecientes del capital, pero su producto marginal tiende a A, no a cero, cuando el capital tiende a infinito.",
+    "Si sA > δ + n, la tasa de crecimiento cae durante la transición pero converge a sA − (δ + n), positiva: a largo plazo es un AK. Si sA < δ + n, hay estado estacionario como en Solow. La respuesta que «podrá sorprender a más de uno»: lo que importa es que el producto marginal del capital quede acotado por encima, en un nivel suficientemente alto, no que no decrezca. La función CES da el mismo resultado si la elasticidad de sustitución entre capital y trabajo es mayor que uno, porque el producto medio del capital tiende a una constante positiva."
+   ]
+  },
+  {
+   "t": "Harrod-Domar y el filo de la navaja",
+   "eq": [
+    "Y = \\min(AK,\\,BL)"
+   ],
+   "p": [
+    "Antes de Solow, el modelo dominante era el de Harrod (1939) y Domar (1946), que combinaba multiplicador y acelerador. Sala-i-Martin advierte que sería un «craso error» identificarlo con el AK: Harrod y Domar se preocupaban por el desempleo de largo plazo, y la tecnología que mejor captura su espíritu es la de proporciones fijas de Leontief.",
+    "Con ahorro constante hay tres casos. Si sA < δ + n, el capital y el producto convergen a cero, algo que veían como una descripción de la Gran Depresión. Si sA > δ + n, se acumula capital ocioso que crece sin parar. Si sA = δ + n, por pura casualidad, puede quedar trabajo ocioso. Solo por azar se usan todos los recursos: la economía camina «por el filo de una navaja». La función neoclásica resuelve el problema porque el producto marginal varía con k; la escuela de Cambridge británica, haciendo endógeno el ahorro por la distribución del ingreso. Para el autor, la raíz es suponer que se sigue invirtiendo aunque haya máquinas ociosas, algo que ningún empresario razonable haría."
+   ]
+  },
+  {
+   "t": "Trampas de pobreza y desempleo",
+   "p": [
+    "Con una función de producción en forma de S (rendimientos decrecientes en la etapa agrícola, crecientes cuando se construye infraestructura y decrecientes o constantes después), la curva de ahorro baja, sube y se estabiliza, y puede cortar dos veces la de depreciación. El estado estacionario bajo es una trampa de pobreza estable; quien arranca por encima del segundo crece para siempre. El mundo se divide en dos clubes según el capital inicial. Pequeños cambios permanentes de política no sirven; uno grande, aunque sea temporal, puede sacar al país de la trampa: es la idea del «big push». El autor remite a Murphy, Shleifer y Vishny (1989), Azariadis y Drazen (1990) y, para contrastarlo, a Durlauf y Johnson (1992).",
+    "El capítulo cierra con Daveri y Tabellini (1997), que usan la externalidad de Romer para explicar el estancamiento europeo con alto desempleo: si la externalidad depende del capital por persona (no por trabajador), la tasa de crecimiento queda \\(sA(1-u)^{1-\\alpha} - (\\delta+n)\\) y cae con la tasa de desempleo u. Sala-i-Martin señala dos debilidades: requiere que la externalidad sea exactamente 1 − α y que dependa del capital por persona, lo que implica que sumar una persona que no trabaja baja la producción, un mecanismo difícil de imaginar.",
+    "Lectura propia: el capítulo no estima nada, pero deja hipótesis contrastables que el libro retoma en el capítulo 10. La convergencia separa el modelo AK del neoclásico, los efectos de escala ponen a prueba las externalidades del capital agregado y las trampas de pobreza predicen clubes de países. Con ahorro exógeno, todos estos resultados son provisorios hasta que los agentes optimizan."
+   ]
+  }
+ ],
+ "claves": [
+  "Con tecnología AK la economía crece a sA − (δ + n) sin transición, sin convergencia y con efectos permanentes de los shocks.",
+  "Casi todos los modelos de crecimiento endógeno esconden una tecnología AK: Romer con α + η = 1, Barro con gasto productivo.",
+  "Las externalidades del capital agregado generan efectos de escala que los datos no respaldan.",
+  "En Barro (1990), la tasa impositiva que maximiza el crecimiento es τ* = 1 − α, donde el producto marginal del gasto es uno.",
+  "Lo que permite crecer para siempre no es la ausencia de rendimientos decrecientes sino que el producto marginal del capital quede acotado por encima (violación de Inada).",
+  "Harrod-Domar solo usa todos los recursos por casualidad; las funciones en forma de S generan trampas de pobreza y justifican el «big push»."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cómo justifica Sala-i-Martin una función de producción AK que no incluye trabajo?",
+    "en": "How does Sala-i-Martin justify an AK production function without labor?"
+   },
+   "op": {
+    "es": [
+     "Diciendo que el trabajo no importa",
+     "Porque el trabajo productivo también requiere inversión, de modo que todos los insumos son capital",
+     "Porque supone desempleo total",
+     "Porque la tecnología reemplaza al trabajo"
+    ],
+    "en": [
+     "By saying labor does not matter",
+     "Because productive labor also requires investment, so all inputs are capital",
+     "Because he assumes full unemployment",
+     "Because technology replaces labor"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si capital físico y humano son ambos capital y hay rendimientos constantes a escala, la función es AK.",
+    "en": "If physical and human capital are both capital and returns to scale are constant, the function is AK."
+   },
+   "id": "crec-teoria-08-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas predicciones NO corresponde al modelo AK?",
+    "en": "Which of these predictions does NOT belong to the AK model?"
+   },
+   "op": {
+    "es": [
+     "Un aumento del ahorro sube el crecimiento de largo plazo",
+     "Una recesión que destruye capital tiene efectos permanentes",
+     "Los países pobres crecen más rápido que los ricos",
+     "No hay dinámica de transición"
+    ],
+    "en": [
+     "Higher saving raises long-run growth",
+     "A recession that destroys capital has permanent effects",
+     "Poor countries grow faster than rich ones",
+     "There is no transitional dynamics"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El modelo AK no predice convergencia, ni absoluta ni condicional; por eso la convergencia sirve para contrastarlo.",
+    "en": "The AK model predicts no convergence, absolute or conditional; that is why convergence is used to test it."
+   },
+   "id": "crec-teoria-08-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una economía AK no puede ser dinámicamente ineficiente?",
+    "en": "Why can an AK economy never be dynamically inefficient?"
+   },
+   "op": {
+    "es": [
+     "Porque r = A − δ siempre supera el crecimiento agregado sA − δ cuando s < 1",
+     "Porque no hay depreciación",
+     "Porque la población no crece",
+     "Porque el gobierno lo impide"
+    ],
+    "en": [
+     "Because r = A − δ always exceeds aggregate growth sA − δ when s < 1",
+     "Because there is no depreciation",
+     "Because population does not grow",
+     "Because the government prevents it"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La ineficiencia exige r < crecimiento agregado, lo que requeriría A < sA. Lo apuntó Saint-Paul (1992).",
+    "en": "Inefficiency requires r < aggregate growth, which would need A < sA. Saint-Paul (1992) pointed it out."
+   },
+   "id": "crec-teoria-08-q3"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Romer con externalidad en el capital per cápita, ¿qué ocurre si α + η > 1?",
+    "en": "In Romer's model with the externality in capital per person, what happens if α + η > 1?"
+   },
+   "op": {
+    "es": [
+     "La economía es neoclásica",
+     "La economía es exactamente AK",
+     "El crecimiento es constante",
+     "El estado estacionario es inestable: el crecimiento se dispara o la economía se extingue"
+    ],
+    "en": [
+     "The economy is neoclassical",
+     "The economy is exactly AK",
+     "Growth is constant",
+     "The steady state is unstable: growth explodes or the economy dies out"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La curva de ahorro es creciente; fuera de k*, la dinámica aleja a la economía del estado estacionario.",
+    "en": "The saving curve slopes up; away from k*, dynamics push the economy away from the steady state."
+   },
+   "id": "crec-teoria-08-q4"
+  },
+  {
+   "q": {
+    "es": "En el modelo de gasto público de Barro (1990), ¿qué tasa impositiva maximiza el crecimiento?",
+    "en": "In Barro's (1990) public spending model, which tax rate maximizes growth?"
+   },
+   "op": {
+    "es": [
+     "τ = 0",
+     "τ = 1 − α, donde el producto marginal del gasto es igual a uno",
+     "τ = α",
+     "τ = 1"
+    ],
+    "en": [
+     "τ = 0",
+     "τ = 1 − α, where the marginal product of spending equals one",
+     "τ = α",
+     "τ = 1"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El impuesto baja el ingreso disponible pero financia un insumo productivo; el óptimo iguala el producto marginal de g a uno.",
+    "en": "The tax cuts disposable income but funds a productive input; the optimum sets g's marginal product to one."
+   },
+   "id": "crec-teoria-08-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué enseña la función de producción «Sobelow»?",
+    "en": "What does the 'Sobelow' production function teach?"
+   },
+   "op": {
+    "es": [
+     "Que sin rendimientos decrecientes no hay crecimiento",
+     "Que el ahorro debe ser endógeno",
+     "Que la clave del crecimiento endógeno es que el producto marginal del capital no tienda a cero",
+     "Que el gobierno es necesario"
+    ],
+    "en": [
+     "That without diminishing returns there is no growth",
+     "That saving must be endogenous",
+     "That the key to endogenous growth is the marginal product of capital not going to zero",
+     "That government is necessary"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Tiene rendimientos decrecientes, pero viola la condición de Inada en el infinito: el producto marginal tiende a A.",
+    "en": "It has diminishing returns but violates the Inada condition at infinity: the marginal product tends to A."
+   },
+   "id": "crec-teoria-08-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el modelo de Harrod-Domar camina «por el filo de una navaja»?",
+    "en": "Why does the Harrod-Domar model walk 'on a knife edge'?"
+   },
+   "op": {
+    "es": [
+     "Porque solo usa plenamente capital y trabajo si, por casualidad, sA = δ + n",
+     "Porque la tasa de interés es negativa",
+     "Porque el ahorro cambia con la distribución",
+     "Porque tiene rendimientos crecientes"
+    ],
+    "en": [
+     "Because it fully employs capital and labor only if, by chance, sA = δ + n",
+     "Because the interest rate is negative",
+     "Because saving changes with distribution",
+     "Because it has increasing returns"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con proporciones fijas y parámetros exógenos, en los demás casos quedan máquinas o trabajadores ociosos.",
+    "en": "With fixed proportions and exogenous parameters, other cases leave idle machines or workers."
+   },
+   "id": "crec-teoria-08-q7"
+  },
+  {
+   "q": {
+    "es": "En el modelo de trampa de pobreza con función en forma de S, ¿qué tipo de política puede sacar a un país de la trampa?",
+    "en": "In the poverty-trap model with an S-shaped function, what policy can lift a country out of the trap?"
+   },
+   "op": {
+    "es": [
+     "Un pequeño aumento permanente del ahorro",
+     "Ninguna",
+     "Bajar la tecnología",
+     "Un cambio grande, aunque sea temporal, que lleve el capital por encima del estado estacionario inestable"
+    ],
+    "en": [
+     "A small permanent rise in saving",
+     "None",
+     "Lowering technology",
+     "A large change, even if temporary, that lifts capital above the unstable steady state"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es la lógica del «big push»: una vez superado k**, el ahorro puede volver a su nivel sin recaer.",
+    "en": "It is the big-push logic: once past k**, saving can return to its level without relapse."
+   },
+   "id": "crec-teoria-08-q8"
+  }
+ ],
+ "palabras": 1302,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué cambia en el modelo de Solow-Swan si la producción es Y = AK?",
+    "en": "What changes in the Solow-Swan model if output is Y = AK?"
+   },
+   "a": {
+    "es": "La tasa de crecimiento queda constante en sA − (δ + n): no hay transición, no hay convergencia, el ahorro afecta el crecimiento de largo plazo y los shocks al capital son permanentes. Sala-i-Martin (cap. 2) lo presenta como la base de toda la teoría del crecimiento endógeno.",
+    "en": "Growth is constant at sA − (δ + n): no transition, no convergence, saving affects long-run growth and capital shocks are permanent. Sala-i-Martin (ch. 2) presents it as the basis of all endogenous growth theory."
+   },
+   "id": "crec-teoria-08-t1"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué las externalidades del capital son una base débil para el crecimiento endógeno?",
+    "en": "Why are capital externalities a weak basis for endogenous growth?"
+   },
+   "a": {
+    "es": "Porque solo producen una tecnología AK si su tamaño es exactamente 1 − α, tan grande como la participación del trabajo; y si dependen del capital agregado generan efectos de escala que los datos no respaldan. Es la crítica de Sala-i-Martin (cap. 2) al modelo de Romer (1986).",
+    "en": "Because they only yield AK technology if their size is exactly 1 − α, as large as labor's share; and if they depend on aggregate capital they create scale effects the data do not support. This is Sala-i-Martin's (ch. 2) critique of Romer (1986)."
+   },
+   "id": "crec-teoria-08-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un efecto de escala en la teoría del crecimiento?",
+    "en": "What is a scale effect in growth theory?"
+   },
+   "a": {
+    "es": "La predicción de que los países más poblados crecen más rápido (o son más ricos) solo por su tamaño. Sala-i-Martin (cap. 2) muestra que surge cuando la externalidad depende del capital agregado, y que implicaría que China o India deberían crecer mucho más que Hong Kong o Singapur.",
+    "en": "The prediction that more populous countries grow faster (or are richer) just because of their size. Sala-i-Martin (ch. 2) shows it arises when the externality depends on aggregate capital, implying China or India should grow far faster than Hong Kong or Singapore."
+   },
+   "id": "crec-teoria-08-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la relación entre impuestos y crecimiento es una U invertida en el modelo de Barro (1990)?",
+    "en": "Why is the tax-growth relation an inverted U in Barro's (1990) model?"
+   },
+   "a": {
+    "es": "Porque el impuesto reduce el ingreso disponible y el ahorro, pero financia un bien público productivo. Con impuesto cero no hay bien público ni producción, y con impuesto total no hay ahorro; el máximo está en τ = 1 − α. Así lo desarrolla Sala-i-Martin (cap. 2).",
+    "en": "Because the tax cuts disposable income and saving but funds a productive public good. With a zero tax there is no public good or output, and with a full tax no saving; the peak is at τ = 1 − α. Sala-i-Martin (ch. 2) develops it."
+   },
+   "id": "crec-teoria-08-t4"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué condición tiene que cumplir la tecnología para que una economía crezca para siempre con ahorro constante?",
+    "en": "What must technology satisfy for an economy to grow forever with constant saving?"
+   },
+   "a": {
+    "es": "Que el producto marginal del capital quede acotado por encima de (δ + n)/s aunque el capital crezca sin límite; puede haber rendimientos decrecientes. Sala-i-Martin (cap. 2) lo muestra con la función «Sobelow» y con la CES de elasticidad de sustitución mayor que uno.",
+    "en": "The marginal product of capital must stay bounded above (δ + n)/s even as capital grows without limit; diminishing returns are allowed. Sala-i-Martin (ch. 2) shows it with the 'Sobelow' function and a CES with elasticity of substitution above one."
+   },
+   "id": "crec-teoria-08-t5"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cuál es el problema central del modelo de Harrod-Domar?",
+    "en": "What is the central problem of the Harrod-Domar model?"
+   },
+   "a": {
+    "es": "Con proporciones fijas entre capital y trabajo y parámetros exógenos, la economía solo usa todos sus recursos si sA = δ + n por casualidad; si no, acumula máquinas ociosas, desempleo o se contrae. Sala-i-Martin (cap. 2) lo atribuye a suponer que se invierte aunque sobren máquinas.",
+    "en": "With fixed capital-labor proportions and exogenous parameters, the economy fully uses its resources only if sA = δ + n by chance; otherwise it piles up idle machines, unemployment, or shrinks. Sala-i-Martin (ch. 2) traces it to assuming investment continues despite idle machines."
+   },
+   "id": "crec-teoria-08-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede una función de producción explicar la división del mundo en clubes de ricos y pobres?",
+    "en": "How can a production function explain the world's split into rich and poor clubs?"
+   },
+   "a": {
+    "es": "Si tiene forma de S, la curva de ahorro corta dos veces la de depreciación: hay una trampa de pobreza estable y un umbral por encima del cual se crece para siempre, y el club depende del capital inicial. Sala-i-Martin (cap. 2) deriva de ahí la lógica del «big push».",
+    "en": "If it is S-shaped, the saving curve crosses the depreciation line twice: there is a stable poverty trap and a threshold above which growth is perpetual, and club membership depends on initial capital. Sala-i-Martin (ch. 2) derives the big-push logic from it."
+   },
+   "id": "crec-teoria-08-t7"
+  }
+ ]
+}
