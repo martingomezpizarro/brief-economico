@@ -257,10 +257,14 @@ select{min-width:0;max-width:100%}
 .idx ol a:hover{color:var(--ink)}
 .idx ol a[aria-current]{color:var(--ink);font-weight:600;border-left-color:var(--again)}
 @media (min-width:900px){
-  /* el índice va pegado al borde izquierdo (la línea del logo); el contenido sigue centrado en su columna */
-  #wrap #main.con-idx-main{max-width:74rem}
-  .con-idx{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:40px;align-items:start}
-  #main:not(.ancho) .idx-cuerpo{max-width:40rem;width:100%;margin-left:max(0px,calc((100% - 40rem - 14.5rem)/2));margin-right:auto}
+  /* el índice va pegado al borde izquierdo de la ventana: el bloque se estira hasta ahí y el contenido
+     queda centrado en la página (o alineado con el ancho de Rutas), sin meterse debajo del índice */
+  #main>.con-idx{--mitad:20rem;display:grid;grid-template-columns:12rem minmax(0,1fr);gap:40px;align-items:start;
+    width:100vw;max-width:none;margin-left:calc(50% - 50vw);padding-inline:16px;box-sizing:border-box}
+  html{overflow-x:clip}
+  #main.ancho>.con-idx{--mitad:37rem}
+  #main.ancho .idx-cuerpo{max-width:min(74rem,calc(50vw + 37rem - 16px - 12rem - 40px))}
+  .idx-cuerpo{width:100%;max-width:calc(2 * var(--mitad));margin-left:max(0px,calc(50vw - var(--mitad) - 16px - 12rem - 40px))}
   .idx{top:20px;margin:0;padding:0;border:0;background:none;max-height:calc(100vh - 40px);overflow-y:auto}
   .idx-btn{display:none}
   .idx-tit{display:block;margin-bottom:10px}
@@ -503,7 +507,7 @@ function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
 /* ---------- navegación ---------- */
 function setNav(v){pintarCuenta();["hoy","rutas","estudio","rack","ajustes"].forEach(k=>{const a=document.getElementById("n-"+k);a.textContent=tr(k);if(k===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
   document.getElementById("l-es").setAttribute("aria-pressed",S.lang==="es");document.getElementById("l-en").setAttribute("aria-pressed",S.lang==="en")}
-function mount(...nodes){const m=document.getElementById("main");m.classList.remove("con-idx-main");volverFlotante();m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
+function mount(...nodes){const m=document.getElementById("main");volverFlotante();m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
 /* ---------- índice lateral: dónde estás dentro de Ajustes, Mi estudio y Rutas ----------
    idxSec() envuelve una parte de la vista y le pone nombre; mountIdx() arma la columna con esos nombres
    y la va marcando a medida que bajás. El envoltorio sobrevive aunque la sección se repinte sola. */
@@ -533,7 +537,6 @@ function mountIdx(titulo,...nodes){
   nav.append(btn,h("p",{class:"eyebrow idx-tit"},titulo),h("ol",null,items.map(n=>h("li",null,h("a",{href:"#"+n.id,"data-to":n.id,on:{click:ir(n)}},n.dataset.idx)))));
   document.addEventListener("keydown",e=>{if(e.key==="Escape")cerrar()},{once:true});
   mount(h("div",{class:"con-idx"},nav,h("div",{class:"idx-cuerpo"},...nodes)));
-  document.getElementById("main").classList.add("con-idx-main");
   if(items[0])idxMarcar(items[0].id);
 }
 /* Historial dentro de la app: cada página de detalle muestra «← Volver a …» con el nombre de la anterior. */
