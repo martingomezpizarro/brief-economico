@@ -1,0 +1,377 @@
+{
+ "id": "fisc-general-01",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Justicia distributiva: cuánto redistribuir y con qué criterio",
+ "bajada": "Los capítulos 1 y 2 de los Apuntes de Grión: por qué redistribuye el Estado, la flauta de Sen y cómo se comparan el utilitarismo de Harsanyi, los principios de Rawls y el enfoque de las capacidades.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), caps. 1: «Introducción» y 2: «Justicia distributiva», y ejercicio A.2.1",
+ "intro": "Grión define al Sector Público, en una sociedad democrática, como un agente creado por los individuos para proveer lo que el mercado no logra suministrar de manera eficiente o equitativa según la «voluntad general». Esa definición abre dos preguntas que ordenan el apunte. La primera es normativa: qué desigualdades conviene reducir y en qué grado, algo que depende de juicios de valor y que estudian las teorías de justicia distributiva. La segunda es por qué el Estado debería redistribuir más allá de lo que las personas hagan por su cuenta. El capítulo 1 responde a la segunda; el capítulo 2 recorre las respuestas a la primera.",
+ "secciones": [
+  {
+   "t": "Por qué redistribuye el Estado",
+   "p": [
+    "Grión da dos razones para que la redistribución no quede librada a la caridad privada. Una «mejor distribución» puede verse como un bien público: todos se benefician de ella, pero nadie tiene muchos incentivos a financiarla por su cuenta, de modo que la redistribución interpersonal voluntaria resulta escasa. La segunda razón es intrapersonal: hay fallas de mercado en la suavización del consumo a lo largo de la vida, y por eso existen el seguro de desempleo y las jubilaciones.",
+    "Para actuar, el gobierno necesita criterios y herramientas de medición. El autor nombra cuatro criterios principales, pobreza, vulnerabilidad, desigualdad y polarización, que el resto del apunte desarrolla junto con la elección colectiva y los problemas de reparto."
+   ]
+  },
+  {
+   "t": "Qué igualar y la flauta de Sen",
+   "p": [
+    "La idea de justicia surge porque la cooperación social agranda la torta, por división del trabajo, y entonces hay que decidir cómo repartir sus frutos y qué estructura básica debe tener la sociedad. Grión enumera los desafíos: sobre qué dimensión se define la igualdad (resultados u oportunidades), qué límites morales y prácticos tiene igualar (la libertad individual y la eficiencia), y la necesidad de separar lo normativo (qué teoría persuade más) de lo positivo (la incidencia económica de las políticas); propone discutirlo con la Asignación Universal por Hijo.",
+    "La fábula de Sen (2009) condensa el problema. Tres chicos se disputan una flauta. Ana la reclama porque es la única que sabe tocarla: justicia como eficiencia. Pedro, porque es el más pobre y no tiene juguetes: justicia como igualdad distributiva. Carla, porque trabajó semanas en fabricarla: justicia como retribución del trabajo. Las preguntas que agrega el apunte muestran que cada criterio tiene costos de incentivos: si la flauta va a Pedro, ¿quién produciría flautas?; si va a Ana, ¿cómo aprenderían los demás a tocar? Sen concluye que pueden sostenerse razones plurales y rivales de justicia.",
+    "Hay además dos caminos de análisis: definir un sistema ideal al cual aproximarse, como hace Rawls, o concentrarse en mejoras comparativas más inmediatas, como propone Sen."
+   ]
+  },
+  {
+   "t": "Un mapa de enfoques",
+   "p": [
+    "Grión clasifica las teorías en cuatro familias. Los enfoques de bienestar se apoyan en una función de bienestar social; el utilitarismo la hace depender de las utilidades individuales, y su vertiente moderna es la de Harsanyi. El liberalismo defiende las libertades individuales y tiene una vertiente radical, con el derecho natural de Nozick y el liberalismo empírico de Hayek y Friedman, y otra igualitaria, con el maximin de Rawls y el tratamiento de la igualdad de oportunidades de Dworkin. El enfoque de las capacidades es el de Sen, y quedan otras teorías, como el marxismo."
+   ]
+  },
+  {
+   "t": "El utilitarismo de Harsanyi",
+   "eq": [
+    "W = \\frac{1}{n}\\sum_{i=1}^{n} U_i"
+   ],
+   "nota": "\\(U_i\\) es la utilidad del individuo i y n el número de miembros de la sociedad. El espectador imparcial tiene probabilidad \\(1/n\\) de ser cada uno.",
+   "p": [
+    "Para Harsanyi (1955), una asignación es justa si todos los miembros potenciales de la sociedad la aceptarían antes de saber qué posición van a ocupar. Distingue las preferencias personales de las morales, que son las de un «espectador imparcial» con la misma probabilidad de convertirse en cualquier individuo. Un individuo racional en esa situación elige el sistema social que maximiza su utilidad esperada, es decir, la media aritmética de las utilidades individuales.",
+    "Grión le reconoce dos virtudes: juzga las instituciones por sus resultados y considera el bienestar de cada persona. Las críticas son varias. Es demasiado subjetivo (¿cómo tratar a un rico infeliz frente a un pobre feliz?), arrastra los problemas de la utilidad, como la adaptación mental y la comparación interpersonal, es indiferente a la redistribución en sí y no se interesa por lo que no reporta utilidad, como los derechos."
+   ]
+  },
+  {
+   "t": "Los principios de justicia de Rawls",
+   "eq": [
+    "W = \\min_{i}\\,\\{U_1, U_2, \\ldots, U_n\\}"
+   ],
+   "nota": "Criterio maximin: la sociedad se juzga por la utilidad de quien está peor. El texto lo nombra como maximin; la forma funcional es la formalización habitual.",
+   "p": [
+    "Rawls, en A Theory of Justice (1971), sostiene que los principios más aceptables son los que surgirían de una situación original en la que individuos libres desconocen su lugar en la sociedad: el velo de la ignorancia. Al firmar ese contrato hipotético actuarían con una aversión máxima al riesgo, es decir, a la desigualdad. De allí salen dos principios jerárquicos. Primero, el de libertad: cada persona tiene igual derecho a la libertad básica más amplia compatible con la de los demás (política, de expresión y reunión, de conciencia, de propiedad, frente al arresto arbitrario). Segundo, las desigualdades sociales y económicas solo son aceptables si hay igualdad de oportunidades y si aumentan el beneficio esperado de los menos favorecidos, que es el principio de diferencia.",
+    "Según Grión, la obra revitalizó la discusión y se volvió un punto de referencia, a favor o en contra. Se le critica que la situación original no es una explicación histórica, que no trata bien la responsabilidad y el esfuerzo de las personas en sus elecciones económicas y que supone un grado extremo de aversión a la desigualdad."
+   ]
+  },
+  {
+   "t": "El enfoque de las capacidades",
+   "p": [
+    "Sen objeta a los enfoques anteriores que miden instrumentos necesarios que no garantizan el bienestar: el utilitarismo mira el ingreso como fuente de utilidad y Rawls, la disposición de bienes primarios. Además prefiere criterios comparativos de justicia, más operativos que la búsqueda de un ideal contractualista. Propone medir el bienestar con funcionamientos, lo que las personas logran ser o hacer (participar en la vida de la comunidad, evitar la malnutrición, vestirse, tener techo), y con capacidades, la libertad para alcanzar esos funcionamientos, que tiene valor en sí misma.",
+    "El apunte destaca que es un enfoque más comprensivo, usado en programas de desarrollo y en la medición de la pobreza, por ejemplo en el Índice de Desarrollo Humano. Su debilidad es la cantidad de elementos con definiciones ambiguas y ponderaciones arbitrarias: las capacidades son difíciles de precisar y medir."
+   ]
+  },
+  {
+   "t": "Utilitarismo y maximin en la frontera de utilidades",
+   "p": [
+    "El ejercicio A.2.1 compara gráficamente los dos criterios sobre una frontera de posibilidades de utilidad para dos personas. Si la frontera es simétrica, el punto que maximiza la suma de utilidades y el que maximiza la utilidad del peor coinciden. Si es asimétrica, por ejemplo porque una persona convierte recursos en utilidad con más facilidad, los criterios se separan: el utilitarista elige un punto desigual y el rawlsiano, uno igualitario. Con una aversión a la desigualdad intermedia, no extrema, el óptimo queda entre ambos.",
+    "Lectura propia: este capítulo no tiene trabajo empírico, pero deja una pregunta contrastable, la de qué grado de aversión a la desigualdad revelan las sociedades en sus impuestos y transferencias, que podría inferirse de la progresividad efectiva de los sistemas fiscales."
+   ]
+  }
+ ],
+ "claves": [
+  "El Estado redistribuye porque una mejor distribución tiene rasgos de bien público y porque hay fallas de mercado en la suavización del consumo.",
+  "La fábula de la flauta muestra que eficiencia, igualdad y retribución del trabajo son razones de justicia plurales y rivales.",
+  "Harsanyi elige, tras un velo de imparcialidad, el sistema que maximiza la utilidad media de la sociedad.",
+  "Rawls deriva, con aversión máxima a la desigualdad, la prioridad de la libertad, la igualdad de oportunidades y el principio de diferencia.",
+  "Sen propone medir el bienestar por funcionamientos y capacidades, no por ingreso o bienes primarios.",
+  "Con una frontera de utilidades simétrica, el criterio utilitarista y el rawlsiano coinciden; con una asimétrica, difieren."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué argumento da Grión para que la redistribución interpersonal la haga el Estado y no la caridad privada?",
+    "en": "What argument does Grión give for the state, rather than private charity, to carry out interpersonal redistribution?"
+   },
+   "op": {
+    "es": [
+     "Que los privados no conocen a los pobres",
+     "Que una mejor distribución es como un bien público y hay pocos incentivos a financiarla",
+     "Que el Estado tiene costos administrativos nulos",
+     "Que la caridad privada distorsiona los precios"
+    ],
+    "en": [
+     "Private donors do not know who is poor",
+     "A better distribution is like a public good and there are few incentives to fund it",
+     "The state has zero administrative costs",
+     "Private charity distorts prices"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Todos se benefician de una mejor distribución, pero cada uno tiene incentivos a no pagarla.",
+    "en": "Everyone benefits from a better distribution, but each has incentives not to pay for it."
+   },
+   "id": "fisc-general-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué justifica, según el apunte, la redistribución intrapersonal como el seguro de desempleo o las jubilaciones?",
+    "en": "According to the notes, what justifies intrapersonal redistribution such as unemployment insurance or pensions?"
+   },
+   "op": {
+    "es": [
+     "Las fallas de mercado en la suavización del consumo",
+     "La aversión máxima a la desigualdad",
+     "El principio de diferencia",
+     "La comparación interpersonal de utilidades"
+    ],
+    "en": [
+     "Market failures in consumption smoothing",
+     "Maximal inequality aversion",
+     "The difference principle",
+     "Interpersonal utility comparison"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es redistribución de una misma persona entre momentos de su vida, que el mercado no resuelve bien.",
+    "en": "It is redistribution for the same person across moments in life, which markets handle poorly."
+   },
+   "id": "fisc-general-01-q2"
+  },
+  {
+   "q": {
+    "es": "En la fábula de Sen, ¿qué criterio de justicia invoca Carla al reclamar la flauta?",
+    "en": "In Sen's fable, which justice criterion does Carla invoke when claiming the flute?"
+   },
+   "op": {
+    "es": [
+     "La eficiencia económica",
+     "La igualdad distributiva",
+     "La retribución del trabajo",
+     "La igualdad de oportunidades"
+    ],
+    "en": [
+     "Economic efficiency",
+     "Distributive equality",
+     "Reward for labor",
+     "Equality of opportunity"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Carla trabajó semanas fabricándola; Ana invoca la eficiencia y Pedro la igualdad.",
+    "en": "Carla spent weeks making it; Ana invokes efficiency and Pedro equality."
+   },
+   "id": "fisc-general-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué maximiza el espectador imparcial de Harsanyi?",
+    "en": "What does Harsanyi's impartial observer maximize?"
+   },
+   "op": {
+    "es": [
+     "La utilidad del individuo peor situado",
+     "El ingreso total de la sociedad",
+     "Las libertades básicas",
+     "La utilidad esperada, igual a la media de las utilidades individuales"
+    ],
+    "en": [
+     "The utility of the worst-off individual",
+     "Society's total income",
+     "Basic liberties",
+     "Expected utility, equal to the mean of individual utilities"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con igual probabilidad de ser cualquiera, su utilidad esperada es la media aritmética de las \\(U_i\\).",
+    "en": "With equal chances of being anyone, expected utility is the arithmetic mean of the \\(U_i\\)."
+   },
+   "id": "fisc-general-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto sobre los individuos en la posición original lleva a Rawls al principio de diferencia?",
+    "en": "What assumption about individuals in the original position leads Rawls to the difference principle?"
+   },
+   "op": {
+    "es": [
+     "Que actúan con aversión máxima al riesgo, es decir, a la desigualdad",
+     "Que son neutrales al riesgo",
+     "Que conocen su lugar en la sociedad",
+     "Que maximizan la utilidad media"
+    ],
+    "en": [
+     "They act with maximal risk aversion, that is, inequality aversion",
+     "They are risk neutral",
+     "They know their place in society",
+     "They maximize mean utility"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Bajo el velo de la ignorancia, la máxima aversión al riesgo lleva a cuidar al menos favorecido.",
+    "en": "Behind the veil of ignorance, maximal risk aversion leads to protecting the least advantaged."
+   },
+   "id": "fisc-general-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿En qué orden jerárquico ubica Rawls sus principios?",
+    "en": "In what hierarchical order does Rawls place his principles?"
+   },
+   "op": {
+    "es": [
+     "Primero el de diferencia, después la libertad",
+     "Igualdad de oportunidades y diferencia antes que la libertad",
+     "Todos tienen igual peso",
+     "Primero la libertad; luego, igualdad de oportunidades y principio de diferencia"
+    ],
+    "en": [
+     "Difference first, then liberty",
+     "Equal opportunity and difference before liberty",
+     "All carry equal weight",
+     "Liberty first; then equality of opportunity and the difference principle"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las desigualdades solo se admiten después de garantizar igual libertad básica para todos.",
+    "en": "Inequalities are only admitted after equal basic liberty is guaranteed for all."
+   },
+   "id": "fisc-general-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue a las capacidades de los funcionamientos en el enfoque de Sen?",
+    "en": "What distinguishes capabilities from functionings in Sen's approach?"
+   },
+   "op": {
+    "es": [
+     "Las capacidades son bienes primarios y los funcionamientos, utilidades",
+     "Las capacidades son la libertad de alcanzar los funcionamientos, que son lo que las personas logran",
+     "Los funcionamientos se miden con el ingreso",
+     "No hay diferencia, son sinónimos"
+    ],
+    "en": [
+     "Capabilities are primary goods and functionings are utilities",
+     "Capabilities are the freedom to achieve functionings, which are what people attain",
+     "Functionings are measured by income",
+     "There is no difference; they are synonyms"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Funcionamiento es, por ejemplo, evitar la malnutrición; capacidad, la libertad para lograrlo.",
+    "en": "A functioning is, for instance, avoiding malnutrition; a capability is the freedom to achieve it."
+   },
+   "id": "fisc-general-01-q7"
+  },
+  {
+   "q": {
+    "es": "Sobre una frontera de posibilidades de utilidad asimétrica, ¿qué ocurre con los criterios utilitarista y rawlsiano?",
+    "en": "On an asymmetric utility possibility frontier, what happens to the utilitarian and Rawlsian criteria?"
+   },
+   "op": {
+    "es": [
+     "Coinciden siempre",
+     "Ninguno tiene solución",
+     "Difieren, y con aversión a la desigualdad intermedia el óptimo queda entre ambos",
+     "El rawlsiano elige el punto más desigual"
+    ],
+    "en": [
+     "They always coincide",
+     "Neither has a solution",
+     "They differ, and with intermediate inequality aversion the optimum lies between them",
+     "The Rawlsian picks the most unequal point"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Solo con una frontera simétrica coinciden; el ejercicio A.2.1 lo muestra gráficamente.",
+    "en": "They coincide only with a symmetric frontier; exercise A.2.1 shows it graphically."
+   },
+   "id": "fisc-general-01-q8"
+  }
+ ],
+ "palabras": 1114,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la redistribución no puede dejarse solo en manos de la caridad privada?",
+    "en": "Why can't redistribution be left only to private charity?"
+   },
+   "a": {
+    "es": "Porque una mejor distribución beneficia a todos sin que nadie pueda ser excluido, como un bien público, y cada uno tiene pocos incentivos a financiarla; además hay fallas de mercado en la suavización del consumo. Así lo plantea Grión (cap. 1).",
+    "en": "Because a better distribution benefits everyone without exclusion, like a public good, and each person has little incentive to fund it; there are also market failures in consumption smoothing. So argues Grión (ch. 1)."
+   },
+   "id": "fisc-general-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué enseña la fábula de la flauta sobre la justicia distributiva?",
+    "en": "What does the flute fable teach about distributive justice?"
+   },
+   "a": {
+    "es": "Que eficiencia, igualdad y retribución del trabajo dan respuestas distintas y razonables al mismo reparto, y que cada una tiene costos de incentivos: pueden sostenerse razones plurales y rivales de justicia. Lo presenta Grión (cap. 2) siguiendo a Sen.",
+    "en": "That efficiency, equality and reward for labor give different, reasonable answers to the same allocation, each with incentive costs: plural and rival reasons for justice can be sustained. Grión presents it (ch. 2) following Sen."
+   },
+   "id": "fisc-general-01-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué función de bienestar social se deriva del espectador imparcial?",
+    "en": "What social welfare function follows from the impartial observer?"
+   },
+   "a": {
+    "es": "La utilitarista: quien tiene igual probabilidad de ser cualquier miembro de la sociedad maximiza su utilidad esperada, que es la media aritmética de las utilidades individuales. Es el planteo de Harsanyi que resume Grión (cap. 2).",
+    "en": "The utilitarian one: someone with equal chances of being any member of society maximizes expected utility, the arithmetic mean of individual utilities. It is Harsanyi's argument as summarized by Grión (ch. 2)."
+   },
+   "id": "fisc-general-01-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problemas tiene el utilitarismo como criterio de justicia?",
+    "en": "What problems does utilitarianism have as a justice criterion?"
+   },
+   "a": {
+    "es": "Es demasiado subjetivo (un rico infeliz frente a un pobre feliz), choca con la adaptación mental y la comparación interpersonal de utilidades, es indiferente a la redistribución en sí e ignora lo que no da utilidad, como los derechos. Así lo resume Grión (cap. 2).",
+    "en": "It is too subjective (an unhappy rich person versus a happy poor one), faces mental adaptation and interpersonal comparison problems, is indifferent to redistribution as such and ignores what yields no utility, like rights. So Grión summarizes it (ch. 2)."
+   },
+   "id": "fisc-general-01-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo lleva el velo de la ignorancia al principio de diferencia?",
+    "en": "How does the veil of ignorance lead to the difference principle?"
+   },
+   "a": {
+    "es": "Quien no sabe qué lugar ocupará y tiene aversión máxima al riesgo solo acepta desigualdades que mejoren a los menos favorecidos, después de garantizar libertades básicas e igualdad de oportunidades. Es el argumento de Rawls que expone Grión (cap. 2).",
+    "en": "Someone who does not know their place and is maximally risk averse only accepts inequalities that improve the least advantaged, after guaranteeing basic liberties and equal opportunity. It is Rawls's argument as set out by Grión (ch. 2)."
+   },
+   "id": "fisc-general-01-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué miden los funcionamientos y las capacidades?",
+    "en": "What do functionings and capabilities measure?"
+   },
+   "a": {
+    "es": "Los funcionamientos son lo que las personas logran, como evitar la malnutrición o tener techo; las capacidades, la libertad de alcanzarlos, valiosa en sí misma. El enfoque de Sen inspira el IDH, aunque sus ponderaciones son discutibles, según Grión (cap. 2).",
+    "en": "Functionings are what people achieve, like avoiding malnutrition or having shelter; capabilities, the freedom to achieve them, valuable in itself. Sen's approach inspires the HDI, though its weights are debatable, according to Grión (ch. 2)."
+   },
+   "id": "fisc-general-01-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cuándo coinciden el criterio utilitarista y el maximin?",
+    "en": "When do the utilitarian and maximin criteria coincide?"
+   },
+   "a": {
+    "es": "Cuando la frontera de posibilidades de utilidad es simétrica; si es asimétrica difieren, y una aversión a la desigualdad no extrema lleva a un punto intermedio. Lo muestra el ejercicio A.2.1 de Grión.",
+    "en": "When the utility possibility frontier is symmetric; if it is asymmetric they differ, and non-extreme inequality aversion leads to an intermediate point. Grión's exercise A.2.1 shows it."
+   },
+   "id": "fisc-general-01-t7"
+  }
+ ]
+}

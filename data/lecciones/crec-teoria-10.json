@@ -1,0 +1,355 @@
+{
+ "id": "crec-teoria-10",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Progreso técnico exógeno: por qué tiene que potenciar el trabajo",
+ "bajada": "El capítulo 4 de los Apuntes de Sala-i-Martin: neutralidad de Hicks y de Harrod, por qué solo el progreso que potencia el trabajo admite un estado estacionario, la irrelevancia de la incorporación y el modelo de Ramsey con crecimiento de la productividad.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 4: «El crecimiento exógeno de la productividad»",
+ "intro": "En los capítulos 1 y 3 el crecimiento per cápita de largo plazo era cero. Para explicar el crecimiento sostenido de las economías desarrolladas, los neoclásicos agregaron un progreso de la productividad que cae del cielo. Pero eso abre una pregunta técnica con consecuencias: ¿qué tipo de progreso técnico? Algunas innovaciones ahorran capital, otras ahorran trabajo y otras no sesgan el uso de ningún factor. El capítulo 4, breve, muestra que la elección no es libre: si se quiere un estado estacionario con tasas de crecimiento constantes, el progreso tiene que entrar multiplicando al trabajo.",
+ "secciones": [
+  {
+   "t": "Neutralidad de Hicks y de Harrod",
+   "eq": [
+    "Y_t = B(t)\\,F(K_t, L_t) \\quad\\text{(Hicks)}",
+    "Y_t = F\\big(K_t, A(t)L_t\\big) \\quad\\text{(Harrod)}, \\qquad Y_t = F\\big(D(t)K_t, L_t\\big)"
+   ],
+   "nota": "B, A y D son índices de tecnología que crecen a tasas exógenas constantes; F es homogénea de grado uno en ambos casos.",
+   "p": [
+    "Qué es una innovación «neutral» depende de qué se entienda por ahorro de factores, y hay dos definiciones dominantes. Para Hicks, una innovación es neutral si no cambia la relación entre los productos marginales de los factores para una proporción capital-trabajo dada; equivale a renumerar las isocuantas, y la tecnología multiplica a toda la función. Para Harrod, es neutral si no cambian las participaciones relativas del capital y del trabajo en la renta para una relación capital-producto dada. Robinson (1938) y Uzawa (1961) demostraron que eso obliga a que la tecnología multiplique al trabajo: con el mismo capital, hace falta cada vez menos trabajo para obtener el mismo producto. Por eso se lo llama progreso potenciador del trabajo. Por simetría existe el potenciador del capital, en el que D multiplica a K.",
+    "En una Cobb-Douglas las dos neutralidades son equivalentes. Si Y = K^α(AL)^(1−α), basta definir B como la potencia 1 − α de A para reescribirla como neutral de Hicks: la tasa de progreso de Hicks es (1 − α) veces la de Harrod. Con una simple redefinición de constantes, el mismo progreso puede leerse de las dos maneras."
+   ]
+  },
+  {
+   "t": "Solo el progreso potenciador del trabajo admite estado estacionario",
+   "eq": [
+    "Y_t = B(t)\\left\\{\\left[D(t)K_t\\right]^{\\psi} + \\left[A(t)L_t\\right]^{\\psi}\\right\\}^{1/\\psi}"
+   ],
+   "nota": "Es la CES del capítulo 2, con \\(-\\infty < \\psi < 1\\). Se normalizan L = 1 y los niveles iniciales de tecnología en uno; en estado estacionario capital, consumo y producto agregados crecen a la misma tasa.",
+   "p": [
+    "Phelps (1962, 1966) demostró que el progreso neutral de Harrod es condición necesaria y suficiente para que exista estado estacionario. Sala-i-Martin lo ilustra con la CES, apagando cada tipo de progreso por turno. Con solo progreso de Hicks, el término entre llaves crecería sin parar si el capital creciera, de modo que la única manera de que producto y capital crezcan a la misma tasa constante es que ambos crezcan a cero, y entonces también el progreso tiene que ser nulo. Con solo progreso potenciador del capital, hace falta que el producto DK sea constante, es decir, que el capital crezca a menos la tasa de D; eso anula el crecimiento del producto, y como en estado estacionario producto y capital crecen igual, la tasa de D también tiene que ser cero.",
+    "Con progreso potenciador del trabajo, en cambio, la tasa de crecimiento del producto es un promedio ponderado del crecimiento del capital y de la tecnología; imponiendo que producto y capital crezcan igual, ambos crecen a la tasa de la tecnología. El autor aclara que el resultado, aunque probado con una CES, vale para toda función de producción. Lectura propia: esto conecta con el capítulo 2, donde la CES permitía crecer para siempre sin progreso técnico cuando violaba Inada; aquí la función sí respeta las propiedades neoclásicas y el único crecimiento posible lo marca la tecnología."
+   ]
+  },
+  {
+   "t": "Progreso técnico incorporado: ¿importa?",
+   "p": [
+    "Todo lo anterior supone progreso no incorporado: cuando llega una mejora, todas las máquinas existentes ganan productividad, como un programa que acelera a todas las computadoras. Pero muchas invenciones solo afectan a las máquinas nuevas, como cada generación de hardware: es el progreso incorporado al capital. En los años sesenta, los defensores de la «nueva teoría de la inversión» sostenían que invertir tenía, además del efecto habitual, el de modernizar el stock medio de capital. Sus críticos respondían que ese efecto cambiaba el nivel de las variables pero no la tasa de crecimiento de estado estacionario. Solow (1969) mostró que un modelo neoclásico con progreso incorporado y competencia perfecta, en el que todos los trabajadores tienen el mismo producto marginal sin importar la «cosecha» de su máquina, puede reescribirse como uno con progreso no incorporado. El texto cita también a Phelps (1962) en esa misma línea."
+   ]
+  },
+  {
+   "t": "Ramsey con crecimiento de la productividad",
+   "eq": [
+    "\\dot{\\hat k} = f(\\hat k) - \\hat c - (\\delta + n + x)\\,\\hat k",
+    "\\frac{\\dot{\\hat c}}{\\hat c} = \\frac{1}{\\theta}\\left[f'(\\hat k) - \\delta - \\rho - \\theta x\\right], \\qquad \\rho > n + (1-\\theta)\\,x"
+   ],
+   "nota": "El circunflejo indica variables por unidad de trabajo efectivo, AL: \\(\\hat k = K/(AL)\\), \\(\\hat c = C/(AL)\\). x es la tasa de crecimiento de A.",
+   "p": [
+    "Con progreso potenciador del trabajo, el modelo de Ramsey se resuelve igual que en el capítulo 3 si se expresa todo por unidad de trabajo efectivo. Como el mercado replica al planificador y a Robinson Crusoe, basta resolver el problema de este último. Aparecen solo dos diferencias: la tasa de descuento efectiva es (ρ − n) − (1 − θ)x y la depreciación efectiva es δ + n + x. Por eso la condición para que la utilidad esté acotada pasa a ser ρ > n + (1 − θ)x, la ecuación de Euler se modifica y el diagrama de fases en ĉ y k̂ es el mismo de antes, con punto de silla y transversalidad.",
+    "En el estado estacionario ĉ y k̂ son constantes. Como ĉ = c/A, el consumo per cápita crece a la tasa x, y lo mismo el capital y el producto per cápita. El crecimiento de largo plazo existe, pero lo fija un parámetro que el modelo no explica."
+   ]
+  },
+  {
+   "t": "Qué deja para contrastar",
+   "p": [
+    "El capítulo es teórico y no tiene trabajo empírico. Lectura propia: deja implicaciones contrastables claras. Si el progreso es neutral de Harrod, en el largo plazo las participaciones del capital y del trabajo en la renta y la relación capital-producto deberían ser estables, y el crecimiento per cápita de las distintas variables debería coincidir. Además, si la incorporación es irrelevante para la tasa de largo plazo, los cambios en el ritmo de inversión en equipos nuevos deberían afectar niveles y transiciones, pero no la tendencia de crecimiento."
+   ]
+  }
+ ],
+ "claves": [
+  "Hicks define la neutralidad por productos marginales relativos constantes; Harrod, por participaciones factoriales constantes dada la relación capital-producto.",
+  "La neutralidad de Harrod implica que la tecnología multiplica al trabajo: Y = F(K, AL).",
+  "En una Cobb-Douglas las dos neutralidades son equivalentes; la tasa de Hicks es (1 − α) veces la de Harrod.",
+  "Solo el progreso potenciador del trabajo es compatible con un estado estacionario con crecimiento constante, para cualquier función de producción.",
+  "Con competencia perfecta, el progreso incorporado puede reescribirse como no incorporado, lo que respalda que afecte niveles y no la tasa de largo plazo.",
+  "En Ramsey con progreso a la tasa x, todo se expresa por trabajo efectivo y las variables per cápita crecen a x en el estado estacionario."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuándo es neutral una innovación en el sentido de Harrod?",
+    "en": "When is an innovation Harrod-neutral?"
+   },
+   "op": {
+    "es": [
+     "Cuando no cambia la relación entre productos marginales para una proporción capital-trabajo dada",
+     "Cuando no cambian las participaciones relativas de capital y trabajo para una relación capital-producto dada",
+     "Cuando solo afecta a las máquinas nuevas",
+     "Cuando multiplica al capital"
+    ],
+    "en": [
+     "When it leaves the ratio of marginal products unchanged for a given capital-labor ratio",
+     "When it leaves relative capital and labor shares unchanged for a given capital-output ratio",
+     "When it only affects new machines",
+     "When it multiplies capital"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La primera opción es la neutralidad de Hicks; Robinson y Uzawa mostraron que la de Harrod implica Y = F(K, AL).",
+    "en": "The first option is Hicks neutrality; Robinson and Uzawa showed Harrod's implies Y = F(K, AL)."
+   },
+   "id": "crec-teoria-10-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué forma tiene una función de producción con progreso neutral de Hicks?",
+    "en": "What form does a production function with Hicks-neutral progress take?"
+   },
+   "op": {
+    "es": [
+     "Y = F(K, AL)",
+     "Y = F(DK, L)",
+     "Y = B(t)F(K, L)",
+     "Y = min(AK, BL)"
+    ],
+    "en": [
+     "Y = F(K, AL)",
+     "Y = F(DK, L)",
+     "Y = B(t)F(K, L)",
+     "Y = min(AK, BL)"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Equivale a renumerar las isocuantas: la tecnología multiplica a toda la función.",
+    "en": "It amounts to relabeling isoquants: technology multiplies the whole function."
+   },
+   "id": "crec-teoria-10-q2"
+  },
+  {
+   "q": {
+    "es": "En una Cobb-Douglas, ¿qué relación hay entre la tasa de progreso de Hicks y la de Harrod?",
+    "en": "In a Cobb-Douglas, how is the Hicks progress rate related to the Harrod rate?"
+   },
+   "op": {
+    "es": [
+     "Son iguales",
+     "La de Hicks es α veces la de Harrod",
+     "La de Hicks es (1 − α) veces la de Harrod",
+     "No hay relación: son incompatibles"
+    ],
+    "en": [
+     "They are equal",
+     "The Hicks rate is α times the Harrod rate",
+     "The Hicks rate is (1 − α) times the Harrod rate",
+     "There is none: they are incompatible"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Como A entra elevado a 1 − α, basta redefinir la constante: B crece a (1 − α) veces la tasa de A.",
+    "en": "Since A enters raised to 1 − α, redefining the constant suffices: B grows at (1 − α) times A's rate."
+   },
+   "id": "crec-teoria-10-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de progreso técnico es compatible con un estado estacionario con tasas de crecimiento constantes?",
+    "en": "Which kind of technical progress is compatible with a steady state with constant growth rates?"
+   },
+   "op": {
+    "es": [
+     "Solo el potenciador del trabajo",
+     "Solo el neutral de Hicks",
+     "Solo el potenciador del capital",
+     "Cualquiera de los tres"
+    ],
+    "en": [
+     "Only labor-augmenting",
+     "Only Hicks-neutral",
+     "Only capital-augmenting",
+     "Any of the three"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Phelps lo probó; Sala-i-Martin lo ilustra con una CES apagando cada tipo de progreso.",
+    "en": "Phelps proved it; Sala-i-Martin illustrates it with a CES, switching off each type of progress."
+   },
+   "id": "crec-teoria-10-q4"
+  },
+  {
+   "q": {
+    "es": "Con solo progreso potenciador del capital en una CES, ¿qué exige el estado estacionario?",
+    "en": "With only capital-augmenting progress in a CES, what does the steady state require?"
+   },
+   "op": {
+    "es": [
+     "Que el capital crezca a la tasa de D",
+     "Que el trabajo crezca a la tasa de D",
+     "Que el producto crezca a la tasa de D",
+     "Que DK sea constante, lo que termina obligando a que D no crezca"
+    ],
+    "en": [
+     "That capital grow at D's rate",
+     "That labor grow at D's rate",
+     "That output grow at D's rate",
+     "That DK be constant, which ends up forcing D not to grow"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El capital tendría que crecer a menos la tasa de D, pero eso anula el crecimiento del producto y, con él, el de D.",
+    "en": "Capital would have to grow at minus D's rate, but that cancels output growth and, with it, D's."
+   },
+   "id": "crec-teoria-10-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué mostró Solow (1969) sobre el progreso técnico incorporado?",
+    "en": "What did Solow (1969) show about embodied technical progress?"
+   },
+   "op": {
+    "es": [
+     "Que con competencia perfecta puede reescribirse como progreso no incorporado",
+     "Que eleva la tasa de crecimiento de largo plazo",
+     "Que es incompatible con la competencia perfecta",
+     "Que solo afecta al trabajo"
+    ],
+    "en": [
+     "That with perfect competition it can be rewritten as disembodied progress",
+     "That it raises the long-run growth rate",
+     "That it is incompatible with perfect competition",
+     "That it only affects labor"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es el argumento de la irrelevancia de la incorporación: afecta niveles, no la tasa de estado estacionario.",
+    "en": "This is the irrelevance-of-embodiment argument: it affects levels, not the steady-state growth rate."
+   },
+   "id": "crec-teoria-10-q6"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Ramsey con progreso técnico a la tasa x, ¿qué condición asegura que la utilidad esté acotada?",
+    "en": "In the Ramsey model with technical progress at rate x, what condition ensures bounded utility?"
+   },
+   "op": {
+    "es": [
+     "ρ > n",
+     "ρ > n + (1 − θ)x",
+     "ρ > x",
+     "ρ < n + x"
+    ],
+    "en": [
+     "ρ > n",
+     "ρ > n + (1 − θ)x",
+     "ρ > x",
+     "ρ < n + x"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La tasa de descuento efectiva pasa a ser (ρ − n) − (1 − θ)x, que debe ser positiva.",
+    "en": "The effective discount rate becomes (ρ − n) − (1 − θ)x, which must be positive."
+   },
+   "id": "crec-teoria-10-q7"
+  },
+  {
+   "q": {
+    "es": "En el estado estacionario de Ramsey con progreso técnico, ¿a qué tasa crece el consumo per cápita?",
+    "en": "In the Ramsey steady state with technical progress, at what rate does consumption per person grow?"
+   },
+   "op": {
+    "es": [
+     "A cero",
+     "A n",
+     "A n + x",
+     "A x, la tasa del progreso técnico"
+    ],
+    "en": [
+     "At zero",
+     "At n",
+     "At n + x",
+     "At x, the rate of technical progress"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "ĉ = c/A es constante, así que c crece como A; lo mismo el capital y el producto per cápita.",
+    "en": "ĉ = c/A is constant, so c grows like A; so do capital and output per person."
+   },
+   "id": "crec-teoria-10-q8"
+  }
+ ],
+ "palabras": 909,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre la neutralidad de Hicks y la de Harrod?",
+    "en": "What is the difference between Hicks and Harrod neutrality?"
+   },
+   "a": {
+    "es": "Hicks la define por productos marginales relativos constantes dada la proporción capital-trabajo, y la tecnología multiplica a toda la función; Harrod, por participaciones factoriales constantes dada la relación capital-producto, y la tecnología multiplica al trabajo. Así lo expone Sala-i-Martin (cap. 4).",
+    "en": "Hicks defines it by constant relative marginal products given the capital-labor ratio, with technology multiplying the whole function; Harrod, by constant factor shares given the capital-output ratio, with technology multiplying labor. So Sala-i-Martin sets it out (ch. 4)."
+   },
+   "id": "crec-teoria-10-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Por qué los modelos de crecimiento suelen suponer progreso técnico que potencia el trabajo?",
+    "en": "Why do growth models usually assume labor-augmenting technical progress?"
+   },
+   "a": {
+    "es": "Porque es el único tipo compatible con un estado estacionario en el que todas las variables crecen a tasas constantes, como demostró Phelps; con progreso de Hicks o potenciador del capital el crecimiento tendría que ser nulo. Lo ilustra Sala-i-Martin (cap. 4) con una CES.",
+    "en": "Because it is the only type compatible with a steady state in which all variables grow at constant rates, as Phelps showed; with Hicks or capital-augmenting progress growth would have to be zero. Sala-i-Martin illustrates it with a CES (ch. 4)."
+   },
+   "id": "crec-teoria-10-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué en una Cobb-Douglas da igual modelar el progreso como de Hicks o de Harrod?",
+    "en": "Why does it not matter in a Cobb-Douglas whether progress is Hicks or Harrod?"
+   },
+   "a": {
+    "es": "Porque K^α(AL)^(1−α) puede reescribirse como B·K^α L^(1−α) con B igual a A elevado a 1 − α: el progreso de Hicks crece a (1 − α) veces la tasa del de Harrod. Así lo muestra Sala-i-Martin (cap. 4).",
+    "en": "Because K^α(AL)^(1−α) can be rewritten as B·K^α L^(1−α) with B equal to A raised to 1 − α: Hicks progress grows at (1 − α) times the Harrod rate. So Sala-i-Martin shows (ch. 4)."
+   },
+   "id": "crec-teoria-10-t3"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el progreso técnico incorporado?",
+    "en": "What is embodied technical progress?"
+   },
+   "a": {
+    "es": "El que solo mejora la productividad de las máquinas nuevas, como cada generación de hardware, a diferencia del no incorporado, que mejora todas las existentes, como un programa nuevo. Sala-i-Martin (cap. 4) recuerda que Solow (1969) mostró que, con competencia perfecta, el primero puede reescribirse como el segundo.",
+    "en": "Progress that only raises the productivity of new machines, like each hardware generation, unlike disembodied progress, which improves all existing ones, like new software. Sala-i-Martin (ch. 4) recalls that Solow (1969) showed that, with perfect competition, the former can be rewritten as the latter."
+   },
+   "id": "crec-teoria-10-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo se resuelve un modelo de Ramsey con progreso técnico exógeno?",
+    "en": "How is a Ramsey model with exogenous technical progress solved?"
+   },
+   "a": {
+    "es": "Expresando todo por unidad de trabajo efectivo: el problema es el mismo con una tasa de descuento efectiva (ρ − n) − (1 − θ)x y una depreciación efectiva δ + n + x, y en el estado estacionario las variables per cápita crecen a x. Así lo hace Sala-i-Martin (cap. 4).",
+    "en": "By expressing everything per unit of effective labor: the problem is the same with effective discount rate (ρ − n) − (1 − θ)x and effective depreciation δ + n + x, and in the steady state per-capita variables grow at x. So Sala-i-Martin does it (ch. 4)."
+   },
+   "id": "crec-teoria-10-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué limitación tiene explicar el crecimiento de largo plazo con progreso técnico exógeno?",
+    "en": "What is the limitation of explaining long-run growth with exogenous technical progress?"
+   },
+   "a": {
+    "es": "Que la tasa de crecimiento per cápita de largo plazo queda igual a un parámetro, x, que el modelo no explica. Sala-i-Martin (cap. 4) muestra que en el estado estacionario de Ramsey las variables per cápita crecen exactamente a x, la tasa del progreso exógeno que los neoclásicos tuvieron que introducir.",
+    "en": "That the long-run per-capita growth rate equals a parameter, x, the model does not explain. Sala-i-Martin (ch. 4) shows that in the Ramsey steady state per-capita variables grow exactly at x, the rate of the exogenous progress neoclassicals had to introduce."
+   },
+   "id": "crec-teoria-10-t6"
+  }
+ ]
+}

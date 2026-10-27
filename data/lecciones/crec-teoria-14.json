@@ -1,0 +1,385 @@
+{
+ "id": "crec-teoria-14",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Uzawa-Lucas: crecer educando",
+ "bajada": "El capítulo 8 de los Apuntes de Sala-i-Martin: por qué el capital humano necesita su propio sector, cómo se resuelve el modelo de dos sectores de Uzawa y Lucas, qué determina su tasa de crecimiento de largo plazo, por qué su transición es asimétrica y por qué, sin externalidades, el mercado es óptimo.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 8: «La acumulación de capital humano»",
+ "intro": "La prensa y la creencia popular repiten que la educación hace crecer a los países. En los años cincuenta, la escuela de Chicago le dio forma con el concepto de capital humano: el cuerpo humano puede aumentar su capacidad productiva si se invierte en él, primero en salud y alimentación cuando la renta es baja y luego, a medida que crece, en educación. El capítulo 7 había generado crecimiento endógeno con una externalidad que el mercado no internaliza. El capítulo 8 sigue otro camino: hacer acumulable el trabajo. Sala-i-Martin ya había mostrado que tratar el trabajo como capital humano lleva a un AK, pero con un supuesto incómodo, que el capital físico y el humano son el mismo bien. Aquí lo abandona con el modelo de dos sectores de Uzawa (1965) y Lucas (1988), en el que el capital humano se produce en un sector educativo con su propia tecnología. La pregunta es qué determina entonces el crecimiento de largo plazo, cómo es la transición y si el mercado acierta.",
+ "secciones": [
+  {
+   "t": "Nadie se convierte en aspiradora",
+   "eq": [
+    "\\frac{K}{H} = \\frac{\\alpha}{1-\\alpha}"
+   ],
+   "nota": "Condición del modelo con dos tipos de capital del capítulo 5, donde K y H se producen con la misma tecnología y α es la participación del capital físico.",
+   "p": [
+    "En el modelo de dos capitales del capítulo 5, la relación entre capital físico y humano tenía que cumplirse en todo momento. Si una guerra o un terremoto destruye parte de K, la relación se rompe, y el modelo la restablece al instante transformando una parte de H en K: como ambos salen de la producción que no se consume, son el mismo bien físico. Matemáticamente funciona; económicamente, dice el autor, cualquier estudiante que haya intentado transformarse en una aspiradora sabe que es imposible.",
+    "Una salida es imponer restricciones de irreversibilidad: la inversión bruta en cada capital no puede ser negativa (un padre que eligió invertir en un hijo no puede convertirlo después en una aspiradora). Eso arregla parte del problema, pero genera otra predicción incorrecta: con poco K/H, toda la inversión iría a capital físico y nada a humano, algo que nunca se observa. La solución de fondo es suponer que los dos capitales son bienes distintos, producidos con tecnologías distintas."
+   ]
+  },
+  {
+   "t": "Dos sectores, un capital humano rival",
+   "eq": [
+    "\\dot K = AK_{Y}^{\\alpha}H_{Y}^{1-\\alpha} - C - \\delta_{K}K",
+    "\\dot H = BK_{H}^{\\eta}H_{H}^{1-\\eta} - \\delta_{H}H",
+    "\\dot k = Ak^{\\alpha}(uh)^{1-\\alpha} - c - (\\delta_{K}+n)k,\\qquad \\dot h = B(1-u)h - (\\delta_{H}+n)h"
+   ],
+   "nota": "u es la fracción del capital humano usada en la producción final y 1 − u la usada en educación; k y h son los capitales por persona y n el crecimiento de la población. Uzawa y Lucas suponen η = 0, de modo que todo el capital físico va al bien final.",
+   "p": [
+    "En el sector final, capital físico y humano producen un bien que se consume o se convierte en capital físico. En el sector educativo se produce capital humano con otra tecnología. A diferencia de la tecnología, el capital humano es rival: no puede estar a la vez en la fábrica y en el aula, de modo que el stock total se reparte entre los dos sectores.",
+    "La literatura laboral destaca que la educación es más intensiva en capital humano que la producción de bienes, porque su insumo principal es el tiempo de los estudiantes; en las fórmulas, α > η. Uzawa y Lucas llevan el supuesto al extremo: la educación usa solo capital humano. Con eso, la acumulación de h queda lineal en h.",
+    "El autor advierte cómo interpretar la depreciación del capital humano en un horizonte infinito. A diferencia de las máquinas, que quedan en la Tierra, el capital humano se va con quien muere y no se hereda; parte se transmite mientras padres e hijos conviven. La depreciación mide esa transmisión incompleta y, también, el simple olvido, muy familiar para quien no recuerda lo que estudió el trimestre pasado."
+   ]
+  },
+  {
+   "t": "El problema: dos estados, dos controles",
+   "eq": [
+    "\\gamma_c = \\frac{1}{\\theta}\\left(\\alpha A k^{\\alpha-1}(uh)^{1-\\alpha} - \\delta - \\rho\\right)"
+   ],
+   "nota": "Se supone la misma depreciación para ambos capitales, \\(\\delta_K = \\delta_H = \\delta\\). θ es la inversa de la elasticidad de sustitución intertemporal y ρ la tasa de descuento.",
+   "p": [
+    "Las familias eligen la trayectoria del consumo c y la fracción u de su capital humano que dedican al bien final, para maximizar la utilidad intertemporal de siempre sujeta a las dos ecuaciones de acumulación. La novedad matemática es que hay dos variables de estado (k y h) y dos de control (c y u), de modo que el hamiltoniano lleva dos precios sombra: uno para la inversión en capital físico y otro para la inversión en capital humano.",
+    "Las condiciones de primer orden incluyen una para el consumo, otra que iguala el valor del capital humano en los dos sectores, una para cada capital y dos condiciones de transversalidad. La ecuación de Euler se parece a la de capítulos anteriores: el consumo crece con el producto marginal del capital físico. Pero ese producto marginal depende ahora del capital humano y de la fracción asignada al sector final, lo que complica la solución. Por eso Sala-i-Martin sigue a Lucas (1988) y resuelve solo el estado estacionario."
+   ]
+  },
+  {
+   "t": "El estado estacionario: manda la tecnología educativa",
+   "eq": [
+    "\\gamma^* = \\gamma_c = \\gamma_k = \\gamma_h = \\gamma_y = \\frac{1}{\\theta}\\left(B - \\delta - \\rho\\right)",
+    "u^* = 1 - \\frac{\\gamma^* + \\delta + n}{B},\\qquad \\rho - n > (1-\\theta)\\gamma^*"
+   ],
+   "nota": "La segunda línea da la fracción del capital humano en el sector final (de la acumulación de h) y la condición que acota la utilidad.",
+   "p": [
+    "El razonamiento es una cadena de pasos. En el estado estacionario u es constante, porque es una fracción acotada entre cero y uno. Como la tasa de crecimiento del consumo debe ser constante, el producto marginal del capital físico también, lo que exige que k y h crezcan al mismo ritmo. Dividiendo la acumulación de capital físico por k se ve que c/k es constante, y del logaritmo de la producción final se deduce que el producto crece igual. Basta entonces una sola tasa de crecimiento para toda la economía.",
+    "Para hallarla, el autor usa la condición de primer orden respecto de u: implica que los dos precios sombra crecen al mismo ritmo. Sustituida en la condición del capital humano, da que el precio sombra de h cae a la tasa B − δ − n. Con la ecuación de Euler resulta la tasa de crecimiento estacionaria.",
+    "El resultado se parece al del AK, pero el parámetro que importa es la productividad del sector educativo, B, y no la del sector final, A. La razón, explica Sala-i-Martin, es que al suponer que la educación no usa capital físico se introdujo un supuesto «BH» en la producción de capital humano. El resultado no es general: no conviene precipitarse a subsidiar la tecnología educativa y olvidar la de producción final. Con ambos capitales en ambos sectores, las dos productividades afectan al crecimiento, con un peso que depende de las participaciones α y η, como discuten Mulligan y Sala-i-Martin (1993).",
+    "Como en otros modelos de crecimiento endógeno, la utilidad podría ser infinita; para acotarla hay que exigir que ρ − n supere (1 − θ) por la tasa de crecimiento, además de que u* quede entre cero y uno y el crecimiento sea positivo."
+   ]
+  },
+  {
+   "t": "Una transición asimétrica",
+   "p": [
+    "A diferencia del AK, el modelo de Uzawa-Lucas tiene transición, tan complicada que Lucas la dejó sin estudiar. A principios de los noventa, Caballé y Santos (1993) demostraron que, sin externalidades, hay una trayectoria estable hacia el punto de silla, aunque su matemática no explicaba el comportamiento de cada variable. Faig (1991) y Barro y Sala-i-Martin (1995) usaron argumentos gráficos, válidos solo con η = 0. Mulligan y Sala-i-Martin (1993) aplicaron un método numérico, la «eliminación del tiempo», que sirve con o sin externalidades y con η positivo o nulo, con la desventaja de dar un único resultado por cada conjunto de parámetros.",
+    "La clave es qué genera la transición. Como en el estado estacionario los dos capitales crecen igual, la relación k/h es constante; hay transición si la relación inicial difiere de la de largo plazo. Es decir, la transición nace de un desequilibrio entre los sectores, no de que la renta esté lejos de su valor estacionario.",
+    "Y es asimétrica. Una economía con k/h inicial bajo crece por encima de su tasa estacionaria; una con k/h alto, por debajo. Si una guerra matara a mucha gente sin afectar demasiado al capital físico, la economía crecería más despacio. Si en cambio destruye mucho capital físico respecto del humano, la reconstrucción es rápida: el autor piensa en Alemania y Japón después de la Segunda Guerra Mundial. Lectura propia: la asimetría es una hipótesis contrastable, porque predice que la escasez relativa de capital humano frena más el crecimiento que la de capital físico."
+   ]
+  },
+  {
+   "t": "El planificador: aquí el mercado acierta",
+   "p": [
+    "El capítulo cierra con la comparación que en el capítulo 7 había mostrado una brecha. Como el modelo no tiene externalidades, competencia imperfecta ni otra falla, el planificador maximiza la misma utilidad con las mismas restricciones: el hamiltoniano y las condiciones de primer orden son idénticos, y también la tasa de crecimiento y la fracción u* elegidas. La solución de mercado es óptima de Pareto.",
+    "Lectura propia: el contraste con el modelo de Romer es instructivo. Allí el crecimiento endógeno venía de un conocimiento que se derrama y el mercado crecía menos que el óptimo; aquí viene de que el capital humano se acumula con rendimientos constantes y es rival, de modo que quien invierte en educación recibe todo su rendimiento. El capítulo no presenta estimaciones; las hipótesis que deja son que la productividad educativa pesa en el crecimiento de largo plazo y que la recuperación depende de qué capital se perdió."
+   ]
+  }
+ ],
+ "claves": [
+  "Tratar capital físico y humano como el mismo bien implica que las personas se transforman en máquinas al instante; el modelo de Uzawa-Lucas los produce con tecnologías distintas.",
+  "El capital humano es rival: se reparte entre una fracción u en el bien final y 1 − u en educación, y la educación es más intensiva en capital humano.",
+  "En el estado estacionario el consumo, los dos capitales y el producto crecen a la misma tasa, \\(\\frac{1}{\\theta}(B - \\delta - \\rho)\\).",
+  "Lo que determina el crecimiento es la productividad educativa B porque la educación es lineal en capital humano; con capital físico en ambos sectores, también importa A.",
+  "La transición surge de un desequilibrio entre k y h y es asimétrica: escasez relativa de capital físico implica crecimiento rápido; de capital humano, lento.",
+  "Sin externalidades ni fallas de mercado, la solución competitiva coincide con la del planificador y es óptima de Pareto."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué problema tiene el modelo de capital humano en el que K y H se producen con la misma tecnología?",
+    "en": "What is wrong with the human capital model in which K and H are produced with the same technology?"
+   },
+   "op": {
+    "es": [
+     "Que no genera crecimiento endógeno",
+     "Que si se destruye capital físico, parte del capital humano se convierte en máquinas al instante",
+     "Que el capital humano no se deprecia",
+     "Que el ahorro debe ser constante"
+    ],
+    "en": [
+     "It does not generate endogenous growth",
+     "If physical capital is destroyed, part of human capital instantly turns into machines",
+     "Human capital does not depreciate",
+     "Saving must be constant"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La relación K/H debe cumplirse siempre y, como son el mismo bien, el modelo la restablece transformando H en K.",
+    "en": "The K/H ratio must always hold and, being the same good, the model restores it by turning H into K."
+   },
+   "id": "crec-teoria-14-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las restricciones de irreversibilidad no resuelven del todo el problema?",
+    "en": "Why do irreversibility constraints not fully solve the problem?"
+   },
+   "op": {
+    "es": [
+     "Porque hacen negativa la inversión",
+     "Porque eliminan el crecimiento",
+     "Porque predicen que con poco K/H toda la inversión va a capital físico, algo que no se observa",
+     "Porque igualan las tecnologías de los dos sectores"
+    ],
+    "en": [
+     "Because they make investment negative",
+     "Because they eliminate growth",
+     "Because they predict that with low K/H all investment goes to physical capital, which is not observed",
+     "Because they equalize both sectors' technologies"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Ningún país invierte solamente en uno de los dos tipos de capital.",
+    "en": "No country invests in only one of the two types of capital."
+   },
+   "id": "crec-teoria-14-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto clave hacen Uzawa y Lucas sobre el sector educativo?",
+    "en": "What key assumption do Uzawa and Lucas make about the education sector?"
+   },
+   "op": {
+    "es": [
+     "Que usa solo capital humano, de modo que la acumulación de h es lineal en h",
+     "Que usa solo capital físico",
+     "Que tiene la misma tecnología que el sector final",
+     "Que genera externalidades de conocimiento"
+    ],
+    "en": [
+     "That it uses only human capital, so h accumulation is linear in h",
+     "That it uses only physical capital",
+     "That it has the same technology as the final sector",
+     "That it generates knowledge spillovers"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Llevan al extremo la idea de que la educación es más intensiva en capital humano: η = 0.",
+    "en": "They push to the extreme the idea that education is more human-capital intensive: η = 0."
+   },
+   "id": "crec-teoria-14-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la tasa de crecimiento de estado estacionario en el modelo de Uzawa-Lucas?",
+    "en": "What is the steady-state growth rate in the Uzawa-Lucas model?"
+   },
+   "op": {
+    "es": [
+     "(1/θ)(A − δ − ρ)",
+     "(1/θ)(αA − δ − ρ)",
+     "Cero",
+     "(1/θ)(B − δ − ρ)"
+    ],
+    "en": [
+     "(1/θ)(A − δ − ρ)",
+     "(1/θ)(αA − δ − ρ)",
+     "Zero",
+     "(1/θ)(B − δ − ρ)"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Manda la productividad del sector educativo, B, porque la producción de capital humano es lineal en h.",
+    "en": "Education-sector productivity B governs it, since human capital production is linear in h."
+   },
+   "id": "crec-teoria-14-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Sala-i-Martin advierte contra subsidiar solo la tecnología educativa B?",
+    "en": "Why does Sala-i-Martin warn against subsidizing only education technology B?"
+   },
+   "op": {
+    "es": [
+     "Porque B no afecta al crecimiento",
+     "Porque el resultado depende del supuesto de que la educación no usa capital físico",
+     "Porque el mercado ya es subóptimo",
+     "Porque A es siempre mayor que B"
+    ],
+    "en": [
+     "Because B does not affect growth",
+     "Because the result hinges on assuming education uses no physical capital",
+     "Because the market is already suboptimal",
+     "Because A is always larger than B"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con ambos capitales en ambos sectores, A y B afectan el crecimiento según las participaciones α y η.",
+    "en": "With both capitals in both sectors, A and B affect growth according to the shares α and η."
+   },
+   "id": "crec-teoria-14-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué genera la dinámica de transición en el modelo de Uzawa-Lucas?",
+    "en": "What drives transitional dynamics in the Uzawa-Lucas model?"
+   },
+   "op": {
+    "es": [
+     "Que la relación inicial k/h difiere de la de estado estacionario",
+     "Que la renta inicial es menor que la de estado estacionario",
+     "Que la población crece",
+     "Que el planificador interviene"
+    ],
+    "en": [
+     "That the initial k/h ratio differs from its steady-state value",
+     "That initial income is below its steady-state level",
+     "That population grows",
+     "That the planner intervenes"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La transición nace de un desequilibrio entre los dos sectores, no del nivel absoluto de la renta.",
+    "en": "The transition comes from an imbalance between the two sectors, not from the absolute income level."
+   },
+   "id": "crec-teoria-14-q6"
+  },
+  {
+   "q": {
+    "es": "Según el modelo, ¿qué pasa con el crecimiento de un país que pierde mucho capital físico en relación con su capital humano?",
+    "en": "According to the model, what happens to growth in a country that loses much physical capital relative to human capital?"
+   },
+   "op": {
+    "es": [
+     "Crece más lento que en el estado estacionario",
+     "Cae en una trampa de pobreza",
+     "Crece por encima de su tasa estacionaria durante la reconstrucción",
+     "No cambia su tasa de crecimiento"
+    ],
+    "en": [
+     "It grows more slowly than in steady state",
+     "It falls into a poverty trap",
+     "It grows above its steady-state rate during reconstruction",
+     "Its growth rate does not change"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con k/h bajo, el crecimiento supera al estacionario; el autor piensa en Alemania y Japón en la posguerra.",
+    "en": "With low k/h, growth exceeds the steady-state rate; the author has postwar Germany and Japan in mind."
+   },
+   "id": "crec-teoria-14-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la solución de mercado del modelo de Uzawa-Lucas es óptima de Pareto?",
+    "en": "Why is the Uzawa-Lucas market solution Pareto optimal?"
+   },
+   "op": {
+    "es": [
+     "Porque el gobierno subsidia la educación",
+     "Porque el capital humano es no rival",
+     "Porque la población es constante",
+     "Porque no hay externalidades ni competencia imperfecta: el planificador resuelve el mismo problema"
+    ],
+    "en": [
+     "Because the government subsidizes education",
+     "Because human capital is nonrival",
+     "Because population is constant",
+     "Because there are no externalities or imperfect competition: the planner solves the same problem"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El hamiltoniano y las condiciones de primer orden del planificador son idénticos a los del mercado.",
+    "en": "The planner's Hamiltonian and first-order conditions are identical to the market's."
+   },
+   "id": "crec-teoria-14-q8"
+  }
+ ],
+ "palabras": 1384,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el capital humano?",
+    "en": "What is human capital?"
+   },
+   "a": {
+    "es": "La capacidad productiva de las personas que puede aumentarse invirtiendo: en salud y alimentación cuando la renta es baja y en educación cuando crece. A diferencia de la tecnología, es rival y no se hereda por completo. Así lo presenta Sala-i-Martin (cap. 8), siguiendo a la escuela de Chicago.",
+    "en": "People's productive capacity that can be raised through investment: in health and nutrition at low income and in education as income grows. Unlike technology, it is rival and not fully inherited. Sala-i-Martin (ch. 8) presents it this way, following the Chicago school."
+   },
+   "id": "crec-teoria-14-t1"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué es problemático modelar capital físico y humano como un mismo bien?",
+    "en": "Why is it problematic to model physical and human capital as a single good?"
+   },
+   "a": {
+    "es": "Porque implica que, ante un shock que destruye máquinas, una parte del capital humano se transforma instantáneamente en capital físico, algo imposible; y las restricciones de irreversibilidad predicen inversión en un solo capital. Lo señala Sala-i-Martin (cap. 8) para justificar un sector educativo propio.",
+    "en": "Because it implies that, after a shock destroying machines, part of human capital instantly becomes physical capital, which is impossible; and irreversibility constraints predict investment in a single capital. Sala-i-Martin (ch. 8) points it out to justify a separate education sector."
+   },
+   "id": "crec-teoria-14-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se estructura el modelo de crecimiento de dos sectores de Uzawa y Lucas?",
+    "en": "How is the Uzawa-Lucas two-sector growth model structured?"
+   },
+   "a": {
+    "es": "Un sector final combina capital físico y una fracción u del capital humano para producir consumo y capital físico; un sector educativo usa la fracción 1 − u, solo capital humano, para producir más capital humano. Las familias eligen c y u. Así lo desarrolla Sala-i-Martin (cap. 8).",
+    "en": "A final sector combines physical capital and a fraction u of human capital to produce consumption and physical capital; an education sector uses the fraction 1 − u, human capital only, to produce more human capital. Households choose c and u. Sala-i-Martin (ch. 8) develops it."
+   },
+   "id": "crec-teoria-14-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué determina el crecimiento de largo plazo en un modelo donde la educación usa solo capital humano?",
+    "en": "What determines long-run growth in a model where education uses only human capital?"
+   },
+   "a": {
+    "es": "La productividad del sector educativo: todas las variables crecen a (1/θ)(B − δ − ρ), porque la producción de capital humano es lineal en h, un supuesto «BH» análogo al AK. Sala-i-Martin (cap. 8) advierte que con capital físico en ambos sectores también importa la productividad del sector final.",
+    "en": "Education-sector productivity: all variables grow at (1/θ)(B − δ − ρ), because human capital production is linear in h, a 'BH' assumption analogous to AK. Sala-i-Martin (ch. 8) warns that with physical capital in both sectors, final-sector productivity matters too."
+   },
+   "id": "crec-teoria-14-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué en un modelo de dos capitales la recuperación tras una guerra depende de qué capital se destruyó?",
+    "en": "Why, in a two-capital model, does recovery after a war depend on which capital was destroyed?"
+   },
+   "a": {
+    "es": "Porque la transición surge del desequilibrio entre k y h y es asimétrica: con capital físico relativamente escaso el crecimiento supera al estacionario, y con capital humano escaso queda por debajo. Sala-i-Martin (cap. 8) lo ilustra con Alemania y Japón tras la Segunda Guerra Mundial, apoyándose en Mulligan y Sala-i-Martin (1993).",
+    "en": "Because the transition arises from the k–h imbalance and is asymmetric: with relatively scarce physical capital growth exceeds the steady-state rate, and with scarce human capital it falls below. Sala-i-Martin (ch. 8) illustrates it with Germany and Japan after World War II, drawing on Mulligan and Sala-i-Martin (1993)."
+   },
+   "id": "crec-teoria-14-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Cuándo el crecimiento endógeno es compatible con un equilibrio de mercado óptimo?",
+    "en": "When is endogenous growth compatible with an optimal market equilibrium?"
+   },
+   "a": {
+    "es": "Cuando proviene de acumular un factor rival con rendimientos constantes, sin externalidades ni competencia imperfecta: el planificador resuelve el mismo problema que las familias y la solución es óptima de Pareto. Así ocurre en el modelo de Uzawa-Lucas, según Sala-i-Martin (cap. 8).",
+    "en": "When it comes from accumulating a rival factor with constant returns, without externalities or imperfect competition: the planner solves the same problem as households and the solution is Pareto optimal. That is the case in the Uzawa-Lucas model, according to Sala-i-Martin (ch. 8)."
+   },
+   "id": "crec-teoria-14-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa la depreciación del capital humano en un modelo de horizonte infinito?",
+    "en": "What does human capital depreciation mean in an infinite-horizon model?"
+   },
+   "a": {
+    "es": "La transmisión incompleta del capital humano de padres a hijos, porque se va con quien muere y solo pasa en parte durante la convivencia, más el simple olvido. Así la interpreta Sala-i-Martin (cap. 8).",
+    "en": "The incomplete transmission of human capital from parents to children, since it leaves with those who die and passes only partly while they coexist, plus simple forgetting. Sala-i-Martin (ch. 8) interprets it this way."
+   },
+   "id": "crec-teoria-14-t7"
+  }
+ ]
+}

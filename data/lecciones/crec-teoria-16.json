@@ -1,0 +1,402 @@
+{
+ "id": "crec-teoria-16",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "La evidencia empírica del crecimiento: convergencia, regresiones de Barro y contabilidad",
+ "bajada": "El capítulo 10 de los Apuntes de Sala-i-Martin: qué son la convergencia beta y sigma, cómo se estiman con datos regionales e internacionales, por qué aparece una y otra vez el 2% anual, qué dicen las regresiones de Barro y sus críticos, y qué muestra la contabilidad del crecimiento sobre Asia oriental.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 10: «La literatura empírica»",
+ "intro": "Entre 1960 y 1985 Singapur creció al 7,4% anual per cápita, Hong Kong al 6,6% y Japón al 5,8%, mientras Chad, Ghana y Mozambique retrocedían al 2,8%, 1,7% y 1,7% por año. ¿Hay rasgos comunes entre los milagros y los desastres? Sala-i-Martin ordena la literatura empírica en dos grandes temas: la convergencia y los determinantes del crecimiento de largo plazo. La convergencia importaba por una razón precisa: a mediados de los ochenta se la propuso como el test que separaría al modelo neoclásico, con rendimientos decrecientes y convergencia, de los modelos de crecimiento endógeno, con rendimientos constantes y sin ella. El capítulo cuenta cómo ese test pareció favorecer al crecimiento endógeno y cómo la contrarrevolución neoclásica dio vuelta el resultado.",
+ "secciones": [
+  {
+   "t": "Convergencia beta y convergencia sigma",
+   "eq": [
+    "\\log y_{i,t} - \\log y_{i,t-1} = a - \\beta\\,\\log y_{i,t-1} + u_{i,t}",
+    "\\sigma^2_t = (1-\\beta)^2\\,\\sigma^2_{t-1} + \\sigma^2_u,\\qquad (\\sigma^2)^* = \\frac{\\sigma^2_u}{1-(1-\\beta)^2}"
+   ],
+   "nota": "y es la renta per cápita de la economía i, u una perturbación transitoria con media cero y varianza común, y σ² la varianza de corte transversal del logaritmo de la renta. Se supone 0 < β < 1, lo que descarta adelantamientos sistemáticos.",
+   "p": [
+    "Sala-i-Martin, que acuñó la terminología en 1990, define dos conceptos. Hay convergencia β si las economías pobres crecen más que las ricas, es decir, si el crecimiento está inversamente relacionado con la renta inicial. Hay convergencia σ si la dispersión de la renta per cápita entre economías se reduce con el tiempo. El modelo neoclásico predice β positivo; el modelo AK, β igual a cero.",
+    "De la ecuación de crecimiento sale una ecuación en diferencias para la varianza. Si β no es positivo, la dispersión no puede caer: la convergencia β es necesaria para la convergencia σ. Pero no es suficiente. La varianza se acerca monótonamente a su valor de estado estacionario, que crece con la varianza de los shocks, y si arranca por debajo de él, aumenta durante la transición aunque β sea positivo. Puede haber convergencia β con divergencia σ.",
+    "Contra Quah, para quien solo importa la dispersión, el autor defiende la convergencia β con la NBA: la dispersión de una tabla de posiciones es constante por definición, pero importa cuánto tarda una dinastía en volverse mediocre, como importa cuán rápido un país pobre se vuelve rico."
+   ]
+  },
+  {
+   "t": "Primer round: el test parece rechazar al modelo neoclásico",
+   "p": [
+    "Los datos de Summers y Heston, que ajustan el PIB de más de 130 países por diferencias de precios desde 1960, permitieron por primera vez comparar niveles reales. Con 114 países, sin las economías socialistas, la correlación entre el crecimiento de 1960 a 1985 y el logaritmo del PIB per cápita de 1960 es positiva aunque no significativa, y la desviación estándar del logaritmo del PIB, calculada cada cinco años, aumenta. No hay convergencia β ni σ.",
+    "La poca evidencia favorable, la convergencia entre países ricos de Baumol (1986), cayó por un problema de selección: la muestra estaba formada por países que eran ricos en 1979, de modo que los que no convergieron habían quedado afuera. DeLong (1988) agregó países que parecían ricos a comienzos de siglo, como España, Argentina, Brasil o Irlanda, y la convergencia desapareció."
+   ]
+  },
+  {
+   "t": "La contrarrevolución: convergencia condicional y datos regionales",
+   "eq": [
+    "\\gamma_{i,t_0,t_0+T} = a - \\left[\\frac{1-e^{-\\beta T}}{T}\\right]\\log y_{i,t_0} + u_{i,t_0,t_0+T}"
+   ],
+   "nota": "γ es la tasa media anual de crecimiento entre t₀ y t₀ + T. Estimada por mínimos cuadrados no lineales, β es directamente la velocidad de convergencia; el coeficiente de una regresión lineal cae con la longitud del período aunque β no cambie.",
+   "p": [
+    "Sala-i-Martin (1990), Barro y Sala-i-Martin (1991, 1992) y Mankiw, Romer y Weil (1992) respondieron que el modelo neoclásico no predice convergencia absoluta: cada economía se acerca a su propio estado estacionario, y solo si todas comparten tecnología, preferencias e instituciones los pobres crecen más. Para testear la convergencia condicional hay dos caminos: estudiar economías parecidas, como las regiones de un país, o controlar el estado estacionario con regresiones múltiples.",
+    "Para los 48 estados de Estados Unidos entre 1880 y 1990, la estimación es β = 0,0174 (error estándar 0,0026), con un R² ajustado de 0,89; en un panel por décadas con efectos fijos temporales y controles por la participación agrícola e industrial, 0,022 (0,002): 2% anual. La dispersión cae de 0,54 en 1880 a 0,33 en 1920, sube a 0,40 en 1930 por la caída de los precios agrícolas y llega a un mínimo de 0,14 en 1976. En 47 prefecturas japonesas, β es 0,019 entre 1955 y 1987, y 0,027 con datos desde 1930, y la dispersión, tras subir con el gasto militar de los años treinta, baja a 0,125 en 1978.",
+    "En 90 regiones europeas de ocho países entre 1950 y 1990, con efectos fijos por país, β es 0,015 (0,002), y 0,018 (0,003) con efectos por década. Por país, va de 0,010 en Italia a 0,030 en el Reino Unido; España da 0,023 y 0,016 en el panel; Canadá, según Coulombe y Lee (1993), 0,024. La regularidad es notable: alrededor de 2% anual en todas partes."
+   ]
+  },
+  {
+   "t": "Las regresiones de Barro",
+   "eq": [
+    "\\gamma_{i,t} = a - \\beta\\,\\log y_{i,t-1} + \\psi\\,X_{i,t-1} + u_{i,t}"
+   ],
+   "nota": "X es un vector de variables que aproximan el estado estacionario. Si se omite y está correlacionado con la renta inicial, el error de la regresión absoluta queda correlacionado con el regresor y sesga β hacia cero.",
+   "p": [
+    "Entre países se condiciona con regresión múltiple: estimar la convergencia absoluta cuando el modelo verdadero es condicional puede hacer creer que β es cero cuando es positivo. El cuadro usa los 114 países y el crecimiento medio de 1960 a 1985.",
+    "Sola, la renta inicial tiene coeficiente positivo, 0,0047, con R² de 0,04. Con las variables de Barro (1991), que son la escolarización primaria y secundaria de 1960, el consumo público sin educación ni defensa, la distorsión del precio de la inversión, revoluciones y golpes, y asesinatos, el coeficiente pasa a −0,0124 (0,0032), equivalente a una velocidad de 1,5% anual. La educación entra con signo positivo; el consumo público, −0,0826 (0,0271), porque se financia con impuestos distorsivos sin ser productivo; revoluciones y golpes, −0,0242 (0,0060). Las dummies de América Latina y África subsahariana son negativas y muy significativas, suben el R² ajustado de 0,45 a 0,55 y dejan la renta inicial en −0,0128 (0,0028). Para Sala-i-Martin son una confesión de ignorancia: esas regiones crecieron menos de lo que predicen sus malas variables, y no sabemos por qué.",
+    "Con solo las variables de Solow-Swan, la tasa de ahorro entra con 0,1721 (0,0224), n + δ con −0,3706 (0,1548), suponiendo δ = 0,05, y la renta inicial con −0,0052 (0,0018). Al sumar escolarización, como en Mankiw, Romer y Weil, la renta inicial vuelve a −0,0101 (0,0030). El autor advierte que tratar el ahorro como exógeno es difícil de aceptar: ahorro y crecimiento se determinan juntos, y Barro y Sala-i-Martin presentan evidencia de endogeneidad."
+   ]
+  },
+  {
+   "t": "Robustez: Levine y Renelt y la respuesta de Sala-i-Martin",
+   "p": [
+    "Tras Barro aparecieron más de 50 variables correlacionadas significativamente con el crecimiento en al menos una regresión. Levine y Renelt (1992) aplicaron el test de límites extremos de Leamer: se fija un conjunto básico de regresores, se agrega la variable de interés y se combinan hasta tres variables adicionales; si alguna combinación vuelve el coeficiente no significativo o le cambia el signo, la variable no es robusta. Para 1960-1985 solo sobrevivieron la renta inicial, negativa, y la tasa de ahorro, positiva.",
+    "Sala-i-Martin considera el test demasiado exigente: con suficientes combinaciones casi cualquier coeficiente cruza el cero, y conviene mirar su distribución entera. En Sala-i-Martin (1997b), de unas 60 variables, unas 21 resultan seriamente correlacionadas con el crecimiento, aunque ninguna pase el test anterior: estabilidad política y económica, apertura, imperio de la ley y derechos de propiedad, poca intervención pública, capital humano y salud, e inversión en maquinaria. No importan el tamaño del gobierno, sino su calidad, ni el tamaño del país: no hay efectos de escala."
+   ]
+  },
+  {
+   "t": "Contabilidad del crecimiento y la polémica asiática",
+   "eq": [
+    "\\frac{\\dot y}{y} = \\frac{\\dot A}{A} + \\alpha\\left(\\frac{\\dot K}{K}-\\frac{\\dot L}{L}\\right) + (1-\\alpha)\\left(\\frac{\\dot H}{H}-\\frac{\\dot L}{L}\\right)",
+    "\\frac{\\dot A}{A} = \\alpha\\,\\frac{\\dot R}{R} + (1-\\alpha)\\,\\frac{\\dot w}{w}"
+   ],
+   "nota": "H = qL es el capital humano (trabajo por un índice de calidad), α la participación del capital, R su precio de alquiler y w el salario. La primera ecuación es la contabilidad primal; la segunda, el enfoque dual con rendimientos constantes.",
+   "p": [
+    "Solow (1957) descompone el crecimiento en aportes del capital, del trabajo y de la tecnología. Con mercados competitivos, las participaciones se leen en las cuentas nacionales y el progreso técnico se mide como residuo, el residuo de Solow. Con datos de Collins y Bosworth (1997) para 1960-1992, el producto por trabajador creció 4,1% anual en el Extremo Oriente, 0,5% en África y 2,4% en Occidente. El crecimiento asiático se explica sobre todo por la acumulación de capital físico y educación, no por la productividad: la de Singapur no supera la de España, Italia, Colombia o Chile, como fue el primero en concluir Young (1994).",
+    "Hsieh (1998) propuso medir el residuo por los precios de los factores: si solo se acumula capital, su rendimiento cae y el salario sube, así que ambos precios suben juntos solo con progreso técnico. Con ese método la productividad de Singapur resulta muy positiva. O las cantidades estaban mal medidas, o los gobiernos inflaban el capital, o, según Young (1998), Hsieh no descontó los impuestos: con R neto el crecimiento de la productividad vuelve a parecerse al de la contabilidad primal."
+   ]
+  },
+  {
+   "t": "La distribución mundial y las lecciones",
+   "p": [
+    "Quah (1996) critica que la literatura se limite a β y σ y estudia toda la distribución del PIB por trabajador relativo a Estados Unidos. Entre 1960 y 1988 pasa de una moda a dos, los «picos gemelos»; en 1988 la renta más alta era 35 veces la más baja, la de Myanmar. Proyectando matrices de transición constantes entre seis categorías, como propuso Quah (1993), los países con más del 80% de la renta estadounidense pasan de 3 en 1960 a 9 en 1988 y a 19 en el largo plazo; los de menos del 5%, de 15 a 17 y luego a 8. Como hubo más milagros que desastres, los picos gemelos desaparecerían.",
+    "Las lecciones del autor: la evidencia es consistente con la convergencia condicional; la velocidad, sorprendentemente uniforme, permite usar la regla del 2% anual, que exige una participación del capital amplia, de 70 u 80%, y no el 30% del capital físico, como se vio en el capítulo 1; el ahorro y la inversión son el determinante más importante, seguido por la educación, y las malas políticas y la inestabilidad perjudican el crecimiento. Lectura propia: casi todas son correlaciones parciales en cortes transversales, y el propio autor admite que el ahorro es endógeno, de modo que la interpretación causal queda abierta."
+   ]
+  }
+ ],
+ "claves": [
+  "Convergencia β (los pobres crecen más) es necesaria pero no suficiente para la convergencia σ (cae la dispersión).",
+  "Entre 114 países, de 1960 a 1985, no hay convergencia absoluta: la renta inicial tiene coeficiente positivo y la dispersión aumenta.",
+  "El modelo neoclásico predice convergencia condicional, que se testea con regiones parecidas o con regresiones que controlan el estado estacionario; omitir esos controles sesga β hacia cero.",
+  "Estados de EE.UU., prefecturas japonesas, regiones europeas y provincias canadienses dan velocidades cercanas al 2% anual; las regresiones de Barro entre países, 1,5%.",
+  "El test de límites extremos de Levine y Renelt deja en pie solo la renta inicial y el ahorro; mirando la distribución de los coeficientes, Sala-i-Martin encuentra unas 21 variables relevantes.",
+  "La contabilidad primal atribuye el crecimiento asiático a la acumulación de factores; el enfoque dual de Hsieh lo discute y Young lo defiende corrigiendo por impuestos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué relación hay entre convergencia β y convergencia σ?",
+    "en": "What is the relation between β-convergence and σ-convergence?"
+   },
+   "op": {
+    "es": [
+     "Son equivalentes: una implica la otra",
+     "La β es necesaria pero no suficiente para la σ",
+     "La σ es necesaria pero no suficiente para la β",
+     "No tienen relación alguna"
+    ],
+    "en": [
+     "They are equivalent: each implies the other",
+     "β is necessary but not sufficient for σ",
+     "σ is necessary but not sufficient for β",
+     "They are unrelated"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Sin β positivo la dispersión no puede caer, pero si arranca por debajo de su estado estacionario sube aunque haya convergencia β.",
+    "en": "Without positive β dispersion cannot fall, but if it starts below its steady state it rises even with β-convergence."
+   },
+   "id": "crec-teoria-16-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué se encontró al regresar el crecimiento de 1960 a 1985 sobre el PIB per cápita de 1960 para 114 países?",
+    "en": "What was found when regressing 1960-1985 growth on 1960 GDP per capita for 114 countries?"
+   },
+   "op": {
+    "es": [
+     "Un coeficiente positivo y no significativo, con R² de 0,04: no hay convergencia absoluta",
+     "Un coeficiente negativo de 2% anual",
+     "Un coeficiente negativo pero no significativo",
+     "Un coeficiente positivo muy significativo, con R² de 0,89"
+    ],
+    "en": [
+     "A positive, insignificant coefficient with R² of 0.04: no absolute convergence",
+     "A negative coefficient of 2% a year",
+     "A negative but insignificant coefficient",
+     "A highly significant positive coefficient with R² of 0.89"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La dispersión también aumentó: no hubo convergencia β ni σ, lo que se leyó como evidencia a favor del crecimiento endógeno.",
+    "en": "Dispersion also rose: neither β- nor σ-convergence, which was read as evidence for endogenous growth."
+   },
+   "id": "crec-teoria-16-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la convergencia entre países ricos de Baumol (1986) no era evidencia convincente?",
+    "en": "Why was Baumol's (1986) convergence among rich countries unconvincing?"
+   },
+   "op": {
+    "es": [
+     "Porque usaba datos sin ajustar por precios",
+     "Porque abarcaba un período demasiado corto",
+     "Porque la muestra se elegía por ser rica al final del período, lo que excluía a los que no convergieron",
+     "Porque incluía economías socialistas"
+    ],
+    "en": [
+     "Because it used data not adjusted for prices",
+     "Because it covered too short a period",
+     "Because the sample was chosen for being rich at the end of the period, excluding those that failed to converge",
+     "Because it included socialist economies"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "DeLong (1988) agregó países que parecían ricos a comienzos de siglo, como Argentina o España, y la convergencia desapareció.",
+    "en": "DeLong (1988) added countries that looked rich at the turn of the century, like Argentina or Spain, and convergence vanished."
+   },
+   "id": "crec-teoria-16-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el autor prefiere estimar la ecuación de convergencia no lineal en lugar de la lineal?",
+    "en": "Why does the author prefer estimating the nonlinear convergence equation rather than the linear one?"
+   },
+   "op": {
+    "es": [
+     "Porque elimina el error de medición de la renta",
+     "Porque permite incluir efectos fijos",
+     "Porque da un R² más alto",
+     "Porque β es directamente la velocidad de convergencia, independiente de la longitud del período, y es la ecuación que predice el modelo"
+    ],
+    "en": [
+     "Because it removes measurement error in income",
+     "Because it allows fixed effects",
+     "Because it yields a higher R²",
+     "Because β is directly the convergence speed, independent of period length, and it is the equation the model predicts"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El coeficiente de una regresión lineal cae con T aunque la velocidad sea la misma.",
+    "en": "The coefficient of a linear regression falls with T even if the speed is unchanged."
+   },
+   "id": "crec-teoria-16-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué velocidad de convergencia surge de las regresiones regionales?",
+    "en": "What convergence speed emerges from regional regressions?"
+   },
+   "op": {
+    "es": [
+     "Alrededor de 8% anual",
+     "Alrededor de 2% anual, sorprendentemente similar entre países",
+     "Cero en Europa y positiva en Estados Unidos",
+     "Alrededor de 0,5% anual"
+    ],
+    "en": [
+     "About 8% a year",
+     "About 2% a year, strikingly similar across countries",
+     "Zero in Europe and positive in the US",
+     "About 0.5% a year"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Por ejemplo, 0,022 en el panel de estados de EE.UU., 0,019 en Japón y 0,015 a 0,018 en Europa.",
+    "en": "For example, 0.022 in the US state panel, 0.019 in Japan and 0.015 to 0.018 in Europe."
+   },
+   "id": "crec-teoria-16-q5"
+  },
+  {
+   "q": {
+    "es": "Si se omiten los determinantes del estado estacionario correlacionados con la renta inicial, ¿qué pasa con el β estimado?",
+    "en": "If steady-state determinants correlated with initial income are omitted, what happens to the estimated β?"
+   },
+   "op": {
+    "es": [
+     "Se sesga hacia cero, y se puede concluir que no hay convergencia cuando sí la hay",
+     "Se sesga hacia arriba",
+     "No se sesga, solo pierde eficiencia",
+     "Cambia de signo siempre"
+    ],
+    "en": [
+     "It is biased toward zero, and one may conclude there is no convergence when there is",
+     "It is biased upward",
+     "It is unbiased, only less efficient",
+     "It always changes sign"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El error de la regresión absoluta incluye ψX, positivamente correlacionado con la renta inicial.",
+    "en": "The absolute regression's error contains ψX, positively correlated with initial income."
+   },
+   "id": "crec-teoria-16-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo interpreta Sala-i-Martin las dummies negativas y significativas de América Latina y África?",
+    "en": "How does Sala-i-Martin interpret the negative, significant Latin America and Africa dummies?"
+   },
+   "op": {
+    "es": [
+     "Como prueba de que las instituciones coloniales explican el atraso",
+     "Como un error de medición de los datos de Summers y Heston",
+     "Como una confesión de ignorancia: crecieron menos de lo que predicen sus variables y no sabemos por qué",
+     "Como evidencia de efectos de escala"
+    ],
+    "en": [
+     "As proof that colonial institutions explain backwardness",
+     "As measurement error in the Summers-Heston data",
+     "As a confession of ignorance: they grew less than their variables predict and we do not know why",
+     "As evidence of scale effects"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las dummies suben el R² ajustado de 0,45 a 0,55, pero no explican nada; son un punto de partida para investigar.",
+    "en": "The dummies raise adjusted R² from 0.45 to 0.55 but explain nothing; they are a starting point for research."
+   },
+   "id": "crec-teoria-16-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué propone el enfoque dual de Hsieh (1998) para medir el progreso técnico?",
+    "en": "What does Hsieh's (1998) dual approach propose for measuring technical progress?"
+   },
+   "op": {
+    "es": [
+     "Usar el crecimiento del stock de capital corregido por calidad",
+     "Usar la tasa de ahorro como proxy de la tecnología",
+     "Usar regresiones de convergencia por regiones",
+     "Usar el crecimiento ponderado de los precios de los factores, R y w"
+    ],
+    "en": [
+     "Use capital-stock growth adjusted for quality",
+     "Use the saving rate as a proxy for technology",
+     "Use regional convergence regressions",
+     "Use the weighted growth of factor prices, R and w"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Ambos precios solo pueden subir juntos si hay progreso técnico; Young (1998) objeta que hay que usar R neto de impuestos.",
+    "en": "Both prices can rise together only with technical progress; Young (1998) objects that R must be net of taxes."
+   },
+   "id": "crec-teoria-16-q8"
+  }
+ ],
+ "palabras": 1511,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué puede haber convergencia β y, a la vez, aumentar la dispersión de la renta?",
+    "en": "Why can there be β-convergence while income dispersion rises?"
+   },
+   "a": {
+    "es": "Porque la varianza converge a un valor de estado estacionario que depende de la varianza de los shocks; si la dispersión inicial está por debajo de ese valor, sube durante la transición aunque los pobres crezcan más. Así lo demuestra Sala-i-Martin (cap. 10).",
+    "en": "Because the variance converges to a steady-state value that depends on the variance of shocks; if initial dispersion is below that value, it rises during the transition even though the poor grow faster. Sala-i-Martin proves it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué una regresión de convergencia absoluta entre países puede subestimar la convergencia?",
+    "en": "Why can an absolute-convergence regression across countries underestimate convergence?"
+   },
+   "a": {
+    "es": "Porque omite los determinantes del estado estacionario, que quedan en el error y están correlacionados con la renta inicial; eso sesga β hacia cero. La solución es la regresión condicional o estudiar regiones parecidas. Lo explica Sala-i-Martin (cap. 10).",
+    "en": "Because it omits steady-state determinants, which end up in the error and are correlated with initial income; that biases β toward zero. The fix is a conditional regression or studying similar regions. Sala-i-Martin explains it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿A qué velocidad convergen las regiones dentro de un mismo país?",
+    "en": "How fast do regions within a country converge?"
+   },
+   "a": {
+    "es": "A alrededor de 2% anual: 0,0174 entre 1880 y 1990 y 0,022 en panel para los estados de EE.UU., 0,019 para las prefecturas japonesas, 0,015 a 0,018 para 90 regiones europeas y 0,024 para Canadá. Lo documenta Sala-i-Martin (cap. 10).",
+    "en": "At about 2% a year: 0.0174 for 1880-1990 and 0.022 in panel for US states, 0.019 for Japanese prefectures, 0.015 to 0.018 for 90 European regions and 0.024 for Canada. Sala-i-Martin documents it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué muestran las regresiones de crecimiento de Barro sobre la convergencia entre países?",
+    "en": "What do Barro's growth regressions show about convergence across countries?"
+   },
+   "a": {
+    "es": "Que al controlar por escolarización, consumo público, distorsiones de precios e inestabilidad política, el coeficiente de la renta inicial pasa de positivo a −0,0124, una velocidad de 1,5% anual: hay convergencia condicional. Lo muestra Sala-i-Martin (cap. 10) con 114 países entre 1960 y 1985.",
+    "en": "That controlling for schooling, government consumption, price distortions and political instability, the initial-income coefficient turns from positive to −0.0124, a speed of 1.5% a year: there is conditional convergence. Sala-i-Martin shows it (ch. 10) with 114 countries from 1960 to 1985."
+   },
+   "id": "crec-teoria-16-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Es razonable exigir que una variable sobreviva al test de límites extremos para considerarla un determinante del crecimiento?",
+    "en": "Is it reasonable to require a variable to pass the extreme-bounds test to count as a growth determinant?"
+   },
+   "a": {
+    "es": "No del todo: el coeficiente tiene una distribución entre regresiones y, con suficientes combinaciones, casi cualquier variable cruza el cero. Es mejor mirar la distribución completa, con lo que unas 21 de 60 variables resultan relevantes. Es la respuesta de Sala-i-Martin (cap. 10) a Levine y Renelt.",
+    "en": "Not quite: the coefficient has a distribution across regressions and, with enough combinations, almost any variable crosses zero. It is better to look at the whole distribution, under which about 21 of 60 variables matter. That is Sala-i-Martin's reply (ch. 10) to Levine and Renelt."
+   },
+   "id": "crec-teoria-16-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se mide el progreso técnico con la contabilidad del crecimiento?",
+    "en": "How is technical progress measured with growth accounting?"
+   },
+   "a": {
+    "es": "Como residuo: el crecimiento del producto menos el de capital y capital humano ponderados por sus participaciones, que se leen en las cuentas nacionales. Con rendimientos constantes también se puede medir por el crecimiento ponderado de R y w, el enfoque dual. Lo presenta Sala-i-Martin (cap. 10).",
+    "en": "As a residual: output growth minus the growth of capital and human capital weighted by their shares, read from the national accounts. With constant returns it can also be measured by the weighted growth of R and w, the dual approach. Sala-i-Martin presents it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Fue el milagro de Asia oriental un milagro de productividad?",
+    "en": "Was the East Asian miracle a productivity miracle?"
+   },
+   "a": {
+    "es": "Según la contabilidad primal, no: el crecimiento de 4,1% anual por trabajador del Extremo Oriente se debe sobre todo a la acumulación de capital físico y educación, y la productividad de Singapur no supera la de España o Chile. El enfoque dual de Hsieh lo discute y Young lo defiende corrigiendo por impuestos. Lo resume Sala-i-Martin (cap. 10).",
+    "en": "According to primal accounting, no: the Far East's 4.1% annual growth per worker is mostly due to accumulation of physical capital and education, and Singapore's productivity does not exceed Spain's or Chile's. Hsieh's dual approach disputes it and Young defends it by correcting for taxes. Sala-i-Martin summarizes it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t7"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Hacia dónde va la distribución mundial de la renta?",
+    "en": "Where is the world income distribution heading?"
+   },
+   "a": {
+    "es": "Entre 1960 y 1988 se volvió bimodal, con «picos gemelos», pero proyectando las probabilidades de transición los picos desaparecerían: los países con más del 80% de la renta estadounidense pasarían de 9 a 19 y los de menos del 5%, de 17 a 8, porque hubo más milagros que desastres. Lo presenta Sala-i-Martin (cap. 10).",
+    "en": "Between 1960 and 1988 it became bimodal, with «twin peaks», but projecting the transition probabilities the peaks would vanish: countries above 80% of US income would go from 9 to 19 and those below 5% from 17 to 8, because there were more miracles than disasters. Sala-i-Martin presents it (ch. 10)."
+   },
+   "id": "crec-teoria-16-t8"
+  }
+ ]
+}

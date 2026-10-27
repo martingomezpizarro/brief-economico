@@ -1,0 +1,388 @@
+{
+ "id": "crec-teoria-12",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Gasto público productivo con ahorro óptimo: impuestos, rentabilidad y el tamaño del Estado",
+ "bajada": "El capítulo 6 de los Apuntes de Sala-i-Martin: el modelo de Barro con familias que optimizan, por qué el impuesto a la renta reduce la rentabilidad de invertir, por qué el mercado crece menos que el planificador y qué pasa si el bien público entra en la utilidad.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 6: «Gasto público y crecimiento»",
+ "intro": "¿Conviene un gobierno grande o uno chico? En el capítulo 2, Sala-i-Martin ya había presentado el modelo de gasto productivo de Barro (1990) con ahorro constante: el gobierno ayudaba a producir pero, al cobrar impuestos, reducía la renta disponible y con ella el ahorro. En el capítulo 6 retoma el modelo con familias que eligen cuánto ahorrar, y aparece un canal que antes estaba ausente: los impuestos sobre la renta reducen la rentabilidad de la inversión privada. La lección principal, dice el autor, es que aun cuando el gobierno se dedique a hacer cosas buenas y productivas, habrá que limitar su tamaño, porque tiene que financiarlas con impuestos distorsionadores. El capítulo muestra además que, por esa distorsión, el equilibrio de mercado crece menos de lo óptimo, y que si el bien público da utilidad en lugar de producción el conflicto entre gasto y crecimiento deja de ser ambiguo.",
+ "secciones": [
+  {
+   "t": "Qué hace el gobierno y qué tipo de bien provee",
+   "eq": [
+    "y_j = Ak_j^{\\alpha}G^{1-\\alpha}\\quad\\text{(bien público puro)}",
+    "y_j = Ak_j^{\\alpha}g_j^{1-\\alpha}\\quad\\text{(bien rival y excluible)}",
+    "y_j = Ak_j\\left(\\frac{G}{K}\\right)^{1-\\alpha}\\quad\\text{(bien con congestión)}"
+   ],
+   "nota": "k es el capital privado de la empresa j, G el bien público agregado y K el capital agregado.",
+   "p": [
+    "El gobierno influye a través de impuestos, gasto, regulación, déficit y política monetaria. El capítulo se concentra en el tamaño del gasto y compara sus beneficios con las distorsiones de financiarlo. Para que la pregunta no sea trivial, el gasto tiene que ser deseable: si no lo fuera, lo mejor sería llevarlo a cero. Hay dos maneras de lograrlo: ponerlo en la función de producción (carreteras, protección policial y judicial de la propiedad, I+D en universidades públicas) o en la función de utilidad (parques nacionales, fiestas sociales, bodas reales).",
+    "Luego hay que decidir qué tipo de bien es. Un bien público en el sentido de Samuelson (1954), como el faro, puede ser usado por todos a la vez y nadie puede ser excluido. Un bien rival y excluible, como la comida de las escuelas públicas (las galletas de un alumno en Segovia no las come otro en Alicante), se reparte entre empresas. Y casi todos los bienes públicos están sujetos a congestión, como la calle Balmes de Barcelona; incluso la defensa nacional, según Thompson (1976), porque al crecer la renta aumenta el premio de invadir. Para ese caso el autor remite a la especificación de Barro y Sala-i-Martin (1992c).",
+    "Siguiendo a Barro (1990), el capítulo trata el bien como privado provisto por el Estado y como un flujo, no como un stock acumulable: se parece más al salario de policías y jueces que a la red de carreteras. El gobierno equilibra su presupuesto en todo momento y cobra un único impuesto proporcional a la renta, con tasa τ constante."
+   ]
+  },
+  {
+   "t": "El modelo con optimización: impuestos y rentabilidad",
+   "eq": [
+    "\\dot k = (1-\\tau)Ak^{\\alpha}g^{1-\\alpha} - c - (\\delta+n)k,\\qquad g = \\tau y",
+    "\\gamma = \\frac{1}{\\theta}\\left((1-\\tau)\\,\\alpha A\\left(\\frac{g}{k}\\right)^{1-\\alpha} - \\delta - \\rho\\right)",
+    "\\frac{g}{k} = (\\tau A)^{1/\\alpha} \\;\\Rightarrow\\; \\gamma = \\frac{1}{\\theta}\\left((1-\\tau)\\,\\alpha A^{1/\\alpha}\\tau^{(1-\\alpha)/\\alpha} - \\delta - \\rho\\right)"
+   ],
+   "nota": "θ es la inversa de la elasticidad de sustitución intertemporal y ρ la tasa de descuento, como en el modelo de Ramsey. El término entre paréntesis es el producto marginal del capital después de impuestos.",
+   "p": [
+    "Cada familia es pequeña y toma el gasto público como dado: no percibe que, al invertir, eleva la recaudación y por lo tanto g. Maximiza su utilidad sujeta a una restricción en la que solo dispone de la fracción \\(1-\\tau\\) de lo que produce. La ecuación de Euler vuelve a aparecer: el consumo crece en proporción a la diferencia entre el producto marginal neto del capital después de impuestos y ρ.",
+    "Aquí está lo nuevo respecto del capítulo 2. El impuesto entra multiplicando el rendimiento que guía la decisión de invertir, no solo restando renta disponible. Usando la restricción del gobierno, la razón g/k queda fija por τ y A, y la tasa de crecimiento resulta una función de constantes. Como en el modelo AK, el consumo es siempre proporcional al capital, g crece a la misma tasa que k y el modelo no tiene transición.",
+    "La intuición del crecimiento endógeno es la misma que en el capítulo 2, ahora con ahorro elegido: cuando una familia compra una unidad de capital, el ingreso nacional sube, el impuesto convierte parte de ese aumento en recaudación y la recaudación financia más g. Es como si el insumo público fuera otro factor acumulable, y como hay rendimientos constantes en k y g conjuntamente, la función de producción «ha pasado a ser AK»."
+   ]
+  },
+  {
+   "t": "La solución de mercado",
+   "eq": [
+    "(1-\\tau)\\,\\alpha Ak^{\\alpha-1}g^{1-\\alpha} = r + \\delta"
+   ],
+   "p": [
+    "En la versión con mercados, las empresas maximizan beneficios netos de impuestos y pagan por el capital un alquiler R igual al tipo de interés real más la depreciación. La maximización iguala el producto marginal neto de impuestos con ese alquiler. Llevando esta condición a la ecuación de Euler de los consumidores se obtiene exactamente la misma tasa de crecimiento que con familias productoras, y al usar la restricción del gobierno se llega a la misma fórmula final. Igual que en el capítulo 5, mercado y familias productoras coinciden; la diferencia aparecerá con el planificador."
+   ]
+  },
+  {
+   "t": "El tamaño del Estado: la U invertida",
+   "eq": [
+    "\\tau^* = 1-\\alpha",
+    "\\gamma_{max} = \\frac{1}{\\theta}\\left(\\alpha^2 A^{1/\\alpha}(1-\\alpha)^{(1-\\alpha)/\\alpha} - \\rho - \\delta\\right)"
+   ],
+   "p": [
+    "Por la restricción del gobierno, τ es también el peso del sector público, g/y. Si τ es cero, el Estado no provee bienes públicos, el rendimiento de la inversión privada es cero y la tasa de crecimiento es negativa, \\(-(\\rho+\\delta)/\\theta\\). Si τ vale uno, los bienes públicos hacen muy productivo al capital, pero el Estado se queda con la totalidad del producto a través de un impuesto del 100 por ciento y el rendimiento neto vuelve a ser cero. Entre ambos extremos, la relación entre τ y crecimiento tiene forma de U invertida.",
+    "El máximo está en \\(\\tau^* = 1-\\alpha\\): el Estado debe tener el tamaño que tendría ese insumo si fuera privado y se pagara en un mercado competitivo. Sala-i-Martin lo explica con una máquina de galletas: si el gobierno mete 3 galletas y saca 6, es un negocio extraordinario y conviene seguir; si mete 3 y saca 2, conviene reducir. Lo eficiente es alimentar la máquina hasta que el producto marginal de g sea igual a uno, y esa condición lleva justamente a \\(\\tau = 1-\\alpha\\).",
+    "El autor advierte en una nota que, con Cobb-Douglas y utilidad de elasticidad constante, maximizar el crecimiento equivale a maximizar la utilidad, pero que esa equivalencia no es cierta en general. Lectura propia: el valor de \\(\\tau^*\\) es el mismo que con ahorro constante; lo que cambia es el canal por el que el impuesto frena el crecimiento, y eso es lo que separa al mercado del planificador."
+   ]
+  },
+  {
+   "t": "El planificador y la ineficiencia del mercado",
+   "eq": [
+    "\\dot k = Ak^{\\alpha}g^{1-\\alpha} - c - (\\delta+n)k - g",
+    "\\gamma_{planif} = \\frac{1}{\\theta}\\left(\\alpha A^{1/\\alpha}(1-\\alpha)^{(1-\\alpha)/\\alpha} - \\rho - \\delta\\right)"
+   ],
+   "p": [
+    "A diferencia del modelo AK, el planificador no coincide con el mercado. Maximiza la misma utilidad sujeto solo a la restricción de recursos: lo producido se reparte entre consumo, inversión y gasto público. Su condición para g fija el tamaño eficiente del gasto, con producto marginal de g igual a uno. Pero al decidir cuánto invertir mira el producto marginal social del capital, no el neto de impuestos.",
+    "Comparando con la tasa máxima del equilibrio competitivo, la única diferencia es que en esta aparece un α adicional multiplicando el rendimiento. Como \\(1-\\tau^* = \\alpha < 1\\), los agentes privados, que miran el rendimiento después de impuestos, invierten menos de lo óptimo, y la economía de mercado crece menos para todo τ. La necesidad de financiar un gasto «¡deseable y productivo!» con impuestos distorsionadores lleva a un equilibrio subóptimo.",
+    "Aquí el autor marca la diferencia con el capítulo 2. Allí el gobierno afectaba el crecimiento solo porque reducía la renta disponible, y si se reemplazara el impuesto a la renta por uno de suma fija el ahorro y la inversión no cambiarían. Con ahorro óptimo, en cambio, un impuesto de suma fija deja intacto el producto marginal del capital después de impuestos, de modo que la inversión y el crecimiento serían mayores que con un impuesto a la renta."
+   ]
+  },
+  {
+   "t": "Bienes públicos en la utilidad y lo que queda por contrastar",
+   "p": [
+    "Si el bien público entra en la utilidad en lugar de la producción, desaparece el lado bueno del trade-off: más gasto ya no aumenta la productividad de las empresas sino la felicidad de las familias, mientras el efecto perjudicial de los impuestos sigue ahí. Una mayor provisión reduce el crecimiento de manera no ambigua. Sala-i-Martin aclara que eso no significa que el gasto sea malo: hay que comparar la utilidad perdida por crecer menos con la ganada por disponer de un bien público deseable.",
+    "El capítulo es puramente teórico y no presenta estimaciones. Lectura propia: deja hipótesis contrastables claras, como una relación en forma de U invertida entre gasto público productivo y crecimiento, una relación negativa entre gasto de consumo público y crecimiento, y un efecto sobre la inversión que depende de cuán distorsionadores sean los impuestos que financian el gasto. Separar gasto productivo de gasto que solo da utilidad es la condición previa para cualquiera de esas pruebas."
+   ]
+  }
+ ],
+ "claves": [
+  "Con ahorro óptimo, el impuesto a la renta reduce el producto marginal neto del capital, que es lo que guía la inversión: es el canal ausente en el modelo con ahorro constante.",
+  "Como g crece con la recaudación y por lo tanto con k, la tecnología de Barro es un AK camuflado, sin transición y con crecimiento constante.",
+  "La relación entre tamaño del Estado y crecimiento es una U invertida con máximo en \\(\\tau^* = 1-\\alpha\\), donde el producto marginal de g es igual a uno.",
+  "El planificador crece más que el mercado para todo τ, porque mira el rendimiento social del capital y no el neto de impuestos.",
+  "Un impuesto de suma fija no reduciría la rentabilidad marginal de invertir y daría más inversión y crecimiento que un impuesto a la renta.",
+  "Si el bien público solo da utilidad, más gasto reduce el crecimiento sin ambigüedad, aunque eso no implica que sea malo en términos de bienestar."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuál es la lección principal del capítulo sobre el tamaño del gobierno?",
+    "en": "What is the chapter's main lesson on government size?"
+   },
+   "op": {
+    "es": [
+     "Que el gasto público nunca es productivo y conviene reducirlo a cero",
+     "Que aun con gasto productivo hay que limitarlo porque se financia con impuestos distorsionadores",
+     "Que el tamaño del gobierno no afecta la tasa de crecimiento de largo plazo",
+     "Que el gobierno debería financiarse siempre con déficit para no distorsionar"
+    ],
+    "en": [
+     "That public spending is never productive and should be cut to zero",
+     "That even productive spending must be limited because it is financed by distortionary taxes",
+     "That government size does not affect long-run growth",
+     "That government should always run deficits to avoid distortions"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los impuestos distorsionadores reducen la rentabilidad privada y, con ella, el crecimiento.",
+    "en": "Distortionary taxes reduce private returns and, with them, growth."
+   },
+   "id": "crec-teoria-12-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué canal aparece con ahorro óptimo que no estaba con ahorro constante?",
+    "en": "What channel appears with optimal saving that was absent with constant saving?"
+   },
+   "op": {
+    "es": [
+     "La reducción de la renta disponible de las familias",
+     "El efecto de escala del tamaño de la población",
+     "La congestión de las carreteras por exceso de camiones",
+     "La caída del producto marginal del capital después de impuestos"
+    ],
+    "en": [
+     "The reduction of households' disposable income",
+     "The scale effect of population size",
+     "Road congestion from too many trucks",
+     "The fall in the after-tax marginal product of capital"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El impuesto entra en la ecuación de Euler multiplicando el rendimiento de invertir.",
+    "en": "The tax enters the Euler equation multiplying the return to investing."
+   },
+   "id": "crec-teoria-12-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el modelo de Barro genera crecimiento endógeno?",
+    "en": "Why does Barro's model generate endogenous growth?"
+   },
+   "op": {
+    "es": [
+     "Porque al aumentar k sube la recaudación y g crece al mismo ritmo, como en un AK",
+     "Porque supone progreso técnico exógeno financiado por el gobierno",
+     "Porque el gasto público es un stock que se acumula sin depreciación",
+     "Porque las familias ahorran una fracción fija de la renta disponible"
+    ],
+    "en": [
+     "Because raising k raises revenue and g grows at the same pace, as in AK",
+     "Because it assumes exogenous technical progress funded by government",
+     "Because public spending is a stock accumulated without depreciation",
+     "Because households save a fixed fraction of disposable income"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con rendimientos constantes en k y g conjuntamente, la producción se vuelve AK.",
+    "en": "With constant returns to k and g jointly, output becomes AK."
+   },
+   "id": "crec-teoria-12-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasa con el crecimiento si τ = 0 o τ = 1?",
+    "en": "What happens to growth if τ = 0 or τ = 1?"
+   },
+   "op": {
+    "es": [
+     "Es máximo en ambos casos porque no hay distorsión",
+     "Es positivo con τ = 0 y negativo con τ = 1",
+     "Es negativo en ambos, porque el rendimiento neto del capital es cero",
+     "Es igual al del modelo AK sin gobierno en ambos casos"
+    ],
+    "en": [
+     "It is maximal in both cases since there is no distortion",
+     "It is positive with τ = 0 and negative with τ = 1",
+     "It is negative in both, because the net return to capital is zero",
+     "It equals the no-government AK model in both cases"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Sin bien público el capital no rinde; con τ = 1 el Estado se queda con todo el producto.",
+    "en": "Without the public good capital yields nothing; with τ = 1 the state takes all output."
+   },
+   "id": "crec-teoria-12-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué condición de eficiencia lleva a τ* = 1 − α?",
+    "en": "What efficiency condition leads to τ* = 1 − α?"
+   },
+   "op": {
+    "es": [
+     "Que el producto marginal del capital sea igual a uno",
+     "Que el producto marginal de g sea igual a uno",
+     "Que el gasto público sea igual al consumo privado",
+     "Que el impuesto iguale la tasa de descuento ρ"
+    ],
+    "en": [
+     "That the marginal product of capital equals one",
+     "That the marginal product of g equals one",
+     "That public spending equals private consumption",
+     "That the tax equals the discount rate ρ"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la máquina de galletas: meter galletas mientras devuelva más de lo que entra.",
+    "en": "It is the cookie machine: feed it while it returns more than goes in."
+   },
+   "id": "crec-teoria-12-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el equilibrio competitivo crece menos que el planificador?",
+    "en": "Why does the competitive equilibrium grow less than the planner?"
+   },
+   "op": {
+    "es": [
+     "Porque el planificador elige un gasto público mayor que 1 − α",
+     "Porque en el mercado las empresas tienen poder monopólico",
+     "Porque el planificador ignora la restricción de recursos",
+     "Porque los privados invierten mirando el rendimiento neto de impuestos"
+    ],
+    "en": [
+     "Because the planner chooses public spending above 1 − α",
+     "Because in the market firms have monopoly power",
+     "Because the planner ignores the resource constraint",
+     "Because private agents invest looking at the after-tax return"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con 1 − τ* = α, el rendimiento privado es α veces el social.",
+    "en": "With 1 − τ* = α, the private return is α times the social one."
+   },
+   "id": "crec-teoria-12-q6"
+  },
+  {
+   "q": {
+    "es": "Con ahorro óptimo, ¿qué pasaría si el impuesto a la renta se reemplaza por uno de suma fija?",
+    "en": "With optimal saving, what would happen if the income tax were replaced by a lump-sum tax?"
+   },
+   "op": {
+    "es": [
+     "La inversión y el crecimiento serían mayores",
+     "La inversión no cambiaría porque la renta disponible es la misma",
+     "El crecimiento caería porque baja la recaudación",
+     "El gasto público dejaría de ser productivo"
+    ],
+    "en": [
+     "Investment and growth would be higher",
+     "Investment would not change because disposable income is the same",
+     "Growth would fall because revenue declines",
+     "Public spending would stop being productive"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El impuesto de suma fija no reduce la rentabilidad marginal de invertir; la segunda opción describe el modelo con ahorro constante.",
+    "en": "A lump-sum tax does not reduce the marginal return to investing; the second option describes the constant-saving model."
+   },
+   "id": "crec-teoria-12-q7"
+  },
+  {
+   "q": {
+    "es": "Si el bien público entra en la utilidad y no en la producción, ¿qué ocurre?",
+    "en": "If the public good enters utility rather than production, what happens?"
+   },
+   "op": {
+    "es": [
+     "Más gasto aumenta el crecimiento sin ambigüedad",
+     "El tamaño óptimo sigue siendo τ* = 1 − α",
+     "Más gasto reduce el crecimiento sin ambigüedad, aunque no sea malo",
+     "El impuesto deja de ser distorsionador"
+    ],
+    "en": [
+     "More spending raises growth unambiguously",
+     "The optimal size remains τ* = 1 − α",
+     "More spending reduces growth unambiguously, though it is not bad",
+     "The tax stops being distortionary"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Desaparece el beneficio productivo y queda solo el costo de los impuestos; hay que comparar utilidades.",
+    "en": "The productive benefit disappears and only the tax cost remains; utilities must be compared."
+   },
+   "id": "crec-teoria-12-q8"
+  }
+ ],
+ "palabras": 1344,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un impuesto a la renta frena el crecimiento cuando las familias eligen cuánto ahorrar?",
+    "en": "Why does an income tax slow growth when households choose how much to save?"
+   },
+   "a": {
+    "es": "Porque reduce el producto marginal del capital después de impuestos, que es el rendimiento que entra en la ecuación de Euler y guía la inversión. Así lo muestra Sala-i-Martin (cap. 6).",
+    "en": "Because it lowers the after-tax marginal product of capital, which is the return in the Euler equation that guides investment. Sala-i-Martin shows this (ch. 6)."
+   },
+   "id": "crec-teoria-12-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué distingue a un bien público puro, a uno rival y excluible y a uno sujeto a congestión?",
+    "en": "What distinguishes a pure public good, a rival and excludable one, and one subject to congestion?"
+   },
+   "a": {
+    "es": "El puro, como el faro, lo usan todos a la vez sin exclusión; el rival se reparte entre usuarios, como la comida escolar; el congestionable, como una calle o la defensa, rinde menos cuando más lo usan. Así los clasifica Sala-i-Martin (cap. 6).",
+    "en": "The pure one, like a lighthouse, is used by all at once without exclusion; the rival one is divided among users, like school meals; the congestible one, like a street or defense, yields less when more use it. Sala-i-Martin classifies them this way (ch. 6)."
+   },
+   "id": "crec-teoria-12-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué tasa impositiva maximiza el crecimiento cuando el gasto público es un insumo productivo Cobb-Douglas?",
+    "en": "What tax rate maximizes growth when public spending is a Cobb-Douglas productive input?"
+   },
+   "a": {
+    "es": "τ* = 1 − α, la participación del insumo público en la producción, que es donde su producto marginal es igual a uno. Así lo deriva Sala-i-Martin (cap. 6).",
+    "en": "τ* = 1 − α, the public input's share in production, which is where its marginal product equals one. Sala-i-Martin derives it (ch. 6)."
+   },
+   "id": "crec-teoria-12-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Es óptimo el equilibrio de mercado cuando el gasto productivo se financia con un impuesto a la renta?",
+    "en": "Is the market equilibrium optimal when productive spending is financed with an income tax?"
+   },
+   "a": {
+    "es": "No: los privados invierten según el rendimiento neto de impuestos, menor que el social, y la economía crece menos que con un planificador para todo τ. Así lo concluye Sala-i-Martin (cap. 6).",
+    "en": "No: private agents invest according to the after-tax return, lower than the social one, and the economy grows less than under a planner for every τ. Sala-i-Martin concludes this (ch. 6)."
+   },
+   "id": "crec-teoria-12-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué importa la forma del impuesto, y no solo su monto, para el crecimiento?",
+    "en": "Why does the form of the tax, not just its amount, matter for growth?"
+   },
+   "a": {
+    "es": "Porque un impuesto de suma fija no toca la rentabilidad marginal de invertir y dejaría más inversión y crecimiento que uno a la renta; con ahorro constante, en cambio, daría lo mismo. Así lo explica Sala-i-Martin (cap. 6).",
+    "en": "Because a lump-sum tax leaves the marginal return to investing untouched and would yield more investment and growth than an income tax; with constant saving it would make no difference. Sala-i-Martin explains it (ch. 6)."
+   },
+   "id": "crec-teoria-12-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Maximizar el crecimiento es lo mismo que maximizar el bienestar?",
+    "en": "Is maximizing growth the same as maximizing welfare?"
+   },
+   "a": {
+    "es": "No en general: coinciden con Cobb-Douglas y utilidad de elasticidad constante, y si el bien público da utilidad, menos crecimiento puede compensarse con más bienestar directo. Así lo advierte Sala-i-Martin (cap. 6).",
+    "en": "Not in general: they coincide with Cobb-Douglas and constant-elasticity utility, and if the public good yields utility, lower growth can be offset by more direct welfare. Sala-i-Martin warns about this (ch. 6)."
+   },
+   "id": "crec-teoria-12-t6"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué un modelo con gasto público productivo puede comportarse como un modelo AK?",
+    "en": "Why can a model with productive public spending behave like an AK model?"
+   },
+   "a": {
+    "es": "Porque con presupuesto equilibrado el gasto crece con la recaudación, y por lo tanto con el capital, y hay rendimientos constantes en el capital y el insumo público juntos. Así lo muestra Sala-i-Martin (cap. 6).",
+    "en": "Because with a balanced budget spending grows with revenue, and hence with capital, and there are constant returns to capital and the public input together. Sala-i-Martin shows this (ch. 6)."
+   },
+   "id": "crec-teoria-12-t7"
+  }
+ ]
+}

@@ -1,0 +1,406 @@
+{
+ "id": "crec-teoria-09",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "El modelo de Ramsey: cuando las familias eligen cuánto ahorrar",
+ "bajada": "El capítulo 3 de los Apuntes de Sala-i-Martin: la ecuación de Euler, la condición de transversalidad, el punto de silla, por qué el mercado replica al planificador, cómo se mueve la tasa de ahorro y de dónde sale la regresión de convergencia.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 3: «Crecimiento neoclásico: el modelo de Ramsey»",
+ "intro": "Los dos primeros capítulos de los Apuntes trabajaron con un supuesto cómodo y poco justificado: las familias ahorran una fracción constante de su renta, y además producen y consumen a la vez, como Robinson Crusoe. El capítulo 3 levanta ambos supuestos. Las familias eligen de forma óptima la trayectoria de su consumo, y las empresas, separadas de ellas, alquilan trabajo y capital en mercados competitivos. Es el modelo de equilibrio general de Ramsey (1928), perfeccionado por Cass (1965) y Koopmans (1965). La pregunta es doble: ¿cambian las conclusiones del modelo de Solow-Swan cuando el ahorro deja de ser una constante arbitraria?, y ¿es bueno el equilibrio que alcanza el mercado? Sala-i-Martin responde que el estado estacionario sigue sin crecimiento per cápita, que el mercado reproduce exactamente la solución de un planificador benevolente y que, de paso, la economía nunca puede caer en la zona de ineficiencia dinámica.",
+ "secciones": [
+  {
+   "t": "Familias que viven para siempre",
+   "eq": [
+    "U(0) = \\int_0^{\\infty} e^{-(\\rho-n)t}\\,\\frac{c_t^{1-\\theta}-1}{1-\\theta}\\,dt",
+    "\\dot b = w + (r-n)\\,b - c"
+   ],
+   "nota": "ρ es la tasa de descuento, θ > 0 mide la concavidad de la utilidad (el deseo de alisar el consumo), n el crecimiento de la población, b los activos per cápita, w el salario y r el tipo de interés. Cuando θ tiende a uno la utilidad se vuelve logarítmica.",
+   "p": [
+    "Las familias maximizan la suma descontada de la felicidad instantánea de sus miembros desde hoy hasta el infinito. El horizonte infinito parece absurdo, pero Sala-i-Martin, siguiendo a Barro (1974), lo reinterpreta como el de una dinastía: un padre que vive un período y quiere a sus hijos, aunque descuenta su utilidad a la tasa ρ, se comporta como si tuviera una función de utilidad de infinitos períodos. La tasa de descuento, que Ramsey llamó «éticamente indefendible» porque pensaba en un Estado que pondera más a las generaciones presentes, representa aquí el egoísmo paterno dentro de un mundo de altruismo intergeneracional.",
+    "La función de felicidad es cóncava, lo que expresa el deseo de consumir más o menos lo mismo cada día en vez de pasar hambre todo el mes y organizar una gran fiesta el último. El autor usa la forma de elasticidad intertemporal constante, con θ > 0. Las familias reciben salarios y los intereses de sus activos, que pueden ser negativos si están endeudadas, y reparten esa renta entre consumo y nuevos activos. Para que la utilidad sea finita hace falta que ρ > n."
+   ]
+  },
+  {
+   "t": "La ecuación de Euler y la transversalidad",
+   "eq": [
+    "\\frac{\\dot c}{c} = \\frac{1}{\\theta}\\,(r - \\rho) \\quad\\Longleftrightarrow\\quad \\rho + \\theta\\,\\frac{\\dot c}{c} = r",
+    "\\lim_{t\\to\\infty} b_t\\,\\nu_t = 0"
+   ],
+   "nota": "ν es el multiplicador dinámico del hamiltoniano: el precio implícito que la familia asigna a una unidad adicional de activos.",
+   "p": [
+    "El problema se resuelve con un hamiltoniano en el que el consumo es la variable de control y los activos, la de estado. La condición central es la ecuación de Euler. Escrita como ρ + θ(ċ/c) = r, Sala-i-Martin la lee como una igualdad entre beneficios: a la izquierda, el rendimiento de consumir hoy, que suma la impaciencia ρ y el deseo de alisar el consumo cuando se espera que crezca; a la derecha, el rendimiento del ahorro, el tipo de interés. En el margen, el individuo es indiferente. Cuanto mayor es θ, más tiene que subir r para que la familia acepte una senda de consumo creciente.",
+    "La segunda condición es la de transversalidad. Su intuición se ve mejor con horizonte finito, donde se reduce a que el valor de los activos al morir sea cero: si se dejara algo de valor, se lo podría haber consumido antes y la utilidad habría sido mayor. Ese valor nulo puede deberse a que no queda capital o a que su precio implícito es cero."
+   ]
+  },
+  {
+   "t": "Mercado, Robinson Crusoe y planificador",
+   "eq": [
+    "r + \\delta = f'(k), \\qquad w = f(k) - k\\,f'(k)",
+    "\\dot k = f(k) - c - (\\delta+n)\\,k, \\qquad \\frac{\\dot c}{c} = \\frac{1}{\\theta}\\left(f'(k) - \\delta - \\rho\\right)"
+   ],
+   "p": [
+    "Las empresas competitivas pagan a cada factor su producto marginal, y como no hay riesgo el rendimiento de los activos iguala al del capital neto de depreciación. En una economía cerrada sin gobierno, todo lo que unos prestan lo deben otros, de modo que la deuda neta agregada es nula y el único activo neto es el capital: b = k. Sustituyendo, la restricción de las familias se vuelve idéntica a la de las familias productoras del capítulo 1. Lo que cambia es el consumo: ya no es (1 − s)f(k), sino lo que dicta la ecuación de Euler, que ahora exige un producto marginal mayor para aceptar un consumo creciente.",
+    "Sala-i-Martin compara luego tres soluciones. Robinson Crusoe, que maximiza la misma utilidad sujeto a la restricción física de la economía, llega a las mismas tres condiciones que el mercado. El planificador, un ser fantástico con los mismos objetivos que las familias, que enfrenta solo la restricción de recursos y toma en cuenta todas las externalidades y toda la información, llega a las mismas ecuaciones. Como en este modelo no hay externalidades ni información oculta, el equilibrio competitivo es óptimo: sin interferencia del gobierno, el mercado encuentra la solución del planificador. El autor anticipa que en capítulos posteriores esto deja de valer."
+   ]
+  },
+  {
+   "t": "Diagrama de fases y punto de silla",
+   "eq": [
+    "k^* = \\left(\\frac{\\alpha A}{\\rho+\\delta}\\right)^{\\frac{1}{1-\\alpha}} \\;<\\; k_{oro} = \\left(\\frac{\\alpha A}{\\delta+n}\\right)^{\\frac{1}{1-\\alpha}}"
+   ],
+   "nota": "Para la Cobb-Douglas \\(f(k) = Ak^{\\alpha}\\). La desigualdad vale porque ρ > n y el producto marginal es decreciente.",
+   "p": [
+    "En el plano (k, c), la curva donde el capital no cambia, c = f(k) − (δ + n)k, sube, alcanza su máximo en el capital de la regla de oro y vuelve a caer; por encima de ella el capital disminuye. La curva donde el consumo no cambia es una vertical en k*, donde f'(k*) = ρ + δ, más el eje horizontal; a su derecha el consumo cae y a su izquierda las flechas apuntan hacia el cielo, «como las torres de la Catedral de Burgos». Como ρ > n, k* queda a la izquierda de la regla de oro.",
+    "Hay tres estados estacionarios: el origen, inestable; un punto k** con consumo nulo, estable pero con consumo nulo; y k*, con estabilidad de punto de silla, al que se llega por una única trayectoria estable. Su forma depende de θ: con θ alto las familias, ansiosas por alisar el consumo, se mueven cerca de la curva de inversión neta nula; con θ bajo aceptan consumir poco al principio y acumular mucho. A lo largo de la transición desde abajo, capital, producto y consumo crecen a tasas decrecientes, y el tipo de interés cae.",
+    "¿Por qué la economía elige justo esa trayectoria? Si el consumo inicial es mayor, el capital se agota en un tiempo finito y el consumo tiene que saltar a cero, lo que viola la ecuación de Euler porque el producto marginal del capital tiende a infinito. Si es menor, la economía va hacia k**, donde r** = f'(k**) − δ < n, y la condición de transversalidad no se cumple: se consume demasiado poco y se acaba con demasiado capital."
+   ]
+  },
+  {
+   "t": "Horizonte finito y teorema de la autopista",
+   "p": [
+    "Para mostrar el peso de la transversalidad, el autor fija un horizonte finito T. Las ecuaciones dinámicas y el diagrama de fases son los mismos, pero la condición terminal exige que el capital sea cero en T. La trayectoria estable queda descartada, porque lleva al estado estacionario y nunca al eje vertical; el consumo inicial óptimo es único y mayor. El consumo crece todo el tiempo y el capital dibuja una U invertida, como en el modelo del ciclo vital, pero sin suponer una jubilación. El teorema de la autopista de Dorfman, Samuelson y Solow (1958) agrega que, si T está lejos, lo óptimo es pasar la mayor parte del tiempo cerca del estado estacionario, donde la economía se mueve despacio, y desviarse hacia el capital nulo recién al final."
+   ]
+  },
+  {
+   "t": "La tasa de ahorro en la transición",
+   "eq": [
+    "\\frac{\\rho+\\delta}{\\theta} = \\alpha\\,(n+\\delta) \\;\\Longrightarrow\\; s = 1 - \\frac{c}{y} = \\frac{1}{\\theta}"
+   ],
+   "p": [
+    "Rehaciendo el diagrama de fases en c/y y k, Sala-i-Martin muestra que la tasa de ahorro cambia de forma monótona: baja a medida que la economía se capitaliza si (ρ + δ)/θ > α(n + δ), sube en el caso contrario y es constante si se cumple la igualdad. El modelo, entonces, no es consistente con un ahorro que primero sube y luego baja, como creen observar algunos investigadores en los países de crecimiento rápido. Y bajo ciertos parámetros el ahorro constante de Solow-Swan es óptimo, lo que lo vuelve menos descabellado de lo que parecía.",
+    "Hay, sin embargo, una diferencia de fondo. En Ramsey el nivel del ahorro lo dictan los parámetros y nunca puede ser tan alto como para llevar el capital más allá de la regla de oro. En Solow-Swan nada impide un ahorro exógeno excesivo y dinámicamente ineficiente, el caso que el capítulo 1 mostraba como inequívocamente malo."
+   ]
+  },
+  {
+   "t": "La regresión de convergencia",
+   "eq": [
+    "\\frac{1}{T}\\left[\\log y_T - \\log y_0\\right] = -\\,\\frac{1-e^{-\\beta T}}{T}\\left[\\log y_0 - \\log y^*\\right]",
+    "\\beta = \\tfrac{1}{2}\\left[\\sqrt{(\\rho-n)^2 + 4h\\mu} - (\\rho - n)\\right], \\qquad \\mu = \\frac{(1-\\alpha)(\\rho+\\delta)}{\\theta}"
+   ],
+   "nota": "Sale de log-linealizar las dos ecuaciones dinámicas alrededor del estado estacionario, como en Sala-i-Martin (1990). h es una constante positiva del apéndice; −β es el valor propio negativo del sistema, y la transversalidad anula el término asociado al positivo.",
+   "p": [
+    "La sección 3.8 deriva la ecuación que sostiene el trabajo empírico sobre convergencia. Como en Solow-Swan, si todos los países comparten tasa de descuento, elasticidad intertemporal, participación del capital, depreciación y crecimiento de la población, una regresión de corte transversal del crecimiento de la renta sobre la renta inicial debería dar un coeficiente negativo: los países con poco capital tienen un producto marginal alto y crecen más rápido. Si convergen a estados estacionarios distintos, esa relación puede desaparecer, y vuelve a aparecer la convergencia condicional. El capítulo no presenta estimaciones: remite al capítulo 10, donde los estados de Estados Unidos, las prefecturas de Japón y regiones europeas convergen como predice la ecuación, y donde una muestra amplia de países también lo hace al mantener constantes los determinantes del estado estacionario. Lectura propia: a diferencia de Solow-Swan, aquí la velocidad β depende también de las preferencias, ρ y θ, de modo que la velocidad estimada informa sobre parámetros que el modelo de ahorro constante no tenía."
+   ]
+  }
+ ],
+ "claves": [
+  "Con familias que optimizan, la restricción de recursos es la misma que en Solow-Swan, pero el consumo lo dicta la ecuación de Euler: \\(\\dot c/c = (f'(k) - \\delta - \\rho)/\\theta\\).",
+  "La ecuación de Euler iguala el rendimiento de consumir hoy (impaciencia más deseo de alisar el consumo) con el del ahorro, el tipo de interés.",
+  "Sin externalidades, el equilibrio competitivo coincide con la solución de Robinson Crusoe y con la del planificador: es óptimo.",
+  "El estado estacionario k* cumple f'(k*) = ρ + δ; como ρ > n, queda por debajo de la regla de oro y la economía nunca es dinámicamente ineficiente.",
+  "La economía elige la única trayectoria de punto de silla: las demás violan la ecuación de Euler o la condición de transversalidad.",
+  "La tasa de ahorro cambia de forma monótona en la transición, y la log-linealización da la regresión de convergencia condicional."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cómo justifica Sala-i-Martin el horizonte infinito de las familias en el modelo de Ramsey?",
+    "en": "How does Sala-i-Martin justify the households' infinite horizon in the Ramsey model?"
+   },
+   "op": {
+    "es": [
+     "Como dinastías unidas por el altruismo hacia los hijos, siguiendo a Barro",
+     "Como una aproximación a vidas muy largas sin herencias",
+     "Como un supuesto técnico sin interpretación económica",
+     "Como el horizonte de un Estado que pondera igual a todas las generaciones"
+    ],
+    "en": [
+     "As dynasties linked by altruism toward children, following Barro",
+     "As an approximation to very long lives without bequests",
+     "As a technical assumption with no economic interpretation",
+     "As the horizon of a state weighting all generations equally"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un padre que quiere a sus hijos y descuenta su utilidad actúa como si tuviera una utilidad de infinitos períodos.",
+    "en": "A parent who loves his children and discounts their utility acts as if he had an infinite-period utility function."
+   },
+   "id": "crec-teoria-09-q1"
+  },
+  {
+   "q": {
+    "es": "En la ecuación de Euler, ¿qué pasa con el crecimiento del consumo si sube θ, dado el tipo de interés?",
+    "en": "In the Euler equation, what happens to consumption growth if θ rises, given the interest rate?"
+   },
+   "op": {
+    "es": [
+     "Aumenta, porque las familias son más pacientes",
+     "Disminuye, porque las familias quieren alisar más el consumo",
+     "No cambia, porque solo depende de r − ρ",
+     "Se vuelve negativo siempre"
+    ],
+    "en": [
+     "It rises, because households are more patient",
+     "It falls, because households want to smooth consumption more",
+     "It does not change, since it only depends on r − ρ",
+     "It always becomes negative"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "ċ/c = (r − ρ)/θ: con θ alto hace falta más rendimiento para aceptar una senda creciente.",
+    "en": "ċ/c = (r − ρ)/θ: with high θ a larger return is needed to accept a rising path."
+   },
+   "id": "crec-teoria-09-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué en el modelo de Ramsey el equilibrio de mercado coincide con la solución del planificador?",
+    "en": "Why does the market equilibrium coincide with the planner's solution in the Ramsey model?"
+   },
+   "op": {
+    "es": [
+     "Porque el gobierno fija el tipo de interés",
+     "Porque las familias no ahorran",
+     "Porque no hay externalidades ni información que los individuos ignoren, y objetivos y restricciones son los mismos",
+     "Porque la tecnología es AK"
+    ],
+    "en": [
+     "Because the government sets the interest rate",
+     "Because households do not save",
+     "Because there are no externalities or information individuals ignore, and objectives and constraints are the same",
+     "Because technology is AK"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El planificador internaliza todo, pero aquí no hay nada que internalizar.",
+    "en": "The planner internalizes everything, but here there is nothing to internalize."
+   },
+   "id": "crec-teoria-09-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué condición define el capital de estado estacionario k* en el modelo de Ramsey?",
+    "en": "What condition defines steady-state capital k* in the Ramsey model?"
+   },
+   "op": {
+    "es": [
+     "f'(k*) = δ + n",
+     "f(k*) = (δ + n)k*",
+     "f'(k*) = n",
+     "f'(k*) = ρ + δ"
+    ],
+    "en": [
+     "f'(k*) = δ + n",
+     "f(k*) = (δ + n)k*",
+     "f'(k*) = n",
+     "f'(k*) = ρ + δ"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es la vertical donde el consumo no cambia; como ρ > n, k* queda a la izquierda de la regla de oro.",
+    "en": "It is the vertical line where consumption is constant; since ρ > n, k* lies left of the golden rule."
+   },
+   "id": "crec-teoria-09-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué se descartan las trayectorias que empiezan con un consumo menor que el de la trayectoria estable?",
+    "en": "Why are paths that start with consumption below the stable path ruled out?"
+   },
+   "op": {
+    "es": [
+     "Porque agotan el capital en un tiempo finito",
+     "Porque llevan a k**, donde r < n, y violan la condición de transversalidad",
+     "Porque violan la restricción de recursos",
+     "Porque hacen la utilidad infinita"
+    ],
+    "en": [
+     "Because they exhaust capital in finite time",
+     "Because they lead to k**, where r < n, and violate the transversality condition",
+     "Because they violate the resource constraint",
+     "Because they make utility infinite"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las que empiezan por encima agotan el capital y violan Euler; las de abajo acumulan demasiado capital.",
+    "en": "Those starting above exhaust capital and violate Euler; those below accumulate too much capital."
+   },
+   "id": "crec-teoria-09-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué dice el teorema de la autopista de Dorfman, Samuelson y Solow?",
+    "en": "What does the Dorfman, Samuelson and Solow turnpike theorem say?"
+   },
+   "op": {
+    "es": [
+     "Que con horizonte finito la economía nunca se acerca al estado estacionario",
+     "Que el capital debe crecer siempre",
+     "Que el consumo debe ser constante",
+     "Que si el horizonte es lejano, lo óptimo es pasar casi todo el tiempo cerca del estado estacionario"
+    ],
+    "en": [
+     "That with a finite horizon the economy never approaches the steady state",
+     "That capital must always grow",
+     "That consumption must be constant",
+     "That if the horizon is distant, it is optimal to spend most of the time near the steady state"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Cerca del estado estacionario la economía se mueve despacio; recién al final se desvía hacia capital nulo.",
+    "en": "Near the steady state the economy moves slowly; only at the end does it head toward zero capital."
+   },
+   "id": "crec-teoria-09-q6"
+  },
+  {
+   "q": {
+    "es": "Según el capítulo, ¿cómo se comporta la tasa de ahorro durante la transición de Ramsey?",
+    "en": "According to the chapter, how does the saving rate behave along the Ramsey transition?"
+   },
+   "op": {
+    "es": [
+     "Cambia de forma monótona, y es constante si (ρ + δ)/θ = α(n + δ)",
+     "Primero sube y después baja",
+     "Es siempre constante",
+     "Es siempre mayor que la de la regla de oro"
+    ],
+    "en": [
+     "It changes monotonically, and is constant if (ρ + δ)/θ = α(n + δ)",
+     "It first rises and then falls",
+     "It is always constant",
+     "It is always above the golden-rule rate"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El modelo no admite un ahorro con forma de joroba; con esa igualdad, s = 1/θ.",
+    "en": "The model does not allow a hump-shaped saving rate; with that equality, s = 1/θ."
+   },
+   "id": "crec-teoria-09-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué predice la regresión de convergencia derivada en el capítulo para países con parámetros distintos?",
+    "en": "What does the chapter's convergence regression predict for countries with different parameters?"
+   },
+   "op": {
+    "es": [
+     "Siempre un coeficiente negativo de la renta inicial",
+     "Siempre un coeficiente positivo",
+     "Que puede no haber relación entre crecimiento y renta inicial: solo hay convergencia condicional",
+     "Que todos crecen a la misma tasa en la transición"
+    ],
+    "en": [
+     "Always a negative coefficient on initial income",
+     "Always a positive coefficient",
+     "That there may be no relation between growth and initial income: only conditional convergence holds",
+     "That all grow at the same rate during the transition"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El coeficiente negativo se espera cuando todos convergen al mismo estado estacionario.",
+    "en": "The negative coefficient is expected when all converge to the same steady state."
+   },
+   "id": "crec-teoria-09-q8"
+  }
+ ],
+ "palabras": 1440,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué expresa la ecuación de Euler del consumo?",
+    "en": "What does the consumption Euler equation express?"
+   },
+   "a": {
+    "es": "Que en el margen el rendimiento de consumir hoy, la impaciencia ρ más θ por el crecimiento esperado del consumo, iguala al del ahorro, el tipo de interés: ċ/c = (r − ρ)/θ. Así la interpreta Sala-i-Martin (cap. 3).",
+    "en": "That at the margin the return to consuming today, impatience ρ plus θ times expected consumption growth, equals the return to saving, the interest rate: ċ/c = (r − ρ)/θ. So Sala-i-Martin interprets it (ch. 3)."
+   },
+   "id": "crec-teoria-09-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué exige la condición de transversalidad?",
+    "en": "What does the transversality condition require?"
+   },
+   "a": {
+    "es": "Que el valor de los activos al final del horizonte, cantidad por precio implícito, sea cero: dejar algo valioso sin consumir no puede ser óptimo. Sala-i-Martin (cap. 3) muestra que es la que fija el consumo inicial y descarta las trayectorias que acumulan demasiado capital.",
+    "en": "That the value of assets at the end of the horizon, quantity times shadow price, be zero: leaving something valuable unconsumed cannot be optimal. Sala-i-Martin (ch. 3) shows it pins down initial consumption and rules out paths that accumulate too much capital."
+   },
+   "id": "crec-teoria-09-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Es óptimo el equilibrio competitivo en el modelo neoclásico de crecimiento?",
+    "en": "Is the competitive equilibrium optimal in the neoclassical growth model?"
+   },
+   "a": {
+    "es": "Sí: sin externalidades ni información oculta, el mercado llega a las mismas ecuaciones que Robinson Crusoe y que un planificador benevolente con los mismos objetivos. Lo demuestra Sala-i-Martin (cap. 3), que advierte que en otros modelos esto falla.",
+    "en": "Yes: with no externalities or hidden information, the market reaches the same equations as Robinson Crusoe and as a benevolent planner with the same objectives. Sala-i-Martin proves it (ch. 3), warning that this fails in other models."
+   },
+   "id": "crec-teoria-09-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una economía con familias optimizadoras no puede ahorrar en exceso?",
+    "en": "Why can't an economy with optimizing households oversave?"
+   },
+   "a": {
+    "es": "Porque el estado estacionario cumple f'(k*) = ρ + δ y la utilidad acotada exige ρ > n, de modo que el capital queda por debajo de la regla de oro, donde f'(k) = δ + n. Así lo muestra Sala-i-Martin (cap. 3), en contraste con el ahorro exógeno de Solow-Swan.",
+    "en": "Because the steady state satisfies f'(k*) = ρ + δ and bounded utility requires ρ > n, so capital stays below the golden rule, where f'(k) = δ + n. So Sala-i-Martin shows (ch. 3), in contrast with Solow-Swan's exogenous saving."
+   },
+   "id": "crec-teoria-09-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué significa que el estado estacionario tenga estabilidad de punto de silla?",
+    "en": "What does saddle-path stability of the steady state mean?"
+   },
+   "a": {
+    "es": "Que existe una única trayectoria que converge a él; fuera de ella la economía diverge. En el modelo de Ramsey las demás trayectorias violan la ecuación de Euler o la transversalidad, así que la economía elige la estable. Lo explica Sala-i-Martin (cap. 3).",
+    "en": "That a single path converges to it; off that path the economy diverges. In the Ramsey model the other paths violate the Euler equation or transversality, so the economy picks the stable one. Sala-i-Martin explains it (ch. 3)."
+   },
+   "id": "crec-teoria-09-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Es razonable suponer una tasa de ahorro constante en un modelo de crecimiento?",
+    "en": "Is it reasonable to assume a constant saving rate in a growth model?"
+   },
+   "a": {
+    "es": "Bajo ciertos parámetros sí: si (ρ + δ)/θ = α(n + δ), el ahorro óptimo es constante e igual a 1/θ, y en general cambia de forma monótona, nunca en forma de joroba. Lo demuestra Sala-i-Martin (cap. 3).",
+    "en": "Under certain parameters, yes: if (ρ + δ)/θ = α(n + δ), optimal saving is constant and equal to 1/θ, and in general it changes monotonically, never hump-shaped. Sala-i-Martin proves it (ch. 3)."
+   },
+   "id": "crec-teoria-09-t6"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué se estima en una regresión de convergencia y de dónde sale?",
+    "en": "What does a convergence regression estimate and where does it come from?"
+   },
+   "a": {
+    "es": "El crecimiento medio de la renta se regresa sobre la renta inicial; log-linealizando el modelo, el coeficiente es −(1 − e^(−βT))/T y debería ser negativo entre economías con el mismo estado estacionario. Así lo deriva Sala-i-Martin (cap. 3), que remite la evidencia a las regiones del capítulo 10.",
+    "en": "Average income growth is regressed on initial income; log-linearizing the model, the coefficient is −(1 − e^(−βT))/T and should be negative among economies with the same steady state. So Sala-i-Martin derives it (ch. 3), deferring the evidence on regions to chapter 10."
+   },
+   "id": "crec-teoria-09-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué enseña el teorema de la autopista sobre la planificación a largo plazo?",
+    "en": "What does the turnpike theorem teach about long-horizon planning?"
+   },
+   "a": {
+    "es": "Que con un horizonte finito pero lejano conviene ir rápido a las cercanías del estado estacionario, quedarse allí casi todo el tiempo y recién al final desacumular capital. Sala-i-Martin (cap. 3) lo presenta a partir de Dorfman, Samuelson y Solow (1958).",
+    "en": "That with a finite but distant horizon it pays to move quickly near the steady state, stay there most of the time and only at the end run down capital. Sala-i-Martin (ch. 3) presents it following Dorfman, Samuelson and Solow (1958)."
+   },
+   "id": "crec-teoria-09-t8"
+  }
+ ]
+}

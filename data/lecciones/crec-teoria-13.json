@@ -1,0 +1,382 @@
+{
+ "id": "crec-teoria-13",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Aprender invirtiendo: el modelo de Romer con optimización",
+ "bajada": "El capítulo 7 de los Apuntes de Sala-i-Martin: cómo el aprendizaje por la práctica y el desbordamiento del conocimiento generan un AK agregado, por qué el mercado crece menos que el planificador, qué subsidios corrigen la brecha y qué dicen los datos sobre los efectos de escala.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 7: «El aprendizaje por la práctica y el desbordamiento del conocimiento»",
+ "intro": "En el capítulo 2, Sala-i-Martin ya había mostrado que una externalidad del capital puede convertir una función neoclásica en un AK, pero con una tasa de ahorro fija: la tasa de crecimiento salía de multiplicar ese ahorro por la productividad. Faltaba lo central para juzgar la política económica: qué pasa cuando las familias eligen cuánto ahorrar y las empresas cuánto invertir, mirando precios. El capítulo 7 retoma el artículo seminal de Romer (1986), que dio inicio a la literatura del crecimiento endógeno, y lo resuelve con agentes que optimizan. La respuesta tiene tres partes. La economía de mercado crece a una tasa constante y sin transición, como en el AK; crece menos de lo socialmente óptimo, porque nadie cobra por el conocimiento que derrama; y su tasa de crecimiento depende del tamaño de la población, una predicción fuerte que el autor contrasta con la historia de la posguerra y con la de un millón de años.",
+ "secciones": [
+  {
+   "t": "Dos supuestos: aprender invirtiendo y derramar lo aprendido",
+   "eq": [
+    "Y_{j} = K_{j}^{\\alpha}\\,(\\kappa L_{j})^{1-\\alpha},\\qquad A = \\kappa = \\sum_{j} K_{j}"
+   ],
+   "nota": "K y L son el capital y el trabajo de la empresa j; κ es el capital agregado de la economía, que hace las veces de nivel tecnológico. El trabajo agregado L se supone constante.",
+   "p": [
+    "El punto de partida es una función de producción neoclásica en la que la tecnología potencia el trabajo. Lo nuevo es de dónde sale esa tecnología. El primer supuesto viene de Arrow (1962), retomado por Sheshinski (1967): el conocimiento es un subproducto de la experiencia, y una buena medida de la experiencia es la inversión, porque cada máquina nueva modifica el entorno en que se produce. El autor cita también a Schmookler (1966): las patentes de una empresa están muy correlacionadas con su inversión en capital físico. Sala-i-Martin sugiere que más que «aprendizaje por la práctica» habría que llamarlo «aprendizaje por la inversión».",
+    "El segundo supuesto es que el conocimiento es un bien público: una vez que una empresa lo obtiene, se esparce por toda la economía sin que pueda evitarlo. Es el desbordamiento del conocimiento. Juntos, los dos supuestos implican que el stock de conocimientos es la inversión acumulada desde siempre, es decir, el capital agregado. Para cada empresa, que toma κ como dado, hay rendimientos constantes a escala y rendimientos decrecientes del capital propio. Pero cuando todas invierten, κ crece en la misma proporción: a nivel agregado hay rendimientos constantes del capital. Un modelo que parecía neoclásico se transforma en un AK de crecimiento endógeno."
+   ]
+  },
+  {
+   "t": "El equilibrio de mercado",
+   "eq": [
+    "r + \\delta = \\alpha k^{\\alpha-1}\\kappa^{1-\\alpha}",
+    "\\gamma_c = \\frac{1}{\\theta}\\left(r - \\rho\\right)",
+    "\\kappa = Lk \\;\\Rightarrow\\; \\gamma = \\frac{1}{\\theta}\\left(\\alpha L^{1-\\alpha} - \\delta - \\rho\\right)"
+   ],
+   "nota": "k es el capital per cápita, θ la inversa de la elasticidad de sustitución intertemporal, ρ la tasa de descuento y δ la depreciación. La primera ecuación es la condición de primer orden de una empresa que toma κ como dado; la segunda, la de Euler de los consumidores del capítulo 3.",
+   "p": [
+    "Con un número M muy grande de empresas, ninguna cree que su inversión mueve el capital agregado. Cada una contrata capital hasta que su producto marginal privado iguala la tasa de interés más la depreciación. Los consumidores son los del modelo de Ramsey: el consumo crece a una tasa proporcional a la diferencia entre la tasa de interés y la tasa de descuento. Igualando las dos tasas de interés y aplicando la condición de consistencia que las empresas ignoran (el capital agregado es L veces el capital per cápita), queda una tasa de crecimiento del consumo que no depende de k.",
+    "Como L es constante, esa tasa es constante, y con la metodología del capítulo 5 el autor muestra que el capital y el producto crecen al mismo ritmo: no hay transición dinámica. La diferencia con el AK del capítulo 2 es que el ahorro ya no es un parámetro; lo que mueve el crecimiento es el producto marginal privado del capital, \\(\\alpha L^{1-\\alpha}\\), comparado con la impaciencia y la depreciación.",
+    "Sala-i-Martin agrega una comprobación: si en lugar de un mercado con precios hay familias que a la vez producen y consumen, y cada una toma κ como dado, el hamiltoniano da exactamente la misma tasa de crecimiento. Lo que importa no es la existencia de mercados, sino que cada agente ignora el efecto de su inversión sobre los demás."
+   ]
+  },
+  {
+   "t": "El planificador y la política económica",
+   "eq": [
+    "\\dot k = kL^{1-\\alpha} - c - \\delta k \\;\\Rightarrow\\; \\gamma^{PL} = \\frac{1}{\\theta}\\left(L^{1-\\alpha} - \\delta - \\rho\\right) > \\gamma"
+   ],
+   "nota": "El planificador sustituye κ = Lk en la restricción de recursos antes de optimizar, de modo que su producto marginal del capital es el social, \\(L^{1-\\alpha}\\), y no el privado, \\(\\alpha L^{1-\\alpha}\\).",
+   "p": [
+    "Un planificador que tiene en cuenta todos los efectos, internos y externos, sabe que cuando una empresa invierte aumenta el conocimiento disponible para todas. Por eso deriva respecto del capital total, incluida la parte que derrama. La única diferencia entre las dos tasas de crecimiento es que en la del mercado aparece α multiplicando a \\(L^{1-\\alpha}\\). Como α < 1, el planificador crece más: la tasa de mercado es subóptima.",
+    "La intuición es la de cualquier externalidad positiva. Las empresas perciben una rentabilidad menor que la social, invierten según esa rentabilidad y, por lo tanto, invierten menos de lo óptimo.",
+    "El óptimo puede alcanzarse en una economía descentralizada. Sala-i-Martin propone una desgravación a la inversión a la tasa 1 − α, o un subsidio a la producción a la tasa (1 − α)/α, financiados en ambos casos con un impuesto de suma fija para no distorsionar otras decisiones.",
+    "El capítulo menciona además la extensión de Young (1991) a una economía abierta con un norte desarrollado y un sur en vías de desarrollo, y dos bienes de distinta tecnología. Con libre comercio, cada uno se especializa según su ventaja comparativa ricardiana; como los bienes de alta tecnología generan más aprendizaje, el comercio acelera el crecimiento del norte y puede frenar el del sur."
+   ]
+  },
+  {
+   "t": "Efectos de escala: una predicción incómoda",
+   "p": [
+    "En la ecuación de crecimiento de mercado, la tasa depende de la población L. Es un efecto de escala: los países más poblados deberían crecer más rápido, y la India (o España) más que Suiza. Para la posguerra, los datos de muchos países no lo respaldan: las tasas de crecimiento per cápita no están correlacionadas ni positiva ni negativamente con el tamaño de la población, según el estudio de Backus, Kehoe y Kehoe (1992).",
+    "Una explicación posible: la unidad relevante no es el país, cuyas fronteras se trazaron con guerras o casamientos entre personajes de sangre azul, sino el área por la que se derrama un tipo de conocimiento: una idea nacida en una región de China puede no llegar a toda China, y una desarrollada en Mónaco puede extenderse a Francia, Italia o toda la Unión Europea.",
+    "Hay un problema más. Si la población crece, la tasa de crecimiento per cápita también crece y no hay estado estacionario. Por eso estos modelos suelen suponer población constante. Pero en el siglo XX el crecimiento no se aceleró pese a que la población no paró de aumentar. Técnicamente, el efecto de escala nace de suponer que la externalidad depende del capital agregado; si el conocimiento depende del capital medio κ/L, el producto marginal del capital y la tasa de crecimiento dejan de depender de L."
+   ]
+  },
+  {
+   "t": "Kremer: un millón de años de datos",
+   "p": [
+    "Kremer (1993) vuelve sobre los efectos de escala con el horizonte más largo jamás usado en un estudio empírico: un millón de años. Su argumento: el desbordamiento no es instantáneo, pero a la larga todos los inventos, como la agricultura o la rueda, llegan a todas partes. Como no hay cuentas nacionales antes de mediados del siglo XIX, supone que antes de la revolución industrial las sociedades vivían en la subsistencia: la población que sobrevivía dependía del producto, de modo que el producto era aproximadamente proporcional a la población y ambos crecían a la misma tasa.",
+    "Con esos dos supuestos, contrastar los efectos de escala equivale a ver si el crecimiento de la población mundial, medido cada uno o dos siglos, está correlacionado con su nivel. La relación es sorprendentemente positiva. Entre el año un millón antes de Cristo y el 1000 después de Cristo, la población creció en promedio al 0,0007% anual (aunque se multiplicó por mil, porque el período es muy largo); entre 1000 y 1700, al 0,075%; y en la segunda mitad del siglo XX superó el 2% anual. La aceleración acompaña al aumento del número de habitantes.",
+    "Kremer agrega un experimento natural. En 1492, cuando las grandes zonas del mundo entraron en contacto, la más avanzada era la más grande, Europa-Asia-África, seguida por América, Australia y las islas del Pacífico. Sala-i-Martin concluye que, mirando la larga historia de la humanidad y no solo el siglo XX, la evidencia no está tan en contra de los efectos de escala."
+   ]
+  },
+  {
+   "t": "¿Cuánto importa empíricamente el aprendizaje?",
+   "p": [
+    "Sobre el aprendizaje por la práctica, la evidencia es contundente. Arrow (1962) documenta que en la industria aeronáutica la productividad aumenta con el número de unidades producidas. Searle (1945) y Rapping (1965) estudian los buques de carga de los astilleros Liberty durante la Segunda Guerra Mundial: entre 1941 y 1944 se construyeron 2.458 buques con el mismo diseño, y las horas de trabajo necesarias por buque caían entre 12 y 24 por ciento cada vez que se duplicaba la producción acumulada.",
+    "Sobre el desbordamiento, la evidencia es más ambigua. Caballero y Lyons (1992) encuentran, para la industria manufacturera de Estados Unidos y Europa, externalidades de conocimiento significativamente positivas, pero quizá no lo bastante grandes para generar crecimiento endógeno: en la especificación Cobb-Douglas, el exponente del capital agregado debería rondar el 70 por ciento. Caballero y Jaffe (1993) llegan a conclusiones similares.",
+    "Lectura propia: el balance del capítulo es que el mecanismo existe a nivel de planta, pero su tamaño agregado queda por debajo de lo que el modelo necesita. Las hipótesis contrastables que deja son la brecha entre retorno privado y social de la inversión, la relación entre escala y crecimiento según el área de difusión del conocimiento, y la especialización comercial en bienes con más aprendizaje."
+   ]
+  }
+ ],
+ "claves": [
+  "El aprendizaje por la práctica (Arrow) y el desbordamiento del conocimiento hacen que el conocimiento sea proporcional al capital agregado y que la economía sea AK a nivel agregado.",
+  "Con agentes que optimizan, la economía de mercado crece a \\(\\frac{1}{\\theta}(\\alpha L^{1-\\alpha} - \\delta - \\rho)\\), constante y sin transición.",
+  "El planificador internaliza la externalidad y crece a \\(\\frac{1}{\\theta}(L^{1-\\alpha} - \\delta - \\rho)\\): el mercado invierte y crece menos de lo óptimo.",
+  "Una desgravación a la inversión a la tasa 1 − α, o un subsidio a la producción a la tasa (1 − α)/α, financiados con impuestos de suma fija, replican el óptimo.",
+  "El modelo predice efectos de escala que los datos de la posguerra no respaldan, aunque el área relevante puede no ser el país y la evidencia de Kremer en un millón de años es favorable.",
+  "El aprendizaje por la práctica está bien documentado, como en los astilleros Liberty; los desbordamientos son positivos pero quizá demasiado pequeños para generar crecimiento endógeno."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En el modelo de Romer (1986), ¿qué dos supuestos convierten una función neoclásica en un AK agregado?",
+    "en": "In Romer's (1986) model, which two assumptions turn a neoclassical function into an aggregate AK?"
+   },
+   "op": {
+    "es": [
+     "La competencia imperfecta y la investigación deliberada",
+     "El aprendizaje por la inversión y el desbordamiento del conocimiento como bien público",
+     "El ahorro constante y el crecimiento de la población",
+     "Los rendimientos crecientes de la empresa y la población creciente"
+    ],
+    "en": [
+     "Imperfect competition and deliberate research",
+     "Learning by investing and knowledge spillovers as a public good",
+     "Constant saving and population growth",
+     "Firm-level increasing returns and growing population"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La tecnología crece con la inversión acumulada y se derrama a todas las empresas, de modo que A es proporcional al capital agregado.",
+    "en": "Technology grows with cumulative investment and spills over to all firms, so A is proportional to aggregate capital."
+   },
+   "id": "crec-teoria-13-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué cada empresa percibe rendimientos decrecientes del capital aunque la economía tenga rendimientos constantes?",
+    "en": "Why does each firm perceive diminishing returns to capital even though the economy has constant returns?"
+   },
+   "op": {
+    "es": [
+     "Porque cada empresa toma el capital agregado como dado y no internaliza que su inversión lo aumenta",
+     "Porque las empresas tienen poder de mercado",
+     "Porque el trabajo de cada empresa crece",
+     "Porque la depreciación es mayor en las empresas chicas"
+    ],
+    "en": [
+     "Because each firm takes aggregate capital as given and ignores that its investment raises it",
+     "Because firms have market power",
+     "Because each firm's labor grows",
+     "Because depreciation is higher in small firms"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con muchas empresas, ninguna cree mover κ; solo cuando todas invierten κ crece en la misma proporción.",
+    "en": "With many firms, none thinks it moves κ; only when all invest does κ grow in proportion."
+   },
+   "id": "crec-teoria-13-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué diferencia hay entre la tasa de crecimiento de mercado y la del planificador?",
+    "en": "What is the difference between the market and the planner's growth rates?"
+   },
+   "op": {
+    "es": [
+     "La del mercado depende de L y la del planificador no",
+     "Son iguales porque no hay fallas de mercado",
+     "El planificador tiene más depreciación",
+     "En la del mercado α multiplica a L¹⁻ᵅ, por lo que es menor"
+    ],
+    "en": [
+     "The market's depends on L and the planner's does not",
+     "They are equal because there are no market failures",
+     "The planner faces more depreciation",
+     "In the market's, α multiplies L¹⁻ᵅ, so it is lower"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El planificador usa el producto marginal social, L¹⁻ᵅ; las empresas, el privado, αL¹⁻ᵅ.",
+    "en": "The planner uses the social marginal product, L¹⁻ᵅ; firms, the private one, αL¹⁻ᵅ."
+   },
+   "id": "crec-teoria-13-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué política propone Sala-i-Martin para alcanzar el óptimo en el modelo de Romer?",
+    "en": "What policy does Sala-i-Martin propose to reach the optimum in Romer's model?"
+   },
+   "op": {
+    "es": [
+     "Un impuesto a la inversión a la tasa α",
+     "Un subsidio al consumo financiado con deuda",
+     "Una desgravación a la inversión a la tasa 1 − α financiada con un impuesto de suma fija",
+     "Una reducción de la población"
+    ],
+    "en": [
+     "A tax on investment at rate α",
+     "A consumption subsidy financed with debt",
+     "An investment tax credit at rate 1 − α financed with a lump-sum tax",
+     "A reduction in population"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Alternativamente, un subsidio a la producción a la tasa (1 − α)/α, también financiado con suma fija.",
+    "en": "Alternatively, an output subsidy at rate (1 − α)/α, also financed lump-sum."
+   },
+   "id": "crec-teoria-13-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué implica el efecto de escala del modelo si la población crece con el tiempo?",
+    "en": "What does the model's scale effect imply if population grows over time?"
+   },
+   "op": {
+    "es": [
+     "Que la tasa de crecimiento per cápita aumenta y no hay estado estacionario",
+     "Que la tasa de crecimiento cae a cero",
+     "Que la economía converge a un estado estacionario más alto",
+     "Que el mercado alcanza el óptimo"
+    ],
+    "en": [
+     "That per capita growth rises and there is no steady state",
+     "That growth falls to zero",
+     "That the economy converges to a higher steady state",
+     "That the market reaches the optimum"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por eso estos modelos suelen suponer población constante, aunque el crecimiento del siglo XX no se aceleró.",
+    "en": "That is why these models often assume constant population, although 20th-century growth did not accelerate."
+   },
+   "id": "crec-teoria-13-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo contrasta Kremer (1993) los efectos de escala?",
+    "en": "How does Kremer (1993) test for scale effects?"
+   },
+   "op": {
+    "es": [
+     "Con regresiones de crecimiento para la posguerra",
+     "Comparando patentes y su relación con la inversión de cada empresa",
+     "Con datos de productividad de astilleros",
+     "Correlacionando el crecimiento de la población mundial con su nivel a lo largo de un millón de años"
+    ],
+    "en": [
+     "With postwar growth regressions",
+     "Comparing patents and their link to each firm's investment",
+     "With shipyard productivity data",
+     "Correlating world population growth with its level over a million years"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Bajo subsistencia, el producto es proporcional a la población; la relación encontrada es positiva.",
+    "en": "Under subsistence, output is proportional to population; the relationship found is positive."
+   },
+   "id": "crec-teoria-13-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué encontraron Searle y Rapping en los astilleros Liberty?",
+    "en": "What did Searle and Rapping find in the Liberty shipyards?"
+   },
+   "op": {
+    "es": [
+     "Que la productividad no cambiaba con la producción acumulada",
+     "Que las horas por buque caían entre 12 y 24 por ciento cada vez que se duplicaba la producción",
+     "Que los buques más nuevos requerían más horas",
+     "Que el aprendizaje se derramaba a otros países"
+    ],
+    "en": [
+     "That productivity did not change with cumulative output",
+     "That hours per ship fell 12 to 24 percent each time output doubled",
+     "That newer ships required more hours",
+     "That learning spilled over to other countries"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Se construyeron 2.458 buques con el mismo diseño entre 1941 y 1944: un caso claro de aprendizaje por la práctica.",
+    "en": "2,458 ships of the same design were built between 1941 and 1944: a clear case of learning by doing."
+   },
+   "id": "crec-teoria-13-q7"
+  },
+  {
+   "q": {
+    "es": "Según Caballero y Lyons (1992), ¿qué ocurre con los desbordamientos del conocimiento?",
+    "en": "According to Caballero and Lyons (1992), what about knowledge spillovers?"
+   },
+   "op": {
+    "es": [
+     "Son nulos en la manufactura",
+     "Son negativos en Europa",
+     "Son positivos, pero quizá no lo bastante grandes para generar crecimiento endógeno",
+     "Son tan grandes que generan crecimiento explosivo"
+    ],
+    "en": [
+     "They are zero in manufacturing",
+     "They are negative in Europe",
+     "They are positive, but perhaps not large enough to generate endogenous growth",
+     "They are so large they generate explosive growth"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El exponente del capital agregado debería rondar el 70 por ciento para generar crecimiento endógeno en la Cobb-Douglas.",
+    "en": "The aggregate capital exponent would need to be about 70 percent to generate endogenous growth in the Cobb-Douglas."
+   },
+   "id": "crec-teoria-13-q8"
+  }
+ ],
+ "palabras": 1488,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el aprendizaje por la práctica en la teoría del crecimiento?",
+    "en": "What is learning by doing in growth theory?"
+   },
+   "a": {
+    "es": "La idea de que el conocimiento productivo es un subproducto de la experiencia y que la inversión es una buena medida de esa experiencia, de modo que la tecnología crece junto con el capital. Sala-i-Martin (cap. 7) la toma de Arrow (1962) y sugiere llamarla «aprendizaje por la inversión».",
+    "en": "The idea that productive knowledge is a by-product of experience and that investment is a good measure of experience, so technology grows with capital. Sala-i-Martin (ch. 7) takes it from Arrow (1962) and suggests calling it 'learning by investing'."
+   },
+   "id": "crec-teoria-13-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede una economía tener rendimientos constantes del capital si cada empresa enfrenta rendimientos decrecientes?",
+    "en": "How can an economy have constant returns to capital if each firm faces diminishing returns?"
+   },
+   "a": {
+    "es": "Si el conocimiento es proporcional al capital agregado y se derrama a todas las empresas, la inversión de todas eleva la productividad de cada una en la misma proporción, aunque ninguna lo tenga en cuenta. Así lo muestra Sala-i-Martin (cap. 7) con el modelo de Romer (1986).",
+    "en": "If knowledge is proportional to aggregate capital and spills over to all firms, everyone's investment raises each firm's productivity proportionally, though none takes it into account. Sala-i-Martin (ch. 7) shows it with Romer's (1986) model."
+   },
+   "id": "crec-teoria-13-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué el mercado crece menos que el óptimo cuando la inversión genera conocimiento que se derrama?",
+    "en": "Why does the market grow less than optimal when investment generates spillover knowledge?"
+   },
+   "a": {
+    "es": "Porque las empresas invierten según el producto marginal privado del capital, αL¹⁻ᵅ, mientras el social es L¹⁻ᵅ; con rentabilidad percibida menor, invierten y crecen menos de lo que elegiría un planificador. Lo deriva Sala-i-Martin (cap. 7).",
+    "en": "Because firms invest according to the private marginal product of capital, αL¹⁻ᵅ, while the social one is L¹⁻ᵅ; with lower perceived returns, they invest and grow less than a planner would choose. Sala-i-Martin (ch. 7) derives it."
+   },
+   "id": "crec-teoria-13-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué instrumento fiscal puede corregir una externalidad positiva de la inversión en un modelo de crecimiento endógeno?",
+    "en": "What fiscal instrument can correct a positive investment externality in an endogenous growth model?"
+   },
+   "a": {
+    "es": "Una desgravación a la inversión a la tasa 1 − α, o un subsidio a la producción a la tasa (1 − α)/α, financiados con impuestos de suma fija para no introducir nuevas distorsiones. Es la propuesta de Sala-i-Martin (cap. 7) para el modelo de Romer.",
+    "en": "An investment tax credit at rate 1 − α, or an output subsidy at rate (1 − α)/α, financed with lump-sum taxes to avoid new distortions. This is Sala-i-Martin's (ch. 7) proposal for Romer's model."
+   },
+   "id": "crec-teoria-13-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué los efectos de escala son un problema para los modelos con externalidades del capital agregado?",
+    "en": "Why are scale effects a problem for models with aggregate-capital externalities?"
+   },
+   "a": {
+    "es": "Porque predicen que los países más poblados crecen más y que el crecimiento se acelera si la población aumenta, algo que no se ve en la posguerra ni en el siglo XX. Sala-i-Martin (cap. 7) señala que la unidad relevante puede ser el área de difusión del conocimiento y no el país.",
+    "en": "Because they predict that more populous countries grow faster and that growth accelerates as population rises, which is not seen postwar or in the 20th century. Sala-i-Martin (ch. 7) notes that the relevant unit may be the area of knowledge diffusion rather than the country."
+   },
+   "id": "crec-teoria-13-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué evidencia de muy largo plazo apoya los efectos de escala?",
+    "en": "What very long-run evidence supports scale effects?"
+   },
+   "a": {
+    "es": "La de Kremer (1993): suponiendo subsistencia, el crecimiento de la población mundial aumenta con su nivel, del 0,0007% anual antes del año 1000 al 0,075% entre 1000 y 1700 y a más del 2% en la segunda mitad del siglo XX; y en 1492 la zona más grande era la más avanzada. Lo resume Sala-i-Martin (cap. 7).",
+    "en": "Kremer's (1993): assuming subsistence, world population growth rises with its level, from 0.0007% a year before 1000 to 0.075% between 1000 and 1700 and over 2% in the second half of the 20th century; and in 1492 the largest landmass was the most advanced. Sala-i-Martin (ch. 7) summarizes it."
+   },
+   "id": "crec-teoria-13-t6"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tan grande es empíricamente el aprendizaje por la práctica?",
+    "en": "How large is learning by doing empirically?"
+   },
+   "a": {
+    "es": "En los astilleros Liberty, que construyeron 2.458 buques iguales entre 1941 y 1944, las horas por buque caían entre 12 y 24 por ciento con cada duplicación de la producción; los desbordamientos agregados, en cambio, parecen positivos pero chicos. Así lo reporta Sala-i-Martin (cap. 7).",
+    "en": "In the Liberty shipyards, which built 2,458 identical ships between 1941 and 1944, hours per ship fell 12 to 24 percent with each doubling of output; aggregate spillovers, by contrast, seem positive but small. Sala-i-Martin (ch. 7) reports it."
+   },
+   "id": "crec-teoria-13-t7"
+  }
+ ]
+}

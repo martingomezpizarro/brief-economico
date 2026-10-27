@@ -1,0 +1,382 @@
+{
+ "id": "crec-teoria-11",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "El modelo AK con ahorro óptimo: la ecuación de Euler sin rendimientos decrecientes",
+ "bajada": "El capítulo 5 de los Apuntes de Sala-i-Martin: cómo la ecuación de Euler fija una tasa de crecimiento constante, qué exige la acotación de la utilidad, por qué no hay transición ni convergencia y por qué mercado y planificador coinciden.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 5: «Modelos simples de crecimiento endógeno: el modelo AK»",
+ "intro": "En el capítulo 2, Sala-i-Martin mostró que con una tecnología AK y una tasa de ahorro constante la economía crece para siempre a \\(sA - (\\delta + n)\\). Pero esa tasa de ahorro caía del cielo. El capítulo 5 hace la pregunta obvia: ¿qué pasa si las familias eligen cuánto ahorrar maximizando su utilidad, como en el modelo de Ramsey del capítulo 3? La tecnología es la misma, lineal en un capital definido de manera amplia, cuya introducción en la literatura moderna se atribuye a Rebelo (1991). Lo nuevo es que el crecimiento ya no depende de una propensión a ahorrar arbitraria sino de la impaciencia, del deseo de suavizar el consumo y de la productividad del capital. El autor resuelve primero el problema de las familias productoras, después el de mercado y el del planificador, y muestra que los tres llevan al mismo lugar.",
+ "secciones": [
+  {
+   "t": "Familias productoras y la ecuación de Euler",
+   "eq": [
+    "U(0) = \\int_0^{\\infty} e^{-(\\rho - n)t}\\,\\frac{c_t^{1-\\theta} - 1}{1-\\theta}\\,dt",
+    "\\dot k = Ak - c - (\\delta + n)k",
+    "\\gamma_c = \\frac{\\dot c}{c} = \\frac{1}{\\theta}\\,(A - \\delta - \\rho)"
+   ],
+   "nota": "ρ es la tasa de descuento, n el crecimiento de la población, θ la inversa de la elasticidad de sustitución intertemporal y δ la depreciación. El producto marginal del capital es siempre A.",
+   "p": [
+    "Las familias maximizan una utilidad de horizonte infinito sujeta a la restricción de recursos de una economía cerrada y sin gobierno, que es la misma del modelo de Ramsey con \\(Ak\\) en lugar de \\(f(k)\\). Sala-i-Martin arma el hamiltoniano, obtiene las condiciones de primer orden y, tomando logaritmos y derivando la condición del consumo, llega a la ecuación de Euler.",
+    "La diferencia con el modelo neoclásico es decisiva. Allí el producto marginal \\(f'(k)\\) cae a medida que se acumula capital, y con él la tasa de crecimiento del consumo, hasta anularse en el estado estacionario. Aquí el producto marginal es la constante A, de modo que el consumo crece a una tasa constante en todo momento. Esa tasa depende negativamente de ρ, de θ y de δ, y positivamente de A. Para que sea positiva hace falta que \\(A > \\delta + \\rho\\)."
+   ]
+  },
+  {
+   "t": "Consumir o invertir: la intuición",
+   "eq": [
+    "\\theta\\gamma + \\rho = A - \\delta"
+   ],
+   "p": [
+    "El autor reescribe la ecuación de Euler como una igualdad entre beneficios. A la izquierda está el beneficio de consumir: la tasa de descuento, porque la gente prefiere consumir cuanto antes, más la tasa de crecimiento multiplicada por θ, porque si el consumo va a crecer la gente quiere adelantar parte de él para tener una trayectoria más lisa. A la derecha está el rendimiento de invertir, el producto marginal neto del capital, \\(A - \\delta\\).",
+    "Como no hay costos de ajuste ni rendimientos decrecientes, ese rendimiento no depende del stock de capital ni de la tasa de crecimiento. Por eso no hay nada que empuje la tasa de crecimiento hacia abajo con el tiempo. Lectura propia: frente al capítulo 2, donde una política que subiera s subía el crecimiento, ahora los determinantes son estructurales (preferencias y tecnología) y la propensión a ahorrar pasa a ser un resultado del modelo, no un supuesto."
+   ]
+  },
+  {
+   "t": "Acotar la utilidad",
+   "eq": [
+    "\\rho > n + (1-\\theta)\\gamma^* \\;\\Leftrightarrow\\; A - \\delta - n > \\gamma^*"
+   ],
+   "p": [
+    "Si el consumo crece exponencialmente, el término \\(c^{1-\\theta}\\) dentro de la integral también lo hace, y la utilidad puede ser infinita. Sala-i-Martin señala que en ese caso el problema pierde sentido: si la utilidad fuera infinita, los individuos no tendrían motivo para maximizar, porque «siempre serían, en todo caso, infinitamente felices».",
+    "Para que la integral converja, el descuento tiene que ganarle al crecimiento del integrando: \\(\\rho > n + \\gamma^*(1-\\theta)\\). Reemplazando \\(\\theta\\gamma^*\\) por \\(A - \\rho - \\delta\\), la condición se reescribe como \\(A - \\delta - n > \\gamma^*\\): el rendimiento neto del capital, descontado el crecimiento de la población, tiene que superar la tasa de crecimiento. Esta desigualdad no es un detalle técnico; es la que, en el paso siguiente, elimina cualquier transición."
+   ]
+  },
+  {
+   "t": "Por qué no hay transición",
+   "eq": [
+    "c_t = (A - \\delta - n - \\gamma^*)\\,k_t"
+   ],
+   "nota": "La razón consumo/capital es constante y positiva gracias a la condición de acotación de la utilidad.",
+   "p": [
+    "Por la ecuación de Euler, el consumo está siempre en su estado estacionario. Falta ver qué pasa con el capital. Dividiendo la restricción de recursos por k se ve que, si su tasa de crecimiento es constante, la razón c/k también lo es, y entonces capital, consumo y producto crecen a la misma tasa \\(\\gamma^*\\). Pero eso solo describe el estado estacionario.",
+    "Para mostrar que la economía está ahí desde el primer instante, el autor integra la restricción presupuestaria usando que \\(c_t = c(0)e^{\\gamma^* t}\\). La solución tiene un término proporcional al consumo y una constante de integración. Al llevarla a la condición de transversalidad, el primer término converge a cero gracias a la condición de acotación, y la única forma de que la constante también lo haga es que valga cero. Resultado: capital y consumo son proporcionales en todo momento, el producto es proporcional al capital, y todas las variables crecen permanentemente a la misma tasa constante."
+   ]
+  },
+  {
+   "t": "Sin convergencia, contra los datos",
+   "p": [
+    "Sala-i-Martin considera un grupo de países con los mismos A, θ, n, ρ y δ que solo difieren en el capital inicial. Todos crecen a la misma tasa, de modo que el crecimiento no se relaciona con la renta inicial. Si en cambio difieren en la productividad A, los de crecimiento bajo siguen así para siempre, cualquiera sea su renta. El modelo no predice convergencia ni absoluta ni condicional.",
+    "El mismo resultado sale de la linealización del modelo neoclásico del capítulo 3: con participación del capital igual a uno la tecnología se vuelve AK, el valor propio negativo se anula y el coeficiente de la renta inicial en la ecuación de convergencia debe ser cero. Aquí aparece el contraste empírico: los estudios que el libro resume en el capítulo 10 encuentran que la convergencia, al menos condicional, «parece cumplirse con regularidad» en una amplia variedad de fuentes estadísticas. Esa es la principal tensión que deja el modelo AK."
+   ]
+  },
+  {
+   "t": "Mercado y planificador: la misma solución",
+   "eq": [
+    "\\dot b = rb - c - nb,\\qquad r = A - \\delta,\\qquad b = k"
+   ],
+   "nota": "b son los activos por persona y r su rendimiento; no hay rentas salariales porque el modelo AK no incluye trabajo explícitamente.",
+   "p": [
+    "En la versión de mercado, las familias maximizan la misma utilidad sujeta a su restricción de activos y obtienen la ecuación de Euler habitual, \\(\\gamma = (r - \\rho)/\\theta\\). Las empresas alquilan el capital e igualan su rendimiento al producto marginal, \\(r = A - \\delta\\). Como en una economía cerrada sin gobierno el único activo con oferta neta positiva es el capital, b = k, y se recuperan exactamente la restricción agregada, la ecuación de Euler y la condición de transversalidad de las familias productoras.",
+    "El planificador maximiza la misma utilidad sujeto a la misma restricción de recursos, así que su problema coincide con el de las familias productoras. No hay externalidades ni impuestos que separen el rendimiento privado del social: el equilibrio de mercado es óptimo. El autor cierra recordando que el modelo AK puede interpretarse como una economía con capital físico y humano, idea ya presentada en el capítulo 2. Lectura propia: esta coincidencia es justamente lo que se rompe en el capítulo 6, cuando un impuesto distorsionador hace que el rendimiento privado del capital sea menor que el social."
+   ]
+  }
+ ],
+ "claves": [
+  "Con tecnología AK y ahorro óptimo, el consumo crece siempre a \\((A - \\delta - \\rho)/\\theta\\), que es positiva si \\(A > \\delta + \\rho\\).",
+  "La ecuación de Euler iguala el beneficio de consumir, \\(\\theta\\gamma + \\rho\\), con el rendimiento neto de invertir, \\(A - \\delta\\), que no cae con el capital.",
+  "La utilidad está acotada solo si \\(A - \\delta - n > \\gamma^*\\); si no, el problema de maximización pierde sentido.",
+  "La condición de transversalidad obliga a que capital y consumo sean proporcionales: no hay dinámica de transición.",
+  "El modelo no predice convergencia ni absoluta ni condicional, mientras los estudios empíricos encuentran convergencia condicional con regularidad.",
+  "Mercado competitivo, familias productoras y planificador dan la misma solución, porque nada separa el rendimiento privado del social."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿De qué depende la tasa de crecimiento del consumo en el modelo AK con optimización?",
+    "en": "What does consumption growth depend on in the AK model with optimization?"
+   },
+   "op": {
+    "es": [
+     "De la tasa de ahorro elegida por el gobierno y del capital inicial",
+     "Positivamente de A y negativamente de ρ, θ y δ",
+     "Solo de la tasa de crecimiento de la población n",
+     "Positivamente de θ y negativamente de la productividad A"
+    ],
+    "en": [
+     "The saving rate set by the government and initial capital",
+     "Positively on A and negatively on ρ, θ and δ",
+     "Only the population growth rate n",
+     "Positively on θ and negatively on productivity A"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La ecuación de Euler da γ = (A − δ − ρ)/θ.",
+    "en": "The Euler equation gives γ = (A − δ − ρ)/θ."
+   },
+   "id": "crec-teoria-11-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué representa el miembro izquierdo de θγ + ρ = A − δ?",
+    "en": "What does the left side of θγ + ρ = A − δ represent?"
+   },
+   "op": {
+    "es": [
+     "El rendimiento neto de invertir una unidad más de capital",
+     "La depreciación efectiva del capital por trabajador",
+     "La tasa de interés que fija el banco central",
+     "El beneficio de consumir: impaciencia más deseo de alisar"
+    ],
+    "en": [
+     "The net return of investing one more unit of capital",
+     "The effective depreciation of capital per worker",
+     "The interest rate set by the central bank",
+     "The benefit of consuming: impatience plus smoothing motive"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El lado derecho es el rendimiento de invertir; el izquierdo, el beneficio de consumir antes.",
+    "en": "The right side is the return to investing; the left, the benefit of consuming earlier."
+   },
+   "id": "crec-teoria-11-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la tasa de crecimiento no cae a medida que se acumula capital?",
+    "en": "Why does the growth rate not fall as capital accumulates?"
+   },
+   "op": {
+    "es": [
+     "Porque el producto marginal del capital es la constante A",
+     "Porque la población crece a la misma tasa que el capital",
+     "Porque el progreso técnico exógeno compensa la caída",
+     "Porque las familias ahorran una fracción fija de la renta"
+    ],
+    "en": [
+     "Because the marginal product of capital is the constant A",
+     "Because population grows at the same rate as capital",
+     "Because exogenous technical progress offsets the fall",
+     "Because households save a fixed fraction of income"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Sin rendimientos decrecientes, el rendimiento de invertir es independiente del stock de capital.",
+    "en": "Without diminishing returns, the return to investing is independent of the capital stock."
+   },
+   "id": "crec-teoria-11-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué condición asegura que la utilidad sea finita?",
+    "en": "What condition ensures utility is finite?"
+   },
+   "op": {
+    "es": [
+     "A > δ + ρ, es decir, crecimiento positivo",
+     "θ > 1, es decir, mucho deseo de suavizar",
+     "A − δ − n > γ*",
+     "ρ < n, es decir, poca impaciencia"
+    ],
+    "en": [
+     "A > δ + ρ, that is, positive growth",
+     "θ > 1, that is, a strong smoothing motive",
+     "A − δ − n > γ*",
+     "ρ < n, that is, low impatience"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Equivale a ρ > n + (1 − θ)γ*, que hace converger la integral.",
+    "en": "It is equivalent to ρ > n + (1 − θ)γ*, which makes the integral converge."
+   },
+   "id": "crec-teoria-11-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se demuestra que no hay transición?",
+    "en": "How is it shown that there is no transition?"
+   },
+   "op": {
+    "es": [
+     "Linealizando alrededor del estado estacionario con α < 1",
+     "Suponiendo que el capital inicial ya es el de largo plazo",
+     "Mostrando que la tasa de ahorro cae con el ingreso",
+     "La transversalidad obliga a que la constante de integración sea cero"
+    ],
+    "en": [
+     "Linearizing around the steady state with α < 1",
+     "Assuming initial capital already equals its long-run value",
+     "Showing that the saving rate falls with income",
+     "Transversality forces the integration constant to be zero"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con esa constante en cero, capital y consumo son proporcionales en todo momento.",
+    "en": "With that constant at zero, capital and consumption are proportional at all times."
+   },
+   "id": "crec-teoria-11-q5"
+  },
+  {
+   "q": {
+    "es": "Dos países con iguales parámetros difieren solo en el capital inicial. ¿Qué predice el modelo AK?",
+    "en": "Two countries with equal parameters differ only in initial capital. What does the AK model predict?"
+   },
+   "op": {
+    "es": [
+     "Que el más pobre crece más rápido hasta alcanzar al rico",
+     "Que ambos crecen a la misma tasa y la brecha no se cierra",
+     "Que el más rico crece más por efectos de escala",
+     "Que ambos convergen a un mismo nivel de capital"
+    ],
+    "en": [
+     "That the poorer grows faster until it catches up",
+     "That both grow at the same rate and the gap never closes",
+     "That the richer grows faster due to scale effects",
+     "That both converge to the same capital level"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La tasa (A − δ − ρ)/θ no depende de la renta inicial: no hay convergencia.",
+    "en": "The rate (A − δ − ρ)/θ does not depend on initial income: no convergence."
+   },
+   "id": "crec-teoria-11-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué encuentran los estudios empíricos que resume el libro sobre convergencia?",
+    "en": "What do the empirical studies the book summarizes find on convergence?"
+   },
+   "op": {
+    "es": [
+     "Que no hay ninguna relación entre crecimiento y renta inicial",
+     "Que los países ricos crecen sistemáticamente más que los pobres",
+     "Que la convergencia, al menos condicional, se cumple con regularidad",
+     "Que solo hay convergencia absoluta entre todos los países del mundo"
+    ],
+    "en": [
+     "That there is no relation between growth and initial income",
+     "That rich countries systematically grow faster than poor ones",
+     "That convergence, at least conditional, holds regularly",
+     "That there is only absolute convergence among all countries"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Ese resultado es la principal tensión empírica del modelo AK.",
+    "en": "That result is the main empirical tension for the AK model."
+   },
+   "id": "crec-teoria-11-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el planificador elige lo mismo que el mercado en el modelo AK?",
+    "en": "Why does the planner choose the same as the market in the AK model?"
+   },
+   "op": {
+    "es": [
+     "Porque enfrenta la misma restricción y r = A − δ es el rendimiento social",
+     "Porque el planificador no conoce la tecnología de producción",
+     "Porque el mercado tiene impuestos que corrigen las distorsiones",
+     "Porque las empresas tienen poder de mercado sobre el capital"
+    ],
+    "en": [
+     "Because it faces the same constraint and r = A − δ is the social return",
+     "Because the planner does not know the technology",
+     "Because the market has taxes that correct distortions",
+     "Because firms have market power over capital"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Sin externalidades ni impuestos, el rendimiento privado coincide con el social.",
+    "en": "Without externalities or taxes, the private return equals the social return."
+   },
+   "id": "crec-teoria-11-q8"
+  }
+ ],
+ "palabras": 1065,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué tasa de crecimiento resulta de combinar una tecnología AK con familias que maximizan una utilidad de tipo Ramsey?",
+    "en": "What growth rate results from combining an AK technology with households maximizing a Ramsey-type utility?"
+   },
+   "a": {
+    "es": "Una tasa constante en todo momento, γ = (A − δ − ρ)/θ, igual para consumo, capital y producto per cápita, y positiva si A > δ + ρ. Así lo muestra Sala-i-Martin (cap. 5).",
+    "en": "A rate that is constant at all times, γ = (A − δ − ρ)/θ, equal for consumption, capital and output per capita, and positive if A > δ + ρ. Sala-i-Martin shows this (ch. 5)."
+   },
+   "id": "crec-teoria-11-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo se interpreta la ecuación de Euler θγ + ρ = A − δ?",
+    "en": "How is the Euler equation θγ + ρ = A − δ interpreted?"
+   },
+   "a": {
+    "es": "Como la igualdad entre el beneficio de consumir (impaciencia más el deseo de alisar el consumo cuando éste crece) y el rendimiento neto de invertir, que con AK no depende del capital. Así lo explica Sala-i-Martin (cap. 5).",
+    "en": "As the equality between the benefit of consuming (impatience plus the wish to smooth consumption when it grows) and the net return to investing, which under AK does not depend on capital. Sala-i-Martin explains it this way (ch. 5)."
+   },
+   "id": "crec-teoria-11-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué en un modelo de crecimiento endógeno hay que restringir los parámetros para que la utilidad esté acotada?",
+    "en": "Why must parameters be restricted in an endogenous growth model so that utility is bounded?"
+   },
+   "a": {
+    "es": "Porque si el consumo crece exponencialmente la integral de utilidad puede ser infinita y el problema de maximizar pierde sentido; en el AK hace falta A − δ − n > γ*. Así lo plantea Sala-i-Martin (cap. 5).",
+    "en": "Because if consumption grows exponentially the utility integral can be infinite and maximization loses meaning; in AK it requires A − δ − n > γ*. Sala-i-Martin sets it out this way (ch. 5)."
+   },
+   "id": "crec-teoria-11-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Tiene dinámica de transición una economía AK con ahorro óptimo?",
+    "en": "Does an AK economy with optimal saving have transitional dynamics?"
+   },
+   "a": {
+    "es": "No: la condición de transversalidad obliga a que la constante de integración sea cero, de modo que consumo y capital son proporcionales siempre y todo crece a la misma tasa desde el inicio. Así lo demuestra Sala-i-Martin (cap. 5).",
+    "en": "No: the transversality condition forces the integration constant to zero, so consumption and capital are always proportional and everything grows at the same rate from the start. Sala-i-Martin proves it (ch. 5)."
+   },
+   "id": "crec-teoria-11-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problema empírico enfrentan los modelos AK respecto de la convergencia?",
+    "en": "What empirical problem do AK models face regarding convergence?"
+   },
+   "a": {
+    "es": "Predicen que el crecimiento no se relaciona con la renta inicial (coeficiente cero), pero los estudios encuentran convergencia, al menos condicional, con regularidad. Así lo señala Sala-i-Martin (cap. 5).",
+    "en": "They predict growth is unrelated to initial income (a zero coefficient), but studies regularly find convergence, at least conditional. Sala-i-Martin points this out (ch. 5)."
+   },
+   "id": "crec-teoria-11-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuándo coinciden el equilibrio de mercado y la solución del planificador en un modelo de crecimiento?",
+    "en": "When do the market equilibrium and the planner's solution coincide in a growth model?"
+   },
+   "a": {
+    "es": "Cuando el rendimiento privado del capital es igual al social, como en el AK sin gobierno: r = A − δ, b = k y las ecuaciones dinámicas son idénticas. Así lo muestra Sala-i-Martin (cap. 5).",
+    "en": "When the private return to capital equals the social one, as in AK without government: r = A − δ, b = k and the dynamic equations are identical. Sala-i-Martin shows this (ch. 5)."
+   },
+   "id": "crec-teoria-11-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Lectura propia: ¿qué cambia para la política económica entre un AK con ahorro fijo y uno con ahorro óptimo?",
+    "en": "Own reading: what changes for policy between AK with fixed saving and AK with optimal saving?"
+   },
+   "a": {
+    "es": "Con ahorro fijo el crecimiento depende de s; con ahorro óptimo depende de A, ρ, θ y δ, de modo que la política tiene que operar sobre la productividad o el rendimiento neto del capital. Es una lectura a partir de los capítulos 2 y 5 de Sala-i-Martin.",
+    "en": "With fixed saving growth depends on s; with optimal saving it depends on A, ρ, θ and δ, so policy has to act on productivity or the net return to capital. This is a reading based on Sala-i-Martin's chapters 2 and 5."
+   },
+   "id": "crec-teoria-11-t7"
+  }
+ ]
+}

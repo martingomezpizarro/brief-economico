@@ -1,0 +1,397 @@
+{
+ "id": "crec-teoria-15",
+ "cat": "crec-teoria",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "La economía de las ideas: I+D, monopolio y crecimiento endógeno",
+ "bajada": "El capítulo 9 de los Apuntes de Sala-i-Martin: por qué la no rivalidad de las ideas obliga a abandonar la competencia perfecta, cómo funciona un modelo de variedades con I+D a la Romer (1990), por qué el mercado crece menos que el óptimo y qué subsidio corrige el problema.",
+ "fuentes": [
+  1344
+ ],
+ "cita": "Sala-i-Martin, Apuntes de crecimiento económico, 2.ª ed. (Antoni Bosch), cap. 9: «La economía de las ideas: progreso tecnológico endógeno y crecimiento»",
+ "intro": "Los primeros capítulos dejaron a Sala-i-Martin frente a un problema: con rendimientos constantes y competencia perfecta, salarios y rentas agotan el producto y no queda nada para pagar la investigación, de modo que la tecnología tiene que caer del cielo. Los modelos de crecimiento endógeno vistos hasta ahí lo sortearon eliminando los rendimientos decrecientes del capital, y en el modelo de Romer (1986) el progreso técnico era un subproducto de la inversión, aprendido con la práctica, no el fruto de alguien que se propone inventar. El capítulo 9 da el paso que faltaba: el progreso técnico lo producen empresas de investigación y desarrollo (I+D) que buscan beneficios. Para que eso sea posible hay que entender primero qué clase de bien es una idea, y después aceptar una conclusión incómoda para la tradición competitiva: en el mundo de las ideas, el precio igual al costo marginal no es bueno.",
+ "secciones": [
+  {
+   "t": "Qué clase de bien es una idea",
+   "p": [
+    "Por tecnología el autor entiende la fórmula que permite mezclar capital y trabajo para obtener un producto: sin la receta no hay galletas, por más hornos y cocineros que haya. Esa receta es un bien no rival, porque la pueden usar a la vez una señora de Mallorca y un cocinero de China, igual que la fórmula de las ecuaciones cuadráticas o un procesador de textos. Las galletas, el petróleo o un trabajador, en cambio, son rivales.",
+    "La rivalidad no debe confundirse con la excluibilidad, que mide si se puede impedir que alguien use el bien. Sala-i-Martin cruza los dos criterios: galletas y coches son rivales y excluibles; los peces del mar son rivales y poco excluibles, y por eso sufren la tragedia de los comunes; la televisión por cable es no rival pero excluible gracias a la codificación; las fórmulas matemáticas y la defensa nacional son no rivales y no excluibles. Los programas informáticos y el propio libro tienen una excluibilidad intermedia, porque se copian. La rivalidad es física; la excluibilidad admite grados y depende de las leyes: un sistema de propiedad intelectual no es más que una forma de modificarla."
+   ]
+  },
+  {
+   "t": "Costos fijos y poder de mercado",
+   "p": [
+    "Un bien rival hay que producirlo cada vez que alguien lo consume; una idea se inventa una sola vez. Crear un programa cuesta muchas horas de programadores, pero copiarlo es casi gratis. La producción de ideas tiene entonces un costo fijo inicial elevado, el de la I+D, muy superior al costo marginal, y con costos fijos el costo medio queda siempre por encima del marginal. En competencia perfecta el precio iguala al costo marginal, así que quien invente tendrá pérdidas: los bienes tecnológicos solo los producirán empresas con poder de mercado.",
+    "De ahí una lección central del crecimiento endógeno: el gobierno debe garantizar al inventor la capacidad legal de cobrar por encima del costo marginal, aunque eso le dé un monopolio. El autor recoge la tesis de historiadores como North (1981): la revolución industrial empieza en Inglaterra cuando por primera vez un gobierno protege los derechos de propiedad intelectual y los inventores ven que pueden hacer fortuna. Antes, los avances dependían de pensadores financiados por mecenas. Las empresas no innovan por altruismo, sino porque esperan beneficios."
+   ]
+  },
+  {
+   "t": "Dos maneras de modelar el progreso técnico",
+   "p": [
+    "La literatura usa dos enfoques. En el primero, el progreso técnico aumenta el número de bienes de capital disponibles: Estados Unidos no usa más picos y palas que Zimbabwe, usa además tractores, fertilizantes y canales. La clave es que no hay rendimientos decrecientes en el número de bienes, por lo que las empresas de I+D siempre quieren descubrir productos nuevos (Romer, 1990; Grossman y Helpman, 1991). En el segundo, el progreso mejora la calidad de un número limitado de productos, del gramófono al disco compacto: son las escaleras de calidad, con la destrucción creativa de Schumpeter, en las que quien mejora un producto vuelve obsoleto al anterior y se queda con su mercado (Aghion y Howitt, 1992).",
+    "El capítulo formaliza una versión simplificada del primer enfoque, con tres agentes: productores de bienes finales que alquilan bienes intermedios, inventores que pagan la I+D y obtienen una patente perpetua, y consumidores que ahorran como en el modelo de Ramsey."
+   ]
+  },
+  {
+   "t": "Productores finales e inventores",
+   "eq": [
+    "Y_t = A\\,L^{1-\\alpha}\\sum_{j=1}^{N_t} x_{jt}^{\\alpha}",
+    "x_{jt} = L\\,A^{\\frac{1}{1-\\alpha}}\\,\\alpha^{\\frac{1}{1-\\alpha}}\\,p_{jt}^{-\\frac{1}{1-\\alpha}}",
+    "p = \\frac{1}{\\alpha},\\qquad x = A^{\\frac{1}{1-\\alpha}}\\,\\alpha^{\\frac{2}{1-\\alpha}}\\,L,\\qquad \\pi = \\frac{1-\\alpha}{\\alpha}\\,A^{\\frac{1}{1-\\alpha}}\\,\\alpha^{\\frac{2}{1-\\alpha}}\\,L",
+    "\\eta = \\frac{\\pi}{r}"
+   ],
+   "nota": "N es el número de bienes intermedios inventados, x la cantidad de cada uno, L el trabajo (constante), p el precio del intermedio con el costo marginal normalizado a uno, π el beneficio instantáneo de cada inventor y η el costo de I+D de un bien nuevo, en unidades de producto. Las ecuaciones están reconstruidas de un OCR defectuoso siguiendo la notación de Barro y Sala-i-Martin.",
+   "p": [
+    "La función de producción, de tipo Dixit-Stiglitz reinterpretada por Ethier (1982), es aditivamente separable: un bien nuevo no es mejor ni peor que los anteriores, y los viejos nunca quedan obsoletos. Tiene rendimientos decrecientes en cada intermedio, pero si todos se usan en la misma cantidad la producción queda como \\(AL^{1-\\alpha}(Nx)^{\\alpha}N^{1-\\alpha}\\): aumentar Nx subiendo x tiene rendimientos decrecientes, aumentarlo subiendo N no. Por eso, dice el autor, el modelo es en el fondo un modelo AK en el que lo que se acumula es el número de bienes de capital.",
+    "El inventor decide en dos pasos, que se resuelven hacia atrás. Primero fija el precio: frente a una demanda de elasticidad constante, el precio de monopolio es un margen constante sobre el costo marginal, 1/α, igual para todos los bienes y todos los períodos. Así, todos venden la misma cantidad y obtienen el mismo beneficio constante, cuyo valor presente con patente perpetua es π/r. Después decide si inventar: con libre entrada en el negocio de la I+D, ese valor presente se iguala al costo η. Sobre cómo cambia η con N hay dos visiones: Newton, «a hombros de gigantes», sugiere que inventar se abarata; la idea de que lo fácil ya se inventó, que se encarece. El autor supone η constante, y entonces la libre entrada fija una tasa de interés constante."
+   ]
+  },
+  {
+   "t": "Crecimiento de mercado y efecto de escala",
+   "eq": [
+    "\\gamma = \\frac{1}{\\theta}\\left(\\frac{L}{\\eta}\\,A^{\\frac{1}{1-\\alpha}}\\,\\frac{1-\\alpha}{\\alpha}\\,\\alpha^{\\frac{2}{1-\\alpha}} - \\rho\\right)",
+    "Y = c + Nx + \\eta\\,\\dot N"
+   ],
+   "nota": "θ es la inversa de la elasticidad de sustitución intertemporal y ρ la tasa de descuento; la tasa resulta de reemplazar r = π/η en la ecuación de Euler \\(\\dot c/c = (r-\\rho)/\\theta\\).",
+   "p": [
+    "Al sustituir la tasa de interés de libre entrada en la ecuación de Euler, el crecimiento del consumo resulta constante. Aumenta con la productividad A, con el margen de precio sobre costo marginal y con la cantidad demandada de intermedios, cae con el costo de la I+D y con la impaciencia, y crece con el tamaño de la población L. Ese efecto de escala, que ya aparecía en Romer (1986), viene de la no rivalidad: el costo de un producto nuevo no depende de cuántos lo usen, de modo que más gente acelera el avance técnico.",
+    "El equilibrio del mercado de activos exige que la riqueza de las familias iguale el valor de las firmas inventoras, ηN. La restricción agregada muestra los tres destinos del producto: consumo, producción de intermedios e I+D. Como el producto es proporcional a N, consumo, producto y número de bienes crecen a la misma tasa, y, como en el modelo AK, no hay transición."
+   ]
+  },
+  {
+   "t": "El planificador y la política correcta",
+   "eq": [
+    "x^{P} = A^{\\frac{1}{1-\\alpha}}\\,\\alpha^{\\frac{1}{1-\\alpha}}\\,L,\\qquad \\gamma^{P} = \\frac{1}{\\theta}\\left(\\frac{L}{\\eta}\\,A^{\\frac{1}{1-\\alpha}}\\,\\frac{1-\\alpha}{\\alpha}\\,\\alpha^{\\frac{1}{1-\\alpha}} - \\rho\\right)"
+   ],
+   "p": [
+    "El planificador enfrenta la misma restricción de recursos, pero usa la cantidad de intermedios que el mercado demandaría si el precio fuera igual al costo marginal. La única diferencia con el mercado es un término: \\(\\alpha^{1/(1-\\alpha)}\\) en lugar de \\(\\alpha^{2/(1-\\alpha)}\\). Como α es menor que uno, el mercado usa menos intermedios y crece menos que el óptimo. La única distorsión es el precio de monopolio, que reduce la cantidad comprada, el rendimiento de inventar y la inversión.",
+    "La política que parece natural, subsidiar la I+D, iguala la tasa de crecimiento a la del planificador, pero no corrige la distorsión estática: la cantidad de intermedios sigue siendo baja. En el gráfico del autor, la economía subsidiada crece en paralelo al planificador, pero en un nivel más bajo. Lo que lleva al óptimo es subsidiar la compra de intermedios: el inventor cobra 1/α, el comprador paga el costo marginal y el gobierno cubre la diferencia con un impuesto de suma fija. El ejemplo de Sala-i-Martin: en lugar de buscar la cura del SIDA, el gobierno puede comprometerse a subsidiar la pastilla una vez inventada."
+   ]
+  },
+  {
+   "t": "Romer (1990), destrucción creativa y lecciones",
+   "p": [
+    "En el modelo original de Romer (1990), la I+D usa solo trabajo. Si el costo fuera una cantidad fija de horas, su valor real subiría con el salario, que crece con N; el rendimiento de inventar caería hasta que el crecimiento se detuviera, una contradicción. Romer la evita con una externalidad: el costo en horas cae con el número de ideas ya inventadas, a hombros de gigantes, en la proporción justa para que el costo real quede constante. Eso agrega una segunda distorsión, porque el inventor no internaliza que abarata la investigación futura, y esta sí se corrige con un subsidio a la investigación.",
+    "En las escaleras de calidad aparece el sesgo contrario. Quien supera un producto se queda con el mercado del predecesor sin internalizar su pérdida, y aunque además ve su invención como temporal, el primer efecto domina: dejando de lado el precio de monopolio, hay exceso de inversión. Barro y Sala-i-Martin muestran que, si el líder tiene costos de investigación bastante menores que los seguidores, es él quien se supera a sí mismo y esa sobreinversión desaparece.",
+    "La lección final es que nadie sabe bien qué precio deben tener las ideas: ex post conviene el costo marginal, pero ex ante hace falta un precio de monopolio para que alguien invente. El gobierno debe fomentar la competencia de innovación, no la de precios, y desconfiar de subsidiar investigación cuyo valor no conoce. Lectura propia: el efecto de escala es una hipótesis contrastable, y el capítulo 10 del mismo libro informa que los países grandes no crecen más que los pequeños."
+   ]
+  }
+ ],
+ "claves": [
+  "Las ideas son no rivales y tienen grados variables de excluibilidad; la propiedad intelectual es una manera legal de aumentar su excluibilidad.",
+  "Producir ideas exige un costo fijo alto y un costo marginal bajo: en competencia perfecta nadie inventaría, por lo que la innovación requiere poder de mercado.",
+  "En el modelo de variedades no hay rendimientos decrecientes en el número de bienes N: es un modelo AK en el que se acumulan ideas.",
+  "El inventor cobra un margen constante 1/α, la libre entrada iguala π/r al costo de I+D y la tasa de crecimiento resulta constante y creciente en la población (efecto de escala).",
+  "El mercado crece menos que el óptimo porque el precio de monopolio deprime la compra de intermedios; subsidiar la I+D corrige la pendiente pero no el nivel, subsidiar la compra de intermedios alcanza el óptimo.",
+  "En las escaleras de calidad la destrucción creativa puede llevar a sobreinvertir; en Romer (1990) la externalidad de conocimiento sí justifica subsidiar la investigación."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distingue la no rivalidad de la no excluibilidad?",
+    "en": "What distinguishes nonrivalry from nonexcludability?"
+   },
+   "op": {
+    "es": [
+     "Son dos nombres para la misma propiedad de los bienes públicos",
+     "La no rivalidad dice que muchos pueden usar el bien a la vez; la no excluibilidad, que no se puede impedir su uso",
+     "La no rivalidad depende de las leyes y la excluibilidad es puramente física",
+     "La no rivalidad solo se aplica a los bienes de consumo final"
+    ],
+    "en": [
+     "They are two names for the same property of public goods",
+     "Nonrivalry means many can use the good at once; nonexcludability, that its use cannot be prevented",
+     "Nonrivalry depends on the law while excludability is purely physical",
+     "Nonrivalry only applies to final consumption goods"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La televisión por cable es no rival pero excluible; los peces del mar son rivales y poco excluibles. La excluibilidad admite grados y la cambian las leyes.",
+    "en": "Cable TV is nonrival but excludable; fish in the sea are rival and hardly excludable. Excludability comes in degrees and laws change it."
+   },
+   "id": "crec-teoria-15-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una empresa en competencia perfecta no produciría ideas?",
+    "en": "Why would a perfectly competitive firm not produce ideas?"
+   },
+   "op": {
+    "es": [
+     "Porque el costo fijo de la I+D hace que el costo medio supere al marginal, y con precio igual al costo marginal tendría pérdidas",
+     "Porque las ideas son rivales y se agotan al usarlas",
+     "Porque los consumidores no valoran los bienes nuevos",
+     "Porque la tasa de interés es demasiado alta en competencia"
+    ],
+    "en": [
+     "Because the fixed R&D cost makes average cost exceed marginal cost, and pricing at marginal cost means losses",
+     "Because ideas are rival and are used up",
+     "Because consumers do not value new goods",
+     "Because the interest rate is too high under competition"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con costos fijos, el costo medio está siempre por encima del marginal; por eso los bienes tecnológicos los producen empresas con poder de mercado.",
+    "en": "With fixed costs, average cost always lies above marginal cost; hence technological goods are produced by firms with market power."
+   },
+   "id": "crec-teoria-15-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el modelo de variedades puede crecer para siempre?",
+    "en": "Why can the expanding-variety model grow forever?"
+   },
+   "op": {
+    "es": [
+     "Porque supone progreso técnico exógeno",
+     "Porque la población crece a tasa constante",
+     "Porque no hay rendimientos decrecientes en el número de bienes intermedios N",
+     "Porque el ahorro es una fracción fija del producto"
+    ],
+    "en": [
+     "Because it assumes exogenous technical progress",
+     "Because population grows at a constant rate",
+     "Because there are no diminishing returns in the number of intermediate goods N",
+     "Because saving is a fixed share of output"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Hay rendimientos decrecientes en cada x, pero no en N: el modelo es un AK en el que se acumula el número de bienes de capital.",
+    "en": "There are diminishing returns in each x but not in N: the model is an AK in which the number of capital goods accumulates."
+   },
+   "id": "crec-teoria-15-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué precio cobra el inventor de un bien intermedio, con el costo marginal normalizado a uno?",
+    "en": "What price does an intermediate-good inventor charge, with marginal cost normalized to one?"
+   },
+   "op": {
+    "es": [
+     "Un precio igual a uno, el costo marginal",
+     "Un precio que baja a medida que aumenta N",
+     "Un precio que iguala el costo medio de la I+D",
+     "Un margen constante 1/α, igual para todos los bienes y períodos"
+    ],
+    "en": [
+     "A price equal to one, the marginal cost",
+     "A price that falls as N rises",
+     "A price equal to the average R&D cost",
+     "A constant markup 1/α, the same for all goods and periods"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La demanda tiene elasticidad constante, así que el precio de monopolio es un margen fijo sobre el costo marginal.",
+    "en": "Demand has constant elasticity, so the monopoly price is a fixed markup over marginal cost."
+   },
+   "id": "crec-teoria-15-q4"
+  },
+  {
+   "q": {
+    "es": "En el modelo de equilibrio del capítulo, ¿qué pasa con la tasa de crecimiento si aumenta la población L?",
+    "en": "In the chapter's equilibrium model, what happens to the growth rate if population L rises?"
+   },
+   "op": {
+    "es": [
+     "Aumenta, porque el costo de una idea no depende de cuántos la usen",
+     "No cambia, porque el modelo no tiene efecto de escala",
+     "Cae, porque el capital por persona se diluye",
+     "Cae, porque sube el costo de la I+D"
+    ],
+    "en": [
+     "It rises, because the cost of an idea does not depend on how many use it",
+     "It does not change, because the model has no scale effect",
+     "It falls, because capital per person is diluted",
+     "It falls, because R&D costs rise"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es el efecto de escala, consecuencia directa de la no rivalidad de la tecnología.",
+    "en": "It is the scale effect, a direct consequence of the nonrivalry of technology."
+   },
+   "id": "crec-teoria-15-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el mercado crece menos que el planificador en el modelo con costo de I+D constante?",
+    "en": "Why does the market grow less than the planner in the model with constant R&D cost?"
+   },
+   "op": {
+    "es": [
+     "Porque los consumidores ahorran demasiado",
+     "Porque el precio de monopolio reduce la compra de intermedios y el rendimiento de inventar",
+     "Porque hay demasiadas empresas de I+D",
+     "Porque los inventores no internalizan que abaratan la investigación futura"
+    ],
+    "en": [
+     "Because consumers save too much",
+     "Because the monopoly price reduces purchases of intermediates and the return to inventing",
+     "Because there are too many R&D firms",
+     "Because inventors ignore that they make future research cheaper"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En la tasa del planificador α aparece elevado a 1/(1−α) y en la del mercado a 2/(1−α); la externalidad de conocimiento recién aparece en la versión de Romer (1990).",
+    "en": "In the planner's rate α is raised to 1/(1−α) and in the market's to 2/(1−α); the knowledge externality only appears in the Romer (1990) version."
+   },
+   "id": "crec-teoria-15-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué política lleva la economía de mercado al óptimo en el modelo base del capítulo?",
+    "en": "Which policy takes the market economy to the optimum in the chapter's baseline model?"
+   },
+   "op": {
+    "es": [
+     "Un subsidio a la I+D financiado con impuestos de suma fija",
+     "Eliminar las patentes para que el precio baje al costo marginal",
+     "Un subsidio a la compra de intermedios para que los compradores paguen el costo marginal",
+     "Un impuesto al consumo que eleve el ahorro"
+    ],
+    "en": [
+     "An R&D subsidy financed with lump-sum taxes",
+     "Abolishing patents so the price falls to marginal cost",
+     "A subsidy on intermediate purchases so buyers pay marginal cost",
+     "A consumption tax that raises saving"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El subsidio a la I+D corrige la tasa de crecimiento pero no el nivel de x; subsidiar la compra corrige ambos.",
+    "en": "The R&D subsidy fixes the growth rate but not the level of x; subsidizing purchases fixes both."
+   },
+   "id": "crec-teoria-15-q7"
+  },
+  {
+   "q": {
+    "es": "En los modelos de escaleras de calidad, ¿por qué puede haber sobreinversión en I+D?",
+    "en": "In quality-ladder models, why can there be overinvestment in R&D?"
+   },
+   "op": {
+    "es": [
+     "Porque los inventores ven sus inventos como permanentes",
+     "Porque el precio de monopolio es demasiado bajo",
+     "Porque el líder tecnológico siempre investiga más que los seguidores",
+     "Porque quien supera un producto se queda con el mercado del predecesor sin internalizar su pérdida"
+    ],
+    "en": [
+     "Because inventors see their inventions as permanent",
+     "Because the monopoly price is too low",
+     "Because the technological leader always does more research than followers",
+     "Because whoever improves a product takes the predecessor's market without internalizing its loss"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Ese efecto domina sobre el carácter temporal de la invención; si el líder se supera a sí mismo, internaliza la destrucción y el exceso desaparece.",
+    "en": "That effect dominates the temporary nature of the invention; if the leader leapfrogs itself, it internalizes the destruction and the excess vanishes."
+   },
+   "id": "crec-teoria-15-q8"
+  }
+ ],
+ "palabras": 1498,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿En qué se diferencia una idea de un bien material desde el punto de vista económico?",
+    "en": "How does an idea differ economically from a material good?"
+   },
+   "a": {
+    "es": "Una idea es no rival, porque muchas personas pueden usarla a la vez, y su excluibilidad es variable y depende de las leyes; un bien material es rival y debe producirse cada vez que se consume. Así lo plantea Sala-i-Martin (cap. 9).",
+    "en": "An idea is nonrival, since many people can use it at once, and its excludability varies and depends on the law; a material good is rival and must be produced each time it is consumed. So Sala-i-Martin argues (ch. 9)."
+   },
+   "id": "crec-teoria-15-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la producción de ideas requiere poder de mercado?",
+    "en": "Why does the production of ideas require market power?"
+   },
+   "a": {
+    "es": "Porque inventar tiene un costo fijo alto y copiar un costo marginal bajo: con precio igual al costo marginal, el inventor nunca recupera la I+D. Por eso el gobierno debe garantizarle legalmente un precio superior al costo marginal. Lo muestra Sala-i-Martin (cap. 9).",
+    "en": "Because inventing has a high fixed cost and copying a low marginal cost: at a price equal to marginal cost, the inventor never recoups R&D. Hence the government must legally guarantee a price above marginal cost. Sala-i-Martin shows it (ch. 9)."
+   },
+   "id": "crec-teoria-15-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo genera crecimiento sostenido un modelo de expansión de variedades?",
+    "en": "How does an expanding-variety model generate sustained growth?"
+   },
+   "a": {
+    "es": "Los productores finales usan más variedades de intermedios sin rendimientos decrecientes en su número; los inventores cobran un margen 1/α y la libre entrada iguala el valor de la patente, π/r, al costo de I+D, lo que fija una tasa de interés y de crecimiento constantes. Es la versión de Romer (1990) que presenta Sala-i-Martin (cap. 9).",
+    "en": "Final producers use more varieties of intermediates with no diminishing returns in their number; inventors charge a markup 1/α and free entry equates the patent value, π/r, to the R&D cost, which pins down constant interest and growth rates. It is the version of Romer (1990) presented by Sala-i-Martin (ch. 9)."
+   },
+   "id": "crec-teoria-15-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué es el efecto de escala en los modelos de I+D?",
+    "en": "What is the scale effect in R&D models?"
+   },
+   "a": {
+    "es": "Es la predicción de que una economía con más población crece más rápido, porque el costo de una idea no depende de cuántos la usen. Sala-i-Martin (cap. 9) la deriva del modelo de variedades.",
+    "en": "It is the prediction that an economy with a larger population grows faster, because the cost of an idea does not depend on how many use it. Sala-i-Martin (ch. 9) derives it from the variety model."
+   },
+   "id": "crec-teoria-15-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué un subsidio a la I+D puede no alcanzar el óptimo?",
+    "en": "Why may an R&D subsidy fail to reach the optimum?"
+   },
+   "a": {
+    "es": "Porque iguala la tasa de crecimiento a la óptima pero deja intacta la distorsión estática del precio de monopolio: se siguen comprando pocos intermedios y el nivel de producto queda bajo. El subsidio a la compra de intermedios sí la corrige. Así lo argumenta Sala-i-Martin (cap. 9).",
+    "en": "Because it matches the optimal growth rate but leaves the static distortion of the monopoly price intact: too few intermediates are still bought and the output level stays low. A subsidy on intermediate purchases does correct it. So argues Sala-i-Martin (ch. 9)."
+   },
+   "id": "crec-teoria-15-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué externalidad agrega Romer (1990) y qué política justifica?",
+    "en": "What externality does Romer (1990) add, and what policy does it justify?"
+   },
+   "a": {
+    "es": "Que el costo en horas de investigar cae con el stock de ideas, de modo que cada inventor abarata la investigación futura sin cobrar por ello; el rendimiento social supera al privado y eso sí justifica subsidiar la investigación. Lo explica Sala-i-Martin (cap. 9).",
+    "en": "That the hourly cost of research falls with the stock of ideas, so each inventor makes future research cheaper without being paid for it; the social return exceeds the private one, which does justify subsidizing research. Sala-i-Martin explains it (ch. 9)."
+   },
+   "id": "crec-teoria-15-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la destrucción creativa y qué sesgo produce en la inversión en I+D?",
+    "en": "What is creative destruction, and what bias does it create in R&D investment?"
+   },
+   "a": {
+    "es": "Es el proceso por el cual quien mejora un producto lo vuelve obsoleto y se queda con su mercado; como no internaliza la pérdida del predecesor, tiende a haber exceso de inversión, salvo que el propio líder se supere a sí mismo. Lo resume Sala-i-Martin (cap. 9).",
+    "en": "It is the process by which whoever improves a product makes it obsolete and takes its market; since the predecessor's loss is not internalized, there tends to be overinvestment, unless the leader leapfrogs itself. Sala-i-Martin summarizes it (ch. 9)."
+   },
+   "id": "crec-teoria-15-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué tipo de competencia debe promover un gobierno que quiere crecimiento basado en ideas?",
+    "en": "What kind of competition should a government seeking idea-based growth promote?"
+   },
+   "a": {
+    "es": "La competencia de innovación, no la de precios: tolerar monopolios temporales que se desplazan cuando otro mejora el producto, y preferir subsidiar la compra de lo inventado, como una pastilla contra el SIDA, antes que financiar investigación cuyo valor no conoce. Es la lección de Sala-i-Martin (cap. 9).",
+    "en": "Innovation competition, not price competition: tolerating temporary monopolies that are displaced when someone improves the product, and preferring to subsidize purchases of what has been invented, like an AIDS pill, over funding research whose value it does not know. That is Sala-i-Martin's lesson (ch. 9)."
+   },
+   "id": "crec-teoria-15-t8"
+  }
+ ]
+}

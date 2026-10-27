@@ -1,0 +1,401 @@
+{
+ "id": "fisc-general-02",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Medir la pobreza: líneas, escalas, índices FGT y vulnerabilidad",
+ "bajada": "Los capítulos 3 y 4 de los Apuntes de Grión: cómo se identifica a los pobres, cómo se ajusta por tamaño del hogar, qué miden las medidas FGT y la curva TIP, cómo calcula el INDEC la línea de pobreza y qué agregan la vulnerabilidad y el IDH.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), caps. 3: «Pobreza» y 4: «Ampliaciones al concepto de pobreza», y ejercicios A.2.2 a A.2.4",
+ "intro": "La pobreza es, para Grión, uno de los principales problemas que enfrentan los gobiernos de las economías subdesarrolladas. Pero antes de combatirla hay que contarla, y contar exige dos decisiones separadas: identificar quién es pobre y agregar esa información en un número. Ninguna de las dos es técnica en sentido estrecho. Elegir ingreso o consumo, necesidades insatisfechas o líneas de pobreza, una escala de equivalencia u otra, o una medida sensible a la desigualdad entre los pobres cambia el diagnóstico y, con él, la política. El apunte recorre esas decisiones, las ilustra con la medición del INDEC y cierra con dos ampliaciones del concepto: la vulnerabilidad y el desarrollo humano.",
+ "secciones": [
+  {
+   "t": "Qué es ser pobre y cómo se identifica",
+   "p": [
+    "Grión distingue una definición tradicional, la insuficiencia de recursos para satisfacer ciertas necesidades, consumir bienes o disponer de ingreso, de otra centrada en la calidad de vida, que es el enfoque de capacidades de Sen, donde los bienes importan por lo que permiten hacer. A eso se suma la disyuntiva entre pobreza absoluta y relativa: si la utilidad de una persona depende del bienestar de los demás, por ejemplo por su capacidad de integración social, la vara se mueve con la sociedad.",
+    "Identificar a los pobres requiere elegir un indicador de bienestar (ingreso o consumo, la participación del gasto en alimentos, indicadores nutricionales o antropométricos, necesidades básicas), fijar el umbral que separa pobres de no pobres y decidir si se mide por persona o por hogar. El enfoque directo considera pobre a quien no satisface una o varias necesidades básicas; en la práctica son las Necesidades Básicas Insatisfechas (NBI): hacinamiento, vivienda inadecuada, falta de agua, servicios sanitarios inadecuados, inasistencia escolar y un indicador indirecto de capacidad económica. El enfoque indirecto, el de las líneas de pobreza, clasifica como pobre a quien no tiene recursos suficientes para satisfacerlas, con criterios de consumo calórico o de costo de las necesidades básicas. Usarlos juntos revela la heterogeneidad de la pobreza y orienta la política, por ejemplo, entre un plan de viviendas y un subsidio por desempleo."
+   ]
+  },
+  {
+   "t": "Escalas de equivalencia",
+   "eq": [
+    "U = \\alpha \\log\\left(\\frac{x^a}{n}\\right) + (1-\\alpha)\\log x^r",
+    "G(p,U,n) = \\frac{p^a x^a}{\\alpha},\\qquad f(n) = \\frac{G(p^0,U^0,n)}{G(p^0,U^0,1)} = n^{\\alpha}"
+   ],
+   "nota": "\\(x^a\\) son alimentos, que se reparten entre los n miembros; \\(x^r\\) el resto de los bienes, de consumo no rival dentro del hogar. G es la función de gasto mínimo y f el factor de equivalencia. El coeficiente de Engel (gasto en alimentos sobre gasto total) es α.",
+   "p": [
+    "Un hogar de cuatro no necesita cuatro veces el ingreso de una persona sola: hay economías de escala y los miembros tienen necesidades distintas. Las escalas de equivalencia son índices del costo de vida relativo entre hogares de distinto tamaño y composición; suele tomarse como referencia a un hombre adulto. En el ejemplo del apunte, una pareja con dos hijos gana $2.800 por mes y un adulto necesita $1.000 para no ser pobre. Con la escala de Amsterdam, el ingreso requerido es (1 + 0,9 + 0,52 + 0,52) × $1.000 = $2.940, y el hogar resulta pobre.",
+    "El ejercicio A.2.2 deriva una escala desde la teoría. Minimizando el gasto sujeto a un nivel de utilidad se obtiene que el gasto total es el de alimentos dividido por α, de modo que α es el coeficiente de Engel: con α = 0,5, quien necesita $100 de alimentos necesita $200 de ingreso. El factor de equivalencia resulta \\(n^{\\alpha}\\), la raíz de n, y no depende de precios ni del nivel de utilidad. Con tres familias de 2, 4 y 5 miembros e ingresos de 300, 400 y 450, los mínimos son 282,84, 400 y 447,21: las dos primeras no son pobres y la tercera, por poco, sí."
+   ]
+  },
+  {
+   "t": "Axiomas y medidas FGT",
+   "eq": [
+    "P_{\\alpha} = \\frac{1}{n}\\sum_{i=1}^{q}\\left(\\frac{z - y_i}{z}\\right)^{\\alpha},\\qquad \\alpha \\ge 0",
+    "P = \\sum_{i=1}^{m}\\frac{n_i}{n}\\,P_i"
+   ],
+   "nota": "z es la línea de pobreza, \\(y_i\\) el ingreso de la persona i, q la cantidad de pobres y n la población. Con α = 0 se obtiene el índice de recuento (incidencia); con α = 1, la brecha de pobreza (profundidad); con α = 2, la severidad. La segunda ecuación agrega m regiones de \\(n_i\\) habitantes.",
+   "p": [
+    "Grión enumera cuatro propiedades deseables de una medida de pobreza. El axioma focal pide que no responda a cambios en el ingreso de los no pobres; el de monotonicidad, que suba cuando cae el ingreso de un pobre; el de transferencia, que suba si se transfiere dinero de un pobre a otro menos pobre; y el de monotonicidad en subgrupos, que la pobreza total aumente si aumenta la de un grupo.",
+    "La familia FGT cubre los tres usos clásicos con un solo parámetro. El índice de recuento solo cuenta pobres y es insensible a cuán pobres son; la brecha mide la distancia promedio a la línea; con α = 2 los déficits se elevan al cuadrado, de modo que pesan más los más pobres y la medida capta la desigualdad entre ellos. En el ejemplo de cuatro personas con ingresos de 100, 200, 300 y 400 y una línea de 230, la incidencia es 0,500 y la brecha, 0,174.",
+    "El ejercicio A.2.3 muestra qué distingue cada medida. Diez habitantes con ingresos de 2 a 10 y una línea de 7,5 dan una incidencia de 0,6000, una brecha de 0,2400 y una severidad de 0,1271. Si mejoran solo los no pobres, nada cambia: es el axioma focal. Si los pobres empobrecen sin que cambie su número, la brecha sube a 0,2933. Si el ingreso medio de los pobres se mantiene pero se dispersa, solo la severidad sube, a 0,1733. Como las FGT son aditivamente separables, se agregan por regiones: sumando 50 personas de otra región con valores de 0,4000, 0,3000 y 0,2000, el país queda en 0,4333, 0,2900 y 0,1879 (ejercicio A.2.4)."
+   ]
+  },
+  {
+   "t": "La curva TIP",
+   "eq": [
+    "TIP(p) = \\frac{1}{n}\\sum_{i=1}^{\\lfloor pn \\rfloor} g_i,\\qquad g_i = \\max\\left\\{\\frac{z-y_i}{z},\\,0\\right\\}"
+   ],
+   "nota": "Las personas se ordenan de menor a mayor ingreso y p es la fracción acumulada de población. La forma funcional es una formalización de la descripción del texto.",
+   "p": [
+    "Como los indicadores dependen de parámetros, Jenkins y Lambert (1997) proponen las curvas TIP, por las tres «I» de la pobreza: incidencia, intensidad y desigualdad. Se ordena a las personas de menor a mayor ingreso y se acumulan sus brechas. El percentil donde la curva se vuelve horizontal da la incidencia (P0); su altura máxima, la profundidad (P1 en la versión normalizada); y la concavidad del tramo curvo, la severidad, reflejada en P2."
+   ]
+  },
+  {
+   "t": "Cómo se mide en la Argentina",
+   "eq": [
+    "LP = G_A + G_{NA} = \\frac{1}{e}\\,G_A,\\qquad e = \\frac{G_A}{G_T}"
+   ],
+   "nota": "\\(G_A\\) es el costo de la Canasta Básica de Alimentos (línea de indigencia), \\(G_{NA}\\) el componente no alimentario y e el coeficiente de Engel, el gasto en alimentos sobre el gasto total.",
+   "p": [
+    "El INDEC estima la incidencia de la pobreza en el Gran Buenos Aires y las principales áreas urbanas que cubre la Encuesta Permanente de Hogares (EPH), con el método de la línea de pobreza y el enfoque del ingreso: pobreza absoluta. Se fijan requerimientos nutricionales mínimos, se traducen en bienes según el consumo de un grupo de referencia y se valúa la Canasta Básica de Alimentos, que es la línea de indigencia. La línea de pobreza se obtiene expandiéndola por la inversa del coeficiente de Engel. La unidad es el adulto equivalente, un varón de 30 a 59 años, y los demás miembros se ponderan según sus necesidades calóricas. El hogar tipo 2, un varón de 35, su esposa de 31 y dos hijos de 5 y 8 años, suma 1,00 + 0,74 + 0,63 + 0,72 = 3,09 adultos equivalentes.",
+    "Los números importan. Para ese hogar, FIEL estimaba en marzo de 2011 una canasta alimentaria de $1212,2 y una total de $2219,4 (e = 1,83), mientras el INDEC, en febrero de 2011, daba $580,27 y $1271,5 (e = 2,19). Grión advierte que desde enero de 2007 hay cuestionamientos a los cambios metodológicos del INDEC, en particular en la inflación, esencial para valuar las canastas. Por eso los gráficos del apunte, elaborados por IERAL con la EPH y canastas alternativas, muestran series «INDEC» y «alternativas» que se separan; la tasa de pobreza total país llega en su pico a 57,5% y la del Gran Córdoba, a 58,5%.",
+    "El enfoque directo usa los censos. Según los datos de IERAL sobre el Censo Nacional 2001 y el Provincial 2008, la población en hogares con NBI varía mucho entre provincias, y dentro de Córdoba va, según el gráfico, de 30,8% en Minas a 4,7% en Marcos Juárez."
+   ]
+  },
+  {
+   "t": "Vulnerabilidad: la pobreza mirada hacia adelante",
+   "p": [
+    "La inseguridad es parte del bienestar. Grión define la vulnerabilidad como el riesgo ex ante de que un hogar hoy no pobre caiga en la pobreza, o de que uno pobre siga siéndolo. Surge de la escasez de activos materiales (ingresos, vivienda) y no materiales (salud, educación, seguridad social). Se mide estimando el ingreso esperado de cada hogar y su volatilidad a partir de sus características, como activos productivos o financieros y vivienda propia, y de las del jefe, como educación y edad.",
+    "Cruzando ingreso actual, ingreso esperado y una probabilidad de vulnerabilidad V con umbral 0,5, el apunte clasifica a los hogares en pobres crónicos (con ingreso esperado bajo la línea), pobres transitorios con alta o baja vulnerabilidad, no pobres vulnerables y no pobres no vulnerables. Esa clasificación permite adecuar los programas: prevención, para reducir la probabilidad del riesgo (educación, salud pública, mercado laboral); mitigación, para reducir los efectos de un choque futuro, sobre todo con seguros; y superación, para aliviar el impacto una vez producido, con transferencias y subsidios."
+   ]
+  },
+  {
+   "t": "El Índice de Desarrollo Humano",
+   "nota": "Lectura propia: el apunte presenta la fórmula de normalización como figura; la forma habitual es \\((x - x_{min})/(x_{max} - x_{min})\\) para cada variable.",
+   "p": [
+    "Desde 1990 el PNUD publica el Informe sobre Desarrollo Humano, basado en el IDH, creado como alternativa al PIB per cápita. Define el desarrollo humano como el proceso de ampliar las oportunidades de las personas, sobre todo una vida prolongada y saludable, el acceso a la educación y los recursos para un nivel de vida decente, una noción que, según Grión, deriva de la expansión de capacidades de Sen. Las variables se llevan a una escala común de cero a uno. En el informe 2010, Noruega encabeza con 0,938 y Zimbabue cierra en el puesto 169 con 0,140; en América Latina, Chile tiene 0,783, la Argentina 0,775 y Brasil 0,699.",
+    "El índice tiene críticas: no es un aporte original, omite variables ambientales y usa ponderadores arbitrarios. Para Córdoba, IERAL (2006) elaboró un índice ampliado con cinco dimensiones, educación, salud, actividad económica, equipamiento y vivienda: el este, el sur y la capital muestran el mayor desarrollo, el centro uno medio, y el norte y el oeste, el menor."
+   ]
+  }
+ ],
+ "claves": [
+  "Medir la pobreza exige identificar a los pobres (indicador, umbral, unidad) y agregar esa información en un índice.",
+  "El enfoque directo (NBI) mira necesidades insatisfechas; el indirecto (líneas de pobreza), la falta de recursos para cubrirlas; conviene combinarlos.",
+  "Las escalas de equivalencia ajustan por tamaño y composición del hogar; con alimentos rivales y otros bienes no rivales, el factor es \\(n^{\\alpha}\\).",
+  "Las medidas FGT dan incidencia (α = 0), profundidad (α = 1) y severidad (α = 2), y son aditivamente separables por regiones.",
+  "El INDEC valúa una canasta alimentaria por adulto equivalente y la expande con la inversa del coeficiente de Engel; desde 2007 sus cifras están cuestionadas.",
+  "La vulnerabilidad mide el riesgo de ser pobre en el futuro y el IDH amplía la mirada a salud, educación y nivel de vida."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distingue al enfoque directo de medición de la pobreza del indirecto?",
+    "en": "What distinguishes the direct approach to poverty measurement from the indirect one?"
+   },
+   "op": {
+    "es": [
+     "El directo usa el ingreso y el indirecto, el consumo",
+     "El directo mide pobreza relativa y el indirecto, absoluta",
+     "El directo mira necesidades básicas insatisfechas; el indirecto, la falta de recursos para cubrirlas",
+     "El directo se calcula por persona y el indirecto, por hogar"
+    ],
+    "en": [
+     "The direct uses income and the indirect, consumption",
+     "The direct measures relative poverty and the indirect, absolute",
+     "The direct looks at unmet basic needs; the indirect, lack of resources to meet them",
+     "The direct is per person and the indirect, per household"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las NBI son el enfoque directo; las líneas de pobreza, el indirecto.",
+    "en": "UBN is the direct approach; poverty lines, the indirect one."
+   },
+   "id": "fisc-general-02-q1"
+  },
+  {
+   "q": {
+    "es": "En el ejercicio A.2.2, con alimentos rivales y el resto de los bienes no rival dentro del hogar, ¿cuál es el factor de equivalencia?",
+    "en": "In exercise A.2.2, with rival food and non-rival other goods within the household, what is the equivalence factor?"
+   },
+   "op": {
+    "es": [
+     "\\(n^{\\alpha}\\), que con α = 0,5 es la raíz de n",
+     "n, el número de miembros",
+     "Depende de los precios relativos",
+     "\\(1/\\alpha\\), la inversa del coeficiente de Engel"
+    ],
+    "en": [
+     "\\(n^{\\alpha}\\), which with α = 0.5 is the square root of n",
+     "n, the number of members",
+     "It depends on relative prices",
+     "\\(1/\\alpha\\), the inverse Engel coefficient"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El factor no depende de precios ni de utilidad; un hogar de 4 necesita el doble que uno de 1.",
+    "en": "The factor depends on neither prices nor utility; a household of 4 needs twice what a single person needs."
+   },
+   "id": "fisc-general-02-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué axioma viola el índice de recuento cuando un pobre empobrece más sin cruzar la línea?",
+    "en": "Which axiom does the headcount index violate when a poor person becomes poorer without crossing the line?"
+   },
+   "op": {
+    "es": [
+     "El axioma focal",
+     "El de monotonicidad en subgrupos",
+     "El de separabilidad aditiva",
+     "El de monotonicidad"
+    ],
+    "en": [
+     "The focus axiom",
+     "Subgroup monotonicity",
+     "Additive separability",
+     "Monotonicity"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El recuento no cambia si cae el ingreso de un pobre; la monotonicidad exige que la pobreza suba.",
+    "en": "The headcount is unchanged if a poor person's income falls; monotonicity requires poverty to rise."
+   },
+   "id": "fisc-general-02-q3"
+  },
+  {
+   "q": {
+    "es": "En el escenario 3 del ejercicio A.2.3, el ingreso medio de los pobres no cambia pero se dispersa. ¿Qué medida sube?",
+    "en": "In scenario 3 of exercise A.2.3, the poor's mean income is unchanged but more dispersed. Which measure rises?"
+   },
+   "op": {
+    "es": [
+     "La incidencia",
+     "La severidad (FGT con α = 2)",
+     "La brecha de pobreza",
+     "Ninguna"
+    ],
+    "en": [
+     "Incidence",
+     "Severity (FGT with α = 2)",
+     "The poverty gap",
+     "None"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La severidad pasa de 0,1271 a 0,1733; la incidencia y la brecha quedan en 0,6000 y 0,2400.",
+    "en": "Severity goes from 0.1271 to 0.1733; incidence and gap stay at 0.6000 and 0.2400."
+   },
+   "id": "fisc-general-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué propiedad de las FGT permite calcular la pobreza nacional como promedio ponderado de la regional?",
+    "en": "Which FGT property allows national poverty to be computed as a weighted average of regional poverty?"
+   },
+   "op": {
+    "es": [
+     "El axioma de transferencia",
+     "La separabilidad aditiva",
+     "La insensibilidad a los no pobres",
+     "La normalización por la línea"
+    ],
+    "en": [
+     "The transfer axiom",
+     "Additive separability",
+     "Insensitivity to the non-poor",
+     "Normalization by the line"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Cada región pesa según su población, \\(n_i/n\\).",
+    "en": "Each region is weighted by its population, \\(n_i/n\\)."
+   },
+   "id": "fisc-general-02-q5"
+  },
+  {
+   "q": {
+    "es": "En la curva TIP, ¿qué indica el percentil en el que la curva se vuelve horizontal?",
+    "en": "In the TIP curve, what does the percentile at which the curve becomes flat indicate?"
+   },
+   "op": {
+    "es": [
+     "La severidad",
+     "La profundidad",
+     "La línea de pobreza",
+     "La incidencia de la pobreza"
+    ],
+    "en": [
+     "Severity",
+     "Depth",
+     "The poverty line",
+     "Poverty incidence"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "A partir de allí las personas no tienen brecha; la altura máxima da la profundidad y la concavidad, la severidad.",
+    "en": "Beyond it people have no gap; maximum height gives depth and concavity gives severity."
+   },
+   "id": "fisc-general-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo obtiene el INDEC la línea de pobreza a partir de la canasta alimentaria?",
+    "en": "How does INDEC obtain the poverty line from the food basket?"
+   },
+   "op": {
+    "es": [
+     "Multiplicando la canasta alimentaria por la inversa del coeficiente de Engel",
+     "Sumando el costo de las NBI",
+     "Multiplicando por el número de miembros del hogar",
+     "Aplicando la escala de Amsterdam"
+    ],
+    "en": [
+     "Multiplying the food basket by the inverse of the Engel coefficient",
+     "Adding the cost of unmet basic needs",
+     "Multiplying by the number of household members",
+     "Applying the Amsterdam scale"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "LP = (1/e) GA, donde e es el gasto en alimentos sobre el gasto total; el hogar se mide en adultos equivalentes.",
+    "en": "LP = (1/e) GA, where e is food spending over total spending; the household is measured in adult equivalents."
+   },
+   "id": "fisc-general-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cómo define Grión la vulnerabilidad?",
+    "en": "How does Grión define vulnerability?"
+   },
+   "op": {
+    "es": [
+     "Como la proporción de hogares con NBI",
+     "Como la brecha de pobreza promedio",
+     "Como el riesgo ex ante de caer en la pobreza o de permanecer en ella",
+     "Como la volatilidad de la inflación"
+    ],
+    "en": [
+     "As the share of households with unmet basic needs",
+     "As the average poverty gap",
+     "As the ex ante risk of falling into or remaining in poverty",
+     "As inflation volatility"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Se estima con el ingreso esperado del hogar y su volatilidad, según características del hogar y del jefe.",
+    "en": "It is estimated from the household's expected income and its volatility, based on household and head characteristics."
+   },
+   "id": "fisc-general-02-q8"
+  }
+ ],
+ "palabras": 1515,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Para qué sirven las escalas de equivalencia en la medición de la pobreza?",
+    "en": "What are equivalence scales for in poverty measurement?"
+   },
+   "a": {
+    "es": "Para comparar hogares de distinto tamaño y composición, ajustando el ingreso por economías de escala y necesidades relativas: con la escala de Amsterdam, una pareja con dos hijos necesita 2,94 veces lo que un adulto. Así lo explica Grión (cap. 3).",
+    "en": "To compare households of different size and composition, adjusting income for economies of scale and relative needs: with the Amsterdam scale, a couple with two children needs 2.94 times what one adult needs. So explains Grión (ch. 3)."
+   },
+   "id": "fisc-general-02-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿De qué depende el factor de equivalencia si los alimentos son rivales y el resto de los bienes no?",
+    "en": "What does the equivalence factor depend on if food is rival and other goods are not?"
+   },
+   "a": {
+    "es": "Solo del tamaño del hogar: el factor es \\(n^{\\alpha}\\), donde α es el coeficiente de Engel, y no depende de precios ni del nivel de utilidad. Lo deriva Grión en el ejercicio A.2.2 de sus Apuntes.",
+    "en": "Only on household size: the factor is \\(n^{\\alpha}\\), where α is the Engel coefficient, and it depends on neither prices nor the utility level. Grión derives it in exercise A.2.2 of his Notes."
+   },
+   "id": "fisc-general-02-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué miden las medidas FGT según el valor de α?",
+    "en": "What do FGT measures capture depending on α?"
+   },
+   "a": {
+    "es": "Con α = 0, la incidencia (proporción de pobres); con α = 1, la profundidad (brecha media respecto de la línea); con α = 2, la severidad, que pondera más a los más pobres y capta la desigualdad entre ellos. Así las presenta Grión (cap. 3).",
+    "en": "With α = 0, incidence (share of poor); with α = 1, depth (mean gap relative to the line); with α = 2, severity, which weights the poorest more and captures inequality among them. So Grión presents them (ch. 3)."
+   },
+   "id": "fisc-general-02-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Por qué conviene mirar varias medidas de pobreza a la vez?",
+    "en": "Why look at several poverty measures at once?"
+   },
+   "a": {
+    "es": "Porque pueden moverse distinto: con la incidencia fija en 0,6000, un empobrecimiento de los pobres sube la brecha a 0,2933 y una mayor dispersión entre ellos sube solo la severidad, a 0,1733. Lo muestra el ejercicio A.2.3 de Grión.",
+    "en": "Because they can move differently: with incidence fixed at 0.6000, impoverishment of the poor raises the gap to 0.2933 and greater dispersion among them raises only severity, to 0.1733. Grión's exercise A.2.3 shows it."
+   },
+   "id": "fisc-general-02-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se mide la pobreza por ingresos en la Argentina?",
+    "en": "How is income poverty measured in Argentina?"
+   },
+   "a": {
+    "es": "Con la EPH: se valúa una canasta básica de alimentos por adulto equivalente (línea de indigencia), se la expande por la inversa del coeficiente de Engel para obtener la canasta total y se compara con el ingreso del hogar en adultos equivalentes. Lo describe Grión (cap. 3).",
+    "en": "With the EPH household survey: a basic food basket per adult equivalent is priced (extreme poverty line), expanded by the inverse Engel coefficient to get the total basket, and compared with household income in adult equivalents. Grión describes it (ch. 3)."
+   },
+   "id": "fisc-general-02-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué las cifras oficiales de pobreza argentinas de esos años son discutidas?",
+    "en": "Why are Argentina's official poverty figures from those years disputed?"
+   },
+   "a": {
+    "es": "Porque desde enero de 2007 hubo cuestionamientos a los cambios metodológicos del INDEC, sobre todo en la inflación, que valúa las canastas: para el hogar tipo 2, FIEL estimaba una canasta total de $2219,4 y el INDEC, de $1271,5. Lo señala Grión (cap. 3).",
+    "en": "Because since January 2007 INDEC's methodological changes, especially in inflation, which prices the baskets, have been questioned: for type-2 household, FIEL estimated a total basket of $2219.4 and INDEC, $1271.5. Grión notes it (ch. 3)."
+   },
+   "id": "fisc-general-02-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué agrega el concepto de vulnerabilidad a la medición de la pobreza?",
+    "en": "What does vulnerability add to poverty measurement?"
+   },
+   "a": {
+    "es": "Una mirada hacia adelante: separa pobres crónicos, pobres transitorios y no pobres vulnerables según su ingreso esperado y su volatilidad, y así ayuda a elegir entre prevención, mitigación y superación. Así lo plantea Grión (cap. 4).",
+    "en": "A forward-looking view: it separates chronic poor, transient poor and vulnerable non-poor by expected income and its volatility, helping choose among prevention, mitigation and coping. So Grión argues (ch. 4)."
+   },
+   "id": "fisc-general-02-t7"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué mide el Índice de Desarrollo Humano y qué se le critica?",
+    "en": "What does the Human Development Index measure, and what are its criticisms?"
+   },
+   "a": {
+    "es": "El progreso medio de un país en salud, educación y nivel de vida, como alternativa al PIB per cápita; se le critica la falta de originalidad, la omisión de variables ambientales y los ponderadores arbitrarios. En 2010 la Argentina tenía 0,775, según Grión (cap. 4).",
+    "en": "A country's average progress in health, education and living standards, as an alternative to GDP per capita; it is criticized for lack of originality, omitting environmental variables and arbitrary weights. In 2010 Argentina scored 0.775, according to Grión (ch. 4)."
+   },
+   "id": "fisc-general-02-t8"
+  }
+ ]
+}
