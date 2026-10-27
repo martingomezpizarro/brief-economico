@@ -327,7 +327,7 @@ const FB_VER="12.17.1";
 /* Vincular la carpeta de PDF de Google Drive (selector de Google, permiso drive.file).
    clientId: el ID de cliente OAuth web del proyecto de Google Cloud de Firebase (ver docs/fuentes-y-pdf.md).
    Vacío = la conexión con Drive no se muestra. */
-const DRIVE_CFG={clientId:"",apiKey:FIREBASE_CONFIG?FIREBASE_CONFIG.apiKey:"",appId:FIREBASE_CONFIG?FIREBASE_CONFIG.messagingSenderId:""};
+const DRIVE_CFG={clientId:"533431844100-a74avvjpnhl6fkbunbbhkobl94452if8.apps.googleusercontent.com",apiKey:FIREBASE_CONFIG?FIREBASE_CONFIG.apiKey:"",appId:FIREBASE_CONFIG?FIREBASE_CONFIG.messagingSenderId:""};
 /* Mails que ven la administración (#admin). Tienen que coincidir con esAdmin() en las reglas de Firestore (worker/ACTIVAR.md). */
 const ADMINS=["gomezpizarromartin@gmail.com"];
 const WORKER_URL="https://brief-economico.gomezpizarromartin.workers.dev";
@@ -1722,7 +1722,7 @@ async function driveHijos(tok,carpeta,out,prof){
     if(!r.ok)throw new Error("Drive "+r.status);
     const j=await r.json();
     for(const f of j.files||[]){
-      if(f.mimeType==="application/vnd.google-apps.folder"){if(prof<5)await driveHijos(tok,f.id,out,prof+1)}
+      if(f.mimeType==="application/vnd.google-apps.folder"){if(prof<20)await driveHijos(tok,f.id,out,prof+1)}
       else if(f.mimeType==="application/pdf"||/\.pdf$/i.test(f.name))out.push({id:f.id,name:f.name})}
     pt=j.nextPageToken||""}while(pt);
   return out}
