@@ -52,6 +52,17 @@ button{font:inherit;color:inherit;cursor:pointer}
   .hoy-par>.rule{border-top:0;padding-top:0}
 }
 .volver{font-family:var(--mono);font-size:12px;margin-bottom:-12px}
+.volver-flot{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom));z-index:50;display:flex;align-items:center;gap:2px;max-width:calc(100vw - 32px);background:var(--ink);color:var(--bg);border-radius:999px;box-shadow:0 4px 18px rgba(0,0,0,.25);font-family:var(--mono);font-size:12px;padding:2px 4px 2px 14px}
+.volver-flot a{color:inherit;text-decoration:none;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-height:36px;display:inline-flex;align-items:center}
+.volver-flot button{background:none;border:0;color:inherit;opacity:.7;font:inherit;min-width:36px;min-height:36px;cursor:pointer;border-radius:50%}
+.volver-flot button:hover{opacity:1}
+body:has(.volver-flot) #main{padding-bottom:64px}
+.aviso-drive{position:relative;border:1px solid var(--accent);border-radius:8px;padding:14px 16px;margin:12px 0;display:flex;flex-direction:column;gap:8px}
+.aviso-drive[hidden]{display:none}
+.pegar-vinculos{margin-top:8px}
+.pegar-vinculos textarea{width:100%;margin:6px 0;font-family:var(--mono);font-size:12px}
+.aviso-drive ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.aviso-drive .cerrar{position:absolute;top:6px;right:6px}
 .volver a{text-decoration:none;color:var(--muted);display:inline-flex;align-items:center;min-height:32px}
 .volver a:hover{color:var(--accent)}
 .cuenta-btn{font-family:var(--mono);font-size:12px;text-decoration:none;color:var(--ink);border:1px solid var(--line2);border-radius:2px;min-height:32px;padding:0 12px;display:inline-flex;align-items:center;gap:6px;white-space:nowrap}
@@ -457,7 +468,7 @@ function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
 /* ---------- navegación ---------- */
 function setNav(v){pintarCuenta();["hoy","rutas","estudio","rack","ajustes"].forEach(k=>{const a=document.getElementById("n-"+k);a.textContent=tr(k);if(k===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
   document.getElementById("l-es").setAttribute("aria-pressed",S.lang==="es");document.getElementById("l-en").setAttribute("aria-pressed",S.lang==="en")}
-function mount(...nodes){const m=document.getElementById("main");if(S.volver&&location.hash!=="#sesion")nodes.unshift(volver(...S.volver));m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
+function mount(...nodes){const m=document.getElementById("main");volverFlotante();m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
 /* Historial dentro de la app: cada página de detalle muestra «← Volver a …» con el nombre de la anterior. */
 const NAV=[];
 function regNav(){const x=location.hash||"#hoy";if(NAV.length>1&&NAV[NAV.length-2]===x)NAV.pop();else if(NAV[NAV.length-1]!==x)NAV.push(x)}
@@ -478,6 +489,19 @@ function etiquetaDe(x){const t=(a,b)=>S.lang==="es"?a:b;
   if(x.startsWith("#terminos"))return t("Volver a los términos","Back to the terms");
   if(x==="#inicio")return t("Volver a Cómo funciona","Back to How it works");
   return t("Volver","Back")}
+/* Cartel flotante «← Volver a …»: aparece en las páginas a las que llegaste desde otra (por un enlace,
+   una tarjeta, una ruta), queda fijo al bajar y se puede cerrar con ✕. */
+const TABS=["#hoy","#","#rutas","#estudio","#rack","#ajustes",""];
+function volverFlotante(){
+  let el=document.getElementById("volver-flot");if(el)el.remove();
+  const x=location.hash||"#hoy";if(TABS.includes(x)||x==="#sesion"||x.startsWith("#q-"))return;
+  const prev=NAV.length>1?NAV[NAV.length-2]:null;const def=S.volver;
+  if(!prev&&!def)return;
+  const es=S.lang==="es";
+  el=h("nav",{id:"volver-flot",class:"volver-flot","aria-label":es?"Volver":"Back"},
+    h("a",{href:prev||def[0],on:{click:e=>{if(prev){e.preventDefault();history.back()}}}},"← "+(prev?etiquetaDe(prev):def[1])),
+    h("button",{type:"button","aria-label":es?"Cerrar":"Close",on:{click:()=>el.remove()}},"✕"));
+  document.body.append(el)}
 function volver(defHref,defLbl){
   const prev=NAV.length>1?NAV[NAV.length-2]:null;
   return h("nav",{class:"volver","aria-label":S.lang==="es"?"Volver":"Back"},h("a",{href:prev||defHref,on:{click:e=>{if(prev){e.preventDefault();history.back()}}}},"← "+(prev?etiquetaDe(prev):defLbl)));
@@ -1336,10 +1360,21 @@ function viewEstudio(){
   const drop=h("div",{class:"drop",tabindex:"0",role:"button",on:{click:()=>fileIn.click(),keydown:e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();fileIn.click()}},
     dragover:e=>{e.preventDefault();drop.classList.add("sobre")},dragleave:()=>drop.classList.remove("sobre"),drop:e=>{e.preventDefault();drop.classList.remove("sobre");subir([...e.dataTransfer.files])}}},
     es?"O arrastrá acá tus PDF (papers, capítulos, apuntes). Se leen en tu navegador; no se suben a ningún lado.":"Or drop your PDFs here. They are read in your browser and never uploaded.");
-  const driveAyuda=h("p",{class:"note j",hidden:!E.driveAyuda},es?"En el celular, en el selector que se abre elegí «Drive» (o «Examinar › Drive»). En la compu, si tenés Google Drive para escritorio, tu Drive aparece como una unidad más; si no, descargá el PDF de drive.google.com y subilo desde tu compu.":"On a phone, choose «Drive» in the picker that opens. On a computer, Google Drive for desktop shows your Drive as a drive; otherwise download the PDF from drive.google.com and upload it from your computer.");
+  const elegirDeDrive=()=>{driveAyuda.hidden=true;fileIn.click()};
+  const driveAyuda=h("div",{class:"aviso-drive",hidden:true,role:"dialog","aria-label":es?"Usar un PDF de tu Drive":"Use a PDF from your Drive"},
+    h("button",{class:"mini cerrar",type:"button","aria-label":es?"Cerrar":"Close",on:{click:()=>{driveAyuda.hidden=true}}},"✕"),
+    h("p",{class:"eyebrow"},es?"Usar un PDF de tu Drive":"Use a PDF from your Drive"),
+    h("ul",{class:"j"},
+      h("li",null,es?"En el celular: tocá «Elegir el archivo» y, en el selector que se abre, elegí «Drive» (o «Examinar › Drive»).":"On a phone: tap «Choose the file» and pick «Drive» (or «Browse › Drive») in the picker."),
+      h("li",null,es?"En la compu: si tenés Google Drive para escritorio, tu Drive aparece como una unidad más. Si no, descargá el PDF de drive.google.com y elegilo desde la compu.":"On a computer: with Google Drive for desktop your Drive shows up as a drive. Otherwise download the PDF from drive.google.com and pick it from your computer."),
+      h("li",null,es?"¿Querés abrir tus PDF de Drive desde cada lectura del rack? Eso es vincular tu carpeta, y se hace una sola vez: está explicado en el instructivo.":"Want to open your Drive PDFs from each rack reading? That is linking your folder, done once: see the guide.")),
+    h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:elegirDeDrive}},es?"Elegir el archivo":"Choose the file"),
+      h("a",{class:"btn ghost",href:"#guia-pdf",on:{click:()=>{S.guiaIr="drive"}},style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Ver el instructivo de Drive":"See the Drive guide")),
+    h("label",{class:"small"},h("input",{type:"checkbox",on:{change:e=>lsSet("prebisch-aviso-drive",e.target.checked)}}),es?" No volver a mostrar este aviso":" Don't show this again"));
   const desdeDrive=async()=>{
     if(DRIVE_CFG.clientId){try{const fs=await driveElegirArchivos(true);setEstado(es?"Bajando de Drive…":"Downloading from Drive…");const arch=[];for(const f of fs)arch.push(await driveDescargar(f));await subir(arch)}catch(e){if(e.name!=="AbortError")setEstado(e.message,true)}return}
-    E.driveAyuda=true;driveAyuda.hidden=false;fileIn.click()};
+    if(lsGet("prebisch-aviso-drive"))return fileIn.click();
+    driveAyuda.hidden=false;driveAyuda.scrollIntoView({block:"nearest",behavior:"smooth"})};
   const cargar=h("div",{class:"fila2"},
     h("button",{class:"btn",type:"button",on:{click:()=>fileIn.click()}},es?"Desde mi compu":"From my computer"),
     h("button",{class:"btn ghost",type:"button",on:{click:desdeDrive}},es?"Desde mi Drive":"From my Drive"));
@@ -1596,6 +1631,7 @@ function bloqueMiPDF(id){
       h("button",{class:"btn",type:"button",on:{click:()=>up.click()}},es?"Subir desde mi compu":"Upload from my computer"),
       h("button",{class:"btn ghost",type:"button",on:{click:desdeDrive}},es?"Desde mi Drive":"From my Drive")));
   sec.append(caja,up,
+    DRIVE_CFG.clientId?null:h("p",{class:"c small"},h("a",{href:"#guia-pdf",on:{click:()=>{S.guiaIr="drive"}}},es?"¿Tenés todos tus PDF en Drive? Vinculá la carpeta entera de una vez →":"All your PDFs in Drive? Link the whole folder at once →")),
     h("p",{class:"c small",style:"margin-top:10px"},es?"Desde Drive: abrí el PDF en drive.google.com, tocá «Compartir › Copiar vínculo» y pegalo acá.":"From Drive: open the PDF on drive.google.com, tap «Share › Copy link» and paste it here."),
     manual(),
     h("p",{class:"c small"},h("a",{href:"#guia-pdf"},es?"Vincular toda mi carpeta de Drive de una vez (instructivo paso a paso) →":"Link my whole Drive folder at once (step-by-step guide) →")),
@@ -1724,7 +1760,7 @@ function csvFilas(t){const out=[];let fila=[],c="",q=false;
   fila.push(c);if(fila.some(x=>x.trim()))out.push(fila);return out}
 /* Devuelve {num, nombre, sin, total}: vinculados por número, por parecido del nombre y sin reconocer. */
 function importarVinculos(txt){
-  const es=S.lang==="es";const r={num:0,nombre:0,sin:0,total:0};const sueltos=[];
+  const es=S.lang==="es";const r={num:0,nombre:0,sin:0,total:0,ya:0};const sueltos=[];
   const aDato=v=>{const f=driveIdDeLink(v);return f?{f}:/^https:\/\//.test(v)?{u:v}:null};
   const poner=(id,d,nom)=>{d.n=nom||(es?"Vínculo importado":"Imported link");DRIVE.mapa[id]=d};
   const t=String(txt).replace(/^﻿/,"").trim();
@@ -1742,18 +1778,22 @@ function importarVinculos(txt){
     const cand=[];S.indice.forEach(p=>{if(DRIVE.mapa[p.id])return;sueltos.forEach((f,i)=>{if(ya.has(f.d.f||f.d.u))return;const sc=bibPuntaje(p,f);if(sc>=.6)cand.push([sc,p.id,i])})});
     cand.sort((a,b)=>b[0]-a[0]);const usados=new Set();
     for(const [,id,i] of cand){if(DRIVE.mapa[id]||usados.has(i))continue;poner(id,sueltos[i].d,sueltos[i].nom);usados.add(i);r.nombre++}
-    r.sin+=sueltos.length-usados.size-sueltos.filter(f=>ya.has(f.d.f||f.d.u)).length}
+    r.ya=sueltos.filter(f=>ya.has(f.d.f||f.d.u)).length;r.sin+=sueltos.length-usados.size-r.ya}
   driveGuardar();return r}
 function bloqueImportar(refrescar){
   const es=S.lang==="es";
-  const inp=h("input",{type:"file",accept:".json,.csv,.txt,application/json,text/csv,text/plain",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(!f)return;
-    try{const r=importarVinculos(await f.text());const tot=Object.keys(DRIVE.mapa).length;
-      DRIVE.estado=es?"Leí "+r.total+" PDF. Vinculé "+(r.num+r.nombre)+" lecturas ("+r.num+" por número, "+r.nombre+" por el nombre del archivo). "+r.sin+" PDF no coincidieron con ninguna lectura del rack. Total vinculadas: "+tot+" de "+S.indice.length+"."
-        :"Read "+r.total+" PDFs. Linked "+(r.num+r.nombre)+" readings ("+r.num+" by number, "+r.nombre+" by file name). "+r.sin+" PDFs matched no rack reading. Total linked: "+tot+" of "+S.indice.length+"."}
-    catch(err){DRIVE.estado=es?"No pude leer el archivo: "+err.message:"Could not read the file: "+err.message}refrescar()}}});
+  // sin filtro de tipo: en el celular Drive guarda el CSV como text/comma-separated-values y el filtro lo escondía
+  const procesar=txt=>{try{if(!/https:\/\//.test(txt))throw new Error(es?"no encontré links en el archivo. ¿Es el prebisch-vinculos.csv?":"no links found. Is it prebisch-vinculos.csv?");const r=importarVinculos(txt);const tot=Object.keys(DRIVE.mapa).length;
+      DRIVE.estado=es?"Leí "+r.total+" PDF. Vinculé "+(r.num+r.nombre)+" lecturas ("+r.num+" por número, "+r.nombre+" por el nombre del archivo)"+(r.ya?"; "+r.ya+" ya estaban vinculados":"")+". "+r.sin+" PDF no coincidieron con ninguna lectura del rack. Total vinculadas: "+tot+" de "+S.indice.length+"."
+        :"Read "+r.total+" PDFs. Linked "+(r.num+r.nombre)+" readings ("+r.num+" by number, "+r.nombre+" by file name)"+(r.ya?"; "+r.ya+" were already linked":"")+". "+r.sin+" PDFs matched no rack reading. Total linked: "+tot+" of "+S.indice.length+"."}
+    catch(err){DRIVE.estado=es?"No pude leer el archivo: "+err.message:"Could not read the file: "+err.message}refrescar()};
+  const inp=h("input",{type:"file",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(!f)return;procesar(await f.text())}}});
   const exp=()=>{const a=h("a",{href:URL.createObjectURL(new Blob([JSON.stringify(DRIVE.mapa,null,1)],{type:"application/json"})),download:"prebisch-vinculos.json"});document.body.append(a);a.click();a.remove()};
-  return h("div",{class:"fila2"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>inp.click()}},es?"Importar vínculos":"Import links"),
-    h("button",{class:"btn ghost",type:"button",disabled:!Object.keys(DRIVE.mapa).length,on:{click:exp}},es?"Exportar vínculos":"Export links"))}
+  const pegar=h("details",{class:"pegar-vinculos"},h("summary",{class:"small"},es?"¿No aparece el archivo? Pegá su contenido":"File not showing? Paste its content"),
+    h("textarea",{rows:"4",placeholder:es?"Abrí prebisch-vinculos.csv en Drive, copiá todo y pegalo acá":"Open prebisch-vinculos.csv in Drive, copy all and paste here"}),
+    h("button",{class:"btn ghost",type:"button",on:{click:e=>procesar(e.target.previousElementSibling.value)}},es?"Importar lo pegado":"Import pasted text"));
+  return h("div",null,h("div",{class:"fila2"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>inp.click()}},es?"Importar vínculos":"Import links"),
+    h("button",{class:"btn ghost",type:"button",disabled:!Object.keys(DRIVE.mapa).length,on:{click:exp}},es?"Exportar vínculos":"Export links")),pegar)}
 function bloqueDrive(){
   const es=S.lang==="es";
   if(!DRIVE_CFG.clientId){const n=Object.keys(DRIVE.mapa).length;
@@ -1800,6 +1840,7 @@ async function viewGuiaPDF(){
       p.imagen?h("img",{src:p.imagen,alt:L(p.alt)||"",loading:"lazy",class:"guia-img"}):null))):null,
     x.enlace?bloqueScript(x.enlace):null,
     L(x.notas)?h("p",{class:"note j"},L(x.notas)):null));
+  const ir=S.guiaIr;S.guiaIr=null;if(ir)setTimeout(()=>{const el=document.getElementById("g-"+ir);if(el)el.scrollIntoView()},60);
   mount(h("header",{class:"block"},h("p",{class:"eyebrow c"},es?"Instructivo":"Guide"),h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},L(g.titulo)),h("p",{class:"j"},L(g.bajada)),indice),
     ...secs,
     h("p",{class:"c"},h("a",{class:"btn",href:"#ajustes",style:"display:inline-block;text-decoration:none"},es?"Ir a Mi biblioteca":"Go to My library")));
