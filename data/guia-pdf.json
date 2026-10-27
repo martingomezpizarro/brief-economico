@@ -70,18 +70,55 @@
     {
       "id": "drive",
       "titulo": {
-        "es": "3. Vincular tu carpeta de Google Drive",
+        "es": "3. Conectar tu carpeta de Google Drive",
         "en": "3. Link your Google Drive folder"
       },
       "intro": {
-        "es": "Para vincular todos tus PDF de una vez y abrirlos también desde el celular. Tus PDF quedan en tu Drive: la app solo guarda qué archivo corresponde a cada lectura. Hacé los pasos 2 a 6 desde la compu; tarda unos 10 minutos y se hace una sola vez.",
-        "en": "To link all your PDFs at once and open them from your phone too. Your PDFs stay in your Drive: the app only stores which file goes with each reading. Do steps 2 to 6 on a computer; it takes about 10 minutes, once."
+        "es": "Para vincular todos tus PDF de una vez y abrirlos también desde el celular. Tus PDF quedan en tu Drive: la app solo ve lo que elegís y guarda qué archivo corresponde a cada lectura.",
+        "en": "To link all your PDFs at once and open them from your phone too. Your PDFs stay in your Drive: the app only sees what you choose and stores which file goes with each reading."
       },
       "pasos": [
         {
-          "es": "Subí tu carpeta de PDF a Google Drive: en drive.google.com, «Nuevo › Subir carpeta», o arrastrala. Puede tener subcarpetas. Usá la cuenta de Google donde quieras tener los PDF (puede ser la de la facultad).",
-          "en": "Upload your PDF folder to Google Drive: at drive.google.com, «New › Folder upload», or drag it in. Subfolders are fine. Use the Google account where you want the PDFs (it can be your university one)."
+          "es": "Subí tu carpeta de PDF a Google Drive: en drive.google.com, «Nuevo › Subir carpeta», o arrastrala. Puede tener subcarpetas.",
+          "en": "Upload your PDF folder to Google Drive: at drive.google.com, «New › Folder upload», or drag it in. Subfolders are fine."
         },
+        {
+          "es": "En Prebisch, iniciá sesión y entrá a Ajustes › Mi biblioteca › Google Drive › «Conectar mi carpeta de Drive».",
+          "en": "In Prebisch, sign in and go to Settings › My library › Google Drive › «Link my Drive folder»."
+        },
+        {
+          "es": "Google te pide elegir la cuenta (la que tiene los PDF, por ejemplo la de la facultad) y permiso para que Prebisch vea los archivos que elijas. Aceptá.",
+          "en": "Google asks you to choose the account (the one with the PDFs, e.g. your university one) and permission for Prebisch to see the files you choose. Accept."
+        },
+        {
+          "es": "En el selector, elegí la carpeta y tocá «Seleccionar». La app recorre la carpeta y sus subcarpetas.",
+          "en": "In the picker, choose the folder and tap «Select». The app goes through the folder and its subfolders."
+        },
+        {
+          "es": "Si la app avisa que no pudo ver los archivos de la carpeta, volvé a abrir el selector, entrá a la carpeta, marcá todos los PDF (en la compu, Ctrl+A) y confirmá.",
+          "en": "If the app says it could not see the folder's files, open the picker again, enter the folder, select all PDFs (Ctrl+A on a computer) and confirm."
+        },
+        {
+          "es": "La app te dice cuántas lecturas vinculó. Desde ahí, cada lectura vinculada muestra «Abrir mi PDF».",
+          "en": "The app tells you how many readings it linked. From then on, each linked reading shows «Open my PDF»."
+        }
+      ],
+      "notas": {
+        "es": "Cuando sumes PDF nuevos, tocá «Agregar o actualizar». Con la sesión iniciada, los vínculos se sincronizan entre tus dispositivos. Si tu cuenta no te deja dar el permiso (pasa con algunas cuentas institucionales), usá la opción de la sección siguiente.",
+        "en": "When you add PDFs, tap «Add or update». When signed in, links sync across devices. If your account will not let you grant permission (some institutional accounts), use the next section."
+      }
+    },
+    {
+      "id": "drive-script",
+      "titulo": {
+        "es": "3 bis. Alternativa: archivo de vínculos con un script",
+        "en": "3b. Alternative: links file with a script"
+      },
+      "intro": {
+        "es": "Si no podés conectar Drive desde la app (cuentas institucionales con apps externas bloqueadas) o el selector no muestra los archivos de la carpeta, un script que corrés en tu propia cuenta genera la lista de links y la importás.",
+        "en": "If you cannot link Drive from the app (institutional accounts blocking third-party apps) or the picker does not show the folder's files, a script you run in your own account builds the links list for you to import."
+      },
+      "pasos": [
         {
           "es": "Copiá el script de Prebisch con el botón de abajo y tocá «Abrir script.google.com». Si te pregunta la cuenta, elegí la misma donde subiste la carpeta.",
           "en": "Copy the Prebisch script with the button below and tap «Open script.google.com». If asked for an account, choose the one where you uploaded the folder."
