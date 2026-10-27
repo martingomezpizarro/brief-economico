@@ -240,6 +240,31 @@ select{min-width:0;max-width:100%}
 .chips{display:flex;flex-wrap:wrap;gap:6px;justify-content:center}
 .chip{font-family:var(--mono);font-size:11px;border:1px solid var(--line2);padding:3px 8px;border-radius:2px;color:var(--muted)}
 
+/* índice lateral (Ajustes, Mi estudio, Rutas): en compu, columna fija a la izquierda con la sección actual marcada;
+   en el celular, una barra arriba "Estás en: Ajustes › Avisos ▾" que despliega el índice. */
+.idx-cuerpo{display:flex;flex-direction:column;gap:28px;min-width:0}
+.idx-sec{scroll-margin-top:64px}
+.idx{position:sticky;top:0;z-index:20;background:var(--bg);border-bottom:1px solid var(--line);margin:-12px -16px 0;padding:0 16px}
+.idx-btn{display:flex;align-items:center;gap:6px;width:100%;min-height:44px;background:none;border:0;padding:0;text-align:left;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.idx-btn b{color:var(--ink);font-weight:500}
+.idx-btn .idx-act{color:var(--accent);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;flex:0 1 auto}
+.idx-btn .idx-car{margin-left:auto;transition:transform .2s}
+.idx.abierto .idx-btn .idx-car{transform:rotate(180deg)}
+.idx-tit{display:none}
+.idx ol{display:none;list-style:none;margin:0;padding:4px 0 12px;border-left:1px solid var(--line)}
+.idx.abierto ol{display:block}
+.idx ol a{display:block;padding:7px 0 7px 12px;margin-left:-1px;border-left:2px solid transparent;color:var(--muted);text-decoration:none;font-size:15px;line-height:1.3}
+.idx ol a:hover{color:var(--ink)}
+.idx ol a[aria-current]{color:var(--ink);font-weight:600;border-left-color:var(--again)}
+@media (min-width:900px){
+  .con-idx{display:grid;grid-template-columns:11rem minmax(0,1fr);gap:48px;align-items:start}
+  .idx{top:20px;margin:0;padding:0;border:0;background:none;max-height:calc(100vh - 40px);overflow-y:auto}
+  .idx-btn{display:none}
+  .idx-tit{display:block;margin-bottom:10px}
+  .idx ol,.idx.abierto ol{display:block;padding:0}
+  .idx ol a{font-size:14px;padding:5px 0 5px 12px}
+  .idx-sec{scroll-margin-top:20px}
+}
 /* ajustes */
 .form{display:flex;flex-direction:column;gap:14px}
 .row{display:flex;justify-content:space-between;align-items:center;gap:12px;border-top:1px solid var(--line);padding-top:12px;flex-wrap:wrap}
@@ -476,6 +501,38 @@ function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
 function setNav(v){pintarCuenta();["hoy","rutas","estudio","rack","ajustes"].forEach(k=>{const a=document.getElementById("n-"+k);a.textContent=tr(k);if(k===v)a.setAttribute("aria-current","page");else a.removeAttribute("aria-current")});
   document.getElementById("l-es").setAttribute("aria-pressed",S.lang==="es");document.getElementById("l-en").setAttribute("aria-pressed",S.lang==="en")}
 function mount(...nodes){const m=document.getElementById("main");volverFlotante();m.replaceChildren(...nodes.filter(x=>x!=null&&x!==false));document.getElementById("wrap").classList.remove("ancha");window.scrollTo(0,0)}
+/* ---------- índice lateral: dónde estás dentro de Ajustes, Mi estudio y Rutas ----------
+   idxSec() envuelve una parte de la vista y le pone nombre; mountIdx() arma la columna con esos nombres
+   y la va marcando a medida que bajás. El envoltorio sobrevive aunque la sección se repinte sola. */
+function idxSec(id,label,...kids){kids=kids.flat().filter(x=>x!=null&&x!==false);if(!kids.length)return null;return h("div",{class:"idx-sec",id:"s-"+id,"data-idx":label},...kids)}
+const IDX={clic:0};
+function idxMarcar(id){const nav=document.querySelector(".idx");if(!nav)return;let lbl="";
+  nav.querySelectorAll("ol a").forEach(a=>{if(a.dataset.to===id){a.setAttribute("aria-current","location");lbl=a.textContent}else a.removeAttribute("aria-current")});
+  const act=nav.querySelector(".idx-act");if(act&&lbl)act.textContent=lbl}
+function idxSpy(){
+  if(Date.now()-IDX.clic<900)return;
+  const secs=[...document.querySelectorAll(".idx-sec")];if(!secs.length)return;
+  const tope=matchMedia("(min-width:900px)").matches?120:110;
+  let cur=secs[0];for(const x of secs){if(x.getBoundingClientRect().top<=tope)cur=x;else break}
+  if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4&&window.scrollY>0)cur=secs[secs.length-1];
+  idxMarcar(cur.id)}
+let idxRaf=0;const idxProg=()=>{if(idxRaf)return;idxRaf=requestAnimationFrame(()=>{idxRaf=0;idxSpy()})};
+window.addEventListener("scroll",idxProg,{passive:true});window.addEventListener("resize",idxProg);
+function mountIdx(titulo,...nodes){
+  const es=S.lang==="es";nodes=nodes.filter(x=>x!=null&&x!==false);
+  const items=nodes.filter(n=>n.dataset&&n.dataset.idx);
+  const nav=h("nav",{class:"idx","aria-label":es?"Partes de "+titulo:titulo+" sections"});
+  const cerrar=()=>{nav.classList.remove("abierto");btn.setAttribute("aria-expanded","false")};
+  const btn=h("button",{type:"button",class:"idx-btn","aria-expanded":"false",on:{click:()=>btn.setAttribute("aria-expanded",String(nav.classList.toggle("abierto")))}},
+    h("span",null,es?"Estás en:":"You are in:"),h("b",null,titulo),h("span",{"aria-hidden":"true"},"›"),h("span",{class:"idx-act"},items[0]?items[0].dataset.idx:""),h("span",{class:"idx-car","aria-hidden":"true"},"▾"));
+  const ir=n=>e=>{e.preventDefault();cerrar();IDX.clic=Date.now();idxMarcar(n.id);
+    n.scrollIntoView({behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth",block:"start"})};
+  nav.append(btn,h("p",{class:"eyebrow idx-tit"},titulo),h("ol",null,items.map(n=>h("li",null,h("a",{href:"#"+n.id,"data-to":n.id,on:{click:ir(n)}},n.dataset.idx)))));
+  document.addEventListener("keydown",e=>{if(e.key==="Escape")cerrar()},{once:true});
+  mount(h("div",{class:"con-idx"},nav,h("div",{class:"idx-cuerpo"},...nodes)));
+  if(!document.getElementById("main").classList.contains("ancho"))document.getElementById("wrap").classList.add("ancha");
+  if(items[0])idxMarcar(items[0].id);
+}
 /* Historial dentro de la app: cada página de detalle muestra «← Volver a …» con el nombre de la anterior. */
 const NAV=[];
 function regNav(){const x=location.hash||"#hoy";if(NAV.length>1&&NAV[NAV.length-2]===x)NAV.pop();else if(NAV[NAV.length-1]!==x)NAV.push(x)}
@@ -846,18 +903,18 @@ function viewRutas(){
   const nodes=[h("p",{class:"eyebrow c"},es?"Rutas de lectura":"Reading paths"),
     h("p",{class:"j"},es?"Cada área se abre en categorías. Elegí una y ponela en foco: el brief diario sale de ahí, las preguntas de control alimentan tu repaso y las lecturas se ordenan de lo esencial a lo puntual.":"Each area opens into categories. Pick one and put it in focus: the daily brief comes from there, check questions feed your review, and readings run from essentials to specifics."),
     foco&&ruta(foco)?h("p",{class:"box c"},(es?"En foco: ":"In focus: "),h("a",{href:"#ruta-"+encodeURIComponent(foco)},rutaNombre(ruta(foco)))):null,
-    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:20px"},es?"Tus rutas":"Your paths"),
+    idxSec("tus-rutas",es?"Tus rutas":"Your paths",h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:20px"},es?"Tus rutas":"Your paths"),
       S.mis.rutas.length?h("ul",{class:"rutas"},S.mis.rutas.map(r=>{const n=r.pasos.length,g=r.pasos.filter(p=>p.lec).length,d=r.pasos.filter(p=>p.lec&&S.est.lecciones[p.lec]).length;
         return h("li",{class:"ruta"+(foco===r.id?" foco":"")},h("a",{href:"#ruta-"+encodeURIComponent(r.id)},r.nombre),h("span",{class:"meta"},n+(es?" pasos · ":" steps · ")+g+(es?" generados · ":" generated · ")+d+(es?" leídos":" read")),h("div",{class:"meter","aria-hidden":"true"},h("i",{style:"width:"+Math.round(100*d/Math.max(1,n))+"%"})))})):null,
-      h("p",{class:"c small"},h("a",{href:"#estudio"},es?"Armar una ruta con tus PDFs →":"Build a path from your PDFs →")))];
+      h("p",{class:"c small"},h("a",{href:"#estudio"},es?"Armar una ruta con tus PDFs →":"Build a path from your PDFs →"))))];
   (S.areas?S.areas.orden:[]).forEach(code=>{
     const ra=ruta(code);const cats=S.rutas.filter(r=>r.tipo==="cat"&&r.area===code&&r.pasos.length);
-    nodes.push(h("section",{class:"block rule",id:"rutas-"+code},
+    nodes.push(idxSec("area-"+code,areaName(code),h("section",{class:"block rule",id:"rutas-"+code},
       h("h2",{class:"c",style:"font-size:20px"},areaName(code)),
       ra?h("p",{class:"c small"},h("a",{href:"#ruta-"+code},(es?"Ruta completa del área":"Full area path")+" · "+ra.pasos.length+(es?" lecturas":" readings"))):null,
-      h("ul",{class:"rutas"},cats.map(cat))));
+      h("ul",{class:"rutas"},cats.map(cat)))));
   });
-  mount(...nodes);
+  mountIdx(es?"Rutas":"Paths",...nodes);
 }
 function viewRuta(id){
   const es=S.lang==="es";const r=ruta(id);
@@ -1061,27 +1118,27 @@ function viewAjustes(){
   const checks=h("div",{class:"checks"},(S.areas?S.areas.orden:[]).map(code=>{
     const n=S.cards.filter(c=>c.area===code).length;
     return h("label",{for:"cfg-a-"+code},h("input",{type:"checkbox",id:"cfg-a-"+code,checked:cfg.areas.includes(code),on:{change:e=>{const s=new Set(cfg.areas);e.target.checked?s.add(code):s.delete(code);cfg.areas=[...s];save()}}}),areaName(code)+" ("+n+")")}));
-  mount(h("p",{class:"eyebrow c"},tr("ajustes")),
-    h("div",{class:"form"},
+  mountIdx(tr("ajustes"),h("p",{class:"eyebrow c"},tr("ajustes")),
+    idxSec("repaso",es?"Repaso":"Review",h("div",{class:"form"},
       h("div",{class:"row"},h("label",{for:"cfg-hora"},es?"Hora del repaso":"Review time"),hora),
       h("div",{class:"row"},h("label",{for:"cfg-min"},es?"Minutos por sesión (≈2 tarjetas por minuto)":"Minutes per session (≈2 cards/min)"),mins),
       h("div",{class:"row"},h("label",{for:"cfg-nuevas"},es?"Tarjetas nuevas por día":"New cards per day"),nue),
       h("div",{class:"row"},h("label",{for:"cfg-foco"},es?"Ruta en foco: las tarjetas nuevas salen primero de ahí":"Path in focus: new cards come from it first"),sel),
-      h("p",{class:"eyebrow",style:"margin-top:8px"},es?"Áreas incluidas":"Included areas"),checks),
-    seccionCuenta(),
-    seccionBiblioteca(),
-    seccionAvisos(),
-    h("section",{class:"block rule"},
+      h("p",{class:"eyebrow",style:"margin-top:8px"},es?"Áreas incluidas":"Included areas"),checks)),
+    idxSec("cuenta",es?"Cuenta":"Account",seccionCuenta()),
+    idxSec("biblioteca",es?"Mi biblioteca":"My library",seccionBiblioteca()),
+    idxSec("avisos",es?"Avisos y calendario":"Notifications",seccionAvisos()),
+    idxSec("como",es?"Cómo funciona":"How it works",h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Cómo funciona":"How it works"),
-      h("p",{class:"j"},es?"Cada tarjeta vive en una de seis cajas. Si la recordás bien sube de caja y vuelve más tarde: 1, 3, 7, 16, 35 y 90 días. «Otra vez» la devuelve a la caja 1 y la repite en la misma sesión; «Difícil» la deja en su caja con la mitad del intervalo; «Fácil» la sube dos cajas. La sesión mezcla áreas para que practiques distinguir temas, no solo recordarlos.":"Each card lives in one of six boxes. Recall it well and it moves up and returns later: 1, 3, 7, 16, 35 and 90 days. Again sends it to box 1 and repeats it this session; Hard keeps its box at half the interval; Easy moves it up two boxes. Sessions mix areas so you practice telling topics apart, not just recalling them.")),
-    seccionIA(),
-    esAdmin()?h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Administración":"Admin"),h("p",{class:"c"},h("a",{href:"#admin"},es?"Ver los briefs que armaron los usuarios →":"See the briefs users have built →"))):null,
-    h("section",{class:"block rule"},
+      h("p",{class:"j"},es?"Cada tarjeta vive en una de seis cajas. Si la recordás bien sube de caja y vuelve más tarde: 1, 3, 7, 16, 35 y 90 días. «Otra vez» la devuelve a la caja 1 y la repite en la misma sesión; «Difícil» la deja en su caja con la mitad del intervalo; «Fácil» la sube dos cajas. La sesión mezcla áreas para que practiques distinguir temas, no solo recordarlos.":"Each card lives in one of six boxes. Recall it well and it moves up and returns later: 1, 3, 7, 16, 35 and 90 days. Again sends it to box 1 and repeats it this session; Hard keeps its box at half the interval; Easy moves it up two boxes. Sessions mix areas so you practice telling topics apart, not just recalling them."))),
+    idxSec("ia",es?"Inteligencia artificial":"AI engine",seccionIA()),
+    esAdmin()?idxSec("admin",es?"Administración":"Admin",h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Administración":"Admin"),h("p",{class:"c"},h("a",{href:"#admin"},es?"Ver los briefs que armaron los usuarios →":"See the briefs users have built →")))):null,
+    idxSec("datos",es?"Tus datos":"Your data",h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Tus datos":"Your data"),
       h("p",{class:"j"},es?"Sin cuenta, el progreso y tus briefs quedan en este navegador. Podés bajar una copia y cargarla en otro dispositivo.":"Without an account, progress and your briefs stay in this browser. You can download a copy and load it elsewhere."),
       h("div",{class:"fila2"},
         h("button",{class:"btn ghost",type:"button",on:{click:exportar}},es?"Bajar copia":"Download copy"),
-        h("label",{class:"btn ghost",style:"display:flex;align-items:center;justify-content:center"},es?"Cargar copia":"Load copy",h("input",{type:"file",accept:".json,application/json",style:"display:none",on:{change:importar}})))));
+        h("label",{class:"btn ghost",style:"display:flex;align-items:center;justify-content:center"},es?"Cargar copia":"Load copy",h("input",{type:"file",accept:".json,application/json",style:"display:none",on:{change:importar}}))))));
 }
 /* ---------- administración: los briefs que generan los usuarios ----------
    Lee brief/{uid}/lecciones de todos con una consulta de grupo. Las reglas de Firestore solo se lo
@@ -1398,20 +1455,20 @@ function viewEstudio(){
   const nodes=[h("p",{class:"eyebrow c"},es?"Mi estudio":"My study"),
     h("h1",{class:"c",style:"font-size:26px"},es?"Armá tu ruta con tus documentos":"Build a path from your documents"),
     h("p",{class:"j"},es?"Subí los PDF que tengas (papers, capítulos de libros, apuntes de cátedra), contá qué querés aprender y la app arma una ruta de briefs de 15 minutos con preguntas de control. Cada brief se genera cuando lo vas a leer y queda guardado.":"Upload your PDFs, say what you want to learn, and the app builds a path of 15-minute briefs with check questions. Each brief is generated when you are about to read it and is saved."),
-    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"1. Material":"1. Material"),cargar,driveAyuda,drop,fileIn,selRack,lista),
-    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"2. Qué querés aprender":"2. What you want to learn"),
+    idxSec("material",es?"1. Material":"1. Material",h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"1. Material":"1. Material"),cargar,driveAyuda,drop,fileIn,selRack,lista)),
+    idxSec("objetivo",es?"2. Qué querés aprender":"2. What to learn",h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"2. Qué querés aprender":"2. What you want to learn"),
       campo(es?"Objetivo y qué profundizar":"Goal and what to go deeper on",obj),
       campo(es?"Nivel":"Level",niv),
       campo(es?"Énfasis":"Emphasis",enf),
-      campo(es?"Días que tenés (opcional)":"Days available (optional)",dias)),
-    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"3. Armar":"3. Build"),
+      campo(es?"Días que tenés (opcional)":"Days available (optional)",dias))),
+    idxSec("armar",es?"3. Armar":"3. Build",h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"3. Armar":"3. Build"),
       h("p",{class:"c note"},(es?"Motor: ":"Engine: ")+iaNombre(c)+". ",h("a",{href:"#ajustes"},es?"Cambiar":"Change")),
       h("div",{class:"fila2"},
         h("button",{class:"btn",type:"button",disabled:!listo||E.ocupado,on:{click:armarRuta}},es?"Armar la ruta":"Build the path"),
         h("button",{class:"btn ghost",type:"button",disabled:!listo||E.ocupado,on:{click:briefUnico}},es?"Un solo brief":"Single brief")),
-      h("p",{id:"estado",class:"estado"+(E.error?" error":"")},E.estado)),
-    E.plan?vistaPlan():null];
-  mount(...nodes);
+      h("p",{id:"estado",class:"estado"+(E.error?" error":"")},E.estado))),
+    E.plan?idxSec("plan",es?"4. Revisá la ruta":"4. Review the path",vistaPlan()):null];
+  mountIdx(es?"Mi estudio":"My study",...nodes);
 }
 function briefATexto(l){return [l.titulo,l.intro].concat(...l.secciones.map(s=>[s.t].concat(s.p,(s.eq||[]).map((e,j)=>"$$"+e+"$$"+((s.donde||[])[j]?"\nDonde: "+s.donde[j].map(x=>typeof x==="string"?x:x.es).join("; "):""))))).concat(l.claves).join("\n\n")}
 async function subir(fs){
