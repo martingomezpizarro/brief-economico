@@ -201,6 +201,9 @@ select{min-width:0;max-width:100%}
 .adm-brief{margin:10px 0 6px;padding:12px 14px;border-left:3px solid var(--line2);background:var(--surface)}
 .adm-brief h3{font-size:16px;margin:14px 0 6px}
 .chk{display:block;margin:6px 0;font-size:14px}
+.seguridad{margin:12px 0;border:1px solid var(--line);padding:10px 12px;background:var(--surface)}
+.seguridad summary{cursor:pointer;font-weight:600}
+.seguridad li{margin:6px 0;line-height:1.5}
 .nombre-pdf{font-family:var(--mono);font-size:12px;word-break:break-word;background:none;color:var(--ink)}
 .estado.error{color:var(--again)}
 .drop{border:1px dashed var(--line2);border-radius:2px;padding:18px;text-align:center;color:var(--muted);cursor:pointer}
@@ -388,6 +391,7 @@ function cargarMis(){
 }
 function guardarMis(){lsSet("breve-mis",S.mis);nubeGuardarMis()}
 async function boot(){
+  bovMigrar().catch(()=>{});
   try{
     const [a,ix,ru,fi,de,li]=await Promise.all([getJSON("data/areas.json"),getJSON("data/indice.json"),getJSON("data/rutas.json"),getJSON("data/fichas.json"),getJSON("data/decks.json"),getJSON("data/lecciones/index.json")]);
     S.areas=a;S.indice=ix.papers||[];S.niveles=ix.niveles||{};S.rutas=ru.rutas||[];
@@ -1244,39 +1248,34 @@ function textoDoc(d,r){const [a,b]=rango(r,d.paginas.length);return d.paginas.sl
    Tres caminos, ninguno con costo para Prebisch:
    · "claude": la app arma el prompt, lo descargás, se lo das a Claude (claude.ai) junto con tus PDF y
      cargás acá la respuesta. No hace falta key.
-   · "gemini" / "anthropic": tu propia key. Viaja directo de tu navegador al proveedor; Prebisch no la ve,
-     no la sube a la nube y, salvo que marques «Recordar», se borra al cerrar la pestaña. */
-const IA_KEYS=["gkey","akey"];
+   · "gemini" / "anthropic": tu propia key. La guarda y la usa SOLO ia/boveda.js, un Web Worker aparte:
+     esta página nunca la lee, no la sube a Firebase ni la incluye en la copia. Ver docs/seguridad-keys.md. */
 function iaCfg(){
-  const raw=lsGet("breve-ia")||{};
-  const c=Object.assign({modo:"claude",gmodelo:"gemini-3.8-flash",amodelo:"claude-sonnet-5-5",recordar:false,gkey:"",akey:""},raw);
+  const c=Object.assign({modo:"claude",gmodelo:"gemini-3.8-flash",amodelo:"claude-sonnet-5-5"},lsGet("breve-ia")||{});
   if(c.modo==="servidor")c.modo="claude";
-  if(raw.recordar===undefined&&(raw.gkey||raw.akey))c.recordar=true;  // keys guardadas antes de este cambio
-  let ses={};try{ses=JSON.parse(sessionStorage.getItem("breve-ia-k")||"{}")||{}}catch(e){}
-  IA_KEYS.forEach(k=>{if(!c[k])c[k]=ses[k]||""});
+  delete c.gkey;delete c.akey;delete c.recordar;
   return c}
-function iaGuardar(c){
-  const fijo=Object.assign({},c);const ses={};
-  IA_KEYS.forEach(k=>{ses[k]=c[k]||"";if(!c.recordar)delete fijo[k]});
-  lsSet("breve-ia",fijo);try{sessionStorage.setItem("breve-ia-k",JSON.stringify(ses))}catch(e){}}
-function iaBorrarKeys(){const c=iaCfg();IA_KEYS.forEach(k=>c[k]="");c.recordar=false;iaGuardar(c);try{sessionStorage.removeItem("breve-ia-k")}catch(e){}}
+function iaGuardar(c){const x=Object.assign({},c);delete x.gkey;delete x.akey;delete x.recordar;lsSet("breve-ia",x)}
+/* Bóveda: la key vive en el worker. La página solo recibe «hay key» y sus últimos 4 caracteres. */
+const BOV={w:null,n:0,pend:{},est:null};
+function bov(op,datos){
+  if(!BOV.w){BOV.w=new Worker("ia/boveda.js?v=1");BOV.w.onmessage=e=>{const m=e.data||{};const f=BOV.pend[m.id];if(!f)return;delete BOV.pend[m.id];m.error?f[1](new Error(m.error)):f[0](m.ok)}}
+  return new Promise((ok,mal)=>{const id=++BOV.n;BOV.pend[id]=[ok,mal];BOV.w.postMessage(Object.assign({},datos||{},{id,op}))})}
+async function bovEstado(){BOV.est=await bov("estado");return BOV.est}
+/* Las keys guardadas por versiones anteriores (en localStorage o sessionStorage) pasan a la bóveda y se borran de ahí. */
+async function bovMigrar(){
+  const raw=lsGet("breve-ia")||{};let ses={};try{ses=JSON.parse(sessionStorage.getItem("breve-ia-k")||"{}")||{}}catch(e){}
+  const rec=raw.recordar!==false&&!!(raw.gkey||raw.akey);
+  for(const [campoK,prov] of [["gkey","gemini"],["akey","anthropic"]]){const k=raw[campoK]||ses[campoK];if(k)await bov("guardar",{prov,key:k,recordar:raw[campoK]?rec:false}).catch(()=>{})}
+  if("gkey" in raw||"akey" in raw||"recordar" in raw)iaGuardar(iaCfg());
+  try{sessionStorage.removeItem("breve-ia-k")}catch(e){}
+}
 function iaNombre(c){const es=S.lang==="es";return c.modo==="gemini"?(es?"Gemini con tu key":"Gemini with your key"):c.modo==="anthropic"?(es?"Claude con tu key":"Claude with your key"):(es?"Claude (claude.ai) con un prompt que descargás":"Claude (claude.ai) with a downloadable prompt")}
 const LIM_CHARS={claude:400000,gemini:700000,anthropic:400000};
 async function iaLlamar(tipo,docs,pedido){
   const c=iaCfg();const lim=LIM_CHARS[c.modo]||400000;
   const pr=tipo==="ruta"?P.promptRuta(docs,pedido,lim):P.promptBrief(docs,pedido,lim);
-  if(c.modo==="gemini"){
-    if(!c.gkey)throw new Error(S.lang==="es"?"Falta tu key de Gemini en Ajustes.":"Your Gemini key is missing in Settings.");
-    const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(c.gmodelo)+":generateContent",{method:"POST",referrerPolicy:"no-referrer",headers:{"Content-Type":"application/json","x-goog-api-key":c.gkey},
-      body:JSON.stringify({systemInstruction:{parts:[{text:pr.sistema}]},contents:[{role:"user",parts:[{text:pr.usuario}]}],generationConfig:{temperature:0.4,maxOutputTokens:16384,responseMimeType:"application/json"}})});
-    const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Gemini respondió "+r.status));
-    const ps=(((j.candidates||[])[0]||{}).content||{}).parts||[];return ps.filter(p=>p.text&&!p.thought).map(p=>p.text).join("");
-  }
-  if(!c.akey)throw new Error(S.lang==="es"?"Falta tu key de Anthropic en Ajustes.":"Your Anthropic key is missing in Settings.");
-  const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",referrerPolicy:"no-referrer",headers:{"Content-Type":"application/json","x-api-key":c.akey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
-    body:JSON.stringify({model:c.amodelo,max_tokens:16000,system:pr.sistema,messages:[{role:"user",content:pr.usuario}]})});
-  const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Anthropic respondió "+r.status));
-  return (j.content||[]).filter(x=>x.type==="text").map(x=>x.text).join("");
+  return bov("llamar",{prov:c.modo,modelo:c.modo==="gemini"?c.gmodelo:c.amodelo,sistema:pr.sistema,usuario:pr.usuario});
 }
 /* Prompt para pegar en Claude: reglas + pedido + texto extraído. Si un PDF vino sin texto (escaneado),
    le pide a Claude que lo lea del adjunto. */
@@ -1871,24 +1870,56 @@ function seccionCuenta(){
 function seccionIA(){
   const es=S.lang==="es";const c=iaCfg();
   const g=k=>e=>{c[k]=e.target.value.trim();iaGuardar(c)};
-  const modo=h("select",{on:{change:e=>{c.modo=e.target.value;iaGuardar(c);viewAjustes()}}},
+  const modo=h("select",{on:{change:e=>{c.modo=e.target.value;iaGuardar(c);refrescar()}}},
     [["claude",es?"Claude (claude.ai): descargo el prompt y cargo la respuesta. Sin key, sin costo extra":"Claude (claude.ai): download the prompt, load the answer. No key"],
      ["gemini",es?"Mi propia key de Gemini (Google AI Studio)":"My own Gemini key"],
      ["anthropic",es?"Mi propia key de Anthropic (Claude por API)":"My own Anthropic key (Claude API)"]].map(([v,t])=>{const o=h("option",{value:v},t);if(c.modo===v)o.selected=true;return o}));
-  const est=h("p",{class:"estado"});
-  const recordar=h("label",{class:"chk"},h("input",{type:"checkbox",checked:c.recordar,on:{change:e=>{c.recordar=e.target.checked;iaGuardar(c)}}}),
-    es?" Recordar la key en este dispositivo (si no, se borra al cerrar la pestaña)":" Remember the key on this device (otherwise it is cleared when you close the tab)");
-  const seguridad=h("p",{class:"note j"},es?"Tu key va directo de este navegador a Google o a Anthropic. Prebisch no la ve, no la guarda en la nube ni la sincroniza con tu cuenta. Usá una key propia para esta app, ponele un límite de gasto en la consola del proveedor y no la cargues en una compu compartida.":"Your key goes straight from this browser to Google or Anthropic. Prebisch never sees it, never stores it in the cloud and never syncs it. Use a dedicated key, set a spending limit in the provider's console, and avoid shared computers.");
-  const borrar=h("button",{class:"btn ghost",type:"button",on:{click:()=>{iaBorrarKeys();viewAjustes()}}},es?"Borrar mi key de este dispositivo":"Delete my key from this device");
-  return h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Inteligencia artificial":"AI engine"),
+  const sec=h("section",{class:"block rule",id:"sec-ia"},h("p",{class:"eyebrow c"},es?"Inteligencia artificial":"AI engine"),
     h("p",{class:"j"},es?"Con qué se escriben los briefs de Mi estudio. Con Claude (claude.ai) la app arma el prompt con tus documentos y tus indicaciones; lo pegás en Claude, que escribe el brief, y cargás la respuesta acá. Con una key propia la app llama al modelo directamente y el uso corre por tu cuenta.":"What writes My study briefs. With Claude (claude.ai) the app builds the prompt from your documents; you give it to Claude and load the answer here. With your own key the app calls the model directly and usage is billed to you."),
-    campo(es?"Motor":"Engine",modo),
-    c.modo==="claude"?h("p",{class:"note j"},es?"Sirve con la cuenta gratuita de Claude o con Pro. Si un PDF es escaneado (sin texto), adjuntalo también en Claude.":"Works with a free or Pro Claude account. If a PDF is scanned (no text), attach it in Claude too."):null,
-    c.modo==="gemini"?[campo("Key de Gemini",h("input",{type:"password",autocomplete:"off",spellcheck:"false",value:c.gkey,placeholder:"AIza…",on:{change:g("gkey")}}),es?"Se saca gratis en aistudio.google.com/apikey. En el nivel gratuito Google puede usar los datos para mejorar sus modelos.":"Free at aistudio.google.com/apikey. On the free tier Google may use the data."),
-      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.gmodelo,on:{change:g("gmodelo")}})),recordar,seguridad,c.gkey?borrar:null]:null,
-    c.modo==="anthropic"?[campo("Key de Anthropic",h("input",{type:"password",autocomplete:"off",spellcheck:"false",value:c.akey,placeholder:"sk-ant-…",on:{change:g("akey")}}),es?"Se crea en console.anthropic.com. Es de pago por uso.":"Create it at console.anthropic.com. Pay as you go."),
-      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.amodelo,on:{change:g("amodelo")}})),recordar,seguridad,c.akey?borrar:null]:null,est);
+    campo(es?"Motor":"Engine",modo));
+  function refrescar(){const el=document.getElementById("sec-ia");if(el)el.replaceWith(seccionIA())}
+  if(c.modo==="claude"){sec.append(h("p",{class:"note j"},es?"Sirve con la cuenta gratuita de Claude o con Pro. Si un PDF es escaneado (sin texto), adjuntalo también en Claude.":"Works with a free or Pro Claude account. If a PDF is scanned (no text), attach it in Claude too."));return sec}
+  const prov=c.modo;const gem=prov==="gemini";
+  const caja=h("div",null,h("p",{class:"note"},es?"Abriendo la bóveda…":"Opening the vault…"));
+  sec.append(caja,campo(es?"Modelo":"Model",h("input",{type:"text",value:gem?c.gmodelo:c.amodelo,on:{change:g(gem?"gmodelo":"amodelo")}})),bloqueSeguridad(gem));
+  const est=h("p",{class:"estado"});
+  const correr=fn=>async()=>{try{await fn();pintar()}catch(e){est.textContent=e.message;est.className="estado error"}};
+  async function pintar(){
+    let st;try{st=(await bovEstado())[prov]}catch(e){caja.replaceChildren(h("p",{class:"estado error"},es?"Este navegador no permite la bóveda de keys. Usá el camino «Claude».":"This browser cannot run the key vault. Use the «Claude» option."));return}
+    const inp=h("input",{type:"password",autocomplete:"off",spellcheck:"false",placeholder:st.tiene?(es?"Reemplazar por otra key…":"Replace with another key…"):(gem?"AIza…":"sk-ant-…"),"aria-label":gem?"Key de Gemini":"Key de Anthropic"});
+    const rec=h("input",{type:"checkbox",checked:st.recordar});
+    const guardar=correr(async()=>{if(!inp.value.trim())return;const v=inp.value;inp.value="";await bov("guardar",{prov,key:v,recordar:rec.checked});est.textContent=es?"Key guardada en la bóveda.":"Key saved in the vault.";est.className="estado"});
+    rec.addEventListener("change",correr(async()=>{if(st.tiene)await bov("recordar",{prov,recordar:rec.checked})}));
+    caja.replaceChildren(
+      st.tiene?h("p",{class:"c"},h("span",{class:"tag on"},"🔒 "+(es?"Key guardada · termina en ":"Key saved · ends in ")+"…"+st.fin),
+        h("span",{class:"meta"}," "+(st.recordar?(es?"(cifrada en este dispositivo)":"(encrypted on this device)"):(es?"(solo hasta cerrar o recargar la página)":"(until you close or reload the page)")))):null,
+      campo(gem?"Key de Gemini":"Key de Anthropic",h("div",{class:"link-manual"},inp,h("button",{class:"btn ghost",type:"button",on:{click:guardar}},es?"Guardar":"Save")),
+        gem?(es?"Se saca gratis en aistudio.google.com/apikey. En el nivel gratuito Google puede usar los datos para mejorar sus modelos.":"Free at aistudio.google.com/apikey. On the free tier Google may use the data."):(es?"Se crea en console.anthropic.com. Es de pago por uso.":"Create it at console.anthropic.com. Pay as you go.")),
+      h("label",{class:"chk"},rec,es?" Recordarla en este dispositivo (cifrada). Si no, se borra al cerrar o recargar la página.":" Remember it on this device (encrypted). Otherwise it is cleared when you close or reload the page."),
+      st.tiene?h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await bov("borrar",{prov});est.textContent=es?"Key borrada de este dispositivo.":"Key deleted from this device.";est.className="estado"})}},es?"Borrar mi key de este dispositivo":"Delete my key from this device"):null,
+      est);
+    inp.addEventListener("keydown",e=>{if(e.key==="Enter")guardar()});
+  }
+  pintar();
+  return sec;
 }
+function bloqueSeguridad(gem){
+  const es=S.lang==="es";const SRC="https://github.com/"+REPO+"/blob/main/ia/boveda.js";
+  const li=t=>h("li",null,t);
+  return h("details",{class:"seguridad"},h("summary",null,es?"Cómo se protege tu key (y cómo comprobarlo)":"How your key is protected (and how to check)"),
+    h("ul",null,es?[
+      li("Tu key no pasa por ningún servidor de Prebisch: va directo de tu navegador a "+(gem?"Google (generativelanguage.googleapis.com)":"Anthropic (api.anthropic.com)")+"."),
+      li("No se guarda en tu cuenta ni en Firebase, no se sincroniza entre dispositivos y no va en la copia de seguridad. El administrador de Prebisch no la puede ver: solo ve los briefs que guardás."),
+      li("La guarda un programa aparte, la «bóveda», que es el único que la toca. El resto de la página (y las librerías externas que usa) no puede leerla: solo sabe si hay una y sus últimos 4 caracteres."),
+      li("Si marcás «Recordar», queda cifrada (AES-256) en este navegador con una llave que no se puede exportar. Si no, vive solo en memoria hasta que cerrás o recargás la página."),
+      li("Igual, como con cualquier key: usá una solo para Prebisch, ponele un tope de gasto en la consola del proveedor, no la cargues en una compu compartida y borrala si dejás de usarla.")]:[
+      li("Your key never touches a Prebisch server: it goes straight from your browser to "+(gem?"Google":"Anthropic")+"."),
+      li("It is not stored in your account or Firebase, not synced and not in the backup. The Prebisch admin cannot see it."),
+      li("A separate program, the «vault», is the only code that handles it. The rest of the page (and its external libraries) cannot read it."),
+      li("With «Remember», it is encrypted (AES-256) in this browser with a non-exportable key. Otherwise it lives in memory until you close or reload the page."),
+      li("As with any key: use a dedicated one, set a spending cap, avoid shared computers, and delete it when you stop using it.")]),
+    h("p",{class:"small j"},es?"Comprobalo vos: el código de la bóveda es público y corto (":"Check it yourself: the vault's code is public and short (",h("a",{href:SRC,target:"_blank",rel:"noopener"},"ia/boveda.js"),
+      es?"). Y en el navegador, con las herramientas de desarrollador (F12 › Red), al generar un brief vas a ver que la key solo viaja a "+(gem?"generativelanguage.googleapis.com":"api.anthropic.com")+".":"). In DevTools (F12 › Network) you will see the key only goes to "+(gem?"generativelanguage.googleapis.com":"api.anthropic.com")+"."))}
 function exportar(){
   const blob=new Blob([JSON.stringify({version:1,estado:S.est,mis:S.mis},null,0)],{type:"application/json"});
   const a=h("a",{href:URL.createObjectURL(blob),download:"breve-economico-"+new Date().toISOString().slice(0,10)+".json"});document.body.append(a);a.click();a.remove();
