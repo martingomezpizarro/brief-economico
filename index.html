@@ -61,7 +61,8 @@ body:has(.volver-flot) #main{padding-bottom:64px}
 .aviso-drive[hidden]{display:none}
 .pegar-vinculos{margin-top:8px}
 .pegar-vinculos textarea{width:100%;margin:6px 0;font-family:var(--mono);font-size:12px}
-.aviso-drive ul{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.aviso-drive ul,.aviso-drive ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:4px}
+.aviso-drive select{width:100%}
 .aviso-drive .cerrar{position:absolute;top:6px;right:6px}
 .volver a{text-decoration:none;color:var(--muted);display:inline-flex;align-items:center;min-height:32px}
 .volver a:hover{color:var(--accent)}
@@ -1360,20 +1361,36 @@ function viewEstudio(){
   const drop=h("div",{class:"drop",tabindex:"0",role:"button",on:{click:()=>fileIn.click(),keydown:e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();fileIn.click()}},
     dragover:e=>{e.preventDefault();drop.classList.add("sobre")},dragleave:()=>drop.classList.remove("sobre"),drop:e=>{e.preventDefault();drop.classList.remove("sobre");subir([...e.dataTransfer.files])}}},
     es?"O arrastrá acá tus PDF (papers, capítulos, apuntes). Se leen en tu navegador; no se suben a ningún lado.":"Or drop your PDFs here. They are read in your browser and never uploaded.");
+  /* «Desde mi Drive» sin la API de Google: en el celular, el selector del sistema ya ofrece Drive;
+     en la compu la app no puede leer Drive, así que abre Drive en otra pestaña (o el PDF vinculado elegido)
+     y espera que el PDF descargado se suelte en la zona de carga. */
+  const enCelular=matchMedia("(pointer:coarse)").matches;
   const elegirDeDrive=()=>{driveAyuda.hidden=true;fileIn.click()};
+  const marcarZona=()=>{drop.classList.add("sobre");drop.scrollIntoView({block:"center",behavior:"smooth"});setTimeout(()=>drop.classList.remove("sobre"),2500)};
+  const abrirDrive=url=>{window.open(url||"https://drive.google.com/drive/my-drive","_blank","noopener");marcarZona()};
+  const vinc=Object.entries(DRIVE.mapa).filter(([k])=>S.byId[k]).map(([k,v])=>[k,v,S.byId[k]]).sort((a,b)=>a[2].titulo.localeCompare(b[2].titulo));
+  const selVinc=vinc.length?h("select",{"aria-label":es?"Tus PDF vinculados":"Your linked PDFs",on:{change:e=>{const d=DRIVE.mapa[e.target.value];if(d)abrirDrive(urlMio(d));e.target.value=""}}},
+    h("option",{value:""},es?"…o abrí uno de tus "+vinc.length+" PDF vinculados":"…or open one of your "+vinc.length+" linked PDFs"),
+    vinc.map(([k,,p])=>h("option",{value:k},(p.cita?p.cita+" · ":"")+p.titulo))):null;
+  const pasos=enCelular?[
+      h("li",null,es?"Tocá «Elegir de Drive» y, en el selector que se abre, elegí «Drive» (o «Examinar › Drive»).":"Tap «Choose from Drive» and pick «Drive» (or «Browse › Drive») in the picker."),
+      h("li",null,es?"Buscá el PDF y tocalo: se carga acá.":"Find the PDF and tap it: it loads here.")]
+    :[h("li",null,es?"Tocá «Abrir mi Drive»: se abre en otra pestaña.":"Tap «Open my Drive»: it opens in another tab."),
+      h("li",null,es?"Buscá el PDF y descargalo (tres puntos › Descargar).":"Find the PDF and download it (three dots › Download)."),
+      h("li",null,es?"Volvé a esta pestaña y arrastrá el PDF a la zona marcada, o tocá «Elegir el PDF descargado».":"Come back to this tab and drop the PDF on the highlighted area, or tap «Choose the downloaded PDF».")];
   const driveAyuda=h("div",{class:"aviso-drive",hidden:true,role:"dialog","aria-label":es?"Usar un PDF de tu Drive":"Use a PDF from your Drive"},
     h("button",{class:"mini cerrar",type:"button","aria-label":es?"Cerrar":"Close",on:{click:()=>{driveAyuda.hidden=true}}},"✕"),
     h("p",{class:"eyebrow"},es?"Usar un PDF de tu Drive":"Use a PDF from your Drive"),
-    h("ul",{class:"j"},
-      h("li",null,es?"En el celular: tocá «Elegir el archivo» y, en el selector que se abre, elegí «Drive» (o «Examinar › Drive»).":"On a phone: tap «Choose the file» and pick «Drive» (or «Browse › Drive») in the picker."),
-      h("li",null,es?"En la compu: si tenés Google Drive para escritorio, tu Drive aparece como una unidad más. Si no, descargá el PDF de drive.google.com y elegilo desde la compu.":"On a computer: with Google Drive for desktop your Drive shows up as a drive. Otherwise download the PDF from drive.google.com and pick it from your computer."),
-      h("li",null,es?"¿Querés abrir tus PDF de Drive desde cada lectura del rack? Eso es vincular tu carpeta, y se hace una sola vez: está explicado en el instructivo.":"Want to open your Drive PDFs from each rack reading? That is linking your folder, done once: see the guide.")),
-    h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:elegirDeDrive}},es?"Elegir el archivo":"Choose the file"),
-      h("a",{class:"btn ghost",href:"#guia-pdf",on:{click:()=>{S.guiaIr="drive"}},style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Ver el instructivo de Drive":"See the Drive guide")),
+    h("ol",{class:"j"},...pasos),
+    enCelular?h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:elegirDeDrive}},es?"Elegir de Drive":"Choose from Drive"))
+      :[h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:()=>abrirDrive()}},es?"Abrir mi Drive":"Open my Drive"),
+          h("button",{class:"btn ghost",type:"button",on:{click:elegirDeDrive}},es?"Elegir el PDF descargado":"Choose the downloaded PDF")),selVinc],
+    h("p",{class:"note small"},es?"Vincular tu carpeta de Drive (para abrir tus PDF desde cada lectura) es otra cosa y se hace una sola vez: ":"Linking your Drive folder (to open PDFs from each reading) is separate and done once: ",
+      h("a",{href:"#guia-pdf",on:{click:()=>{S.guiaIr="drive"}}},es?"ver el instructivo":"see the guide"),"."),
     h("label",{class:"small"},h("input",{type:"checkbox",on:{change:e=>lsSet("prebisch-aviso-drive",e.target.checked)}}),es?" No volver a mostrar este aviso":" Don't show this again"));
   const desdeDrive=async()=>{
     if(DRIVE_CFG.clientId){try{const fs=await driveElegirArchivos(true);setEstado(es?"Bajando de Drive…":"Downloading from Drive…");const arch=[];for(const f of fs)arch.push(await driveDescargar(f));await subir(arch)}catch(e){if(e.name!=="AbortError")setEstado(e.message,true)}return}
-    if(lsGet("prebisch-aviso-drive"))return fileIn.click();
+    if(lsGet("prebisch-aviso-drive"))return enCelular?fileIn.click():abrirDrive();
     driveAyuda.hidden=false;driveAyuda.scrollIntoView({block:"nearest",behavior:"smooth"})};
   const cargar=h("div",{class:"fila2"},
     h("button",{class:"btn",type:"button",on:{click:()=>fileIn.click()}},es?"Desde mi compu":"From my computer"),
