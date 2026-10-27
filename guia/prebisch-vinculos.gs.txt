@@ -1,0 +1,32 @@
+/**
+ * Prebisch · archivo de vínculos de tus PDF de Google Drive.
+ * Crea «prebisch-vinculos.csv» en tu Drive con el link de cada PDF de tu carpeta
+ * (y de sus subcarpetas). Después lo importás en Prebisch › Ajustes › Mi biblioteca.
+ * El script corre en tu cuenta de Google y no manda nada a ningún lado.
+ */
+const CARPETA = 'ECONOMICS';   // ← el nombre de tu carpeta de PDF, tal como figura en Drive
+
+function generarVinculos() {
+  const carpetas = DriveApp.getFoldersByName(CARPETA);
+  if (!carpetas.hasNext()) throw new Error('No encontré la carpeta «' + CARPETA + '» en tu Drive. Revisá el nombre (mayúsculas y tildes incluidas).');
+  const filas = ['numero,link,nombre,carpeta'];
+  recorrer(carpetas.next(), CARPETA, filas);
+  const viejo = DriveApp.getRootFolder().getFilesByName('prebisch-vinculos.csv');
+  while (viejo.hasNext()) viejo.next().setTrashed(true);
+  DriveApp.getRootFolder().createFile('prebisch-vinculos.csv', filas.join('\n'), MimeType.CSV);
+  Logger.log('Listo: ' + (filas.length - 1) + ' PDF. Descargá «prebisch-vinculos.csv» de Mi unidad.');
+}
+
+function recorrer(carpeta, ruta, filas) {
+  const q = s => '"' + String(s).replace(/"/g, "'") + '"';
+  const archivos = carpeta.getFiles();
+  while (archivos.hasNext()) {
+    const f = archivos.next();
+    const nombre = f.getName();
+    if (!/\.pdf$/i.test(nombre) && f.getMimeType() !== 'application/pdf') continue;
+    const m = nombre.match(/^\s*(\d{4})\s*-\s/);
+    filas.push([m ? m[1] : '', 'https://drive.google.com/file/d/' + f.getId() + '/view', q(nombre), q(ruta)].join(','));
+  }
+  const sub = carpeta.getFolders();
+  while (sub.hasNext()) { const s = sub.next(); recorrer(s, ruta + '/' + s.getName(), filas); }
+}

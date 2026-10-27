@@ -183,6 +183,24 @@ select{min-width:0;max-width:100%}
 .docs input[type=text]{width:6.5rem;font:13px var(--mono);padding:6px;border:1px solid var(--line2);border-radius:2px;background:var(--surface);color:var(--ink)}
 .mini{font:12px var(--mono);border:1px solid var(--line2);background:transparent;border-radius:2px;padding:6px 8px;min-height:32px;color:var(--muted)}
 .estado{font-family:var(--mono);font-size:12px;color:var(--muted);text-align:center;white-space:pre-wrap}
+.guia-indice{max-width:30rem;margin:8px auto 0;padding-left:1.4em}
+.guia-pasos{padding-left:1.4em;display:flex;flex-direction:column;gap:6px}
+.guia-pasos li::marker{font-family:var(--mono);color:var(--accent)}
+.guia-img{display:block;max-width:100%;height:auto;margin:8px auto;border:1px solid var(--line);border-radius:6px}
+.guia-codigo{font-family:var(--mono);font-size:11px;line-height:1.45;max-height:16rem;overflow:auto;white-space:pre;padding:10px;border:1px solid var(--line);border-radius:6px;background:var(--paper,transparent)}
+.guia-script{display:flex;flex-direction:column;gap:8px}
+.link-manual{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.link-manual input{flex:1 1 14rem;min-width:0}
+.link-manual .estado{flex-basis:100%}
+.dlg-ia{border:1px solid var(--line2);background:var(--surface);color:var(--ink);padding:20px 18px;width:min(560px,calc(100vw - 32px));max-height:calc(100vh - 32px);overflow:auto;border-radius:6px}
+.dlg-ia::backdrop{background:rgba(30,20,15,.45)}
+.dlg-ia .pasos-ia{padding-left:1.3em;margin:8px 0}
+.dlg-ia .pasos-ia li{margin:0 0 16px;line-height:1.5}
+.dlg-ia .pasos-ia li>.btn{display:inline-block;width:auto;margin:0 10px 0 0}
+.dlg-ia textarea{display:block;width:100%;min-height:120px;margin:8px 0;font:13px/1.4 ui-monospace,Menlo,monospace;box-sizing:border-box}
+.adm-brief{margin:10px 0 6px;padding:12px 14px;border-left:3px solid var(--line2);background:var(--surface)}
+.adm-brief h3{font-size:16px;margin:14px 0 6px}
+.chk{display:block;margin:6px 0;font-size:14px}
 .nombre-pdf{font-family:var(--mono);font-size:12px;word-break:break-word;background:none;color:var(--ink)}
 .estado.error{color:var(--again)}
 .drop{border:1px dashed var(--line2);border-radius:2px;padding:18px;text-align:center;color:var(--muted);cursor:pointer}
@@ -291,13 +309,14 @@ const REPO="martingomezpizarro/brief-economico";
 /* Cuenta y nube (opcional). Mientras FIREBASE_CONFIG sea null, todo queda en el navegador. */
 const FIREBASE_CONFIG={apiKey:"AIzaSyAdvD2_7HuWJ3Q0zORGWh1YfmBAwjEWMx8",authDomain:"prebisch-785b1.firebaseapp.com",projectId:"prebisch-785b1",storageBucket:"prebisch-785b1.firebasestorage.app",messagingSenderId:"533431844100",appId:"1:533431844100:web:2d5b8f57164f73508ca451"};
 const FB_VER="12.17.1";
-/* Worker que genera briefs con la key del sitio y cupos por persona (ver worker/ACTIVAR.md). */
+/* Worker de los avisos diarios (ver worker/ACTIVAR.md). Ya no genera briefs con la key del sitio. */
 /* Vincular la carpeta de PDF de Google Drive (selector de Google, permiso drive.file).
    clientId: el ID de cliente OAuth web del proyecto de Google Cloud de Firebase (ver docs/fuentes-y-pdf.md).
    Vacío = la conexión con Drive no se muestra. */
 const DRIVE_CFG={clientId:"",apiKey:FIREBASE_CONFIG?FIREBASE_CONFIG.apiKey:"",appId:FIREBASE_CONFIG?FIREBASE_CONFIG.messagingSenderId:""};
+/* Mails que ven la administración (#admin). Tienen que coincidir con esAdmin() en las reglas de Firestore (worker/ACTIVAR.md). */
+const ADMINS=["gomezpizarromartin@gmail.com"];
 const WORKER_URL="https://brief-economico.gomezpizarromartin.workers.dev";
-const LIM_CHARS={servidor:200000,gemini:700000,anthropic:400000};
 const INT=[1,3,7,16,35,90];
 const T={
  es:{hoy:"Hoy",rack:"Rack",rutas:"Rutas",estudio:"Mi estudio",ajustes:"Ajustes",pdd:"Paper del día",verFicha:"Ver ficha completa",sesion:"Sesión de hoy",venc:"Vencidas",nuevas:"Nuevas",min:"Minutos",empezar:"Empezar sesión",nada:"No hay tarjetas pendientes hoy.",cajas:"Tarjetas por caja",mostrar:"Mostrar respuesta",otra:"Otra vez",dificil:"Difícil",bien:"Bien",facil:"Fácil",salir:"Salir",fin:"Sesión terminada",volver:"Volver al inicio",fuente:"Fuente",caja:"caja",nueva:"nueva",pista:"Intentá responder antes de mirar. Atajos: espacio y 1–4."},
@@ -430,7 +449,7 @@ async function nubeTraer(){
     nubeGuardarEstado();nubeGuardarMis();
   }catch(e){S.nube.error="No se pudo leer tu progreso guardado.";}
 }
-function nubeGuardarEstado(){if(!S.nube.user||!S.nube.db)return;docU().set({estado:JSON.stringify(S.est),actualizado:Date.now()},{merge:true}).catch(()=>{})}
+function nubeGuardarEstado(){if(!S.nube.user||!S.nube.db)return;const u=S.nube.user;docU().set({estado:JSON.stringify(S.est),actualizado:Date.now(),mail:u.email||"",nombre:u.displayName||""},{merge:true}).catch(()=>{})}
 function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
   docU().set({rutas:JSON.stringify(S.mis.rutas)},{merge:true}).catch(()=>{});
   Object.values(S.mis.lecciones).forEach(l=>{if(!S.nube.subidas.has(l.id)){S.nube.subidas.add(l.id);docU().collection("lecciones").doc(l.id).set(l).catch(()=>S.nube.subidas.delete(l.id))}});}
@@ -449,10 +468,12 @@ function etiquetaDe(x){const t=(a,b)=>S.lang==="es"?a:b;
   if(x==="#rutas")return t("Volver a las rutas","Back to paths");
   if(x.startsWith("#ruta-"))return t("Volver a la ruta","Back to the path");
   if(x==="#estudio")return t("Volver a Mi estudio","Back to My study");
+  if(x==="#guia-pdf")return t("Volver al instructivo","Back to the guide");
   if(/^#p\d+$/.test(x))return t("Volver a la lectura","Back to the reading");
   if(x.startsWith("#l-"))return t("Volver al brief","Back to the brief");
   if(x.startsWith("#q-"))return t("Volver a las preguntas","Back to the questions");
   if(x==="#ajustes")return t("Volver a Ajustes","Back to Settings");
+  if(x==="#admin")return t("Volver a la administración","Back to admin");
   if(x==="#cuenta")return t("Volver a la cuenta","Back to the account");
   if(x.startsWith("#terminos"))return t("Volver a los términos","Back to the terms");
   if(x==="#inicio")return t("Volver a Cómo funciona","Back to How it works");
@@ -482,12 +503,14 @@ function route(){
   document.getElementById("main").classList.toggle("ancho",["hoy","","rack","rutas","inicio"].includes(hs)||hs.startsWith("area-"));
   const bc=document.getElementById("btn-cuenta");if(bc){if(hs==="cuenta")bc.setAttribute("aria-current","page");else bc.removeAttribute("aria-current")}
   if(hs==="inicio"){setNav("inicio");return viewInicio()}
+  if(hs==="guia-pdf"){setNav("guia-pdf");return viewGuiaPDF()}
   if(hs==="cuenta"){setNav("cuenta");return viewCuenta()}
   if(hs==="rack"){setNav("rack");return viewRack()}
   if(hs==="rutas"){setNav("rutas");return viewRutas()}
   if(hs.startsWith("ruta-")){const id=decodeURIComponent(hs.slice(5));const r=ruta(id);if(r&&r.tipo==="mia"){setNav("estudio");return viewMiRuta(r)}setNav("rutas");return viewRuta(id)}
   if(hs.startsWith("area-")){setNav("rack");viewRack();const el=document.getElementById(hs);if(el)el.scrollIntoView();return}
   if(hs==="ajustes"){setNav("ajustes");return viewAjustes()}
+  if(hs==="admin"){setNav("ajustes");return viewAdmin()}
   if(hs==="estudio"){setNav("estudio");return viewEstudio()}
   if(/^p\d+$/.test(hs)){setNav("rack");return viewFicha(hs)}
   if(hs==="sesion"){setNav("hoy");return S.ses?viewCard():viewHoy()}
@@ -657,7 +680,7 @@ function viewInicio(){
     ["#hoy",t("El brief","The brief"),t("Explica el trabajo desde cero y lo vincula con otros temas del rack. Al terminar, las preguntas de control: tus respuestas y las tarjetas del brief recién ahí entran al repaso, nunca antes. Cada brief tiene un enlace para reportar errores.","It explains the work from scratch and links it to other topics in the rack. When you finish, the check questions: only then do your answers and the brief's cards join the review. Every brief has a link to report errors.")],
     ["#hoy",t("Las tarjetas","The cards"),t("Primero pensá la respuesta; después mirala y calificate: Otra vez, Difícil, Bien o Fácil. De eso depende cuándo vuelve. En compu: espacio para mostrar la respuesta y 1 a 4 para calificar.","Think of the answer first; then reveal it and grade yourself: Again, Hard, Good or Easy. That decides when it comes back. On a computer: space to reveal, 1 to 4 to grade.")],
     ["#rack",t("Rack","Rack"),t("Las "+nLect+" lecturas, por área, categoría y nivel. Las que tienen ficha muestran un resumen técnico; todas enlazan a su búsqueda pública para encontrar el texto.","All "+nLect+" readings by area, category and level. Those with a summary show a technical card; all link to a public search to find the text.")],
-    ["#estudio",t("Mi estudio","My study"),t("Subí tus PDF, contá qué querés aprender y la app arma una ruta con un brief por día generado con inteligencia artificial. Podés usar el servidor de la app (gratis, con cupo diario e iniciando sesión) o tu propia key de Gemini o Anthropic. Los PDF se leen en tu navegador.","Upload your PDFs, say what you want to learn, and the app builds a path with one AI-generated brief a day. Use the app's server (free, daily quota, signed in) or your own Gemini or Anthropic key. PDFs are read in your browser.")],
+    ["#estudio",t("Mi estudio","My study"),t("Subí tus PDF, contá qué querés aprender y la app arma una ruta con un brief por día generado con inteligencia artificial. Lo escribe Claude: la app arma el prompt, se lo das en claude.ai y cargás la respuesta. También podés usar tu propia key de Gemini o Anthropic. Los PDF se leen en tu navegador.","Upload your PDFs, say what you want to learn, and the app builds a path with one AI-generated brief a day. Claude writes it: the app builds the prompt, you give it to claude.ai and load the answer. You can also use your own Gemini or Anthropic key. PDFs are read in your browser.")],
     ["#ajustes",t("Ajustes","Settings"),t("Hora del repaso, minutos por sesión, tarjetas nuevas por día y áreas que te interesan. También el aviso diario, el evento en tu calendario y, en compu, la conexión con tu carpeta de PDF.","Review time, minutes per session, new cards per day and your areas. Also the daily notification, a calendar event and, on a computer, linking your PDF folder.")],
     ["#cuenta",t("Cuenta","Account"),t("Opcional. Sin cuenta, todo queda en este navegador. Con una cuenta de Google o con tu mail, el progreso se sincroniza entre dispositivos y podés recibir avisos.","Optional. Without one, everything stays in this browser. With a Google account or your email, progress syncs across devices and you can get notifications.")]];
   const tour=h("section",{class:"block rule"},
@@ -671,7 +694,7 @@ function viewInicio(){
       "Install Prebisch as an app: on your phone, open the browser menu and choose «Add to Home screen» (on iPhone, in Safari: Share → Add to Home Screen). It opens in one tap and, with notifications on, reminds you at the time you choose.")));
   const faq=[
     [t("¿Es gratis?","Is it free?"),t("Sí. Es un proyecto independiente y sin fines de lucro. Si te resulta útil, abajo hay formas de colaborar voluntariamente.","Yes. It is an independent, non-profit project. If you find it useful, there are voluntary ways to support it below.")],
-    [t("¿Necesito una cuenta?","Do I need an account?"),t("No. Solo hace falta para sincronizar entre dispositivos, recibir avisos o generar briefs con el servidor de la app.","No. You only need one to sync across devices, get notifications or generate briefs with the app's server.")],
+    [t("¿Necesito una cuenta?","Do I need an account?"),t("No. Solo hace falta para sincronizar entre dispositivos, recibir avisos o guardar tus briefs en la nube.","No. You only need one to sync across devices, get notifications or keep your briefs in the cloud.")],
     [t("¿De dónde salen los briefs?","Where do the briefs come from?"),t("Se escriben a partir del texto de cada obra, con asistencia de inteligencia artificial y control de cifras contra la fuente. Pueden tener errores: no reemplazan la lectura del original.","They are written from each work's text, with AI assistance and figures checked against the source. They may contain errors: they do not replace reading the original.")],
     [t("¿Qué pasa con mis PDF?","What happens to my PDFs?"),t("Se leen en tu navegador y no se suben. Solo se envía su texto al motor de IA cuando pedís generar un brief.","They are read in your browser and never uploaded. Only their text is sent to the AI engine when you ask for a brief.")]];
   const preg=h("section",{class:"block rule"},
@@ -696,7 +719,7 @@ function linkPublico(p,texto){const es=S.lang==="es";
   return conSesion()?h("a",{href:p.url,target:"_blank",rel:"noopener"},texto||(es?"Abrir el texto completo":"Open the full text"))
     :h("a",{href:"#cuenta",title:es?"Iniciá sesión para abrir la fuente":"Sign in to open the source"},(texto||(es?"Abrir el texto completo":"Open the full text"))+(es?" (con tu cuenta)":" (sign in)"))}
 function linksTexto(pid){const es=S.lang==="es";const p=S.byId[pid]||{};const out=[];
-  if(DRIVE.mapa[pid])out.push(h("a",{href:urlDrive(DRIVE.mapa[pid].f),target:"_blank",rel:"noopener"},es?"Abrir mi PDF":"Open my PDF"));
+  if(DRIVE.mapa[pid])out.push(h("a",{href:urlMio(DRIVE.mapa[pid]),target:"_blank",rel:"noopener"},es?"Abrir mi PDF":"Open my PDF"));
   else if(BIB.mapa[pid])out.push(h("button",{class:"linkbtn",type:"button",on:{click:()=>bibAbrir(pid)}},es?"Abrir mi PDF":"Open my PDF"));
   if(p.url&&p.acceso==="publico")out.push(linkPublico(p));
   return out}
@@ -1015,12 +1038,72 @@ function viewAjustes(){
       h("p",{class:"eyebrow c"},es?"Cómo funciona":"How it works"),
       h("p",{class:"j"},es?"Cada tarjeta vive en una de seis cajas. Si la recordás bien sube de caja y vuelve más tarde: 1, 3, 7, 16, 35 y 90 días. «Otra vez» la devuelve a la caja 1 y la repite en la misma sesión; «Difícil» la deja en su caja con la mitad del intervalo; «Fácil» la sube dos cajas. La sesión mezcla áreas para que practiques distinguir temas, no solo recordarlos.":"Each card lives in one of six boxes. Recall it well and it moves up and returns later: 1, 3, 7, 16, 35 and 90 days. Again sends it to box 1 and repeats it this session; Hard keeps its box at half the interval; Easy moves it up two boxes. Sessions mix areas so you practice telling topics apart, not just recalling them.")),
     seccionIA(),
+    esAdmin()?h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Administración":"Admin"),h("p",{class:"c"},h("a",{href:"#admin"},es?"Ver los briefs que armaron los usuarios →":"See the briefs users have built →"))):null,
     h("section",{class:"block rule"},
       h("p",{class:"eyebrow c"},es?"Tus datos":"Your data"),
       h("p",{class:"j"},es?"Sin cuenta, el progreso y tus briefs quedan en este navegador. Podés bajar una copia y cargarla en otro dispositivo.":"Without an account, progress and your briefs stay in this browser. You can download a copy and load it elsewhere."),
       h("div",{class:"fila2"},
         h("button",{class:"btn ghost",type:"button",on:{click:exportar}},es?"Bajar copia":"Download copy"),
         h("label",{class:"btn ghost",style:"display:flex;align-items:center;justify-content:center"},es?"Cargar copia":"Load copy",h("input",{type:"file",accept:".json,application/json",style:"display:none",on:{change:importar}})))));
+}
+/* ---------- administración: los briefs que generan los usuarios ----------
+   Lee brief/{uid}/lecciones de todos con una consulta de grupo. Las reglas de Firestore solo se lo
+   permiten a los mails de esAdmin() (ver worker/ACTIVAR.md); para el resto la consulta falla. */
+const esAdmin=()=>{const u=S.nube.user;return !!(u&&u.email&&u.emailVerified!==false&&ADMINS.includes(u.email.toLowerCase()))};
+const ADM={datos:null,cargando:false,error:"",abierto:null,filtro:""};
+async function admCargar(){
+  ADM.cargando=true;ADM.error="";
+  try{
+    const q=await S.nube.db.collectionGroup("lecciones").limit(1000).get();
+    const por={};q.forEach(d=>{const uid=d.ref.parent.parent.id;(por[uid]=por[uid]||{uid,mail:"",lec:[]}).lec.push(d.data())});
+    await Promise.all(Object.values(por).map(async x=>{try{const u=await S.nube.db.collection("brief").doc(x.uid).get();const r=u.data()||{};x.mail=r.mail||"";x.nombre=r.nombre||"";
+      try{x.rutas=JSON.parse(r.rutas||"[]")}catch(e){x.rutas=[]}}catch(e){}
+      x.lec.sort((a,b)=>(b.creado||0)-(a.creado||0))}));
+    ADM.datos=Object.values(por).sort((a,b)=>((b.lec[0]||{}).creado||0)-((a.lec[0]||{}).creado||0));
+  }catch(e){ADM.error=/permission|insufficient/i.test(e.message||"")?(S.lang==="es"?"Firestore no te deja leer los briefs de otros usuarios. Publicá las reglas nuevas de worker/ACTIVAR.md (función esAdmin).":"Firestore denied access. Publish the new rules in worker/ACTIVAR.md."):e.message}
+  ADM.cargando=false;if(location.hash==="#admin")viewAdmin();
+}
+function admBrief(l){
+  const es=S.lang==="es";const txt=x=>typeof x==="string"?x:(x&&(x[S.lang]||x.es))||"";
+  return h("div",{class:"adm-brief"},
+    l.bajada?h("p",{class:"j"},h("em",null,l.bajada)):null,
+    h("p",{class:"j"},l.intro||""),
+    (l.secciones||[]).map(sec=>[h("h3",null,sec.t),(sec.p||[]).map(x=>h("p",{class:"j"},x)),(sec.eq||[]).map(e=>h("p",{class:"c"},"\\["+e+"\\]"))]),
+    (l.claves||[]).length?h("ul",null,l.claves.map(k=>h("li",null,k))):null,
+    h("p",{class:"eyebrow"},(es?"Preguntas (":"Questions (")+(l.preguntas||[]).length+")"),
+    h("ol",null,(l.preguntas||[]).map(q=>h("li",null,txt(q.q),h("span",{class:"meta"}," → "+((txt(q.op)||[])[q.ok]||(q.op&&q.op.es&&q.op.es[q.ok])||""))))),
+    h("p",{class:"note"},(es?"Tarjetas: ":"Cards: ")+(l.tarjetas||[]).length+" · "+(es?"palabras: ":"words: ")+(l.palabras||"?")));
+}
+function viewAdmin(){
+  const es=S.lang==="es";
+  if(!S.nube.user)return mount(h("p",{class:"eyebrow c"},es?"Administración":"Admin"),h("p",{class:"c"},h("a",{href:"#cuenta"},es?"Iniciá sesión con la cuenta de administrador →":"Sign in with the admin account →")));
+  if(!esAdmin())return mount(h("p",{class:"eyebrow c"},es?"Administración":"Admin"),h("p",{class:"c"},es?"Esta sección es solo para el administrador de Prebisch.":"This section is for the Prebisch admin only."));
+  if(!ADM.datos&&!ADM.cargando&&!ADM.error)admCargar();
+  const fecha=t=>t?new Date(t).toLocaleDateString(es?"es-AR":"en-US",{day:"numeric",month:"short",year:"numeric"}):"";
+  const total=(ADM.datos||[]).reduce((a,x)=>a+x.lec.length,0);
+  const filtro=h("input",{type:"search",placeholder:es?"Filtrar por mail o título…":"Filter by email or title…",value:ADM.filtro,on:{input:e=>{ADM.filtro=e.target.value;pintar()}}});
+  const lista=h("div",null);
+  function pintar(){
+    const f=normal(ADM.filtro);
+    lista.replaceChildren(...(ADM.datos||[]).map(x=>{
+      const ls=x.lec.filter(l=>!f||normal(x.mail+" "+x.nombre+" "+l.titulo).includes(f));if(!ls.length)return null;
+      return h("section",{class:"block rule"},
+        h("p",{class:"eyebrow"},(x.mail||x.nombre||x.uid)+" · "+ls.length+(es?" briefs":" briefs")+(x.rutas&&x.rutas.length?" · "+x.rutas.length+(es?" rutas":" paths"):"")),
+        h("ul",{class:"plist"},ls.map(l=>{const k=x.uid+"/"+l.id;const ab=ADM.abierto===k;
+          return h("li",null,h("span",{class:"t"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{ADM.abierto=ab?null:k;pintar();if(!ab&&window.MathJax&&MathJax.typesetPromise)MathJax.typesetPromise().catch(()=>{})}}},l.titulo||l.id),
+            h("span",{class:"meta"},[fecha(l.creado),l.motor,(l.docs||[]).join(" · ")].filter(Boolean).join(" · ")),
+            ab?[admBrief(l),h("p",null,h("button",{class:"btn ghost",type:"button",on:{click:()=>descargarTexto(l.id+".json",JSON.stringify(l,null,1),"application/json")}},es?"Descargar el JSON":"Download JSON"))]:null))})));
+    }).filter(Boolean));
+  }
+  pintar();
+  mount(h("p",{class:"eyebrow c"},es?"Administración":"Admin"),
+    h("h1",{class:"c",style:"font-size:26px"},es?"Briefs de los usuarios":"Users' briefs"),
+    h("p",{class:"j"},es?"Los briefs que cada usuario armó en Mi estudio y guardó con su cuenta. Solo los ve el administrador. Si alguno está bien, bajá el JSON para sumarlo al rack.":"Briefs each user built in My study and saved to their account. Admin only. Download a good one to add it to the rack."),
+    ADM.cargando?h("p",{class:"estado"},es?"Cargando…":"Loading…"):null,
+    ADM.error?h("p",{class:"estado error"},ADM.error):null,
+    ADM.datos?h("p",{class:"c"},(ADM.datos.length)+(es?" usuarios · ":" users · ")+total+" briefs"):null,
+    ADM.datos?filtro:null,lista,
+    h("p",{class:"c"},h("button",{class:"btn ghost",type:"button",disabled:ADM.cargando,on:{click:()=>{ADM.datos=null;admCargar();viewAdmin()}}},es?"Actualizar":"Refresh")));
 }
 /* ---------- calendario ---------- */
 const fmtUTC=d=>d.toISOString().replace(/[-:]/g,"").replace(/\.\d{3}/,"");
@@ -1157,33 +1240,81 @@ async function leerArchivo(f,avance){
 function rango(str,n){const m=String(str||"").match(/(\d+)\s*[-–a]\s*(\d+)/);if(!m)return[1,n];const a=Math.max(1,+m[1]),b=Math.min(n,+m[2]);return a<=b?[a,b]:[1,n]}
 function textoDoc(d,r){const [a,b]=rango(r,d.paginas.length);return d.paginas.slice(a-1,b).map((t,i)=>"[p. "+(a+i)+"]\n"+t).join("\n")}
 
-/* --- motor de IA --- */
-function iaCfg(){return Object.assign({modo:"servidor",gkey:"",gmodelo:"gemini-3.8-flash",akey:"",amodelo:"claude-sonnet-5-5"},lsGet("breve-ia")||{})}
-function iaGuardar(c){lsSet("breve-ia",c)}
-function iaNombre(c){return c.modo==="gemini"?"Gemini con tu key":c.modo==="anthropic"?"Claude con tu key":"el servidor de Prebisch (cupo diario)"}
+/* --- motor de IA ---
+   Tres caminos, ninguno con costo para Prebisch:
+   · "claude": la app arma el prompt, lo descargás, se lo das a Claude (claude.ai) junto con tus PDF y
+     cargás acá la respuesta. No hace falta key.
+   · "gemini" / "anthropic": tu propia key. Viaja directo de tu navegador al proveedor; Prebisch no la ve,
+     no la sube a la nube y, salvo que marques «Recordar», se borra al cerrar la pestaña. */
+const IA_KEYS=["gkey","akey"];
+function iaCfg(){
+  const raw=lsGet("breve-ia")||{};
+  const c=Object.assign({modo:"claude",gmodelo:"gemini-3.8-flash",amodelo:"claude-sonnet-5-5",recordar:false,gkey:"",akey:""},raw);
+  if(c.modo==="servidor")c.modo="claude";
+  if(raw.recordar===undefined&&(raw.gkey||raw.akey))c.recordar=true;  // keys guardadas antes de este cambio
+  let ses={};try{ses=JSON.parse(sessionStorage.getItem("breve-ia-k")||"{}")||{}}catch(e){}
+  IA_KEYS.forEach(k=>{if(!c[k])c[k]=ses[k]||""});
+  return c}
+function iaGuardar(c){
+  const fijo=Object.assign({},c);const ses={};
+  IA_KEYS.forEach(k=>{ses[k]=c[k]||"";if(!c.recordar)delete fijo[k]});
+  lsSet("breve-ia",fijo);try{sessionStorage.setItem("breve-ia-k",JSON.stringify(ses))}catch(e){}}
+function iaBorrarKeys(){const c=iaCfg();IA_KEYS.forEach(k=>c[k]="");c.recordar=false;iaGuardar(c);try{sessionStorage.removeItem("breve-ia-k")}catch(e){}}
+function iaNombre(c){const es=S.lang==="es";return c.modo==="gemini"?(es?"Gemini con tu key":"Gemini with your key"):c.modo==="anthropic"?(es?"Claude con tu key":"Claude with your key"):(es?"Claude (claude.ai) con un prompt que descargás":"Claude (claude.ai) with a downloadable prompt")}
+const LIM_CHARS={claude:400000,gemini:700000,anthropic:400000};
 async function iaLlamar(tipo,docs,pedido){
-  const c=iaCfg();const lim=LIM_CHARS[c.modo]||200000;
-  if(c.modo==="servidor"){
-    if(!S.nube.user)throw new Error(S.lang==="es"?"Para usar el servidor iniciá sesión en Ajustes (es gratis), o cargá tu propia key.":"Sign in under Settings to use the server, or add your own key.");
-    const tok=await tokenNube();
-    const r=await fetch(WORKER_URL+"/generar",{method:"POST",headers:{"Content-Type":"application/json",Authorization:"Bearer "+tok},body:JSON.stringify({tipo,docs:docs.map(d=>({titulo:d.titulo,texto:d.texto.slice(0,lim),paginas:d.paginas})),pedido})});
-    const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.error||("El servidor respondió "+r.status));return j.texto;
-  }
+  const c=iaCfg();const lim=LIM_CHARS[c.modo]||400000;
   const pr=tipo==="ruta"?P.promptRuta(docs,pedido,lim):P.promptBrief(docs,pedido,lim);
   if(c.modo==="gemini"){
-    if(!c.gkey)throw new Error("Falta tu key de Gemini en Ajustes.");
-    const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(c.gmodelo)+":generateContent",{method:"POST",headers:{"Content-Type":"application/json","x-goog-api-key":c.gkey},
+    if(!c.gkey)throw new Error(S.lang==="es"?"Falta tu key de Gemini en Ajustes.":"Your Gemini key is missing in Settings.");
+    const r=await fetch("https://generativelanguage.googleapis.com/v1beta/models/"+encodeURIComponent(c.gmodelo)+":generateContent",{method:"POST",referrerPolicy:"no-referrer",headers:{"Content-Type":"application/json","x-goog-api-key":c.gkey},
       body:JSON.stringify({systemInstruction:{parts:[{text:pr.sistema}]},contents:[{role:"user",parts:[{text:pr.usuario}]}],generationConfig:{temperature:0.4,maxOutputTokens:16384,responseMimeType:"application/json"}})});
     const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Gemini respondió "+r.status));
     const ps=(((j.candidates||[])[0]||{}).content||{}).parts||[];return ps.filter(p=>p.text&&!p.thought).map(p=>p.text).join("");
   }
-  if(!c.akey)throw new Error("Falta tu key de Anthropic en Ajustes.");
-  const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",headers:{"Content-Type":"application/json","x-api-key":c.akey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
+  if(!c.akey)throw new Error(S.lang==="es"?"Falta tu key de Anthropic en Ajustes.":"Your Anthropic key is missing in Settings.");
+  const r=await fetch("https://api.anthropic.com/v1/messages",{method:"POST",referrerPolicy:"no-referrer",headers:{"Content-Type":"application/json","x-api-key":c.akey,"anthropic-version":"2023-06-01","anthropic-dangerous-direct-browser-access":"true"},
     body:JSON.stringify({model:c.amodelo,max_tokens:16000,system:pr.sistema,messages:[{role:"user",content:pr.usuario}]})});
   const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error((j.error&&j.error.message)||("Anthropic respondió "+r.status));
   return (j.content||[]).filter(x=>x.type==="text").map(x=>x.text).join("");
 }
+/* Prompt para pegar en Claude: reglas + pedido + texto extraído. Si un PDF vino sin texto (escaneado),
+   le pide a Claude que lo lea del adjunto. */
+function promptManual(tipo,docs,pedido){
+  const es=S.lang==="es";
+  const pr=tipo==="ruta"?P.promptRuta(docs,pedido,60000):P.promptBrief(docs,pedido,LIM_CHARS.claude);
+  const sinTexto=docs.filter(d=>String(d.texto||"").replace(/\[p\. \d+\]/g,"").trim().length<200*Math.max(1,d.paginas||1)/4).map(d=>d.titulo);
+  return ["# Prebisch · "+(tipo==="ruta"?"armar una ruta de estudio":"escribir un brief"),"",
+    "Instrucciones para Claude: seguí las reglas de abajo al pie de la letra y respondé SOLO con el objeto JSON que piden, sin texto antes ni después (podés devolverlo como archivo .json).",
+    sinTexto.length?"\nEstos documentos llegaron sin texto (parecen escaneados); leelos de los PDF adjuntos en esta conversación: "+sinTexto.join("; ")+".":"",
+    "","## Reglas","",pr.sistema,"","## Pedido y documentos","",pr.usuario,""].join("\n")}
+function descargarTexto(nombre,texto,tipo){const a=h("a",{href:URL.createObjectURL(new Blob([texto],{type:tipo||"text/markdown;charset=utf-8"})),download:nombre});document.body.append(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(a.href),4000)}
+/* Ventana para el camino «Claude»: descargar el prompt, abrir Claude y cargar la respuesta. */
+function iaManual(tipo,docs,pedido,validar){
+  const es=S.lang==="es";
+  return new Promise((ok,mal)=>{
+    const texto=promptManual(tipo,docs,pedido);
+    const archivo="prebisch-"+(tipo==="ruta"?"ruta":"brief")+"-"+new Date().toISOString().slice(0,10)+".md";
+    const est=h("p",{class:"estado"});
+    const area=h("textarea",{rows:"6",placeholder:es?"Pegá acá la respuesta de Claude (el JSON)…":"Paste Claude's answer (the JSON) here…"});
+    const fin=(v,err)=>{dlg.close();dlg.remove();err?mal(err):ok(v)};
+    const probar=t=>{try{fin(validar(P.extraerJSON(t)))}catch(e){est.textContent=(es?"Esa respuesta no sirve: ":"That answer is unusable: ")+e.message;est.className="estado error"}};
+    const fileIn=h("input",{type:"file",accept:".json,.txt,.md,application/json,text/plain",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(f)probar(await f.text())}}});
+    const dlg=h("dialog",{class:"dlg-ia"},
+      h("p",{class:"eyebrow c"},es?"Armar con Claude":"Build with Claude"),
+      h("ol",{class:"pasos-ia"},
+        h("li",null,h("button",{class:"btn",type:"button",on:{click:()=>descargarTexto(archivo,texto)}},es?"Descargar el prompt":"Download the prompt"),
+          h("button",{class:"linkbtn",type:"button",on:{click:async()=>{try{await navigator.clipboard.writeText(texto);est.textContent=es?"Prompt copiado.":"Prompt copied.";est.className="estado"}catch(e){est.textContent=es?"No pude copiar: usá «Descargar».":"Could not copy: use Download.";est.className="estado error"}}}},es?"o copiarlo":"or copy it")),
+        h("li",null,h("a",{href:"https://claude.ai/new",target:"_blank",rel:"noopener"},es?"Abrí Claude":"Open Claude"),es?" y adjuntá el prompt (y tus PDF, si alguno es escaneado). Enviá el mensaje.":" and attach the prompt (and your PDFs if any are scanned). Send it."),
+        h("li",null,es?"Copiá la respuesta (o descargá el .json que te dé) y cargala acá:":"Copy the answer (or download the .json it gives you) and load it here:",
+          area,h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:()=>probar(area.value)}},es?"Cargar la respuesta":"Load the answer"),
+            h("button",{class:"btn ghost",type:"button",on:{click:()=>fileIn.click()}},es?"Subir el archivo .json":"Upload the .json file")),fileIn)),
+      est,
+      h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>fin(null,Object.assign(new Error(es?"Cancelado.":"Cancelled."),{name:"AbortError"}))}},es?"Cancelar":"Cancel")));
+    document.body.append(dlg);dlg.addEventListener("cancel",e=>{e.preventDefault()});dlg.showModal();
+  })}
 async function iaJSON(tipo,docs,pedido,validar){
+  if(iaCfg().modo==="claude")return iaManual(tipo,docs,pedido,validar);
   let ultimo;
   for(let intento=0;intento<2;intento++){
     const t=await iaLlamar(tipo,docs,pedido);
@@ -1204,7 +1335,14 @@ function viewEstudio(){
   const fileIn=h("input",{type:"file",accept:".pdf,.txt,.md",multiple:true,style:"display:none",on:{change:e=>subir([...e.target.files])}});
   const drop=h("div",{class:"drop",tabindex:"0",role:"button",on:{click:()=>fileIn.click(),keydown:e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();fileIn.click()}},
     dragover:e=>{e.preventDefault();drop.classList.add("sobre")},dragleave:()=>drop.classList.remove("sobre"),drop:e=>{e.preventDefault();drop.classList.remove("sobre");subir([...e.dataTransfer.files])}}},
-    es?"Tocá o arrastrá acá tus PDF (papers, capítulos, apuntes). Se leen en tu navegador; no se suben a ningún lado.":"Tap or drop your PDFs here. They are read in your browser and never uploaded.");
+    es?"O arrastrá acá tus PDF (papers, capítulos, apuntes). Se leen en tu navegador; no se suben a ningún lado.":"Or drop your PDFs here. They are read in your browser and never uploaded.");
+  const driveAyuda=h("p",{class:"note j",hidden:!E.driveAyuda},es?"En el celular, en el selector que se abre elegí «Drive» (o «Examinar › Drive»). En la compu, si tenés Google Drive para escritorio, tu Drive aparece como una unidad más; si no, descargá el PDF de drive.google.com y subilo desde tu compu.":"On a phone, choose «Drive» in the picker that opens. On a computer, Google Drive for desktop shows your Drive as a drive; otherwise download the PDF from drive.google.com and upload it from your computer.");
+  const desdeDrive=async()=>{
+    if(DRIVE_CFG.clientId){try{const fs=await driveElegirArchivos(true);setEstado(es?"Bajando de Drive…":"Downloading from Drive…");const arch=[];for(const f of fs)arch.push(await driveDescargar(f));await subir(arch)}catch(e){if(e.name!=="AbortError")setEstado(e.message,true)}return}
+    E.driveAyuda=true;driveAyuda.hidden=false;fileIn.click()};
+  const cargar=h("div",{class:"fila2"},
+    h("button",{class:"btn",type:"button",on:{click:()=>fileIn.click()}},es?"Desde mi compu":"From my computer"),
+    h("button",{class:"btn ghost",type:"button",on:{click:desdeDrive}},es?"Desde mi Drive":"From my Drive"));
   const conBrief=S.lecciones.filter(l=>!l.mia);
   const selRack=h("select",{on:{change:async e=>{const id=e.target.value;if(!id)return;const l=await getLec(id);const t=briefATexto(l);E.docs.push({id:"r-"+id,titulo:l.titulo,rack:true,n:1,chars:t.length,texto:t});viewEstudio()}}},
     h("option",{value:""},es?"Sumar un brief del rack como material…":"Add a rack brief as material…"),conBrief.map(l=>h("option",{value:l.id},l.titulo)));
@@ -1217,7 +1355,7 @@ function viewEstudio(){
   const nodes=[h("p",{class:"eyebrow c"},es?"Mi estudio":"My study"),
     h("h1",{class:"c",style:"font-size:26px"},es?"Armá tu ruta con tus documentos":"Build a path from your documents"),
     h("p",{class:"j"},es?"Subí los PDF que tengas (papers, capítulos de libros, apuntes de cátedra), contá qué querés aprender y la app arma una ruta de briefs de 15 minutos con preguntas de control. Cada brief se genera cuando lo vas a leer y queda guardado.":"Upload your PDFs, say what you want to learn, and the app builds a path of 15-minute briefs with check questions. Each brief is generated when you are about to read it and is saved."),
-    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"1. Material":"1. Material"),drop,fileIn,selRack,lista),
+    h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"1. Material":"1. Material"),cargar,driveAyuda,drop,fileIn,selRack,lista),
     h("section",{class:"block rule"},h("h2",{class:"c",style:"font-size:19px"},es?"2. Qué querés aprender":"2. What you want to learn"),
       campo(es?"Objetivo y qué profundizar":"Goal and what to go deeper on",obj),
       campo(es?"Nivel":"Level",niv),
@@ -1255,13 +1393,13 @@ async function materialDe(idxs,rangos){
 }
 function pedidoBase(){return{objetivo:E.objetivo,nivel:E.nivel,enfasis:E.enfasis,dias:E.dias}}
 async function armarRuta(){
-  const es=S.lang==="es";E.ocupado=true;setEstado(es?"Armando la ruta… (puede tardar un minuto)":"Building the path…");
+  const es=S.lang==="es";E.ocupado=true;setEstado(iaCfg().modo==="claude"?(es?"Esperando la respuesta de Claude…":"Waiting for Claude's answer…"):(es?"Armando la ruta… (puede tardar un minuto)":"Building the path…"));
   try{
     const docs=await materialDe(E.docs.map((_,i)=>i));
     const plan=await iaJSON("ruta",docs.map(d=>({titulo:d.titulo,texto:d.texto,paginas:d.paginas})),pedidoBase(),P.validarRuta);
     plan.pasos.forEach(p=>{p.docs=p.docs.filter(n=>n>=0&&n<E.docs.length);if(!p.docs.length)p.docs=[0];p.usar=true});
     E.plan=plan;setEstado("");
-  }catch(e){setEstado(e.message,true)}
+  }catch(e){setEstado(e.name==="AbortError"?"":e.message,e.name!=="AbortError")}
   E.ocupado=false;viewEstudio();
 }
 function vistaPlan(){
@@ -1292,7 +1430,7 @@ async function briefUnico(){
 }
 async function generarPaso(r,i){
   const es=S.lang==="es";const p=r.pasos[i];if(p.lec||E.ocupado)return;E.ocupado=true;
-  setEstado(es?"Escribiendo el brief… suele tardar entre 30 segundos y 2 minutos.":"Writing the brief… usually 30 s to 2 min.");
+  setEstado(iaCfg().modo==="claude"?(es?"Esperando la respuesta de Claude…":"Waiting for Claude's answer…"):(es?"Escribiendo el brief… suele tardar entre 30 segundos y 2 minutos.":"Writing the brief… usually 30 s to 2 min."));
   try{
     const docs=[];const faltan=[];
     for(const n of p.docs){const d=r.docs[n];if(!d)continue;
@@ -1307,7 +1445,7 @@ async function generarPaso(r,i){
     l.preguntas.forEach((q,k)=>q.id=l.id+"-q"+(k+1));
     S.mis.lecciones[l.id]=l;registrarMia(l);p.lec=l.id;r.t=Date.now();guardarMis();
     E.ocupado=false;setEstado("");location.hash="#l-"+encodeURIComponent(l.id);return;
-  }catch(e){setEstado(e.message,true)}
+  }catch(e){setEstado(e.name==="AbortError"?"":e.message,e.name!=="AbortError")}
   E.ocupado=false;
 }
 async function resubir(r,fs){
@@ -1370,8 +1508,14 @@ function bibPuntaje(p,f){
   if(num.length&&!num.every(w=>fs.has(w)))s*=.3;
   if(p.curso&&fichas(p.curso).some(w=>w.length>3&&fs.has(w)))s+=.2;
   const au=fichas((p.cita||"").replace(/\(.*?\)/g," ")).filter(w=>!/^\d+$/.test(w)&&w!=="eds"&&w!=="et"&&w!=="al");
-  if(au.some(w=>fs.has(w)))s+=.35;
-  const y=(p.cita||"").match(/\d{4}/);if(y&&f.t.includes(y[0]))s+=.15;
+  const okAu=au.some(w=>fs.has(w));if(okAu)s+=.35;
+  const y=(p.cita||"").match(/\d{4}/);const okY=y&&f.t.includes(y[0]);if(okY)s+=.15;
+  // autor y año juntos alcanzan («Triana (2019).pdf»), salvo que el título pida un número (capítulo, unidad) que falta
+  if(okAu&&okY&&!(num.length&&!num.every(w=>fs.has(w))))s=Math.max(s,.65);
+  // con autor conocido que no figura en el nombre ni el año, el título tiene que coincidir casi entero
+  else if(au.length&&!okAu&&!okY)s*=.75;
+  // títulos muy cortos («Unidad 2») no alcanzan solos
+  if(pal.length<2&&!okAu&&!(p.curso&&fichas(p.curso).some(w=>w.length>3&&fs.has(w))))s*=.5;
   return s;
 }
 function bibEmparejar(){
@@ -1417,15 +1561,15 @@ function bloqueMiPDF(id){
   const es=S.lang==="es";const d=DRIVE.mapa[id];
   const sec=h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Mi PDF":"My PDF"));
   const nombre=()=>h("p",{class:"c small"},(es?"Para que se vincule solo, nombrá el archivo así: ":"To link it automatically, name the file: "),h("code",{class:"nombre-pdf"},nombreSugerido(S.byId[id]||{id})));
+  const manual=()=>{const inp=h("input",{type:"url",inputmode:"url",placeholder:es?"Pegá el link de tu PDF (Drive u otro)":"Paste your PDF link (Drive or other)","aria-label":es?"Link de tu PDF":"Your PDF link"});
+    const est=h("p",{class:"estado"});
+    return h("div",{class:"link-manual"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>{const u=inp.value.trim();
+      if(!/^https:\/\/\S+$/i.test(u)){est.textContent=es?"Pegá un link que empiece con https://":"Paste a link starting with https://";return}
+      DRIVE.mapa[id]={u,n:es?"Link cargado a mano":"Link added by hand"};driveGuardar();route()}}},es?"Guardar link":"Save link"),est)};
   if(d){
     sec.append(h("p",{class:"c note"},d.n),
-      h("p",{class:"c"},h("a",{class:"btn",href:urlDrive(d.f),target:"_blank",rel:"noopener",style:"display:inline-block;text-decoration:none"},es?"Abrir mi PDF":"Open my PDF")),
+      h("p",{class:"c"},h("a",{class:"btn",href:urlMio(d),target:"_blank",rel:"noopener",style:"display:inline-block;text-decoration:none"},es?"Abrir mi PDF":"Open my PDF")),
       h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete DRIVE.mapa[id];driveGuardar();route()}}},es?"No es este archivo":"Wrong file")));
-    return sec;
-  }
-  if(!bibSoportada()){
-    if(!DRIVE_CFG.clientId)return null;
-    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de Google Drive en Ajustes para abrirlo desde acá →":"Link your Google Drive folder in Settings to open it from here →")),nombre());
     return sec;
   }
   if(BIB.mapa[id]){
@@ -1433,23 +1577,43 @@ function bloqueMiPDF(id){
       h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:()=>bibAbrir(id)}},es?"Abrir mi PDF":"Open my PDF"),
         h("button",{class:"btn ghost",type:"button",on:{click:()=>bibBrief(id)}},es?"Armar el brief":"Build the brief")),
       h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:()=>{delete BIB.mapa[id];lsSet("prebisch-bib",BIB.mapa);route()}}},es?"No es este archivo":"Wrong file")));
-  }else if(!Object.keys(BIB.mapa).length&&!BIB.archivos.length){
-    sec.append(h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Conectá tu carpeta de PDF (Drive o la compu) en Ajustes para abrirlo desde acá →":"Link your PDF folder (Drive or computer) in Settings to open it from here →")),nombre());
-  }else{
-    const sel=h("select",{"aria-label":es?"Elegir el archivo":"Choose the file"},h("option",{value:""},es?"Elegí el archivo de tu carpeta…":"Choose the file from your folder…"));
-    const llenar=()=>{const usados=new Set(Object.values(BIB.mapa));const p=S.byId[id];
-      BIB.archivos.filter(f=>!usados.has(f.ruta)).map(f=>[bibPuntaje(p,f),f]).sort((a,b)=>b[0]-a[0]).slice(0,40).forEach(([,f])=>sel.append(h("option",{value:f.ruta},f.ruta)))};
-    sec.append(h("p",{class:"c note"},es?"No encontré este texto en tu carpeta automáticamente.":"This text was not matched automatically."),sel,
-      h("button",{class:"btn ghost",type:"button",on:{click:async()=>{if(!BIB.archivos.length){if(!(await bibAbrirDir(true)))return;llenar();return}if(sel.value){BIB.mapa[id]=sel.value;lsSet("prebisch-bib",BIB.mapa);route()}}}},es?"Vincular":"Link"));
-    if(BIB.archivos.length)llenar();
+    return sec;
   }
+  // sin PDF vinculado: subirlo desde la compu, elegirlo de Drive o vincular toda la carpeta de Drive
+  const caja=h("div",null);
+  const up=h("input",{type:"file",accept:".pdf,application/pdf",style:"display:none",on:{change:e=>{const f=e.target.files[0];if(f)elegido(f)}}});
+  function elegido(f){
+    caja.replaceChildren(h("p",{class:"c note"},f.name),
+      h("div",{class:"fila2"},
+        h("button",{class:"btn",type:"button",on:{click:()=>window.open(URL.createObjectURL(f),"_blank")}},es?"Abrir el PDF":"Open the PDF"),
+        h("button",{class:"btn ghost",type:"button",on:{click:()=>briefConArchivo(id,f)}},es?"Armar el brief con este PDF":"Build the brief from this PDF")),
+      h("p",{class:"note j"},es?"El archivo se lee en tu navegador y no se sube. Para tenerlo siempre a mano, vinculalo desde tu Drive.":"The file is read in your browser and never uploaded. To keep it at hand, link it from your Drive."))}
+  const desdeDrive=async()=>{
+    if(DRIVE_CFG.clientId){try{const fs=await driveElegirArchivos(false);if(fs&&fs[0]){DRIVE.mapa[id]={f:fs[0].id,n:fs[0].name};driveGuardar();route()}}catch(e){if(e.name!=="AbortError")alert(e.message)}return}
+    const m=sec.querySelector(".link-manual input");if(m){m.focus();m.scrollIntoView({block:"center"})}};
+  caja.append(h("p",{class:"j small"},es?"Todavía no vinculaste un PDF a esta lectura. Podés subirlo desde tu compu o traerlo de tu Drive.":"No PDF linked to this reading yet. Upload it from your computer or bring it from your Drive."),
+    h("div",{class:"fila2"},
+      h("button",{class:"btn",type:"button",on:{click:()=>up.click()}},es?"Subir desde mi compu":"Upload from my computer"),
+      h("button",{class:"btn ghost",type:"button",on:{click:desdeDrive}},es?"Desde mi Drive":"From my Drive")));
+  sec.append(caja,up,
+    h("p",{class:"c small",style:"margin-top:10px"},es?"Desde Drive: abrí el PDF en drive.google.com, tocá «Compartir › Copiar vínculo» y pegalo acá.":"From Drive: open the PDF on drive.google.com, tap «Share › Copy link» and paste it here."),
+    manual(),
+    h("p",{class:"c small"},h("a",{href:"#guia-pdf"},es?"Vincular toda mi carpeta de Drive de una vez (instructivo paso a paso) →":"Link my whole Drive folder at once (step-by-step guide) →")),
+    nombre());
   return sec;
+}
+// lleva un PDF suelto a Mi estudio para armar el brief de una lectura
+async function briefConArchivo(id,f){
+  const p=S.byId[id]||{};location.hash="#estudio";
+  E.objetivo=E.objetivo||(S.lang==="es"?"Entender "+(p.cita?p.cita+": ":"")+(p.titulo||f.name):"Understand "+(p.titulo||f.name));
+  await subir([f]);
 }
 function seccionBiblioteca(){
   const es=S.lang==="es";const n=Object.keys(BIB.mapa).length;
   const correr=fn=>async()=>{BIB.estado=es?"Leyendo la carpeta…":"Reading the folder…";refrescar();try{BIB.estado=await fn()}catch(e){BIB.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
   const sec=h("section",{class:"block rule",id:"sec-bib"},h("p",{class:"eyebrow c"},es?"Mi biblioteca":"My library"),
     h("p",{class:"j"},es?"Conectá la carpeta donde tenés los PDF del rack. Cada lectura queda vinculada a su archivo y lo abrís con un toque desde su ficha o su brief. Los archivos no se copian ni se suben a la app: solo se guarda qué archivo corresponde a cada lectura.":"Link the folder with your rack PDFs. Each reading gets linked to its file, which you open in one tap from its page or brief. Files are not copied or uploaded: only the link between file and reading is stored."),
+    h("p",{class:"c small"},h("a",{href:"#guia-pdf"},es?"Instructivo: cómo nombrar, cargar y vincular tus PDF →":"Guide: how to name, add and link your PDFs →")),
     bloqueDrive(),
     h("p",{class:"eyebrow c",style:"margin-top:18px"},es?"Carpeta de esta compu":"Folder on this computer"),
     !bibSoportada()?h("p",{class:"note j"},es?"Este navegador no permite conectar carpetas locales (funciona en Chrome o Edge de escritorio). En el celular, usá la carpeta de Drive.":"This browser cannot link local folders (works in desktop Chrome or Edge). On a phone, use the Drive folder."):
@@ -1468,6 +1632,7 @@ function seccionBiblioteca(){
    El mapa {lectura: {f: id del archivo, n: nombre}} queda en el navegador y, con cuenta, en Firestore. */
 const DRIVE={mapa:lsGet("prebisch-drive")||{},estado:""};
 const urlDrive=f=>"https://drive.google.com/file/d/"+encodeURIComponent(f)+"/view";
+const urlMio=d=>d.u||urlDrive(d.f);
 const numLectura=id=>String(id).padStart(4,"0");
 const TIPO_NOMBRE={paper:"paper",libro:"libro",capitulo:"capitulo",apunte:"apunte",informe:"informe",dato:"dato"};
 function nombreSugerido(p){
@@ -1496,6 +1661,24 @@ async function drivePicker(tok){
       .setTitle(es?"Elegí tu carpeta de PDF o los archivos":"Choose your PDF folder or files")
       .setCallback(d=>{const a=d[google.picker.Response.ACTION];if(a===google.picker.Action.PICKED)ok(d[google.picker.Response.DOCUMENTS]||[]);else if(a===google.picker.Action.CANCEL)ok(null)})
       .build().setVisible(true)})}
+/* Elegir PDF sueltos en el selector de Google (requiere DRIVE_CFG.clientId) y bajarlos al navegador. */
+async function driveElegirArchivos(multi){
+  await driveScripts();const tok=await driveToken();
+  if(!(window.google&&google.picker))await new Promise(ok=>gapi.load("picker",ok));
+  const es=S.lang==="es";
+  const docs=await new Promise(ok=>{
+    const vista=new google.picker.DocsView(google.picker.ViewId.DOCS).setMimeTypes("application/pdf").setMode(google.picker.DocsViewMode.LIST);
+    const b=new google.picker.PickerBuilder().addView(vista).setOAuthToken(tok).setDeveloperKey(DRIVE_CFG.apiKey).setAppId(DRIVE_CFG.appId).setLocale(es?"es-419":"en")
+      .setTitle(es?"Elegí tus PDF":"Choose your PDFs")
+      .setCallback(d=>{const a=d[google.picker.Response.ACTION];if(a===google.picker.Action.PICKED)ok(d[google.picker.Response.DOCUMENTS]||[]);else if(a===google.picker.Action.CANCEL)ok(null)});
+    if(multi)b.enableFeature(google.picker.Feature.MULTISELECT_ENABLED);
+    b.build().setVisible(true)});
+  if(!docs)throw Object.assign(new Error(""),{name:"AbortError"});
+  return docs.map(d=>({id:d.id,name:d.name,tok}))}
+async function driveDescargar(f){
+  const r=await fetch("https://www.googleapis.com/drive/v3/files/"+encodeURIComponent(f.id)+"?alt=media&supportsAllDrives=true",{headers:{Authorization:"Bearer "+f.tok}});
+  if(!r.ok)throw new Error("Drive "+r.status);
+  return new File([await r.blob()],f.name,{type:"application/pdf"})}
 async function driveHijos(tok,carpeta,out,prof){
   let pt="";
   do{const q=new URLSearchParams({q:"'"+carpeta+"' in parents and trashed=false",fields:"nextPageToken,files(id,name,mimeType)",pageSize:"1000",supportsAllDrives:"true",includeItemsFromAllDrives:"true"});
@@ -1509,7 +1692,7 @@ async function driveHijos(tok,carpeta,out,prof){
     pt=j.nextPageToken||""}while(pt);
   return out}
 function driveEmparejar(pdfs){
-  const usados=new Set(Object.values(DRIVE.mapa).map(x=>x.f));const libres=[];let n=0;
+  const usados=new Set(Object.values(DRIVE.mapa).map(x=>x.f).filter(Boolean));const libres=[];let n=0;
   for(const f of pdfs){if(usados.has(f.id))continue;
     const m=f.name.match(/^\s*(\d{4})\s*-\s/);const id=m?+m[1]:0;
     if(id&&S.byId[id]){if(!DRIVE.mapa[id])n++;DRIVE.mapa[id]={f:f.id,n:f.name};usados.add(f.id)}
@@ -1529,9 +1712,57 @@ async function driveConectar(){
   let msg=es?"Revisé "+pdfs.length+" PDF y vinculé "+n+" lecturas nuevas ("+Object.keys(DRIVE.mapa).length+" en total).":"Checked "+pdfs.length+" PDFs and linked "+n+" new readings ("+Object.keys(DRIVE.mapa).length+" in total).";
   if(sinLeer)msg+=es?" No pude ver los archivos de la carpeta elegida: volvé a abrir el selector, entrá a la carpeta, marcá todos los PDF y confirmá.":" I could not see the files in the chosen folder: open the picker again, enter the folder, select all PDFs and confirm.";
   return msg}
+/* Importar vínculos desde un archivo: JSON {lectura:{f,n}|{u,n}|"link"} o texto con «número, link» por línea.
+   No necesita permisos de Google: cada link se abre con la cuenta del usuario. */
+function driveIdDeLink(u){const m=String(u).match(/(?:\/d\/|[?&]id=)([\w-]{20,})/);return m?m[1]:""}
+function csvFilas(t){const out=[];let fila=[],c="",q=false;
+  for(let i=0;i<t.length;i++){const ch=t[i];
+    if(q){if(ch==='"'){if(t[i+1]==='"'){c+='"';i++}else q=false}else c+=ch}
+    else if(ch==='"')q=true;else if(ch===","||ch===";"||ch==="\t"){fila.push(c);c=""}
+    else if(ch==="\n"||ch==="\r"){if(ch==="\r"&&t[i+1]==="\n")i++;fila.push(c);c="";if(fila.some(x=>x.trim()))out.push(fila);fila=[]}
+    else c+=ch}
+  fila.push(c);if(fila.some(x=>x.trim()))out.push(fila);return out}
+/* Devuelve {num, nombre, sin, total}: vinculados por número, por parecido del nombre y sin reconocer. */
+function importarVinculos(txt){
+  const es=S.lang==="es";const r={num:0,nombre:0,sin:0,total:0};const sueltos=[];
+  const aDato=v=>{const f=driveIdDeLink(v);return f?{f}:/^https:\/\//.test(v)?{u:v}:null};
+  const poner=(id,d,nom)=>{d.n=nom||(es?"Vínculo importado":"Imported link");DRIVE.mapa[id]=d};
+  const t=String(txt).replace(/^﻿/,"").trim();
+  if(t.startsWith("{")){const j=JSON.parse(t);
+    Object.entries(j.vinculos||j).forEach(([k,v])=>{r.total++;const id=+k;const d=typeof v==="string"?aDato(v):(v&&(v.f||v.u)?(v.f?{f:v.f}:{u:v.u}):null);
+      if(S.byId[id]&&d){poner(id,d,v&&v.n);r.num++}else r.sin++})}
+  else csvFilas(t).forEach(c=>{
+    const link=(c.find(x=>/^\s*https:\/\//.test(x))||"").trim();if(!link)return;r.total++;
+    const num=(c[0]||"").trim().match(/^\d{1,4}$/)?+c[0].trim():0;const nom=(c[2]||"").trim();const carp=(c[3]||"").trim();
+    const d=aDato(link);if(!d){r.sin++;return}
+    if(num&&S.byId[num]){poner(num,d,nom);r.num++}
+    else sueltos.push({d,nom,t:fichas((carp+" "+nom).replace(/\.pdf$/i,""))})});
+  if(sueltos.length){
+    const ya=new Set(Object.values(DRIVE.mapa).map(x=>x.f||x.u));
+    const cand=[];S.indice.forEach(p=>{if(DRIVE.mapa[p.id])return;sueltos.forEach((f,i)=>{if(ya.has(f.d.f||f.d.u))return;const sc=bibPuntaje(p,f);if(sc>=.6)cand.push([sc,p.id,i])})});
+    cand.sort((a,b)=>b[0]-a[0]);const usados=new Set();
+    for(const [,id,i] of cand){if(DRIVE.mapa[id]||usados.has(i))continue;poner(id,sueltos[i].d,sueltos[i].nom);usados.add(i);r.nombre++}
+    r.sin+=sueltos.length-usados.size-sueltos.filter(f=>ya.has(f.d.f||f.d.u)).length}
+  driveGuardar();return r}
+function bloqueImportar(refrescar){
+  const es=S.lang==="es";
+  const inp=h("input",{type:"file",accept:".json,.csv,.txt,application/json,text/csv,text/plain",style:"display:none",on:{change:async e=>{const f=e.target.files[0];if(!f)return;
+    try{const r=importarVinculos(await f.text());const tot=Object.keys(DRIVE.mapa).length;
+      DRIVE.estado=es?"Leí "+r.total+" PDF. Vinculé "+(r.num+r.nombre)+" lecturas ("+r.num+" por número, "+r.nombre+" por el nombre del archivo). "+r.sin+" PDF no coincidieron con ninguna lectura del rack. Total vinculadas: "+tot+" de "+S.indice.length+"."
+        :"Read "+r.total+" PDFs. Linked "+(r.num+r.nombre)+" readings ("+r.num+" by number, "+r.nombre+" by file name). "+r.sin+" PDFs matched no rack reading. Total linked: "+tot+" of "+S.indice.length+"."}
+    catch(err){DRIVE.estado=es?"No pude leer el archivo: "+err.message:"Could not read the file: "+err.message}refrescar()}}});
+  const exp=()=>{const a=h("a",{href:URL.createObjectURL(new Blob([JSON.stringify(DRIVE.mapa,null,1)],{type:"application/json"})),download:"prebisch-vinculos.json"});document.body.append(a);a.click();a.remove()};
+  return h("div",{class:"fila2"},inp,h("button",{class:"btn ghost",type:"button",on:{click:()=>inp.click()}},es?"Importar vínculos":"Import links"),
+    h("button",{class:"btn ghost",type:"button",disabled:!Object.keys(DRIVE.mapa).length,on:{click:exp}},es?"Exportar vínculos":"Export links"))}
 function bloqueDrive(){
   const es=S.lang==="es";
-  if(!DRIVE_CFG.clientId)return h("p",{class:"note j"},es?"La conexión con Google Drive todavía no está activada en esta versión de la app.":"Google Drive linking is not enabled in this version of the app yet.");
+  if(!DRIVE_CFG.clientId){const n=Object.keys(DRIVE.mapa).length;
+    const box=h("div",{id:"sec-drive"},h("p",{class:"eyebrow c"},"Google Drive"),
+      h("p",{class:"j"},es?"Importá un archivo con los vínculos de tus PDF de Drive (lo genera el instructivo) o pegá el link en cada lectura. Funciona también en el celular.":"Import a file with links to your Drive PDFs (see the guide) or paste the link on each reading. Works on phones too."),
+      h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF de Drive o a un link":" of "+S.indice.length+" readings linked to a Drive PDF or a link")),
+      bloqueImportar(refrescar),DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
+    function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
+    return box}
   driveScripts().catch(()=>{});  // se cargan antes del toque, para que el permiso no lo bloquee el navegador
   const n=Object.keys(DRIVE.mapa).length;
   const correr=fn=>async()=>{DRIVE.estado=es?"Abriendo Google Drive…":"Opening Google Drive…";refrescar();try{DRIVE.estado=await fn()}catch(e){DRIVE.estado=e.name==="AbortError"?"":(e.message||String(e))}refrescar()};
@@ -1542,9 +1773,37 @@ function bloqueDrive(){
     h("p",{class:"c"},n+(es?" de "+S.indice.length+" lecturas vinculadas a un PDF de Drive":" of "+S.indice.length+" readings linked to a Drive PDF")),
     h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:correr(driveConectar)}},n?(es?"Agregar o actualizar":"Add or update"):(es?"Conectar mi carpeta de Drive":"Link my Drive folder")),
       h("button",{class:"btn ghost",type:"button",disabled:!n,on:{click:()=>{if(!confirm(es?"¿Quitar todos los vínculos con Drive? Tus archivos no se tocan.":"Remove all Drive links? Your files are not touched."))return;DRIVE.mapa={};driveGuardar();DRIVE.estado=es?"Vínculos quitados.":"Links removed.";refrescar()}}},es?"Quitar vínculos":"Remove links")),
+    bloqueImportar(refrescar),
     DRIVE.estado?h("p",{class:"estado"},DRIVE.estado):null);
   function refrescar(){const el=document.getElementById("sec-drive");if(el)el.replaceWith(bloqueDrive())}
   return box}
+
+/* Bloque con el script de Apps Script y un botón para copiarlo. */
+function bloqueScript(e){const es=S.lang==="es";const pre=h("pre",{class:"guia-codigo"},es?"Cargando el script…":"Loading the script…");const est=h("p",{class:"estado"});
+  fetch(e.href,{cache:"no-cache"}).then(r=>r.text()).then(t=>{pre.textContent=t}).catch(()=>{pre.textContent=es?"No se pudo cargar: abrilo desde el link.":"Could not load: open it from the link."});
+  return h("div",{class:"guia-script"},
+    h("div",{class:"fila2"},h("button",{class:"btn",type:"button",on:{click:async()=>{try{await navigator.clipboard.writeText(pre.textContent);est.textContent=es?"Script copiado. Pegalo en script.google.com.":"Script copied. Paste it in script.google.com."}catch(_){est.textContent=es?"No pude copiar: seleccioná el texto a mano.":"Could not copy: select the text by hand."}}}},es?"Copiar el script":"Copy the script"),
+      h("a",{class:"btn ghost",href:"https://script.google.com/home/projects/create",target:"_blank",rel:"noopener",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Abrir script.google.com":"Open script.google.com")),
+    est,pre)}
+/* Instructivo «Abrir los PDF» (#guia-pdf): el contenido sale de data/guia-pdf.json. */
+async function viewGuiaPDF(){
+  const es=S.lang==="es";const L=x=>x?(x[S.lang]||x.es||""):"";
+  if(!S.guiaPDF){mount(h("p",{class:"c note"},es?"Cargando…":"Loading…"));try{S.guiaPDF=await getJSON("data/guia-pdf.json")}catch(e){return mount(h("p",{class:"c note"},es?"No se pudo cargar el instructivo.":"Could not load the guide."))}}
+  if((location.hash||"").slice(1)!=="guia-pdf")return;
+  const g=S.guiaPDF;const ej="0165 - Michel y Díaz (2015) - Determinantes del riesgo soberano en República Dominicana - paper.pdf";
+  const texto=t=>{const p=String(t).split("{ejemplo}");return p.flatMap((x,i)=>i?[h("code",{class:"nombre-pdf"},ej),x]:[x])};
+  const indice=h("ol",{class:"guia-indice"},g.secciones.map(x=>h("li",null,h("a",{href:"#guia-pdf",on:{click:e=>{e.preventDefault();const el=document.getElementById("g-"+x.id);if(el)el.scrollIntoView({behavior:"smooth"})}}},L(x.titulo).replace(/^\d+\.\s*/,"")))));
+  const secs=g.secciones.map(x=>h("section",{class:"block rule",id:"g-"+x.id},
+    h("h2",{class:"c"},L(x.titulo)),
+    L(x.intro)?h("p",{class:"j"},L(x.intro)):null,
+    (x.pasos||[]).length?h("ol",{class:"guia-pasos"},x.pasos.map(p=>h("li",null,h("p",{class:"j"},...texto(L(p))),
+      p.imagen?h("img",{src:p.imagen,alt:L(p.alt)||"",loading:"lazy",class:"guia-img"}):null))):null,
+    x.enlace?bloqueScript(x.enlace):null,
+    L(x.notas)?h("p",{class:"note j"},L(x.notas)):null));
+  mount(h("header",{class:"block"},h("p",{class:"eyebrow c"},es?"Instructivo":"Guide"),h("h1",{class:"c",style:"font-size:26px;line-height:1.25"},L(g.titulo)),h("p",{class:"j"},L(g.bajada)),indice),
+    ...secs,
+    h("p",{class:"c"},h("a",{class:"btn",href:"#ajustes",style:"display:inline-block;text-decoration:none"},es?"Ir a Mi biblioteca":"Go to My library")));
+}
 
 /* ---------- cuenta: Google o mail y contraseña ---------- */
 function pintarCuenta(){
@@ -1557,7 +1816,7 @@ function viewCuenta(){
   const es=S.lang==="es";const u=S.nube.user;
   mount(selloNodo(96),
     h("p",{class:"j"},u?(es?"Tu progreso, tus briefs y tus rutas se guardan en la nube y se sincronizan entre dispositivos.":"Your progress, briefs and paths are saved to the cloud and synced across devices.")
-      :(es?"Podés usar Prebisch sin cuenta: el progreso queda en este navegador. Con una cuenta se guarda en la nube, lo ves en cualquier dispositivo, recibís avisos y podés generar briefs con el servidor de la app.":"You can use Prebisch without an account: progress stays in this browser. With an account it is saved to the cloud, available on any device, and you get notifications and server-generated briefs.")),
+      :(es?"Podés usar Prebisch sin cuenta: el progreso queda en este navegador. Con una cuenta se guarda en la nube, lo ves en cualquier dispositivo, recibís avisos y tus briefs quedan guardados.":"You can use Prebisch without an account: progress stays in this browser. With an account it is saved to the cloud, available on any device, and you get notifications and your briefs are kept.")),
     seccionCuenta(),
     u?h("a",{class:"btn",href:"#hoy",style:"display:flex;align-items:center;justify-content:center;text-decoration:none"},es?"Ir a Hoy":"Go to Today"):null,
     u?h("p",{class:"c small"},h("a",{href:"#ajustes"},es?"Avisos, calendario y motor de IA en Ajustes →":"Notifications, calendar and AI engine in Settings →")):null);
@@ -1588,13 +1847,13 @@ function seccionCuenta(){
   if(N.user){
     CU.clave="";const u=N.user;const conClave=(u.providerData||[]).some(p=>p.providerId==="password");
     sec.append(h("p",{class:"c"},(es?"Sesión iniciada como ":"Signed in as ")+(u.email||u.displayName||"")+". "+(es?"Tu progreso y tus briefs se guardan en la nube.":"Your progress and briefs are saved to the cloud.")));
-    if(conClave&&!u.emailVerified)sec.append(h("p",{class:"note j"},es?"Falta verificar tu mail: abrí el enlace que te mandamos. Hasta entonces no podés usar el servidor de briefs.":"Your email is not verified yet: open the link we sent. Until then you cannot use the brief server."),
+    if(conClave&&!u.emailVerified)sec.append(h("p",{class:"note j"},es?"Falta verificar tu mail: abrí el enlace que te mandamos para confirmar que la cuenta es tuya.":"Your email is not verified yet: open the link we sent to confirm the account is yours."),
       h("div",{class:"fila2"},h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.sendEmailVerification({url:APP_URL});return es?"Te reenviamos el mail.":"Email sent again."})}},es?"Reenviar mail":"Resend email"),
         h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.reload();if(!firebase.auth().currentUser.emailVerified)throw new Error(es?"Todavía figura sin verificar.":"Still not verified.");N.user=firebase.auth().currentUser;return es?"Mail verificado.":"Email verified."})}},es?"Ya lo verifiqué":"I verified it")));
     sec.append(estado,h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"));
     return sec;
   }
-  sec.append(h("p",{class:"j"},es?"Iniciá sesión para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo, recibir avisos y generar briefs con el servidor de la app (gratis, con un cupo diario).":"Sign in to sync progress and briefs across devices, get notifications and generate briefs with the app's server (free, daily quota)."));
+  sec.append(h("p",{class:"j"},es?"Iniciá sesión para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo y recibir avisos.":"Sign in to sync progress and briefs across devices and get notifications."));
   if(N.error)sec.append(h("p",{class:"estado error"},N.error));
   if(!N.listo){if(!N.error)sec.append(h("p",{class:"c note"},es?"Cargando…":"Loading…"));return sec}
   const mail=h("input",{type:"email",autocomplete:"email",placeholder:es?"tu@mail.com":"you@email.com","aria-label":"Mail",value:CU.mail,on:{input:e=>CU.mail=e.target.value.trim()}});
@@ -1613,14 +1872,22 @@ function seccionIA(){
   const es=S.lang==="es";const c=iaCfg();
   const g=k=>e=>{c[k]=e.target.value.trim();iaGuardar(c)};
   const modo=h("select",{on:{change:e=>{c.modo=e.target.value;iaGuardar(c);viewAjustes()}}},
-    [["servidor",es?"Servidor de la app (gratis, con cupo diario; requiere iniciar sesión)":"App server (free, daily quota; sign-in required)"],["gemini",es?"Mi propia key de Gemini (Google AI Studio)":"My own Gemini key"],["anthropic",es?"Mi propia key de Anthropic (Claude)":"My own Anthropic key"]].map(([v,t])=>{const o=h("option",{value:v},t);if(c.modo===v)o.selected=true;return o}));
+    [["claude",es?"Claude (claude.ai): descargo el prompt y cargo la respuesta. Sin key, sin costo extra":"Claude (claude.ai): download the prompt, load the answer. No key"],
+     ["gemini",es?"Mi propia key de Gemini (Google AI Studio)":"My own Gemini key"],
+     ["anthropic",es?"Mi propia key de Anthropic (Claude por API)":"My own Anthropic key (Claude API)"]].map(([v,t])=>{const o=h("option",{value:v},t);if(c.modo===v)o.selected=true;return o}));
+  const est=h("p",{class:"estado"});
+  const recordar=h("label",{class:"chk"},h("input",{type:"checkbox",checked:c.recordar,on:{change:e=>{c.recordar=e.target.checked;iaGuardar(c)}}}),
+    es?" Recordar la key en este dispositivo (si no, se borra al cerrar la pestaña)":" Remember the key on this device (otherwise it is cleared when you close the tab)");
+  const seguridad=h("p",{class:"note j"},es?"Tu key va directo de este navegador a Google o a Anthropic. Prebisch no la ve, no la guarda en la nube ni la sincroniza con tu cuenta. Usá una key propia para esta app, ponele un límite de gasto en la consola del proveedor y no la cargues en una compu compartida.":"Your key goes straight from this browser to Google or Anthropic. Prebisch never sees it, never stores it in the cloud and never syncs it. Use a dedicated key, set a spending limit in the provider's console, and avoid shared computers.");
+  const borrar=h("button",{class:"btn ghost",type:"button",on:{click:()=>{iaBorrarKeys();viewAjustes()}}},es?"Borrar mi key de este dispositivo":"Delete my key from this device");
   return h("section",{class:"block rule"},h("p",{class:"eyebrow c"},es?"Inteligencia artificial":"AI engine"),
-    h("p",{class:"j"},es?"Con qué modelo se escriben los briefs de Mi estudio. Con una key propia el uso corre por tu cuenta y no tiene cupo; la key se guarda solo en este navegador y viaja directo al proveedor.":"Which model writes My study briefs. With your own key usage is on you and has no quota; the key stays in this browser and goes straight to the provider."),
+    h("p",{class:"j"},es?"Con qué se escriben los briefs de Mi estudio. Con Claude (claude.ai) la app arma el prompt con tus documentos y tus indicaciones; lo pegás en Claude, que escribe el brief, y cargás la respuesta acá. Con una key propia la app llama al modelo directamente y el uso corre por tu cuenta.":"What writes My study briefs. With Claude (claude.ai) the app builds the prompt from your documents; you give it to Claude and load the answer here. With your own key the app calls the model directly and usage is billed to you."),
     campo(es?"Motor":"Engine",modo),
-    c.modo==="gemini"?[campo("Key de Gemini",h("input",{type:"password",value:c.gkey,placeholder:"AIza…",on:{change:g("gkey")}}),es?"Se saca gratis en aistudio.google.com/apikey. En el nivel gratuito Google puede usar los datos para mejorar sus modelos.":"Free at aistudio.google.com/apikey. On the free tier Google may use the data."),
-      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.gmodelo,on:{change:g("gmodelo")}}))]:null,
-    c.modo==="anthropic"?[campo("Key de Anthropic",h("input",{type:"password",value:c.akey,placeholder:"sk-ant-…",on:{change:g("akey")}}),es?"Se crea en console.anthropic.com. Es de pago por uso.":"Create it at console.anthropic.com. Pay as you go."),
-      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.amodelo,on:{change:g("amodelo")}}))]:null);
+    c.modo==="claude"?h("p",{class:"note j"},es?"Sirve con la cuenta gratuita de Claude o con Pro. Si un PDF es escaneado (sin texto), adjuntalo también en Claude.":"Works with a free or Pro Claude account. If a PDF is scanned (no text), attach it in Claude too."):null,
+    c.modo==="gemini"?[campo("Key de Gemini",h("input",{type:"password",autocomplete:"off",spellcheck:"false",value:c.gkey,placeholder:"AIza…",on:{change:g("gkey")}}),es?"Se saca gratis en aistudio.google.com/apikey. En el nivel gratuito Google puede usar los datos para mejorar sus modelos.":"Free at aistudio.google.com/apikey. On the free tier Google may use the data."),
+      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.gmodelo,on:{change:g("gmodelo")}})),recordar,seguridad,c.gkey?borrar:null]:null,
+    c.modo==="anthropic"?[campo("Key de Anthropic",h("input",{type:"password",autocomplete:"off",spellcheck:"false",value:c.akey,placeholder:"sk-ant-…",on:{change:g("akey")}}),es?"Se crea en console.anthropic.com. Es de pago por uso.":"Create it at console.anthropic.com. Pay as you go."),
+      campo(es?"Modelo":"Model",h("input",{type:"text",value:c.amodelo,on:{change:g("amodelo")}})),recordar,seguridad,c.akey?borrar:null]:null,est);
 }
 function exportar(){
   const blob=new Blob([JSON.stringify({version:1,estado:S.est,mis:S.mis},null,0)],{type:"application/json"});

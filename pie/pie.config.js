@@ -27,7 +27,7 @@ window.PIE_CONFIG = {
     // Ruta interna de la página de términos (en una SPA con hash; en un sitio de varias páginas, "terminos.html").
     terminos: "#terminos",
     // Enlaces internos extra que aparecen primero en la fila de links del pie.
-    enlaces: [{ texto: "Cómo funciona", href: "#inicio" }],
+    enlaces: [{ texto: "Cómo funciona", href: "#inicio" }, { texto: "Abrir los PDF", href: "#guia-pdf" }],
   },
 
   colaborar: {
@@ -71,10 +71,10 @@ window.PIE_CONFIG = {
   privacidad: {
     parrafos: [
       "Sin cuenta, todo queda en tu navegador: el progreso, los ajustes, las rutas propias, los PDF de «Mi estudio» y, si las cargás, tus claves de Gemini o Anthropic. Esos datos no salen de tu dispositivo salvo en los casos que se detallan abajo, y se borran al limpiar los datos del sitio en el navegador.",
-      "Con cuenta (Google o mail y contraseña), Firebase, un servicio de Google, guarda tu identificador de usuario, tu mail y, si entrás con Google, el nombre asociado a esa cuenta, junto con tu progreso, tus rutas y los briefs que generes. Se usan solo para sincronizar tu estudio entre dispositivos.",
+      "Con cuenta (Google o mail y contraseña), Firebase, un servicio de Google, guarda tu identificador de usuario, tu mail y, si entrás con Google, el nombre asociado a esa cuenta, junto con tu progreso, tus rutas y los briefs que generes. Se usan para sincronizar tu estudio entre dispositivos. El administrador de Prebisch puede leer los briefs que guardes con tu cuenta, junto con tu mail, para revisar su calidad y, si corresponde, mejorarlos o sumarlos al rack; no ve tus PDF ni tus claves.",
       "Si conectás tu carpeta de Google Drive, Google te pide permiso para que la app vea solo los archivos que elijas en su selector. La app guarda el identificador y el nombre de cada PDF vinculado, en tu navegador y, si tenés cuenta, en Firebase, para abrirlo desde la ficha de la lectura. Los PDF no se copian ni se suben al servidor de la app. Podés quitar los vínculos desde Ajustes y revocar el permiso desde tu cuenta de Google.",
       "Si activás los avisos, el servidor de la app (Cloudflare) guarda la suscripción de tu navegador, tu identificador de usuario y la franja horaria elegida, solo para enviarte el aviso diario. Al desactivarlos, la suscripción se elimina.",
-      "Cuando generás un brief, el texto extraído de tus PDF y tus indicaciones se envían para su procesamiento: con el servidor de la app, al servidor y a Google Gemini; con tu propia clave, directamente desde tu navegador a Google o a Anthropic, bajo sus propias condiciones. El servidor de la app no guarda esos textos; solo lleva un contador de uso diario por usuario, que se borra a las 48 horas.",
+      "Cuando generás un brief, la app no envía tus PDF a ningún servidor propio. Con el camino «Claude», arma un archivo con el texto extraído y tus indicaciones, que vos llevás a claude.ai bajo las condiciones de Anthropic. Con tu propia clave, el texto va directamente desde tu navegador a Google o a Anthropic, bajo sus propias condiciones; la clave queda solo en tu navegador y no se guarda en Firebase.",
       "El sitio no usa cookies publicitarias ni herramientas de analítica. Carga tipografías, fórmulas y el inicio de sesión desde servicios de terceros (Google Fonts, cdnjs y Google), que reciben los datos técnicos habituales de cualquier visita, como la dirección IP.",
       "Tus datos no se venden ni se ceden a terceros con fines comerciales. Podés pedir el acceso, la rectificación o la eliminación de tus datos y de tu cuenta escribiendo al mail de contacto.",
       "El titular de los datos personales tiene la facultad de ejercer el derecho de acceso a ellos en forma gratuita a intervalos no inferiores a seis meses, salvo que se acredite un interés legítimo al efecto, conforme al artículo 14, inciso 3, de la Ley 25.326. La Agencia de Acceso a la Información Pública, como órgano de control de esa ley, tiene la atribución de atender las denuncias y reclamos de quienes resulten afectados en sus derechos por incumplimiento de las normas de protección de datos personales.",
