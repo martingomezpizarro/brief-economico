@@ -99,8 +99,8 @@
           "en": "Wait until the log at the bottom says «Listo: N PDF». The script created «prebisch-vinculos.csv» in «My Drive». Download it: the file's three dots › Download."
         },
         {
-          "es": "En Prebisch, iniciá sesión y entrá a Ajustes › Mi biblioteca › Google Drive › «Importar vínculos». Elegí el archivo descargado.",
-          "en": "In Prebisch, sign in and go to Settings › My library › Google Drive › «Import links». Choose the downloaded file."
+          "es": "En Prebisch, iniciá sesión y entrá a Ajustes › Mi biblioteca › Google Drive › «Importar vínculos». Elegí el archivo descargado (en el celular suele estar en «Descargas»). Si no lo encontrás, abrí el CSV en Drive, copiá todo el texto y pegalo en «¿No aparece el archivo? Pegá su contenido».",
+          "en": "In Prebisch, sign in and go to Settings › My library › Google Drive › «Import links». Choose the downloaded file (on phones, usually in «Downloads»). If you cannot find it, open the CSV in Drive, copy all the text and paste it in «File not showing? Paste its content»."
         },
         {
           "es": "La app te dice cuántas lecturas vinculó, por número y por nombre, y cuántos PDF no coincidieron con ninguna lectura del rack. Desde ahí, cada lectura vinculada muestra «Abrir mi PDF», también en el celular.",
