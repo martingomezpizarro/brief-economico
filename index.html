@@ -143,6 +143,9 @@ ul,ol{margin:0;padding-left:1.2em;display:flex;flex-direction:column;gap:6px;tex
 .aside b{font-family:var(--mono);font-weight:500;font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);display:block;margin-bottom:2px}
 .eq{background:var(--honey);padding:12px 14px;border-radius:2px;overflow-x:auto;display:flex;flex-direction:column;gap:8px;align-items:center}
 .eq .raw{font-family:var(--mono);font-size:13px;white-space:pre-wrap;word-break:break-word}
+.eq .donde{align-self:stretch;font-size:14px;line-height:1.45}
+.eq .donde p{margin:2px 0}
+.eq .donde ul{margin:0;padding-left:18px}
 dl{margin:0;display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
 dt{font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted)}
 dd{margin:0}
@@ -926,6 +929,12 @@ function viewFicha(key){
   typeset();
 }
 function cargando(){mount(h("div",{class:"empty"},S.lang==="es"?"Cargando…":"Loading…"))}
+// «Donde:» bajo cada ecuación: sc.donde[j] es una lista de definiciones (texto o {es,en}) de la ecuación j
+function donde(lista){
+  if(!lista||!lista.length)return null;
+  const es=S.lang==="es",t=x=>typeof x==="string"?x:(x&&(x[S.lang]||x.es))||"";
+  return h("div",{class:"donde"},h("p",{class:"eyebrow"},es?"Donde:":"Where:"),h("ul",null,lista.map(x=>h("li",null,t(x)))));
+}
 function viewLeccion(id){
   const es=S.lang==="es";
   if(!S.lecById[id]){mount(h("div",{class:"empty"},es?"Ese brief no existe.":"That brief does not exist."));return}
@@ -942,7 +951,7 @@ function viewLeccion(id){
     l.secciones.map((sc,i)=>h("section",null,
       h("h2",null,(i+1)+". "+sc.t),
       sc.p.map(x=>h("p",{class:"j"},x)),
-      (sc.eq&&sc.eq.length)?h("div",{class:"eq"},sc.eq.map(e=>h("div",{class:"tex"},"\\["+e+"\\]"))):null,
+      (sc.eq&&sc.eq.length)?h("div",{class:"eq"},sc.eq.flatMap((e,j)=>[h("div",{class:"tex"},"\\["+e+"\\]"),donde((sc.donde||[])[j])])):null,
       sc.nota?h("p",{class:"note j"},sc.nota):null)),
     ornamento(),
     h("section",{class:"box"},h("h2",null,es?"Para llevarse":"Key takeaways"),h("ul",null,l.claves.map(k=>h("li",null,k)))),
@@ -1404,7 +1413,7 @@ function viewEstudio(){
     E.plan?vistaPlan():null];
   mount(...nodes);
 }
-function briefATexto(l){return [l.titulo,l.intro].concat(...l.secciones.map(s=>[s.t].concat(s.p,(s.eq||[]).map(e=>"$$"+e+"$$")))).concat(l.claves).join("\n\n")}
+function briefATexto(l){return [l.titulo,l.intro].concat(...l.secciones.map(s=>[s.t].concat(s.p,(s.eq||[]).map((e,j)=>"$$"+e+"$$"+((s.donde||[])[j]?"\nDonde: "+s.donde[j].map(x=>typeof x==="string"?x:x.es).join("; "):""))))).concat(l.claves).join("\n\n")}
 async function subir(fs){
   const es=S.lang==="es";E.ocupado=true;
   for(const f of fs){

@@ -1,0 +1,398 @@
+{
+ "id": "fisc-general-04",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Decisiones colectivas: Condorcet, Borda, Arrow y los límites del voto",
+ "bajada": "El capítulo 7 de los Apuntes de Grión: por qué la mayoría puede producir ciclos, cómo el que fija la agenda decide el resultado, qué falla en el método de Borda, qué prueba el teorema de imposibilidad de Arrow y qué agregan Gibbard-Satterthwaite, la paradoja liberal de Sen y la paradoja de la votación.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), cap. 7: «Decisiones colectivas»",
+ "intro": "Si hay unanimidad, decidir en conjunto es trivial. El problema aparece cuando las opiniones difieren y hay que agregar elecciones distintas en una sola decisión que se acerque a la «voluntad general». Grión abre el capítulo con la frase de Churchill sobre la democracia como la peor forma de gobierno, exceptuando todas las demás, y lo que sigue es una demostración de por qué: todo mecanismo de votación tiene algún defecto. El capítulo se organiza alrededor de cuatro preguntas, cada una con su resultado clásico: si las decisiones colectivas son racionales (la paradoja de Condorcet), si existen sistemas de votación justos (el teorema de Arrow), si respetan los derechos privados (la paradoja liberal de Sen) y si los votantes revelan sus preferencias con honestidad (el teorema de Gibbard-Satterthwaite).",
+ "secciones": [
+  {
+   "t": "Agregar preferencias",
+   "p": [
+    "La teoría de la decisión colectiva estudia cómo agregar preferencias individuales y qué propiedades tienen los mecanismos que lo hacen. Las reglas de votación son un caso particular: reglas de elección basadas exclusivamente en el orden de preferencias de cada votante. Eso evita comparar utilidades entre personas, pero, como advierte Grión, implica un menor contenido informativo: el voto dice que alguien prefiere A a B, no cuánto.",
+    "Esa restricción a la información ordinal es la que explica buena parte de los resultados del capítulo. Sen, como se verá, propone justamente ampliarla."
+   ]
+  },
+  {
+   "t": "La paradoja de Condorcet y el poder de la agenda",
+   "p": [
+    "El marqués de Condorcet la planteó en 1785. Juan ordena las opciones A, B y C; Pedro prefiere C, luego A y luego B; María, B, luego C y luego A. Por mayoría simple no hay ganador: cada opción recibe un voto como primera preferencia. Si se vota por pares, A le gana a B, B le gana a C y C le gana a A: la mayoría produce un ciclo. La paradoja advierte que la transitividad de las preferencias individuales, el criterio de racionalidad, no tiene por qué dar transitividad en las preferencias colectivas.",
+    "Cuando eso pasa, el orden de votación determina quién gana, y el que establece la agenda puede manipular la elección. El ejemplo del apunte lo lleva al extremo: tres grupos de 10 votantes con preferencias ADCB, BADC y CBAD. Con la agenda adecuada, primero B contra A (gana B), luego B contra C (gana C) y por último C contra D, gana D. Todos los votantes prefieren A a D, así que todos quedan disconformes con un resultado obtenido de manera democrática.",
+    "Los métodos de Condorcet buscan primero un ganador de Condorcet, la opción que le gana a todas las demás en votaciones por pares; si existe, gana, y si no, cada método rompe la circularidad con un criterio propio. El de Schulze (1997) determina el menor conjunto de candidatos que nadie de afuera le gana y va eliminando opciones según los resultados entre ellos. Se usa, según el apunte, en distribuciones de Linux y en Wikipedia."
+   ]
+  },
+  {
+   "t": "El método de Borda y las alternativas irrelevantes",
+   "eq": [
+    "B(x) = \\sum_{i=1}^{N}\\big(k - r_i(x)\\big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(B(x)\\): puntaje de Borda del candidato \\(x\\); gana el de mayor puntaje.",
+      "en": "\\(B(x)\\): Borda score of candidate \\(x\\); the highest score wins."
+     },
+     {
+      "es": "\\(N\\): cantidad de votantes; \\(i\\): índice de cada votante.",
+      "en": "\\(N\\): number of voters; \\(i\\): index of each voter."
+     },
+     {
+      "es": "\\(k\\): cantidad de candidatos; \\(r_i(x)\\): posición de \\(x\\) en el orden del votante \\(i\\) (1 para su favorito).",
+      "en": "\\(k\\): number of candidates; \\(r_i(x)\\): position of \\(x\\) in voter \\(i\\)'s ranking (1 for the favourite)."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; el apunte describe la regla con el ejemplo de tres candidatos, en el que cada votante da 2 votos al primero, 1 al segundo y ninguno al tercero.",
+      "en": "Own reading: the notation is ours; the notes describe the rule through the three-candidate example, where each voter gives 2 votes to the first, 1 to the second and none to the third."
+     }
+    ]
+   ],
+   "p": [
+    "Como la votación por pares puede generar ciclos, Borda propone puntuar los órdenes completos. En el ejemplo de Grión hay cinco votantes y tres candidatos: los votantes 1, 2 y 3 ordenan A, B, C; los votantes 4 y 5, B, C, A. Gana B con 7 votos (1+1+1+2+2), segundo queda A con 6 (2+2+2) y último C con 2 (1+1). Parece un método razonable.",
+    "Pero C, viendo que nadie se interesa mucho por él, puede bajarse. Sin C, cada votante da un voto a su preferido entre A y B, y ahora gana A con 3 votos contra 2 de B. La presencia o ausencia de una alternativa irrelevante, una que nunca ganaría, cambia el ganador. Hay un segundo problema: si existe un ganador de Condorcet, Borda no garantiza elegirlo. En el ejemplo inicial gana B, pero A es el ganador de Condorcet, porque vence a B y a C en enfrentamientos por pares.",
+    "El método se usa, según el apunte, en el Festival de la Canción de Eurovisión y en la elección del jugador más valioso del béisbol de Estados Unidos."
+   ]
+  },
+  {
+   "t": "El teorema de imposibilidad de Arrow",
+   "p": [
+    "La pregunta de fondo es si se puede diseñar un sistema de votación que, a partir de las preferencias individuales, genere un orden social aceptable. Arrow (1951) propuso que una regla de decisión colectiva cumpla cinco condiciones. Dominio universal: procesar todos los conjuntos posibles de preferencias. Principio de Pareto: si todos prefieren A a B, la sociedad también. Transitividad: si A le gana a B y B a C, A le gana a C, lo que evita la paradoja de Condorcet. Independencia de las alternativas irrelevantes: agregar C no puede invertir el orden entre A y B. Y no dictadura: las preferencias sociales no pueden responder a las de un único individuo.",
+    "El teorema dice que, con al menos tres alternativas y un número finito de individuos, no existe una regla que cumpla las cinco. La intuición que da Grión encadena los requisitos: el dominio universal admite preferencias no unánimes; la independencia obliga a que el ranking social entre dos opciones dependa solo de ellas; por Condorcet, comparar tres opciones por pares puede dar un ciclo; la transitividad obliga a romperlo eligiendo una; y el único método que lo logra siempre es darle todo el poder a un individuo, lo que viola la no dictadura.",
+    "El resultado abrió un debate enorme. Hubo argumentos a favor de la dictadura, que el apunte remonta a Platón, e intentos de relajar requisitos, con reglas resultantes cuestionables. Buchanan (1960) sostuvo que la votación mayoritaria es aceptable en una sociedad libre precisamente porque permite experimentar y alternar entre opciones, un freno a la tiranía de las mayorías. Sen (1998) valoró el aporte constructivo de Arrow y propuso ampliar la base de información de la elección social, porque las votaciones solo usan información ordinal y no comparan utilidades.",
+    "Lectura propia: el teorema no dice que la democracia sea imposible sino que ninguna regla es perfecta en todos los casos. Elegir un sistema electoral es elegir qué propiedad se resigna, y por eso los capítulos siguientes del apunte comparan métodos concretos."
+   ]
+  },
+  {
+   "t": "Votar con estrategia: Gibbard-Satterthwaite",
+   "p": [
+    "Hasta aquí se supuso que cada votante es sincero. Pero si alguien tiene información sobre las preferencias de los demás, puede convenirle votar estratégicamente, por ejemplo a su segunda opción si tiene más chances que la primera. Sería deseable que los procesos de decisión indujeran una votación honesta.",
+    "El teorema de Gibbard-Satterthwaite (1973, 1975) muestra que cualquier método no dictatorial de agregación de preferencias está sujeto a la manipulación estratégica de un individuo o de un grupo. Si se acepta restringir las funciones de utilidad admisibles, se pueden diseñar mecanismos de revelación de preferencias, como el de Groves-Clarke; pero, además de esa limitación teórica, los costos de implementación los hacen poco prácticos, según Grión."
+   ]
+  },
+  {
+   "t": "La paradoja liberal de Sen",
+   "p": [
+    "Ariel, puritano, y Lucas, libertino, encuentran una revista Playboy. Hay tres situaciones: la lee solo Ariel (A), solo Lucas (L) o ninguno (N). Ariel prefiere N, luego A, porque se considera de mayor integridad moral, y por último L. Lucas prefiere A, por el shock que tendrá Ariel, luego L y por último N. Ambos prefieren A a L, así que si se respeta la unanimidad, Ariel debe leerla en lugar de Lucas. Pero entonces no se respetan los derechos individuales: Ariel no quiere leerla y Lucas sí.",
+    "Sen (1970) generaliza el dilema: bajo dominio universal, el liberalismo, entendido como el reconocimiento de derechos individuales sobre ciertos aspectos, y el respeto a la unanimidad paretiana son incompatibles."
+   ]
+  },
+  {
+   "t": "La paradoja de la votación y las reglas en la Argentina",
+   "p": [
+    "El análisis costo-beneficio del voto compara los costos de informarse e ir a votar con la probabilidad de influir en el resultado, y predice una participación muy baja. Una salida es introducir la conciencia cívica en la función de utilidad. Aun así, el enfoque explica algo de los incentivos: por qué mucha gente no vota y por qué la participación sube cuando la elección se presenta pareja, porque se percibe mayor probabilidad de influir. El apunte lo ilustra con la participación electoral en América Latina entre 1980 y 2000.",
+    "El capítulo cierra con la inestabilidad de las reglas en la Argentina. Según Piffano, las democracias no funcionan bien si cambian continuamente las agendas político-electorales: la agenda debe sujetarse a normas constitucionales y cuasiconstitucionales estables, como las leyes electorales y de partidos políticos. Lo permanente deberían ser las reglas de procedimiento, no los resultados; en la Argentina, dice Grión, lo permanente son los gobiernos y lo que se alteran son las reglas. El ejemplo son las presidenciales de 2003, en las que las internas se dirimieron en la elección general y se separó la elección de cargos legislativos.",
+    "Lectura propia: el caso conecta con Condorcet. Si el que fija la agenda puede decidir el resultado, cambiar las reglas de juego cerca de cada elección es una forma de fijar la agenda, y la estabilidad de las reglas funciona como protección contra esa manipulación."
+   ]
+  }
+ ],
+ "claves": [
+  "Las reglas de votación solo usan el orden de preferencias: evitan comparar utilidades, pero tienen menos información.",
+  "La paradoja de Condorcet muestra que preferencias individuales transitivas pueden dar una mayoría cíclica; entonces el que fija la agenda decide.",
+  "El método de Borda depende de alternativas irrelevantes y puede no elegir al ganador de Condorcet.",
+  "Arrow (1951): con tres o más alternativas, ninguna regla cumple a la vez dominio universal, Pareto, transitividad, independencia de alternativas irrelevantes y no dictadura.",
+  "Gibbard-Satterthwaite: todo método no dictatorial es manipulable con voto estratégico.",
+  "Sen (1970): derechos individuales y unanimidad paretiana son incompatibles bajo dominio universal.",
+  "El análisis costo-beneficio predice baja participación; para Piffano, en la Argentina cambian las reglas y no los gobiernos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué muestra la paradoja de Condorcet?",
+    "en": "What does the Condorcet paradox show?"
+   },
+   "op": {
+    "es": [
+     "Que la mayoría siempre elige al candidato de centro",
+     "Que con preferencias individuales transitivas la preferencia colectiva puede ser cíclica",
+     "Que el voto estratégico es imposible con tres candidatos",
+     "Que la participación electoral cae cuando la elección es pareja"
+    ],
+    "en": [
+     "That the majority always picks the centrist candidate",
+     "That with transitive individual preferences the collective preference can be cyclical",
+     "That strategic voting is impossible with three candidates",
+     "That turnout falls when the election is close"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En el ejemplo de Juan, Pedro y María, A le gana a B, B a C y C a A.",
+    "en": "In the Juan, Pedro and María example, A beats B, B beats C and C beats A."
+   },
+   "id": "fisc-general-04-q1"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de los tres grupos de 10 votantes, ¿qué permite que gane D?",
+    "en": "In the example of three groups of 10 voters, what allows D to win?"
+   },
+   "op": {
+    "es": [
+     "Que D es el ganador de Condorcet",
+     "Que D obtiene el mayor puntaje de Borda",
+     "Que los votantes votan estratégicamente",
+     "El orden de las votaciones por pares fijado por quien arma la agenda"
+    ],
+    "en": [
+     "That D is the Condorcet winner",
+     "That D gets the highest Borda score",
+     "That voters vote strategically",
+     "The order of pairwise votes set by whoever controls the agenda"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con la agenda B-A, luego B-C y luego C-D gana D, aunque todos prefieren A a D.",
+    "en": "With the agenda B-A, then B-C, then C-D, D wins, although everyone prefers A to D."
+   },
+   "id": "fisc-general-04-q2"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de Borda del apunte, ¿qué pasa cuando se retira el candidato C?",
+    "en": "In the notes' Borda example, what happens when candidate C withdraws?"
+   },
+   "op": {
+    "es": [
+     "Gana A, que antes salía segundo: una alternativa irrelevante cambió el ganador",
+     "B sigue ganando con más ventaja",
+     "Se produce un empate entre A y B",
+     "La elección se vuelve cíclica"
+    ],
+    "en": [
+     "A wins, after coming second before: an irrelevant alternative changed the winner",
+     "B keeps winning by a wider margin",
+     "A and B tie",
+     "The election becomes cyclical"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con C, B gana con 7 votos contra 6 de A; sin C, A gana 3 a 2.",
+    "en": "With C, B wins with 7 votes to A's 6; without C, A wins 3 to 2."
+   },
+   "id": "fisc-general-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas NO es una de las cinco condiciones de Arrow?",
+    "en": "Which of these is NOT one of Arrow's five conditions?"
+   },
+   "op": {
+    "es": [
+     "Independencia de las alternativas irrelevantes",
+     "No dictadura",
+     "Que cada votante tenga el mismo peso en el puntaje",
+     "Transitividad"
+    ],
+    "en": [
+     "Independence of irrelevant alternatives",
+     "Non-dictatorship",
+     "That each voter carry equal weight in the score",
+     "Transitivity"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las cinco son dominio universal, Pareto, transitividad, independencia de alternativas irrelevantes y no dictadura.",
+    "en": "The five are universal domain, Pareto, transitivity, independence of irrelevant alternatives and non-dictatorship."
+   },
+   "id": "fisc-general-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué afirma el teorema de imposibilidad de Arrow?",
+    "en": "What does Arrow's impossibility theorem state?"
+   },
+   "op": {
+    "es": [
+     "Que la regla de mayoría es la única que cumple el principio de Pareto",
+     "Que con al menos tres alternativas y finitos individuos ninguna regla cumple las cinco condiciones",
+     "Que ningún votante tiene incentivos a votar",
+     "Que solo los sistemas proporcionales son justos"
+    ],
+    "en": [
+     "That majority rule is the only one satisfying the Pareto principle",
+     "That with at least three alternatives and finitely many individuals no rule meets all five conditions",
+     "That no voter has an incentive to vote",
+     "That only proportional systems are fair"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La única regla que evita el ciclo respetando los demás requisitos es la dictadura, que viola la quinta condición.",
+    "en": "The only rule that avoids the cycle while meeting the other requirements is dictatorship, which violates the fifth condition."
+   },
+   "id": "fisc-general-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué establece el teorema de Gibbard-Satterthwaite?",
+    "en": "What does the Gibbard-Satterthwaite theorem establish?"
+   },
+   "op": {
+    "es": [
+     "Que todo método no dictatorial de agregación está sujeto a manipulación estratégica",
+     "Que el método de Borda siempre elige al ganador de Condorcet",
+     "Que la conciencia cívica explica la participación electoral",
+     "Que la unanimidad es incompatible con la transitividad"
+    ],
+    "en": [
+     "That every non-dictatorial aggregation method is open to strategic manipulation",
+     "That the Borda method always picks the Condorcet winner",
+     "That civic duty explains turnout",
+     "That unanimity is incompatible with transitivity"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Restringiendo las utilidades admisibles hay mecanismos de revelación como Groves-Clarke, pero son poco prácticos.",
+    "en": "Restricting admissible utilities allows revelation mechanisms such as Groves-Clarke, but they are impractical."
+   },
+   "id": "fisc-general-04-q6"
+  },
+  {
+   "q": {
+    "es": "En la paradoja liberal de Sen, ¿qué entra en conflicto?",
+    "en": "In Sen's liberal paradox, what comes into conflict?"
+   },
+   "op": {
+    "es": [
+     "La transitividad y la no dictadura",
+     "La eficiencia y la equidad distributiva",
+     "El voto secreto y el voto obligatorio",
+     "El respeto a la unanimidad paretiana y los derechos individuales"
+    ],
+    "en": [
+     "Transitivity and non-dictatorship",
+     "Efficiency and distributive equity",
+     "Secret and compulsory voting",
+     "Respect for Paretian unanimity and individual rights"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Ambos prefieren que Ariel lea la revista, pero Ariel no quiere leerla y Lucas sí.",
+    "en": "Both prefer that Ariel read the magazine, but Ariel does not want to and Lucas does."
+   },
+   "id": "fisc-general-04-q7"
+  },
+  {
+   "q": {
+    "es": "Según el análisis costo-beneficio del voto, ¿por qué sube la participación cuando la elección es pareja?",
+    "en": "According to cost-benefit analysis of voting, why does turnout rise when the election is close?"
+   },
+   "op": {
+    "es": [
+     "Porque bajan los costos de informarse",
+     "Porque la ley obliga a votar en elecciones parejas",
+     "Porque aumenta la probabilidad percibida de influir en el resultado",
+     "Porque desaparece el voto estratégico"
+    ],
+    "en": [
+     "Because the cost of getting informed falls",
+     "Because the law requires voting in close elections",
+     "Because the perceived probability of influencing the outcome rises",
+     "Because strategic voting disappears"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El mismo análisis predice una participación muy baja en general; la conciencia cívica es una forma de corregirlo.",
+    "en": "The same analysis predicts very low turnout in general; civic duty is one way to fix this."
+   },
+   "id": "fisc-general-04-q8"
+  }
+ ],
+ "palabras": 1451,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el que fija la agenda puede decidir una votación por pares?",
+    "en": "Why can whoever sets the agenda decide a pairwise vote?"
+   },
+   "a": {
+    "es": "Porque con preferencias que generan un ciclo mayoritario el ganador depende del orden en que se enfrentan las opciones; en el ejemplo de Grión, con tres grupos de 10 votantes, una agenda bien elegida hace ganar a D aunque todos prefieren A a D (cap. 7).",
+    "en": "Because when preferences produce a majority cycle the winner depends on the order in which options face each other; in Grión's example, with three groups of 10 voters, a well-chosen agenda makes D win although everyone prefers A to D (ch. 7)."
+   },
+   "id": "fisc-general-04-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué dos defectos tiene el método de Borda?",
+    "en": "What two flaws does the Borda method have?"
+   },
+   "a": {
+    "es": "El ganador puede cambiar si entra o sale una alternativa que nunca ganaría, y no garantiza elegir al ganador de Condorcet: en el ejemplo de Grión gana B con 7 votos aunque A vence a todos por pares (cap. 7).",
+    "en": "The winner can change if an alternative that would never win enters or leaves, and it does not guarantee choosing the Condorcet winner: in Grión's example B wins with 7 votes although A beats everyone pairwise (ch. 7)."
+   },
+   "id": "fisc-general-04-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un ganador de Condorcet?",
+    "en": "What is a Condorcet winner?"
+   },
+   "a": {
+    "es": "La opción que le gana a todas las demás en votaciones por pares; los métodos de Condorcet lo eligen si existe y, si no, rompen la circularidad con criterios propios, como el de Schulze (1997). Así lo define Grión (cap. 7).",
+    "en": "The option that beats every other in pairwise votes; Condorcet methods pick it if it exists and otherwise break the cycle with their own criteria, such as Schulze's (1997). So Grión defines it (ch. 7)."
+   },
+   "id": "fisc-general-04-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué condiciones debería cumplir una regla de decisión colectiva según Arrow (1951), y qué se concluye?",
+    "en": "What conditions should a collective decision rule meet according to Arrow (1951), and what follows?"
+   },
+   "a": {
+    "es": "Dominio universal, Pareto, transitividad, independencia de alternativas irrelevantes y no dictadura; con al menos tres alternativas y finitos individuos, ninguna regla las cumple a la vez. Así lo presenta Grión (cap. 7).",
+    "en": "Universal domain, Pareto, transitivity, independence of irrelevant alternatives and non-dictatorship; with at least three alternatives and finitely many individuals, no rule meets them all. So Grión presents it (ch. 7)."
+   },
+   "id": "fisc-general-04-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué respuestas recibió el teorema de Arrow?",
+    "en": "What responses did Arrow's theorem receive?"
+   },
+   "a": {
+    "es": "Argumentos a favor de la dictadura, intentos de relajar requisitos con reglas cuestionables, la defensa de la mayoría de Buchanan (1960) porque permite experimentar y alternar, y la propuesta de Sen (1998) de ampliar la información más allá del orden de preferencias. Las resume Grión (cap. 7).",
+    "en": "Arguments for dictatorship, attempts to relax requirements with questionable rules, Buchanan's (1960) defence of majority rule because it allows experimentation and alternation, and Sen's (1998) proposal to widen information beyond preference orderings. Grión summarizes them (ch. 7)."
+   },
+   "id": "fisc-general-04-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Se puede diseñar un sistema de votación que no sea manipulable?",
+    "en": "Can a non-manipulable voting system be designed?"
+   },
+   "a": {
+    "es": "No en general: por el teorema de Gibbard-Satterthwaite (1973, 1975) todo método no dictatorial es manipulable; restringiendo las utilidades admisibles existen mecanismos como Groves-Clarke, pero son poco prácticos por sus costos, según Grión (cap. 7).",
+    "en": "Not in general: by the Gibbard-Satterthwaite theorem (1973, 1975) every non-dictatorial method is manipulable; restricting admissible utilities, mechanisms such as Groves-Clarke exist, but they are impractical because of their costs, according to Grión (ch. 7)."
+   },
+   "id": "fisc-general-04-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué problema institucional señala Piffano en las reglas electorales argentinas?",
+    "en": "What institutional problem does Piffano point out in Argentina's electoral rules?"
+   },
+   "a": {
+    "es": "Que lo permanente son los gobiernos y lo que cambia son las reglas, cuando debería ser al revés; el ejemplo son las presidenciales de 2003, con las internas dirimidas en la elección general. Lo cita Grión (cap. 7).",
+    "en": "That governments are permanent and rules change, when it should be the other way round; the example is the 2003 presidential election, with primaries settled in the general election. Grión cites it (ch. 7)."
+   },
+   "id": "fisc-general-04-t7"
+  }
+ ]
+}

@@ -1,0 +1,515 @@
+{
+ "id": "fisc-general-03",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Medir la desigualdad: Gini, Atkinson, Lorenz y polarización",
+ "bajada": "Los capítulos 5 y 6 de los Apuntes de Grión: qué principios debe cumplir una medida de desigualdad, cómo se comparan el rango, el coeficiente de variación, el Gini y el índice de Atkinson, qué ordena la curva de Lorenz, qué pasó en la Argentina entre 2003 y 2010 y por qué la polarización no es lo mismo que la desigualdad.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), caps. 5: «Desigualdad» y 6: «Ampliaciones al concepto de desigualdad», y ejercicio A.2.5",
+ "intro": "Después de medir la pobreza, Grión pasa a la desigualdad, un concepto que, advierte, gente diferente entiende de maneras diferentes. La definición de trabajo es la dispersión de una distribución, sea del ingreso, del consumo o de otro indicador de bienestar. Medirla obliga a decidir qué propiedades debe respetar un índice y qué juicio de valor se acepta al elegirlo: algunas medidas son puramente estadísticas y otras se derivan de una función de bienestar social. El capítulo 5 recorre esas medidas, la curva de Lorenz y la experiencia argentina reciente; el capítulo 6 presenta la polarización, que mira algo que la desigualdad no capta bien: el potencial de conflicto entre grupos.",
+ "secciones": [
+  {
+   "t": "Qué es la desigualdad y qué no es",
+   "p": [
+    "Grión ubica la desigualdad entre otros dos conceptos. Es más amplia que la pobreza, porque se define sobre la distribución entera y no solo sobre quienes viven por debajo de la línea de pobreza. Y es más estricta que el bienestar: ambos miran toda la distribución, pero la desigualdad es independiente del promedio, algo que el apunte trata como una propiedad deseable. Dos países con la misma forma de distribución y distinto ingreso medio tienen la misma desigualdad y distinto bienestar.",
+    "Esa separación ordena el resto del capítulo: las medidas de desigualdad describen la dispersión relativa, y cuando se quiere hablar de bienestar hace falta agregar la media o una función de bienestar explícita, como en el índice de Atkinson o en la curva de Lorenz generalizada."
+   ]
+  },
+  {
+   "t": "Cuatro principios para medir",
+   "p": [
+    "El apunte enumera cuatro principios. El de anonimato pide que permutar rentas entre individuos no cambie la desigualdad: no importa quién gana qué. El de la población, que clonar la población con sus rentas tampoco la cambie, porque lo que cuenta es la proporción de personas en cada nivel de renta y no el tamaño de la población. El de la renta relativa, que solo importe la renta relativa y no la cantidad absoluta.",
+    "El cuarto, el principio de Dalton, es el más exigente: si se puede pasar de una distribución x a otra y mediante una secuencia de transferencias regresivas, de más pobres a más ricos, entonces y tiene que ser más desigual que x. Es el criterio que separa las medidas útiles de las que no lo son, como se ve con el rango."
+   ]
+  },
+  {
+   "t": "Medidas positivas: rango, ratios, variación y Gini",
+   "eq": [
+    "R = \\frac{y_m - y_1}{\\bar{y}}",
+    "CV = \\frac{\\sigma_y}{\\bar{y}},\\qquad \\sigma_y = \\sqrt{\\frac{1}{n}\\sum_{j=1}^{m} n_j\\,(y_j - \\bar{y})^2}",
+    "G(y) = \\frac{1}{2n^2\\bar{y}}\\sum_{i=1}^{m}\\sum_{j=1}^{m} n_i\\,n_j\\,\\lvert y_i - y_j\\rvert"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(R\\): rango o recorrido relativo de la distribución (número puro).",
+      "en": "\\(R\\): relative range of the distribution (pure number)."
+     },
+     {
+      "es": "\\(y_m\\): ingreso del grupo más rico; \\(y_1\\): ingreso del grupo más pobre, con los ingresos ordenados de menor a mayor (lectura propia: el apunte no define los subíndices).",
+      "en": "\\(y_m\\): income of the richest group; \\(y_1\\): income of the poorest group, with incomes ranked from lowest to highest (own reading: the notes do not define the subscripts)."
+     },
+     {
+      "es": "\\(\\bar{y}\\): ingreso medio de la población.",
+      "en": "\\(\\bar{y}\\): mean income of the population."
+     }
+    ],
+    [
+     {
+      "es": "\\(CV\\): coeficiente de variación (número puro).",
+      "en": "\\(CV\\): coefficient of variation (pure number)."
+     },
+     {
+      "es": "\\(\\sigma_y\\): desvío estándar del ingreso, en pesos.",
+      "en": "\\(\\sigma_y\\): standard deviation of income, in pesos."
+     },
+     {
+      "es": "\\(m\\): cantidad de grupos de ingreso; \\(n_j\\): personas en el grupo \\(j\\); \\(n\\): población total (la suma de los \\(n_j\\)).",
+      "en": "\\(m\\): number of income groups; \\(n_j\\): people in group \\(j\\); \\(n\\): total population (the sum of the \\(n_j\\))."
+     },
+     {
+      "es": "\\(y_j\\): ingreso del grupo \\(j\\); \\(\\bar{y}\\): ingreso medio; \\(\\sum\\): suma sobre los grupos.",
+      "en": "\\(y_j\\): income of group \\(j\\); \\(\\bar{y}\\): mean income; \\(\\sum\\): sum over groups."
+     }
+    ],
+    [
+     {
+      "es": "\\(G(y)\\): coeficiente de Gini de la distribución \\(y\\); vale entre 0 (equidistribución) y 1 (toda la renta en un grupo).",
+      "en": "\\(G(y)\\): Gini coefficient of distribution \\(y\\); ranges from 0 (equal distribution) to 1 (all income in one group)."
+     },
+     {
+      "es": "\\(n_i, n_j\\): personas en los grupos \\(i\\) y \\(j\\); \\(n\\): población total; \\(m\\): cantidad de grupos.",
+      "en": "\\(n_i, n_j\\): people in groups \\(i\\) and \\(j\\); \\(n\\): total population; \\(m\\): number of groups."
+     },
+     {
+      "es": "\\(\\lvert y_i - y_j\\rvert\\): diferencia absoluta de ingreso entre los grupos \\(i\\) y \\(j\\); \\(\\bar{y}\\): ingreso medio.",
+      "en": "\\(\\lvert y_i - y_j\\rvert\\): absolute income difference between groups \\(i\\) and \\(j\\); \\(\\bar{y}\\): mean income."
+     }
+    ]
+   ],
+   "nota": "Lectura propia: en el apunte el factor del coeficiente de variación aparece como 1/(nȳ) delante de la raíz; para que la expresión coincida con σ/ȳ el factor debe ser 1/(ȳ√n), que es lo que reproduce la fórmula de arriba.",
+   "p": [
+    "Grión distingue medidas positivas, o estadísticas, de medidas normativas, basadas en una función de bienestar social. Entre las positivas, la más simple es el rango, la diferencia entre los más ricos y los más pobres relativa a la media. Su defecto es que no cumple el principio de Dalton: una transferencia regresiva entre personas del medio de la distribución no la mueve. Los ratios de Kuznets comparan la participación del x% más pobre con la del y% más rico; los cortes más comunes son 1%, 5%, 10% y 50%.",
+    "El coeficiente de variación usa la varianza, o el desvío típico, como medida de dispersión y la divide por la media, lo que lo hace independiente de la escala. El coeficiente de Gini promedia las diferencias absolutas de ingreso entre todos los pares de personas y las normaliza por la media. Es consistente con el criterio de Lorenz, vale entre 0 y 1, y los valores observados en el mundo están, según el apunte, entre 0,2 y 0,6."
+   ]
+  },
+  {
+   "t": "Una medida normativa: el índice de Atkinson",
+   "eq": [
+    "W = \\sum_{h=1}^{H} U\\!\\left(M^h\\right) = H\\,U\\!\\left(M_{EDE}\\right),\\qquad A = 1 - \\frac{M_{EDE}}{\\mu}",
+    "Y_e = \\left[\\frac{1}{n}\\sum_{i=1}^{n} Y_i^{\\,1-e}\\right]^{\\frac{1}{1-e}},\\qquad AI = 1 - \\left[\\frac{1}{n}\\sum_{i=1}^{n}\\left(\\frac{Y_i}{\\bar{Y}}\\right)^{1-e}\\right]^{\\frac{1}{1-e}},\\qquad Y_e = \\bar{Y}\\,(1 - AI)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W\\): bienestar social, suma de las utilidades individuales (función de bienestar utilitarista).",
+      "en": "\\(W\\): social welfare, the sum of individual utilities (utilitarian welfare function)."
+     },
+     {
+      "es": "\\(H\\): cantidad de individuos; \\(h\\): índice de cada individuo; \\(M^h\\): ingreso del individuo \\(h\\).",
+      "en": "\\(H\\): number of individuals; \\(h\\): index of each individual; \\(M^h\\): income of individual \\(h\\)."
+     },
+     {
+      "es": "\\(U(\\cdot)\\): función de utilidad individual, igual para todos.",
+      "en": "\\(U(\\cdot)\\): individual utility function, the same for everyone."
+     },
+     {
+      "es": "\\(M_{EDE}\\): ingreso equivalente igualmente distribuido, el ingreso que, si lo tuvieran todos, daría el mismo bienestar que la distribución observada.",
+      "en": "\\(M_{EDE}\\): equally distributed equivalent income, the income that, if everyone had it, would yield the same welfare as the observed distribution."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(A\\): índice de Atkinson, entre 0 y 1.",
+      "en": "\\(\\mu\\): mean income; \\(A\\): Atkinson index, between 0 and 1."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_i\\): ingreso del individuo \\(i\\); \\(n\\): cantidad de individuos; \\(\\bar{Y}\\): ingreso medio.",
+      "en": "\\(Y_i\\): income of individual \\(i\\); \\(n\\): number of individuals; \\(\\bar{Y}\\): mean income."
+     },
+     {
+      "es": "\\(e\\): parámetro de la función de utilidad \\(U(Y_i) = Y_i^{1-e}/(1-e)\\), con \\(e \\neq 1\\); el apunte no lo interpreta (lectura propia: cuanto mayor es \\(e\\), más cóncava es la utilidad y más pesa la desigualdad en el índice).",
+      "en": "\\(e\\): parameter of the utility function \\(U(Y_i) = Y_i^{1-e}/(1-e)\\), with \\(e \\neq 1\\); the notes do not interpret it (own reading: the larger \\(e\\), the more concave the utility and the more inequality weighs in the index)."
+     },
+     {
+      "es": "\\(Y_e\\): ingreso equivalente igualmente distribuido (el \\(M_{EDE}\\) de la ecuación anterior), menor que \\(\\bar{Y}\\) si hay desigualdad.",
+      "en": "\\(Y_e\\): equally distributed equivalent income (the \\(M_{EDE}\\) of the previous equation), lower than \\(\\bar{Y}\\) if there is inequality."
+     },
+     {
+      "es": "\\(AI\\): índice de Atkinson del ejercicio A.2.5 (el mismo \\(A\\), con otra notación).",
+      "en": "\\(AI\\): Atkinson index in exercise A.2.5 (the same \\(A\\), in other notation)."
+     }
+    ]
+   ],
+   "p": [
+    "El índice de Atkinson parte de suponer que el bienestar social se representa con una función utilitarista. La pregunta es qué ingreso, repartido en partes iguales entre todos, daría el mismo bienestar que la distribución actual. Ese ingreso equivalente igualmente distribuido es menor que la media cuando hay desigualdad, y el índice mide la brecha relativa entre ambos.",
+    "La interpretación que propone Grión es directa: el índice mide las ganancias potenciales de redistribuir la renta. Si el índice vale 0,62, se podría obtener el mismo bienestar con solo el 38% de la renta actual. El ejercicio A.2.5 lo hace explícito con una utilidad de elasticidad constante: despejando el ingreso equivalente se llega a una fórmula que depende solo de los ingresos relativos a la media, y reescribiéndola como «ingreso equivalente igual a la media por uno menos el índice» se ve que el índice es el porcentaje de la renta que se desperdicia por una mala distribución del ingreso.",
+    "Lectura propia: esa es la diferencia de fondo con el Gini. El Gini es una descripción estadística; el Atkinson trae explícito el juicio de valor, porque su valor depende de la función de utilidad elegida. Dos analistas con distinto parámetro e pueden ordenar de forma distinta las mismas distribuciones, y eso no es un defecto sino una forma honesta de mostrar dónde está la normativa."
+   ]
+  },
+  {
+   "t": "La curva de Lorenz y su criterio",
+   "eq": [
+    "L_2(p) \\ge L_1(p)\\ \\ \\forall\\, p \\in [0,1],\\qquad L_2(p) > L_1(p)\\ \\text{para algún } p"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(p\\): proporción acumulada de la población, ordenada de menor a mayor ingreso (de 0 a 1).",
+      "en": "\\(p\\): cumulative share of the population, ranked from lowest to highest income (0 to 1)."
+     },
+     {
+      "es": "\\(L_1(p), L_2(p)\\): curvas de Lorenz de las distribuciones 1 y 2, la fracción de la renta total que recibe el \\(p\\) más pobre.",
+      "en": "\\(L_1(p), L_2(p)\\): Lorenz curves of distributions 1 and 2, the share of total income received by the poorest \\(p\\)."
+     },
+     {
+      "es": "\\(\\forall\\): «para todo»; si se cumple la condición, la distribución 2 Lorenz-domina a la 1 (la 1 es más desigual).",
+      "en": "\\(\\forall\\): \\\"for all\\\"; if the condition holds, distribution 2 Lorenz-dominates distribution 1 (1 is more unequal)."
+     }
+    ]
+   ],
+   "p": [
+    "La curva de Lorenz representa el porcentaje acumulado de la renta total en manos del porcentaje acumulado de la población, con las rentas ordenadas de las más bajas a las más altas. Si todas las rentas son iguales, la curva coincide con la diagonal: el p% más pobre recibe el p% de la renta; cuanto más se aleja de ella, mayor es la desigualdad.",
+    "El criterio de Lorenz dice que la distribución 1 es más desigual que la 2 si la curva de la 2 está siempre por encima, o igual, y en algún punto estrictamente por encima. Si las curvas se cruzan, las distribuciones no son comparables: el criterio establece un orden parcial. Una medida es consistente con Lorenz si, cuando una curva está por debajo de otra, la declara más desigual. Grión agrega el puente con los axiomas: el criterio de Lorenz satisface los cuatro principios, y una medida que los satisface es consistente con él.",
+    "La curva de Lorenz generalizada se obtiene escalando la curva por la media de la distribución. Así incorpora el nivel de ingreso y permite comparar bienestar, no solo dispersión: una distribución más desigual pero con media mucho mayor puede quedar por encima."
+   ]
+  },
+  {
+   "t": "Desigualdad en la Argentina, 2003-2010",
+   "p": [
+    "El apunte ilustra los conceptos con datos de la EPH. En la onda de mayo de 2003, el ingreso total familiar tiene una mediana de 600 pesos y una media de 892, con una línea de pobreza por hogar de 720,1 pesos y un 42,6% de hogares pobres. El Gini es 0,482 para el ingreso total familiar y 0,529 para el ingreso per cápita familiar: la medición cambia según la unidad. Que la media supere holgadamente a la mediana es la huella de una distribución con cola larga hacia la derecha.",
+    "Las curvas de Lorenz muestran que la de 2003 queda por debajo de las de mayo de 1995 y del segundo semestre de 2010. La serie semestral confirma la mejora: el Gini baja de 0,53 en el segundo semestre de 2003 a 0,46 en el primero de 2010, y el cociente entre el decil más rico y el más pobre cae de 37,2 a 22,1 veces. Lectura propia: el punto de partida es la salida de la crisis de 2001-2002, y el apunte no separa cuánto de esa caída es recuperación del empleo y cuánto política distributiva."
+   ]
+  },
+  {
+   "t": "Polarización: cuando la desigualdad no alcanza",
+   "eq": [
+    "W = 4\\,\\frac{\\mu}{m}\\left[\\frac{1}{2} - L\\!\\left(\\frac{1}{2}\\right) - \\frac{G}{2}\\right]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W\\): índice de bipolarización de Wolfson (aquí \\(W\\) ya no es bienestar social).",
+      "en": "\\(W\\): Wolfson bipolarization index (here \\(W\\) is no longer social welfare)."
+     },
+     {
+      "es": "\\(\\mu\\): renta media; \\(m\\): renta mediana (aquí \\(m\\) ya no es la cantidad de grupos).",
+      "en": "\\(\\mu\\): mean income; \\(m\\): median income (here \\(m\\) is no longer the number of groups)."
+     },
+     {
+      "es": "\\(L(1/2)\\): curva de Lorenz evaluada en la mitad de la población, la fracción de la renta que recibe el 50% más pobre.",
+      "en": "\\(L(1/2)\\): Lorenz curve at half the population, the share of income received by the poorest 50%."
+     },
+     {
+      "es": "\\(G\\): coeficiente de Gini.",
+      "en": "\\(G\\): Gini coefficient."
+     }
+    ]
+   ],
+   "p": [
+    "La polarización intenta explicar lo que la desigualdad no refleja adecuadamente: el potencial de conflicto que surge cuando la sociedad se agrupa en torno a alguna característica, por ejemplo el ingreso. El tamaño de los grupos y la distancia entre ellos determinan tensiones, inestabilidad o conflicto abierto. Por eso, dice Grión, es probable que haya conflicto en sociedades con alta polarización aun cuando su desigualdad sea relativamente baja.",
+    "Los índices de polarización estiman en qué medida la población está agrupada en torno a un pequeño número de polos. El apunte muestra una distribución más polarizada y menos desigual: si los ingresos de los extremos y del centro se mueven hacia dos polos, la dispersión total puede bajar mientras los grupos se separan. Wolfson (1994) sostiene que el principio de transferencias de Pigou-Dalton es inconsistente con la polarización y propone un indicador de bipolarización para dos grupos que combina la media, la mediana, la curva de Lorenz y el Gini. Un enfoque axiomático alternativo es el de Esteban y Ray (1994).",
+    "Lectura propia: la tensión con Dalton es el punto conceptual del capítulo. Una transferencia progresiva dentro de cada mitad de la distribución reduce la desigualdad, pero junta a cada grupo en torno a su propio centro y puede aumentar la polarización. Medir una u otra cosa lleva a diagnósticos distintos sobre la misma economía."
+   ]
+  }
+ ],
+ "claves": [
+  "La desigualdad es la dispersión de una distribución: más amplia que la pobreza (mira toda la distribución) y más estricta que el bienestar (no depende de la media).",
+  "Una buena medida cumple anonimato, población, renta relativa y el principio de Dalton; el rango falla en este último.",
+  "El Gini promedia diferencias absolutas entre pares, va de 0 a 1 y es consistente con Lorenz; en el mundo se observan valores entre 0,2 y 0,6.",
+  "El índice de Atkinson es normativo: mide qué fracción de la renta se podría ahorrar con igual bienestar si se distribuyera en partes iguales.",
+  "El criterio de Lorenz da un orden parcial: si las curvas se cruzan, las distribuciones no son comparables.",
+  "En la Argentina, el Gini bajó de 0,53 a 0,46 entre 2003 y 2010, según el apunte.",
+  "La polarización mide la formación de grupos y el potencial de conflicto; puede subir aunque la desigualdad baje."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Grión, ¿en qué se diferencia la desigualdad del bienestar?",
+    "en": "According to Grión, how does inequality differ from welfare?"
+   },
+   "op": {
+    "es": [
+     "La desigualdad solo mira a los pobres; el bienestar, a toda la población",
+     "La desigualdad es independiente del promedio de la distribución; el bienestar no",
+     "La desigualdad se mide con consumo y el bienestar con ingreso",
+     "No hay diferencia: son dos nombres del mismo concepto"
+    ],
+    "en": [
+     "Inequality only looks at the poor; welfare, at the whole population",
+     "Inequality is independent of the distribution's mean; welfare is not",
+     "Inequality is measured with consumption and welfare with income",
+     "There is no difference: they are two names for the same concept"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Ambos miran toda la distribución, pero la desigualdad no depende de la media, algo que el apunte considera deseable.",
+    "en": "Both look at the whole distribution, but inequality does not depend on the mean, which the notes consider desirable."
+   },
+   "id": "fisc-general-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué exige el principio de Dalton?",
+    "en": "What does the Dalton principle require?"
+   },
+   "op": {
+    "es": [
+     "Que clonar la población no cambie la desigualdad",
+     "Que solo importe la renta relativa",
+     "Que permutar rentas entre personas no cambie la desigualdad",
+     "Que una distribución alcanzable con transferencias regresivas sea más desigual"
+    ],
+    "en": [
+     "That cloning the population does not change inequality",
+     "That only relative income matters",
+     "That swapping incomes between people does not change inequality",
+     "That a distribution reached through regressive transfers be more unequal"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las otras opciones son los principios de población, renta relativa y anonimato.",
+    "en": "The other options are the population, relative income and anonymity principles."
+   },
+   "id": "fisc-general-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el rango no es una buena medida de desigualdad?",
+    "en": "Why is the range not a good inequality measure?"
+   },
+   "op": {
+    "es": [
+     "Porque depende del tamaño de la población",
+     "Porque puede ser negativo",
+     "Porque no cumple el principio de Dalton: ignora lo que pasa entre los extremos",
+     "Porque no se puede calcular con datos agrupados"
+    ],
+    "en": [
+     "Because it depends on population size",
+     "Because it can be negative",
+     "Because it fails the Dalton principle: it ignores what happens between the extremes",
+     "Because it cannot be computed with grouped data"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Solo mira al más rico y al más pobre; una transferencia regresiva en el medio no lo mueve.",
+    "en": "It only looks at the richest and the poorest; a regressive transfer in the middle does not move it."
+   },
+   "id": "fisc-general-03-q3"
+  },
+  {
+   "q": {
+    "es": "Si el índice de Atkinson vale 0,62, ¿qué significa según el apunte?",
+    "en": "If the Atkinson index is 0.62, what does it mean according to the notes?"
+   },
+   "op": {
+    "es": [
+     "Que el mismo bienestar se lograría con solo el 38% de la renta actual distribuida en partes iguales",
+     "Que el 62% de la población es pobre",
+     "Que el Gini es 0,38",
+     "Que el 62% de la renta está en manos del decil más rico"
+    ],
+    "en": [
+     "That the same welfare could be achieved with only 38% of current income, equally distributed",
+     "That 62% of the population is poor",
+     "That the Gini is 0.38",
+     "That 62% of income is held by the richest decile"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El índice mide las ganancias potenciales de redistribuir: 1 menos el ingreso equivalente sobre la media.",
+    "en": "The index measures the potential gains from redistribution: 1 minus equivalent income over the mean."
+   },
+   "id": "fisc-general-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue al índice de Atkinson del Gini?",
+    "en": "What distinguishes the Atkinson index from the Gini?"
+   },
+   "op": {
+    "es": [
+     "El Atkinson no cumple el principio de anonimato",
+     "El Atkinson se deriva de una función de bienestar social: es una medida normativa",
+     "El Atkinson solo sirve para datos de consumo",
+     "El Atkinson depende del tamaño de la población"
+    ],
+    "en": [
+     "The Atkinson fails the anonymity principle",
+     "The Atkinson is derived from a social welfare function: it is a normative measure",
+     "The Atkinson only works with consumption data",
+     "The Atkinson depends on population size"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Grión separa medidas positivas, como el Gini, de normativas, basadas en una función de bienestar, como el Atkinson.",
+    "en": "Grión separates positive measures, such as the Gini, from normative ones based on a welfare function, such as the Atkinson."
+   },
+   "id": "fisc-general-03-q5"
+  },
+  {
+   "q": {
+    "es": "Si las curvas de Lorenz de dos distribuciones se cruzan, ¿qué dice el criterio de Lorenz?",
+    "en": "If the Lorenz curves of two distributions cross, what does the Lorenz criterion say?"
+   },
+   "op": {
+    "es": [
+     "Es más desigual la que tiene mayor media",
+     "Es más desigual la que tiene mayor Gini",
+     "Son igual de desiguales",
+     "No son comparables: el criterio da un orden parcial"
+    ],
+    "en": [
+     "The one with the higher mean is more unequal",
+     "The one with the higher Gini is more unequal",
+     "They are equally unequal",
+     "They are not comparable: the criterion gives a partial order"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Un índice como el Gini las ordenará igual, pero el criterio de Lorenz por sí solo no puede.",
+    "en": "An index such as the Gini will still rank them, but the Lorenz criterion alone cannot."
+   },
+   "id": "fisc-general-03-q6"
+  },
+  {
+   "q": {
+    "es": "Según los datos del apunte, ¿cómo evolucionó el Gini en la Argentina entre el segundo semestre de 2003 y el primero de 2010?",
+    "en": "According to the notes' data, how did Argentina's Gini evolve between the second half of 2003 and the first half of 2010?"
+   },
+   "op": {
+    "es": [
+     "Subió de 0,46 a 0,53",
+     "Se mantuvo cerca de 0,48",
+     "Bajó de 0,53 a 0,46",
+     "Bajó de 0,60 a 0,20"
+    ],
+    "en": [
+     "It rose from 0.46 to 0.53",
+     "It stayed near 0.48",
+     "It fell from 0.53 to 0.46",
+     "It fell from 0.60 to 0.20"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En el mismo período el cociente entre el decil 10 y el decil 1 cayó de 37,2 a 22,1.",
+    "en": "Over the same period the ratio of decile 10 to decile 1 fell from 37.2 to 22.1."
+   },
+   "id": "fisc-general-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué capta la polarización que la desigualdad no refleja bien?",
+    "en": "What does polarization capture that inequality does not reflect well?"
+   },
+   "op": {
+    "es": [
+     "La pobreza absoluta",
+     "El crecimiento del ingreso medio",
+     "La formación de grupos y el potencial de conflicto entre ellos",
+     "La movilidad entre generaciones"
+    ],
+    "en": [
+     "Absolute poverty",
+     "Growth in mean income",
+     "The formation of groups and the potential for conflict between them",
+     "Intergenerational mobility"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Por eso puede haber más polarización con menos desigualdad; Wolfson (1994) la considera inconsistente con Pigou-Dalton.",
+    "en": "That is why there can be more polarization with less inequality; Wolfson (1994) considers it inconsistent with Pigou-Dalton."
+   },
+   "id": "fisc-general-03-q8"
+  }
+ ],
+ "palabras": 1377,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué cuatro principios debería cumplir una medida de desigualdad?",
+    "en": "What four principles should an inequality measure satisfy?"
+   },
+   "a": {
+    "es": "Anonimato (permutar rentas no cambia nada), población (clonar la población tampoco), renta relativa (solo importan las rentas relativas) y Dalton (las transferencias regresivas aumentan la desigualdad). Así los enumera Grión (cap. 5).",
+    "en": "Anonymity (swapping incomes changes nothing), population (cloning the population neither), relative income (only relative incomes matter) and Dalton (regressive transfers increase inequality). So Grión lists them (ch. 5)."
+   },
+   "id": "fisc-general-03-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se construye el índice de Atkinson?",
+    "en": "How is the Atkinson index built?"
+   },
+   "a": {
+    "es": "Con una función de bienestar utilitarista se busca el ingreso que, repartido en partes iguales, da el mismo bienestar que la distribución observada; el índice es uno menos ese ingreso sobre la media, y mide qué parte de la renta se desperdicia por una mala distribución. Lo desarrolla Grión (cap. 5 y ejercicio A.2.5).",
+    "en": "With a utilitarian welfare function one finds the income that, equally shared, yields the same welfare as the observed distribution; the index is one minus that income over the mean, and measures how much income is wasted by poor distribution. Grión develops it (ch. 5 and exercise A.2.5)."
+   },
+   "id": "fisc-general-03-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el coeficiente de Gini y qué rango de valores se observa?",
+    "en": "What is the Gini coefficient and what range of values is observed?"
+   },
+   "a": {
+    "es": "Un índice que promedia las diferencias absolutas de ingreso entre todos los pares y las normaliza por la media; va de 0 (equidistribución) a 1 (toda la renta en un grupo), es consistente con Lorenz y en la práctica está entre 0,2 y 0,6, según Grión (cap. 5).",
+    "en": "An index averaging absolute income differences across all pairs, normalized by the mean; it ranges from 0 (equal distribution) to 1 (all income in one group), is Lorenz-consistent and in practice lies between 0.2 and 0.6, according to Grión (ch. 5)."
+   },
+   "id": "fisc-general-03-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cuándo permite la curva de Lorenz decir que una distribución es más desigual que otra?",
+    "en": "When does the Lorenz curve let us say one distribution is more unequal than another?"
+   },
+   "a": {
+    "es": "Cuando su curva queda por debajo de la otra en todo el recorrido; si las curvas se cruzan, no son comparables y el criterio da solo un orden parcial. La curva generalizada, escalada por la media, permite comparar bienestar. Así lo explica Grión (cap. 5).",
+    "en": "When its curve lies below the other everywhere; if the curves cross, they are not comparable and the criterion gives only a partial order. The generalized curve, scaled by the mean, allows welfare comparisons. So Grión explains (ch. 5)."
+   },
+   "id": "fisc-general-03-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué pasó con la desigualdad del ingreso en la Argentina entre 2003 y 2010?",
+    "en": "What happened to income inequality in Argentina between 2003 and 2010?"
+   },
+   "a": {
+    "es": "Bajó: el Gini pasó de 0,53 a 0,46 y el cociente entre el decil más rico y el más pobre, de 37,2 a 22,1 veces, con datos de la EPH que presenta Grión (cap. 5).",
+    "en": "It fell: the Gini went from 0.53 to 0.46 and the ratio of the richest to the poorest decile from 37.2 to 22.1 times, with EPH data presented by Grión (ch. 5)."
+   },
+   "id": "fisc-general-03-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la polarización puede aumentar aunque la desigualdad disminuya?",
+    "en": "Why can polarization rise even as inequality falls?"
+   },
+   "a": {
+    "es": "Porque mide el agrupamiento de la población en pocos polos distantes, no la dispersión total: si los ingresos convergen hacia dos grupos separados, la dispersión puede caer y el potencial de conflicto subir. Wolfson (1994) la juzga inconsistente con Pigou-Dalton. Así lo presenta Grión (cap. 6).",
+    "en": "Because it measures the clustering of the population around a few distant poles, not total dispersion: if incomes converge into two separate groups, dispersion may fall while the potential for conflict rises. Wolfson (1994) deems it inconsistent with Pigou-Dalton. So Grión presents it (ch. 6)."
+   },
+   "id": "fisc-general-03-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué el Gini argentino de 2003 difiere según se use el ingreso total familiar o el per cápita?",
+    "en": "Why does Argentina's 2003 Gini differ depending on whether total household or per capita income is used?"
+   },
+   "a": {
+    "es": "Porque la unidad de análisis cambia la distribución: con datos de la EPH de mayo de 2003, el Gini del ingreso total familiar es 0,482 y el del ingreso per cápita familiar, 0,529, según el gráfico de Grión (cap. 5).",
+    "en": "Because the unit of analysis changes the distribution: with EPH data from May 2003, the Gini of total household income is 0.482 and that of per capita household income 0.529, according to Grión's chart (ch. 5)."
+   },
+   "id": "fisc-general-03-t7"
+  }
+ ]
+}
