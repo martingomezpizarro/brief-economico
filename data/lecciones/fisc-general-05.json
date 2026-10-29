@@ -1,0 +1,445 @@
+{
+ "id": "fisc-general-05",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Sistemas electorales y reparto de bancas: de Duverger a D'Hondt",
+ "bajada": "Los capítulos 8 y 9 de los Apuntes de Grión: mayoría contra representación proporcional, el votante mediano y el teorema de May, las paradojas del método de Hamilton, el teorema de imposibilidad de Balinski y Young, los métodos de divisores y cómo funciona el sistema electoral argentino.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), caps. 8: «Sistemas electorales» y 9: «Reparto proporcional de votos», y apéndice A.1.1",
+ "intro": "Cuando los votantes son demasiados o las cuestiones a decidir son demasiadas, la democracia directa se vuelve imposible y hace falta representación. Ahí aparecen dos decisiones de orden constitucional: la forma de gobierno (presidencialismo o parlamentarismo) y el sistema electoral, que define cómo los votos de los ciudadanos se traducen en bancas para partidos y candidatos. El capítulo 7 de Grión había mostrado que ninguna regla de votación es perfecta; los capítulos 8 y 9 bajan esa conclusión a las reglas que se usan de verdad. Primero, qué produce cada sistema (mayoría simple, mayoría absoluta, representación proporcional, sistemas mixtos) y bajo qué condiciones la regla de la mayoría funciona bien. Después, un problema que parece aritmético y no lo es: repartir un número entero de bancas en proporción a los votos o a la población. El apunte termina en el método D'Hondt, el que se usa en la Argentina, y el apéndice describe el sistema electoral nacional.",
+ "secciones": [
+  {
+   "t": "Dos principios de representación",
+   "p": [
+    "Grión distingue los dos tipos básicos de sistema por su principio de representación. La representación por mayoría acepta una desproporción entre votos y escaños para facilitar que se formen mayorías en el Parlamento. La representación proporcional busca una relación proporcional entre votos y escaños para que los grupos sociales estén representados según su peso. Los sistemas, advierte, son producto de la evolución histórica y reflejan las estructuras sociales de cada país; no salen de un diseño de laboratorio.",
+    "Las hipótesis de Duverger (1959) resumen qué sistema de partidos tiende a generar cada regla. La representación proporcional lleva a un sistema pluripartidario, con partidos estables, rígidos, independientes entre sí y con pocas facilidades para formar coaliciones. Un sistema a dos vueltas tiende al pluripartidismo, pero con partidos más flexibles y dependientes entre sí para armar coaliciones; en versiones más recientes, un multipartidismo atemperado por alianzas. La mayoría relativa, simple, conduce al bipartidismo, con dos partidos que se alternan en el gobierno."
+   ]
+  },
+  {
+   "t": "Mayoría, proporcionalidad y sistemas mixtos",
+   "p": [
+    "La mayoría simple o relativa (first past the post) es la más sencilla: se aplica en distritos uninominales, cada elector tiene un voto y gana el candidato con más votos aunque no llegue a la mitad. Predomina en los países de habla inglesa, como en la Cámara de los Comunes británica. Su problema aparece con un voto fragmentado: puede ganar un candidato que representa a una pequeña minoría. La mayoría absoluta intenta corregirlo con más de una vuelta y con un número limitado de opciones en la segunda. Francia exige el 50 % más uno en la primera vuelta; si nadie lo obtiene, los dos más votados van al balotaje. Costa Rica pide el 40 % para ganar en primera vuelta.",
+    "Según Grión, los sistemas mayoritarios son más aconsejables para elegir poderes ejecutivos, por su sencillez y la claridad del mandato, y más cuestionables para cargos legislativos, porque un partido con mayoría puede quedarse con todos los cargos y quedar sobrerrepresentado. La representación proporcional, aplicada en circunscripciones plurinominales con listas que se votan en bloque, invierte ventajas y defectos: representa mejor al electorado pero no da un mandato específico, y como los dirigentes fijan el orden de las listas, el vínculo entre representante y representado es más débil.",
+    "Los sistemas mixtos combinan ambos principios. El más conocido es el alemán: la mitad de los 656 miembros de la Asamblea Federal se elige por mayoría simple en distritos uninominales y la otra mitad por representación proporcional en circunscripciones que coinciden con los estados federados, con un umbral del 5 % para entrar al reparto. Cada elector emite dos votos, uno por el candidato de su distrito y otro por una lista, y el diseño busca ajustar lo más posible las proporciones de votos y bancas."
+   ]
+  },
+  {
+   "t": "Cuándo funciona la regla de la mayoría",
+   "p": [
+    "La votación por mayoría de a pares, en general, no es transitiva: genera ciclos y es manipulable, como mostró la paradoja de Condorcet. Pero si se restringe el dominio de las preferencias puede volverse satisfactoria. El teorema de Black (1958) dice que si las preferencias son unimodales, con un único pico respecto de un mismo orden lineal, y la votación es unidimensional, gana la opción preferida por el votante mediano.",
+    "Grión lista las implicancias. La regla elige al ganador de Condorcet y por lo tanto no es manipulable. Pero el equilibrio puede ser ineficiente, no implica una opción centrista si los votantes están polarizados y puede haber dictadura de la mayoría. Además, si la votación es multidimensional, por ejemplo el nivel y la estructura del gasto a la vez, los ciclos son muy probables aun con preferencias unimodales. De ahí salen dos hipótesis: el modelo de Downs-Hotelling, según el cual en sistemas bipartidistas los partidos convergen al centro para convencer al votante mediano, y la hipótesis de Riker (1962), según la cual, si las decisiones se toman por mayoría y son redistributivas, tienden a existir solo dos partidos o coaliciones de tamaño similar.",
+    "El teorema de May (1952) da la justificación positiva: con solo dos alternativas y un número impar de votantes, la mayoría simple es la única regla que siempre produce un ganador y cumple anonimato (todos los votantes pesan igual), neutralidad (todos los candidatos se tratan igual) y monotonicidad (si un votante pasa su voto del perdedor al ganador, el resultado no cambia). Las mayorías especiales, como exigir el 60 %, cumplen esas propiedades pero no siempre definen un ganador. El problema empieza con tres o más opciones."
+   ]
+  },
+  {
+   "t": "Otros métodos y sus paradojas",
+   "p": [
+    "Con la pluralidad cada votante apoya solo a su preferida y se ignora todo el resto de su orden. Eso permite elegir a la alternativa peor valorada por la mayoría. El ejemplo de Joseph Isidoro Morales (1797) tiene siete votantes y tres candidatos: A es el primero para tres votantes y el último para los otros cuatro, mientras B y C son primeros para dos votantes cada uno. Por pluralidad gana A, aunque la mayoría absoluta lo pone último. Lectura propia: con esos órdenes, C le gana tanto a A como a B por 4 a 3 en votación por pares, de modo que la pluralidad descarta al ganador de Condorcet.",
+    "El voto aprobatorio divide las alternativas en aprobadas y desaprobadas y da un voto a cada aprobada; votar a todas equivale a no votar, y el método favorece a candidatos moderados que tienen el beneplácito de la mayoría sin ser los preferidos de ninguna minoría. El método francés (runoff) elige a quien tenga mayoría estricta y, si nadie la tiene, enfrenta a los dos más votados. El método de Hare, o voto transferible, pide a cada votante un orden completo y va eliminando a la alternativa con menos primeros puestos hasta que una tenga más de la mitad.",
+    "La comparación del apunte confirma lo que anticipaban los teoremas: todos producen resultados paradójicos. Borda, la pluralidad y Hare no siempre eligen al ganador de Condorcet; Hare puede ser no monótono o «perverso»; y el secuencial por pares, Borda, la pluralidad y Hare son sensibles a terceras opciones."
+   ]
+  },
+  {
+   "t": "Hamilton y sus paradojas",
+   "eq": [
+    "c_i = S\\,\\frac{P_i}{P}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(c_i\\): cuota exacta del estado o partido \\(i\\), en bancas (puede tener decimales).",
+      "en": "\\(c_i\\): exact quota of state or party \\(i\\), in seats (may have decimals)."
+     },
+     {
+      "es": "\\(S\\): total de bancas a repartir.",
+      "en": "\\(S\\): total number of seats to allocate."
+     },
+     {
+      "es": "\\(P_i\\): población (o votos) del estado o partido \\(i\\); \\(P\\): población (o votos) total.",
+      "en": "\\(P_i\\): population (or votes) of state or party \\(i\\); \\(P\\): total population (or votes)."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; el apunte presenta la cuota con la tabla del ejemplo.",
+      "en": "Own reading: the notation is ours; the notes present the quota through the example table."
+     }
+    ]
+   ],
+   "p": [
+    "En una democracia representativa hay que convertir votos en bancas de manera proporcional, sea para repartir bancas entre partidos (la Argentina) o entre estados según su población (Estados Unidos). Parece fácil y no lo es; de hecho, varios países cambiaron su forma de reparto. El método de los restos mayores, o de Hamilton (1792), da a cada estado la parte entera de su cuota y reparte las bancas sobrantes según el tamaño de la parte decimal. En el ejemplo de Grión, con 100 bancas y poblaciones de 6.570, 2.370 y 1.060, las cuotas son 65,70, 23,70 y 10,60: primero se asignan 65, 23 y 10, y las dos bancas restantes van a A y B. Resultado: 66, 24 y 10.",
+    "Primera paradoja, la de la población (el apunte la titula «paradoja de la votación» y luego la llama «paradoja de los votos»). Si A gana 30 habitantes, B gana 81 y C pierde 11, las nuevas cuotas son 65,35, 24,27 y 10,39, y Hamilton asigna 65, 24 y 11: A, que creció, pierde una banca y C, que perdió población, gana una. Ocurrió en 1900 en la Cámara de Representantes de Estados Unidos, cuando Virginia, que crecía mucho más rápido que Maine, le cedía bancas.",
+    "Segunda, la paradoja de Alabama. Con esas mismas poblaciones se agrega una banca: las cuotas pasan a 66,00, 24,51 y 10,49 y el reparto queda 66, 25 y 10. Con más bancas para repartir, C pierde un representante. Pasó en 1880: Alabama tenía 8 diputados con un Congreso de 299, y al proponer subirlo a 300 bajaba a 7; la solución fue aumentar más, a 325. Hamilton no cumple la monotonía en bancas. Tercera, la paradoja del nuevo estado: agregar un estado junto con las bancas que le corresponden puede alterar el reparto entre los demás, como se descubrió en 1907 cuando Oklahoma se incorporó y Maine le quitaba una banca a Nueva York."
+   ]
+  },
+  {
+   "t": "Balinski y Young: los métodos de divisores",
+   "eq": [
+    "d_k^{\\text{D'Hondt}} = k,\\qquad d_k^{\\text{Webster}} = 2k-1,\\qquad d_k^{\\text{Hill}} = \\sqrt{k(k+1)},\\qquad d_k^{\\text{Dean}} = \\frac{2k(k+1)}{2k+1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(d_k\\): divisor que se aplica a los votos de cada lista para disputar su banca número \\(k\\).",
+      "en": "\\(d_k\\): divisor applied to each list's votes when it competes for its \\(k\\)-th seat."
+     },
+     {
+      "es": "\\(k\\): orden de la banca dentro de la lista (1, 2, 3, …).",
+      "en": "\\(k\\): order of the seat within the list (1, 2, 3, …)."
+     },
+     {
+      "es": "D'Hondt, Webster, Hill (Hill-Huntington) y Dean: los cuatro métodos de divisores de la tabla del apunte.",
+      "en": "D'Hondt, Webster, Hill (Hill-Huntington) and Dean: the four divisor methods in the notes' table."
+     },
+     {
+      "es": "Lectura propia: el apunte solo da las series de divisores (1, 2, 3…; 1, 3, 5…; 1,41, 2,45, 3,46…; 1,33, 2,40, 3,43…); las fórmulas cerradas son nuestras y reproducen esas series.",
+      "en": "Own reading: the notes only give the divisor series (1, 2, 3…; 1, 3, 5…; 1.41, 2.45, 3.46…; 1.33, 2.40, 3.43…); the closed formulas are ours and reproduce those series."
+     }
+    ]
+   ],
+   "p": [
+    "Hay dos familias de métodos: los de residuos o cuotas, como Hamilton, y los de cocientes o divisores. Para elegir entre ellos, Balinski y Young proponen propiedades deseables: verificar la cuota (ninguna diferencia entre bancas y cuota supera la unidad), homogeneidad (multiplicar todos los votos por un factor positivo no cambia nada), monotonía respecto de las bancas (con más bancas y los mismos votos, nadie recibe menos) y monotonía respecto de los votos (si un partido gana votos y otro pierde, no puede ser que el primero obtenga menos bancas y el segundo más).",
+    "Su teorema de imposibilidad (1982) dice que no existe un método homogéneo, monótono respecto de los votos y que verifique la cuota. Agregan dos propiedades: consistencia (si A y B reciben ciertas bancas en una elección con varios partidos, repartir solo entre ellos el total de esas bancas debería dar lo mismo) y exactitud (si las cuotas son enteras, el método debe devolverlas). Demostraron que un método exacto, monótono respecto de los votos, consistente, homogéneo y continuo es necesariamente un método de divisores, y los métodos de divisores no cumplen el criterio de la cuota.",
+    "Los divisores se distinguen por su serie. La regla general del apunte: subir el primer divisor perjudica a los partidos chicos, y aumentar el espaciamiento entre divisores sucesivos reduce la ventaja de los grandes. Lectura propia: por eso Webster, que empieza en 1 pero salta de a dos, es menos favorable a los grandes que D'Hondt, que avanza de a uno."
+   ]
+  },
+  {
+   "t": "D'Hondt y el sistema argentino",
+   "eq": [
+    "Q_{jk} = \\frac{V_j}{k},\\qquad k = 1, 2, \\dots, S"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Q_{jk}\\): cociente de la lista \\(j\\) para su banca número \\(k\\); las \\(S\\) bancas van a los \\(S\\) cocientes más altos.",
+      "en": "\\(Q_{jk}\\): quotient of list \\(j\\) for its \\(k\\)-th seat; the \\(S\\) seats go to the \\(S\\) highest quotients."
+     },
+     {
+      "es": "\\(V_j\\): votos obtenidos por la lista \\(j\\).",
+      "en": "\\(V_j\\): votes obtained by list \\(j\\)."
+     },
+     {
+      "es": "\\(k\\): divisor, igual al número de orden de la banca (1, 2, 3, …); \\(S\\): bancas a repartir en el distrito.",
+      "en": "\\(k\\): divisor, equal to the seat's order number (1, 2, 3, …); \\(S\\): seats to allocate in the district."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; el apunte describe el procedimiento con la tabla del ejemplo.",
+      "en": "Own reading: the notation is ours; the notes describe the procedure with the example table."
+     }
+    ]
+   ],
+   "p": [
+    "En el ejemplo de Grión se reparten 7 bancas entre listas con 50, 30 y 20 votos. Se divide cada total por 1, 2, 3 y así hasta 7, y las bancas van a los cocientes más altos en orden decreciente: la primera a A (50), la segunda a B (30), la tercera a A (25), y así hasta la séptima. D'Hondt asigna 4 bancas a A, 2 a B y 1 a C, es decir 57 %, 29 % y 14 % de las bancas, contra cuotas exactas de 3,5, 2,1 y 1,4. Es uno de los métodos más usados en las democracias occidentales y también se lo conoce como método de Jefferson. Privilegia a los grandes sobre los chicos; el argumento a favor es que evita la fragmentación y da estabilidad.",
+    "El apéndice describe el sistema nacional. El presidente se elige por doble vuelta: gana en primera vuelta la fórmula que obtiene el 45 % de los votos válidos, o el 40 % con más de 10 puntos de diferencia sobre la segunda; si no, hay balotaje entre las dos más votadas. Los senadores, tres por distrito, se eligen por lista incompleta: dos bancas para el ganador y una para el segundo. Los diputados se eligen por representación proporcional D'Hondt entre las listas que superan el 3 % de los votos válidos, según el apunte. Desde 2009 (Ley 26.571) rigen las primarias abiertas, simultáneas y obligatorias, y a la general solo pasan las listas con al menos el 1,5 % de los votos válidos de su categoría y distrito.",
+    "Lectura propia: el apéndice presenta a D'Hondt como un método para asegurar la representación de los partidos chicos y el capítulo 9 dice que privilegia a los grandes. No es una contradicción: frente a la mayoría simple, D'Hondt da bancas a las minorías; frente a otros métodos de divisores, es el que más favorece a las listas grandes, porque su primer divisor es bajo pero sus divisores están poco espaciados."
+   ]
+  }
+ ],
+ "claves": [
+  "La representación por mayoría acepta desproporción entre votos y bancas para formar mayorías; la proporcional busca reflejar el peso de cada grupo.",
+  "Duverger: la mayoría simple tiende al bipartidismo, la doble vuelta a un multipartidismo con alianzas y la representación proporcional al pluripartidismo.",
+  "Con preferencias unimodales y una sola dimensión gana el votante mediano (Black); con dos alternativas la mayoría simple es la única regla anónima, neutral y monótona (May).",
+  "Pluralidad, Borda, Hare y el secuencial por pares tienen todos alguna paradoja: no eligen al ganador de Condorcet, no son monótonos o dependen de terceras opciones.",
+  "El método de Hamilton sufre las paradojas de la población, de Alabama y del nuevo estado.",
+  "Balinski y Young: ningún método es a la vez homogéneo, monótono en votos y respetuoso de la cuota; los métodos de divisores sacrifican la cuota.",
+  "D'Hondt, usado en la Argentina para diputados, favorece a las listas grandes y evita la fragmentación."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según las hipótesis de Duverger, ¿qué sistema de partidos tiende a producir la mayoría relativa?",
+    "en": "According to Duverger's hypotheses, which party system does plurality rule tend to produce?"
+   },
+   "op": {
+    "es": [
+     "Un pluripartidismo rígido",
+     "Un bipartidismo con alternancia en el gobierno",
+     "Un multipartidismo atemperado por alianzas",
+     "Un partido dominante sin alternancia"
+    ],
+    "en": [
+     "A rigid multiparty system",
+     "A two-party system that alternates in government",
+     "A multiparty system tempered by alliances",
+     "A dominant party with no alternation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La mayoría simple conduce al bipartidismo; la doble vuelta, a un multipartidismo con alianzas; la representación proporcional, al pluripartidismo.",
+    "en": "Plurality leads to a two-party system; runoffs to multipartism with alliances; proportional representation to a multiparty system."
+   },
+   "id": "fisc-general-05-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué condiciones pide el teorema de Black para que gane el votante mediano?",
+    "en": "Which conditions does Black's theorem require for the median voter to win?"
+   },
+   "op": {
+    "es": [
+     "Dos alternativas y un número impar de votantes",
+     "Dos vueltas y umbral del 50 %",
+     "Voto aprobatorio y más de tres candidatos",
+     "Preferencias unimodales y una votación unidimensional"
+    ],
+    "en": [
+     "Two alternatives and an odd number of voters",
+     "Two rounds and a 50% threshold",
+     "Approval voting and more than three candidates",
+     "Single-peaked preferences and a one-dimensional vote"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con preferencias de un solo pico sobre un mismo orden lineal y una sola dimensión, la opción del votante mediano le gana a cualquier otra.",
+    "en": "With single-peaked preferences over a common linear order and a single dimension, the median voter's option beats any other."
+   },
+   "id": "fisc-general-05-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué establece el teorema de May?",
+    "en": "What does May's theorem state?"
+   },
+   "op": {
+    "es": [
+     "Que con dos alternativas y votantes impares la mayoría simple es la única regla decisiva, anónima, neutral y monótona",
+     "Que toda regla no dictatorial es manipulable",
+     "Que ningún método de reparto respeta la cuota",
+     "Que la representación proporcional produce pluripartidismo"
+    ],
+    "en": [
+     "That with two alternatives and an odd number of voters simple majority is the only decisive, anonymous, neutral and monotonic rule",
+     "That every non-dictatorial rule is manipulable",
+     "That no apportionment method respects the quota",
+     "That proportional representation produces multipartism"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "May (1952) caracteriza la mayoría simple; las mayorías especiales cumplen las tres propiedades pero no siempre definen ganador.",
+    "en": "May (1952) characterises simple majority; supermajorities satisfy the three properties but do not always produce a winner."
+   },
+   "id": "fisc-general-05-q3"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de Morales con siete votantes, ¿por qué es problemático que gane A por pluralidad?",
+    "en": "In Morales's seven-voter example, why is it a problem that A wins by plurality?"
+   },
+   "op": {
+    "es": [
+     "Porque A no es el primero de nadie",
+     "Porque hay un empate entre los tres",
+     "Porque A es el último para la mayoría absoluta de los votantes",
+     "Porque A gana con más de la mitad de los votos"
+    ],
+    "en": [
+     "Because A is nobody's first choice",
+     "Because there is a three-way tie",
+     "Because A is last for an absolute majority of voters",
+     "Because A wins with more than half the votes"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "A es el primero para tres votantes, pero los otros cuatro lo ponen último: la pluralidad ignora todo salvo la primera preferencia.",
+    "en": "A is first for three voters but the other four rank it last: plurality ignores everything except first preferences."
+   },
+   "id": "fisc-general-05-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la paradoja de Alabama?",
+    "en": "What is the Alabama paradox?"
+   },
+   "op": {
+    "es": [
+     "Que un estado que crece pierde una banca frente a uno que decrece",
+     "Que al incorporar un nuevo estado cambia el reparto entre los demás",
+     "Que con D'Hondt los partidos chicos no obtienen bancas",
+     "Que al aumentar el total de bancas un estado recibe menos con la misma población"
+    ],
+    "en": [
+     "That a growing state loses a seat to a shrinking one",
+     "That adding a new state changes the allocation among the others",
+     "That under D'Hondt small parties get no seats",
+     "That when total seats increase a state gets fewer with the same population"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En el ejemplo, al pasar de 100 a 101 bancas C baja de 11 a 10; en 1880 Alabama perdía un diputado si el Congreso pasaba de 299 a 300.",
+    "en": "In the example, going from 100 to 101 seats drops C from 11 to 10; in 1880 Alabama lost a representative if Congress went from 299 to 300."
+   },
+   "id": "fisc-general-05-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué dice el teorema de imposibilidad de Balinski y Young?",
+    "en": "What does the Balinski–Young impossibility theorem say?"
+   },
+   "op": {
+    "es": [
+     "No hay método homogéneo, monótono respecto de los votos y que verifique la cuota",
+     "No hay regla de votación que cumpla Pareto y no dictadura",
+     "Todo método de divisores es manipulable",
+     "Ningún método puede ser exacto"
+    ],
+    "en": [
+     "No method is homogeneous, vote-monotonic and quota-satisfying",
+     "No voting rule satisfies Pareto and non-dictatorship",
+     "Every divisor method is manipulable",
+     "No method can be exact"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los métodos de divisores cumplen homogeneidad, monotonía, consistencia y exactitud, pero sacrifican la cuota; Hamilton respeta la cuota y sufre paradojas.",
+    "en": "Divisor methods satisfy homogeneity, monotonicity, consistency and exactness but give up the quota; Hamilton respects the quota and suffers paradoxes."
+   },
+   "id": "fisc-general-05-q6"
+  },
+  {
+   "q": {
+    "es": "Según la regla general del apunte, ¿qué efecto tiene aumentar el espaciamiento entre divisores sucesivos?",
+    "en": "According to the notes' general rule, what does increasing the spacing between successive divisors do?"
+   },
+   "op": {
+    "es": [
+     "Aumenta la ventaja de los partidos grandes",
+     "Reduce la ventaja de los partidos grandes",
+     "Impide que los partidos chicos obtengan bancas",
+     "No cambia el reparto"
+    ],
+    "en": [
+     "It increases the advantage of large parties",
+     "It reduces the advantage of large parties",
+     "It prevents small parties from winning seats",
+     "It does not change the allocation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Subir el primer divisor perjudica a los chicos; espaciar más los divisores reduce la ventaja de los grandes.",
+    "en": "Raising the first divisor hurts small parties; spacing divisors further apart reduces the advantage of large ones."
+   },
+   "id": "fisc-general-05-q7"
+  },
+  {
+   "q": {
+    "es": "Según el apéndice, ¿cuándo gana en primera vuelta una fórmula presidencial en la Argentina?",
+    "en": "According to the appendix, when does a presidential ticket win in the first round in Argentina?"
+   },
+   "op": {
+    "es": [
+     "Con más del 50 % de los votos",
+     "Con el 40 % de los votos, sin otra condición",
+     "Con el 45 % de los votos válidos, o el 40 % y más de 10 puntos de ventaja",
+     "Con la mayoría de los distritos"
+    ],
+    "en": [
+     "With more than 50% of the votes",
+     "With 40% of the votes, with no other condition",
+     "With 45% of valid votes, or 40% and a lead of more than 10 points",
+     "By winning most districts"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si ninguna fórmula cumple alguna de las dos condiciones, hay segunda vuelta entre las dos más votadas.",
+    "en": "If no ticket meets either condition, there is a runoff between the top two."
+   },
+   "id": "fisc-general-05-q8"
+  }
+ ],
+ "palabras": 2048,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué los sistemas mayoritarios convienen más para el Ejecutivo que para el Legislativo?",
+    "en": "Why are majoritarian systems better suited to the executive than to the legislature?"
+   },
+   "a": {
+    "es": "Porque dan un mandato claro y son sencillos, pero en cargos legislativos un partido con mayoría puede quedarse con todas las bancas y quedar sobrerrepresentado (Grión, cap. 8).",
+    "en": "Because they give a clear mandate and are simple, but for legislative seats a party with a majority can take every seat and be overrepresented (Grión, ch. 8)."
+   },
+   "id": "fisc-general-05-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué son las hipótesis de Duverger?",
+    "en": "What are Duverger's hypotheses?"
+   },
+   "a": {
+    "es": "Relaciones entre sistema electoral y sistema de partidos: mayoría simple lleva al bipartidismo, doble vuelta a un multipartidismo con alianzas y representación proporcional al pluripartidismo (Duverger, 1959, en Grión, cap. 8).",
+    "en": "Links between electoral and party systems: plurality leads to two parties, runoffs to multipartism with alliances and proportional representation to many parties (Duverger, 1959, in Grión, ch. 8)."
+   },
+   "id": "fisc-general-05-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Bajo qué condiciones la regla de la mayoría no genera ciclos?",
+    "en": "Under what conditions does majority rule avoid cycles?"
+   },
+   "a": {
+    "es": "Con preferencias unimodales y una sola dimensión gana la opción del votante mediano, que es ganadora de Condorcet; con varias dimensiones los ciclos vuelven a ser muy probables (Black, 1958, en Grión, cap. 8).",
+    "en": "With single-peaked preferences and a single dimension the median voter's option wins and is a Condorcet winner; with several dimensions cycles become very likely again (Black, 1958, in Grión, ch. 8)."
+   },
+   "id": "fisc-general-05-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede un estado que crece perder bancas con el método de Hamilton?",
+    "en": "How can a growing state lose seats under Hamilton's method?"
+   },
+   "a": {
+    "es": "Porque las bancas sobrantes se asignan por la parte decimal de la cuota, y un cambio de población puede reordenar esos restos; en el ejemplo de Grión, A crece y baja de 66 a 65 bancas mientras C, que pierde población, sube a 11 (cap. 9).",
+    "en": "Because leftover seats go by the decimal part of the quota, and a population change can reshuffle those remainders; in Grión's example A grows and drops from 66 to 65 seats while C, which loses population, rises to 11 (ch. 9)."
+   },
+   "id": "fisc-general-05-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué propiedades no pueden cumplirse a la vez en un método de reparto?",
+    "en": "Which properties cannot all hold in an apportionment method?"
+   },
+   "a": {
+    "es": "Homogeneidad, monotonía respecto de los votos y verificación de la cuota; los métodos de divisores cumplen las primeras y sacrifican la cuota (Balinski y Young, 1982, en Grión, cap. 9).",
+    "en": "Homogeneity, vote monotonicity and quota satisfaction; divisor methods meet the first two and give up the quota (Balinski and Young, 1982, in Grión, ch. 9)."
+   },
+   "id": "fisc-general-05-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo reparte D'Hondt 7 bancas entre listas de 50, 30 y 20 votos?",
+    "en": "How does D'Hondt allocate 7 seats among lists with 50, 30 and 20 votes?"
+   },
+   "a": {
+    "es": "Divide cada total por 1, 2, 3… y asigna las bancas a los mayores cocientes: 4 para A, 2 para B y 1 para C, contra cuotas exactas de 3,5, 2,1 y 1,4 (Grión, cap. 9).",
+    "en": "It divides each total by 1, 2, 3… and assigns seats to the largest quotients: 4 to A, 2 to B and 1 to C, against exact quotas of 3.5, 2.1 and 1.4 (Grión, ch. 9)."
+   },
+   "id": "fisc-general-05-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cuál es la ventaja y el costo del método D'Hondt?",
+    "en": "What are the advantage and the cost of the D'Hondt method?"
+   },
+   "a": {
+    "es": "Evita la fragmentación y da estabilidad, a costa de privilegiar a los partidos grandes sobre los chicos (Grión, cap. 9).",
+    "en": "It avoids fragmentation and gives stability, at the cost of favouring large parties over small ones (Grión, ch. 9)."
+   },
+   "id": "fisc-general-05-t7"
+  }
+ ]
+}

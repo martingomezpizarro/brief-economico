@@ -1,0 +1,435 @@
+{
+ "id": "fisc-general-06",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Votos no es poder: los índices de Shapley-Shubik y Banzhaf",
+ "bajada": "El capítulo 10 de los Apuntes de Grión: por qué en un sistema de votación ponderado el reparto del poder difiere del reparto de votos, los casos del Mercado Común Europeo y del FMI, y cómo se mide el poder con los índices de Shapley-Shubik y de Banzhaf.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), cap. 10: «Reparto de votos versus poder»",
+ "intro": "Los capítulos anteriores de Grión terminaban con un reparto de bancas: cuántos representantes le tocan a cada partido o a cada provincia. El capítulo 10 da un paso más y pregunta qué se puede hacer con esas bancas. La noción de poder tiene muchos aspectos; el que interesa aquí es el poder asociado a un sistema de votación en el que cada participante vota SÍ o NO a una propuesta. La tesis del capítulo es simple y contraintuitiva: en muchas situaciones el reparto del poder es distinto del reparto de votos. Un miembro puede tener votos y ningún poder. Para mostrarlo, el apunte usa el Mercado Común Europeo y el FMI, y luego presenta las dos medidas clásicas, los índices de Shapley-Shubik y de Banzhaf, aplicadas a un ejemplo de tres partidos.",
+ "secciones": [
+  {
+   "t": "Sistemas de votación ponderados",
+   "eq": [
+    "[\\,q : w(v_1), w(v_2), \\dots, w(v_n)\\,],\\qquad C \\text{ gana} \\iff \\sum_{v_j \\in C} w(v_j) \\ge q"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(v_1, \\dots, v_n\\): los \\(n\\) votantes (países, partidos o bloques).",
+      "en": "\\(v_1, \\dots, v_n\\): the \\(n\\) voters (countries, parties or blocs)."
+     },
+     {
+      "es": "\\(w(v_j)\\): número de votos, o peso, asignado al votante \\(v_j\\).",
+      "en": "\\(w(v_j)\\): number of votes, or weight, assigned to voter \\(v_j\\)."
+     },
+     {
+      "es": "\\(q\\): cuota, votos necesarios para aprobar una propuesta; debe superar la mitad del total de votos.",
+      "en": "\\(q\\): quota, the votes needed to pass a proposal; it must exceed half the total votes."
+     },
+     {
+      "es": "\\(C\\): una coalición, cualquier subconjunto de votantes; \\(\\sum\\): suma de los pesos de sus miembros.",
+      "en": "\\(C\\): a coalition, any subset of voters; \\(\\sum\\): sum of its members' weights."
+     },
+     {
+      "es": "Lectura propia: la condición para que una coalición gane la escribimos nosotros; el apunte define la cuota en palabras y, en el ejemplo, trata como ganadora a la coalición que alcanza el número de votos requerido.",
+      "en": "Own reading: the winning condition is our notation; the notes define the quota in words and, in the example, treat as winning a coalition that reaches the required number of votes."
+     }
+    ]
+   ],
+   "p": [
+    "En un sistema de votación ponderado los participantes pueden tener distinto número de votos. Grión lo describe con la notación entre corchetes: primero la cuota, el número de votos que hace falta para aprobar una propuesta, y después el peso de cada votante. La cuota debe ser siempre superior a la mitad del total, para que dos coaliciones disjuntas no puedan ganar a la vez.",
+    "El poder de un participante se mide por su capacidad para influir en las decisiones, no por sus votos. Los índices de poder son medidas «a priori»: no miran cómo votó cada uno en la práctica, sino con qué frecuencia su presencia es necesaria para que una coalición gane. Lectura propia: por eso son útiles para evaluar un diseño institucional antes de usarlo, por ejemplo al decidir cuántos votos darle a cada provincia o país."
+   ]
+  },
+  {
+   "t": "El Mercado Común Europeo",
+   "p": [
+    "El Mercado Común, embrión de la Unión Europea, tenía seis miembros: Alemania, Francia, Italia, Bélgica, Holanda y Luxemburgo. Muchas decisiones se tomaban por mayoría cualificada con la fórmula [12; 4, 4, 4, 2, 2, 1]: los tres grandes tenían 4 votos cada uno (23,5 % del total de 17), Bélgica y Holanda 2 (11,8 %) y Luxemburgo 1 (5,9 %). El apunte pone al lado la población de 2003: Alemania tenía 82,4 millones (35,3 %), Francia 64,5 (27,6 %), Italia 59,4 (25,4 %), Bélgica 10,4 (4,5 %), Holanda 16,3 (7,0 %) y Luxemburgo 0,5 (0,2 %).",
+    "Las decisiones podían tomarlas los tres grandes juntos, o dos grandes con los dos medianos. Grión saca dos conclusiones. Primera, Luxemburgo, con 1 voto, no tenía ningún poder. Lectura propia: la razón es aritmética; como los demás pesos son pares, una coalición sin Luxemburgo nunca suma 11, el único caso en que su voto la llevaría a 12. Segunda, el poder de los países medianos no estaba en la relación 1:2 con los grandes que indicaban sus votos.",
+    "Lectura propia: aplicando el índice de Banzhaf que el capítulo define más adelante, cada grande es pivote en 10 coaliciones ganadoras, cada mediano en 6 y Luxemburgo en ninguna. Los medianos tienen así 6 décimos del poder de un grande, no la mitad, y Luxemburgo es lo que la literatura llama un votante «nulo»: tiene votos pero nunca cambia un resultado."
+   ]
+  },
+  {
+   "t": "El FMI: cuotas y votos",
+   "p": [
+    "En el FMI a cada país se le asigna una cuota basada en su tamaño relativo en la economía mundial. La cuota determina tres cosas a la vez: los compromisos financieros del país con el Fondo, su acceso al financiamiento y su número de votos. El 28 de abril de 2008 la Junta de Gobernadores aprobó por amplio margen una reforma a gran escala de las cuotas y la representación.",
+    "En esa modificación, según el apunte, Brasil (cuota de 1,71 %) y México (1,46 %) ganaron participación, mientras que en América Latina solo la Argentina (0,86 %) y Venezuela la perdieron. Estados Unidos tiene una cuota de 17,06 %. Lectura propia: el caso conecta con el resto del capítulo porque el poder de cada país no depende solo de su porcentaje de votos sino también de la cuota que exija cada tipo de decisión; con mayorías muy exigentes, un socio grande puede bloquear solo aunque esté lejos de la mitad de los votos."
+   ]
+  },
+  {
+   "t": "El índice de Shapley-Shubik",
+   "eq": [
+    "ISS(X) = \\frac{P(X)}{n!}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(ISS(X)\\): índice de Shapley-Shubik del votante \\(X\\), entre 0 y 1; los índices de todos los votantes suman 1.",
+      "en": "\\(ISS(X)\\): Shapley–Shubik index of voter \\(X\\), between 0 and 1; the indices of all voters add up to 1."
+     },
+     {
+      "es": "\\(P(X)\\): número de permutaciones (órdenes de llegada a la coalición) en las que \\(X\\) es pivote.",
+      "en": "\\(P(X)\\): number of permutations (orders of joining the coalition) in which \\(X\\) is pivotal."
+     },
+     {
+      "es": "\\(n!\\): número total de permutaciones de los \\(n\\) votantes (\\(n! = 1 \\cdot 2 \\cdots n\\)).",
+      "en": "\\(n!\\): total number of permutations of the \\(n\\) voters (\\(n! = 1 \\cdot 2 \\cdots n\\))."
+     }
+    ]
+   ],
+   "p": [
+    "Shapley y Shubik (1954) imaginan que las coaliciones se forman en orden, sumando un votante por vez. En cada orden posible hay un votante cuyos votos, sumados a los de los anteriores, convierten a la coalición en ganadora cuando antes no lo era: ese es el pivote. El índice de un votante es la proporción de órdenes en los que es pivote.",
+    "El ejemplo de Grión: tres partidos se reparten 12 bancas, A tiene 6, B 3 y C 3, y para ganar hacen falta 7 votos. Hay 3! = 6 órdenes posibles. En ABC el pivote es B (A suma 6, AB suma 9); en ACB es C; en BAC, BCA, CAB y CBA el pivote es A, porque B y C juntos suman solo 6 y hace falta A para llegar a 7. A es pivote en 4 órdenes y B y C en 1 cada uno, de modo que el índice es 4/6 = 66,6 % para A y 1/6 = 16,7 % para B y para C.",
+    "Con la mitad exacta de las bancas, A tiene dos tercios del poder. B y C, que juntos igualan a A en bancas, no pueden ganar sin él."
+   ]
+  },
+  {
+   "t": "El índice de Banzhaf",
+   "eq": [
+    "IB(X) = \\frac{\\eta(X)}{\\sum_{Y} \\eta(Y)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(IB(X)\\): índice de Banzhaf del votante \\(X\\), entre 0 y 1.",
+      "en": "\\(IB(X)\\): Banzhaf index of voter \\(X\\), between 0 and 1."
+     },
+     {
+      "es": "\\(\\eta(X)\\): número de coaliciones ganadoras a las que pertenece \\(X\\) y que pasarían a perder si \\(X\\) desertara (aquellas en las que \\(X\\) es pivote).",
+      "en": "\\(\\eta(X)\\): number of winning coalitions that \\(X\\) belongs to and that would lose if \\(X\\) defected (those in which \\(X\\) is pivotal)."
+     },
+     {
+      "es": "\\(\\sum_{Y} \\eta(Y)\\): suma de esos casos para todos los votantes \\(Y\\); normaliza el índice para que sume 1.",
+      "en": "\\(\\sum_{Y} \\eta(Y)\\): sum of those cases over all voters \\(Y\\); it normalises the index so that it adds up to 1."
+     },
+     {
+      "es": "Lectura propia: la notación \\(\\eta\\) es nuestra; el apunte define el índice en palabras y lo calcula como cociente en el ejemplo.",
+      "en": "Own reading: the \\(\\eta\\) notation is ours; the notes define the index in words and compute it as a ratio in the example."
+     }
+    ]
+   ],
+   "p": [
+    "Banzhaf (1965) cuenta coaliciones sin importar el orden en que se forman. En cualquier coalición ganadora, el votante capaz de causar su derrota al desertar es un pivote, y el índice de un votante es el número de coaliciones ganadoras en las que es pivote, relativo al total de casos de pivote de todos los votantes.",
+    "En el mismo ejemplo hay 2³ − 1 = 7 coaliciones posibles: A, B, C, AB, AC, CB y ABC. Ganan tres: AB, AC y ABC. A es pivote en las tres, porque si se va ninguna llega a 7; B solo en AB y C solo en AC. Son 5 casos en total, y el índice queda IB(A) = 3/5 = 60,0 %, IB(B) = 1/5 = 20,0 % e IB(C) = 1/5 = 20,0 %.",
+    "Lectura propia: los dos índices coinciden en el orden (A tiene más poder que su 50 % de bancas, B y C menos que su 25 %) pero no en la magnitud, porque Shapley-Shubik pondera las coaliciones por los órdenes en que pueden formarse y Banzhaf cuenta cada coalición una vez. En el ejemplo, ABC es una coalición ganadora en la que solo A es pivote; en Shapley-Shubik aporta varios órdenes a A, en Banzhaf solo un caso."
+   ]
+  },
+  {
+   "t": "Qué enseña el capítulo",
+   "p": [
+    "Lectura propia: la lección para finanzas públicas es institucional. Cuando se diseña un consejo federal, una legislatura con bloques o un directorio de un organismo multilateral, repartir votos en proporción a la población, al aporte o al tamaño económico no garantiza repartir el poder en esa proporción. Lo que importa es la combinación de pesos y cuota: un mismo vector de votos puede dar poder nulo a un miembro con una cuota y poder positivo con otra.",
+    "También conecta con los capítulos anteriores. Grión había mostrado que repartir bancas proporcionalmente es difícil (Hamilton y sus paradojas, Balinski y Young) y que agregar preferencias tiene límites (Condorcet, Arrow). El capítulo 10 suma una tercera dificultad: aun con un reparto de bancas perfecto, el poder de decisión que resulta puede ser muy desproporcionado."
+   ]
+  }
+ ],
+ "claves": [
+  "En un sistema de votación ponderado el reparto del poder puede diferir mucho del reparto de votos.",
+  "Un sistema se describe por la cuota y los pesos, [q: w(v1), …, w(vn)]; la cuota debe superar la mitad de los votos.",
+  "En el Mercado Común Europeo, con [12; 4, 4, 4, 2, 2, 1], Luxemburgo no tenía ningún poder y los medianos no tenían la mitad del poder de los grandes.",
+  "En el FMI la cuota de cada país fija a la vez sus compromisos, su acceso al financiamiento y sus votos.",
+  "Shapley-Shubik: proporción de los órdenes de formación de coaliciones en los que un votante es pivote.",
+  "Banzhaf: proporción de los casos de pivote en coaliciones ganadoras, sin importar el orden.",
+  "Con 6 de 12 bancas y cuota de 7, A tiene 66,6 % del poder según Shapley-Shubik y 60 % según Banzhaf."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuál es la tesis central del capítulo 10 de Grión?",
+    "en": "What is the central thesis of chapter 10 of Grión's notes?"
+   },
+   "op": {
+    "es": [
+     "Que el poder siempre es proporcional a los votos",
+     "Que en muchas situaciones el reparto del poder difiere del reparto de votos",
+     "Que la mayoría simple es la única regla justa",
+     "Que los votantes chicos tienen más poder que los grandes"
+    ],
+    "en": [
+     "That power is always proportional to votes",
+     "That in many situations the distribution of power differs from the distribution of votes",
+     "That simple majority is the only fair rule",
+     "That small voters have more power than large ones"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El capítulo lo muestra con el Mercado Común Europeo y con el ejemplo de tres partidos.",
+    "en": "The chapter shows it with the European Common Market and the three-party example."
+   },
+   "id": "fisc-general-06-q1"
+  },
+  {
+   "q": {
+    "es": "En el Mercado Común Europeo con la fórmula [12; 4, 4, 4, 2, 2, 1], ¿qué poder tenía Luxemburgo?",
+    "en": "In the European Common Market with the formula [12; 4, 4, 4, 2, 2, 1], how much power did Luxembourg have?"
+   },
+   "op": {
+    "es": [
+     "El mismo que Bélgica",
+     "La mitad que Holanda",
+     "Ninguno",
+     "Un sexto del total"
+    ],
+    "en": [
+     "The same as Belgium",
+     "Half as much as the Netherlands",
+     "None",
+     "One sixth of the total"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Su único voto nunca hacía ganadora a una coalición que sin él perdía.",
+    "en": "Its single vote never turned a losing coalition into a winning one."
+   },
+   "id": "fisc-general-06-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué condición debe cumplir la cuota en un sistema de votación ponderado?",
+    "en": "What condition must the quota satisfy in a weighted voting system?"
+   },
+   "op": {
+    "es": [
+     "Ser igual al peso del votante más grande",
+     "Ser menor que la suma de los dos votantes más chicos",
+     "Ser exactamente dos tercios del total",
+     "Ser superior a la mitad del total de votos"
+    ],
+    "en": [
+     "Equal the largest voter's weight",
+     "Be smaller than the sum of the two smallest voters",
+     "Be exactly two thirds of the total",
+     "Exceed half of the total votes"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Así se evita que dos coaliciones disjuntas puedan ganar a la vez.",
+    "en": "This prevents two disjoint coalitions from winning at the same time."
+   },
+   "id": "fisc-general-06-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué determina la cuota de un país en el FMI según el apunte?",
+    "en": "According to the notes, what does a country's IMF quota determine?"
+   },
+   "op": {
+    "es": [
+     "Solo su número de votos",
+     "Solo su acceso al financiamiento",
+     "Sus compromisos financieros, su acceso al financiamiento y su número de votos",
+     "Su tipo de cambio de referencia"
+    ],
+    "en": [
+     "Only its number of votes",
+     "Only its access to financing",
+     "Its financial commitments, its access to financing and its number of votes",
+     "Its reference exchange rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La cuota se basa en el tamaño relativo del país en la economía mundial y fija las tres cosas a la vez.",
+    "en": "The quota is based on the country's relative size in the world economy and sets all three at once."
+   },
+   "id": "fisc-general-06-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué es un votante pivote en el índice de Shapley-Shubik?",
+    "en": "What is a pivotal voter in the Shapley–Shubik index?"
+   },
+   "op": {
+    "es": [
+     "El que convierte en ganadora a la coalición al sumarse en un orden dado",
+     "El que tiene más votos",
+     "El que vota último",
+     "El que puede vetar cualquier propuesta"
+    ],
+    "en": [
+     "The one who makes the coalition winning when joining in a given order",
+     "The one with the most votes",
+     "The one who votes last",
+     "The one who can veto any proposal"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Se recorren todos los órdenes posibles de los votantes y se cuenta en cuántos cada uno es el que completa la mayoría.",
+    "en": "All possible orderings of voters are examined, counting in how many each one completes the majority."
+   },
+   "id": "fisc-general-06-q5"
+  },
+  {
+   "q": {
+    "es": "Con A = 6, B = 3, C = 3 bancas y cuota de 7, ¿cuál es el índice de Shapley-Shubik de A?",
+    "en": "With A = 6, B = 3, C = 3 seats and a quota of 7, what is A's Shapley–Shubik index?"
+   },
+   "op": {
+    "es": [
+     "50 %",
+     "60 %",
+     "4/6, es decir 66,6 %",
+     "1/3"
+    ],
+    "en": [
+     "50%",
+     "60%",
+     "4/6, that is 66.6%",
+     "1/3"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "A es pivote en 4 de los 6 órdenes posibles; B y C, en uno cada uno.",
+    "en": "A is pivotal in 4 of the 6 possible orderings; B and C in one each."
+   },
+   "id": "fisc-general-06-q6"
+  },
+  {
+   "q": {
+    "es": "¿En qué se diferencia el índice de Banzhaf del de Shapley-Shubik?",
+    "en": "How does the Banzhaf index differ from the Shapley–Shubik index?"
+   },
+   "op": {
+    "es": [
+     "Banzhaf solo se aplica con dos votantes",
+     "Banzhaf cuenta coaliciones sin tener en cuenta el orden de los votantes",
+     "Banzhaf usa la población en lugar de los votos",
+     "Banzhaf no admite cuotas mayores que la mitad"
+    ],
+    "en": [
+     "Banzhaf only applies with two voters",
+     "Banzhaf counts coalitions regardless of the order of voters",
+     "Banzhaf uses population instead of votes",
+     "Banzhaf does not allow quotas above one half"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Banzhaf cuenta las coaliciones ganadoras en las que un votante es pivote; Shapley-Shubik, los órdenes en los que lo es.",
+    "en": "Banzhaf counts the winning coalitions in which a voter is pivotal; Shapley–Shubik counts the orderings in which it is."
+   },
+   "id": "fisc-general-06-q7"
+  },
+  {
+   "q": {
+    "es": "En el mismo ejemplo de tres partidos, ¿cuál es el índice de Banzhaf de B?",
+    "en": "In the same three-party example, what is B's Banzhaf index?"
+   },
+   "op": {
+    "es": [
+     "20 %",
+     "25 %",
+     "16,7 %",
+     "0 %"
+    ],
+    "en": [
+     "20%",
+     "25%",
+     "16.7%",
+     "0%"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "De las tres coaliciones ganadoras (AB, AC, ABC), B es pivote solo en AB: 1 caso de 5.",
+    "en": "Of the three winning coalitions (AB, AC, ABC), B is pivotal only in AB: 1 case out of 5."
+   },
+   "id": "fisc-general-06-q8"
+  }
+ ],
+ "palabras": 1211,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el número de votos de un miembro no mide su poder en una votación ponderada?",
+    "en": "Why does a member's number of votes not measure its power in a weighted vote?"
+   },
+   "a": {
+    "es": "Porque el poder es la capacidad de influir en las decisiones, y depende de la combinación de pesos y cuota: un miembro puede tener votos y ningún poder (Grión, cap. 10).",
+    "en": "Because power is the ability to influence decisions, and it depends on the combination of weights and quota: a member can hold votes and no power at all (Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t1"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué poder tenía Luxemburgo en el Mercado Común Europeo?",
+    "en": "How much power did Luxembourg have in the European Common Market?"
+   },
+   "a": {
+    "es": "Ninguno: con la fórmula [12; 4, 4, 4, 2, 2, 1] las decisiones las tomaban los tres grandes o dos grandes con los dos medianos, y su voto nunca era decisivo (Grión, cap. 10).",
+    "en": "None: under the formula [12; 4, 4, 4, 2, 2, 1] decisions were made by the three large members or two large plus the two medium ones, and its vote was never decisive (Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué mide un índice de poder «a priori»?",
+    "en": "What does an a priori power index measure?"
+   },
+   "a": {
+    "es": "La capacidad de cada votante para participar en coaliciones ganadoras, calculada a partir de las reglas y no de cómo se votó; los más conocidos son los de Banzhaf y Shapley-Shubik (Grión, cap. 10).",
+    "en": "Each voter's ability to take part in winning coalitions, computed from the rules rather than from actual votes; the best known are the Banzhaf and Shapley–Shubik indices (Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se calcula el índice de Shapley-Shubik?",
+    "en": "How is the Shapley–Shubik index computed?"
+   },
+   "a": {
+    "es": "Se consideran todas las permutaciones de los votantes, se identifica en cada una al pivote que vuelve ganadora a la coalición y se divide el número de veces que un votante es pivote por n! (Shapley y Shubik, 1954, en Grión, cap. 10).",
+    "en": "Consider all permutations of voters, identify in each the pivot who makes the coalition winning, and divide the number of times a voter is pivotal by n! (Shapley and Shubik, 1954, in Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se calcula el índice de Banzhaf?",
+    "en": "How is the Banzhaf index computed?"
+   },
+   "a": {
+    "es": "Se cuentan, sin importar el orden, las coaliciones ganadoras en las que un votante es pivote porque su deserción las haría perder, y se normaliza por el total de casos de pivote (Banzhaf, 1965, en Grión, cap. 10).",
+    "en": "Count, regardless of order, the winning coalitions in which a voter is pivotal because its defection would make them lose, and normalise by the total number of pivot cases (Banzhaf, 1965, in Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto poder tiene un partido con la mitad de las bancas si se necesita mayoría simple?",
+    "en": "How much power does a party with half the seats have if a simple majority is required?"
+   },
+   "a": {
+    "es": "En el ejemplo de Grión, con 6 de 12 bancas y cuota de 7, A tiene 66,6 % del poder según Shapley-Shubik y 60 % según Banzhaf, porque B y C no pueden ganar sin él (cap. 10).",
+    "en": "In Grión's example, with 6 of 12 seats and a quota of 7, A has 66.6% of power by Shapley–Shubik and 60% by Banzhaf, because B and C cannot win without it (ch. 10)."
+   },
+   "id": "fisc-general-06-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué determina la cuota de un país en el FMI?",
+    "en": "What does a country's quota in the IMF determine?"
+   },
+   "a": {
+    "es": "Sus compromisos financieros con el Fondo, su acceso al financiamiento y su número de votos; en la reforma aprobada en abril de 2008 Brasil y México ganaron participación y la Argentina la perdió (Grión, cap. 10).",
+    "en": "Its financial commitments to the Fund, its access to financing and its number of votes; in the reform approved in April 2008 Brazil and Mexico gained share and Argentina lost it (Grión, ch. 10)."
+   },
+   "id": "fisc-general-06-t7"
+  }
+ ]
+}
