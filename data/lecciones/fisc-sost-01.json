@@ -1,0 +1,586 @@
+{
+ "id": "fisc-sost-01",
+ "cat": "fisc-sost",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Solvencia y sustentabilidad fiscal: la aritmética de la deuda pública",
+ "bajada": "El apunte de Capello: la restricción presupuestaria intertemporal, la diferencia entre solvencia, liquidez y sustentabilidad, el déficit primario que estabiliza la razón deuda-PIB, la intolerancia a la deuda, y cómo cambia la cuenta cuando se protege la inversión pública, se mira el patrimonio neto del Estado o la deuda está indexada o en dólares.",
+ "fuentes": [
+  1343
+ ],
+ "cita": "Capello, «Solvencia y sustentabilidad fiscal» (apunte de Política Fiscal, FCE-UNC)",
+ "intro": "La tendencia al déficit y al endeudamiento, que en la Argentina fue un rasgo persistente durante más de siete décadas, vuelve central una pregunta: ¿cuándo puede un gobierno sostener su deuda? El apunte de Capello separa tres conceptos que conviene no mezclar, solvencia, liquidez y sustentabilidad, y arma un modelo simple de la razón deuda-PIB del que sale el déficit primario máximo compatible con estabilizarla. Después lo amplía: con un objetivo de inversión pública, con el patrimonio neto del Estado, con deuda indexada y con deuda en moneda extranjera. El foco está en los gobiernos subnacionales, que no pueden emitir moneda, y en una idea que recorre el texto: estabilizar la deuda no alcanza si se logra destruyendo la inversión pública o asfixiando al sector privado con impuestos.",
+ "secciones": [
+  {
+   "t": "Solvencia y liquidez",
+   "eq": [
+    "\\sum_{i=0}^{\\infty}\\frac{E_{t+i}}{\\prod_{j=1}^{i}(1+r_{t+j})}\\;\\le\\;\\sum_{i=0}^{\\infty}\\frac{Y_{t+i}}{\\prod_{j=1}^{i}(1+r_{t+j})}-(1+r_t)\\,D_{t-1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E_{t+i}\\): erogaciones (gasto primario) del gobierno en el período \\(t+i\\), en pesos.",
+      "en": "\\(E_{t+i}\\): government (primary) spending in period \\(t+i\\), in pesos."
+     },
+     {
+      "es": "\\(Y_{t+i}\\): ingresos estatales en el período \\(t+i\\) (aquí \\(Y\\) no es el PIB).",
+      "en": "\\(Y_{t+i}\\): government revenue in period \\(t+i\\) (here \\(Y\\) is not GDP)."
+     },
+     {
+      "es": "\\(D_{t-1}\\): deuda pública al cierre del período anterior; \\((1+r_t)D_{t-1}\\): esa deuda inicial con sus intereses.",
+      "en": "\\(D_{t-1}\\): public debt at the end of the previous period; \\((1+r_t)D_{t-1}\\): that initial debt plus interest."
+     },
+     {
+      "es": "\\(r_{t+j}\\): tasa de interés de la deuda en el período \\(t+j\\); \\(\\prod_{j=1}^{i}(1+r_{t+j})\\): factor que descuenta un monto de \\(i\\) períodos adelante (lectura propia: con \\(i=0\\) el producto vale 1).",
+      "en": "\\(r_{t+j}\\): interest rate on debt in period \\(t+j\\); \\(\\prod_{j=1}^{i}(1+r_{t+j})\\): factor that discounts an amount \\(i\\) periods ahead (own reading: for \\(i=0\\) the product equals 1)."
+     },
+     {
+      "es": "\\(t\\): período actual; \\(i\\): períodos hacia adelante; \\(\\sum_{i=0}^{\\infty}\\): suma de todos los períodos futuros; \\(\\le\\): el valor actual del gasto no puede superar al de los ingresos netos de la deuda inicial.",
+      "en": "\\(t\\): current period; \\(i\\): periods ahead; \\(\\sum_{i=0}^{\\infty}\\): sum over all future periods; \\(\\le\\): the present value of spending cannot exceed that of revenue net of initial debt."
+     }
+    ]
+   ],
+   "p": [
+    "Un gobierno es solvente, dice Capello, si satisface su restricción presupuestaria intertemporal: el valor actual neto de su gasto primario no supera el de sus ingresos, teniendo en cuenta la deuda o la riqueza con la que arranca. Es una definición general y de largo plazo, con dos debilidades: no dice nada del corto plazo, y admite que grandes desequilibrios iniciales se compensen con superávits futuros de dudosa viabilidad política y social.",
+    "El corto plazo lo cubre la liquidez: un gobierno es líquido si tiene fondos suficientes para sus próximos vencimientos. Las dos condiciones son independientes, y un gobierno solvente a largo plazo puede caer en impagos si enfrenta restricciones de liquidez. Lectura propia: es la diferencia entre un problema de valor presente y uno de caja."
+   ]
+  },
+  {
+   "t": "Sustentabilidad: muchas definiciones, un mismo núcleo",
+   "p": [
+    "La sustentabilidad se refiere a la posibilidad de que un gobierno, con sus patrones actuales de gasto y recaudación, alcance cierta razón deuda-PIB en un tiempo finito. El apunte repasa muchas definiciones. Blanchard (1990) pide que la razón converja a su nivel inicial; Albi et al. (2017), que la deuda crezca a largo plazo a lo sumo al ritmo de la economía, porque si no reduce el bienestar de las generaciones futuras y alimenta incertidumbre y expectativas inflacionarias; Cottarelli y Escolano (2014), que el plan se pueda ejecutar sin perder la capacidad de renovar la deuda ni recurrir al default o la hiperinflación. El FMI excluye los casos que requieren reestructurar, los juegos de Ponzi y el deudor que vive por encima de sus medios esperando una gran corrección. Otras definiciones miran el patrimonio neto o suman objetivos sobre ingresos y gastos.",
+    "Para ordenar, el FMI usa cuatro conceptos: solvencia, liquidez, sostenibilidad (cumplir la restricción de valor actual sin una gran corrección del balance, a los costos de financiamiento vigentes) y vulnerabilidad (el riesgo de que se violen la solvencia o la liquidez y el deudor entre en crisis). Lectura propia: la sostenibilidad le agrega a la solvencia una condición de realismo; no basta con que exista algún sendero de superávits que pague la deuda, tiene que ser uno que no exija un ajuste enorme."
+   ]
+  },
+  {
+   "t": "La dinámica de la deuda y el déficit primario crítico",
+   "eq": [
+    "D_t=(1+r)\\,D_{t-1}+G_t-I_t=(1+r)\\,D_{t-1}-SP_t",
+    "\\Delta d_t=\\frac{r-\\theta}{1+\\theta}\\,d_{t-1}-sp_t",
+    "dp^{*}=\\frac{\\theta-r}{1+\\theta}\\,d_{t-1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(D_t\\): stock de deuda al final del período \\(t\\); \\(D_{t-1}\\): el del período anterior.",
+      "en": "\\(D_t\\): debt stock at the end of period \\(t\\); \\(D_{t-1}\\): that of the previous period."
+     },
+     {
+      "es": "\\(r\\): tasa de interés de la deuda (el apunte la llama nominal).",
+      "en": "\\(r\\): interest rate on debt (the notes call it nominal)."
+     },
+     {
+      "es": "\\(G_t\\): gasto primario (sin intereses); \\(I_t\\): recaudación impositiva.",
+      "en": "\\(G_t\\): primary spending (excluding interest); \\(I_t\\): tax revenue."
+     },
+     {
+      "es": "\\(SP_t = I_t - G_t\\): superávit primario del gobierno.",
+      "en": "\\(SP_t = I_t - G_t\\): the government's primary surplus."
+     }
+    ],
+    [
+     {
+      "es": "\\(d_t\\), \\(d_{t-1}\\): deuda como proporción del PIB en \\(t\\) y en \\(t-1\\); \\(\\Delta d_t = d_t - d_{t-1}\\): su variación.",
+      "en": "\\(d_t\\), \\(d_{t-1}\\): debt as a share of GDP in \\(t\\) and \\(t-1\\); \\(\\Delta d_t = d_t - d_{t-1}\\): its change."
+     },
+     {
+      "es": "\\(r\\): tasa de interés de la deuda; \\(\\theta\\): tasa de crecimiento del PIB.",
+      "en": "\\(r\\): interest rate on debt; \\(\\theta\\): GDP growth rate."
+     },
+     {
+      "es": "\\(\\frac{r-\\theta}{1+\\theta}\\): diferencial entre tasa y crecimiento, que hace crecer la razón heredada si la tasa supera al crecimiento.",
+      "en": "\\(\\frac{r-\\theta}{1+\\theta}\\): interest-growth differential, which raises the inherited ratio when the rate exceeds growth."
+     },
+     {
+      "es": "\\(sp_t\\): superávit primario como proporción del PIB.",
+      "en": "\\(sp_t\\): primary surplus as a share of GDP."
+     }
+    ],
+    [
+     {
+      "es": "\\(dp^{*}\\): déficit primario, en proporción del PIB, que deja constante la razón deuda-PIB (\\(dp_t = -sp_t\\)); si el déficit efectivo lo supera de modo permanente, la deuda es insostenible.",
+      "en": "\\(dp^{*}\\): primary deficit, as a share of GDP, that keeps the debt ratio constant (\\(dp_t = -sp_t\\)); if the actual deficit permanently exceeds it, debt is unsustainable."
+     },
+     {
+      "es": "\\(\\theta\\), \\(r\\), \\(d_{t-1}\\): crecimiento del PIB, tasa de interés y deuda heredada en proporción del PIB, como antes.",
+      "en": "\\(\\theta\\), \\(r\\), \\(d_{t-1}\\): GDP growth, interest rate and inherited debt-to-GDP, as before."
+     }
+    ]
+   ],
+   "p": [
+    "Para un gobierno que no puede emitir moneda, la deuda de cada período es la del anterior con sus intereses, más el gasto primario, menos la recaudación, es decir, menos el superávit primario. Al dividir por el PIB aparecen dos fuerzas: el diferencial entre tasa de interés y crecimiento, aplicado a la deuda heredada, empuja la razón hacia arriba si la tasa supera al crecimiento; el superávit primario la empuja hacia abajo. Si la razón sube de modo permanente, la deuda es insostenible.",
+    "¿Cuándo un déficit es demasiado alto? Igualando a cero la variación sale el déficit primario que estabiliza la razón; superarlo de modo permanente vuelve insostenible la deuda. Si el PIB crece más rápido que la tasa de interés, hay margen para un déficit primario permanente, seguramente chico; si crece menos, hace falta superávit primario, tanto mayor cuanto más deuda se herede. Lectura propia: el apunte imprime «1 + i» en el primer paso, una errata, y llama nominal a r sin aclarar cómo se mide θ; las dos tasas tienen que medirse igual."
+   ]
+  },
+  {
+   "t": "Los límites de la regla tradicional",
+   "p": [
+    "La visión tradicional prescribe que la razón deuda-PIB no crezca. Capello la matiza. Quien arranca con poca deuda podría endeudarse para crecer, sobre todo con inversión pública, hasta converger a un nivel de largo plazo; quien está muy endeudado necesita bajarla, no solo estabilizarla. Además, no hay un límite fácil de prescribir: hay países con deuda superior al PIB que conservan el crédito y otros con mucho menos que caen en impago. Estos sufren la intolerancia a la deuda de Reinhart et al. (2003), fruto de incumplimientos repetidos e inseguridad jurídica. El criterio razonable es comparar con el propio historial, sobre todo con los episodios de default, y con jurisdicciones similares.",
+    "La regla tampoco encaja con el ciclo: por estabilización y eficiencia puede convenir más déficit en la recesión, compensado en la expansión, manteniendo la solvencia a largo plazo. Sin acceso fluido al crédito, la herramienta es un fondo anticíclico, sobre todo para quien depende de un producto primario de precio volátil. El ejemplo es la regla chilena de superávit estructural, que exige equilibrio o superávit a largo plazo pero deja margen en recesiones o caídas de los precios de exportación."
+   ]
+  },
+  {
+   "t": "Sustentabilidad con inversión pública",
+   "eq": [
+    "D_t=(1+r)\\,D_{t-1}+G^{k}_t-A_t,\\qquad A_t=I^{c}_t-G^{CP}_t",
+    "a^{*}_t=\\frac{r-\\theta}{1+\\theta}\\,d_{t-1}+g^{k}_t",
+    "a_t=\\frac{r-\\theta}{1+\\theta}\\,d_{t-1}+g^{k}_t+\\alpha,\\qquad -\\alpha=\\frac{d^{*}-d_t}{n}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(D_t\\), \\(D_{t-1}\\): deuda en \\(t\\) y en \\(t-1\\); \\(r\\): tasa de interés de la deuda, constante.",
+      "en": "\\(D_t\\), \\(D_{t-1}\\): debt in \\(t\\) and \\(t-1\\); \\(r\\): constant interest rate on debt."
+     },
+     {
+      "es": "\\(G^{k}_t\\): gasto de capital (inversión pública) en \\(t\\).",
+      "en": "\\(G^{k}_t\\): capital spending (public investment) in \\(t\\)."
+     },
+     {
+      "es": "\\(A_t\\): ahorro corriente primario, ingresos corrientes \\(I^{c}_t\\) menos gasto corriente primario \\(G^{CP}_t\\); se suponen nulos los ingresos de capital, por ser de magnitud baja.",
+      "en": "\\(A_t\\): primary current saving, current revenue \\(I^{c}_t\\) minus primary current spending \\(G^{CP}_t\\); capital revenue is assumed to be zero, being small."
+     }
+    ],
+    [
+     {
+      "es": "\\(a^{*}_t\\): ahorro corriente primario, en proporción del PIB (o del producto geográfico), que mantiene constante la razón deuda-PIB y a la vez financia el gasto de capital.",
+      "en": "\\(a^{*}_t\\): primary current saving, as a share of GDP (or gross geographic product), that keeps debt-to-GDP constant while financing capital spending."
+     },
+     {
+      "es": "\\(g^{k}_t\\): gasto de capital en proporción del PIB; \\(d_{t-1}\\): deuda heredada en proporción del PIB.",
+      "en": "\\(g^{k}_t\\): capital spending as a share of GDP; \\(d_{t-1}\\): inherited debt as a share of GDP."
+     },
+     {
+      "es": "\\(\\theta\\): tasa de crecimiento real del producto, constante; \\(r\\): tasa de interés de la deuda (modelo sin inflación).",
+      "en": "\\(\\theta\\): constant real output growth rate; \\(r\\): interest rate on debt (model without inflation)."
+     }
+    ],
+    [
+     {
+      "es": "\\(a_t\\): ahorro corriente primario necesario para bajar la deuda hasta su meta y sostener la inversión.",
+      "en": "\\(a_t\\): primary current saving needed to bring debt down to its target while sustaining investment."
+     },
+     {
+      "es": "\\(\\alpha\\): reducción anual de la razón deuda-PIB, igual en cada período en este ejemplo.",
+      "en": "\\(\\alpha\\): annual reduction in the debt-to-GDP ratio, equal in each period in this example."
+     },
+     {
+      "es": "\\(d^{*}\\): razón deuda-PIB crítica que no debe superarse; \\(d_t\\): razón inicial, por encima de \\(d^{*}\\); \\(n\\): cantidad de períodos fijados para llegar a la meta.",
+      "en": "\\(d^{*}\\): critical debt-to-GDP ratio not to be exceeded; \\(d_t\\): initial ratio, above \\(d^{*}\\); \\(n\\): number of periods set to reach the target."
+     },
+     {
+      "es": "\\(r\\), \\(\\theta\\), \\(d_{t-1}\\), \\(g^{k}_t\\): como en la ecuación anterior.",
+      "en": "\\(r\\), \\(\\theta\\), \\(d_{t-1}\\), \\(g^{k}_t\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "La deuda puede estabilizarse por caminos que no son sostenibles: con una presión tributaria que arruina la competitividad privada, o con un recorte del gasto de capital que deteriora la infraestructura y los servicios públicos. Por eso Capello separa el gasto corriente del de capital y define el ahorro corriente primario como ingresos corrientes menos gasto corriente primario.",
+    "El ahorro requerido para estabilizar la deuda y a la vez financiar la inversión sube con la tasa de interés y baja con el crecimiento. Si la tasa supera al crecimiento es positivo; si son iguales, coincide con el gasto de capital de largo plazo, k*; si el crecimiento supera a la tasa, puede ser negativo, cuando el término del diferencial supera a k* en valor absoluto. La conclusión central es que el ahorro corriente debe alcanzar para sostener el gasto de capital en términos del PIB. Si además la deuda arranca por encima de su nivel crítico y se fija una cantidad de períodos para llegar a él, la reducción anual se suma al ahorro requerido: cuanto más ambiciosa la meta, más ahorro."
+   ]
+  },
+  {
+   "t": "Mirar el patrimonio neto, no solo la deuda",
+   "eq": [
+    "PN_t=K_t-D_t,\\qquad K_t=(1-\\delta)\\,K_{t-1}+G^{k}_t",
+    "a^{*}_t=\\frac{\\delta+\\theta}{1+\\theta}\\,k_{t-1}-\\frac{\\theta-r}{1+\\theta}\\,d_{t-1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(PN_t\\): patrimonio neto del Estado en \\(t\\); \\(K_t\\): stock de capital público; \\(D_t\\): deuda. Se supone que no hay activos financieros.",
+      "en": "\\(PN_t\\): the state's net worth in \\(t\\); \\(K_t\\): public capital stock; \\(D_t\\): debt. No financial assets are assumed."
+     },
+     {
+      "es": "\\(\\delta\\): tasa de depreciación del capital público; \\(G^{k}_t\\): gasto de capital (inversión) en \\(t\\).",
+      "en": "\\(\\delta\\): depreciation rate of public capital; \\(G^{k}_t\\): capital spending (investment) in \\(t\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(a^{*}_t\\): ahorro corriente primario, en proporción del PIB, que mantiene constante el patrimonio neto estatal en proporción del PIB (aquí ya no estabiliza la deuda).",
+      "en": "\\(a^{*}_t\\): primary current saving, as a share of GDP, that keeps the state's net worth-to-GDP constant (here it no longer stabilises debt)."
+     },
+     {
+      "es": "\\(k_{t-1}\\): capital público heredado en proporción del PIB; \\(d_{t-1}\\): deuda heredada en proporción del PIB.",
+      "en": "\\(k_{t-1}\\): inherited public capital as a share of GDP; \\(d_{t-1}\\): inherited debt as a share of GDP."
+     },
+     {
+      "es": "\\(\\delta\\): depreciación; \\(\\theta\\): crecimiento del producto; \\(r\\): tasa de interés de la deuda.",
+      "en": "\\(\\delta\\): depreciation; \\(\\theta\\): output growth; \\(r\\): interest rate on debt."
+     }
+    ]
+   ],
+   "p": [
+    "El análisis también puede hacerse sobre el patrimonio neto, porque el Estado tiene activos que sirven para pagar deuda o dar infraestructura. Con una ley de movimiento para el capital, el gasto de capital se cancela: invertir con deuda sube capital y deuda en el mismo monto. El ahorro que estabiliza el patrimonio neto sube con la tasa de interés y con la depreciación; el efecto del crecimiento es positivo solo si el capital heredado neto de depreciación supera a la deuda heredada con sus intereses. Lectura propia: la derivada respecto de la depreciación aparece con «δ + 1» en el denominador; de la ecuación (11) sale «1 + θ», con el mismo signo.",
+    "Lectura propia: los dos criterios tratan de modo opuesto a la inversión. Con la regla de deuda, cada peso invertido exige un peso más de ahorro corriente; con la de patrimonio neto solo hay que cubrir la depreciación. Es un argumento a favor de financiar inversión con deuda, siempre que el capital rinda de verdad."
+   ]
+  },
+  {
+   "t": "Deuda indexada y deuda en moneda extranjera",
+   "eq": [
+    "D_t=D_{t-1}\\,(1+r)(1+\\pi)+DP_t\\;\\;\\Rightarrow\\;\\; d_t=\\frac{1+r}{1+\\theta}\\,d_{t-1}+dp_t",
+    "\\gamma^{*}=\\frac{i_{t-1}-\\frac{r-\\theta}{1+\\theta}\\,d_{t-1}}{g_{t-1}}\\,(1+\\pi)(1+\\theta)-1",
+    "\\Delta d_t=d_{t-1}\\,\\frac{(1+\\beta_t)(1+r^{*}_t)-(1+\\Omega_t\\beta_t)(1+\\theta)}{(1+\\Omega_t\\beta_t)(1+\\theta)}+g^{k}_t-a_t,\\qquad \\pi_t=\\Omega_t\\,\\beta_t"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(D_t\\): deuda en pesos de un gobierno cuya deuda está toda indexada por CER (coeficiente de estabilización de referencia); \\(DP_t\\): déficit primario en pesos.",
+      "en": "\\(D_t\\): peso debt of a government whose debt is fully indexed to the CER (reference stabilisation coefficient); \\(DP_t\\): primary deficit in pesos."
+     },
+     {
+      "es": "\\(r\\): tasa de interés real de la deuda indexada; \\(\\pi\\): inflación, igual a la variación del CER y del índice de precios al consumidor.",
+      "en": "\\(r\\): real interest rate on indexed debt; \\(\\pi\\): inflation, equal to the change in the CER and the consumer price index."
+     },
+     {
+      "es": "\\(d_t\\), \\(dp_t\\): deuda y déficit primario divididos por el PIB nominal, que crece a \\((1+\\theta)(1+\\pi)\\); \\(\\theta\\): crecimiento real. Se supone que el deflactor del PIB se mueve como el IPC, y por eso \\(\\pi\\) se cancela.",
+      "en": "\\(d_t\\), \\(dp_t\\): debt and primary deficit divided by nominal GDP, which grows at \\((1+\\theta)(1+\\pi)\\); \\(\\theta\\): real growth. The GDP deflator is assumed to move with the CPI, so \\(\\pi\\) cancels out."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\gamma^{*}\\): tasa máxima de crecimiento nominal del gasto primario que deja estable la razón deuda-PIB.",
+      "en": "\\(\\gamma^{*}\\): maximum nominal growth rate of primary spending that keeps debt-to-GDP stable."
+     },
+     {
+      "es": "\\(i_{t-1}\\), \\(g_{t-1}\\): ingresos y gasto primario del período anterior en proporción del PIB; los ingresos crecen solos con la inflación y la producción, el gasto crece a la tasa discrecional \\(\\gamma\\).",
+      "en": "\\(i_{t-1}\\), \\(g_{t-1}\\): previous-period revenue and primary spending as shares of GDP; revenue grows automatically with inflation and output, spending at the discretionary rate \\(\\gamma\\)."
+     },
+     {
+      "es": "\\(r\\), \\(\\theta\\), \\(\\pi\\), \\(d_{t-1}\\): tasa real de la deuda indexada, crecimiento real, inflación y deuda heredada en proporción del PIB.",
+      "en": "\\(r\\), \\(\\theta\\), \\(\\pi\\), \\(d_{t-1}\\): real rate on indexed debt, real growth, inflation and inherited debt-to-GDP."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Delta d_t\\): variación de la razón deuda-PIB cuando la deuda está en moneda extranjera; \\(d_{t-1}\\): deuda heredada valuada en pesos, en proporción del PIB.",
+      "en": "\\(\\Delta d_t\\): change in debt-to-GDP when debt is in foreign currency; \\(d_{t-1}\\): inherited debt valued in pesos, as a share of GDP."
+     },
+     {
+      "es": "\\(\\beta_t\\): tasa de aumento del tipo de cambio nominal; \\(r^{*}_t\\): tasa de interés de la deuda en moneda extranjera.",
+      "en": "\\(\\beta_t\\): rate of increase of the nominal exchange rate; \\(r^{*}_t\\): interest rate on foreign-currency debt."
+     },
+     {
+      "es": "\\(\\Omega_t\\): traspaso (pass through), la porción de la depreciación que se transmite a los precios locales, entre 0 y 1 (lectura propia: el apunte escribe por errata «0 ≤ Ω ≤ 0»); \\(\\pi_t\\): inflación resultante.",
+      "en": "\\(\\Omega_t\\): pass-through, the share of depreciation transmitted to domestic prices, between 0 and 1 (own reading: the notes misprint it as «0 ≤ Ω ≤ 0»); \\(\\pi_t\\): resulting inflation."
+     },
+     {
+      "es": "\\(\\theta\\): crecimiento real; \\(g^{k}_t\\): gasto de capital y \\(a_t\\): ahorro corriente primario, ambos en proporción del PIB.",
+      "en": "\\(\\theta\\): real growth; \\(g^{k}_t\\): capital spending and \\(a_t\\): primary current saving, both as shares of GDP."
+     }
+    ]
+   ],
+   "p": [
+    "Si toda la deuda está indexada por CER y el IPC se mueve como el deflactor del PIB, la inflación es irrelevante: deuda y producto crecen en la misma proporción, aunque la indexación quita la posibilidad de licuar la deuda con inflación. La inflación vuelve a importar por el resultado primario: los ingresos crecen solos con la inflación y la producción, porque predominan los impuestos sobre ventas, empleo y ganancias, mientras el gasto crece a una tasa discrecional. El crecimiento máximo del gasto compatible con la sustentabilidad sube con el crecimiento, baja con la tasa de interés y, para valores habituales, sube con la inflación. Lectura propia: eso supone que la recaudación no se rezaga con la inflación.",
+    "Con deuda en moneda extranjera, el ahorro requerido sube con la tasa externa y con la depreciación, y baja cuanto mayor es el traspaso a precios, porque más inflación infla también el PIB nominal. Si el traspaso es completo y el tipo de cambio real no varía, la condición es idéntica a la de la deuda local y da lo mismo la moneda. Lectura propia: derivando la ecuación (18), el efecto de la depreciación es proporcional a uno menos el traspaso, no a uno más como aparece impreso. El riesgo de la deuda en dólares es la depreciación real, justo lo que ocurre en las crisis."
+   ]
+  }
+ ],
+ "claves": [
+  "Solvencia: el valor actual del gasto primario no supera el de los ingresos, netos de la deuda inicial; es una condición de largo plazo, distinta de la liquidez para pagar los próximos vencimientos.",
+  "Sustentabilidad: poder cumplir esa restricción sin una corrección irrealista del balance, a los costos de financiamiento vigentes, y estabilizar la razón deuda-PIB.",
+  "La razón deuda-PIB sube con el diferencial entre tasa de interés y crecimiento aplicado a la deuda heredada y baja con el superávit primario.",
+  "Si el crecimiento supera a la tasa se puede sostener un pequeño déficit primario; si la tasa supera al crecimiento hace falta superávit primario.",
+  "No hay un límite universal de deuda: la intolerancia a la deuda (Reinhart et al., 2003) hace que países con poca deuda caigan en default; conviene mirar el propio historial y el ciclo.",
+  "Estabilizar la deuda recortando la inversión pública o con presión tributaria excesiva no es sustentable: el ahorro corriente debe financiar un gasto de capital estable.",
+  "Con deuda indexada o en moneda extranjera, lo que importa es si la inflación y el tipo de cambio se mueven igual que el PIB nominal; con tipo de cambio real constante da lo mismo la moneda de la deuda."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuándo es solvente un gobierno según la restricción presupuestaria intertemporal?",
+    "en": "When is a government solvent according to the intertemporal budget constraint?"
+   },
+   "op": {
+    "es": [
+     "Cuando tiene fondos para pagar los vencimientos del próximo año",
+     "Cuando su razón deuda-PIB no supera el PIB",
+     "Cuando el valor actual de su gasto primario no supera el de sus ingresos, netos de la deuda inicial",
+     "Cuando tiene superávit primario todos los años"
+    ],
+    "en": [
+     "When it has funds to pay next year's maturities",
+     "When its debt-to-GDP ratio does not exceed GDP",
+     "When the present value of its primary spending does not exceed that of its revenue, net of initial debt",
+     "When it runs a primary surplus every year"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La solvencia es una condición de valor actual y de largo plazo; admite déficits iniciales compensados por superávits futuros. Tener fondos para los vencimientos es liquidez.",
+    "en": "Solvency is a long-run present-value condition; it allows initial deficits offset by future surpluses. Having funds for maturities is liquidity."
+   },
+   "id": "fisc-sost-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Puede un gobierno solvente caer en impago?",
+    "en": "Can a solvent government default?"
+   },
+   "op": {
+    "es": [
+     "Sí, si enfrenta restricciones de liquidez para pagar sus próximos vencimientos",
+     "No, la solvencia garantiza el pago en todo momento",
+     "Solo si su deuda está en moneda extranjera",
+     "Solo si la tasa de interés es menor que el crecimiento"
+    ],
+    "en": [
+     "Yes, if it faces liquidity constraints on its upcoming maturities",
+     "No, solvency guarantees payment at all times",
+     "Only if its debt is in foreign currency",
+     "Only if the interest rate is below growth"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Solvencia y liquidez son independientes: un gobierno solvente a largo plazo puede no tener caja para los vencimientos inmediatos.",
+    "en": "Solvency and liquidity are independent: a government solvent in the long run may lack cash for immediate maturities."
+   },
+   "id": "fisc-sost-01-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo simple, ¿qué pasa si la tasa de crecimiento del PIB supera a la tasa de interés de la deuda?",
+    "en": "In the simple model, what happens if GDP growth exceeds the interest rate on debt?"
+   },
+   "op": {
+    "es": [
+     "Hace falta un superávit primario cada vez mayor",
+     "La deuda es insostenible cualquiera sea el resultado primario",
+     "La razón deuda-PIB queda fija sin importar el déficit",
+     "Hay margen para un déficit primario permanente, seguramente chico, que estabiliza la razón deuda-PIB"
+    ],
+    "en": [
+     "An ever-larger primary surplus is needed",
+     "Debt is unsustainable whatever the primary balance",
+     "The debt ratio stays fixed regardless of the deficit",
+     "There is room for a permanent, probably small, primary deficit that stabilises the debt ratio"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El déficit primario crítico es proporcional a la diferencia entre crecimiento y tasa: si es positiva, admite déficit; si es negativa, exige superávit.",
+    "en": "The critical primary deficit is proportional to the growth-minus-rate gap: if positive it allows a deficit; if negative it requires a surplus."
+   },
+   "id": "fisc-sost-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la «intolerancia a la deuda» de Reinhart et al. (2003)?",
+    "en": "What is the 'debt intolerance' of Reinhart et al. (2003)?"
+   },
+   "op": {
+    "es": [
+     "La negativa de los gobiernos a endeudarse en moneda extranjera",
+     "La pérdida de acceso al crédito con niveles de deuda bajos, por un historial de incumplimientos e inseguridad jurídica",
+     "El límite legal de deuda que fijan las leyes de responsabilidad fiscal",
+     "La regla chilena que prohíbe el déficit estructural"
+    ],
+    "en": [
+     "Governments' refusal to borrow in foreign currency",
+     "Losing access to credit at low debt levels because of a record of defaults and legal insecurity",
+     "The legal debt ceiling set by fiscal responsibility laws",
+     "The Chilean rule that bans structural deficits"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Por eso no hay un límite universal: países con deuda mayor al PIB conservan el crédito y otros con mucho menos caen en default.",
+    "en": "That is why there is no universal ceiling: countries with debt above GDP keep access to credit while others with much less default."
+   },
+   "id": "fisc-sost-01-q4"
+  },
+  {
+   "q": {
+    "es": "En el modelo con inversión pública, ¿qué le pasa al ahorro corriente primario requerido si sube la tasa de interés de la deuda?",
+    "en": "In the model with public investment, what happens to the required primary current saving if the interest rate on debt rises?"
+   },
+   "op": {
+    "es": [
+     "Baja, porque la deuda se licúa",
+     "Sube",
+     "No cambia, porque solo depende del gasto de capital",
+     "Se vuelve negativo"
+    ],
+    "en": [
+     "It falls, because debt is eroded",
+     "It rises",
+     "It does not change, since it only depends on capital spending",
+     "It becomes negative"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Una tasa mayor aumenta el peso de la deuda heredada; un mayor crecimiento, en cambio, reduce el ahorro requerido.",
+    "en": "A higher rate raises the burden of inherited debt; higher growth, by contrast, lowers the required saving."
+   },
+   "id": "fisc-sost-01-q5"
+  },
+  {
+   "q": {
+    "es": "Si se usa el patrimonio neto del Estado en lugar de la deuda como criterio de sustentabilidad, ¿qué pasa con el gasto de capital?",
+    "en": "If the state's net worth rather than debt is used as the sustainability criterion, what happens to capital spending?"
+   },
+   "op": {
+    "es": [
+     "Exige el doble de ahorro corriente",
+     "Se vuelve la única variable relevante",
+     "Debe financiarse siempre con impuestos",
+     "Se cancela: aumenta el capital y la deuda en el mismo monto"
+    ],
+    "en": [
+     "It requires twice as much current saving",
+     "It becomes the only relevant variable",
+     "It must always be tax-financed",
+     "It cancels out: it raises capital and debt by the same amount"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Lo que queda por cubrir es la depreciación del capital y los intereses de la deuda; el ahorro requerido sube con la tasa de interés y con la depreciación.",
+    "en": "What remains to be covered is capital depreciation and debt interest; the required saving rises with the interest rate and with depreciation."
+   },
+   "id": "fisc-sost-01-q6"
+  },
+  {
+   "q": {
+    "es": "Con toda la deuda indexada por CER y el deflactor del PIB moviéndose como el IPC, ¿qué papel juega la inflación en la dinámica de la deuda?",
+    "en": "With all debt CER-indexed and the GDP deflator moving with the CPI, what role does inflation play in debt dynamics?"
+   },
+   "op": {
+    "es": [
+     "Ninguno, pero desaparece la posibilidad de licuar la deuda con inflación",
+     "Reduce la razón deuda-PIB porque licúa la deuda",
+     "Aumenta la razón deuda-PIB en la misma proporción que la inflación",
+     "Obliga a tener superávit primario siempre"
+    ],
+    "en": [
+     "None, but the option of eroding debt through inflation disappears",
+     "It lowers the debt ratio by eroding the debt",
+     "It raises the debt ratio in proportion to inflation",
+     "It always requires a primary surplus"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Deuda y PIB nominal crecen con la misma inflación, que se cancela; la indexación quita la licuación como vía de escape.",
+    "en": "Debt and nominal GDP grow with the same inflation, which cancels out; indexation removes erosion as an escape route."
+   },
+   "id": "fisc-sost-01-q7"
+  },
+  {
+   "q": {
+    "es": "Con deuda en moneda extranjera, ¿cuándo da lo mismo endeudarse en moneda local o extranjera?",
+    "en": "With foreign-currency debt, when does it make no difference whether to borrow in local or foreign currency?"
+   },
+   "op": {
+    "es": [
+     "Cuando la tasa externa es cero",
+     "Cuando el traspaso a precios es nulo",
+     "Cuando el traspaso es completo y el tipo de cambio real no varía",
+     "Nunca: la deuda externa siempre exige más ahorro"
+    ],
+    "en": [
+     "When the foreign rate is zero",
+     "When pass-through to prices is zero",
+     "When pass-through is complete and the real exchange rate does not change",
+     "Never: foreign debt always requires more saving"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con traspaso completo y tipo de cambio real constante la condición de ahorro es igual a la de deuda local, con la tasa externa en lugar de la local.",
+    "en": "With full pass-through and a constant real exchange rate, the saving condition equals the local-debt one, with the foreign rate in place of the local rate."
+   },
+   "id": "fisc-sost-01-q8"
+  }
+ ],
+ "palabras": 1422,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿En qué se diferencian solvencia y sustentabilidad fiscal?",
+    "en": "How do fiscal solvency and sustainability differ?"
+   },
+   "a": {
+    "es": "La solvencia pide que el valor actual del gasto primario no supere el de los ingresos netos de la deuda inicial, aunque haga falta un ajuste enorme; la sustentabilidad exige cumplirla sin una corrección irrealista del balance, a los costos de financiamiento vigentes (Capello, siguiendo al FMI).",
+    "en": "Solvency requires the present value of primary spending not to exceed that of revenue net of initial debt, even if a huge adjustment is needed; sustainability requires meeting it without an unrealistic correction of the balance, at current financing costs (Capello, following the IMF)."
+   },
+   "id": "fisc-sost-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cuáles son los cuatro conceptos del FMI para evaluar la salud fiscal?",
+    "en": "What are the IMF's four concepts for assessing fiscal health?"
+   },
+   "a": {
+    "es": "Solvencia, liquidez, sostenibilidad y vulnerabilidad, esta última entendida como el riesgo de que se violen la solvencia o la liquidez y el deudor entre en crisis (Capello).",
+    "en": "Solvency, liquidity, sustainability and vulnerability, the latter being the risk that solvency or liquidity is violated and the debtor enters a crisis (Capello)."
+   },
+   "id": "fisc-sost-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué determina si la razón deuda-PIB sube o baja?",
+    "en": "What determines whether the debt-to-GDP ratio rises or falls?"
+   },
+   "a": {
+    "es": "El diferencial entre la tasa de interés y el crecimiento, aplicado a la deuda heredada, frente al superávit primario; si la tasa supera al crecimiento, estabilizar la deuda exige superávit primario (Capello).",
+    "en": "The interest-growth differential applied to inherited debt, against the primary surplus; if the rate exceeds growth, stabilising debt requires a primary surplus (Capello)."
+   },
+   "id": "fisc-sost-01-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cuánto ahorro corriente hace falta para estabilizar la deuda sin sacrificar la inversión pública?",
+    "en": "How much current saving is needed to stabilise debt without sacrificing public investment?"
+   },
+   "a": {
+    "es": "El término de interés menos crecimiento sobre la deuda heredada más el gasto de capital en proporción del PIB; si además hay que bajar la deuda, se suma la reducción anual buscada (Capello).",
+    "en": "The interest-minus-growth term on inherited debt plus capital spending as a share of GDP; if debt must also come down, the targeted annual reduction is added (Capello)."
+   },
+   "id": "fisc-sost-01-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué no hay un nivel de deuda-PIB que sirva de límite para todos los países?",
+    "en": "Why is there no debt-to-GDP level that works as a ceiling for every country?"
+   },
+   "a": {
+    "es": "Porque países con deuda superior al PIB conservan el crédito y otros con mucho menos caen en default por intolerancia a la deuda; conviene comparar con el propio historial de defaults y con jurisdicciones similares (Capello, citando a Reinhart et al., 2003).",
+    "en": "Because countries with debt above GDP keep access to credit while others with much less default owing to debt intolerance; it is better to compare with one's own default history and similar jurisdictions (Capello, citing Reinhart et al., 2003)."
+   },
+   "id": "fisc-sost-01-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede hacer política anticíclica un gobierno sin acceso fluido al crédito?",
+    "en": "How can a government without easy access to credit run countercyclical policy?"
+   },
+   "a": {
+    "es": "Con un fondo anticíclico, sobre todo si depende de un producto primario de precio volátil; la regla chilena de superávit estructural exige equilibrio a largo plazo y deja margen en recesiones o caídas de precios de exportación (Capello).",
+    "en": "With a countercyclical fund, especially if it depends on a commodity with volatile prices; Chile's structural surplus rule requires long-run balance and leaves room in recessions or export price falls (Capello)."
+   },
+   "id": "fisc-sost-01-t6"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuándo es indiferente endeudarse en moneda local o extranjera?",
+    "en": "When is it irrelevant whether to borrow in local or foreign currency?"
+   },
+   "a": {
+    "es": "Cuando el traspaso de la depreciación a precios es completo y el tipo de cambio real no varía: la condición de sustentabilidad es la misma que con deuda local (Capello).",
+    "en": "When pass-through of depreciation to prices is complete and the real exchange rate does not change: the sustainability condition is the same as with local debt (Capello)."
+   },
+   "id": "fisc-sost-01-t7"
+  }
+ ]
+}

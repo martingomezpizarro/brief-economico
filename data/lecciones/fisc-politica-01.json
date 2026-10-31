@@ -1,0 +1,578 @@
+{
+ "id": "fisc-politica-01",
+ "cat": "fisc-politica",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "¿Importa la política fiscal? Blinder y Solow contra el crowding out",
+ "bajada": "Blinder y Solow responden a los monetaristas con un IS-LM que suma efectos riqueza y la restricción presupuestaria del gobierno: el multiplicador de largo plazo depende solo de los impuestos, el caso perverso exige inestabilidad y, con stock de capital variable, el gasto con bonos siempre es expansivo.",
+ "fuentes": [
+  1331
+ ],
+ "cita": "Blinder y Solow (1973), «Does fiscal policy matter?», Journal of Public Economics 2(4); versión de trabajo: Princeton Econometric Research Program, Research Memorandum 144 (1972)",
+ "intro": "A comienzos de los setenta, el monetarismo había reabierto una pregunta que el keynesianismo creía cerrada: ¿puede el gasto público mover el nivel de actividad, o solo desplaza gasto privado? Los monetaristas sostenían que el multiplicador del gasto financiado con bonos es cero, o incluso negativo a la larga. Alan Blinder y Robert Solow escribieron este memorando para revisar los fundamentos del multiplicador keynesiano a la luz de esa crítica. La respuesta que dan está en el título y en la conclusión: la política fiscal sí importa. El camino para llegar es elegante. Agregan al IS-LM los efectos riqueza y la restricción presupuestaria del gobierno, muestran que el multiplicador de largo plazo depende solo de la recaudación marginal, y reducen todo el debate a una pregunta de estabilidad dinámica. Con el capital fijo, el caso monetarista solo es posible si la economía es inestable bajo financiamiento con bonos; con el capital variable, ni siquiera eso.",
+ "secciones": [
+  {
+   "t": "Tres niveles de crowding out",
+   "p": [
+    "Antes de Keynes, recuerdan los autores, era un lugar común que el gasto público solo redirigía recursos del sector privado al público, corolario de la ley de Say: con pleno empleo, cada dólar de gasto público «desplaza» (crowds out) un dólar de gasto privado. La revolución keynesiana, al mostrar que con salarios rígidos el desempleo puede persistir, dio paso al multiplicador, y la duda pasó a ser si importaba la política monetaria. El monetarismo invirtió la duda: ¿importa la política fiscal?",
+    "Blinder y Solow separan tres niveles del desplazamiento. El primero es que el Estado haga lo que el sector privado habría hecho igual, como la inversión eléctrica de la Tennessee Valley Authority; para defensa o tribunales es difícil imaginarlo, y no depende del financiamiento, así que lo dejan de lado.",
+    "El segundo nivel es parte de la tradición keynesiana y casi nadie lo discute: si el déficit no se financia con dinero nuevo, el Estado coloca bonos que compiten con la deuda privada, suben las tasas de interés y caen los gastos sensibles a la tasa. Por eso el multiplicador es menor que la fórmula ingenua de uno sobre uno menos la propensión marginal a gastar, y menor con bonos que con dinero. La controversia es solo empírica: solo una demanda de dinero con elasticidad-interés nula daría un multiplicador cero, supuesto que la evidencia refutó y los monetaristas abandonaron. El tercer nivel es el que estudia el trabajo: todo déficit obliga a emitir dinero o bonos, eso aumenta la riqueza privada y esa riqueza tiene efectos propios que el IS-LM de manual «cierra los libros» demasiado pronto como para ver."
+   ]
+  },
+  {
+   "t": "IS-LM con efectos riqueza y restricción presupuestaria",
+   "eq": [
+    "Y = C\\big(Y-T(Y),\\,M+B+K\\big) + I(r) + G",
+    "M = L\\big(r,\\,Y,\\,M+B+K\\big)",
+    "\\dot M + \\dot B = G - T(Y)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y\\): ingreso o producto nacional neto (NNP), en términos reales.",
+      "en": "\\(Y\\): income or net national product (NNP), in real terms."
+     },
+     {
+      "es": "\\(C(\\cdot)\\): función de consumo; depende del ingreso disponible \\(Y-T\\) y de la riqueza.",
+      "en": "\\(C(\\cdot)\\): consumption function; depends on disposable income \\(Y-T\\) and on wealth."
+     },
+     {
+      "es": "\\(T(Y)\\): recaudación tributaria, creciente en el ingreso (alícuotas fijas).",
+      "en": "\\(T(Y)\\): tax receipts, increasing in income (fixed tax rates)."
+     },
+     {
+      "es": "\\(M\\), \\(B\\), \\(K\\): stocks de dinero, de bonos del gobierno y de capital real; su suma es la riqueza privada \\(W\\) (con el nivel de precios \\(P=1\\)).",
+      "en": "\\(M\\), \\(B\\), \\(K\\): stocks of money, government bonds and real capital; their sum is private wealth \\(W\\) (with the price level \\(P=1\\))."
+     },
+     {
+      "es": "\\(I(r)\\): inversión neta, decreciente en la tasa de interés \\(r\\).",
+      "en": "\\(I(r)\\): net investment, decreasing in the interest rate \\(r\\)."
+     },
+     {
+      "es": "\\(G\\): gasto público real, exógeno.",
+      "en": "\\(G\\): real government spending, exogenous."
+     }
+    ],
+    [
+     {
+      "es": "\\(M\\) (izquierda): oferta de dinero, exógena; \\(L(\\cdot)\\): demanda de saldos reales.",
+      "en": "\\(M\\) (left side): money supply, exogenous; \\(L(\\cdot)\\): demand for real balances."
+     },
+     {
+      "es": "\\(r\\): tasa de interés (la demanda de dinero cae con ella); \\(Y\\): ingreso (la demanda sube con él).",
+      "en": "\\(r\\): interest rate (money demand falls with it); \\(Y\\): income (money demand rises with it)."
+     },
+     {
+      "es": "\\(M+B+K\\): riqueza; más riqueza aumenta la demanda de dinero (efecto cartera).",
+      "en": "\\(M+B+K\\): wealth; more wealth raises money demand (portfolio effect)."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\dot M\\), \\(\\dot B\\): variación por unidad de tiempo de los stocks de dinero y de bonos (el punto indica derivada respecto del tiempo).",
+      "en": "\\(\\dot M\\), \\(\\dot B\\): change per unit of time in the stocks of money and bonds (the dot is the time derivative)."
+     },
+     {
+      "es": "\\(G-T(Y)\\): déficit del gobierno; la restricción presupuestaria de Christ dice que todo déficit se financia emitiendo dinero o bonos.",
+      "en": "\\(G-T(Y)\\): government deficit; Christ's budget restraint says every deficit is financed by issuing money or bonds."
+     }
+    ]
+   ],
+   "p": [
+    "El modelo es el IS-LM convencional, con precio fijo, al que se le agregan dos cosas: la riqueza en el consumo y en la demanda de dinero, y lo que Carl Christ llamó la «restricción presupuestaria del gobierno». La riqueza se define como la suma del capital, el dinero y los bonos en términos reales. Es en esencia el modelo de Silber, con impuestos que dependen del ingreso para que exista un equilibrio de largo plazo.",
+    "Las dos primeras ecuaciones son la IS y la LM estáticas, que valen en cada instante. La tercera mueve el sistema de un equilibrio instantáneo al siguiente: mientras haya déficit, crece el stock de dinero o de bonos, cambia la riqueza y se desplazan las dos curvas. Con financiamiento puro por bonos, la riqueza mayor empuja la IS hacia afuera (más consumo a cada ingreso) y la LM hacia adentro (más demanda de dinero a cada ingreso y tasa). El efecto neto puede ser expansivo o contractivo, como había subrayado Silber; los partidarios del crowding out completo creen que es contractivo y que, a la larga, el multiplicador fiscal es negativo.",
+    "Se ignoran el sistema bancario y el cambio en el valor de mercado de la deuda cuando se mueve la tasa; según los autores, incorporarlos costaría solo notación."
+   ]
+  },
+  {
+   "t": "El multiplicador de largo plazo solo depende de los impuestos",
+   "eq": [
+    "\\frac{dY}{dG} = \\frac{1}{T'(Y)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(dY/dG\\): multiplicador de estado estacionario del gasto público, cuando el gasto no se paga con alícuotas más altas sino con la mayor recaudación que genera el ingreso más alto.",
+      "en": "\\(dY/dG\\): steady-state government spending multiplier, when spending is not paid for with higher tax rates but with the extra revenue that higher income generates."
+     },
+     {
+      "es": "\\(T'(Y)\\): recaudación marginal, es decir, cuánto sube la recaudación cuando el ingreso sube una unidad.",
+      "en": "\\(T'(Y)\\): marginal tax yield, i.e. how much revenue rises when income rises by one unit."
+     }
+    ]
+   ],
+   "p": [
+    "En el estado estacionario tienen que dejar de moverse los stocks de dinero y de bonos, y por la restricción presupuestaria eso exige un presupuesto equilibrado. De ahí sale, como había señalado Christ, el multiplicador de largo plazo: la inversa de la recaudación marginal.",
+    "El resultado es llamativo por lo que no contiene. No depende del consumo, de la inversión ni de la demanda de dinero, solo de la función de impuestos, y no depende del modo de financiamiento. El ingreso tiene que subir hasta que la recaudación cubra el gasto adicional, sea que el déficit transitorio se haya cubierto con dinero o con bonos. La condición es una sola: que el sistema sea estable con ese método de financiamiento. Los autores reconocen que esto pasa porque definieron el equilibrio como presupuesto equilibrado; en una economía que crece, aclaran, sería más natural una deuda en proporción fija al ingreso.",
+    "La consecuencia metodológica ordena el resto del trabajo: para saber si la política fiscal funciona alcanza con analizar la estabilidad. Si el sistema es estable, el gasto financiado con bonos no solo es expansivo, sino que a largo plazo es tan expansivo como el financiado con dinero. Si con bonos es inestable, los monetaristas tendrían razón en el marco IS-LM, pero sería una victoria pírrica, porque nadie quiere modelar la economía como un sistema inestable de ecuaciones diferenciales."
+   ]
+  },
+  {
+   "t": "Estabilidad con dinero y con bonos",
+   "eq": [
+    "\\mu = \\frac{1}{S' + \\frac{I_r}{L_r}L_Y},\\qquad S' = 1 - C_Y(1-T')",
+    "f_M = \\mu\\Big[C_W + \\tfrac{I_r}{L_r}(1-L_W)\\Big] > 0,\\qquad f_B = \\mu\\beta",
+    "\\beta \\equiv C_W - \\frac{I_r}{L_r}L_W > 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mu\\): multiplicador ordinario del IS-LM (positivo).",
+      "en": "\\(\\mu\\): ordinary IS-LM multiplier (positive)."
+     },
+     {
+      "es": "\\(S'\\): propensión marginal a no gastar (ahorro más impuestos) de un aumento del ingreso, entre 0 y 1.",
+      "en": "\\(S'\\): marginal propensity not to spend (saving plus taxes) out of an increase in income, between 0 and 1."
+     },
+     {
+      "es": "\\(C_Y\\): propensión marginal a consumir el ingreso disponible; \\(T'\\): recaudación marginal.",
+      "en": "\\(C_Y\\): marginal propensity to consume out of disposable income; \\(T'\\): marginal tax yield."
+     },
+     {
+      "es": "\\(I_r<0\\), \\(L_r<0\\): respuesta de la inversión y de la demanda de dinero a la tasa de interés; su cociente es positivo.",
+      "en": "\\(I_r<0\\), \\(L_r<0\\): response of investment and of money demand to the interest rate; their ratio is positive."
+     },
+     {
+      "es": "\\(L_Y\\): respuesta de la demanda de dinero al ingreso.",
+      "en": "\\(L_Y\\): response of money demand to income."
+     }
+    ],
+    [
+     {
+      "es": "\\(f_M\\), \\(f_B\\): efecto de impacto sobre el ingreso de un aumento del stock de dinero y del stock de bonos (\\(Y=f(M,B,K;G)\\) resuelve la IS y la LM en cada instante).",
+      "en": "\\(f_M\\), \\(f_B\\): impact effect on income of an increase in the stock of money and in the stock of bonds (\\(Y=f(M,B,K;G)\\) solves IS and LM at each instant)."
+     },
+     {
+      "es": "\\(C_W\\): efecto de la riqueza sobre el consumo; \\(L_W\\): efecto de la riqueza sobre la demanda de dinero.",
+      "en": "\\(C_W\\): effect of wealth on consumption; \\(L_W\\): effect of wealth on money demand."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\beta\\): efecto riqueza neto de un bono adicional: el empuje del consumo (\\(C_W\\)) menos la caída de la inversión que causa la suba de tasa por la mayor demanda de dinero (\\(\\tfrac{I_r}{L_r}L_W\\)).",
+      "en": "\\(\\beta\\): net wealth effect of an additional bond: the boost to consumption (\\(C_W\\)) minus the fall in investment caused by the rise in the interest rate due to higher money demand (\\(\\tfrac{I_r}{L_r}L_W\\))."
+     }
+    ]
+   ],
+   "p": [
+    "Para la dinámica, los autores resuelven la IS y la LM y obtienen el ingreso y la tasa en función de los stocks de dinero, bonos y capital. Un aumento del dinero siempre sube el ingreso. Un aumento de los bonos tiene un efecto de impacto igual al multiplicador por el efecto riqueza neto, ambiguo a priori: el consumo sube, pero la mayor demanda de dinero sube la tasa y deprime la inversión.",
+    "Con el capital fijo, el sistema se reduce a una sola ecuación diferencial: el stock de dinero (o el de bonos) crece con el déficit, y el déficit depende del ingreso. Con financiamiento monetario, más dinero sube el ingreso y la recaudación, el déficit se achica y el sistema converge: la condición de estabilidad se cumple siempre. Con bonos, la derivada del déficit respecto del stock de bonos tiene el signo opuesto al del efecto riqueza neto. El sistema es estable si y solo si ese efecto es positivo, que es exactamente la condición para que un bono más suba el ingreso. Ese es el Teorema I.",
+    "La intuición: si el efecto riqueza neto fuera contractivo, el ingreso y la recaudación caerían en el segundo período, el gasto seguiría igual y el déficit sería mayor; haría falta una emisión de bonos todavía más grande, el ingreso volvería a caer, y así indefinidamente. En el caso estable, dicen, si alguien encontrara en el ático un bono del gobierno que nadie conocía, el producto nacional subiría. Por el principio de correspondencia de Samuelson, quien use el IS-LM y crea que la economía es dinámicamente estable debe concluir que la política fiscal funciona como decía Keynes."
+   ]
+  },
+  {
+   "t": "La evidencia: ¿es positivo el efecto riqueza neto?",
+   "eq": [
+    "C_W - \\frac{E(L,W)}{E(L,r)}\\,E(I,r)\\,\\frac{\\dot K}{K}\\,\\frac{K}{W} > 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C_W\\): efecto marginal de la riqueza sobre el consumo.",
+      "en": "\\(C_W\\): marginal effect of wealth on consumption."
+     },
+     {
+      "es": "\\(E(X,Z)\\): elasticidad parcial de \\(X\\) respecto de \\(Z\\); \\(E(L,W)\\) y \\(E(L,r)\\) son las elasticidades de la demanda de dinero a la riqueza y a la tasa; \\(E(I,r)\\), la de la inversión a la tasa.",
+      "en": "\\(E(X,Z)\\): partial elasticity of \\(X\\) with respect to \\(Z\\); \\(E(L,W)\\) and \\(E(L,r)\\) are the elasticities of money demand to wealth and to the interest rate; \\(E(I,r)\\), that of investment to the interest rate."
+     },
+     {
+      "es": "\\(\\dot K/K\\): tasa de crecimiento del stock de capital (la inversión neta sobre el capital).",
+      "en": "\\(\\dot K/K\\): growth rate of the capital stock (net investment over capital)."
+     },
+     {
+      "es": "\\(K/W\\): proporción del capital real en la riqueza privada total.",
+      "en": "\\(K/W\\): share of real capital in total private wealth."
+     }
+    ]
+   ],
+   "p": [
+    "Blinder y Solow reescriben además la condición de estabilidad en elasticidades, para evaluarla con estimaciones publicadas. Toman el efecto riqueza sobre el consumo de Modigliani para Estados Unidos, alrededor de .053; las elasticidades de la demanda de dinero de Chow, .64 respecto de la riqueza y -.64 respecto de la tasa; y la elasticidad-interés de la inversión de Bischoff, -.23.",
+    "Con esos valores y una tasa de crecimiento del capital de 10 %, que los autores califican de holgadamente optimista (cuanto mayor, más difícil se cumple la condición), la condición se reduce a que el capital real sea menos de 2,30 veces la riqueza total. Eso se cumple seguro, porque el capital es solo uno de los componentes de la riqueza. Lectura propia: el margen es amplio, pero descansa en estimaciones puntuales de otros trabajos, sin errores estándar.",
+    "Concluyen que en el IS-LM hay razones persuasivas para creer que la política fiscal funciona, aunque la perversidad sigue siendo posible en teoría. Para eliminarla hay que abandonar una convención extraña: tratar el capital como fijo aunque haya inversión neta."
+   ]
+  },
+  {
+   "t": "Con stock de capital variable, la ambigüedad desaparece",
+   "eq": [
+    "I = I(r,K),\\quad I_r<0,\\; I_K<0;\\qquad \\dot K = I(r,K)",
+    "\\begin{pmatrix}\\dot b\\\\ \\dot k\\end{pmatrix} = \\begin{pmatrix}-T'F_B & -T'F_K\\\\ I_rG_B & I_rG_K+I_K\\end{pmatrix}\\begin{pmatrix}b\\\\ k\\end{pmatrix}",
+    "\\det(A) \\;\\to\\; -T'\\mu I_K C_W > 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I(r,K)\\): inversión neta, que ahora depende de la tasa \\(r\\) y del stock de capital heredado \\(K\\).",
+      "en": "\\(I(r,K)\\): net investment, which now depends on the interest rate \\(r\\) and on the inherited capital stock \\(K\\)."
+     },
+     {
+      "es": "\\(I_K<0\\): con más capital, a igual tasa, se invierte menos (demanda de capital de equilibrio y de inversión de desequilibrio); en el largo plazo \\(I(r^*,K^*)=0\\).",
+      "en": "\\(I_K<0\\): with more capital, at a given interest rate, there is less investment (equilibrium demand for capital, disequilibrium demand for investment); in the long run \\(I(r^*,K^*)=0\\)."
+     },
+     {
+      "es": "\\(\\dot K\\): variación del stock de capital, idéntica a la inversión neta.",
+      "en": "\\(\\dot K\\): change in the capital stock, identical to net investment."
+     }
+    ],
+    [
+     {
+      "es": "\\(b\\), \\(k\\): desvíos de los bonos y del capital respecto de su equilibrio de largo plazo; \\(\\dot b\\), \\(\\dot k\\): sus variaciones en el tiempo.",
+      "en": "\\(b\\), \\(k\\): deviations of bonds and capital from their long-run equilibrium; \\(\\dot b\\), \\(\\dot k\\): their changes over time."
+     },
+     {
+      "es": "\\(F_B=\\mu\\beta\\), \\(F_K=\\mu(\\beta+I_K)\\): efectos de impacto de bonos y capital sobre el ingreso, con \\(Y=F(M,B,K)\\).",
+      "en": "\\(F_B=\\mu\\beta\\), \\(F_K=\\mu(\\beta+I_K)\\): impact effects of bonds and capital on income, with \\(Y=F(M,B,K)\\)."
+     },
+     {
+      "es": "\\(G_B\\), \\(G_K\\): efectos de bonos y capital sobre la tasa de interés, con \\(r=G(M,B,K)\\) (aquí \\(G\\) es una función, no el gasto público).",
+      "en": "\\(G_B\\), \\(G_K\\): effects of bonds and capital on the interest rate, with \\(r=G(M,B,K)\\) (here \\(G\\) is a function, not government spending)."
+     },
+     {
+      "es": "\\(T'\\): recaudación marginal; \\(I_r\\), \\(I_K\\): respuestas de la inversión a la tasa y al capital.",
+      "en": "\\(T'\\): marginal tax yield; \\(I_r\\), \\(I_K\\): responses of investment to the interest rate and to capital."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\det(A)\\): determinante de la matriz del sistema con bonos; junto con una traza negativa, que sea positivo garantiza estabilidad local. La flecha indica que, tras las manipulaciones del texto, la condición se reduce a esa expresión.",
+      "en": "\\(\\det(A)\\): determinant of the system matrix under bond financing; together with a negative trace, its being positive guarantees local stability. The arrow means that, after the text's manipulations, the condition reduces to that expression."
+     },
+     {
+      "es": "\\(\\mu\\): multiplicador ordinario; \\(C_W\\): efecto riqueza sobre el consumo; \\(I_K<0\\), así que el producto con el signo menos es positivo.",
+      "en": "\\(\\mu\\): ordinary multiplier; \\(C_W\\): wealth effect on consumption; \\(I_K<0\\), so the product with the minus sign is positive."
+     }
+    ]
+   ],
+   "p": [
+    "La sección III hace dos cambios pequeños. Reconoce que la variación del capital es la inversión neta, y adopta la idea de la teoría moderna de la inversión: hay una demanda de equilibrio por el stock de capital, y la inversión es el ajuste hacia ese stock, de modo que, a igual tasa, cuanto más capital se hereda, menos se invierte. El sistema pasa a tener dos ecuaciones diferenciales, la del déficit y la de la inversión; el efecto de impacto de un bono sigue siendo ambiguo.",
+    "Linealizando alrededor del equilibrio, verifican traza negativa y determinante positivo. Con dinero, ambas se cumplen. Con bonos, la traza es negativa porque la propensión marginal a no gastar supera a la recaudación marginal, y el determinante se reduce a una expresión positiva siempre que el efecto riqueza sobre el consumo sea positivo y la inversión caiga con el capital. Ninguna de las dos condiciones depende del signo del efecto riqueza neto de los bonos. Es el Teorema II: el sistema es estable con cualquier modo de financiamiento y, como el equilibrio final cumple que el gasto iguala a la recaudación, el financiamiento con bonos termina siendo expansivo, con el mismo multiplicador de largo plazo que el financiamiento monetario.",
+    "La intuición: si los bonos fueran contractivos, las emisiones continuas subirían la tasa y bajarían el ingreso; pero la tasa más alta deprime la inversión y deja un capital heredado menor, que estimula la inversión siguiente y empuja la IS hacia arriba. Además, el capital que cae genera efectos riqueza equivalentes a los de la deuda pero de signo contrario: si más bonos son contractivos, menos capital es expansivo. La deuda desplaza al capital en las carteras, y ambos efectos más que compensan el impacto deflacionario de los bonos."
+   ]
+  },
+  {
+   "t": "Precios, crecimiento, rezagos y lo que queda abierto",
+   "p": [
+    "En una nota, los autores explican por qué fijar el nivel de precios no afecta la conclusión. Con precios endógenos, una política fiscal expansiva genera algo de inflación, que reduce el multiplicador por al menos tres vías: baja el valor real del dinero y desplaza la LM hacia adentro; baja la riqueza real privada, un efecto Pigou negativo sobre el consumo; y, si los impuestos son progresivos en términos nominales, sube la recaudación real a cada ingreso. Ninguna cambia su signo, que es lo que está en discusión.",
+    "El trabajo es teórico. Su única evidencia cuantitativa es la calibración de la condición de estabilidad con elasticidades estimadas por otros, y la mención de que los estudios empíricos refutaron la demanda de dinero insensible a la tasa. No estima rezagos ni trayectorias. Lo único que dice sobre la dinámica temporal está en las conclusiones: el patrón de respuesta en el tiempo, y el comportamiento de la tasa de interés y del capital, pueden depender de cómo se financie el déficit, aunque el multiplicador de largo plazo sobre el producto nacional neto no dependa. Los trabajos empíricos monetaristas de la Reserva Federal de St. Louis se citan pero no se discuten.",
+    "Lectura propia: el resultado tiene límites que conviene tener presentes. Los bonos cuentan como riqueza neta, sin descontar los impuestos futuros que harán falta para pagarlos; la crítica ricardiana posterior apunta justamente ahí. Llegar al multiplicador de largo plazo puede llevar mucho tiempo y mucha deuda, algo que la estabilidad local no mide; y la economía es cerrada. Aun así, la lección de método perdura: con efectos riqueza, el signo del multiplicador fiscal es una cuestión de estabilidad dinámica, y el financiamiento cambia el camino pero no el destino."
+   ]
+  }
+ ],
+ "claves": [
+  "Blinder y Solow distinguen tres niveles de crowding out: el reemplazo directo de actividad privada, la suba de tasas por la emisión de bonos (aceptada por todos) y los efectos riqueza de la deuda nueva, que es el que analizan.",
+  "Con efectos riqueza, un bono adicional sube el consumo pero también la demanda de dinero y la tasa; su efecto de impacto sobre el ingreso es ambiguo a priori.",
+  "Por la restricción presupuestaria, el equilibrio de largo plazo exige presupuesto equilibrado, y el multiplicador de estado estacionario es la inversa de la recaudación marginal, igual con dinero o con bonos.",
+  "Por eso la eficacia de la política fiscal se reduce a la estabilidad: con capital fijo, el financiamiento con bonos es estable si y solo si el efecto riqueza neto es positivo (Teorema I).",
+  "Con estimaciones de Modigliani, Chow y Bischoff, la condición se cumple con amplio margen: exige que el capital sea menos de 2,30 veces la riqueza.",
+  "Si el capital varía y la inversión cae con el capital heredado, el sistema es estable con cualquier financiamiento y el gasto con bonos es expansivo a largo plazo (Teorema II).",
+  "El financiamiento cambia la trayectoria de la tasa, del capital y del ingreso, pero no el multiplicador de largo plazo; el trabajo no estima rezagos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué nivel de crowding out, según Blinder y Solow, casi nadie discute?",
+    "en": "Which level of crowding out, according to Blinder and Solow, is disputed by almost no one?"
+   },
+   "op": {
+    "es": [
+     "El reemplazo peso por peso del gasto privado por el público en cualquier situación",
+     "La suba de tasas que provoca colocar bonos para financiar el déficit, que reduce el gasto sensible al interés",
+     "El efecto riqueza negativo de la deuda pública sobre el ingreso",
+     "La caída del consumo por la expectativa de impuestos futuros"
+    ],
+    "en": [
+     "The dollar-for-dollar replacement of private by public spending in any situation",
+     "The rise in interest rates caused by selling bonds to finance the deficit, which reduces interest-sensitive spending",
+     "The negative wealth effect of public debt on income",
+     "The fall in consumption due to the expectation of future taxes"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el segundo nivel, parte de la tradición keynesiana: hace que el multiplicador sea menor que la fórmula ingenua y menor con bonos que con dinero, pero no lo anula salvo que la demanda de dinero no responda a la tasa.",
+    "en": "It is the second level, part of the Keynesian tradition: it makes the multiplier smaller than the naive formula and smaller with bonds than with money, but does not cancel it unless money demand does not respond to the interest rate."
+   },
+   "id": "fisc-politica-01-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo con restricción presupuestaria, ¿de qué depende el multiplicador del gasto en el estado estacionario?",
+    "en": "In the model with a budget restraint, what does the steady-state spending multiplier depend on?"
+   },
+   "op": {
+    "es": [
+     "De la propensión marginal a consumir y de la elasticidad-interés de la inversión",
+     "Del modo de financiamiento: es mayor con dinero que con bonos",
+     "Del efecto riqueza sobre la demanda de dinero",
+     "Solo de la recaudación marginal: es su inversa"
+    ],
+    "en": [
+     "On the marginal propensity to consume and the interest elasticity of investment",
+     "On the mode of financing: it is larger with money than with bonds",
+     "On the wealth effect on money demand",
+     "Only on the marginal tax yield: it is its inverse"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Como en el largo plazo el presupuesto tiene que estar equilibrado, el ingreso sube hasta que la recaudación cubra el gasto: el multiplicador es uno sobre la recaudación marginal, siempre que el sistema sea estable.",
+    "en": "Since in the long run the budget must be balanced, income rises until revenue covers spending: the multiplier is one over the marginal tax yield, provided the system is stable."
+   },
+   "id": "fisc-politica-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el efecto de impacto de un bono adicional sobre el ingreso es ambiguo en el IS-LM con riqueza?",
+    "en": "Why is the impact effect of an additional bond on income ambiguous in IS-LM with wealth?"
+   },
+   "op": {
+    "es": [
+     "Porque la mayor riqueza sube el consumo pero también la demanda de dinero, la tasa y la caída de la inversión",
+     "Porque los bonos reducen la oferta de dinero",
+     "Porque los impuestos suben al emitir bonos",
+     "Porque el nivel de precios sube con la deuda"
+    ],
+    "en": [
+     "Because higher wealth raises consumption but also money demand, the interest rate and the fall in investment",
+     "Because bonds reduce the money supply",
+     "Because taxes rise when bonds are issued",
+     "Because the price level rises with debt"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El efecto riqueza neto resta al efecto sobre el consumo la caída de la inversión inducida por la suba de tasa; su signo depende de los parámetros.",
+    "en": "The net wealth effect subtracts from the consumption effect the fall in investment induced by the higher interest rate; its sign depends on the parameters."
+   },
+   "id": "fisc-politica-01-q3"
+  },
+  {
+   "q": {
+    "es": "Con capital fijo y financiamiento puro con bonos, ¿qué pasa si el efecto riqueza neto de los bonos es negativo?",
+    "en": "With fixed capital and pure bond financing, what happens if the net wealth effect of bonds is negative?"
+   },
+   "op": {
+    "es": [
+     "El sistema converge a un equilibrio con menor ingreso",
+     "El sistema converge al mismo equilibrio que con dinero, pero más lento",
+     "El sistema es inestable: el ingreso cae, el déficit crece y las emisiones de bonos se agrandan sin fin",
+     "La tasa de interés baja y la inversión compensa"
+    ],
+    "en": [
+     "The system converges to an equilibrium with lower income",
+     "The system converges to the same equilibrium as with money, but more slowly",
+     "The system is unstable: income falls, the deficit grows and bond issues get larger without end",
+     "The interest rate falls and investment compensates"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el Teorema I: la condición de estabilidad con bonos coincide con que el efecto riqueza neto sea positivo. El caso monetarista exige una economía inestable.",
+    "en": "This is Theorem I: the stability condition under bond financing coincides with a positive net wealth effect. The monetarist case requires an unstable economy."
+   },
+   "id": "fisc-politica-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué argumento usan Blinder y Solow para inferir, del supuesto de estabilidad, que la política fiscal funciona?",
+    "en": "What argument do Blinder and Solow use to infer from the stability assumption that fiscal policy works?"
+   },
+   "op": {
+    "es": [
+     "La equivalencia ricardiana",
+     "La ley de Say",
+     "La curva de Phillips",
+     "El principio de correspondencia de Samuelson"
+    ],
+    "en": [
+     "Ricardian equivalence",
+     "Say's law",
+     "The Phillips curve",
+     "Samuelson's correspondence principle"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si se cree que la economía modelada con IS-LM es dinámicamente estable, la condición de estabilidad implica que un bono más sube el ingreso: el bono encontrado en el ático expande el producto.",
+    "en": "If one believes the economy modelled with IS-LM is dynamically stable, the stability condition implies that one more bond raises income: the bond found in the attic expands output."
+   },
+   "id": "fisc-politica-01-q5"
+  },
+  {
+   "q": {
+    "es": "Con las elasticidades de Modigliani, Chow y Bischoff y un crecimiento del capital de 10 %, ¿a qué se reduce la condición de estabilidad?",
+    "en": "With the elasticities of Modigliani, Chow and Bischoff and capital growth of 10%, what does the stability condition reduce to?"
+   },
+   "op": {
+    "es": [
+     "A que la deuda pública sea menor que el ingreso",
+     "A que el capital real sea menos de 2,30 veces la riqueza total, algo que siempre se cumple",
+     "A que el efecto riqueza sobre el consumo supere a la elasticidad de la inversión",
+     "A que la demanda de dinero tenga elasticidad-interés nula"
+    ],
+    "en": [
+     "That public debt be smaller than income",
+     "That real capital be less than 2.30 times total wealth, which always holds",
+     "That the wealth effect on consumption exceed the investment elasticity",
+     "That money demand have zero interest elasticity"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Como el capital es solo una parte de la riqueza, la proporción es menor que uno y la condición se cumple con margen, incluso con una tasa de crecimiento del capital optimista.",
+    "en": "Since capital is only part of wealth, the ratio is less than one and the condition holds with room to spare, even with an optimistic capital growth rate."
+   },
+   "id": "fisc-politica-01-q6"
+  },
+  {
+   "q": {
+    "es": "Cuando se permite que el capital varíe, ¿qué supuesto clave garantiza la estabilidad con bonos?",
+    "en": "When capital is allowed to vary, what key assumption guarantees stability under bond financing?"
+   },
+   "op": {
+    "es": [
+     "Que la inversión neta sea mayor cuanto menor es el capital heredado, a igual tasa",
+     "Que el efecto riqueza neto de los bonos sea positivo",
+     "Que el banco central fije la tasa de interés",
+     "Que los impuestos sean progresivos"
+    ],
+    "en": [
+     "That net investment be larger the lower the inherited capital stock, at a given interest rate",
+     "That the net wealth effect of bonds be positive",
+     "That the central bank fix the interest rate",
+     "That taxes be progressive"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con inversión decreciente en el capital y un efecto riqueza positivo sobre el consumo, traza y determinante cumplen las condiciones sin importar el signo del efecto riqueza neto de los bonos.",
+    "en": "With investment decreasing in capital and a positive wealth effect on consumption, the trace and determinant meet the conditions regardless of the sign of the net wealth effect of bonds."
+   },
+   "id": "fisc-politica-01-q7"
+  },
+  {
+   "q": {
+    "es": "Según el trabajo, ¿qué depende y qué no depende del modo de financiar el déficit?",
+    "en": "According to the paper, what depends and what does not depend on how the deficit is financed?"
+   },
+   "op": {
+    "es": [
+     "Depende el multiplicador de largo plazo; no dependen las trayectorias",
+     "No depende nada: dinero y bonos son equivalentes en todo",
+     "Dependen el patrón temporal, la tasa y el capital; no depende el multiplicador de largo plazo sobre el producto",
+     "Depende solo el nivel de precios"
+    ],
+    "en": [
+     "The long-run multiplier depends; the paths do not",
+     "Nothing depends: money and bonds are equivalent in everything",
+     "The time pattern, the interest rate and capital depend on it; the long-run multiplier on output does not",
+     "Only the price level depends on it"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es la última frase de las conclusiones. El trabajo no estima esas trayectorias ni sus rezagos.",
+    "en": "This is the last sentence of the conclusions. The paper does not estimate those paths or their lags."
+   },
+   "id": "fisc-politica-01-q8"
+  }
+ ],
+ "palabras": 1904,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Importa la política fiscal si el déficit se financia con bonos?",
+    "en": "Does fiscal policy matter if the deficit is financed with bonds?"
+   },
+   "a": {
+    "es": "Sí. Con efectos riqueza y restricción presupuestaria, el multiplicador de largo plazo es la inversa de la recaudación marginal, igual con bonos que con dinero, y el caso perverso solo aparece en un sistema inestable (Blinder y Solow, 1972).",
+    "en": "Yes. With wealth effects and a budget restraint, the long-run multiplier is the inverse of the marginal tax yield, the same with bonds as with money, and the perverse case only arises in an unstable system (Blinder and Solow, 1972)."
+   },
+   "id": "fisc-politica-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la restricción presupuestaria del gobierno en un modelo macro?",
+    "en": "What is the government budget restraint in a macro model?"
+   },
+   "a": {
+    "es": "La identidad de Christ: el déficit (gasto menos recaudación) es igual a la emisión de dinero más la de bonos. Convierte el IS-LM en un sistema dinámico, porque los déficits cambian los stocks de riqueza (Blinder y Solow).",
+    "en": "Christ's identity: the deficit (spending minus revenue) equals the issue of money plus that of bonds. It turns IS-LM into a dynamic system, because deficits change wealth stocks (Blinder and Solow)."
+   },
+   "id": "fisc-politica-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un bono adicional puede bajar el ingreso en el IS-LM con riqueza?",
+    "en": "Why can an additional bond lower income in IS-LM with wealth?"
+   },
+   "a": {
+    "es": "Porque la riqueza mayor sube la demanda de dinero, eleva la tasa y deprime la inversión; si ese efecto supera al aumento del consumo, el efecto riqueza neto es negativo (Blinder y Solow, siguiendo a Silber).",
+    "en": "Because higher wealth raises money demand, lifts the interest rate and depresses investment; if that effect exceeds the rise in consumption, the net wealth effect is negative (Blinder and Solow, following Silber)."
+   },
+   "id": "fisc-politica-01-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cuál es el multiplicador de estado estacionario del gasto público con restricción presupuestaria?",
+    "en": "What is the steady-state government spending multiplier with a budget restraint?"
+   },
+   "a": {
+    "es": "La inversa de la recaudación marginal, \\(1/T'(Y)\\), donde \\(T'\\) es cuánto sube la recaudación por unidad de ingreso: el ingreso sube hasta equilibrar el presupuesto, sin importar consumo, inversión ni financiamiento (Blinder y Solow, siguiendo a Christ).",
+    "en": "The inverse of the marginal tax yield, \\(1/T'(Y)\\), where \\(T'\\) is how much revenue rises per unit of income: income rises until the budget balances, regardless of consumption, investment or financing (Blinder and Solow, following Christ)."
+   },
+   "id": "fisc-politica-01-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "Con capital fijo, ¿cuándo es estable el financiamiento con bonos?",
+    "en": "With fixed capital, when is bond financing stable?"
+   },
+   "a": {
+    "es": "Si y solo si el efecto riqueza neto de un bono sobre el ingreso es positivo. Si es negativo, el ingreso cae, el déficit crece y la deuda explota: el caso monetarista implica inestabilidad (Blinder y Solow, Teorema I).",
+    "en": "If and only if the net wealth effect of a bond on income is positive. If it is negative, income falls, the deficit grows and debt explodes: the monetarist case implies instability (Blinder and Solow, Theorem I)."
+   },
+   "id": "fisc-politica-01-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se puede evaluar empíricamente si el efecto riqueza neto de la deuda es positivo?",
+    "en": "How can one assess empirically whether the net wealth effect of debt is positive?"
+   },
+   "a": {
+    "es": "Reescribiendo la condición en elasticidades. Con el efecto riqueza de Modigliani, las elasticidades de la demanda de dinero de Chow y la de la inversión de Bischoff, y un crecimiento del capital de 10 %, basta que el capital sea menos de 2,30 veces la riqueza (Blinder y Solow).",
+    "en": "By rewriting the condition in elasticities. With Modigliani's wealth effect, Chow's money demand elasticities and Bischoff's investment elasticity, and capital growth of 10%, it suffices that capital be less than 2.30 times wealth (Blinder and Solow)."
+   },
+   "id": "fisc-politica-01-t6"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la acumulación de capital elimina el caso de crowding out perverso?",
+    "en": "Why does capital accumulation eliminate the perverse crowding-out case?"
+   },
+   "a": {
+    "es": "Si la deuda sube la tasa, cae la inversión y queda menos capital heredado, lo que estimula la inversión siguiente; además, el capital menor tiene un efecto riqueza opuesto al de los bonos. El sistema es estable con cualquier financiamiento (Blinder y Solow, Teorema II).",
+    "en": "If debt raises the interest rate, investment falls and less capital is inherited, which stimulates subsequent investment; moreover, lower capital has a wealth effect opposite to that of bonds. The system is stable under any financing (Blinder and Solow, Theorem II)."
+   },
+   "id": "fisc-politica-01-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué deja afuera el análisis de Blinder y Solow sobre la deuda?",
+    "en": "What does Blinder and Solow's analysis of debt leave out?"
+   },
+   "a": {
+    "es": "Lectura propia: trata los bonos como riqueza neta sin descontar los impuestos futuros (la objeción ricardiana posterior), supone precios fijos y economía cerrada, y no mide cuánto tarda ni cuánta deuda acumula el ajuste. Los autores sí aclaran que los precios endógenos achican el multiplicador sin cambiar su signo.",
+    "en": "Own reading: it treats bonds as net wealth without netting out future taxes (the later Ricardian objection), assumes fixed prices and a closed economy, and does not measure how long the adjustment takes or how much debt it accumulates. The authors do note that endogenous prices shrink the multiplier without changing its sign."
+   },
+   "id": "fisc-politica-01-t8"
+  }
+ ]
+}
