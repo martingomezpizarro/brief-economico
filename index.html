@@ -493,6 +493,41 @@ async function nubeIniciar(){
 }
 function nubeEntrar(){const p=new firebase.auth.GoogleAuthProvider();firebase.auth().signInWithPopup(p).catch(e=>{if(/popup-blocked|operation-not-supported/.test(e.code||""))firebase.auth().signInWithRedirect(p);else{S.nube.error=e.message;route()}})}
 function nubeSalir(){firebase.auth().signOut().then(()=>route())}
+/* Eliminar la cuenta (Ley 25.326): borra brief/{uid} y su subcolección lecciones, después el usuario de Firebase.
+   Si Firebase pide un inicio de sesión reciente, se vuelve a autenticar y se reintenta. */
+async function nubeBorrarDatos(){
+  const ls=await docU().collection("lecciones").get();const refs=ls.docs.map(d=>d.ref);
+  for(let i=0;i<refs.length;i+=400){const b=S.nube.db.batch();refs.slice(i,i+400).forEach(r=>b.delete(r));await b.commit()}
+  await docU().delete();
+}
+async function nubeReautenticar(u){
+  const es=S.lang==="es";const prov=(u.providerData||[]).map(p=>p.providerId);
+  if(prov.includes("google.com")){await u.reauthenticateWithPopup(new firebase.auth.GoogleAuthProvider());return}
+  const clave=prompt(es?"Por seguridad, escribí tu contraseña para confirmar que querés eliminar la cuenta:":"For security, type your password to confirm deleting the account:");
+  if(!clave)throw new Error(es?"Eliminación cancelada: la cuenta sigue activa.":"Deletion cancelled: the account is still active.");
+  await u.reauthenticateWithCredential(firebase.auth.EmailAuthProvider.credential(u.email,clave));
+}
+async function borrarDatosLocales(){
+  try{localStorage.clear()}catch(e){}try{sessionStorage.clear()}catch(e){}
+  ["breve-docs","prebisch-bib"].forEach(n=>{try{indexedDB.deleteDatabase(n)}catch(e){}});
+  try{if(window.caches)await caches.delete("prebisch-aviso")}catch(e){}
+}
+async function nubeEliminarCuenta(){
+  const es=S.lang==="es";const N=S.nube;let u=firebase.auth().currentUser;if(!u)throw new Error(es?"No hay una sesión iniciada.":"Not signed in.");
+  if(!confirm(es?"¿Eliminar tu cuenta de Prebisch?\n\nSe borran de la nube tu progreso, tus rutas y los briefs que guardaste, y se elimina tu usuario. No se puede deshacer.":"Delete your Prebisch account?\n\nYour cloud progress, routes and saved briefs will be erased and your user deleted. This cannot be undone."))return "";
+  N.borrando=true;
+  try{
+    if(avisosActivos())await avisosDesactivar().catch(()=>{});
+    const intentar=async()=>{await nubeBorrarDatos();await firebase.auth().currentUser.delete()};
+    try{await intentar()}
+    catch(e){if(!e||e.code!=="auth/requires-recent-login")throw e;
+      await nubeReautenticar(firebase.auth().currentUser);await intentar()}
+  }catch(e){N.borrando=false;nubeGuardarEstado();nubeGuardarMis();throw e}
+  N.borrando=false;N.user=null;N.subidas=new Set();
+  if(confirm(es?"Tu cuenta fue eliminada.\n\n¿Querés borrar también los datos guardados en este navegador (progreso, rutas, PDF de Mi estudio, claves y ajustes)?":"Your account was deleted.\n\nAlso erase the data stored in this browser (progress, routes, My study PDFs, keys and settings)?")){
+    await borrarDatosLocales();location.hash="#hoy";location.reload();return ""}
+  return es?"Tu cuenta fue eliminada. Los datos de este navegador se conservan.":"Your account was deleted. Data in this browser was kept.";
+}
 const docU=()=>S.nube.db.collection("brief").doc(S.nube.user.uid);
 async function nubeTraer(){
   try{
@@ -507,8 +542,8 @@ async function nubeTraer(){
     nubeGuardarEstado();nubeGuardarMis();
   }catch(e){S.nube.error="No se pudo leer tu progreso guardado.";}
 }
-function nubeGuardarEstado(){if(!S.nube.user||!S.nube.db)return;const u=S.nube.user;docU().set({estado:JSON.stringify(S.est),actualizado:Date.now(),mail:u.email||"",nombre:u.displayName||""},{merge:true}).catch(()=>{})}
-function nubeGuardarMis(){if(!S.nube.user||!S.nube.db)return;
+function nubeGuardarEstado(){if(!S.nube.user||!S.nube.db||S.nube.borrando)return;const u=S.nube.user;docU().set({estado:JSON.stringify(S.est),actualizado:Date.now(),mail:u.email||"",nombre:u.displayName||""},{merge:true}).catch(()=>{})}
+function nubeGuardarMis(){if(!S.nube.user||!S.nube.db||S.nube.borrando)return;
   docU().set({rutas:JSON.stringify(S.mis.rutas)},{merge:true}).catch(()=>{});
   Object.values(S.mis.lecciones).forEach(l=>{if(!S.nube.subidas.has(l.id)){S.nube.subidas.add(l.id);docU().collection("lecciones").doc(l.id).set(l).catch(()=>S.nube.subidas.delete(l.id))}});}
 
@@ -1953,7 +1988,7 @@ function errAuth(e){
     "auth/email-already-in-use":["Ya hay una cuenta con ese mail. Entrá, o pedí una contraseña nueva.","That email already has an account. Sign in or reset the password."],
     "auth/invalid-credential":["Mail o contraseña incorrectos.","Wrong email or password."],"auth/wrong-password":["Mail o contraseña incorrectos.","Wrong email or password."],
     "auth/user-not-found":["No hay una cuenta con ese mail.","No account with that email."],"auth/too-many-requests":["Demasiados intentos. Esperá unos minutos.","Too many attempts. Wait a few minutes."],
-    "auth/operation-not-allowed":["El ingreso con mail todavía no está habilitado.","Email sign-in is not enabled yet."],"auth/network-request-failed":["Sin conexión.","No connection."]}[e&&e.code];
+    "auth/operation-not-allowed":["El ingreso con mail todavía no está habilitado.","Email sign-in is not enabled yet."],"auth/network-request-failed":["Sin conexión.","No connection."],"auth/requires-recent-login":["Por seguridad, cerrá sesión, volvé a entrar e intentá de nuevo.","For security, sign out, sign in again and retry."],"auth/popup-closed-by-user":["Se cerró la ventana de Google: la cuenta sigue activa.","The Google window was closed: the account is still active."],"permission-denied":["El servidor no permitió borrar los datos. La cuenta sigue activa.","The server refused to delete the data. The account is still active."]}[e&&e.code];
   return m?m[es?0:1]:((e&&e.message)||String(e));
 }
 function seccionCuenta(){
@@ -1970,7 +2005,9 @@ function seccionCuenta(){
     if(conClave&&!u.emailVerified)sec.append(h("p",{class:"note j"},es?"Falta verificar tu mail: abrí el enlace que te mandamos para confirmar que la cuenta es tuya.":"Your email is not verified yet: open the link we sent to confirm the account is yours."),
       h("div",{class:"fila2"},h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.sendEmailVerification({url:APP_URL});return es?"Te reenviamos el mail.":"Email sent again."})}},es?"Reenviar mail":"Resend email"),
         h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await u.reload();if(!firebase.auth().currentUser.emailVerified)throw new Error(es?"Todavía figura sin verificar.":"Still not verified.");N.user=firebase.auth().currentUser;return es?"Mail verificado.":"Email verified."})}},es?"Ya lo verifiqué":"I verified it")));
-    sec.append(estado,h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"));
+    sec.append(...[estado].filter(Boolean),h("button",{class:"btn ghost",type:"button",on:{click:nubeSalir}},es?"Cerrar sesión":"Sign out"),
+      h("p",{class:"c note"},h("button",{class:"linkbtn",type:"button",id:"eliminar-cuenta",on:{click:correr(nubeEliminarCuenta)}},es?"Eliminar mi cuenta":"Delete my account"),
+        es?" — borra tu progreso y tus briefs de la nube y elimina tu usuario.":" — erases your cloud progress and briefs and deletes your user."));
     return sec;
   }
   sec.append(h("p",{class:"j"},es?"Iniciá sesión para guardar tu progreso y tus briefs en la nube, usarlos en cualquier dispositivo y recibir avisos.":"Sign in to sync progress and briefs across devices and get notifications."));
@@ -1985,7 +2022,7 @@ function seccionCuenta(){
       h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{await auth().signInWithEmailAndPassword(CU.mail,clave.value);return""})}},es?"Entrar":"Sign in"),
       h("button",{class:"btn ghost",type:"button",on:{click:correr(async()=>{const r=await auth().createUserWithEmailAndPassword(CU.mail,clave.value);await r.user.sendEmailVerification({url:APP_URL}).catch(()=>{});return es?"Cuenta creada. Te mandamos un mail para verificarla.":"Account created. Check your inbox to verify it."})}},es?"Crear cuenta":"Create account")),
     h("p",{class:"c"},h("button",{class:"linkbtn",type:"button",on:{click:correr(async()=>{if(!CU.mail)throw new Error(es?"Escribí tu mail arriba.":"Type your email above.");await auth().sendPasswordResetEmail(CU.mail,{url:APP_URL});return es?"Si hay una cuenta con ese mail, te llegó un enlace para elegir otra contraseña.":"If an account exists, a reset link is on its way."})}},es?"Olvidé mi contraseña":"Forgot my password")),
-    estado);
+    ...[estado].filter(Boolean));
   return sec;
 }
 function seccionIA(){
