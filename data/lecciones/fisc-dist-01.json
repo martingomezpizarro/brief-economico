@@ -1,0 +1,371 @@
+{
+ "id": "fisc-dist-01",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Por qué medir pobreza y desigualdad: la introducción de Gasparini, Cicowiez y Sosa Escudero",
+ "bajada": "El capítulo 1 del manual de referencia sobre distribución en la región: tres razones para estudiar pobreza y desigualdad, el retrato estadístico de los 18 países de América Latina, la defensa del enfoque cuantitativo de la economía y por qué dos investigadores honestos pueden llegar a cifras distintas con la misma encuesta.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero (2013), Pobreza y desigualdad en América Latina. Conceptos, herramientas y aplicaciones (Temas, CEDLAS-UNLP), cap. 1: «Introducción»",
+ "intro": "Pobreza y desigualdad son dos términos que aparecen sistemáticamente en las discusiones sobre América Latina, y los autores dicen que hay buenas razones para ello. Son consideradas «males», problemas sociales que hay que combatir, y existe un amplio consenso en que una economía debe evaluarse no solo por el crecimiento, la inflación y el desempleo sino también, y especialmente, por sus logros en reducir la pobreza y las disparidades socioeconómicas injustas. Además, la región no se destaca por sus logros distributivos: muchos afirman que es la más desigual del mundo, la evidencia sugiere que lo ha sido al menos desde la Colonia, y hoy solo África al sur del Sahara y algunos países del Sudeste asiático tienen niveles de desigualdad de ingreso comparables. El capítulo 1 no defiende una explicación de esas causas ni propone un programa de políticas. Presenta un libro cuyo propósito es poner al alcance del lector instrumentos para la investigación empírica rigurosa, el camino a menudo arduo entre los datos en bruto y el reporte de resultados. Este brief recorre esa introducción: por qué estudiar la distribución, cómo se ve la región en números, qué enfoque adopta el libro y qué advierte sobre el trabajo con datos.",
+ "secciones": [
+  {
+   "t": "Las carencias en números",
+   "p": [
+    "Los autores estiman que en 2010 alrededor del 15 % de los latinoamericanos vivía en hogares con ingresos menores a 2,5 dólares por día por persona, a paridad de poder adquisitivo, un valor que apenas alcanza para cubrir las necesidades más básicas. La pobreza no es tan grave como en otras regiones en desarrollo, pero es ciertamente preocupante.",
+    "Las carencias no son solo monetarias. Para el 20 % más pobre de la población en 2008, según SEDLAC: el 22 % de los niños nicaragüenses no asiste a la escuela; el 57 % de los jóvenes hondureños de 13 a 17 años está en la misma situación; en Bolivia el 46 % de los hogares no tiene electricidad en su vivienda; en Perú el 63 % no tiene acceso a una fuente de agua potable en la vivienda, y en México el 71 % no tiene acceso a un sistema de saneamiento. Las privaciones se repiten en el mercado laboral: los pobres acceden típicamente a trabajos precarios, inestables, de bajos salarios y sin beneficios sociales, o están desempleados.",
+    "Ante este escenario, dicen los autores, es difícil controlar la ansiedad por pasar rápido a las causas y a las soluciones. El libro propone un avance más gradual, con la convicción de que entender a fondo los conceptos, dominar las herramientas analíticas y conocer la evidencia disponible son pasos ineludibles para participar seriamente en el debate."
+   ]
+  },
+  {
+   "t": "Tres razones para estudiar la distribución",
+   "p": [
+    "La primera razón es la curiosidad científica: pobreza y desigualdad son fenómenos que resulta interesante medir y explicar. ¿Por qué en Uruguay la pobreza y la desigualdad son menores que en Bolivia? ¿Por qué la desigualdad de ingresos aumentó en la Argentina desde mediados de los 1970 hasta principios de los 2000?",
+    "La segunda son las consecuencias sobre otras variables. Se argumenta que la distribución del ingreso afecta la asignación de recursos y la inversión en capital físico y humano, y por ende la tasa de crecimiento. Aun si la distribución no interesara en sí misma, su estudio se justificaría por esos efectos (el libro vuelve sobre el vínculo con el crecimiento en el capítulo 8).",
+    "La tercera, para la mayoría la principal, es que pobreza y desigualdad son percibidas como males. La pobreza como mal social es casi universal: el propio Adam Smith, defensor del laissez-faire, sostenía que ninguna sociedad puede ser próspera y feliz si la mayor parte de su población es pobre y miserable, y las Naciones Unidas pusieron como meta número uno de los Objetivos de Desarrollo del Milenio reducir a la mitad la pobreza en cada país entre 1990 y 2015. La desigualdad como mal es más controversial: hay argumentos filosóficos a favor y en contra y un debate sobre qué conviene igualar (ingreso, consumo, utilidad u oportunidades), que el libro retoma en el capítulo 6. Aun así, los autores citan evidencia robusta de varias disciplinas, de la ciencia política a la neurociencia, sobre el disgusto humano ante la desigualdad."
+   ]
+  },
+  {
+   "t": "Qué es América Latina en el libro",
+   "p": [
+    "La región comprende los países americanos donde prevalecen idiomas de raíz latina. El libro trabaja con los 17 países de la América Latina continental (México, Costa Rica, El Salvador, Guatemala, Honduras, Nicaragua, Panamá, Argentina, Bolivia, Brasil, Chile, Colombia, Ecuador, Paraguay, Perú, Uruguay y Venezuela) más la República Dominicana. Belice, Guyana, Surinam y la Guyana Francesa quedan afuera por sus vínculos con el Caribe. Cuba se excluye porque su gobierno no difunde sus encuestas de hogares; Puerto Rico, por ser un territorio asociado a los Estados Unidos; y Haití, por estar más ligado culturalmente al Caribe y tener un sistema de encuestas de hogares muy precario.",
+    "El cuadro 1.1 resume a los 18 países con población, superficie, PIB per cápita a paridad de poder adquisitivo, índice de desarrollo humano y dos indicadores que se desarrollan en los capítulos 4 y 6: la tasa de incidencia de la pobreza con la línea de 2,5 dólares por día y el coeficiente de Gini del ingreso per cápita familiar, ambos estimados por CEDLAS para 2009. La región tiene 545,6 millones de habitantes, un PIB per cápita de 10680 dólares, un IDH de 0,810, una incidencia de la pobreza de 16,3 % y un Gini promedio (sin ponderar por población) de 50,7, en una escala de 0 a 100.",
+    "El libro no presenta en este capítulo ecuaciones ni estimaciones: la definición formal de la tasa de incidencia y del coeficiente de Gini llega en los capítulos 4 y 6, y la inferencia estadística sobre esas medidas en el capítulo 2."
+   ]
+  },
+  {
+   "t": "Una región diversa",
+   "p": [
+    "Las diferencias de tamaño son enormes. Brasil es el quinto país más extenso del mundo y El Salvador, que ocupa el lugar 151, cabría 400 veces en su territorio. La población de Brasil es 59 veces la de Uruguay y la de México, 19 veces la de Nicaragua. Brasil y México concentran el 55 % de la población latinoamericana, y con Colombia y Argentina la participación llega al 70 %.",
+    "En nivel socioeconómico, todos son países en desarrollo de ingresos medios, pero dentro de esa categoría conviven economías de ingresos medios-altos, como Argentina o Chile con un PIB per cápita en el entorno de los 15000 dólares, y de ingresos medios-bajos, como Bolivia, Honduras o Nicaragua, con menos de 5000. En el IDH, Chile, Argentina y Uruguay ocupan los puestos 40, 46 y 47 del mundo, y Honduras, Nicaragua y Guatemala los puestos 117, 120 y 121, sobre 179 países. Las brechas, de todos modos, son menores que en el Caribe, donde conviven Puerto Rico o Bahamas con Haití.",
+    "Las diferencias de ingreso se traducen, aunque no mecánicamente, en diferentes niveles de pobreza: de una pobreza moderada en Chile (4,3 %) y Uruguay (3,3 %) a una alta en Honduras (39,4 %) y Nicaragua (42,5 %). Los niveles de desigualdad también difieren, pese a tratarse de sociedades con historias comunes y sujetas a shocks semejantes, lo que para los autores vuelve estimulante estudiar esas divergencias. Y la diversidad es también interna: en Brasil la pobreza difiere entre el Sur y el Norte, en Perú entre la Costa y la Sierra, y en México las tasas del Sur son más del doble que las del resto del país.",
+    "Lectura propia: el cuadro 1.1 muestra bien por qué pobreza y desigualdad son conceptos distintos. Chile y Argentina tienen un PIB per cápita casi igual (14299 y 14126 dólares), pero Chile tiene menos pobreza (4,3 % contra 8,1 %) y más desigualdad (Gini de 51,9 contra 45,1). En el otro extremo, Bolivia tiene el Gini más alto del cuadro (57,2) y Nicaragua la pobreza más alta (42,5 %), con un Gini menor (52,3)."
+   ]
+  },
+  {
+   "t": "El enfoque: economía convencional sin dogma",
+   "p": [
+    "El libro usa el lenguaje y los instrumentos de la economía convencional, una opción que en la región a menudo se identifica con un enfoque «economicista», sin sensibilidad social y ahistórico, o con una ortodoxia que justificaría cualquier resultado del mercado. Los autores responden con tres argumentos.",
+    "El primero es la complementariedad: la economía enfatiza los instrumentos cuantitativos y otras ciencias sociales los métodos cualitativos e históricos; cada una aporta desde su especialización, y en las últimas décadas la economía se abrió crecientemente al aporte de las demás. El segundo es el valor de la estadística: los estudios de caso, con personas con nombre y apellido, son una alternativa válida, pero no permiten saber cuán extendido está un fenómeno en un país, relacionar grandes reformas o shocks con sus consecuencias generales ni simular el impacto de una política sobre millones de personas. Hay un trade-off entre el acercamiento a la persona y la generalidad y representatividad de los resultados, y la estadística elige el segundo sin desconocer el primero.",
+    "El tercero es que usar las técnicas convencionales no implica adscribir al laissez-faire, justificar todo resultado del mercado ni oponerse a la redistribución. Con exactamente el mismo paradigma hay quienes abogan por limitar las políticas sociales y quienes sostienen la necesidad de masivas redistribuciones de ingresos y factores: la postura depende de los juicios de valor y de la percepción de la realidad. Y un argumento práctico: buena parte del debate sobre pobreza y desigualdad se desarrolla en el lenguaje de la economía, así que conviene dominarlo para influir en él.",
+    "Lectura propia: esta defensa anticipa un tema que atraviesa la ruta de distribución. Las medidas de pobreza y desigualdad son técnicas, pero elegir la línea de pobreza, la variable a igualar o el índice implica juicios normativos; el libro pide separar el instrumental, que es compartido, de las conclusiones de política, que no lo son."
+   ]
+  },
+  {
+   "t": "Estructura, Stata y la base SEDLAC",
+   "p": [
+    "El capítulo 2 presenta herramientas gráficas y analíticas para caracterizar una distribución, con análisis inferencial y significatividad estadística. El 3 discute las variables de interés, el hecho de que las personas vivan en hogares y que sus ingresos varíen a lo largo de la vida, y las fuentes de información con sus problemas de medición. El 4 trata la pobreza monetaria y el 5 la extiende a la multidimensional, la subjetiva, la dinámica, la vulnerabilidad y la geografía. El 6 se dedica a la desigualdad monetaria y el 7 a la no monetaria, la igualdad de oportunidades, la movilidad, la polarización, la segregación y el bienestar agregado. El 8 vincula crecimiento, pobreza y desigualdad, con descomposiciones en un efecto crecimiento y un efecto redistributivo, y el 9 mide el impacto de las políticas públicas sobre la distribución, con los conceptos de progresividad e impacto redistributivo.",
+    "El lector típico es un estudiante avanzado de grado o de posgrado en Economía, aunque el libro apunta también a investigadores de otras áreas sociales y a técnicos y funcionarios. Supone microeconomía al nivel de Baumol y Blinder o Varian, álgebra y cálculo al nivel de Chiang y Wainwright, y econometría introductoria al nivel de Wooldridge, además de inglés, porque la mayor parte de la literatura está en ese idioma. La implementación práctica usa Stata: cada capítulo cierra con un apéndice «En la práctica» con comandos para reproducir resultados con microdatos de encuestas de hogares reales, y los autores recomiendan aprender a programar las propias rutinas en lugar de usar las que circulan en la web.",
+    "Los resultados provienen en su mayoría de SEDLAC, la base socioeconómica para América Latina y el Caribe del CEDLAS (Universidad Nacional de La Plata) y el grupo de Pobreza y Género del Banco Mundial, que procesa de la forma más homogénea posible más de 300 encuestas de hogares de 25 países. La advertencia clave del capítulo está aquí: procesar una encuesta exige un sinnúmero de decisiones metodológicas sin criterios objetivos universales. Si un joven declara ingresos inconsistentes, ¿se lo elimina, y con él a toda su familia porque ya no se puede calcular el ingreso del hogar, o se lo incluye porque no hay certeza? No hay una única respuesta, y por eso llegar a cifras distintas de las del libro o del instituto de estadística no implica necesariamente un error: las revisiones son parte habitual del progreso de la investigación."
+   ]
+  }
+ ],
+ "claves": [
+  "Pobreza y desigualdad importan por curiosidad científica, por sus efectos sobre otras variables (como el crecimiento) y, sobre todo, porque se las percibe como males.",
+  "La pobreza como mal es casi universal; la desigualdad como mal es más controversial y abre el debate sobre qué igualar.",
+  "En 2010 alrededor del 15 % de los latinoamericanos vivía con menos de 2,5 dólares diarios a PPA.",
+  "El libro cubre 18 países: los 17 de la América Latina continental más la República Dominicana.",
+  "La región es muy diversa: en 2009 la pobreza va del 3,3 % en Uruguay al 42,5 % en Nicaragua, y el Gini de 44,4 a 57,2.",
+  "Usar la economía convencional no implica laissez-faire: el mismo instrumental sirve a posiciones de política opuestas.",
+  "Procesar encuestas exige decisiones sin criterio objetivo único; cifras distintas no implican necesariamente un error."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuál es el propósito declarado del libro, según su capítulo 1?",
+    "en": "What is the book's stated purpose, according to its chapter 1?"
+   },
+   "op": {
+    "es": [
+     "Defender una explicación particular de las causas de la pobreza en la región",
+     "Proponer un programa de políticas para aliviar la pobreza",
+     "Poner al alcance del lector instrumentos para la investigación empírica rigurosa sobre distribución",
+     "Reemplazar las estadísticas oficiales de los países"
+    ],
+    "en": [
+     "To defend a particular explanation of the causes of poverty in the region",
+     "To propose a policy programme to alleviate poverty",
+     "To give the reader tools for rigorous empirical research on distribution",
+     "To replace countries' official statistics"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los autores aclaran que no defienden una explicación ni proponen políticas: el libro es sobre todo formativo, aunque también informa niveles y tendencias.",
+    "en": "The authors state they defend no explanation and propose no policies: the book is mainly formative, though it also reports levels and trends."
+   },
+   "id": "fisc-dist-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estas NO es una de las tres razones que da el capítulo para estudiar la distribución?",
+    "en": "Which of these is NOT one of the chapter's three reasons for studying distribution?"
+   },
+   "op": {
+    "es": [
+     "Que la desigualdad siempre reduce el crecimiento",
+     "La curiosidad científica",
+     "Sus consecuencias sobre otras variables, como la inversión y el crecimiento",
+     "Que pobreza y desigualdad son percibidas como males"
+    ],
+    "en": [
+     "That inequality always reduces growth",
+     "Scientific curiosity",
+     "Its consequences for other variables, such as investment and growth",
+     "That poverty and inequality are perceived as ills"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El libro dice que se argumenta que la distribución afecta el crecimiento, no que siempre lo reduzca; el vínculo se estudia en el capítulo 8.",
+    "en": "The book says it is argued that distribution affects growth, not that it always reduces it; the link is studied in chapter 8."
+   },
+   "id": "fisc-dist-01-q2"
+  },
+  {
+   "q": {
+    "es": "Según el capítulo, ¿qué porción de los latinoamericanos vivía en 2010 con menos de 2,5 dólares por día por persona a PPA?",
+    "en": "According to the chapter, what share of Latin Americans lived on less than USD 2.5 a day per person at PPP in 2010?"
+   },
+   "op": {
+    "es": [
+     "Alrededor del 5 %",
+     "Alrededor del 15 %",
+     "Alrededor del 30 %",
+     "Alrededor del 45 %"
+    ],
+    "en": [
+     "About 5%",
+     "About 15%",
+     "About 30%",
+     "About 45%"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es una estimación de los autores; el cuadro 1.1, para 2009, da 16,3 % para la región.",
+    "en": "It is the authors' estimate; Table 1.1, for 2009, gives 16.3% for the region."
+   },
+   "id": "fisc-dist-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el libro excluye a Cuba de sus estadísticas?",
+    "en": "Why does the book exclude Cuba from its statistics?"
+   },
+   "op": {
+    "es": [
+     "Porque es un territorio asociado a los Estados Unidos",
+     "Porque su idioma no es de raíz latina",
+     "Porque su gobierno no difunde al público sus encuestas de hogares",
+     "Porque pertenece culturalmente al Caribe"
+    ],
+    "en": [
+     "Because it is a territory associated with the United States",
+     "Because its language is not of Latin origin",
+     "Because its government does not release its household surveys to the public",
+     "Because it belongs culturally to the Caribbean"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Puerto Rico se excluye por ser territorio asociado; Haití, por su vínculo con el Caribe y su sistema de encuestas precario.",
+    "en": "Puerto Rico is excluded as an associated territory; Haiti, for its Caribbean ties and weak survey system."
+   },
+   "id": "fisc-dist-01-q4"
+  },
+  {
+   "q": {
+    "es": "Con datos del cuadro 1.1 (2009), ¿qué ilustra la comparación entre Chile y Argentina?",
+    "en": "Using Table 1.1 (2009), what does the comparison between Chile and Argentina illustrate?"
+   },
+   "op": {
+    "es": [
+     "Que más ingreso siempre implica menos desigualdad",
+     "Que con un PIB per cápita casi igual se puede tener menos pobreza y más desigualdad",
+     "Que los dos tienen la misma tasa de pobreza",
+     "Que Argentina tiene el Gini más alto de la región"
+    ],
+    "en": [
+     "That more income always means less inequality",
+     "That with almost the same GDP per capita one can have less poverty and more inequality",
+     "That both have the same poverty rate",
+     "That Argentina has the highest Gini in the region"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Lectura propia sobre el cuadro: Chile tiene pobreza de 4,3 % y Gini de 51,9; Argentina, 8,1 % y 45,1, con PIB per cápita de 14299 y 14126 dólares.",
+    "en": "Own reading of the table: Chile has poverty of 4.3% and a Gini of 51.9; Argentina, 8.1% and 45.1, with GDP per capita of USD 14,299 and 14,126."
+   },
+   "id": "fisc-dist-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué responden los autores a la crítica de que la economía convencional justifica el statu quo distributivo?",
+    "en": "How do the authors answer the criticism that conventional economics justifies the distributive status quo?"
+   },
+   "op": {
+    "es": [
+     "Que la crítica es correcta y por eso el libro usa métodos cualitativos",
+     "Que el mercado siempre produce resultados justos",
+     "Que solo los estudios de caso son válidos",
+     "Que el instrumental no determina las conclusiones: con el mismo paradigma se defienden desde la no intervención hasta redistribuciones masivas"
+    ],
+    "en": [
+     "That the criticism is right and so the book uses qualitative methods",
+     "That the market always produces fair outcomes",
+     "That only case studies are valid",
+     "That the toolkit does not determine conclusions: with the same paradigm people defend anything from non-intervention to massive redistribution"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La postura de cada uno depende de sus juicios de valor y de su percepción de la realidad, no del instrumental.",
+    "en": "Each person's stance depends on their value judgements and perception of reality, not on the toolkit."
+   },
+   "id": "fisc-dist-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué trade-off identifica el capítulo entre estudios de caso y análisis estadístico?",
+    "en": "What trade-off does the chapter identify between case studies and statistical analysis?"
+   },
+   "op": {
+    "es": [
+     "Entre el acercamiento a la persona y la generalidad y representatividad de los resultados",
+     "Entre costo y velocidad de las encuestas",
+     "Entre ingreso y consumo como variable de bienestar",
+     "Entre pobreza y desigualdad"
+    ],
+    "en": [
+     "Between closeness to the person and the generality and representativeness of results",
+     "Between the cost and speed of surveys",
+     "Between income and consumption as welfare variable",
+     "Between poverty and inequality"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La estadística permite saber cuán extendido está un fenómeno y simular políticas sobre muchas personas; los casos dan cercanía. El libro elige lo primero sin negar lo segundo.",
+    "en": "Statistics show how widespread a phenomenon is and allow simulating policies over many people; cases give closeness. The book chooses the former without denying the latter."
+   },
+   "id": "fisc-dist-01-q7"
+  },
+  {
+   "q": {
+    "es": "Si un investigador obtiene con la misma encuesta una tasa de pobreza distinta de la del libro, ¿qué dice el capítulo?",
+    "en": "If a researcher gets a poverty rate from the same survey that differs from the book's, what does the chapter say?"
+   },
+   "op": {
+    "es": [
+     "Que necesariamente cometió un error de programación",
+     "Que debe usar siempre las cifras oficiales",
+     "Que no necesariamente hay un error: puede haber resuelto de otra manera alguna decisión metodológica ambigua",
+     "Que la encuesta no es representativa"
+    ],
+    "en": [
+     "That they necessarily made a programming error",
+     "That they should always use official figures",
+     "That there is not necessarily an error: they may have resolved some ambiguous methodological decision differently",
+     "That the survey is not representative"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El ejemplo es el joven con ingresos inconsistentes: eliminarlo con su familia o incluirlo son decisiones sin criterio objetivo universal.",
+    "en": "The example is the young person with inconsistent income: dropping them with their family or keeping them are choices with no universal objective criterion."
+   },
+   "id": "fisc-dist-01-q8"
+  }
+ ],
+ "palabras": 2011,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el desempeño de una economía no puede evaluarse solo con crecimiento, inflación y desempleo?",
+    "en": "Why can an economy's performance not be judged only by growth, inflation and unemployment?"
+   },
+   "a": {
+    "es": "Porque existe un amplio consenso en que también, y especialmente, debe evaluarse por sus logros en reducir la pobreza y las disparidades socioeconómicas injustas, consideradas males sociales (Gasparini, Cicowiez y Sosa Escudero, 2013, cap. 1).",
+    "en": "Because there is broad consensus that it must also, and especially, be judged by its success in reducing poverty and unjust socioeconomic disparities, regarded as social ills (Gasparini, Cicowiez and Sosa Escudero, 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué la desigualdad como «mal» es más controversial que la pobreza?",
+    "en": "Why is inequality as an «ill» more controversial than poverty?"
+   },
+   "a": {
+    "es": "Porque hay argumentos filosóficos a favor y en contra de preocuparse por ella y un debate sobre qué igualar (ingreso, consumo, utilidad u oportunidades), aunque varias disciplinas muestran un disgusto humano robusto ante la desigualdad (Gasparini et al., 2013, cap. 1).",
+    "en": "Because there are philosophical arguments for and against caring about it and a debate over what to equalise (income, consumption, utility or opportunities), although several disciplines show robust human dislike of inequality (Gasparini et al., 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tan desigual es América Latina en comparación internacional?",
+    "en": "How unequal is Latin America by international comparison?"
+   },
+   "a": {
+    "es": "Muy desigual al menos desde la Colonia; hoy solo África al sur del Sahara y algunos países del Sudeste asiático tienen niveles de desigualdad de ingreso comparables, y en 2009 el Gini promedio de la región era 50,7 (Gasparini et al., 2013, cap. 1).",
+    "en": "Very unequal since at least colonial times; today only sub-Saharan Africa and some Southeast Asian countries have comparable income inequality, and in 2009 the region's average Gini was 50.7 (Gasparini et al., 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Ingreso per cápita similar implica pobreza y desigualdad similares?",
+    "en": "Does similar income per capita imply similar poverty and inequality?"
+   },
+   "a": {
+    "es": "No: las diferencias de ingreso se traducen en pobreza «aunque no mecánicamente»; en el cuadro 1.1, Chile y Argentina tienen PIB per cápita casi igual pero distinta pobreza y distinto Gini (Gasparini et al., 2013, cap. 1; la comparación es lectura propia).",
+    "en": "No: income differences translate into poverty «though not mechanically»; in Table 1.1, Chile and Argentina have almost the same GDP per capita but different poverty and Gini (Gasparini et al., 2013, ch. 1; the comparison is our own reading)."
+   },
+   "id": "fisc-dist-01-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Usar la economía neoclásica para estudiar la distribución implica defender el laissez-faire?",
+    "en": "Does using neoclassical economics to study distribution imply defending laissez-faire?"
+   },
+   "a": {
+    "es": "No, según los autores: el instrumental no lleva determinísticamente a un conjunto estrecho de prescripciones; con el mismo paradigma se defienden desde la no intervención hasta redistribuciones masivas (Gasparini et al., 2013, cap. 1).",
+    "en": "No, according to the authors: the toolkit does not lead deterministically to a narrow set of prescriptions; the same paradigm is used to defend anything from non-intervention to massive redistribution (Gasparini et al., 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué ganan los estudios distributivos con la estadística frente a los estudios de caso?",
+    "en": "What do distributional studies gain from statistics over case studies?"
+   },
+   "a": {
+    "es": "Saber cuán extendido está un fenómeno, relacionar grandes reformas o shocks con sus efectos generales y simular políticas sobre muchas personas, al costo de alejarse de la persona concreta (Gasparini et al., 2013, cap. 1).",
+    "en": "Knowing how widespread a phenomenon is, linking big reforms or shocks to their general effects and simulating policies over many people, at the cost of distance from the individual (Gasparini et al., 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t6"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué dos estimaciones de pobreza con la misma encuesta de hogares pueden diferir sin que ninguna esté mal?",
+    "en": "Why can two poverty estimates from the same household survey differ without either being wrong?"
+   },
+   "a": {
+    "es": "Porque procesar una encuesta exige muchas decisiones sin criterio objetivo universal, como qué hacer con un miembro que declara ingresos inconsistentes; por eso SEDLAC sigue un protocolo homogéneo que no todos comparten (Gasparini et al., 2013, cap. 1).",
+    "en": "Because processing a survey requires many decisions with no universal objective criterion, such as what to do with a member reporting inconsistent income; hence SEDLAC follows a homogeneous protocol not everyone shares (Gasparini et al., 2013, ch. 1)."
+   },
+   "id": "fisc-dist-01-t7"
+  }
+ ]
+}

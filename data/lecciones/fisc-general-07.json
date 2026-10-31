@@ -1,0 +1,484 @@
+{
+ "id": "fisc-general-07",
+ "cat": "fisc-general",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Repartir sin pelearse: división justa y el procedimiento del ganador ajustado",
+ "bajada": "Los capítulos 11 y 12 de los Apuntes de Grión: las cuatro propiedades de un reparto justo, por qué «uno divide y el otro elige» no alcanza, cómo el ganador ajustado logra las cuatro a la vez y qué concluye el apunte sobre justicia, medición e instituciones.",
+ "fuentes": [
+  1157
+ ],
+ "cita": "Grión, Apuntes de Finanzas Públicas (Finanzas Públicas, FCE-UNC, 2014), caps. 11 «División justa» y 12 «Conclusiones»",
+ "intro": "Los capítulos anteriores de Grión trataban de cómo una sociedad agrega preferencias, reparte bancas y distribuye poder de voto. El capítulo 11 baja a un problema más chico y muy frecuente: dos o más partes tienen que repartirse un conjunto de bienes. La mayoría de las negociaciones, dice el apunte, incluyen aspectos distributivos o de reparto, y los métodos de división justa se aplican en la resolución de disputas: juicios de divorcio, distribución de territorios o el reparto de temas en el programa de gobierno de una coalición. El capítulo define cuatro propiedades deseables (proporcionalidad, ausencia de envidia, eficiencia y equidad) y compara dos mecanismos con un mismo ejemplo: Ana y Carlos deben repartirse seis bienes no homogéneos. El primero, «uno divide y el otro elige», cumple dos de las cuatro propiedades. El segundo, el procedimiento del ganador ajustado, cumple las cuatro. El brief cierra con el capítulo 12, las conclusiones del apunte entero, que vuelven sobre la idea de que toda evaluación de política tiene detrás juicios de valor.",
+ "secciones": [
+  {
+   "t": "El problema: repartir bienes que cada uno valora distinto",
+   "p": [
+    "El punto de partida es que los bienes no son homogéneos y las partes no los valoran igual. En el ejemplo de Grión hay seis bienes (muebles, inversiones, piano, TV, perro y auto) y cada persona tiene 100 puntos para repartir entre ellos según cuánto le importa cada uno. Ana pone 35 puntos en los muebles, 20 en las inversiones, 10 en el piano, 5 en la TV, 25 en el perro y 5 en el auto. Carlos pone 15, 25, 25, 15, 10 y 10, respectivamente.",
+    "Que las valuaciones difieran es justamente lo que hace posible un buen reparto. Lectura propia: si los dos valoraran todo igual, cualquier reparto sería un juego de suma cero; como Ana quiere más los muebles y el perro y Carlos el piano, la TV y el auto, hay espacio para que ambos reciban más de la mitad de lo que valoran. Los dos mecanismos del capítulo difieren en cuánto de ese espacio aprovechan."
+   ]
+  },
+  {
+   "t": "Cuatro propiedades deseables",
+   "eq": [
+    "v_i(S_i) \\ge \\tfrac{1}{n}\\, v_i(B) \\quad \\text{para todo } i",
+    "v_i(S_i) \\ge v_i(S_j) \\quad \\text{para todo } i, j",
+    "\\frac{v_A(S_A)}{v_A(B)} = \\frac{v_C(S_C)}{v_C(B)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(i\\): cada una de las partes del reparto (personas, partidos, países).",
+      "en": "\\(i\\): each of the parties to the division (people, parties, countries)."
+     },
+     {
+      "es": "\\(n\\): número de partes.",
+      "en": "\\(n\\): number of parties."
+     },
+     {
+      "es": "\\(B\\): el conjunto completo de bienes a repartir.",
+      "en": "\\(B\\): the whole set of goods to be divided."
+     },
+     {
+      "es": "\\(S_i\\): la porción (conjunto de bienes, o fracciones de bienes) que recibe la parte \\(i\\).",
+      "en": "\\(S_i\\): the share (set of goods, or fractions of goods) that party \\(i\\) receives."
+     },
+     {
+      "es": "\\(v_i(\\cdot)\\): valuación de la parte \\(i\\), en puntos; en el ejemplo, \\(v_i(B) = 100\\).",
+      "en": "\\(v_i(\\cdot)\\): party \\(i\\)'s valuation, in points; in the example, \\(v_i(B) = 100\\)."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; Grión define la proporcionalidad en palabras («cada parte recibe al menos 1/n de los bienes de acuerdo a su propia valuación»).",
+      "en": "Own reading: the notation is ours; Grión defines proportionality in words («each party receives at least 1/n of the goods according to its own valuation»)."
+     }
+    ],
+    [
+     {
+      "es": "\\(S_i, S_j\\): porciones de las partes \\(i\\) y \\(j\\).",
+      "en": "\\(S_i, S_j\\): shares of parties \\(i\\) and \\(j\\)."
+     },
+     {
+      "es": "\\(v_i(S_j)\\): cuánto valora la parte \\(i\\) lo que recibió la parte \\(j\\), medido con la escala de \\(i\\).",
+      "en": "\\(v_i(S_j)\\): how much party \\(i\\) values what party \\(j\\) received, measured on \\(i\\)'s scale."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; el apunte dice que una asignación es libre de envidia «si ninguna parte valora más la parte de los demás que la propia».",
+      "en": "Own reading: the notation is ours; the notes say an allocation is envy-free «if no party values the others' share more than its own»."
+     }
+    ],
+    [
+     {
+      "es": "\\(A, C\\): Ana y Carlos, las dos partes del ejemplo.",
+      "en": "\\(A, C\\): Ana and Carlos, the two parties in the example."
+     },
+     {
+      "es": "\\(v_A(S_A)/v_A(B)\\): porcentaje del valor total que Ana obtiene, según su propia valuación; lo mismo para Carlos del lado derecho.",
+      "en": "\\(v_A(S_A)/v_A(B)\\): share of total value that Ana obtains, by her own valuation; the same for Carlos on the right-hand side."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; Grión llama equitativa a la asignación en que «cada parte recibe el mismo porcentaje del valor de los bienes de acuerdo a las valuaciones propias».",
+      "en": "Own reading: the notation is ours; Grión calls equitable an allocation in which «each party receives the same percentage of the value of the goods according to its own valuations»."
+     }
+    ]
+   ],
+   "p": [
+    "Grión enumera cuatro propiedades. Una asignación es proporcional si, con n partes, cada una recibe al menos 1/n de los bienes según su propia valuación (primera ecuación). Es libre de envidia si ninguna parte valora más la porción de otro que la propia (segunda). Es eficiente si no existe otra asignación posible en la que la valoración de cada parte sea no menor y la de al menos una sea mayor: es el criterio de Pareto aplicado al reparto. Y es equitativa si cada parte recibe el mismo porcentaje del valor de los bienes según sus valuaciones propias (tercera, para dos partes).",
+    "Las propiedades miden cosas distintas. Lectura propia: proporcionalidad y ausencia de envidia son pisos que protegen a cada parte; eficiencia es una condición sobre el conjunto (no dejar valor sobre la mesa); equidad es una condición de simetría entre las partes. Con dos partes, ausencia de envidia y proporcionalidad coinciden: si Ana valora su porción al menos tanto como la de Carlos, y entre las dos suman 100, su porción vale para ella al menos 50."
+   ]
+  },
+  {
+   "t": "Uno divide y el otro elige",
+   "p": [
+    "El mecanismo más antiguo es simple. Una persona reparte los bienes en dos grupos; la otra elige uno. Si quien divide no conoce las preferencias del otro, le conviene formar dos grupos de igual valor total según su propia valoración, porque recibirá el que el otro deje. Si las conoce, puede hacer un reparto estratégico.",
+    "En el ejemplo divide Ana. Arma el grupo X con muebles, piano y TV (35 + 10 + 5 = 50 de sus puntos) y el grupo Y con inversiones, perro y auto (20 + 25 + 5 = 50). Para Carlos, X vale 15 + 25 + 15 = 55 e Y vale 25 + 10 + 10 = 45, así que elige X. El reparto final deja a Ana con 50 puntos y a Carlos con 55, cada uno medido con su propia escala.",
+    "Grión evalúa el resultado: el mecanismo cumple con la proporcionalidad (cada uno tiene una parte de al menos 50) y es libre de envidia (la parte del otro no vale más que la propia), pero no es en general eficiente ni equitativo, porque 50 es distinto de 55. Agrega una observación sobre quién gana con el método: es probable que quien elige resulte beneficiado cuando el que divide no conoce sus preferencias, y perjudicado cuando el que divide sí las conoce y reparte estratégicamente. Por eso concluye que el método «no es tan justo».",
+    "Lectura propia: la ineficiencia se ve con números del propio ejemplo. Si Ana se quedara con muebles y perro (35 + 25 = 60) y Carlos con inversiones, piano, TV y auto (25 + 25 + 15 + 10 = 75), los dos estarían mejor que con el reparto final (60 frente a 50 y 75 frente a 55). El problema de «uno divide» es que obliga a armar paquetes de igual valor para quien divide, en lugar de darle cada bien a quien más lo quiere."
+   ]
+  },
+  {
+   "t": "El procedimiento del ganador ajustado",
+   "eq": [
+    "r_k = \\frac{v_C(k)}{v_A(k)}",
+    "60 + 20x = 75 - 25x \\;\\Rightarrow\\; 45x = 15"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(k\\): cada bien que, en el reparto inicial, quedó en manos de quien acumuló más valor (en el ejemplo, Carlos).",
+      "en": "\\(k\\): each good that, in the initial allocation, went to the party with more accumulated value (Carlos in the example)."
+     },
+     {
+      "es": "\\(v_C(k)\\), \\(v_A(k)\\): puntos que Carlos y Ana asignan al bien \\(k\\).",
+      "en": "\\(v_C(k)\\), \\(v_A(k)\\): points Carlos and Ana assign to good \\(k\\)."
+     },
+     {
+      "es": "\\(r_k\\): relación de valores C/A del bien \\(k\\); el apunte la tabula (1,25 para inversiones, 2,00 para el auto, 2,50 para el piano y 3,00 para la TV). Un \\(r_k\\) bajo indica que el bien le cuesta poco a Carlos cederlo en relación con lo que Ana gana.",
+      "en": "\\(r_k\\): C/A value ratio of good \\(k\\); the notes tabulate it (1.25 for investments, 2.00 for the car, 2.50 for the piano and 3.00 for the TV). A low \\(r_k\\) means the good costs Carlos little to give up relative to what Ana gains."
+     }
+    ],
+    [
+     {
+      "es": "\\(x\\): fracción de las inversiones (entre 0 y 1) que Carlos le transfiere a Ana.",
+      "en": "\\(x\\): fraction of the investments (between 0 and 1) that Carlos transfers to Ana."
+     },
+     {
+      "es": "60: puntos de Ana tras el reparto inicial (muebles 35 + perro 25), en su escala.",
+      "en": "60: Ana's points after the initial allocation (furniture 35 + dog 25), on her scale."
+     },
+     {
+      "es": "75: puntos de Carlos tras el reparto inicial (inversiones 25 + piano 25 + TV 15 + auto 10), en su escala.",
+      "en": "75: Carlos's points after the initial allocation (investments 25 + piano 25 + TV 15 + car 10), on his scale."
+     },
+     {
+      "es": "\\(20x\\): lo que gana Ana, que valora las inversiones en 20; \\(25x\\): lo que pierde Carlos, que las valora en 25.",
+      "en": "\\(20x\\): what Ana gains, since she values the investments at 20; \\(25x\\): what Carlos loses, since he values them at 25."
+     },
+     {
+      "es": "Lectura propia: la ecuación es nuestra; el apunte describe el ajuste en palabras y en el cuadro.",
+      "en": "Own reading: the equation is ours; the notes describe the adjustment in words and in the table."
+     }
+    ]
+   ],
+   "p": [
+    "El segundo mecanismo tiene dos etapas. Primero, el reparto: cada bien se entrega en principio a quien más valor le da, y si hay bienes con igual valor se entregan al que tiene menos valor acumulado. En el ejemplo, Ana recibe muebles (35 contra 15) y perro (25 contra 10), y acumula 60 puntos; Carlos recibe inversiones, piano, TV y auto, y acumula 75.",
+    "Segundo, el ajuste. Si los valores totales son iguales, el reparto termina. Si no, quien tiene más valor (Carlos) le va transfiriendo bienes al otro, empezando por los de menor relación de valores C/A, hasta igualar los totales; eso puede requerir fraccionar un bien. Las relaciones del cuadro son 1,25 para las inversiones, 2,00 para el auto, 2,50 para el piano y 3,00 para la TV, de modo que lo primero que se transfiere son las inversiones. Lectura propia: el orden tiene sentido económico; ceder primero el bien con menor relación C/A es ceder el bien en el que cada punto que pierde Carlos le da a Ana la mayor ganancia relativa, y así el ajuste destruye el menor valor posible.",
+    "Según Grión, el método cumple las cuatro propiedades: es proporcional, libre de envidia, eficiente y equitativo. En el cuadro del apunte, tras el ajuste Ana queda con 67,5 puntos y Carlos con 67,5: más de lo que cada uno lograba con «uno divide y el otro elige» (50 y 55).",
+    "Lectura propia: el cuadro tiene un detalle aritmético. Le asigna a Ana 7,5 puntos de las inversiones y a Carlos 17,5, como si los dos midieran el bien con la misma escala, cuando Ana lo valora en 20 y Carlos en 25. Igualando correctamente (segunda ecuación) la fracción transferida es un tercio: Ana gana un tercio de 20 y Carlos pierde un tercio de 25, y cada uno termina con dos tercios de sus 100 puntos, apenas por debajo de lo que muestra el cuadro. La conclusión cualitativa no cambia: los dos obtienen lo mismo en sus propias escalas y nadie podría mejorar sin que el otro empeore."
+   ]
+  },
+  {
+   "t": "Los límites de los mecanismos",
+   "p": [
+    "Grión ya marca un límite en el primer método: si quien divide conoce las preferencias del otro, puede repartir estratégicamente. Lectura propia: el ganador ajustado tiene una vulnerabilidad parecida, porque descansa en que cada parte declare con sinceridad cómo reparte sus 100 puntos. Una parte que conoce las valuaciones de la otra puede exagerar su interés en los bienes que igual recibiría para mover a su favor el punto en que se igualan los totales.",
+    "Lectura propia: hay además dos supuestos implícitos en el ejemplo. Uno es que al menos un bien se pueda fraccionar (aquí, las inversiones; con el perro sería más difícil). El otro es que las partes sean dos; con más partes la ausencia de envidia y la proporcionalidad dejan de coincidir y los procedimientos se complican. El mecanismo es conocido en la literatura como adjusted winner, propuesto por Brams y Taylor, aunque el apunte no los cita."
+   ]
+  },
+  {
+   "t": "Las conclusiones del apunte",
+   "p": [
+    "El capítulo 12 cierra el apunte entero. Su primera idea es que el libre mercado no garantiza una distribución equitativa del bienestar, y que el alcance de esa afirmación depende de los juicios de valor de cada individuo, que es lo que analizan las teorías de justicia distributiva. De ahí Grión saca dos advertencias: toda evaluación de política tiene por detrás juicios de valor, y las medidas positivas o estadísticas tienen un componente normativo implícito.",
+    "La segunda idea es sobre medición. Las políticas públicas requieren indicadores que las guíen y permitan evaluar después su eficacia, y la medición de la pobreza y la desigualdad en base a ingresos tiene fuertes limitaciones: hay que considerar las capacidades de las personas para ejercer sus libertades, porque los ingresos son un instrumento. Pero en muchas situaciones las mediciones basadas en ingresos son lo mejor disponible. Vulnerabilidad y polarización son otros conceptos útiles, y disponer de estadísticas públicas confiables es esencial.",
+    "La tercera idea es institucional. La actuación pública puede mejorar estos problemas, pero en la práctica no necesariamente lo hace, por la dificultad de determinar la «voluntad común», los costos de transacción y el rol de los intermediarios. Todo depende del grado de información en el proceso decisorio y de los mecanismos con que se toman las decisiones colectivas: en palabras del apunte, de disponer de buenas instituciones.",
+    "Lectura propia: el capítulo de división justa ilustra en pequeño esa conclusión. El mismo conjunto de bienes y las mismas preferencias dan resultados distintos según el procedimiento, y el procedimiento mejor diseñado logra a la vez eficiencia y equidad, dos objetivos que en otros contextos aparecen enfrentados."
+   ]
+  }
+ ],
+ "claves": [
+  "Los métodos de división justa resuelven disputas de reparto: divorcios, territorios, el programa de una coalición.",
+  "Cuatro propiedades: proporcionalidad, ausencia de envidia, eficiencia (Pareto) y equidad (igual porcentaje del valor propio).",
+  "«Uno divide y el otro elige» es proporcional y libre de envidia, pero no eficiente ni equitativo: en el ejemplo, Ana 50 y Carlos 55.",
+  "El ganador ajustado da cada bien a quien más lo valora y luego transfiere, empezando por la menor relación C/A, hasta igualar valores.",
+  "Según Grión, el ganador ajustado cumple las cuatro propiedades; en el ejemplo, los dos terminan con alrededor de dos tercios de sus puntos.",
+  "Ambos mecanismos son vulnerables a la estrategia si una parte conoce las valuaciones de la otra (lectura propia, para el ganador ajustado).",
+  "Conclusión del apunte: toda evaluación de política tiene juicios de valor detrás, y los resultados dependen de buenas instituciones."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Grión, ¿cuándo es proporcional una asignación entre n partes?",
+    "en": "According to Grión, when is an allocation among n parties proportional?"
+   },
+   "op": {
+    "es": [
+     "Cuando cada parte recibe al menos 1/n de los bienes según su propia valuación",
+     "Cuando cada parte recibe exactamente el mismo número de bienes",
+     "Cuando ninguna parte valora más la porción de otro",
+     "Cuando no hay otra asignación que mejore a alguien sin empeorar a nadie"
+    ],
+    "en": [
+     "When each party receives at least 1/n of the goods by its own valuation",
+     "When each party receives exactly the same number of goods",
+     "When no party values another's share more",
+     "When no other allocation makes someone better off without making anyone worse off"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La proporcionalidad se mide con la escala de cada parte, no con el número de bienes. La tercera opción es la ausencia de envidia y la cuarta, la eficiencia.",
+    "en": "Proportionality is measured on each party's own scale, not by number of goods. The third option is envy-freeness and the fourth is efficiency."
+   },
+   "id": "fisc-general-07-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué exige la propiedad de equidad en el sentido del apunte?",
+    "en": "What does equitability require in the sense of the notes?"
+   },
+   "op": {
+    "es": [
+     "Que cada parte reciba al menos la mitad de los bienes",
+     "Que cada parte reciba el mismo porcentaje del valor total según sus propias valuaciones",
+     "Que los bienes se repartan por sorteo",
+     "Que la parte con menos recursos reciba más"
+    ],
+    "en": [
+     "That each party receives at least half the goods",
+     "That each party receives the same percentage of total value by its own valuations",
+     "That goods are allocated by lottery",
+     "That the party with fewer resources receives more"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Equidad es simetría: el porcentaje del valor propio que obtiene cada parte es el mismo. Con «uno divide» Ana obtiene 50 y Carlos 55, así que falla.",
+    "en": "Equitability is symmetry: each party obtains the same percentage of its own valuation. Under divide-and-choose Ana gets 50 and Carlos 55, so it fails."
+   },
+   "id": "fisc-general-07-q2"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de «uno divide y el otro elige», Ana divide en X (muebles, piano, TV) e Y (inversiones, perro, auto). ¿Qué elige Carlos y con cuánto queda cada uno?",
+    "en": "In the divide-and-choose example, Ana splits into X (furniture, piano, TV) and Y (investments, dog, car). What does Carlos choose and how much does each end up with?"
+   },
+   "op": {
+    "es": [
+     "Elige Y; Ana 50 y Carlos 45",
+     "Elige X; Ana 55 y Carlos 50",
+     "Elige X; Ana 50 y Carlos 55",
+     "Elige Y; Ana 55 y Carlos 55"
+    ],
+    "en": [
+     "He picks Y; Ana 50 and Carlos 45",
+     "He picks X; Ana 55 and Carlos 50",
+     "He picks X; Ana 50 and Carlos 55",
+     "He picks Y; Ana 55 and Carlos 55"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Para Carlos X vale 15 + 25 + 15 = 55 e Y vale 45; Ana se queda con Y, que para ella vale 50, como X.",
+    "en": "For Carlos X is worth 15 + 25 + 15 = 55 and Y is worth 45; Ana keeps Y, worth 50 to her, the same as X."
+   },
+   "id": "fisc-general-07-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué propiedades cumple, según Grión, «uno divide y el otro elige»?",
+    "en": "Which properties does divide-and-choose satisfy, according to Grión?"
+   },
+   "op": {
+    "es": [
+     "Las cuatro",
+     "Eficiencia y equidad, pero no proporcionalidad",
+     "Solo equidad",
+     "Proporcionalidad y ausencia de envidia, pero en general no eficiencia ni equidad"
+    ],
+    "en": [
+     "All four",
+     "Efficiency and equitability, but not proportionality",
+     "Only equitability",
+     "Proportionality and envy-freeness, but in general neither efficiency nor equitability"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Cada uno obtiene al menos 50 y ninguno prefiere la parte del otro, pero los valores (50 y 55) difieren y existe un reparto que mejora a ambos.",
+    "en": "Each gets at least 50 and neither prefers the other's share, but the values (50 and 55) differ and there is an allocation that makes both better off."
+   },
+   "id": "fisc-general-07-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la primera etapa del procedimiento del ganador ajustado?",
+    "en": "What is the first stage of the adjusted winner procedure?"
+   },
+   "op": {
+    "es": [
+     "Entregar cada bien a quien más valor le da",
+     "Dividir cada bien por la mitad",
+     "Que una parte arme dos grupos de igual valor",
+     "Sortear el orden en que cada parte elige"
+    ],
+    "en": [
+     "Give each good to whoever values it most",
+     "Split each good in half",
+     "Have one party form two groups of equal value",
+     "Draw lots for the order in which each party chooses"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En el ejemplo, Ana recibe muebles y perro (60 puntos) y Carlos el resto (75 puntos); los empates van a quien tiene menos valor acumulado.",
+    "en": "In the example, Ana gets furniture and dog (60 points) and Carlos the rest (75 points); ties go to whoever has less accumulated value."
+   },
+   "id": "fisc-general-07-q5"
+  },
+  {
+   "q": {
+    "es": "En el ajuste, Carlos transfiere bienes empezando por los de menor relación C/A. ¿Cuál se transfiere primero en el ejemplo?",
+    "en": "In the adjustment, Carlos transfers goods starting with the lowest C/A ratio. Which goes first in the example?"
+   },
+   "op": {
+    "es": [
+     "La TV, con relación 3,00",
+     "Las inversiones, con relación 1,25",
+     "El auto, con relación 2,00",
+     "El piano, con relación 2,50"
+    ],
+    "en": [
+     "The TV, ratio 3.00",
+     "The investments, ratio 1.25",
+     "The car, ratio 2.00",
+     "The piano, ratio 2.50"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las inversiones tienen la menor relación (25/20 = 1,25): ceder un punto de Ana le cuesta a Carlos lo mínimo, y basta fraccionarlas para igualar valores.",
+    "en": "The investments have the lowest ratio (25/20 = 1.25): each point Ana gains costs Carlos the least, and splitting them is enough to equalise values."
+   },
+   "id": "fisc-general-07-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el reparto final de «uno divide y el otro elige» en el ejemplo no es eficiente?",
+    "en": "Why is the final divide-and-choose allocation in the example not efficient?"
+   },
+   "op": {
+    "es": [
+     "Porque Carlos recibe más bienes que Ana",
+     "Porque hay bienes sin repartir",
+     "Porque existe otro reparto, el inicial del ganador ajustado (60 y 75), que mejora a los dos",
+     "Porque Ana envidia la parte de Carlos"
+    ],
+    "en": [
+     "Because Carlos receives more goods than Ana",
+     "Because some goods are left undivided",
+     "Because there is another allocation, the adjusted winner's initial one (60 and 75), that makes both better off",
+     "Because Ana envies Carlos's share"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Lectura propia sobre los números del apunte: 60 > 50 para Ana y 75 > 55 para Carlos. Ana no envidia a Carlos: X y Y valen 50 para ella.",
+    "en": "Own reading of the notes' numbers: 60 > 50 for Ana and 75 > 55 for Carlos. Ana does not envy Carlos: X and Y are both worth 50 to her."
+   },
+   "id": "fisc-general-07-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué afirma la conclusión del apunte sobre las medidas estadísticas de pobreza y desigualdad?",
+    "en": "What does the notes' conclusion say about statistical measures of poverty and inequality?"
+   },
+   "op": {
+    "es": [
+     "Que son neutrales y no requieren juicios de valor",
+     "Que deben reemplazarse por estudios de caso",
+     "Que el ingreso es el único indicador válido",
+     "Que tienen un componente normativo implícito y que medir con ingresos tiene fuertes limitaciones, aunque a menudo es lo mejor disponible"
+    ],
+    "en": [
+     "That they are neutral and need no value judgements",
+     "That they should be replaced by case studies",
+     "That income is the only valid indicator",
+     "That they carry an implicit normative component and that income-based measurement has strong limitations, though it is often the best available"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Grión subraya que toda evaluación de política tiene juicios de valor detrás y que los ingresos son un instrumento: importan las capacidades de las personas.",
+    "en": "Grión stresses that every policy evaluation rests on value judgements and that income is an instrument: what matters are people's capabilities."
+   },
+   "id": "fisc-general-07-q8"
+  }
+ ],
+ "palabras": 1596,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Para qué sirven los métodos de división justa en economía pública?",
+    "en": "What are fair-division methods for in public economics?"
+   },
+   "a": {
+    "es": "Para resolver disputas de reparto, que aparecen en la mayoría de las negociaciones: juicios de divorcio, distribución de territorios o el reparto de temas en el programa de una coalición de gobierno (Grión, cap. 11).",
+    "en": "To settle allocation disputes, which arise in most negotiations: divorce cases, division of territories or the sharing-out of issues in a coalition government's programme (Grión, ch. 11)."
+   },
+   "id": "fisc-general-07-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué distingue una asignación libre de envidia de una equitativa?",
+    "en": "What distinguishes an envy-free allocation from an equitable one?"
+   },
+   "a": {
+    "es": "Libre de envidia: nadie valora más la parte del otro que la propia. Equitativa: cada parte recibe el mismo porcentaje del valor según sus propias valuaciones. Un reparto puede cumplir la primera y no la segunda (Grión, cap. 11).",
+    "en": "Envy-free: no one values the other's share more than their own. Equitable: each party gets the same percentage of value by its own valuations. An allocation can satisfy the first and not the second (Grión, ch. 11)."
+   },
+   "id": "fisc-general-07-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué «uno divide y el otro elige» no es tan justo como parece?",
+    "en": "Why is divide-and-choose not as fair as it looks?"
+   },
+   "a": {
+    "es": "Porque quien divide arma dos grupos de igual valor para sí y el resultado depende de la información: si no conoce las preferencias del otro, conviene elegir; si las conoce, puede repartir estratégicamente y conviene dividir (Grión, cap. 11).",
+    "en": "Because the divider forms two groups of equal value to themselves and the outcome depends on information: if they do not know the other's preferences, it pays to choose; if they do, they can divide strategically and it pays to divide (Grión, ch. 11)."
+   },
+   "id": "fisc-general-07-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo funciona el procedimiento del ganador ajustado?",
+    "en": "How does the adjusted winner procedure work?"
+   },
+   "a": {
+    "es": "Cada bien va primero a quien más lo valora; luego quien acumuló más valor transfiere bienes, empezando por los de menor relación de valores entre ambos, hasta igualar los totales, fraccionando un bien si hace falta (Grión, cap. 11).",
+    "en": "Each good first goes to whoever values it most; then whoever accumulated more value transfers goods, starting with the lowest value ratio between the two, until totals are equal, splitting a good if needed (Grión, ch. 11)."
+   },
+   "id": "fisc-general-07-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué propiedades logra el ganador ajustado frente a «uno divide y el otro elige»?",
+    "en": "Which properties does adjusted winner achieve compared with divide-and-choose?"
+   },
+   "a": {
+    "es": "Las cuatro: proporcionalidad, ausencia de envidia, eficiencia y equidad; «uno divide» solo las dos primeras. En el ejemplo, ambos terminan con valores iguales y mayores que 50 y 55 (Grión, cap. 11).",
+    "en": "All four: proportionality, envy-freeness, efficiency and equitability; divide-and-choose only the first two. In the example both end with equal values above 50 and 55 (Grión, ch. 11)."
+   },
+   "id": "fisc-general-07-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué debilidad comparten los mecanismos de reparto basados en valuaciones declaradas?",
+    "en": "What weakness do allocation mechanisms based on declared valuations share?"
+   },
+   "a": {
+    "es": "Dependen de que cada parte declare con sinceridad; Grión lo señala para «uno divide» cuando quien divide conoce las preferencias del otro, y por extensión vale para el ganador ajustado (lectura propia).",
+    "en": "They depend on each party declaring truthfully; Grión points it out for divide-and-choose when the divider knows the other's preferences, and by extension it applies to adjusted winner (own reading)."
+   },
+   "id": "fisc-general-07-t6"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué toda evaluación de política distributiva es en parte normativa?",
+    "en": "Why is every evaluation of distributive policy partly normative?"
+   },
+   "a": {
+    "es": "Porque el libre mercado no garantiza una distribución equitativa y el alcance de esa idea depende de juicios de valor; incluso las medidas positivas o estadísticas tienen un componente normativo implícito (Grión, cap. 12).",
+    "en": "Because the free market does not guarantee an equitable distribution and how far that holds depends on value judgements; even positive or statistical measures carry an implicit normative component (Grión, ch. 12)."
+   },
+   "id": "fisc-general-07-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿De qué depende que la acción pública mejore efectivamente la distribución?",
+    "en": "What determines whether public action actually improves distribution?"
+   },
+   "a": {
+    "es": "Del grado de información en el proceso decisorio y de los mecanismos con que se toman las decisiones colectivas, frente a la dificultad de determinar la «voluntad común», los costos de transacción y el rol de los intermediarios: de buenas instituciones (Grión, cap. 12).",
+    "en": "On the degree of information in decision-making and on the mechanisms by which collective decisions are made, given the difficulty of determining the «common will», transaction costs and the role of intermediaries: on good institutions (Grión, ch. 12)."
+   },
+   "id": "fisc-general-07-t8"
+  }
+ ]
+}
