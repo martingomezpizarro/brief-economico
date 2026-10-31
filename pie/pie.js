@@ -112,7 +112,7 @@
           h("p", { class: "pie-tit" }, "Colaborar"),
           h("p", null, COL.texto || ""),
           h("div", { class: "pie-botones" },
-            COL.cafecito ? Object.assign(ext(COL.cafecito, "Invitame un cafecito"), { className: "pie-btn pie-cafe" }) : completar("link de Cafecito"),
+            COL.cafecito === false ? null : COL.cafecito ? Object.assign(ext(COL.cafecito, "Invitame un cafecito"), { className: "pie-btn pie-cafe" }) : completar("link de Cafecito"),
             opcionColaborar()),
           h("p", { class: "pie-nota" }, "Las colaboraciones son voluntarias, no constituyen contraprestación por ningún servicio ni otorgan derechos sobre el contenido."))),
       h("section", { class: "pie-legal", "aria-label": "Aviso legal" },
@@ -169,7 +169,7 @@
       ]),
       seccion("colaboraciones", "Colaboraciones voluntarias", [
         (COL.texto || "") + " Las colaboraciones son voluntarias, no constituyen contraprestación por ningún servicio ni otorgan derechos sobre el contenido, ni prioridad, soporte o funciones adicionales.",
-        h("p", null, "Medios: ", COL.cafecito ? ext(COL.cafecito, "Cafecito") : completar("link de Cafecito"), " · ",
+        h("p", null, "Medios: ", ...(COL.cafecito === false ? [] : [COL.cafecito ? ext(COL.cafecito, "Cafecito") : completar("link de Cafecito"), " · "]),
           o.link ? ext(o.link, o.etiqueta || "otra opción") : o.valor ? (o.etiqueta || "Otra opción") + " (" + o.valor + ")" : completar("alias o link de " + (o.etiqueta || "la segunda opción")), "."),
       ]),
       seccion("propiedad", "Propiedad intelectual", [

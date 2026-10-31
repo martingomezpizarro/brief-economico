@@ -20,10 +20,10 @@ window.PIE_CONFIG = {
     descripcion: "Prebisch ofrece briefs diarios de economía —lecturas de unos 15 minutos que explican un paper, un capítulo o un tema—, preguntas de control y repaso espaciado de tarjetas, organizados en rutas de estudio por área. También permite armar rutas propias a partir de documentos del usuario, con briefs generados por inteligencia artificial. Está pensado para estudiantes de economía y para cualquier persona que quiera estudiar economía de forma ordenada.",
     anioInicio: 2026,
     // Fecha de la última actualización del sitio (AAAA-MM-DD). Cambiarla al publicar cambios relevantes.
-    actualizado: "2026-10-22",
+    actualizado: "2026-10-31",
     // Sin licencia definida: rige «todos los derechos reservados». Si se elige una (por ejemplo,
     // CC BY-NC 4.0 para los briefs y MIT para el código), escribirla acá.
-    licencia: null,
+    licencia: "CC BY-NC-SA 4.0",
     // Ruta interna de la página de términos (en una SPA con hash; en un sitio de varias páginas, "terminos.html").
     terminos: "#terminos",
     // Enlaces internos extra que aparecen primero en la fila de links del pie.
@@ -32,7 +32,7 @@ window.PIE_CONFIG = {
 
   colaborar: {
     texto: "Este proyecto es gratuito e independiente. Si te resulta útil, podés colaborar voluntariamente para sostenerlo.",
-    cafecito: null,                       // p. ej. "https://cafecito.app/usuario"
+    cafecito: false,                      // false = sin Cafecito; null = falta completar; o el link, p. ej. "https://cafecito.app/usuario"
     otra: { etiqueta: "Mercado Pago", valor: "martingomezpizarro", link: null }, // valor = alias o CVU; link = link de pago (opcional)
   },
 
