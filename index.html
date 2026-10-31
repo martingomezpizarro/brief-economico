@@ -1332,7 +1332,7 @@ async function leerArchivo(f,avance){
   const id="d"+Date.now().toString(36)+Math.random().toString(36).slice(2,6);
   const titulo=f.name.replace(/\.(pdf|txt|md)$/i,"").replace(/[_]+/g," ");
   if(!/\.pdf$/i.test(f.name)){const t=await f.text();return{id,titulo,paginas:[t],n:1,chars:t.length}}
-  const lib=await pdfjs();const pdf=await lib.getDocument({data:await f.arrayBuffer()}).promise;const paginas=[];
+  const lib=await pdfjs();const pdf=await lib.getDocument({data:await f.arrayBuffer(),isEvalSupported:false}).promise;const paginas=[];
   for(let i=1;i<=pdf.numPages;i++){const pg=await pdf.getPage(i);const c=await pg.getTextContent();
     paginas.push(c.items.map(x=>x.str+(x.hasEOL?"\n":" ")).join("").replace(/[ \t]+/g," ").trim());if(avance)avance(i,pdf.numPages)}
   return{id,titulo,paginas,n:pdf.numPages,chars:paginas.reduce((a,b)=>a+b.length,0)};
