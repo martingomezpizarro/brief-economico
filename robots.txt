@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://prebisch.martingomezpizarro.com.ar/sitemap.xml
