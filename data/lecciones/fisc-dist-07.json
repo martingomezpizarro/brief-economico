@@ -1,0 +1,574 @@
+{
+ "id": "fisc-dist-07",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Más allá del Gini: desigualdad no monetaria, polarización, oportunidades y movilidad",
+ "bajada": "El capítulo 7 de Gasparini, Cicowiez y Sosa Escudero: índices de concentración, desigualdad multidimensional, brechas entre grupos, polarización y segregación, cómo medir la desigualdad de oportunidades, la movilidad social y el bienestar agregado, con evidencia de América Latina.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 7: «Desigualdad: extensiones»",
+ "intro": "El capítulo anterior medía la desigualdad en una sola variable monetaria y en un momento del tiempo. El capítulo 7 levanta esas restricciones en varias direcciones. Las inequidades se manifiestan en educación, salud, vivienda o acceso a servicios, y muchas veces conviene medirlas en relación con el ingreso. Las personas forman grupos, y la formación de grupos homogéneos y distantes, la polarización, no es lo mismo que la desigualdad. La concepción de equidad más aceptada es la igualdad de oportunidades, que exige separar circunstancias de esfuerzo. Las distribuciones se mueven, y la desigualdad preocupa menos con movilidad. Y, al final, lo que importa es el bienestar agregado, que combina el nivel medio de ingreso con su distribución.",
+ "secciones": [
+  {
+   "t": "Desigualdad no monetaria: gradientes y concentración",
+   "eq": [
+    "C_q = 1 - 2\\int_0^1 L_q(p)\\,dp",
+    "D = \\frac{1}{2\\mu_q}\\sum_{g=1}^{G}\\left|\\mu_q^{g} - \\mu_q\\right| f_g"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C_q\\): índice de concentración de la variable no monetaria \\(q\\) (años de educación, acceso a un servicio, etc.); va de −1 a 1. Es positivo si \\(q\\) se concentra en los estratos de ingreso alto y negativo si se concentra en los bajos.",
+      "en": "\\(C_q\\): concentration index of the non-monetary variable \\(q\\) (years of schooling, access to a service, etc.); ranges from −1 to 1. It is positive if \\(q\\) is concentrated among high-income strata and negative if among low-income ones."
+     },
+     {
+      "es": "\\(L_q(p)\\): curva de concentración, el porcentaje acumulado de \\(q\\) que tiene el \\(p\\) más pobre de la población, con las personas ordenadas por ingreso \\(x\\), no por \\(q\\).",
+      "en": "\\(L_q(p)\\): concentration curve, the cumulative share of \\(q\\) held by the poorest \\(p\\) of the population, with people ranked by income \\(x\\), not by \\(q\\)."
+     },
+     {
+      "es": "\\(p\\): proporción acumulada de la población ordenada por ingreso, de 0 a 1; \\(\\int_0^1 \\cdot\\,dp\\): área bajo la curva.",
+      "en": "\\(p\\): cumulative share of the population ranked by income, 0 to 1; \\(\\int_0^1 \\cdot\\,dp\\): area under the curve."
+     }
+    ],
+    [
+     {
+      "es": "\\(D\\): índice de disimilitud, la mínima fracción de personas con acceso que habría que redistribuir entre grupos para lograr igualdad de acceso.",
+      "en": "\\(D\\): dissimilarity index, the minimum share of people with access who would have to be reallocated across groups to achieve equal access."
+     },
+     {
+      "es": "\\(g = 1, \\ldots, G\\): grupos de ingreso (por ejemplo, deciles); \\(f_g\\): frecuencia del grupo \\(g\\) en la población.",
+      "en": "\\(g = 1, \\ldots, G\\): income groups (for example, deciles); \\(f_g\\): frequency of group \\(g\\) in the population."
+     },
+     {
+      "es": "\\(\\mu_q^{g}\\): promedio de la variable binaria \\(q\\) (tasa de acceso) en el grupo \\(g\\); \\(\\mu_q\\): tasa de acceso promedio de toda la población; \\(|\\cdot|\\): valor absoluto.",
+      "en": "\\(\\mu_q^{g}\\): mean of the binary variable \\(q\\) (access rate) in group \\(g\\); \\(\\mu_q\\): average access rate of the whole population; \\(|\\cdot|\\): absolute value."
+     }
+    ]
+   ],
+   "p": [
+    "Hay dos maneras de medir la desigualdad en una variable no monetaria. La primera la mira junto con el ingreso: lo preocupante no es que las personas difieran en educación, sino que difieran según su estrato. En Colombia, en 2006, un adulto típico del quintil más pobre tenía 5 años de educación y uno del quintil más rico, 12. Las herramientas son el gradiente por percentiles, la curva y el índice de concentración, análogos a Lorenz y al Gini pero ordenando por ingreso, y el índice de disimilitud. En Honduras el 70,8 % de los partos ocurre en establecimientos de salud, pero la tasa es 94,8 % en el quintil superior y 39 % en el inferior; el índice de disimilitud es 0,122.",
+    "La segunda mide la desigualdad de q por sí misma, por ejemplo con Ginis educativos. Aquí la invarianza a la escala se vuelve discutible. Si un grupo pasa de 2 a 3 años de educación y el resto de 10 a 15, un índice relativo no registra cambio, aunque la brecha creció de 8 a 12 años. Por eso a veces se exige invarianza a traslaciones y se usan medidas absolutas; el Gini absoluto es el Gini tradicional multiplicado por la media. La elección cambia el diagnóstico: el Gini educativo latinoamericano cayó de 0,62 a 0,31 en medio siglo, pero la brecha de años de educación entre quintiles creció o quedó igual en la mayoría de los países.",
+    "Los patrones se repiten en salud, vivienda y servicios. Los índices de concentración del seguro de salud van de 3,4 en Costa Rica a 40,9 en Nicaragua. En el acceso a un servicio nuevo, la desigualdad sigue un ciclo típico: al principio solo lo tienen los ricos, y a medida que la cobertura se acerca al 100 % la desigualdad se contrae por construcción."
+   ]
+  },
+  {
+   "t": "Desigualdad multidimensional",
+   "eq": [
+    "s_i = \\left(\\sum_{j=1}^{J}\\varpi_j\\,x_{ij}^{\\beta}\\right)^{1/\\beta},\\qquad I_{MA}(\\beta,\\varepsilon) = 1 - \\frac{\\left[\\frac{1}{N}\\sum_i s_i^{\\,1-\\varepsilon}\\right]^{\\frac{1}{1-\\varepsilon}}}{\\mu_s}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(s_i\\): indicador resumen del bienestar de la persona \\(i\\), que agrega sus \\(J\\) atributos (por ejemplo, ingreso, educación y vivienda).",
+      "en": "\\(s_i\\): summary well-being indicator of person \\(i\\), aggregating her \\(J\\) attributes (for example, income, education and housing)."
+     },
+     {
+      "es": "\\(x_{ij}\\): valor del atributo \\(j\\) de la persona \\(i\\), normalizado entre 0 y 1 con el mínimo y el máximo de la población.",
+      "en": "\\(x_{ij}\\): value of attribute \\(j\\) for person \\(i\\), normalized between 0 and 1 using the population minimum and maximum."
+     },
+     {
+      "es": "\\(\\varpi_j\\): ponderación del atributo \\(j\\), normalizada para que las ponderaciones sumen 1.",
+      "en": "\\(\\varpi_j\\): weight of attribute \\(j\\), normalized so the weights add up to 1."
+     },
+     {
+      "es": "\\(\\beta \\le 1\\), \\(\\beta \\ne 0\\): parámetro de sustituibilidad; la elasticidad de sustitución entre atributos es \\(1/(1-\\beta)\\). Con \\(\\beta\\) tendiendo a 1 los atributos son sustitutos perfectos; con \\(\\beta\\) tendiendo a menos infinito son complementos perfectos (Leontief). Con \\(\\beta = 0\\) el texto usa la media geométrica.",
+      "en": "\\(\\beta \\le 1\\), \\(\\beta \\ne 0\\): substitutability parameter; the elasticity of substitution between attributes is \\(1/(1-\\beta)\\). As \\(\\beta\\) tends to 1 attributes are perfect substitutes; as it tends to minus infinity they are perfect complements (Leontief). With \\(\\beta = 0\\) the text uses the geometric mean."
+     },
+     {
+      "es": "\\(I_{MA}\\): índice multidimensional de Maasoumi construido con el índice de Atkinson sobre la distribución de los \\(s_i\\); \\(\\varepsilon\\): aversión a la desigualdad (\\(\\varepsilon \\ne 1\\)); \\(\\mu_s\\): media de los \\(s_i\\); \\(N\\): población.",
+      "en": "\\(I_{MA}\\): Maasoumi's multidimensional index built with the Atkinson index on the distribution of the \\(s_i\\); \\(\\varepsilon\\): inequality aversion (\\(\\varepsilon \\ne 1\\)); \\(\\mu_s\\): mean of the \\(s_i\\); \\(N\\): population."
+     }
+    ]
+   ],
+   "p": [
+    "La forma más simple de encarar varias dimensiones es medir la desigualdad atributo por atributo. No da un número sintético, aunque Sen advierte que la pasión por la agregación no siempre tiene sentido. El problema es que los atributos están correlacionados: en Brasil, entre 1993 y 2008, la correlación es 0,39 entre ingreso y educación, 0,20 entre ingreso y vivienda y 0,36 entre educación y vivienda, lo que desaconseja tratarlos por separado.",
+    "Todo índice multidimensional debe decidir tres cosas: cuánto pesa cada atributo, cuán sustituibles son entre sí y cuánta aversión a la desigualdad se tiene. La estrategia de Maasoumi, la más usada, reduce el problema a una dimensión: primero agrega los atributos de cada persona con una función CES y después aplica un índice unidimensional, de entropía o de Atkinson. En Brasil, la fuerte caída de la desigualdad multidimensional se sostiene con los tres índices y distintos parámetros, aunque la educación muestre más disparidad si se mide con el Gini absoluto."
+   ]
+  },
+  {
+   "t": "Brechas entre grupos: región, etnia y género",
+   "p": [
+    "El análisis entre grupos reemplaza a cada persona por la media de su grupo. Las brechas geográficas son grandes: en 2007 el ingreso per cápita era 2,7 veces mayor en Costa Rica que en Nicaragua y 2,5 veces mayor en Chile que en Bolivia. Dentro de cada país, el componente interregional de la desigualdad va del 4 % en la Argentina, donde la encuesta es solo urbana, al 25,9 % en Perú.",
+    "Las brechas étnicas tienen raíz colonial y persisten: según Busso, Cicowiez y Gasparini, la mediana del cociente de pobreza entre indígenas y afrodescendientes y el resto ronda 2, y la variable que identifica a estos grupos en una ecuación de Mincer suele ser negativa y significativa. La educación de los no blancos crece generación tras generación, pero la brecha no se acorta.",
+    "En género, la variable mujer en una regresión de salarios es negativa y significativa en todos los países de la muestra, controlando por observables. Los autores admiten dos lecturas no excluyentes: discriminación, o factores no observados valorados por el mercado. Como hombres y mujeres comparten hogares, la brecha en ingreso per cápita familiar es mucho menor; la mayor es la de Chile, de 10 % a favor de los varones. En educación, en cambio, las mujeres jóvenes ya superan a los varones en la mayoría de los países."
+   ]
+  },
+  {
+   "t": "Polarización, segregación y clases",
+   "eq": [
+    "P_W = 2\\,\\frac{\\mu}{m}\\Big[2\\big(0.5 - L(0.5)\\big) - G\\Big]",
+    "P_{ER} = k\\sum_{i=1}^{n}\\sum_{j=1}^{n}\\pi_i^{1+\\alpha}\\,\\pi_j\\,|x_i - x_j|"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_W\\): índice de bipolarización de Wolfson, que divide la población en dos mitades alrededor de la mediana; su máximo, 1, se alcanza si la mitad tiene ingreso cero y la otra mitad el doble de la media.",
+      "en": "\\(P_W\\): Wolfson bipolarization index, which splits the population into two halves around the median; its maximum, 1, is reached if half has zero income and the other half twice the mean."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(m\\): ingreso mediano.",
+      "en": "\\(\\mu\\): mean income; \\(m\\): median income."
+     },
+     {
+      "es": "\\(L(0.5)\\): valor de la curva de Lorenz en la mediana, la fracción del ingreso del 50 % más pobre; \\(G\\): coeficiente de Gini.",
+      "en": "\\(L(0.5)\\): Lorenz curve at the median, the income share of the poorest 50%; \\(G\\): Gini coefficient."
+     }
+    ],
+    [
+     {
+      "es": "\\(P_{ER}\\): índice de polarización de Esteban y Ray, la suma de los antagonismos entre todos los pares de grupos.",
+      "en": "\\(P_{ER}\\): Esteban-Ray polarization index, the sum of antagonisms between all pairs of groups."
+     },
+     {
+      "es": "\\(n\\): número de grupos; \\(\\pi_i, \\pi_j\\): tamaño relativo de los grupos \\(i\\) y \\(j\\); \\(x_i, x_j\\): sus ingresos; \\(|x_i - x_j|\\): distancia entre ellos, que mide la alienación.",
+      "en": "\\(n\\): number of groups; \\(\\pi_i, \\pi_j\\): relative size of groups \\(i\\) and \\(j\\); \\(x_i, x_j\\): their incomes; \\(|x_i - x_j|\\): distance between them, measuring alienation."
+     },
+     {
+      "es": "\\(\\alpha \\in [0, 1.6]\\): sensibilidad a la identificación; elevar \\(\\pi_i\\) a \\(1+\\alpha\\) hace pesar más a los grupos grandes. Lectura propia: con \\(\\alpha = 0\\) el índice se reduce a una medida tipo Gini; \\(k > 0\\): constante de normalización.",
+      "en": "\\(\\alpha \\in [0, 1.6]\\): sensitivity to identification; raising \\(\\pi_i\\) to \\(1+\\alpha\\) gives more weight to large groups. Own reading: with \\(\\alpha = 0\\) the index reduces to a Gini-type measure; \\(k > 0\\): normalizing constant."
+     }
+    ]
+   ],
+   "p": [
+    "La polarización combina identificación con el propio grupo y alienación respecto de los demás. Un ejemplo la separa de la desigualdad: seis personas con ingresos de 1 a 6; si la tercera transfiere 1 a la primera y la sexta 1 a la cuarta, todos los índices que cumplen Dalton-Pigou caen, pero la sociedad queda partida en dos grupos homogéneos, tres personas con 2 y tres con 5. Menos desigual, posiblemente más polarizada. Wolfson mide la bipolarización alrededor de la mediana; Esteban y Ray permiten varios grupos; Duclos, Esteban y Ray usan densidades estimadas con kernels, con α entre 0,25 y 1. Con α igual a 0,25, la correlación entre su índice y el Gini en la región es 0,98; con α igual a 1, cae a 0,45. Según Gasparini y coautores, la polarización latinoamericana es 44 % mayor que la europea: Uruguay, el país menos polarizado de la región, está casi al nivel de Rusia, el más polarizado de Europa.",
+    "La segregación es la distribución desigual de grupos entre barrios, escuelas o trabajos, y se mide con el índice de disimilitud, el Gini de segregación o el índice de brecha por centiles de Watson. Pese a la fuerte caída de la desigualdad de ingresos, no hay evidencia de que la segregación escolar entre escuelas públicas y privadas haya bajado; más bien parece haber aumentado. Las clases sociales, por último, son difíciles de medir con encuestas: con la clasificación de Portes y Hoffman, los patrones son cerca del 1 % de la población activa pero no superan en promedio el 5 % del ingreso registrado, un síntoma de cuánto se pierde de los ingresos del capital."
+   ]
+  },
+  {
+   "t": "Desigualdad de oportunidades",
+   "eq": [
+    "x_i = \\lambda(C_i, E_i, \\varepsilon_i),\\qquad F(x \\mid c) = F(x \\mid c')\\ \\ \\forall\\, c, c' \\in C",
+    "DO_S = \\frac{I(\\mu_i^{c})}{I(x_i^{c})}",
+    "IOH = p^{m}\\,(1 - D)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(x_i\\): resultado de la persona \\(i\\) (por ejemplo, ingreso); \\(\\lambda(\\cdot)\\): función que lo genera.",
+      "en": "\\(x_i\\): outcome of person \\(i\\) (for example, income); \\(\\lambda(\\cdot)\\): function generating it."
+     },
+     {
+      "es": "\\(C_i\\): vector de circunstancias, factores dados de los que la persona no es responsable (raza, educación de los padres, región de nacimiento); \\(E_i\\): vector de esfuerzo, factores de los que sí es responsable; \\(\\varepsilon_i\\): factor aleatorio, suerte.",
+      "en": "\\(C_i\\): vector of circumstances, given factors the person is not responsible for (race, parental education, birth region); \\(E_i\\): vector of effort, factors she is responsible for; \\(\\varepsilon_i\\): random factor, luck."
+     },
+     {
+      "es": "\\(F(x \\mid c)\\): distribución del resultado condicional a las circunstancias \\(c\\); la igualdad estricta de oportunidades exige que sea la misma para todo par de valores \\(c, c'\\) del conjunto \\(C\\), es decir, independencia entre resultado y circunstancias; \\(\\forall\\): para todo.",
+      "en": "\\(F(x \\mid c)\\): distribution of the outcome conditional on circumstances \\(c\\); strict equality of opportunity requires it to be the same for every pair of values \\(c, c'\\) in the set \\(C\\), that is, independence between outcome and circumstances; \\(\\forall\\): for all."
+     }
+    ],
+    [
+     {
+      "es": "\\(DO_S\\): medida de desigualdad de oportunidades, entre 0 y 1.",
+      "en": "\\(DO_S\\): measure of inequality of opportunity, between 0 and 1."
+     },
+     {
+      "es": "\\(I(\\cdot)\\): un índice de desigualdad; \\(x_i^{c}\\): ingreso efectivo de la persona \\(i\\), del tipo \\(c\\) (grupo de personas con las mismas circunstancias).",
+      "en": "\\(I(\\cdot)\\): an inequality index; \\(x_i^{c}\\): actual income of person \\(i\\), of type \\(c\\) (group of people with the same circumstances)."
+     },
+     {
+      "es": "\\(\\mu_i^{c}\\): ingreso medio del tipo al que pertenece \\(i\\); \\(I(\\mu_i^{c})\\) es la desigualdad de una distribución suavizada que solo conserva diferencias entre tipos.",
+      "en": "\\(\\mu_i^{c}\\): mean income of the type \\(i\\) belongs to; \\(I(\\mu_i^{c})\\) is the inequality of a smoothed distribution that keeps only differences between types."
+     }
+    ],
+    [
+     {
+      "es": "\\(IOH\\): índice de oportunidades humanas de Paes de Barros y coautores para el acceso a un servicio (educación, agua, saneamiento, electricidad).",
+      "en": "\\(IOH\\): human opportunity index of Paes de Barros and coauthors for access to a service (education, water, sanitation, electricity)."
+     },
+     {
+      "es": "\\(p^{m}\\): tasa promedio de acceso de los niños al servicio.",
+      "en": "\\(p^{m}\\): average access rate of children to the service."
+     },
+     {
+      "es": "\\(D\\): índice de disimilitud calculado sobre las probabilidades de acceso predichas a partir de las circunstancias del niño; mide cuán desigualmente se reparten las oportunidades.",
+      "en": "\\(D\\): dissimilarity index computed on access probabilities predicted from the child's circumstances; measures how unequally opportunities are distributed."
+     }
+    ]
+   ],
+   "p": [
+    "Siguiendo a Roemer, el resultado depende de circunstancias, esfuerzo y suerte. Hay igualdad de oportunidades si la distribución del resultado no depende de las circunstancias. Como dos distribuciones casi nunca son idénticas, se proponen criterios más laxos: que ninguna distribución condicional esté dominada estocásticamente en primer o segundo orden por otra.",
+    "Para medir el grado, la población se divide en tipos con las mismas circunstancias. El índice DO_S compara la desigualdad de una distribución en la que cada uno recibe la media de su tipo con la desigualdad real: si las medias de los tipos coinciden, la desigualdad de oportunidades es nula. Hay dos problemas prácticos. Si hay variables de esfuerzo omitidas correlacionadas con las circunstancias, las diferencias entre tipos sobrestiman la desigualdad de oportunidades. Y la dimensionalidad explota: nueve circunstancias con pocas categorías generan 27000 tipos. Por eso Bourguignon, Ferreira y Menéndez usan un modelo paramétrico en Brasil: las circunstancias observables explican alrededor del 25 % de la desigualdad salarial, la educación de los padres es el factor más importante y el canal directo da cuenta del 60 % del efecto. Ferreira y Gignoux encuentran que la desigualdad de oportunidades explica entre el 24 % y el 50 % de la desigualdad del consumo en seis países.",
+    "En el acceso de los niños a servicios, el índice de oportunidades humanas combina cobertura y equidad: sube si crece el acceso promedio o si cae la desigualdad de oportunidades. Paes de Barros y coautores encuentran una mejora significativa en casi todos los países de la región, por las dos vías."
+   ]
+  },
+  {
+   "t": "Movilidad",
+   "eq": [
+    "x_{it} = \\alpha + \\beta\\,x_{it-1} + \\varepsilon_{it}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(x_{it}\\): ingreso (usualmente en logaritmos) de la persona \\(i\\) en el período \\(t\\); \\(x_{it-1}\\): su ingreso en el período anterior. En la versión intergeneracional, \\(x_{it}\\) es el ingreso del hijo y \\(x_{it-1}\\) el del padre.",
+      "en": "\\(x_{it}\\): income (usually in logs) of person \\(i\\) in period \\(t\\); \\(x_{it-1}\\): her income in the previous period. In the intergenerational version, \\(x_{it}\\) is the child's income and \\(x_{it-1}\\) the parent's."
+     },
+     {
+      "es": "\\(\\beta\\): elasticidad del ingreso actual respecto del pasado; \\(\\beta = 0\\) es plena movilidad y \\(\\beta = 1\\) movilidad nula, así que \\(1 - \\beta\\) es una medida de movilidad.",
+      "en": "\\(\\beta\\): elasticity of current income with respect to past income; \\(\\beta = 0\\) is full mobility and \\(\\beta = 1\\) zero mobility, so \\(1 - \\beta\\) is a mobility measure."
+     },
+     {
+      "es": "\\(\\alpha\\): constante; \\(\\varepsilon_{it}\\): shocks no vinculados al ingreso pasado.",
+      "en": "\\(\\alpha\\): constant; \\(\\varepsilon_{it}\\): shocks unrelated to past income."
+     }
+    ]
+   ],
+   "p": [
+    "Movilidad puede significar cosas distintas. Con tres personas que pasan de 2, 4 y 12 a 4, 8 y 24 hay movimiento de ingresos pero no de participaciones ni de posiciones; si pasan a 8, 9 y 10 cambian las participaciones pero no el orden; con 12, 6 y 3 hay movilidad en las tres dimensiones. La desigualdad preocupa menos si hay movilidad, como en el efecto túnel de Hirschman: la fila de autos detenida tolera que la otra avance mientras espere avanzar también. Pero más movilidad no siempre es más bienestar: shocks aleatorios mayores la aumentan y perjudican a quienes son aversos al riesgo.",
+    "En la región casi no hay paneles largos, así que se usan paneles rotativos, cohortes sintéticas o preguntas retrospectivas. La medida más usual es la dependencia temporal en un modelo autorregresivo, con los problemas de los paneles dinámicos: endogeneidad del rezago y errores de medición que generan sesgo de atenuación y sugieren más movilidad de la real. Con pseudo paneles para 14 países, Cuesta, Ñopo y Pizzolito estiman una persistencia de alrededor de 0,95, que cae a cerca de 0,60 con controles. Las matrices de transición muestran la movilidad posicional: en Lima, el 48,3 % de los hogares del quintil inferior en 1985/6 seguía allí en 1990, y la proporción bajó a 43,5 % entre 1990 y 1996. El índice de rigidez de Shorrocks compara la desigualdad del ingreso intertemporal con el promedio de las desigualdades corrientes. Entre generaciones, la movilidad de ingresos en América Latina es relativamente baja; la educativa mejoró en el grupo de 13 a 19 años, y los países más pobres de América Central tienen el menor índice de movilidad educativa, 0,81 contra 0,87 del resto."
+   ]
+  },
+  {
+   "t": "Bienestar agregado: crecimiento y distribución juntos",
+   "eq": [
+    "GL(p) = \\mu\\,L(p)",
+    "W_S = \\mu\\,(1 - G),\\qquad W_K = \\frac{\\mu}{1 + G}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(GL(p)\\): curva de Lorenz generalizada, el ingreso acumulado por el \\(p\\) más pobre dividido por el tamaño de la población.",
+      "en": "\\(GL(p)\\): generalized Lorenz curve, the income accumulated by the poorest \\(p\\) divided by the population size."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(L(p)\\): curva de Lorenz; \\(p\\): proporción acumulada de la población, de 0 a 1.",
+      "en": "\\(\\mu\\): mean income; \\(L(p)\\): Lorenz curve; \\(p\\): cumulative share of the population, 0 to 1."
+     }
+    ],
+    [
+     {
+      "es": "\\(W_S\\): función de bienestar abreviada de Sen, que él llama ingreso nacional real; \\(W_K\\): la de Kakwani.",
+      "en": "\\(W_S\\): Sen's abbreviated welfare function, which he calls real national income; \\(W_K\\): Kakwani's."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(G\\): coeficiente de Gini; \\((1 - G)\\) funciona como un descuento por el costo social de la desigualdad.",
+      "en": "\\(\\mu\\): mean income; \\(G\\): Gini coefficient; \\((1 - G)\\) works as a discount for the social cost of inequality."
+     }
+    ]
+   ],
+   "p": [
+    "El objetivo de una sociedad es el bienestar agregado, que incluye pero trasciende la desigualdad. Para comparar distribuciones sin elegir una función de bienestar hay criterios de dominancia cada vez menos exigentes. La dominancia paretiana pide que nadie pierda. La de primer orden pide que cada percentil esté igual o mejor: si tres personas pasan de 2, 5 y 10 a 6, 4 y 10, la segunda pierde, pero el tercio más pobre pasa de 2 a 4 y el del medio de 5 a 6. La de segundo orden, válida para toda función paretiana, simétrica y cuasicóncava, compara curvas de Lorenz generalizadas, que muestran las dos fuentes del bienestar: crecimiento de la media y reducción de la desigualdad.",
+    "Cuando las curvas se cruzan, hay que elegir una función, típicamente abreviada: depende de la media y de un índice de desigualdad, y sus tasas de crecimiento son crecimientos ponderados por distribución. Los ejemplos son reveladores. En la Argentina, entre 1994 y 1998, el bienestar creció 11 % para un utilitarista que solo mira el PIB per cápita, 4 % según Sen y 3,3 % según Atkinson con aversión 1, pero cayó 7 % para un evaluador más rawlsiano, Atkinson con aversión 2. En Brasil, entre 1993 y 2008, el ingreso medio creció al 3,3 % anual y el bienestar según Sen y Atkinson con aversión 1 al 4,2 %, porque la desigualdad cayó. En Nicaragua, al revés, el ingreso creció al 2,7 % y el bienestar de Atkinson con aversión 2 al 1,4 %. Lectura propia: estos ejercicios muestran por qué el debate sobre el desempeño argentino de los noventa nunca se saldó; según cuánto pese la distribución, el mismo período es de expansión o de retroceso."
+   ]
+  }
+ ],
+ "claves": [
+  "La desigualdad no monetaria puede medirse por su relación con el ingreso (curvas e índices de concentración, disimilitud) o por sí misma, y en ese caso la elección entre medidas relativas y absolutas cambia el diagnóstico.",
+  "Los índices multidimensionales deben fijar ponderaciones, sustituibilidad entre atributos y aversión a la desigualdad; en Brasil la caída de la desigualdad multidimensional es robusta.",
+  "La polarización combina identificación y alienación; puede subir aunque la desigualdad baje, y en América Latina es mucho mayor que en Europa.",
+  "Hay igualdad de oportunidades si el resultado es independiente de las circunstancias; en la práctica se mide comparando la desigualdad entre tipos con la desigualdad total.",
+  "Las circunstancias observables explican alrededor de un cuarto de la desigualdad salarial en Brasil, y entre un cuarto y la mitad de la del consumo en seis países de la región.",
+  "La movilidad se mide como movimientos, como dependencia temporal o como factor igualador; en América Latina la persistencia del ingreso es alta.",
+  "El bienestar agregado combina media y distribución: la curva de Lorenz generalizada y las funciones abreviadas de Sen o Atkinson pueden dar veredictos opuestos sobre un mismo período."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué indica un índice de concentración positivo para los años de educación?",
+    "en": "What does a positive concentration index for years of schooling indicate?"
+   },
+   "op": {
+    "es": [
+     "Que la educación está distribuida en forma perfectamente igualitaria",
+     "Que la educación está más concentrada en los estratos de ingreso alto",
+     "Que la educación está más concentrada en los estratos de ingreso bajo",
+     "Que el Gini educativo es mayor que el Gini del ingreso"
+    ],
+    "en": [
+     "That schooling is perfectly evenly distributed",
+     "That schooling is more concentrated among high-income strata",
+     "That schooling is more concentrated among low-income strata",
+     "That the education Gini exceeds the income Gini"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las personas se ordenan por ingreso y se acumula la variable q; valores positivos indican concentración arriba, negativos abajo, como las enfermedades infantiles en Honduras.",
+    "en": "People are ranked by income and variable q is accumulated; positive values indicate concentration at the top, negative at the bottom, like child illnesses in Honduras."
+   },
+   "id": "fisc-dist-07-q1"
+  },
+  {
+   "q": {
+    "es": "Un grupo pasa de 2 a 3 años de educación y el resto de 10 a 15. ¿Qué registra un índice invariante a la escala?",
+    "en": "One group goes from 2 to 3 years of schooling and the rest from 10 to 15. What does a scale-invariant index record?"
+   },
+   "op": {
+    "es": [
+     "Una caída de la desigualdad",
+     "Un aumento de la desigualdad",
+     "Ningún cambio, porque todos los logros se multiplicaron por 1,5",
+     "No puede calcularse con variables no monetarias"
+    ],
+    "en": [
+     "A fall in inequality",
+     "A rise in inequality",
+     "No change, because all attainments were multiplied by 1.5",
+     "It cannot be computed for non-monetary variables"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La brecha absoluta creció de 8 a 12 años; por eso para variables no monetarias se defienden a veces las medidas absolutas, invariantes a traslaciones.",
+    "en": "The absolute gap grew from 8 to 12 years; that is why absolute, translation-invariant measures are sometimes defended for non-monetary variables."
+   },
+   "id": "fisc-dist-07-q2"
+  },
+  {
+   "q": {
+    "es": "En el enfoque de Maasoumi, ¿qué regula el parámetro β de la función que agrega los atributos?",
+    "en": "In Maasoumi's approach, what does the parameter β of the attribute-aggregating function govern?"
+   },
+   "op": {
+    "es": [
+     "El grado de sustituibilidad entre atributos",
+     "La aversión a la desigualdad",
+     "La ponderación de cada atributo",
+     "El tamaño de la población"
+    ],
+    "en": [
+     "The degree of substitutability between attributes",
+     "Inequality aversion",
+     "The weight of each attribute",
+     "Population size"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La elasticidad de sustitución es 1/(1 − β): con β cerca de 1 los atributos son sustitutos perfectos y con β muy negativo, complementos perfectos. La aversión la regula el índice que se aplica después.",
+    "en": "The elasticity of substitution is 1/(1 − β): with β near 1 attributes are perfect substitutes and with very negative β, perfect complements. Aversion is governed by the index applied afterwards."
+   },
+   "id": "fisc-dist-07-q3"
+  },
+  {
+   "q": {
+    "es": "Seis personas tienen ingresos de 1 a 6. La tercera transfiere 1 a la primera y la sexta 1 a la cuarta. ¿Qué ocurre?",
+    "en": "Six people have incomes from 1 to 6. The third transfers 1 to the first and the sixth 1 to the fourth. What happens?"
+   },
+   "op": {
+    "es": [
+     "Sube la desigualdad y baja la polarización",
+     "No cambian ni la desigualdad ni la polarización",
+     "Suben ambas",
+     "Baja la desigualdad, pero la sociedad queda dividida en dos grupos homogéneos y posiblemente más polarizada"
+    ],
+    "en": [
+     "Inequality rises and polarization falls",
+     "Neither inequality nor polarization changes",
+     "Both rise",
+     "Inequality falls, but society splits into two homogeneous groups and is possibly more polarized"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Ambas transferencias son igualadoras, pero dejan tres personas con 2 y tres con 5: más identificación interna y más distancia entre grupos.",
+    "en": "Both transfers are equalizing, but they leave three people with 2 and three with 5: more internal identification and more distance between groups."
+   },
+   "id": "fisc-dist-07-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué mide el índice de desigualdad de oportunidades que compara la distribución suavizada por tipos con la real?",
+    "en": "What does the inequality-of-opportunity index comparing the type-smoothed distribution with the actual one measure?"
+   },
+   "op": {
+    "es": [
+     "La desigualdad dentro de cada tipo de circunstancias",
+     "La fracción de la desigualdad total atribuible a diferencias entre tipos de circunstancias",
+     "La movilidad entre generaciones",
+     "La polarización entre tipos"
+    ],
+    "en": [
+     "Inequality within each circumstance type",
+     "The share of total inequality attributable to differences between circumstance types",
+     "Intergenerational mobility",
+     "Polarization between types"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En la distribución suavizada cada persona recibe la media de su tipo; si las medias coinciden, la desigualdad de oportunidades es nula.",
+    "en": "In the smoothed distribution each person gets her type's mean; if the means coincide, inequality of opportunity is zero."
+   },
+   "id": "fisc-dist-07-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué problema de implementación tiene medir la desigualdad de oportunidades con muchas circunstancias?",
+    "en": "What implementation problem arises when measuring inequality of opportunity with many circumstances?"
+   },
+   "op": {
+    "es": [
+     "Que el índice deja de cumplir Dalton-Pigou",
+     "Que los tipos se vuelven idénticos",
+     "Que el número de tipos explota y no hay observaciones para estimar sus medias",
+     "Que las circunstancias pasan a ser variables de esfuerzo"
+    ],
+    "en": [
+     "The index stops satisfying Dalton-Pigou",
+     "Types become identical",
+     "The number of types explodes and there are not enough observations to estimate their means",
+     "Circumstances turn into effort variables"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Nueve circunstancias con pocas categorías generan 27000 tipos; la salida es restringir variables o usar modelos paramétricos, como Bourguignon, Ferreira y Menéndez.",
+    "en": "Nine circumstances with few categories produce 27000 types; the way out is to restrict variables or use parametric models, like Bourguignon, Ferreira and Menéndez."
+   },
+   "id": "fisc-dist-07-q6"
+  },
+  {
+   "q": {
+    "es": "En el modelo autorregresivo de ingresos en logaritmos, ¿qué indica un coeficiente β igual a 1?",
+    "en": "In the autoregressive model of log incomes, what does a coefficient β equal to 1 indicate?"
+   },
+   "op": {
+    "es": [
+     "Plena movilidad",
+     "Que los ingresos convergen",
+     "Que no hay shocks aleatorios",
+     "Movilidad nula: el ingreso actual replica el pasado en esperanza"
+    ],
+    "en": [
+     "Full mobility",
+     "That incomes converge",
+     "That there are no random shocks",
+     "Zero mobility: current income replicates past income in expectation"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "β es la elasticidad del ingreso actual respecto del pasado; 1 − β es la medida de movilidad. En América Latina las estimaciones con pseudo paneles rondan 0,95 sin controles.",
+    "en": "β is the elasticity of current with respect to past income; 1 − β is the mobility measure. In Latin America pseudo-panel estimates are around 0.95 without controls."
+   },
+   "id": "fisc-dist-07-q7"
+  },
+  {
+   "q": {
+    "es": "Entre 1994 y 1998, ¿cómo evaluaron el desempeño argentino distintas funciones de bienestar?",
+    "en": "Between 1994 and 1998, how did different welfare functions assess Argentina's performance?"
+   },
+   "op": {
+    "es": [
+     "Un utilitarista vio un aumento del 11 % y un evaluador con Atkinson de aversión 2 una caída del 7 %",
+     "Todas registraron caídas del bienestar",
+     "Todas registraron aumentos parecidos al del PIB per cápita",
+     "Solo la función de Sen registró una caída"
+    ],
+    "en": [
+     "A utilitarian saw an 11% rise and an evaluator with Atkinson aversion 2 a 7% fall",
+     "All recorded falls in welfare",
+     "All recorded rises similar to GDP per capita",
+     "Only Sen's function recorded a fall"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Fue un período de crecimiento moderado y fuerte deterioro distributivo: Sen dio 4 % y Atkinson con aversión 1, 3,3 %.",
+    "en": "It was a period of moderate growth and sharp distributional deterioration: Sen gave 4% and Atkinson with aversion 1, 3.3%."
+   },
+   "id": "fisc-dist-07-q8"
+  }
+ ],
+ "palabras": 1913,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es una curva de concentración y en qué difiere de la curva de Lorenz?",
+    "en": "What is a concentration curve and how does it differ from the Lorenz curve?"
+   },
+   "a": {
+    "es": "Acumula una variable q (educación, acceso a un servicio) ordenando a las personas por ingreso y no por q; por eso puede pasar por encima de la diagonal y su índice va de −1 a 1 (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "It accumulates a variable q (schooling, access to a service) ranking people by income rather than by q; hence it can lie above the diagonal and its index ranges from −1 to 1 (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t1"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la polarización no es lo mismo que la desigualdad?",
+    "en": "Why is polarization not the same as inequality?"
+   },
+   "a": {
+    "es": "Porque combina identificación dentro de grupos y alienación entre ellos: transferencias igualadoras pueden formar grupos homogéneos y distantes, bajando la desigualdad y subiendo la polarización. En la mayoría de los casos, sin embargo, ambas se mueven juntas (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "Because it combines identification within groups and alienation between them: equalizing transfers can form homogeneous, distant groups, lowering inequality while raising polarization. In most cases, though, the two move together (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué exige la igualdad de oportunidades en el esquema de Roemer?",
+    "en": "What does equality of opportunity require in Roemer's framework?"
+   },
+   "a": {
+    "es": "Que la distribución del resultado sea independiente de las circunstancias, los factores de los que la persona no es responsable; las diferencias por esfuerzo o suerte se consideran aceptables (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "That the outcome distribution be independent of circumstances, the factors the person is not responsible for; differences due to effort or luck are deemed acceptable (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué las diferencias de ingreso entre tipos de circunstancias pueden exagerar la desigualdad de oportunidades?",
+    "en": "Why can income differences between circumstance types overstate inequality of opportunity?"
+   },
+   "a": {
+    "es": "Por variables omitidas: si hay esfuerzo no observado correlacionado con las circunstancias, parte de las diferencias entre tipos refleja esfuerzo y no oportunidades. Además, con muchas circunstancias el número de tipos explota y hace falta un modelo paramétrico (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "Because of omitted variables: if unobserved effort is correlated with circumstances, part of the differences between types reflects effort rather than opportunity. Also, with many circumstances the number of types explodes and a parametric model is needed (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto de la desigualdad salarial brasileña se explica por circunstancias observables?",
+    "en": "How much of Brazilian wage inequality is explained by observable circumstances?"
+   },
+   "a": {
+    "es": "Alrededor del 25 %, con la educación de los padres como factor principal y el canal directo dando cuenta del 60 % del efecto, según Bourguignon, Ferreira y Menéndez (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "About 25%, with parental education as the main factor and the direct channel accounting for 60% of the effect, according to Bourguignon, Ferreira and Menéndez (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué los errores de medición sesgan las estimaciones de movilidad de ingresos?",
+    "en": "Why do measurement errors bias income mobility estimates?"
+   },
+   "a": {
+    "es": "Porque el ingreso corriente rezagado es una mala aproximación del ingreso permanente: el sesgo de atenuación reduce la persistencia estimada y sugiere más movilidad de la que hay. Se corrige con promedios de ingresos pasados o variables instrumentales (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "Because lagged current income is a poor proxy for permanent income: attenuation bias lowers estimated persistence and suggests more mobility than there is. It is corrected with averages of past incomes or instrumental variables (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t6"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué dos fuentes de mejora del bienestar muestra la curva de Lorenz generalizada?",
+    "en": "What two sources of welfare improvement does the generalized Lorenz curve show?"
+   },
+   "a": {
+    "es": "Como es la media por la curva de Lorenz, el bienestar mejora por crecimiento del ingreso medio o por menor desigualdad; si una curva generalizada domina a otra, todo evaluador paretiano, simétrico y averso a la desigualdad la prefiere (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "Since it is the mean times the Lorenz curve, welfare improves through growth in mean income or lower inequality; if one generalized curve dominates another, every Paretian, symmetric, inequality-averse evaluator prefers it (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué el índice de oportunidades humanas puede subir aunque la cobertura no cambie?",
+    "en": "Why can the human opportunity index rise even if coverage does not change?"
+   },
+   "a": {
+    "es": "Porque es la cobertura promedio descontada por la desigualdad de oportunidades: si el acceso se reparte de forma menos dependiente de las circunstancias del niño, el índice sube. En casi toda la región mejoró por ambas vías, según Paes de Barros y coautores (Gasparini, Cicowiez y Sosa Escudero, cap. 7).",
+    "en": "Because it is average coverage discounted by inequality of opportunity: if access depends less on the child's circumstances, the index rises. Across almost the whole region it improved through both channels, according to Paes de Barros and coauthors (Gasparini, Cicowiez and Sosa Escudero, ch. 7)."
+   },
+   "id": "fisc-dist-07-t8"
+  }
+ ]
+}

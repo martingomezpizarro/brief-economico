@@ -1,0 +1,606 @@
+{
+ "id": "fisc-dist-08",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Pobreza, desigualdad y crecimiento: el triángulo y sus elasticidades",
+ "bajada": "El capítulo 8 de Gasparini, Cicowiez y Sosa Escudero: cómo descomponer un cambio en la pobreza en efecto crecimiento y efecto redistribución, qué es la elasticidad-crecimiento de la pobreza y por qué la desigualdad la reduce, las curvas de isopobreza, el crecimiento pro-pobre y lo que queda de la curva de Kuznets.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 8: «Pobreza, desigualdad y crecimiento»",
+ "intro": "¿El crecimiento reduce siempre la pobreza absoluta? ¿Reduce la desigualdad? ¿Qué rinde más para bajar la pobreza, crecer o redistribuir? El capítulo 8 de Gasparini, Cicowiez y Sosa Escudero ordena este debate alrededor del «triángulo pobreza-crecimiento-desigualdad», expresión acuñada por Bourguignon (2004), y lo aborda en tres niveles. El primero es mecánico: como la pobreza, la media y la dispersión son tres rasgos de una misma distribución, cualquier cambio en la pobreza puede partirse contablemente en un efecto crecimiento y un efecto redistribución. El segundo es el de las asociaciones empíricas: qué tan fuerte es, en los datos, el vínculo entre crecer y reducir la pobreza, medido por la elasticidad-crecimiento de la pobreza. El tercero, el causal, queda mayormente fuera. El mensaje que atraviesa el capítulo es doble: en el largo plazo el crecimiento es el principal motor de la caída de la pobreza, y la desigualdad importa dos veces, porque a igual ingreso medio implica más pobreza y porque vuelve al crecimiento menos eficaz para reducirla.",
+ "secciones": [
+  {
+   "t": "Descomponer: efecto crecimiento y efecto redistribución",
+   "eq": [
+    "P = P\\big(\\mu,\\, L(p),\\, z\\big)",
+    "\\Delta P_C = \\tfrac{1}{2}\\Big[\\big(P(\\mu_2,L_1,z) - P(\\mu_1,L_1,z)\\big) + \\big(P(\\mu_2,L_2,z) - P(\\mu_1,L_2,z)\\big)\\Big],\\qquad \\Delta P_R = \\tfrac{1}{2}\\Big[\\big(P(\\mu_1,L_2,z) - P(\\mu_1,L_1,z)\\big) + \\big(P(\\mu_2,L_2,z) - P(\\mu_2,L_1,z)\\big)\\Big]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P\\): indicador de pobreza monetaria (por ejemplo, la tasa de incidencia).",
+      "en": "\\(P\\): monetary poverty indicator (for example, the headcount ratio)."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio de la distribución; su cambio es el «crecimiento».",
+      "en": "\\(\\mu\\): mean income of the distribution; its change is «growth»."
+     },
+     {
+      "es": "\\(L(p)\\): curva de Lorenz, la fracción del ingreso total que recibe el \\(p\\) más pobre; resume la forma (la desigualdad) de la distribución.",
+      "en": "\\(L(p)\\): Lorenz curve, the share of total income received by the poorest \\(p\\); it summarises the shape (inequality) of the distribution."
+     },
+     {
+      "es": "\\(z\\): línea de pobreza.",
+      "en": "\\(z\\): poverty line."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Delta P_C\\): efecto crecimiento; \\(\\Delta P_R\\): efecto redistribución; su suma es el cambio total \\(\\Delta P = P_2 - P_1\\).",
+      "en": "\\(\\Delta P_C\\): growth effect; \\(\\Delta P_R\\): redistribution effect; they add up to the total change \\(\\Delta P = P_2 - P_1\\)."
+     },
+     {
+      "es": "Subíndices 1 y 2: momento inicial y final; \\(L_1, L_2\\) abrevian \\(L_1(p), L_2(p)\\).",
+      "en": "Subscripts 1 and 2: initial and final period; \\(L_1, L_2\\) abbreviate \\(L_1(p), L_2(p)\\)."
+     },
+     {
+      "es": "\\(P(\\mu_2, L_1, z)\\): pobreza contrafáctica con la forma de la distribución 1 y la media de la 2 (se obtiene multiplicando todos los ingresos de 1 por \\(\\mu_2/\\mu_1\\)).",
+      "en": "\\(P(\\mu_2, L_1, z)\\): counterfactual poverty with the shape of distribution 1 and the mean of 2 (obtained by multiplying all period-1 incomes by \\(\\mu_2/\\mu_1\\))."
+     },
+     {
+      "es": "\\(\\tfrac{1}{2}[\\cdot]\\): promedio de las dos descomposiciones posibles (con base en el año 1 o en el 2), porque el resultado depende del orden.",
+      "en": "\\(\\tfrac{1}{2}[\\cdot]\\): average of the two possible decompositions (based on year 1 or year 2), because the result depends on the order."
+     }
+    ]
+   ],
+   "p": [
+    "La pobreza monetaria queda completamente determinada por la distribución del ingreso y la línea de pobreza, y la distribución, a su vez, por su media y su curva de Lorenz. Por eso, dada la línea, la pobreza solo puede moverse por dos vías: porque cambia el ingreso medio, que desplaza la distribución sin alterar su forma, o porque cambia la forma, con la media fija.",
+    "La descomposición práctica construye una distribución contrafáctica: la del momento 1 reescalada para que tenga la media del momento 2. El paso de la distribución original a la reescalada es el efecto crecimiento y el paso de la reescalada a la final es el efecto redistribución. Como el resultado depende del año que se toma como base, lo usual es promediar las dos versiones.",
+    "Para la Argentina entre 1998 y 2002, el aumento de la pobreza se asocia tanto a la caída del ingreso per cápita como a un cambio desigualador en la forma de la distribución, y el efecto (de)crecimiento es el dominante con cualquiera de los caminos de descomposición. En el panorama regional, Brasil entre 1990 y 2003 redujo la pobreza por los dos efectos, con el redistributivo algo mayor; en la Argentina y Venezuela ambos efectos la aumentaron, con el redistributivo mayor en la primera y el de (de)crecimiento en la segunda."
+   ]
+  },
+  {
+   "t": "La elasticidad-crecimiento de la pobreza",
+   "eq": [
+    "\\frac{dH}{H} = \\gamma_0\\, g_\\mu + \\gamma_1\\, d\\tau,\\qquad \\eta = \\frac{\\Delta P / P}{g_\\mu} = \\gamma_0 + \\gamma_1 \\frac{d\\tau}{g_\\mu}",
+    "H = \\Phi\\!\\left(\\frac{\\ln(z/\\mu)}{\\sigma} + \\frac{\\sigma}{2}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(H\\): tasa de incidencia de la pobreza (proporción de pobres); \\(dH/H\\): su cambio proporcional.",
+      "en": "\\(H\\): poverty headcount ratio (share of poor people); \\(dH/H\\): its proportional change."
+     },
+     {
+      "es": "\\(g_\\mu = d\\mu/\\mu\\): tasa de crecimiento del ingreso medio, la «tasa de crecimiento de la economía».",
+      "en": "\\(g_\\mu = d\\mu/\\mu\\): growth rate of mean income, the «growth rate of the economy»."
+     },
+     {
+      "es": "\\(\\tau\\): vector de parámetros que describe la curva de Lorenz; \\(d\\tau\\) es un cambio en la forma de la distribución.",
+      "en": "\\(\\tau\\): vector of parameters describing the Lorenz curve; \\(d\\tau\\) is a change in the shape of the distribution."
+     },
+     {
+      "es": "\\(\\gamma_0 \\le 0\\): efecto crecimiento, o elasticidad con desigualdad constante; \\(\\gamma_1\\): efecto de un cambio de forma, de signo ambiguo (ambos dependen de las derivadas de la curva de Lorenz en el punto de la línea).",
+      "en": "\\(\\gamma_0 \\le 0\\): growth effect, or elasticity with constant inequality; \\(\\gamma_1\\): effect of a change in shape, of ambiguous sign (both depend on Lorenz-curve derivatives at the poverty line)."
+     },
+     {
+      "es": "\\(\\eta\\): elasticidad-crecimiento de la pobreza, el cambio porcentual de la pobreza por cada punto porcentual de crecimiento del ingreso medio.",
+      "en": "\\(\\eta\\): growth elasticity of poverty, the percentage change in poverty per percentage point of growth in mean income."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Phi(\\cdot)\\): función de distribución normal estándar.",
+      "en": "\\(\\Phi(\\cdot)\\): standard normal cumulative distribution function."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(z\\): línea de pobreza.",
+      "en": "\\(\\mu\\): mean income; \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(\\sigma\\): desvío estándar del logaritmo del ingreso, suponiendo que el ingreso es log-normal; está ligado uno a uno con el Gini, así que mide la desigualdad.",
+      "en": "\\(\\sigma\\): standard deviation of log income, assuming income is log-normal; it maps one-to-one into the Gini, so it measures inequality."
+     }
+    ]
+   ],
+   "p": [
+    "La elasticidad-crecimiento de la pobreza mide la «eficiencia» del crecimiento para reducirla (Perry et al., 2006). Diferenciando la tasa de incidencia escrita a partir de la curva de Lorenz, el cambio de la pobreza se parte en un término de crecimiento, siempre negativo, y uno de redistribución, de signo ambiguo según cómo se repartan los beneficios del crecimiento. La elasticidad observada, no condicional, coincide con la condicional solo si el crecimiento es distributivamente neutral.",
+    "Dos parametrizaciones ayudan a ver el mecanismo. La primera es una política fiscal lineal que grava todos los ingresos a una misma tasa y devuelve lo recaudado en montos iguales per cápita: la nueva curva de Lorenz es un promedio entre la original y la diagonal, y el Gini cae en la misma proporción que la tasa del impuesto. Con ella, el crecimiento neutral baja la pobreza siempre que haya gente con ingresos cerca de la línea, y la redistribución la baja siempre que la línea esté por debajo de la media, como ocurre en América Latina.",
+    "La segunda supone un ingreso log-normal. Entonces la elasticidad depende solo del Gini, del ingreso medio y de la línea, y la figura construida con López y Servén (2006) muestra que las elasticidades caen en valor absoluto a medida que sube la desigualdad, y también cuanto más pobre es el país, es decir, cuanto menor es la media en relación con la línea."
+   ]
+  },
+  {
+   "t": "Curvas de isopobreza y tiempo de salida",
+   "eq": [
+    "x_l^{*} = (1+g_\\mu)\\big[x_l(1-t) + t\\mu\\big] = z\\quad\\Longrightarrow\\quad g_\\mu = \\frac{z}{x_l(1-t) + t\\mu} - 1",
+    "T = \\frac{\\ln(z/x_i)}{\\ln(1+g_\\mu)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(x_l\\): ingreso del «individuo límite», el que separa al \\(\\delta H_0\\) por ciento más pobre del resto; para llegar a la pobreza objetivo su ingreso debe alcanzar la línea.",
+      "en": "\\(x_l\\): income of the «boundary individual», who separates the poorest \\(\\delta H_0\\) percent from the rest; to reach the poverty target his income must reach the line."
+     },
+     {
+      "es": "\\(H_0\\): tasa de pobreza inicial; \\(\\delta < 1\\): fracción de la pobreza que se quiere dejar (la meta es \\(H^* = \\delta H_0\\)).",
+      "en": "\\(H_0\\): initial poverty rate; \\(\\delta < 1\\): fraction of poverty to be left (the target is \\(H^* = \\delta H_0\\))."
+     },
+     {
+      "es": "\\(x_l^{*}\\): ingreso simulado del individuo límite; \\(g_\\mu\\): crecimiento neutral; \\(t\\): tasa del impuesto lineal cuya recaudación se reparte en partes iguales; \\(\\mu\\): ingreso medio; \\(z\\): línea de pobreza.",
+      "en": "\\(x_l^{*}\\): simulated income of the boundary individual; \\(g_\\mu\\): neutral growth; \\(t\\): linear tax rate whose revenue is shared equally; \\(\\mu\\): mean income; \\(z\\): poverty line."
+     }
+    ],
+    [
+     {
+      "es": "\\(T\\): años que tarda la persona \\(i\\) en salir de la pobreza.",
+      "en": "\\(T\\): years person \\(i\\) takes to exit poverty."
+     },
+     {
+      "es": "\\(x_i\\): ingreso inicial de la persona; \\(z\\): línea de pobreza.",
+      "en": "\\(x_i\\): person's initial income; \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(g_\\mu\\): tasa de crecimiento neutral anual, constante, con desigualdad invariante; \\(\\ln\\): logaritmo natural.",
+      "en": "\\(g_\\mu\\): constant annual distribution-neutral growth rate, with unchanged inequality; \\(\\ln\\): natural logarithm."
+     }
+    ]
+   ],
+   "p": [
+    "Una curva de isopobreza muestra las combinaciones de crecimiento neutral y redistribución lineal que llevan la tasa de incidencia a una meta. Tiene pendiente negativa, porque crecimiento y redistribución se sustituyen, y suele ser convexa: la tasa marginal de sustitución entre ambos es decreciente. Cuanto más ambiciosa es la meta, más lejos del origen queda la curva. La clave para estimarla es identificar al individuo límite y pedir que su ingreso simulado alcance la línea.",
+    "Con la línea de 2,5 dólares, Uruguay podría reducir su pobreza 75 %, del 6,6 % de 2006 al 1,6 % en 2011, combinando un impuesto lineal de 5,5 % con un crecimiento anual de 2,7 % durante 5 años. En Honduras los esfuerzos son enormes porque el individuo límite está lejos de la línea: para bajar la pobreza a la mitad, de 46,8 a 23,4, su ingreso de 2006 (281,9 lempiras) debería crecer 178 % para llegar a 782,5.",
+    "El tiempo de salida de la pobreza se calcula suponiendo crecimiento neutral constante. Alguien con un ingreso igual a la mitad de la línea tarda 14,2 años en salir si la economía crece al 5 % anual y 7,3 años si crece al 10 %. En Honduras 2006, bajar la pobreza del 47 % inicial al 20 % demandaría 42,8 años con crecimiento del 3 % y 13,3 años con 10 %."
+   ]
+  },
+  {
+   "t": "La evidencia: crecer reduce la pobreza, pero no igual en todos lados",
+   "eq": [
+    "\\Delta \\ln P_{it} = \\eta\\, \\Delta \\ln \\mu_{it} + \\Delta \\varepsilon_{it} - \\eta\\, \\Delta \\nu_{it}",
+    "\\Delta \\ln H_{it} = \\eta\\,(1 - G_{it-1})\\,\\Delta \\ln \\mu_{it} + \\nu_{it}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_{it}\\): indicador de pobreza del país \\(i\\) en el año \\(t\\); \\(\\Delta\\): diferencia entre dos encuestas (un «episodio»).",
+      "en": "\\(P_{it}\\): poverty indicator of country \\(i\\) in year \\(t\\); \\(\\Delta\\): difference between two surveys (a «spell»)."
+     },
+     {
+      "es": "\\(\\mu_{it}\\): ingreso medio (o PIB per cápita) observado, medido con error \\(\\nu_{it}\\) respecto del verdadero.",
+      "en": "\\(\\mu_{it}\\): observed mean income (or GDP per capita), measured with error \\(\\nu_{it}\\) relative to the true one."
+     },
+     {
+      "es": "\\(\\eta\\): elasticidad-crecimiento de la pobreza, el parámetro a estimar.",
+      "en": "\\(\\eta\\): growth elasticity of poverty, the parameter to estimate."
+     },
+     {
+      "es": "\\(\\varepsilon_{it}\\): término estocástico, que incluye errores de medición de la pobreza; al diferenciar desaparece el efecto fijo de país.",
+      "en": "\\(\\varepsilon_{it}\\): stochastic term, including poverty measurement error; differencing removes the country fixed effect."
+     }
+    ],
+    [
+     {
+      "es": "\\(H_{it}\\): tasa de incidencia de la pobreza del país \\(i\\) en \\(t\\).",
+      "en": "\\(H_{it}\\): poverty headcount of country \\(i\\) at \\(t\\)."
+     },
+     {
+      "es": "\\(G_{it-1}\\): coeficiente de Gini inicial; \\((1-G)\\Delta\\ln\\mu\\) es el crecimiento «corregido distributivamente».",
+      "en": "\\(G_{it-1}\\): initial Gini coefficient; \\((1-G)\\Delta\\ln\\mu\\) is «distribution-corrected» growth."
+     },
+     {
+      "es": "\\(\\eta\\): elasticidad de la pobreza a ese crecimiento corregido; \\(\\nu_{it}\\): término de error (aquí no es el error de medición de la ecuación anterior).",
+      "en": "\\(\\eta\\): elasticity of poverty to that corrected growth; \\(\\nu_{it}\\): error term (here not the measurement error of the previous equation)."
+     }
+    ]
+   ],
+   "p": [
+    "En el largo plazo la relación es clara: los países en desarrollo con mayor PIB per cápita tienen tasas de pobreza mucho menores, y lo mismo ocurre con índices de privación multidimensional. En el corto plazo el vínculo es menos ajustado pero persiste: en América Latina la pobreza cayó con el crecimiento de los noventa, subió con las crisis del cambio de siglo y cayó con fuerza en la expansión de los 2000. La correlación entre el crecimiento del ingreso per cápita de las encuestas y el cambio proporcional de la tasa de incidencia es -0,72.",
+    "La forma usual de estimar la elasticidad es regresar, en un panel de episodios, el cambio proporcional de la pobreza en el crecimiento del ingreso medio, corrigiendo los errores estándar porque los episodios de un mismo país están correlacionados. Las estimaciones mundiales van de cerca de -3 (Ravallion y Chen, 1997) a -1,6 (Bourguignon, 2003); con muestras latinoamericanas rondan -1 y Gasparini, Gutiérrez y Tornarolli (2007) obtienen -1,5. Los intervalos son anchos: según Ravallion (2001), un crecimiento de 2 % anual es compatible con caídas de la pobreza de entre 1 % y 7 % por año. Con la línea de 2,5 dólares, el promedio de los episodios latinoamericanos es -1,4 usando el ingreso de las encuestas y -0,8 usando el PIB.",
+    "Bourguignon (2003), con 114 episodios en 26 países, obtiene -1,6 sin controles y -2 al controlar por el cambio en el Gini, que sube el R² de 0,266 a 0,492: la heterogeneidad distributiva explica tanto como la del crecimiento. Las interacciones muestran que la elasticidad es menor, en valor absoluto, con menos desarrollo y más desigualdad inicial. De ahí la «doble ganancia» de reducir la desigualdad: menos pobreza para un ingreso dado y una pobreza más sensible al crecimiento. Ravallion (2007) simula un país con 40 % de pobres que crece 2 % anual: con Gini de 0,3 tardaría 11 años en reducir la pobreza a la mitad y con Gini de 0,6, 35 años. Con Ginis cercanos a 0,50, comunes en la región, la elasticidad ronda -1,2 (Perry et al., 2006), y Ravallion (2009) encuentra que cae de cerca de -3 con 10 % de pobreza a -0,7 con 80 %."
+   ]
+  },
+  {
+   "t": "Proyectar con elasticidades: un atajo frágil",
+   "p": [
+    "El uso más común de la elasticidad es proyectar: la caída esperable de la pobreza es la elasticidad por el crecimiento previsto. Funciona solo si se acierta el crecimiento y si la elasticidad pasada se repite, algo improbable.",
+    "El ejemplo de Brasil lo muestra. Parados en 2005, con la elasticidad del período 1992-2005, de -1,9, se proyecta que la pobreza pasaría de 22,9 a 18,2 en 2008, cuando en realidad cayó a 15,7. Con la del período 2001-2005, -2,5, se proyecta mejor, y con la de 2004-2005, -4,7, la tasa predicha para 2008 es 16, muy cerca de la real. Una razón es la intensificación de Bolsa Familia, que hizo más relevante la experiencia reciente. Pero no es regla. Parados en 1998, la elasticidad de 1997-1998 es 5,4, positiva, y predice una pobreza de 24,7 para 1999, mientras que la de 1992-1998, -2,6, predice 27,3, mucho más cerca del 27,7 observado.",
+    "Lectura propia: la elasticidad no es un parámetro estructural sino el resumen de un episodio; sirve para órdenes de magnitud, y los autores advierten que lo ideal sería un modelo de la economía."
+   ]
+  },
+  {
+   "t": "Curvas de incidencia y crecimiento pro-pobre",
+   "eq": [
+    "g(p) = \\frac{x_2(p)}{x_1(p)} - 1",
+    "g_{pp}^{RC} = \\frac{1}{N_P}\\sum_{i=1}^{N} g_i\\,\\mathbf{1}(x_i < z),\\qquad g_{pp}^{r} = \\frac{1}{N_P}\\sum_{i=1}^{N} (g_i - g_\\mu)\\,\\mathbf{1}(x_i < z) = g_{pp}^{RC} - g_\\mu"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(g(p)\\): curva de incidencia del crecimiento, la tasa de crecimiento del ingreso del percentil \\(p\\).",
+      "en": "\\(g(p)\\): growth incidence curve, the growth rate of income at percentile \\(p\\)."
+     },
+     {
+      "es": "\\(x_1(p), x_2(p)\\): ingreso del percentil \\(p\\) en el momento inicial y final.",
+      "en": "\\(x_1(p), x_2(p)\\): income at percentile \\(p\\) in the initial and final period."
+     },
+     {
+      "es": "Lectura propia: los subíndices de período son nuestros; el libro define la curva como la tasa de crecimiento del ingreso de cada percentil.",
+      "en": "Own reading: the period subscripts are ours; the book defines the curve as the growth rate of each percentile's income."
+     }
+    ],
+    [
+     {
+      "es": "\\(g_{pp}^{RC}\\): crecimiento pro-pobre absoluto de Ravallion y Chen, el promedio de las tasas de crecimiento de los pobres; es pro-pobre si es positivo.",
+      "en": "\\(g_{pp}^{RC}\\): Ravallion–Chen absolute pro-poor growth, the average growth rate of the poor; growth is pro-poor if it is positive."
+     },
+     {
+      "es": "\\(g_{pp}^{r}\\): crecimiento pro-pobre relativo; es pro-pobre si los pobres crecen más que el promedio.",
+      "en": "\\(g_{pp}^{r}\\): relative pro-poor growth; growth is pro-poor if the poor grow faster than the mean."
+     },
+     {
+      "es": "\\(g_i\\): tasa de crecimiento del ingreso de la persona \\(i\\); \\(g_\\mu\\): tasa de crecimiento del ingreso medio.",
+      "en": "\\(g_i\\): income growth rate of person \\(i\\); \\(g_\\mu\\): growth rate of mean income."
+     },
+     {
+      "es": "\\(\\mathbf{1}(x_i < z)\\): indicadora, vale 1 si \\(i\\) es pobre (ingreso \\(x_i\\) menor que la línea \\(z\\)) y 0 si no; \\(N\\): población; \\(N_P\\): número de pobres.",
+      "en": "\\(\\mathbf{1}(x_i < z)\\): indicator, 1 if \\(i\\) is poor (income \\(x_i\\) below the line \\(z\\)) and 0 otherwise; \\(N\\): population; \\(N_P\\): number of poor."
+     }
+    ]
+   ],
+   "p": [
+    "La curva de incidencia del crecimiento (Ravallion y Chen, 2003) muestra cuánto creció el ingreso de cada percentil. Si está por encima del eje, todos los estratos ganaron; si es creciente, ganaron más los ricos y la desigualdad aumentó; lo ideal es una curva alta y decreciente. Ferreira (2011) subraya que el crecimiento medio, el cambio en la pobreza y el de la desigualdad son tres maneras de agregar la misma curva. Debe leerse con cautela: si una política sube la productividad rural justo cuando se derrumba el precio de la cosecha, la curva puede mostrar estancamiento de los pobres aunque la política los haya favorecido.",
+    "Hay dos definiciones de crecimiento pro-pobre. Según la absoluta, basta con que los pobres ganen; según la relativa, deben ganar proporcionalmente más que el resto, lo que equivale a que aumente su participación en el ingreso. La segunda es más exigente, y a menudo el debate sobre si un episodio fue pro-pobre depende de cuál se adopta. Brasil 1992-1998 fue pro-pobre en sentido absoluto y la Argentina 1992-1998 no. Costa Rica ilustra la diferencia: entre 1992 y 2009 el ingreso de los pobres creció 3,5 % anual, pero como el de toda la población creció 4 %, el indicador relativo es negativo.",
+    "Kakwani et al. (2003) proponen la tasa de crecimiento equivalente: la tasa neutral que reproduciría el cambio observado en la pobreza. En México, con la línea de 2,5 dólares, la pobreza bajó de 23,7 a 13,9 entre 1992 y 2006; la tasa neutral que la replica es 3,1 %, superior al crecimiento observado de 1,25 %, señal de crecimiento pro-pobre en sentido relativo."
+   ]
+  },
+  {
+   "t": "Desigualdad y crecimiento: qué queda de Kuznets",
+   "eq": [
+    "I_{it} = \\beta_0 + \\beta_1 Y_{it} + \\beta_2 Y_{it}^2 + \\beta_3 X_{it} + \\alpha_i + \\varepsilon_{it}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I_{it}\\): indicador de desigualdad, en general el Gini, del país \\(i\\) en el año \\(t\\).",
+      "en": "\\(I_{it}\\): inequality indicator, usually the Gini, of country \\(i\\) in year \\(t\\)."
+     },
+     {
+      "es": "\\(Y_{it}\\): nivel de desarrollo, típicamente el PIB per cápita o su logaritmo; el término al cuadrado permite la U invertida (\\(\\beta_1 > 0\\), \\(\\beta_2 < 0\\)).",
+      "en": "\\(Y_{it}\\): level of development, typically GDP per capita or its log; the squared term allows the inverted U (\\(\\beta_1 > 0\\), \\(\\beta_2 < 0\\))."
+     },
+     {
+      "es": "\\(X_{it}\\): otras variables de control; \\(\\beta_0, \\dots, \\beta_3\\): parámetros.",
+      "en": "\\(X_{it}\\): other control variables; \\(\\beta_0, \\dots, \\beta_3\\): parameters."
+     },
+     {
+      "es": "\\(\\alpha_i\\): efecto fijo de país; \\(\\varepsilon_{it}\\): error i.i.d. con media cero.",
+      "en": "\\(\\alpha_i\\): country fixed effect; \\(\\varepsilon_{it}\\): i.i.d. error with zero mean."
+     }
+    ]
+   ],
+   "p": [
+    "Sobre el efecto de la desigualdad en el crecimiento no hay consenso. Para los co-movimientos a lo largo del desarrollo el clásico es Kuznets (1955): la desigualdad crecería en la transición de una economía agraria a una industrial y luego caería, una U invertida entre PIB per cápita y desigualdad.",
+    "En un corte transversal de 123 países aparece una U invertida, pero Fields (2001) muestra que se debe en buena parte a los países latinoamericanos, de ingreso medio y desigualdad muy alta: si se los quita o se los identifica con una variable binaria, la curva casi se desvanece. Lo que persiste es el «exceso de desigualdad» de América Latina: todas sus economías están por encima de la curva de regresión. Con datos de panel, la mayoría de los estudios no encuentra evidencia consistente de Kuznets; algunos la hallan para la región, pero siempre con un R² muy bajo.",
+    "Tampoco hay, a nivel mundial, correlación significativa entre la tasa de crecimiento y el cambio en la desigualdad (Ravallion, 2007, con 290 episodios en 80 países). Los autores advierten que eso solo indica que, en promedio, el crecimiento no viene con más desigualdad; no dice nada sobre la conveniencia de redistribuir, que según el caso puede alentar el crecimiento (oportunidades educativas para los más hábiles) o entorpecerlo (impuestos que desalientan la inversión y el trabajo)."
+   ]
+  }
+ ],
+ "claves": [
+  "Dada la línea, la pobreza cambia por el ingreso medio (efecto crecimiento) o por la forma de la distribución (efecto redistribución); la descomposición depende del orden y por eso se promedian las dos versiones.",
+  "La elasticidad-crecimiento de la pobreza mide cuánto cae la pobreza por cada punto de crecimiento; las estimaciones van de -1 a -3, y en América Latina son más bajas.",
+  "La desigualdad da una «doble ganancia» al reducirse: menos pobreza a igual ingreso y una pobreza más sensible al crecimiento.",
+  "Las curvas de isopobreza muestran cómo se sustituyen crecimiento y redistribución para una meta de pobreza; en Honduras la lejanía del individuo límite exige un crecimiento enorme.",
+  "Proyectar la pobreza con elasticidades pasadas es un atajo frágil: en Brasil funcionó la elasticidad reciente por Bolsa Familia, pero en 1998 habría fallado.",
+  "Crecimiento pro-pobre absoluto: los pobres ganan; relativo: ganan más que el promedio. Costa Rica 1992-2009 es pro-pobre en el primer sentido y no en el segundo.",
+  "La curva de Kuznets se apoya sobre todo en el exceso de desigualdad latinoamericano y no aparece de forma robusta en datos de panel."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En la descomposición de un cambio en la pobreza, ¿qué capta el efecto crecimiento?",
+    "en": "In decomposing a change in poverty, what does the growth effect capture?"
+   },
+   "op": {
+    "es": [
+     "El cambio en la pobreza si todos los ingresos se reescalan a la nueva media con la forma de la distribución fija",
+     "El cambio en la pobreza debido a la variación de la línea de pobreza",
+     "El cambio en la forma de la distribución con la media constante",
+     "El cambio en la composición regional de la población"
+    ],
+    "en": [
+     "The change in poverty if all incomes are rescaled to the new mean with the shape of the distribution fixed",
+     "The change in poverty due to a change in the poverty line",
+     "The change in the shape of the distribution with a constant mean",
+     "The change in the regional composition of the population"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Se construye una distribución contrafáctica con la forma inicial y la media final; el resto del cambio es el efecto redistribución.",
+    "en": "A counterfactual distribution with the initial shape and the final mean is built; the rest of the change is the redistribution effect."
+   },
+   "id": "fisc-dist-08-q1"
+  },
+  {
+   "q": {
+    "es": "Bajo una redistribución lineal (impuesto a tasa t devuelto en montos iguales), ¿cuándo baja la pobreza al aumentar t?",
+    "en": "Under a linear redistribution (tax at rate t returned in equal amounts), when does poverty fall as t rises?"
+   },
+   "op": {
+    "es": [
+     "Siempre, sin condiciones",
+     "Solo si la economía crece",
+     "Si hay personas con ingresos cerca de la línea y la línea está por debajo de la media",
+     "Solo si la línea está por encima de la media"
+    ],
+    "en": [
+     "Always, unconditionally",
+     "Only if the economy grows",
+     "If there are people with incomes near the line and the line is below the mean",
+     "Only if the line is above the mean"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si la línea estuviera por encima de la media, quien está cerca de ella perdería con la redistribución lineal y la pobreza subiría.",
+    "en": "If the line were above the mean, someone near it would lose from linear redistribution and poverty would rise."
+   },
+   "id": "fisc-dist-08-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la «doble ganancia» de reducir la desigualdad?",
+    "en": "What is the «double dividend» of reducing inequality?"
+   },
+   "op": {
+    "es": [
+     "Que aumenta a la vez la recaudación y el crecimiento",
+     "Que reduce la pobreza a ingreso dado y además vuelve la pobreza más sensible al crecimiento",
+     "Que reduce el Gini y el índice de Atkinson al mismo tiempo",
+     "Que mejora la pobreza absoluta y la relativa"
+    ],
+    "en": [
+     "That it raises both revenue and growth",
+     "That it reduces poverty at a given income and also makes poverty more responsive to growth",
+     "That it lowers the Gini and the Atkinson index at the same time",
+     "That it improves both absolute and relative poverty"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Ravallion (2007): con Gini de 0,3 la pobreza se reduce a la mitad en 11 años; con 0,6, en 35, con el mismo crecimiento de 2 %.",
+    "en": "Ravallion (2007): with a Gini of 0.3 poverty halves in 11 years; with 0.6, in 35, for the same 2% growth."
+   },
+   "id": "fisc-dist-08-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué encontró Bourguignon (2003) al agregar el cambio en el Gini a la regresión de cambio en la pobreza?",
+    "en": "What did Bourguignon (2003) find when adding the change in the Gini to the poverty-change regression?"
+   },
+   "op": {
+    "es": [
+     "Que el R² apenas cambiaba",
+     "Que la elasticidad pasaba a ser positiva",
+     "Que la elasticidad dejaba de ser significativa",
+     "Que el R² subía de 0,266 a 0,492 y la elasticidad pasaba de -1,6 a -2"
+    ],
+    "en": [
+     "That the R² barely changed",
+     "That the elasticity became positive",
+     "That the elasticity stopped being significant",
+     "That the R² rose from 0.266 to 0.492 and the elasticity went from -1.6 to -2"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La heterogeneidad de los cambios distributivos explica tanto de los cambios en la pobreza como la del crecimiento.",
+    "en": "Heterogeneity in distributional changes explains as much of poverty changes as heterogeneity in growth."
+   },
+   "id": "fisc-dist-08-q4"
+  },
+  {
+   "q": {
+    "es": "En una curva de isopobreza, ¿qué indica su convexidad?",
+    "en": "In an iso-poverty curve, what does its convexity indicate?"
+   },
+   "op": {
+    "es": [
+     "Que la tasa marginal de sustitución entre crecimiento y redistribución es decreciente",
+     "Que crecimiento y redistribución son complementarios",
+     "Que la meta de pobreza es inalcanzable",
+     "Que el impuesto lineal es regresivo"
+    ],
+    "en": [
+     "That the marginal rate of substitution between growth and redistribution is diminishing",
+     "That growth and redistribution are complements",
+     "That the poverty target is unattainable",
+     "That the linear tax is regressive"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La pendiente negativa indica sustitución; la convexidad, que cada vez hace falta más de uno para reemplazar al otro.",
+    "en": "The negative slope shows substitution; convexity, that ever more of one is needed to replace the other."
+   },
+   "id": "fisc-dist-08-q5"
+  },
+  {
+   "q": {
+    "es": "En las proyecciones para Brasil desde 2005, ¿qué elasticidad predijo mejor la pobreza de 2008?",
+    "en": "In the projections for Brazil from 2005, which elasticity best predicted 2008 poverty?"
+   },
+   "op": {
+    "es": [
+     "La del período largo 1992-2005",
+     "La de 1997-1998",
+     "La del período inmediato anterior, 2004-2005",
+     "Ninguna se acercó al valor real"
+    ],
+    "en": [
+     "The one for the long period 1992-2005",
+     "The one for 1997-1998",
+     "The one for the immediately preceding period, 2004-2005",
+     "None came close to the actual value"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con -4,7 la tasa predicha es 16 contra 15,7 real; la intensificación de Bolsa Familia hizo más relevante la experiencia reciente.",
+    "en": "With -4.7 the predicted rate is 16 against an actual 15.7; the scaling-up of Bolsa Familia made recent experience more relevant."
+   },
+   "id": "fisc-dist-08-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el crecimiento de Costa Rica entre 1992 y 2009 no es pro-pobre en sentido relativo?",
+    "en": "Why is Costa Rica's 1992-2009 growth not pro-poor in the relative sense?"
+   },
+   "op": {
+    "es": [
+     "Porque el ingreso de los pobres cayó",
+     "Porque el ingreso de los pobres creció menos que el de toda la población",
+     "Porque la pobreza aumentó",
+     "Porque la tasa de crecimiento equivalente fue mayor que la observada"
+    ],
+    "en": [
+     "Because the income of the poor fell",
+     "Because the income of the poor grew less than that of the whole population",
+     "Because poverty increased",
+     "Because the equivalent growth rate exceeded the observed one"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los pobres ganaron 3,5 % anual (pro-pobre absoluto), pero la población en conjunto creció 4 %.",
+    "en": "The poor gained 3.5% a year (absolute pro-poor), but the population as a whole grew 4%."
+   },
+   "id": "fisc-dist-08-q7"
+  },
+  {
+   "q": {
+    "es": "Según Fields (2001), ¿qué explica en buena parte la U invertida de Kuznets en el corte transversal de países?",
+    "en": "According to Fields (2001), what largely explains Kuznets's inverted U in the cross-section of countries?"
+   },
+   "op": {
+    "es": [
+     "Los países de ingreso alto con Estados de bienestar",
+     "El uso de series de tiempo largas",
+     "Los países africanos de ingreso bajo",
+     "Los países latinoamericanos, de ingreso medio y desigualdad muy alta"
+    ],
+    "en": [
+     "High-income countries with welfare states",
+     "The use of long time series",
+     "Low-income African countries",
+     "Latin American countries, middle-income and very unequal"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si se los excluye o se los identifica con una variable binaria, la curva en gran parte se desvanece.",
+    "en": "If they are excluded or flagged with a dummy, the curve largely vanishes."
+   },
+   "id": "fisc-dist-08-q8"
+  }
+ ],
+ "palabras": 1896,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Cuáles son los tres niveles para analizar el triángulo pobreza-crecimiento-desigualdad?",
+    "en": "What are the three levels for analysing the poverty-growth-inequality triangle?"
+   },
+   "a": {
+    "es": "El mecánico (descomposiciones contables), el de las asociaciones empíricas (elasticidades, correlaciones) y el causal, el más profundo y complejo (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "The mechanical (accounting decompositions), the empirical-association level (elasticities, correlations) and the causal one, the deepest and most complex (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la desigualdad reduce la elasticidad-crecimiento de la pobreza?",
+    "en": "Why does inequality reduce the growth elasticity of poverty?"
+   },
+   "a": {
+    "es": "Porque con más dispersión hay menos gente cerca de la línea a la que el crecimiento neutral pueda levantar; con un ingreso log-normal la elasticidad cae en valor absoluto al subir el Gini (López y Servén, 2006, en Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "Because with more dispersion fewer people sit near the line for neutral growth to lift; with log-normal income the elasticity falls in absolute value as the Gini rises (López and Servén, 2006, in Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se estima la elasticidad-crecimiento de la pobreza y qué cuidado requiere?",
+    "en": "How is the growth elasticity of poverty estimated and what care does it require?"
+   },
+   "a": {
+    "es": "Regresando el cambio proporcional de la pobreza en el crecimiento del ingreso medio en un panel de episodios; hay que corregir los errores estándar porque los episodios de un mismo país están correlacionados (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "By regressing the proportional change in poverty on mean-income growth in a panel of spells; standard errors must be corrected because spells from the same country are correlated (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué rango de elasticidades crecimiento-pobreza encuentra la literatura?",
+    "en": "What range of growth elasticities of poverty does the literature find?"
+   },
+   "a": {
+    "es": "Alrededor de -3 en Ravallion y Chen (1997), -2 en el Banco Mundial, -1,6 en Bourguignon (2003) y cerca de -1 en muestras latinoamericanas; Gasparini, Gutiérrez y Tornarolli (2007) estiman -1,5 (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "Around -3 in Ravallion and Chen (1997), -2 at the World Bank, -1.6 in Bourguignon (2003) and close to -1 in Latin American samples; Gasparini, Gutiérrez and Tornarolli (2007) estimate -1.5 (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué es el «individuo límite» de una curva de isopobreza?",
+    "en": "What is the «boundary individual» of an iso-poverty curve?"
+   },
+   "a": {
+    "es": "La persona que separa al porcentaje de pobres que debe quedar del resto: la meta se cumple cuando crecimiento y redistribución llevan su ingreso a la línea. En Honduras 2006 su ingreso debía crecer 178 % para reducir la pobreza a la mitad (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "The person separating the share of poor people that may remain from the rest: the target is met when growth and redistribution bring their income to the line. In Honduras 2006 it had to grow 178% to halve poverty (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿En qué se diferencian el crecimiento pro-pobre absoluto y el relativo?",
+    "en": "How do absolute and relative pro-poor growth differ?"
+   },
+   "a": {
+    "es": "En el absoluto basta con que crezca el ingreso de los pobres; en el relativo debe crecer más que el promedio, lo que implica que aumenta su participación en el ingreso (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "In the absolute sense it is enough for the income of the poor to grow; in the relative sense it must grow faster than the mean, which means their income share rises (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué hay que interpretar con cautela una curva de incidencia del crecimiento?",
+    "en": "Why must a growth incidence curve be interpreted with caution?"
+   },
+   "a": {
+    "es": "Porque refleja a la vez muchos factores, algunos ajenos a la política: una caída del precio de la cosecha puede ocultar una política que subió mucho la productividad de los pobres rurales; además es volátil en los extremos (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "Because it reflects many factors at once, some unrelated to policy: a crop-price collapse can mask a policy that sharply raised the productivity of the rural poor; it is also volatile at the tails (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cuánto tarda en salir de la pobreza alguien con la mitad de la línea si el ingreso crece de forma neutral?",
+    "en": "How long does someone at half the poverty line take to exit poverty under distribution-neutral growth?"
+   },
+   "a": {
+    "es": "14,2 años si la economía crece al 5 % anual y 7,3 años si crece al 10 % (Gasparini, Cicowiez y Sosa Escudero, cap. 8).",
+    "en": "14.2 years if the economy grows 5% a year and 7.3 years if it grows 10% (Gasparini, Cicowiez and Sosa Escudero, ch. 8)."
+   },
+   "id": "fisc-dist-08-t8"
+  }
+ ]
+}

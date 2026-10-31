@@ -1,0 +1,532 @@
+{
+ "id": "fisc-dist-03",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Qué medir y con qué datos: ingreso, consumo, hogares y encuestas",
+ "bajada": "El capítulo 3 de Gasparini, Cicowiez y Sosa Escudero: por qué el análisis distributivo usa ingreso o consumo, cómo se ajusta por tamaño del hogar con escalas de equivalencia y economías de escala, qué sesgos introducen el ciclo de vida y la desigualdad intrahogar, y cómo funcionan las encuestas de hogares de América Latina, sus ponderadores y su diseño muestral.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 3: «Variables y fuentes de información»",
+ "intro": "El capítulo 2 estudió la distribución de una variable de bienestar sin definirla. El capítulo 3 hace las dos preguntas pendientes: qué variable conviene mirar y de dónde salen los datos. La respuesta a la primera es un compromiso. Conceptualmente interesarían las oportunidades, la utilidad o un bienestar multidimensional, pero la disponibilidad de información y la sencillez empírica empujan hacia dos variables monetarias, el ingreso y el consumo. Elegida la variable aparecen nuevas decisiones: cómo tratar a los hogares, la edad y el ciclo de vida. La segunda pregunta lleva a las encuestas de hogares, que en América Latina son la base de casi todo el trabajo distributivo, con sus muestreos complejos, sus ponderadores y sus problemas de comparabilidad. Los autores proponen evitar dos extremos: descartarlas o usarlas sin prudencia.",
+ "secciones": [
+  {
+   "t": "Por qué ingreso o consumo",
+   "eq": [
+    "u_i^m = e(u_i, p_0) \\approx p_0 q_i = \\frac{p_i q_i}{I_{Pi}} = \\frac{c_i}{I_{Pi}},\\qquad u_i^r = \\frac{e(u_i, p_i)}{e(u_z, p_i)}\\,e(u_z, p_0) = \\frac{c_i}{I_{Li}}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(u_i^m\\): utilidad monetaria (money metric utility) de la persona \\(i\\), el costo de alcanzar su nivel de utilidad a precios de referencia.",
+      "en": "\\(u_i^m\\): money metric utility of person \\(i\\), the cost of reaching its utility level at reference prices."
+     },
+     {
+      "es": "\\(e(u, p)\\): función de gasto, el mínimo gasto necesario para alcanzar la utilidad \\(u\\) con precios \\(p\\); \\(u_i\\): utilidad de \\(i\\).",
+      "en": "\\(e(u, p)\\): expenditure function, the minimum spending needed to reach utility \\(u\\) at prices \\(p\\); \\(u_i\\): utility of \\(i\\)."
+     },
+     {
+      "es": "\\(p_0\\): vector de precios de referencia; \\(p_i\\): precios que enfrenta \\(i\\); \\(q_i\\): su vector de cantidades consumidas; \\(c_i = p_i q_i\\): su gasto de consumo en pesos.",
+      "en": "\\(p_0\\): reference price vector; \\(p_i\\): prices faced by \\(i\\); \\(q_i\\): its consumption bundle; \\(c_i = p_i q_i\\): its consumption spending in pesos."
+     },
+     {
+      "es": "\\(\\approx\\): aproximación de Taylor de primer orden más el lema de Shephard; \\(I_{Pi}\\): índice de precios tipo Paasche específico de \\(i\\).",
+      "en": "\\(\\approx\\): first-order Taylor approximation plus Shephard's lemma; \\(I_{Pi}\\): Paasche-type price index specific to \\(i\\)."
+     },
+     {
+      "es": "\\(u_i^r\\): valor monetario del cociente de bienestar (welfare ratio) de Blackorby y Donaldson; \\(u_z\\): nivel de utilidad bajo de referencia, asociado a la pobreza; \\(I_{Li}\\): índice Laspeyres con ponderadores fijos en la canasta de referencia.",
+      "en": "\\(u_i^r\\): money value of Blackorby and Donaldson's welfare ratio; \\(u_z\\): low reference utility level, associated with poverty; \\(I_{Li}\\): Laspeyres index with fixed weights on the reference basket."
+     }
+    ]
+   ],
+   "p": [
+    "Sen sostiene que toda concepción de equidad pide igualdad de algo; la diferencia está en qué. Una visión mira resultados, que dependen en parte de decisiones propias; otra mira oportunidades, que están fuera del control de la persona, como el ingreso de los padres para un niño. La igualdad de oportunidades es más atractiva y la más aceptada por la opinión pública, pero es engorrosa de medir, ambigua y multidimensional. Por conveniencia práctica más que por convicción teórica, la mayoría de los estudios, y el libro, trabajan con resultados.",
+    "La utilidad no es observable ni comparable, y el vector de consumo es multidimensional: no se sabe quién está mejor entre quien consume 2 manzanas y 3 peras y quien consume 3 peras y 2 manzanas. La economía se queda entonces con dos escalares monetarios, el ingreso y el gasto de consumo. La teoría los respalda: la utilidad monetaria de Samuelson (1974) y el cociente de bienestar de Blackorby y Donaldson (1988) se aproximan por el gasto deflactado, con un índice Paasche o con uno Laspeyres, más fácil de conseguir. Quedan afuera la libertad, la seguridad o la salud.",
+    "Las alternativas tienen problemas propios. La riqueza puede ser nula para alguien con ingresos muy altos que no ahorra, y casi no hay encuestas para medirla. El ingreso potencial exige estimar un salario contrafáctico. Los índices multidimensionales chocan con los ponderadores: no hay forma objetiva de decidir si está mejor A, con ingreso 100 y sin agua potable, o B, con 80 y conectado a la red. Y el bienestar subjetivo sufre adaptación y comparaciones locales."
+   ]
+  },
+  {
+   "t": "Ingreso contra consumo",
+   "p": [
+    "El período de referencia razonable es un año. Como las personas ahorran y desahorran para suavizar su consumo, el consumo anual se acerca más al bienestar de cada período, mientras el ingreso lo sobrestima en años de ahorro y lo subestima en los de desahorro; un jubilado que vive de sus activos aparecería como pobre por ingreso. A favor del ingreso se dice que representa las posibilidades de consumo del período.",
+    "Las encuestas latinoamericanas preguntan el ingreso del mes previo, lo que refuerza el argumento a favor del consumo. En el ejemplo del cuadro 3.1, A y B tienen el mismo promedio anual, 50, pero patrones estacionales opuestos: una encuesta de enero mostraría ingresos de 70 contra 20 y consumos de 56 contra 42. En promedio, el cociente de consumos mensuales es 1,3 y el de ingresos 3,8, cuando la desigualdad anual real es nula. En la región, la desigualdad del consumo per cápita resulta siempre menor que la del ingreso.",
+    "El consumo además se declara con más veracidad, se define después de impuestos y capta mejor el autoconsumo. Su contra es que construirlo exige cuestionarios largos, caros y decisiones arbitrarias. Según Deaton (2005), en países ricos con asalariados formales es más fácil medir el ingreso y en países pobres, con autoempleo y agro, el consumo. América Latina está en el medio: todas sus encuestas relevan ingreso y aproximadamente la mitad incluye consumo."
+   ]
+  },
+  {
+   "t": "Hogares, escalas de equivalencia y economías de escala",
+   "eq": [
+    "x_{ih} = \\frac{Y_h}{N_h},\\qquad x_{ih} = \\frac{Y_h}{\\sum_{j \\in h} a_{jh}},\\qquad x_{ih} = \\frac{Y_h}{N_h^{\\theta}}\\qquad \\forall i \\in h",
+    "x_{ih} = \\frac{Y_h}{(M_h + \\alpha C_h)^{\\theta}},\\qquad x_{ih} = \\frac{Y_h}{1 + \\beta(M_h - 1) + \\alpha C_h}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(x_{ih}\\): nivel de vida asignado a la persona \\(i\\) del hogar \\(h\\); \\(\\forall i \\in h\\): igual para todos los miembros del hogar.",
+      "en": "\\(x_{ih}\\): living standard assigned to person \\(i\\) in household \\(h\\); \\(\\forall i \\in h\\): the same for every household member."
+     },
+     {
+      "es": "\\(Y_h\\): ingreso (o consumo) total del hogar; \\(N_h\\): número de miembros.",
+      "en": "\\(Y_h\\): total household income (or consumption); \\(N_h\\): number of members."
+     },
+     {
+      "es": "\\(a_{jh}\\): valor de adulto equivalente del integrante \\(j\\) (1 para el adulto de referencia, menos para un niño con menores necesidades).",
+      "en": "\\(a_{jh}\\): adult-equivalent value of member \\(j\\) (1 for the reference adult, less for a child with lower needs)."
+     },
+     {
+      "es": "\\(\\theta\\): parámetro entre 0 y 1; \\(\\theta = 1\\) es ausencia de economías de escala (ingreso per cápita) y \\(\\theta = 0\\) plenas economías (todo es bien público del hogar).",
+      "en": "\\(\\theta\\): parameter between 0 and 1; \\(\\theta = 1\\) means no economies of scale (per capita income) and \\(\\theta = 0\\) full economies (everything is a household public good)."
+     }
+    ],
+    [
+     {
+      "es": "\\(M_h\\): número de adultos; \\(C_h\\): número de niños del hogar.",
+      "en": "\\(M_h\\): number of adults; \\(C_h\\): number of children in the household."
+     },
+     {
+      "es": "\\(\\alpha\\): proporción en que cada niño equivale a un adulto, entre 0 y 1.",
+      "en": "\\(\\alpha\\): fraction of an adult that each child counts as, between 0 and 1."
+     },
+     {
+      "es": "\\(\\beta\\): peso de cada adulto adicional al primero, que es el de referencia; se supone \\(\\alpha < \\beta\\).",
+      "en": "\\(\\beta\\): weight of each adult beyond the first, who is the reference adult; \\(\\alpha < \\beta\\) is assumed."
+     },
+     {
+      "es": "\\(Y_h\\), \\(\\theta\\), \\(x_{ih}\\): como en la ecuación anterior.",
+      "en": "\\(Y_h\\), \\(\\theta\\), \\(x_{ih}\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "Un hogar es un grupo que vive junto, consume en conjunto y comparte un presupuesto; no coincide necesariamente con la familia ni con la vivienda. En América Latina los hogares multipersonales son mayoría: 79,4 % en Uruguay y 94,7 % en Honduras. El supuesto fuerte, casi universal, es que todos los miembros comparten el mismo nivel de vida. El indicador más usado en la región, es el ingreso per cápita familiar, que solo mira el tamaño del hogar.",
+    "Dos ajustes lo refinan. Las escalas de adulto equivalente reconocen que un niño necesita menos que un adulto; las economías de escala, que muchos bienes del hogar son en parte públicos, como un cuadro, la conexión a un servicio o la calefacción, aunque no la comida. Con ambos se obtiene el ingreso equivalente; la escala de Oxford usa \\(\\beta\\) = 0,7 y \\(\\alpha\\) = 0,5, y la OCDE modificada 0,5 y 0,3.",
+    "Los ajustes importan. Dos hogares con ingreso de 1000, A con dos adultos y B con dos adultos y dos niños, tienen ingresos per cápita de 500 y 250, un cociente de 2. Con \\(\\alpha\\) = 0,75 el cociente baja a 1,8, con 0,5 a 1,5 y con 0,25 a 1,3; con \\(\\theta\\) = 0,75 queda en 1,7 y con 0,25 en 1,2. Algunos proponen no ajustar porque la fecundidad es una elección; la literatura lo descarta porque esas decisiones no siempre son plenamente informadas y, sobre todo, porque el tamaño del hogar es una circunstancia exógena para los hijos."
+   ]
+  },
+  {
+   "t": "De dónde salen los parámetros",
+   "eq": [
+    "\\ln Y_h^{s} = \\alpha + \\beta \\ln N_h + \\gamma \\ln Y_h + \\varepsilon_h,\\qquad \\ln Y_h^{n} = \\left(\\frac{1}{1-\\gamma}\\right)(\\alpha + \\beta \\ln N_h + \\varepsilon_h)",
+    "x_{ih} = \\frac{Y_h(1-t)}{N} + s_{ih},\\qquad s_{ih} = tY_h\\ \\text{si } i \\text{ es el jefe y 0 para el resto}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y_h^{s}\\): ingreso que el hogar \\(h\\) declara necesario para cubrir sus necesidades básicas; \\(Y_h\\): ingreso efectivo; \\(N_h\\): número de miembros; \\(\\ln\\): logaritmo natural.",
+      "en": "\\(Y_h^{s}\\): income household \\(h\\) reports as needed to cover basic needs; \\(Y_h\\): actual income; \\(N_h\\): number of members; \\(\\ln\\): natural logarithm."
+     },
+     {
+      "es": "\\(\\alpha, \\beta, \\gamma\\): coeficientes de la regresión (aquí no son los parámetros de las escalas); \\(\\varepsilon_h\\): término de error.",
+      "en": "\\(\\alpha, \\beta, \\gamma\\): regression coefficients (here not the scale parameters); \\(\\varepsilon_h\\): error term."
+     },
+     {
+      "es": "\\(Y_h^{n}\\): ingreso de «necesidad», el nivel en que el ingreso requerido coincide con el efectivo; \\(\\beta/(1-\\gamma)\\) es la elasticidad de las necesidades respecto del tamaño del hogar.",
+      "en": "\\(Y_h^{n}\\): 'needs' income, the level at which required income equals actual income; \\(\\beta/(1-\\gamma)\\) is the elasticity of needs with respect to household size."
+     }
+    ],
+    [
+     {
+      "es": "\\(x_{ih}\\): nivel de vida de la persona \\(i\\) del hogar \\(h\\) en el ejercicio de redistribución intrahogar.",
+      "en": "\\(x_{ih}\\): living standard of person \\(i\\) in household \\(h\\) in the intra-household redistribution exercise."
+     },
+     {
+      "es": "\\(t\\): «impuesto» proporcional sobre el ingreso del hogar que se asigna al jefe; \\(Y_h\\): ingreso total del hogar; \\(N\\): número de miembros del hogar.",
+      "en": "\\(t\\): proportional 'tax' on household income assigned to the head; \\(Y_h\\): total household income; \\(N\\): number of household members."
+     },
+     {
+      "es": "\\(s_{ih}\\): monto extra que recibe el jefe; vale 0 para los demás miembros.",
+      "en": "\\(s_{ih}\\): extra amount received by the head; it equals 0 for the other members."
+     }
+    ]
+   ],
+   "p": [
+    "En teoría, una escala de equivalencia es el costo relativo de alcanzar un nivel de vida según la composición del hogar, pero depende del nivel de utilidad y del hogar base elegidos. En la práctica salen de tres fuentes. Las nutricionales, como la oficial argentina (Morales, 1988), toman como referencia a un varón de 30 a 59 años; un menor de 1 año vale un tercio y a los 10 años la escala llega a 0,72 y se separa por género. Solo miran calorías y generan saltos: con 250 pesos cada uno, un varón de 30 años aparece 6 % mejor que uno de 29 y una mujer de 30, 43 % mejor.",
+    "El enfoque subjetivo pregunta cuánto ingreso hace falta y estima en logaritmos una elasticidad de las necesidades al tamaño del hogar; los trabajos encuentran valores menores que 1, es decir, economías de escala. El de comportamiento usa el gasto: Engel mide el costo de un niño por lo que habría que compensar para recuperar la participación de los alimentos, y Rothbarth por el gasto en bienes solo de adultos. Ante tantas dificultades se usan parámetros ad hoc: \\(\\alpha\\) cerca de 0,25 en países pobres y cercano a 1 en desarrollados; \\(\\theta\\) cercano a 1 donde domina la comida y 0,75 en países desarrollados. Para América Latina se sugieren valores intermedios, por ejemplo \\(\\theta\\) = 0,9 y \\(\\alpha\\) = 0,7, con análisis de sensibilidad.",
+    "Ignorar la desigualdad dentro del hogar la subestima. Si una parte del ingreso se asigna al jefe, el cociente entre deciles extremos de Paraguay pasa de 42,9 a 45,5 con un 10 % y a 61,7 con un sesgo fuerte. Y calcular por hogares sin ponderar por tamaño da tasas de pobreza más bajas, porque los hogares pobres son más numerosos."
+   ]
+  },
+  {
+   "t": "Edad, factores y regiones",
+   "p": [
+    "Los ingresos laborales siguen una U invertida con la edad, más marcada en Uruguay que en Colombia. Con el ingreso per cápita familiar, en Colombia el nivel de vida cae desde la edad adulta, mientras que las pensiones uruguayas sostienen a los mayores; el consumo apenas suaviza el patrón. La foto de un momento puede sobrestimar la desigualdad de la película de toda la vida, si las diferencias son solo de edad, o subestimarla. Restringir el análisis a adultos de 25 a 65 años no cambia mucho el Gini, y el análisis intertemporal es raro: interesan las carencias actuales.",
+    "La distribución funcional reparte el ingreso entre trabajo, capital y tierra, y se estima con Cuentas Nacionales porque las encuestas captan mal el capital. Solo mide la parte asalariada: en Bolivia apenas el 36 % de los trabajadores eran asalariados en 2007. Fue el centro de la economía clásica (Ricardo, 1817), pero perdió terreno con la difusión de la propiedad, el capital humano y la dispersión salarial; hoy muchos en la cima son asalariados. Los autores la tratan como complemento de la distribución personal, igual que la regional."
+   ]
+  },
+  {
+   "t": "Encuestas: muestreo, tamaño y ponderadores",
+   "eq": [
+    "n \\ge \\left[\\frac{1.96\\sqrt{\\hat{H}(1-\\hat{H})}}{H\\,0.07}\\right]^2,\\qquad \\hat{H} = \\frac{\\sum_{i=1}^{n} \\omega_i\\,1(x_i < z)}{\\sum_{i=1}^{n} \\omega_i}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(n\\): tamaño de muestra requerido (personas), con muestreo aleatorio simple.",
+      "en": "\\(n\\): required sample size (people), under simple random sampling."
+     },
+     {
+      "es": "\\(H\\): tasa de pobreza verdadera, que se reemplaza por una presunción previa; \\(\\hat{H}\\): tasa de pobreza estimada.",
+      "en": "\\(H\\): true poverty rate, replaced by a prior guess; \\(\\hat{H}\\): estimated poverty rate."
+     },
+     {
+      "es": "1,96: percentil 0,975 de la normal estándar (confianza del 95 %); 0,07: discrepancia máxima tolerada, como proporción de \\(H\\).",
+      "en": "1.96: 0.975 percentile of the standard normal (95% confidence); 0.07: maximum tolerated discrepancy, as a share of \\(H\\)."
+     },
+     {
+      "es": "\\(\\omega_i\\): ponderador o factor de expansión de la observación \\(i\\), el número de personas de la población que representa; \\(x_i\\): ingreso; \\(z\\): línea de pobreza; \\(1(\\cdot)\\): indicadora que vale 1 si \\(x_i < z\\).",
+      "en": "\\(\\omega_i\\): weight or expansion factor of observation \\(i\\), the number of people in the population it represents; \\(x_i\\): income; \\(z\\): poverty line; \\(1(\\cdot)\\): indicator equal to 1 if \\(x_i < z\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Los censos son poco frecuentes y casi nunca preguntan ingreso o consumo; las declaraciones de impuestos cubren a pocos, aunque ayudan a ver a los más ricos. La base son las encuestas de hogares, con diseños complejos. La estratificación parte la población en estratos y muestrea dentro de cada uno, por ejemplo para sobrerrepresentar una provincia con el 1 % de la población hasta el 5 % de la muestra. Los clusters ahorran costos encuestando solo algunos pueblos, pero las observaciones de un mismo pueblo están correlacionadas y la varianza real es mayor. La CASEN de Chile combina ambos con 553 estratos.",
+    "El tamaño de muestra depende de la confianza, la precisión y una presunción sobre la pobreza. Con pobreza cercana a 0,2 y tolerancia del 7 %, hacen falta más de 3136 personas; con precisión de 0,05, 6147. Cada observación lleva un factor de expansión igual o proporcional a la inversa de su probabilidad de ser muestreada: 5000 encuestados en un millón de habitantes dan una probabilidad de 0,005 y un factor de 200. Los ponderadores suelen crecer con el ingreso, en parte por la no respuesta, y en México la pobreza ponderada es en general menor. En Costa Rica 2006, agregar los clusters eleva sustancialmente los errores estándar; el «efecto diseño» compara esa varianza con la de un muestreo aleatorio simple.",
+    "Hay encuestas de empleo e ingresos, anuales o continuas, y de condiciones de vida, más amplias y caras, impulsadas desde 1980 por el programa LSMS del Banco Mundial; también de opinión, como Latinobarómetro, y paneles cortos como la EPH argentina. En 2011 todas tenían cobertura nacional salvo la argentina, limitada a 31 aglomerados urbanos. El libro sigue la metodología de CEDLAS para homogeneizar, aunque la comparabilidad nunca es completa."
+   ]
+  },
+  {
+   "t": "Construir el ingreso y el consumo",
+   "eq": [
+    "c_{kt} = S_{kt-1}\\,p_{kt-1} - \\frac{S_{kt-1}(1-d_t)\\,p_{kt}}{1+r_t}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(c_{kt}\\): consumo (flujo de servicios) del bien durable \\(k\\) en el período \\(t\\).",
+      "en": "\\(c_{kt}\\): consumption (flow of services) of durable good \\(k\\) in period \\(t\\)."
+     },
+     {
+      "es": "\\(S_{kt-1}\\): stock del bien al inicio del período; \\(p_{kt-1}, p_{kt}\\): su precio de mercado al inicio y al final.",
+      "en": "\\(S_{kt-1}\\): stock of the good at the start of the period; \\(p_{kt-1}, p_{kt}\\): its market price at the start and end."
+     },
+     {
+      "es": "\\(d_t\\): tasa de desgaste o depreciación; \\(r_t\\): tasa de interés nominal, que suele promediarse en un período largo.",
+      "en": "\\(d_t\\): wear or depreciation rate; \\(r_t\\): nominal interest rate, usually averaged over a long period."
+     }
+    ]
+   ],
+   "p": [
+    "La definición de Schanz-Haig-Simons toma como ingreso el valor del aumento de la capacidad de consumir en un período: ingresos laborales, de capital, transferencias y la renta implícita de la vivienda propia, sin ingresos extraordinarios. Se incluyen el autoconsumo y la renta de la vivienda propia, pero casi nunca los subsidios en especie como educación o salud. Las encuestas captan sobre todo trabajo y transferencias: en casi todos los países más del 80 % del ingreso individual es laboral y más del 15 % transferencias, más del 25 % en Uruguay y menos del 12 % en Colombia y Ecuador. El capital apenas pesa un 3 %, por la ausencia de los muy ricos y la subdeclaración; a nivel del hogar el 75 % sigue siendo laboral.",
+    "El consumo se arma directamente para el hogar y se cumple la ley de Engel: la participación de los alimentos cae con el quintil. Los resultados son sensibles al cuestionario: Jolliffe (2001) reporta un consumo 31 % mayor en El Salvador con un formulario detallado, y en India un período de recuerdo de una semana en lugar de un mes bajó la pobreza rural de 42,6 % a 23,6 %, unos 200 millones de pobres menos. Hay que distinguir el consumo del gasto: quien compra arroz por 30 cada tres meses consume 10 por mes. Para los durables se imputa el costo de mantener el stock durante el período. El apéndice práctico replica los cuadros en Stata."
+   ]
+  }
+ ],
+ "claves": [
+  "Las oportunidades y la utilidad son conceptualmente atractivas, pero por razones prácticas se mide con variables monetarias de resultado: ingreso o consumo.",
+  "Con encuestas mensuales, el consumo refleja mejor el nivel de vida anual que el ingreso, porque las personas lo suavizan; en América Latina la desigualdad del consumo es menor que la del ingreso.",
+  "El ingreso per cápita familiar es el indicador estándar de la región; las escalas de adulto equivalente y las economías de escala lo ajustan con parámetros en buena medida arbitrarios.",
+  "Suponer igualdad dentro del hogar subestima la desigualdad, y calcular por hogares sin ponderar subestima la pobreza.",
+  "La distribución personal es el centro del análisis; la funcional, estimada con Cuentas Nacionales, es un complemento valioso.",
+  "Las encuestas usan estratos, clusters y ponderadores: ignorar los clusters subestima la varianza y omitir los ponderadores sesga las tasas.",
+  "Las encuestas captan bien trabajo y transferencias, pero apenas un 3 % de ingresos de capital, y su diseño cambia mucho los resultados."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué la mayoría de los estudios distributivos usa variables de resultado y no de oportunidades?",
+    "en": "Why do most distributional studies use outcome variables rather than opportunities?"
+   },
+   "op": {
+    "es": [
+     "Porque la igualdad de oportunidades es menos aceptada por la opinión pública",
+     "Porque las oportunidades son difíciles de definir, multidimensionales y sin correlato empírico claro",
+     "Porque las diferencias de resultados siempre son injustas",
+     "Porque Sen demostró que solo importan los resultados"
+    ],
+    "en": [
+     "Because equality of opportunity is less accepted by the public",
+     "Because opportunities are hard to define, multidimensional and lack a clear empirical counterpart",
+     "Because outcome differences are always unfair",
+     "Because Sen proved only outcomes matter"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La igualdad de oportunidades es conceptualmente más atractiva y la más aceptada, pero su implementación empírica es engorrosa y ambigua.",
+    "en": "Equality of opportunity is conceptually more attractive and more widely accepted, but its empirical implementation is cumbersome and ambiguous."
+   },
+   "id": "fisc-dist-03-q1"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de dos personas con el mismo promedio anual pero estacionalidad opuesta, ¿qué muestra una encuesta mensual?",
+    "en": "In the example of two people with the same annual average but opposite seasonality, what does a monthly survey show?"
+   },
+   "op": {
+    "es": [
+     "Ninguna desigualdad, igual que el dato anual",
+     "Más desigualdad en consumo que en ingreso",
+     "Desigualdad en ambos, pero mucho menor en consumo: un cociente promedio de 1,3 contra 3,8",
+     "La misma desigualdad en ingreso y consumo"
+    ],
+    "en": [
+     "No inequality, like the annual figure",
+     "More inequality in consumption than in income",
+     "Inequality in both, but much less in consumption: an average ratio of 1.3 against 3.8",
+     "The same inequality in income and consumption"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Como el consumo se suaviza, el dato mensual de consumo se acerca más al promedio anual; la desigualdad anual real es nula.",
+    "en": "Because consumption is smoothed, the monthly consumption figure is closer to the annual average; true annual inequality is zero."
+   },
+   "id": "fisc-dist-03-q2"
+  },
+  {
+   "q": {
+    "es": "En la fórmula del ingreso ajustado por economías de escala, ¿qué implica un parámetro θ igual a 1?",
+    "en": "In the scale-economies-adjusted income formula, what does a parameter θ equal to 1 imply?"
+   },
+   "op": {
+    "es": [
+     "Plenas economías de escala: todos los bienes del hogar son públicos",
+     "Que cada niño vale lo mismo que un adulto",
+     "Que no hay que ajustar por tamaño del hogar",
+     "Ausencia de economías de escala: la fórmula se convierte en el ingreso per cápita"
+    ],
+    "en": [
+     "Full economies of scale: all household goods are public",
+     "That each child counts as an adult",
+     "That no household-size adjustment is needed",
+     "No economies of scale: the formula becomes per capita income"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con θ = 0 el bienestar es el ingreso familiar sin ajuste; cuanto mayor θ, menor la intensidad de las economías de escala.",
+    "en": "With θ = 0 welfare is unadjusted household income; the higher θ, the weaker the economies of scale."
+   },
+   "id": "fisc-dist-03-q3"
+  },
+  {
+   "q": {
+    "es": "Para dos hogares con ingreso de 1000, uno con dos adultos y otro con dos adultos y dos niños, ¿qué pasa con el cociente de ingresos al bajar el peso de los niños?",
+    "en": "For two households with income of 1000, one with two adults and the other with two adults and two children, what happens to the income ratio as the weight of children falls?"
+   },
+   "op": {
+    "es": [
+     "Se reduce: de 2 en per cápita a 1,3 con un peso de 0,25",
+     "Aumenta, porque los niños consumen menos",
+     "No cambia",
+     "Se invierte a favor del hogar con niños"
+    ],
+    "en": [
+     "It falls: from 2 per capita to 1.3 with a weight of 0.25",
+     "It rises, because children consume less",
+     "It does not change",
+     "It reverses in favour of the household with children"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Cuanto menor es la carga de un niño sobre el presupuesto, más se favorece al hogar numeroso y menor es la brecha estimada.",
+    "en": "The lower a child's burden on the budget, the more the larger household is favoured and the smaller the estimated gap."
+   },
+   "id": "fisc-dist-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué problema muestra el ejemplo de la escala nutricional oficial argentina con tres personas de 250 pesos?",
+    "en": "What problem does the example of Argentina's official nutritional scale with three people earning 250 pesos show?"
+   },
+   "op": {
+    "es": [
+     "Que la escala ignora la edad",
+     "Que cortes abruptos por edad y género generan diferencias de nivel de vida difíciles de justificar",
+     "Que la escala no reconoce economías de escala",
+     "Que la escala favorece a los varones jóvenes"
+    ],
+    "en": [
+     "That the scale ignores age",
+     "That abrupt cuts by age and gender create hard-to-justify living-standard gaps",
+     "That the scale ignores economies of scale",
+     "That the scale favours young men"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Un varón de 30 años aparece 6 % mejor que uno de 29 y una mujer de 30, 43 % mejor, aunque los tres tienen niveles de vida casi iguales.",
+    "en": "A 30-year-old man appears 6% better off than a 29-year-old and a 30-year-old woman 43% better off, though all three have almost equal living standards."
+   },
+   "id": "fisc-dist-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto tiene suponer igualdad perfecta dentro del hogar?",
+    "en": "What is the effect of assuming perfect equality within the household?"
+   },
+   "op": {
+    "es": [
+     "Sobrestima la desigualdad",
+     "No tiene efecto sobre la desigualdad",
+     "Subestima la desigualdad: en Paraguay el cociente de deciles extremos sube de 42,9 a 61,7 con un sesgo fuerte hacia el jefe",
+     "Sobrestima la pobreza en todos los casos"
+    ],
+    "en": [
+     "It overstates inequality",
+     "It has no effect on inequality",
+     "It understates inequality: in Paraguay the extreme-decile ratio rises from 42.9 to 61.7 with a strong bias towards the head",
+     "It overstates poverty in every case"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Al ignorar diferencias intrahogar se pierde una fuente de desigualdad; el efecto sobre la pobreza, en cambio, es ambiguo.",
+    "en": "Ignoring within-household differences drops a source of inequality; the effect on poverty, by contrast, is ambiguous."
+   },
+   "id": "fisc-dist-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el muestreo por clusters tiende a aumentar la varianza de las estimaciones?",
+    "en": "Why does cluster sampling tend to increase the variance of estimates?"
+   },
+   "op": {
+    "es": [
+     "Porque reduce el tamaño de la muestra",
+     "Porque sobrerrepresenta a las provincias chicas",
+     "Porque elimina los ponderadores",
+     "Porque las observaciones de un mismo cluster están correlacionadas y aportan menos información"
+    ],
+    "en": [
+     "Because it reduces the sample size",
+     "Because it overrepresents small provinces",
+     "Because it removes the weights",
+     "Because observations within a cluster are correlated and carry less information"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Diez observaciones independientes informan más que diez muy dependientes; ignorar los clusters subestima la varianza verdadera.",
+    "en": "Ten independent observations are more informative than ten highly dependent ones; ignoring clusters understates the true variance."
+   },
+   "id": "fisc-dist-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué en México la tasa de pobreza suele ser menor cuando se usan los ponderadores?",
+    "en": "Why is Mexico's poverty rate usually lower when weights are used?"
+   },
+   "op": {
+    "es": [
+     "Porque los factores de expansión suelen ser mayores en los estratos de más ingreso, donde la no respuesta es más alta",
+     "Porque los ponderadores excluyen a los pobres",
+     "Porque la encuesta sobremuestrea a los ricos",
+     "Porque los ponderadores corrigen la subdeclaración de ingresos"
+    ],
+    "en": [
+     "Because expansion factors tend to be larger in higher-income strata, where non-response is higher",
+     "Because weights exclude the poor",
+     "Because the survey oversamples the rich",
+     "Because weights correct income under-reporting"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El factor de expansión es la inversa de la probabilidad de ser muestreado; si crece con el ingreso, los no pobres pesan más en el total.",
+    "en": "The expansion factor is the inverse of the sampling probability; if it rises with income, the non-poor weigh more in the total."
+   },
+   "id": "fisc-dist-03-q8"
+  }
+ ],
+ "palabras": 1897,
+ "tarjetas": [
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se justifica usar el gasto de consumo como medida de utilidad?",
+    "en": "How is consumption spending justified as a measure of utility?"
+   },
+   "a": {
+    "es": "Con la utilidad monetaria, el costo de alcanzar la utilidad de cada persona a precios de referencia, que se aproxima por el gasto deflactado con un índice Paasche; el cociente de bienestar lleva a un deflactor Laspeyres (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Through money metric utility, the cost of reaching each person's utility at reference prices, approximated by spending deflated by a Paasche index; the welfare ratio leads to a Laspeyres deflator (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el consumo mensual refleja mejor el bienestar anual que el ingreso mensual?",
+    "en": "Why does monthly consumption reflect annual welfare better than monthly income?"
+   },
+   "a": {
+    "es": "Porque las personas suavizan el consumo frente a ingresos volátiles y estacionales, de modo que cada mes de consumo se parece más al promedio anual (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Because people smooth consumption against volatile and seasonal income, so each month of consumption looks more like the annual average (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el ingreso equivalente?",
+    "en": "What is equivalent income?"
+   },
+   "a": {
+    "es": "El ingreso del hogar ajustado a la vez por adulto equivalente (los niños pesan menos) y por economías de escala (bienes compartidos), con parámetros como α y θ (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Household income adjusted both for adult equivalence (children weigh less) and for economies of scale (shared goods), with parameters such as α and θ (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué no basta con decir que el número de hijos es una elección de los padres?",
+    "en": "Why is it not enough to say that the number of children is a parental choice?"
+   },
+   "a": {
+    "es": "Porque esas decisiones no siempre son racionales ni informadas y, sobre todo, el tamaño del hogar es una circunstancia exógena para los hijos (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Because those decisions are not always rational or informed and, above all, household size is an exogenous circumstance for the children (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué fuentes de ingreso captan las encuestas latinoamericanas?",
+    "en": "Which income sources do Latin American surveys capture?"
+   },
+   "a": {
+    "es": "Sobre todo trabajo (más del 80 % del ingreso individual) y transferencias (más del 15 %); el capital apenas un 3 %, por la falta de muy ricos y la subdeclaración (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Mainly labour (over 80% of individual income) and transfers (over 15%); capital barely 3%, due to missing top earners and under-reporting (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué es el efecto diseño de una encuesta?",
+    "en": "What is a survey's design effect?"
+   },
+   "a": {
+    "es": "El cociente entre la varianza estimada teniendo en cuenta estratos, clusters y ponderadores y la que se obtendría con muestreo aleatorio simple; en Costa Rica 2006 los clusters elevan mucho los errores estándar (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "The ratio of the variance estimated accounting for strata, clusters and weights to the one under simple random sampling; in Costa Rica 2006 clusters raise standard errors substantially (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cuánto importa el período de recuerdo en una encuesta de consumo?",
+    "en": "How much does the recall period matter in a consumption survey?"
+   },
+   "a": {
+    "es": "Mucho: en India pasar de un mes a una semana para los alimentos bajó la pobreza rural de 42,6 % a 23,6 %, unos 200 millones de personas menos (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "A lot: in India moving from a one-month to a one-week recall for food lowered rural poverty from 42.6% to 23.6%, about 200 million fewer people (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t7"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el análisis distributivo se centra en la distribución personal y no en la funcional?",
+    "en": "Why does distributional analysis focus on the personal rather than the functional distribution?"
+   },
+   "a": {
+    "es": "Porque la propiedad se difundió, el capital humano ganó peso y muchos en la cima son asalariados, así que trabajo y capital ya no separan bien a pobres y ricos; la funcional queda como complemento (Gasparini, Cicowiez y Sosa Escudero, cap. 3).",
+    "en": "Because ownership spread, human capital gained weight and many at the top are wage earners, so labour and capital no longer separate rich and poor well; the functional one remains a complement (Gasparini, Cicowiez and Sosa Escudero, ch. 3)."
+   },
+   "id": "fisc-dist-03-t8"
+  }
+ ]
+}

@@ -1,0 +1,578 @@
+{
+ "id": "fisc-dist-02",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Herramientas para mirar una distribución: de la media al bootstrap",
+ "bajada": "El capítulo 2 de Gasparini, Cicowiez y Sosa Escudero: medidas resumen, histogramas, curvas de Lorenz y de incidencia del crecimiento, densidades por kernels, significatividad estadística con errores estándar y bootstrap, y las formas funcionales de Pareto, log-normal, Singh-Maddala y Dagum, con datos de Brasil, México, Argentina y Ecuador.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 2: «Herramientas para el análisis distributivo»",
+ "intro": "Pobreza y desigualdad son ideas intuitivas pero difíciles de definir. Para empezar, Gasparini, Cicowiez y Sosa Escudero suponen que todo lo relevante del nivel de vida se resume en una sola variable, a la que llaman ingreso, y dejan para el capítulo 3 la discusión de qué variable usar. Con ese supuesto, la «distribución del ingreso» no significa reparto: es la lista completa de ingresos de una comunidad. La pobreza se refiere a cuántas observaciones caen debajo de un umbral y dónde están; la desigualdad, a la dispersión de esa lista. La media y la mediana, que suelen ocupar el centro de la economía, pasan a segundo plano. El capítulo arma la caja de herramientas: medidas resumen, gráficos, funciones continuas, inferencia estadística y formas paramétricas, ilustradas con microdatos de encuestas de hogares de América Latina. Su mensaje metodológico es doble: conviene empezar todo estudio distributivo mirando la distribución entera, y conviene recordar que lo que se mira es una muestra, no la población.",
+ "secciones": [
+  {
+   "t": "Resumir una lista de ingresos",
+   "eq": [
+    "\\bar{x} = \\frac{1}{N}\\sum_{i=1}^{N} x_i,\\qquad M = \\frac{1}{N}\\sum_{i=1}^{N} 1(x_i < x_m),\\qquad s_J = \\frac{\\sum_{i \\in J} x_i}{\\sum_{i=1}^{N} x_i}",
+    "V = \\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^2,\\qquad CV = \\frac{\\sqrt{V}}{\\mu} = \\frac{\\sigma}{\\mu},\\qquad A = \\frac{\\frac{1}{N}\\sum_{i=1}^{N}(x_i-\\mu)^3}{\\sigma^3}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\bar{x}\\): media aritmética del ingreso (en pesos por mes en el ejemplo).",
+      "en": "\\(\\bar{x}\\): arithmetic mean of income (pesos per month in the example)."
+     },
+     {
+      "es": "\\(x_i\\): ingreso de la persona \\(i\\); \\(N\\): número de personas de la población o muestra; \\(\\sum\\): suma sobre las personas indicadas.",
+      "en": "\\(x_i\\): income of person \\(i\\); \\(N\\): number of people in the population or sample; \\(\\sum\\): sum over the indicated people."
+     },
+     {
+      "es": "\\(M\\): proporción de personas con ingreso menor que el umbral \\(x_m\\); si el umbral es la línea de pobreza, es la tasa de incidencia de la pobreza.",
+      "en": "\\(M\\): share of people with income below the threshold \\(x_m\\); if the threshold is the poverty line, it is the poverty headcount ratio."
+     },
+     {
+      "es": "\\(1(\\cdot)\\): función indicadora, vale 1 si lo que está entre paréntesis es verdadero y 0 si es falso.",
+      "en": "\\(1(\\cdot)\\): indicator function, equal to 1 if the expression in brackets is true and 0 otherwise."
+     },
+     {
+      "es": "\\(s_J\\): participación (share) del grupo \\(J\\), por ejemplo un quintil, en el ingreso total; \\(i \\in J\\): personas que pertenecen al grupo.",
+      "en": "\\(s_J\\): share of group \\(J\\), for instance a quintile, in total income; \\(i \\in J\\): people belonging to the group."
+     }
+    ],
+    [
+     {
+      "es": "\\(V\\): varianza, distancia cuadrática promedio de los ingresos respecto de la media.",
+      "en": "\\(V\\): variance, the average squared distance of incomes from the mean."
+     },
+     {
+      "es": "\\(\\mu\\): media de la distribución; \\(\\sigma\\): desvío estándar, la raíz cuadrada positiva de \\(V\\), en las mismas unidades que el ingreso.",
+      "en": "\\(\\mu\\): mean of the distribution; \\(\\sigma\\): standard deviation, the positive square root of \\(V\\), in the same units as income."
+     },
+     {
+      "es": "\\(CV\\): coeficiente de variación, el desvío expresado como proporción de la media (número puro).",
+      "en": "\\(CV\\): coefficient of variation, the standard deviation as a share of the mean (pure number)."
+     },
+     {
+      "es": "\\(A\\): coeficiente de asimetría de Fisher, el tercer momento estandarizado; positivo si la distribución tiene una cola larga a la derecha.",
+      "en": "\\(A\\): Fisher's skewness coefficient, the standardised third moment; positive if the distribution has a long right tail."
+     },
+     {
+      "es": "\\(x_i\\), \\(N\\): como en la ecuación anterior.",
+      "en": "\\(x_i\\), \\(N\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "Una medida resumen sacrifica información a cambio de simplicidad. Los autores lo muestran con una comunidad hipotética de 20 personas cuyos ingresos van de 40 a 1905 pesos. La media es 365,7 y la mediana, el valor que deja la mitad de las observaciones a cada lado, es 236,5. La mediana es mucho más robusta a valores atípicos: con ingresos 1, 2, 4, 6 y 7 media y mediana valen 4, pero si un error de tipeo convierte el 7 en 67 la media se cuadriplica a 16 y la mediana no se mueve.",
+    "Los cuantiles dividen a la población ordenada en grupos iguales: quintiles, deciles, percentiles. El libro advierte que el término se usa también para un valor puntual (el primer decil como el ingreso que deja debajo al 10 % de la población) y que la literatura distributiva prefiere la acepción de grupo. Dos características se usarán todo el tiempo: la proporción de personas por debajo de un umbral, que con una línea de pobreza de 180 pesos da 8 pobres sobre 20, un 40 %, y la participación de un grupo en el ingreso total, que para el quintil superior del ejemplo es 54,3 %.",
+    "Entre las medidas de dispersión están el rango, el rango intercuartílico, los cocientes entre cuantiles (26,5 entre el decil 10 y el 1, 13,7 entre quintiles extremos), la varianza (168192,4), el desvío estándar (410,1) y el coeficiente de variación (1,12). La asimetría de Fisher eleva las brechas respecto de la media al cubo: los ricos están muy por encima de la media, que queda cerca de los pobres, y los términos positivos dominan. Todas las distribuciones del ingreso del mundo son asimétricas a la derecha, y una media superior a la mediana se toma como síntoma de esa asimetría, aunque formalmente una cosa no implica la otra."
+   ]
+  },
+  {
+   "t": "Brasil 2007: una distribución real",
+   "p": [
+    "La PNAD de 2007 tiene información de ingresos de 124794 hogares y 394560 personas, que representan a cerca de 190 millones de brasileños. El ingreso per cápita familiar medio es 574,3 reales por mes, pero el 10 % más pobre tiene menos de 84 reales, la mediana es 330 y solo el 1 % tiene 4400 reales o más. El rango intercuartílico es 456,5. Más del 1 % de los encuestados declara ingreso cero y el máximo es 66000.",
+    "La asimetría salta a la vista. La mitad de la población está entre 0 y 330; si la distribución fuera simétrica, la otra mitad estaría entre 330 y 660, y en cambio el 20 % más rico está muy por encima de ese intervalo. El 99 % de las personas se reparte en el intervalo de 0 a 4400 y el 1 % restante entre 4400 y 66000, un intervalo 14 veces más grande. Esa cola superior larga es un rasgo de casi todas las distribuciones del mundo, y la real es aún más larga porque las encuestas no captan a los grandes millonarios.",
+    "El primer decil reúne apenas el 0,7 % del ingreso total y el decil superior el 43,9 %. Con una línea de 130 reales mensuales (la línea internacional de USD 2,5 por día a paridad de poder adquisitivo), la pobreza es 18,2 % en el país, con diferencias regionales enormes: 26,3 % en el Norte, 34,1 % en el Nordeste, 10,4 % en el Sudeste, 8,9 % en el Sur y 12,3 % en el Centro-Oeste."
+   ]
+  },
+  {
+   "t": "Gráficos: del histograma a la curva de Lorenz",
+   "eq": [
+    "L(p) = \\int_0^{y} \\frac{x f(x)}{\\mu}\\,dx,\\quad p = F(y);\\qquad GL(p) = \\mu\\,L(p)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(L(p)\\): curva de Lorenz, la fracción del ingreso total que acumula el \\(p\\) por ciento más pobre de la población.",
+      "en": "\\(L(p)\\): Lorenz curve, the share of total income held by the poorest \\(p\\) per cent of the population."
+     },
+     {
+      "es": "\\(p\\): proporción acumulada de la población ordenada de menor a mayor ingreso, entre 0 y 1.",
+      "en": "\\(p\\): cumulative share of the population ranked from lowest to highest income, between 0 and 1."
+     },
+     {
+      "es": "\\(y\\): ingreso tal que una proporción \\(p\\) de la población tiene ingresos menores; \\(F(\\cdot)\\): función de distribución acumulada; \\(f(x)\\): función de densidad del ingreso.",
+      "en": "\\(y\\): income such that a share \\(p\\) of the population has lower incomes; \\(F(\\cdot)\\): cumulative distribution function; \\(f(x)\\): income density function."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(\\int\\): integral (suma continua) desde el ingreso 0 hasta \\(y\\).",
+      "en": "\\(\\mu\\): mean income; \\(\\int\\): integral (continuous sum) from income 0 up to \\(y\\)."
+     },
+     {
+      "es": "\\(GL(p)\\): curva generalizada de Lorenz, la de Lorenz multiplicada por la media; termina en el punto \\((1, \\mu)\\).",
+      "en": "\\(GL(p)\\): generalised Lorenz curve, the Lorenz curve multiplied by the mean; it ends at the point \\((1, \\mu)\\)."
+     }
+    ]
+   ],
+   "p": [
+    "El histograma divide el soporte en intervalos y grafica la frecuencia relativa de cada uno. Con la ENIGH de México 2006 resulta frustrante: el ingreso máximo es casi 200000 pesos mexicanos, el primero de 100 intervalos va de 0 a 2000 y ahí cae más del 60 % de la población. Las salidas son truncar la cola o pasar a logaritmos, que comprime la escala pero oculta la asimetría. Elegir el ancho de los intervalos implica un trade-off entre precisión y volatilidad. Los histogramas suavizados permiten comparar regiones: el Sur de México está desplazado a la izquierda y más aplanado que el Noroeste, con un ingreso medio de menos de la mitad y una pobreza de USD 2,5 de 34,5 % contra 9,3 %.",
+    "La función de distribución acumulada muestra la proporción de personas con ingresos menores a cada valor, y es la herramienta natural para la pobreza: como la del Sur está siempre por arriba de la del Noroeste (la del Noroeste la domina en sentido estocástico de primer orden), la pobreza es mayor en el Sur para cualquier línea. El desfile de enanos y unos pocos gigantes de Pen (1973) es la misma función con los ejes invertidos; el diagrama de Pareto hace zoom en la cola superior con doble escala logarítmica, y el box-plot resume mediana, rango intercuartílico y extremos.",
+    "La curva de Lorenz (1905) grafica el porcentaje acumulado del ingreso del \\(p\\) por ciento más pobre: en México el 40 % más pobre reúne poco más del 10 % del ingreso. Con igualdad perfecta coincide con la diagonal; empieza en el origen, termina en el punto (1, 1), es convexa y no cambia si todos los ingresos se multiplican por un escalar. La generalizada de Lorenz incorpora la media y sirve para bienestar agregado. Para la dinámica, la curva de incidencia del crecimiento grafica la tasa de crecimiento del ingreso real de cada percentil: en la Argentina entre 1992 y 2006 está completamente debajo de cero hasta el percentil 55 y es creciente, señal de que la pobreza absoluta y la desigualdad aumentaron."
+   ]
+  },
+  {
+   "t": "Densidades por kernels",
+   "eq": [
+    "f(x_0) \\cong \\frac{F(x_0+h)-F(x_0-h)}{2h},\\qquad \\hat{f}(x_0) = \\frac{1}{N}\\sum_{i=1}^{N}\\frac{1}{h}\\,K\\!\\left[\\frac{x_i-x_0}{h}\\right]",
+    "K(v) = \\frac{1}{\\sqrt{2\\pi}}\\,e^{-\\frac{1}{2}v^2}\\ \\ \\text{(gaussiano)},\\qquad K(v) = \\tfrac{3}{4}(1-v^2)\\ \\ \\text{si } |v| \\le 1\\ \\ \\text{(Epanechnikov)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(f(x_0)\\): densidad del ingreso en el punto \\(x_0\\), la frecuencia relativa de ingresos cercanos a ese valor por unidad de ingreso.",
+      "en": "\\(f(x_0)\\): income density at the point \\(x_0\\), the relative frequency of incomes near that value per unit of income."
+     },
+     {
+      "es": "\\(F(\\cdot)\\): función de distribución acumulada; \\(F(x_0+h)-F(x_0-h)\\) es la proporción de observaciones entre \\(x_0-h\\) y \\(x_0+h\\).",
+      "en": "\\(F(\\cdot)\\): cumulative distribution function; \\(F(x_0+h)-F(x_0-h)\\) is the share of observations between \\(x_0-h\\) and \\(x_0+h\\)."
+     },
+     {
+      "es": "\\(h\\): ancho de banda (positivo), la mitad del ancho de la ventana alrededor de \\(x_0\\).",
+      "en": "\\(h\\): bandwidth (positive), half the width of the window around \\(x_0\\)."
+     },
+     {
+      "es": "\\(\\hat{f}(x_0)\\): estimador por kernels de la densidad; \\(x_i\\): ingreso de la observación \\(i\\); \\(N\\): tamaño de la muestra.",
+      "en": "\\(\\hat{f}(x_0)\\): kernel estimator of the density; \\(x_i\\): income of observation \\(i\\); \\(N\\): sample size."
+     },
+     {
+      "es": "\\(K[\\cdot]\\): kernel, la función que pondera cada observación según su distancia a \\(x_0\\); con el kernel rectangular vale 1/2 dentro de la ventana y 0 fuera.",
+      "en": "\\(K[\\cdot]\\): kernel, the function that weights each observation by its distance from \\(x_0\\); the rectangular kernel equals 1/2 inside the window and 0 outside."
+     }
+    ],
+    [
+     {
+      "es": "\\(v\\): distancia estandarizada \\((x_i-x_0)/h\\) entre una observación y el punto evaluado.",
+      "en": "\\(v\\): standardised distance \\((x_i-x_0)/h\\) between an observation and the evaluation point."
+     },
+     {
+      "es": "\\(K(v)\\): kernel; el gaussiano da peso suavemente decreciente a las observaciones lejanas; el de Epanechnikov vale 0 si \\(|v| > 1\\).",
+      "en": "\\(K(v)\\): kernel; the Gaussian one gives smoothly declining weight to distant observations; Epanechnikov's equals 0 if \\(|v| > 1\\)."
+     },
+     {
+      "es": "\\(e\\): base de los logaritmos naturales; \\(\\pi\\): la constante pi.",
+      "en": "\\(e\\): base of natural logarithms; \\(\\pi\\): the constant pi."
+     }
+    ]
+   ],
+   "p": [
+    "El histograma es un estimador rudimentario de la densidad porque supone uniformidad dentro de cada intervalo. El método de kernels lo generaliza: alrededor de cada punto \\(x_0\\) se mira una ventana de ancho \\(2h\\), se cuenta la proporción de observaciones que caen dentro y se normaliza por el ancho. El kernel redefine qué significa estar «cerca»: el rectangular usa una noción discontinua (adentro o afuera), mientras que el gaussiano o el de Epanechnikov dan menos peso a las observaciones más lejanas.",
+    "En la práctica, el ancho de banda pesa mucho más que la elección del kernel. Es el mismo trade-off del histograma: un \\(h\\) chico es más preciso pero errático, uno grande es suave pero sesgado. Con datos de Bolivia 2005, una banda exageradamente grande sobreestima la densidad en ingresos bajos y altos y la subestima en los medios. No hay una regla mecánica confiable; siguiendo a Deaton (1997), la recomendación es probar varias bandas, de muy chica a muy grande, y ver qué se gana en suavidad y qué se pierde en precisión."
+   ]
+  },
+  {
+   "t": "Muestras, inferencia y bootstrap",
+   "eq": [
+    "F_N(x) \\xrightarrow{p} F(x),\\qquad \\hat{V}(\\bar{x}) = \\frac{S^2}{N},\\qquad \\hat{V}(\\hat{H}) = \\frac{\\hat{H}(1-\\hat{H})}{N},\\qquad \\hat{H} \\pm c_{0.025}\\sqrt{\\hat{V}(\\hat{H})}",
+    "J = \\frac{mn}{d}\\max_x \\left|F_m(x) - G_n(x)\\right|"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(F(x)\\): función de distribución poblacional (inobservable), la probabilidad de que el ingreso sea menor o igual a \\(x\\); \\(F_N(x)\\): función de distribución empírica, la proporción de observaciones de la muestra con ingreso menor a \\(x\\).",
+      "en": "\\(F(x)\\): population distribution function (unobservable), the probability that income is at most \\(x\\); \\(F_N(x)\\): empirical distribution function, the share of sample observations with income below \\(x\\)."
+     },
+     {
+      "es": "\\(\\xrightarrow{p}\\): convergencia en probabilidad cuando el tamaño de la muestra \\(N\\) crece indefinidamente (teorema de Glivenko-Cantelli).",
+      "en": "\\(\\xrightarrow{p}\\): convergence in probability as the sample size \\(N\\) grows without bound (Glivenko-Cantelli theorem)."
+     },
+     {
+      "es": "\\(\\hat{V}(\\cdot)\\): varianza estimada de un estimador; \\(\\bar{x}\\): media muestral; \\(S^2\\): varianza de los datos.",
+      "en": "\\(\\hat{V}(\\cdot)\\): estimated variance of an estimator; \\(\\bar{x}\\): sample mean; \\(S^2\\): variance of the data."
+     },
+     {
+      "es": "\\(\\hat{H}\\): tasa de pobreza muestral, estimación de \\(H\\), la probabilidad de tener ingreso menor que la línea \\(z\\).",
+      "en": "\\(\\hat{H}\\): sample poverty rate, an estimate of \\(H\\), the probability of having income below the line \\(z\\)."
+     },
+     {
+      "es": "\\(c_{0.025}\\): percentil 0,975 de la normal estándar; con \\(\\pm\\) da un intervalo de confianza asintótico del 95 %.",
+      "en": "\\(c_{0.025}\\): 0.975 percentile of the standard normal; with \\(\\pm\\) it gives an asymptotic 95% confidence interval."
+     }
+    ],
+    [
+     {
+      "es": "\\(J\\): estadístico de Kolmogorov-Smirnov para la hipótesis nula de que dos distribuciones son iguales; se rechaza si es demasiado grande.",
+      "en": "\\(J\\): Kolmogorov-Smirnov statistic for the null that two distributions are equal; it is rejected if too large."
+     },
+     {
+      "es": "\\(m, n\\): tamaños de las dos muestras; \\(d\\): mayor divisor común entre \\(m\\) y \\(n\\).",
+      "en": "\\(m, n\\): sizes of the two samples; \\(d\\): greatest common divisor of \\(m\\) and \\(n\\)."
+     },
+     {
+      "es": "\\(F_m, G_n\\): funciones de distribución empíricas de cada muestra; \\(\\max_x\\): máxima discrepancia sobre todos los ingresos \\(x\\).",
+      "en": "\\(F_m, G_n\\): empirical distribution functions of each sample; \\(\\max_x\\): largest gap over all incomes \\(x\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Las 394560 personas de la PNAD son una muestra. La pregunta inferencial es cuán buena es la media muestral de 574,3 reales como estimación de la media poblacional. El vínculo lo da el teorema fundamental de la estadística (Glivenko-Cantelli): la distribución empírica converge a la poblacional cuando la muestra crece, de modo que los gráficos de la sección anterior son estimaciones. Un recuadro distingue dos nociones de población: la colección concreta de ingresos de un censo, de la que la muestra es un subconjunto, y la superpoblación, el proceso generador de ingresos del que incluso un censo es una realización.",
+    "Si dos ciudades censadas tienen pobreza de 8,3 % y 8,5 %, B es más pobre. Si las cifras salen de muestras, no se puede afirmar: un estimador es una variable aleatoria y su variabilidad se mide con su varianza. Para la tasa de pobreza la fórmula es la de una Bernoulli, y si los intervalos de confianza no se solapan la diferencia es significativa (aunque no solaparse no es condición necesaria). Cuando el estadístico es una función complicada, como la mediana o muchos índices distributivos, se recurre al bootstrap: se toman \\(B\\) remuestras con reemplazo de tamaño \\(N\\), se calcula el estadístico en cada una y se usa la varianza, o los percentiles, de esas \\(B\\) estimaciones.",
+    "Con la ENEMDU de Ecuador para la región Amazónica (diciembre de 2009, 3393 personas) y una línea de 46,3, la pobreza es 0,3457. El error estándar analítico es 0,00816 y el intervalo del 95 % es (0,3297; 0,3617); con 500 replicaciones bootstrap el error es 0,00807 y el intervalo por percentiles (0,3295; 0,3619). La hipótesis de una pobreza de 0,35 no se rechaza. Para comparar distribuciones enteras sin supuestos funcionales, el test de Kolmogorov-Smirnov mide la máxima discrepancia entre las dos funciones de distribución empíricas."
+   ]
+  },
+  {
+   "t": "Formas funcionales: Pareto, log-normal y compañía",
+   "eq": [
+    "F(x) = 1 - Kx^{-\\alpha}\\ \\ \\text{(Pareto)},\\qquad f(x) = \\frac{1}{x\\sigma\\sqrt{2\\pi}}\\,e^{-\\frac{(\\ln x-\\mu)^2}{2\\sigma^2}}\\ \\ \\text{(log-normal)}",
+    "F(x) = 1 - \\left[1 + \\delta x^{\\beta}\\right]^{-\\alpha}\\ \\ \\text{(Singh-Maddala)},\\qquad F(x) = \\left[1 + \\left(\\frac{x}{\\beta}\\right)^{-\\alpha}\\right]^{-\\gamma}\\ \\ \\text{(Dagum)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(F(x)\\): función de distribución, proporción de personas con ingreso menor o igual a \\(x\\); \\(f(x)\\): función de densidad.",
+      "en": "\\(F(x)\\): distribution function, share of people with income at most \\(x\\); \\(f(x)\\): density function."
+     },
+     {
+      "es": "\\(K, \\alpha\\): parámetros positivos de Pareto; \\(\\alpha\\) aproxima el grado de desigualdad.",
+      "en": "\\(K, \\alpha\\): positive Pareto parameters; \\(\\alpha\\) approximates the degree of inequality."
+     },
+     {
+      "es": "\\(\\mu, \\sigma\\): media y desvío estándar del logaritmo del ingreso, \\(\\mu = E(\\ln x)\\) y \\(\\sigma^2 = V(\\ln x)\\) (aquí \\(\\mu\\) ya no es la media del ingreso).",
+      "en": "\\(\\mu, \\sigma\\): mean and standard deviation of log income, \\(\\mu = E(\\ln x)\\) and \\(\\sigma^2 = V(\\ln x)\\) (here \\(\\mu\\) is no longer mean income)."
+     },
+     {
+      "es": "\\(\\ln\\): logaritmo natural; \\(e\\), \\(\\pi\\): constantes matemáticas.",
+      "en": "\\(\\ln\\): natural logarithm; \\(e\\), \\(\\pi\\): mathematical constants."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\alpha, \\beta, \\delta\\): parámetros de Singh-Maddala, que garantizan que la distribución vaya de 0 a 1 con densidad positiva (aquí \\(\\alpha\\) no es el de Pareto).",
+      "en": "\\(\\alpha, \\beta, \\delta\\): Singh-Maddala parameters, ensuring the distribution runs from 0 to 1 with positive density (here \\(\\alpha\\) is not Pareto's)."
+     },
+     {
+      "es": "\\(\\alpha, \\beta, \\gamma\\): parámetros positivos de la función de Dagum; \\(\\beta\\) actúa como escala del ingreso.",
+      "en": "\\(\\alpha, \\beta, \\gamma\\): positive parameters of the Dagum function; \\(\\beta\\) acts as an income scale."
+     },
+     {
+      "es": "Lectura propia: el libro imprime \\([x + \\delta x^{\\beta}]\\) en Singh-Maddala y \\(1 - (x/\\beta)^{-\\alpha}\\) dentro del corchete de Dagum; escribimos ambas en su forma estándar, con \\(1 +\\), que es la que hace que \\(F\\) vaya de 0 a 1.",
+      "en": "Own reading: the book prints \\([x + \\delta x^{\\beta}]\\) in Singh-Maddala and \\(1 - (x/\\beta)^{-\\alpha}\\) inside Dagum's bracket; we write both in their standard form, with \\(1 +\\), which is what makes \\(F\\) run from 0 to 1."
+     }
+    ]
+   ],
+   "p": [
+    "Pareto (1897) sostuvo que todas las distribuciones reales podían aproximarse con una función de dos parámetros, y que el parámetro de desigualdad era estable en el tiempo y el espacio, lo que lo llevaba a atribuir la desigualdad a la naturaleza humana más que a la organización social. Ninguna distribución real sigue exactamente una forma funcional; el objetivo es un modelo razonable. El más usado es el log-normal (Gibrat, 1931): el ingreso es log-normal si su logaritmo es normal. Con El Salvador 2008 se parece bastante a la estimación por kernels; López y Servén (2006), con cerca de 800 encuestas, no rechazan la log-normalidad del ingreso per cápita, y el test de Jarque y Bera (1982) sirve para evaluarla. Singh-Maddala incluye a Pareto, Weibull y la exponencial como casos particulares, y la de Dagum, propuesta por un investigador argentino, es otra opción frecuente.",
+    "Los autores relativizan su utilidad: la pobreza y la desigualdad se calculan directamente con microdatos, y una forma preestablecida no puede ser plenamente informativa sobre la forma de la distribución. Quedan dos usos. En la modelización teórica, si el logaritmo del ingreso es un paseo aleatorio, o si el ingreso acumula shocks multiplicativos (ley de Gibrat), el ingreso tiende a ser log-normal; Battistin, Blundell y Lewbel (2009) argumentan que el modelo ajusta mejor al consumo que al ingreso corriente. Y con información limitada, como al estimar la distribución mundial, se suponen distribuciones nacionales log-normales con la media aproximada por el PIB per cápita a PPA y el desvío deducido del Gini (por ejemplo, Pinkovskiy y Sala-i-Martin, 2009). El apéndice práctico muestra cómo replicar en Stata cada cuadro y gráfico del capítulo."
+   ]
+  }
+ ],
+ "claves": [
+  "La distribución del ingreso es la lista completa de ingresos; la pobreza mira las observaciones bajo un umbral y la desigualdad su dispersión.",
+  "Todas las distribuciones del ingreso son asimétricas a la derecha, con una cola superior larga: en Brasil 2007 el decil más rico concentra el 43,9 % del ingreso y el más pobre el 0,7 %.",
+  "Si la función de distribución de una región está siempre por encima de la de otra, su pobreza es mayor para cualquier línea.",
+  "La curva de Lorenz mide desigualdad, la generalizada de Lorenz bienestar y la curva de incidencia del crecimiento quién ganó y quién perdió.",
+  "En la estimación por kernels importa mucho más el ancho de banda que el kernel: hay un trade-off entre precisión y suavidad.",
+  "Las cifras de encuestas son estimaciones: hace falta su error estándar, analítico o por bootstrap, antes de afirmar que una diferencia es real.",
+  "Las formas funcionales (log-normal, Pareto, Singh-Maddala, Dagum) sirven para modelos teóricos o con pocos datos agregados, no para reemplazar a los microdatos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En el ejemplo de ingresos 1, 2, 4, 6 y 7, ¿qué pasa si el 7 se registra por error como 67?",
+    "en": "In the example with incomes 1, 2, 4, 6 and 7, what happens if the 7 is mistakenly recorded as 67?"
+   },
+   "op": {
+    "es": [
+     "La media y la mediana se cuadriplican",
+     "La media se cuadriplica y la mediana no cambia",
+     "La mediana sube y la media no cambia",
+     "Ninguna de las dos cambia"
+    ],
+    "en": [
+     "Both mean and median quadruple",
+     "The mean quadruples and the median does not change",
+     "The median rises and the mean does not change",
+     "Neither changes"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La media pasa de 4 a 16 y la mediana sigue en 4: la mediana es robusta a valores atípicos.",
+    "en": "The mean goes from 4 to 16 and the median stays at 4: the median is robust to outliers."
+   },
+   "id": "fisc-dist-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué indica un coeficiente de asimetría de Fisher positivo en una distribución del ingreso?",
+    "en": "What does a positive Fisher skewness coefficient indicate in an income distribution?"
+   },
+   "op": {
+    "es": [
+     "Que la mediana supera a la media",
+     "Que la distribución es simétrica",
+     "Que la desigualdad es baja",
+     "Que hay una cola larga a la derecha: unos pocos ingresos muy por encima de la media"
+    ],
+    "en": [
+     "That the median exceeds the mean",
+     "That the distribution is symmetric",
+     "That inequality is low",
+     "That there is a long right tail: a few incomes far above the mean"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Al elevar las brechas al cubo, las grandes distancias de los ricos a la media dominan; todas las distribuciones del ingreso del mundo son asimétricas a la derecha.",
+    "en": "Cubing the gaps lets the large distances of the rich from the mean dominate; all income distributions in the world are right-skewed."
+   },
+   "id": "fisc-dist-02-q2"
+  },
+  {
+   "q": {
+    "es": "Si la función de distribución del Sur de México está siempre por encima de la del Noroeste, ¿qué se puede concluir?",
+    "en": "If the distribution function of southern Mexico is always above that of the Northwest, what can be concluded?"
+   },
+   "op": {
+    "es": [
+     "Que la pobreza es mayor en el Sur para cualquier línea de pobreza",
+     "Que la desigualdad es mayor en el Noroeste",
+     "Que el ingreso medio es igual en ambas regiones",
+     "Nada sin fijar una línea de pobreza"
+    ],
+    "en": [
+     "That poverty is higher in the South for any poverty line",
+     "That inequality is higher in the Northwest",
+     "That mean income is the same in both regions",
+     "Nothing without fixing a poverty line"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es dominancia estocástica de primer orden: para cualquier umbral, la proporción bajo la línea es mayor en el Sur.",
+    "en": "This is first-order stochastic dominance: for any threshold, the share below the line is higher in the South."
+   },
+   "id": "fisc-dist-02-q3"
+  },
+  {
+   "q": {
+    "es": "En la estimación de densidades por kernels, ¿qué elección pesa más en el resultado?",
+    "en": "In kernel density estimation, which choice matters most for the result?"
+   },
+   "op": {
+    "es": [
+     "El tipo de kernel",
+     "El número de observaciones con ingreso cero",
+     "El ancho de banda",
+     "La unidad monetaria"
+    ],
+    "en": [
+     "The type of kernel",
+     "The number of zero-income observations",
+     "The bandwidth",
+     "The currency unit"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Un ancho de banda chico es preciso pero errático y uno grande es suave pero sesgado; Deaton recomienda probar varios.",
+    "en": "A small bandwidth is precise but erratic and a large one is smooth but biased; Deaton recommends trying several."
+   },
+   "id": "fisc-dist-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué garantiza el teorema de Glivenko-Cantelli?",
+    "en": "What does the Glivenko-Cantelli theorem guarantee?"
+   },
+   "op": {
+    "es": [
+     "Que la media muestral es insesgada en muestras chicas",
+     "Que la distribución empírica converge a la poblacional cuando la muestra crece",
+     "Que el ingreso es log-normal",
+     "Que los intervalos de confianza no se solapan"
+    ],
+    "en": [
+     "That the sample mean is unbiased in small samples",
+     "That the empirical distribution converges to the population one as the sample grows",
+     "That income is log-normal",
+     "That confidence intervals do not overlap"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Por eso, en muestras grandes, se puede reemplazar la distribución poblacional desconocida por la empírica; también justifica el bootstrap.",
+    "en": "That is why, in large samples, the unknown population distribution can be replaced by the empirical one; it also underpins the bootstrap."
+   },
+   "id": "fisc-dist-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿En qué consiste el bootstrap para estimar la varianza de un estadístico?",
+    "en": "What does the bootstrap consist of to estimate the variance of a statistic?"
+   },
+   "op": {
+    "es": [
+     "Dividir la muestra en dos mitades y comparar",
+     "Usar la fórmula de la Bernoulli",
+     "Suponer normalidad del ingreso",
+     "Tomar muchas remuestras con reemplazo de tamaño N, calcular el estadístico en cada una y medir su varianza"
+    ],
+    "en": [
+     "Splitting the sample into two halves and comparing",
+     "Using the Bernoulli formula",
+     "Assuming income is normal",
+     "Drawing many resamples of size N with replacement, computing the statistic in each and measuring its variance"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El remuestreo trata a la muestra como si fuera la población; en Ecuador da un error estándar de 0,00807, casi igual al analítico de 0,00816.",
+    "en": "Resampling treats the sample as if it were the population; in Ecuador it gives a standard error of 0.00807, almost equal to the analytical 0.00816."
+   },
+   "id": "fisc-dist-02-q6"
+  },
+  {
+   "q": {
+    "es": "Según la curva de incidencia del crecimiento, ¿qué pasó en la Argentina entre 1992 y 2006?",
+    "en": "According to the growth incidence curve, what happened in Argentina between 1992 and 2006?"
+   },
+   "op": {
+    "es": [
+     "Todos los percentiles crecieron a la misma tasa",
+     "Los más pobres crecieron más que los ricos",
+     "El ingreso real cayó en los percentiles bajos y la curva es creciente: subieron la pobreza y la desigualdad",
+     "El ingreso real subió en todos los percentiles"
+    ],
+    "en": [
+     "All percentiles grew at the same rate",
+     "The poorest grew faster than the rich",
+     "Real income fell in the lower percentiles and the curve slopes upward: poverty and inequality rose",
+     "Real income rose in every percentile"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La curva está bajo cero hasta el percentil 55 y luego casi sobre el eje; su pendiente positiva indica caídas proporcionales mayores entre los más pobres.",
+    "en": "The curve is below zero up to the 55th percentile and then almost on the axis; its positive slope means larger proportional losses among the poorest."
+   },
+   "id": "fisc-dist-02-q7"
+  },
+  {
+   "q": {
+    "es": "Según los autores, ¿para qué sirven sobre todo las formas funcionales paramétricas?",
+    "en": "According to the authors, what are parametric functional forms mainly useful for?"
+   },
+   "op": {
+    "es": [
+     "Para modelos teóricos y para estimar con pocos datos agregados, como la distribución mundial",
+     "Para calcular la pobreza oficial",
+     "Para reemplazar a las encuestas de hogares",
+     "Para corregir la no respuesta"
+    ],
+    "en": [
+     "For theoretical models and for estimation with few aggregate data, such as the world distribution",
+     "For computing official poverty",
+     "For replacing household surveys",
+     "For correcting non-response"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con microdatos no hacen falta; con datos agregados se suelen suponer distribuciones log-normales con media del PIB per cápita y desvío deducido del Gini.",
+    "en": "With microdata they are not needed; with aggregate data log-normal distributions are often assumed with mean from GDP per capita and dispersion inferred from the Gini."
+   },
+   "id": "fisc-dist-02-q8"
+  }
+ ],
+ "palabras": 1825,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué significa «distribución del ingreso» en la literatura distributiva?",
+    "en": "What does 'income distribution' mean in the distributional literature?"
+   },
+   "a": {
+    "es": "La lista completa de ingresos de una comunidad, no su reparto; pobreza y desigualdad son dos características de esa lista (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "The complete list of incomes in a community, not how it is shared out; poverty and inequality are two features of that list (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuán concentrado es el ingreso en Brasil según la PNAD 2007?",
+    "en": "How concentrated is income in Brazil according to the 2007 PNAD?"
+   },
+   "a": {
+    "es": "El decil más pobre recibe el 0,7 % del ingreso y el más rico el 43,9 %; el 1 % superior ocupa un intervalo de ingresos 14 veces más ancho que el del 99 % restante (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "The poorest decile gets 0.7% of income and the richest 43.9%; the top 1% spans an income interval 14 times wider than the remaining 99% (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la función de distribución sirve para comparar pobreza sin elegir una línea?",
+    "en": "Why does the distribution function allow poverty comparisons without choosing a line?"
+   },
+   "a": {
+    "es": "Porque su altura en cada ingreso es la tasa de pobreza para esa línea; si una curva está siempre por encima de otra, la pobreza es mayor para cualquier umbral (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "Because its height at each income is the poverty rate for that line; if one curve is always above another, poverty is higher for any threshold (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué propiedades tiene la curva de Lorenz?",
+    "en": "What properties does the Lorenz curve have?"
+   },
+   "a": {
+    "es": "Va de (0, 0) a (1, 1), es no decreciente y convexa, no supera la diagonal de perfecta igualdad y no cambia si todos los ingresos se multiplican por un escalar (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "It runs from (0, 0) to (1, 1), is non-decreasing and convex, never rises above the line of perfect equality and is unchanged if all incomes are scaled (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cuándo una diferencia de pobreza entre dos muestras es estadísticamente significativa?",
+    "en": "When is a poverty difference between two samples statistically significant?"
+   },
+   "a": {
+    "es": "Cuando su magnitud supera lo que puede explicar la variabilidad muestral; una forma simple es ver si los intervalos de confianza no se solapan, aunque un test formal puede dar significatividad aun con cierto solapamiento (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "When it exceeds what sampling variability can explain; a simple check is whether confidence intervals do not overlap, although a formal test may find significance even with some overlap (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué dio el bootstrap para la pobreza en la Amazonía ecuatoriana en 2009?",
+    "en": "What did the bootstrap give for poverty in Ecuador's Amazon region in 2009?"
+   },
+   "a": {
+    "es": "Con 3393 personas y pobreza de 0,3457, el error estándar bootstrap con 500 réplicas fue 0,00807 frente a 0,00816 analítico, y el intervalo por percentiles (0,3295; 0,3619) no rechaza una pobreza de 0,35 (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "With 3,393 people and poverty of 0.3457, the bootstrap standard error with 500 replications was 0.00807 against an analytical 0.00816, and the percentile interval (0.3295, 0.3619) does not reject a poverty rate of 0.35 (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué los autores no confían mucho en las formas funcionales paramétricas?",
+    "en": "Why do the authors place limited trust in parametric functional forms?"
+   },
+   "a": {
+    "es": "Porque ninguna distribución real sigue exactamente una forma dada y, al imponerla, no se aprende de la forma de la distribución; con microdatos la pobreza y la desigualdad se calculan sin ellas (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "Because no real distribution follows a given form exactly and imposing one prevents learning about the distribution's shape; with microdata poverty and inequality are computed without them (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t7"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la log-normal es una aproximación plausible del ingreso?",
+    "en": "Why is the log-normal a plausible approximation to income?"
+   },
+   "a": {
+    "es": "Porque si el ingreso acumula shocks multiplicativos (ley de Gibrat) su logaritmo tiende a ser normal; López y Servén (2006) no rechazan la log-normalidad en cerca de 800 encuestas (Gasparini, Cicowiez y Sosa Escudero, cap. 2).",
+    "en": "Because if income accumulates multiplicative shocks (Gibrat's law) its logarithm tends to be normal; López and Servén (2006) do not reject log-normality in about 800 surveys (Gasparini, Cicowiez and Sosa Escudero, ch. 2)."
+   },
+   "id": "fisc-dist-02-t8"
+  }
+ ]
+}

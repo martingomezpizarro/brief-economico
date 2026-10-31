@@ -1,0 +1,592 @@
+{
+ "id": "fisc-dist-05",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Más allá del ingreso: pobreza multidimensional, subjetiva y dinámica",
+ "bajada": "El capítulo 5 de Gasparini, Cicowiez y Sosa Escudero: cómo identificar y agregar privaciones en varias dimensiones (unión, intersección, Alkire-Foster, Bourguignon-Chakravarty, NBI), la pobreza subjetiva, la pobreza crónica y transitoria, la vulnerabilidad y los perfiles y mapas de pobreza en América Latina.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 5: «Pobreza: extensiones»",
+ "intro": "La pobreza monetaria estática es el paradigma con el que todos los gobiernos de América Latina monitorean las privaciones, y su éxito se debe a la simplicidad. Pero esa simplicidad tiene dos costos. El ingreso es una dimensión importante del bienestar, no la única; y una foto de un mes ignora que muchas personas entran y salen de la pobreza. El capítulo 5 de Gasparini, Cicowiez y Sosa Escudero amplía el análisis en tres direcciones: la pobreza multidimensional, la subjetiva y la dinámica, que incluye la vulnerabilidad. Después pasa de medir a caracterizar: perfiles de pobreza, condicionados o no, y su distribución geográfica. El hilo conductor es el mismo del capítulo 4: cada extensión enriquece el diagnóstico, pero multiplica las decisiones arbitrarias.",
+ "secciones": [
+  {
+   "t": "Por qué medir en varias dimensiones",
+   "p": [
+    "Una persona puede tener un ingreso superior a la línea y, sin embargo, carecer de servicios básicos o estar marginada. Los autores dan tres argumentos para mirar más allá del ingreso. El más convincente es el enfoque de capacidades de Sen: la pobreza es la falta de capacidades para realizar funcionamientos básicos (estar bien alimentado, tener salud, moverse libremente, participar en la comunidad), y el ingreso es solo uno de los medios. El segundo pide asegurar consumos mínimos de bienes meritorios, como educación, salud y vivienda. El tercero recuerda que la utilidad depende de bienes que no se transan en el mercado.",
+    "La práctica es menos ambiciosa: se usan las variables disponibles en encuestas y censos. Las áreas habituales son educación, vivienda, servicios, bienes durables, salud, trabajo y el propio ingreso. Algunos estudios dejan el ingreso afuera porque fluctúa mucho en el corto plazo, y sostienen que los indicadores no monetarios captan una pobreza más «estructural». Todo análisis multidimensional enfrenta tres preguntas sin respuesta objetiva: qué variables elegir, qué umbral fijar en cada una (¿primaria o secundaria completa?, ¿cuántas personas por cuarto definen hacinamiento?) y qué peso dar a cada dimensión."
+   ]
+  },
+  {
+   "t": "Identificación: unión, intersección y criterio dual",
+   "eq": [
+    "\\text{Unión: } i \\in \\mathfrak{I}_P \\iff \\exists j:\\ x_{ij} < z_j \\qquad \\text{Intersección: } i \\in \\mathfrak{I}_P \\iff x_{ij} < z_j\\ \\forall j \\qquad \\text{Dual: } i \\in \\mathfrak{I}_P \\iff c_i \\ge k"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathfrak{I}_P\\): conjunto de las personas pobres; \\(\\iff\\): «si y solo si».",
+      "en": "\\(\\mathfrak{I}_P\\): set of poor people; \\(\\iff\\): «if and only if»."
+     },
+     {
+      "es": "\\(x_{ij}\\): valor del atributo \\(j\\) (educación, vivienda, ingreso...) para la persona \\(i\\); \\(z_j\\): umbral de privación en ese atributo.",
+      "en": "\\(x_{ij}\\): value of attribute \\(j\\) (education, housing, income...) for person \\(i\\); \\(z_j\\): deprivation threshold in that attribute."
+     },
+     {
+      "es": "\\(\\exists j\\): «en al menos un atributo»; \\(\\forall j\\): «en todos los atributos».",
+      "en": "\\(\\exists j\\): «in at least one attribute»; \\(\\forall j\\): «in all attributes»."
+     },
+     {
+      "es": "\\(c_i\\): número de dimensiones en que \\(i\\) está privado; \\(k\\): mínimo de privaciones para ser pobre, entre 1 (unión) y \\(J\\), el total de atributos (intersección).",
+      "en": "\\(c_i\\): number of dimensions in which \\(i\\) is deprived; \\(k\\): minimum deprivations to be poor, between 1 (union) and \\(J\\), the total number of attributes (intersection)."
+     }
+    ]
+   ],
+   "p": [
+    "El enfoque más extendido fija un umbral en cada dimensión y después decide cómo combinar las privaciones. Con el criterio de unión, es pobre quien está privado en al menos una dimensión, aunque en las demás esté holgado: no hay sustitución entre atributos. Con el de intersección, solo quien está privado en todas. A medida que se suman dimensiones, ambos divergen: la unión clasifica a casi todos como pobres y la intersección, a casi nadie.",
+    "Alkire y Foster (2011) formalizaron un punto intermedio cada vez más usado, el criterio dual o de conteo: se cuentan las privaciones de cada persona y se fija un segundo umbral, el número mínimo de dimensiones con carencias. La elección pesa muchísimo. En Nicaragua, con seis dimensiones (ingreso menor a 2,5 dólares diarios, más de tres personas por cuarto, vivienda precaria, falta de agua, falta de saneamiento y educación de jefe y cónyuge menor a 7 años), más del 90 % de la población sufre al menos una privación y menos del 10 % las sufre todas. En todos los umbrales, la pobreza así medida es mayor en Nicaragua que en Perú y menor en Uruguay."
+   ]
+  },
+  {
+   "t": "Agregación: Bourguignon-Chakravarty y Alkire-Foster",
+   "eq": [
+    "g_{ij}(k) = \\begin{cases} 1 - \\dfrac{x_{ij}}{z_j} & \\text{si } x_{ij} < z_j \\text{ y } c_i \\ge k \\\\ 0 & \\text{en otro caso} \\end{cases}",
+    "BC(\\alpha,\\theta) = \\frac{1}{N}\\sum_{i=1}^{N}\\left[\\frac{1}{J}\\sum_{j=1}^{J}\\omega_j\\, g_{ij}(1)^{\\theta}\\right]^{\\alpha/\\theta},\\qquad \\alpha \\ge 0,\\ \\theta \\ge 1",
+    "AF(\\alpha,k) = \\frac{1}{N}\\sum_{i=1}^{N}\\frac{1}{J}\\sum_{j=1}^{J}\\omega_j\\, g_{ij}(k)^{\\alpha},\\qquad AF(0,k) = H_M\\, A_M"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(g_{ij}(k)\\): brecha censurada de la persona \\(i\\) en el atributo \\(j\\): su distancia proporcional al umbral, que se anota solo si está privada en ese atributo y es pobre según el umbral de conteo \\(k\\).",
+      "en": "\\(g_{ij}(k)\\): censored gap of person \\(i\\) in attribute \\(j\\): the proportional distance to the threshold, recorded only if deprived in that attribute and poor under the counting cutoff \\(k\\)."
+     },
+     {
+      "es": "\\(x_{ij}\\), \\(z_j\\), \\(c_i\\), \\(k\\): atributo, umbral, número de privaciones y umbral de conteo, como en la sección anterior.",
+      "en": "\\(x_{ij}\\), \\(z_j\\), \\(c_i\\), \\(k\\): attribute, threshold, number of deprivations and counting cutoff, as in the previous section."
+     }
+    ],
+    [
+     {
+      "es": "\\(BC(\\alpha,\\theta)\\): índice de Bourguignon y Chakravarty (2003), que identifica con el criterio de unión (\\(k=1\\)).",
+      "en": "\\(BC(\\alpha,\\theta)\\): Bourguignon and Chakravarty (2003) index, which identifies with the union criterion (\\(k=1\\))."
+     },
+     {
+      "es": "\\(N\\): población; \\(J\\): número de atributos; \\(\\omega_j\\): ponderador del atributo \\(j\\) (los ponderadores suman \\(J\\)).",
+      "en": "\\(N\\): population; \\(J\\): number of attributes; \\(\\omega_j\\): weight of attribute \\(j\\) (weights add up to \\(J\\))."
+     },
+     {
+      "es": "\\(\\theta\\): sustituibilidad entre las brechas de los distintos atributos: con 1 es perfecta; cuando tiende a infinito los atributos son complementarios y cuenta la peor privación.",
+      "en": "\\(\\theta\\): substitutability between gaps in different attributes: with 1 it is perfect; as it tends to infinity attributes are complements and the worst deprivation counts."
+     },
+     {
+      "es": "\\(\\alpha\\): aversión a la desigualdad entre los pobres, como en el FGT unidimensional.",
+      "en": "\\(\\alpha\\): inequality aversion among the poor, as in the one-dimensional FGT."
+     }
+    ],
+    [
+     {
+      "es": "\\(AF(\\alpha,k)\\): índice de Alkire y Foster (2011): suma ponderada de brechas censuradas elevadas a \\(\\alpha\\), dividida por su máximo posible \\(N \\cdot J\\).",
+      "en": "\\(AF(\\alpha,k)\\): Alkire and Foster (2011) index: weighted sum of censored gaps raised to \\(\\alpha\\), divided by its maximum possible value \\(N \\cdot J\\)."
+     },
+     {
+      "es": "\\(H_M\\): proporción de pobres según el criterio dual; \\(A_M\\): porcentaje promedio de privaciones entre los pobres.",
+      "en": "\\(H_M\\): share of poor under the dual criterion; \\(A_M\\): average share of deprivations among the poor."
+     },
+     {
+      "es": "\\(N\\), \\(J\\), \\(\\omega_j\\), \\(\\alpha\\): como en la ecuación anterior.",
+      "en": "\\(N\\), \\(J\\), \\(\\omega_j\\), \\(\\alpha\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "La tasa de incidencia multidimensional, pobres sobre población, es el índice más usado y hereda los defectos de la unidimensional; además viola la monotonicidad dimensional, porque si un pobre suma una privación nueva el índice no cambia. Bourguignon y Chakravarty extienden el FGT: primero agregan las brechas de cada persona con una función de elasticidad constante, cuyo parámetro regula cuánto puede compensarse una carencia con otra, y luego aplican el FGT sobre esa medida individual.",
+    "Alkire y Foster proponen una familia tipo FGT con brechas censuradas por el criterio dual. Con el parámetro en 0 se obtiene la tasa de incidencia ajustada, igual a la proporción de pobres por la proporción promedio de privaciones que sufren; a diferencia de la tasa simple, sube si un pobre suma una carencia. Tiene otra ventaja: funciona con variables ordinales, como las de percepción. Las dos familias se complementan: AF es más general para identificar y BC para agregar, y coinciden en casos particulares.",
+    "La familia AF se descompone por grupos y por atributos. Con datos de seis países, Battistón y coautores (2009) encuentran que el saneamiento y la educación del jefe son los atributos que más aportan. El índice mundial de Alkire y Santos (2010) usa 10 indicadores de salud, educación y nivel de vida, con pesos de 1/6 y 1/18, y considera pobre a quien suma más del 30 % de las privaciones ponderadas: Uruguay es el latinoamericano mejor ubicado (puesto 15) y Nicaragua el peor (puesto 64 de 104). Los ponderadores siguen siendo el punto débil: suelen ser iguales por «neutralidad»."
+   ]
+  },
+  {
+   "t": "Factores, conjuntos difusos y NBI",
+   "eq": [
+    "x_j = c_j + q_{j1} f_1 + \\dots + q_{jm} f_m + u_j,\\qquad j = 1,\\dots,p",
+    "\\max_{\\lambda}\\ \\lambda'\\Sigma\\lambda \\quad \\text{sujeto a} \\quad \\lambda'\\lambda = 1"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(x_j\\): cada una de las \\(p\\) variables observadas de bienestar; \\(c_j\\): intercepto fijo de esa variable.",
+      "en": "\\(x_j\\): each of the \\(p\\) observed welfare variables; \\(c_j\\): fixed intercept of that variable."
+     },
+     {
+      "es": "\\(f_1,\\dots,f_m\\): \\(m\\) factores latentes no observables (las verdaderas dimensiones del bienestar), ortogonales entre sí.",
+      "en": "\\(f_1,\\dots,f_m\\): \\(m\\) unobserved latent factors (the true welfare dimensions), orthogonal to each other."
+     },
+     {
+      "es": "\\(q_{j1},\\dots,q_{jm}\\): cargas (loadings): cuánto contribuye cada factor a la variable \\(j\\).",
+      "en": "\\(q_{j1},\\dots,q_{jm}\\): loadings: how much each factor contributes to variable \\(j\\)."
+     },
+     {
+      "es": "\\(u_j\\): término de error específico de la variable \\(j\\), no correlacionado con los factores.",
+      "en": "\\(u_j\\): error term specific to variable \\(j\\), uncorrelated with the factors."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\lambda\\): vector de ponderaciones de la combinación lineal \\(Y = X\\lambda\\) de las variables originales.",
+      "en": "\\(\\lambda\\): weight vector of the linear combination \\(Y = X\\lambda\\) of the original variables."
+     },
+     {
+      "es": "\\(\\Sigma\\): matriz de covarianzas de las variables; \\(\\lambda'\\Sigma\\lambda\\): varianza de la combinación.",
+      "en": "\\(\\Sigma\\): covariance matrix of the variables; \\(\\lambda'\\Sigma\\lambda\\): variance of the combination."
+     },
+     {
+      "es": "\\(\\lambda'\\lambda = 1\\): normalización que evita llevar \\(\\lambda\\) a infinito. La solución es el autovector del mayor autovalor de \\(\\Sigma\\), el primer componente principal.",
+      "en": "\\(\\lambda'\\lambda = 1\\): normalization that prevents taking \\(\\lambda\\) to infinity. The solution is the eigenvector of the largest eigenvalue of \\(\\Sigma\\), the first principal component."
+     }
+    ]
+   ],
+   "p": [
+    "Otra estrategia es resumir primero las dimensiones de cada persona en un solo indicador y medir pobreza sobre él. El análisis factorial supone que las variables observadas son combinaciones de pocos factores latentes más un error; el problema conexo de componentes principales busca la combinación lineal con máxima varianza. Gasparini y coautores (2011) lo aplican a la encuesta mundial de Gallup de 2006; como el índice resultante no tiene una interpretación intuitiva, fijan la línea de modo que la pobreza regional coincida con la monetaria. Los conjuntos difusos, en cambio, no dicotomizan: asignan a cada persona un grado de pertenencia entre 0 y 1 al conjunto de los privados en cada dimensión.",
+    "En la región el marco dominante es el de Necesidades Básicas Insatisfechas, impulsado por la CEPAL desde los ochenta sobre datos censales: hacinamiento, vivienda precaria, agua, saneamiento, asistencia escolar y capacidad de subsistencia, con criterio de unión. Su nombre es poco feliz, porque no incluye nutrición ni salud. Su mayor defecto es la rigidez al aumento: una habitación construida o una red de agua instalada no se desarman en una crisis. En Uruguay, entre 1992 y 2004, la pobreza por ingresos subió fuertemente mientras la NBI caía. Por eso los gobiernos usan el ingreso para monitorear y las NBI para focalizar geográficamente.",
+    "Las dos miradas se correlacionan positivamente pero lejos de la perfección. Alkire y Santos hallan una correlación de rango de 0,87 entre pobreza monetaria y su índice; Gasparini y coautores, una correlación de 0,46 entre ingreso per cápita y un resumen no monetario en América Latina. En la Argentina de 2002, Fiszbein y Giovagnoli encontraron hambre en el 42,1 % de los hogares indigentes, el 11,7 % de los pobres no indigentes y el 5,8 % de los no pobres."
+   ]
+  },
+  {
+   "t": "Pobreza subjetiva",
+   "eq": [
+    "\\ln y_{\\min} = \\alpha + \\beta \\ln y + \\varepsilon,\\qquad z^{*} = \\exp\\!\\left(\\frac{\\alpha}{1-\\beta}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(y_{\\min}\\): respuesta a «¿cuál es el ingreso mínimo que considera necesario para satisfacer sus necesidades básicas?».",
+      "en": "\\(y_{\\min}\\): answer to «what is the minimum income you consider necessary to meet your basic needs?»."
+     },
+     {
+      "es": "\\(y\\): ingreso efectivo reportado; \\(\\ln\\): logaritmo natural; \\(\\exp\\): función exponencial.",
+      "en": "\\(y\\): actual reported income; \\(\\ln\\): natural logarithm; \\(\\exp\\): exponential function."
+     },
+     {
+      "es": "\\(\\alpha\\), \\(\\beta\\): parámetros de la «regresión de mínimo ingreso»; \\(\\beta\\) menor que 1 refleja que \\(y_{\\min}\\) crece menos que proporcionalmente con \\(y\\).",
+      "en": "\\(\\alpha\\), \\(\\beta\\): parameters of the «minimum income regression»; \\(\\beta\\) below 1 reflects that \\(y_{\\min}\\) grows less than proportionally with \\(y\\)."
+     },
+     {
+      "es": "\\(\\varepsilon\\): término de error; \\(z^{*}\\): línea de pobreza subjetiva, el ingreso al que \\(y_{\\min} = y\\).",
+      "en": "\\(\\varepsilon\\): error term; \\(z^{*}\\): subjective poverty line, the income at which \\(y_{\\min} = y\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Una corriente propone preguntarle a la gente, con tres variantes según cuánto pesa la opinión individual. En la evaluación integral se pregunta directamente si el hogar es pobre: así se consideraron pobres el 66,7 % de los ecuatorianos, el 79,6 % de los hondureños y el 72,7 % de los bolivianos. En la de bienestar subjetivo la persona se ubica en una escalera y el analista fija el corte: con diez peldaños en la encuesta Gallup de 2006, la proporción en los cuatro inferiores va de 8,8 % en Costa Rica a 67,2 % en Haití.",
+    "El problema es que las respuestas dependen de la cultura, del ánimo y del grupo de comparación: Uruguay aparece con más pobreza subjetiva que Venezuela, aunque tiene menos privaciones materiales por cualquier indicador objetivo. La tercera variante usa las percepciones solo para fijar la línea. Como el ingreso mínimo declarado crece con el ingreso propio, se supone que la respuesta más precisa es la de quien vive justo con ese ingreso: la línea subjetiva es el punto en que la curva corta la recta de 45 grados. Pradhan y Ravallion (2000) muestran que puede estimarse aun con una pregunta cualitativa (¿le alcanzó su ingreso?) mediante un probit, que identifica el cociente que da el logaritmo de la línea.",
+    "Las correlaciones con la pobreza monetaria son positivas y bajas: 0,279 entre bienestar subjetivo e ingreso en la encuesta Gallup. Un análisis de componentes principales sobre doce variables encuentra tres factores (ingreso, percepciones subjetivas y necesidades básicas), y el primero explica solo el 18,4 % de la varianza: el bienestar es claramente multidimensional, aunque el ingreso sea el factor más relevante."
+   ]
+  },
+  {
+   "t": "Dinámica: pobreza crónica, transitoria y vulnerabilidad",
+   "eq": [
+    "P_i^{I} = \\frac{1}{T}\\sum_{t=1}^{T} p(x_{it}),\\qquad P_i^{C} = p\\!\\left(\\frac{1}{T}\\sum_{t=1}^{T} x_{it}\\right) = p(x^{p}),\\qquad P_i^{T} = P_i^{I} - P_i^{C}",
+    "V_{h,t} = \\int_0^{z}\\left(z - x_{h,t+1}\\right)^{\\alpha} f(x_{h,t+1})\\, dx_{h,t+1}",
+    "\\hat V_h = \\Phi\\!\\left(\\frac{\\ln z - X_h\\hat\\beta}{\\sqrt{X_h\\hat\\theta}}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_i^{I}\\), \\(P_i^{C}\\), \\(P_i^{T}\\): pobreza intertemporal, crónica y transitoria de la persona \\(i\\).",
+      "en": "\\(P_i^{I}\\), \\(P_i^{C}\\), \\(P_i^{T}\\): intertemporal, chronic and transient poverty of person \\(i\\)."
+     },
+     {
+      "es": "\\(x_{it}\\): bienestar (ingreso o consumo) de \\(i\\) en el período \\(t\\); \\(T\\): número de períodos observados en el panel.",
+      "en": "\\(x_{it}\\): welfare (income or consumption) of \\(i\\) in period \\(t\\); \\(T\\): number of periods observed in the panel."
+     },
+     {
+      "es": "\\(p(\\cdot)\\): medida individual de pobreza, por ejemplo la brecha FGT \\((1-x_{it}/z)^{\\alpha}\\) para los pobres; \\(x^{p}\\): bienestar promedio o permanente.",
+      "en": "\\(p(\\cdot)\\): individual poverty measure, e.g. the FGT gap \\((1-x_{it}/z)^{\\alpha}\\) for the poor; \\(x^{p}\\): average or permanent welfare."
+     }
+    ],
+    [
+     {
+      "es": "\\(V_{h,t}\\): vulnerabilidad del hogar \\(h\\), evaluada en \\(t\\), como pobreza esperada en \\(t+1\\).",
+      "en": "\\(V_{h,t}\\): vulnerability of household \\(h\\), assessed at \\(t\\), as expected poverty at \\(t+1\\)."
+     },
+     {
+      "es": "\\(x_{h,t+1}\\): nivel de vida futuro; \\(f(\\cdot)\\): su función de densidad; \\(z\\): línea de pobreza.",
+      "en": "\\(x_{h,t+1}\\): future living standard; \\(f(\\cdot)\\): its density function; \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(\\alpha\\): aversión al riesgo; con 0 la vulnerabilidad es la probabilidad de ser pobre y con 2 crece con cualquier aumento de la volatilidad.",
+      "en": "\\(\\alpha\\): risk aversion; with 0 vulnerability is the probability of being poor, and with 2 it rises with any increase in volatility."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\hat V_h\\): vulnerabilidad estimada con un solo corte transversal (Chaudhuri, Jalan y Suryahadi, 2002).",
+      "en": "\\(\\hat V_h\\): vulnerability estimated from a single cross-section (Chaudhuri, Jalan and Suryahadi, 2002)."
+     },
+     {
+      "es": "\\(\\Phi(\\cdot)\\): función de distribución normal estándar acumulada; \\(z\\): línea de pobreza.",
+      "en": "\\(\\Phi(\\cdot)\\): standard normal cumulative distribution function; \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(X_h\\): características observables del hogar; \\(\\hat\\beta\\): coeficientes estimados del logaritmo del consumo; \\(X_h\\hat\\theta\\): varianza estimada del consumo, que también depende de las características.",
+      "en": "\\(X_h\\): observable household characteristics; \\(\\hat\\beta\\): estimated coefficients of log consumption; \\(X_h\\hat\\theta\\): estimated consumption variance, which also depends on characteristics."
+     }
+    ]
+   ],
+   "p": [
+    "Distinguir a las familias atrapadas de las que entran y salen de la pobreza requiere paneles o pseudo-paneles de cohortes. Jalan y Ravallion (2000) separan la pobreza intertemporal, promedio de la pobreza de cada período, de la crónica, que es la pobreza que tendría la persona con su ingreso promedio; la diferencia es la transitoria. En el ejemplo del libro, con una línea de 40 la persona es pobre 4 de 10 años pero su consumo permanente es 45, así que toda su pobreza (0,011) es transitoria; con una línea de 55, de 0,069 de pobreza intertemporal 0,033 es crónica. En el Gran Buenos Aires la pobreza intertemporal subió de 0,045 a 0,116 entre 1995 y 2002, sobre todo por el componente crónico (Cruces y Wodon).",
+    "Si la medida individual es convexa, como el FGT con parámetro mayor que 1, un ingreso variable genera más pobreza que uno estable con la misma media: el riesgo agrava la pobreza. Los modelos dinámicos distinguen tres fuentes de persistencia: factores observables bajos y estables, factores individuales no observables adversos y shocks persistentes. En El Salvador rural pesan los dos primeros. Las trampas de pobreza aparecen cuando la dinámica tiene dos equilibrios estables separados por uno inestable; Chiodi (2009) encuentra en México un equilibrio bajo cercano al 80 % de la línea.",
+    "La vulnerabilidad es la condición ex ante: el riesgo de ser pobre en el futuro. Se la define como pobreza esperada, y con datos de corte transversal se estima modelando la media y la varianza del consumo según las características del hogar: un empleado estatal y un cuentapropista con igual ingreso no son igual de vulnerables. Las estimaciones muestran un aumento de la vulnerabilidad en la región a principios de los 2000 y una fuerte caída después."
+   ]
+  },
+  {
+   "t": "Perfiles y geografía de la pobreza",
+   "eq": [
+    "\\Pr(p_i = 1) = F(X_i\\beta),\\qquad \\frac{\\partial \\Pr(p_i=1)}{\\partial x_j} = f(X_i\\beta)\\,\\beta_j"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(p_i\\): variable binaria que vale 1 si la persona o el hogar \\(i\\) es pobre y 0 si no; \\(\\Pr\\): probabilidad.",
+      "en": "\\(p_i\\): binary variable equal to 1 if person or household \\(i\\) is poor and 0 otherwise; \\(\\Pr\\): probability."
+     },
+     {
+      "es": "\\(X_i\\): vector de características (educación del jefe, número de niños, vivienda, región); \\(\\beta\\): vector de coeficientes; \\(\\beta_j\\): coeficiente de la variable \\(x_j\\).",
+      "en": "\\(X_i\\): vector of characteristics (head's education, number of children, housing, region); \\(\\beta\\): coefficient vector; \\(\\beta_j\\): coefficient of variable \\(x_j\\)."
+     },
+     {
+      "es": "\\(F(\\cdot)\\): función de distribución acumulada normal (probit) o logística (logit); \\(f(\\cdot)\\): su densidad.",
+      "en": "\\(F(\\cdot)\\): normal (probit) or logistic (logit) cumulative distribution function; \\(f(\\cdot)\\): its density."
+     },
+     {
+      "es": "\\(\\partial \\Pr/\\partial x_j\\): efecto marginal: cambio en la probabilidad de ser pobre ante un aumento de \\(x_j\\); depende de todas las características.",
+      "en": "\\(\\partial \\Pr/\\partial x_j\\): marginal effect: change in the probability of being poor when \\(x_j\\) rises; it depends on all characteristics."
+     }
+    ]
+   ],
+   "p": [
+    "Un perfil de pobreza compara a pobres y no pobres en un conjunto de variables. Con la línea de 2,5 dólares, el 42,9 % de los pobres venezolanos son niños, contra el 28,1 % de los no pobres; en Honduras el 59,3 % de los hogares no pobres tiene saneamiento adecuado y solo el 17 % de los pobres; en Paraguay 2007 la informalidad es del 62,6 % entre los ocupados no pobres y del 93,8 % entre los pobres.",
+    "Para controlar por otros factores se estiman perfiles condicionados con modelos probit o logit. El efecto marginal de la educación del jefe es negativo y se atenúa a medida que crece; el de los niños en el hogar es positivo y con forma de campana. La advertencia es central: son correlaciones, no efectos causales. La calidad de la vivienda, por ejemplo, es más bien consecuencia de la pobreza que su causa, y leer los coeficientes como impacto de una política es un error frecuente.",
+    "La pobreza tampoco se distribuye de modo uniforme en el espacio: es alta en el Altiplano boliviano, la sierra y selva de Perú y Ecuador, el Nordeste brasileño y el sur de México. Como las encuestas no son representativas a escala local y los censos no tienen ingresos, la estimación por áreas pequeñas estima un modelo de consumo con la encuesta y lo aplica al censo. Las regiones pobres están cerca unas de otras: el índice de Moran para las regiones latinoamericanas es positivo y significativo (0,4). La brecha de pobreza rural supera a la urbana en todos los países salvo Uruguay."
+   ]
+  }
+ ],
+ "claves": [
+  "Sen fundamenta la pobreza multidimensional: el ingreso es solo uno de los medios para lograr funcionamientos básicos.",
+  "Unión, intersección y criterio dual de Alkire-Foster dan tasas muy distintas: en Nicaragua, más del 90 % tiene alguna privación y menos del 10 % las tiene todas.",
+  "El AF(0,k) es la proporción de pobres por la proporción media de privaciones, cumple monotonicidad dimensional y admite variables ordinales.",
+  "Las NBI son útiles para focalizar geográficamente pero rígidas al aumento: en Uruguay 1992-2004 cayeron mientras subía la pobreza por ingresos.",
+  "La pobreza subjetiva capta otras dimensiones, pero depende de la cultura y del grupo de comparación.",
+  "La pobreza intertemporal se divide en crónica y transitoria; con medidas convexas, la volatilidad del ingreso agrava la pobreza.",
+  "Los perfiles condicionados describen correlaciones, no causas."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Con seis dimensiones, ¿qué criterio de identificación clasifica a más personas como pobres?",
+    "en": "With six dimensions, which identification criterion classifies more people as poor?"
+   },
+   "op": {
+    "es": [
+     "La intersección",
+     "El criterio dual con k = 6",
+     "La unión",
+     "Todos clasifican igual"
+    ],
+    "en": [
+     "Intersection",
+     "The dual criterion with k = 6",
+     "Union",
+     "They all classify the same"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con la unión basta una privación. En Nicaragua más del 90 % tiene al menos una y menos del 10 % las tiene todas.",
+    "en": "Under union one deprivation is enough. In Nicaragua over 90% have at least one and under 10% have all."
+   },
+   "id": "fisc-dist-05-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja tiene el AF(0,k) sobre la tasa de incidencia multidimensional?",
+    "en": "What advantage does AF(0,k) have over the multidimensional headcount?"
+   },
+   "op": {
+    "es": [
+     "Sube si una persona pobre suma una privación nueva (monotonicidad dimensional)",
+     "Cumple el principio de transferencias",
+     "No requiere fijar umbrales por dimensión",
+     "Mide la sustituibilidad entre atributos"
+    ],
+    "en": [
+     "It rises if a poor person gains a new deprivation (dimensional monotonicity)",
+     "It satisfies the transfer principle",
+     "It needs no thresholds per dimension",
+     "It measures substitutability between attributes"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es la proporción de pobres por el porcentaje medio de privaciones; la tasa simple no cambia si un pobre suma carencias.",
+    "en": "It is the share of poor times the average share of deprivations; the simple headcount does not change if a poor person adds deprivations."
+   },
+   "id": "fisc-dist-05-q2"
+  },
+  {
+   "q": {
+    "es": "En el índice de Bourguignon y Chakravarty, ¿qué ocurre cuando el parámetro \\(\\theta\\) tiende a infinito?",
+    "en": "In the Bourguignon-Chakravarty index, what happens as the parameter \\(\\theta\\) tends to infinity?"
+   },
+   "op": {
+    "es": [
+     "Las brechas son perfectamente sustitutas",
+     "El índice se vuelve la tasa de incidencia",
+     "Desaparece la aversión a la desigualdad",
+     "Los atributos son complementarios y cada persona se juzga por su peor privación"
+    ],
+    "en": [
+     "Gaps are perfect substitutes",
+     "The index becomes the headcount",
+     "Inequality aversion disappears",
+     "Attributes are complements and each person is judged by their worst deprivation"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con \\(\\theta=1\\) la sustitución es perfecta; cuanto mayor \\(\\theta\\), menor la sustituibilidad.",
+    "en": "With \\(\\theta=1\\) substitution is perfect; the higher \\(\\theta\\), the lower the substitutability."
+   },
+   "id": "fisc-dist-05-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las NBI sirven poco para monitorear la pobreza año a año?",
+    "en": "Why are UBN indicators of little use to monitor poverty year by year?"
+   },
+   "op": {
+    "es": [
+     "Porque se calculan con ingresos mensuales volátiles",
+     "Porque sus variables son casi irreversibles: una habitación o una red de agua no se desarman en una crisis",
+     "Porque usan el criterio de intersección",
+     "Porque incluyen nutrición y salud, que cambian lento"
+    ],
+    "en": [
+     "Because they are computed with volatile monthly incomes",
+     "Because their variables are nearly irreversible: a room or a water network is not dismantled in a crisis",
+     "Because they use the intersection criterion",
+     "Because they include nutrition and health, which change slowly"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "En Uruguay, entre 1992 y 2004, la pobreza por ingresos subió fuertemente mientras la NBI caía.",
+    "en": "In Uruguay, between 1992 and 2004, income poverty rose sharply while UBN poverty fell."
+   },
+   "id": "fisc-dist-05-q4"
+  },
+  {
+   "q": {
+    "es": "En la regresión de mínimo ingreso, ¿cómo se define la línea de pobreza subjetiva?",
+    "en": "In the minimum income regression, how is the subjective poverty line defined?"
+   },
+   "op": {
+    "es": [
+     "Como el ingreso mínimo promedio declarado por toda la población",
+     "Como la mediana del ingreso efectivo",
+     "Como el ingreso al que el mínimo declarado iguala al ingreso efectivo, donde la curva corta la recta de 45 grados",
+     "Como el 60 % del ingreso mínimo declarado"
+    ],
+    "en": [
+     "As the average minimum income reported by the whole population",
+     "As the median of actual income",
+     "As the income at which the reported minimum equals actual income, where the curve crosses the 45-degree line",
+     "As 60% of the reported minimum income"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Se supone que la respuesta más precisa es la de quien vive justo con ese ingreso; los ricos exageran el mínimo y los pobres lo subestiman.",
+    "en": "The most accurate answer is assumed to come from those living exactly on that income; the rich overstate the minimum and the poor understate it."
+   },
+   "id": "fisc-dist-05-q5"
+  },
+  {
+   "q": {
+    "es": "Una persona tiene consumo permanente superior a la línea pero cae por debajo en algunos años. ¿Cómo es su pobreza según Jalan y Ravallion?",
+    "en": "A person's permanent consumption is above the line but falls below it in some years. What is their poverty according to Jalan and Ravallion?"
+   },
+   "op": {
+    "es": [
+     "Toda transitoria: la pobreza crónica es cero",
+     "Toda crónica",
+     "Nula, porque el promedio supera la línea",
+     "Mitad crónica y mitad transitoria"
+    ],
+    "en": [
+     "Entirely transient: chronic poverty is zero",
+     "Entirely chronic",
+     "Zero, because the average exceeds the line",
+     "Half chronic, half transient"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La crónica se calcula sobre el consumo promedio, que supera la línea; la intertemporal (0,011 en el ejemplo con línea 40) es entonces toda transitoria.",
+    "en": "Chronic poverty is computed on average consumption, which exceeds the line; intertemporal poverty (0.011 in the example with line 40) is then all transient."
+   },
+   "id": "fisc-dist-05-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué muchos autores recomiendan medidas individuales de pobreza convexas para el análisis dinámico?",
+    "en": "Why do many authors recommend convex individual poverty measures for dynamic analysis?"
+   },
+   "op": {
+    "es": [
+     "Porque son más fáciles de comunicar",
+     "Porque así la pobreza crónica siempre es cero",
+     "Porque no requieren datos de panel",
+     "Porque con ellas un ingreso variable genera más pobreza que uno estable con la misma media"
+    ],
+    "en": [
+     "Because they are easier to communicate",
+     "Because then chronic poverty is always zero",
+     "Because they do not require panel data",
+     "Because with them a variable income generates more poverty than a stable one with the same mean"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Por la desigualdad de Jensen, el promedio de la pobreza de ingresos fluctuantes supera la pobreza del ingreso promedio. En el FGT ocurre con parámetro mayor que 1.",
+    "en": "By Jensen's inequality, average poverty of fluctuating incomes exceeds poverty at average income. In the FGT this holds with a parameter above 1."
+   },
+   "id": "fisc-dist-05-q7"
+  },
+  {
+   "q": {
+    "es": "Un probit muestra que vivir en una vivienda precaria se asocia a mayor probabilidad de ser pobre. ¿Qué concluyen los autores?",
+    "en": "A probit shows that living in precarious housing is associated with a higher probability of being poor. What do the authors conclude?"
+   },
+   "op": {
+    "es": [
+     "Que mejorar viviendas reduce la pobreza en esa magnitud",
+     "Que es una característica asociada, probablemente consecuencia de la falta de ingresos, no un determinante causal",
+     "Que el modelo está mal especificado y debe usarse un logit",
+     "Que la vivienda es la principal causa de la pobreza"
+    ],
+    "en": [
+     "That improving housing reduces poverty by that amount",
+     "That it is an associated characteristic, probably a consequence of low income, not a causal determinant",
+     "That the model is misspecified and a logit should be used",
+     "That housing is the main cause of poverty"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los perfiles condicionados caracterizan; leer sus coeficientes como efectos de política es un error frecuente.",
+    "en": "Conditional profiles characterize; reading their coefficients as policy effects is a common mistake."
+   },
+   "id": "fisc-dist-05-q8"
+  }
+ ],
+ "palabras": 1894,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el enfoque de capacidades lleva a medir pobreza en varias dimensiones?",
+    "en": "Why does the capabilities approach lead to measuring poverty in several dimensions?"
+   },
+   "a": {
+    "es": "Porque define la pobreza como capacidades insuficientes para realizar funcionamientos básicos (alimentarse, tener salud, participar en la comunidad), y el ingreso es solo uno de los medios que determinan esas capacidades (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "Because it defines poverty as insufficient capabilities to achieve basic functionings (being fed, healthy, taking part in community life), and income is only one of the means that determine those capabilities (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el criterio dual de Alkire y Foster?",
+    "en": "What is the Alkire-Foster dual cutoff?"
+   },
+   "a": {
+    "es": "Un método de identificación en dos pasos: primero se fija un umbral en cada dimensión y se cuentan las privaciones de cada persona; después se considera pobre a quien tiene al menos k privaciones. Con k = 1 es la unión y con k igual al total de dimensiones, la intersección (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "A two-step identification method: first a threshold is set in each dimension and each person's deprivations are counted; then a person is poor if they have at least k deprivations. With k = 1 it is union and with k equal to the number of dimensions, intersection (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cuál es la mayor limitación de las NBI?",
+    "en": "What is the main limitation of UBN indicators?"
+   },
+   "a": {
+    "es": "Su rigidez al aumento: sus variables (habitaciones, redes de agua, saneamiento) casi no retroceden en una crisis, así que la medida rara vez sube. Además, pese a su nombre, no incluyen nutrición ni salud (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "Their upward rigidity: their variables (rooms, water networks, sanitation) hardly ever reverse in a crisis, so the measure rarely rises. Also, despite its name, it includes neither nutrition nor health (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se estima una línea de pobreza subjetiva con una pregunta solo cualitativa?",
+    "en": "How can a subjective poverty line be estimated from a purely qualitative question?"
+   },
+   "a": {
+    "es": "Con un probit donde la variable dependiente vale 1 si el ingreso no alcanzó para las necesidades y el regresor es el logaritmo del ingreso. Aunque los parámetros no se identifican por separado, sí el cociente que da el logaritmo de la línea (Pradhan y Ravallion, 2000) (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "With a probit whose dependent variable equals 1 if income did not cover needs and whose regressor is log income. Although the parameters are not separately identified, the ratio giving the log of the line is (Pradhan and Ravallion, 2000) (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede generarse una trampa de pobreza?",
+    "en": "How can a poverty trap arise?"
+   },
+   "a": {
+    "es": "Si la dinámica del bienestar tiene dos equilibrios estables separados por uno inestable, quienes empiezan debajo del umbral convergen al equilibrio bajo y solo un salto grande los saca. Una distribución inicial bastante igualitaria puede terminar muy polarizada; en México se estimó un equilibrio bajo cercano al 80 % de la línea (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "If welfare dynamics have two stable equilibria separated by an unstable one, those starting below the threshold converge to the low equilibrium and only a big jump lifts them out. A fairly equal initial distribution can end up highly polarized; in Mexico a low equilibrium near 80% of the line was estimated (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t5"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se mide la vulnerabilidad con un solo corte transversal?",
+    "en": "How is vulnerability measured with a single cross-section?"
+   },
+   "a": {
+    "es": "Se modelan la media y la varianza del logaritmo del consumo en función de las características del hogar; suponiendo normalidad, la vulnerabilidad es la probabilidad normal de que el consumo futuro caiga bajo la línea (Chaudhuri, Jalan y Suryahadi) (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "The mean and variance of log consumption are modeled as functions of household characteristics; assuming normality, vulnerability is the normal probability that future consumption falls below the line (Chaudhuri, Jalan and Suryahadi) (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t6"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tan correlacionadas están las distintas medidas de bienestar?",
+    "en": "How correlated are the different welfare measures?"
+   },
+   "a": {
+    "es": "Positiva pero imperfectamente: 0,46 entre ingreso y un resumen no monetario y 0,279 entre bienestar subjetivo e ingreso en la encuesta Gallup para América Latina. El primer factor de un análisis de componentes principales explica solo el 18,4 % de la varianza (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "Positively but imperfectly: 0.46 between income and a non-monetary summary and 0.279 between subjective welfare and income in the Gallup survey for Latin America. The first factor of a principal components analysis explains only 18.4% of the variance (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se construye un mapa de pobreza monetaria si el censo no pregunta ingresos?",
+    "en": "How is a monetary poverty map built if the census does not ask about income?"
+   },
+   "a": {
+    "es": "Con estimación por áreas pequeñas: se estima un modelo de consumo con variables comunes a la encuesta y al censo, se predice la probabilidad de pobreza de cada hogar censado y se promedian esas probabilidades en cada área (Gasparini, Cicowiez y Sosa Escudero, cap. 5).",
+    "en": "With small-area estimation: a consumption model is estimated on variables common to the survey and the census, each census household's probability of being poor is predicted, and those probabilities are averaged within each area (Gasparini, Cicowiez and Sosa Escudero, ch. 5)."
+   },
+   "id": "fisc-dist-05-t8"
+  }
+ ]
+}

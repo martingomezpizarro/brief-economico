@@ -1,0 +1,575 @@
+{
+ "id": "fisc-dist-09",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "¿Quién gana y quién paga? Incidencia distributiva de gastos e impuestos",
+ "bajada": "El capítulo 9 de Gasparini, Cicowiez y Sosa Escudero: cómo se estima a quién benefician los programas públicos y sobre quién recaen los impuestos, la diferencia entre pro-pobre y progresivo, curvas de concentración, índices de Kakwani y de Reynolds-Smolensky, y qué dice la evidencia de América Latina.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 9: «Incidencia distributiva de las políticas públicas»",
+ "intro": "El Estado interviene con gastos, impuestos y regulaciones, y esa intervención nunca es neutral: afecta de manera desigual el nivel de vida de las personas. ¿Quiénes se benefician de la educación media pública? ¿Sobre quiénes recae el IVA? ¿Cómo se reparten los costos de un cambio en los subsidios a los alimentos? El capítulo 9 de Gasparini, Cicowiez y Sosa Escudero presenta las herramientas para responder estas preguntas e incorporar a las mediciones distributivas algo que las encuestas suelen ignorar: los subsidios en especie, como la educación o la salud gratuitas, que mejoran el nivel de vida pero no aparecen en el ingreso monetario. Un estudio de incidencia tiene dos productos: el grado de focalización de una política, es decir, qué parte de sus beneficios o costos recae en los estratos de menores ingresos, y su impacto redistributivo sobre la pobreza y la desigualdad.",
+ "secciones": [
+  {
+   "t": "Qué es un estudio de incidencia",
+   "eq": [
+    "b_i = x_i^{c} - x_i^{s} = t_i^{m} + t_i^{e} + \\left(x_i^{cm} - x_i^{sm}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(b_i\\): beneficio del programa para la persona \\(i\\).",
+      "en": "\\(b_i\\): benefit of the programme for person \\(i\\)."
+     },
+     {
+      "es": "\\(x_i^{c}\\): ingreso observado «con programa»; \\(x_i^{s}\\): ingreso contrafáctico «sin programa», que no se observa.",
+      "en": "\\(x_i^{c}\\): observed income «with the programme»; \\(x_i^{s}\\): counterfactual income «without the programme», which is not observed."
+     },
+     {
+      "es": "\\(t_i^{m}\\): transferencias monetarias recibidas; \\(t_i^{e}\\): transferencias en especie (por ejemplo, educación gratuita) valoradas en dinero.",
+      "en": "\\(t_i^{m}\\): cash transfers received; \\(t_i^{e}\\): in-kind transfers (for example, free schooling) valued in money."
+     },
+     {
+      "es": "\\(x_i^{cm}, x_i^{sm}\\): ingreso de mercado con y sin el programa; su diferencia recoge los cambios de comportamiento que el programa induce.",
+      "en": "\\(x_i^{cm}, x_i^{sm}\\): market income with and without the programme; their difference captures the behavioural changes the programme induces."
+     }
+    ]
+   ],
+   "p": [
+    "El beneficio de un programa es la diferencia entre el ingreso con el programa y el que habría sin él. Se descompone en tres partes: las transferencias en dinero, fáciles de medir si la encuesta las releva; las transferencias en especie, difíciles de relevar y de valorar; y el cambio en el ingreso de mercado que el programa provoca, que exige estimar un contrafáctico. Puede ir en los dos sentidos: una transferencia usada como colateral para un préstamo productivo sube el ingreso de mercado; una ONG que retira su ayuda al enterarse del subsidio lo baja.",
+    "El estudio básico, el benefit-incidence analysis, simplifica. Supone que solo se benefician los usuarios directos, ignorando externalidades y efectos de equilibrio general; que no hay cambios de comportamiento; que una transferencia monetaria vale su monto nominal; que un subsidio en especie vale su costo unitario de provisión; y que el beneficio se reparte en partes iguales dentro del hogar.",
+    "En Nicaragua 2005 la educación primaria pública es pro-pobre, porque la participación de cada percentil en los beneficiarios cae con el consumo, mientras que la universitaria es pro-rica. Gasparini et al. (2007) estiman que el gasto en primaria bajó 1,6 puntos el Gini del consumo per cápita y que el gasto en educación superior lo subió 0,32 puntos."
+   ]
+  },
+  {
+   "t": "Por qué la incidencia es la que es: educación, salud y transferencias",
+   "eq": [
+    "s_j = m_j\\,\\frac{a_j}{a}\\,\\frac{p_j}{p}\\,\\frac{c_j}{c}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(s_j\\): participación del grupo \\(j\\) (por ejemplo, un quintil) en los beneficios del gasto en escuelas primarias públicas.",
+      "en": "\\(s_j\\): share of group \\(j\\) (for example, a quintile) in the benefits of public primary-school spending."
+     },
+     {
+      "es": "\\(m_j = M_j/M\\): participación del grupo en la población objetivo (niños en edad escolar).",
+      "en": "\\(m_j = M_j/M\\): group's share of the target population (school-age children)."
+     },
+     {
+      "es": "\\(a_j = A_j/M_j\\): tasa de asistencia a la primaria del grupo; \\(p_j = A_j^p/A_j\\): proporción de asistentes que eligen la escuela pública; \\(c_j\\): costo medio de provisión.",
+      "en": "\\(a_j = A_j/M_j\\): group's primary attendance rate; \\(p_j = A_j^p/A_j\\): share of attendees choosing public school; \\(c_j\\): average cost of provision."
+     },
+     {
+      "es": "\\(a, p, c\\): los mismos conceptos para toda la población (lectura propia: el libro no los define por separado, pero así lo exige la identidad).",
+      "en": "\\(a, p, c\\): the same concepts for the whole population (own reading: the book does not define them separately, but the identity requires it)."
+     }
+    ]
+   ],
+   "p": [
+    "La primaria pública es pro-pobre en América Latina por dos razones: las familias pobres tienen más hijos en edad escolar y casi todas usan la escuela pública, mientras que una fracción creciente de los hogares ricos manda a sus hijos a escuelas privadas. La descomposición separa cuatro motivos por los que un grupo recibe más: su peso en la población objetivo, su tasa de asistencia, su preferencia por la provisión pública y el costo de atenderlo. En Nicaragua, la mayor incidencia en el quintil 1 se explica por la mayor proporción de niños y, en menor medida, por la mayor asistencia a escuelas públicas; en la secundaria, en cambio, la bajísima asistencia de los pobres reduce su participación.",
+    "El patrón regional se repite: primaria pro-pobre en todos los países, secundaria con forma de U invertida y educación superior pro-rica. En salud, en Honduras 2004 la atención hospitalaria llega menos al quintil más pobre, que vive en zonas rurales alejadas de los hospitales. Las transferencias condicionadas están bien focalizadas: el quintil más pobre recibe alrededor del 50 % de las transferencias en la mayoría de los países. Su impacto es proporcionalmente mayor con índices sensibles a la cola: la Asignación Universal por Hijo reduce la tasa de incidencia de la pobreza un 30 % y el FGT(2) un 71 %.",
+    "Hay que leerlo con prudencia: una educación pública muy focalizada en los pobres puede reflejar una decisión deliberada o un deterioro que expulsó a quienes pueden pagar la privada. La incidencia es la misma; la evaluación normativa, no."
+   ]
+  },
+  {
+   "t": "Extensiones: comportamiento, valuación, margen y ex ante",
+   "p": [
+    "Suponer que el programa no cambia conductas puede ser muy engañoso: quien rechaza un empleo para cobrar un subsidio por el mismo monto no gana nada con él, aunque el estudio básico le impute todo el subsidio. El ejemplo del libro muestra cuánto depende el resultado del contrafáctico elegido para una transferencia de 100: el estudio básico le imputa 100; la comparación antes-después, 90, porque el ingreso de mercado del beneficiario bajó de 40 a 30; las diferencias simples contra un grupo de control, 80; y las diferencias dobles, 85. Ravallion y Galasso (2004) estiman que el plan Jefes, de 150 mensuales, elevó el ingreso en 82 con diferencias simples y 103 con diferencias dobles.",
+    "Valorar una transferencia en especie por su costo supone que, sin el programa, la familia compraría el bien a ese precio; ignora, por ejemplo, que una vacuna barata puede salvar una vida. La teoría sugiere la variación equivalente, el ingreso que dejaría a la persona igual de bien sin el programa, que es menor que el costo cuando la transferencia en especie la obliga a consumir una canasta que no elegiría; pero no es observable y su estimación es controversial.",
+    "Para decidir expansiones importa la incidencia marginal, que puede diferir de la media: en servicios de agua de América Latina, el sesgo pro-rico de la incidencia promedio desaparece al mirar la marginal. Los ejercicios ex ante simulan programas nuevos: con un esfuerzo fiscal de un punto del producto y sin cambios de comportamiento, la brecha de pobreza bajaría de 3,7 a 0,6 en la Argentina, de 15,4 a 12,1 en Honduras, de 8,0 a 2,6 en Colombia y de 11,6 a 7,3 en Perú."
+   ]
+  },
+  {
+   "t": "Impuestos y precios: quién soporta la carga",
+   "eq": [
+    "vc = \\frac{dy}{dp_j} = \\frac{\\partial e(p,u)}{\\partial p_j} = q_j(p,u),\\qquad \\frac{dy}{dp_j}\\,\\frac{p_j}{e} = \\frac{q_j(p,u)\\,p_j}{e(p,u)} = s_j"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(vc\\): variación compensada, el ingreso extra que mantiene la utilidad cuando sube el precio \\(p_j\\).",
+      "en": "\\(vc\\): compensating variation, the extra income that keeps utility constant when the price \\(p_j\\) rises."
+     },
+     {
+      "es": "\\(e(p,u)\\): función de gasto, el gasto mínimo para alcanzar la utilidad \\(u\\) a los precios \\(p\\); \\(y\\): ingreso exógeno, igual a \\(e\\) si la persona está sobre su restricción.",
+      "en": "\\(e(p,u)\\): expenditure function, the minimum spending to reach utility \\(u\\) at prices \\(p\\); \\(y\\): exogenous income, equal to \\(e\\) if the person is on the budget constraint."
+     },
+     {
+      "es": "\\(q_j(p,u)\\): cantidad consumida del bien \\(j\\) (lema de Shephard: la derivada de la función de gasto es la demanda compensada).",
+      "en": "\\(q_j(p,u)\\): quantity consumed of good \\(j\\) (Shephard's lemma: the derivative of the expenditure function is compensated demand)."
+     },
+     {
+      "es": "\\(s_j\\): participación del bien \\(j\\) en el presupuesto familiar, observable en las encuestas de gasto.",
+      "en": "\\(s_j\\): share of good \\(j\\) in the household budget, observable in expenditure surveys."
+     }
+    ]
+   ],
+   "p": [
+    "Un impuesto recae legalmente sobre quien debe pagarlo, pero se traslada: si el precio sube tanto como el gravamen, lo pagan los consumidores. La proposición central de la literatura es que los impuestos recaen sobre quienes tienen demandas u ofertas inelásticas, porque no pueden eludirlos. En la práctica se reparte la recaudación según un supuesto de traslación (si el primer quintil hace el 35 % del consumo de cigarrillos, carga con 350 de 1000 recaudados), o se recurre a microsimulaciones y a modelos de equilibrio general computado.",
+    "El indicador de bienestar es decisivo. Si dos hogares tienen igual ingreso intertemporal y suavizan el consumo, un impuesto al consumo les cobra lo mismo, pero medido sobre el ingreso corriente parece pesar más sobre el que tiene un mal año. Por eso se recomienda el consumo: el IVA de Nicaragua 2001 tiene una presión que cae fuertemente con el ingreso, pero no con el consumo. En Honduras 2004, el impuesto a las bebidas alcohólicas y el tabaco recae 2,6 % en el primer quintil y 46,3 % en el último. Los impuestos a los ingresos tienen carga fuertemente creciente, más en América Latina, donde los pobres no superan el mínimo no imponible o son informales.",
+    "Para cambios de precios, la pérdida de bienestar inmediata es la cantidad consumida: un hogar que consume 4 kilos de arroz por mes pierde 4 centavos si el kilo sube un centavo. En términos relativos, la pérdida es la participación del bien en el gasto. El enfoque macro-micro suma un modelo de equilibrio general a microsimulaciones: en Ecuador 2007, una suba de 25 % en el precio mundial del banano y las flores baja el desempleo casi un punto y la pobreza de 32,8 % a 31,9 %, con una curva de incidencia pro-pobre."
+   ]
+  },
+  {
+   "t": "Pro-pobre no es lo mismo que progresivo",
+   "eq": [
+    "CD_B = \\sum_{i=1}^{N} \\beta_i\\, s_i^{b},\\qquad \\text{con CES: } CD_B = \\frac{1}{N}\\sum_{i=1}^{N} x_i^{-\\varepsilon}\\, s_i^{b}",
+    "\\frac{d\\,\\big(b(x)/x\\big)}{dx} \\le 0\\ \\ \\forall x"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(CD_B\\): característica distributiva de los beneficios, la medida más usual del sesgo pro-pobre.",
+      "en": "\\(CD_B\\): distributional characteristic of benefits, the most common measure of pro-poor bias."
+     },
+     {
+      "es": "\\(\\beta_i\\): utilidad marginal social del ingreso de \\(i\\), decreciente en el ingreso si el bienestar social es cóncavo.",
+      "en": "\\(\\beta_i\\): social marginal utility of \\(i\\)'s income, decreasing in income if social welfare is concave."
+     },
+     {
+      "es": "\\(s_i^{b}\\): participación de \\(i\\) en el total de beneficios del programa; \\(N\\): población.",
+      "en": "\\(s_i^{b}\\): \\(i\\)'s share in total programme benefits; \\(N\\): population."
+     },
+     {
+      "es": "\\(x_i\\): ingreso de \\(i\\); \\(\\varepsilon\\): aversión a la desigualdad de la función de bienestar CES. Si \\(\\beta_i\\) vale 1 para los pobres y 0 para el resto, \\(CD_B\\) es la participación de los pobres en los beneficios.",
+      "en": "\\(x_i\\): \\(i\\)'s income; \\(\\varepsilon\\): inequality aversion of the CES welfare function. If \\(\\beta_i\\) is 1 for the poor and 0 otherwise, \\(CD_B\\) is the share of benefits going to the poor."
+     }
+    ],
+    [
+     {
+      "es": "\\(b(x)\\): beneficio del programa como función del ingreso \\(x\\); \\(b(x)/x\\): beneficio como proporción del ingreso.",
+      "en": "\\(b(x)\\): programme benefit as a function of income \\(x\\); \\(b(x)/x\\): benefit as a share of income."
+     },
+     {
+      "es": "\\(\\forall x\\): para todo nivel de ingreso; si se cumple, el programa es globalmente progresivo (pro-pobre exigiría en cambio que \\(b(x)\\) mismo no crezca con \\(x\\)).",
+      "en": "\\(\\forall x\\): for every income level; if it holds, the programme is globally progressive (pro-poor would instead require \\(b(x)\\) itself not to rise with \\(x\\))."
+     }
+    ]
+   ],
+   "p": [
+    "Un programa es pro-pobre si sus beneficios absolutos son mayores cuanto menor es el ingreso, y progresivo si lo son sus beneficios como proporción del ingreso. Un programa puede ser pro-rico y progresivo a la vez, algo frecuente en América Latina, donde muchos gastos crecen con el ingreso pero menos que el propio ingreso.",
+    "La característica distributiva pondera la participación de cada persona en los beneficios por su utilidad marginal social. En Honduras 2004, la del gasto en primaria es claramente superior a la de la educación media y superior, para cualquier valor de aversión a la desigualdad.",
+    "La focalización imperfecta genera dos errores. En el ejemplo del libro, con 50 hogares pobres y 50 no pobres, el programa llega a 30 pobres y deja fuera a 20, y además llega a 10 no pobres: el error de exclusión es 0,2 y el de inclusión 0,1 sobre el total; la filtración es 0,25 y la subcobertura, 0,4. Reducir uno suele aumentar el otro."
+   ]
+  },
+  {
+   "t": "Curvas de concentración, Jakobsson-Fellman y Kakwani",
+   "eq": [
+    "C_B = 1 - 2\\int_0^1 L_B(p)\\,dp",
+    "\\frac{d\\,\\big(b(x)/x\\big)}{dx} \\le 0\\ \\ \\forall x \\iff L_B \\ge L_{X+B} \\ge L_X",
+    "K_B = G_X - C_B,\\qquad K_T = C_T - G_X"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C_B\\): índice de concentración de los beneficios, entre -1 y 1; negativo indica una estructura pro-pobre.",
+      "en": "\\(C_B\\): concentration index of benefits, between -1 and 1; negative means a pro-poor structure."
+     },
+     {
+      "es": "\\(L_B(p)\\): curva de concentración de beneficios, la fracción de los beneficios que recibe el \\(p\\) de menores ingresos.",
+      "en": "\\(L_B(p)\\): benefit concentration curve, the share of benefits received by the poorest \\(p\\)."
+     },
+     {
+      "es": "\\(p\\): proporción acumulada de la población, ordenada por ingreso.",
+      "en": "\\(p\\): cumulative population share, ranked by income."
+     }
+    ],
+    [
+     {
+      "es": "\\(L_X\\): curva de Lorenz del ingreso inicial; \\(L_{X+B}\\): cuasi-Lorenz del ingreso con beneficios, ordenando a las personas por su ingreso inicial.",
+      "en": "\\(L_X\\): Lorenz curve of initial income; \\(L_{X+B}\\): quasi-Lorenz curve of income plus benefits, ranking people by initial income."
+     },
+     {
+      "es": "\\(\\iff\\): «si y solo si» (teorema de Jakobsson-Fellman).",
+      "en": "\\(\\iff\\): «if and only if» (Jakobsson–Fellman theorem)."
+     }
+    ],
+    [
+     {
+      "es": "\\(K_B\\): índice de progresividad de Kakwani del gasto; \\(K_T\\): el de un impuesto; ambos positivos indican progresividad.",
+      "en": "\\(K_B\\): Kakwani progressivity index of spending; \\(K_T\\): that of a tax; positive values indicate progressivity in both."
+     },
+     {
+      "es": "\\(G_X\\): Gini del ingreso inicial; \\(C_B\\), \\(C_T\\): índices de concentración de los beneficios y de la carga tributaria.",
+      "en": "\\(G_X\\): Gini of initial income; \\(C_B\\), \\(C_T\\): concentration indices of benefits and of the tax burden."
+     }
+    ]
+   ],
+   "p": [
+    "La curva de concentración marca qué porcentaje de los beneficios recibe cada fracción acumulada de la población. Si los beneficios son iguales por persona coincide con la diagonal; si el programa es pro-pobre va por encima. En Honduras 2004 la primaria es claramente pro-pobre y la media y la superior, pro-ricas. El teorema de Jakobsson-Fellman da el criterio clave: un programa es globalmente progresivo si y solo si su curva de concentración queda por encima de la cuasi-Lorenz posterior y esta por encima de la Lorenz original; y solo entonces es seguro que la distribución se vuelve más igualitaria.",
+    "La consecuencia incomoda: para igualar alcanza con programas progresivos. Si el rico gana 10 veces más que el pobre y el gobierno reparte una donación de 100 dando 30 al pobre y 70 al rico, el reparto es pro-rico pero progresivo y el Gini baja. La inconsistencia, explican los autores, viene de medir la desigualdad en términos relativos mientras se juzga equitativo un reparto igual por persona, que es un criterio absoluto.",
+    "El índice de Kakwani mide la progresividad comparando la curva de concentración con la de Lorenz. Para el gasto es el Gini menos la concentración de beneficios: cuanto más pro-pobre el programa y más desigual la distribución inicial, más progresivo. Para los impuestos es la concentración de la carga menos el Gini. En México, entre 1984 y 2002, todos los impuestos recaen más sobre los ricos, pero casi todos están menos concentrados que el ingreso y son por eso regresivos; solo el impuesto a los ingresos es claramente progresivo (Vargas-Téllez, 2009). Según CEPAL (2006), de 15 sistemas tributarios de la región, siete son levemente progresivos y ocho regresivos."
+   ]
+  },
+  {
+   "t": "El impacto redistributivo de la política fiscal",
+   "eq": [
+    "RS = G_X - C_{X-T+B} = \\frac{t\\,K_T + b\\,K_B}{1 - t + b},\\qquad \\text{si } t = b:\\ \\ RS = b\\,(K_B + K_T)",
+    "\\lambda = \\frac{1}{b^{m}\\,\\eta\\,P}\\int_0^{z} \\frac{\\partial p}{\\partial x}\\, b(x)\\, f(x)\\,dx"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(RS\\): índice de Reynolds-Smolensky, la caída del Gini por la política fiscal.",
+      "en": "\\(RS\\): Reynolds–Smolensky index, the fall in the Gini due to fiscal policy."
+     },
+     {
+      "es": "\\(G_X\\): Gini del ingreso antes de la política; \\(C_{X-T+B}\\): índice de concentración (cuasi-Gini) del ingreso después de impuestos y gastos.",
+      "en": "\\(G_X\\): Gini of income before policy; \\(C_{X-T+B}\\): concentration index (quasi-Gini) of income after taxes and spending."
+     },
+     {
+      "es": "\\(t\\): impuestos como proporción del ingreso; \\(b\\): gasto como proporción del ingreso.",
+      "en": "\\(t\\): taxes as a share of income; \\(b\\): spending as a share of income."
+     },
+     {
+      "es": "\\(K_T, K_B\\): índices de Kakwani de impuestos y gastos.",
+      "en": "\\(K_T, K_B\\): Kakwani indices of taxes and spending."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\lambda\\): índice PPP (pro-poor policy) de Kakwani y Son, la reducción de la pobreza del programa sobre la de un programa universal con igual beneficio medio.",
+      "en": "\\(\\lambda\\): Kakwani–Son PPP (pro-poor policy) index, the programme's poverty reduction over that of a universal programme with the same mean benefit."
+     },
+     {
+      "es": "\\(b^{m}\\): beneficio medio, calculado sobre toda la población; \\(b(x)\\): beneficio a quien tiene ingreso \\(x\\); \\(f(x)\\): densidad del ingreso.",
+      "en": "\\(b^{m}\\): mean benefit, computed over the whole population; \\(b(x)\\): benefit to someone with income \\(x\\); \\(f(x)\\): income density."
+     },
+     {
+      "es": "\\(P\\): medida de pobreza aditiva; \\(p(x,z)\\): pobreza individual, con derivada \\(\\partial p/\\partial x\\); \\(z\\): línea de pobreza.",
+      "en": "\\(P\\): additive poverty measure; \\(p(x,z)\\): individual poverty, with derivative \\(\\partial p/\\partial x\\); \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(\\eta\\): elasticidad absoluta de la pobreza, su cambio proporcional si todos reciben una unidad más (aquí no es la elasticidad-crecimiento).",
+      "en": "\\(\\eta\\): absolute poverty elasticity, its proportional change if everyone receives one more unit (here not the growth elasticity)."
+     }
+    ]
+   ],
+   "p": [
+    "Gastos e impuestos deben evaluarse juntos: un programa progresivo financiado con impuestos muy regresivos puede aumentar la desigualdad, y un impuesto regresivo que financia gasto muy progresivo puede igualar. El índice de Reynolds-Smolensky mide la diferencia entre el Gini antes de la política y el cuasi-Gini después, y con presupuesto equilibrado es igual al tamaño del gasto por la suma de los Kakwani de gastos e impuestos. De ahí tres caminos para redistribuir más: gasto más progresivo, impuestos más progresivos o más gasto, si el presupuesto es progresivo. Pero las variables interactúan: una reforma que sube la progresividad tributaria y pierde recaudación puede terminar perjudicando la igualdad.",
+    "En América Latina los impuestos son aproximadamente neutrales o ligeramente regresivos y el gasto social es siempre progresivo, aunque pueda ser pro-rico: es el gasto el que vuelve igualadora a la política fiscal. En Nicaragua 2005 la atención médica pública, con 3,4 % del consumo, tiene un impacto alto por su tamaño aunque su concentración no sea extrema. La diferencia de Gini post-fiscal con un país desarrollado se descompone en cuatro factores: mayor desigualdad de mercado, menor gasto y menor progresividad de gastos e impuestos. Lustig (2011) estima que la política fiscal reduce el Gini 10 puntos en la Argentina y 2,4 en Bolivia.",
+    "Para la pobreza, el índice de Kakwani y Son compara un programa con uno universal del mismo costo medio: vale cero si no llega a los pobres y es máximo cuando solo los pobres reciben justo lo que les falta para salir. El apéndice muestra cómo hacer estos cálculos en Stata."
+   ]
+  }
+ ],
+ "claves": [
+  "Un estudio de incidencia compara el ingreso con el programa y el contrafáctico sin él; el estudio básico supone que no hay cambios de comportamiento y valora lo transferido en especie por su costo.",
+  "En América Latina la primaria pública es pro-pobre, la secundaria tiene forma de U invertida, la educación superior es pro-rica y las transferencias condicionadas están bien focalizadas.",
+  "El contrafáctico cambia la respuesta: para una transferencia de 100 el beneficio estimado va de 80 a 100 según el método; el plan Jefes, de 150, elevó el ingreso entre 82 y 103.",
+  "Los impuestos recaen sobre los agentes con demanda u oferta inelástica; medir la presión con el ingreso corriente exagera la regresividad de los impuestos al consumo.",
+  "Pro-pobre se refiere a beneficios absolutos y progresivo a beneficios como proporción del ingreso: un programa pro-rico puede ser progresivo y reducir el Gini.",
+  "Jakobsson-Fellman: solo un programa progresivo garantiza una distribución más igualitaria; el índice de Kakwani mide esa progresividad.",
+  "Reynolds-Smolensky: el impacto redistributivo es el tamaño del gasto por la suma de los Kakwani; en la región lo aporta el gasto social, no los impuestos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué supuesto clave convierte un estudio de incidencia en un ejercicio de identificación de beneficiarios por estratos?",
+    "en": "Which key assumption turns an incidence study into an exercise in identifying beneficiaries by stratum?"
+   },
+   "op": {
+    "es": [
+     "Que el programa se financia con impuestos progresivos",
+     "Que los beneficios se reparten en partes iguales entre hogares",
+     "Que el programa no cambia el comportamiento, de modo que el ingreso sin programa es el ingreso de mercado observado",
+     "Que la línea de pobreza es la misma en todos los países"
+    ],
+    "en": [
+     "That the programme is financed with progressive taxes",
+     "That benefits are shared equally across households",
+     "That the programme does not change behaviour, so income without the programme equals observed market income",
+     "That the poverty line is the same across countries"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con ese supuesto el beneficio es simplemente lo transferido, y el estudio se reduce a ver quién lo recibe.",
+    "en": "Under that assumption the benefit is just what is transferred, and the study reduces to seeing who receives it."
+   },
+   "id": "fisc-dist-09-q1"
+  },
+  {
+   "q": {
+    "es": "Según la descomposición del libro, ¿por qué la secundaria pública llega menos a los pobres que la primaria en Nicaragua?",
+    "en": "According to the book's decomposition, why does public secondary schooling reach the poor less than primary in Nicaragua?"
+   },
+   "op": {
+    "es": [
+     "Porque la tasa de asistencia de los pobres a la secundaria es muy baja",
+     "Porque el costo de provisión es mayor en el quintil 1",
+     "Porque los pobres tienen menos hijos",
+     "Porque los pobres prefieren escuelas privadas"
+    ],
+    "en": [
+     "Because the poor's secondary attendance rate is very low",
+     "Because provision costs are higher in quintile 1",
+     "Because the poor have fewer children",
+     "Because the poor prefer private schools"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En primaria la mayor proporción de niños pobres compensa su menor asistencia; en secundaria la baja asistencia domina.",
+    "en": "In primary school the larger share of poor children outweighs their lower attendance; in secondary low attendance dominates."
+   },
+   "id": "fisc-dist-09-q2"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo del libro, ¿qué beneficio estima el método de diferencias dobles para una transferencia de 100?",
+    "en": "In the book's example, what benefit does the difference-in-differences method estimate for a transfer of 100?"
+   },
+   "op": {
+    "es": [
+     "100",
+     "90",
+     "80",
+     "85"
+    ],
+    "en": [
+     "100",
+     "90",
+     "80",
+     "85"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Compara el cambio del ingreso de los tratados con el del grupo de control; el básico da 100, el antes-después 90 y las diferencias simples 80.",
+    "en": "It compares the change in the treated group's income with that of the control group; the basic study gives 100, before-after 90 and single differences 80."
+   },
+   "id": "fisc-dist-09-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué conviene usar el consumo y no el ingreso corriente para medir la presión de un impuesto al consumo?",
+    "en": "Why is consumption preferable to current income for measuring the burden of a consumption tax?"
+   },
+   "op": {
+    "es": [
+     "Porque el consumo siempre es más bajo que el ingreso",
+     "Porque los hogares con un mal año tienen ingreso corriente bajo pero consumo suavizado, y parecen soportar una presión mayor",
+     "Porque las encuestas de la región no miden el ingreso",
+     "Porque el consumo no paga impuestos"
+    ],
+    "en": [
+     "Because consumption is always lower than income",
+     "Because households in a bad year have low current income but smoothed consumption, and seem to bear a higher burden",
+     "Because the region's surveys do not measure income",
+     "Because consumption is untaxed"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con el ingreso el IVA de Nicaragua parece fuertemente regresivo; con el consumo, no.",
+    "en": "Measured with income Nicaragua's VAT looks strongly regressive; measured with consumption, it does not."
+   },
+   "id": "fisc-dist-09-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la diferencia entre un programa pro-pobre y uno progresivo?",
+    "en": "What is the difference between a pro-poor and a progressive programme?"
+   },
+   "op": {
+    "es": [
+     "Ninguna, son sinónimos",
+     "El pro-pobre exige una línea de pobreza y el progresivo no",
+     "El pro-pobre da beneficios absolutos decrecientes con el ingreso; el progresivo, beneficios decrecientes como proporción del ingreso",
+     "El progresivo solo se aplica a impuestos"
+    ],
+    "en": [
+     "None, they are synonyms",
+     "Pro-poor requires a poverty line and progressive does not",
+     "Pro-poor gives absolute benefits that fall with income; progressive, benefits that fall as a share of income",
+     "Progressive applies only to taxes"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Por eso un programa puede ser pro-rico y a la vez progresivo, algo común en América Latina.",
+    "en": "That is why a programme can be pro-rich and progressive at once, which is common in Latin America."
+   },
+   "id": "fisc-dist-09-q5"
+  },
+  {
+   "q": {
+    "es": "En el cuadro de errores de focalización, el programa llega a 30 de 50 pobres y a 10 de 50 no pobres. ¿Cuál es la tasa de filtración?",
+    "en": "In the targeting-errors table, the programme reaches 30 of 50 poor and 10 of 50 non-poor households. What is the leakage rate?"
+   },
+   "op": {
+    "es": [
+     "0,1",
+     "0,25",
+     "0,2",
+     "0,4"
+    ],
+    "en": [
+     "0.1",
+     "0.25",
+     "0.2",
+     "0.4"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la proporción de beneficiarios que no deberían serlo: 10 de 40. La subcobertura es 20 de 50, o 0,4.",
+    "en": "It is the share of beneficiaries who should not be: 10 out of 40. Undercoverage is 20 out of 50, or 0.4."
+   },
+   "id": "fisc-dist-09-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué establece el teorema de Jakobsson-Fellman aplicado al gasto?",
+    "en": "What does the Jakobsson–Fellman theorem state when applied to spending?"
+   },
+   "op": {
+    "es": [
+     "Que un programa es globalmente progresivo si y solo si su curva de concentración queda sobre la cuasi-Lorenz y esta sobre la Lorenz",
+     "Que todo programa pro-pobre reduce la pobreza",
+     "Que el Kakwani de impuestos y gastos siempre suma cero",
+     "Que la curva de concentración nunca cruza la diagonal"
+    ],
+    "en": [
+     "That a programme is globally progressive if and only if its concentration curve lies above the quasi-Lorenz curve and that above the Lorenz curve",
+     "That every pro-poor programme reduces poverty",
+     "That the Kakwani indices of taxes and spending always add to zero",
+     "That the concentration curve never crosses the diagonal"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Además, solo con progresividad global hay certeza de que la distribución se vuelve más igualitaria.",
+    "en": "Moreover, only global progressivity guarantees that the distribution becomes more equal."
+   },
+   "id": "fisc-dist-09-q7"
+  },
+  {
+   "q": {
+    "es": "Con presupuesto equilibrado, ¿de qué depende el índice de Reynolds-Smolensky?",
+    "en": "With a balanced budget, what does the Reynolds–Smolensky index depend on?"
+   },
+   "op": {
+    "es": [
+     "Solo de la progresividad de los impuestos",
+     "Del Gini inicial y de la línea de pobreza",
+     "Del número de programas y de su cobertura",
+     "Del tamaño del gasto como proporción del ingreso y de la suma de los Kakwani de gastos e impuestos"
+    ],
+    "en": [
+     "Only on tax progressivity",
+     "On the initial Gini and the poverty line",
+     "On the number of programmes and their coverage",
+     "On the size of spending as a share of income and the sum of the Kakwani indices of spending and taxes"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Por eso hay tres caminos para redistribuir más: gasto más progresivo, impuestos más progresivos o más gasto si el presupuesto es progresivo.",
+    "en": "Hence three routes to more redistribution: more progressive spending, more progressive taxes or more spending if the budget is progressive."
+   },
+   "id": "fisc-dist-09-q8"
+  }
+ ],
+ "palabras": 1894,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dos resultados produce un estudio de incidencia distributiva?",
+    "en": "What two results does a distributional incidence study produce?"
+   },
+   "a": {
+    "es": "El grado de focalización de la política, es decir, qué parte de sus beneficios llega a los estratos de menores ingresos, y su impacto redistributivo sobre la pobreza y la desigualdad (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "The degree of targeting of the policy, that is, what share of its benefits reaches lower-income groups, and its redistributive impact on poverty and inequality (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la educación primaria pública es pro-pobre en América Latina?",
+    "en": "Why is public primary education pro-poor in Latin America?"
+   },
+   "a": {
+    "es": "Porque las familias pobres tienen más hijos en edad escolar y casi todas usan la escuela pública, mientras los hogares ricos migran a la privada (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "Because poor families have more school-age children and almost all use public schools, while richer households move to private ones (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué supone el estimador de diferencias dobles para medir el beneficio de un programa?",
+    "en": "What does the difference-in-differences estimator assume to measure a programme's benefit?"
+   },
+   "a": {
+    "es": "Que, sin el programa, el ingreso de los tratados habría cambiado igual que el del grupo de control; admite niveles distintos pero no tendencias distintas (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "That, without the programme, the treated group's income would have changed like the control group's; it allows different levels but not different trends (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué una transferencia en especie vale para el beneficiario menos que su costo?",
+    "en": "Why is an in-kind transfer worth less to the recipient than its cost?"
+   },
+   "a": {
+    "es": "Porque lo obliga a consumir una canasta que no elegiría; su valor es la variación equivalente, menor que el costo, mientras que una transferencia en efectivo del mismo monto vale exactamente su costo (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "Because it forces a consumption bundle the person would not choose; its value is the equivalent variation, below the cost, whereas a cash transfer of the same amount is worth exactly its cost (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto reduce la pobreza la Asignación Universal por Hijo en la Argentina, ignorando cambios de comportamiento?",
+    "en": "How much does Argentina's Universal Child Allowance reduce poverty, ignoring behavioural changes?"
+   },
+   "a": {
+    "es": "Un 30 % la tasa de incidencia y un 71 % el FGT(2): el efecto es mayor con índices que pesan más la cola inferior (Gasparini, 2011, en Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "By 30% in the headcount and 71% in FGT(2): the effect is larger with indices that weight the lower tail more (Gasparini, 2011, in Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué incomoda que un reparto pro-rico pueda reducir la desigualdad?",
+    "en": "Why is it uncomfortable that a pro-rich allocation can reduce inequality?"
+   },
+   "a": {
+    "es": "Porque la desigualdad se mide en términos relativos mientras que se juzga neutral un reparto igual por persona, un criterio absoluto; dar 30 al pobre y 70 a un rico que gana 10 veces más baja el Gini (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "Because inequality is measured in relative terms while an equal per-person split, an absolute criterion, is seen as neutral; giving 30 to the poor and 70 to someone 10 times richer lowers the Gini (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué una reforma tributaria progresiva puede empeorar la distribución?",
+    "en": "Why can a progressive tax reform worsen the distribution?"
+   },
+   "a": {
+    "es": "Porque si al bajar el IVA y subir el impuesto a las ganancias se pierde recaudación, cae el gasto progresivo que esta financia; el efecto neto depende del tamaño del gasto y de ambos Kakwani (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "Because if cutting VAT and raising income tax loses revenue, the progressive spending it funds shrinks; the net effect depends on spending size and both Kakwani indices (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t7"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué hace igualadora a la política fiscal en América Latina?",
+    "en": "What makes fiscal policy equalising in Latin America?"
+   },
+   "a": {
+    "es": "El gasto social, siempre progresivo aunque a veces pro-rico; los impuestos son aproximadamente neutrales o levemente regresivos (Gasparini, Cicowiez y Sosa Escudero, cap. 9).",
+    "en": "Social spending, always progressive though sometimes pro-rich; taxes are roughly neutral or slightly regressive (Gasparini, Cicowiez and Sosa Escudero, ch. 9)."
+   },
+   "id": "fisc-dist-09-t8"
+  }
+ ]
+}

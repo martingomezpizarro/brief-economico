@@ -1,0 +1,561 @@
+{
+ "id": "fisc-dist-06",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Medir la desigualdad del ingreso: axiomas, índices y evidencia latinoamericana",
+ "bajada": "El capítulo 6 de Gasparini, Cicowiez y Sosa Escudero: igualdad de resultados contra igualdad de oportunidades, funciones de bienestar social, el principio de Dalton-Pigou, Gini, Schutz, Theil y Atkinson, dominancia de Lorenz, bootstrap, descomposiciones y qué tan desigual es América Latina.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 6: «Desigualdad monetaria»",
+ "intro": "Toda discusión distributiva, advierten los autores, lleva implícita una posición sobre qué diferencias económicas son aceptables. El capítulo 6 separa con cuidado dos planos: el normativo, que pregunta por qué y cuándo la desigualdad es un problema, y el técnico, que pregunta cómo medirla en el espacio unidimensional de una variable monetaria como el ingreso o el consumo. La tesis de fondo es que ningún índice es neutral: cada fórmula pondera de un modo particular las transferencias en distintos puntos de la distribución y, por lo tanto, trae juicios de valor incorporados. El capítulo recorre esos índices, su robustez, sus descomposiciones y la evidencia latinoamericana.",
+ "secciones": [
+  {
+   "t": "Igualdad, equidad y por qué preocuparse",
+   "p": [
+    "Igualdad es un término descriptivo: que dos ingresos coincidan o no es un hecho verificable. Equidad es normativo: juzgar una diferencia como justa o injusta exige una posición ética. Siguiendo a Sen, toda concepción de equidad busca igualar algo; la discusión es qué. La visión de igualdad de resultados, implícita en casi todas las estadísticas distributivas, choca con el ejemplo de los gemelos: si uno estudia y trabaja intensamente y el otro elige una vida menos sacrificada, pocos verían injusta la brecha que resulte.",
+    "La alternativa es la igualdad de oportunidades: separar los factores que la persona elige de las circunstancias que no controla, y declarar injusta solo la desigualdad que proviene de estas. Los autores proponen afinarla: la partición relevante es entre fuentes socialmente aceptables de diferencias (talento, esfuerzo, preferencias) e inaceptables (género, raza, origen familiar), y aun las aceptables dejan de serlo cuando la brecha es muy grande. Por eso estudiar la desigualdad de resultados presupone que una parte significativa de ella responde a factores inaceptables.",
+    "Contra quienes desestiman el problema, los autores responden que aun con libre elección el proceso generador puede parecer injusto, que los costos de eficiencia no invalidan la preocupación normativa y que hay preferencias reales por la igualdad: en el juego del ultimátum los proponentes reparten de forma mucho más equilibrada que lo que predice el individuo racional no altruista, y los respondedores rechazan repartos muy sesgados."
+   ]
+  },
+  {
+   "t": "Funciones de bienestar y el trade-off ingreso-igualdad",
+   "eq": [
+    "W(x) = \\sum_{i} g(x_i),\\qquad g' > 0,\\ g'' \\le 0",
+    "W(x) = \\min\\{x_1, x_2, \\ldots, x_N\\}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W(x)\\): función de bienestar social de Bergson-Samuelson; resume en un número la distribución \\(x\\) según los juicios de valor del evaluador.",
+      "en": "\\(W(x)\\): Bergson-Samuelson social welfare function; summarizes distribution \\(x\\) in one number according to the evaluator's value judgements."
+     },
+     {
+      "es": "\\(x = (x_1, \\ldots, x_N)\\): vector de niveles de vida (ingresos) de las \\(N\\) personas; \\(x_i\\): ingreso de la persona \\(i\\); \\(\\sum_i\\): suma sobre todas las personas.",
+      "en": "\\(x = (x_1, \\ldots, x_N)\\): vector of living standards (incomes) of the \\(N\\) people; \\(x_i\\): income of person \\(i\\); \\(\\sum_i\\): sum over everyone."
+     },
+     {
+      "es": "\\(g(\\cdot)\\): función que valora socialmente cada ingreso; \\(g' > 0\\) (creciente) y \\(g'' \\le 0\\) (cóncava). La concavidad hace que una transferencia de un rico a un pobre no reduzca el bienestar. Con \\(g(x) = x\\) se obtiene la función utilitaria o de Bentham, la suma simple de ingresos.",
+      "en": "\\(g(\\cdot)\\): function giving the social value of each income; \\(g' > 0\\) (increasing) and \\(g'' \\le 0\\) (concave). Concavity means a transfer from rich to poor does not lower welfare. With \\(g(x) = x\\) one gets the utilitarian or Bentham function, the simple sum of incomes."
+     }
+    ],
+    [
+     {
+      "es": "\\(W(x)\\): función de bienestar rawlsiana o maximin: el bienestar social es el nivel de vida de la persona más pobre.",
+      "en": "\\(W(x)\\): Rawlsian or maximin welfare function: social welfare is the living standard of the poorest person."
+     },
+     {
+      "es": "\\(\\min\\{\\cdot\\}\\): el menor de los ingresos \\(x_1, \\ldots, x_N\\); sus curvas de indiferencia social tienen forma de L (tipo Leontief).",
+      "en": "\\(\\min\\{\\cdot\\}\\): the smallest of incomes \\(x_1, \\ldots, x_N\\); its social indifference curves are L-shaped (Leontief type)."
+     }
+    ]
+   ],
+   "p": [
+    "Con dos personas, la frontera de posibilidades de bienestar indica el máximo nivel de vida de una dada la de la otra. Todos sus puntos con pendiente negativa son Pareto óptimos, así que la eficiencia no elige un punto: hace falta una función de bienestar social. Las propiedades usuales son que sea no paternalista, paretiana, simétrica (anónima) y cuasicóncava; las dos últimas implican el principio de transferencias de Dalton-Pigou. En la forma aditiva de arriba, la concavidad de g garantiza que el bienestar no cae ante una transferencia igualadora, y que con ingresos distintos un peso adicional vale más en manos del más pobre.",
+    "Los extremos son la función utilitaria, indiferente a la distribución y con curvas de indiferencia rectas de pendiente −1, y la rawlsiana, para la cual solo importa el más pobre. Si las capacidades de generar ingreso difieren y la frontera es asimétrica, el utilitarista elige el punto de máximo ingreso total, el rawlsiano el punto igualitario y un evaluador intermedio algo en el medio. Ordenadas por ingreso total o por igualdad, las tres asignaciones quedan exactamente en orden inverso. El punto conceptual es que el trade-off es entre ingreso agregado e igualdad, no entre eficiencia y equidad: todos los puntos de la frontera son eficientes."
+   ]
+  },
+  {
+   "t": "Axiomas e índices sencillos",
+   "p": [
+    "El axioma central es el principio de transferencias de Dalton-Pigou: toda transferencia de alguien más rico a alguien más pobre, tan pequeña que no invierta el ranking, debe reducir (o al menos no aumentar) la desigualdad. Con tres personas, pasar de 2, 4 y 12 a 3, 6 y 9 se logra con dos transferencias igualadoras desde el más rico, así que la desigualdad cae. Pero no siempre se pasa de una distribución a otra solo con transferencias igualadoras, y el principio da un orden, no magnitudes: de ahí la necesidad de índices.",
+    "Un índice genuino debe cumplir además invarianza a la escala (multiplicar todos los ingresos por un escalar no cambia la desigualdad) e invarianza a las réplicas (clonar la población tampoco). La primera define la desigualdad relativa; la alternativa absoluta exige invarianza a traslaciones. Los autores muestran su costo con un ejemplo: si con ingresos de 100 y 1000 un programa entrega 3 al pobre y 7 al rico, la distribución resultante es menos desigual en términos relativos, aunque el reparto parezca injusto.",
+    "Los índices sencillos, como cocientes entre estratos extremos o la participación del decil superior, son fáciles de comunicar pero miran solo una parte de la distribución: una transferencia del decil 2 al 9 no mueve el cociente entre deciles extremos, y el popular cociente entre los percentiles 90 y 10 directamente viola Dalton-Pigou."
+   ]
+  },
+  {
+   "t": "El Gini y el Schutz: dos distancias a la igualdad",
+   "eq": [
+    "G = 1 - 2\\int_0^1 L(p)\\,dp = \\frac{2}{\\mu}\\,\\mathrm{cov}\\big(y, F(y)\\big) = \\sum_{i}\\sum_{j}\\frac{|x_i - x_j|}{2N^2\\mu}",
+    "dG = \\frac{2}{\\mu N^2}\\,(j - k)\\,dx_j",
+    "S = F(\\mu) - L\\big(F(\\mu)\\big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G\\): coeficiente de Gini, entre 0 (igualdad perfecta) y 1 (todo el ingreso en una persona); en la práctica suele expresarse de 0 a 100.",
+      "en": "\\(G\\): Gini coefficient, between 0 (perfect equality) and 1 (all income held by one person); in practice often expressed from 0 to 100."
+     },
+     {
+      "es": "\\(L(p)\\): curva de Lorenz, la fracción del ingreso total que recibe el \\(p\\) más pobre de la población; \\(p\\): proporción acumulada de personas, de 0 a 1; \\(\\int_0^1 \\cdot\\,dp\\): área bajo la curva.",
+      "en": "\\(L(p)\\): Lorenz curve, the share of total income received by the poorest \\(p\\) of the population; \\(p\\): cumulative share of people, 0 to 1; \\(\\int_0^1 \\cdot\\,dp\\): area under the curve."
+     },
+     {
+      "es": "\\(y\\): ingreso; \\(F(y)\\): función de distribución, la proporción de personas con ingreso menor que \\(y\\) (el rango de cada uno); \\(\\mathrm{cov}(\\cdot)\\): covarianza entre el ingreso y su rango.",
+      "en": "\\(y\\): income; \\(F(y)\\): distribution function, the share of people with income below \\(y\\) (each person's rank); \\(\\mathrm{cov}(\\cdot)\\): covariance between income and its rank."
+     },
+     {
+      "es": "\\(\\mu\\): ingreso medio; \\(N\\): tamaño de la población; \\(x_i, x_j\\): ingresos de las personas \\(i\\) y \\(j\\); la doble suma recorre todos los pares.",
+      "en": "\\(\\mu\\): mean income; \\(N\\): population size; \\(x_i, x_j\\): incomes of persons \\(i\\) and \\(j\\); the double sum runs over all pairs."
+     }
+    ],
+    [
+     {
+      "es": "\\(dG\\): cambio en el Gini ante una transferencia igualadora de la persona más rica \\(k\\) a la más pobre \\(j\\).",
+      "en": "\\(dG\\): change in the Gini after an equalizing transfer from richer person \\(k\\) to poorer person \\(j\\)."
+     },
+     {
+      "es": "\\(j, k\\): posiciones de las dos personas en el ranking de ingresos ordenado de menor a mayor (\\(j < k\\)), no sus ingresos.",
+      "en": "\\(j, k\\): positions of the two people in the income ranking from lowest to highest (\\(j < k\\)), not their incomes."
+     },
+     {
+      "es": "\\(dx_j > 0\\): monto recibido por \\(j\\), igual al que pierde \\(k\\); \\(\\mu\\): ingreso medio; \\(N\\): tamaño de la población. Como \\(j < k\\), \\(dG < 0\\).",
+      "en": "\\(dx_j > 0\\): amount received by \\(j\\), equal to what \\(k\\) loses; \\(\\mu\\): mean income; \\(N\\): population size. Since \\(j < k\\), \\(dG < 0\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(S\\): índice de Schutz o de Robin Hood, la máxima distancia vertical entre la curva de Lorenz y la línea de perfecta igualdad; va de 0 a 1.",
+      "en": "\\(S\\): Schutz or Robin Hood index, the maximum vertical distance between the Lorenz curve and the line of perfect equality; ranges from 0 to 1."
+     },
+     {
+      "es": "\\(F(\\mu)\\): proporción de personas con ingreso inferior a la media \\(\\mu\\).",
+      "en": "\\(F(\\mu)\\): share of people with income below the mean \\(\\mu\\)."
+     },
+     {
+      "es": "\\(L(F(\\mu))\\): fracción del ingreso total que acumula ese grupo debajo de la media.",
+      "en": "\\(L(F(\\mu))\\): share of total income held by that below-mean group."
+     }
+    ]
+   ],
+   "p": [
+    "El Gini es el área entre la curva de Lorenz y la diagonal, normalizada por el área bajo la diagonal: uno menos dos veces el área bajo la curva. Escrito como doble suma, tiene una lectura intuitiva: si se eligen dos personas al azar, su diferencia de ingreso esperada en proporción a la media es dos veces el Gini. Con un Gini de 0,5, en el rango latinoamericano, esa diferencia esperada es semejante al ingreso promedio.",
+    "La fórmula del cambio ante una transferencia revela qué pondera el Gini: la caída es menor cuanto mayores son la media y la población, y depende de la distancia en el ranking entre las dos personas, no de su brecha de ingresos. Los autores lo ilustran con cinco personas: si la más pobre pierde 50, la del medio gana 100 y la más rica pierde 50, casi todos juzgan el cambio regresivo, pero el Gini queda idéntico, 0,4423, porque ambas transferencias son entre personas separadas por dos lugares. En la práctica el Gini se mueve poco: hacia 2009 iba de 44 en Uruguay a 57 en Bolivia, y en el mundo de 20 en Eslovaquia a 74 en Namibia.",
+    "El Schutz mide la otra distancia posible, la máxima vertical, que se alcanza donde el ingreso iguala a la media. Su interpretación es atractiva: es la proporción del ingreso total que habría que transferir para igualar a todos en la media. Pero no cumple Dalton-Pigou en sentido estricto, porque las transferencias entre personas del mismo lado de la media no lo mueven."
+   ]
+  },
+  {
+   "t": "Theil, entropía y Atkinson: elegir la ponderación",
+   "eq": [
+    "T = \\frac{1}{N}\\sum_i \\frac{x_i}{\\mu}\\ln\\!\\left(\\frac{x_i}{\\mu}\\right),\\qquad E(c) = \\frac{1}{N c (c-1)}\\sum_i\\left[\\left(\\frac{x_i}{\\mu}\\right)^{c} - 1\\right]",
+    "A = 1 - \\frac{x^*}{\\mu} = 1 - \\frac{\\left[\\frac{1}{N}\\sum_i x_i^{\\,1-\\varepsilon}\\right]^{\\frac{1}{1-\\varepsilon}}}{\\mu},\\qquad \\varepsilon \\ge 0,\\ \\varepsilon \\ne 1"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(T\\): índice de Theil, derivado de la teoría de la información; vale entre 0 y \\(\\ln N\\).",
+      "en": "\\(T\\): Theil index, derived from information theory; lies between 0 and \\(\\ln N\\)."
+     },
+     {
+      "es": "\\(x_i/\\mu\\): ingreso de la persona \\(i\\) relativo a la media; \\(N\\): población; \\(\\ln\\): logaritmo natural.",
+      "en": "\\(x_i/\\mu\\): income of person \\(i\\) relative to the mean; \\(N\\): population; \\(\\ln\\): natural logarithm."
+     },
+     {
+      "es": "\\(E(c)\\): índice de entropía general; \\(c\\): parámetro distinto de 0 y 1. Cuando \\(c\\) tiende a 1 converge al Theil, cuando tiende a 0 al desvío medio logarítmico, y con \\(c = 2\\) es la mitad del cuadrado del coeficiente de variación.",
+      "en": "\\(E(c)\\): generalized entropy index; \\(c\\): parameter different from 0 and 1. As \\(c\\) tends to 1 it converges to the Theil, as it tends to 0 to the mean log deviation, and with \\(c = 2\\) it is half the squared coefficient of variation."
+     }
+    ],
+    [
+     {
+      "es": "\\(A\\): índice de Atkinson, entre 0 y 1.",
+      "en": "\\(A\\): Atkinson index, between 0 and 1."
+     },
+     {
+      "es": "\\(x^*\\): ingreso igualmente distribuido, el ingreso que, dado a todos, generaría el mismo bienestar social que la distribución observada; \\(\\mu\\): ingreso medio.",
+      "en": "\\(x^*\\): equally distributed income, the income that, given to everyone, would yield the same social welfare as the observed distribution; \\(\\mu\\): mean income."
+     },
+     {
+      "es": "\\(\\varepsilon\\): parámetro de aversión a la desigualdad de la función de bienestar CES; con \\(\\varepsilon = 0\\) el evaluador es utilitarista y \\(A = 0\\); cuando \\(\\varepsilon\\) tiende a infinito el evaluador es rawlsiano. Con \\(\\varepsilon = 1\\), \\(A\\) es uno menos el cociente entre la media geométrica y la aritmética.",
+      "en": "\\(\\varepsilon\\): inequality aversion parameter of the CES welfare function; with \\(\\varepsilon = 0\\) the evaluator is utilitarian and \\(A = 0\\); as \\(\\varepsilon\\) tends to infinity the evaluator is Rawlsian. With \\(\\varepsilon = 1\\), \\(A\\) is one minus the ratio of the geometric to the arithmetic mean."
+     },
+     {
+      "es": "\\(x_i\\): ingreso de la persona \\(i\\); \\(N\\): población.",
+      "en": "\\(x_i\\): income of person \\(i\\); \\(N\\): population."
+     }
+    ]
+   ],
+   "p": [
+    "El coeficiente de variación pondera las transferencias según la diferencia absoluta de ingresos: si de 2, 8 y 30 se pasa a 1, 10 y 29, la mayoría ve un cambio regresivo, pero el coeficiente cae de 1,106 a 1,072 porque pesa más la transferencia entre los más distantes. El Theil, en cambio, es sensible a las diferencias proporcionales de ingreso, lo que atenúa el problema del coeficiente de variación sin eliminarlo.",
+    "Atkinson propuso hacer explícitos los juicios de valor. Su índice compara el ingreso igualmente distribuido con la media y se interpreta como la máxima proporción del ingreso que el evaluador sacrificaría para lograr una distribución igualitaria: un índice de 0,1 significa que aceptaría reducir el ingreso medio al 90 % a cambio de igualdad total. El índice vale siempre 0 para un utilitarista y se acerca rápido a 1 a medida que crece la aversión; en la práctica se usan valores entre 0 y 2. Los rankings cambian con el parámetro: Paraguay, ordenado de menor a mayor desigualdad, queda noveno de nueve países con aversión 0,5, sexto con 1 y séptimo con 2. Atkinson y entropía general están ligados: aversión ε se corresponde con c igual a 1 − ε."
+   ]
+  },
+  {
+   "t": "Robustez, significatividad y descomposiciones",
+   "eq": [
+    "E(c) = E_B(c) + E_W(c)",
+    "G(x) = \\sum_{k=1}^{K} R_k\\,G(x_k)\\,s_k"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E(c)\\): índice de entropía general de toda la población, con parámetro \\(c\\).",
+      "en": "\\(E(c)\\): generalized entropy index of the whole population, with parameter \\(c\\)."
+     },
+     {
+      "es": "\\(E_B(c)\\): desigualdad entre grupos (between), calculada como si cada persona tuviera el ingreso medio de su grupo.",
+      "en": "\\(E_B(c)\\): between-group inequality, computed as if each person had the mean income of their group."
+     },
+     {
+      "es": "\\(E_W(c)\\): desigualdad dentro de los grupos (within), un promedio ponderado de la entropía de cada grupo; los ponderadores combinan la participación del grupo en la población y en el ingreso, y suman 1 solo si \\(c\\) es 0 o 1.",
+      "en": "\\(E_W(c)\\): within-group inequality, a weighted average of each group's entropy; the weights combine the group's population and income shares, and add up to 1 only if \\(c\\) is 0 or 1."
+     }
+    ],
+    [
+     {
+      "es": "\\(G(x)\\): Gini del ingreso total \\(x\\), que es la suma de \\(K\\) fuentes \\(x_k\\) (salarios, capital, transferencias, etc.); \\(k\\): índice de la fuente.",
+      "en": "\\(G(x)\\): Gini of total income \\(x\\), the sum of \\(K\\) sources \\(x_k\\) (wages, capital, transfers, etc.); \\(k\\): source index."
+     },
+     {
+      "es": "\\(G(x_k)\\): Gini del ingreso de la fuente \\(k\\); \\(s_k\\): participación de la fuente \\(k\\) en el ingreso total.",
+      "en": "\\(G(x_k)\\): Gini of income from source \\(k\\); \\(s_k\\): share of source \\(k\\) in total income."
+     },
+     {
+      "es": "\\(R_k\\): correlación-Gini, la covarianza entre la fuente \\(k\\) y el rango en el ingreso total dividida por la covarianza entre la fuente y su propio rango; puede ser negativa, por ejemplo con un programa social bien focalizado.",
+      "en": "\\(R_k\\): Gini correlation, the covariance between source \\(k\\) and rank in total income divided by the covariance between the source and its own rank; it can be negative, for example with a well-targeted social program."
+     }
+    ]
+   ],
+   "p": [
+    "Antes de celebrar una caída del Gini hay que preguntarse si es robusta, estadísticamente significativa y económicamente relevante. La robustez la da la dominancia de Lorenz: si una curva nunca está por debajo de otra, todo índice que cumpla Dalton-Pigou coincide en el signo de la comparación. Si las curvas se cruzan, el resultado depende de los juicios de valor. En América Latina, cerca de 2007, hay dominancia en 51 de las 153 comparaciones posibles entre países. Para la significatividad, el bootstrap es simple y útil: el Gini de Brasil bajó de 59,3 a 59,2 entre 1997 y 1998, pero los intervalos de confianza se superponen; en 1999, con 58,6, la caída ya es nítida. Para la relevancia, una simulación ayuda: la caída del Gini chileno de 54,8 a 51,8 entre 2003 y 2006 habría reducido la pobreza en alrededor de 3 puntos sin crecimiento.",
+    "Las descomposiciones por grupo separan desigualdad entre y dentro de grupos. El Gini no es consistente con ellas: en un ejemplo con dos regiones, el Gini sube en el Norte, en el Sur y entre regiones, y sin embargo cae en el total, de 0,278 a 0,267, porque una transferencia cambia de peso al pasar del ranking regional al nacional. Un teorema establece que los índices que cumplen los axiomas básicos y son consistentes ante descomposiciones pertenecen a la familia de entropía general, que además se descompone como suma simple. Con el Theil, alrededor del 25 % de la desigualdad de ingresos laborales en la región se debe a diferencias entre niveles educativos y el 75 % a diferencias dentro de cada nivel.",
+    "Por fuentes, en cambio, el Gini sí se descompone bien, según Lerman y Yitzhaki. El aporte de cada fuente depende de su propia desigualdad, de su peso y de su correlación con el ingreso total. Con datos de 2005, Medina y Galván encuentran que los ingresos laborales explican más del 70 % de la desigualdad en todos los países, y el capital apenas un 5 % en promedio, en parte porque las encuestas lo captan mal."
+   ]
+  },
+  {
+   "t": "Problemas de medición y el mapa latinoamericano",
+   "eq": [
+    "G \\approx s_R + (1 - s_R)\\,G_{-R}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G\\): Gini de toda la población, incluido un grupo muy rico \\(R\\) de tamaño infinitesimal (Atkinson, 2007).",
+      "en": "\\(G\\): Gini of the whole population, including a very rich group \\(R\\) of infinitesimal size (Atkinson, 2007)."
+     },
+     {
+      "es": "\\(s_R\\): participación de ese grupo en el ingreso total.",
+      "en": "\\(s_R\\): that group's share of total income."
+     },
+     {
+      "es": "\\(G_{-R}\\): Gini del resto de la población, el que capta la encuesta.",
+      "en": "\\(G_{-R}\\): Gini of the rest of the population, the one the survey captures."
+     }
+    ]
+   ],
+   "p": [
+    "La medición práctica está llena de trampas. Como las encuestas captan flujos mensuales, la desigualdad del ingreso supera a la del consumo, aunque las tendencias suelen coincidir: en Perú la correlación entre ambas series de Gini es 0,96. Las escalas de equivalencia importan, y la subdeclaración no es proporcional: en la Argentina de 1992 el Gini es 44,5 con datos brutos y 56,7 con el ajuste por fuentes contra Cuentas Nacionales. Además las encuestas casi no captan a los muy ricos. Según la aproximación de Atkinson, si la encuesta mide 0,50 y el grupo omitido tiene el 10 % del ingreso, el Gini real es 0,55.",
+    "Con estas salvedades, la región es de las más desiguales del mundo. Según la base WIDER para 2005, su Gini promedio está unos 20 puntos por encima del de los países desarrollados y del ex bloque soviético, 6 por encima de Asia y 5 por debajo de los pocos países africanos con datos. La desigualdad es además mayor que la esperable por su nivel de desarrollo, y la diferencia con el resto del mundo se concentra arriba: el decil superior tiene 13 puntos más de participación. Pero la desigualdad entre países latinoamericanos es baja: solo un 7 % de la desigualdad global de la región proviene de diferencias entre países, frente al 72 % en Asia.",
+    "En el tiempo, la desigualdad subió en los años ochenta, la década perdida, y en los noventa, acumulando más de 3 puntos de Gini entre 1980 y 2002, y cayó en los 2000 de forma inédita en signo y magnitud. Los autores la asocian a la menor brecha salarial por calificación, a políticas sociales y laborales más activas y a los programas de transferencias condicionadas. Lectura propia: como los propios autores conjeturan que los niveles de comienzos de la década de 2010 se parecen a los de los años setenta, la caída es más una reversión que un cambio estructural."
+   ]
+  }
+ ],
+ "claves": [
+  "Igualdad es descriptiva y equidad normativa: la desigualdad preocupa en la medida en que proviene de fuentes socialmente inaceptables o genera brechas excesivas.",
+  "Todos los puntos de la frontera de posibilidades de bienestar son eficientes: el trade-off relevante es entre ingreso agregado e igualdad, y lo resuelve una función de bienestar social.",
+  "Un índice genuino de desigualdad cumple Dalton-Pigou, invarianza a la escala e invarianza a las réplicas; cocientes como el de percentiles 90/10 o el Schutz fallan en algún punto.",
+  "El Gini pondera las transferencias por la distancia en el ranking, no por la brecha de ingresos; el Atkinson hace explícita la aversión a la desigualdad.",
+  "Si hay dominancia de Lorenz, todos los índices coinciden en el signo; sin ella, el resultado depende del juicio de valor. El bootstrap da la significatividad.",
+  "Solo la familia de entropía general se descompone consistentemente por grupos; el Gini se descompone bien por fuentes de ingreso.",
+  "América Latina es mucho más desigual que lo que predice su desarrollo; la desigualdad subió entre 1980 y 2002 y cayó con fuerza en los 2000."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según el capítulo, ¿entre qué dos objetivos es el trade-off que ilustra la frontera de posibilidades de bienestar con productividades distintas?",
+    "en": "According to the chapter, between which two goals is the trade-off illustrated by the welfare possibility frontier with different productivities?"
+   },
+   "op": {
+    "es": [
+     "Entre eficiencia y equidad",
+     "Entre ingreso agregado e igualdad",
+     "Entre crecimiento y estabilidad",
+     "Entre pobreza y desigualdad"
+    ],
+    "en": [
+     "Between efficiency and equity",
+     "Between aggregate income and equality",
+     "Between growth and stability",
+     "Between poverty and inequality"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Todos los puntos de la frontera con pendiente negativa son Pareto eficientes, así que el conflicto es entre ingreso total e igualdad, no entre eficiencia y equidad.",
+    "en": "All negatively sloped points on the frontier are Pareto efficient, so the conflict is between total income and equality, not between efficiency and equity."
+   },
+   "id": "fisc-dist-06-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el cociente entre los percentiles 90 y 10 no es un índice genuino de desigualdad?",
+    "en": "Why is the ratio of the 90th to the 10th percentile not a genuine inequality index?"
+   },
+   "op": {
+    "es": [
+     "Porque depende de la moneda en que se miden los ingresos",
+     "Porque cambia si se replica la población",
+     "Porque puede tomar valores negativos",
+     "Porque una transferencia igualadora del percentil 10 al 5 lo aumenta, violando Dalton-Pigou"
+    ],
+    "en": [
+     "Because it depends on the currency incomes are measured in",
+     "Because it changes when the population is replicated",
+     "Because it can take negative values",
+     "Because an equalizing transfer from the 10th to the 5th percentile raises it, violating Dalton-Pigou"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Al descartar los extremos para evitar errores de medición, el índice deja de respetar el principio de transferencias.",
+    "en": "By discarding the extremes to avoid measurement error, the index stops respecting the transfer principle."
+   },
+   "id": "fisc-dist-06-q2"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de cinco personas del capítulo, la más pobre pierde 50, la del medio gana 100 y la más rica pierde 50. ¿Qué hace el Gini?",
+    "en": "In the chapter's five-person example, the poorest loses 50, the middle person gains 100 and the richest loses 50. What does the Gini do?"
+   },
+   "op": {
+    "es": [
+     "Queda igual, porque ambas transferencias son entre personas separadas por la misma distancia en el ranking",
+     "Cae, porque la persona más rica pierde ingreso",
+     "Sube, porque la más pobre pierde la mitad de su ingreso",
+     "No se puede calcular sin conocer la media"
+    ],
+    "en": [
+     "It stays the same, because both transfers are between people the same distance apart in the ranking",
+     "It falls, because the richest person loses income",
+     "It rises, because the poorest loses half her income",
+     "It cannot be computed without knowing the mean"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El cambio en el Gini depende de la diferencia de rangos; las dos transferencias se compensan y el índice queda en 0,4423, aunque la mayoría juzga regresivo el cambio.",
+    "en": "The change in the Gini depends on the rank difference; the two transfers offset each other and the index stays at 0.4423, although most people judge the change regressive."
+   },
+   "id": "fisc-dist-06-q3"
+  },
+  {
+   "q": {
+    "es": "Si un evaluador obtiene un índice de Atkinson de 0,1, ¿qué significa?",
+    "en": "If an evaluator gets an Atkinson index of 0.1, what does it mean?"
+   },
+   "op": {
+    "es": [
+     "Que el 10 % de la población concentra el ingreso",
+     "Que el Gini es 0,9",
+     "Que aceptaría resignar hasta el 10 % del ingreso medio para alcanzar una distribución igualitaria",
+     "Que la distribución es Lorenz-dominada"
+    ],
+    "en": [
+     "That 10% of the population holds the income",
+     "That the Gini is 0.9",
+     "That they would give up to 10% of mean income to reach an equal distribution",
+     "That the distribution is Lorenz-dominated"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El ingreso igualmente distribuido es el 90 % de la media: esa es la máxima proporción que el evaluador pagaría por la igualdad total.",
+    "en": "The equally distributed income is 90% of the mean: that is the maximum share the evaluator would pay for full equality."
+   },
+   "id": "fisc-dist-06-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué garantiza la dominancia de Lorenz entre dos distribuciones?",
+    "en": "What does Lorenz dominance between two distributions guarantee?"
+   },
+   "op": {
+    "es": [
+     "Que la dominante tiene mayor ingreso medio",
+     "Que todos los índices que cumplen Dalton-Pigou coinciden en cuál es más desigual",
+     "Que la diferencia es estadísticamente significativa",
+     "Que la diferencia es económicamente relevante"
+    ],
+    "en": [
+     "That the dominant one has higher mean income",
+     "That every index satisfying Dalton-Pigou agrees on which is more unequal",
+     "That the difference is statistically significant",
+     "That the difference is economically relevant"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La magnitud del cambio depende del índice, pero no su signo. La significatividad requiere métodos como el bootstrap.",
+    "en": "The size of the change depends on the index, but not its sign. Significance requires methods such as the bootstrap."
+   },
+   "id": "fisc-dist-06-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el Gini no sirve para descomponer la desigualdad entre y dentro de grupos?",
+    "en": "Why is the Gini unsuitable for decomposing inequality between and within groups?"
+   },
+   "op": {
+    "es": [
+     "Porque no es invariante a la escala",
+     "Porque solo se define para datos continuos",
+     "Porque no cumple Dalton-Pigou",
+     "Porque puede caer en el total aunque suba dentro de cada grupo y entre grupos, cuando las distribuciones se superponen"
+    ],
+    "en": [
+     "Because it is not scale invariant",
+     "Because it is only defined for continuous data",
+     "Because it fails Dalton-Pigou",
+     "Because it can fall overall while rising within each group and between groups, when the distributions overlap"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En el ejemplo del capítulo el Gini total cae de 0,278 a 0,267 pese a subir en ambas regiones y entre ellas; la familia de entropía general sí es consistente.",
+    "en": "In the chapter's example the total Gini falls from 0.278 to 0.267 despite rising in both regions and between them; the generalized entropy family is consistent."
+   },
+   "id": "fisc-dist-06-q6"
+  },
+  {
+   "q": {
+    "es": "Según la aproximación de Atkinson, si la encuesta mide un Gini de 0,50 y los muy ricos omitidos tienen el 10 % del ingreso, ¿cuál es el Gini real?",
+    "en": "According to Atkinson's approximation, if the survey measures a Gini of 0.50 and the omitted very rich hold 10% of income, what is the true Gini?"
+   },
+   "op": {
+    "es": [
+     "0,40",
+     "0,50",
+     "0,55",
+     "0,60"
+    ],
+    "en": [
+     "0.40",
+     "0.50",
+     "0.55",
+     "0.60"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es la participación de los ricos más el resto de la población ponderado por su participación en el ingreso: la omisión subestima la desigualdad.",
+    "en": "It is the rich group's share plus the rest of the population weighted by its income share: the omission understates inequality."
+   },
+   "id": "fisc-dist-06-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué rasgo distingue a la distribución latinoamericana respecto del resto del mundo, según el capítulo?",
+    "en": "What feature sets the Latin American distribution apart from the rest of the world, according to the chapter?"
+   },
+   "op": {
+    "es": [
+     "Una participación mucho mayor del decil superior",
+     "Una participación mucho menor del decil 9",
+     "Una gran desigualdad entre los ingresos medios de sus países",
+     "Una desigualdad del consumo mayor que la del ingreso"
+    ],
+    "en": [
+     "A much larger share of the top decile",
+     "A much smaller share of the 9th decile",
+     "Large inequality between its countries' mean incomes",
+     "Higher consumption inequality than income inequality"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El decil superior tiene 13 puntos más de participación; el decil 9 es similar al resto del mundo y la desigualdad entre países de la región es baja.",
+    "en": "The top decile's share is 13 points higher; the 9th decile is similar to the rest of the world and inequality between the region's countries is low."
+   },
+   "id": "fisc-dist-06-q8"
+  }
+ ],
+ "palabras": 1901,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿En qué se diferencian igualdad y equidad?",
+    "en": "How do equality and equity differ?"
+   },
+   "a": {
+    "es": "La igualdad es descriptiva: que dos ingresos coincidan es un hecho. La equidad es normativa: exige juzgar si una diferencia es aceptable, según sus fuentes y su magnitud (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "Equality is descriptive: whether two incomes coincide is a fact. Equity is normative: it requires judging whether a difference is acceptable, given its sources and size (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué propiedades suele tener una función de bienestar social y qué implican?",
+    "en": "What properties does a social welfare function usually have and what do they imply?"
+   },
+   "a": {
+    "es": "Es no paternalista, paretiana, simétrica y cuasicóncava; simetría y cuasiconcavidad implican el principio de Dalton-Pigou. Sus extremos son la utilitaria, suma de ingresos, y la rawlsiana, el ingreso del más pobre (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "It is non-paternalistic, Paretian, symmetric and quasi-concave; symmetry and quasi-concavity imply the Dalton-Pigou principle. Its extremes are the utilitarian, the sum of incomes, and the Rawlsian, the income of the poorest (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿De qué depende cuánto cae el Gini ante una transferencia igualadora?",
+    "en": "What determines how much the Gini falls after an equalizing transfer?"
+   },
+   "a": {
+    "es": "De la distancia en el ranking entre quien da y quien recibe, no de su brecha de ingresos; la caída es menor cuanto mayores son la media y la población (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "On the rank distance between giver and receiver, not on their income gap; the fall is smaller the larger the mean and the population (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t3"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué mide el índice de Atkinson y por qué es flexible?",
+    "en": "What does the Atkinson index measure and why is it flexible?"
+   },
+   "a": {
+    "es": "La proporción del ingreso que un evaluador sacrificaría por la igualdad total: uno menos el ingreso igualmente distribuido sobre la media. El parámetro de aversión permite ir del utilitarista al rawlsiano; en la práctica se usan valores entre 0 y 2 (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "The share of income an evaluator would sacrifice for full equality: one minus the equally distributed income over the mean. The aversion parameter spans utilitarian to Rawlsian views; in practice values between 0 and 2 are used (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se evalúa si una caída del Gini es estadísticamente significativa?",
+    "en": "How is a fall in the Gini tested for statistical significance?"
+   },
+   "a": {
+    "es": "Con intervalos de confianza, típicamente por bootstrap: en Brasil la baja de 59,3 a 59,2 entre 1997 y 1998 no es significativa porque los intervalos se superponen; la de 1999 sí. Con colas muy pesadas el bootstrap simple pierde confiabilidad (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "With confidence intervals, typically by bootstrap: in Brazil the drop from 59.3 to 59.2 between 1997 and 1998 is not significant because the intervals overlap; the 1999 drop is. With very heavy tails the simple bootstrap becomes less reliable (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué fuentes de ingreso explican la desigualdad en América Latina?",
+    "en": "Which income sources explain inequality in Latin America?"
+   },
+   "a": {
+    "es": "Con la descomposición del Gini por fuentes, los ingresos laborales explican más del 70 % en todos los países y el capital alrededor del 5 %, en parte por su mala captación en las encuestas (Medina y Galván, citados por Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "Using the Gini decomposition by source, labor income explains over 70% in every country and capital about 5%, partly because surveys capture it poorly (Medina and Galván, cited by Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la invarianza a la escala puede chocar con la intuición de equidad?",
+    "en": "Why can scale invariance clash with intuitions of fairness?"
+   },
+   "a": {
+    "es": "Porque juzga solo diferencias proporcionales: si con ingresos de 100 y 1000 se da 3 al pobre y 7 al rico, la desigualdad relativa cae aunque el reparto parezca injusto. La alternativa son las medidas absolutas, invariantes a traslaciones (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "Because it only judges proportional differences: with incomes of 100 and 1000, giving 3 to the poor and 7 to the rich lowers relative inequality even if the split seems unfair. The alternative is absolute measures, invariant to translations (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la desigualdad latinoamericana medida con encuestas probablemente está subestimada?",
+    "en": "Why is Latin American inequality measured with surveys probably understated?"
+   },
+   "a": {
+    "es": "Porque la subdeclaración es mayor en los extremos y las encuestas casi no captan a los muy ricos: en la Argentina de 1992 el Gini pasa de 44,5 a 56,7 al ajustar por fuentes, y omitir un grupo rico con el 10 % del ingreso convierte un Gini de 0,50 en 0,55 (Gasparini, Cicowiez y Sosa Escudero, cap. 6).",
+    "en": "Because underreporting is larger at the extremes and surveys rarely capture the very rich: in Argentina in 1992 the Gini goes from 44.5 to 56.7 after adjusting by source, and omitting a rich group with 10% of income turns a Gini of 0.50 into 0.55 (Gasparini, Cicowiez and Sosa Escudero, ch. 6)."
+   },
+   "id": "fisc-dist-06-t8"
+  }
+ ]
+}

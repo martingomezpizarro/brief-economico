@@ -1,0 +1,617 @@
+{
+ "id": "fisc-dist-04",
+ "cat": "fisc-dist",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Pobreza monetaria: líneas, índices FGT y la evidencia latinoamericana",
+ "bajada": "El capítulo 4 de Gasparini, Cicowiez y Sosa Escudero: por qué toda línea de pobreza es arbitraria, cómo se construyen las líneas extremas y moderadas en América Latina, los axiomas de Sen y la familia FGT, la robustez y la significatividad estadística, y qué pasó con la pobreza en la región entre 1992 y 2009.",
+ "fuentes": [
+  1288
+ ],
+ "cita": "Gasparini, Cicowiez y Sosa Escudero, Pobreza y desigualdad en América Latina (CEDLAS-Temas, 2013), cap. 4: «Pobreza monetaria»",
+ "intro": "Medir la pobreza exige resolver dos problemas, como planteó Sen en 1976: la identificación (quién es pobre) y la agregación (cómo resumir la privación en un número). El capítulo 4 de Gasparini, Cicowiez y Sosa Escudero los trata para la pobreza monetaria, en la que el nivel de vida se aproxima con el ingreso o el consumo. La tesis es incómoda pero sana: la identificación no tiene solución objetiva, toda línea esconde decisiones arbitrarias, y por eso importa menos la cifra puntual que una metodología consistente y conclusiones que resistan cambios de línea, de índice y de muestra. La agregación, en cambio, admite un tratamiento axiomático preciso, del que sale la familia FGT. El capítulo cierra con la evidencia latinoamericana.",
+ "secciones": [
+  {
+   "t": "La línea de pobreza: un umbral sin discontinuidad",
+   "eq": [
+    "z = e(p, u_z)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(z\\): línea de pobreza, en unidades monetarias por persona y por período.",
+      "en": "\\(z\\): poverty line, in money per person per period."
+     },
+     {
+      "es": "\\(e(\\cdot)\\): función de gasto: el mínimo costo necesario para alcanzar un nivel de utilidad dados los precios.",
+      "en": "\\(e(\\cdot)\\): expenditure function: the minimum cost needed to reach a utility level at given prices."
+     },
+     {
+      "es": "\\(p\\): vector de precios que enfrenta la persona.",
+      "en": "\\(p\\): price vector faced by the person."
+     },
+     {
+      "es": "\\(u_z\\): nivel de utilidad requerido para no ser considerado pobre.",
+      "en": "\\(u_z\\): utility level required not to be considered poor."
+     }
+    ]
+   ],
+   "p": [
+    "La teoría define la línea de pobreza como el costo de alcanzar una utilidad de referencia. El camino es intransitable: fijar ese umbral de utilidad es un problema normativo, y aun fijándolo, la función de gasto no se identifica con los datos disponibles si los hogares difieren en gustos (Deaton y Muellbauer, 1980). Por eso los países usan algo más tosco: el ingreso que permite comprar los alimentos que cubren un requerimiento mínimo de energía. La carencia asociada a ese umbral es la pobreza extrema o indigencia.",
+    "El problema reaparece. Si el umbral fuera el mínimo para sobrevivir, la pobreza sería cero; por encima de él, la relación entre calorías y actividad física no tiene ninguna discontinuidad que marque un punto inobjetable, salvo la tasa metabólica basal. En la Argentina el umbral es de 2700 kilocalorías para un hombre adulto, lo que en 2005 daba una línea de 120,1 pesos mensuales por adulto equivalente y una indigencia urbana del 12,2 %. Pero la curva de Pen no salta en 120,1: 50 centavos no separan de verdad a quien tiene 119,5 de quien tiene 120,5.",
+    "La cifra hereda la arbitrariedad: con 2800 kilocalorías, una elección igual de razonable, la indigencia habría sido cercana al 15 %. Los autores concluyen que no hay que exagerar la atención al nivel exacto; importa seguir una metodología en el tiempo y reportar líneas alternativas. La arbitrariedad es el precio de un concepto intuitivo y útil para la política."
+   ]
+  },
+  {
+   "t": "Líneas extremas y moderadas en la práctica",
+   "eq": [
+    "z_e:\\; E(k \\mid z_e) = k_m",
+    "\\frac{\\partial z_e}{\\partial p} = -\\frac{\\partial k(p,z_e)/\\partial p}{\\partial k(p,z_e)/\\partial x}",
+    "z_m = \\alpha\\, z_e,\\qquad \\alpha = \\frac{GT_j}{GA_j} \\ge 1"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(z_e\\): línea de pobreza extrema (indigencia), en ingreso o consumo del hogar.",
+      "en": "\\(z_e\\): extreme poverty (indigence) line, in household income or consumption."
+     },
+     {
+      "es": "\\(k\\): consumo de calorías; \\(E(k \\mid x)\\): consumo medio de calorías de los hogares con ingreso o consumo \\(x\\) (la curva de Engel de calorías estimada por regresión).",
+      "en": "\\(k\\): calorie intake; \\(E(k \\mid x)\\): mean calorie intake of households with income or consumption \\(x\\) (the calorie Engel curve estimated by regression)."
+     },
+     {
+      "es": "\\(k_m\\): requerimiento mínimo de calorías por persona por día, tomado de estudios nutricionales.",
+      "en": "\\(k_m\\): minimum calorie requirement per person per day, taken from nutritional studies."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\partial z_e/\\partial p\\): cambio de la línea de Engel ante un aumento del precio relativo \\(p\\) de los servicios de salud (los alimentos son el numerario).",
+      "en": "\\(\\partial z_e/\\partial p\\): change in the Engel line when the relative price \\(p\\) of health services rises (food is the numeraire)."
+     },
+     {
+      "es": "\\(k(p,x)\\): demanda de alimentos (calorías) en función del precio relativo \\(p\\) y del ingreso \\(x\\).",
+      "en": "\\(k(p,x)\\): demand for food (calories) as a function of the relative price \\(p\\) and income \\(x\\)."
+     },
+     {
+      "es": "\\(\\partial k/\\partial p\\), \\(\\partial k/\\partial x\\): respuesta de la demanda de alimentos al precio de la salud y al ingreso, evaluadas en la línea \\(z_e\\).",
+      "en": "\\(\\partial k/\\partial p\\), \\(\\partial k/\\partial x\\): response of food demand to the price of health and to income, evaluated at the line \\(z_e\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(z_m\\): línea de pobreza moderada (alimentos y resto de los bienes).",
+      "en": "\\(z_m\\): moderate poverty line (food plus all other goods)."
+     },
+     {
+      "es": "\\(\\alpha\\): coeficiente de Orshansky, inversa del coeficiente de Engel: cuántas veces el gasto total supera al gasto en alimentos.",
+      "en": "\\(\\alpha\\): Orshansky coefficient, the inverse of the Engel coefficient: how many times total spending exceeds food spending."
+     },
+     {
+      "es": "\\(GT_j\\), \\(GA_j\\): gasto total de consumo y gasto en alimentos del grupo de hogares de referencia \\(j\\).",
+      "en": "\\(GT_j\\), \\(GA_j\\): total consumption spending and food spending of the reference household group \\(j\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Todos los países de la región distinguen una línea extrema, alimentaria, y una moderada, que agrega otros bienes. El método de Engel estima por regresión cuántas calorías consumen en promedio los hogares según su ingreso y busca el ingreso al que se alcanza el umbral; al trabajar con promedios, clasifica como indigentes a algunos que comen más que el mínimo y viceversa. Además depende de precios relativos: si alimentos y salud son sustitutos, encarecer la salud baja la línea de Engel, cuando la teórica debería subir. Así, el campo, con alimentos baratos y servicios caros, puede tener una línea menor sin estar mejor.",
+    "El método más popular es la canasta básica alimentaria, valorizada a precios de mercado. La canasta de mínimo costo de Stigler daba una dieta monótona, por eso se usa la de una población de referencia: la Argentina toma los percentiles 21 a 40; Chile, del 41 al 60. UNSD (2005) reporta canastas de entre 7 y 205 ítems.",
+    "La línea moderada se obtiene multiplicando la extrema por el coeficiente de Orshansky. Orshansky encontró en Estados Unidos que el grupo de referencia gastaba un tercio en alimentos, y la línea moderada fue el triple de la extrema; en América Latina la media es 2, y la CEPAL usa 2 en áreas urbanas y 1,75 en las rurales. El método carece de base teórica fuerte y pesa: si Bolivia ajustara como Colombia, su pobreza moderada de 2005 subiría del 60 % al 71 %."
+   ]
+  },
+  {
+   "t": "Líneas nacionales, internacionales y relativas",
+   "eq": [
+    "z_j = \\max\\left(z^{*},\\, k M_j\\right),\\qquad k \\in (0,1)",
+    "z_j = \\max\\left(1.25,\\; 0.60 + \\frac{C_j}{3}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(z_j\\): línea de pobreza de la sociedad \\(j\\).",
+      "en": "\\(z_j\\): poverty line of society \\(j\\)."
+     },
+     {
+      "es": "\\(z^{*}\\): línea de pobreza extrema única, en moneda comparable entre países (componente absoluto).",
+      "en": "\\(z^{*}\\): single extreme poverty line, in money comparable across countries (absolute component)."
+     },
+     {
+      "es": "\\(M_j\\): media o mediana del ingreso o consumo de la comunidad \\(j\\); \\(k\\): fracción de esa medida que fija la línea relativa.",
+      "en": "\\(M_j\\): mean or median income or consumption of community \\(j\\); \\(k\\): fraction of that measure that sets the relative line."
+     }
+    ],
+    [
+     {
+      "es": "\\(z_j\\): línea de pobreza «relativa débil» de Ravallion y Chen (2009), en dólares por persona por día a paridad de poder adquisitivo.",
+      "en": "\\(z_j\\): Ravallion and Chen's (2009) «weakly relative» poverty line, in dollars per person per day at purchasing power parity."
+     },
+     {
+      "es": "\\(C_j\\): consumo privado per cápita de Cuentas Nacionales del país \\(j\\), en las mismas unidades.",
+      "en": "\\(C_j\\): National Accounts private consumption per capita of country \\(j\\), in the same units."
+     },
+     {
+      "es": "1.25: piso absoluto en dólares diarios; 0.60 y 1/3: constantes de la calibración con líneas oficiales de todo el mundo.",
+      "en": "1.25: absolute floor in daily dollars; 0.60 and 1/3: constants calibrated on official lines worldwide."
+     }
+    ]
+   ],
+   "p": [
+    "Las líneas oficiales difieren por hábitos de consumo y por método: Nicaragua mide sobre el gasto, la Argentina sobre el ingreso por adulto equivalente. En dólares de 2005 a paridad de poder adquisitivo, la línea extrema de El Salvador no llega a 1 dólar diario y la de México es de 3,4, con mediana regional de 2,5; las moderadas van de 1,9 dólares en El Salvador a 8,3 en Uruguay. Una tasa oficial del 10 % en Colombia no es comparable con una del 10 % en Uruguay.",
+    "Para comparar países se usan líneas internacionales. La de «1 dólar» es hoy de 1,25 dólares diarios a precios de 2005, la media de las líneas de los 15 países más pobres, convertida a moneda local con tipos de cambio de paridad, no de mercado. En países de ingreso medio da tasas muy bajas, y el libro usa la de 2,5 dólares, la mediana de las líneas extremas de la región, y las de 4 o 5, parecidas a las moderadas.",
+    "La concepción relativa pide que la línea crezca con la prosperidad; Eurostat la fija en el 60 % del ingreso mediano. Entre países, la línea es casi plana en los más pobres y crece después, con una elasticidad de 0,655 respecto del consumo per cápita. Atkinson y Bourguignon (2001) combinan un piso absoluto de subsistencia con una línea relativa de inclusión social; Ravallion y Chen (2009) objetan que una línea proporcional a la media no se mueve si todos los ingresos crecen en igual proporción y proponen una con elasticidad menor que 1."
+   ]
+  },
+  {
+   "t": "Axiomas, tasa de incidencia y brecha",
+   "eq": [
+    "H = \\frac{1}{N}\\sum_{i=1}^{N} 1(x_i < z)",
+    "BP = \\frac{1}{N}\\sum_{i=1}^{N}\\left(1-\\frac{x_i}{z}\\right)1(x_i<z) = H\\left(1-\\frac{\\mu^{p}}{z}\\right),\\qquad BP\\,zN = N_p\\,(z-\\mu^{p})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(H\\): tasa de incidencia (headcount): proporción de personas pobres.",
+      "en": "\\(H\\): headcount ratio: share of people who are poor."
+     },
+     {
+      "es": "\\(N\\): tamaño de la población; \\(\\sum_{i=1}^{N}\\): suma sobre todas las personas.",
+      "en": "\\(N\\): population size; \\(\\sum_{i=1}^{N}\\): sum over all people."
+     },
+     {
+      "es": "\\(x_i\\): ingreso o consumo de la persona \\(i\\); \\(z\\): línea de pobreza.",
+      "en": "\\(x_i\\): income or consumption of person \\(i\\); \\(z\\): poverty line."
+     },
+     {
+      "es": "\\(1(\\cdot)\\): función indicadora: vale 1 si se cumple la condición (la persona es pobre) y 0 si no.",
+      "en": "\\(1(\\cdot)\\): indicator function: equals 1 if the condition holds (the person is poor) and 0 otherwise."
+     }
+    ],
+    [
+     {
+      "es": "\\(BP\\): brecha de la pobreza (poverty gap); \\(1-x_i/z\\): brecha individual, la distancia proporcional a la línea.",
+      "en": "\\(BP\\): poverty gap index; \\(1-x_i/z\\): individual gap, the proportional distance to the line."
+     },
+     {
+      "es": "\\(\\mu^{p}\\): ingreso medio de las personas pobres; \\(1-\\mu^{p}/z\\): brecha del pobre promedio (income gap ratio).",
+      "en": "\\(\\mu^{p}\\): mean income of the poor; \\(1-\\mu^{p}/z\\): gap of the average poor person (income gap ratio)."
+     },
+     {
+      "es": "\\(N_p\\): número de pobres; \\(BP\\,zN\\): ingreso total que habría que transferir para eliminar la pobreza sin costos ni cambios de conducta.",
+      "en": "\\(N_p\\): number of poor people; \\(BP\\,zN\\): total income that would have to be transferred to end poverty, with no costs or behavioral responses."
+     },
+     {
+      "es": "\\(H\\), \\(N\\), \\(x_i\\), \\(z\\) y \\(1(\\cdot)\\): como en la ecuación anterior.",
+      "en": "\\(H\\), \\(N\\), \\(x_i\\), \\(z\\) and \\(1(\\cdot)\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "Sen (1976) propuso tres axiomas: foco (el índice depende solo de los ingresos de los pobres), monotonicidad (si cae el ingreso de un pobre, la pobreza sube) y transferencia (pasar ingreso de un pobre a otro más pobre, sin alterar el orden, reduce la pobreza). Suelen agregarse simetría e invarianza a las réplicas (duplicar la población no cambia el índice). Esta última no es inocua: con crecimiento poblacional el porcentaje de pobres puede bajar mientras su número sube, como pasó en varios países de la región.",
+    "La tasa de incidencia, el índice más popular, viola dos de los tres axiomas. Un gobernante maquiavélico que le quita un peso al más pobre y se lo da a alguien 50 centavos debajo de la línea la hace bajar, aunque la transferencia sea regresiva; y si la meta es reducirla, conviene ayudar a los menos pobres entre los pobres.",
+    "La brecha suma las distancias proporcionales a la línea y divide por la población: es la tasa de incidencia por la brecha del pobre promedio, y multiplicada por la línea y la población da el costo de eliminar la pobreza con transferencias perfectamente focalizadas, sin costos ni cambios de conducta. Cumple monotonicidad, no transferencia: un traspaso entre dos pobres que siguen siéndolo no la mueve."
+   ]
+  },
+  {
+   "t": "La familia FGT y otros índices",
+   "eq": [
+    "FGT(\\alpha) = \\frac{1}{N}\\sum_{i=1}^{N}\\left(1-\\frac{x_i}{z}\\right)^{\\alpha} 1(x_i<z),\\qquad \\alpha \\ge 0",
+    "P_S = H\\left[1-(1-G^{p})\\frac{\\mu^{p}}{z}\\right] = H\\,G^{p} + BP\\,(1-G^{p})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(FGT(\\alpha)\\): índice de Foster, Greer y Thorbecke (1984).",
+      "en": "\\(FGT(\\alpha)\\): Foster, Greer and Thorbecke (1984) index."
+     },
+     {
+      "es": "\\(\\alpha\\): parámetro de aversión a la desigualdad entre los pobres: con 0 es la tasa de incidencia, con 1 la brecha y con 2 la severidad.",
+      "en": "\\(\\alpha\\): inequality aversion among the poor: 0 gives the headcount, 1 the poverty gap and 2 the severity index."
+     },
+     {
+      "es": "\\(N\\), \\(x_i\\), \\(z\\), \\(1(\\cdot)\\): población, ingreso de \\(i\\), línea de pobreza e indicadora de ser pobre, como antes.",
+      "en": "\\(N\\), \\(x_i\\), \\(z\\), \\(1(\\cdot)\\): population, income of \\(i\\), poverty line and poverty indicator, as before."
+     },
+     {
+      "es": "Es la misma familia que \\(P_\\alpha\\) en el brief de Grión sobre pobreza; aquí se respeta la notación del libro.",
+      "en": "It is the same family as \\(P_\\alpha\\) in the Grión poverty brief; here the book's notation is kept."
+     }
+    ],
+    [
+     {
+      "es": "\\(P_S\\): índice de pobreza de Sen.",
+      "en": "\\(P_S\\): Sen poverty index."
+     },
+     {
+      "es": "\\(H\\): tasa de incidencia; \\(BP\\): brecha de la pobreza.",
+      "en": "\\(H\\): headcount ratio; \\(BP\\): poverty gap."
+     },
+     {
+      "es": "\\(G^{p}\\): coeficiente de Gini de la distribución del ingreso entre los pobres (de 0 a 1).",
+      "en": "\\(G^{p}\\): Gini coefficient of the income distribution among the poor (from 0 to 1)."
+     },
+     {
+      "es": "\\(\\mu^{p}\\): ingreso medio de los pobres; \\(z\\): línea de pobreza.",
+      "en": "\\(\\mu^{p}\\): mean income of the poor; \\(z\\): poverty line."
+     }
+    ]
+   ],
+   "p": [
+    "Foster, Greer y Thorbecke elevan cada brecha individual a una potencia. Con el parámetro en 0 el índice es la tasa de incidencia; con 1, la brecha; por encima de 1 los más pobres pesan más, y en el límite solo importa el peor. El FGT(2), o severidad, es el único de los tres usuales que cumple foco, monotonicidad y transferencia. Los pesos crecen rápido: un peso en manos de alguien con el 15 % de la línea vale, respecto de alguien con el 95 %, 17 veces más con parámetro 2 y 289 con 3. Por eso la literatura se queda en 0, 1 y 2.",
+    "En el ejemplo del libro hay cinco personas, una línea de 20 pesos y dos pobres con 5 y 15: el FGT(0) es 0,4, el FGT(1) 0,2 y el FGT(2) 0,125. Si el más pobre pasa 2 pesos al otro, sin que este cruce la línea, el FGT(1) no cambia y el FGT(2) sube a 0,149. Desde ahí, dar 2 pesos al menos pobre baja el FGT(1) a 0,180 y el FGT(2) a 0,145; dar 1 peso al más pobre baja el FGT(1) solo a 0,190 pero el FGT(2) a 0,133.",
+    "El índice de Sen promedia la tasa de incidencia y la brecha con el Gini entre los pobres como ponderador, así que sube con más pobres, más brecha o más desigualdad entre ellos; Chakravarty y Watts proponen otras variantes. La recomendación es reportar el FGT con 0, 1 y 2: la tasa comunica y los otros captan intensidad. Con 2,5 dólares en 1997, Paraguay tenía más incidencia que Panamá, pero menos brecha y severidad."
+   ]
+  },
+  {
+   "t": "Robustez, significatividad y descomposiciones",
+   "eq": [
+    "\\hat V\\big(FGT(\\alpha)\\big) = \\frac{FGT(2\\alpha) - FGT(\\alpha)^2}{N}",
+    "P = \\sum_{g=1}^{G} f_g P_g,\\qquad s_k = \\frac{f_k P_k}{P}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\hat V(\\cdot)\\): estimador consistente de la varianza muestral del índice, bajo muestreo aleatorio simple (Kakwani, 1993).",
+      "en": "\\(\\hat V(\\cdot)\\): consistent estimator of the index's sampling variance, under simple random sampling (Kakwani, 1993)."
+     },
+     {
+      "es": "\\(FGT(\\alpha)\\), \\(FGT(2\\alpha)\\): índices FGT estimados con parámetro \\(\\alpha\\) y con el doble.",
+      "en": "\\(FGT(\\alpha)\\), \\(FGT(2\\alpha)\\): FGT indices estimated with parameter \\(\\alpha\\) and with twice that value."
+     },
+     {
+      "es": "\\(N\\): tamaño de la muestra. Con \\(\\alpha=0\\) queda la varianza de una proporción, \\((H-H^2)/N\\).",
+      "en": "\\(N\\): sample size. With \\(\\alpha=0\\) it becomes the variance of a proportion, \\((H-H^2)/N\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(P\\): índice de pobreza aditivo separable de toda la población.",
+      "en": "\\(P\\): additively separable poverty index for the whole population."
+     },
+     {
+      "es": "\\(g\\): grupo mutuamente excluyente (región, género, etnia); \\(G\\): número de grupos.",
+      "en": "\\(g\\): mutually exclusive group (region, gender, ethnicity); \\(G\\): number of groups."
+     },
+     {
+      "es": "\\(f_g\\): participación del grupo en la población; \\(P_g\\): pobreza dentro del grupo.",
+      "en": "\\(f_g\\): group's share of the population; \\(P_g\\): poverty within the group."
+     },
+     {
+      "es": "\\(s_k\\): contribución del grupo \\(k\\) a la pobreza total.",
+      "en": "\\(s_k\\): contribution of group \\(k\\) to total poverty."
+     }
+    ]
+   ],
+   "p": [
+    "Como línea e índice son discutibles, conviene buscar conclusiones ordinales. Si la función de distribución de A está siempre por encima de la de B (dominancia estocástica de primer orden), la pobreza es mayor en A para cualquier línea y cualquier índice de primer orden, como entre el Sur y el Noroeste de México en 2006. Entre Bolivia y Nicaragua en 2005 las curvas se cruzan: con 1,25 dólares hay más pobreza en Bolivia y con 2,5, en Nicaragua. Criterios más débiles son la dominancia de segundo orden y la curva TIP de Jenkins y Lambert.",
+    "Las cifras muestrales deben llevar errores estándar, asintóticos o por bootstrap. En Guatemala la tasa pasó de 34,6 % en 2000 a 34,0 % en 2006 con intervalos superpuestos, sin cambio significativo; en Brasil cayó de 37,0 % en 1993 a 18,2 % en 2007, sin superposición. La significatividad económica es otra cosa: según Newman y coautores, bajar 2,5 puntos por año ubica a un país en el 20 % más exitoso de 459 episodios.",
+    "El FGT es aditivo y se descompone por grupos; es el único índice que cumple foco, monotonicidad, transferencia y consistencia ante descomposiciones. En Ecuador 2006 la Costa aporta el 40 % de los pobres, la Sierra el 52,4 % y el Oriente el 7,6 %; con el FGT(2) el Oriente sube al 16,3 %, porque allí la pobreza es más profunda."
+   ]
+  },
+  {
+   "t": "Medición y evidencia en América Latina",
+   "p": [
+    "La variable de bienestar importa. El consumo es preferible porque se suaviza; con ingresos la pobreza puede sobrestimarse o subestimarse según la línea. En Nicaragua 2005 la tasa es 46 % sobre el consumo y 43,6 % sobre el ingreso. Ignorar el autoconsumo en Guatemala eleva la pobreza de 2000 de 34,6 % a 40,4 %. El ajuste por Cuentas Nacionales es polémico: en la Argentina la pobreza subió 11,4 puntos entre 1992 y 2004 según la encuesta y 4,4 anclando la media al PIB, y con ajustes alternativos la tasa regional va de 22,7 % a 65,6 %.",
+    "Las escalas de equivalencia también pesan: con la escala oficial argentina, entre ocupados que viven solos, los hombres ganan más que las mujeres pero tienen más pobreza moderada (4,51 % contra 3,26 %). Y como los pobres mueren antes, una política que reduzca su mortalidad sube la pobreza medida.",
+    "Con la línea de 2,5 dólares, en 1992 eran pobres 28 de cada 100 latinoamericanos y en 2009, 16; los pobres pasaron de 119 a 89 millones. Tras la década perdida de los 80, la caída fue modesta en los 90 y sustancial en los 2000, con Brasil y Chile como motores del Cono Sur. Chile, Uruguay, Costa Rica y la Argentina tienen las tasas más bajas; Honduras, Nicaragua y Bolivia, de las más altas. En el mundo la pobreza con 1,25 dólares cayó de 51,8 % en 1981 a 25,2 % en 2005, pero sin China la baja fue de 11 puntos y no de 26. El apéndice muestra estos cálculos en Stata."
+   ]
+  }
+ ],
+ "claves": [
+  "La medición de la pobreza exige identificar a los pobres y agregar sus privaciones; la identificación no tiene solución objetiva.",
+  "Toda línea de pobreza es arbitraria: con 2800 en vez de 2700 kilocalorías, la indigencia argentina de 2005 pasaría del 12,2 % a cerca del 15 %.",
+  "La línea extrema se arma con una canasta básica alimentaria y la moderada se obtiene multiplicándola por el coeficiente de Orshansky, que en la región ronda 2.",
+  "La tasa de incidencia viola monotonicidad y transferencia; la brecha cumple monotonicidad; el FGT(2) cumple los tres axiomas de Sen.",
+  "El FGT es aditivo y descomponible por grupos; la práctica recomendada es reportar FGT(0), FGT(1) y FGT(2).",
+  "La dominancia estocástica y los errores estándar dicen cuándo una comparación de pobreza es robusta y significativa.",
+  "Con la línea de 2,5 dólares, la pobreza latinoamericana bajó de 28 % en 1992 a 16 % en 2009."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué, según el capítulo, la línea de pobreza teórica \\(z=e(p,u_z)\\) no se usa en la práctica?",
+    "en": "Why, according to the chapter, is the theoretical poverty line \\(z=e(p,u_z)\\) not used in practice?"
+   },
+   "op": {
+    "es": [
+     "Porque la función de gasto no depende de los precios",
+     "Porque fijar el umbral de utilidad es normativamente ambiguo y la función de gasto no se identifica si los hogares difieren en gustos",
+     "Porque los gobiernos prefieren líneas relativas",
+     "Porque solo sirve para medir pobreza por consumo"
+    ],
+    "en": [
+     "Because the expenditure function does not depend on prices",
+     "Because setting the utility threshold is normatively ambiguous and the expenditure function is not identified if households differ in tastes",
+     "Because governments prefer relative lines",
+     "Because it only works for consumption-based poverty"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los autores llaman «intransitable» a ese camino: \\(u_z\\) es ambiguo y \\(e(\\cdot)\\) no se puede estimar con los datos habituales (Deaton y Muellbauer, 1980).",
+    "en": "The authors call that route «impassable»: \\(u_z\\) is ambiguous and \\(e(\\cdot)\\) cannot be estimated with the usual data (Deaton and Muellbauer, 1980)."
+   },
+   "id": "fisc-dist-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué ilustra el ejemplo argentino de 2700 y 2800 kilocalorías?",
+    "en": "What does the Argentine example of 2,700 versus 2,800 kilocalories illustrate?"
+   },
+   "op": {
+    "es": [
+     "Que la indigencia argentina está sobrestimada por errores de encuesta",
+     "Que el requerimiento calórico de las mujeres es menor",
+     "Que la cifra de indigencia hereda la arbitrariedad del umbral: pasaría del 12,2 % a cerca del 15 %",
+     "Que la línea de indigencia debería actualizarse con el IPC"
+    ],
+    "en": [
+     "That Argentine indigence is overestimated because of survey errors",
+     "That women's calorie requirement is lower",
+     "That the indigence figure inherits the threshold's arbitrariness: it would go from 12.2% to about 15%",
+     "That the indigence line should be updated with the CPI"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "No hay discontinuidad entre calorías y actividad física que justifique un umbral único; por eso conviene no exagerar la atención sobre el nivel exacto.",
+    "en": "There is no discontinuity between calories and physical activity that justifies a single threshold; hence the advice not to overemphasize the exact level."
+   },
+   "id": "fisc-dist-04-q2"
+  },
+  {
+   "q": {
+    "es": "Si alimentos y salud son sustitutos y sube el precio relativo de la salud, ¿qué pasa con la línea de Engel?",
+    "en": "If food and health are substitutes and the relative price of health rises, what happens to the Engel line?"
+   },
+   "op": {
+    "es": [
+     "Baja, al revés de lo que indica la línea teórica, que sube",
+     "Sube, igual que la línea teórica",
+     "No cambia, porque solo depende de las calorías",
+     "Sube más que la línea teórica"
+    ],
+    "en": [
+     "It falls, the opposite of the theoretical line, which rises",
+     "It rises, like the theoretical line",
+     "It does not change, because it only depends on calories",
+     "It rises more than the theoretical line"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La derivada de la línea teórica respecto del precio es el consumo de salud (positivo); en Engel el signo depende de la sustitución entre alimentos y salud.",
+    "en": "The derivative of the theoretical line with respect to price is health consumption (positive); in the Engel method the sign depends on food-health substitution."
+   },
+   "id": "fisc-dist-04-q3"
+  },
+  {
+   "q": {
+    "es": "Un país usa una línea extrema de 2 dólares y un coeficiente de Orshansky igual a la media latinoamericana. ¿Cuánto vale su línea moderada?",
+    "en": "A country uses an extreme line of 2 dollars and an Orshansky coefficient equal to the Latin American mean. What is its moderate line?"
+   },
+   "op": {
+    "es": [
+     "2 dólares",
+     "3 dólares",
+     "6 dólares",
+     "4 dólares"
+    ],
+    "en": [
+     "2 dollars",
+     "3 dollars",
+     "6 dollars",
+     "4 dollars"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El coeficiente medio en la región es 2, así que la línea moderada es el doble de la extrema. El triple corresponde al estudio original de Orshansky para Estados Unidos.",
+    "en": "The regional mean coefficient is 2, so the moderate line is twice the extreme one. Three times corresponds to Orshansky's original US study."
+   },
+   "id": "fisc-dist-04-q4"
+  },
+  {
+   "q": {
+    "es": "Un gobernante quita un peso al más pobre y se lo da a alguien que está 50 centavos bajo la línea. ¿Qué índice muestra una caída de la pobreza?",
+    "en": "A ruler takes one peso from the poorest person and gives it to someone 50 cents below the line. Which index shows poverty falling?"
+   },
+   "op": {
+    "es": [
+     "El FGT(2)",
+     "La tasa de incidencia",
+     "La brecha de la pobreza",
+     "El índice de Sen"
+    ],
+    "en": [
+     "FGT(2)",
+     "The headcount ratio",
+     "The poverty gap",
+     "The Sen index"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La tasa de incidencia cuenta pobres: el receptor cruza la línea y el índice baja, aunque la transferencia sea regresiva. Viola monotonicidad y transferencia.",
+    "en": "The headcount counts the poor: the recipient crosses the line and the index falls, although the transfer is regressive. It violates monotonicity and transfer."
+   },
+   "id": "fisc-dist-04-q5"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo del cuadro 4.3, ¿por qué el FGT(2) prefiere dar 1 peso al más pobre antes que 2 pesos al menos pobre?",
+    "en": "In the example of table 4.3, why does FGT(2) prefer giving 1 peso to the poorest over 2 pesos to the less poor?"
+   },
+   "op": {
+    "es": [
+     "Porque eleva al cuadrado las brechas y pondera más a quien está más lejos de la línea",
+     "Porque solo cuenta el número de pobres",
+     "Porque ignora a los pobres con ingresos cerca de la línea",
+     "Porque es lineal en las brechas"
+    ],
+    "en": [
+     "Because it squares the gaps and gives more weight to whoever is farther from the line",
+     "Because it only counts the number of poor",
+     "Because it ignores the poor with incomes close to the line",
+     "Because it is linear in the gaps"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El FGT(1) cae más dando 2 pesos al menos pobre (0,180 contra 0,190); el FGT(2), más sensible a los más pobres, cae más dando 1 peso al más pobre (0,133 contra 0,145).",
+    "en": "FGT(1) falls more when 2 pesos go to the less poor (0.180 vs 0.190); FGT(2), more sensitive to the poorest, falls more with 1 peso to the poorest (0.133 vs 0.145)."
+   },
+   "id": "fisc-dist-04-q6"
+  },
+  {
+   "q": {
+    "es": "Las funciones de distribución del ingreso de Bolivia y Nicaragua en 2005 se cruzan. ¿Qué implica?",
+    "en": "The 2005 income distribution functions of Bolivia and Nicaragua cross. What does it imply?"
+   },
+   "op": {
+    "es": [
+     "Que la pobreza es igual en ambos países",
+     "Que hay dominancia de primer orden de Bolivia sobre Nicaragua",
+     "Que los datos tienen errores de muestreo",
+     "Que el ranking depende de la línea: con 1,25 dólares hay más pobreza en Bolivia y con 2,5 en Nicaragua"
+    ],
+    "en": [
+     "That poverty is equal in both countries",
+     "That Bolivia first-order dominates Nicaragua",
+     "That the data have sampling errors",
+     "That the ranking depends on the line: with 1.25 dollars Bolivia has more poverty, with 2.5 Nicaragua does"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin dominancia estocástica de primer orden, la comparación de la tasa de incidencia no es robusta a la elección de la línea.",
+    "en": "Without first-order stochastic dominance, the headcount comparison is not robust to the choice of line."
+   },
+   "id": "fisc-dist-04-q7"
+  },
+  {
+   "q": {
+    "es": "En Ecuador 2006, ¿por qué la participación del Oriente en la pobreza nacional sube de 7,6 % con el FGT(0) a 16,3 % con el FGT(2)?",
+    "en": "In Ecuador 2006, why does the Oriente's share of national poverty rise from 7.6% with FGT(0) to 16.3% with FGT(2)?"
+   },
+   "op": {
+    "es": [
+     "Porque su población creció entre las mediciones",
+     "Porque el FGT(2) no es descomponible por grupos",
+     "Porque allí la pobreza es más profunda y el FGT(2) pondera más las brechas grandes",
+     "Porque la línea oficial es más alta en el Oriente"
+    ],
+    "en": [
+     "Because its population grew between measurements",
+     "Because FGT(2) is not decomposable by groups",
+     "Because poverty there is deeper and FGT(2) weighs large gaps more",
+     "Because the official line is higher in the Oriente"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La contribución de cada región es su peso poblacional por su pobreza sobre la pobreza total; con un índice sensible a la profundidad, las regiones con brechas grandes ganan peso.",
+    "en": "Each region's contribution is its population share times its poverty over total poverty; with a depth-sensitive index, regions with large gaps gain weight."
+   },
+   "id": "fisc-dist-04-q8"
+  }
+ ],
+ "palabras": 1847,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué no hay una línea de pobreza objetiva?",
+    "en": "Why is there no objective poverty line?"
+   },
+   "a": {
+    "es": "Porque la relación entre consumo de calorías y capacidad de actividad física no tiene ninguna discontinuidad (salvo la tasa metabólica basal), y fijar un umbral de utilidad es normativo. La arbitrariedad de la línea pasa a la cifra de pobreza: conviene seguir una metodología fija y reportar líneas alternativas (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "Because the relation between calorie intake and capacity for physical activity has no discontinuity (except the basal metabolic rate), and setting a utility threshold is normative. The line's arbitrariness passes on to the poverty figure: better to keep a fixed methodology and report alternative lines (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el coeficiente de Orshansky?",
+    "en": "What is the Orshansky coefficient?"
+   },
+   "a": {
+    "es": "La inversa del coeficiente de Engel en un grupo de referencia: cuántas veces el gasto total supera al gasto en alimentos. Multiplica la línea extrema para obtener la moderada; en América Latina su media es 2 y la CEPAL usa 2 en áreas urbanas y 1,75 en las rurales (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "The inverse of the Engel coefficient for a reference group: how many times total spending exceeds food spending. It multiplies the extreme line to get the moderate one; in Latin America its mean is 2 and ECLAC uses 2 in urban and 1.75 in rural areas (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el método de Engel puede dar líneas más bajas en el campo sin que la gente esté mejor?",
+    "en": "Why can the Engel method give lower rural lines without people being better off?"
+   },
+   "a": {
+    "es": "Porque la línea depende de cuántas calorías se consumen a cada ingreso, y eso responde a precios relativos. Con alimentos baratos y servicios caros en el campo, se consumen más calorías a igual ingreso y la línea de Engel baja, aunque el nivel de vida no sea mayor (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "Because the line depends on how many calories are consumed at each income, which responds to relative prices. With cheap food and expensive services in rural areas, more calories are consumed at the same income and the Engel line falls, although living standards are not higher (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué axiomas de Sen cumple cada FGT usual?",
+    "en": "Which Sen axioms does each common FGT satisfy?"
+   },
+   "a": {
+    "es": "Todos cumplen foco. El FGT(0), la tasa de incidencia, viola monotonicidad y transferencia; el FGT(1), la brecha, cumple monotonicidad pero no transferencia; el FGT(2), la severidad, cumple los tres (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "All satisfy focus. FGT(0), the headcount, violates monotonicity and transfer; FGT(1), the gap, satisfies monotonicity but not transfer; FGT(2), severity, satisfies all three (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se sabe si un cambio en la tasa de pobreza es estadísticamente significativo?",
+    "en": "How do we know whether a change in the poverty rate is statistically significant?"
+   },
+   "a": {
+    "es": "Estimando errores estándar, con la fórmula asintótica del FGT o con bootstrap, y comparando intervalos de confianza. En Guatemala la baja de 34,6 % a 34,0 % entre 2000 y 2006 no fue significativa; la de Brasil, de 37,0 % a 18,2 % entre 1993 y 2007, sí (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "By estimating standard errors, with the FGT asymptotic formula or by bootstrap, and comparing confidence intervals. In Guatemala the drop from 34.6% to 34.0% between 2000 and 2006 was not significant; Brazil's, from 37.0% to 18.2% between 1993 and 2007, was (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo evolucionó la pobreza monetaria en América Latina entre 1992 y 2009?",
+    "en": "How did monetary poverty evolve in Latin America between 1992 and 2009?"
+   },
+   "a": {
+    "es": "Con la línea de 2,5 dólares diarios, la tasa bajó de 28 a 16 de cada 100 personas y el número de pobres de 119 a 89 millones, con una caída modesta en los 90 y sustancial en los 2000 (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "With the 2.5-dollar daily line, the rate fell from 28 to 16 per 100 people and the number of poor from 119 to 89 million, with a modest decline in the 1990s and a substantial one in the 2000s (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problema tiene el axioma de invarianza a las réplicas?",
+    "en": "What is the problem with the replication invariance axiom?"
+   },
+   "a": {
+    "es": "Implica que la pobreza es menos grave si baja el porcentaje de pobres aunque su número aumente, algo que ocurrió en varios países de la región con crecimiento poblacional. No todos comparten esa evaluación (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "It implies poverty is less serious if the share of poor falls even as their number rises, something that happened in several countries of the region with population growth. Not everyone shares that judgment (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la elección entre ingreso y consumo puede cambiar quién es pobre?",
+    "en": "Why can the choice between income and consumption change who is poor?"
+   },
+   "a": {
+    "es": "Porque el ingreso de un mes puede ser transitoriamente alto o bajo y el consumo se suaviza. En Nicaragua 2005 la tasa fue 46 % por consumo y 43,6 % por ingreso, y con ingresos la pobreza de los adultos mayores, que desahorran, parece relativamente mayor (Gasparini, Cicowiez y Sosa Escudero, cap. 4).",
+    "en": "Because a month's income can be temporarily high or low while consumption is smoothed. In Nicaragua 2005 the rate was 46% by consumption and 43.6% by income, and with income the poverty of older adults, who dissave, looks relatively higher (Gasparini, Cicowiez and Sosa Escudero, ch. 4)."
+   },
+   "id": "fisc-dist-04-t8"
+  }
+ ]
+}
