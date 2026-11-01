@@ -1,0 +1,550 @@
+{
+ "id": "fisc-general-09",
+ "cat": "fisc-general",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "Empleo, pobreza y desigualdad: cómo se miden en la Argentina",
+ "bajada": "Las tasas de actividad, empleo y desocupación, la informalidad y el salario real; pobreza por NBI y por línea con canastas y adultos equivalentes; la familia FGT con sus ejemplos numéricos; y Gini, Atkinson y brechas para la desigualdad.",
+ "fuentes": [
+  1153
+ ],
+ "cita": "Caullo, «Distribución del ingreso. Rol distributivo del Estado» (Finanzas Públicas, FCE-UNC), con datos de IERAL e INDEC",
+ "intro": "La presentación de Laura Caullo para Finanzas Públicas de la FCE-UNC trata el rol distributivo del Estado empezando por el lugar de donde sale la mayor parte del ingreso de los hogares: el mercado de trabajo. Primero define los indicadores laborales y los ilustra con datos de la EPH procesados por IERAL; después pasa a la pobreza, con sus conceptos, la medición por necesidades básicas insatisfechas y por línea de pobreza, y la familia de índices de Foster, Greer y Thorbecke; y termina con la desigualdad, el coeficiente de Gini, la propuesta de Atkinson y la brecha entre deciles. El dato que conecta las partes es que, en todos los estratos, 7 de cada 10 pesos del ingreso familiar provienen del trabajo.",
+ "secciones": [
+  {
+   "t": "Los tres indicadores laborales",
+   "eq": [
+    "TA = \\frac{\\text{Ocupados} + \\text{Desocupados}}{\\text{Población total}} \\times 100",
+    "TD = \\frac{\\text{Desocupados}}{\\mathit{PEA}} \\times 100",
+    "TE = \\frac{\\text{Ocupados}}{\\text{Población total}} \\times 100 = TA \\times \\Big(1 - \\frac{TD}{100}\\Big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(TA\\): tasa de actividad, en porcentaje de la población total.",
+      "en": "\\(TA\\): activity (participation) rate, as a percentage of total population."
+     },
+     {
+      "es": "Ocupados: personas que trabajan; Desocupados: personas que no trabajan y buscan trabajo; juntos forman la población económicamente activa (PEA).",
+      "en": "Employed: people who work; Unemployed: people who do not work and are looking for work; together they form the economically active population (PEA)."
+     },
+     {
+      "es": "Población total: todos los habitantes, incluidos los inactivos (jubilados, estudiantes, niños, quienes no buscan trabajo).",
+      "en": "Total population: all inhabitants, including the inactive (retirees, students, children, people not seeking work)."
+     }
+    ],
+    [
+     {
+      "es": "\\(TD\\): tasa de desocupación, en porcentaje de la PEA.",
+      "en": "\\(TD\\): unemployment rate, as a percentage of the PEA."
+     },
+     {
+      "es": "\\(\\mathit{PEA}\\): población económicamente activa, ocupados más desocupados.",
+      "en": "\\(\\mathit{PEA}\\): economically active population, employed plus unemployed."
+     }
+    ],
+    [
+     {
+      "es": "\\(TE\\): tasa de empleo, ocupados en porcentaje de la población total.",
+      "en": "\\(TE\\): employment rate, employed as a percentage of total population."
+     },
+     {
+      "es": "\\(TA\\), \\(TD\\): tasas de actividad y desocupación, en porcentaje. La segunda igualdad es lectura propia: sale de que los ocupados son la PEA menos los desocupados; la presentación no la escribe.",
+      "en": "\\(TA\\), \\(TD\\): activity and unemployment rates, in percent. The second equality is own reading: it follows from the employed being the PEA minus the unemployed; the presentation does not write it."
+     }
+    ]
+   ],
+   "p": [
+    "Caullo propone mirar tres indicadores juntos, porque ninguno alcanza por separado. La tasa de actividad es el cociente entre la población económicamente activa, ocupados más desocupados, y la población total. La tasa de desocupación es el cociente entre desocupados y PEA; es un indicador de equilibrio del mercado laboral y de la composición de la oferta de trabajo, pero no debe analizarse aislado. La tasa de empleo es el cociente entre ocupados y población total.",
+    "Con datos del primer trimestre de 2023, sobre una población de 46.045 miles de personas, la PEA era de 22.234 miles (48,3 %) y la población inactiva de 23.805 miles (51,7 %). Había 20.700 miles de ocupados (93,1 % de la PEA) y 1.534 miles de desocupados, una tasa de desocupación de 6,9 %. La tasa de empleo era de 45,0 %. Los ocupados se dividían en 15.380 miles de asalariados (74,3 %), 4.533 miles de cuentapropistas (21,9 %), 704 miles de patrones (3,4 %) y 83 mil familiares sin remuneración (0,4 %). De los asalariados, 9.736 miles estaban registrados (63,3 %) y 5.644 miles no (36,7 %). La presentación concluye que más de 17 millones de personas enfrentan desafíos significativos en términos de empleo y generación de ingreso.",
+    "Las tasas son muy heterogéneas entre regiones. En el segundo trimestre de 2020, en plena pandemia, Córdoba tenía una desocupación de 19,1 %, con actividad de 43,4 % y empleo de 35,1 %; la Ciudad de Buenos Aires, 11,1 % de desocupación, 46,7 % de actividad y 41,5 % de empleo; Santiago del Estero–La Banda, una desocupación de apenas 1,8 %, pero con actividad de 33,2 % y empleo de 32,6 %. El caso santiagueño muestra por qué la desocupación sola engaña: una tasa baja puede reflejar que poca gente busca trabajo, no que el mercado funcione bien. Lectura propia: los datos cumplen la identidad de la tercera fórmula; en Córdoba, 43,4 × (1 − 0,191) da 35,1."
+   ]
+  },
+  {
+   "t": "Informalidad y salario real",
+   "eq": [
+    "w = \\frac{W}{P}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(w\\): salario real, poder de compra del salario en bienes.",
+      "en": "\\(w\\): real wage, the purchasing power of the wage in goods."
+     },
+     {
+      "es": "\\(W\\): salario nominal, en pesos corrientes.",
+      "en": "\\(W\\): nominal wage, in current pesos."
+     },
+     {
+      "es": "\\(P\\): nivel de precios de la economía, medido por el índice de precios al consumidor (IPC).",
+      "en": "\\(P\\): the economy's price level, measured by the consumer price index (CPI)."
+     }
+    ]
+   ],
+   "p": [
+    "La presentación da dos definiciones de informalidad. La legal se aplica a los asalariados: es informal el asalariado sin descuento jubilatorio. La productiva, de la OIT, se aplica al total de ocupados e incluye todo trabajo remunerado, asalariado o por cuenta propia, que no esté registrado, regulado o protegido por marcos legales, además del trabajo no remunerado en una empresa que genera ingresos. Operativamente cuenta a los asalariados sin descuento jubilatorio, los cuentapropistas no profesionales de baja retribución, los empleadores de microempresas de menos de 5 trabajadores con retribución menor al promedio y los trabajadores familiares sin salario. Con esa definición hay 9,3 millones de ocupados informales, el 45 % del total.",
+    "El salario real es el cociente entre el salario nominal y el nivel de precios medido por el IPC, y mide cuántos bienes se pueden comprar con la remuneración. Cuando el salario se mide en dólares la relación con el tipo de cambio es inversa: si sube el dólar, cae el salario medido en esa moneda. Lectura propia: por eso las comparaciones internacionales del salario argentino en dólares son tan volátiles; reflejan tanto el poder de compra como los saltos cambiarios."
+   ]
+  },
+  {
+   "t": "Pobreza: conceptos y NBI",
+   "p": [
+    "Con datos de la presentación, 18,5 millones de personas son pobres, el 40 % de la población; la incidencia es de 55 % entre niños y adolescentes, 38 % entre adultos en edad laboral y 15 % entre adultos mayores. Pero el término pobreza tiene muchos significados: Paul Spicker (1999) identifica 11, entre ellos necesidad, estándar de vida, insuficiencia de recursos, privación múltiple, exclusión, desigualdad y dependencia.",
+    "Medir pobreza exige dos pasos. La identificación responde quiénes son pobres: hay que elegir una variable cuantificable que indique el bienestar (ingreso, consumo, proporción de gasto en alimentos, indicadores nutricionales o antropométricos, necesidades básicas) y un umbral. Los resultados son sensibles a esa elección. Los enfoques se dividen en relativos y absolutos: el relativo define pobre respecto de otros, como la OCDE y la Unión Europea, que usan el 50 % de la mediana nacional del ingreso; el absoluto fija un umbral independiente del ingreso de un grupo de referencia, como los 2 dólares diarios del Banco Mundial que cita la presentación, y se le critica que no incorpora requerimientos sociales cambiantes. También se dividen en unidimensionales, que miran solo el ingreso, y multidimensionales, que usan varios indicadores y exigen más datos.",
+    "Una buena medida de pobreza debe cumplir axiomas: el focal (no reacciona a cambios en el ingreso de los no pobres), el de monotonicidad (la pobreza sube si cae el ingreso de un pobre), el de monotonicidad en subgrupos (si sube la pobreza de un grupo, sube la total), el de simetría (permutar ingresos no la cambia) y el de transferencia (una transferencia de un pobre a uno menos pobre debe aumentarla).",
+    "En la Argentina el método multidimensional es el de necesidades básicas insatisfechas, que delimita la pobreza estructural y requiere censos. Un hogar tiene NBI si presenta al menos una de cinco privaciones: vivienda inadecuada (inquilinato, hotel o pensión, vivienda precaria o no destinada a habitación); condiciones sanitarias (sin retrete); hacinamiento crítico (más de tres personas por cuarto); asistencia escolar (algún niño de 6 a 12 años que no va a la escuela); y capacidad de subsistencia (cuatro o más personas por miembro ocupado y un jefe que no completó el tercer grado de la primaria). Con el censo de 2010, el porcentaje de población con NBI iba de un mínimo de 6 % a un máximo de 25 % entre provincias, con un promedio de 13 %."
+   ]
+  },
+  {
+   "t": "Línea de pobreza: canastas y adultos equivalentes",
+   "eq": [
+    "LI_h = \\Big(\\sum_{j \\in h} a_j\\Big) \\times \\mathit{CBA}, \\qquad LP_h = \\Big(\\sum_{j \\in h} a_j\\Big) \\times \\mathit{CBT}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(LI_h\\), \\(LP_h\\): líneas de indigencia y de pobreza del hogar \\(h\\), en pesos por mes.",
+      "en": "\\(LI_h\\), \\(LP_h\\): indigence and poverty lines of household \\(h\\), in pesos per month."
+     },
+     {
+      "es": "\\(a_j\\): unidades de adulto equivalente del miembro \\(j\\) del hogar, según sexo, edad y actividad (un varón adulto vale 1).",
+      "en": "\\(a_j\\): adult-equivalent units of household member \\(j\\), by sex, age and activity (an adult male counts as 1)."
+     },
+     {
+      "es": "\\(\\sum_{j \\in h}\\): suma sobre todos los miembros del hogar.",
+      "en": "\\(\\sum_{j \\in h}\\): sum over all household members."
+     },
+     {
+      "es": "\\(\\mathit{CBA}\\): canasta básica alimentaria por adulto equivalente, en pesos por mes; \\(\\mathit{CBT}\\): canasta básica total, que agrega bienes y servicios no alimentarios.",
+      "en": "\\(\\mathit{CBA}\\): basic food basket per adult equivalent, in pesos per month; \\(\\mathit{CBT}\\): total basic basket, which adds non-food goods and services."
+     }
+    ]
+   ],
+   "p": [
+    "El método oficial argentino es absoluto y unidimensional: usa solo el ingreso. La canasta básica alimentaria (CBA) es un conjunto de alimentos que satisface requerimientos nutricionales mínimos y refleja el patrón de consumo de una población de referencia; quien no la cubre es indigente. La canasta básica total (CBT) amplía la CBA, mediante el coeficiente de Engel (o de Orchansky), con bienes y servicios no alimentarios como vestimenta, transporte, educación y salud; quien no la cubre es pobre. En julio de 2023 la CBA valía $36.130 y la CBT $80.570 por adulto equivalente.",
+    "El cálculo tiene cinco pasos: se estiman los requerimientos de cada miembro del hogar según sexo, edad y actividad y se expresan en adultos equivalentes; se valoriza la CBA con los precios del IPC; se calcula el coeficiente que relaciona gasto alimentario y total; se obtiene la CBT; y se multiplica la suma de adultos equivalentes del hogar por ambas canastas y se compara con el ingreso total del hogar.",
+    "El ejemplo de la presentación es un hogar del Gran Buenos Aires con una pareja de 35 años y tres hijos de 5, 3 y 1 año, con ingresos de $180.000. Los coeficientes son 1,00 para el esposo, 0,77 para la esposa y 0,60, 0,51 y 0,37 para los hijos: 3,25 adultos equivalentes. La línea de indigencia del hogar es 3,25 × $36.130 = $117.422, de modo que no es indigente; la de pobreza es 3,25 × $80.570 = $261.852, de modo que es pobre. La ventaja del método es que es sencillo de calcular e interpretar; la desventaja, que la tasa de incidencia no cumple los axiomas de monotonicidad y transferencia. La brecha muestra la profundidad: en el primer semestre de 2022, habría que transferir en promedio $14.257 mensuales a cada hogar indigente para erradicar la indigencia, y la brecha de pobreza era de $34.705."
+   ]
+  },
+  {
+   "t": "La familia FGT",
+   "eq": [
+    "I = \\frac{1}{q}\\sum_{i=1}^{q}\\Big(\\frac{z - y_i}{z}\\Big) = \\frac{z - \\bar{y}_p}{z}",
+    "\\mathit{FGT}_{\\alpha} = \\frac{1}{n}\\sum_{i=1}^{q}\\Big(\\frac{z - y_i}{z}\\Big)^{\\alpha}",
+    "PG = \\mathit{FGT}_1 = H \\times I, \\qquad H = \\mathit{FGT}_0 = \\frac{q}{n}",
+    "\\mathit{FGT}_{\\alpha} = \\sum_{k} \\frac{n_k}{n}\\,\\mathit{FGT}_{\\alpha,k}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I\\): brecha media de ingresos de los pobres, entre 0 y 1.",
+      "en": "\\(I\\): mean income gap of the poor, between 0 and 1."
+     },
+     {
+      "es": "\\(q\\): número de pobres; \\(i\\): cada persona pobre.",
+      "en": "\\(q\\): number of poor people; \\(i\\): each poor person."
+     },
+     {
+      "es": "\\(z\\): línea de pobreza, en pesos; \\(y_i\\): ingreso de la persona \\(i\\).",
+      "en": "\\(z\\): poverty line, in pesos; \\(y_i\\): income of person \\(i\\)."
+     },
+     {
+      "es": "\\(\\bar{y}_p\\): ingreso medio de los pobres.",
+      "en": "\\(\\bar{y}_p\\): mean income of the poor."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{FGT}_{\\alpha}\\): índice de Foster, Greer y Thorbecke con parámetro \\(\\alpha\\), entre 0 y 1.",
+      "en": "\\(\\mathit{FGT}_{\\alpha}\\): Foster–Greer–Thorbecke index with parameter \\(\\alpha\\), between 0 and 1."
+     },
+     {
+      "es": "\\(\\alpha\\): aversión a la pobreza; cuanto mayor, más peso tienen los más pobres.",
+      "en": "\\(\\alpha\\): poverty aversion; the larger it is, the more weight the poorest get."
+     },
+     {
+      "es": "\\(n\\): población total; \\(q\\): número de pobres; \\(z\\): línea; \\(y_i\\): ingreso de la persona \\(i\\).",
+      "en": "\\(n\\): total population; \\(q\\): number of poor; \\(z\\): line; \\(y_i\\): income of person \\(i\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(PG\\): brecha de pobreza (FGT con \\(\\alpha = 1\\)), la profundidad.",
+      "en": "\\(PG\\): poverty gap (FGT with \\(\\alpha = 1\\)), the depth."
+     },
+     {
+      "es": "\\(H\\): incidencia o tasa de pobreza (FGT con \\(\\alpha = 0\\)), proporción de pobres.",
+      "en": "\\(H\\): headcount ratio (FGT with \\(\\alpha = 0\\)), share of poor people."
+     },
+     {
+      "es": "\\(I\\): brecha media de los pobres; \\(q\\), \\(n\\): pobres y población total.",
+      "en": "\\(I\\): mean gap of the poor; \\(q\\), \\(n\\): poor and total population."
+     }
+    ],
+    [
+     {
+      "es": "\\(k\\): cada subgrupo de la población (por ejemplo, una zona); \\(n_k\\): personas en el subgrupo \\(k\\).",
+      "en": "\\(k\\): each population subgroup (for example, a zone); \\(n_k\\): people in subgroup \\(k\\)."
+     },
+     {
+      "es": "\\(\\mathit{FGT}_{\\alpha,k}\\): índice FGT calculado dentro del subgrupo \\(k\\); \\(n\\): población total.",
+      "en": "\\(\\mathit{FGT}_{\\alpha,k}\\): FGT index computed within subgroup \\(k\\); \\(n\\): total population."
+     }
+    ]
+   ],
+   "p": [
+    "La incidencia H solo cuenta pobres. Para medir profundidad, la presentación define primero la brecha media de ingresos I, el promedio de las brechas normalizadas respecto de la línea, que vale 0 cuando el ingreso medio de los pobres se acerca a la línea y 1 cuando es cero. Cumple monotonicidad, pero da un resultado contraintuitivo. Con cuatro personas de ingresos 10.000, 20.000, 30.000 y 40.000 y una línea de 36.000, hay tres pobres con ingreso medio 20.000 e I = 0,44. Si el tercero pasa a ganar 38.000 y deja de ser pobre, el ingreso medio de los pobres cae a 15.000 e I sube a 0,58: la pobreza parece aumentar cuando un pobre salió de ella.",
+    "Foster, Greer y Thorbecke (1984) propusieron una familia de índices que cumple los axiomas deseables, con un parámetro α de aversión a la pobreza. Con α = 0 el índice es la incidencia H, que no cumple los axiomas de dominancia; con α = 1 cumple monotonicidad; con α = 2 cumple transferencia; con α ≥ 3, sensibilidad a transferencias; y si α tiende a infinito solo importa el más pobre. Los índices van de 0 a 1, cumplen FGT0 ≥ FGT1 ≥ FGT2 y, si todos los pobres tienen ingreso cero, valen H.",
+    "FGT1, la brecha de pobreza PG, mide la profundidad y es igual a H por I. Se interpreta como la insuficiencia agregada de ingreso de los pobres como proporción del ingreso necesario para que todos estén sobre la línea: el monto mínimo para erradicar la pobreza si se pudiera identificar a los pobres. En el ejemplo, PG pasa de 0,33 a 0,29 cuando el tercero sale de la pobreza, corrigiendo el problema de I. Si en cambio el más pobre cae de 10.000 a 5.000, I sube de 0,44 a 0,49 y PG de 0,33 a 0,37, mientras H no se mueve.",
+    "FGT2, la brecha al cuadrado, mide la severidad: al elevar al cuadrado da más peso a quienes están más lejos de la línea, y es, dice Caullo, el indicador más usado que cumple todos los axiomas relevantes. En el ejemplo, si el más pobre pierde 4.000 (de 10.000 a 6.000) y esos 4.000 van a un pobre menos pobre (de 30.000 a 34.000), H y PG no cambian, pero FGT2 sube de 0,18 a 0,23. La familia, además, se descompone aditivamente: el índice total es la suma de los índices de cada grupo ponderados por su proporción de personas. Con ocho personas de ingresos de 10.000 a 80.000 y una línea de 50.000, H = 0,5, PG = 0,25 y FGT2 = 0,15; repartidas en tres zonas con H de 0,67, 0,50 y 0,33 y pesos 3/8, 2/8 y 3/8, la suma ponderada vuelve a dar 0,5."
+   ]
+  },
+  {
+   "t": "Desigualdad: Gini, Atkinson y brechas",
+   "eq": [
+    "G = \\frac{A}{A + B}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G\\): coeficiente de Gini, entre 0 (igualdad absoluta) y 1 (una persona se lleva todo).",
+      "en": "\\(G\\): Gini coefficient, between 0 (absolute equality) and 1 (one person takes everything)."
+     },
+     {
+      "es": "\\(A\\): área entre la línea de perfecta igualdad (la diagonal) y la curva de Lorenz.",
+      "en": "\\(A\\): area between the line of perfect equality (the diagonal) and the Lorenz curve."
+     },
+     {
+      "es": "\\(B\\): área debajo de la curva de Lorenz; \\(A + B\\) es todo el triángulo bajo la diagonal.",
+      "en": "\\(B\\): area under the Lorenz curve; \\(A + B\\) is the whole triangle under the diagonal."
+     }
+    ]
+   ],
+   "p": [
+    "La desigualdad es la dispersión de una distribución, del ingreso, del consumo o de otro indicador de bienestar; es un concepto más amplio que la pobreza y más estricto que el bienestar. Ningún índice es mejor que los demás: su utilidad depende de qué propiedades cumple. La presentación lista siete: independencia de escala (no cambia si todos los ingresos se multiplican por lo mismo), independencia del tamaño de la población, independencia ante cambios de posición, principio débil de transferencias (una transferencia de un rico a un pobre reduce la desigualdad), principio fuerte de Dalton-Pigou (esa reducción es mayor cuanto más lejos están los dos hogares), descomposición aditiva en desigualdad intra e intergrupal, y rango entre 0 y 1.",
+    "El coeficiente de Gini es el índice más usado. Se basa en la curva de Lorenz, que acumula la proporción del ingreso contra la proporción de la población ordenada de menor a mayor; la diagonal representa la igualdad perfecta, con Gini 0. Si dos curvas de Lorenz se cruzan, advierte Caullo, el Gini deja de ser un indicador válido para compararlas (lectura propia: más precisamente, distintos índices pueden ordenar esas distribuciones de manera opuesta).",
+    "Atkinson parte de que toda medida de desigualdad implica un juicio de valor implícito y propone una función de bienestar social que lo haga explícito. Su concepto central es el ingreso equivalente igualitariamente distribuido: el ingreso per cápita que, si lo tuvieran todos, daría el mismo bienestar total que la distribución efectiva. Otra medida simple es la brecha de ingresos, cuántas veces el ingreso del decil más alto supera al del más bajo, calculada con la mediana para evitar el sesgo de los valores atípicos.",
+    "La serie que muestra la presentación (Gran Buenos Aires hasta 1992 y luego los principales aglomerados urbanos) tiene al Gini subiendo de 0,376 en 1980 a 0,536 en 2002, y bajando después hasta 0,418 en el primer semestre de 2015. La pandemia golpeó la distribución: en 2020, según la presentación, los salarios registrados cayeron en promedio 10 % respecto de comienzo de año y la masa de ingresos fijos caería 12 % interanual pese a la asistencia social. Lectura propia: como el 70 % del ingreso familiar sale del trabajo en todos los deciles, la política distributiva no puede separarse del mercado laboral; las transferencias compensan, pero la desigualdad se juega en el empleo, la informalidad y el salario real.",
+    "Lectura propia: la presentación no tiene trabajo econométrico; su trabajo empírico es descriptivo, con microdatos de la EPH (51.643 registros muestrales expandidos a 28,6 millones de personas de 31 aglomerados urbanos). El paso siguiente sería acompañar cada tasa con su error estándar, porque diferencias de pocas décimas entre trimestres o aglomerados pueden no ser significativas con una encuesta de ese tamaño."
+   ]
+  }
+ ],
+ "claves": [
+  "Actividad, desocupación y empleo deben leerse juntos: una desocupación baja puede esconder baja actividad.",
+  "Primer trimestre de 2023: actividad 48,3 %, desocupación 6,9 %, empleo 45,0 %.",
+  "La informalidad productiva de la OIT abarca al 45 % de los ocupados, 9,3 millones de personas.",
+  "La pobreza se mide por NBI (multidimensional, estructural, con censos) o por línea (ingreso contra canastas por adulto equivalente).",
+  "La incidencia no cumple monotonicidad ni transferencia; la brecha media I da resultados contraintuitivos.",
+  "La familia FGT pondera las brechas con un parámetro de aversión α: H, PG = H × I y FGT2, descomponibles por grupos.",
+  "El Gini se basa en la curva de Lorenz; Atkinson explicita el juicio de valor con el ingreso equivalente igualitariamente distribuido."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Santiago del Estero–La Banda tenía en 2020 una desocupación de 1,8 %. ¿Por qué eso no indica un buen mercado laboral?",
+    "en": "Santiago del Estero–La Banda had 1.8% unemployment in 2020. Why does that not indicate a good labor market?"
+   },
+   "op": {
+    "es": [
+     "Porque la tasa de desocupación se mide sobre la población total",
+     "Porque la tasa de actividad era muy baja (33,2 %): poca gente buscaba trabajo",
+     "Porque la informalidad no cuenta como empleo",
+     "Porque es un dato de un solo trimestre"
+    ],
+    "en": [
+     "Because the unemployment rate is measured over total population",
+     "Because the activity rate was very low (33.2%): few people were looking for work",
+     "Because informal work does not count as employment",
+     "Because it is a single-quarter figure"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con baja actividad, la desocupación puede ser baja porque muchos no buscan trabajo; por eso los tres indicadores se leen juntos.",
+    "en": "With low activity, unemployment can be low because many are not looking for work; that is why the three indicators are read together."
+   },
+   "id": "fisc-general-09-q1"
+  },
+  {
+   "q": {
+    "es": "Con una tasa de actividad de 48,3 % y una desocupación de 6,9 %, ¿cuánto da la tasa de empleo?",
+    "en": "With an activity rate of 48.3% and unemployment of 6.9%, what is the employment rate?"
+   },
+   "op": {
+    "es": [
+     "41,4 %",
+     "51,7 %",
+     "45,0 %",
+     "93,1 %"
+    ],
+    "en": [
+     "41.4%",
+     "51.7%",
+     "45.0%",
+     "93.1%"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "48,3 × (1 − 0,069) ≈ 45,0: los ocupados son la PEA menos los desocupados.",
+    "en": "48.3 × (1 − 0.069) ≈ 45.0: the employed are the PEA minus the unemployed."
+   },
+   "id": "fisc-general-09-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué diferencia al enfoque relativo de pobreza del absoluto?",
+    "en": "What distinguishes the relative poverty approach from the absolute one?"
+   },
+   "op": {
+    "es": [
+     "El relativo usa varios indicadores y el absoluto uno solo",
+     "El relativo requiere censos y el absoluto encuestas",
+     "El relativo mide la severidad y el absoluto la incidencia",
+     "El relativo define pobre respecto de otros (como el 50 % de la mediana); el absoluto fija un umbral independiente del grupo"
+    ],
+    "en": [
+     "The relative uses several indicators and the absolute only one",
+     "The relative requires censuses and the absolute surveys",
+     "The relative measures severity and the absolute the headcount",
+     "The relative defines poor relative to others (like 50% of the median); the absolute sets a threshold independent of the group"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La OCDE y la UE usan el 50 % de la mediana (relativo); el Banco Mundial, un monto diario fijo (absoluto). Uni o multidimensional es otra distinción.",
+    "en": "The OECD and EU use 50% of the median (relative); the World Bank a fixed daily amount (absolute). Uni- versus multidimensional is another distinction."
+   },
+   "id": "fisc-general-09-q3"
+  },
+  {
+   "q": {
+    "es": "Un hogar de 3,25 adultos equivalentes gana $180.000 en julio de 2023 (CBA $36.130, CBT $80.570). ¿Cómo se clasifica?",
+    "en": "A household of 3.25 adult equivalents earns $180,000 in July 2023 (CBA $36,130, CBT $80,570). How is it classified?"
+   },
+   "op": {
+    "es": [
+     "Pobre pero no indigente",
+     "Indigente",
+     "No pobre",
+     "No se puede saber sin la región"
+    ],
+    "en": [
+     "Poor but not indigent",
+     "Indigent",
+     "Not poor",
+     "Cannot be known without the region"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Su ingreso supera la línea de indigencia ($117.422) pero no la de pobreza ($261.852).",
+    "en": "Its income exceeds the indigence line ($117,422) but not the poverty line ($261,852)."
+   },
+   "id": "fisc-general-09-q4"
+  },
+  {
+   "q": {
+    "es": "Con línea 36.000 e ingresos 10.000, 20.000, 30.000 y 40.000, el tercero pasa a 38.000. ¿Qué pasa con la brecha media I y con PG?",
+    "en": "With line 36,000 and incomes 10,000, 20,000, 30,000 and 40,000, the third rises to 38,000. What happens to the mean gap I and to PG?"
+   },
+   "op": {
+    "es": [
+     "Ambas bajan",
+     "I sube de 0,44 a 0,58 y PG baja de 0,33 a 0,29",
+     "I baja y PG sube",
+     "Ninguna cambia porque H no cambia"
+    ],
+    "en": [
+     "Both fall",
+     "I rises from 0.44 to 0.58 and PG falls from 0.33 to 0.29",
+     "I falls and PG rises",
+     "Neither changes because H does not change"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Al salir el pobre más rico, el ingreso medio de los pobres cae y I sube; PG = H × I baja porque H cae de 0,75 a 0,50.",
+    "en": "When the richest poor person exits, the poor's mean income falls and I rises; PG = H × I falls because H drops from 0.75 to 0.50."
+   },
+   "id": "fisc-general-09-q5"
+  },
+  {
+   "q": {
+    "es": "Se pasan 4.000 del pobre más pobre a un pobre menos pobre, sin que nadie cruce la línea. ¿Qué índice lo detecta?",
+    "en": "4,000 are moved from the poorest person to a less poor one, with nobody crossing the line. Which index detects it?"
+   },
+   "op": {
+    "es": [
+     "La incidencia H",
+     "La brecha PG",
+     "FGT2",
+     "Ninguno de la familia FGT"
+    ],
+    "en": [
+     "The headcount H",
+     "The gap PG",
+     "FGT2",
+     "None of the FGT family"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "H y PG no cambian; FGT2 sube de 0,18 a 0,23 porque eleva las brechas al cuadrado y cumple el axioma de transferencia.",
+    "en": "H and PG do not change; FGT2 rises from 0.18 to 0.23 because it squares the gaps and satisfies the transfer axiom."
+   },
+   "id": "fisc-general-09-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué es el ingreso equivalente igualitariamente distribuido de Atkinson?",
+    "en": "What is Atkinson's equally distributed equivalent income?"
+   },
+   "op": {
+    "es": [
+     "La mediana del ingreso",
+     "El ingreso per cápita que, si lo tuvieran todos, daría el mismo bienestar total que la distribución efectiva",
+     "El ingreso del decil más bajo",
+     "El ingreso medio menos la brecha de pobreza"
+    ],
+    "en": [
+     "Median income",
+     "The per capita income that, if everyone had it, would give the same total welfare as the actual distribution",
+     "Income of the lowest decile",
+     "Mean income minus the poverty gap"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es la pieza con la que Atkinson hace explícito el juicio de valor sobre la desigualdad.",
+    "en": "It is the piece Atkinson uses to make the value judgment about inequality explicit."
+   },
+   "id": "fisc-general-09-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué privación NO forma parte de los cinco indicadores de NBI?",
+    "en": "Which deprivation is NOT one of the five UBN indicators?"
+   },
+   "op": {
+    "es": [
+     "Hacinamiento crítico (más de tres personas por cuarto)",
+     "Hogar sin retrete",
+     "Niño de 6 a 12 años que no asiste a la escuela",
+     "Ingreso por debajo de la canasta básica total"
+    ],
+    "en": [
+     "Critical overcrowding (more than three people per room)",
+     "Household without a toilet",
+     "Child aged 6 to 12 not attending school",
+     "Income below the total basic basket"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El ingreso contra la CBT es el método de línea de pobreza; las NBI son vivienda, sanitarias, hacinamiento, asistencia escolar y capacidad de subsistencia.",
+    "en": "Income against the CBT is the poverty-line method; UBN covers housing, sanitation, overcrowding, school attendance and subsistence capacity."
+   },
+   "id": "fisc-general-09-q8"
+  }
+ ],
+ "palabras": 2263,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué las tasas de actividad, desocupación y empleo deben leerse juntas?",
+    "en": "Why should activity, unemployment and employment rates be read together?"
+   },
+   "a": {
+    "es": "Porque la desocupación se mide sobre la PEA y puede ser baja si poca gente busca trabajo; Caullo muestra el caso de Santiago del Estero en 2020, con 1,8 % de desocupación y 33,2 % de actividad.",
+    "en": "Because unemployment is measured over the PEA and can be low if few people seek work; Caullo shows Santiago del Estero in 2020, with 1.8% unemployment and 33.2% activity."
+   },
+   "id": "fisc-general-09-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la informalidad laboral en su definición productiva?",
+    "en": "What is labor informality in its productive definition?"
+   },
+   "a": {
+    "es": "Todo trabajo remunerado no registrado, regulado ni protegido, asalariado o por cuenta propia, más el trabajo no remunerado en empresas que generan ingresos; según la OIT, como la presenta Caullo, alcanza al 45 % de los ocupados argentinos.",
+    "en": "All paid work that is not registered, regulated or protected, wage or self-employed, plus unpaid work in income-generating firms; per the ILO, as Caullo presents it, it covers 45% of Argentine workers."
+   },
+   "id": "fisc-general-09-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo se calcula la línea de pobreza de un hogar en la Argentina?",
+    "en": "How is a household's poverty line computed in Argentina?"
+   },
+   "a": {
+    "es": "Se suman los adultos equivalentes del hogar según sexo y edad y se multiplican por la CBT (o la CBA para la indigencia); si el ingreso no alcanza, el hogar es pobre. Caullo lo ilustra con una familia de 3,25 adultos equivalentes.",
+    "en": "Add up the household's adult equivalents by sex and age and multiply by the CBT (or the CBA for indigence); if income falls short, the household is poor. Caullo illustrates it with a family of 3.25 adult equivalents."
+   },
+   "id": "fisc-general-09-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué axiomas no cumple la tasa de incidencia de la pobreza?",
+    "en": "Which axioms does the poverty headcount fail?"
+   },
+   "a": {
+    "es": "Monotonicidad y transferencia: no reacciona si un pobre empobrece más ni si se transfiere ingreso entre pobres. Así lo señala Caullo al presentar la línea de pobreza.",
+    "en": "Monotonicity and transfer: it does not react if a poor person gets poorer or if income is transferred among the poor. Caullo points this out when presenting the poverty line."
+   },
+   "id": "fisc-general-09-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué mide el parámetro α de los índices FGT?",
+    "en": "What does the α parameter of FGT indices measure?"
+   },
+   "a": {
+    "es": "La aversión a la pobreza: con 0 es la incidencia, con 1 la brecha (profundidad), con 2 la severidad, y si tiende a infinito solo importa el más pobre. Foster, Greer y Thorbecke (1984), en la presentación de Caullo.",
+    "en": "Poverty aversion: 0 gives the headcount, 1 the gap (depth), 2 severity, and as it tends to infinity only the poorest matters. Foster, Greer and Thorbecke (1984), in Caullo's presentation."
+   },
+   "id": "fisc-general-09-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Por qué la brecha media de los pobres puede dar un resultado contraintuitivo?",
+    "en": "Why can the mean gap of the poor give a counterintuitive result?"
+   },
+   "a": {
+    "es": "Porque si sale de la pobreza el pobre menos pobre, el ingreso medio de los que quedan cae y la brecha sube: en el ejemplo de Caullo pasa de 0,44 a 0,58 aunque alguien dejó de ser pobre.",
+    "en": "Because if the least poor person exits poverty, the remaining poor's mean income falls and the gap rises: in Caullo's example it goes from 0.44 to 0.58 even though someone stopped being poor."
+   },
+   "id": "fisc-general-09-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué aporta el índice de Atkinson frente al Gini?",
+    "en": "What does the Atkinson index add relative to the Gini?"
+   },
+   "a": {
+    "es": "Hace explícito el juicio de valor con una función de bienestar social y el ingreso equivalente igualitariamente distribuido, en vez de dejarlo implícito. Así lo presenta Caullo.",
+    "en": "It makes the value judgment explicit with a social welfare function and the equally distributed equivalent income, instead of leaving it implicit. So Caullo presents it."
+   },
+   "id": "fisc-general-09-t7"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo evolucionó la desigualdad urbana argentina entre 1980 y 2015?",
+    "en": "How did Argentine urban inequality evolve between 1980 and 2015?"
+   },
+   "a": {
+    "es": "El Gini subió de 0,376 en 1980 a 0,536 en 2002 y bajó a 0,418 en el primer semestre de 2015, según la serie que muestra Caullo (Gran Buenos Aires hasta 1992, luego los principales aglomerados).",
+    "en": "The Gini rose from 0.376 in 1980 to 0.536 in 2002 and fell to 0.418 in the first half of 2015, according to the series Caullo shows (Greater Buenos Aires until 1992, then the main urban areas)."
+   },
+   "id": "fisc-general-09-t8"
+  }
+ ]
+}

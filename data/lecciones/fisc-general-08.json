@@ -1,0 +1,426 @@
+{
+ "id": "fisc-general-08",
+ "cat": "fisc-general",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Producción pública y burocracia: cuándo el Estado produce y por qué rinde menos",
+ "bajada": "Financiar no es producir: la clasificación de bienes, el monopolio natural y sus tres salidas, las alternativas a la empresa pública (regulación, contratación, bonos) y los incentivos que explican la ineficiencia estatal y el comportamiento de los burócratas.",
+ "fuentes": [
+  1152
+ ],
+ "cita": "Fioretti y Kornfeld, «Producción pública y burocracia» (Finanzas Públicas, FCE-UNC, septiembre de 2020), sobre Stiglitz, La economía del sector público (1998), cap. 7",
+ "intro": "Las diapositivas de la cátedra de Finanzas Públicas de la FCE-UNC, preparadas por los adscriptos Victoria Fioretti y Pablo Kornfeld sobre el capítulo 7 de Stiglitz, parten de una distinción que ordena todo el tema: el Estado influye en la producción privada con impuestos, subvenciones, gastos fiscales y reglamentaciones, pero también puede producir él mismo, y financiar no es lo mismo que producir. Que exista una falla de mercado justifica algún tipo de intervención, no necesariamente una empresa pública. Las preguntas son tres: cómo debe intervenir el Estado, si debe producir lo que financia y si es, como se suele afirmar, un productor más ineficiente que el sector privado. La presentación recorre la clasificación de los bienes, el caso del monopolio natural, los mecanismos alternativos a la producción estatal, la evidencia sobre eficiencia, las causas de la ineficiencia pública y la lógica de la burocracia.",
+ "secciones": [
+  {
+   "t": "Qué bienes y quién los produce",
+   "p": [
+    "La presentación clasifica los bienes con dos criterios. Un bien es excluyente si se puede impedir que alguien lo use, y rival si el consumo de uno reduce lo que queda para otros. Cruzando ambos salen cuatro casos: los bienes privados son excluyentes y rivales; los recursos de uso común son rivales pero no excluyentes; los bienes de acceso limitado son excluyentes pero no rivales; y los bienes públicos no son ni excluyentes ni rivales.",
+    "Sobre esa clasificación se monta la separación entre producir y financiar. Hay cuatro combinaciones: bienes privados producidos y financiados por el Estado; bienes privados producidos por empresas privadas pero financiados por el Estado; bienes públicos producidos y financiados por el Estado; y bienes públicos producidos por privados con financiamiento estatal. La enseñanza es que el carácter público de un bien dice algo sobre quién debe pagarlo, pero no sobre quién debe fabricarlo.",
+    "Una de las actividades productivas más importantes del Estado es la administración de las leyes y los servicios públicos. El vínculo entre electorado y programas tiene una cadena: los ciudadanos eligen representantes, los representantes legislan programas y nombran funcionarios para ejecutarlos, los funcionarios brindan servicios al electorado, y los grupos de presión influyen en todas las etapas. Al conjunto de funcionarios responsables de administrar los programas se lo llama burocracia del Estado."
+   ]
+  },
+  {
+   "t": "El monopolio natural y sus tres salidas",
+   "eq": [
+    "\\mathit{IMg}(Q^{*}) = \\mathit{CMg}(Q^{*})",
+    "P(Q_0) = \\mathit{CMg}(Q_0)",
+    "P(Q_1) = \\mathit{CMe}(Q_1)",
+    "\\text{Pérdida en } Q_0 = \\big[\\mathit{CMe}(Q_0) - P(Q_0)\\big]\\,Q_0 > 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Q^{*}\\): cantidad que elige un monopolista que maximiza beneficios.",
+      "en": "\\(Q^{*}\\): quantity chosen by a profit-maximizing monopolist."
+     },
+     {
+      "es": "\\(\\mathit{IMg}\\): ingreso marginal, lo que agrega al ingreso total vender una unidad más, en pesos por unidad.",
+      "en": "\\(\\mathit{IMg}\\): marginal revenue, what one more unit sold adds to total revenue, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMg}\\): costo marginal, lo que cuesta producir una unidad más, en pesos por unidad.",
+      "en": "\\(\\mathit{CMg}\\): marginal cost, the cost of producing one more unit, in pesos per unit."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q_0\\): cantidad eficiente en la asignación, donde el precio que los consumidores están dispuestos a pagar iguala el costo marginal.",
+      "en": "\\(Q_0\\): allocatively efficient quantity, where the price consumers are willing to pay equals marginal cost."
+     },
+     {
+      "es": "\\(P(\\cdot)\\): precio de demanda, la altura de la curva de demanda D en cada cantidad, en pesos por unidad.",
+      "en": "\\(P(\\cdot)\\): demand price, the height of demand curve D at each quantity, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMg}\\): costo marginal, en pesos por unidad.",
+      "en": "\\(\\mathit{CMg}\\): marginal cost, in pesos per unit."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q_1\\): cantidad en la que la demanda corta al costo medio; la firma cubre sus costos sin subsidio.",
+      "en": "\\(Q_1\\): quantity at which demand crosses average cost; the firm covers its costs without a subsidy."
+     },
+     {
+      "es": "\\(P(\\cdot)\\): precio de demanda, en pesos por unidad.",
+      "en": "\\(P(\\cdot)\\): demand price, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMe}\\): costo medio, costo total dividido por la cantidad, en pesos por unidad.",
+      "en": "\\(\\mathit{CMe}\\): average cost, total cost divided by quantity, in pesos per unit."
+     }
+    ],
+    [
+     {
+      "es": "Pérdida en \\(Q_0\\): lo que la firma deja de cubrir si vende \\(Q_0\\) al precio que iguala el costo marginal, en pesos; es el subsidio que necesitaría (lectura propia: las diapositivas lo muestran en el gráfico, no como fórmula).",
+      "en": "Loss at \\(Q_0\\): what the firm fails to cover if it sells \\(Q_0\\) at the price equal to marginal cost, in pesos; it is the subsidy it would need (own reading: the slides show it in the graph, not as a formula)."
+     },
+     {
+      "es": "\\(\\mathit{CMe}(Q_0) - P(Q_0)\\): pérdida por unidad, positiva porque con costo medio decreciente el costo marginal está debajo del costo medio.",
+      "en": "\\(\\mathit{CMe}(Q_0) - P(Q_0)\\): loss per unit, positive because with declining average cost marginal cost lies below average cost."
+     },
+     {
+      "es": "\\(Q_0\\): cantidad eficiente.",
+      "en": "\\(Q_0\\): efficient quantity."
+     }
+    ]
+   ],
+   "p": [
+    "El argumento clásico a favor de la intervención es la falla de mercado, y el ejemplo que desarrolla la presentación es el monopolio natural: los costos medios son decrecientes en todo el rango relevante de producción, de modo que la eficiencia exige que haya una sola empresa. El problema es que la maximización del beneficio no es compatible con la eficiencia en la asignación. El monopolista produce donde el ingreso marginal iguala al costo marginal, en Q*, mientras que la cantidad eficiente es Q0, donde la demanda corta al costo marginal. Pero producir Q0 da pérdidas, porque con costo medio decreciente el costo marginal queda por debajo del costo medio.",
+    "La primera solución es subvencionar a la firma para que produzca Q0, el primer óptimo. Su ventaja es que se produce la cantidad óptima. Sus problemas son que la subvención debe financiarse con impuestos que pueden introducir distorsiones, que no es obvio que sea equitativo que quienes no usan el bien lo paguen, y que es difícil determinar cuánto subsidiar.",
+    "La segunda solución es suponer que hay competencia potencial, o bien obligar a la firma a operar donde la demanda iguala al costo medio, en Q1. No hace falta subvención, pero tampoco se produce la cantidad eficiente: Q1 queda entre Q* y Q0. Es la lógica de una regulación que fija tarifas para cubrir costos.",
+    "La tercera solución son las subvenciones cruzadas: cobrar más por algunos bienes o servicios para subvencionar otros, lo que es posible cuando la empresa produce varios bienes. La ventaja es que se puede producir la cantidad óptima sin recurrir a impuestos generales; el problema son las cuestiones políticas que aparecen al fijar qué precios suben y cuáles bajan. Lectura propia: las tres salidas cambian ineficiencia por otra cosa, sea la distorsión de los impuestos, una cantidad menor a la óptima o un precio inflado para algunos usuarios; ninguna elimina el costo, solo decide quién lo paga."
+   ]
+  },
+  {
+   "t": "Producir, regular o contratar",
+   "p": [
+    "La existencia de fallas de mercado no implica que el Estado deba producir. Quienes defienden la regulación y los impuestos dan tres argumentos: permiten una política nacional más coherente y eficiente, dan una estimación más clara de los costos de cada objetivo, y las empresas privadas tienen más incentivos a ser eficientes. Quienes defienden la producción estatal dan cuatro: la regulación y los impuestos no son eficaces, el gobierno puede tener múltiples objetivos, en algunas actividades es difícil controlar la calidad y los impuestos y subvenciones pueden generar distorsiones.",
+    "Entre la producción estatal y la mera regulación hay mecanismos intermedios para que el Estado suministre bienes sin fabricarlos. El primero es la contratación al sector privado, que tiene cuatro problemas: es difícil controlar la calidad de lo licitado, suele haber pocos licitadores, los costos son inciertos y puede haber corrupción en la licitación. El segundo es el sistema de bonos (vouchers), en el que el Estado entrega a los usuarios un vale para comprar el servicio a quien quieran. Tiene dos problemas: no hay garantías de que los usuarios sean mejores que el Estado fiscalizando la calidad, y puede aumentar la estratificación social, con la educación como ejemplo.",
+    "Lectura propia: las dos listas de problemas de la contratación y los bonos son, en el fondo, problemas de información y de competencia; la contratación funciona mejor cuando la calidad es verificable y hay muchos oferentes, y los bonos cuando los usuarios pueden juzgar lo que reciben y moverse entre proveedores."
+   ]
+  },
+  {
+   "t": "¿Son menos eficientes las empresas públicas?",
+   "p": [
+    "El punto de comparación entre empresas públicas y privadas es la eficiencia. Hay estudios que confirman la ineficiencia del sector público, pero la presentación advierte que el Estado no tiene el monopolio de las ineficiencias, y pregunta si hay alguna prueba de que el despilfarro sea mayor en el sector público que en el privado. La comparación es difícil por dos razones: hay pocos estudios sobre el tema y no es fácil fijar criterios de comparación, porque una empresa pública puede perseguir objetivos que una privada no tiene.",
+    "Para explicar por qué se comportan distinto, la presentación pone el acento en los incentivos, organizativos e individuales. Los organizativos son dos: hay poca competencia y no existe riesgo de quiebra, lo que en la literatura se suele llamar restricción presupuestaria blanda (lectura propia: el término no aparece en las diapositivas). Los individuales también son dos: las restricciones de la estructura salarial, que impiden premiar el buen desempeño, y la estabilidad en el empleo, que reduce el costo de rendir poco.",
+    "Lectura propia: la diapositiva no presenta trabajo econométrico propio. La pregunta que deja abierta, si las empresas públicas despilfarran más, se contrastaría comparando costos por unidad de producto entre firmas públicas y privadas de un mismo sector y con la misma tecnología, o siguiendo a una misma firma antes y después de una privatización, con el cuidado de no confundir eficiencia con el cumplimiento de objetivos sociales distintos de la ganancia."
+   ]
+  },
+  {
+   "t": "La burocracia",
+   "p": [
+    "Las actividades administrativas se diferencian de las productivas en tres cosas: es difícil medir el rendimiento, hay multiplicidad de objetivos y la tecnología es ambigua, es decir, no está claro cómo se transforman los insumos en resultados. Eso hace que el control por resultados, que en una empresa privada ejerce el mercado, sea mucho más débil.",
+    "La pregunta central es qué maximizan los funcionarios. La respuesta de la presentación es que tratan de maximizar el tamaño de su organismo y compiten con otros funcionarios por los fondos, de modo que la competencia burocrática reemplaza a la competencia de mercado. Lectura propia: es la hipótesis que en la literatura se asocia a Niskanen, y su implicancia es que los organismos tienden a ser más grandes de lo que serían si se eligiera su tamaño mirando solo el beneficio social, porque el burócrata valora el presupuesto en sí mismo.",
+    "Lectura propia: el tema se conecta con la economía política que viene después en la materia. Si los funcionarios compiten por fondos y los grupos de presión actúan en todas las etapas, la ineficiencia pública no es solo un problema técnico de gestión sino de incentivos en la cadena que va del votante al servicio, y las reformas que funcionan son las que cambian esos incentivos: medir resultados donde se pueda, introducir competencia, contratar afuera lo verificable."
+   ]
+  }
+ ],
+ "claves": [
+  "Financiar no es producir: un bien puede ser público y producirlo un privado, o privado y producirlo el Estado.",
+  "Los bienes se clasifican por exclusión y rivalidad: privados, de uso común, de acceso limitado y públicos.",
+  "En el monopolio natural el costo medio decrece; el monopolista produce Q* y la cantidad eficiente Q0 da pérdidas.",
+  "Las tres salidas al monopolio natural son subvencionar, fijar precio igual al costo medio o usar subvenciones cruzadas, cada una con su costo.",
+  "La contratación al sector privado y los bonos son alternativas a producir, con problemas de calidad, competencia, corrupción y estratificación.",
+  "La ineficiencia pública se explica por incentivos: poca competencia, sin riesgo de quiebra, salarios rígidos y estabilidad laboral.",
+  "Los burócratas maximizan el tamaño de su organismo: la competencia por fondos reemplaza a la de mercado."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distinción ordena todo el análisis de la producción pública?",
+    "en": "What distinction organizes the whole analysis of public production?"
+   },
+   "op": {
+    "es": [
+     "Entre bienes de lujo y bienes necesarios",
+     "Entre financiar un bien y producirlo",
+     "Entre impuestos directos e indirectos",
+     "Entre corto y largo plazo"
+    ],
+    "en": [
+     "Between luxury goods and necessities",
+     "Between financing a good and producing it",
+     "Between direct and indirect taxes",
+     "Between short and long run"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El Estado puede financiar lo que producen privados o producir lo que financia; que un bien sea público no dice quién debe fabricarlo.",
+    "en": "The state can finance what private firms produce or produce what it finances; a good being public does not say who should make it."
+   },
+   "id": "fisc-general-08-q1"
+  },
+  {
+   "q": {
+    "es": "Un bien excluyente pero no rival es, en la clasificación de la presentación…",
+    "en": "A good that is excludable but non-rival is, in the presentation's classification…"
+   },
+   "op": {
+    "es": [
+     "Un bien público",
+     "Un recurso de uso común",
+     "Un bien privado",
+     "Un bien de acceso limitado"
+    ],
+    "en": [
+     "A public good",
+     "A common-pool resource",
+     "A private good",
+     "A limited-access good"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Se puede excluir a quien no paga, pero el uso de uno no reduce el de otros: acceso limitado (bien club).",
+    "en": "Non-payers can be excluded, but one person's use does not reduce others': limited access (club good)."
+   },
+   "id": "fisc-general-08-q2"
+  },
+  {
+   "q": {
+    "es": "En un monopolio natural, ¿por qué producir la cantidad eficiente Q0 genera pérdidas?",
+    "en": "In a natural monopoly, why does producing the efficient quantity Q0 cause losses?"
+   },
+   "op": {
+    "es": [
+     "Porque la demanda es inelástica",
+     "Porque el ingreso marginal es negativo en Q0",
+     "Porque con costo medio decreciente el costo marginal está debajo del costo medio",
+     "Porque el costo fijo es nulo"
+    ],
+    "en": [
+     "Because demand is inelastic",
+     "Because marginal revenue is negative at Q0",
+     "Because with declining average cost marginal cost lies below average cost",
+     "Because fixed cost is zero"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En Q0 el precio iguala al costo marginal, que es menor que el costo medio: cada unidad se vende por debajo de su costo medio.",
+    "en": "At Q0 price equals marginal cost, which is below average cost: each unit sells below its average cost."
+   },
+   "id": "fisc-general-08-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja y qué problema tiene obligar al monopolio a operar donde la demanda iguala al costo medio (Q1)?",
+    "en": "What advantage and what problem does forcing the monopoly to operate where demand equals average cost (Q1) have?"
+   },
+   "op": {
+    "es": [
+     "No requiere subvención, pero no se produce la cantidad eficiente",
+     "Produce la cantidad eficiente, pero requiere impuestos",
+     "Elimina las subvenciones cruzadas, pero genera pérdidas",
+     "Maximiza el beneficio, pero reduce la calidad"
+    ],
+    "en": [
+     "It needs no subsidy, but the efficient quantity is not produced",
+     "It produces the efficient quantity, but requires taxes",
+     "It eliminates cross-subsidies, but causes losses",
+     "It maximizes profit, but lowers quality"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La firma cubre costos sin subsidio, pero Q1 queda por debajo de Q0.",
+    "en": "The firm covers costs without a subsidy, but Q1 falls short of Q0."
+   },
+   "id": "fisc-general-08-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el problema que la presentación asigna a las subvenciones cruzadas?",
+    "en": "What problem does the presentation assign to cross-subsidies?"
+   },
+   "op": {
+    "es": [
+     "Que no permiten producir la cantidad óptima",
+     "Que exigen impuestos distorsivos",
+     "Las cuestiones políticas para fijar los precios",
+     "Que la firma quiebra"
+    ],
+    "en": [
+     "That they do not allow producing the optimal quantity",
+     "That they require distortionary taxes",
+     "The political issues in setting prices",
+     "That the firm goes bankrupt"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Permiten producir la cantidad óptima, pero decidir quién paga de más es una decisión política.",
+    "en": "They allow producing the optimal quantity, but deciding who overpays is a political decision."
+   },
+   "id": "fisc-general-08-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estos NO figura entre los problemas de contratar al sector privado?",
+    "en": "Which of these is NOT among the problems of contracting out to the private sector?"
+   },
+   "op": {
+    "es": [
+     "Dificultad para controlar la calidad",
+     "Pocos licitadores",
+     "Costos inciertos",
+     "Aumento de la estratificación social"
+    ],
+    "en": [
+     "Difficulty controlling quality",
+     "Few bidders",
+     "Uncertain costs",
+     "Greater social stratification"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La estratificación social es un problema de los sistemas de bonos; la cuarta falla de la contratación es la corrupción en la licitación.",
+    "en": "Social stratification is a problem of voucher systems; the fourth flaw of contracting out is corruption in bidding."
+   },
+   "id": "fisc-general-08-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué incentivos organizativos explican que las empresas públicas se comporten distinto?",
+    "en": "Which organizational incentives explain why public firms behave differently?"
+   },
+   "op": {
+    "es": [
+     "Salarios rígidos y estabilidad laboral",
+     "Poca competencia y ausencia de riesgo de quiebra",
+     "Exceso de competencia y riesgo de quiebra",
+     "Multiplicidad de objetivos y tecnología ambigua"
+    ],
+    "en": [
+     "Rigid wages and job security",
+     "Little competition and no bankruptcy risk",
+     "Excess competition and bankruptcy risk",
+     "Multiple objectives and ambiguous technology"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Salarios rígidos y estabilidad son incentivos individuales; multiplicidad de objetivos y tecnología ambigua caracterizan a la actividad administrativa.",
+    "en": "Rigid wages and job security are individual incentives; multiple objectives and ambiguous technology characterize administrative activity."
+   },
+   "id": "fisc-general-08-q7"
+  },
+  {
+   "q": {
+    "es": "Según la presentación, ¿qué maximizan los funcionarios?",
+    "en": "According to the presentation, what do officials maximize?"
+   },
+   "op": {
+    "es": [
+     "El bienestar de los votantes",
+     "El tamaño de su organismo",
+     "Su salario",
+     "La eficiencia del gasto"
+    ],
+    "en": [
+     "Voters' welfare",
+     "The size of their agency",
+     "Their salary",
+     "Spending efficiency"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Compiten con otros funcionarios por los fondos, y la competencia burocrática reemplaza a la de mercado.",
+    "en": "They compete with other officials for funds, and bureaucratic competition replaces market competition."
+   },
+   "id": "fisc-general-08-q8"
+  }
+ ],
+ "palabras": 1398,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué que un bien sea público no implica que el Estado deba producirlo?",
+    "en": "Why does a good being public not imply the state should produce it?"
+   },
+   "a": {
+    "es": "Porque financiar y producir son decisiones separables: el Estado puede pagar un bien que fabrica un privado. Fioretti y Kornfeld, siguiendo a Stiglitz (cap. 7), listan las cuatro combinaciones de bien público o privado con producción pública o privada.",
+    "en": "Because financing and producing are separable decisions: the state can pay for a good a private firm makes. Fioretti and Kornfeld, following Stiglitz (ch. 7), list the four combinations of public or private good with public or private production."
+   },
+   "id": "fisc-general-08-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se clasifican los bienes según exclusión y rivalidad?",
+    "en": "How are goods classified by excludability and rivalry?"
+   },
+   "a": {
+    "es": "Privados (excluyentes y rivales), recursos de uso común (rivales, no excluyentes), de acceso limitado (excluyentes, no rivales) y públicos (ni lo uno ni lo otro), según la presentación de Fioretti y Kornfeld.",
+    "en": "Private (excludable and rival), common-pool resources (rival, non-excludable), limited access (excludable, non-rival) and public (neither), according to Fioretti and Kornfeld's presentation."
+   },
+   "id": "fisc-general-08-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué el monopolio natural es una falla de mercado?",
+    "en": "Why is natural monopoly a market failure?"
+   },
+   "a": {
+    "es": "Con costos medios decrecientes conviene una sola firma, pero si maximiza beneficios produce donde ingreso marginal iguala costo marginal, menos que la cantidad eficiente, y la cantidad eficiente da pérdidas. Así lo plantean Fioretti y Kornfeld.",
+    "en": "With declining average costs one firm is best, but if it maximizes profit it produces where marginal revenue equals marginal cost, below the efficient quantity, and the efficient quantity yields losses. So Fioretti and Kornfeld put it."
+   },
+   "id": "fisc-general-08-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué tres salidas hay para el monopolio natural y qué cuesta cada una?",
+    "en": "What three solutions exist for natural monopoly and what does each cost?"
+   },
+   "a": {
+    "es": "Subvencionar para producir la cantidad eficiente (distorsiones y equidad del financiamiento), fijar precio igual al costo medio (no se llega a la cantidad eficiente) y subvenciones cruzadas (conflicto político por los precios), según Fioretti y Kornfeld.",
+    "en": "Subsidize to produce the efficient quantity (distortions and fairness of funding), set price equal to average cost (the efficient quantity is not reached) and cross-subsidies (political conflict over prices), according to Fioretti and Kornfeld."
+   },
+   "id": "fisc-general-08-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué problemas tienen los sistemas de bonos para suministrar servicios públicos?",
+    "en": "What problems do voucher systems have for supplying public services?"
+   },
+   "a": {
+    "es": "No hay garantía de que los usuarios fiscalicen mejor la calidad que el Estado y pueden aumentar la estratificación social, como en educación. Lo señalan Fioretti y Kornfeld.",
+    "en": "There is no guarantee users monitor quality better than the state, and they may increase social stratification, as in education. Fioretti and Kornfeld point this out."
+   },
+   "id": "fisc-general-08-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué incentivos explican la ineficiencia de las empresas públicas?",
+    "en": "What incentives explain the inefficiency of public firms?"
+   },
+   "a": {
+    "es": "Organizativos (poca competencia, sin riesgo de quiebra) e individuales (estructura salarial rígida, estabilidad en el empleo), según Fioretti y Kornfeld sobre Stiglitz (cap. 7).",
+    "en": "Organizational (little competition, no bankruptcy risk) and individual (rigid pay structure, job security), according to Fioretti and Kornfeld on Stiglitz (ch. 7)."
+   },
+   "id": "fisc-general-08-t6"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué maximiza un burócrata y qué consecuencia tiene?",
+    "en": "What does a bureaucrat maximize and with what consequence?"
+   },
+   "a": {
+    "es": "El tamaño de su organismo: compite por fondos con otros funcionarios y esa competencia burocrática reemplaza a la de mercado. Así lo presentan Fioretti y Kornfeld.",
+    "en": "The size of their agency: they compete for funds with other officials, and this bureaucratic competition replaces market competition. So Fioretti and Kornfeld present it."
+   },
+   "id": "fisc-general-08-t7"
+  }
+ ]
+}
