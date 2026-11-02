@@ -1,0 +1,527 @@
+{
+ "id": "fisc-general-10",
+ "cat": "fisc-general",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "Fallas en la competencia: monopolio con licencia, monopolio natural y cómo regularlos",
+ "bajada": "Cuándo deja de ser eficiente un mercado por falta de competencia, el triángulo de pérdida del monopolio creado por una licencia, las cuatro respuestas públicas y la solución de second best del monopolio natural.",
+ "fuentes": [
+  1158
+ ],
+ "cita": "Kornfeld, «Unidad III: Fallas en la competencia» (Finanzas Públicas, FCE-UNC, septiembre de 2022), sobre Albi, Contreras, González Páramo y Zubiri, Economía Pública (2009), cap. 1",
+ "intro": "Las diapositivas de Pablo Kornfeld para la unidad III de Finanzas Públicas de la FCE-UNC, apoyadas en el capítulo 1 de la Economía Pública de Albi, Contreras, González Páramo y Zubiri, tratan la primera de las fallas de mercado: las fallas en la competencia. El punto de partida es el primer teorema del bienestar: si se cumplen competencia perfecta, información perfecta, mercados completos, rivalidad y exclusión, una economía de mercado asigna de manera eficiente en el sentido de Pareto, y al Estado le queda vigilar el marco legal. Cuando algún supuesto falla hay margen para ganancias de eficiencia. La presentación separa dos casos según el origen del poder de mercado: barreras artificiales a la entrada, como una licencia, que dan competencia imperfecta, y barreras naturales, que dan monopolio natural. Para cada uno muestra la pérdida de bienestar y el menú de intervenciones públicas, con sus costos.",
+ "secciones": [
+  {
+   "t": "El punto de partida: cuándo el mercado es eficiente",
+   "p": [
+    "La presentación enumera los supuestos bajo los cuales el mercado genera asignaciones eficientes en el sentido de Pareto: competencia perfecta, información perfecta, mercados completos, rivalidad y exclusión. Con ellos, el rol del Estado se limita a vigilar el marco legal. El incumplimiento de esos supuestos son las fallas de mercado, y cada una abre la posibilidad de ganancias de eficiencia en el sentido de Pareto.",
+    "Las fallas que lista son cinco: fallas en la competencia, información imperfecta o costosa, bienes públicos, externalidades y bienes libres. Esta presentación se ocupa solo de la primera. Lectura propia: que exista una falla no prueba que la intervención mejore las cosas; la unidad sobre burocracia y búsqueda de rentas muestra que el Estado también puede fallar, y la comparación correcta es entre un mercado imperfecto y un Estado imperfecto."
+   ]
+  },
+  {
+   "t": "Dos requisitos de la competencia perfecta",
+   "p": [
+    "El supuesto de competencia perfecta en todos los mercados, de bienes y de insumos, exige dos cosas. La primera es igual poder no económico entre todos los agentes: solo las diferencias de renta pueden dar lugar a diferencias en las oportunidades de producción y consumo, sin discriminación. Si este requisito falla, la corrección del Estado es la regulación o la producción pública.",
+    "La segunda es que todos los agentes tomen los precios como dados. Eso requiere muchos vendedores y compradores y ausencia de barreras a la entrada. Cuando hay barreras, alguien tiene poder para fijar precios. La presentación distingue dos casos: las barreras artificiales, que no dependen de la tecnología ni de los costos y dan competencia imperfecta, y las barreras naturales, que nacen de la estructura de costos y dan monopolio natural. La distinción importa porque cambia la respuesta: una barrera artificial se puede quitar; una natural no."
+   ]
+  },
+  {
+   "t": "Barreras artificiales: el monopolio con licencia",
+   "eq": [
+    "\\mathit{IMg}(Q^{M}) = \\mathit{CMg}(Q^{M})",
+    "D(Q^{C}) = \\mathit{CMg}(Q^{C}), \\qquad \\mathit{VMgC} = \\mathit{CMgP}, \\qquad \\mathit{TMS}_{X,Y} = \\mathit{TMgT}_{X,Y}",
+    "\\triangle ABC = \\tfrac{1}{2}\\,(P^{M} - P^{C})\\,(Q^{C} - Q^{M})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Q^{M}\\): cantidad que produce el monopolista privado.",
+      "en": "\\(Q^{M}\\): quantity produced by the private monopolist."
+     },
+     {
+      "es": "\\(\\mathit{IMg}\\): ingreso marginal, lo que agrega al ingreso vender una unidad más, en pesos por unidad.",
+      "en": "\\(\\mathit{IMg}\\): marginal revenue, what one more unit sold adds to revenue, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMg}\\): costo marginal de producir una unidad más, en pesos por unidad; en el gráfico es constante e igual al costo medio \\(\\mathit{CMe}\\).",
+      "en": "\\(\\mathit{CMg}\\): marginal cost of producing one more unit, in pesos per unit; in the graph it is constant and equal to average cost \\(\\mathit{CMe}\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q^{C}\\): cantidad de la solución competitiva.",
+      "en": "\\(Q^{C}\\): quantity in the competitive solution."
+     },
+     {
+      "es": "\\(D(\\cdot)\\): curva de demanda, el precio que los consumidores están dispuestos a pagar por la última unidad, en pesos.",
+      "en": "\\(D(\\cdot)\\): demand curve, the price consumers are willing to pay for the last unit, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{VMgC}\\): valoración marginal del consumidor, lo que vale para él una unidad más (la altura de la demanda).",
+      "en": "\\(\\mathit{VMgC}\\): consumer's marginal valuation, what one more unit is worth to him (the height of demand)."
+     },
+     {
+      "es": "\\(\\mathit{CMgP}\\): costo marginal de producción.",
+      "en": "\\(\\mathit{CMgP}\\): marginal production cost."
+     },
+     {
+      "es": "\\(\\mathit{TMS}_{X,Y}\\): tasa marginal de sustitución entre el bien \\(X\\) y otro bien \\(Y\\), cuántas unidades de \\(Y\\) está dispuesto a ceder el consumidor por una más de \\(X\\).",
+      "en": "\\(\\mathit{TMS}_{X,Y}\\): marginal rate of substitution between good \\(X\\) and another good \\(Y\\), how many units of \\(Y\\) the consumer would give up for one more \\(X\\)."
+     },
+     {
+      "es": "\\(\\mathit{TMgT}_{X,Y}\\): tasa marginal de transformación, cuántas unidades de \\(Y\\) hay que dejar de producir para producir una más de \\(X\\).",
+      "en": "\\(\\mathit{TMgT}_{X,Y}\\): marginal rate of transformation, how many units of \\(Y\\) must be given up to produce one more \\(X\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\triangle ABC\\): pérdida social del monopolio, el excedente que se pierde por producir \\(Q^{M}\\) en lugar de \\(Q^{C}\\), en pesos; la fórmula del área es lectura propia, la presentación solo nombra el triángulo.",
+      "en": "\\(\\triangle ABC\\): social loss from monopoly, the surplus lost by producing \\(Q^{M}\\) instead of \\(Q^{C}\\), in pesos; the area formula is our own reading, the presentation only names the triangle."
+     },
+     {
+      "es": "\\(P^{M}\\): precio de monopolio, la altura de la demanda en \\(Q^{M}\\).",
+      "en": "\\(P^{M}\\): monopoly price, the height of demand at \\(Q^{M}\\)."
+     },
+     {
+      "es": "\\(P^{C}\\): precio competitivo, igual al costo marginal constante.",
+      "en": "\\(P^{C}\\): competitive price, equal to the constant marginal cost."
+     },
+     {
+      "es": "\\(Q^{C} - Q^{M}\\): unidades que el monopolio deja de producir.",
+      "en": "\\(Q^{C} - Q^{M}\\): units the monopoly fails to produce."
+     }
+    ]
+   ],
+   "p": [
+    "Con barreras artificiales hay poder de mercado por condiciones que no vienen de la tecnología ni de los costos; el ejemplo es un monopolio creado por la existencia de licencias. La solución privada es la del monopolista: produce donde el ingreso marginal iguala al costo marginal, en Qᴹ, y cobra Pᴹ. La solución competitiva es la cantidad donde la demanda corta al costo marginal, Qᶜ, al precio Pᶜ. En el gráfico el costo marginal es constante e igual al costo medio.",
+    "En la solución competitiva se cumplen las condiciones de eficiencia: la valoración marginal del consumidor iguala al costo marginal de producción, y la tasa marginal de sustitución iguala a la tasa marginal de transformación. En la solución de monopolio esas igualdades se rompen. La diapositiva escribe las desigualdades como VMgC < CMgP y TMS < TMgT. Lectura propia: con la notación usual, en Qᴹ el precio, que mide la valoración marginal, está por encima del costo marginal, así que la desigualdad esperada es la inversa; conviene leerla como «son distintas» y verificarla en el gráfico, donde Pᴹ queda claramente por encima de Pᶜ.",
+    "La pérdida social del monopolio es el triángulo ABC: las unidades entre Qᴹ y Qᶜ valen para los consumidores más de lo que cuesta producirlas, y no se producen. El rectángulo entre Pᴹ y Pᶜ hasta Qᴹ es una transferencia de los consumidores al monopolista, no una pérdida; la presentación de búsqueda de rentas de la misma cátedra muestra que deja de serlo cuando hay competencia por obtener la licencia."
+   ]
+  },
+  {
+   "t": "Cuatro respuestas públicas a la barrera artificial",
+   "eq": [
+    "s = \\mathit{CMg}(Q^{C}) - \\mathit{IMg}(Q^{C})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(s\\): subsidio por unidad que recibe el monopolista en la segunda opción de financiación, en pesos por unidad.",
+      "en": "\\(s\\): per-unit subsidy the monopolist receives under the second financing option, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMg}(Q^{C})\\): costo marginal en la cantidad competitiva.",
+      "en": "\\(\\mathit{CMg}(Q^{C})\\): marginal cost at the competitive quantity."
+     },
+     {
+      "es": "\\(\\mathit{IMg}(Q^{C})\\): ingreso marginal en la cantidad competitiva; está por debajo del costo marginal porque la demanda tiene pendiente negativa.",
+      "en": "\\(\\mathit{IMg}(Q^{C})\\): marginal revenue at the competitive quantity; it lies below marginal cost because demand slopes down."
+     },
+     {
+      "es": "Lectura propia: la presentación describe el subsidio como «la distancia entre el CMg y el IMg al nivel de output \\(Q^{C}\\)»; la fórmula la escribe así.",
+      "en": "Own reading: the presentation describes the subsidy as «the distance between MC and MR at output \\(Q^{C}\\)»; the formula writes that down."
+     }
+    ]
+   ],
+   "p": [
+    "La presentación ofrece cuatro intervenciones. La primera es la desregulación: eliminar la necesidad de obtener una licencia e introducir competencia, con lo que el mercado vuelve solo a Qᶜ. La segunda es la regulación: obligar al titular a producir Qᶜ a cambio de mantener la licencia, o subastar la licencia entre empresas competitivas. La tercera es la producción pública: estatizar y producir Qᶜ, con los problemas propios de la producción estatal.",
+    "La cuarta es la financiación, que introduce distorsiones en otros mercados porque los fondos salen de impuestos. Tiene dos variantes. En la primera, el Estado garantiza la ganancia del monopolista, subsidiándola, a cambio de que produzca Qᶜ al precio Pᶜ. En la segunda, subsidia la distancia entre el costo marginal y el ingreso marginal en Qᶜ, de modo que para el monopolista el ingreso marginal más el subsidio iguale al costo marginal justo en la cantidad competitiva, y produce Qᶜ a Pᶜ.",
+    "Lectura propia: el orden de la lista va de menos a más costosa para el fisco. Desregular no cuesta nada y ataca la causa; la regulación y la subasta requieren un regulador que conozca la demanda; la producción pública y la financiación cambian una ineficiencia por otra. Cuando la barrera es artificial, la primera opción domina, salvo que la licencia proteja algo que el mercado no valora, como la seguridad o la calidad mínima."
+   ]
+  },
+  {
+   "t": "Barreras naturales: el monopolio natural y el second best",
+   "eq": [
+    "P(Q^{C}) = \\mathit{CMg}(Q^{C}) < \\mathit{CMe}(Q^{C})",
+    "P^{SB} = P(Q^{SB}) = \\mathit{CMe}(Q^{SB})",
+    "T(q) = F + p\\,q"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P\\): precio del bien, en pesos por unidad.",
+      "en": "\\(P\\): price of the good, in pesos per unit."
+     },
+     {
+      "es": "\\(Q^{C}\\): cantidad de la solución competitiva, donde la demanda corta al costo marginal.",
+      "en": "\\(Q^{C}\\): quantity in the competitive solution, where demand crosses marginal cost."
+     },
+     {
+      "es": "\\(\\mathit{CMg}\\): costo marginal, en pesos por unidad.",
+      "en": "\\(\\mathit{CMg}\\): marginal cost, in pesos per unit."
+     },
+     {
+      "es": "\\(\\mathit{CMe}\\): costo medio, costo total dividido por la cantidad; decreciente en el rango relevante. Con costo medio decreciente el marginal queda debajo del medio y el productor pierde.",
+      "en": "\\(\\mathit{CMe}\\): average cost, total cost divided by quantity; declining over the relevant range. With declining average cost, marginal cost lies below it and the producer loses money."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q^{SB}\\): cantidad de second best, donde la demanda corta al costo medio.",
+      "en": "\\(Q^{SB}\\): second-best quantity, where demand crosses average cost."
+     },
+     {
+      "es": "\\(P^{SB}\\): precio de second best, igual al costo medio; la firma no gana ni pierde.",
+      "en": "\\(P^{SB}\\): second-best price, equal to average cost; the firm neither gains nor loses."
+     },
+     {
+      "es": "\\(P(\\cdot)\\): precio de demanda en cada cantidad.",
+      "en": "\\(P(\\cdot)\\): demand price at each quantity."
+     }
+    ],
+    [
+     {
+      "es": "Lectura propia: la presentación menciona las tarifas en dos partes sin dar fórmula; esta es la forma estándar.",
+      "en": "Own reading: the presentation mentions two-part tariffs without a formula; this is the standard form."
+     },
+     {
+      "es": "\\(T(q)\\): pago total de un usuario que consume \\(q\\) unidades, en pesos.",
+      "en": "\\(T(q)\\): total payment of a user consuming \\(q\\) units, in pesos."
+     },
+     {
+      "es": "\\(F\\): cargo fijo por acceso al servicio, independiente del consumo, en pesos; sirve para cubrir el costo fijo.",
+      "en": "\\(F\\): fixed access charge, independent of use, in pesos; it covers the fixed cost."
+     },
+     {
+      "es": "\\(p\\): precio por unidad consumida, que puede fijarse igual al costo marginal, en pesos por unidad.",
+      "en": "\\(p\\): price per unit used, which can be set at marginal cost, in pesos per unit."
+     },
+     {
+      "es": "\\(q\\): cantidad consumida por el usuario.",
+      "en": "\\(q\\): quantity used by the customer."
+     }
+    ]
+   ],
+   "p": [
+    "Con barreras naturales los costos medios son decrecientes en el rango relevante de producción, por ejemplo por fuertes costos fijos irrecuperables, es decir, hundidos. La solución de monopolio, Pᴹ y Qᴹ, da ganancias al productor pero es socialmente ineficiente. La solución competitiva, precio igual a costo marginal en Qᶜ, es eficiente pero da pérdidas al productor, porque el precio no alcanza a cubrir el costo medio. A diferencia de la licencia, aquí no hay barrera que quitar: dos firmas producirían con costos medios más altos que una.",
+    "La solución intermedia es fijar el precio igual al costo medio, en Qˢᴮ, que la presentación llama second best: la firma cubre sus costos sin subsidio, y se produce más que con monopolio pero menos que lo eficiente. La pérdida social de bienestar por la existencia del monopolio natural es el área PSM en el gráfico, entre la demanda y el costo marginal desde Qᴹ hasta Qᶜ.",
+    "Los mecanismos de regulación son tres. Primero, producción pública con financiación: se opera en la solución competitiva y la pérdida se cubre con impuestos, que generan distorsiones. Segundo, regulación con financiación: lo mismo, pero con subsidios a un monopolista privado. Tercero, regulación de precios: producir Qᶜ sin generar pérdidas, con la posibilidad de subsidios cruzados mediante tarifas en dos partes. Lectura propia: con una tarifa en dos partes el cargo por unidad puede igualar al costo marginal, lo que da la cantidad eficiente, y el cargo fijo cubre el costo hundido; el límite es que un cargo fijo alto expulsa a los usuarios de menores ingresos."
+   ]
+  },
+  {
+   "t": "Qué haría falta para medirlo",
+   "p": [
+    "La presentación no tiene trabajo econométrico; es un desarrollo gráfico de la teoría. Lectura propia: los dos objetos centrales, el triángulo de pérdida y la brecha entre precio y costo marginal, se pueden estimar. El triángulo requiere la elasticidad de la demanda y el margen de precio sobre costo marginal; con demanda lineal, la pérdida es la mitad del producto entre el aumento de precio y la caída de cantidad. El margen se infiere con datos de precios y costos por firma o con modelos de demanda estructurales.",
+    "Para el caso de la licencia, el experimento natural es la desregulación: comparar precios y cantidades antes y después de eliminar el requisito, frente a mercados similares donde no cambió, con un diseño de diferencias en diferencias. Para el monopolio natural, la pregunta empírica es cuál de los mecanismos de regulación logra costos más bajos, y la dificultad es la misma que en la producción pública: el regulador no observa los costos verdaderos, y la firma regulada tiene incentivos a inflarlos, como el burócrata de Niskanen."
+   ]
+  }
+ ],
+ "claves": [
+  "Con competencia e información perfectas, mercados completos, rivalidad y exclusión, el mercado es eficiente en el sentido de Pareto.",
+  "La competencia perfecta exige igual poder no económico y agentes precio-aceptantes, sin barreras a la entrada.",
+  "Barrera artificial (licencia): el monopolista produce Qᴹ con IMg = CMg; la pérdida social es el triángulo ABC.",
+  "Respuestas a la licencia: desregular, regular u obligar a producir Qᶜ (o subastar), producir el Estado o financiar al monopolista.",
+  "Barrera natural: costos medios decrecientes; precio igual al costo marginal da pérdidas.",
+  "El second best fija precio igual al costo medio: sin subsidio, pero con menos cantidad que la eficiente.",
+  "Para el monopolio natural: producción pública o regulación con financiación, o regulación de precios con tarifas en dos partes."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según la presentación, ¿cuál es el rol del Estado si se cumplen todos los supuestos del mercado eficiente?",
+    "en": "According to the presentation, what is the state's role if all assumptions for market efficiency hold?"
+   },
+   "op": {
+    "es": [
+     "Producir los bienes básicos",
+     "Fijar los precios",
+     "Vigilar el marco legal",
+     "Redistribuir con subsidios cruzados"
+    ],
+    "en": [
+     "Produce basic goods",
+     "Set prices",
+     "Oversee the legal framework",
+     "Redistribute with cross-subsidies"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con competencia e información perfectas, mercados completos, rivalidad y exclusión, la asignación es eficiente en el sentido de Pareto y al Estado le queda vigilar el marco legal.",
+    "en": "With perfect competition and information, complete markets, rivalry and exclusion, the allocation is Pareto efficient and the state only oversees the legal framework."
+   },
+   "id": "fisc-general-10-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue una barrera artificial de una natural?",
+    "en": "What distinguishes an artificial from a natural barrier?"
+   },
+   "op": {
+    "es": [
+     "La artificial no depende de la tecnología ni de los costos",
+     "La artificial surge de costos hundidos",
+     "La natural la crea una licencia",
+     "No hay diferencia práctica"
+    ],
+    "en": [
+     "The artificial one does not depend on technology or costs",
+     "The artificial one comes from sunk costs",
+     "The natural one is created by a license",
+     "There is no practical difference"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La barrera artificial, como una licencia, da poder de mercado por condiciones ajenas a la tecnología y los costos; la natural nace de costos medios decrecientes.",
+    "en": "An artificial barrier, like a license, gives market power through conditions unrelated to technology and costs; a natural one comes from declining average costs."
+   },
+   "id": "fisc-general-10-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué cantidad produce el monopolista con licencia?",
+    "en": "What quantity does the licensed monopolist produce?"
+   },
+   "op": {
+    "es": [
+     "Donde la demanda corta al costo marginal",
+     "Donde la demanda corta al costo medio",
+     "La máxima que permite la licencia",
+     "Donde el ingreso marginal iguala al costo marginal"
+    ],
+    "en": [
+     "Where demand crosses marginal cost",
+     "Where demand crosses average cost",
+     "The maximum the license allows",
+     "Where marginal revenue equals marginal cost"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La solución privada es IMg(Qᴹ) = CMg(Qᴹ). Donde: IMg = ingreso marginal; CMg = costo marginal; Qᴹ = cantidad del monopolista.",
+    "en": "The private solution is MR(Qᴹ) = MC(Qᴹ). Where: MR = marginal revenue; MC = marginal cost; Qᴹ = monopolist's quantity."
+   },
+   "id": "fisc-general-10-q3"
+  },
+  {
+   "q": {
+    "es": "En el gráfico del monopolio con licencia, ¿qué representa el triángulo ABC?",
+    "en": "In the licensed-monopoly graph, what does triangle ABC represent?"
+   },
+   "op": {
+    "es": [
+     "La renta del monopolista",
+     "La pérdida social del monopolio",
+     "El subsidio necesario",
+     "El excedente del productor competitivo"
+    ],
+    "en": [
+     "The monopolist's rent",
+     "The social loss from monopoly",
+     "The required subsidy",
+     "The competitive producer's surplus"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "ABC es el excedente de las unidades entre Qᴹ y Qᶜ, que valen más de lo que cuestan y no se producen. El rectángulo de renta es una transferencia, no una pérdida.",
+    "en": "ABC is the surplus from units between Qᴹ and Qᶜ, worth more than they cost and not produced. The rent rectangle is a transfer, not a loss."
+   },
+   "id": "fisc-general-10-q4"
+  },
+  {
+   "q": {
+    "es": "En la segunda opción de financiación, ¿qué se subsidia?",
+    "en": "Under the second financing option, what is subsidized?"
+   },
+   "op": {
+    "es": [
+     "La distancia entre el costo marginal y el ingreso marginal en Qᶜ",
+     "El costo fijo total",
+     "La diferencia entre Pᴹ y Pᶜ",
+     "La compra de la licencia"
+    ],
+    "en": [
+     "The gap between marginal cost and marginal revenue at Qᶜ",
+     "Total fixed cost",
+     "The difference between Pᴹ and Pᶜ",
+     "The purchase of the license"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con s = CMg(Qᶜ) − IMg(Qᶜ), el ingreso marginal más el subsidio iguala al costo marginal en Qᶜ, y el monopolista produce Qᶜ a Pᶜ. Donde: s = subsidio por unidad; CMg = costo marginal; IMg = ingreso marginal; Qᶜ = cantidad competitiva.",
+    "en": "With s = MC(Qᶜ) − MR(Qᶜ), marginal revenue plus subsidy equals marginal cost at Qᶜ, and the monopolist produces Qᶜ at Pᶜ. Where: s = per-unit subsidy; MC = marginal cost; MR = marginal revenue; Qᶜ = competitive quantity."
+   },
+   "id": "fisc-general-10-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la solución competitiva da pérdidas en un monopolio natural?",
+    "en": "Why does the competitive solution cause losses in a natural monopoly?"
+   },
+   "op": {
+    "es": [
+     "Porque la demanda es inelástica",
+     "Porque hay muchos competidores",
+     "Porque con costo medio decreciente el costo marginal queda debajo del medio",
+     "Porque el Estado fija un impuesto"
+    ],
+    "en": [
+     "Because demand is inelastic",
+     "Because there are many competitors",
+     "Because with declining average cost, marginal cost lies below average cost",
+     "Because the state levies a tax"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con P = CMg < CMe, el precio no cubre el costo medio. Donde: P = precio; CMg = costo marginal; CMe = costo medio, decreciente por los costos fijos hundidos.",
+    "en": "With P = MC < AC, price does not cover average cost. Where: P = price; MC = marginal cost; AC = average cost, declining because of sunk fixed costs."
+   },
+   "id": "fisc-general-10-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la solución de second best en el monopolio natural?",
+    "en": "What is the second-best solution in natural monopoly?"
+   },
+   "op": {
+    "es": [
+     "Precio igual al costo marginal con subsidio",
+     "Precio de monopolio con impuesto a las ganancias",
+     "Dividir el mercado entre dos firmas",
+     "Precio igual al costo medio"
+    ],
+    "en": [
+     "Price equal to marginal cost with a subsidy",
+     "Monopoly price with a profit tax",
+     "Split the market between two firms",
+     "Price equal to average cost"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Pˢᴮ = CMe(Qˢᴮ): la firma cubre costos sin subsidio, con más cantidad que el monopolio y menos que la eficiente. Donde: Pˢᴮ = precio de second best; CMe = costo medio; Qˢᴮ = cantidad donde la demanda corta al costo medio.",
+    "en": "Pˢᴮ = AC(Qˢᴮ): the firm covers costs without a subsidy, producing more than the monopoly and less than the efficient level. Where: Pˢᴮ = second-best price; AC = average cost; Qˢᴮ = quantity where demand crosses average cost."
+   },
+   "id": "fisc-general-10-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué instrumento menciona la presentación para producir Qᶜ sin pérdidas en un monopolio natural?",
+    "en": "What tool does the presentation mention to produce Qᶜ without losses in a natural monopoly?"
+   },
+   "op": {
+    "es": [
+     "Desregulación del mercado",
+     "Tarifas en dos partes con subsidios cruzados",
+     "Subasta de licencias",
+     "Producción por dos firmas"
+    ],
+    "en": [
+     "Market deregulation",
+     "Two-part tariffs with cross-subsidies",
+     "License auctions",
+     "Production by two firms"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La regulación de precios busca producir Qᶜ sin pérdidas, con la posibilidad de subsidios cruzados mediante tarifas en dos partes. Lectura propia: T(q) = F + p·q, donde T = pago total, F = cargo fijo, p = precio por unidad y q = cantidad consumida.",
+    "en": "Price regulation seeks to produce Qᶜ without losses, possibly with cross-subsidies via two-part tariffs. Own reading: T(q) = F + p·q, where T = total payment, F = fixed charge, p = per-unit price and q = quantity used."
+   },
+   "id": "fisc-general-10-q8"
+  }
+ ],
+ "palabras": 1345,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué exige el supuesto de competencia perfecta además de muchos participantes?",
+    "en": "What does perfect competition require besides many participants?"
+   },
+   "a": {
+    "es": "Igual poder no económico entre agentes, de modo que solo la renta diferencie oportunidades, y comportamiento precio-aceptante sin barreras a la entrada. Kornfeld, siguiendo a Albi et al. (cap. 1).",
+    "en": "Equal non-economic power among agents, so only income differentiates opportunities, and price-taking behavior with no entry barriers. Kornfeld, following Albi et al. (ch. 1)."
+   },
+   "id": "fisc-general-10-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué un monopolio creado por una licencia es ineficiente?",
+    "en": "Why is a license-created monopoly inefficient?"
+   },
+   "a": {
+    "es": "Porque produce Qᴹ, donde el ingreso marginal iguala al costo marginal, y deja sin producir unidades que valen más de lo que cuestan; la pérdida es el triángulo ABC. Kornfeld lo muestra frente a la solución competitiva D(Qᶜ) = CMg(Qᶜ).",
+    "en": "Because it produces Qᴹ, where marginal revenue equals marginal cost, leaving unproduced units worth more than they cost; the loss is triangle ABC. Kornfeld shows it against the competitive solution D(Qᶜ) = MC(Qᶜ)."
+   },
+   "id": "fisc-general-10-t2"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué puede hacer el Estado frente a un monopolio originado en una licencia?",
+    "en": "What can the state do about a monopoly originating in a license?"
+   },
+   "a": {
+    "es": "Desregular, regular (obligar a producir Qᶜ a cambio de la licencia o subastarla), producir él mismo o financiar al monopolista para que produzca Qᶜ a Pᶜ. Son las cuatro respuestas de Kornfeld; la financiación distorsiona otros mercados.",
+    "en": "Deregulate, regulate (require Qᶜ in exchange for the license or auction it), produce itself, or finance the monopolist to produce Qᶜ at Pᶜ. These are Kornfeld's four responses; financing distorts other markets."
+   },
+   "id": "fisc-general-10-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede un subsidio llevar a un monopolista a la cantidad competitiva?",
+    "en": "How can a subsidy bring a monopolist to the competitive quantity?"
+   },
+   "a": {
+    "es": "Subsidiando por unidad la distancia entre costo marginal e ingreso marginal en Qᶜ, o garantizando su ganancia a cambio de producir Qᶜ a Pᶜ. Kornfeld presenta ambas opciones como financiación.",
+    "en": "By subsidizing per unit the gap between marginal cost and marginal revenue at Qᶜ, or guaranteeing its profit in exchange for producing Qᶜ at Pᶜ. Kornfeld presents both as financing options."
+   },
+   "id": "fisc-general-10-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué define a un monopolio natural?",
+    "en": "What defines a natural monopoly?"
+   },
+   "a": {
+    "es": "Costos medios decrecientes en el rango relevante de producción, por ejemplo por fuertes costos fijos hundidos. Kornfeld lo llama barrera natural a la entrada, frente a la artificial de una licencia.",
+    "en": "Declining average costs over the relevant output range, for example due to large sunk fixed costs. Kornfeld calls it a natural entry barrier, as opposed to the artificial barrier of a license."
+   },
+   "id": "fisc-general-10-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué se gana y qué se pierde con la solución de second best en un monopolio natural?",
+    "en": "What is gained and lost with the second-best solution in natural monopoly?"
+   },
+   "a": {
+    "es": "Con precio igual al costo medio la firma cubre costos sin subsidio, pero se produce menos que la cantidad eficiente donde precio iguala costo marginal. Kornfeld la ubica entre la solución monopólica y la competitiva.",
+    "en": "With price equal to average cost the firm covers costs without a subsidy, but output is below the efficient level where price equals marginal cost. Kornfeld places it between the monopoly and competitive solutions."
+   },
+   "id": "fisc-general-10-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué mecanismos permiten regular un monopolio natural?",
+    "en": "What mechanisms can regulate a natural monopoly?"
+   },
+   "a": {
+    "es": "Producción pública con financiación, regulación con subsidios a un monopolista privado y regulación de precios, con posibles subsidios cruzados mediante tarifas en dos partes. Kornfeld advierte que financiar con impuestos genera distorsiones.",
+    "en": "Public production with financing, regulation with subsidies to a private monopolist, and price regulation, possibly with cross-subsidies via two-part tariffs. Kornfeld warns that tax financing creates distortions."
+   },
+   "id": "fisc-general-10-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué conviene revisar la desigualdad VMgC < CMgP de la diapositiva del monopolio?",
+    "en": "Why should the slide's inequality VMgC < CMgP for monopoly be checked?"
+   },
+   "a": {
+    "es": "Kornfeld la escribe así para la solución de monopolio; lectura propia: como el precio de monopolio supera al costo marginal, la valoración marginal del consumidor debería ser mayor que el costo marginal de producción, no menor.",
+    "en": "Kornfeld writes it that way for the monopoly solution; own reading: since the monopoly price exceeds marginal cost, the consumer's marginal valuation should be greater than marginal production cost, not smaller."
+   },
+   "id": "fisc-general-10-t8"
+  }
+ ]
+}

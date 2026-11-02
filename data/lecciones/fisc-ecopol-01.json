@@ -1,0 +1,484 @@
+{
+ "id": "fisc-ecopol-01",
+ "cat": "fisc-ecopol",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Burocracia y búsqueda de rentas: por qué el Estado gasta de más y quién se queda con la renta",
+ "bajada": "El burócrata de Niskanen que maximiza su presupuesto, las cuatro vías para inflarlo y cómo controlarlas, la lógica del free rider en los grupos de presión y el teorema de la disipación de rentas.",
+ "fuentes": [
+  1162
+ ],
+ "cita": "Spataro y Temperley, «Burocracia y búsqueda de rentas» (Finanzas Públicas, FCE-UNC, 1 de octubre de 2019), sobre Albi, González Páramo y Zubiri, Economía Pública I (2009)",
+ "intro": "Las diapositivas de Javier Spataro y Patricio Temperley para la cátedra de Finanzas Públicas de la FCE-UNC, basadas en el manual de Albi, González Páramo y Zubiri, abren la economía política del sector público con una advertencia: en un modelo de elección democrática con información perfecta no haría falta estudiar a los agentes públicos, porque si actuaran según sus propios intereses los votantes los reemplazarían. El tema existe porque esa alineación falla. La presentación tiene dos partes. La primera es la teoría de la burocracia: qué maximizan los funcionarios, por qué eso lleva a gastar de más y cómo se puede controlar. La segunda es la búsqueda de rentas: por qué los grupos de presión gastan recursos en conseguir privilegios, por qué los grupos pequeños y ricos se organizan mejor y por qué el costo social de un monopolio creado por el gobierno es mayor que el triángulo de los manuales. La conclusión es política: si esta descripción es correcta, hay que limitar la discreción de quienes deciden y descartar las políticas que discriminan entre agentes.",
+ "secciones": [
+  {
+   "t": "Qué quiere un burócrata",
+   "p": [
+    "La presentación distingue dos niveles. Los burócratas son los funcionarios públicos que suministran información técnica a los responsables de la política para que tomen decisiones. La unidad burocrática es un grupo de funcionarios cuya actividad se concentra en un conjunto delimitado de actividades de gasto público. La relación es de agencia: el político decide, pero depende de lo que el funcionario le informa sobre costos, beneficios y factibilidad técnica.",
+    "El punto de partida del análisis es suponer que los burócratas maximizan su utilidad privada, como cualquier otro agente. Lo que cambia es el contexto: no hay incentivos salariales para ser eficientes, porque los sueldos del sector público se fijan por ley y no por productividad, y aun si se quisiera pagar según productividad habría problemas para medirla. Siguiendo a Niskanen (1971), los funcionarios no son altruistas ni tienen incentivos pecuniarios: sus objetivos son el poder, el prestigio y la influencia. Y todo eso crece con el presupuesto del organismo que dirigen.",
+    "De ahí sale la tesis central: la interacción entre políticos que carecen de información y funcionarios que quieren maximizar el presupuesto conduce inevitablemente a un exceso de gasto. Lectura propia: el adverbio «inevitablemente» depende de que el político no tenga otra fuente de información; buena parte de los controles que se ven más abajo consisten justamente en dársela."
+   ]
+  },
+  {
+   "t": "El burócrata como monopolista del presupuesto",
+   "eq": [
+    "\\mathit{BME}(G) \\ge \\mathit{CME}(G)",
+    "\\mathit{BME}(G_0) = \\mathit{CME}(G_0) \\;\\Longleftrightarrow\\; B(G_0) = C(G_0)",
+    "\\mathit{BMA}(G^{*}) = \\mathit{CMA}(G^{*}), \\qquad G_0 > G^{*}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G\\): tamaño del proyecto público, el nivel de provisión del bien o servicio.",
+      "en": "\\(G\\): size of the public project, the level of provision of the good or service."
+     },
+     {
+      "es": "\\(\\mathit{BME}(G)\\): beneficio medio del proyecto, beneficio total dividido por \\(G\\), en pesos por unidad de provisión.",
+      "en": "\\(\\mathit{BME}(G)\\): average benefit of the project, total benefit divided by \\(G\\), in pesos per unit of provision."
+     },
+     {
+      "es": "\\(\\mathit{CME}(G)\\): costo medio de proveer \\(G\\), costo total dividido por \\(G\\), en pesos por unidad.",
+      "en": "\\(\\mathit{CME}(G)\\): average cost of providing \\(G\\), total cost divided by \\(G\\), in pesos per unit."
+     },
+     {
+      "es": "\\(\\ge\\): la condición dice que el político acepta cualquier nivel cuyo beneficio medio no sea menor que su costo medio.",
+      "en": "\\(\\ge\\): the condition says the politician accepts any level whose average benefit is not below its average cost."
+     }
+    ],
+    [
+     {
+      "es": "\\(G_0\\): nivel de provisión que ofrece el funcionario para maximizar su presupuesto, el mayor que el político todavía acepta.",
+      "en": "\\(G_0\\): provision level the official offers to maximize the budget, the largest the politician still accepts."
+     },
+     {
+      "es": "\\(B(G)\\) y \\(C(G)\\): beneficio total y costo total del proyecto, en pesos (lectura propia: la diapositiva da la condición en medias; multiplicar ambos lados por \\(G\\) da la igualdad en totales).",
+      "en": "\\(B(G)\\) and \\(C(G)\\): total benefit and total cost of the project, in pesos (own reading: the slide states the condition in averages; multiplying both sides by \\(G\\) gives the equality in totals)."
+     },
+     {
+      "es": "\\(\\Longleftrightarrow\\): «equivale a».",
+      "en": "\\(\\Longleftrightarrow\\): «is equivalent to»."
+     }
+    ],
+    [
+     {
+      "es": "\\(G^{*}\\): nivel en que se cortan el beneficio marginal y el costo marginal en el gráfico de la presentación; lectura propia: es el nivel eficiente, que la diapositiva no nombra así.",
+      "en": "\\(G^{*}\\): level where marginal benefit and marginal cost cross in the presentation's graph; own reading: it is the efficient level, which the slide does not call that."
+     },
+     {
+      "es": "\\(\\mathit{BMA}(G)\\): beneficio marginal, lo que agrega al beneficio una unidad más de \\(G\\), en pesos.",
+      "en": "\\(\\mathit{BMA}(G)\\): marginal benefit, what one more unit of \\(G\\) adds to benefit, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{CMA}(G)\\): costo marginal, lo que cuesta una unidad más de \\(G\\), en pesos.",
+      "en": "\\(\\mathit{CMA}(G)\\): marginal cost, the cost of one more unit of \\(G\\), in pesos."
+     },
+     {
+      "es": "\\(G_0 > G^{*}\\): el presupuesto que logra el funcionario excede el nivel eficiente.",
+      "en": "\\(G_0 > G^{*}\\): the budget the official obtains exceeds the efficient level."
+     }
+    ]
+   ],
+   "p": [
+    "La primera vía para inflar el presupuesto es el comportamiento monopolístico. Hay un proyecto público de tamaño G y el político no conoce la tecnología con que se provee. El funcionario es el único que la conoce, de modo que actúa como un monopolista frente a un consumidor: la presentación lo dice con esas palabras, monopolista igual a funcionario y consumidor igual a político.",
+    "El funcionario tiene dos herramientas. Puede decirle al político que ciertos niveles de provisión no son técnicamente factibles, por ejemplo G*. Y puede ofrecerle el nivel que quiera, sabiendo que el político comprará siempre que el beneficio medio sea al menos igual al costo medio. Para maximizar el presupuesto, ofrece G0, donde el beneficio medio iguala al costo medio.",
+    "En el gráfico, las curvas de beneficio son decrecientes y las de costo crecientes; las marginales se cortan en G* y las medias en G0, a la derecha. El funcionario se comporta como un monopolista que discrimina perfectamente: se apropia de todo el excedente del político gastándolo en más provisión. Lectura propia: en G0 el beneficio total iguala al costo total, de modo que el beneficio neto del proyecto es cero; las unidades entre G* y G0 cuestan más de lo que rinden y se comen el excedente que generaban las primeras."
+   ]
+  },
+  {
+   "t": "Otras tres vías para inflar el presupuesto, y cómo controlarlas",
+   "p": [
+    "Excluir alternativas no siempre funciona, porque al funcionario le cuesta justificar que un nivel bajo de producción es técnicamente imposible. La segunda vía es subestimar los costos de provisión: cuando los funcionarios saben que el presupuesto se puede ampliar después, tienen incentivos a mostrar un costo bajo al principio para que el proyecto se apruebe. La tercera es sobreestimar los beneficios: el político a menudo no conoce con precisión cuánto rinde el proyecto y le encarga al burócrata que lo estime, lo que le da al burócrata el instrumento para agrandarlo.",
+    "La cuarta es la ineficiencia productiva. Las tres anteriores generan gasto excesivo, es decir, ineficiencia en la asignación, pero la producción se hace al menor costo medio posible y se mantiene la eficiencia técnica. Cuando los funcionarios no pueden usar esos caminos, recurren a estimar funciones de costos más altas que las reales. La presentación destaca dos cosas: ocurre por falta de incentivos para minimizar costos, y, aunque sube el costo por unidad, puede corregir en parte la ineficiencia del comportamiento monopolista, porque a un costo unitario mayor el político compra menos unidades.",
+    "Para el control, la presentación compara al sector público con una empresa donde los sueldos no dependen de la productividad y los puestos son vitalicios. Una empresa privada así quebraría; el sector público no puede quebrar, y por eso la ineficiencia se generaliza. Las respuestas que propone son cinco: restablecer el nexo entre retribución y productividad, que exige poder medirla; individualizar las responsabilidades; cambiar las prácticas presupuestarias; crear agencias independientes, y sustituir producción pública por privada. Lectura propia: cada medida ataca una vía distinta; la medición de productividad apunta a la ineficiencia productiva, y las agencias independientes, a la asimetría de información que sostiene a las otras tres."
+   ]
+  },
+  {
+   "t": "Grupos de presión y free rider",
+   "p": [
+    "La segunda parte cambia de actor. Los grupos de presión son asociaciones que usan recursos de la economía de manera no productiva para quedarse con la renta que surge de limitar la competencia. La búsqueda de rentas, o rent-seeking, consiste en buscar beneficios sin agregar valor: se gasta en lobby para obtener después ganancias que en principio no les corresponden. La presentación distingue grupos con muchos integrantes e influencia, grupos de interés con gran poder económico y otros grupos, como los que buscan mejorar la información de los votantes.",
+    "Estos grupos enfrentan un problema de free rider: pertenecer cuesta tiempo y dinero, pero las ganancias se pueden disfrutar sin ser miembro. La tendencia a no participar es mayor en los grupos grandes que en los pequeños, porque perder un miembro le cuesta poco a un grupo numeroso y porque los costos de transacción de decidir son mayores cuando son muchos. También es mayor en los grupos de rentas bajas, que no pueden soportar el costo de participación.",
+    "La consecuencia es que los grupos pequeños y de rentas altas son más organizados y efectivos, y sus intereses se imponen sobre el interés general. El resultado son decisiones públicas ineficientes e inequitativas a la vez. Lectura propia: es el argumento de La lógica de la acción colectiva de Mancur Olson, que la presentación no cita; explica por qué un arancel que beneficia a pocas empresas y perjudica un poco a millones de consumidores sobrevive en el Congreso."
+   ]
+  },
+  {
+   "t": "El costo social del monopolio con buscadores de renta",
+   "eq": [
+    "\\mathit{CS}_{\\text{sin}} = A, \\qquad \\mathit{CS}_{\\text{con}} = A + B",
+    "\\sum_{i=1}^{n} E[g_i] = B"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{CS}_{\\text{sin}}\\): costo social del monopolio cuando nadie compite por obtenerlo, en pesos.",
+      "en": "\\(\\mathit{CS}_{\\text{sin}}\\): social cost of the monopoly when nobody competes to obtain it, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{CS}_{\\text{con}}\\): costo social cuando hay buscadores de renta que compiten por la posición de monopolio, en pesos.",
+      "en": "\\(\\mathit{CS}_{\\text{con}}\\): social cost when rent seekers compete for the monopoly position, in pesos."
+     },
+     {
+      "es": "\\(A\\): parte del excedente del consumidor que se pierde y nadie recibe (el triángulo de pérdida).",
+      "en": "\\(A\\): part of consumer surplus that is lost and nobody receives (the deadweight triangle)."
+     },
+     {
+      "es": "\\(B\\): renta del monopolio, el rectángulo entre el precio de monopolio y el costo, por la cantidad vendida.",
+      "en": "\\(B\\): monopoly rent, the rectangle between the monopoly price and cost, times the quantity sold."
+     }
+    ],
+    [
+     {
+      "es": "\\(n\\): número de aspirantes a la posición de monopolio (lectura propia: la presentación enuncia el teorema en palabras; la notación es nuestra).",
+      "en": "\\(n\\): number of contenders for the monopoly position (own reading: the presentation states the theorem in words; the notation is ours)."
+     },
+     {
+      "es": "\\(g_i\\): recursos que gasta el aspirante \\(i\\) para conseguir la renta (lobby, sobornos, abogados), en pesos.",
+      "en": "\\(g_i\\): resources contender \\(i\\) spends to obtain the rent (lobbying, bribes, lawyers), in pesos."
+     },
+     {
+      "es": "\\(E[\\cdot]\\): valor esperado.",
+      "en": "\\(E[\\cdot]\\): expected value."
+     },
+     {
+      "es": "\\(\\sum_{i=1}^{n}\\): suma sobre todos los aspirantes.",
+      "en": "\\(\\sum_{i=1}^{n}\\): sum over all contenders."
+     },
+     {
+      "es": "\\(B\\): renta del monopolio, en pesos.",
+      "en": "\\(B\\): monopoly rent, in pesos."
+     }
+    ]
+   ],
+   "p": [
+    "La presentación toma la visión del gobierno como creador de rentas y de quienes están en él como buscadores de rentas donde sea posible. Hay dos conexiones. Una es el lobby: un intento de cambiar la política a favor de quienes lo financian; si tiene éxito, se crean rentas. La otra es que burócratas y políticos pueden crear rentas con sus decisiones y «venderlas» a quienes se benefician; esa venta les da ingresos y un incentivo para hacer carrera en la política y la burocracia.",
+    "Sobre el gráfico del monopolio, sin buscadores de renta el costo social es solo A, la parte del excedente del consumidor que se pierde, y B es la renta del monopolista, una transferencia desde los consumidores. Con buscadores de renta, B también se vuelve costo social, porque los posibles monopolistas compiten por ella y malgastan recursos por un monto igual a la renta. Es el teorema de la disipación: el valor esperado total de los recursos gastados por los aspirantes es exactamente la renta del monopolio. La conclusión de la presentación es que la pérdida social del monopolio es mayor cuando hay grupos de presión que hacen rent-seeking.",
+    "La competencia por la renta toma dos formas. Si el gobierno crea la posición de monopolio, compiten quienes licitan por obtenerla. Si el monopolio ya existe, se gasta en defenderlo de competidores potenciales, con derechos de autor, leyes de patentes o acción directa para intimidar a posibles entrantes. Lectura propia: la disipación completa supone competencia libre entre aspirantes neutrales al riesgo; con pocos aspirantes o con ventajas de acceso, parte de la renta queda como ganancia y la disipación es parcial."
+   ]
+  },
+  {
+   "t": "Cómo limitar la búsqueda de rentas, y qué falta",
+   "p": [
+    "La presentación propone dos vías. La primera es limitar los esfuerzos que se pueden dedicar a buscar rentas. El ejemplo son los servicios públicos, donde hay que garantizar la continuidad de la prestación y suele aparecer captura regulatoria, un regulador que actúa a favor del regulado por miedo a que se deje de prestar el servicio; la defensa son contratos con especificaciones que no dejen lugar a conductas oportunistas. La segunda es restringir la creación de rentas, que se basa en tratar de manera desigual a los agentes: el primer paso es rechazar las políticas que discriminan. Si todos ganan lo mismo, nadie tiene incentivo a pagar, y quien decide no puede subastar rentas.",
+    "Las consideraciones finales unen las dos partes: los tomadores de decisiones tienen incentivos para crear distorsiones, por ejemplo en casos de corrupción, lo que aleja la descripción de la política del dictador benévolo. Si esa visión es correcta, la respuesta es limitar la discreción de los responsables y descartar toda política discriminatoria.",
+    "Lectura propia: la presentación no tiene trabajo econométrico. Las dos tesis se pueden contrastar. La de Niskanen predice que los organismos con más monopolio de información y menos control externo tienen presupuestos mayores para un mismo producto; se mide comparando costos por unidad entre organismos o antes y después de crear una agencia independiente. La de disipación predice que el gasto en lobby de un sector crece con la renta en juego; se mide con registros de lobby frente a la protección arancelaria o regulatoria que recibe cada sector. En ambos casos el problema es de identificación: los sectores con más renta también pueden ser más grandes por otras razones."
+   ]
+  }
+ ],
+ "claves": [
+  "Los burócratas maximizan su utilidad; según Niskanen (1971), buscan poder, prestigio e influencia, que crecen con el presupuesto.",
+  "Con información asimétrica, el funcionario actúa como monopolista y ofrece G0, donde beneficio medio iguala costo medio, por encima del nivel G*.",
+  "Las otras vías para inflar el presupuesto son subestimar costos, sobreestimar beneficios e ineficiencia productiva.",
+  "Controles: nexo retribución-productividad, responsabilidades individuales, prácticas presupuestarias, agencias independientes y producción privada.",
+  "El free rider debilita a los grupos grandes y de rentas bajas; los pequeños y ricos se organizan mejor.",
+  "Teorema de la disipación: lo que se gasta en conseguir una renta iguala a la renta, que pasa a ser costo social.",
+  "La búsqueda de rentas se limita restringiendo el esfuerzo dedicado a ella y rechazando las políticas que discriminan entre agentes."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Niskanen (1971), ¿qué buscan los funcionarios públicos?",
+    "en": "According to Niskanen (1971), what do public officials seek?"
+   },
+   "op": {
+    "es": [
+     "Maximizar el bienestar de los votantes",
+     "Poder, prestigio e influencia",
+     "Aumentos salariales por productividad",
+     "Minimizar el costo de provisión"
+    ],
+    "en": [
+     "Maximize voters' welfare",
+     "Power, prestige and influence",
+     "Productivity-based pay raises",
+     "Minimize provision cost"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La presentación resume a Niskanen: los funcionarios no son altruistas ni tienen incentivos pecuniarios, y sus objetivos son poder, prestigio e influencia, que crecen con el presupuesto.",
+    "en": "The presentation summarizes Niskanen: officials are neither altruistic nor driven by pecuniary incentives; they seek power, prestige and influence, which grow with the budget."
+   },
+   "id": "fisc-ecopol-01-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo de comportamiento monopolístico, ¿qué nivel G0 ofrece el funcionario?",
+    "en": "In the monopolistic behavior model, what level G0 does the official offer?"
+   },
+   "op": {
+    "es": [
+     "Donde el beneficio marginal iguala al costo marginal",
+     "El mínimo técnicamente factible",
+     "Donde el beneficio medio iguala al costo medio",
+     "Donde el costo medio es mínimo"
+    ],
+    "en": [
+     "Where marginal benefit equals marginal cost",
+     "The minimum technically feasible",
+     "Where average benefit equals average cost",
+     "Where average cost is minimal"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El político compra mientras el beneficio medio sea al menos el costo medio; el funcionario ofrece el máximo que acepta, donde son iguales. Donde: beneficio medio = beneficio total / G; costo medio = costo total / G; G = tamaño del proyecto.",
+    "en": "The politician buys as long as average benefit is at least average cost; the official offers the largest level accepted, where they are equal. Where: average benefit = total benefit / G; average cost = total cost / G; G = project size."
+   },
+   "id": "fisc-ecopol-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los funcionarios subestiman los costos al presentar un proyecto?",
+    "en": "Why do officials underestimate costs when presenting a project?"
+   },
+   "op": {
+    "es": [
+     "Porque saben que el presupuesto se puede ampliar ex post",
+     "Porque los salarios dependen del costo",
+     "Porque la ley los obliga a presupuestar bajo",
+     "Porque el político conoce la tecnología"
+    ],
+    "en": [
+     "Because they know the budget can be expanded ex post",
+     "Because wages depend on cost",
+     "Because the law forces low budgeting",
+     "Because the politician knows the technology"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un costo inicial bajo hace que el proyecto se apruebe; después el presupuesto se amplía. Es la segunda vía para agrandar el organismo.",
+    "en": "A low initial cost gets the project approved; the budget is expanded later. It is the second route to enlarge the agency."
+   },
+   "id": "fisc-ecopol-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué tiene de particular la ineficiencia productiva frente a las otras vías?",
+    "en": "What is special about productive inefficiency compared with the other routes?"
+   },
+   "op": {
+    "es": [
+     "Mantiene la eficiencia técnica",
+     "Elimina el gasto excesivo por completo",
+     "Solo ocurre en empresas privadas",
+     "Sube el costo unitario y puede corregir en parte el exceso de provisión del comportamiento monopolista"
+    ],
+    "en": [
+     "It preserves technical efficiency",
+     "It fully eliminates excess spending",
+     "It only happens in private firms",
+     "It raises unit cost and may partly correct the overprovision from monopolistic behavior"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las otras vías producen ineficiencia en la asignación con producción al menor costo; la ineficiencia productiva sube el costo unitario, y con eso el político compra menos unidades.",
+    "en": "The other routes create allocative inefficiency with production at least cost; productive inefficiency raises unit cost, so the politician buys fewer units."
+   },
+   "id": "fisc-ecopol-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿En qué grupos es mayor la tendencia al free rider?",
+    "en": "In which groups is free riding more likely?"
+   },
+   "op": {
+    "es": [
+     "Pequeños y de rentas altas",
+     "Pequeños y de rentas bajas",
+     "Grandes y de rentas bajas",
+     "Grandes y de rentas altas"
+    ],
+    "en": [
+     "Small and high-income",
+     "Small and low-income",
+     "Large and low-income",
+     "Large and high-income"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En los grupos grandes perder un miembro cuesta poco y decidir cuesta más; en los de rentas bajas no se puede soportar el costo de participar. Por eso los grupos pequeños y ricos son más efectivos.",
+    "en": "In large groups losing a member costs little and deciding costs more; low-income members cannot bear the participation cost. Hence small, rich groups are more effective."
+   },
+   "id": "fisc-ecopol-01-q5"
+  },
+  {
+   "q": {
+    "es": "Según el teorema de la disipación, ¿cuánto gastan en total los aspirantes a un monopolio?",
+    "en": "According to the dissipation theorem, how much do monopoly contenders spend in total?"
+   },
+   "op": {
+    "es": [
+     "Nada, porque la renta es una transferencia",
+     "En valor esperado, exactamente la renta del monopolio",
+     "Solo el triángulo de pérdida",
+     "El doble de la renta"
+    ],
+    "en": [
+     "Nothing, because the rent is a transfer",
+     "In expected value, exactly the monopoly rent",
+     "Only the deadweight triangle",
+     "Twice the rent"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La suma del valor esperado de lo que gasta cada aspirante iguala a la renta B. Donde: B = renta del monopolio; el valor esperado promedia sobre quién gana la competencia.",
+    "en": "The sum of the expected value of each contender's spending equals the rent B. Where: B = monopoly rent; the expected value averages over who wins the contest."
+   },
+   "id": "fisc-ecopol-01-q6"
+  },
+  {
+   "q": {
+    "es": "Con buscadores de renta, ¿cuál es el costo social del monopolio en el gráfico de la presentación?",
+    "en": "With rent seekers, what is the social cost of monopoly in the presentation's graph?"
+   },
+   "op": {
+    "es": [
+     "Solo A, el excedente del consumidor perdido",
+     "Solo B, la renta",
+     "Cero, porque la competencia elimina el monopolio",
+     "A más B"
+    ],
+    "en": [
+     "Only A, the lost consumer surplus",
+     "Only B, the rent",
+     "Zero, because competition removes the monopoly",
+     "A plus B"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin rent-seeking B es una transferencia al monopolista; con rent-seeking se malgastan recursos por un monto igual a B, que pasa a sumarse al triángulo A. Donde: A = triángulo de pérdida de excedente; B = renta del monopolio.",
+    "en": "Without rent seeking B is a transfer to the monopolist; with it, resources equal to B are wasted, adding to triangle A. Where: A = deadweight triangle; B = monopoly rent."
+   },
+   "id": "fisc-ecopol-01-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué medida propone la presentación para restringir la creación de rentas?",
+    "en": "What measure does the presentation propose to restrict rent creation?"
+   },
+   "op": {
+    "es": [
+     "Subastar las rentas al mejor postor",
+     "Rechazar las políticas que discriminan entre agentes",
+     "Aumentar los salarios de los reguladores",
+     "Prohibir los grupos de presión"
+    ],
+    "en": [
+     "Auction rents to the highest bidder",
+     "Reject policies that discriminate among agents",
+     "Raise regulators' salaries",
+     "Ban pressure groups"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La renta nace del trato desigual; si todos ganan lo mismo, nadie tiene incentivo a pagar, y quien decide no puede subastar rentas.",
+    "en": "Rent comes from unequal treatment; if everyone gains the same, nobody has an incentive to pay, and the decision maker cannot auction rents."
+   },
+   "id": "fisc-ecopol-01-q8"
+  }
+ ],
+ "palabras": 1697,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la interacción entre políticos y burócratas lleva a gastar de más?",
+    "en": "Why does the interaction between politicians and bureaucrats lead to overspending?"
+   },
+   "a": {
+    "es": "Porque los políticos carecen de información y los funcionarios quieren maximizar el presupuesto, que les da poder, prestigio e influencia. Spataro y Temperley lo presentan siguiendo a Niskanen (1971).",
+    "en": "Because politicians lack information and officials want to maximize the budget, which gives them power, prestige and influence. Spataro and Temperley present it following Niskanen (1971)."
+   },
+   "id": "fisc-ecopol-01-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo funciona el burócrata como monopolista del presupuesto?",
+    "en": "How does the bureaucrat act as a budget monopolist?"
+   },
+   "a": {
+    "es": "Solo él conoce la tecnología: declara infactibles los niveles bajos y ofrece G0, donde el beneficio medio iguala al costo medio, por encima de G*, donde se cortan las marginales. Spataro y Temperley: monopolista = funcionario, consumidor = político.",
+    "en": "Only he knows the technology: he declares low levels infeasible and offers G0, where average benefit equals average cost, above G*, where the marginal curves cross. Spataro and Temperley: monopolist = official, consumer = politician."
+   },
+   "id": "fisc-ecopol-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué otras vías tiene un funcionario para agrandar su presupuesto?",
+    "en": "What other routes does an official have to enlarge the budget?"
+   },
+   "a": {
+    "es": "Subestimar costos cuando el presupuesto se puede ampliar ex post, sobreestimar beneficios cuando el político le encarga estimarlos e inflar las funciones de costos (ineficiencia productiva). Spataro y Temperley, sobre Albi, González Páramo y Zubiri.",
+    "en": "Underestimating costs when the budget can be expanded ex post, overestimating benefits when the politician asks him to estimate them, and inflating cost functions (productive inefficiency). Spataro and Temperley, on Albi, González Páramo and Zubiri."
+   },
+   "id": "fisc-ecopol-01-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se puede controlar a la burocracia?",
+    "en": "How can the bureaucracy be controlled?"
+   },
+   "a": {
+    "es": "Restableciendo el nexo entre retribución y productividad, individualizando responsabilidades, cambiando prácticas presupuestarias, creando agencias independientes y sustituyendo producción pública por privada. Son las cinco vías que enumeran Spataro y Temperley.",
+    "en": "By restoring the link between pay and productivity, assigning individual responsibility, changing budget practices, creating independent agencies and replacing public with private production. These are the five routes Spataro and Temperley list."
+   },
+   "id": "fisc-ecopol-01-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué los grupos de presión pequeños y ricos suelen imponerse al interés general?",
+    "en": "Why do small, rich pressure groups tend to prevail over the general interest?"
+   },
+   "a": {
+    "es": "Por el free rider: en grupos grandes perder un miembro cuesta poco y decidir es caro, y los de rentas bajas no soportan el costo de participar. Spataro y Temperley concluyen que esto produce decisiones ineficientes e inequitativas.",
+    "en": "Because of free riding: in large groups losing a member costs little and deciding is expensive, and low-income members cannot bear participation costs. Spataro and Temperley conclude this yields inefficient and inequitable decisions."
+   },
+   "id": "fisc-ecopol-01-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice el teorema de la disipación de rentas?",
+    "en": "What does the rent dissipation theorem state?"
+   },
+   "a": {
+    "es": "Que el valor esperado total de los recursos gastados por los aspirantes a un monopolio es exactamente la renta, de modo que la renta se vuelve costo social y se suma al triángulo de pérdida. Spataro y Temperley lo ponen como idea central de la búsqueda de rentas.",
+    "en": "That the total expected value of resources spent by monopoly contenders is exactly the rent, so the rent becomes a social cost added to the deadweight triangle. Spataro and Temperley make it the core idea of rent seeking."
+   },
+   "id": "fisc-ecopol-01-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué es la captura regulatoria en los servicios públicos y cómo se evita?",
+    "en": "What is regulatory capture in utilities and how is it avoided?"
+   },
+   "a": {
+    "es": "Es un regulador que actúa a favor del regulado por miedo a que se interrumpa el servicio; se evita con contratos cuyas especificaciones no dejen lugar a conductas oportunistas. Ejemplo de Spataro y Temperley para limitar el esfuerzo dedicado a buscar rentas.",
+    "en": "It is a regulator acting in favor of the regulated firm for fear the service stops; it is avoided with contracts whose terms leave no room for opportunism. Spataro and Temperley's example of limiting effort devoted to rent seeking."
+   },
+   "id": "fisc-ecopol-01-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué implica para la política económica que los decisores busquen rentas?",
+    "en": "What does rent seeking by decision makers imply for policy?"
+   },
+   "a": {
+    "es": "Que hay que abandonar el supuesto del dictador benévolo, limitar la discreción de los responsables y descartar toda política discriminatoria. Es la conclusión de Spataro y Temperley; lectura propia: limitar la discreción también limita la capacidad de responder a shocks.",
+    "en": "That the benevolent-dictator assumption must be dropped, decision makers' discretion limited and all discriminatory policy discarded. That is Spataro and Temperley's conclusion; own reading: limiting discretion also limits the ability to respond to shocks."
+   },
+   "id": "fisc-ecopol-01-t8"
+  }
+ ]
+}
