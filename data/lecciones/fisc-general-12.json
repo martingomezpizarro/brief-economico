@@ -1,0 +1,422 @@
+{
+ "id": "fisc-general-12",
+ "cat": "fisc-general",
+ "orden": 6,
+ "minutos": 15,
+ "titulo": "Clasificaciones presupuestarias con números: cómo leer el gasto de la Administración Nacional",
+ "bajada": "Siete formas puras y cinco combinadas de ordenar el mismo gasto, aplicadas al presupuesto argentino de 2009 y 2010: en qué se gasta, con qué carácter económico, quién lo gasta, dónde y cuánto se ejecutó de lo autorizado.",
+ "fuentes": [
+  1150
+ ],
+ "cita": "«Clasificaciones presupuestarias. Ejemplos» (material de Finanzas Públicas, FCE-UNC, unidad 2), con cuadros de la Administración Nacional argentina para 2009 y 2010",
+ "intro": "Este material de la unidad 2 de Finanzas Públicas de la FCE-UNC no tiene texto corrido: son dieciséis páginas de cuadros que toman un mismo objeto, el gasto de la Administración Nacional argentina, y lo presentan de doce maneras. Siete son clasificaciones puras: por finalidad y función, por carácter económico, por inciso, por jurisdicción, por ubicación geográfica, por objeto con las etapas de ejecución de 2009 y por programas para el Ministerio de Desarrollo Social. Cinco son mixtas, que cruzan dos criterios en una matriz. La lección que dejan los cuadros es que no existe «el» gasto público sin una clasificación detrás: el total de 2010, unos 275.779 millones de pesos, es el mismo en todas las tablas, pero cada una responde una pregunta distinta. Este brief recorre los cuadros, extrae lo que muestran y señala cómo leerlos; el marco conceptual de cada clasificador está en el brief siguiente sobre los elementos metodológicos del presupuesto.",
+ "secciones": [
+  {
+   "t": "El mismo total, doce preguntas distintas",
+   "eq": [
+    "\\Delta\\% = \\frac{G_{2010} - G_{2009}}{G_{2009}} \\times 100"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\Delta\\%\\): variación porcentual del gasto entre 2009 y 2010, la columna «%» de los cuadros.",
+      "en": "\\(\\Delta\\%\\): percentage change in spending between 2009 and 2010, the «%» column of the tables."
+     },
+     {
+      "es": "\\(G_{2010}\\), \\(G_{2009}\\): gasto de una línea del cuadro en cada año, en pesos corrientes (nominales, sin descontar inflación).",
+      "en": "\\(G_{2010}\\), \\(G_{2009}\\): spending on a table row in each year, in current (nominal) pesos, not adjusted for inflation."
+     },
+     {
+      "es": "\\(G_{2010} - G_{2009}\\): la columna «Diferencia, importe», en pesos.",
+      "en": "\\(G_{2010} - G_{2009}\\): the «Difference, amount» column, in pesos."
+     }
+    ]
+   ],
+   "p": [
+    "Todos los cuadros puros comparten la misma estructura: el gasto de 2009, el de 2010, la diferencia en pesos y la variación porcentual. El total de la Administración Nacional pasa de 243.083.986.475 pesos en 2009 a 275.779.423.917 en 2010, una diferencia de 32.695.437.442 pesos, es decir un aumento de 13,5%. Esa cifra se repite al pie de los cuadros por finalidad, carácter económico, inciso, jurisdicción y ubicación geográfica: lo que cambia no es cuánto se gasta, sino cómo se reparte.",
+    "Lectura propia: las variaciones están en pesos corrientes, y el material no las deflacta. Una suba nominal de 13,5% puede ser una caída real si la inflación del período fue mayor, de modo que estos cuadros sirven para ver la composición y su cambio relativo, no para afirmar que el gasto creció en términos reales.",
+    "El ordenamiento también importa para entender quién decide. La clasificación por jurisdicción y la institucional dicen qué organismo administra el crédito; la de finalidad y función, para qué se usa; la económica, qué efecto tiene en la economía; la de objeto e inciso, qué se compra; la geográfica, dónde; la programática, con qué programa. Cada una es una pregunta distinta sobre el mismo peso gastado."
+   ]
+  },
+  {
+   "t": "Para qué se gasta: finalidad y función",
+   "p": [
+    "El cuadro por finalidad y función agrupa el gasto en cinco finalidades: administración gubernamental, servicios de defensa y seguridad, servicios sociales, servicios económicos y deuda pública. En 2010 los servicios sociales suman 165.594.615.477 pesos, la mayor parte del total, y dentro de ellos la seguridad social, con 111.989.835.818 pesos, es por lejos la función más grande del presupuesto nacional, con un aumento de 16,2%. Le siguen, a mucha distancia, educación y cultura y la promoción y asistencia social, que crece 34,6%.",
+    "Los servicios económicos suman 46.682.960.176 pesos, con energía, combustibles y minería y transporte como funciones principales. La deuda pública, que aquí solo registra el servicio de la deuda, llega a 26.676.223.000 pesos. Las variaciones por función son muy dispares: administración fiscal crece 259,3% e información y estadística básicas 169,8%, mientras relaciones exteriores cae 25,5%.",
+    "Lectura propia: las variaciones extremas suelen estar en funciones chicas, donde un solo proyecto o una reasignación administrativa mueve mucho el porcentaje; antes de interpretar un 259,3% como un cambio de política conviene mirar el importe, que en ese caso es menor a mil millones de pesos."
+   ]
+  },
+  {
+   "t": "Qué efecto tiene en la economía: carácter económico, inciso y objeto",
+   "p": [
+    "La clasificación por carácter económico separa gastos corrientes y de capital. En 2010 los corrientes suman 236.332.617.453 pesos (12,2% más que en 2009) y los de capital 39.446.806.464 (21,5% más). Dentro de los corrientes, las prestaciones de la seguridad social son el rubro mayor, con 97.062.162.197 pesos; luego vienen las transferencias corrientes, con 68.096.006.740; los gastos de consumo, con 44.610.328.697, de los cuales 31.183.239.978 son remuneraciones, y las rentas de la propiedad, casi todas intereses, con 26.536.808.000 pesos. En los gastos de capital pesan más las transferencias de capital, sobre todo a provincias y municipios, que la inversión real directa.",
+    "La clasificación por inciso ordena lo mismo según el objeto: gastos en personal, bienes de consumo, servicios no personales, bienes de uso, transferencias, activos financieros, servicio de la deuda y otros gastos. Aquí las transferencias suman 192.968.361.362 pesos, porque el inciso agrupa lo que la clasificación económica separa en prestaciones de la seguridad social, transferencias corrientes y transferencias de capital. Lectura propia: el gasto en personal por inciso (31.187.239.978) y las remuneraciones por carácter económico (31.183.239.978) difieren en cuatro millones de pesos; con estos cuadros no se puede saber si es una diferencia de criterio o una errata.",
+    "Lectura propia: la lectura conjunta muestra un presupuesto nacional que, más que producir servicios, transfiere. La mayor parte del gasto son pagos a jubilados, a hogares, a empresas y a otros niveles de gobierno; el gasto de consumo propio, que paga sueldos y bienes, es una fracción menor. Eso explica por qué la discusión fiscal argentina gira alrededor de la seguridad social y de los subsidios, y no de la planta de personal."
+   ]
+  },
+  {
+   "t": "Cuánto se ejecutó: las etapas del gasto en 2009",
+   "eq": [
+    "C^{V} = C^{O} + M",
+    "\\%\\,\\mathit{Dev} = \\frac{\\mathit{Dev}}{C^{V}} \\times 100"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C^{V}\\): crédito vigente, la autorización de gasto que rige al final del ejercicio, en millones de pesos.",
+      "en": "\\(C^{V}\\): current appropriation, the spending authorization in force at year end, in millions of pesos."
+     },
+     {
+      "es": "\\(C^{O}\\): crédito original, el que aprobó la ley de presupuesto.",
+      "en": "\\(C^{O}\\): original appropriation, the one approved in the budget law."
+     },
+     {
+      "es": "\\(M\\): modificaciones presupuestarias del año, que pueden ser positivas o negativas.",
+      "en": "\\(M\\): budget amendments during the year, which may be positive or negative."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\%\\,\\mathit{Dev}\\): porcentaje de devengado, la última columna del cuadro (lectura propia: el cuadro no da la fórmula, pero sus cifras la cumplen).",
+      "en": "\\(\\%\\,\\mathit{Dev}\\): accrual percentage, the last column of the table (own reading: the table gives no formula, but its figures satisfy it)."
+     },
+     {
+      "es": "\\(\\mathit{Dev}\\): gasto devengado, el momento en que nace la obligación de pago porque se recibió el bien o servicio, en millones de pesos.",
+      "en": "\\(\\mathit{Dev}\\): accrued spending, the moment the payment obligation arises because the good or service was received, in millions of pesos."
+     },
+     {
+      "es": "\\(C^{V}\\): crédito vigente, en millones de pesos.",
+      "en": "\\(C^{V}\\): current appropriation, in millions of pesos."
+     }
+    ]
+   ],
+   "p": [
+    "El cuadro por objeto de 2009 es el único que muestra el ciclo del gasto: crédito original, modificaciones, crédito vigente, compromiso, devengado y pagado. El total arranca con un crédito original de 233.839,71 millones de pesos; las modificaciones suman 30.570,54 millones y llevan el crédito vigente a 264.410,25 millones. Se comprometen 250.531,52 millones, se devengan 249.914,09 y se pagan 232.778,09. El porcentaje devengado sobre el crédito vigente es 94,5%.",
+    "La ejecución no es pareja. Los gastos en personal se devengan en 97,7%, las transferencias en 95,5% y el servicio de la deuda en 91,5%, mientras los bienes de uso, que son inversión, llegan a 88,8% y los préstamos dentro de los activos financieros a 62,3%. Lo rígido se ejecuta casi entero; lo discrecional, como la obra y los préstamos, es lo que queda sin ejecutar.",
+    "Lectura propia: dos brechas merecen atención. Las modificaciones suben el crédito alrededor de un octavo durante el año, lo que muestra cuánto se aparta el presupuesto ejecutado del que aprobó el Congreso. Y la distancia entre devengado y pagado, unos diecisiete mil millones de pesos, es deuda flotante: obligaciones reconocidas que pasan al ejercicio siguiente."
+   ]
+  },
+  {
+   "t": "Quién, dónde y con qué programa",
+   "p": [
+    "La clasificación por jurisdicción muestra qué parte del Estado administra el gasto. En 2010 el Ministerio de Trabajo, Empleo y Seguridad Social concentra 104.660.679.764 pesos, porque de él depende la seguridad social; le siguen el Ministerio de Planificación Federal, Inversión Pública y Servicios, con 38.830.177.976 (apenas 1,7% más que en 2009), el servicio de la deuda pública y las obligaciones a cargo del Tesoro. El Ministerio de Desarrollo Social crece 27,1%, hasta 14.393.319.144 pesos.",
+    "La ubicación geográfica reparte el mismo total por provincia. Capital Federal registra 91.033.987.222 pesos y la provincia de Buenos Aires 45.024.061.732, pero hay renglones grandes que no son provincias: «Nacional», con 20.788.607.460, «Interprovincial», «Binacional» y «No clasificado», con 17.986.191.227. Lectura propia: la cifra de Capital Federal no mide cuánto se gasta en la ciudad; el criterio administrativo suele imputar el gasto donde está la unidad ejecutora, y la mayoría de los organismos tienen sede allí.",
+    "La clasificación programática baja al nivel del Ministerio de Desarrollo Social: un crédito total de 19.789.881.844 pesos para 2010, repartido en programas con su unidad responsable. El programa más grande son las pensiones no contributivas, con 11.415.018.653 pesos; le siguen el Programa del Ingreso Social con Trabajo, con 3.787.451.129, y Seguridad Alimentaria, con 1.914.349.618. Es la única clasificación que vincula cada peso con un objetivo de política y con un responsable."
+   ]
+  },
+  {
+   "t": "Las clasificaciones mixtas y qué haría falta para analizarlas",
+   "p": [
+    "Las cinco clasificaciones mixtas cruzan dos criterios: carácter económico con carácter institucional, finalidad-función con carácter económico, jurisdicción con carácter económico, jurisdicción con finalidad-función y carácter institucional con finalidad-función. La primera muestra que en 2010 la administración central gasta 148.422.034 miles de pesos, los organismos descentralizados 21.110.157 y las instituciones de seguridad social 106.247.233, y que casi todo lo de estas últimas, 88.257.811 miles, son prestaciones de la seguridad social. La segunda deja ver, por ejemplo, que en la función seguridad social, de 111.989,8 millones, las prestaciones explican 97.062,2, y que en transporte el gasto se divide entre transferencias corrientes, 8.955,7 millones, e inversión real directa, 7.200,1.",
+    "Lectura propia: el valor de las matrices es que permiten separar decisiones que una sola clasificación confunde. Saber que el gasto en transporte creció no dice si se construyeron rutas o se subsidió la tarifa; la matriz función por carácter económico sí lo dice.",
+    "Lectura propia: el material no tiene trabajo econométrico, pero los cuadros son la materia prima de casi todo el análisis fiscal aplicado. Para pasar de la descripción al análisis harían falta tres cosas: deflactar las series para hablar de variaciones reales, expresarlas como proporción del PBI para comparar en el tiempo y entre países, y armar series largas por función y carácter económico para estimar, por ejemplo, la respuesta del gasto al ciclo o la rigidez de cada componente. La ejecución por etapas permite además medir la sobreejecución o subejecución por partida, un indicador de la calidad de la presupuestación."
+   ]
+  }
+ ],
+ "claves": [
+  "El mismo total de gasto (275.779 millones de pesos en 2010) se presenta con siete clasificaciones puras y cinco mixtas; cada una responde una pregunta distinta.",
+  "Por finalidad, los servicios sociales son la mayor parte y la seguridad social es la función más grande.",
+  "Por carácter económico, dominan las prestaciones de la seguridad social y las transferencias; el consumo propio es una fracción menor.",
+  "El inciso transferencias agrupa lo que la clasificación económica separa en prestaciones, transferencias corrientes y de capital.",
+  "En 2009 se devengó 94,5% del crédito vigente; lo rígido (personal) se ejecuta casi entero y lo discrecional (préstamos, inversión) menos.",
+  "La ubicación geográfica concentra gasto en Capital Federal por sede de las unidades ejecutoras y deja montos grandes como nacional o no clasificado.",
+  "Las variaciones están en pesos corrientes: sirven para ver composición, no crecimiento real."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué tienen en común los cuadros puros por finalidad, carácter económico, inciso, jurisdicción y ubicación geográfica de 2010?",
+    "en": "What do the 2010 pure tables by purpose, economic nature, object group, jurisdiction and location have in common?"
+   },
+   "op": {
+    "es": [
+     "Cada uno cubre una parte distinta del gasto",
+     "Muestran el mismo total, ordenado de distinta forma",
+     "Están en pesos constantes",
+     "Solo incluyen gastos corrientes"
+    ],
+    "en": [
+     "Each covers a different part of spending",
+     "They show the same total, ordered differently",
+     "They are in constant pesos",
+     "They only include current spending"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El total de la Administración Nacional, 275.779.423.917 pesos en 2010, se repite al pie de todos; cambia el criterio de reparto, no el monto.",
+    "en": "The National Administration total, 275,779,423,917 pesos in 2010, appears at the foot of all of them; the allocation criterion changes, not the amount."
+   },
+   "id": "fisc-general-12-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la función de mayor gasto en el cuadro por finalidad y función de 2010?",
+    "en": "Which function has the largest spending in the 2010 purpose-and-function table?"
+   },
+   "op": {
+    "es": [
+     "Servicio de la deuda pública",
+     "Educación y cultura",
+     "Transporte",
+     "Seguridad social"
+    ],
+    "en": [
+     "Public debt service",
+     "Education and culture",
+     "Transport",
+     "Social security"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La seguridad social suma 111.989.835.818 pesos, dentro de servicios sociales, muy por encima de cualquier otra función.",
+    "en": "Social security adds up to 111,989,835,818 pesos, within social services, far above any other function."
+   },
+   "id": "fisc-general-12-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el inciso transferencias es mucho mayor que las transferencias corrientes de la clasificación económica?",
+    "en": "Why is the transfers object group much larger than current transfers in the economic classification?"
+   },
+   "op": {
+    "es": [
+     "Porque el inciso incluye prestaciones de la seguridad social y transferencias de capital",
+     "Porque el inciso está en dólares",
+     "Porque el inciso incluye los intereses de la deuda",
+     "Por un error de suma"
+    ],
+    "en": [
+     "Because the object group includes social security benefits and capital transfers",
+     "Because the object group is in dollars",
+     "Because the object group includes debt interest",
+     "Because of an addition error"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La clasificación económica separa prestaciones, transferencias corrientes y transferencias de capital; el inciso 5 las junta, y por eso llega a 192.968.361.362 pesos.",
+    "en": "The economic classification separates benefits, current transfers and capital transfers; object group 5 lumps them together, reaching 192,968,361,362 pesos."
+   },
+   "id": "fisc-general-12-q3"
+  },
+  {
+   "q": {
+    "es": "En la ejecución de 2009, ¿cómo se obtiene el crédito vigente?",
+    "en": "In the 2009 execution, how is the current appropriation obtained?"
+   },
+   "op": {
+    "es": [
+     "Devengado más pagado",
+     "Compromiso menos modificaciones",
+     "Crédito original más modificaciones",
+     "Pagado más deuda flotante"
+    ],
+    "en": [
+     "Accrued plus paid",
+     "Commitment minus amendments",
+     "Original appropriation plus amendments",
+     "Paid plus floating debt"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Cᵛ = Cᴼ + M: 233.839,71 más 30.570,54 da 264.410,25 millones. Donde: Cᵛ = crédito vigente; Cᴼ = crédito original aprobado por ley; M = modificaciones del año.",
+    "en": "Cᵛ = Cᴼ + M: 233,839.71 plus 30,570.54 gives 264,410.25 million. Where: Cᵛ = current appropriation; Cᴼ = original appropriation in the law; M = amendments during the year."
+   },
+   "id": "fisc-general-12-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué porcentaje del crédito vigente se devengó en total en 2009?",
+    "en": "What share of the current appropriation was accrued in total in 2009?"
+   },
+   "op": {
+    "es": [
+     "62,3%",
+     "88,8%",
+     "97,7%",
+     "94,5%"
+    ],
+    "en": [
+     "62.3%",
+     "88.8%",
+     "97.7%",
+     "94.5%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "% Dev = Dev / Cᵛ × 100 = 249.914,09 / 264.410,25 × 100 ≈ 94,5. Donde: Dev = gasto devengado; Cᵛ = crédito vigente, ambos en millones de pesos. Los otros valores son de partidas: préstamos, bienes de uso y personal.",
+    "en": "% Acc = Acc / Cᵛ × 100 = 249,914.09 / 264,410.25 × 100 ≈ 94.5. Where: Acc = accrued spending; Cᵛ = current appropriation, both in millions of pesos. The other values are for items: loans, capital goods and personnel."
+   },
+   "id": "fisc-general-12-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué partidas tienden a ejecutarse menos según el cuadro de 2009?",
+    "en": "Which items tend to be executed less according to the 2009 table?"
+   },
+   "op": {
+    "es": [
+     "Gastos en personal",
+     "Préstamos y bienes de uso",
+     "Transferencias corrientes",
+     "Intereses de la deuda"
+    ],
+    "en": [
+     "Personnel costs",
+     "Loans and capital goods",
+     "Current transfers",
+     "Debt interest"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los préstamos llegan a 62,3% y los bienes de uso a 88,8%, frente a 97,7% del personal: lo discrecional se ejecuta menos que lo rígido.",
+    "en": "Loans reach 62.3% and capital goods 88.8%, against 97.7% for personnel: discretionary items are executed less than rigid ones."
+   },
+   "id": "fisc-general-12-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué no conviene leer el 13,5% de aumento del gasto total como crecimiento real?",
+    "en": "Why shouldn't the 13.5% rise in total spending be read as real growth?"
+   },
+   "op": {
+    "es": [
+     "Porque está en pesos corrientes, sin descontar inflación",
+     "Porque excluye la seguridad social",
+     "Porque es una cifra proyectada",
+     "Porque está en dólares"
+    ],
+    "en": [
+     "Because it is in current pesos, not adjusted for inflation",
+     "Because it excludes social security",
+     "Because it is a projected figure",
+     "Because it is in dollars"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Δ% = (G₂₀₁₀ − G₂₀₀₉) / G₂₀₀₉ × 100 usa valores nominales. Donde: G = gasto de cada año en pesos corrientes. Si la inflación supera esa tasa, el gasto real cae.",
+    "en": "Δ% = (G₂₀₁₀ − G₂₀₀₉) / G₂₀₀₉ × 100 uses nominal values. Where: G = spending in each year in current pesos. If inflation exceeds that rate, real spending falls."
+   },
+   "id": "fisc-general-12-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué permite ver la matriz de finalidad-función por carácter económico que no muestra cada clasificación sola?",
+    "en": "What does the purpose-function by economic-nature matrix reveal that each classification alone does not?"
+   },
+   "op": {
+    "es": [
+     "El total del gasto",
+     "La provincia de destino",
+     "Si el gasto de una función es transferencia o inversión real",
+     "El porcentaje devengado"
+    ],
+    "en": [
+     "Total spending",
+     "The destination province",
+     "Whether a function's spending is a transfer or real investment",
+     "The accrual percentage"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Por ejemplo, en transporte separa transferencias corrientes (8.955,7 millones) de inversión real directa (7.200,1 millones): subsidio o ruta.",
+    "en": "For example, in transport it separates current transfers (8,955.7 million) from direct real investment (7,200.1 million): subsidy or road."
+   },
+   "id": "fisc-general-12-q8"
+  }
+ ],
+ "palabras": 1468,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué no existe «el» gasto público sin una clasificación detrás?",
+    "en": "Why is there no such thing as «the» public spending without a classification behind it?"
+   },
+   "a": {
+    "es": "Porque el mismo total puede ordenarse por para qué, qué efecto, qué se compra, quién, dónde y con qué programa, y cada orden responde una pregunta distinta. El material de Finanzas Públicas de la FCE-UNC lo muestra con doce cuadros del gasto nacional de 2010.",
+    "en": "Because the same total can be ordered by purpose, economic effect, what is bought, who, where and which program, and each order answers a different question. The FCE-UNC Public Finance material shows it with twelve tables of 2010 national spending."
+   },
+   "id": "fisc-general-12-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué muestra la clasificación por finalidad y función del gasto nacional argentino?",
+    "en": "What does the purpose-and-function classification of Argentine national spending show?"
+   },
+   "a": {
+    "es": "Que los servicios sociales son la mayor parte y que la seguridad social, con 111.989.835.818 pesos en 2010, es la función más grande. Surge de los cuadros de ejemplo de la cátedra de Finanzas Públicas (FCE-UNC).",
+    "en": "That social services are the largest part and that social security, at 111,989,835,818 pesos in 2010, is the largest function. It comes from the example tables of the FCE-UNC Public Finance course."
+   },
+   "id": "fisc-general-12-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre clasificar el gasto por inciso y por carácter económico?",
+    "en": "What is the difference between classifying spending by object group and by economic nature?"
+   },
+   "a": {
+    "es": "El inciso ordena según qué se compra o paga (personal, bienes, transferencias); el carácter económico, según su efecto (corriente o de capital). Por eso el inciso transferencias agrupa lo que la clasificación económica separa, como muestran los cuadros de 2010 del material de la FCE-UNC.",
+    "en": "The object group orders by what is bought or paid (personnel, goods, transfers); economic nature, by its effect (current or capital). Hence the transfers group lumps together what the economic classification separates, as the 2010 tables of the FCE-UNC material show."
+   },
+   "id": "fisc-general-12-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cuáles son las etapas del gasto público y qué se ve en la ejecución?",
+    "en": "What are the stages of public spending and what does execution show?"
+   },
+   "a": {
+    "es": "Crédito original, modificaciones, crédito vigente, compromiso, devengado y pagado. En el cuadro de 2009 del material de la FCE-UNC se devenga 94,5% del vigente, con personal casi completo y préstamos e inversión por debajo.",
+    "en": "Original appropriation, amendments, current appropriation, commitment, accrual and payment. In the 2009 table of the FCE-UNC material 94.5% of the current appropriation is accrued, with personnel almost complete and loans and investment below."
+   },
+   "id": "fisc-general-12-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la clasificación geográfica puede engañar sobre dónde se gasta?",
+    "en": "Why can the geographic classification mislead about where money is spent?"
+   },
+   "a": {
+    "es": "Porque suele imputar el gasto donde está la unidad ejecutora y deja renglones grandes como «Nacional» o «No clasificado». En el cuadro de 2010 del material de la FCE-UNC, Capital Federal registra 91.033.987.222 pesos; lectura propia: buena parte es sede administrativa, no destino.",
+    "en": "Because it usually assigns spending to where the executing unit sits and leaves large lines such as «National» or «Unclassified». In the 2010 table of the FCE-UNC material, Buenos Aires City records 91,033,987,222 pesos; own reading: much of it is administrative seat, not destination."
+   },
+   "id": "fisc-general-12-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Para qué sirve la clasificación por programas?",
+    "en": "What is the classification by programs for?"
+   },
+   "a": {
+    "es": "Para vincular cada peso con un objetivo de política y un responsable. En el ejemplo del Ministerio de Desarrollo Social de 2010 (FCE-UNC), las pensiones no contributivas se llevan 11.415.018.653 de 19.789.881.844 pesos.",
+    "en": "To link each peso to a policy objective and a person in charge. In the 2010 Ministry of Social Development example (FCE-UNC), non-contributory pensions take 11,415,018,653 out of 19,789,881,844 pesos."
+   },
+   "id": "fisc-general-12-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué aporta una clasificación mixta del gasto?",
+    "en": "What does a combined spending classification add?"
+   },
+   "a": {
+    "es": "Cruza dos criterios en una matriz, por ejemplo finalidad-función por carácter económico, y permite saber si el gasto de una función es transferencia o inversión. El material de la FCE-UNC presenta cinco cruces para la Administración Nacional de 2010.",
+    "en": "It crosses two criteria in a matrix, for example purpose-function by economic nature, and shows whether a function's spending is a transfer or investment. The FCE-UNC material presents five such crossings for the 2010 National Administration."
+   },
+   "id": "fisc-general-12-t7"
+  }
+ ]
+}

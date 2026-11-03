@@ -1,0 +1,510 @@
+{
+ "id": "fisc-general-16",
+ "cat": "fisc-general",
+ "orden": 10,
+ "minutos": 15,
+ "titulo": "Impuestos y eficiencia: exceso de gravamen, la fórmula de Harberger y la imposición óptima",
+ "bajada": "Por qué un impuesto cuesta más de lo que recauda, de qué depende la pérdida de eficiencia, qué impuestos distorsionan qué decisiones y cómo se eligen las alícuotas que recaudan lo necesario con el menor costo.",
+ "fuentes": [
+  1176
+ ],
+ "cita": "Cátedra de Finanzas Públicas (FCE-UNC), «Impuestos: eficiencia» (diapositivas sin autor en el texto)",
+ "intro": "Estas diapositivas de la cátedra de Finanzas Públicas de la FCE-UNC tratan la pregunta de eficiencia de la tributación: además de transferir recursos del sector privado al público, un impuesto cambia los precios relativos y con ellos las decisiones de consumir, trabajar, ahorrar y producir. Esa distorsión tiene un costo propio, la carga indirecta o exceso de gravamen, que se suma a lo recaudado. La presentación lo define, muestra sus determinantes en el gráfico de oferta y demanda, deriva la fórmula de la pérdida de bienestar en cuatro casos, recorre qué impuestos distorsionan qué margen de decisión, explica cómo medir el costo con la variación equivalente y la demanda compensada, y termina con las reglas de imposición óptima y un ejercicio resuelto con un lagrangiano.",
+ "secciones": [
+  {
+   "t": "Carga directa y carga indirecta",
+   "p": [
+    "Un impuesto tiene dos costos. La carga directa es la recaudación: una transferencia de renta del sector privado al público, un efecto renta inevitable si el objetivo es financiar el gasto. La carga indirecta, también llamada exceso de gravamen, peso muerto o costo de ineficiencia, aparece porque el impuesto distorsiona la elección de los agentes y los induce a abandonar actividades gravadas a favor de las no gravadas o menos gravadas. La política tributaria debería intentar minimizarla.",
+    "La razón de fondo es el primer teorema del bienestar: en equilibrio competitivo los precios son señales correctas del costo relativo de producción y eso garantiza una asignación eficiente. Con impuestos, los individuos deciden no solo por costos relativos sino por razones fiscales. La presentación agrega dos casos extremos: puede haber carga indirecta sin carga directa, si el impuesto es tan alto que elimina el mercado y no recauda nada, y carga directa sin indirecta, cuando la cantidad no responde al precio."
+   ]
+  },
+  {
+   "t": "De qué depende la pérdida: la fórmula de Harberger",
+   "eq": [
+    "W = \\tfrac{1}{2}\\,T\\,\\Delta q_X = \\tfrac{1}{2}\\,\\eta_D\\,T^{2}\\,\\frac{q_X}{P_X}",
+    "W = \\tfrac{1}{2}\\,\\eta_D\\,t^{2}\\,P_X Q_X",
+    "W = \\tfrac{1}{2}\\,T^{2}\\,\\frac{\\eta_D\\,\\eta_S}{\\eta_D + \\eta_S}\\,\\frac{q_X}{P_X}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W\\): pérdida de bienestar o carga indirecta, el área del triángulo de peso muerto, en pesos.",
+      "en": "\\(W\\): welfare loss or excess burden, the area of the deadweight triangle, in pesos."
+     },
+     {
+      "es": "\\(T\\): impuesto específico por unidad, en pesos por unidad; con costos constantes eleva el precio en \\(T = \\Delta P_X\\).",
+      "en": "\\(T\\): specific (per-unit) tax, in pesos per unit; with constant costs it raises the price by \\(T = \\Delta P_X\\)."
+     },
+     {
+      "es": "\\(\\Delta q_X\\): caída de la cantidad transada del bien \\(X\\) por el impuesto.",
+      "en": "\\(\\Delta q_X\\): fall in the quantity traded of good \\(X\\) due to the tax."
+     },
+     {
+      "es": "\\(\\eta_D\\): elasticidad-precio de la demanda en valor absoluto, \\(\\frac{\\Delta q_X}{\\Delta P_X}\\frac{P_X}{q_X}\\).",
+      "en": "\\(\\eta_D\\): price elasticity of demand in absolute value, \\(\\frac{\\Delta q_X}{\\Delta P_X}\\frac{P_X}{q_X}\\)."
+     },
+     {
+      "es": "\\(q_X\\), \\(P_X\\): cantidad y precio del bien antes del impuesto.",
+      "en": "\\(q_X\\), \\(P_X\\): quantity and price of the good before the tax."
+     }
+    ],
+    [
+     {
+      "es": "\\(t\\): alícuota ad valorem, \\(t = T/P_X\\), proporción del precio.",
+      "en": "\\(t\\): ad valorem rate, \\(t = T/P_X\\), share of the price."
+     },
+     {
+      "es": "\\(P_X Q_X\\): gasto de los consumidores en el bien, en pesos.",
+      "en": "\\(P_X Q_X\\): consumer spending on the good, in pesos."
+     },
+     {
+      "es": "\\(W\\), \\(\\eta_D\\): como en la ecuación anterior.",
+      "en": "\\(W\\), \\(\\eta_D\\): as in the previous equation."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\eta_S\\): elasticidad-precio de la oferta; con costos crecientes es finita y la pérdida se reparte en un triángulo del consumidor y otro del productor.",
+      "en": "\\(\\eta_S\\): price elasticity of supply; with rising costs it is finite and the loss splits into a consumer and a producer triangle."
+     },
+     {
+      "es": "\\(\\frac{\\eta_D\\eta_S}{\\eta_D+\\eta_S}\\): elasticidad combinada; si \\(\\eta_S \\to \\infty\\) tiende a \\(\\eta_D\\) y se vuelve al caso de costos constantes.",
+      "en": "\\(\\frac{\\eta_D\\eta_S}{\\eta_D+\\eta_S}\\): combined elasticity; as \\(\\eta_S \\to \\infty\\) it tends to \\(\\eta_D\\), returning to the constant-cost case."
+     },
+     {
+      "es": "\\(T\\), \\(q_X\\), \\(P_X\\): impuesto por unidad, cantidad y precio sin impuesto.",
+      "en": "\\(T\\), \\(q_X\\), \\(P_X\\): per-unit tax, quantity and price without tax."
+     }
+    ]
+   ],
+   "p": [
+    "Gráficamente, con costos constantes, el impuesto desplaza la oferta hacia arriba en T, la cantidad cae y aparecen dos áreas: el rectángulo de recaudación y el triángulo de pérdida. La presentación identifica tres determinantes de ese triángulo. Primero, la elasticidad de la demanda: cuanto más inelástica, menor la pérdida social neta. Segundo, la elasticidad de la oferta: también, cuanto menos elástica, menor la pérdida. Tercero, el nivel de la tasa: al duplicarla, la pérdida se cuadruplica; en el gráfico, el triángulo 1 pasa a ser la suma de las áreas 1, 2, 3 y 4. La pérdida crece con el cuadrado de la tasa, no proporcionalmente.",
+    "La fórmula formaliza esas tres ideas. Con un impuesto específico y costos constantes, el triángulo es la mitad del impuesto por la caída de la cantidad; reemplazando la caída por la elasticidad se obtiene que la pérdida depende de la elasticidad de la demanda, del cuadrado del impuesto y de la cantidad sobre el precio. Con un impuesto ad valorem, como T es t por el precio, la pérdida pasa a depender del gasto de los consumidores en el bien. Con costos crecientes, el triángulo se parte en dos, uno por encima y otro por debajo del precio sin impuesto, y la elasticidad de la demanda se reemplaza por una combinación de ambas elasticidades. La presentación verifica que, si la oferta es perfectamente elástica, se recupera el caso 1, y lo mismo vale para el caso ad valorem con costos crecientes. Lectura propia: la presentación no le pone nombre, pero esta es la aproximación de Harberger, que supone curvas lineales en el tramo relevante y es tanto mejor cuanto más chico es el impuesto."
+   ]
+  },
+  {
+   "t": "Qué decisión distorsiona cada impuesto",
+   "eq": [
+    "\\mathit{TMgS}_{XY} = \\frac{(1+t_X)P_X}{P_Y} \\neq \\frac{P_X}{P_Y} = \\mathit{TMgT}_{XY}",
+    "t_W = \\frac{t_C}{1+t_C}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{TMgS}_{XY}\\): tasa marginal de sustitución, cuánto \\(Y\\) cede el consumidor por una unidad más de \\(X\\).",
+      "en": "\\(\\mathit{TMgS}_{XY}\\): marginal rate of substitution, how much \\(Y\\) the consumer gives up for one more unit of \\(X\\)."
+     },
+     {
+      "es": "\\(\\mathit{TMgT}_{XY}\\): tasa marginal de transformación, cuánto \\(Y\\) hay que dejar de producir para obtener una unidad más de \\(X\\); en competencia, el cociente de precios sin impuesto.",
+      "en": "\\(\\mathit{TMgT}_{XY}\\): marginal rate of transformation, how much \\(Y\\) must be given up to produce one more \\(X\\); under competition, the pre-tax price ratio."
+     },
+     {
+      "es": "\\(t_X\\): impuesto selectivo ad valorem sobre el bien \\(X\\).",
+      "en": "\\(t_X\\): selective ad valorem tax on good \\(X\\)."
+     },
+     {
+      "es": "\\(P_X\\), \\(P_Y\\): precios de los bienes \\(X\\) e \\(Y\\) sin impuesto.",
+      "en": "\\(P_X\\), \\(P_Y\\): pre-tax prices of goods \\(X\\) and \\(Y\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(t_W\\): alícuota de un impuesto sobre la renta salarial.",
+      "en": "\\(t_W\\): rate of a tax on wage income."
+     },
+     {
+      "es": "\\(t_C\\): alícuota de un impuesto general al consumo.",
+      "en": "\\(t_C\\): rate of a general consumption tax."
+     },
+     {
+      "es": "La igualdad vale si no hay ahorro y el trabajo es la única fuente de ingreso; entonces ambos impuestos tienen los mismos efectos.",
+      "en": "The equality holds if there is no saving and labor is the only income source; then both taxes have the same effects."
+     }
+    ]
+   ],
+   "p": [
+    "La presentación plantea a un consumidor que elige dos bienes, X e Y, y ocio H, con la restricción de gastar lo que gana trabajando. Sin gobierno, todas las tasas marginales de sustitución igualan a las de transformación. Un impuesto de suma fija solo desplaza la restricción hacia adentro: produce efecto renta y no efecto sustitución, no cambia precios relativos y es el único impuesto no distorsivo. Un impuesto selectivo sobre X rompe dos márgenes: induce a consumir más Y y más ocio, que quedan relativamente más baratos.",
+    "Un impuesto general al consumo no distorsiona la elección entre X e Y, pero sí entre consumo y ocio, porque el ocio no se puede gravar: por efecto sustitución se trabaja menos, aunque el efecto renta empuja a trabajar más. Un impuesto sobre la renta salarial baja el salario real y produce lo mismo. Sin ahorro, ambos son equivalentes con la equivalencia de alícuotas de arriba. Si hay rentas de activos, un impuesto a la renta total equivale a uno al consumo, y pasar de gravar salarios a gravar consumo perjudica a los «viejos», que viven de sus activos, y beneficia a los jóvenes.",
+    "Del lado del productor, un impuesto al trabajo solo en la industria hace que se use menos trabajo en ese sector y distorsiona la producción; uno general sobre el trabajo en ambos sectores no distorsiona la producción, aunque sí la elección del consumidor. En la elección intertemporal, un impuesto a la renta cambia la pendiente de la restricción entre consumo presente y futuro, de 1 + r a 1 + r(1 − t): grava el ahorro. Un impuesto al consumo no la cambiaría."
+   ]
+  },
+  {
+   "t": "Cómo se mide el exceso de gravamen",
+   "p": [
+    "El exceso de gravamen es el equivalente monetario de la reducción del bienestar causada por un impuesto, por encima de la que habría producido un impuesto de suma fija de igual recaudación. Las técnicas de medición usan el excedente del consumidor y descansan en tres postulados: el precio de demanda mide el valor marginal de una unidad para el consumidor, el precio de oferta mide su costo marginal para el productor, y, desde el punto de vista de la eficiencia, la distribución de los costos entre individuos es irrelevante.",
+    "En el gráfico de dos bienes, con Y como numerario, el impuesto sobre X lleva al consumidor de A a B, a una curva de indiferencia más baja. La medida del daño es la variación equivalente de Hicks: cuántas unidades de Y estaría dispuesto a ceder para evitar el impuesto, GD. La recaudación es GF. Un impuesto de suma fija que recaudara GF dejaría al consumidor en una curva más alta, porque solo operaría el efecto renta. La diferencia, FD, es el exceso de gravamen, y se debe al efecto sustitución.",
+    "En el gráfico de precio y cantidad, eso implica medir con la demanda compensada, que mantiene fija la utilidad, y no con la ordinaria. Usar la demanda ordinaria sobreestima el exceso de gravamen, porque incluye el efecto renta. Lectura propia: la diferencia es chica cuando el gasto en el bien es una porción menor del ingreso, que es la razón por la que en la práctica se usa la demanda ordinaria con buena aproximación."
+   ]
+  },
+  {
+   "t": "Imposición óptima: las reglas y un ejercicio",
+   "eq": [
+    "\\min \\sum_i W_i \\quad \\text{s.a.} \\quad \\sum_i t_i P_i X_i = R",
+    "\\frac{t_i}{t_j} = \\frac{M_j^{C}}{M_i^{C}}",
+    "\\frac{\\Delta X_i^{C}}{X_i^{C}} = \\frac{\\Delta X_j^{C}}{X_j^{C}} = -\\mu"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W_i\\): exceso de gravamen en el mercado \\(i\\), en pesos.",
+      "en": "\\(W_i\\): excess burden in market \\(i\\), in pesos."
+     },
+     {
+      "es": "\\(t_i\\): alícuota sobre el bien \\(i\\).",
+      "en": "\\(t_i\\): tax rate on good \\(i\\)."
+     },
+     {
+      "es": "\\(P_i X_i\\): gasto en el bien \\(i\\), la base imponible.",
+      "en": "\\(P_i X_i\\): spending on good \\(i\\), the tax base."
+     },
+     {
+      "es": "\\(R\\): recaudación que el gobierno necesita obtener.",
+      "en": "\\(R\\): revenue the government needs to raise."
+     },
+     {
+      "es": "s.a.: «sujeto a».",
+      "en": "s.t.: «subject to»."
+     }
+    ],
+    [
+     {
+      "es": "\\(M_i^{C}\\): elasticidad-precio de la demanda compensada del bien \\(i\\) (lectura propia: la diapositiva no define el símbolo; la regla habla de elasticidades-precio).",
+      "en": "\\(M_i^{C}\\): compensated price elasticity of demand for good \\(i\\) (own reading: the slide does not define the symbol; the rule refers to price elasticities)."
+     },
+     {
+      "es": "\\(t_i/t_j\\): alícuota relativa; si \\(M_j^{C} > M_i^{C}\\), entonces \\(t_i > t_j\\).",
+      "en": "\\(t_i/t_j\\): relative rate; if \\(M_j^{C} > M_i^{C}\\), then \\(t_i > t_j\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(X_i^{C}\\): demanda compensada del bien \\(i\\); \\(\\Delta X_i^{C}\\), su cambio con los impuestos óptimos.",
+      "en": "\\(X_i^{C}\\): compensated demand for good \\(i\\); \\(\\Delta X_i^{C}\\), its change under optimal taxes."
+     },
+     {
+      "es": "\\(\\mu\\): reducción proporcional común a todas las demandas compensadas.",
+      "en": "\\(\\mu\\): common proportional reduction of all compensated demands."
+     }
+    ]
+   ],
+   "p": [
+    "Los impuestos de suma fija son los únicos eficientes, pero no son fáciles de aplicar; la presentación menciona el ejemplo de Thatcher y agrega que generan evasión, no son rentables y tienen problemas de equidad. Por eso el sistema óptimo se define como el que obtiene una recaudación dada con el mínimo exceso de gravamen, y las alícuotas óptimas dependen de las elasticidades compensadas de oferta y demanda y del tamaño de las bases. Hay cuatro reglas. Si hay que elegir un solo impuesto entre dos, es mejor el que grava el bien de demanda compensada más inelástica. Si se pueden usar todos, las alícuotas óptimas igualan el exceso de gravamen marginal por peso adicional recaudado. Si los efectos cruzados son nulos, las alícuotas son inversamente proporcionales a las elasticidades (regla de la elasticidad inversa). Y un sistema es óptimo si reduce todas las demandas compensadas en la misma proporción.",
+    "El ejercicio tiene dos mercados: demanda P = 1200 − q y oferta P = 400 + q para X, y demanda P = 1500 − 2q y oferta P = 300 + q para Y. Sin impuestos, ambos transan 400 unidades, a precios de 800 y 700. Hay que recaudar 150.000 con mínima carga excesiva. Se escribe la cantidad con impuesto en función de cada impuesto específico, se arma el lagrangiano y de las condiciones de primer orden sale TY = 1,5 TX. Reemplazando en la restricción queda una cuadrática con dos soluciones: TX = 600 y TY = 900, con pérdida social de 225.000, o TX = 200 y TY = 300, con pérdida de 25.000 y la recaudación pedida, 60.000 más 90.000. La segunda es la óptima. Las elasticidades en el equilibrio inicial son 2 y 3,5 para las demandas y 2 y 1,75 para las ofertas. Si en cambio se buscara maximizar la recaudación, los impuestos serían 400 y 600, con 80.000 y 120.000 de recaudación en cada mercado.",
+    "Lectura propia: el ejercicio enseña algo que las fórmulas esconden. La primera solución recauda lo mismo que la segunda con impuestos mucho más altos, porque está del lado descendente de la curva de Laffer de cada mercado; como la pérdida crece con el cuadrado del impuesto, multiplica por nueve la pérdida. Siempre hay que verificar cuál raíz minimiza el costo."
+   ]
+  },
+  {
+   "t": "Qué falta: evidencia y límites",
+   "p": [
+    "La presentación es teórica y no trae estimaciones. Lectura propia: llevar estas fórmulas a la política requiere estimar elasticidades compensadas, lo que se hace con sistemas de demanda estimados sobre encuestas de gastos de los hogares, y elasticidades de la oferta de trabajo, con variaciones en las alícuotas marginales del impuesto a la renta como experimento. La literatura moderna resume el costo de la imposición en la elasticidad del ingreso declarado ante la tasa neta de impuestos, que capta no solo horas trabajadas sino también evasión y elusión.",
+    "Las reglas de imposición óptima, además, chocan con la equidad: la regla de la elasticidad inversa manda gravar más los bienes de demanda inelástica, que suelen ser los básicos, con mayor peso en el presupuesto de los hogares pobres. La presentación menciona la equidad como problema de la suma fija; la misma tensión aparece en la regla de Ramsey, y por eso en la práctica se combinan con transferencias o con un impuesto a la renta progresivo."
+   ]
+  }
+ ],
+ "claves": [
+  "Un impuesto tiene carga directa, la recaudación, y carga indirecta, el exceso de gravamen por distorsionar decisiones.",
+  "La pérdida es menor cuanto más inelásticas son demanda y oferta, y crece con el cuadrado de la tasa.",
+  "Harberger: W = ½ ηD T² q/P con costos constantes; con costos crecientes entra la elasticidad combinada.",
+  "El impuesto de suma fija es el único no distorsivo: solo efecto renta.",
+  "Sin ahorro, un impuesto general al consumo y uno a los salarios son equivalentes: ambos distorsionan la elección trabajo-ocio.",
+  "El exceso de gravamen se mide con la variación equivalente y la demanda compensada; la ordinaria lo sobreestima.",
+  "Imposición óptima: igualar el exceso de gravamen marginal por peso recaudado; con efectos cruzados nulos, alícuotas inversas a las elasticidades."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué es la carga indirecta de un impuesto?",
+    "en": "What is the indirect burden of a tax?"
+   },
+   "op": {
+    "es": [
+     "La recaudación obtenida",
+     "El costo de administrar el impuesto",
+     "La pérdida de bienestar adicional por distorsionar decisiones",
+     "La parte que pagan los productores"
+    ],
+    "en": [
+     "The revenue collected",
+     "The cost of administering the tax",
+     "The additional welfare loss from distorting decisions",
+     "The share paid by producers"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el exceso de gravamen o peso muerto: el costo por encima de lo recaudado que surge porque el impuesto induce a abandonar actividades gravadas.",
+    "en": "It is the excess burden or deadweight loss: the cost above revenue arising because the tax induces people to abandon taxed activities."
+   },
+   "id": "fisc-general-16-q1"
+  },
+  {
+   "q": {
+    "es": "Si se duplica un impuesto específico, ¿qué pasa con la pérdida de bienestar?",
+    "en": "If a specific tax is doubled, what happens to the welfare loss?"
+   },
+   "op": {
+    "es": [
+     "Se duplica",
+     "No cambia",
+     "Se reduce a la mitad",
+     "Se cuadruplica"
+    ],
+    "en": [
+     "It doubles",
+     "It does not change",
+     "It halves",
+     "It quadruples"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La pérdida depende del cuadrado del impuesto: W = ½ ηD T² q/P. Donde: W = pérdida de bienestar; ηD = elasticidad de la demanda; T = impuesto por unidad; q y P = cantidad y precio sin impuesto.",
+    "en": "The loss depends on the square of the tax: W = ½ ηD T² q/P. Where: W = welfare loss; ηD = demand elasticity; T = per-unit tax; q and P = pre-tax quantity and price."
+   },
+   "id": "fisc-general-16-q2"
+  },
+  {
+   "q": {
+    "es": "Con costos crecientes, ¿qué elasticidad entra en la fórmula de la pérdida?",
+    "en": "With rising costs, which elasticity enters the loss formula?"
+   },
+   "op": {
+    "es": [
+     "Solo la de la demanda",
+     "La combinación ηDηS/(ηD + ηS)",
+     "Solo la de la oferta",
+     "La suma ηD + ηS"
+    ],
+    "en": [
+     "Only demand elasticity",
+     "The combination ηDηS/(ηD + ηS)",
+     "Only supply elasticity",
+     "The sum ηD + ηS"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La pérdida se reparte entre consumidor y productor y queda W = ½ T² [ηDηS/(ηD + ηS)] q/P. Donde: ηD y ηS = elasticidades de demanda y oferta. Si ηS tiende a infinito, se vuelve al caso de costos constantes.",
+    "en": "The loss splits between consumer and producer, giving W = ½ T² [ηDηS/(ηD + ηS)] q/P. Where: ηD and ηS = demand and supply elasticities. As ηS goes to infinity, the constant-cost case returns."
+   },
+   "id": "fisc-general-16-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el impuesto de suma fija no es distorsivo?",
+    "en": "Why is a lump-sum tax non-distortionary?"
+   },
+   "op": {
+    "es": [
+     "Porque solo produce efecto renta y no cambia los precios relativos",
+     "Porque recauda poco",
+     "Porque lo pagan solo los ricos",
+     "Porque grava el ocio"
+    ],
+    "en": [
+     "Because it only has an income effect and does not change relative prices",
+     "Because it collects little",
+     "Because only the rich pay it",
+     "Because it taxes leisure"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Desplaza la restricción presupuestaria sin cambiar su pendiente: las tasas marginales de sustitución siguen igualando a las de transformación.",
+    "en": "It shifts the budget constraint without changing its slope: marginal rates of substitution still equal those of transformation."
+   },
+   "id": "fisc-general-16-q4"
+  },
+  {
+   "q": {
+    "es": "Sin ahorro, ¿qué alícuota de impuesto a los salarios equivale a un impuesto general al consumo tC?",
+    "en": "Without saving, what wage-tax rate is equivalent to a general consumption tax tC?"
+   },
+   "op": {
+    "es": [
+     "tW = tC",
+     "tW = 1 + tC",
+     "tW = tC/(1 + tC)",
+     "tW = 1/tC"
+    ],
+    "en": [
+     "tW = tC",
+     "tW = 1 + tC",
+     "tW = tC/(1 + tC)",
+     "tW = 1/tC"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Dividiendo la restricción con tC por (1 + tC) y comparando con la de tW, se igualan si 1 − tW = 1/(1 + tC). Donde: tW = impuesto sobre la renta salarial; tC = impuesto general al consumo.",
+    "en": "Dividing the constraint with tC by (1 + tC) and comparing with the tW one, they match if 1 − tW = 1/(1 + tC). Where: tW = wage income tax; tC = general consumption tax."
+   },
+   "id": "fisc-general-16-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué medir el exceso de gravamen con la demanda ordinaria lo sobreestima?",
+    "en": "Why does measuring excess burden with ordinary demand overstate it?"
+   },
+   "op": {
+    "es": [
+     "Porque ignora la recaudación",
+     "Porque incluye el efecto renta, que no es costo de ineficiencia",
+     "Porque supone oferta inelástica",
+     "Porque usa precios de oferta"
+    ],
+    "en": [
+     "Because it ignores revenue",
+     "Because it includes the income effect, which is not an efficiency cost",
+     "Because it assumes inelastic supply",
+     "Because it uses supply prices"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El costo de ineficiencia se debe al efecto sustitución; la demanda compensada mantiene fija la utilidad y aísla ese efecto.",
+    "en": "The efficiency cost comes from the substitution effect; compensated demand holds utility fixed and isolates it."
+   },
+   "id": "fisc-general-16-q6"
+  },
+  {
+   "q": {
+    "es": "Según la regla de la elasticidad inversa, si la demanda compensada de j es más elástica que la de i…",
+    "en": "Under the inverse elasticity rule, if compensated demand for j is more elastic than for i…"
+   },
+   "op": {
+    "es": [
+     "Se debe gravar más el bien i",
+     "Se debe gravar más el bien j",
+     "Ambos con la misma alícuota",
+     "Solo se grava j"
+    ],
+    "en": [
+     "Good i should be taxed more",
+     "Good j should be taxed more",
+     "Both at the same rate",
+     "Only j is taxed"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "ti/tj = MjC/MiC: si MjC > MiC entonces ti > tj. Donde: t = alícuota; MC = elasticidad de la demanda compensada. Vale si los efectos cruzados son nulos.",
+    "en": "ti/tj = MjC/MiC: if MjC > MiC then ti > tj. Where: t = tax rate; MC = compensated demand elasticity. It holds if cross effects are zero."
+   },
+   "id": "fisc-general-16-q7"
+  },
+  {
+   "q": {
+    "es": "En el ejercicio para recaudar 150.000, ¿por qué se elige TX = 200 y TY = 300 y no 600 y 900?",
+    "en": "In the exercise to raise 150,000, why choose TX = 200 and TY = 300 rather than 600 and 900?"
+   },
+   "op": {
+    "es": [
+     "Porque recauda más",
+     "Porque maximiza la recaudación",
+     "Porque iguala las alícuotas",
+     "Porque recauda lo mismo con pérdida social de 25.000 en lugar de 225.000"
+    ],
+    "en": [
+     "Because it raises more",
+     "Because it maximizes revenue",
+     "Because it equalizes rates",
+     "Because it raises the same with a social loss of 25,000 instead of 225,000"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las dos soluciones de la cuadrática recaudan 150.000, pero la pérdida social es 25.000 con impuestos bajos y 225.000 con altos.",
+    "en": "Both roots of the quadratic raise 150,000, but the social loss is 25,000 with low taxes and 225,000 with high ones."
+   },
+   "id": "fisc-general-16-q8"
+  }
+ ],
+ "palabras": 1641,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué distingue la carga directa de la carga indirecta de un impuesto?",
+    "en": "What distinguishes a tax's direct burden from its indirect burden?"
+   },
+   "a": {
+    "es": "La directa es la recaudación, una transferencia al sector público; la indirecta es la pérdida adicional de bienestar porque el impuesto distorsiona las decisiones. La cátedra de Finanzas Públicas de la FCE-UNC propone minimizar la segunda.",
+    "en": "The direct burden is revenue, a transfer to the public sector; the indirect burden is the extra welfare loss from distorted decisions. The FCE-UNC Public Finance course proposes minimizing the latter."
+   },
+   "id": "fisc-general-16-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿De qué depende la pérdida de eficiencia de un impuesto sobre un bien?",
+    "en": "What does the efficiency loss of a tax on a good depend on?"
+   },
+   "a": {
+    "es": "De las elasticidades de demanda y oferta, del cuadrado de la tasa y del tamaño del mercado: W = ½ T² [ηDηS/(ηD + ηS)] q/P. Las diapositivas de la cátedra la derivan en cuatro casos, específico o ad valorem, con costos constantes o crecientes.",
+    "en": "On demand and supply elasticities, the square of the rate and market size: W = ½ T² [ηDηS/(ηD + ηS)] q/P. The course slides derive it in four cases, specific or ad valorem, with constant or rising costs."
+   },
+   "id": "fisc-general-16-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un impuesto al consumo general sigue siendo distorsivo?",
+    "en": "Why is a general consumption tax still distortionary?"
+   },
+   "a": {
+    "es": "Porque no puede gravar el ocio: abarata el ocio frente al consumo y, por efecto sustitución, induce a trabajar menos. La cátedra muestra que sin ahorro equivale a un impuesto a los salarios con tW = tC/(1 + tC).",
+    "en": "Because it cannot tax leisure: it makes leisure cheaper relative to consumption and, through substitution, induces less work. The course shows that without saving it equals a wage tax with tW = tC/(1 + tC)."
+   },
+   "id": "fisc-general-16-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un impuesto a la renta grava el ahorro?",
+    "en": "Why does an income tax tax saving?"
+   },
+   "a": {
+    "es": "Porque reduce el rendimiento neto del ahorro y cambia la pendiente de la restricción intertemporal de 1 + r a 1 + r(1 − t), lo que produce efecto sustitución; un impuesto al consumo no la cambia. Es el análisis de la cátedra de Finanzas Públicas.",
+    "en": "Because it lowers the net return to saving and changes the intertemporal budget slope from 1 + r to 1 + r(1 − t), causing a substitution effect; a consumption tax leaves it unchanged. This is the course's analysis."
+   },
+   "id": "fisc-general-16-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se define y mide el exceso de gravamen?",
+    "en": "How is excess burden defined and measured?"
+   },
+   "a": {
+    "es": "Es la pérdida de bienestar por encima de la de un impuesto de suma fija de igual recaudación; se mide con la variación equivalente de Hicks o con la demanda compensada, ya que la ordinaria lo sobreestima. Así lo presentan las diapositivas de la cátedra.",
+    "en": "It is the welfare loss beyond that of a lump-sum tax raising the same revenue; it is measured with Hicks's equivalent variation or compensated demand, since ordinary demand overstates it. That is how the course slides present it."
+   },
+   "id": "fisc-general-16-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se reparte una recaudación dada entre varios impuestos para minimizar el costo de eficiencia?",
+    "en": "How should a given revenue be spread across several taxes to minimize the efficiency cost?"
+   },
+   "a": {
+    "es": "Igualando el exceso de gravamen marginal por peso adicional recaudado entre impuestos; con efectos cruzados nulos, fijando alícuotas inversas a las elasticidades compensadas. La cátedra lo resuelve con un lagrangiano: para recaudar 150.000 en su ejercicio salen TX = 200 y TY = 300.",
+    "en": "By equalizing marginal excess burden per extra peso raised across taxes; with zero cross effects, setting rates inverse to compensated elasticities. The course solves it with a Lagrangian: to raise 150,000 in its exercise, TX = 200 and TY = 300."
+   },
+   "id": "fisc-general-16-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué tensión hay entre la regla de la elasticidad inversa y la equidad?",
+    "en": "What tension exists between the inverse elasticity rule and equity?"
+   },
+   "a": {
+    "es": "La regla manda gravar más los bienes de demanda inelástica, que suelen ser los básicos. La cátedra señala problemas de equidad en el impuesto de suma fija; lectura propia: la misma tensión aparece en la regla de la elasticidad inversa.",
+    "en": "The rule calls for heavier taxes on inelastic-demand goods, often necessities. The course flags equity problems with lump-sum taxes; own reading: the same tension appears in the inverse elasticity rule."
+   },
+   "id": "fisc-general-16-t7"
+  }
+ ]
+}

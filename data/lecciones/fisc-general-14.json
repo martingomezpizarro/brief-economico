@@ -1,0 +1,520 @@
+{
+ "id": "fisc-general-14",
+ "cat": "fisc-general",
+ "orden": 8,
+ "minutos": 15,
+ "titulo": "Evaluación de impacto: el contrafactual, el sesgo de selección y cómo armar un buen grupo de control",
+ "bajada": "Por qué comparar beneficiarios con no beneficiarios no mide el efecto de un programa, el modelo de resultados potenciales, el emparejamiento por puntaje de propensión, las diferencias en diferencias y el caso del Programa Primer Paso de Córdoba.",
+ "fuentes": [
+  1169
+ ],
+ "cita": "Caullo, «Evaluación de impacto» (Finanzas Públicas, FCE-UNC, 2023), sobre Gertler et al. (2016) y Bernal y Peña, Guía práctica para la evaluación de impacto (2014)",
+ "intro": "La presentación de Laura Caullo para Finanzas Públicas de la FCE-UNC parte de la definición de Gertler et al. (2016): la evaluación de impacto es el proceso de identificar los efectos, positivos o negativos, de una política, programa o proyecto sobre el bienestar de la población objetivo. Su argumento es que ya no alcanza con saber cuánto se gastó o en qué; la pregunta es si se alcanzaron los objetivos y si podría haberse hecho mejor. Evaluar sirve para invertir mejor los recursos públicos, mejorar la efectividad de una política, presupuestar mejor y dar transparencia. El corazón técnico de la clase, basado en Bernal y Peña (2014), es el problema del contrafactual: no podemos ver qué le habría pasado a un beneficiario sin el programa, y comparar con quienes no participaron mezcla el efecto con el sesgo de selección. La presentación muestra cómo lo resuelven la asignación aleatoria, el emparejamiento y las diferencias en diferencias, qué datos hacen falta y cómo se comunicó la evaluación experimental del Programa Primer Paso de Córdoba.",
+ "secciones": [
+  {
+   "t": "Qué es y qué no es una evaluación de impacto",
+   "p": [
+    "La presentación ubica la evaluación de impacto dentro de una secuencia tomada del curso de J-PAL: evaluación de necesidades (cuál es el problema), evaluación teórica del programa (cómo, en teoría, se resuelve), evaluación de procesos (si el programa funciona como se planificó), evaluación de impacto (si se cumplieron los objetivos y en qué magnitud) y análisis de costo-efectividad (cómo se compara con otras alternativas). Una evaluación de impacto es la medición de los efectos de una intervención sobre variables de interés, y el punto crucial es comparar ex post lo que pasó con los beneficiarios frente a un grupo de comparación adecuado. Cualquier medición que no cumpla eso no es una evaluación de impacto.",
+    "Para hacerla hacen falta cuatro cosas: una teoría del cambio que defina la intervención, las preguntas y los indicadores; buenas medidas de esos indicadores, sea en encuestas, registros administrativos o datos de monitoreo; el mejor método estadístico disponible, para no confundir el efecto del programa con otros factores, y recursos humanos y financieros. También distingue la evaluación ex ante, que compara proyectos antes de implementarlos con teoría del cambio y simulaciones de costos y beneficios (TIR, VAN), de la evaluación ex post, que mide resultados una vez implementada la política, a corto, mediano o largo plazo.",
+    "Los ejemplos de hábitat muestran por qué el método importa. En el programa Favela-Barrio de Río de Janeiro aumentaron los servicios públicos provistos, pero no hubo impactos en mortalidad ni en el ingreso de los jefes de hogar. En Tánger, Devoto et al. (2011) asignaron al azar información y ayuda para un préstamo de conexión al agua corriente (434 de 845 hogares tratados): no bajaron las enfermedades hídricas, pero cayó el tiempo dedicado a buscar agua y mejoró el bienestar mental. En Acayucan, González-Navarro y Quintana-Domeque (2014) aprovecharon que por falta de presupuesto se sortearon 28 de 56 proyectos de pavimentación: subieron el valor de la vivienda, el crédito con garantía hipotecaria y el pago del impuesto predial. La presentación advierte que los programas integrales son más difíciles de evaluar: cuesta armar un grupo de control y no se puede separar el aporte de cada parte."
+   ]
+  },
+  {
+   "t": "Resultados potenciales: el contrafactual que no existe",
+   "eq": [
+    "\\tau_i = Y_i(1) - Y_i(0)",
+    "Y_i = D_i\\,Y_i(1) + (1 - D_i)\\,Y_i(0)",
+    "\\tau_{ATT} = E[Y(1) \\mid D=1] - E[Y(0) \\mid D=1]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\tau_i\\): efecto del programa sobre el individuo \\(i\\), en las unidades de la variable de resultado.",
+      "en": "\\(\\tau_i\\): effect of the program on individual \\(i\\), in the units of the outcome variable."
+     },
+     {
+      "es": "\\(Y_i(1)\\): resultado potencial del individuo \\(i\\) si recibe el programa (por ejemplo, la talla según la edad de un niño con Canasta).",
+      "en": "\\(Y_i(1)\\): potential outcome of individual \\(i\\) if treated (for example, a child's height-for-age with Canasta)."
+     },
+     {
+      "es": "\\(Y_i(0)\\): resultado potencial del mismo individuo si no recibe el programa.",
+      "en": "\\(Y_i(0)\\): potential outcome of the same individual if not treated."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_i\\): resultado efectivamente observado del individuo \\(i\\).",
+      "en": "\\(Y_i\\): outcome actually observed for individual \\(i\\)."
+     },
+     {
+      "es": "\\(D_i\\): indicador de participación; vale 1 si el individuo es tratado y 0 si no.",
+      "en": "\\(D_i\\): participation indicator; 1 if the individual is treated, 0 otherwise."
+     },
+     {
+      "es": "\\(Y_i(1)\\): resultado potencial del individuo \\(i\\) si recibe el programa (por ejemplo, la talla según la edad de un niño con Canasta).",
+      "en": "\\(Y_i(1)\\): potential outcome of individual \\(i\\) if treated (for example, a child's height-for-age with Canasta)."
+     },
+     {
+      "es": "\\(Y_i(0)\\): resultado potencial del mismo individuo si no recibe el programa.",
+      "en": "\\(Y_i(0)\\): potential outcome of the same individual if not treated."
+     },
+     {
+      "es": "Como \\(D_i\\) vale 0 o 1, la ecuación dice que de cada persona se observa solo uno de sus dos resultados potenciales.",
+      "en": "Since \\(D_i\\) is 0 or 1, the equation says only one of each person's two potential outcomes is observed."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\tau_{ATT}\\): efecto promedio del tratamiento sobre los tratados (average treatment on the treated).",
+      "en": "\\(\\tau_{ATT}\\): average treatment effect on the treated."
+     },
+     {
+      "es": "\\(E[Y(1) \\mid D=1]\\): resultado promedio de los tratados con el programa; se observa.",
+      "en": "\\(E[Y(1) \\mid D=1]\\): average outcome of the treated with the program; observed."
+     },
+     {
+      "es": "\\(E[Y(0) \\mid D=1]\\): resultado promedio que habrían tenido los tratados sin el programa; es el contrafactual y no se observa.",
+      "en": "\\(E[Y(0) \\mid D=1]\\): average outcome the treated would have had without the program; the counterfactual, not observed."
+     }
+    ]
+   ],
+   "p": [
+    "Lo ideal sería comparar a un hogar después del programa con ese mismo hogar sin el programa: la situación contrafactual. Pero esa situación no existe. La presentación lo formaliza con el modelo de Roy-Rubin, o de resultados potenciales, y con un ejemplo: Canasta, un programa que entrega cada mes una canasta de alimentos a madres de niños de 0 a 6 años de estratos bajos, cuyo resultado es la talla según la edad.",
+    "Cada niño tiene dos resultados potenciales, con y sin programa, y su efecto individual es la diferencia. El problema es que de cada niño se observa uno solo: el tratado no puede ser a la vez no tratado. Por eso el análisis se concentra en efectos promedio sobre la población o subgrupos. El parámetro que destaca la clase es el ATT, el efecto promedio sobre quienes efectivamente recibieron el programa. Su segundo término, lo que les habría pasado a los tratados sin el programa, es justo lo que falta."
+   ]
+  },
+  {
+   "t": "El sesgo de selección",
+   "eq": [
+    "E[Y \\mid D=1] - E[Y \\mid D=0] = \\tau_{ATT} + \\big(E[Y(0) \\mid D=1] - E[Y(0) \\mid D=0]\\big)",
+    "E[Y(0) \\mid D=1] - E[Y(0) \\mid D=0] = 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E[Y \\mid D=1] - E[Y \\mid D=0]\\): diferencia simple de medias observadas entre tratados y no tratados.",
+      "en": "\\(E[Y \\mid D=1] - E[Y \\mid D=0]\\): simple difference in observed means between treated and untreated."
+     },
+     {
+      "es": "\\(\\tau_{ATT}\\): efecto promedio sobre los tratados.",
+      "en": "\\(\\tau_{ATT}\\): average effect on the treated."
+     },
+     {
+      "es": "\\(E[Y(0) \\mid D=1] - E[Y(0) \\mid D=0]\\): sesgo de selección, cuánto difieren los dos grupos en ausencia del programa.",
+      "en": "\\(E[Y(0) \\mid D=1] - E[Y(0) \\mid D=0]\\): selection bias, how much the groups differ absent the program."
+     },
+     {
+      "es": "\\(E[\\cdot \\mid D=d]\\): promedio (valor esperado) de lo que está entre corchetes en el grupo con \\(D=d\\).",
+      "en": "\\(E[\\cdot \\mid D=d]\\): average (expected value) of the bracketed term in the group with \\(D=d\\)."
+     }
+    ],
+    [
+     {
+      "es": "Condición para recuperar \\(\\tau_{ATT}\\): sin el programa, el resultado promedio de tratados y no tratados sería el mismo.",
+      "en": "Condition to recover \\(\\tau_{ATT}\\): without the program, treated and untreated would have the same average outcome."
+     },
+     {
+      "es": "\\(Y(0)\\): resultado potencial sin programa.",
+      "en": "\\(Y(0)\\): potential outcome without the program."
+     }
+    ]
+   ],
+   "p": [
+    "La primera idea, comparar la media de los tratados con la de los no tratados, aproxima el contrafactual con lo que les pasó a los no tratados. Con un poco de álgebra, esa diferencia es el ATT más el sesgo de selección. Si la gente se autoselecciona en el programa, hay características observadas y no observadas que hacen que unos participen y otros no, y los grupos pueden ser sistemáticamente distintos.",
+    "En Canasta, participar cuesta tiempo y trámites. Si las madres más preocupadas por la salud de sus hijos son las que se inscriben, sus hijos estarían mejor aun sin el programa: el sesgo es positivo y se sobreestima el impacto. Si en cambio el Estado da el programa a los niños con peor estado nutricional, el sesgo es negativo y se subestima. Los ejemplos de correlación sin causalidad de la clase van en la misma línea: que los niños con más libros saquen mejores notas no implica que regalar libros suba las notas.",
+    "Eliminar el sesgo exige que la participación sea independiente de las características asociadas al resultado. Si se logra, la estimación tiene validez interna: atribuye causalmente el efecto al programa para el grupo analizado. Eso no garantiza validez externa, es decir, que el efecto valga para otra población o contexto."
+   ]
+  },
+  {
+   "t": "Cómo armar el grupo de control: aleatorización y emparejamiento",
+   "eq": [
+    "p(X) = \\Pr(D = 1 \\mid X)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(p(X)\\): puntaje de propensión, probabilidad estimada de participar en el programa dadas las características observadas; va de 0 a 1.",
+      "en": "\\(p(X)\\): propensity score, estimated probability of participating given observed characteristics; between 0 and 1."
+     },
+     {
+      "es": "\\(X\\): características observables (en el ejemplo, edad, sexo, diploma secundario y meses de desempleo).",
+      "en": "\\(X\\): observable characteristics (in the example, age, sex, secondary diploma and months unemployed)."
+     },
+     {
+      "es": "\\(\\Pr(\\cdot \\mid X)\\): probabilidad condicional en \\(X\\).",
+      "en": "\\(\\Pr(\\cdot \\mid X)\\): probability conditional on \\(X\\)."
+     },
+     {
+      "es": "Lectura propia: la presentación usa el puntaje de propensión en gráficos sin escribir la fórmula; esta es la definición estándar.",
+      "en": "Own reading: the presentation uses the propensity score in graphs without writing the formula; this is the standard definition."
+     }
+    ]
+   ],
+   "p": [
+    "Los dos grupos deberían parecerse ex ante lo más posible y diferir solo en el programa. La mejor forma de lograrlo es la asignación aleatoria, el estándar de oro. Cuando no es posible o ético, los métodos cuasiexperimentales intentan simularla con distintos grados de credibilidad: emparejamiento, variables instrumentales, diferencias en diferencias, regresión discontinua, control sintético o estudio de eventos. La comparación antes y después es muy discutible: el cambio observado mezcla el efecto con lo que habría pasado igual, y el mismo dato puede esconder un efecto nulo, positivo o negativo.",
+    "El emparejamiento por puntaje de propensión (PSM) busca para cada tratado un no tratado parecido en las características que explican la decisión de inscribirse. Como esa lista puede ser larga, se resume en un único puntaje, la probabilidad de participar, y la diferencia promedio de resultados entre cada tratado y su pareja estima el impacto. Puede fallar la superposición: tratados con puntajes para los que no hay no tratados comparables, por lo que se trabaja en el rango común.",
+    "Sus ventajas, según la presentación, son que controla el sesgo de selección por observables, es intuitivo y es flexible. Sus desventajas son que solo controla variables observadas, depende del modelo con que se estima el puntaje y necesita superposición."
+   ]
+  },
+  {
+   "t": "Diferencias en diferencias",
+   "eq": [
+    "\\tau_{DD} = \\big(E[Y_{t1} \\mid D=1] - E[Y_{t0} \\mid D=1]\\big) - \\big(E[Y_{t1} \\mid D=0] - E[Y_{t0} \\mid D=0]\\big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\tau_{DD}\\): estimador de diferencias en diferencias del efecto del programa.",
+      "en": "\\(\\tau_{DD}\\): difference-in-differences estimator of the program effect."
+     },
+     {
+      "es": "\\(Y_{t0}\\), \\(Y_{t1}\\): resultado en el período previo (\\(t=0\\)) y posterior (\\(t=1\\)) al tratamiento.",
+      "en": "\\(Y_{t0}\\), \\(Y_{t1}\\): outcome in the period before (\\(t=0\\)) and after (\\(t=1\\)) treatment."
+     },
+     {
+      "es": "\\(D=1\\), \\(D=0\\): grupo de tratamiento y grupo de control.",
+      "en": "\\(D=1\\), \\(D=0\\): treatment group and control group."
+     },
+     {
+      "es": "Primer paréntesis: diferencia temporal del grupo tratado, que suma efecto y tendencia. Segundo paréntesis: diferencia temporal del control, que mide la tendencia.",
+      "en": "First bracket: time difference for the treated, which adds effect and trend. Second bracket: time difference for the control, which measures the trend."
+     },
+     {
+      "es": "\\(E[\\cdot \\mid D=d]\\): promedio (valor esperado) de lo que está entre corchetes en el grupo con \\(D=d\\).",
+      "en": "\\(E[\\cdot \\mid D=d]\\): average (expected value) of the bracketed term in the group with \\(D=d\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Se usa cuando un evento fortuito, como un cambio de regulación o un shock natural, hace que una política afecte a un grupo y no a otro, con datos antes y después, sin necesidad de panel. La presentación lo construye en pasos. La diferencia antes-después del grupo tratado es efecto más tendencia; la del grupo de control es solo tendencia; restando, queda el efecto. Equivalentemente, es la diferencia entre tratados y controles después menos esa misma diferencia antes, que mide la diferencia sistemática entre grupos.",
+    "El supuesto clave es el de tendencias paralelas: sin el tratamiento, ambos grupos habrían seguido la misma tendencia, de modo que el control es un buen contrafactual de la tendencia aunque su nivel sea distinto. Las ventajas son que controla no observables constantes en el tiempo, no requiere aleatorización y se interpreta fácil. Las desventajas son que las tendencias paralelas son difíciles de verificar, que puede haber derrames entre grupos y que la composición de los grupos puede cambiar. La clase menciona también combinar PSM con DID."
+   ]
+  },
+  {
+   "t": "Datos, evidencia argentina y el Programa Primer Paso",
+   "p": [
+    "Las evaluaciones con encuestas usan sobre todo la EPH. Gasparini y Garganta (2015) estiman con diferencias en diferencias el efecto de la AUH sobre la informalidad. Edo, Garganta y Marchionni (2017), también con EPH y DD, encuentran un impacto positivo de la AUH en la matriculación de jóvenes de 15-17 años cercano a 4 puntos porcentuales (3.8 p.p.), lo que cierra el 20% de la brecha de matriculación neta con el quintil más rico. Los datos administrativos tienen amplia cobertura, se pueden cruzar, son rápidos, longitudinales y baratos, pero solo cubren a la población registrada, son transaccionales y plantean problemas de confidencialidad; Tortarolo (2018) los usa con regresión discontinua para el impuesto a las ganancias y el empleo formal.",
+    "El caso central es el Programa Primer Paso (PPP) de Córdoba, evaluado por Berniell y de la Mata con registros del SIPA: una pasantía rentada de 12 meses en empresas formales para jóvenes de 16 a 25 años, con cerca de 40 mil postulantes y beneficiarios asignados por la Lotería de la Provincia. Esa lotería convirtió al programa sobredemandado en un experimento. El cumplimiento fue alto: el 83% completó la pasantía y solo el 3% del control entró al programa. El efecto sobre la formalidad fue de 40% de aumento en el muy corto plazo, 32% en el corto y 15% en el largo. Se sumó una encuesta a unos 1000 jóvenes de un universo de 9500, con balance entre grupos verificado.",
+    "La presentación cierra con la comunicación: mensajes simples y visuales para políticos, y un efecto multiplicador que incluyó la ley provincial 10.236. Lectura propia: el caso muestra la ventaja de evaluar cuando hay sobredemanda; sortear cupos es a la vez justo y la mejor forma de identificar el efecto. Y el efecto que decrece con el tiempo invita a preguntar si el programa adelanta la formalización más que aumentarla."
+   ]
+  }
+ ],
+ "claves": [
+  "Evaluar el impacto es comparar ex post a los beneficiarios con un grupo de comparación adecuado; sin eso no es una evaluación de impacto.",
+  "Cada individuo tiene dos resultados potenciales y se observa solo uno: el contrafactual no existe.",
+  "La diferencia simple de medias es igual al ATT más el sesgo de selección.",
+  "La asignación aleatoria elimina el sesgo de selección; es el estándar de oro.",
+  "El PSM empareja por probabilidad de participar, pero solo controla observables y requiere superposición.",
+  "Diferencias en diferencias resta la tendencia del control y descansa en el supuesto de tendencias paralelas.",
+  "La AUH elevó la matriculación de jóvenes de 15-17 años en 3.8 p.p.; el PPP aumentó la formalidad 40% en el muy corto plazo y 15% en el largo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué es crucial para que una medición sea una evaluación de impacto?",
+    "en": "What is crucial for a measurement to be an impact evaluation?"
+   },
+   "op": {
+    "es": [
+     "Conocer cuánto se gastó",
+     "Medir a los beneficiarios antes y después",
+     "Comparar a los beneficiarios con un grupo de comparación adecuado",
+     "Encuestar a los funcionarios"
+    ],
+    "en": [
+     "Knowing how much was spent",
+     "Measuring beneficiaries before and after",
+     "Comparing beneficiaries with an adequate comparison group",
+     "Surveying officials"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Según Caullo, lo crucial es comparar ex post lo ocurrido con los beneficiarios frente a un grupo de comparación adecuado; el resto no es evaluación de impacto.",
+    "en": "According to Caullo, the key is comparing ex post the beneficiaries with an adequate comparison group; anything else is not an impact evaluation."
+   },
+   "id": "fisc-general-14-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué no se puede calcular el efecto individual τᵢ = Yᵢ(1) − Yᵢ(0)?",
+    "en": "Why can't the individual effect τᵢ = Yᵢ(1) − Yᵢ(0) be computed?"
+   },
+   "op": {
+    "es": [
+     "Porque de cada individuo se observa solo uno de los dos resultados potenciales",
+     "Porque faltan datos de panel",
+     "Porque el efecto es siempre cero",
+     "Porque Y(1) es aleatorio"
+    ],
+    "en": [
+     "Because only one of the two potential outcomes is observed for each individual",
+     "Because panel data are missing",
+     "Because the effect is always zero",
+     "Because Y(1) is random"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Donde: τᵢ = efecto sobre el individuo i; Yᵢ(1) y Yᵢ(0) = resultados con y sin programa. Una persona es tratada o no, nunca ambas cosas.",
+    "en": "Where: τᵢ = effect on individual i; Yᵢ(1), Yᵢ(0) = outcomes with and without the program. A person is treated or not, never both."
+   },
+   "id": "fisc-general-14-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué mide el ATT?",
+    "en": "What does the ATT measure?"
+   },
+   "op": {
+    "es": [
+     "El efecto promedio en toda la población",
+     "El efecto promedio sobre quienes recibieron el programa",
+     "El sesgo de selección",
+     "El costo por beneficiario"
+    ],
+    "en": [
+     "The average effect on the whole population",
+     "The average effect on those who received the program",
+     "Selection bias",
+     "Cost per beneficiary"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "τ_ATT = E[Y(1)|D=1] − E[Y(0)|D=1]. Donde: E[·|D=1] = promedio entre los tratados; Y(1), Y(0) = resultados con y sin programa; el segundo término es el contrafactual.",
+    "en": "τ_ATT = E[Y(1)|D=1] − E[Y(0)|D=1]. Where: E[·|D=1] = average among the treated; Y(1), Y(0) = outcomes with and without the program; the second term is the counterfactual."
+   },
+   "id": "fisc-general-14-q3"
+  },
+  {
+   "q": {
+    "es": "Si en Canasta se inscriben las madres más preocupadas por la nutrición, ¿qué pasa con la comparación simple de medias?",
+    "en": "If in Canasta the mothers most concerned about nutrition enroll, what happens to the simple comparison of means?"
+   },
+   "op": {
+    "es": [
+     "Subestima el impacto",
+     "Es exacta",
+     "No se puede calcular",
+     "Sobreestima el impacto por sesgo de selección positivo"
+    ],
+    "en": [
+     "It underestimates the impact",
+     "It is exact",
+     "It cannot be computed",
+     "It overestimates the impact due to positive selection bias"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sus hijos estarían mejor aun sin el programa: E[Y(0)|D=1] > E[Y(0)|D=0], el sesgo es positivo y la diferencia supera al ATT. Donde: Y(0) = resultado sin programa; D = 1 tratado, 0 no tratado.",
+    "en": "Their children would do better even without the program: E[Y(0)|D=1] > E[Y(0)|D=0], so bias is positive and the difference exceeds the ATT. Where: Y(0) = outcome without the program; D = 1 treated, 0 untreated."
+   },
+   "id": "fisc-general-14-q4"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la principal desventaja del emparejamiento por puntaje de propensión?",
+    "en": "What is the main drawback of propensity score matching?"
+   },
+   "op": {
+    "es": [
+     "Requiere asignación aleatoria",
+     "Solo controla variables observadas",
+     "Necesita datos de un solo período",
+     "No se puede interpretar"
+    ],
+    "en": [
+     "It requires random assignment",
+     "It only controls for observed variables",
+     "It needs single-period data",
+     "It cannot be interpreted"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si hay no observables que afectan la participación y el resultado, el PSM no elimina el sesgo. También depende del modelo del puntaje y exige superposición.",
+    "en": "If unobservables affect both participation and outcome, PSM does not remove the bias. It also depends on the score model and requires overlap."
+   },
+   "id": "fisc-general-14-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto sostiene al estimador de diferencias en diferencias?",
+    "en": "What assumption underlies the difference-in-differences estimator?"
+   },
+   "op": {
+    "es": [
+     "Asignación aleatoria perfecta",
+     "Que no haya diferencias de nivel entre grupos",
+     "Tendencias paralelas sin tratamiento",
+     "Superposición de puntajes"
+    ],
+    "en": [
+     "Perfect random assignment",
+     "No level differences between groups",
+     "Parallel trends absent treatment",
+     "Score overlap"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "τ_DD resta a la diferencia temporal de los tratados la del control. Donde: τ_DD = efecto estimado; la diferencia del control mide la tendencia. Vale si, sin el programa, ambos grupos habrían seguido la misma tendencia; las diferencias de nivel se permiten.",
+    "en": "τ_DD subtracts the control's time difference from the treated's. Where: τ_DD = estimated effect; the control's difference measures the trend. It holds if both groups would have followed the same trend; level differences are allowed."
+   },
+   "id": "fisc-general-14-q6"
+  },
+  {
+   "q": {
+    "es": "Según Edo, Garganta y Marchionni (2017), ¿qué efecto tuvo la AUH en la matriculación de jóvenes de 15-17 años?",
+    "en": "According to Edo, Garganta and Marchionni (2017), what was the AUH's effect on enrollment of 15-17 year olds?"
+   },
+   "op": {
+    "es": [
+     "Un aumento de 3.8 puntos porcentuales",
+     "Ningún efecto",
+     "Una caída de 20%",
+     "Un aumento de 15%"
+    ],
+    "en": [
+     "An increase of 3.8 percentage points",
+     "No effect",
+     "A 20% fall",
+     "A 15% increase"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con EPH y diferencias en diferencias, el coeficiente de interacción es positivo y significativo, cercano a 4 p.p. (3.8), y cierra el 20% de la brecha con el quintil más rico.",
+    "en": "Using EPH and difference-in-differences, the interaction coefficient is positive and significant, near 4 p.p. (3.8), closing 20% of the gap with the richest quintile."
+   },
+   "id": "fisc-general-14-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué hizo del Programa Primer Paso un caso experimental?",
+    "en": "What made the Primer Paso Program an experimental case?"
+   },
+   "op": {
+    "es": [
+     "Que se aplicó en todo el país",
+     "Que tenía datos de encuestas desde 1999",
+     "Que la cátedra lo diseñó",
+     "Que estaba sobredemandado y los beneficiarios se sortearon por lotería"
+    ],
+    "en": [
+     "That it was applied nationwide",
+     "That it had survey data since 1999",
+     "That the course designed it",
+     "That it was oversubscribed and beneficiaries were drawn by lottery"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con cerca de 40 mil postulantes, la Lotería de la Provincia asignó los cupos; eso dio grupos de tratamiento y control comparables.",
+    "en": "With about 40 thousand applicants, the Provincial Lottery assigned slots, yielding comparable treatment and control groups."
+   },
+   "id": "fisc-general-14-q8"
+  }
+ ],
+ "palabras": 1594,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es una evaluación de impacto?",
+    "en": "What is an impact evaluation?"
+   },
+   "a": {
+    "es": "La identificación de los efectos, positivos o negativos, de una política sobre el bienestar de su población objetivo, comparando beneficiarios con un grupo de comparación adecuado. Caullo toma la definición de Gertler et al. (2016).",
+    "en": "The identification of a policy's effects, positive or negative, on the welfare of its target population, comparing beneficiaries with an adequate comparison group. Caullo takes the definition from Gertler et al. (2016)."
+   },
+   "id": "fisc-general-14-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cuál es el problema fundamental de la inferencia causal en el modelo de resultados potenciales?",
+    "en": "What is the fundamental problem of causal inference in the potential outcomes model?"
+   },
+   "a": {
+    "es": "Que de cada individuo solo se observa uno de sus dos resultados, con o sin programa, de modo que el efecto individual no se puede calcular y hay que trabajar con promedios como el ATT. Caullo, siguiendo a Bernal y Peña (2014).",
+    "en": "That only one of each individual's two outcomes is observed, so the individual effect cannot be computed and one works with averages such as the ATT. Caullo, following Bernal and Peña (2014)."
+   },
+   "id": "fisc-general-14-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Por qué comparar participantes con no participantes puede engañar?",
+    "en": "Why can comparing participants with non-participants mislead?"
+   },
+   "a": {
+    "es": "Porque esa diferencia es el ATT más el sesgo de selección, la diferencia que habría entre grupos sin el programa; según quién se inscriba, sobreestima o subestima el efecto. Caullo lo ilustra con el programa Canasta.",
+    "en": "Because that difference is the ATT plus selection bias, the gap that would exist without the program; depending on who enrolls, it over- or underestimates the effect. Caullo illustrates it with the Canasta program."
+   },
+   "id": "fisc-general-14-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué hace el emparejamiento por puntaje de propensión y dónde falla?",
+    "en": "What does propensity score matching do and where does it fail?"
+   },
+   "a": {
+    "es": "Empareja tratados y no tratados con igual probabilidad estimada de participar y compara sus resultados; falla con no observables, con un modelo de puntaje mal especificado o sin superposición. Ventajas y desventajas listadas por Caullo.",
+    "en": "It matches treated and untreated units with equal estimated participation probability and compares outcomes; it fails with unobservables, a misspecified score model or no overlap. Pros and cons listed by Caullo."
+   },
+   "id": "fisc-general-14-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo separa diferencias en diferencias el efecto de la tendencia?",
+    "en": "How does difference-in-differences separate the effect from the trend?"
+   },
+   "a": {
+    "es": "Restando a la diferencia antes-después del grupo tratado la del control, que mide la tendencia; requiere tendencias paralelas y es sensible a derrames y cambios de composición. Caullo lo construye paso a paso con gráficos.",
+    "en": "By subtracting the control's before-after difference, which measures the trend, from the treated group's; it needs parallel trends and is sensitive to spillovers and composition changes. Caullo builds it step by step with graphs."
+   },
+   "id": "fisc-general-14-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre validez interna y externa?",
+    "en": "What is the difference between internal and external validity?"
+   },
+   "a": {
+    "es": "La interna permite atribuir causalmente el efecto al programa en el grupo analizado; la externa, extenderlo a otros grupos o contextos. Caullo advierte que eliminar el sesgo de selección no garantiza la segunda.",
+    "en": "Internal validity allows causal attribution in the group studied; external validity extends it to other groups or contexts. Caullo warns that removing selection bias does not guarantee the latter."
+   },
+   "id": "fisc-general-14-t6"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué efecto tuvo el Programa Primer Paso de Córdoba sobre el empleo formal?",
+    "en": "What effect did Córdoba's Primer Paso Program have on formal employment?"
+   },
+   "a": {
+    "es": "Un aumento de la formalidad de 40% en el muy corto plazo, 32% en el corto y 15% en el largo, en una evaluación experimental por lotería con registros del SIPA. Resultados de Berniell y de la Mata presentados por Caullo.",
+    "en": "An increase in formality of 40% in the very short run, 32% in the short run and 15% in the long run, in a lottery-based experiment using SIPA records. Results by Berniell and de la Mata presented by Caullo."
+   },
+   "id": "fisc-general-14-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué ventajas y límites tienen los datos administrativos para evaluar políticas?",
+    "en": "What advantages and limits do administrative data have for policy evaluation?"
+   },
+   "a": {
+    "es": "Tienen amplia cobertura, se cruzan entre bases, son rápidos, longitudinales y baratos; pero solo cubren a la población registrada, son transaccionales y plantean problemas de confidencialidad. Caullo agrega barreras legales y políticas a su uso.",
+    "en": "They have broad coverage, can be linked, are fast, longitudinal and cheap; but cover only the registered population, are transactional and raise confidentiality issues. Caullo adds legal and political barriers to their use."
+   },
+   "id": "fisc-general-14-t8"
+  }
+ ]
+}

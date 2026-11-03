@@ -1,0 +1,413 @@
+{
+ "id": "fisc-general-17",
+ "cat": "fisc-general",
+ "orden": 14,
+ "minutos": 15,
+ "titulo": "El sistema de salud argentino: tres subsistemas, quién paga y por qué no cierran las cuentas",
+ "bajada": "Público, seguridad social y privado; cuánto gasta el país en salud y quién lo financia; el peso del sector en el empleo calificado, y la brecha entre costos e ingresos de las clínicas de Córdoba que explica copagos, aranceles éticos y fuga de profesionales.",
+ "fuentes": [
+  1168
+ ],
+ "cita": "«Sistema de salud en Argentina» (presentación de Finanzas Públicas, FCE-UNC, octubre de 2023; material de Laura Caullo), con datos de IERAL de Fundación Mediterránea",
+ "intro": "Esta presentación de la unidad de gasto público de Finanzas Públicas de la FCE-UNC, de octubre de 2023 y basada casi por completo en datos de IERAL de Fundación Mediterránea, describe el sistema de salud argentino desde la economía del sector público. No desarrolla un modelo: es un diagnóstico con cifras. Recorre cuatro cosas: la estructura del sistema, partido en un subsistema público, uno de seguridad social y uno privado, con la cobertura de cada uno; la distribución del gasto en salud entre niveles de gobierno, obras sociales y hogares; la importancia del sector como empleador de trabajo calificado y formal, y los problemas de financiamiento de los prestadores privados, medidos con un índice de costos y uno de ingresos de clínicas y sanatorios de Córdoba. La conclusión es que el sistema enfrenta una crisis: baja la calidad de la atención, se cobran copagos, se van profesionales y cierran clínicas.",
+ "secciones": [
+  {
+   "t": "Tres subsistemas superpuestos",
+   "p": [
+    "El sistema de salud argentino tiene tres patas. El subsistema público incluye los sistemas nacional, provincial y municipal, y en 2022 atendía a 19,9 millones de personas. El de seguridad social reúne a las obras sociales nacionales, con 14,9 millones de beneficiarios; a las obras sociales provinciales, con 7,2 millones, y al PAMI, con 5,2 millones, más regímenes especiales como el de las universidades (300 mil), IOSFA (600 mil), la Policía Federal (160 mil), la obra social del Poder Judicial (47 mil) y DAS (28 mil). El privado comprende mutuales y empresas de medicina prepaga, con 6,8 millones, además de coberturas específicas como las aseguradoras de riesgos del trabajo y los seguros de accidentes de tránsito.",
+    "La presentación marca un dato que resume el diseño: aproximadamente el 15% de la población tiene doble cobertura. Más adelante lo atribuye a malas regulaciones. Lectura propia: la doble cobertura es la otra cara de la fragmentación; una misma persona aporta a una obra social por su empleo y paga una prepaga, o usa el hospital público teniendo obra social, y cada subsistema financia parte de un riesgo que también cubre otro, sin compensación entre ellos."
+   ]
+  },
+  {
+   "t": "Cuánto se gasta y quién lo paga",
+   "eq": [
+    "G^{tot} = G^{pub} + G^{ss} + G^{priv} \\;\\Rightarrow\\; 9{,}3 = 3{,}1 + 3{,}4 + 2{,}8"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G^{tot}\\): gasto total en salud de 2021, en porcentaje del PIB.",
+      "en": "\\(G^{tot}\\): total health spending in 2021, as a percentage of GDP."
+     },
+     {
+      "es": "\\(G^{pub}\\): gasto público de Nación (sin obras sociales nacionales ni INSSJyP), provincias (sin obras sociales provinciales) y municipios, en % del PIB.",
+      "en": "\\(G^{pub}\\): public spending by the nation (excluding national health funds and INSSJyP), provinces (excluding provincial funds) and municipalities, as % of GDP."
+     },
+     {
+      "es": "\\(G^{ss}\\): gasto de la seguridad social: obras sociales nacionales, INSSJyP (PAMI) y obras sociales provinciales, en % del PIB.",
+      "en": "\\(G^{ss}\\): social security spending: national health funds, INSSJyP (PAMI) and provincial funds, as % of GDP."
+     },
+     {
+      "es": "\\(G^{priv}\\): gasto privado de hogares y empresas, en % del PIB; la fuente aclara que para 2021 usa el valor de 2020.",
+      "en": "\\(G^{priv}\\): private spending by households and firms, as % of GDP; the source notes it uses the 2020 value for 2021."
+     },
+     {
+      "es": "Lectura propia: la tabla de la presentación da los componentes; la suma es nuestra y coincide con el total.",
+      "en": "Own reading: the presentation's table gives the components; the sum is ours and matches the total."
+     }
+    ]
+   ],
+   "p": [
+    "El gasto total en salud fue de 9,3% del PIB en 2021, contra 9,5% en 2017. Lo que cambió fue la composición. El gasto público subió de 2,7% a 3,1% del PIB, sobre todo por la Nación, que pasó de 0,5% a 0,8%; las provincias apenas se movieron, de 1,8% a 1,9%, y los municipios quedaron en 0,4%. El gasto de la seguridad social cayó de 4,0% a 3,4%: las obras sociales nacionales bajaron de 2,1% a 1,8%, el INSSJyP de 0,9% a 0,8% y las provinciales de 1,0% a 0,8%. El gasto privado se mantuvo en 2,8%.",
+    "Mirado por nivel de gobierno, incluyendo la seguridad social, el gasto osciló entre 6,2% y 7,1% del PIB entre 2017 y 2021, con el pico en 2020 por la pandemia, cuando la Nación llegó a 3,7%. En 2021 la Nación explicaba 3,4 puntos, las provincias 2,7 y los municipios 0,4. Lectura propia: la caída de la seguridad social con un gasto público en alza es coherente con el problema de financiamiento que la presentación describe después: los aportes atados al salario formal privado rinden menos y el Tesoro compensa."
+   ]
+  },
+  {
+   "t": "Un sector que emplea trabajo calificado y formal",
+   "p": [
+    "La salud es un gran empleador. En el primer trimestre de 2023 los servicios relacionados con la salud humana tenían 323 mil puestos asalariados privados registrados, frente a 1.250 mil de toda la industria manufacturera y 407 mil de la industria de alimentos. Eso equivale al 26% del empleo industrial y al 80% del de alimentos, y es casi 5 veces el empleo de la industria automotriz y 6 veces el de la textil.",
+    "Además es el sector con más calificación: el 54,6% de sus asalariados privados ocupa puestos que requieren calificación profesional o técnica, contra 28,4% en el sector que le sigue y 15,4% en el total. La presentación agrega que es uno de los sectores con menor informalidad laboral y concluye que conviene priorizarlo y acompañar los esfuerzos de capacitación que exige. Lectura propia: esa misma intensidad de trabajo calificado es la que vuelve al sector vulnerable cuando los ingresos se atrasan, porque el costo laboral es la mayor parte del gasto y los profesionales tienen alternativas, incluso en el exterior."
+   ]
+  },
+  {
+   "t": "La brecha entre costos e ingresos de las clínicas",
+   "eq": [
+    "\\mathit{Brecha}_t = \\frac{\\mathit{IC}_t}{\\mathit{II}_t} - 1"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{Brecha}_t\\): cuánto más crecieron los costos que los ingresos de clínicas y sanatorios de Córdoba desde la base, en el trimestre \\(t\\), en proporción.",
+      "en": "\\(\\mathit{Brecha}_t\\): how much more costs than revenues of Córdoba clinics have grown since the base, in quarter \\(t\\), as a proportion."
+     },
+     {
+      "es": "\\(\\mathit{IC}_t\\): índice de costos de IERAL en el trimestre \\(t\\) (base 100 al inicio de 2018), con o sin ayuda estatal.",
+      "en": "\\(\\mathit{IC}_t\\): IERAL cost index in quarter \\(t\\) (base 100 at the start of 2018), with or without state aid."
+     },
+     {
+      "es": "\\(\\mathit{II}_t\\): índice de ingresos de IERAL en el trimestre \\(t\\), misma base.",
+      "en": "\\(\\mathit{II}_t\\): IERAL revenue index in quarter \\(t\\), same base."
+     },
+     {
+      "es": "Lectura propia: la presentación da los índices y las brechas pero no la fórmula; con los valores del tercer trimestre de 2023 (costos 1437 con ayuda y 1557 sin ayuda, ingresos 932) esta definición reproduce el 54% y el 67%.",
+      "en": "Own reading: the presentation gives the indices and gaps but not the formula; with third-quarter 2023 values (costs 1437 with aid and 1557 without, revenue 932) this definition reproduces the 54% and 67%."
+     }
+    ]
+   ],
+   "p": [
+    "IERAL sigue la situación financiera de las clínicas y sanatorios de Córdoba con dos índices. El de costos pondera costos laborales (60,0%), materiales e insumos (31,5%), inversiones (4,5%) y servicios públicos (4,0%). El de ingresos pondera a los financiadores: APROSS (33,0%), PAMI (29,0%), obras sociales (26,0%) y prepagas (12,0%). Por la pandemia se armaron dos escenarios de costos, con y sin ayuda estatal; la ayuda incluye el ATP desde el segundo trimestre de 2020, el Repro II y la reducción de contribuciones patronales desde 2021, y el financiamiento de APROSS por módulos COVID-19 hasta abril de 2022.",
+    "En el tercer trimestre de 2023 la brecha entre costos e ingresos fue de 54% con ayuda estatal y de 67% sin ella. La brecha promedio anual crece con los años: entre 2019 y 2020 casi se duplicó con ayuda y casi se triplicó sin ella, y en lo que iba de 2023 promediaba 49% con ayuda y 60% sin ayuda. La inflación casi exponencial del último año llevó al IPC por encima de los costos durante algunos meses y muy por encima de los ingresos; en el tercer trimestre de 2023 los costos sin ayuda volvieron a crecer más que la inflación."
+   ]
+  },
+  {
+   "t": "Consecuencias y diagnóstico",
+   "p": [
+    "La presentación enumera las consecuencias. Los prestadores privados cobran copagos o bonos por tomografías, ecografías y análisis. Centros y profesionales empezaron a cobrar la diferencia entre lo que paga la prepaga y un arancel ético mínimo de $6,000 por consulta. Hay fuga de médicos y bioquímicos, con demoras en la atención. Según CADIME, el atraso de los pagos a los prestadores desde la pandemia ronda el 75% y haría falta un aumento del 300% para ponerse al día. La provisión de insumos sufre por las restricciones a las importaciones y la concentración del mercado; como la medicina depende de trabajo calificado y tecnología atados al dólar, el cepo y la escasez de reservas golpean directo.",
+    "La raíz está en el financiamiento de la seguridad social. De 13 millones de trabajadores registrados, solo la mitad es asalariada privada, el grupo que más aporta. Entre 2013 y 2023 el empleo registrado total creció 17%, pero los asalariados privados solo 4%, mientras el monotributo creció 38%, el monotributo social 217% y el empleo público 25%; los autónomos cayeron 4%. Esas formas de empleo no son una fuente de financiamiento genuina. La presentación suma la inconsistencia financiera y las malas regulaciones que generan doble cobertura, y cierra con el diagnóstico de crisis: menor calidad, copagos, arancel ético, fuga de capital humano, cierre de clínicas privadas y concentración del mercado."
+   ]
+  },
+  {
+   "t": "Qué evidencia hay y qué faltaría",
+   "p": [
+    "Lectura propia: la presentación es descriptiva y no tiene trabajo econométrico. Sus cifras son de cobertura, gasto e índices de precios, y la relación causal que sugiere, que el estancamiento del empleo asalariado privado y la inflación desfinancian a los prestadores, no se contrasta. Habría que medir, por ejemplo, cómo responde la recaudación de las obras sociales a la composición del empleo, separando el efecto de la cantidad de aportantes del de los salarios reales, y cómo se traslada la brecha de costos a la oferta de prestaciones: cierres, tiempos de espera o salida de profesionales, con datos por prestador.",
+    "Dos cautelas sobre los números. El índice de ingresos refleja aranceles pactados con los financiadores y no necesariamente los copagos que ya se cobran por fuera, de modo que la brecha puede sobreestimar el deterioro de los ingresos totales de las clínicas. Y el gasto privado de 2021 repite el de 2020, por lo que la estabilidad en 2,8% del PIB es un supuesto de la fuente más que un dato."
+   ]
+  }
+ ],
+ "claves": [
+  "El sistema se divide en público (19,9 millones), seguridad social (obras sociales nacionales, provinciales y PAMI) y privado (prepagas, 6,8 millones); cerca del 15% tiene doble cobertura.",
+  "El gasto en salud fue de 9,3% del PIB en 2021: 3,1 público, 3,4 seguridad social y 2,8 privado.",
+  "Entre 2017 y 2021 el gasto público subió y el de la seguridad social cayó de 4,0% a 3,4% del PIB.",
+  "La salud emplea 323 mil asalariados privados registrados y el 54,6% ocupa puestos calificados.",
+  "En Córdoba la brecha entre costos e ingresos de las clínicas llegó a 54% con ayuda estatal y 67% sin ella en el tercer trimestre de 2023.",
+  "Consecuencias: copagos, arancel ético mínimo, fuga de profesionales, atraso en pagos y cierre de clínicas.",
+  "El financiamiento se debilita porque crecen el monotributo y el empleo público y casi no crece el asalariado privado, que más aporta."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuáles son los tres subsistemas del sistema de salud argentino?",
+    "en": "What are the three subsystems of Argentina's health system?"
+   },
+   "op": {
+    "es": [
+     "Nacional, provincial y municipal",
+     "Público, seguridad social y privado",
+     "Hospitales, clínicas y consultorios",
+     "PAMI, obras sociales y ART"
+    ],
+    "en": [
+     "National, provincial and municipal",
+     "Public, social security and private",
+     "Hospitals, clinics and practices",
+     "PAMI, health funds and work-risk insurers"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El público incluye los niveles nacional, provincial y municipal; la seguridad social, las obras sociales y el PAMI; el privado, mutuales y prepagas.",
+    "en": "The public one includes national, provincial and municipal levels; social security, health funds and PAMI; the private one, mutuals and prepaid plans."
+   },
+   "id": "fisc-general-17-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué proporción aproximada de la población tiene doble cobertura según la presentación?",
+    "en": "Roughly what share of the population has double coverage according to the presentation?"
+   },
+   "op": {
+    "es": [
+     "Ninguna",
+     "La mitad",
+     "Un tercio",
+     "Cerca del 15%"
+    ],
+    "en": [
+     "None",
+     "Half",
+     "One third",
+     "About 15%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La presentación marca aproximadamente un 15% de doble cobertura y la atribuye a malas regulaciones.",
+    "en": "The presentation marks about 15% double coverage and attributes it to poor regulation."
+   },
+   "id": "fisc-general-17-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuánto fue el gasto total en salud en 2021, en % del PIB?",
+    "en": "What was total health spending in 2021, as % of GDP?"
+   },
+   "op": {
+    "es": [
+     "9,3%",
+     "6,5%",
+     "3,1%",
+     "7,1%"
+    ],
+    "en": [
+     "9.3%",
+     "6.5%",
+     "3.1%",
+     "7.1%"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "G_tot = G_pub + G_ss + G_priv = 3,1 + 3,4 + 2,8 = 9,3. Donde: G_tot = gasto total; G_pub = gasto público; G_ss = seguridad social; G_priv = gasto privado, todo en % del PIB.",
+    "en": "G_tot = G_pub + G_ss + G_priv = 3.1 + 3.4 + 2.8 = 9.3. Where: G_tot = total spending; G_pub = public; G_ss = social security; G_priv = private, all as % of GDP."
+   },
+   "id": "fisc-general-17-q3"
+  },
+  {
+   "q": {
+    "es": "Entre 2017 y 2021, ¿qué componente del gasto en salud cayó más?",
+    "en": "Between 2017 and 2021, which component of health spending fell the most?"
+   },
+   "op": {
+    "es": [
+     "El gasto público de la Nación",
+     "El gasto municipal",
+     "El gasto de la seguridad social",
+     "El gasto privado"
+    ],
+    "en": [
+     "National public spending",
+     "Municipal spending",
+     "Social security spending",
+     "Private spending"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La seguridad social bajó de 4,0% a 3,4% del PIB, mientras el gasto público subió de 2,7% a 3,1% y el privado quedó en 2,8%.",
+    "en": "Social security fell from 4.0% to 3.4% of GDP, while public spending rose from 2.7% to 3.1% and private stayed at 2.8%."
+   },
+   "id": "fisc-general-17-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue al empleo del sector salud según la presentación?",
+    "en": "What distinguishes health-sector employment according to the presentation?"
+   },
+   "op": {
+    "es": [
+     "Alta informalidad",
+     "Bajo nivel de calificación",
+     "Alta calificación y baja informalidad",
+     "Peso menor que la industria textil"
+    ],
+    "en": [
+     "High informality",
+     "Low skill level",
+     "High skills and low informality",
+     "Smaller weight than the textile industry"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El 54,6% de sus asalariados privados está en puestos que requieren calificación profesional o técnica, y es de los sectores con menor informalidad.",
+    "en": "54.6% of its private employees hold jobs requiring professional or technical skills, and it is among the least informal sectors."
+   },
+   "id": "fisc-general-17-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se calcula la brecha de 54% del tercer trimestre de 2023?",
+    "en": "How is the 54% gap of the third quarter of 2023 computed?"
+   },
+   "op": {
+    "es": [
+     "Comparando el índice de costos con ayuda estatal (1437) con el de ingresos (932)",
+     "Restando el IPC al índice de ingresos",
+     "Dividiendo el gasto público por el privado",
+     "Comparando costos sin ayuda con la inflación"
+    ],
+    "en": [
+     "Comparing the cost index with state aid (1437) with the revenue index (932)",
+     "Subtracting the CPI from the revenue index",
+     "Dividing public by private spending",
+     "Comparing costs without aid with inflation"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Brecha = IC/II − 1, con IC = índice de costos y II = índice de ingresos de IERAL (base 100 en 2018): 1437/932 − 1 da el 54%; sin ayuda, 1557/932 − 1 da el 67% (fórmula: lectura propia).",
+    "en": "Gap = CI/RI − 1, with CI = cost index and RI = revenue index from IERAL (base 100 in 2018): 1437/932 − 1 gives 54%; without aid, 1557/932 − 1 gives 67% (formula: own reading)."
+   },
+   "id": "fisc-general-17-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué cobran los prestadores además del arancel de las prepagas?",
+    "en": "What do providers charge on top of prepaid-plan fees?"
+   },
+   "op": {
+    "es": [
+     "Un impuesto provincial",
+     "Copagos y un arancel ético mínimo",
+     "Una cuota de afiliación",
+     "Nada, está prohibido"
+    ],
+    "en": [
+     "A provincial tax",
+     "Copayments and a minimum ethical fee",
+     "A membership fee",
+     "Nothing, it is forbidden"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La presentación menciona copagos o bonos por estudios y la diferencia con un arancel ético mínimo de $6,000 por consulta.",
+    "en": "The presentation mentions copayments for tests and the difference with a minimum ethical fee of $6,000 per visit."
+   },
+   "id": "fisc-general-17-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué se debilita el financiamiento de la seguridad social en salud?",
+    "en": "Why is social security health financing weakening?"
+   },
+   "op": {
+    "es": [
+     "Porque cayó el empleo público",
+     "Porque bajó la cantidad de monotributistas",
+     "Porque se eliminó el PAMI",
+     "Porque crecen el monotributo y el empleo público y casi no crece el asalariado privado, que más aporta"
+    ],
+    "en": [
+     "Because public employment fell",
+     "Because the number of monotributistas fell",
+     "Because PAMI was abolished",
+     "Because monotributo and public employment grow while private salaried work, the main contributor, barely grows"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Entre 2013 y 2023 los asalariados privados crecieron 4%, el monotributo 38%, el monotributo social 217% y el empleo público 25%; la presentación dice que esas formas no son financiamiento genuino.",
+    "en": "Between 2013 and 2023 private employees grew 4%, monotributo 38%, social monotributo 217% and public jobs 25%; the presentation says these are not genuine financing."
+   },
+   "id": "fisc-general-17-q8"
+  }
+ ],
+ "palabras": 1298,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo está organizado el sistema de salud argentino?",
+    "en": "How is Argentina's health system organized?"
+   },
+   "a": {
+    "es": "En tres subsistemas: público (nacional, provincial y municipal), seguridad social (obras sociales nacionales y provinciales y PAMI) y privado (mutuales y prepagas), con cerca de 15% de doble cobertura. Es la descripción de la presentación de la cátedra, con datos de IERAL para 2022.",
+    "en": "In three subsystems: public (national, provincial, municipal), social security (national and provincial health funds and PAMI) and private (mutuals and prepaid plans), with about 15% double coverage. That is the course presentation's description, with IERAL data for 2022."
+   },
+   "id": "fisc-general-17-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo cambió la composición del gasto en salud entre 2017 y 2021?",
+    "en": "How did the composition of health spending change between 2017 and 2021?"
+   },
+   "a": {
+    "es": "El total pasó de 9,5% a 9,3% del PIB: el público subió de 2,7% a 3,1%, la seguridad social cayó de 4,0% a 3,4% y el privado quedó en 2,8%. Datos de IERAL en la presentación de la cátedra.",
+    "en": "The total went from 9.5% to 9.3% of GDP: public rose from 2.7% to 3.1%, social security fell from 4.0% to 3.4% and private stayed at 2.8%. IERAL data in the course presentation."
+   },
+   "id": "fisc-general-17-t2"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la salud es un sector relevante para el empleo de calidad?",
+    "en": "Why is health relevant for quality employment?"
+   },
+   "a": {
+    "es": "Porque tiene 323 mil asalariados privados registrados, el 26% del empleo industrial, y el 54,6% ocupa puestos calificados, con baja informalidad. La presentación, con datos de IERAL, concluye que conviene priorizarlo.",
+    "en": "Because it has 323 thousand registered private employees, 26% of industrial employment, and 54.6% hold skilled jobs, with low informality. The presentation, with IERAL data, concludes it should be prioritized."
+   },
+   "id": "fisc-general-17-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué mide la brecha entre el índice de costos y el de ingresos de las clínicas?",
+    "en": "What does the gap between clinics' cost and revenue indices measure?"
+   },
+   "a": {
+    "es": "Cuánto más crecieron los costos (60% laborales) que los ingresos que pagan APROSS, PAMI, obras sociales y prepagas; en el tercer trimestre de 2023 fue 54% con ayuda estatal y 67% sin ella. Índices de IERAL citados en la presentación.",
+    "en": "How much more costs (60% labor) grew than revenues paid by APROSS, PAMI, health funds and prepaid plans; in Q3 2023 it was 54% with state aid and 67% without. IERAL indices cited in the presentation."
+   },
+   "id": "fisc-general-17-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué consecuencias tiene el desfinanciamiento de los prestadores privados?",
+    "en": "What are the consequences of underfunding private providers?"
+   },
+   "a": {
+    "es": "Copagos, arancel ético mínimo, fuga de médicos y bioquímicos, atraso de pagos cercano al 75% según CADIME, problemas de insumos importados y cierre de clínicas. Lista de la presentación de la cátedra.",
+    "en": "Copayments, a minimum ethical fee, flight of doctors and biochemists, payment arrears near 75% according to CADIME, imported-supply problems and clinic closures. List from the course presentation."
+   },
+   "id": "fisc-general-17-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué relación hay entre la composición del empleo y el financiamiento de la salud?",
+    "en": "How does the composition of employment relate to health financing?"
+   },
+   "a": {
+    "es": "La seguridad social se financia con aportes, sobre todo de asalariados privados, que crecieron solo 4% entre 2013 y 2023 frente a 38% del monotributo y 25% del empleo público, formas que la presentación considera no genuinas para financiar.",
+    "en": "Social security is funded by contributions, mostly from private employees, who grew only 4% between 2013 and 2023 versus 38% for monotributo and 25% for public jobs, forms the presentation considers non-genuine financing."
+   },
+   "id": "fisc-general-17-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límites tiene el diagnóstico de crisis del sistema de salud?",
+    "en": "What limits does the health-system crisis diagnosis have?"
+   },
+   "a": {
+    "es": "La presentación es descriptiva: no contrasta causalmente el vínculo entre empleo, inflación y desfinanciamiento. Lectura propia: el índice de ingresos omite copagos y el gasto privado de 2021 repite el de 2020.",
+    "en": "The presentation is descriptive: it does not causally test the link between employment, inflation and underfunding. Own reading: the revenue index omits copayments and 2021 private spending repeats 2020's."
+   },
+   "id": "fisc-general-17-t7"
+  }
+ ]
+}

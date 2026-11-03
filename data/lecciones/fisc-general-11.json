@@ -1,0 +1,441 @@
+{
+ "id": "fisc-general-11",
+ "cat": "fisc-general",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "Pobreza, informalidad y educación: la trampa del mercado laboral argentino",
+ "bajada": "Casi la mitad de los ocupados es informal, el salario real de los no registrados se desplomó y el empleo que crece es el más precario; la educación de los trabajadores explica por qué es difícil salir de ahí.",
+ "fuentes": [
+  1166
+ ],
+ "cita": "Caullo y Aguirre, «Atrapados en la trampa de la pobreza y la informalidad: desafiando un futuro incierto con bajos niveles educativos» (IERAL, 2023), con datos de INDEC (EPH), Ministerio de Trabajo y Ministerio de Economía",
+ "intro": "El informe de Laura Caullo y Joaquín Aguirre para el IERAL, que la cátedra de Finanzas Públicas usa en la unidad de gasto público, se escribió en la previa de las elecciones generales de octubre de 2023, con una inflación interanual en torno al 124 % y una proyección del REM de 141 % para todo el año. La pobreza del primer semestre, medida cuando la inflación mensual era del 6 %, había alcanzado al 40,1 % de la población, y con una inflación mensual que se había duplicado al 12 % los autores anticipaban para el segundo semestre una de las cifras más altas del último cuarto de siglo. En ese contexto el gobierno anunció una batería de medidas para recomponer ingresos, entre ellas un pago de $94.000 a los trabajadores informales en dos cuotas de $47.000, financiado con un anticipo extraordinario de Ganancias a grandes contribuyentes. El informe usa ese anuncio para mirar el problema de fondo: pobreza, informalidad y salarios bajos forman un ciclo en el que cada factor refuerza a los otros, y el nivel educativo de los trabajadores es lo que vuelve difícil romperlo.",
+ "secciones": [
+  {
+   "t": "El ciclo: informalidad, salarios bajos y pobreza",
+   "eq": [
+    "w_t = 100 \\times \\frac{W_t / \\mathit{IPC}_t}{W_0 / \\mathit{IPC}_0}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(w_t\\): índice de salario real en el mes \\(t\\), con base 100 en octubre de 2016 (lectura propia: el informe da el índice sin la fórmula; esta es la construcción estándar).",
+      "en": "\\(w_t\\): real wage index in month \\(t\\), base 100 in October 2016 (own reading: the report gives the index without the formula; this is the standard construction)."
+     },
+     {
+      "es": "\\(W_t\\): índice de salarios nominales de INDEC del sector correspondiente en el mes \\(t\\).",
+      "en": "\\(W_t\\): INDEC nominal wage index for the relevant sector in month \\(t\\)."
+     },
+     {
+      "es": "\\(\\mathit{IPC}_t\\): índice de precios al consumidor del mes \\(t\\); dividir por él pasa el salario a poder de compra.",
+      "en": "\\(\\mathit{IPC}_t\\): consumer price index in month \\(t\\); dividing by it turns the wage into purchasing power."
+     },
+     {
+      "es": "Subíndice \\(0\\): mes base, octubre de 2016.",
+      "en": "Subscript \\(0\\): base month, October 2016."
+     }
+    ]
+   ],
+   "p": [
+    "Los autores describen tres factores entrelazados. El trabajo informal paga menos que el formal, de modo que quienes lo tienen pueden cubrir menos necesidades básicas y son más propensos a ser pobres. Además es menos estable y seguro: la inestabilidad lleva a ingresos irregulares y a mayor probabilidad de caer en la pobreza en los períodos de desempleo o subempleo.",
+    "La precariedad se ve en los salarios. El índice de salarios reales con base 100 en octubre de 2016 muestra que todas las categorías perdieron poder de compra desde el pico de mediados de 2017, pero de manera muy distinta. A junio de 2023 el sector privado registrado estaba en 83 y el sector público en 81, con un poder de compra relativamente estable en los últimos 3 años. El sector privado no registrado, que había llegado a 105, cayó a 57: una caída sin freno, en palabras del informe.",
+    "Lectura propia: la diferencia tiene un mecanismo claro en un contexto de inflación alta. Los salarios registrados se ajustan por paritarias y los del sector público por decisión estatal, con rezago pero con algún piso; el informal no tiene ningún mecanismo de actualización y depende de la demanda de trabajo poco calificado, que es la primera en caer con la recesión. Por eso la inflación es, además de un impuesto, un impuesto regresivo sobre el ingreso laboral."
+   ]
+  },
+  {
+   "t": "Cuánta informalidad hay y dónde",
+   "eq": [
+    "I = \\frac{\\mathit{ANR} + \\mathit{CNP} + \\mathit{TSR}}{O} \\times 100"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I\\): tasa ampliada de informalidad, en porcentaje de los ocupados.",
+      "en": "\\(I\\): broad informality rate, as a percentage of the employed."
+     },
+     {
+      "es": "\\(\\mathit{ANR}\\): asalariados no registrados (sin aportes a la seguridad social); a nivel nacional, 27,3 % de los ocupados.",
+      "en": "\\(\\mathit{ANR}\\): unregistered wage earners (no social security contributions); nationally, 27.3 % of the employed."
+     },
+     {
+      "es": "\\(\\mathit{CNP}\\): cuentapropistas no profesionales; 19,7 % de los ocupados.",
+      "en": "\\(\\mathit{CNP}\\): non-professional self-employed; 19.7 % of the employed."
+     },
+     {
+      "es": "\\(\\mathit{TSR}\\): trabajadores sin remuneración; 0,3 % de los ocupados.",
+      "en": "\\(\\mathit{TSR}\\): unpaid workers; 0.3 % of the employed."
+     },
+     {
+      "es": "\\(O\\): total de ocupados. Con los datos del primer trimestre de 2023, \\(I = 47{,}3\\,\\%\\).",
+      "en": "\\(O\\): total employed. With first-quarter 2023 data, \\(I = 47.3\\,\\%\\)."
+     }
+    ]
+   ],
+   "p": [
+    "La ayuda a los informales tiene un alcance enorme porque casi la mitad de los trabajadores lo es. El informe usa una métrica ampliada que suma a los asalariados no registrados, los cuentapropistas no profesionales y los trabajadores sin remuneración. Con datos de la EPH del primer trimestre de 2023, el 47,3 % de los ocupados del país está en la informalidad: 27,3 % son asalariados no registrados, 19,7 % cuentapropistas no profesionales y apenas 0,3 % trabajadores sin remuneración.",
+    "La dispersión regional es grande. San Juan tiene el 59,9 % de sus ocupados en la informalidad y Chaco el 57,6 %. En el otro extremo están Tierra del Fuego con 19,7 %, Santa Cruz con 22,8 % y la Ciudad de Buenos Aires con 32,4 %. Lectura propia: el mapa coincide en buena medida con el del empleo público y el de la renta de recursos naturales; donde hay petróleo o un régimen de promoción industrial, el empleo formal privado tiene un ancla que en el norte del país no existe.",
+    "Lectura propia sobre la medida: transferir a todos los informales choca con un problema de focalización conocido en finanzas públicas. Por definición, el Estado no tiene registro de sus ingresos, de modo que el beneficio se asigna por la ausencia de aportes y no por la necesidad, y puede llegar a quien no es pobre y no llegar a quien no logra inscribirse."
+   ]
+  },
+  {
+   "t": "La jornada laboral y la subocupación",
+   "p": [
+    "La otra discusión de la semana era la reducción de la jornada. Había 7 proyectos en el Congreso, 5 del oficialismo, 1 del socialismo y 1 del Frente de Izquierda, que proponían pasar de 8 horas diarias con un máximo de 48 semanales a 6 horas diarias con un máximo de entre 30 y 40 semanales, según el proyecto. Los autores sostienen que, con el panorama de informalidad, bajos salarios y precariedad, estas propuestas van en contramano de lo que necesita el mercado laboral.",
+    "Sus argumentos son tres. Hay evidencia de que medidas así afectan negativamente la productividad. Representan costos adicionales para las empresas, sobre todo si deben contratar más personal para cubrir las horas reducidas, lo que afecta su rentabilidad y capacidad de inversión. Y pueden derivar en recortes salariales para contener costos, que desmotivan a los empleados y vuelven a afectar la productividad. Una jornada más corta exige además una gestión eficiente para completar las tareas en menos tiempo, y en algunas industrias, como la manufactura, es más difícil de implementar sin perder producción.",
+    "Agregan un dato de demanda: la subocupación, los ocupados que trabajan menos de 35 horas semanales por causas involuntarias y quieren trabajar más, era el 10,6 % de la población económicamente activa en el segundo trimestre de 2023, unas 2,4 millones de personas. Si tantos quieren trabajar más horas, no habría indicios de que reducir la jornada sea prioritario. Lectura propia: el informe no cita la evidencia que menciona sobre productividad, y la literatura internacional tiene resultados mixtos; el argumento más sólido del texto es el de la subocupación."
+   ]
+  },
+  {
+   "t": "Educación: el capital humano que falta",
+   "p": [
+    "Como la caída de la productividad aparece como consecuencia posible de la ley, y la productividad ya es baja tras más de una década de estanflación, los autores miran el nivel educativo de los trabajadores, que da una idea del capital humano acumulado y del potencial productivo inmediato y de largo plazo. Cuanto menor el nivel educativo, más probable es terminar en un trabajo poco productivo y mal pago, y más difícil salir de esa precariedad.",
+    "Los datos confirman lo esperable. Entre los asalariados privados no registrados hay casi el doble de trabajadores con secundario incompleto que entre los registrados: 46 % contra 24 % según el gráfico. Solo el 9 % de los informales tiene estudios superiores, contra el 25 % de los formales privados y el 45 % de los públicos, donde pesan los trabajadores con nivel terciario, sobre todo docentes.",
+    "La heterogeneidad federal es fuerte. Entre los asalariados privados registrados, en Santa Cruz el 39 % no terminó el secundario y en la Ciudad de Buenos Aires solo el 14 %; con estudios superiores, Santa Cruz tiene 7 % y la Ciudad 45 %. Entre los no registrados los números son peores: en Santiago del Estero el 69 % no terminó el secundario y apenas el 1 % tiene estudios superiores, seguido por San Juan (59 % y 5 %) y Neuquén (58 % y 5 %). Lectura propia: el caso de Santa Cruz muestra que la formalidad no siempre viene de la educación; un empleo formal sostenido por la renta petrolera o el Estado puede convivir con capital humano bajo."
+   ]
+  },
+  {
+   "t": "El empleo que crece es el más precario",
+   "eq": [
+    "s^{k}_t = \\frac{E^{k}_t}{O_t} \\times 100"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(s^{k}_t\\): participación de la categoría ocupacional \\(k\\) en el total de ocupados en el año \\(t\\), en porcentaje (lectura propia: el informe muestra los porcentajes sin la fórmula).",
+      "en": "\\(s^{k}_t\\): share of occupational category \\(k\\) in total employment in year \\(t\\), in percent (own reading: the report shows the percentages without the formula)."
+     },
+     {
+      "es": "\\(k\\): categoría ocupacional: asalariado privado registrado, asalariado privado no registrado, asalariado público, cuentapropista, patrón o trabajador sin remuneración.",
+      "en": "\\(k\\): occupational category: registered private employee, unregistered private employee, public employee, self-employed, employer or unpaid worker."
+     },
+     {
+      "es": "\\(E^{k}_t\\): cantidad de ocupados de la categoría \\(k\\) en el año \\(t\\).",
+      "en": "\\(E^{k}_t\\): number of employed in category \\(k\\) in year \\(t\\)."
+     },
+     {
+      "es": "\\(O_t\\): total de ocupados en el año \\(t\\).",
+      "en": "\\(O_t\\): total employed in year \\(t\\)."
+     }
+    ]
+   ],
+   "p": [
+    "En el debate de candidatos a vicepresidente el oficialismo destacó 36 meses seguidos de crecimiento del empleo asalariado privado formal. Con la serie desestacionalizada, el informe lo verifica para 35 meses desde julio de 2020, porque el dato de julio de 2023 aún no estaba: se pasó de 5,8 millones a casi 6,4 millones de asalariados registrados privados. Es un aumento significativo, pero su relevancia queda atenuada por la composición del empleo.",
+    "Entre los registrados, con datos del Ministerio de Economía, la categoría que más creció entre el segundo trimestre de 2013 y el de 2023 fue el Monotributo Social, con un 211 %: más que triplicó sus trabajadores. Bajo esa modalidad se puede acceder a Potenciar Trabajo, y a la AUH o la Tarjeta Alimentar si hay hijos en edad. El monotributo común creció 37 %, los asalariados públicos 23 %, el servicio doméstico 12 % y los asalariados privados apenas 4 %, mientras los autónomos cayeron 4 %.",
+    "Sobre el total de ocupados, los asalariados privados registrados pasaron del 37,3 % en 2012 y 2013 al 31,7 % en 2023, una caída de 5,6 puntos. Ganaron peso categorías asociadas a menores salarios y productividad: los no registrados (de 23,1 % a 24,8 %), los cuentapropistas (de 18,8 % a 22 %) y los asalariados públicos (de 16,5 % a 17,8 %). Medidos sobre la población total, los asalariados privados registrados son apenas el 14,2 % en el primer trimestre de 2023. La conclusión de los autores es que la mayor tasa de empleo no fortaleció el mercado laboral sino que aumentó las modalidades precarias e inestables frente a las recesiones."
+   ]
+  },
+  {
+   "t": "Qué muestra y qué no muestra la evidencia",
+   "p": [
+    "El informe es descriptivo: no estima relaciones causales, sino que ordena estadísticas de la EPH, del Ministerio de Trabajo y del Ministerio de Economía. Lectura propia: la correlación entre educación e informalidad que muestra es compatible con varias historias. Puede que la educación cause formalidad, porque eleva la productividad por encima del costo de registrar a un trabajador; pero también puede que ambas dependan de otra cosa, como el origen familiar o la región, y que la informalidad, al cortar la carrera laboral, reduzca la acumulación posterior de capital humano.",
+    "Para separar esas historias, la econometría usaría variación exógena en la educación, como cambios en la edad obligatoria de escolarización entre cohortes o provincias, y estimaría su efecto sobre la probabilidad de tener empleo registrado con un modelo de elección discreta. Para la jornada laboral, la evidencia útil viene de reformas previas evaluadas con diferencias en diferencias, comparando sectores o países afectados y no afectados. Una advertencia de medición: la subocupación y la informalidad se miden con la EPH sobre aglomerados urbanos, de modo que la foto rural queda afuera."
+   ]
+  }
+ ],
+ "claves": [
+  "Pobreza, informalidad y salarios bajos forman un ciclo que se refuerza.",
+  "A junio de 2023 el salario real informal estaba en 57 (base octubre de 2016 = 100), frente a 83 del privado registrado y 81 del público.",
+  "La informalidad ampliada alcanza al 47,3 % de los ocupados, con extremos en San Juan (59,9 %) y Tierra del Fuego (19,7 %).",
+  "Con una subocupación del 10,6 % de la PEA, los autores no ven prioritario reducir la jornada laboral.",
+  "Solo el 9 % de los asalariados informales tiene estudios superiores, contra 25 % de los formales privados y 45 % de los públicos.",
+  "El empleo registrado que más creció en diez años fue el Monotributo Social (211 %); el asalariado privado, apenas 4 %.",
+  "Los asalariados privados registrados cayeron de 37,3 % a 31,7 % del total de ocupados."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué incluye la métrica ampliada de informalidad del informe?",
+    "en": "What does the report's broad informality measure include?"
+   },
+   "op": {
+    "es": [
+     "Solo los asalariados no registrados",
+     "Asalariados no registrados, cuentapropistas no profesionales y trabajadores sin remuneración",
+     "Desocupados y subocupados",
+     "Monotributistas sociales y autónomos"
+    ],
+    "en": [
+     "Only unregistered wage earners",
+     "Unregistered wage earners, non-professional self-employed and unpaid workers",
+     "Unemployed and underemployed",
+     "Social monotax payers and self-employed professionals"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "I = (ANR + CNP + TSR) / O × 100 = 47,3 %. Donde: ANR = asalariados no registrados (27,3 %); CNP = cuentapropistas no profesionales (19,7 %); TSR = trabajadores sin remuneración (0,3 %); O = ocupados.",
+    "en": "I = (ANR + CNP + TSR) / O × 100 = 47.3 %. Where: ANR = unregistered wage earners (27.3 %); CNP = non-professional self-employed (19.7 %); TSR = unpaid workers (0.3 %); O = employed."
+   },
+   "id": "fisc-general-11-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué categoría tuvo la peor evolución del salario real desde octubre de 2016?",
+    "en": "Which category had the worst real wage path since October 2016?"
+   },
+   "op": {
+    "es": [
+     "Sector público",
+     "Sector privado registrado",
+     "Sector privado no registrado",
+     "Todas cayeron lo mismo"
+    ],
+    "en": [
+     "Public sector",
+     "Registered private sector",
+     "Unregistered private sector",
+     "All fell equally"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El índice del sector no registrado llegó a 57 en junio de 2023, contra 83 del privado registrado y 81 del público. Donde: el índice es el salario nominal deflactado por precios, con base 100 en octubre de 2016.",
+    "en": "The unregistered index reached 57 in June 2023, against 83 for registered private and 81 for public. Where: the index is the nominal wage deflated by prices, base 100 in October 2016."
+   },
+   "id": "fisc-general-11-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué provincia tiene la mayor tasa de informalidad según el informe?",
+    "en": "Which province has the highest informality rate according to the report?"
+   },
+   "op": {
+    "es": [
+     "San Juan",
+     "Chaco",
+     "Tierra del Fuego",
+     "Ciudad de Buenos Aires"
+    ],
+    "en": [
+     "San Juan",
+     "Chaco",
+     "Tierra del Fuego",
+     "City of Buenos Aires"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "San Juan tiene el 59,9 % de sus ocupados en la informalidad, seguida por Chaco con 57,6 %; Tierra del Fuego es la más baja con 19,7 %.",
+    "en": "San Juan has 59.9 % of its employed in informality, followed by Chaco at 57.6 %; Tierra del Fuego is lowest at 19.7 %."
+   },
+   "id": "fisc-general-11-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué dato usan los autores para argumentar que reducir la jornada no es prioritario?",
+    "en": "What figure do the authors use to argue that shortening the workweek is not a priority?"
+   },
+   "op": {
+    "es": [
+     "La tasa de desempleo",
+     "La inflación mensual",
+     "La caída del salario registrado",
+     "La subocupación del 10,6 % de la PEA"
+    ],
+    "en": [
+     "The unemployment rate",
+     "Monthly inflation",
+     "The fall in registered wages",
+     "Underemployment at 10.6 % of the labor force"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Unas 2,4 millones de personas trabajan menos de 35 horas por causas involuntarias y quieren trabajar más; no hay indicios de demanda por menos horas.",
+    "en": "About 2.4 million people work under 35 hours involuntarily and want more; there is no sign of demand for fewer hours."
+   },
+   "id": "fisc-general-11-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué porcentaje de los asalariados informales tiene estudios superiores?",
+    "en": "What share of informal wage earners has higher education?"
+   },
+   "op": {
+    "es": [
+     "25 %",
+     "9 %",
+     "45 %",
+     "1 %"
+    ],
+    "en": [
+     "25 %",
+     "9 %",
+     "45 %",
+     "1 %"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Solo el 9 %, contra 25 % de los asalariados privados formales y 45 % de los públicos, donde pesan los docentes con nivel terciario.",
+    "en": "Only 9 %, against 25 % of formal private employees and 45 % of public ones, where teachers with tertiary degrees weigh heavily."
+   },
+   "id": "fisc-general-11-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué categoría de trabajadores registrados más creció entre 2013 y 2023?",
+    "en": "Which registered worker category grew most between 2013 and 2023?"
+   },
+   "op": {
+    "es": [
+     "Asalariados privados",
+     "Asalariados públicos",
+     "Autónomos",
+     "Monotributo Social"
+    ],
+    "en": [
+     "Private employees",
+     "Public employees",
+     "Self-employed professionals",
+     "Social monotax"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El Monotributo Social creció 211 %, más que triplicando sus trabajadores; los asalariados privados crecieron apenas 4 % y los autónomos cayeron 4 %.",
+    "en": "The Social monotax grew 211 %, more than tripling its workers; private employees grew only 4 % and self-employed professionals fell 4 %."
+   },
+   "id": "fisc-general-11-q6"
+  },
+  {
+   "q": {
+    "es": "¿Cómo evolucionó la participación de los asalariados privados registrados en el total de ocupados?",
+    "en": "How did registered private employees' share of total employment evolve?"
+   },
+   "op": {
+    "es": [
+     "Cayó de 37,3 % a 31,7 %",
+     "Subió de 31,7 % a 37,3 %",
+     "Se mantuvo estable",
+     "Cayó a 14,2 %"
+    ],
+    "en": [
+     "Fell from 37.3 % to 31.7 %",
+     "Rose from 31.7 % to 37.3 %",
+     "Remained stable",
+     "Fell to 14.2 %"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "s = E / O × 100 pasó de 37,3 % en 2012 y 2013 a 31,7 % en 2023 (−5,6 puntos). Donde: s = participación; E = asalariados privados registrados; O = total de ocupados. El 14,2 % es su peso en la población total, no en los ocupados.",
+    "en": "s = E / O × 100 went from 37.3 % in 2012-13 to 31.7 % in 2023 (−5.6 points). Where: s = share; E = registered private employees; O = total employed. The 14.2 % is their weight in total population, not in employment."
+   },
+   "id": "fisc-general-11-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué conclusión sacan los autores del crecimiento del empleo asalariado privado formal en 35 meses?",
+    "en": "What do the authors conclude from 35 months of formal private employment growth?"
+   },
+   "op": {
+    "es": [
+     "Que el mercado laboral se fortaleció",
+     "Que es irrelevante porque es falso",
+     "Que su relevancia queda atenuada porque crecieron más las modalidades precarias",
+     "Que se debe a la reducción de la jornada"
+    ],
+    "en": [
+     "That the labor market strengthened",
+     "That it is irrelevant because it is false",
+     "That its relevance is diminished because precarious modes grew more",
+     "That it is due to shorter hours"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El aumento de 5,8 a casi 6,4 millones es real, pero el empleo total creció sobre todo en categorías precarias e inestables, y los registrados privados perdieron peso.",
+    "en": "The rise from 5.8 to almost 6.4 million is real, but total employment grew mostly in precarious and unstable categories, and registered private workers lost weight."
+   },
+   "id": "fisc-general-11-q8"
+  }
+ ],
+ "palabras": 1632,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué pobreza, informalidad y salarios bajos forman un ciclo?",
+    "en": "Why do poverty, informality and low wages form a cycle?"
+   },
+   "a": {
+    "es": "Porque el empleo informal paga menos y es más inestable, lo que eleva la probabilidad de ser pobre, y la baja educación hace difícil salir del trabajo precario. Caullo y Aguirre (IERAL, 2023) lo plantean como una trampa.",
+    "en": "Because informal jobs pay less and are less stable, raising the chance of poverty, and low education makes escaping precarious work hard. Caullo and Aguirre (IERAL, 2023) frame it as a trap."
+   },
+   "id": "fisc-general-11-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto cayó el salario real de los informales frente al de los formales desde 2016?",
+    "en": "How much did informal workers' real wage fall versus formal workers' since 2016?"
+   },
+   "a": {
+    "es": "Con base 100 en octubre de 2016, a junio de 2023 el no registrado estaba en 57, frente a 83 del privado registrado y 81 del público. Caullo y Aguirre, con datos de INDEC.",
+    "en": "With base 100 in October 2016, by June 2023 the unregistered index was 57, against 83 for registered private and 81 for public. Caullo and Aguirre, with INDEC data."
+   },
+   "id": "fisc-general-11-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se mide la informalidad ampliada?",
+    "en": "How is broad informality measured?"
+   },
+   "a": {
+    "es": "Sumando asalariados no registrados, cuentapropistas no profesionales y trabajadores sin remuneración como porcentaje de los ocupados: 47,3 % en el primer trimestre de 2023. Caullo y Aguirre, sobre la EPH.",
+    "en": "By adding unregistered wage earners, non-professional self-employed and unpaid workers as a share of the employed: 47.3 % in the first quarter of 2023. Caullo and Aguirre, using the EPH."
+   },
+   "id": "fisc-general-11-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué reducir la jornada laboral puede ser inoportuno en Argentina?",
+    "en": "Why may shortening the workweek be ill-timed in Argentina?"
+   },
+   "a": {
+    "es": "Porque puede bajar la productividad, sube costos y puede llevar a recortes salariales, mientras la subocupación es del 10,6 % de la PEA. Es el argumento de Caullo y Aguirre; lectura propia: la evidencia internacional sobre productividad es mixta.",
+    "en": "Because it may lower productivity, raises costs and may lead to wage cuts, while underemployment is 10.6 % of the labor force. That is Caullo and Aguirre's argument; own reading: international evidence on productivity is mixed."
+   },
+   "id": "fisc-general-11-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué diferencia educativa separa a los asalariados formales de los informales?",
+    "en": "What educational gap separates formal from informal employees?"
+   },
+   "a": {
+    "es": "Entre los informales hay casi el doble con secundario incompleto y solo 9 % con estudios superiores, contra 25 % de los formales privados. Caullo y Aguirre lo leen como falta de capital humano.",
+    "en": "Among informal workers nearly twice as many lack secondary school and only 9 % have higher education, against 25 % of formal private employees. Caullo and Aguirre read it as missing human capital."
+   },
+   "id": "fisc-general-11-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué tipo de empleo registrado creció más en Argentina entre 2013 y 2023?",
+    "en": "What kind of registered employment grew most in Argentina between 2013 and 2023?"
+   },
+   "a": {
+    "es": "El Monotributo Social, 211 %, ligado a planes como Potenciar Trabajo; el monotributo común creció 37 %, los públicos 23 % y los asalariados privados 4 %. Caullo y Aguirre, con datos del Ministerio de Economía.",
+    "en": "The Social monotax, 211 %, linked to programs like Potenciar Trabajo; the regular monotax grew 37 %, public employees 23 % and private employees 4 %. Caullo and Aguirre, with Ministry of Economy data."
+   },
+   "id": "fisc-general-11-t6"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué más empleo no implica un mercado laboral más fuerte?",
+    "en": "Why does more employment not imply a stronger labor market?"
+   },
+   "a": {
+    "es": "Porque la mayor tasa de empleo vino de modalidades precarias: los asalariados privados registrados pasaron de 37,3 % a 31,7 % de los ocupados, mientras crecían no registrados, cuentapropistas y públicos. Conclusión de Caullo y Aguirre.",
+    "en": "Because higher employment came from precarious forms: registered private employees went from 37.3 % to 31.7 % of the employed, while unregistered, self-employed and public jobs grew. Caullo and Aguirre's conclusion."
+   },
+   "id": "fisc-general-11-t7"
+  }
+ ]
+}

@@ -1,0 +1,466 @@
+{
+ "id": "fisc-general-15",
+ "cat": "fisc-general",
+ "orden": 9,
+ "minutos": 15,
+ "titulo": "Impuestos directos: ganancias, trabajo, riqueza y cómo se mide la progresividad",
+ "bajada": "Cómo se clasifican los impuestos, cómo se liquida Ganancias en Argentina y qué le hace la inflación, el impuesto a la renta presunta del agro, las cargas sociales y los impuestos a la riqueza, con la diferencia entre progresividad global y escalonada.",
+ "fuentes": [
+  1177,
+  1180
+ ],
+ "cita": "Caullo, «Impuestos directos» (Finanzas Públicas, FCE-UNC, 2023), con datos de IERAL y Rossignolo (2019); y «Progresividad con respecto a la base imponible» (apunte de cátedra, sobre Albi et al., Teoría de la Hacienda Pública, cap. 9, e Iturrioz, Curso de Finanzas Públicas, cap. 3)",
+ "intro": "Las diapositivas de Laura Caullo para Finanzas Públicas de la FCE-UNC recorren los impuestos que gravan las manifestaciones directas de capacidad contributiva: el ingreso y la riqueza. El criterio rector es la capacidad contributiva, y los impuestos se ordenan en tres grupos: al consumo, a los ingresos y a la riqueza. La presentación se detiene en el impuesto a las ganancias argentino, con su esquema de liquidación y un ejemplo numérico, en los problemas que le crea la inflación, en dos variantes poco conocidas, el impuesto a los beneficios presuntos y a los beneficios extraordinarios, en las cargas sociales sobre el trabajo y en los impuestos sobre bienes personales, inmuebles, automotores y herencias. Un apunte breve de la cátedra completa el tema con la herramienta para medir si un impuesto es progresivo: la tasa media respecto de la base imponible, y la diferencia entre dos maneras de armar una escala.",
+ "secciones": [
+  {
+   "t": "Cómo se clasifican los impuestos",
+   "p": [
+    "Los impuestos al consumo incluyen el IVA, Ingresos Brutos y los internos a cigarrillos y combustibles; los impuestos a los ingresos, Ganancias y los aportes jubilatorios; los impuestos a la riqueza, Bienes Personales, automotores e inmobiliario. Sobre esa lista se cruzan tres clasificaciones económicas. Los directos gravan manifestaciones inmediatas de capacidad contributiva, como el patrimonio o la renta, y son difíciles de trasladar hacia adelante; los indirectos gravan manifestaciones mediatas, como los consumos, y son fáciles de trasladar. Los personales tienen en cuenta las características del contribuyente, si es soltero o casado o cuántos hijos tiene; los reales son «impuestos sobre las cosas» y no distinguen entre contribuyentes.",
+    "La tercera clasificación es por progresividad. En un impuesto progresivo el gravamen es función creciente de la base: a medida que crece la capacidad económica, crece el porcentaje de la riqueza que el Estado exige. En uno regresivo la relación entre recaudación y capacidad de pago es inversa. La presentación pone como ejemplo de progresivo a Ganancias de personas físicas y de regresivos al IVA y al impuesto automotor. Para ubicar el tamaño del tema, la presión tributaria consolidada argentina, según IERAL, pasó del 21,0% del PIB en 2000 a valores en torno al 30% en la década siguiente, con la Nación como principal recaudador."
+   ]
+  },
+  {
+   "t": "Medir la progresividad: tasa media y escalas",
+   "eq": [
+    "\\mathit{TMe} = \\frac{T}{\\mathit{BI}}",
+    "T^{\\text{global}} = t_k \\cdot \\mathit{BI} \\quad \\text{si } \\mathit{BI} \\in \\text{tramo } k",
+    "T^{\\text{escalonada}} = \\sum_{j=1}^{k} t_j \\cdot \\Delta_j"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{TMe}\\): tasa media del impuesto, qué proporción de la base se paga.",
+      "en": "\\(\\mathit{TMe}\\): average tax rate, the share of the base paid in tax."
+     },
+     {
+      "es": "\\(T\\): monto del impuesto, en pesos.",
+      "en": "\\(T\\): tax amount, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{BI}\\): base imponible, la magnitud sobre la que se calcula el impuesto (ingreso, consumo, patrimonio), en pesos.",
+      "en": "\\(\\mathit{BI}\\): tax base, the magnitude on which the tax is computed (income, consumption, wealth), in pesos."
+     }
+    ],
+    [
+     {
+      "es": "\\(T^{\\text{global}}\\): impuesto con progresividad global, en pesos.",
+      "en": "\\(T^{\\text{global}}\\): tax under global progressivity, in pesos."
+     },
+     {
+      "es": "\\(t_k\\): alícuota del tramo \\(k\\) en el que cae la base; se aplica a toda la base.",
+      "en": "\\(t_k\\): rate of bracket \\(k\\) where the base falls; it applies to the whole base."
+     },
+     {
+      "es": "\\(\\mathit{BI}\\): base imponible, en pesos.",
+      "en": "\\(\\mathit{BI}\\): tax base, in pesos."
+     }
+    ],
+    [
+     {
+      "es": "\\(T^{\\text{escalonada}}\\): impuesto con progresividad escalonada, en pesos.",
+      "en": "\\(T^{\\text{escalonada}}\\): tax under graduated (bracket-by-bracket) progressivity, in pesos."
+     },
+     {
+      "es": "\\(t_j\\): alícuota del tramo \\(j\\).",
+      "en": "\\(t_j\\): rate of bracket \\(j\\)."
+     },
+     {
+      "es": "\\(\\Delta_j\\): parte de la base que cae dentro del tramo \\(j\\), en pesos; en el último tramo, lo que excede su límite inferior.",
+      "en": "\\(\\Delta_j\\): portion of the base falling within bracket \\(j\\), in pesos; in the top bracket, the excess over its lower limit."
+     },
+     {
+      "es": "\\(k\\): tramo al que pertenece la base; \\(\\sum_{j=1}^{k}\\) suma desde el primer tramo hasta ese.",
+      "en": "\\(k\\): bracket the base belongs to; \\(\\sum_{j=1}^{k}\\) sums from the first bracket up to it."
+     }
+    ]
+   ],
+   "p": [
+    "El apunte define la progresividad respecto de la base imponible con la tasa media: un impuesto es progresivo si su monto crece más que proporcionalmente que la base, es decir, si la tasa media crece con la base; es regresivo si la tasa media decrece y proporcional si es constante. La aclaración clave es que la característica depende de contra qué se mida. Un impuesto con tasa fija sobre un producto de consumo popular es proporcional a su base, pero regresivo respecto del ingreso, porque al crecer el ingreso se gasta en ese producto una proporción menor. El ejemplo del apunte: con alícuota de 10% sobre el consumo, ingresos de 100, 200, 300 y 400 que consumen 100, 180, 240 y 280 pagan 10, 18, 24 y 28; la tasa media sobre la base es siempre 10%, pero sobre el ingreso cae de 10% a 9%, 8% y 7%.",
+    "Para lograr progresividad con tramos hay dos sistemas. En la progresividad global se ubica la base en su tramo y la alícuota de ese tramo se aplica a toda la base. Con tramos de 0 a 100 al 10%, de 100 a 500 al 20%, de 500 a 800 al 30% y más de 800 al 40%, una base de 600 paga 600 por 30%, es decir 180. El inconveniente es el salto: al pasar de un tramo al siguiente el impuesto puede crecer más que la base. En la progresividad escalonada la base se fracciona según la amplitud de cada tramo y cada fracción paga su alícuota: la misma base de 600 paga 10 más 80 más 30, es decir 120. Lectura propia: con el sistema global, un aumento de la base que cruza un límite puede reducir el ingreso después de impuestos; el escalonado lo evita porque la alícuota más alta solo toca el excedente, y por eso es el que usan las escalas de Ganancias."
+   ]
+  },
+  {
+   "t": "Ganancias en Argentina: liquidación e inflación",
+   "eq": [
+    "\\mathit{IG} = F_k + t_k\\,(\\mathit{GNSI} - L_k)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{IG}\\): impuesto a las ganancias anual a pagar, en pesos.",
+      "en": "\\(\\mathit{IG}\\): annual income tax due, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{GNSI}\\): ganancia neta sujeta a impuesto: ganancia bruta menos deducciones generales y personales, en pesos.",
+      "en": "\\(\\mathit{GNSI}\\): net taxable income: gross income minus general and personal deductions, in pesos."
+     },
+     {
+      "es": "\\(L_k\\): límite inferior del tramo \\(k\\) de la escala en que cae la ganancia, en pesos.",
+      "en": "\\(L_k\\): lower limit of bracket \\(k\\) of the schedule where income falls, in pesos."
+     },
+     {
+      "es": "\\(F_k\\): monto fijo del tramo, el impuesto acumulado de los tramos anteriores, en pesos (columna «pagarán $» de la escala).",
+      "en": "\\(F_k\\): fixed amount of the bracket, the tax accumulated over lower brackets, in pesos (the «will pay $» column of the schedule)."
+     },
+     {
+      "es": "\\(t_k\\): alícuota marginal del tramo, «más el %» sobre el excedente; en la escala de 2022 va de 5% a 35%. Lectura propia: la presentación muestra la escala como tabla; la fórmula la resume.",
+      "en": "\\(t_k\\): marginal rate of the bracket, «plus %» on the excess; in the 2022 schedule it goes from 5% to 35%. Own reading: the presentation shows the schedule as a table; the formula summarizes it."
+     }
+    ]
+   ],
+   "p": [
+    "El impuesto a la renta personal es directo, personal y progresivo, y su objeto es el ingreso del individuo en un año. Tiene gran capacidad recaudatoria, es la fuente más importante en las economías desarrolladas y se lo valora como buen indicador de capacidad de pago, pero afecta decisiones de ahorro, oferta de trabajo e inversión. En Argentina tiene cuatro categorías según la fuente: primera, rentas de inmuebles; segunda, acciones, intereses y dividendos; tercera, sociedades y empresas unipersonales; cuarta, trabajo personal.",
+    "Para un empleado se parte de la ganancia bruta (sueldo, aguinaldo, bonos, vacaciones), se restan deducciones generales (aportes, seguro de vida, servicio doméstico, intereses hipotecarios) y luego personales (ganancia no imponible, deducción especial, cargas de familia), y a la ganancia neta sujeta a impuesto se le aplica la escala. La presentación subraya que las deducciones son decisiones de política fiscal: subsidios implícitos que otorga el fisco. En su ejemplo de junio de 2022, con un salario bruto de $350.000 y 17% de descuentos, un trabajador casado con hijos pagaba $19.122 por mes y uno soltero $34.041.",
+    "La inflación causa tres problemas si no se ajustan los valores: reduce en términos reales los montos exentos, de modo que se paga más sin que haya crecido la ganancia real; produce recategorizaciones implícitas que afectan más a los contribuyentes de los primeros tramos, tanto más cuanto más alta la inflación y más espaciados los ajustes; y genera retrasos recaudatorios, porque el impuesto se paga en el ejercicio siguiente. Con datos de Rossignolo (2019), los «deslizamientos fiscales» son visibles: en 1996 el 52,5% de las declaraciones estaba en el tramo de ingresos más bajo y el 1,7% en el más alto; en 2017 el tramo inferior tenía el 2,2% y el superior el 73%."
+   ]
+  },
+  {
+   "t": "Renta presunta y beneficios extraordinarios",
+   "eq": [
+    "V = \\frac{R_A}{i} = \\frac{21}{0{,}10} = 210"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(V\\): valor máximo que un productor eficiente pagaría por la tierra, el valor actual de sus rentas, en pesos.",
+      "en": "\\(V\\): maximum value an efficient producer would pay for the land, the present value of its rents, in pesos."
+     },
+     {
+      "es": "\\(R_A\\): renta anual neta de impuesto que obtiene la explotación con la técnica más eficiente (A), en pesos por año.",
+      "en": "\\(R_A\\): annual after-tax rent earned by the farm using the most efficient technique (A), in pesos per year."
+     },
+     {
+      "es": "\\(i\\): tasa de interés real anual, 10% en el ejemplo; dividir por \\(i\\) da el valor actual de una renta perpetua.",
+      "en": "\\(i\\): annual real interest rate, 10% in the example; dividing by \\(i\\) gives the present value of a perpetual rent."
+     }
+    ]
+   ],
+   "p": [
+    "El impuesto a los beneficios presuntos es un tratamiento especial dentro de Ganancias: define el ingreso neto según el valor potencial que podría alcanzar una actividad, como una explotación agropecuaria, y busca desalentar el uso ineficiente de los recursos. El ejemplo tiene tres explotaciones: A produce 120 con costo 90, B produce 50 con costo 30 y C produce 20 con costo 10, de modo que las rentas efectivas son 30, 20 y 10. Con un impuesto del 30% sobre la renta efectiva pagan 9, 6 y 3 y les quedan 21, 14 y 7.",
+    "Si en cambio se grava una renta potencial igual a la de la técnica más avanzada, 30 para todos, cada una paga 9 y les quedan 21, 11 y 1: se castiga fuerte a quien tiene la tierra ociosa o mal usada. Si la renta potencial es la de la técnica promedio, 20, cada una paga 6, la recaudación total es 18, igual que con renta efectiva, pero las rentas netas pasan a 24, 14 y 4: el impuesto acentúa la diferencia a favor del eficiente. El propietario ineficiente tendría incentivos a vender a quien pueda obtener la renta de A: con una tasa real del 10%, un productor como A pagaría hasta 210, y C, reinvirtiendo, obtendría 21 por año en lugar de 7. La presentación advierte que ese mecanismo llevaría al óptimo social sin política especial, salvo que los propietarios no maximicen beneficios sino que se conformen con un ingreso mínimo, al estilo de Simon.",
+    "Los beneficios extraordinarios gravan rentas no habituales, como juegos o ganancias de capital. En la venta de un inmueble, lo comprado antes de 2018 pagaba el impuesto a la transferencia, 1,5% del valor de venta; desde 2018 paga Ganancias, 15% sobre la diferencia entre precio de venta y de compra. El impuesto a la herencia no existe a nivel nacional, pero sí en algunas provincias, como Buenos Aires desde 2011: es directo, personal, progresivo, no periódico y de muy baja recaudación."
+   ]
+  },
+  {
+   "t": "Trabajo y riqueza",
+   "p": [
+    "Las cargas sociales son una base estable y fácil de gravar, y están entre los tres impuestos más recaudatorios del país. Se dividen en aportes, que paga el asalariado sobre su sueldo bruto y retiene el empleador (11% jubilación, 3% PAMI, obra social), y contribuciones, que paga el empleador mensualmente a la AFIP mediante el formulario 931 (16% jubilación, 2% PAMI, 6% obra social, 1,5% Fondo Nacional de Empleo, seguro de vida y ART). La presentación resume la alícuota argentina en 17% de aportes y 27% de contribuciones, 44% en total. Su ejemplo, un salario de convenio de comercio de $120.000 en marzo de 2022: el trabajador se lleva $97.200, el empleador paga $153.600, y la cuña entre ambos, el impuesto al empleo, es de $56.400, de los cuales $22.800 son aportes y $33.600 contribuciones. Lectura propia: $33.600 es el 28% del salario, un punto menos que la suma de 27% y 2% que muestra la diapositiva; la diferencia probablemente viene de detracciones que el gráfico no detalla.",
+    "La presentación asocia esa cuña a la informalidad: segmentación del mercado laboral, más litigiosidad y brechas de formalización. El gráfico, elaborado con la EPH para los primeros trimestres de 2017 y 2022, muestra una informalidad entre asalariados privados de 43% en el total del país, con 64% en Corrientes y Formosa y 18% en la Ciudad de Buenos Aires (lectura propia: el texto extraído no permite asignar con certeza cada valor a uno de los dos años).",
+    "Entre los impuestos a la riqueza, Bienes Personales grava la posesión de bienes al 31 de diciembre, en el país y en el exterior; es personal, directo, periódico y progresivo. El inmobiliario grava el valor de los inmuebles, urbanos o rurales, y el automotor el valor de los vehículos; ninguno es nacional, y según la jurisdicción la potestad es provincial, municipal o ambas, con distintas formas de valuación."
+   ]
+  },
+  {
+   "t": "Qué evidencia hay y qué faltaría",
+   "p": [
+    "La presentación no estima modelos; usa series de recaudación de IERAL, la distribución de declaraciones juradas de Rossignolo (2019) y la EPH para la informalidad. El dato de las declaraciones es el más revelador: que la mayoría de los contribuyentes haya pasado del tramo más bajo al más alto entre 1996 y 2017 muestra que, sin actualización, la escala progresiva se convierte en algo cercano a una alícuota plana sobre quienes pagan.",
+    "Lectura propia: varias afirmaciones de la presentación son hipótesis contrastables. Que las cargas sociales empujan a la informalidad se estudia con reducciones de contribuciones por región o tamaño de empresa y diseños de diferencias en diferencias; que Ganancias afecta la oferta de trabajo, con la respuesta de las horas o de los ingresos declarados alrededor de los límites de los tramos; y que la renta presunta mejora el uso de la tierra, comparando la productividad antes y después de aplicarla. En todos los casos la incidencia efectiva depende de quién soporta el impuesto, no de quién lo deposita, algo que la clasificación entre aportes y contribuciones no resuelve."
+   ]
+  }
+ ],
+ "claves": [
+  "Directos gravan renta y patrimonio y son difíciles de trasladar; indirectos gravan el consumo y se trasladan fácilmente.",
+  "Un impuesto es progresivo si su tasa media T/BI crece con la base; la conclusión cambia si se mide contra el ingreso.",
+  "La progresividad global aplica la alícuota del tramo a toda la base y genera saltos; la escalonada grava cada fracción con su alícuota.",
+  "Ganancias se liquida sobre la ganancia neta sujeta a impuesto, después de deducciones generales y personales, que son subsidios implícitos.",
+  "Sin ajuste, la inflación achica los mínimos, recategoriza a los tramos bajos y demora la recaudación.",
+  "La renta presunta grava lo que la tierra podría rendir y premia al productor eficiente.",
+  "En el ejemplo de la cátedra, la cuña entre costo laboral y salario de bolsillo es de $56.400 sobre $153.600."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distingue a un impuesto directo de uno indirecto según la presentación?",
+    "en": "What distinguishes a direct from an indirect tax according to the presentation?"
+   },
+   "op": {
+    "es": [
+     "El directo lo cobra la Nación y el indirecto las provincias",
+     "El directo grava manifestaciones inmediatas de capacidad contributiva y es difícil de trasladar",
+     "El directo siempre es regresivo",
+     "El indirecto tiene en cuenta las cargas de familia"
+    ],
+    "en": [
+     "The direct one is collected by the nation, the indirect by provinces",
+     "The direct one taxes immediate manifestations of ability to pay and is hard to shift",
+     "The direct one is always regressive",
+     "The indirect one accounts for family dependents"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los directos gravan patrimonio o renta y son difíciles de trasladar hacia adelante; los indirectos gravan consumos y se trasladan fácilmente.",
+    "en": "Direct taxes fall on wealth or income and are hard to shift forward; indirect taxes fall on consumption and are easily shifted."
+   },
+   "id": "fisc-general-15-q1"
+  },
+  {
+   "q": {
+    "es": "Un impuesto de 10% sobre un bien de consumo popular es…",
+    "en": "A 10% tax on a staple consumption good is…"
+   },
+   "op": {
+    "es": [
+     "Progresivo respecto de la base y del ingreso",
+     "Regresivo respecto de la base",
+     "Proporcional a la base y regresivo respecto del ingreso",
+     "Proporcional respecto del ingreso"
+    ],
+    "en": [
+     "Progressive with respect to both base and income",
+     "Regressive with respect to the base",
+     "Proportional to the base and regressive with respect to income",
+     "Proportional with respect to income"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La tasa media sobre el consumo es siempre 10%, pero como los más ricos consumen una fracción menor de su ingreso, el pago sobre el ingreso cae de 10% a 7% en el ejemplo. Donde: tasa media = impuesto / base imponible.",
+    "en": "The average rate on consumption is always 10%, but since richer people consume a smaller share of income, the payment over income falls from 10% to 7% in the example. Where: average rate = tax / tax base."
+   },
+   "id": "fisc-general-15-q2"
+  },
+  {
+   "q": {
+    "es": "Con tramos 0-100 al 10%, 100-500 al 20% y 500-800 al 30%, ¿cuánto paga una base de 600 con progresividad escalonada?",
+    "en": "With brackets 0-100 at 10%, 100-500 at 20% and 500-800 at 30%, how much does a base of 600 pay under graduated progressivity?"
+   },
+   "op": {
+    "es": [
+     "180",
+     "120",
+     "60",
+     "240"
+    ],
+    "en": [
+     "180",
+     "120",
+     "60",
+     "240"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Se fracciona la base: 100 al 10% (10), 400 al 20% (80) y 100 al 30% (30), total 120. Con progresividad global pagaría 600 × 30% = 180.",
+    "en": "The base is split: 100 at 10% (10), 400 at 20% (80) and 100 at 30% (30), total 120. Under global progressivity it would pay 600 × 30% = 180."
+   },
+   "id": "fisc-general-15-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el inconveniente de la progresividad global?",
+    "en": "What is the drawback of global progressivity?"
+   },
+   "op": {
+    "es": [
+     "Al cruzar de tramo, el impuesto puede subir más que la base",
+     "No recauda nada en el último tramo",
+     "Es proporcional por construcción",
+     "Requiere conocer el consumo del contribuyente"
+    ],
+    "en": [
+     "Crossing a bracket, the tax can rise more than the base",
+     "It collects nothing in the top bracket",
+     "It is proportional by construction",
+     "It requires knowing the taxpayer's consumption"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Como la alícuota del nuevo tramo se aplica a toda la base, el salto en el impuesto puede superar el aumento de la base.",
+    "en": "Because the new bracket's rate applies to the whole base, the jump in tax can exceed the increase in the base."
+   },
+   "id": "fisc-general-15-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto de la inflación sobre Ganancias perjudica más a los primeros tramos?",
+    "en": "Which effect of inflation on income tax hurts the lower brackets most?"
+   },
+   "op": {
+    "es": [
+     "El retraso recaudatorio",
+     "La reducción de alícuotas",
+     "La eliminación de deducciones generales",
+     "Las recategorizaciones implícitas sin ajuste de escalas"
+    ],
+    "en": [
+     "The collection lag",
+     "Rate cuts",
+     "Removal of general deductions",
+     "Implicit bracket creep without schedule indexation"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sin ajuste de las escalas, la inflación empuja a los contribuyentes a tramos superiores, y el perjuicio es mayor en los primeros tramos, cuanto más alta la inflación y más espaciados los ajustes.",
+    "en": "Without indexing the schedule, inflation pushes taxpayers into higher brackets, hurting lower brackets most, the more so the higher inflation and the more spaced the adjustments."
+   },
+   "id": "fisc-general-15-q5"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de renta presunta con técnica promedio (20), ¿qué ocurre con la recaudación respecto del impuesto sobre la renta efectiva?",
+    "en": "In the presumptive-income example with the average technique (20), what happens to revenue compared with the tax on actual income?"
+   },
+   "op": {
+    "es": [
+     "Se duplica",
+     "Cae a la mitad",
+     "Es la misma, 18, pero se amplía la diferencia de rentas netas a favor del eficiente",
+     "Desaparece porque C deja de producir"
+    ],
+    "en": [
+     "It doubles",
+     "It halves",
+     "It is the same, 18, but the net-rent gap widens in favor of the efficient producer",
+     "It vanishes because C stops producing"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Cada explotación paga 6 sobre una renta potencial de 20: total 18, como con renta efectiva. Las rentas netas pasan de 21, 14 y 7 a 24, 14 y 4.",
+    "en": "Each farm pays 6 on a potential rent of 20: total 18, as with actual income. Net rents go from 21, 14 and 7 to 24, 14 and 4."
+   },
+   "id": "fisc-general-15-q6"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de cargas sociales, sobre un salario de $120.000, ¿cuánto se lleva el trabajador y cuánto paga el empleador?",
+    "en": "In the payroll example, on a $120,000 wage, how much does the worker take home and how much does the employer pay?"
+   },
+   "op": {
+    "es": [
+     "$97.200 y $153.600",
+     "$120.000 y $153.600",
+     "$97.200 y $120.000",
+     "$153.600 y $97.200"
+    ],
+    "en": [
+     "$97,200 and $153,600",
+     "$120,000 and $153,600",
+     "$97,200 and $120,000",
+     "$153,600 and $97,200"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Al salario se le restan $22.800 de aportes y se le suman $33.600 de contribuciones; la cuña total es $56.400.",
+    "en": "$22,800 in employee contributions is deducted and $33,600 in employer contributions added; the total wedge is $56,400."
+   },
+   "id": "fisc-general-15-q7"
+  },
+  {
+   "q": {
+    "es": "Según Rossignolo (2019), citado en la presentación, ¿qué pasó con las declaraciones de Ganancias entre 1996 y 2017?",
+    "en": "According to Rossignolo (2019), cited in the presentation, what happened to income tax returns between 1996 and 2017?"
+   },
+   "op": {
+    "es": [
+     "Se concentraron en el tramo más bajo",
+     "No cambiaron",
+     "Desaparecieron los tramos altos",
+     "Pasaron a concentrarse en el tramo más alto, del 1,7% al 73%"
+    ],
+    "en": [
+     "They concentrated in the lowest bracket",
+     "They did not change",
+     "The top brackets disappeared",
+     "They moved to the top bracket, from 1.7% to 73%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En 1996 el 52,5% estaba en el tramo inferior y el 1,7% en el superior; en 2017, el 2,2% y el 73%. Son los deslizamientos fiscales de una escala sin actualizar.",
+    "en": "In 1996, 52.5% were in the lowest bracket and 1.7% in the top; in 2017, 2.2% and 73%. This is fiscal drag from an unindexed schedule."
+   },
+   "id": "fisc-general-15-q8"
+  }
+ ],
+ "palabras": 1797,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo se determina si un impuesto es progresivo respecto de su base?",
+    "en": "How is it determined whether a tax is progressive relative to its base?"
+   },
+   "a": {
+    "es": "Si la tasa media, impuesto sobre base imponible, crece a medida que crece la base; si cae es regresivo y si es constante, proporcional. El apunte de la cátedra, sobre Albi et al. e Iturrioz, aclara que el resultado puede cambiar si se mide contra el ingreso.",
+    "en": "If the average rate, tax over base, rises as the base grows; if it falls it is regressive and if constant, proportional. The course note, based on Albi et al. and Iturrioz, stresses the result can change when measured against income."
+   },
+   "id": "fisc-general-15-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué las escalas progresivas suelen ser escalonadas y no globales?",
+    "en": "Why are progressive schedules usually graduated rather than global?"
+   },
+   "a": {
+    "es": "Porque en la global la alícuota del tramo se aplica a toda la base y, al cruzar un límite, el impuesto puede subir más que la base; en la escalonada cada fracción paga su alícuota. El apunte compara 180 y 120 para una base de 600.",
+    "en": "Because under the global system the bracket rate applies to the whole base and, crossing a limit, tax can rise more than the base; under the graduated one each slice pays its rate. The note compares 180 and 120 for a base of 600."
+   },
+   "id": "fisc-general-15-t2"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se llega del sueldo bruto al impuesto a las ganancias de un empleado?",
+    "en": "How does one go from gross salary to an employee's income tax?"
+   },
+   "a": {
+    "es": "Ganancia bruta menos deducciones generales da la ganancia neta; menos deducciones personales (mínimo no imponible, deducción especial, cargas de familia) da la ganancia sujeta a impuesto, a la que se aplica la escala progresiva. Caullo subraya que las deducciones son subsidios implícitos.",
+    "en": "Gross income minus general deductions gives net income; minus personal deductions (non-taxable minimum, special deduction, dependents) gives taxable income, to which the progressive schedule applies. Caullo stresses deductions are implicit subsidies."
+   },
+   "id": "fisc-general-15-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué le hace la inflación a un impuesto a la renta sin indexar?",
+    "en": "What does inflation do to an unindexed income tax?"
+   },
+   "a": {
+    "es": "Achica en términos reales los montos exentos, recategoriza implícitamente sobre todo a los primeros tramos y erosiona lo recaudado por el rezago de un ejercicio. Caullo lo ilustra con los deslizamientos fiscales que documenta Rossignolo (2019).",
+    "en": "It shrinks exempt amounts in real terms, implicitly pushes lower brackets up and erodes revenue through the one-year lag. Caullo illustrates it with the fiscal drag documented by Rossignolo (2019)."
+   },
+   "id": "fisc-general-15-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo puede un impuesto sobre la renta potencial mejorar el uso de la tierra?",
+    "en": "How can a tax on potential income improve land use?"
+   },
+   "a": {
+    "es": "Al gravar lo que la tierra podría rendir y no lo que rinde, castiga a quien la usa mal: el ineficiente vende a quien obtiene la renta máxima, que con 10% de interés pagaría hasta 210 por una renta de 21. Es el ejemplo de Caullo; supone propietarios que maximizan beneficios.",
+    "en": "By taxing what land could yield rather than what it yields, it penalizes misuse: the inefficient owner sells to whoever earns the top rent, who at 10% interest would pay up to 210 for a rent of 21. It is Caullo's example; it assumes profit-maximizing owners."
+   },
+   "id": "fisc-general-15-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tamaño tiene la cuña fiscal sobre el trabajo formal en Argentina?",
+    "en": "How large is the tax wedge on formal labor in Argentina?"
+   },
+   "a": {
+    "es": "En el ejemplo de Caullo, sobre un salario de convenio de $120.000 el empleador paga $153.600 y el trabajador cobra $97.200: la cuña es de $56.400. La presentación resume las alícuotas en 17% de aportes y 27% de contribuciones.",
+    "en": "In Caullo's example, on a $120,000 union wage the employer pays $153,600 and the worker gets $97,200: the wedge is $56,400. The presentation summarizes rates at 17% employee and 27% employer contributions."
+   },
+   "id": "fisc-general-15-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Alcanza con saber quién deposita una carga social para saber quién la paga?",
+    "en": "Is knowing who remits a payroll tax enough to know who bears it?"
+   },
+   "a": {
+    "es": "No. Caullo distingue aportes del trabajador y contribuciones del empleador, y asocia la cuña con la informalidad; lectura propia: la incidencia depende de las elasticidades de oferta y demanda de trabajo, no de quién hace el depósito.",
+    "en": "No. Caullo separates employee and employer contributions and links the wedge to informality; own reading: incidence depends on labor supply and demand elasticities, not on who remits."
+   },
+   "id": "fisc-general-15-t7"
+  }
+ ]
+}

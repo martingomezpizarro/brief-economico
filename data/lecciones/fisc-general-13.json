@@ -1,0 +1,443 @@
+{
+ "id": "fisc-general-13",
+ "cat": "fisc-general",
+ "orden": 7,
+ "minutos": 15,
+ "titulo": "El presupuesto público por dentro: principios, clasificadores y la cuenta ahorro-inversión-financiamiento",
+ "bajada": "Para qué sirve el presupuesto, los catorce principios que lo ordenan y cómo los recoge la Ley 24.156, la lógica de los clasificadores primarios y derivados, y cómo se arman el resultado económico, el primario y el financiero.",
+ "fuentes": [
+  1151
+ ],
+ "cita": "«Elementos metodológicos y conceptuales del presupuesto público», cap. III de un texto sobre el sistema presupuestario de la Administración Nacional argentina (material de Finanzas Públicas, FCE-UNC); sigue el Manual de Clasificaciones Presupuestarias de la Secretaría de Hacienda (2003) y el Manual de Estadísticas de las Finanzas Públicas del FMI (1986)",
+ "intro": "Este capítulo, que la cátedra de Finanzas Públicas de la FCE-UNC usa en la unidad sobre el sector público, explica la maquinaria con la que se arma y se lee el presupuesto argentino. Tiene cuatro partes. La primera define el presupuesto como instrumento de programación económica y social, de gobierno, de administración, como acto legislativo y como documento. La segunda repasa los principios presupuestarios, de la programación a la transparencia, y dónde los contempla la Ley 24.156 de Administración Financiera. La tercera presenta las clasificaciones presupuestarias, siguiendo el manual de la Secretaría de Hacienda: qué son, para qué sirven, cuáles son primarias y cuáles derivadas, y cómo se clasifican recursos y gastos. La cuarta arma la cuenta ahorro-inversión-financiamiento, de la que salen los resultados que resumen la política fiscal. El texto no indica autor en el PDF; es normativo y descriptivo, y su valor es dar el vocabulario preciso para leer cualquier presupuesto.",
+ "secciones": [
+  {
+   "t": "Qué es el presupuesto: cinco funciones",
+   "p": [
+    "La definición clásica lo veía como la expresión, en términos financieros, de lo que el gobierno pretende hacer en un período, por regla general un año. La concepción moderna es más amplia. El presupuesto es un instrumento de programación económica y social, porque las metas de mediano plazo, expresadas en agregados macroeconómicos, se vuelcan en el presupuesto plurianual y en el plan de inversión pública, y el presupuesto anual les da carácter operativo. Es instrumento de gobierno, porque gobernar es adoptar decisiones que deben ser coherentes entre sí. Es instrumento de administración, porque la ejecución exige división del trabajo y cada dependencia necesita saber qué produce, con qué recursos y qué hacen las demás.",
+    "Es, además, un acto legislativo: en un sistema representativo la participación ciudadana en las decisiones que la afectan se verifica a través de los representantes, a quienes corresponde juzgar el programa de gobierno, de modo que la aprobación del presupuesto es indispensable. Y es un documento, que debe seguir una metodología que permita entenderlo a quienes lo aprueban, lo administran y lo difunden. El texto distingue tres formas: el presupuesto analítico, de máxima desagregación, que en el nivel nacional es la decisión administrativa que distribuye la ley; el sintético, versión agregada que se expresa en el proyecto de ley y se usa en la discusión legislativa, y el presupuesto resumen, que se prepara una vez sancionada la ley para difundirla."
+   ]
+  },
+  {
+   "t": "Los principios presupuestarios y la Ley 24.156",
+   "p": [
+    "El texto presenta catorce principios, algunos heredados del presupuesto tradicional y otros propios de la concepción moderna. Programación: fijar objetivos, acciones, medios y costos, financiados con recursos. Universalidad: gastos y recursos por su monto íntegro, sin compensarse; se viola, por ejemplo, cuando ciertos reembolsos a las exportaciones se restan de la recaudación del IVA o los subsidios por promoción industrial aparecen deducidos de los recursos y no como gastos, los llamados gastos tributarios. Exclusividad: la ley de presupuesto no debe incluir normas ajenas; el artículo 20 de la Ley 24.156 le prohíbe contener disposiciones permanentes, reformar leyes o crear, modificar o suprimir tributos, una norma que según el texto se incumple con mucha frecuencia. Unidad: todas las entradas y salidas en un solo documento, de la que deriva la unidad de caja, aplicada en la Cuenta Única del Tesoro.",
+    "Siguen factibilidad, exactitud o veracidad, que se vulnera por sobreestimar o subestimar gastos o recursos, con o sin intención; claridad; especificación, que exige identificar fuentes de ingreso y bienes o servicios del gasto; periodicidad, que adopta en casi todos los países el período anual, entre el plurianual, demasiado amplio para prever con detalle, y el subanual, demasiado breve; continuidad, que pide apoyarse en ejercicios anteriores y futuros, y flexibilidad, para permitir modificaciones que sirvan a los objetivos. El principio de equilibrio enfrenta a los clásicos, que exigían igualar gastos y recursos por temor a la inflación o a la bancarrota, con los modernos, que aceptan déficits transitorios por razones de estabilización vinculadas al multiplicador del gasto, siempre que no sean permanentes. Cierran la anticipación, que exige aprobar el presupuesto antes del ejercicio, y la transparencia.",
+    "El texto relaciona cada principio con artículos de la Ley 24.156. Dos ejemplos son la no afectación de recursos a gastos específicos, recogida en el artículo 23, que el texto ilustra con el FONAVI y el Impuesto al Tabaco, y el artículo 27, que prorroga el presupuesto anterior, con ajustes, si el nuevo no se sanciona a tiempo: vulnera la anticipación pero asegura la continuidad de los servicios. Lectura propia: varios principios están en tensión, como la flexibilidad frente a la exactitud y la exclusividad, y la práctica argentina de modificar fuertemente el crédito durante el año resuelve esa tensión a favor de la flexibilidad."
+   ]
+  },
+  {
+   "t": "Clasificaciones presupuestarias: primarias y derivadas",
+   "p": [
+    "Las clasificaciones presupuestarias son instrumentos normativos que agrupan recursos y gastos según criterios comunes. Sirven para determinar el volumen y la composición del gasto, proyectar variables macroeconómicas, valorar los resultados económico y financiero, ejecutar el presupuesto, integrar los sistemas de administración financiera y establecer controles. Su regla operativa es que cada transacción se registre una sola vez y que de ese registro salgan todas las salidas de información. Para eso, el sistema considera «ingreso» toda transacción que implica una fuente de fondos y «gasto» toda la que implica un uso de fondos: los recursos incluyen ingresos corrientes, disminución de activos e incremento de pasivos, y los gastos incluyen gastos corrientes, incremento de activos y disminución de pasivos.",
+    "La clave del diseño es distinguir clasificadores primarios, con los que se registra cada transacción, de derivados, que surgen de combinarlos. Los primarios son siete: institucional, por rubros de recursos, por objeto del gasto, por localización geográfica, por tipo de moneda, por fuente de financiamiento y por categoría programática. Los derivados son tres: por finalidad y función, por naturaleza económica de los gastos y por naturaleza económica de los recursos; se generan automáticamente y no se usan al registrar.",
+    "La cobertura sigue la Ley 24.156: el Sector Público Nacional comprende la Administración Nacional (administración central, organismos descentralizados e instituciones de seguridad social), más empresas y sociedades del Estado, entes interestaduales, universidades nacionales, fondos fiduciarios y el sector financiero. El clasificador institucional usa un código de 10 dígitos que va del sector y el subsector a la jurisdicción, la subjurisdicción y la entidad."
+   ]
+  },
+  {
+   "t": "Cómo se clasifican recursos y gastos",
+   "p": [
+    "Los recursos se clasifican por rubros, un clasificador primario de seis dígitos que distingue tipo, clase, concepto y subconcepto, y por carácter económico, que los reordena en corrientes, de capital y fuentes financieras. Los corrientes son los impuestos, las transferencias recibidas, las ventas de bienes y servicios, las tasas, los derechos, las contribuciones a la seguridad social y las rentas de la propiedad. Los de capital provienen de la venta de activos, la depreciación y amortización, las transferencias para gastos de capital, la venta de participaciones y la recuperación de préstamos. Las fuentes financieras son la disminución de la inversión financiera y el endeudamiento. Los recursos se registran en cifras brutas, sin deducciones.",
+    "Los gastos se clasifican por objeto, que es el primario, con cuatro niveles: incisos, partidas principales, parciales y subparciales; por carácter económico, en corrientes, de capital y aplicaciones financieras, diseñado sobre el Sistema de Cuentas Nacionales; por finalidades y funciones, según la naturaleza del servicio a la comunidad, con la actividad u obra como unidad básica; por categorías programáticas, de programa a actividad y obra; por fuente de financiamiento, y por ubicación geográfica. Para esta última el texto da tres criterios posibles: el lugar de destino de lo producido, el de origen de los insumos y el de la unidad ejecutora; la administración usa normalmente el tercero.",
+    "Dos ajustes muestran que la clasificación económica no es mecánica. Gastos de apariencia corriente, como remuneraciones o bienes de consumo, se clasifican como de capital si están imputados a un proyecto que aumenta el activo. Y parte de la inversión en defensa, como los equipos militares, se clasifica como gasto corriente, siguiendo las Cuentas Nacionales."
+   ]
+  },
+  {
+   "t": "La cuenta ahorro-inversión-financiamiento",
+   "eq": [
+    "\\mathit{RE} = \\mathit{IC} - \\mathit{GC}",
+    "\\mathit{RF} = (\\mathit{IC} + \\mathit{RK}) - (\\mathit{GC} + \\mathit{GK})",
+    "\\mathit{RP} = \\mathit{RF} + \\mathit{Int}",
+    "S_{p} + S_{g} + S_{x} = I_{p} + I_{g}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RE}\\): resultado económico, ahorro si es positivo y desahorro si es negativo (renglón III de la cuenta), en pesos.",
+      "en": "\\(\\mathit{RE}\\): economic balance, saving if positive and dissaving if negative (row III of the account), in pesos."
+     },
+     {
+      "es": "\\(\\mathit{IC}\\): ingresos corrientes (renglón I): tributarios, contribuciones a la seguridad social, no tributarios, ventas, rentas y transferencias corrientes.",
+      "en": "\\(\\mathit{IC}\\): current revenue (row I): taxes, social security contributions, non-tax revenue, sales, property income and current transfers."
+     },
+     {
+      "es": "\\(\\mathit{GC}\\): gastos corrientes (renglón II): consumo, rentas de la propiedad, prestaciones de la seguridad social, transferencias corrientes y otros.",
+      "en": "\\(\\mathit{GC}\\): current spending (row II): consumption, property income paid, social security benefits, current transfers and others."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{RF}\\): resultado financiero, superávit o déficit fiscal; en la cuenta es el renglón IX (total recursos menos total gastos) más contribuciones y menos gastos figurativos, que en el consolidado se compensan.",
+      "en": "\\(\\mathit{RF}\\): financial balance, fiscal surplus or deficit; in the account it is row IX (total revenue minus total spending) plus figurative contributions minus figurative expenses, which net out in the consolidation."
+     },
+     {
+      "es": "\\(\\mathit{RK}\\): recursos de capital (renglón IV).",
+      "en": "\\(\\mathit{RK}\\): capital revenue (row IV)."
+     },
+     {
+      "es": "\\(\\mathit{GK}\\): gastos de capital (renglón V): inversión real directa, transferencias de capital e inversión financiera con fines de política.",
+      "en": "\\(\\mathit{GK}\\): capital spending (row V): direct real investment, capital transfers and policy-motivated financial investment."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{RP}\\): resultado primario, el resultado sin los intereses de la deuda; la cuenta lo define como total de recursos menos gastos primarios, más contribuciones y menos gastos figurativos.",
+      "en": "\\(\\mathit{RP}\\): primary balance, the balance excluding debt interest; the account defines it as total revenue minus primary spending, plus figurative contributions minus figurative expenses."
+     },
+     {
+      "es": "\\(\\mathit{Int}\\): intereses de la deuda pública, en pesos (lectura propia: el texto no da esta igualdad; se deduce de que el gasto primario es el gasto total sin intereses).",
+      "en": "\\(\\mathit{Int}\\): interest on public debt, in pesos (own reading: the text does not state this equality; it follows from primary spending being total spending excluding interest)."
+     }
+    ],
+    [
+     {
+      "es": "\\(S_{p}\\), \\(S_{g}\\): ahorro privado y ahorro público.",
+      "en": "\\(S_{p}\\), \\(S_{g}\\): private and public saving."
+     },
+     {
+      "es": "\\(S_{x}\\): ahorro externo, que el texto identifica con el déficit de la cuenta corriente de la balanza de pagos.",
+      "en": "\\(S_{x}\\): foreign saving, which the text identifies with the current account deficit of the balance of payments."
+     },
+     {
+      "es": "\\(I_{p}\\), \\(I_{g}\\): inversión privada e inversión pública.",
+      "en": "\\(I_{p}\\), \\(I_{g}\\): private and public investment."
+     },
+     {
+      "es": "Lectura propia: la notación es nuestra; el texto da la condición en palabras.",
+      "en": "Own reading: the notation is ours; the text states the condition in words."
+     }
+    ]
+   ],
+   "p": [
+    "La cuenta ahorro-inversión-financiamiento cruza la clasificación económica de recursos y gastos con la institucional, para analizar el efecto de las finanzas públicas sobre el resto de la economía. Su cuadro tiene quince renglones: ingresos corrientes (I), gastos corrientes (II), resultado económico (III = I − II), recursos de capital (IV), gastos de capital (V), total de recursos (VI = I + IV), total de gastos (VII = II + V), gastos primarios (VIII), resultado financiero antes de contribuciones (IX = VI − VII), contribuciones y gastos figurativos (X y XI), resultado primario (XII = VI − VIII + X − XI), resultado financiero (XIII = IX + X − XI), fuentes financieras (XIV) y aplicaciones financieras (XV).",
+    "La regla que ordena todo es la línea. Por encima van los recursos y gastos corrientes y de capital, que pertenecen estrictamente a la política fiscal; por debajo, las fuentes y aplicaciones financieras, que conectan lo fiscal con lo monetario y determinan la evolución de la deuda. El resultado financiero, también llamado necesidad de financiamiento cuando es negativo, es el indicador más relevante. Un préstamo del gobierno va arriba de la línea si tiene fines de política, como un préstamo a provincias, y abajo si es administración de liquidez. La variación de disponibilidades se incluye como financiamiento. La cuenta es consolidada: no computa transferencias intrasector público (gastos y contribuciones figurativas) para evitar duplicaciones, y de las empresas públicas muestra solo el resultado operativo, aunque sí incluye sus operaciones de capital y financieras. Excluye a los bancos oficiales salvo que hagan actividades cuasifiscales.",
+    "El texto vincula la cuenta con el equilibrio macroeconómico: en una economía cerrada sin Estado el ahorro iguala a la inversión; con Estado, la suma del ahorro privado y público iguala a la inversión privada y pública, y si el ahorro público no alcanza para la inversión pública hace falta ahorro privado; en una economía abierta se suma el ahorro externo, que es el déficit de la cuenta corriente. Las magnitudes pueden expresarse en moneda corriente, en moneda constante o en proporción del PBI, y referirse al presupuesto, a la ejecución devengada o a la de caja."
+   ]
+  },
+  {
+   "t": "Distinciones de las transacciones y qué haría falta para evaluarlas",
+   "p": [
+    "Siguiendo el manual del FMI de 1986, el texto separa las transacciones del sector público en pares: entradas y salidas; corrientes y de capital; con y sin contraprestación, y reembolsables y no reembolsables. Como el gobierno se mueve mayormente por fines de política y no por beneficio, eso define si una operación financiera va arriba o abajo de la línea.",
+    "Lectura propia: el capítulo es normativo y no tiene trabajo econométrico. Su utilidad empírica es indirecta: define los agregados con los que se estiman las reglas fiscales, la sostenibilidad de la deuda o la respuesta del resultado primario al ciclo. Dos advertencias para quien trabaja con esos datos. La primera: los incumplimientos de principios que el texto documenta, como compensar gastos con recursos o afectar recursos, alteran las series; un gasto tributario no aparece como gasto y achica artificialmente el tamaño del Estado medido. La segunda: la frontera arriba-abajo de la línea es una decisión de clasificación, de modo que un préstamo a provincias o un aporte de capital puede mover el déficit medido sin cambiar la posición patrimonial del Estado; comparar resultados entre países o períodos exige verificar que el criterio sea el mismo."
+   ]
+  }
+ ],
+ "claves": [
+  "El presupuesto es instrumento de programación, de gobierno y de administración, además de acto legislativo y documento (analítico, sintético y resumen).",
+  "Los principios van de programación, universalidad, exclusividad y unidad a equilibrio, anticipación y transparencia; la Ley 24.156 los recoge en artículos concretos.",
+  "Universalidad prohíbe compensar gastos con recursos; no afectación pide que los recursos no tengan destino prefijado.",
+  "Clasificadores primarios registran cada transacción una sola vez; los derivados (finalidad-función y económicos) surgen de combinarlos.",
+  "Los recursos se dividen en corrientes, de capital y fuentes financieras; los gastos, en corrientes, de capital y aplicaciones financieras.",
+  "La cuenta ahorro-inversión-financiamiento da el resultado económico, el primario y el financiero; por debajo de la línea van las fuentes y aplicaciones financieras.",
+  "Ahorro privado más público más externo iguala a la inversión privada y pública."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué forma del presupuesto se usa en la discusión legislativa?",
+    "en": "Which form of the budget is used in legislative debate?"
+   },
+   "op": {
+    "es": [
+     "El analítico",
+     "El presupuesto resumen",
+     "El sintético",
+     "El plurianual"
+    ],
+    "en": [
+     "The analytical one",
+     "The summary budget",
+     "The synthetic one",
+     "The multi-year one"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El sintético es la versión agregada del analítico y se expresa en el proyecto de ley; el analítico es la decisión administrativa que distribuye la ley y el resumen se prepara para difundirla.",
+    "en": "The synthetic budget is the aggregated version of the analytical one and appears in the bill; the analytical one is the administrative decision distributing the law, and the summary is prepared to publicize it."
+   },
+   "id": "fisc-general-13-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué principio se viola cuando los reembolsos a las exportaciones se restan de la recaudación del IVA?",
+    "en": "Which principle is violated when export rebates are netted out of VAT revenue?"
+   },
+   "op": {
+    "es": [
+     "Universalidad",
+     "Anticipación",
+     "Periodicidad",
+     "Continuidad"
+    ],
+    "en": [
+     "Universality",
+     "Anticipation",
+     "Periodicity",
+     "Continuity"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Universalidad exige registrar gastos y recursos por su monto íntegro sin compensarlos; al restar, ambos se reducen y se distorsiona el presupuesto.",
+    "en": "Universality requires recording spending and revenue at their full amount without netting; subtracting shrinks both and distorts the budget."
+   },
+   "id": "fisc-general-13-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué establece el artículo 27 de la Ley 24.156 si el presupuesto no se sanciona antes del ejercicio?",
+    "en": "What does Article 27 of Law 24,156 provide if the budget is not passed before the fiscal year?"
+   },
+   "op": {
+    "es": [
+     "Que no se puede gastar hasta su sanción",
+     "Que rige el presupuesto anterior con ajustes",
+     "Que el Ejecutivo fija el gasto por decreto sin límite",
+     "Que se aplica un presupuesto mensual"
+    ],
+    "en": [
+     "That nothing can be spent until it is passed",
+     "That the previous budget applies with adjustments",
+     "That the Executive sets spending by decree without limit",
+     "That a monthly budget applies"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Entra en vigencia el presupuesto anterior, eliminando recursos no recaudables de nuevo y gastos no repetibles; vulnera la anticipación pero asegura la continuidad.",
+    "en": "The previous budget enters into force, removing non-recurring revenue and expenditure; it violates anticipation but ensures continuity."
+   },
+   "id": "fisc-general-13-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estos es un clasificador derivado y no primario?",
+    "en": "Which of these is a derived rather than a primary classifier?"
+   },
+   "op": {
+    "es": [
+     "Por objeto del gasto",
+     "Institucional",
+     "Por fuente de financiamiento",
+     "Por finalidad y función"
+    ],
+    "en": [
+     "By object of spending",
+     "Institutional",
+     "By financing source",
+     "By purpose and function"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los derivados son finalidad y función y la naturaleza económica de gastos y recursos; se generan combinando los primarios y no se usan al registrar cada transacción.",
+    "en": "The derived ones are purpose and function and the economic nature of spending and revenue; they are generated by combining primary classifiers and are not used when recording each transaction."
+   },
+   "id": "fisc-general-13-q4"
+  },
+  {
+   "q": {
+    "es": "Según el sistema de clasificaciones, ¿qué es un «ingreso»?",
+    "en": "Under the classification system, what is «revenue»?"
+   },
+   "op": {
+    "es": [
+     "Solo la recaudación tributaria",
+     "Toda transacción que implica una fuente de fondos",
+     "Solo las entradas de efectivo",
+     "Los ingresos corrientes netos de gastos"
+    ],
+    "en": [
+     "Only tax collection",
+     "Any transaction that implies a source of funds",
+     "Only cash inflows",
+     "Current revenue net of spending"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Ingreso es toda fuente de fondos: ingresos corrientes, disminución de activos e incremento de pasivos; gasto es todo uso de fondos.",
+    "en": "Revenue is any source of funds: current revenue, decrease in assets and increase in liabilities; spending is any use of funds."
+   },
+   "id": "fisc-general-13-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se calcula el resultado económico en la cuenta ahorro-inversión-financiamiento?",
+    "en": "How is the economic balance computed in the saving-investment-financing account?"
+   },
+   "op": {
+    "es": [
+     "Ingresos corrientes menos gastos corrientes",
+     "Total recursos menos total gastos",
+     "Recursos de capital menos gastos de capital",
+     "Fuentes menos aplicaciones financieras"
+    ],
+    "en": [
+     "Current revenue minus current spending",
+     "Total revenue minus total spending",
+     "Capital revenue minus capital spending",
+     "Financing sources minus financial applications"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "RE = IC − GC, el renglón III = I − II. Donde: RE = resultado económico (ahorro o desahorro); IC = ingresos corrientes; GC = gastos corrientes.",
+    "en": "RE = IC − GC, row III = I − II. Where: RE = economic balance (saving or dissaving); IC = current revenue; GC = current spending."
+   },
+   "id": "fisc-general-13-q6"
+  },
+  {
+   "q": {
+    "es": "¿Dónde va un préstamo del gobierno a una provincia?",
+    "en": "Where does a government loan to a province go?"
+   },
+   "op": {
+    "es": [
+     "Debajo de la línea, como administración de liquidez",
+     "En las contribuciones figurativas",
+     "Fuera de la cuenta",
+     "Arriba de la línea, porque tiene fines de política"
+    ],
+    "en": [
+     "Below the line, as liquidity management",
+     "In figurative contributions",
+     "Outside the account",
+     "Above the line, because it has policy purposes"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los activos financieros con fines de política van arriba de la línea y afectan el resultado financiero; los que se tienen por liquidez van abajo, con los pasivos.",
+    "en": "Policy-motivated financial assets go above the line and affect the financial balance; those held for liquidity go below, with liabilities."
+   },
+   "id": "fisc-general-13-q7"
+  },
+  {
+   "q": {
+    "es": "Según el texto, ¿qué es el ahorro externo en la condición de equilibrio de una economía abierta?",
+    "en": "According to the text, what is foreign saving in an open economy's equilibrium condition?"
+   },
+   "op": {
+    "es": [
+     "El superávit fiscal",
+     "Las reservas del banco central",
+     "El déficit de la cuenta corriente de la balanza de pagos",
+     "La inversión extranjera directa"
+    ],
+    "en": [
+     "The fiscal surplus",
+     "Central bank reserves",
+     "The current account deficit of the balance of payments",
+     "Foreign direct investment"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Sₚ + S_g + Sₓ = Iₚ + I_g. Donde: Sₚ, S_g = ahorro privado y público; Sₓ = ahorro externo, igual al déficit de cuenta corriente; Iₚ, I_g = inversión privada y pública.",
+    "en": "Sₚ + S_g + Sₓ = Iₚ + I_g. Where: Sₚ, S_g = private and public saving; Sₓ = foreign saving, equal to the current account deficit; Iₚ, I_g = private and public investment."
+   },
+   "id": "fisc-general-13-q8"
+  }
+ ],
+ "palabras": 1851,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué funciones cumple el presupuesto público en su concepción moderna?",
+    "en": "What roles does the public budget play in its modern conception?"
+   },
+   "a": {
+    "es": "Es instrumento de programación económica y social, de gobierno y de administración, además de acto legislativo y documento. Así lo presenta el capítulo «Elementos metodológicos y conceptuales del presupuesto público» que usa la cátedra de Finanzas Públicas de la FCE-UNC.",
+    "en": "It is a tool for economic and social programming, for government and for administration, as well as a legislative act and a document. That is how the chapter «Methodological and conceptual elements of the public budget» used by the FCE-UNC Public Finance course presents it."
+   },
+   "id": "fisc-general-13-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué exigen los principios de universalidad y de no afectación?",
+    "en": "What do the principles of universality and non-earmarking require?"
+   },
+   "a": {
+    "es": "Universalidad: registrar gastos y recursos íntegros, sin compensar. No afectación: que los recursos no tengan destino prefijado, para que gastos de menor prioridad no se financien solo por tener recursos propios. El texto los vincula con los artículos 12 y 23 de la Ley 24.156 y da como ejemplos el FONAVI y el Impuesto al Tabaco.",
+    "en": "Universality: record spending and revenue in full, without netting. Non-earmarking: revenue should have no preset destination, so low-priority spending is not funded just because it has its own revenue. The text links them to Articles 12 and 23 of Law 24,156 and cites FONAVI and the Tobacco Tax as examples."
+   },
+   "id": "fisc-general-13-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué tensión hay en el principio de equilibrio presupuestario?",
+    "en": "What tension lies in the balanced-budget principle?"
+   },
+   "a": {
+    "es": "Los clásicos exigían igualar gastos y recursos por temor a la inflación o la bancarrota; los modernos aceptan déficits transitorios ligados al multiplicador del gasto, sin que sean permanentes. El texto suma un tercer argumento: evitar déficits como señal de solvencia para atraer capitales.",
+    "en": "Classics required equal spending and revenue for fear of inflation or bankruptcy; moderns accept temporary deficits linked to the spending multiplier, as long as they are not permanent. The text adds a third argument: avoiding deficits as a solvency signal to attract capital."
+   },
+   "id": "fisc-general-13-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el sistema distingue clasificadores primarios y derivados?",
+    "en": "Why does the system distinguish primary and derived classifiers?"
+   },
+   "a": {
+    "es": "Para que cada transacción se registre una sola vez con los primarios (institucional, rubros, objeto, geográfico, moneda, fuente y programa) y el resto salga por combinación. Es la regla que el capítulo toma del Manual de Clasificaciones Presupuestarias de la Secretaría de Hacienda (2003).",
+    "en": "So that each transaction is recorded once with primary classifiers (institutional, revenue items, object, geographic, currency, source and program) and the rest comes from combining them. It is the rule the chapter takes from the Treasury's Budget Classification Manual (2003)."
+   },
+   "id": "fisc-general-13-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un sueldo puede ser gasto de capital y un equipo militar gasto corriente?",
+    "en": "Why can a salary be capital spending and military equipment current spending?"
+   },
+   "a": {
+    "es": "Porque la clasificación económica cruza el objeto con la imputación programática y funcional: si el sueldo está imputado a un proyecto que aumenta el activo es de capital, y las Cuentas Nacionales tratan parte de la inversión en defensa como corriente. Lo explica el capítulo usado en Finanzas Públicas (FCE-UNC).",
+    "en": "Because the economic classification crosses object with program and function: a salary charged to a project that increases assets is capital, and the National Accounts treat part of defense investment as current. The chapter used in FCE-UNC Public Finance explains it."
+   },
+   "id": "fisc-general-13-t5"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué resultados se obtienen de la cuenta ahorro-inversión-financiamiento?",
+    "en": "What balances come out of the saving-investment-financing account?"
+   },
+   "a": {
+    "es": "El resultado económico (ingresos menos gastos corrientes), el primario (sin intereses) y el financiero (total de recursos menos total de gastos, más contribuciones y menos gastos figurativos), que es el más relevante. Por debajo de la línea quedan fuentes y aplicaciones financieras. Así lo arma el capítulo, sobre el Reglamento de la Ley 24.156.",
+    "en": "The economic balance (current revenue minus current spending), the primary balance (excluding interest) and the financial balance (total revenue minus total spending, plus figurative contributions minus figurative expenses), the most relevant. Below the line are financing sources and applications. The chapter builds it on the Regulation of Law 24,156."
+   },
+   "id": "fisc-general-13-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué pasa con el ahorro privado si el ahorro público no cubre la inversión pública?",
+    "en": "What happens to private saving if public saving does not cover public investment?"
+   },
+   "a": {
+    "es": "Hay que destinar ahorro privado, o ahorro externo en una economía abierta, a financiar el presupuesto. El capítulo usa esta identidad para vincular la cuenta ahorro-inversión-financiamiento con el equilibrio macroeconómico.",
+    "en": "Private saving, or foreign saving in an open economy, must be used to finance the budget. The chapter uses this identity to link the saving-investment-financing account with macroeconomic equilibrium."
+   },
+   "id": "fisc-general-13-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el déficit medido depende de decisiones de clasificación?",
+    "en": "Why does the measured deficit depend on classification choices?"
+   },
+   "a": {
+    "es": "Porque una operación financiera va arriba de la línea si tiene fines de política y abajo si es liquidez, y los gastos tributarios no aparecen como gasto. El capítulo da las reglas; lectura propia: comparar déficits entre países o años exige verificar que el criterio sea el mismo.",
+    "en": "Because a financial operation goes above the line if policy-motivated and below if for liquidity, and tax expenditures do not appear as spending. The chapter gives the rules; own reading: comparing deficits across countries or years requires checking the criterion is the same."
+   },
+   "id": "fisc-general-13-t8"
+  }
+ ]
+}

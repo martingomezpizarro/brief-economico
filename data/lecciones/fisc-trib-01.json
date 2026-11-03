@@ -1,0 +1,560 @@
+{
+ "id": "fisc-trib-01",
+ "cat": "fisc-trib",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Coordinación fiscal internacional: aranceles, origen y destino, y cómo evitar la doble imposición",
+ "bajada": "Por qué un arancel es un impuesto al consumo más un subsidio a la producción, cuándo gravar en origen o en destino preserva la eficiencia, y los métodos de exención, crédito y deducción contra la doble imposición de la renta.",
+ "fuentes": [
+  1185,
+  1182
+ ],
+ "cita": "García y Rubio, «Coordinación fiscal internacional» (Finanzas Públicas, FCE-UNC), y Rolotti, «Coordinación fiscal internacional» (Finanzas Públicas, FCE-UNC, 10 de noviembre de 2022), sobre Albi, González Páramo y Zubiri, Economía Pública II (2009), cap. 10",
+ "intro": "Las dos presentaciones de la cátedra de Finanzas Públicas de la FCE-UNC, la de Francisco Rolotti de 2022 y la más reciente de Santiago García y Mateo Rubio, siguen el capítulo 10 de la Economía Pública II de Albi, González Páramo y Zubiri y cubren el mismo terreno. El punto de partida es que la economía mundial es muy interdependiente, por comercio, movilidad de personas, flujos de capital y empresas que operan en varios países, mientras que los sistemas fiscales son muy diversos. A diferencia del federalismo fiscal, en la economía pública internacional no existe una unidad de decisión global: no hay un gobierno cuya jurisdicción sea el conjunto de los países, aunque sí acuerdos de cooperación. El objetivo de la coordinación es minimizar las pérdidas de eficiencia y de equidad que generan sistemas que no se hablan entre sí. El recorrido tiene dos partes: la imposición indirecta, con los aranceles y los impuestos a la producción y el consumo, y la imposición directa, con los principios de residencia y fuente, la doble imposición y los mecanismos para corregirla.",
+ "secciones": [
+  {
+   "t": "El arancel: un impuesto al consumo más un subsidio a la producción",
+   "eq": [
+    "P_d = P + t",
+    "\\Delta W = -(a+b+c+d) + a + c = -(b+d)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_d\\): precio interno del bien importable \\(M\\) después del arancel, en pesos por unidad.",
+      "en": "\\(P_d\\): domestic price of importable good \\(M\\) after the tariff, in pesos per unit."
+     },
+     {
+      "es": "\\(P\\): precio internacional, que el país pequeño no puede alterar.",
+      "en": "\\(P\\): world price, which the small country cannot change."
+     },
+     {
+      "es": "\\(t\\): arancel por unidad importada (en el gráfico, la distancia entre \\(P\\) y \\(P+t\\)).",
+      "en": "\\(t\\): tariff per imported unit (in the graph, the distance between \\(P\\) and \\(P+t\\))."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Delta W\\): cambio en el bienestar total del país por el arancel, en pesos (lectura propia: la suma la hacemos nosotros con las áreas que dan las presentaciones).",
+      "en": "\\(\\Delta W\\): change in the country's total welfare from the tariff, in pesos (own reading: we do the sum with the areas the presentations give)."
+     },
+     {
+      "es": "\\(a+b+c+d\\): pérdida de excedente del consumidor por pagar más y comprar menos.",
+      "en": "\\(a+b+c+d\\): loss of consumer surplus from paying more and buying less."
+     },
+     {
+      "es": "\\(a\\): ganancia de excedente del productor nacional.",
+      "en": "\\(a\\): gain in domestic producer surplus."
+     },
+     {
+      "es": "\\(c\\): recaudación del gobierno, el arancel por las importaciones que siguen entrando.",
+      "en": "\\(c\\): government revenue, the tariff times the imports that still come in."
+     },
+     {
+      "es": "\\(b+d\\): pérdida de bienestar o exceso de gravamen; \\(b\\) por producción interna más cara y \\(d\\) por consumo que se deja de hacer (lectura propia sobre cuál es cuál).",
+      "en": "\\(b+d\\): welfare loss or excess burden; \\(b\\) from costlier domestic production and \\(d\\) from forgone consumption (own reading on which is which)."
+     }
+    ]
+   ],
+   "p": [
+    "Los aranceles son impuestos sobre las importaciones de bienes o servicios cuando cruzan la frontera. Introducen una cuña entre el precio internacional del bien importable y el precio interno de sus sustitutos nacionales, y su objetivo suele ser proteccionista: encarecer lo importado para reducir las cantidades importadas, estimular la producción local de sustitutos y reducir el déficit de la balanza comercial. Una variante son los impuestos a las exportaciones, las retenciones, que García y Rubio describen como de casi nulo uso a nivel global (lectura propia: Argentina es una de las excepciones notorias).",
+    "El análisis supone una economía pequeña, que no mueve los precios internacionales y puede comprar todo lo que quiera a ese precio. Como el bien se importa, a ese precio la oferta interna es menor que la demanda. Con el arancel el precio interno sube de P a P + t, la producción local pasa de S₁ a S₂, el consumo cae de D₁ a D₂ y las importaciones se achican de D₁ − S₁ a D₂ − S₂. Los consumidores pierden a + b + c + d; los productores ganan a; el gobierno recauda c. Lo que no recibe nadie, b + d, es el exceso de gravamen.",
+    "De ahí la lectura que dan ambas presentaciones: un arancel equivale a un impuesto al consumo del bien, que reduce la cantidad demandada, combinado con una subvención a su producción, que aumenta la cantidad ofrecida. Transfiere renta de los consumidores a los productores y al gobierno, pero lo que pierden los consumidores supera lo que ganan los demás, y la economía en su conjunto pierde. La conclusión normativa es tajante: no es deseable establecer aranceles; pueden justificarse barreras temporales para industrias que necesiten protección transitoria o para industrias nacientes, pero nunca como instrumento permanente, porque una industria que necesita protección para siempre es ineficiente y se estaría beneficiando a pocos productores a costa de muchos consumidores."
+   ]
+  },
+  {
+   "t": "Quién gana con un arancel a largo plazo",
+   "p": [
+    "Los efectos distributivos dependen del horizonte. A corto plazo el arancel beneficia a los productores nacionales del bien protegido. A largo plazo depende de cómo el aumento de la producción del sector protegido cambia la demanda de factores y de cuán móviles son esos factores entre sectores.",
+    "La herramienta es el teorema de Stolper-Samuelson: un aumento del precio relativo de un bien aumenta el retorno del factor que se usa con mayor intensidad en su producción y reduce el retorno del otro. En un modelo con capital y trabajo, la incidencia del arancel depende de si el sustituto nacional de la importación es intensivo en capital o en trabajo. Si es intensivo en trabajo, el arancel sube el salario y baja el retorno del capital; si es intensivo en capital, al revés.",
+    "Lectura propia: esto explica por qué la protección tiene defensores fuera de los dueños de las empresas protegidas. Si el bien importable usa mucho trabajo, los trabajadores en general, y no solo los del sector, ganan con el arancel a largo plazo, aunque como consumidores pierdan. Por eso el debate sobre aranceles rara vez se resuelve solo con el triángulo de eficiencia."
+   ]
+  },
+  {
+   "t": "Gravar en origen o en destino",
+   "eq": [
+    "\\mathit{RMS}^{A}_{yz} = \\mathit{RMT}^{A}_{yz} = \\frac{P_y}{P_z}",
+    "\\mathit{RMT}^{A}_{yz} = \\frac{P_y}{P_z} < \\frac{P_y(1+t_y)}{P_z} = \\mathit{RMS}^{A}_{yz}",
+    "\\mathit{RMS}^{A}_{yz} = \\frac{P_y}{P_z} \\neq \\frac{P_y}{P_z(1+t_z)} = \\mathit{RMT}^{A}_{yz}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RMS}^{A}_{yz}\\): relación marginal de sustitución entre \\(Y\\) y \\(Z\\) para los consumidores del país \\(A\\): cuántas unidades de \\(Z\\) están dispuestos a ceder por una más de \\(Y\\); en equilibrio iguala el precio relativo que pagan.",
+      "en": "\\(\\mathit{RMS}^{A}_{yz}\\): marginal rate of substitution between \\(Y\\) and \\(Z\\) for consumers in country \\(A\\): how many units of \\(Z\\) they would give up for one more \\(Y\\); in equilibrium it equals the relative price they pay."
+     },
+     {
+      "es": "\\(\\mathit{RMT}^{A}_{yz}\\): relación marginal de transformación de los productores de \\(A\\): cuántas unidades de \\(Z\\) hay que dejar de producir para producir una más de \\(Y\\); en equilibrio iguala el precio relativo que cobran.",
+      "en": "\\(\\mathit{RMT}^{A}_{yz}\\): marginal rate of transformation of producers in \\(A\\): how many units of \\(Z\\) must be given up to produce one more \\(Y\\); in equilibrium it equals the relative price they receive."
+     },
+     {
+      "es": "\\(P_y,\\,P_z\\): precios internacionales de los bienes \\(Y\\) (que \\(A\\) importa) y \\(Z\\) (que \\(A\\) exporta).",
+      "en": "\\(P_y,\\,P_z\\): international prices of goods \\(Y\\) (imported by \\(A\\)) and \\(Z\\) (exported by \\(A\\))."
+     }
+    ],
+    [
+     {
+      "es": "\\(t_y\\): alícuota del impuesto al consumo del bien importable \\(Y\\) en \\(A\\).",
+      "en": "\\(t_y\\): tax rate on consumption of importable good \\(Y\\) in \\(A\\)."
+     },
+     {
+      "es": "\\(P_y(1+t_y)/P_z\\): precio relativo que enfrentan los consumidores de \\(A\\) con el impuesto; los productores siguen viendo \\(P_y/P_z\\).",
+      "en": "\\(P_y(1+t_y)/P_z\\): relative price faced by consumers in \\(A\\) with the tax; producers still see \\(P_y/P_z\\)."
+     },
+     {
+      "es": "\\(\\mathit{RMS}^{A}_{yz}\\): relación marginal de sustitución entre \\(Y\\) y \\(Z\\) para los consumidores del país \\(A\\): cuántas unidades de \\(Z\\) están dispuestos a ceder por una más de \\(Y\\); en equilibrio iguala el precio relativo que pagan.",
+      "en": "\\(\\mathit{RMS}^{A}_{yz}\\): marginal rate of substitution between \\(Y\\) and \\(Z\\) for consumers in country \\(A\\): how many units of \\(Z\\) they would give up for one more \\(Y\\); in equilibrium it equals the relative price they pay."
+     },
+     {
+      "es": "\\(\\mathit{RMT}^{A}_{yz}\\): relación marginal de transformación de los productores de \\(A\\): cuántas unidades de \\(Z\\) hay que dejar de producir para producir una más de \\(Y\\); en equilibrio iguala el precio relativo que cobran.",
+      "en": "\\(\\mathit{RMT}^{A}_{yz}\\): marginal rate of transformation of producers in \\(A\\): how many units of \\(Z\\) must be given up to produce one more \\(Y\\); in equilibrium it equals the relative price they receive."
+     }
+    ],
+    [
+     {
+      "es": "\\(t_z\\): alícuota del impuesto a la producción del bien exportable \\(Z\\) en \\(A\\).",
+      "en": "\\(t_z\\): tax rate on production of exportable good \\(Z\\) in \\(A\\)."
+     },
+     {
+      "es": "\\(P_y/[P_z(1+t_z)]\\): precio relativo que enfrentan los productores de \\(A\\) cuando \\(Z\\) paga el impuesto a la producción.",
+      "en": "\\(P_y/[P_z(1+t_z)]\\): relative price faced by producers in \\(A\\) when \\(Z\\) bears the production tax."
+     },
+     {
+      "es": "\\(\\neq\\): las presentaciones escriben «<»; lectura propia: con \\(t_z > 0\\) el lado derecho es menor, de modo que la desigualdad correcta es «>»; lo que importa es que la igualdad se rompe.",
+      "en": "\\(\\neq\\): the presentations write «<»; own reading: with \\(t_z > 0\\) the right-hand side is smaller, so the correct inequality is «>»; what matters is that the equality breaks."
+     },
+     {
+      "es": "\\(\\mathit{RMS}^{A}_{yz}\\): relación marginal de sustitución entre \\(Y\\) y \\(Z\\) para los consumidores del país \\(A\\): cuántas unidades de \\(Z\\) están dispuestos a ceder por una más de \\(Y\\); en equilibrio iguala el precio relativo que pagan.",
+      "en": "\\(\\mathit{RMS}^{A}_{yz}\\): marginal rate of substitution between \\(Y\\) and \\(Z\\) for consumers in country \\(A\\): how many units of \\(Z\\) they would give up for one more \\(Y\\); in equilibrium it equals the relative price they pay."
+     },
+     {
+      "es": "\\(\\mathit{RMT}^{A}_{yz}\\): relación marginal de transformación de los productores de \\(A\\): cuántas unidades de \\(Z\\) hay que dejar de producir para producir una más de \\(Y\\); en equilibrio iguala el precio relativo que cobran.",
+      "en": "\\(\\mathit{RMT}^{A}_{yz}\\): marginal rate of transformation of producers in \\(A\\): how many units of \\(Z\\) must be given up to produce one more \\(Y\\); in equilibrium it equals the relative price they receive."
+     }
+    ]
+   ],
+   "p": [
+    "Los impuestos sobre la producción y el consumo no buscan proteger sino recaudar, y no distinguen el origen de los bienes, pero pueden distorsionar la competencia. Hay dos principios para asignarlos entre países. Con el principio de país de origen, los bienes se gravan donde se producen; con el de destino, donde se consumen. Como no son excluyentes, sin coordinación un mismo bien puede gravarse dos veces, en el país que lo produce y en el que lo consume, lo que perjudica su competitividad en destino.",
+    "Para comparar, las presentaciones usan dos bienes, Y y Z, con precios internacionales Py y Pz; el país A produce y exporta Z, y produce e importa Y, y el resto del mundo al revés. Sin impuestos, la relación marginal de sustitución de los consumidores y la relación marginal de transformación de los productores igualan al precio relativo: hay eficiencia. Un impuesto al consumo solo del bien importable separa las dos: los consumidores ven un precio relativo más alto que los productores. Pero un impuesto general uniforme sobre el consumo de ambos bienes no cambia el precio relativo y la igualdad se restablece. Con el principio de destino la carga la soporta el país importador, las condiciones de competencia de la oferta no se alteran en el mercado de destino y la localización internacional de la producción es eficiente.",
+    "Con el principio de origen, un impuesto a la producción solo de Z también rompe la igualdad. Un impuesto general sobre la producción de ambos bienes la restablece dentro del país, pero con distorsiones en la asignación internacional del capital, porque los productores de A enfrentan una carga distinta de la del resto del mundo. García y Rubio concluyen que la eficiencia internacional se recupera solo si el resto del mundo aplica el mismo impuesto uniforme t: solo en ese caso el principio de origen sería eficiente. Lectura propia: por eso el impuesto al valor agregado se aplica en la práctica con criterio de destino, devolviendo el impuesto a la exportación y gravando la importación."
+   ]
+  },
+  {
+   "t": "El GATT y el ajuste en frontera",
+   "p": [
+    "Rolotti presenta la solución que adoptó el Acuerdo General sobre Aranceles y Comercio (GATT), cuyos objetivos son evitar la doble tributación internacional y lograr eficiencia productiva. La regla es el principio de destino: cuando se exporta un bien, se le devuelve al exportador la carga de tributación indirecta que incorpora, y luego se le aplican los impuestos del país de destino. Así el bien llega a cada mercado compitiendo en igualdad con los productos locales.",
+    "Las críticas que recoge son tres: queda sin resolver el tema arancelario, que es justamente el instrumento proteccionista; hay complicaciones para calcular las devoluciones y los gravámenes compensatorios, y no hay un criterio claro sobre qué impuestos ajustar. Lectura propia: la dificultad de calcular devoluciones es mucho menor con un IVA, donde el impuesto acumulado está documentado en cada factura, que con impuestos en cascada como los ingresos brutos provinciales, cuya carga escondida en los costos nadie sabe medir con precisión."
+   ]
+  },
+  {
+   "t": "Renta: residencia, fuente y doble imposición",
+   "eq": [
+    "\\text{Residencia: } B_A = Y_{AA} + Y_{AB}, \\quad B_B = Y_{BB} + Y_{BA}",
+    "\\text{Fuente: } B_A = Y_{AA} + Y_{BA}, \\quad B_B = Y_{BB} + Y_{AB}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(B_A,\\,B_B\\): base imponible de la renta en los países \\(A\\) y \\(B\\).",
+      "en": "\\(B_A,\\,B_B\\): income tax base in countries \\(A\\) and \\(B\\)."
+     },
+     {
+      "es": "\\(Y_{AA}\\): renta que obtienen los residentes de \\(A\\) en el propio \\(A\\); \\(Y_{BB}\\), lo mismo para \\(B\\).",
+      "en": "\\(Y_{AA}\\): income residents of \\(A\\) earn in \\(A\\) itself; \\(Y_{BB}\\), the same for \\(B\\)."
+     },
+     {
+      "es": "\\(Y_{AB}\\): renta que obtienen los residentes de \\(A\\) por invertir en \\(B\\).",
+      "en": "\\(Y_{AB}\\): income residents of \\(A\\) earn by investing in \\(B\\)."
+     },
+     {
+      "es": "\\(Y_{BA}\\): renta que obtienen los residentes de \\(B\\) por invertir en \\(A\\).",
+      "en": "\\(Y_{BA}\\): income residents of \\(B\\) earn by investing in \\(A\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(B_A,\\,B_B\\): base imponible de cada país bajo el principio de la fuente.",
+      "en": "\\(B_A,\\,B_B\\): each country's tax base under the source principle."
+     },
+     {
+      "es": "\\(Y_{ij}\\): renta de los residentes de \\(i\\) generada en el país \\(j\\); cada país grava lo generado en su territorio, sea de residentes o no.",
+      "en": "\\(Y_{ij}\\): income of residents of \\(i\\) generated in country \\(j\\); each country taxes what is generated in its territory, whether earned by residents or not."
+     }
+    ]
+   ],
+   "p": [
+    "Los impuestos directos recaen sobre la renta de las personas, los beneficios de las sociedades, las sucesiones y donaciones o el patrimonio neto; las presentaciones se concentran en la renta. Sin coordinación puede haber doble imposición, que distorsiona las transacciones; por ejemplo, el capital puede moverse entre países por razones fiscales y no económicas.",
+    "Hay dos principios de asignación. El de residencia, o del país principal de sujeción fiscal, grava toda la renta mundial de un residente, sin importar dónde se generó. El de la fuente, territorialidad u origen, grava a residentes y no residentes por las rentas generadas dentro del país. Con dos países, si A aplica residencia grava lo que sus residentes ganan en casa y en B; si aplica fuente, lo que se gana en su territorio, incluido lo que ganan allí los residentes de B. Si cada país aplica los dos principios a la vez, la base de A es Y_AA + Y_AB + Y_BA y la de B, Y_BB + Y_BA + Y_AB: las rentas cruzadas aparecen en las dos bases.",
+    "La doble imposición internacional es el gravamen múltiple de una misma renta en distintas jurisdicciones. Sus causas son tres: la doble residencia del contribuyente, la aplicación simultánea de los dos principios y la distribución de beneficios entre países cuando hay una actividad internacional, como la de una multinacional. Lectura propia: la tercera causa es hoy la más importante, porque decidir en qué país se generó el beneficio de una empresa digital es casi arbitrario, y es el origen de los debates sobre precios de transferencia y un impuesto mínimo global."
+   ]
+  },
+  {
+   "t": "Exención, crédito y deducción: tres maneras de corregirla",
+   "eq": [
+    "T_{\\text{res}}^{\\text{créd}} = 100\\,(t - r)",
+    "T_{\\text{res}}^{\\text{ded}} = 100\\,(1 - r)\\,t"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(T_{\\text{res}}^{\\text{créd}}\\): impuesto que se liquida en el país de residencia con el método del crédito fiscal, en pesos, sobre un interés de 100 cobrado en el exterior.",
+      "en": "\\(T_{\\text{res}}^{\\text{créd}}\\): tax due in the country of residence under the tax credit method, in pesos, on interest of 100 earned abroad."
+     },
+     {
+      "es": "\\(t\\): alícuota del impuesto en el país de residencia (en el ejemplo, 30 %).",
+      "en": "\\(t\\): tax rate in the country of residence (30 % in the example)."
+     },
+     {
+      "es": "\\(r\\): alícuota de la retención en origen en el país extranjero, el withholding tax (en el ejemplo, 20 %).",
+      "en": "\\(r\\): withholding tax rate in the foreign country (20 % in the example)."
+     }
+    ],
+    [
+     {
+      "es": "\\(T_{\\text{res}}^{\\text{ded}}\\): impuesto que se liquida en el país de residencia con el método de la deducción, en pesos.",
+      "en": "\\(T_{\\text{res}}^{\\text{ded}}\\): tax due in the country of residence under the deduction method, in pesos."
+     },
+     {
+      "es": "\\(100(1-r)\\): interés neto de la retención extranjera, que pasa a ser la base imponible en residencia.",
+      "en": "\\(100(1-r)\\): interest net of the foreign withholding, which becomes the tax base at home."
+     },
+     {
+      "es": "\\(t,\\,r\\): como en la ecuación anterior.",
+      "en": "\\(t,\\,r\\): as in the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "Con el método de la exención, la renta se grava en uno solo de los países y queda exenta en los demás; un Estado renuncia a su impuesto, a cambio de la reciprocidad que espera de los otros. Puede ser integral o con progresividad. La exención en origen corresponde al principio de residencia y la exención en destino al de la fuente.",
+    "Con el método del crédito fiscal, el impuesto pagado en un país se acredita, total o parcialmente, contra la obligación en el otro. El ejemplo de García y Rubio: un residente cobra un interés de 100 en el exterior, donde le retienen el 20 %; en su país la alícuota es 30 %. La retención es 20, el impuesto de residencia sería 30 y se le cobran solo 10, de modo que la carga total es 30, la misma que si hubiera invertido en su país. La diapositiva escribe el cálculo como «$100($30 − $20) = $10»; lectura propia: es una errata de notación, la cuenta correcta es 100 por la diferencia de alícuotas. Hay variantes: crédito con tope máximo, crédito por impuesto subyacente (underlying tax credit) y deducción por impuestos no pagados (tax sparing).",
+    "Con el método de la deducción, el impuesto extranjero se trata como gasto deducible de la base, no como crédito contra la cuota. Por eso compensa solo una parte proporcional: con los mismos datos, la base en residencia es el interés neto y se pagan 100 × (1 − 0,2) × 0,3 = 24, que se suman a los 20 retenidos. Lectura propia: el crédito logra neutralidad para el inversor, que paga lo mismo invierta donde invierta; la deducción mantiene una penalización a invertir afuera; la exención, si la alícuota extranjera es más baja, premia invertir afuera. García y Rubio cierran con dos ejercicios de Albi y otros para practicar los métodos y comparar la recaudación por origen y por destino."
+   ]
+  },
+  {
+   "t": "Qué haría falta para medirlo",
+   "p": [
+    "Las presentaciones no tienen trabajo econométrico. Lectura propia: los dos grandes temas tienen literatura empírica clara. Para los aranceles, el exceso de gravamen b + d se estima con las elasticidades de oferta y demanda del bien protegido, y los efectos de Stolper-Samuelson se contrastan con salarios por calificación antes y después de una apertura comercial, comparando regiones más y menos expuestas a la competencia importada.",
+    "Para la imposición directa, la pregunta empírica es cuánto se mueve el capital por razones fiscales: se mide la respuesta de la inversión extranjera o de los beneficios declarados por filiales a las diferencias de alícuotas entre países, con la dificultad de separar el traslado real de actividad del traslado contable de beneficios. Los tratados para evitar la doble imposición dan variación útil, porque cambian el método aplicado entre pares de países en fechas conocidas."
+   ]
+  }
+ ],
+ "claves": [
+  "En la economía pública internacional no hay unidad de decisión global; la coordinación busca minimizar pérdidas de eficiencia y equidad.",
+  "Un arancel equivale a un impuesto al consumo más un subsidio a la producción: los consumidores pierden a + b + c + d y el país pierde b + d.",
+  "Los aranceles pueden justificarse de forma temporal (industria naciente), nunca permanente.",
+  "Stolper-Samuelson: el arancel sube el retorno del factor usado intensivamente en el sustituto nacional.",
+  "Con el principio de destino la localización de la producción es eficiente; el de origen solo si todos los países aplican el mismo impuesto uniforme.",
+  "El GATT adopta el destino: se devuelve la carga indirecta al exportar y se grava en destino.",
+  "La doble imposición de la renta nace de doble residencia, aplicación simultánea de residencia y fuente, y reparto de beneficios de multinacionales.",
+  "Exención, crédito fiscal y deducción corrigen la doble imposición en grado decreciente."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según las presentaciones, ¿a qué equivale un arancel?",
+    "en": "According to the presentations, what is a tariff equivalent to?"
+   },
+   "op": {
+    "es": [
+     "A un impuesto a la renta de los importadores",
+     "A un impuesto al consumo más una subvención a la producción del bien",
+     "A un subsidio a las exportaciones",
+     "A una devaluación"
+    ],
+    "en": [
+     "An income tax on importers",
+     "A consumption tax plus a production subsidy on the good",
+     "An export subsidy",
+     "A devaluation"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El arancel sube el precio interno: reduce la cantidad demandada, como un impuesto al consumo, y aumenta la ofrecida, como un subsidio a la producción.",
+    "en": "The tariff raises the domestic price: it cuts quantity demanded, like a consumption tax, and raises quantity supplied, like a production subsidy."
+   },
+   "id": "fisc-trib-01-q1"
+  },
+  {
+   "q": {
+    "es": "En el gráfico del arancel de un país pequeño, ¿cuál es el exceso de gravamen?",
+    "en": "In the small-country tariff graph, what is the excess burden?"
+   },
+   "op": {
+    "es": [
+     "b + d",
+     "a",
+     "c",
+     "a + b + c + d"
+    ],
+    "en": [
+     "b + d",
+     "a",
+     "c",
+     "a + b + c + d"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los consumidores pierden a + b + c + d; a va a los productores y c al fisco; b + d no lo recibe nadie. Donde: a = excedente del productor ganado; c = recaudación; b + d = pérdida neta.",
+    "en": "Consumers lose a + b + c + d; a goes to producers and c to the treasury; nobody gets b + d. Where: a = producer surplus gained; c = revenue; b + d = net loss."
+   },
+   "id": "fisc-trib-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuándo pueden justificarse los aranceles según García y Rubio?",
+    "en": "When can tariffs be justified according to García and Rubio?"
+   },
+   "op": {
+    "es": [
+     "Como protección permanente de sectores estratégicos",
+     "Siempre que reduzcan el déficit comercial",
+     "Nunca, en ningún caso",
+     "De forma temporal, por ejemplo para industrias nacientes"
+    ],
+    "en": [
+     "As permanent protection of strategic sectors",
+     "Whenever they reduce the trade deficit",
+     "Never, in any case",
+     "Temporarily, for instance for infant industries"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Admiten barreras temporales; una industria que necesita protección permanente es ineficiente y se beneficia a pocos productores a costa de muchos consumidores.",
+    "en": "They allow temporary barriers; an industry needing permanent protection is inefficient and benefits few producers at the expense of many consumers."
+   },
+   "id": "fisc-trib-01-q3"
+  },
+  {
+   "q": {
+    "es": "Según Stolper-Samuelson, si el sustituto nacional del bien importado es intensivo en trabajo, un arancel a largo plazo…",
+    "en": "By Stolper-Samuelson, if the domestic substitute for the import is labor-intensive, in the long run a tariff…"
+   },
+   "op": {
+    "es": [
+     "Baja el salario",
+     "No cambia la distribución",
+     "Sube el salario y baja el retorno del capital",
+     "Sube ambos retornos"
+    ],
+    "en": [
+     "Lowers the wage",
+     "Does not change distribution",
+     "Raises the wage and lowers the return to capital",
+     "Raises both returns"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Un aumento del precio relativo de un bien eleva el retorno del factor usado con mayor intensidad en su producción y reduce el del otro.",
+    "en": "A rise in a good's relative price raises the return to the factor used intensively in producing it and lowers the other's."
+   },
+   "id": "fisc-trib-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué principio deja eficiente la localización internacional de la producción sin necesidad de armonizar alícuotas?",
+    "en": "Which principle keeps international production location efficient without harmonizing rates?"
+   },
+   "op": {
+    "es": [
+     "El de destino",
+     "El de origen",
+     "El de residencia",
+     "La aplicación simultánea"
+    ],
+    "en": [
+     "The destination principle",
+     "The origin principle",
+     "The residence principle",
+     "Simultaneous application"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con destino, la carga la soporta el país importador y la competencia de la oferta no se altera; el de origen solo es eficiente si el resto del mundo aplica el mismo impuesto uniforme.",
+    "en": "With destination, the importing country bears the burden and supply-side competition is unaltered; origin is efficient only if the rest of the world applies the same uniform tax."
+   },
+   "id": "fisc-trib-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué grava el principio de residencia?",
+    "en": "What does the residence principle tax?"
+   },
+   "op": {
+    "es": [
+     "Toda la renta generada en el territorio, de residentes o no",
+     "Solo la renta de las sociedades",
+     "Solo el consumo de residentes",
+     "Toda la renta mundial de los residentes"
+    ],
+    "en": [
+     "All income generated in the territory, by residents or not",
+     "Only corporate income",
+     "Only residents' consumption",
+     "All worldwide income of residents"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con residencia la base de A es Y_AA + Y_AB. Donde: Y_AA = renta de residentes de A obtenida en A; Y_AB = renta de residentes de A obtenida en B. El principio de la fuente es el que grava lo generado en el territorio.",
+    "en": "Under residence A's base is Y_AA + Y_AB. Where: Y_AA = income of A's residents earned in A; Y_AB = income of A's residents earned in B. The source principle taxes income generated in the territory."
+   },
+   "id": "fisc-trib-01-q6"
+  },
+  {
+   "q": {
+    "es": "Interés de 100 en el exterior, retención del 20 % y alícuota de residencia del 30 %: con crédito fiscal, ¿cuánto se paga en residencia?",
+    "en": "Interest of 100 abroad, 20 % withholding and a 30 % home rate: with a tax credit, how much is paid at home?"
+   },
+   "op": {
+    "es": [
+     "30",
+     "10",
+     "24",
+     "Nada"
+    ],
+    "en": [
+     "30",
+     "10",
+     "24",
+     "Nothing"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "T = 100 (t − r) = 100 × (0,3 − 0,2) = 10, y la carga total es 30. Donde: t = alícuota en residencia; r = retención en el exterior. Con deducción se pagarían 24 en residencia.",
+    "en": "T = 100 (t − r) = 100 × (0.3 − 0.2) = 10, and the total burden is 30. Where: t = home rate; r = foreign withholding. With deduction 24 would be paid at home."
+   },
+   "id": "fisc-trib-01-q7"
+  },
+  {
+   "q": {
+    "es": "¿En qué se diferencia el método de la deducción del crédito fiscal?",
+    "en": "How does the deduction method differ from the tax credit?"
+   },
+   "op": {
+    "es": [
+     "En la deducción el impuesto extranjero se resta de la base, no de la cuota",
+     "En la deducción la renta queda exenta en un país",
+     "No hay diferencia en la carga",
+     "La deducción solo se aplica a aranceles"
+    ],
+    "en": [
+     "Under deduction the foreign tax is subtracted from the base, not from the tax due",
+     "Under deduction income is exempt in one country",
+     "There is no difference in burden",
+     "Deduction only applies to tariffs"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por eso la deducción compensa solo una parte proporcional del impuesto extranjero: T = 100 (1 − r) t. Donde: r = retención extranjera; t = alícuota de residencia.",
+    "en": "That is why deduction offsets only a proportional part of the foreign tax: T = 100 (1 − r) t. Where: r = foreign withholding; t = home rate."
+   },
+   "id": "fisc-trib-01-q8"
+  }
+ ],
+ "palabras": 1913,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué distingue a la economía pública internacional del federalismo fiscal?",
+    "en": "What distinguishes international public economics from fiscal federalism?"
+   },
+   "a": {
+    "es": "Que no hay una unidad de decisión global, un gobierno cuya jurisdicción abarque a todos los países; solo acuerdos de cooperación. Rolotti y García y Rubio, siguiendo a Albi, González Páramo y Zubiri.",
+    "en": "That there is no global decision unit, no government whose jurisdiction covers all countries; only cooperation agreements. Rolotti and García and Rubio, following Albi, González Páramo and Zubiri."
+   },
+   "id": "fisc-trib-01-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Quién gana y quién pierde con un arancel en un país pequeño?",
+    "en": "Who gains and who loses from a tariff in a small country?"
+   },
+   "a": {
+    "es": "Los consumidores pierden a + b + c + d, los productores ganan a y el gobierno recauda c; el país pierde b + d. García y Rubio lo leen como un impuesto al consumo más una subvención a la producción.",
+    "en": "Consumers lose a + b + c + d, producers gain a and the government collects c; the country loses b + d. García and Rubio read it as a consumption tax plus a production subsidy."
+   },
+   "id": "fisc-trib-01-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿De qué depende la incidencia de un arancel a largo plazo?",
+    "en": "What does a tariff's long-run incidence depend on?"
+   },
+   "a": {
+    "es": "De la intensidad factorial del sustituto nacional y de la movilidad de factores: por Stolper-Samuelson sube el retorno del factor intensivo en ese bien y baja el del otro. García y Rubio lo plantean con capital y trabajo.",
+    "en": "On the factor intensity of the domestic substitute and factor mobility: by Stolper-Samuelson the return to the factor used intensively rises and the other falls. García and Rubio frame it with capital and labor."
+   },
+   "id": "fisc-trib-01-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Por qué el principio de destino preserva la eficiencia de la producción internacional?",
+    "en": "Why does the destination principle preserve international production efficiency?"
+   },
+   "a": {
+    "es": "Porque la carga la soporta el país importador y un impuesto uniforme al consumo deja intacto el precio relativo que ven los productores; con origen hace falta que todos los países apliquen el mismo impuesto. García y Rubio, y Rolotti.",
+    "en": "Because the importing country bears the burden and a uniform consumption tax leaves producers' relative price intact; under origin all countries must apply the same tax. García and Rubio, and Rolotti."
+   },
+   "id": "fisc-trib-01-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo aplica el GATT el principio de destino?",
+    "en": "How does the GATT apply the destination principle?"
+   },
+   "a": {
+    "es": "Devolviendo al exportador la carga indirecta que incorpora el bien y gravándolo luego en destino. Rolotti señala sus problemas: deja afuera los aranceles, complica el cálculo de devoluciones y no dice qué impuestos ajustar.",
+    "en": "By refunding to the exporter the indirect tax embedded in the good and then taxing it at destination. Rolotti notes its problems: it leaves tariffs out, complicates refund calculations and does not say which taxes to adjust."
+   },
+   "id": "fisc-trib-01-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué causa la doble imposición internacional de la renta?",
+    "en": "What causes international double taxation of income?"
+   },
+   "a": {
+    "es": "La doble residencia, la aplicación simultánea de residencia y fuente, y el reparto de beneficios de actividades internacionales como las multinacionales. Es la lista de García y Rubio, que la definen como el gravamen múltiple de una misma renta.",
+    "en": "Dual residence, simultaneous application of residence and source, and allocating profits of international activities such as multinationals. That is García and Rubio's list; they define it as multiple taxation of the same income."
+   },
+   "id": "fisc-trib-01-t6"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el crédito fiscal elimina la doble imposición y la deducción no del todo?",
+    "en": "Why does the tax credit remove double taxation but deduction does not fully?"
+   },
+   "a": {
+    "es": "El crédito resta el impuesto extranjero de la cuota y la carga total queda en la alícuota de residencia; la deducción lo resta de la base y compensa solo una parte proporcional. En el ejemplo de García y Rubio se pagan 10 en residencia con crédito y 24 con deducción.",
+    "en": "The credit subtracts the foreign tax from the tax due, leaving the total burden at the home rate; deduction subtracts it from the base and offsets only a proportional part. In García and Rubio's example 10 is paid at home with credit and 24 with deduction."
+   },
+   "id": "fisc-trib-01-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué errores conviene corregir en las diapositivas de origen y de crédito fiscal?",
+    "en": "What errors should be fixed in the origin and tax-credit slides?"
+   },
+   "a": {
+    "es": "Lectura propia: en el impuesto a la producción de Z, Py/Pz es mayor que Py/[Pz(1+tz)], no menor; y en el crédito, la cuenta es 100 por la diferencia de alícuotas, no «$100($30 − $20)». Las conclusiones de García y Rubio no cambian.",
+    "en": "Own reading: for the production tax on Z, Py/Pz is greater than Py/[Pz(1+tz)], not smaller; and for the credit, the computation is 100 times the rate difference, not «$100($30 − $20)». García and Rubio's conclusions do not change."
+   },
+   "id": "fisc-trib-01-t8"
+  }
+ ]
+}
