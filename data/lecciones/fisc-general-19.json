@@ -1,0 +1,446 @@
+{
+ "id": "fisc-general-19",
+ "cat": "fisc-general",
+ "orden": 15,
+ "minutos": 15,
+ "titulo": "El sistema previsional argentino: por qué es deficitario y qué se propone cambiar",
+ "bajada": "Un sistema fragmentado, 9 millones de beneficios sostenidos por unos 6 millones de asalariados privados, moratorias que ya superan a las jubilaciones con aportes, un déficit de 1,9% del PIB en 2021 y una agenda de reformas: cerrar moratorias, haber inicial proporcional a los aportes y movilidad por inflación.",
+ "fuentes": [
+  1167
+ ],
+ "cita": "Caullo, «Sistema previsional en Argentina: déficit estructural y lineamientos para una transformación» (trabajo final de Políticas de Seguridad Social, Maestría en Economía Pública, FCE-UNC, julio de 2022), con datos de BESS, EPH-INDEC, Ministerio de Economía e IERAL",
+ "intro": "María Laura Caullo escribió este trabajo final de ocho páginas en julio de 2022 para la Maestría en Economía Pública de la FCE-UNC, y se usa en la unidad de gasto público de Finanzas Públicas. Es un diagnóstico con datos, sin modelo formal, del sistema previsional argentino. Recorre cuatro cosas: la fragmentación institucional del sistema; la base de aportantes, angosta y estancada, frente a una masa creciente de beneficios, buena parte otorgados por moratorias; la sostenibilidad financiera, con un déficit nacional de 1,9% del PIB en 2021, y los problemas específicos de diseño: moratorias, doble beneficio, una regla de movilidad procíclica y regímenes especiales con tasas de reemplazo muy altas. Cierra con una tabla de propuestas que retoma un trabajo de Capello, García Oro y Caullo (2018). La tesis es que el déficit es estructural: no se corrige solo con crecimiento ni con más aportes en el corto plazo, porque nace del mercado laboral y de las reglas del propio sistema.",
+ "secciones": [
+  {
+   "t": "Un sistema, muchos sistemas",
+   "p": [
+    "El sistema previsional argentino no tiene una institución que lo administre ni lo supervise en conjunto. A nivel nacional funciona el SIPA, administrado por ANSES, que incluye el régimen general (asalariados privados, públicos nacionales, autónomos, monotributistas y servicio doméstico) y los empleados públicos de las provincias que transfirieron sus cajas a la Nación. ANSES también administra los regímenes especiales, con parámetros de edad, haber inicial y movilidad más generosos; los diferenciales, justificados por actividades riesgosas o insalubres, y los retiros de fuerzas armadas y de seguridad. Además, 13 de las 24 provincias mantienen cajas propias para sus empleados públicos, en general con condiciones mejores que el régimen nacional, y existen cajas de profesionales.",
+    "Dentro del régimen general, la mayoría de los beneficios se otorgó sin aportes o con aportes insuficientes mediante moratorias, que permiten declarar una deuda por aportes no hechos, cobrar el beneficio por adelantado y cancelar la deuda en los cinco años siguientes. Esto convive con las pensiones no contributivas y con la Pensión Universal para el Adulto Mayor (PUAM), que también dan beneficios sin aportes. El resultado: sumando nación y provincias hay 9 millones de beneficios en vigor, y solo un tercio se otorgó con las reglas del régimen general; del resto, más de la mitad se otorgó sin aportes y un décimo bajo regímenes especiales. Muchos están duplicados: una misma persona cobra más de un beneficio."
+   ]
+  },
+  {
+   "t": "Pocos aportantes para muchos beneficios",
+   "eq": [
+    "\\frac{B}{A_{priv}} \\approx \\frac{9}{6} = 1{,}5"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(B\\): beneficios previsionales en vigor de los sistemas nacional y provinciales, en millones (9 según el trabajo).",
+      "en": "\\(B\\): pension benefits in force in the national and provincial systems, in millions (9 according to the paper)."
+     },
+     {
+      "es": "\\(A_{priv}\\): asalariados de empresas privadas que aportan a la seguridad social, en millones (6 según el trabajo), que son el sostén principal del régimen de reparto.",
+      "en": "\\(A_{priv}\\): private-sector employees who contribute to social security, in millions (6 according to the paper), the main support of the pay-as-you-go regime."
+     },
+     {
+      "es": "Lectura propia: el cociente es nuestro; la autora da los dos números y dice que el sustento del régimen es «muy endeble».",
+      "en": "Own reading: the ratio is ours; the author gives both numbers and says the regime's support is «very weak»."
+     }
+    ]
+   ],
+   "p": [
+    "Del lado de los aportantes hay alrededor de 11,5 millones de personas: 9,8 millones en el régimen nacional y 1,7 millones en los provinciales. En el nacional son muy heterogéneos: apenas poco más de la mitad son asalariados privados; un sexto son asalariados públicos y un cuarto son cuentapropistas y trabajadores de casas particulares, con aportes muy bajos. Por eso, dice la autora, los 9 millones de beneficios se apoyan sobre todo en unos 6 millones de asalariados privados registrados. Y la tendencia empeora: desde 2012 el empleo asalariado privado con aportes no crece, crecen los cuentapropistas, los empleados públicos, los desocupados y los inactivos, los salarios reales privados no subieron y la inflación desvalorizó aún más los aportes de cuentapropistas y servicio doméstico.",
+    "Con datos de la EPH del cuarto trimestre de 2021, la autora muestra el mercado laboral sobre una población de 45.809 mil personas: 21.463 mil activos (46,9%), de los cuales 19.968 mil ocupados y 1.495 mil desocupados (7,0%). De los 14.578 mil asalariados, 9.723 mil están registrados (66,7%) y 4.855 mil no (33,3%); hay 4.596 mil cuentapropistas, la mayoría no profesionales. Entre los inactivos hay 6.374 mil personas en edad laboral. Su lectura: más de 10 millones de personas en el mercado de trabajo tienen dificultad laboral o ingresos inestables, por desempleo o informalidad, y otras 6,4 millones sin ingresos laborales podrían sumarse a la fuerza de trabajo, lo que presiona sobre la sostenibilidad del sistema a largo plazo.",
+    "Del lado de los beneficios, el SIPA tiene 6,8 millones de beneficios contributivos. Los otorgados con los años de aportes requeridos son 3,2 millones y se mantienen en ese nivel desde 2004; los otorgados por moratorias son 3,6 millones, el 53% del total, y en 2021 representaron el 36% del gasto en jubilaciones, o 2,6% del PIB."
+   ]
+  },
+  {
+   "t": "Las cuentas: un déficit de 1,9% del PIB",
+   "eq": [
+    "R^{nac} = \\underbrace{(I^{tot} - G^{tot})}_{-1{,}8} + \\underbrace{R^{ct}}_{-0{,}1} = -1{,}9",
+    "R^{puro} = I^{puro} - E^{puro} = 7{,}0 - 8{,}2 = -1{,}2"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(R^{nac}\\): resultado previsional nacional de 2021, en % del PIB.",
+      "en": "\\(R^{nac}\\): national pension balance in 2021, as % of GDP."
+     },
+     {
+      "es": "\\(I^{tot}\\): ingresos totales de la seguridad social nacional: recursos tributarios asignados, aportes y contribuciones, rentas de la propiedad y otros (7,1% del PIB).",
+      "en": "\\(I^{tot}\\): total national social security revenue: earmarked taxes, contributions, property income and other (7.1% of GDP)."
+     },
+     {
+      "es": "\\(G^{tot}\\): gastos totales: prestaciones, pensiones no contributivas, transferencias a cajas no transferidas, consumo y capital (8,9% del PIB).",
+      "en": "\\(G^{tot}\\): total spending: benefits, non-contributory pensions, transfers to non-transferred funds, consumption and capital (8.9% of GDP)."
+     },
+     {
+      "es": "\\(R^{ct}\\): resultado de las cajas provinciales transferidas a la Nación (−0,1% del PIB).",
+      "en": "\\(R^{ct}\\): balance of the provincial funds transferred to the nation (−0.1% of GDP)."
+     }
+    ],
+    [
+     {
+      "es": "\\(R^{puro}\\): resultado previsional «puro» de 2021, en % del PIB.",
+      "en": "\\(R^{puro}\\): «pure» pension balance in 2021, as % of GDP."
+     },
+     {
+      "es": "\\(I^{puro}\\): ingresos previsionales puros: recursos tributarios (2,7), aportes y contribuciones (4,2) e ingresos de cajas provinciales transferidas (0,1), en % del PIB; excluye rentas de la propiedad.",
+      "en": "\\(I^{puro}\\): pure pension revenue: earmarked taxes (2.7), contributions (4.2) and revenue of transferred provincial funds (0.1), as % of GDP; excludes property income."
+     },
+     {
+      "es": "\\(E^{puro}\\): egresos previsionales puros: prestaciones sin pensiones no contributivas (7,2), pensiones no contributivas según BESS (0,7) y egresos de cajas transferidas (0,2), en % del PIB; por redondeo los componentes suman 8,1.",
+      "en": "\\(E^{puro}\\): pure pension outlays: benefits excluding non-contributory pensions (7.2), non-contributory pensions per BESS (0.7) and outlays of transferred funds (0.2), as % of GDP; due to rounding the components add up to 8.1."
+     },
+     {
+      "es": "Si además se quitan los recursos tributarios, el déficit puro de 2021 sube a 3,9% del PIB, es decir, 1,2 + 2,7.",
+      "en": "If earmarked taxes are also removed, the 2021 pure deficit rises to 3.9% of GDP, that is, 1.2 + 2.7."
+     }
+    ]
+   ],
+   "p": [
+    "El gasto en jubilaciones y pensiones del sistema nacional pasó de 4,6% a 8,2% del PIB entre 2004 y 2021, con un máximo de 9,6% en 2020; desde 2009 contribuyó la fórmula de movilidad. Los aportes salariales subieron de 2,4% del PIB en 2004 a 5,9% en 2015 y bajaron a 4,3% en 2021, y los recursos tributarios asignados a ANSES fueron 2,7% del PIB. El anexo del trabajo calcula dos resultados para 2021: el resultado previsional nacional, de −1,9% del PIB, que surge de un resultado financiero de −1,8% más −0,1% de las cajas transferidas, y el resultado «puro», de −1,2%. Las cajas provinciales no transferidas agregan otro 0,3% del PIB. Según la autora, desde 2017 la inflación licuó gastos e ingresos, pero el déficit puro se mantuvo en 1,2%.",
+    "La historia explica cómo se llegó. Entre 2002 y 2008 no hubo movilidad y la inflación desvalorizó los haberes, lo que generó un superávit transitorio que se usó para las moratorias. En 2009 aparecieron los desequilibrios y se cubrieron eliminando el régimen de capitalización de 1993 y pasando esos aportes al reparto; el equilibrio aparente duró hasta 2015. Las proyecciones que cita (Grushka, 2016) indican que en la próxima década, solo por la demografía, el déficit podría duplicarse si no se hace nada. Lectura propia: la eliminación de la capitalización funcionó como un ingreso extraordinario que postergó el problema; no cambió la relación entre aportantes y beneficios."
+   ]
+  },
+  {
+   "t": "Cuatro fallas de diseño",
+   "p": [
+    "Primera, el mercado laboral: con alta informalidad y baja participación no se puede esperar, al menos en el corto plazo, más financiamiento por aportes, y la regla del beneficio inicial es muy rígida al exigir 30 años de aportes. Segunda, las moratorias: en 2021 su gasto equivalió al 125% del déficit previsional y al 198% del déficit «genuino», y de las 310 mil altas del último año el 69% fue por moratoria. Lectura propia: con un gasto de moratorias de 2,6% del PIB y déficits de 1,9% y 1,2%, los cocientes darían alrededor de 137% y 217%; el trabajo no detalla qué medida de gasto usa, así que los porcentajes deben leerse como orden de magnitud: sin moratorias el sistema tendría superávit.",
+    "Tercera, el doble beneficio: 1,1 millones de personas cobran jubilación y pensión a la vez. En 817 mil casos al menos uno de los beneficios es por moratoria, y en 118 mil ambos lo son; el problema crece porque hay 2 millones de varones y 3,5 millones de mujeres con un beneficio, y la muerte de uno suele generar una pensión para el otro. Cuarta, la movilidad: la regla vigente en 2022 ajustaba por el aumento de los recursos tributarios de ANSES, lo que, con el sistema en déficit, hace crecer más el gasto que los ingresos, y además es procíclica: no reduce el peso del gasto cuando la economía crece y no protege a los jubilados cuando cae. A eso se suman los regímenes especiales (poder judicial, Luz y Fuerza, docentes universitarios, policías y servicio penitenciario), que son el 4% de los beneficios contributivos pero el 11% de la masa de haberes, con tasas de reemplazo que van de 55% en YPF Río Turbio a 219% en docentes universitarios, contra 53% en el régimen general."
+   ]
+  },
+  {
+   "t": "La agenda de reformas",
+   "eq": [
+    "h_0 = 0{,}0225 \\cdot n \\cdot \\bar w \\;\\Rightarrow\\; n = 30:\\; h_0 = 0{,}675\\, \\bar w"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(h_0\\): haber jubilatorio inicial, en pesos por mes.",
+      "en": "\\(h_0\\): initial pension benefit, in pesos per month."
+     },
+     {
+      "es": "\\(n\\): años con aportes; los faltantes se completarían computando un valor igual a PUAM/30 por año, y las mujeres podrían sumar un año por hijo.",
+      "en": "\\(n\\): years with contributions; missing years would be filled by counting a value equal to PUAM/30 per year, and women could add one year per child."
+     },
+     {
+      "es": "\\(\\bar w\\): salario de referencia, calculado con los salarios de toda la vida laboral según la propuesta.",
+      "en": "\\(\\bar w\\): reference wage, computed from lifetime wages under the proposal."
+     },
+     {
+      "es": "0,0225: el 2,25% del salario que la propuesta otorga por cada año aportado. Con 30 años da 67,5%, que el trabajo redondea a una tasa de reemplazo de 68%.",
+      "en": "0.0225: the 2.25% of the wage the proposal grants per year contributed. With 30 years this gives 67.5%, which the paper rounds to a 68% replacement rate."
+     },
+     {
+      "es": "Lectura propia: la fórmula es nuestra a partir de la descripción en palabras de la tabla de propuestas.",
+      "en": "Own reading: the formula is ours, built from the verbal description in the proposals table."
+     }
+    ]
+   ],
+   "p": [
+    "La autora sostiene que el sistema requiere un ordenamiento integral, con el objetivo de reconstruir un régimen público de reparto basado en solidaridad, equidad y sostenibilidad, y retoma las propuestas de Capello, García Oro y Caullo (2018). Cerrar definitivamente las moratorias y perfeccionar la PUAM: como la PUAM es el 80% de la mínima y la moratoria da la mínima, en las nuevas altas se ahorraría un 20%, unos 0,04% del PIB por año. Limitar la doble cobertura hasta 1,67 jubilaciones mínimas para los jubilados actuales; los nuevos no podrían duplicar, porque la PUAM no da pensión por sobrevivencia. Calcular el haber inicial con los salarios de toda la vida laboral y en proporción a los años aportados, 2,25% por año, de modo que quien no tiene aportes se jubile con la PUAM y cada año aportado sobre ese valor mejore el haber.",
+    "Las demás propuestas: equiparar la edad de la mujer a la del varón en el régimen contributivo, de a 6 meses por año; una movilidad que ajuste periódicamente según la pauta de inflación y corrija a fin de año si la inflación fue mayor, como en la negociación colectiva; una pensión por sobrevivencia temporal, de cinco años si el beneficiario está en edad de trabajar y no hay hijos en común, o hasta que el hijo menor cumpla 18 (24 si estudia); llevar a los regímenes especiales a la edad, el haber inicial y la movilidad del régimen general, con cajas complementarias privadas para quien quiera más, y aplicar el régimen general a los diferenciales, con el retiro anticipado pagado por cajas complementarias financiadas por los empleadores. La autora advierte que el éxito no depende solo de la técnica sino de los acuerdos sociales que se logren. Lectura propia: las propuestas atacan el gasto y la equidad entre regímenes, pero el problema de base del diagnóstico, una masa de aportantes privados que no crece, queda fuera del sistema previsional: depende del empleo formal."
+   ]
+  }
+ ],
+ "claves": [
+  "El sistema está fragmentado: SIPA (ANSES), regímenes especiales y diferenciales, 13 cajas provinciales propias y cajas de profesionales.",
+  "Hay 9 millones de beneficios en vigor y solo un tercio se otorgó con las reglas del régimen general.",
+  "Los beneficios se apoyan sobre todo en unos 6 millones de asalariados privados registrados, un empleo que no crece desde 2012.",
+  "En el SIPA, 3,6 millones de beneficios (53%) son por moratoria; los con aportes completos son 3,2 millones desde 2004.",
+  "El gasto previsional nacional pasó de 4,6% a 8,2% del PIB entre 2004 y 2021; el déficit fue de 1,9% del PIB en 2021 y el «puro», de 1,2%.",
+  "La movilidad atada a los recursos de ANSES es procíclica y, con déficit, hace crecer el gasto más que los ingresos.",
+  "Los regímenes especiales son el 4% de los beneficios y el 11% de la masa de haberes, con tasas de reemplazo de hasta 219%.",
+  "Propuestas: cerrar moratorias, haber inicial de 2,25% del salario por año aportado, igualar edades, movilidad por inflación y pensión de sobrevivencia temporal."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué es una moratoria previsional según el trabajo?",
+    "en": "What is a pension moratorium according to the paper?"
+   },
+   "op": {
+    "es": [
+     "Una suspensión del pago de jubilaciones",
+     "La posibilidad de declarar aportes no hechos, cobrar el beneficio y cancelar la deuda en los cinco años siguientes",
+     "Un régimen especial para docentes",
+     "Una pensión no contributiva universal"
+    ],
+    "en": [
+     "A suspension of pension payments",
+     "The option to declare unpaid contributions, draw the benefit and repay the debt over the following five years",
+     "A special regime for teachers",
+     "A universal non-contributory pension"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La moratoria permite declarar deuda por aportes no realizados y obtener por adelantado el beneficio, cancelando la deuda en los cinco años siguientes.",
+    "en": "The moratorium lets people declare a debt for unpaid contributions and get the benefit in advance, repaying the debt over the next five years."
+   },
+   "id": "fisc-general-19-q1"
+  },
+  {
+   "q": {
+    "es": "¿Sobre cuántos asalariados privados registrados se apoyan principalmente los 9 millones de beneficios?",
+    "en": "On roughly how many registered private employees do the 9 million benefits mainly rest?"
+   },
+   "op": {
+    "es": [
+     "11,5 millones",
+     "9,8 millones",
+     "Unos 6 millones",
+     "1,7 millones"
+    ],
+    "en": [
+     "11.5 million",
+     "9.8 million",
+     "About 6 million",
+     "1.7 million"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La autora dice que los 9 millones de beneficios están soportados principalmente por 6 millones de asalariados privados con aportes; 11,5 millones es el total de aportantes.",
+    "en": "The author says the 9 million benefits are mainly supported by 6 million private employees with contributions; 11.5 million is the total number of contributors."
+   },
+   "id": "fisc-general-19-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué proporción de los beneficios contributivos del SIPA se otorgó por moratoria?",
+    "en": "What share of SIPA contributory benefits was granted through moratoria?"
+   },
+   "op": {
+    "es": [
+     "53%",
+     "36%",
+     "33%",
+     "21%"
+    ],
+    "en": [
+     "53%",
+     "36%",
+     "33%",
+     "21%"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Son 3,6 millones de 6,8 millones, el 53%; ese grupo explicó el 36% del gasto en jubilaciones en 2021.",
+    "en": "They are 3.6 million out of 6.8 million, 53%; this group accounted for 36% of pension spending in 2021."
+   },
+   "id": "fisc-general-19-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál fue el resultado previsional nacional de 2021 según el anexo?",
+    "en": "What was the 2021 national pension balance according to the annex?"
+   },
+   "op": {
+    "es": [
+     "Superávit de 0,3% del PIB",
+     "Déficit de 3,9% del PIB",
+     "Déficit de 1,2% del PIB",
+     "Déficit de 1,9% del PIB"
+    ],
+    "en": [
+     "Surplus of 0.3% of GDP",
+     "Deficit of 3.9% of GDP",
+     "Deficit of 1.2% of GDP",
+     "Deficit of 1.9% of GDP"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "R_nac = (I_tot − G_tot) + R_ct = −1,8 − 0,1 = −1,9. Donde: R_nac = resultado nacional; I_tot y G_tot = ingresos y gastos totales; R_ct = resultado de cajas transferidas, todo en % del PIB. El −1,2% es el resultado «puro» y el −3,9%, el puro sin recursos tributarios.",
+    "en": "R_nac = (I_tot − G_tot) + R_ct = −1.8 − 0.1 = −1.9. Where: R_nac = national balance; I_tot and G_tot = total revenue and spending; R_ct = transferred funds' balance, all as % of GDP. −1.2% is the «pure» balance and −3.9% the pure balance without earmarked taxes."
+   },
+   "id": "fisc-general-19-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la regla de movilidad vigente en 2022 es procíclica según la autora?",
+    "en": "Why is the 2022 indexation rule procyclical according to the author?"
+   },
+   "op": {
+    "es": [
+     "Porque ajusta por inflación pasada",
+     "Porque ajusta por los recursos tributarios de ANSES: no baja el peso del gasto en las expansiones ni protege a los jubilados en las recesiones",
+     "Porque ajusta por el salario mínimo",
+     "Porque no hay ajuste"
+    ],
+    "en": [
+     "Because it adjusts for past inflation",
+     "Because it adjusts with ANSES tax revenue: it doesn't reduce spending's weight in booms nor protect retirees in slumps",
+     "Because it adjusts with the minimum wage",
+     "Because there is no adjustment"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La regla sigue la recaudación asignada a ANSES; con el sistema en déficit, el gasto sube más que los ingresos y el haber acompaña el ciclo.",
+    "en": "The rule follows ANSES's earmarked revenue; with the system in deficit, spending rises faster than revenue and benefits follow the cycle."
+   },
+   "id": "fisc-general-19-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué peso tienen los regímenes especiales?",
+    "en": "How large are the special regimes?"
+   },
+   "op": {
+    "es": [
+     "4% de los beneficios y 4% del gasto",
+     "11% de los beneficios y 4% del gasto",
+     "4% de los beneficios contributivos y 11% de la masa de haberes",
+     "La mitad de los beneficios"
+    ],
+    "en": [
+     "4% of benefits and 4% of spending",
+     "11% of benefits and 4% of spending",
+     "4% of contributory benefits and 11% of total benefit payments",
+     "Half of all benefits"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Son pocos beneficios pero caros: tasas de reemplazo de hasta 219% (docentes universitarios) contra 53% en el régimen general.",
+    "en": "They are few but expensive benefits: replacement rates of up to 219% (university teachers) versus 53% in the general regime."
+   },
+   "id": "fisc-general-19-q6"
+  },
+  {
+   "q": {
+    "es": "Con la propuesta de 2,25% del salario por año aportado, ¿qué tasa de reemplazo tendría alguien con 30 años de aportes?",
+    "en": "Under the proposal of 2.25% of the wage per year contributed, what replacement rate would someone with 30 years of contributions get?"
+   },
+   "op": {
+    "es": [
+     "53%",
+     "80%",
+     "100%",
+     "Alrededor de 68%"
+    ],
+    "en": [
+     "53%",
+     "80%",
+     "100%",
+     "About 68%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "h_0 = 0,0225 · n · w̄ = 0,0225 · 30 · w̄ = 0,675 w̄. Donde: h_0 = haber inicial; n = años aportados; w̄ = salario de referencia de toda la vida laboral. El trabajo lo redondea a 68%.",
+    "en": "h_0 = 0.0225 · n · w̄ = 0.0225 · 30 · w̄ = 0.675 w̄. Where: h_0 = initial benefit; n = years contributed; w̄ = lifetime reference wage. The paper rounds it to 68%."
+   },
+   "id": "fisc-general-19-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué cerrar las moratorias y usar la PUAM ahorraría en las nuevas altas?",
+    "en": "Why would closing moratoria and using the PUAM save money on new retirements?"
+   },
+   "op": {
+    "es": [
+     "Porque la PUAM es el 80% de la mínima y la moratoria paga la mínima",
+     "Porque la PUAM se cobra a los 60 años",
+     "Porque la PUAM la pagan las provincias",
+     "Porque la PUAM no se ajusta"
+    ],
+    "en": [
+     "Because the PUAM is 80% of the minimum and the moratorium pays the minimum",
+     "Because the PUAM is paid from age 60",
+     "Because provinces pay the PUAM",
+     "Because the PUAM is not indexed"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El ahorro en el flujo sería del 20%, unos 0,04% del PIB por año; además, la PUAM no genera pensión por sobrevivencia.",
+    "en": "The saving on the flow would be 20%, about 0.04% of GDP per year; also, the PUAM does not generate a survivor's pension."
+   },
+   "id": "fisc-general-19-q8"
+  }
+ ],
+ "palabras": 1553,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué el déficit previsional argentino es estructural y no coyuntural?",
+    "en": "Why is Argentina's pension deficit structural rather than cyclical?"
+   },
+   "a": {
+    "es": "Porque nace del mercado laboral y de las reglas del sistema: una base de unos 6 millones de asalariados privados registrados que no crece desde 2012 sostiene 9 millones de beneficios, la mayoría otorgados sin aportes completos. Es el diagnóstico de Caullo (2022).",
+    "en": "Because it stems from the labor market and the system's rules: a base of about 6 million registered private employees, not growing since 2012, supports 9 million benefits, most granted without full contributions. That is Caullo's (2022) diagnosis."
+   },
+   "id": "fisc-general-19-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto pesan las moratorias en el sistema previsional nacional?",
+    "en": "How much do moratoria weigh in the national pension system?"
+   },
+   "a": {
+    "es": "En el SIPA, 3,6 millones de 6,8 millones de beneficios contributivos (53%) son por moratoria; en 2021 representaron el 36% del gasto en jubilaciones (2,6% del PIB), y el 69% de las 310 mil altas del último año. Datos de BESS en Caullo (2022).",
+    "en": "In SIPA, 3.6 million of 6.8 million contributory benefits (53%) come from moratoria; in 2021 they were 36% of pension spending (2.6% of GDP), and 69% of the 310 thousand new benefits in the last year. BESS data in Caullo (2022)."
+   },
+   "id": "fisc-general-19-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo evolucionó el gasto previsional nacional en las últimas dos décadas?",
+    "en": "How has national pension spending evolved over the last two decades?"
+   },
+   "a": {
+    "es": "Pasó de 4,6% a 8,2% del PIB entre 2004 y 2021, con un pico de 9,6% en 2020, mientras los aportes salariales cayeron a 4,3% del PIB; el déficit nacional de 2021 fue 1,9% del PIB y el «puro», 1,2%. Caullo (2022), con datos del Ministerio de Economía.",
+    "en": "It went from 4.6% to 8.2% of GDP between 2004 and 2021, peaking at 9.6% in 2020, while wage contributions fell to 4.3% of GDP; the 2021 national deficit was 1.9% of GDP and the «pure» deficit 1.2%. Caullo (2022), with Ministry of Economy data."
+   },
+   "id": "fisc-general-19-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué problema tiene indexar las jubilaciones a la recaudación del organismo previsional?",
+    "en": "What is the problem with indexing pensions to the pension agency's tax revenue?"
+   },
+   "a": {
+    "es": "Que es procíclico: con el sistema en déficit, el gasto crece más que los ingresos; en las expansiones no baja el peso del gasto y en las recesiones no protege el poder de compra. Caullo (2022) propone ajustar por la pauta inflacionaria y corregir a fin de año.",
+    "en": "It is procyclical: with the system in deficit, spending grows faster than revenue; in booms spending's weight doesn't fall and in slumps purchasing power isn't protected. Caullo (2022) proposes adjusting by the inflation target and correcting at year-end."
+   },
+   "id": "fisc-general-19-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la tasa de reemplazo y cuánto varía entre regímenes en la Argentina?",
+    "en": "What is the replacement rate and how much does it vary across Argentine regimes?"
+   },
+   "a": {
+    "es": "Es la relación entre el haber y el salario medio. Caullo (2022), con datos de BESS, la estima en 53% en el régimen general y entre 55% (YPF Río Turbio) y 219% (docentes universitarios) en los regímenes especiales.",
+    "en": "It is the ratio of the benefit to the average wage. Caullo (2022), with BESS data, puts it at 53% in the general regime and between 55% (YPF Río Turbio) and 219% (university teachers) in special regimes."
+   },
+   "id": "fisc-general-19-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se podría vincular el haber inicial con el esfuerzo contributivo?",
+    "en": "How could the initial benefit be linked to contribution effort?"
+   },
+   "a": {
+    "es": "Calculándolo con los salarios de toda la vida laboral y otorgando 2,25% del salario por año aportado (68% con 30 años), completando los años faltantes con PUAM/30 por año. Es la propuesta de Capello, García Oro y Caullo (2018) retomada por Caullo (2022).",
+    "en": "By computing it from lifetime wages and granting 2.25% of the wage per year contributed (68% with 30 years), filling missing years with PUAM/30 per year. That is the proposal of Capello, García Oro and Caullo (2018), taken up by Caullo (2022)."
+   },
+   "id": "fisc-general-19-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Alcanza con reformar las reglas previsionales para cerrar el déficit?",
+    "en": "Is reforming pension rules enough to close the deficit?"
+   },
+   "a": {
+    "es": "Caullo (2022) advierte que el éxito depende también de los acuerdos sociales. Lectura propia: las reformas atacan el gasto y la inequidad entre regímenes, pero la base de aportantes depende del empleo formal privado, que está fuera del sistema previsional.",
+    "en": "Caullo (2022) warns that success also depends on social agreements. Own reading: the reforms address spending and inequity across regimes, but the contributor base depends on formal private employment, which lies outside the pension system."
+   },
+   "id": "fisc-general-19-t7"
+  }
+ ]
+}

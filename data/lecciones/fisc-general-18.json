@@ -1,0 +1,522 @@
+{
+ "id": "fisc-general-18",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Para qué está el Estado y cómo se arma su presupuesto: funciones, principios, clasificadores y resultados",
+ "bajada": "Las tres funciones del sector público, la ecuación presupuestaria fundamental, los principios y clasificadores del presupuesto, el ciclo presupuestario argentino, la deuda flotante y la cuenta que separa los movimientos sobre y bajo la línea.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidades 1: «Introducción a las finanzas públicas» y 2: «El sistema presupuestario»",
+ "intro": "Este brief cubre las dos primeras unidades de un resumen de 100 páginas de la materia Finanzas Públicas de la FCE-UNC, escrito por estudiantes y sin autor en el texto. La unidad 1 define la economía pública y las tres funciones del sector público: asignación, distribución y estabilización. La unidad 2 es un recorrido por el sistema presupuestario: para qué sirve el presupuesto, qué escuelas lo pensaron, la ecuación presupuestaria fundamental, los principios que lo ordenan, los clasificadores de recursos y gastos, el ciclo presupuestario argentino, las reglas y técnicas para armarlo, los modos de registro y la cuenta de resultados fiscales. No hay modelos ni datos: es un mapa de conceptos. Su valor es que junta en pocas páginas el vocabulario que después usan todas las unidades de la materia, y que varias de sus definiciones se pueden escribir como identidades contables.",
+ "secciones": [
+  {
+   "t": "Qué estudia la economía pública y para qué interviene el Estado",
+   "p": [
+    "Según el resumen, la economía pública estudia la intervención de la autoridad pública en una economía de mercado, sobre todo a través de los ingresos y gastos públicos, con dos criterios básicos: eficiencia y equidad. De ahí salen dos grandes objetivos: asignar bien los recursos, de modo que la economía crezca de forma equilibrada, y redistribuir la renta y la riqueza con criterios de justicia. Conviven un enfoque positivo, que describe «lo que es», y uno normativo, que se ocupa del «deber ser». Se necesitan mutuamente: para recomendar una política hay que conocer los efectos de las alternativas, y la agenda normativa marca dónde hace falta más conocimiento. Las recomendaciones normativas se apoyan en la economía del bienestar y el análisis positivo en la teoría microeconómica.",
+    "El resumen presenta tres funciones. La de asignación corrige la asignación del mercado cuando hay fallas que la vuelven ineficiente; puede hacerlo con impuestos, subsidios o regulaciones que reorganizan la actividad privada, o produciendo o proveyendo directamente bienes y servicios. La de distribución responde a que la distribución de la renta depende de factores como las herencias, el talento innato, las oportunidades educativas, la movilidad social y la estructura del mercado; si una mayoría la considera injusta, se justifica corregirla, y el instrumento más directo es combinar impuestos y transferencias, cuidando sus efectos económicos. La de estabilización busca un alto uso de los recursos productivos y una moneda estable con medidas anticíclicas que suavicen los picos. Lectura propia: es la división clásica de Musgrave, aunque el resumen no lo cita; la misma tríada reaparece en la unidad 2 como las tres «ramas» del presupuesto."
+   ]
+  },
+  {
+   "t": "El presupuesto: un instrumento con cuatro usos y tres escuelas",
+   "p": [
+    "El presupuesto es, para el resumen, el principal instrumento de administración financiera, y sirve a la vez para cuatro cosas: para gobernar, porque da una base técnica mínima a las decisiones; para administrar, porque asigna responsabilidades según la división del trabajo; para planificar, porque vincula en el corto plazo las asignaciones con los planes de gobierno, y para dar legalidad, porque al aprobar lo que se va a hacer permite controlar después lo hecho, lo que facilita el control republicano por organismos internos, externos y la sociedad.",
+    "Tres escuelas pensaron su papel. La clásica o liberal concibe un Estado neutral y presupuestos equilibrados; solo acepta, excepcionalmente, endeudarse para gastos de capital. La moderna o keynesiana ve un Estado interventor que usa el presupuesto contra la recesión y el desempleo, y acepta el déficit, incluso financiado con emisión, si sirve para evitar una recesión. La contemporánea o productivista piensa al Estado como una corporación que debe satisfacer necesidades con la mayor productividad social, devolviendo más bienes y servicios que los recursos que extrae; rechaza la emisión pero admite más crédito público que la escuela clásica."
+   ]
+  },
+  {
+   "t": "La ecuación presupuestaria fundamental",
+   "eq": [
+    "\\mathit{Rec} + \\mathit{FF} = \\mathit{Gas} + \\mathit{AF}",
+    "\\mathit{Rec} - \\mathit{Gas} = \\mathit{AF} - \\mathit{FF}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{Rec}\\): recursos del sector público en el ejercicio (impuestos, tasas, transferencias recibidas, venta de activos, etc.), en pesos.",
+      "en": "\\(\\mathit{Rec}\\): public-sector revenues in the fiscal year (taxes, fees, transfers received, asset sales, etc.), in pesos."
+     },
+     {
+      "es": "\\(\\mathit{FF}\\): fuentes financieras, como el endeudamiento o la venta de activos financieros, en pesos.",
+      "en": "\\(\\mathit{FF}\\): financial sources, such as borrowing or sales of financial assets, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{Gas}\\): gastos del ejercicio, corrientes y de capital, en pesos.",
+      "en": "\\(\\mathit{Gas}\\): spending in the year, current and capital, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{AF}\\): aplicaciones financieras, como la amortización de deuda, en pesos.",
+      "en": "\\(\\mathit{AF}\\): financial applications, such as debt amortization, in pesos."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{Rec} - \\mathit{Gas}\\): resultado del presupuesto; positivo si es superavitario, cero si es equilibrado y negativo si es deficitario.",
+      "en": "\\(\\mathit{Rec} - \\mathit{Gas}\\): budget balance; positive if in surplus, zero if balanced, negative if in deficit."
+     },
+     {
+      "es": "\\(\\mathit{AF} - \\mathit{FF}\\): financiamiento neto con signo cambiado; si hay déficit, las fuentes financieras superan a las aplicaciones y cubren la diferencia.",
+      "en": "\\(\\mathit{AF} - \\mathit{FF}\\): net financing with the sign reversed; with a deficit, financial sources exceed applications and cover the gap."
+     },
+     {
+      "es": "Lectura propia: el reordenamiento es nuestro; el resumen da solo la primera igualdad y la clasificación en equilibrado, superavitario y deficitario.",
+      "en": "Own reading: the rearrangement is ours; the summary gives only the first identity and the balanced, surplus and deficit classification."
+     }
+    ]
+   ],
+   "p": [
+    "La ecuación presupuestaria fundamental dice que recursos más fuentes financieras igualan a gastos más aplicaciones financieras. El presupuesto es equilibrado si recursos y gastos son iguales, superavitario si los recursos superan a los gastos y deficitario en el caso contrario. La ecuación se cumple siempre: si hay déficit, la diferencia se financia con deuda o con deuda flotante.",
+    "El resumen compara gastos y recursos en cuatro rasgos. Ambos son preventivos, porque el presupuesto es una estimación y pueden variar por factores no controlables. Los gastos son limitativos, porque no se puede gastar más de lo autorizado ni en total ni por área, salvo una redistribución excepcional de partidas; los recursos no lo son, porque no tendría sentido rechazar lo que ingresa de más. Los gastos son periódicos, porque la autorización caduca con el año y hay que volver a pedirla; los recursos no. Y la legalidad del gasto es originaria, porque nace con el presupuesto, mientras que la de los recursos es derivada: los impuestos ya están creados por ley y el presupuesto solo estima cuánto rendirán."
+   ]
+  },
+  {
+   "t": "Doce principios y un sistema de clasificadores",
+   "p": [
+    "Para que el presupuesto cumpla sus funciones, el resumen enumera principios técnicos. Anticipación: se aprueba antes de empezar el ejercicio. Universalidad: incluye todos los gastos y recursos por separado, sin compensarlos. Exclusividad: la ley de presupuesto no lleva normas ajenas a él. Unidad: todo va en un solo documento, y de ahí la unidad de caja, por la cual todos los ingresos van a una caja y de ella salen los pagos. Periodicidad: se aprueba cada año, aunque puede complementarse con planes plurianuales. Continuidad: se apoya en ejercicios anteriores y mira los futuros. Equilibrio: debería equilibrarse en el largo plazo; ni el déficit ni el superávit deben ser permanentes. Flexibilidad sin «libertinaje», especificación de fuentes y gastos, factibilidad, claridad y publicidad o transparencia completan la lista.",
+    "Los clasificadores agrupan recursos y gastos con criterios comunes para que el presupuesto sea un sistema de información. Deben ser amplios, universales, únicos (cada transacción se registra una sola vez), integrales y flexibles. Los analíticos o primarios sirven para registrar; los agregados o derivados combinan dos o más clasificaciones y no se usan para cargar datos. Para todas las transacciones hay una clasificación institucional y una por moneda. Los recursos se clasifican por rubros y por carácter económico: corrientes (tributarios, no tributarios, contribuciones, ventas, ingresos de operación, rentas de la propiedad y transferencias corrientes, como la coparticipación), de capital y fuentes financieras. Los gastos se clasifican por carácter económico (corrientes, de capital y aplicaciones financieras), por objeto (en qué se gasta), por función, por institución, por programa, por sector, por ubicación geográfica, por moneda y por fuente de financiamiento. El resumen remarca que la institucional sirve para el control legal de cada organismo pero no para medir eficiencia."
+   ]
+  },
+  {
+   "t": "Quién decide: bienestar, recursos comunes y el ciclo argentino",
+   "eq": [
+    "G_{t+1} = (1 + \\alpha)\\, G_t"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G_t\\): gasto presupuestado en el año \\(t\\), en pesos.",
+      "en": "\\(G_t\\): budgeted spending in year \\(t\\), in pesos."
+     },
+     {
+      "es": "\\(G_{t+1}\\): gasto presupuestado para el año siguiente.",
+      "en": "\\(G_{t+1}\\): budgeted spending for the following year."
+     },
+     {
+      "es": "\\(\\alpha\\): tasa constante de aumento que aplica el criterio incrementalista (por ejemplo, 0,1 para un aumento del 10%); el resumen no le da valor.",
+      "en": "\\(\\alpha\\): constant growth rate applied under the incremental criterion (e.g. 0.1 for a 10% increase); the summary gives it no value."
+     }
+    ]
+   ],
+   "p": [
+    "El resumen ofrece dos miradas sobre el proceso presupuestario. La teoría del bienestar lo piensa como si un solo decisor armara el presupuesto en tres ramas: la de asignación fija las necesidades públicas a cubrir y las correcciones a las fallas de mercado; la de distribución agrega, sin tocar lo anterior, las transferencias que modifican la distribución del ingreso, y la de estabilización suma los impuestos o gastos necesarios para obtener el déficit o superávit buscado. La teoría de las decisiones colectivas objeta ese supuesto: invocando el teorema de imposibilidad de Arrow, sostiene que el presupuesto no sale de un planificador sino de muchos actores con sus propios incentivos (legisladores, ministros de gasto, ministro de finanzas). El problema más estudiado es el de los recursos comunes: los beneficios de cada programa se concentran en pocos y su costo sale de un fondo común. Lectura propia: por eso cada actor tiende a pedir de más, ya que recibe todo el beneficio y paga solo una parte del costo; las reglas presupuestarias buscan contener ese sesgo.",
+    "En la Argentina el ciclo tiene cuatro etapas que abarcan entre dos años y medio y tres años: formulación, en la que el Poder Ejecutivo elabora el proyecto de ley durante el año anterior; discusión y aprobación por ley en el Congreso; ejecución por el Ejecutivo, que puede modificar el presupuesto, durante el año fiscal, y control y evaluación, interno y externo, en el que el Congreso aprueba o rechaza la Cuenta de Inversión. Las instituciones presupuestarias son las reglas, procedimientos y prácticas con las que se elabora y ejecuta el presupuesto: numéricas (equilibrio, límites al déficit, a la deuda o a la inflación), de procedimiento (jerárquicas o colegiadas) y de transparencia. Para armarlo hay dos criterios: el incrementalista, que aumenta cada año el gasto en una proporción constante, y el de programación, que lo arma de nuevo según las necesidades del año. Entre las técnicas, el presupuesto por programas es el más usado; el de base cero exige justificar cada pedido desde el inicio, sin suponer continuidad, y el participativo deja que la ciudadanía delibere y decida junto con el gobierno parte del gasto."
+   ]
+  },
+  {
+   "t": "Cómo se registra: devengado, caja y deuda flotante",
+   "eq": [
+    "\\mathit{RP} = \\mathit{Comp} - \\mathit{Ord}",
+    "\\mathit{OT} = \\mathit{Ord} - \\mathit{Pag}",
+    "\\mathit{DF} = \\mathit{RP} + \\mathit{OT} = \\mathit{Comp} - \\mathit{Pag}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RP}\\): residuos pasivos, gastos comprometidos que todavía no se ordenaron pagar, en pesos.",
+      "en": "\\(\\mathit{RP}\\): carried-over liabilities, spending committed but not yet ordered for payment, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{Comp}\\): monto comprometido, la relación jurídica que dará lugar a una salida de fondos.",
+      "en": "\\(\\mathit{Comp}\\): amount committed, the legal relationship that will lead to an outflow of funds."
+     },
+     {
+      "es": "\\(\\mathit{Ord}\\): monto ordenado a pagar.",
+      "en": "\\(\\mathit{Ord}\\): amount ordered for payment."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{OT}\\): obligaciones del Tesoro, lo ordenado a pagar que todavía no se pagó, en pesos.",
+      "en": "\\(\\mathit{OT}\\): Treasury obligations, what has been ordered for payment but not yet paid, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{Ord}\\): monto ordenado a pagar.",
+      "en": "\\(\\mathit{Ord}\\): amount ordered for payment."
+     },
+     {
+      "es": "\\(\\mathit{Pag}\\): monto efectivamente pagado, cuando los fondos salen de la Administración.",
+      "en": "\\(\\mathit{Pag}\\): amount actually paid, when funds leave the Administration."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{DF}\\): deuda flotante, deuda de corto plazo que no se registra como tal y surge de desajustes temporales entre ingresos y pagos.",
+      "en": "\\(\\mathit{DF}\\): floating debt, short-term debt not recorded as such that arises from temporary mismatches between receipts and payments."
+     },
+     {
+      "es": "\\(\\mathit{RP}\\), \\(\\mathit{OT}\\), \\(\\mathit{Comp}\\) y \\(\\mathit{Pag}\\): como en las ecuaciones anteriores.",
+      "en": "\\(\\mathit{RP}\\), \\(\\mathit{OT}\\), \\(\\mathit{Comp}\\) and \\(\\mathit{Pag}\\): as in the equations above."
+     }
+    ]
+   ],
+   "p": [
+    "Las finanzas públicas registran los ingresos, los gastos, el déficit o superávit, el flujo de endeudamiento y el saldo de la deuda. Hay dos bases de registro. La de devengado imputa cada operación al ejercicio al que corresponde, sin importar cuándo se paga; la de caja cuenta el movimiento de fondos, sin importar a qué ejercicio corresponde. El resumen indica que los ingresos se registran cuando se reciben los fondos (base caja) y los gastos cuando el Estado se compromete a pagar (base devengado).",
+    "La Ley de Administración Financiera obliga a registrar tres etapas del gasto: el compromiso, cuando nace la relación jurídica que dará lugar a pagar; el devengamiento, cuando se establece un derecho o una obligación de la administración, y el pago, cuando los fondos salen. Las diferencias entre esas etapas definen tres saldos. Lo comprometido y no ordenado son residuos pasivos; lo ordenado y no pagado son obligaciones del Tesoro, y ambas juntas, es decir, lo comprometido y no pagado, son la deuda flotante. Lectura propia: como no figura como deuda, la deuda flotante es una forma de financiar un déficit sin que aparezca en las fuentes financieras; es el caso que la ecuación fundamental contempla cuando dice que el déficit se cubre «con deuda o con deuda flotante»."
+   ]
+  },
+  {
+   "t": "Sobre la línea y bajo la línea: los resultados fiscales",
+   "eq": [
+    "\\mathit{RF} = (I_c - E_c) + (I_k - E_k)",
+    "\\mathit{RP}^{\\,prim} = \\mathit{RF} + \\mathit{Int}",
+    "\\mathit{RFN} = \\mathit{RF} + (\\mathit{FF} - \\mathit{AF})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RF}\\): resultado financiero, la suma del resultado de la cuenta corriente y el de la cuenta de capital, en pesos.",
+      "en": "\\(\\mathit{RF}\\): financial balance, the sum of the current-account and capital-account balances, in pesos."
+     },
+     {
+      "es": "\\(I_c\\), \\(E_c\\): ingresos corrientes y erogaciones corrientes; su diferencia es el resultado de la cuenta corriente.",
+      "en": "\\(I_c\\), \\(E_c\\): current revenues and current expenditures; their difference is the current-account balance."
+     },
+     {
+      "es": "\\(I_k\\), \\(E_k\\): ingresos de capital y erogaciones de capital; su diferencia es el resultado de la cuenta de capital.",
+      "en": "\\(I_k\\), \\(E_k\\): capital revenues and capital expenditures; their difference is the capital-account balance."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{RP}^{\\,prim}\\): resultado primario, el resultado sin contar los intereses de la deuda, en pesos.",
+      "en": "\\(\\mathit{RP}^{\\,prim}\\): primary balance, the balance excluding interest on debt, in pesos."
+     },
+     {
+      "es": "\\(\\mathit{RF}\\): resultado financiero (el resumen lo llama aquí «resultado fiscal»).",
+      "en": "\\(\\mathit{RF}\\): financial balance (the summary calls it «fiscal balance» here)."
+     },
+     {
+      "es": "\\(\\mathit{Int}\\): intereses de la deuda pagados en el período, que se suman porque son un gasto ya restado en \\(\\mathit{RF}\\).",
+      "en": "\\(\\mathit{Int}\\): interest on debt paid in the period, added back because it is a spending item already subtracted in \\(\\mathit{RF}\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{RFN}\\): resultado financiero neto, que suma al resultado financiero las fuentes netas de financiamiento.",
+      "en": "\\(\\mathit{RFN}\\): net financial balance, adding net financing sources to the financial balance."
+     },
+     {
+      "es": "\\(\\mathit{FF} - \\mathit{AF}\\): fuentes netas de financiamiento, fuentes financieras menos aplicaciones financieras (movimientos «bajo la línea»).",
+      "en": "\\(\\mathit{FF} - \\mathit{AF}\\): net financing sources, financial sources minus financial applications (\\\"below the line\\\" items)."
+     },
+     {
+      "es": "Lectura propia: si todo el déficit se financia con fuentes registradas, el resultado financiero neto debería ser cero; un saldo distinto de cero se reflejaría en la caja o en la deuda flotante. El resumen no hace este comentario.",
+      "en": "Own reading: if the whole deficit is financed with recorded sources, the net financial balance should be zero; a non-zero value would show up in cash or floating debt. The summary does not make this point."
+     }
+    ]
+   ],
+   "p": [
+    "El resumen cierra la unidad con el esquema de resultados fiscales. Los movimientos «sobre la línea» son los que no implican financiamiento. Primero, la cuenta corriente: ingresos corrientes menos erogaciones corrientes da el resultado de la cuenta corriente. Después, la cuenta de capital: ingresos de capital menos erogaciones de capital. La suma de ambos es el resultado financiero, y si a ese resultado se le suman los intereses de la deuda se obtiene el resultado primario, que muestra cuánto ahorra o desahorra el sector público sin contar el costo de la deuda heredada.",
+    "Los movimientos «bajo la línea» son los de financiamiento: fuentes financieras menos aplicaciones financieras dan las fuentes netas de financiamiento, y su suma con el resultado financiero da el resultado financiero neto. Lectura propia: esta separación es la que permite leer cualquier comunicado fiscal; el resultado primario indica si el Estado cubre su gasto corriente y de capital con recursos propios, y el financiero, si además paga sus intereses. Crítica propia al material: al ser un resumen de estudiantes, define con precisión las categorías pero no da ejemplos numéricos ni explica por qué, por ejemplo, el criterio de caja para ingresos y de devengado para gastos es prudente; esos ejemplos están en el material de clasificaciones presupuestarias de la misma unidad."
+   ]
+  }
+ ],
+ "claves": [
+  "El sector público tiene tres funciones: asignación (corregir fallas de mercado), distribución (impuestos y transferencias) y estabilización (medidas anticíclicas).",
+  "El presupuesto sirve para gobernar, administrar, planificar y dar legalidad al gasto.",
+  "Ecuación fundamental: recursos más fuentes financieras igualan a gastos más aplicaciones financieras; se cumple siempre.",
+  "Los gastos son limitativos, periódicos y de legalidad originaria; los recursos, no limitativos, no periódicos y de legalidad derivada.",
+  "Los clasificadores ordenan recursos (por rubro y carácter económico) y gastos (económica, por objeto, funcional, institucional, programática y otras).",
+  "El presupuesto real surge de muchos actores y sufre el problema de los recursos comunes: beneficios concentrados, costos pagados de un fondo común.",
+  "Lo comprometido y no pagado es deuda flotante: residuos pasivos más obligaciones del Tesoro.",
+  "Resultado financiero = cuenta corriente + cuenta de capital; resultado primario = resultado financiero + intereses."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué función del sector público justifica corregir una falla de mercado con un impuesto o una regulación?",
+    "en": "Which public-sector function justifies correcting a market failure with a tax or regulation?"
+   },
+   "op": {
+    "es": [
+     "La función de asignación",
+     "La función de distribución",
+     "La función de estabilización",
+     "La función de legalidad"
+    ],
+    "en": [
+     "The allocation function",
+     "The distribution function",
+     "The stabilization function",
+     "The legality function"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La función de asignación ajusta la asignación del mercado cuando hay fallas, con impuestos, subsidios, regulaciones o provisión directa.",
+    "en": "The allocation function adjusts the market allocation when there are failures, through taxes, subsidies, regulation or direct provision."
+   },
+   "id": "fisc-general-18-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué escuela presupuestaria acepta el déficit, incluso financiado con emisión, si evita una recesión?",
+    "en": "Which budget school accepts deficits, even money-financed, if they avoid a recession?"
+   },
+   "op": {
+    "es": [
+     "La clásica o liberal",
+     "La productivista",
+     "La moderna o keynesiana",
+     "Ninguna"
+    ],
+    "en": [
+     "The classical or liberal school",
+     "The productivist school",
+     "The modern or Keynesian school",
+     "None"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La escuela keynesiana ve al Estado como interventor; la clásica exige equilibrio y la productivista rechaza la emisión.",
+    "en": "The Keynesian school sees the state as interventionist; the classical one demands balance and the productivist one rejects money financing."
+   },
+   "id": "fisc-general-18-q2"
+  },
+  {
+   "q": {
+    "es": "Si los recursos son 100 y los gastos 120, según la ecuación presupuestaria fundamental:",
+    "en": "If revenues are 100 and spending 120, according to the fundamental budget equation:"
+   },
+   "op": {
+    "es": [
+     "El presupuesto es superavitario",
+     "Las fuentes financieras netas de aplicaciones deben ser 20",
+     "Las aplicaciones financieras deben superar a las fuentes en 20",
+     "La ecuación deja de cumplirse"
+    ],
+    "en": [
+     "The budget is in surplus",
+     "Financial sources net of applications must be 20",
+     "Financial applications must exceed sources by 20",
+     "The equation no longer holds"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Rec + FF = Gas + AF implica FF − AF = Gas − Rec = 20. Donde: Rec = recursos; Gas = gastos; FF = fuentes financieras; AF = aplicaciones financieras. El déficit de 20 se financia con deuda o deuda flotante.",
+    "en": "Rec + FF = Gas + AF implies FF − AF = Gas − Rec = 20. Where: Rec = revenues; Gas = spending; FF = financial sources; AF = financial applications. The deficit of 20 is financed with debt or floating debt."
+   },
+   "id": "fisc-general-18-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los gastos son «limitativos» y los recursos no?",
+    "en": "Why is spending \"limiting\" while revenue is not?"
+   },
+   "op": {
+    "es": [
+     "Porque los recursos se fijan por decreto",
+     "Porque los gastos no pueden superar lo autorizado y no tendría sentido rechazar recursos que ingresan de más",
+     "Porque los gastos se registran en base caja",
+     "Porque los recursos caducan con el año"
+    ],
+    "en": [
+     "Because revenues are set by decree",
+     "Because spending cannot exceed what is authorized, and it would make no sense to reject extra revenue",
+     "Because spending is recorded on a cash basis",
+     "Because revenues expire with the year"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El resumen explica que no se puede gastar más de lo presupuestado ni en total ni por área, mientras que si ingresan más recursos no sería lógico limitarlos a la meta.",
+    "en": "The summary explains that one cannot spend more than budgeted, in total or by area, while it would be illogical to cap revenues at the estimate."
+   },
+   "id": "fisc-general-18-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué principio presupuestario impide compensar gastos con recursos?",
+    "en": "Which budget principle forbids netting spending against revenue?"
+   },
+   "op": {
+    "es": [
+     "Exclusividad",
+     "Anticipación",
+     "Continuidad",
+     "Universalidad"
+    ],
+    "en": [
+     "Exclusivity",
+     "Anticipation",
+     "Continuity",
+     "Universality"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La universalidad exige que el presupuesto contenga todos los gastos y recursos, por separado y por su totalidad.",
+    "en": "Universality requires the budget to contain all spending and revenues, separately and in full."
+   },
+   "id": "fisc-general-18-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué describe el problema de los recursos comunes en el presupuesto?",
+    "en": "What does the common-pool problem in budgeting describe?"
+   },
+   "op": {
+    "es": [
+     "Que los impuestos recaen sobre bienes comunes",
+     "Que los beneficios de cada programa se concentran y su costo se paga de un fondo común",
+     "Que las provincias comparten la coparticipación",
+     "Que el presupuesto se aprueba por mayoría simple"
+    ],
+    "en": [
+     "That taxes fall on common goods",
+     "That each program's benefits are concentrated while its cost is paid from a common pool",
+     "That provinces share revenue-sharing funds",
+     "That the budget is approved by simple majority"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Surge porque los beneficios se concentran, los costos salen de un pool común y deciden muchos actores con incentivos propios.",
+    "en": "It arises because benefits are concentrated, costs come from a common pool and many actors with their own incentives decide."
+   },
+   "id": "fisc-general-18-q6"
+  },
+  {
+   "q": {
+    "es": "Si se comprometieron 50, se ordenó pagar 40 y se pagaron 30, ¿cuánto es la deuda flotante?",
+    "en": "If 50 was committed, 40 ordered for payment and 30 paid, what is the floating debt?"
+   },
+   "op": {
+    "es": [
+     "10",
+     "40",
+     "20",
+     "30"
+    ],
+    "en": [
+     "10",
+     "40",
+     "20",
+     "30"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "DF = RP + OT = (Comp − Ord) + (Ord − Pag) = 10 + 10 = 20 = Comp − Pag. Donde: DF = deuda flotante; RP = residuos pasivos; OT = obligaciones del Tesoro; Comp = comprometido; Ord = ordenado a pagar; Pag = pagado.",
+    "en": "DF = RP + OT = (Comp − Ord) + (Ord − Pag) = 10 + 10 = 20 = Comp − Pag. Where: DF = floating debt; RP = carried-over liabilities; OT = Treasury obligations; Comp = committed; Ord = ordered for payment; Pag = paid."
+   },
+   "id": "fisc-general-18-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se pasa del resultado financiero al resultado primario?",
+    "en": "How do you go from the financial balance to the primary balance?"
+   },
+   "op": {
+    "es": [
+     "Restando los gastos de capital",
+     "Sumando las fuentes financieras",
+     "Restando los ingresos de capital",
+     "Sumando los intereses de la deuda"
+    ],
+    "en": [
+     "Subtracting capital spending",
+     "Adding financial sources",
+     "Subtracting capital revenues",
+     "Adding interest on debt"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Resultado primario = resultado financiero + intereses de la deuda; las fuentes financieras van bajo la línea.",
+    "en": "Primary balance = financial balance + interest on debt; financial sources go below the line."
+   },
+   "id": "fisc-general-18-q8"
+  }
+ ],
+ "palabras": 1843,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cuáles son las tres funciones del sector público en una economía de mercado?",
+    "en": "What are the three functions of the public sector in a market economy?"
+   },
+   "a": {
+    "es": "Asignación (corregir fallas de mercado con impuestos, subsidios, regulación o provisión directa), distribución (corregir con impuestos y transferencias una distribución considerada injusta) y estabilización (medidas anticíclicas para el empleo y la estabilidad de precios). Así las presenta el resumen de Finanzas Públicas de la FCE-UNC, unidad 1.",
+    "en": "Allocation (correcting market failures with taxes, subsidies, regulation or direct provision), distribution (correcting a distribution deemed unfair with taxes and transfers) and stabilization (countercyclical measures for employment and price stability). That is how the FCE-UNC Public Finance summary, unit 1, presents them."
+   },
+   "id": "fisc-general-18-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué dice la ecuación presupuestaria fundamental?",
+    "en": "What does the fundamental budget equation say?"
+   },
+   "a": {
+    "es": "Que recursos más fuentes financieras igualan a gastos más aplicaciones financieras, y que se cumple siempre: un déficit se financia con deuda o con deuda flotante. Resumen de Finanzas Públicas (FCE-UNC), unidad 2.",
+    "en": "That revenues plus financial sources equal spending plus financial applications, and that it always holds: a deficit is financed with debt or floating debt. Public Finance summary (FCE-UNC), unit 2."
+   },
+   "id": "fisc-general-18-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿En qué se diferencian gastos y recursos dentro del presupuesto?",
+    "en": "How do spending and revenue differ within the budget?"
+   },
+   "a": {
+    "es": "Ambos son preventivos, pero los gastos son limitativos, periódicos y de legalidad originaria, y los recursos son no limitativos, no periódicos y de legalidad derivada (los impuestos existen por ley antes del presupuesto). Resumen de Finanzas Públicas (FCE-UNC), unidad 2.",
+    "en": "Both are estimates, but spending is limiting, periodic and of original legality, while revenue is non-limiting, non-periodic and of derived legality (taxes exist by law before the budget). Public Finance summary (FCE-UNC), unit 2."
+   },
+   "id": "fisc-general-18-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el presupuesto real no es la decisión de un planificador benevolente?",
+    "en": "Why is the actual budget not the decision of a benevolent planner?"
+   },
+   "a": {
+    "es": "Porque intervienen muchos actores con incentivos propios y aparece el problema de los recursos comunes: cada programa concentra sus beneficios y paga su costo de un fondo común. El resumen de Finanzas Públicas (FCE-UNC) lo vincula con el teorema de imposibilidad de Arrow.",
+    "en": "Because many actors with their own incentives take part and the common-pool problem arises: each program concentrates its benefits and pays its cost from a common pool. The FCE-UNC Public Finance summary links this to Arrow's impossibility theorem."
+   },
+   "id": "fisc-general-18-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la deuda flotante?",
+    "en": "What is floating debt?"
+   },
+   "a": {
+    "es": "Lo comprometido y no pagado: la suma de residuos pasivos (comprometido y no ordenado) y obligaciones del Tesoro (ordenado y no pagado); es deuda de corto plazo que no se registra como tal. Resumen de Finanzas Públicas (FCE-UNC), unidad 2.",
+    "en": "What has been committed but not paid: carried-over liabilities (committed, not ordered) plus Treasury obligations (ordered, not paid); short-term debt not recorded as such. Public Finance summary (FCE-UNC), unit 2."
+   },
+   "id": "fisc-general-18-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre resultado financiero y resultado primario?",
+    "en": "What is the difference between the financial and the primary balance?"
+   },
+   "a": {
+    "es": "El financiero suma los resultados de la cuenta corriente y de capital; el primario le suma los intereses de la deuda, es decir, mide el resultado sin el costo de la deuda. Ambos son movimientos sobre la línea; el financiamiento va bajo la línea. Resumen de Finanzas Públicas (FCE-UNC), unidad 2.",
+    "en": "The financial balance adds the current and capital account balances; the primary balance adds back interest on debt, i.e. measures the balance without debt cost. Both are above-the-line items; financing goes below the line. Public Finance summary (FCE-UNC), unit 2."
+   },
+   "id": "fisc-general-18-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué distingue al presupuesto incrementalista del presupuesto base cero?",
+    "en": "What distinguishes incremental budgeting from zero-based budgeting?"
+   },
+   "a": {
+    "es": "El incrementalista aumenta cada año el gasto en una proporción constante del gasto del año anterior; el base cero obliga a justificar cada pedido desde el inicio, sin suponer continuidad. Resumen de Finanzas Públicas (FCE-UNC), unidad 2.",
+    "en": "Incremental budgeting raises spending each year by a constant share of the previous year's; zero-based budgeting requires every request to be justified from scratch, without assuming continuity. Public Finance summary (FCE-UNC), unit 2."
+   },
+   "id": "fisc-general-18-t7"
+  }
+ ]
+}
