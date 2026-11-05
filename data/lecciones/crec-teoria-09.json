@@ -21,6 +21,335 @@
    "p": [
     "Las familias maximizan la suma descontada de la felicidad instantánea de sus miembros desde hoy hasta el infinito. El horizonte infinito parece absurdo, pero Sala-i-Martin, siguiendo a Barro (1974), lo reinterpreta como el de una dinastía: un padre que vive un período y quiere a sus hijos, aunque descuenta su utilidad a la tasa ρ, se comporta como si tuviera una función de utilidad de infinitos períodos. La tasa de descuento, que Ramsey llamó «éticamente indefendible» porque pensaba en un Estado que pondera más a las generaciones presentes, representa aquí el egoísmo paterno dentro de un mundo de altruismo intergeneracional.",
     "La función de felicidad es cóncava, lo que expresa el deseo de consumir más o menos lo mismo cada día en vez de pasar hambre todo el mes y organizar una gran fiesta el último. El autor usa la forma de elasticidad intertemporal constante, con θ > 0. Las familias reciben salarios y los intereses de sus activos, que pueden ser negativos si están endeudadas, y reparten esa renta entre consumo y nuevos activos. Para que la utilidad sea finita hace falta que ρ > n."
+   ],
+   "graf": [
+    [
+     {
+      "titulo": {
+       "es": "Utilidad instantánea CRRA según θ",
+       "en": "Instantaneous CRRA utility by θ"
+      },
+      "x": {
+       "id": "c",
+       "min": 0.2,
+       "max": 4,
+       "label": {
+        "es": "consumo c",
+        "en": "consumption c"
+       }
+      },
+      "y": {
+       "min": -4,
+       "max": 2.5
+      },
+      "params": [
+       {
+        "id": "theta",
+        "sym": "θ",
+        "label": {
+         "es": "concavidad",
+         "en": "curvature"
+        },
+        "min": 0.2,
+        "max": 4,
+        "step": 0.1,
+        "val": 2
+       }
+      ],
+      "calc": [
+       {
+        "id": "om",
+        "f": "1-theta",
+        "dec": 1
+       },
+       {
+        "id": "desp",
+        "f": "crra(0.5,theta)+crra(1.5,theta)",
+        "dec": 2
+       }
+      ],
+      "curvas": [
+       {
+        "f": "crra(c,theta)",
+        "label": {
+         "es": "u(c) con tu θ",
+         "en": "u(c) with your θ"
+        }
+       },
+       {
+        "f": "c-1",
+        "estilo": "punteada",
+        "label": {
+         "es": "θ = 0: recta, sin deseo de alisar",
+         "en": "θ = 0: straight line, no smoothing motive"
+        }
+       }
+      ],
+      "marcas": [
+       {
+        "x": 0.5,
+        "label": "0,5"
+       },
+       {
+        "x": 1.5,
+        "label": "1,5"
+       }
+      ],
+      "puntos": [
+       {
+        "x": 0.5,
+        "y": "crra(0.5,theta)"
+       },
+       {
+        "x": 1,
+        "y": 0
+       },
+       {
+        "x": 1.5,
+        "y": "crra(1.5,theta)"
+       }
+      ],
+      "tex": [
+       {
+        "si": "abs(theta-1)<0.001",
+        "tex": "\\begin{gathered}u(c)=\\ln c\\\\ u(0{,}5)+u(1{,}5)=[[desp]]\\;<\\;u(1)+u(1)=0\\end{gathered}"
+       },
+       {
+        "tex": "\\begin{gathered}u(c)=\\frac{c^{\\,1-[[theta]]}-1}{1-[[theta]]}\\\\ u(0{,}5)+u(1{,}5)=[[desp]]\\;<\\;u(1)+u(1)=0\\end{gathered}"
+       }
+      ],
+      "valores": [
+       {
+        "label": {
+         "es": "Parejo: 1 y 1",
+         "en": "Even: 1 and 1"
+        },
+        "f": "0"
+       },
+       {
+        "label": {
+         "es": "Desparejo: 0,5 y 1,5",
+         "en": "Uneven: 0.5 and 1.5"
+        },
+        "f": "desp"
+       }
+      ],
+      "mirar": {
+       "es": "con el mismo gasto total, consumir 0,5 y 1,5 da menos utilidad que consumir 1 y 1: lo que se pierde en el período pobre pesa más que lo que se gana en el rico. Al subir θ la curva se dobla más y esa pérdida crece; con θ = 1 la utilidad es logarítmica y con θ cerca de 0 la curva se acerca a la recta, donde repartir parejo o desparejo da igual.",
+       "en": "with the same total spending, consuming 0.5 and 1.5 yields less utility than 1 and 1: the loss in the poor period outweighs the gain in the rich one. Raising θ bends the curve more and the loss grows; at θ = 1 utility is logarithmic and near θ = 0 the curve approaches the straight line, where even and uneven are equally good."
+      }
+     },
+     {
+      "titulo": {
+       "es": "Utilidad descontada a lo largo del tiempo",
+       "en": "Discounted utility over time"
+      },
+      "x": {
+       "id": "t",
+       "min": 0,
+       "max": 80,
+       "label": {
+        "es": "tiempo t",
+        "en": "time t"
+       }
+      },
+      "params": [
+       {
+        "id": "rn",
+        "sym": "ρ − n",
+        "label": {
+         "es": "impaciencia neta",
+         "en": "net impatience"
+        },
+        "min": 0.01,
+        "max": 0.15,
+        "step": 0.01,
+        "val": 0.04
+       },
+       {
+        "id": "theta",
+        "sym": "θ",
+        "label": {
+         "es": "concavidad",
+         "en": "curvature"
+        },
+        "min": 0.2,
+        "max": 4,
+        "step": 0.1,
+        "val": 2
+       },
+       {
+        "id": "g",
+        "sym": "g",
+        "label": {
+         "es": "crecimiento de c",
+         "en": "growth of c"
+        },
+        "min": -0.02,
+        "max": 0.05,
+        "step": 0.005,
+        "val": 0.02
+       }
+      ],
+      "calc": [
+       {
+        "id": "om",
+        "f": "1-theta",
+        "dec": 1
+       },
+       {
+        "id": "U",
+        "integral": 1,
+        "dec": 1
+       }
+      ],
+      "curvas": [
+       {
+        "f": "crra(2*exp(g*t),theta)",
+        "estilo": "punteada",
+        "color": 1,
+        "label": {
+         "es": "u(cₜ) sin descontar",
+         "en": "undiscounted u(cₜ)"
+        }
+       },
+       {
+        "f": "exp(-rn*t)*crra(2*exp(g*t),theta)",
+        "estilo": "area",
+        "color": 0,
+        "label": {
+         "es": "u(cₜ) descontada: el área es U(0)",
+         "en": "discounted u(cₜ): the area is U(0)"
+        }
+       }
+      ],
+      "tex": [
+       {
+        "si": "abs(theta-1)<0.001",
+        "tex": "\\begin{gathered}U(0)=\\int_0^{\\infty} e^{-[[rn]]\\,t}\\,\\ln c_t\\,dt\\approx[[U]]\\\\ c_t=2\\,e^{[[g]]\\,t}\\end{gathered}"
+       },
+       {
+        "tex": "\\begin{gathered}U(0)=\\int_0^{\\infty} e^{-[[rn]]\\,t}\\,\\frac{c_t^{\\,1-[[theta]]}-1}{1-[[theta]]}\\,dt\\approx[[U]]\\\\ c_t=2\\,e^{[[g]]\\,t}\\end{gathered}"
+       }
+      ],
+      "valores": [
+       {
+        "label": {
+         "es": "U(0), sumando hasta t = 80",
+         "en": "U(0), summing up to t = 80"
+        },
+        "f": "U",
+        "dec": 1
+       },
+       {
+        "label": {
+         "es": "Cuánto pesa hoy el instante t = 30",
+         "en": "How much t = 30 weighs today"
+        },
+        "f": "exp(-rn*30)",
+        "pct": true,
+        "dec": 0
+       }
+      ],
+      "mirar": {
+       "es": "la integral suma la utilidad de cada instante, pero cada una pesa menos cuanto más lejana está: con más impaciencia la curva sombreada se aplasta hacia la derecha y el futuro casi no cuenta. Si el consumo crece (g > 0) la curva punteada sube y el descuento la frena; por eso hace falta ρ > n, porque sin descuento neto el área sería infinita y no habría nada que maximizar. El ejemplo supone c₀ = 2 y un consumo que crece a tasa constante g.",
+       "en": "the integral adds up each instant's utility, but each counts less the further away it is: more impatience squashes the shaded curve to the right and the future barely counts. If consumption grows (g > 0) the dashed curve rises and discounting holds it back; that is why ρ > n is needed, since without net discounting the area would be infinite and there would be nothing to maximize. The example assumes c₀ = 2 and consumption growing at a constant rate g."
+      }
+     }
+    ],
+    {
+     "titulo": {
+      "es": "Restricción de activos",
+      "en": "Asset constraint"
+     },
+     "x": {
+      "id": "b",
+      "min": -10,
+      "max": 30,
+      "label": {
+       "es": "activos per cápita b",
+       "en": "assets per capita b"
+      }
+     },
+     "params": [
+      {
+       "id": "w",
+       "sym": "w",
+       "label": {
+        "es": "salario",
+        "en": "wage"
+       },
+       "min": 0,
+       "max": 3,
+       "step": 0.1,
+       "val": 1
+      },
+      {
+       "id": "rn",
+       "sym": "r − n",
+       "label": {
+        "es": "interés neto",
+        "en": "net interest"
+       },
+       "min": 0.01,
+       "max": 0.1,
+       "step": 0.01,
+       "val": 0.03
+      },
+      {
+       "id": "c",
+       "sym": "c",
+       "label": {
+        "es": "consumo",
+        "en": "consumption"
+       },
+       "min": 0,
+       "max": 3,
+       "step": 0.1,
+       "val": 1.3
+      }
+     ],
+     "calc": [
+      {
+       "id": "bb",
+       "f": "(c-w)/rn",
+       "dec": 1
+      }
+     ],
+     "curvas": [
+      {
+       "f": "w+rn*b-c",
+       "label": {
+        "es": "ḃ según los activos que tenga la familia",
+        "en": "ḃ given the household's assets"
+       }
+      }
+     ],
+     "marcas": [
+      {
+       "x": "bb",
+       "label": {
+        "es": "ḃ = 0",
+        "en": "ḃ = 0"
+       }
+      }
+     ],
+     "tex": "\\dot b=[[w]]+[[rn]]\\,b-[[c]]",
+     "valores": [
+      {
+       "label": {
+        "es": "Activos con los que ḃ = 0",
+        "en": "Assets at which ḃ = 0"
+       },
+       "f": "bb",
+       "dec": 1
+      }
+     ],
+     "mirar": {
+      "es": "la renta de la familia es el salario más los intereses netos de sus activos; lo que no consume lo ahorra. Con un consumo fijo, a la derecha del corte los activos crecen y a la izquierda caen (la deuda se agranda sola). Subir c corre el corte a la derecha: para sostener más consumo hacen falta más activos. Lectura propia: por eso la familia no puede elegir c sin mirar todo el sendero, y la condición de transversalidad de la sección siguiente descarta los caminos de deuda explosiva.",
+      "en": "household income is the wage plus net interest on assets; what is not consumed is saved. With fixed consumption, assets grow to the right of the crossing and fall to the left (debt snowballs). Raising c moves the crossing right: more consumption needs more assets. Own reading: that is why the household cannot pick c without looking at the whole path, and the transversality condition in the next section rules out explosive-debt paths."
+     }
+    }
    ]
   },
   {
@@ -33,6 +362,110 @@
    "p": [
     "El problema se resuelve con un hamiltoniano en el que el consumo es la variable de control y los activos, la de estado. La condición central es la ecuación de Euler. Escrita como ρ + θ(ċ/c) = r, Sala-i-Martin la lee como una igualdad entre beneficios: a la izquierda, el rendimiento de consumir hoy, que suma la impaciencia ρ y el deseo de alisar el consumo cuando se espera que crezca; a la derecha, el rendimiento del ahorro, el tipo de interés. En el margen, el individuo es indiferente. Cuanto mayor es θ, más tiene que subir r para que la familia acepte una senda de consumo creciente.",
     "La segunda condición es la de transversalidad. Su intuición se ve mejor con horizonte finito, donde se reduce a que el valor de los activos al morir sea cero: si se dejara algo de valor, se lo podría haber consumido antes y la utilidad habría sido mayor. Ese valor nulo puede deberse a que no queda capital o a que su precio implícito es cero."
+   ],
+   "graf": [
+    {
+     "titulo": {
+      "es": "Ecuación de Euler",
+      "en": "Euler equation"
+     },
+     "x": {
+      "id": "t",
+      "min": 0,
+      "max": 50,
+      "label": {
+       "es": "tiempo t",
+       "en": "time t"
+      }
+     },
+     "params": [
+      {
+       "id": "r",
+       "sym": "r",
+       "label": {
+        "es": "interés",
+        "en": "interest"
+       },
+       "min": 0.01,
+       "max": 0.12,
+       "step": 0.005,
+       "val": 0.06
+      },
+      {
+       "id": "rho",
+       "sym": "ρ",
+       "label": {
+        "es": "descuento",
+        "en": "discount"
+       },
+       "min": 0.01,
+       "max": 0.12,
+       "step": 0.005,
+       "val": 0.03
+      },
+      {
+       "id": "theta",
+       "sym": "θ",
+       "label": {
+        "es": "concavidad",
+        "en": "curvature"
+       },
+       "min": 0.2,
+       "max": 4,
+       "step": 0.1,
+       "val": 2
+      }
+     ],
+     "calc": [
+      {
+       "id": "gc",
+       "f": "(r-rho)/theta",
+       "dec": 4
+      }
+     ],
+     "curvas": [
+      {
+       "f": "exp(gc*t)",
+       "label": {
+        "es": "cₜ con tu θ (c₀ = 1)",
+        "en": "cₜ with your θ (c₀ = 1)"
+       }
+      },
+      {
+       "f": "exp((r-rho)*t)",
+       "estilo": "punteada",
+       "label": {
+        "es": "cₜ con θ = 1, para comparar",
+        "en": "cₜ with θ = 1, for comparison"
+       }
+      }
+     ],
+     "tex": "\\frac{\\dot c}{c}=\\frac{1}{[[theta]]}\\,\\left([[r]]-[[rho]]\\right)=[[gc]]",
+     "valores": [
+      {
+       "label": {
+        "es": "Crecimiento del consumo",
+        "en": "Consumption growth"
+       },
+       "f": "gc",
+       "pct": true,
+       "dec": 2
+      },
+      {
+       "label": {
+        "es": "Consumo en t = 50 sobre c₀",
+        "en": "Consumption at t = 50 over c₀"
+       },
+       "f": "exp(gc*50)",
+       "dec": 2
+      }
+     ],
+     "mirar": {
+      "es": "si el interés supera a la tasa de descuento (r > ρ), conviene postergar: el consumo crece. Si r < ρ, la familia adelanta consumo y el sendero cae. θ frena la respuesta: con θ alto la familia quiere alisar y mueve poco el consumo aunque el interés la tiente; con θ bajo responde mucho. La elasticidad intertemporal de sustitución es 1/θ.",
+      "en": "if interest exceeds the discount rate (r > ρ), postponing pays: consumption grows. If r < ρ, the household brings consumption forward and the path falls. θ dampens the response: with high θ the household wants to smooth and barely moves consumption even when interest tempts it; with low θ it responds strongly. The intertemporal elasticity of substitution is 1/θ."
+     }
+    },
+    null
    ]
   },
   {
@@ -44,6 +477,153 @@
    "p": [
     "Las empresas competitivas pagan a cada factor su producto marginal, y como no hay riesgo el rendimiento de los activos iguala al del capital neto de depreciación. En una economía cerrada sin gobierno, todo lo que unos prestan lo deben otros, de modo que la deuda neta agregada es nula y el único activo neto es el capital: b = k. Sustituyendo, la restricción de las familias se vuelve idéntica a la de las familias productoras del capítulo 1. Lo que cambia es el consumo: ya no es (1 − s)f(k), sino lo que dicta la ecuación de Euler, que ahora exige un producto marginal mayor para aceptar un consumo creciente.",
     "Sala-i-Martin compara luego tres soluciones. Robinson Crusoe, que maximiza la misma utilidad sujeto a la restricción física de la economía, llega a las mismas tres condiciones que el mercado. El planificador, un ser fantástico con los mismos objetivos que las familias, que enfrenta solo la restricción de recursos y toma en cuenta todas las externalidades y toda la información, llega a las mismas ecuaciones. Como en este modelo no hay externalidades ni información oculta, el equilibrio competitivo es óptimo: sin interferencia del gobierno, el mercado encuentra la solución del planificador. El autor anticipa que en capítulos posteriores esto deja de valer."
+   ],
+   "graf": [
+    {
+     "titulo": {
+      "es": "Tipo de interés y salario con Cobb-Douglas",
+      "en": "Interest rate and wage with Cobb-Douglas"
+     },
+     "x": {
+      "id": "k",
+      "min": 0.5,
+      "max": 30,
+      "label": {
+       "es": "capital per cápita k",
+       "en": "capital per capita k"
+      }
+     },
+     "y": {
+      "max": 2.5
+     },
+     "params": [
+      {
+       "id": "A",
+       "sym": "A",
+       "label": {
+        "es": "tecnología",
+        "en": "technology"
+       },
+       "min": 0.5,
+       "max": 2,
+       "step": 0.1,
+       "val": 1
+      },
+      {
+       "id": "alpha",
+       "sym": "α",
+       "label": {
+        "es": "part. del capital",
+        "en": "capital share"
+       },
+       "min": 0.2,
+       "max": 0.6,
+       "step": 0.01,
+       "val": 0.33
+      },
+      {
+       "id": "delta",
+       "sym": "δ",
+       "label": {
+        "es": "depreciación",
+        "en": "depreciation"
+       },
+       "min": 0,
+       "max": 0.1,
+       "step": 0.01,
+       "val": 0.05
+      },
+      {
+       "id": "k0",
+       "sym": "k",
+       "label": {
+        "es": "capital elegido",
+        "en": "chosen capital"
+       },
+       "min": 0.5,
+       "max": 30,
+       "step": 0.5,
+       "val": 5
+      }
+     ],
+     "calc": [
+      {
+       "id": "fp",
+       "f": "alpha*A*k0^(alpha-1)",
+       "dec": 3
+      },
+      {
+       "id": "rr",
+       "f": "fp-delta",
+       "dec": 3
+      },
+      {
+       "id": "ww",
+       "f": "(1-alpha)*A*k0^alpha",
+       "dec": 3
+      }
+     ],
+     "curvas": [
+      {
+       "f": "alpha*A*k^(alpha-1)-delta",
+       "label": {
+        "es": "r = f′(k) − δ",
+        "en": "r = f′(k) − δ"
+       }
+      },
+      {
+       "f": "(1-alpha)*A*k^alpha",
+       "label": {
+        "es": "w = f(k) − k f′(k)",
+        "en": "w = f(k) − k f′(k)"
+       }
+      }
+     ],
+     "marcas": [
+      {
+       "x": "k0",
+       "label": {
+        "es": "k elegido",
+        "en": "chosen k"
+       }
+      }
+     ],
+     "puntos": [
+      {
+       "x": "k0",
+       "y": "rr"
+      },
+      {
+       "x": "k0",
+       "y": "ww"
+      }
+     ],
+     "tex": "\\begin{gathered}r+[[delta]]=f'([[k0]])=[[fp]]\\;\\Rightarrow\\;r=[[rr]]\\\\ w=f([[k0]])-[[k0]]\\,f'([[k0]])=[[ww]]\\end{gathered}",
+     "valores": [
+      {
+       "label": {
+        "es": "Tipo de interés r",
+        "en": "Interest rate r"
+       },
+       "f": "rr",
+       "pct": true,
+       "dec": 1
+      },
+      {
+       "label": {
+        "es": "Salario w",
+        "en": "Wage w"
+       },
+       "f": "ww",
+       "dec": 3
+      }
+     ],
+     "mirar": {
+      "es": "con f(k) = Akᵅ, las empresas pagan a cada factor su producto marginal. Al acumular capital, su producto marginal cae (baja r) y cada trabajador tiene más máquinas (sube w). Ese r decreciente es lo que, por la ecuación de Euler, hace que el crecimiento del consumo se apague en la transición.",
+      "en": "with f(k) = Akᵅ, firms pay each factor its marginal product. As capital accumulates its marginal product falls (r drops) and each worker has more machines (w rises). That falling r is what, through the Euler equation, makes consumption growth fade along the transition."
+     }
+    },
+    null
    ]
   },
   {
@@ -56,6 +636,162 @@
     "En el plano (k, c), la curva donde el capital no cambia, c = f(k) − (δ + n)k, sube, alcanza su máximo en el capital de la regla de oro y vuelve a caer; por encima de ella el capital disminuye. La curva donde el consumo no cambia es una vertical en k*, donde f'(k*) = ρ + δ, más el eje horizontal; a su derecha el consumo cae y a su izquierda las flechas apuntan hacia el cielo, «como las torres de la Catedral de Burgos». Como ρ > n, k* queda a la izquierda de la regla de oro.",
     "Hay tres estados estacionarios: el origen, inestable; un punto k** con consumo nulo, estable pero con consumo nulo; y k*, con estabilidad de punto de silla, al que se llega por una única trayectoria estable. Su forma depende de θ: con θ alto las familias, ansiosas por alisar el consumo, se mueven cerca de la curva de inversión neta nula; con θ bajo aceptan consumir poco al principio y acumular mucho. A lo largo de la transición desde abajo, capital, producto y consumo crecen a tasas decrecientes, y el tipo de interés cae.",
     "¿Por qué la economía elige justo esa trayectoria? Si el consumo inicial es mayor, el capital se agota en un tiempo finito y el consumo tiene que saltar a cero, lo que viola la ecuación de Euler porque el producto marginal del capital tiende a infinito. Si es menor, la economía va hacia k**, donde r** = f'(k**) − δ < n, y la condición de transversalidad no se cumple: se consume demasiado poco y se acaba con demasiado capital."
+   ],
+   "graf": [
+    {
+     "titulo": {
+      "es": "Estado estacionario y regla de oro",
+      "en": "Steady state and golden rule"
+     },
+     "x": {
+      "id": "k",
+      "min": 0,
+      "max": "1.6*(alpha*A/(delta+n))^(1/(1-alpha))",
+      "label": {
+       "es": "capital per cápita k",
+       "en": "capital per capita k"
+      }
+     },
+     "params": [
+      {
+       "id": "A",
+       "sym": "A",
+       "label": {
+        "es": "tecnología",
+        "en": "technology"
+       },
+       "min": 0.5,
+       "max": 2,
+       "step": 0.1,
+       "val": 1
+      },
+      {
+       "id": "alpha",
+       "sym": "α",
+       "label": {
+        "es": "part. del capital",
+        "en": "capital share"
+       },
+       "min": 0.2,
+       "max": 0.5,
+       "step": 0.01,
+       "val": 0.33
+      },
+      {
+       "id": "rho",
+       "sym": "ρ",
+       "label": {
+        "es": "descuento",
+        "en": "discount"
+       },
+       "min": 0.02,
+       "max": 0.1,
+       "step": 0.005,
+       "val": 0.04
+      },
+      {
+       "id": "delta",
+       "sym": "δ",
+       "label": {
+        "es": "depreciación",
+        "en": "depreciation"
+       },
+       "min": 0.02,
+       "max": 0.1,
+       "step": 0.01,
+       "val": 0.05
+      },
+      {
+       "id": "n",
+       "sym": "n",
+       "label": {
+        "es": "población",
+        "en": "population"
+       },
+       "min": 0,
+       "max": 0.02,
+       "step": 0.005,
+       "val": 0.01
+      }
+     ],
+     "calc": [
+      {
+       "id": "ks",
+       "f": "(alpha*A/(rho+delta))^(1/(1-alpha))",
+       "dec": 2
+      },
+      {
+       "id": "kg",
+       "f": "(alpha*A/(delta+n))^(1/(1-alpha))",
+       "dec": 2
+      },
+      {
+       "id": "cs",
+       "f": "A*ks^alpha-(delta+n)*ks",
+       "dec": 3
+      },
+      {
+       "id": "cg",
+       "f": "A*kg^alpha-(delta+n)*kg",
+       "dec": 3
+      }
+     ],
+     "curvas": [
+      {
+       "f": "A*k^alpha-(delta+n)*k",
+       "label": {
+        "es": "k̇ = 0: c = f(k) − (δ + n)k",
+        "en": "k̇ = 0: c = f(k) − (δ + n)k"
+       }
+      }
+     ],
+     "marcas": [
+      {
+       "x": "ks",
+       "label": "k*"
+      },
+      {
+       "x": "kg",
+       "label": {
+        "es": "k oro",
+        "en": "k gold"
+       }
+      }
+     ],
+     "puntos": [
+      {
+       "x": "ks",
+       "y": "cs"
+      },
+      {
+       "x": "kg",
+       "y": "cg"
+      }
+     ],
+     "tex": "\\begin{gathered}k^*=\\left(\\frac{[[alpha]]\\cdot[[A]]}{[[rho]]+[[delta]]}\\right)^{\\frac{1}{1-[[alpha]]}}=[[ks]]\\\\ k_{oro}=\\left(\\frac{[[alpha]]\\cdot[[A]]}{[[delta]]+[[n]]}\\right)^{\\frac{1}{1-[[alpha]]}}=[[kg]]\\end{gathered}",
+     "valores": [
+      {
+       "label": {
+        "es": "Consumo en k*",
+        "en": "Consumption at k*"
+       },
+       "f": "cs",
+       "dec": 3
+      },
+      {
+       "label": {
+        "es": "Consumo en la regla de oro",
+        "en": "Golden-rule consumption"
+       },
+       "f": "cg",
+       "dec": 3
+      }
+     ],
+     "mirar": {
+      "es": "la curva es el consumo que mantiene el capital constante; su máximo es la regla de oro. La economía de Ramsey se queda en k*, donde f′(k*) = ρ + δ, siempre a la izquierda del máximo porque ρ > n: las familias no sacrifican consumo presente para llegar al consumo máximo de largo plazo. Llevá ρ hacia n y mirá cómo k* se acerca a la regla de oro.",
+      "en": "the curve is the consumption that keeps capital constant; its peak is the golden rule. The Ramsey economy settles at k*, where f′(k*) = ρ + δ, always left of the peak because ρ > n: households do not give up present consumption to reach maximal long-run consumption. Push ρ toward n and watch k* approach the golden rule."
+     }
+    }
    ]
   },
   {
@@ -72,6 +808,181 @@
    "p": [
     "Rehaciendo el diagrama de fases en c/y y k, Sala-i-Martin muestra que la tasa de ahorro cambia de forma monótona: baja a medida que la economía se capitaliza si (ρ + δ)/θ > α(n + δ), sube en el caso contrario y es constante si se cumple la igualdad. El modelo, entonces, no es consistente con un ahorro que primero sube y luego baja, como creen observar algunos investigadores en los países de crecimiento rápido. Y bajo ciertos parámetros el ahorro constante de Solow-Swan es óptimo, lo que lo vuelve menos descabellado de lo que parecía.",
     "Hay, sin embargo, una diferencia de fondo. En Ramsey el nivel del ahorro lo dictan los parámetros y nunca puede ser tan alto como para llevar el capital más allá de la regla de oro. En Solow-Swan nada impide un ahorro exógeno excesivo y dinámicamente ineficiente, el caso que el capítulo 1 mostraba como inequívocamente malo."
+   ],
+   "graf": [
+    {
+     "titulo": {
+      "es": "Qué pasa con la tasa de ahorro en la transición",
+      "en": "What happens to the saving rate in the transition"
+     },
+     "x": {
+      "id": "th",
+      "min": 0.2,
+      "max": 10,
+      "label": {
+       "es": "θ",
+       "en": "θ"
+      }
+     },
+     "y": {
+      "min": 0,
+      "max": "3*alpha*(n+delta)"
+     },
+     "params": [
+      {
+       "id": "rho",
+       "sym": "ρ",
+       "label": {
+        "es": "descuento",
+        "en": "discount"
+       },
+       "min": 0.01,
+       "max": 0.1,
+       "step": 0.005,
+       "val": 0.04
+      },
+      {
+       "id": "delta",
+       "sym": "δ",
+       "label": {
+        "es": "depreciación",
+        "en": "depreciation"
+       },
+       "min": 0.02,
+       "max": 0.1,
+       "step": 0.01,
+       "val": 0.05
+      },
+      {
+       "id": "alpha",
+       "sym": "α",
+       "label": {
+        "es": "part. del capital",
+        "en": "capital share"
+       },
+       "min": 0.2,
+       "max": 0.6,
+       "step": 0.01,
+       "val": 0.33
+      },
+      {
+       "id": "n",
+       "sym": "n",
+       "label": {
+        "es": "población",
+        "en": "population"
+       },
+       "min": 0,
+       "max": 0.03,
+       "step": 0.005,
+       "val": 0.01
+      },
+      {
+       "id": "theta",
+       "sym": "θ",
+       "label": {
+        "es": "concavidad",
+        "en": "curvature"
+       },
+       "min": 0.2,
+       "max": 10,
+       "step": 0.1,
+       "val": 2
+      }
+     ],
+     "calc": [
+      {
+       "id": "lhs",
+       "f": "(rho+delta)/theta",
+       "dec": 4
+      },
+      {
+       "id": "nd",
+       "f": "n+delta",
+       "dec": 3
+      },
+      {
+       "id": "rhs",
+       "f": "alpha*(n+delta)",
+       "dec": 4
+      }
+     ],
+     "curvas": [
+      {
+       "f": "(rho+delta)/th",
+       "label": {
+        "es": "(ρ + δ)/θ",
+        "en": "(ρ + δ)/θ"
+       }
+      },
+      {
+       "f": "alpha*(n+delta)",
+       "estilo": "punteada",
+       "label": {
+        "es": "α(n + δ)",
+        "en": "α(n + δ)"
+       }
+      }
+     ],
+     "marcas": [
+      {
+       "x": "theta",
+       "label": {
+        "es": "tu θ",
+        "en": "your θ"
+       }
+      }
+     ],
+     "puntos": [
+      {
+       "x": "theta",
+       "y": "lhs"
+      }
+     ],
+     "tex": "\\begin{gathered}\\frac{\\rho+\\delta}{\\theta}=\\frac{[[rho]]+[[delta]]}{[[theta]]}=[[lhs]]\\\\ \\text{vs.}\\;\\;\\alpha\\,(n+\\delta)=[[alpha]]\\cdot[[nd]]=[[rhs]]\\end{gathered}",
+     "valores": [
+      {
+       "label": {
+        "es": "Al capitalizarse, la tasa de ahorro…",
+        "en": "As capital builds up, the saving rate…"
+       },
+       "casos": [
+        {
+         "si": "abs(lhs-rhs)<0.0006",
+         "texto": {
+          "es": "se mantiene constante en 1/θ",
+          "en": "stays constant at 1/θ"
+         }
+        },
+        {
+         "si": "lhs>rhs",
+         "texto": {
+          "es": "baja",
+          "en": "falls"
+         }
+        },
+        {
+         "texto": {
+          "es": "sube",
+          "en": "rises"
+         }
+        }
+       ]
+      },
+      {
+       "label": {
+        "es": "1/θ",
+        "en": "1/θ"
+       },
+       "f": "1/theta",
+       "dec": 3
+      }
+     ],
+     "mirar": {
+      "es": "la sección compara dos números: si (ρ + δ)/θ queda por encima de α(n + δ), la tasa de ahorro baja a medida que la economía se capitaliza; si queda por debajo, sube; en el cruce es constante e igual a 1/θ, y el ahorro fijo de Solow-Swan resulta óptimo. Mové θ sobre el cruce y mirá cómo cambia el veredicto.",
+      "en": "the section compares two numbers: if (ρ + δ)/θ is above α(n + δ), the saving rate falls as the economy builds capital; if below, it rises; at the crossing it is constant and equal to 1/θ, and Solow-Swan's fixed saving turns out optimal. Move θ across the crossing and watch the verdict change."
+     }
+    }
    ]
   },
   {
@@ -83,6 +994,116 @@
    "nota": "Sale de log-linealizar las dos ecuaciones dinámicas alrededor del estado estacionario, como en Sala-i-Martin (1990). h es una constante positiva del apéndice; −β es el valor propio negativo del sistema, y la transversalidad anula el término asociado al positivo.",
    "p": [
     "La sección 3.8 deriva la ecuación que sostiene el trabajo empírico sobre convergencia. Como en Solow-Swan, si todos los países comparten tasa de descuento, elasticidad intertemporal, participación del capital, depreciación y crecimiento de la población, una regresión de corte transversal del crecimiento de la renta sobre la renta inicial debería dar un coeficiente negativo: los países con poco capital tienen un producto marginal alto y crecen más rápido. Si convergen a estados estacionarios distintos, esa relación puede desaparecer, y vuelve a aparecer la convergencia condicional. El capítulo no presenta estimaciones: remite al capítulo 10, donde los estados de Estados Unidos, las prefecturas de Japón y regiones europeas convergen como predice la ecuación, y donde una muestra amplia de países también lo hace al mantener constantes los determinantes del estado estacionario. Lectura propia: a diferencia de Solow-Swan, aquí la velocidad β depende también de las preferencias, ρ y θ, de modo que la velocidad estimada informa sobre parámetros que el modelo de ahorro constante no tenía."
+   ],
+   "graf": [
+    {
+     "titulo": {
+      "es": "Coeficiente de la regresión de convergencia",
+      "en": "Convergence regression coefficient"
+     },
+     "x": {
+      "id": "T",
+      "min": 1,
+      "max": 60,
+      "label": {
+       "es": "largo del período T (años)",
+       "en": "period length T (years)"
+      }
+     },
+     "params": [
+      {
+       "id": "beta",
+       "sym": "β",
+       "label": {
+        "es": "velocidad",
+        "en": "speed"
+       },
+       "min": 0.005,
+       "max": 0.1,
+       "step": 0.005,
+       "val": 0.02
+      },
+      {
+       "id": "T0",
+       "sym": "T",
+       "label": {
+        "es": "período elegido",
+        "en": "chosen period"
+       },
+       "min": 1,
+       "max": 60,
+       "step": 1,
+       "val": 25
+      }
+     ],
+     "calc": [
+      {
+       "id": "coef",
+       "f": "-(1-exp(-beta*T0))/T0",
+       "dec": 4
+      }
+     ],
+     "curvas": [
+      {
+       "f": "-(1-exp(-beta*T))/T",
+       "label": {
+        "es": "coeficiente de log y₀ según T",
+        "en": "coefficient on log y₀ by T"
+       }
+      },
+      {
+       "f": "-beta",
+       "estilo": "punteada",
+       "label": {
+        "es": "−β, el límite con T muy corto",
+        "en": "−β, the limit as T shrinks"
+       }
+      }
+     ],
+     "marcas": [
+      {
+       "x": "T0",
+       "label": {
+        "es": "tu T",
+        "en": "your T"
+       }
+      }
+     ],
+     "puntos": [
+      {
+       "x": "T0",
+       "y": "coef"
+      }
+     ],
+     "tex": "\\begin{gathered}\\frac{1}{T}\\left[\\log y_T-\\log y_0\\right]=-\\frac{1-e^{-[[beta]]\\cdot[[T0]]}}{[[T0]]}\\left[\\log y_0-\\log y^*\\right]\\\\ =[[coef]]\\left[\\log y_0-\\log y^*\\right]\\end{gathered}",
+     "valores": [
+      {
+       "label": {
+        "es": "Coeficiente estimado",
+        "en": "Estimated coefficient"
+       },
+       "f": "coef",
+       "dec": 4
+      },
+      {
+       "label": {
+        "es": "Años para cerrar media brecha (ln 2/β)",
+        "en": "Years to close half the gap (ln 2/β)"
+       },
+       "f": "log(2)/beta",
+       "dec": 0,
+       "unidad": {
+        "es": "años",
+        "en": "years"
+       }
+      }
+     ],
+     "mirar": {
+      "es": "el coeficiente de la renta inicial es negativo: los países más lejos de su estado estacionario crecen más rápido. Pero no es −β: se achica en valor absoluto cuanto más largo es el período, porque la brecha se va cerrando dentro de él. Por eso, para recuperar β de una regresión hay que corregir por T. Lectura propia: el cálculo de la vida media supone la aproximación log-lineal de la sección.",
+      "en": "the initial-income coefficient is negative: countries further from their steady state grow faster. But it is not −β: it shrinks in absolute value as the period lengthens, because the gap keeps closing within it. That is why recovering β from a regression requires correcting for T. Own reading: the half-life calculation assumes the section's log-linear approximation."
+     }
+    },
+    null
    ]
   }
  ],
