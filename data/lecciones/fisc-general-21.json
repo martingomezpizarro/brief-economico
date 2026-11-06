@@ -1,0 +1,483 @@
+{
+ "id": "fisc-general-21",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Cómo decide una democracia cuánto gastar: Arrow, el votante mediano, el intercambio de votos y los incentivos de los políticos",
+ "bajada": "Por qué ninguna regla de votación cumple las cinco condiciones de Arrow, cuándo la mayoría cicla, por qué el votante mediano decide pero no elige el gasto eficiente, cómo el intercambio de votos puede corregirlo o empeorarlo, y los cinco problemas de Capello que llevan a malas decisiones públicas en la Argentina.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 4: «Economía Política de las Finanzas Públicas», con resúmenes de Albi (elección colectiva) y Capello (2002), «Ensayo sobre decisiones políticas»",
+ "intro": "La unidad 3 del resumen explicaba por qué el Estado debería intervenir. La unidad 4 pregunta cómo decide de hecho, cuando las preferencias de los ciudadanos son distintas y hay que agregarlas. Tiene dos partes. La primera resume a Albi sobre elección colectiva: las cinco condiciones de Arrow y su teorema de imposibilidad, la votación por mayoría y su ciclicidad, la manipulación de la agenda, las preferencias unimodales y el teorema del votante mediano, la razón por la que ese votante no elige el nivel eficiente de gasto y el intercambio de votos, que a veces lo corrige y a veces infla el gasto. La segunda resume el ensayo de Capello (2002), que traslada la lógica de la elección pública a la Argentina: si el político busca votos, decide bien solo cuando los costos y beneficios de sus decisiones son visibles y los asume él mismo, y el ensayo clasifica en cinco problemas, con dos subcasos cada uno, las situaciones en que esa condición se rompe.",
+ "secciones": [
+  {
+   "t": "Agregar preferencias: las cinco condiciones de Arrow",
+   "eq": [
+    "R = f(R_1, R_2, \\ldots, R_n)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(R_j\\): relación de preferencias del individuo \\(j\\) sobre las alternativas, completa y transitiva; \\(X_i P X_k\\) significa que la alternativa \\(i\\) se prefiere a la \\(k\\).",
+      "en": "\\(R_j\\): individual \\(j\\)'s preference relation over the alternatives, complete and transitive; \\(X_i P X_k\\) means alternative \\(i\\) is preferred to \\(k\\)."
+     },
+     {
+      "es": "\\(n\\): número de individuos del grupo; las alternativas \\(X_1, \\ldots, X_m\\) son, por ejemplo, presupuestos públicos distintos.",
+      "en": "\\(n\\): number of individuals in the group; the alternatives \\(X_1, \\ldots, X_m\\) are, for example, different public budgets."
+     },
+     {
+      "es": "\\(f(\\cdot)\\): regla de elección colectiva, el criterio que agrega las preferencias individuales.",
+      "en": "\\(f(\\cdot)\\): collective choice rule, the criterion that aggregates individual preferences."
+     },
+     {
+      "es": "\\(R\\): preferencia global o social que resulta y determina las elecciones colectivas.",
+      "en": "\\(R\\): resulting global or social preference, which determines collective choices."
+     }
+    ]
+   ],
+   "p": [
+    "Albi parte de una premisa normativa: el sector público no debe tener objetivos propios, sino satisfacer las preferencias individuales por la provisión colectiva. Si todos fueran idénticos, decidir sería trivial; el problema es que las preferencias difieren. La teoría de la elección colectiva busca entonces una regla que agregue intereses individuales respetándolos y cumpliendo requisitos de racionalidad y eficiencia. Algunas reglas usan solo el orden de las preferencias, como las votaciones, donde da igual si una alternativa reporta mucha o poca utilidad; otras consideran también su intensidad.",
+    "Arrow (1951) pidió cinco propiedades a cualquier regla sensata. Dominio no restringido: debe funcionar con cualquier conjunto de preferencias. Pareto optimalidad débil: si todos prefieren una alternativa a otra, la sociedad también. Ausencia de dictadores: nadie impone su preferencia sean cuales sean las de los demás. Racionalidad: la preferencia social debe ser transitiva. Independencia de alternativas irrelevantes: la elección entre dos alternativas depende solo de cómo se ordenan esas dos. El teorema de imposibilidad dice que con al menos tres alternativas y un número finito de individuos ninguna regla cumple las cinco a la vez. La votación mayoritaria, que es la regla de las democracias, falla en dos: el dominio no restringido y la racionalidad."
+   ]
+  },
+  {
+   "t": "Votar por mayoría: equilibrio, ciclos y agenda",
+   "p": [
+    "Con votación directa, una alternativa le gana a otra si la mayoría la prefiere, y es un equilibrio si le gana a todas. El resumen compara dos ejemplos con tres votantes y tres alternativas. En el primero, A ordena X1, X2, X3; B ordena X2, X3, X1; y C ordena X3, X2, X1. X2 le gana a X1 (la prefieren B y C) y a X3 (la prefieren A y B): X2 es el equilibrio.",
+    "En el segundo solo cambia C, que ahora ordena X3, X1, X2. Entonces X1 le gana a X2 (A y C), X2 le gana a X3 (A y B) y X3 le gana a X1 (B y C). La preferencia colectiva es intransitiva, se viola la condición de racionalidad y no hay equilibrio: la votación podría repetirse indefinidamente, lo que se llama ciclicidad. Si se prohíbe volver a votar una alternativa ya derrotada, el ciclo se corta, pero el resultado depende del orden en que se voten. Quien fije ese orden puede obtener el resultado que quiera: es el problema de la manipulación de agenda."
+   ]
+  },
+  {
+   "t": "Preferencias unimodales y el votante mediano",
+   "eq": [
+    "V_i(G) = U_i\\big[\\,Y_i - T_i(Y_i)\\,G,\\; G\\,\\big] = U_i\\big[\\,Y_i^{d},\\; G\\,\\big]",
+    "G_1^{*} \\le G_2^{*} \\le \\cdots \\le G_n^{*},\\qquad G_m^{*} = \\text{mediana de } \\{G_i^{*}\\}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(V_i(G)\\): utilidad del individuo \\(i\\) cuando la sociedad elige un nivel de gasto público \\(G\\); como función de \\(G\\) tiene un único máximo.",
+      "en": "\\(V_i(G)\\): utility of individual \\(i\\) when society chooses a public spending level \\(G\\); as a function of \\(G\\) it has a single peak."
+     },
+     {
+      "es": "\\(U_i\\): función de utilidad de \\(i\\), que depende de su renta disponible y del gasto público, que tiene carácter de bien público.",
+      "en": "\\(U_i\\): \\(i\\)'s utility function, which depends on disposable income and on public spending, which has the character of a public good."
+     },
+     {
+      "es": "\\(Y_i\\): renta del individuo \\(i\\); \\(T_i(Y_i)\\): parte del gasto que paga \\(i\\) por unidad de \\(G\\), según un criterio de financiación que depende de su renta.",
+      "en": "\\(Y_i\\): individual \\(i\\)'s income; \\(T_i(Y_i)\\): the share of spending that \\(i\\) pays per unit of \\(G\\), according to a financing criterion that depends on income."
+     },
+     {
+      "es": "\\(Y_i^{d}\\): renta disponible de \\(i\\), lo que le queda después de pagar sus impuestos.",
+      "en": "\\(Y_i^{d}\\): \\(i\\)'s disposable income, what is left after paying taxes."
+     }
+    ],
+    [
+     {
+      "es": "\\(G_i^{*}\\): nivel de gasto preferido por el individuo \\(i\\), el que maximiza \\(V_i\\); los votantes se ordenan de menor a mayor gasto preferido.",
+      "en": "\\(G_i^{*}\\): individual \\(i\\)'s preferred spending level, the one that maximizes \\(V_i\\); voters are ranked from lowest to highest preferred spending."
+     },
+     {
+      "es": "\\(G_m^{*}\\): gasto preferido por el votante mediano, aquel con la mitad de los demás queriendo más gasto y la otra mitad menos.",
+      "en": "\\(G_m^{*}\\): the median voter's preferred spending, the voter with half of the rest wanting more spending and the other half less."
+     },
+     {
+      "es": "\\(n\\): número de votantes.",
+      "en": "\\(n\\): number of voters."
+     }
+    ]
+   ],
+   "p": [
+    "Si se dibujan los dos ejemplos con las alternativas ordenadas en una sola dimensión, como presupuesto bajo, medio y alto, se ve el culpable del ciclo. A y B son iguales en ambos casos; C, en el segundo, tiene dos máximos relativos, en X1 y en X3. Es una preferencia bimodal, de todo o nada: quiere presupuesto alto, si no bajo, y como último recurso intermedio. Con preferencias unimodales, de un solo máximo, siempre hay solución en votación mayoritaria. Es decir, se resuelve la ciclicidad renunciando al dominio no restringido.",
+    "Votar el nivel de gasto es justamente un caso unidimensional. Cada individuo tiene una renta, paga impuestos que crecen con el gasto, y su utilidad depende de lo que le queda y del gasto mismo; como esa utilidad tiene un único máximo, las preferencias son unimodales. Ordenando los gastos preferidos de menor a mayor, el votante mediano es decisivo: su alternativa preferida le gana a cualquier otra, porque frente a un gasto mayor lo apoyan él y todos los que están a su izquierda, y frente a uno menor él y todos los de su derecha, que en ambos casos son mayoría. Eso le da capacidad predictiva a la teoría: conociendo al votante mediano se conoce la demanda de bienes públicos."
+   ]
+  },
+  {
+   "t": "Por qué el mediano no elige el gasto eficiente",
+   "eq": [
+    "\\mathit{RMS}^{A} + \\mathit{RMS}^{B} + \\mathit{RMS}^{C} = \\mathit{RMT}",
+    "T_i = \\frac{G \\cdot \\mathit{RMT}}{3},\\qquad \\mathit{RMS}^{i} = \\frac{\\partial T_i}{\\partial G} = \\frac{\\mathit{RMT}}{3}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RMS}^{A}\\), \\(\\mathit{RMS}^{B}\\), \\(\\mathit{RMS}^{C}\\): demanda del bien público de cada uno de los tres votantes, su valoración marginal en términos del bien privado.",
+      "en": "\\(\\mathit{RMS}^{A}\\), \\(\\mathit{RMS}^{B}\\), \\(\\mathit{RMS}^{C}\\): each of the three voters' demand for the public good, its marginal valuation in terms of the private good."
+     },
+     {
+      "es": "\\(\\mathit{RMT}\\): costo marginal del bien público; el resumen lo trata como constante (lectura propia, implícito en la fórmula del impuesto).",
+      "en": "\\(\\mathit{RMT}\\): marginal cost of the public good; the summary treats it as constant (our own reading, implicit in the tax formula)."
+     }
+    ],
+    [
+     {
+      "es": "\\(T_i\\): impuesto de capitación que paga el votante \\(i\\), un tercio del costo total.",
+      "en": "\\(T_i\\): head tax paid by voter \\(i\\), one third of the total cost."
+     },
+     {
+      "es": "\\(G\\): nivel de gasto, o cantidad de bien público provista; \\(G \\cdot \\mathit{RMT}\\): costo total.",
+      "en": "\\(G\\): spending level, or quantity of public good provided; \\(G \\cdot \\mathit{RMT}\\): total cost."
+     },
+     {
+      "es": "\\(\\partial T_i / \\partial G\\): costo fiscal marginal para \\(i\\) de una unidad más de gasto; cada votante quiere gasto hasta que su valoración marginal \\(\\mathit{RMS}^{i}\\) iguale ese costo.",
+      "en": "\\(\\partial T_i / \\partial G\\): marginal fiscal cost to \\(i\\) of one more unit of spending; each voter wants spending up to where its marginal valuation \\(\\mathit{RMS}^{i}\\) equals that cost."
+     }
+    ]
+   ],
+   "p": [
+    "Que la votación tenga equilibrio no quiere decir que sea eficiente. Con tres votantes, la condición de Samuelson pide que la suma de las tres valoraciones marginales iguale el costo marginal. Si el gasto se financia con un impuesto de capitación, cada uno paga un tercio, y cada votante prefiere el gasto donde su propia valoración marginal iguala un tercio del costo marginal. Si B es el mediano, la votación elige el gasto preferido por B, pero el gasto que cumple la condición de Samuelson es en general otro. Solo por casualidad coinciden.",
+    "La razón, dice el resumen, es que la eficiencia exige tomar en cuenta la intensidad de las preferencias y la votación por mayoría no lo hace: cada uno vota sí o no, lo quiera mucho o poco. Lectura propia: el ejemplo deja ver la dirección del error. El mediano decide mirando solo su valoración frente a su tercio del costo; si las valoraciones de los otros dos están muy por encima de la suya, se gasta de menos, y si están muy por debajo, de más."
+   ]
+  },
+  {
+   "t": "Intercambio de votos: corrige o infla el gasto",
+   "eq": [
+    "\\mathit{BN}_r(x_k) = B_r(x_k) - \\frac{c(x_k)}{3}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{BN}_r(x_k)\\): beneficio neto del proyecto \\(x_k\\) para la región \\(r\\) (A, B o C). Fórmula escrita como lectura propia a partir del ejemplo del resumen.",
+      "en": "\\(\\mathit{BN}_r(x_k)\\): net benefit of project \\(x_k\\) for region \\(r\\) (A, B or C). Formula written as our own reading from the summary's example."
+     },
+     {
+      "es": "\\(B_r(x_k)\\): beneficio bruto que el proyecto da a la región: 700 para la región favorecida y cero para las otras.",
+      "en": "\\(B_r(x_k)\\): gross benefit the project gives the region: 700 for the favored region and zero for the others."
+     },
+     {
+      "es": "\\(c(x_k)\\): costo del proyecto, 600, que las tres regiones financian por partes iguales (200 cada una).",
+      "en": "\\(c(x_k)\\): cost of the project, 600, which the three regions finance in equal shares (200 each)."
+     }
+    ]
+   ],
+   "p": [
+    "Si los votantes pudieran negociar antes de votar, la minoría que quiere el nivel eficiente podría compensar a la mayoría para que cambie su voto. Una forma es el intercambio de votos: cuando se votan varias propuestas que no se excluyen, los votantes se prestan apoyo mutuo. El ejemplo del resumen es un parlamento con tres bloques del mismo tamaño, A, B y C, cada uno representando a su región. Se votan dos proyectos, x1 para la región A y x2 para la B, cada uno con un costo de 600 y un beneficio de 700 para la región que favorece, financiados con 200 por región.",
+    "El beneficio neto de x1 es 500 para A y −200 para B y C, y simétricamente con x2; cada proyecto suma 100 neto, y los dos juntos 200, así que conviene hacerlos. Pero votados por separado, ambos pierden, porque dos de cada tres los rechazan. Si A y B se comprometen a apoyarse mutuamente, ambos se aprueban: A y B ganan 300 cada uno, C pierde 400, y el total es una ganancia neta, que el resumen describe como mejora de Pareto. Lectura propia: estrictamente, C pierde, así que es una mejora potencial (los ganadores podrían compensarlo), no una mejora de Pareto en sentido estricto.",
+    "El acuerdo tiene un punto débil: la región cuyo proyecto se vota primero tiene incentivos a no cumplir una vez aprobado el suyo. La solución es una propuesta x3 que englobe a las dos y se vote de una vez, el sistema de concesiones mutuas. Y hay un reverso: si cada proyecto diera 500 en vez de 700, los beneficios netos totales serían negativos y habría que rechazarlos, pero el intercambio de votos igual los aprobaría, con un aumento ineficiente del gasto."
+   ]
+  },
+  {
+   "t": "Capello (2002): cuándo el político que busca votos decide bien",
+   "p": [
+    "Capello sostiene que la mayor parte de los problemas de la economía argentina viene del funcionamiento de la política y de cómo se toman las decisiones públicas, y que para diseñar instituciones preventivas hay que partir del mundo real. En la versión ideal el político persigue el bienestar general; en la realista busca la mayor cantidad posible de votos para llegar al poder o quedarse, que es su trabajo. Si los votantes eligieran según el beneficio esperado de las propuestas, ganar exigiría proponer lo que la mayoría quiere, y el interés propio de ambos lados se enlazaría con algo parecido al bien común.",
+    "Para que eso funcione deben cumplirse dos condiciones: que los efectos de las decisiones sean completamente visibles, y que quien toma una decisión asuma tanto sus beneficios como sus costos políticos. Las fallas se agrupan en cinco problemas. El primero es de racionalidad: el político irracional, que toma decisiones que le cuestan más votos de los que le dan, se descarta por poco probable; el votante irracional, que vota por otros motivos, como el voto cautivo, no tiene más solución que el aprendizaje democrático y la educación. El segundo es de visibilidad: si los costos son poco visibles, como el gasto financiado con impuestos escondidos en los precios (IVA, Ingresos Brutos), se vota de más, y el remedio es apoyarse más en impuestos directos o en indirectos visibles; si los beneficios son poco visibles, como las cloacas o la salud preventiva, se ofrece de menos. La condición previa es la publicidad de los actos de gobierno y el acceso a la información pública."
+   ]
+  },
+  {
+   "t": "Cantidad, espacio y tiempo: las asimetrías que distorsionan",
+   "p": [
+    "El tercer problema es la cantidad y la intensidad de los afectados. Como no se puede votar mucho o poco a un candidato, solo los muy afectados se organizan. Cuando hay pocos beneficiados en mucho y muchos perjudicados en poco, la política prospera: un fondo para un sector bien definido financiado con un pequeño aumento de un impuesto de base amplia, como el Fondo del Tabaco, o la contratación de empleados estatales. Cuando hay muchos beneficiados en poco y pocos perjudicados en mucho, rara vez ve la luz: bajar aranceles a un sector o regular a las empresas contaminantes.",
+    "El cuarto es el espacio. En un país federal deciden a la vez el gobierno central, las provincias y los municipios. Si una jurisdicción recibe los beneficios y otra paga los costos, se gasta de más, como con la coparticipación federal, donde los gastos excesivos de unas provincias los pagan contribuyentes de otras; Capello propone que cada jurisdicción solo pueda gastar más si recauda más de sus propios contribuyentes. Si una paga y otra se beneficia, como un hospital de alta complejidad que usan los vecinos, se ofrece de menos; la salida es que lo opere un nivel superior o que la otra jurisdicción pague por el uso.",
+    "El quinto es el tiempo, porque las autoridades duran cuatro años y los costos o beneficios pueden llegar cuando ya no están. Con beneficios rápidos y costos diferidos hay exceso: gasto o rebajas de impuestos financiados con deuda, uso de ahorros previsionales, controles de precios que incuban aumentos, incumplimiento de contratos, moratorias impositivas. Para Capello el tiempo es el mejor aliado de los populismos y la mayoría de las peores calamidades de la historia económica argentina se asocia con estos incentivos; propone límites legales o constitucionales al déficit y la deuda, tratamiento especial para las decisiones previsionales y un banco central independiente. Con costos rápidos y beneficios diferidos, como las reformas educativas e impositivas, pocos las quieren hacer, y no hay soluciones obvias.",
+    "Los problemas se combinan. El ejemplo de tiempo y espacio es la transferencia de cajas previsionales provinciales a la Nación: antes del traspaso, las provincias tienen un fuerte incentivo a jubilar masivamente a sus empleados, a veces con corrupción, porque el costo lo pagarán otras jurisdicciones y otras generaciones. Lectura propia: la tipología no se testea con datos en el ensayo; es un marco para leer casos, y su fuerza está en que cada problema trae asociado un rediseño institucional concreto."
+   ]
+  }
+ ],
+ "claves": [
+  "Arrow: con tres o más alternativas y un número finito de individuos, ninguna regla cumple a la vez dominio no restringido, Pareto, ausencia de dictador, transitividad e independencia de alternativas irrelevantes.",
+  "La votación mayoritaria puede ciclar; si se eliminan las alternativas derrotadas, quien fija la agenda decide el resultado.",
+  "Las preferencias bimodales causan los ciclos; con preferencias unimodales sobre una dimensión, el votante mediano es decisivo.",
+  "El gasto que elige el mediano solo por casualidad cumple la condición de Samuelson, porque el voto no mide intensidades.",
+  "El intercambio de votos puede aprobar proyectos eficientes que la mayoría rechazaría, pero también proyectos ineficientes que inflan el gasto.",
+  "Capello: el político decide bien si los efectos son visibles y él asume beneficios y costos; las fallas son de racionalidad, visibilidad, cantidad e intensidad, espacio y tiempo.",
+  "Beneficios rápidos con costos diferidos generan exceso de decisiones como gasto con deuda o moratorias; las reglas fiscales y un banco central independiente son la respuesta."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué condiciones de Arrow incumple la votación por mayoría, según el resumen?",
+    "en": "Which of Arrow's conditions does majority voting fail, according to the summary?"
+   },
+   "op": {
+    "es": [
+     "Pareto débil y ausencia de dictadores",
+     "Dominio no restringido y racionalidad",
+     "Solo la independencia de alternativas irrelevantes",
+     "Ninguna"
+    ],
+    "en": [
+     "Weak Pareto and non-dictatorship",
+     "Unrestricted domain and rationality",
+     "Only independence of irrelevant alternatives",
+     "None"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La mayoría puede producir preferencias sociales intransitivas y, para evitarlo, hay que restringir las preferencias admitidas.",
+    "en": "Majority rule can produce intransitive social preferences and, to avoid that, the admissible preferences must be restricted."
+   },
+   "id": "fisc-general-21-q1"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo 2, C pasa a ordenar X3, X1, X2. ¿Qué ocurre en la votación por mayoría?",
+    "en": "In example 2, C now ranks X3, X1, X2. What happens under majority voting?"
+   },
+   "op": {
+    "es": [
+     "X2 sigue siendo el equilibrio",
+     "X3 gana todas las votaciones",
+     "Se forma un ciclo: X1 vence a X2, X2 a X3 y X3 a X1",
+     "Hay empate entre las tres"
+    ],
+    "en": [
+     "X2 is still the equilibrium",
+     "X3 wins every vote",
+     "A cycle forms: X1 beats X2, X2 beats X3 and X3 beats X1",
+     "All three tie"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La preferencia de C es bimodal y la preferencia colectiva se vuelve intransitiva: no hay equilibrio.",
+    "en": "C's preference is double-peaked and the collective preference becomes intransitive: there is no equilibrium."
+   },
+   "id": "fisc-general-21-q2"
+  },
+  {
+   "q": {
+    "es": "Si las preferencias ciclan y no se puede volver a votar una alternativa derrotada, ¿de qué depende el resultado?",
+    "en": "If preferences cycle and a defeated alternative cannot be voted again, what does the outcome depend on?"
+   },
+   "op": {
+    "es": [
+     "Del orden en que se votan las alternativas",
+     "De la intensidad de las preferencias",
+     "Del votante mediano",
+     "De la regla de Samuelson"
+    ],
+    "en": [
+     "The order in which alternatives are voted",
+     "The intensity of preferences",
+     "The median voter",
+     "The Samuelson rule"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Quien diseña el orden de discusión puede obtener el resultado que quiera: es la manipulación de agenda.",
+    "en": "Whoever sets the order of discussion can obtain the outcome they want: agenda manipulation."
+   },
+   "id": "fisc-general-21-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué gana la alternativa preferida por el votante mediano cuando las preferencias son unimodales?",
+    "en": "Why does the median voter's preferred alternative win when preferences are single-peaked?"
+   },
+   "op": {
+    "es": [
+     "Porque es la más eficiente",
+     "Porque el mediano es el más informado",
+     "Porque minimiza el costo total del gasto",
+     "Porque frente a cualquier otra la apoyan él y todos los que están del otro lado, que son mayoría"
+    ],
+    "en": [
+     "Because it is the most efficient",
+     "Because the median voter is best informed",
+     "Because it minimizes total spending cost",
+     "Because against any other alternative it is backed by the median voter and everyone on the other side, a majority"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Frente a un gasto mayor lo apoyan él y los de su izquierda; frente a uno menor, él y los de su derecha.",
+    "en": "Against higher spending it is backed by the median voter and those to the left; against lower spending, by the median voter and those to the right."
+   },
+   "id": "fisc-general-21-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué, en general, el gasto elegido por mayoría no cumple la condición de Samuelson?",
+    "en": "Why does the spending chosen by majority generally fail the Samuelson condition?"
+   },
+   "op": {
+    "es": [
+     "Porque el impuesto de capitación es progresivo",
+     "Porque la votación no toma en cuenta la intensidad de las preferencias",
+     "Porque el votante mediano miente",
+     "Porque los bienes públicos son rivales"
+    ],
+    "en": [
+     "Because the head tax is progressive",
+     "Because voting does not take account of preference intensity",
+     "Because the median voter lies",
+     "Because public goods are rival"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La eficiencia pide sumar las valoraciones de todos; el mediano decide comparando solo la suya con su parte del costo.",
+    "en": "Efficiency requires summing everyone's valuations; the median voter decides by comparing only its own with its share of the cost."
+   },
+   "id": "fisc-general-21-q5"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo del parlamento, cada proyecto cuesta 600 y rinde 700 a una región. ¿Qué logra el intercambio de votos entre A y B?",
+    "en": "In the parliament example, each project costs 600 and yields 700 to one region. What does vote trading between A and B achieve?"
+   },
+   "op": {
+    "es": [
+     "Que se rechacen ambos proyectos",
+     "Que solo se apruebe el primero",
+     "Que C financie todo",
+     "Que se aprueben ambos, con un beneficio neto total de 200"
+    ],
+    "en": [
+     "Both projects are rejected",
+     "Only the first one passes",
+     "C pays for everything",
+     "Both pass, with a total net benefit of 200"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Votados por separado, dos de cada tres rechazan cada proyecto; con el intercambio A y B ganan 300 cada uno y C pierde 400.",
+    "en": "Voted separately, two out of three reject each project; with trading A and B gain 300 each and C loses 400."
+   },
+   "id": "fisc-general-21-q6"
+  },
+  {
+   "q": {
+    "es": "Para Capello, ¿qué pasa con un gasto financiado con impuestos escondidos en los precios, como el IVA?",
+    "en": "For Capello, what happens with spending financed by taxes hidden in prices, such as VAT?"
+   },
+   "op": {
+    "es": [
+     "Los votantes eligen niveles exagerados de esa política",
+     "Se ofrece de menos",
+     "No tiene efecto sobre las decisiones",
+     "Lo bloquean los grupos más afectados"
+    ],
+    "en": [
+     "Voters choose excessive levels of that policy",
+     "It is undersupplied",
+     "It has no effect on decisions",
+     "It is blocked by the most affected groups"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es un problema de costos poco visibles; el remedio es apoyarse más en impuestos directos o en indirectos visibles.",
+    "en": "It is a problem of low-visibility costs; the remedy is to rely more on direct taxes or visible indirect ones."
+   },
+   "id": "fisc-general-21-q7"
+  },
+  {
+   "q": {
+    "es": "Según Capello, ¿qué tipo de decisión favorece el populismo?",
+    "en": "According to Capello, what kind of decision does populism favor?"
+   },
+   "op": {
+    "es": [
+     "Costos rápidos con beneficios diferidos",
+     "Muchos beneficiados en poco y pocos perjudicados en mucho",
+     "Beneficios rápidos con costos diferidos, que llegan cuando quien decidió ya no gobierna",
+     "Costos propios con beneficios ajenos"
+    ],
+    "en": [
+     "Quick costs with deferred benefits",
+     "Many slightly benefited and few heavily harmed",
+     "Quick benefits with deferred costs, arriving when the decision-maker no longer governs",
+     "Own costs with others' benefits"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Gasto con deuda, uso de ahorros previsionales o moratorias; propone límites al déficit y a la deuda y un banco central independiente.",
+    "en": "Debt-financed spending, use of pension savings or tax amnesties; he proposes limits on deficits and debt and an independent central bank."
+   },
+   "id": "fisc-general-21-q8"
+  }
+ ],
+ "palabras": 1909,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice el teorema de imposibilidad de Arrow?",
+    "en": "What does Arrow's impossibility theorem say?"
+   },
+   "a": {
+    "es": "Que con al menos tres alternativas y un número finito de individuos no existe regla de elección colectiva que cumpla dominio no restringido, Pareto débil, ausencia de dictadores, racionalidad e independencia de alternativas irrelevantes. Arrow (1951), según Albi en el Resumen de Finanzas Públicas (FCE-UNC), unidad 4.",
+    "en": "That with at least three alternatives and a finite number of individuals no collective choice rule satisfies unrestricted domain, weak Pareto, non-dictatorship, rationality and independence of irrelevant alternatives. Arrow (1951), per Albi in the Public Finance summary (FCE-UNC), unit 4."
+   },
+   "id": "fisc-general-21-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Qué causa los ciclos en la votación por mayoría?",
+    "en": "What causes cycles in majority voting?"
+   },
+   "a": {
+    "es": "Las preferencias bimodales, de todo o nada, con dos máximos relativos sobre una dimensión; con preferencias unimodales siempre hay equilibrio. Albi, según el Resumen de Finanzas Públicas, unidad 4.",
+    "en": "Double-peaked, all-or-nothing preferences with two relative maxima along one dimension; with single-peaked preferences there is always an equilibrium. Albi, per the Public Finance summary, unit 4."
+   },
+   "id": "fisc-general-21-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué predice el teorema del votante mediano sobre el gasto público?",
+    "en": "What does the median voter theorem predict about public spending?"
+   },
+   "a": {
+    "es": "Que con preferencias unimodales la votación elige el gasto preferido por el votante mediano, lo que permite predecir la demanda de bienes públicos, aunque solo por casualidad es el nivel eficiente de Samuelson. Albi, según el Resumen de Finanzas Públicas, unidad 4.",
+    "en": "That with single-peaked preferences voting selects the median voter's preferred spending, which makes the demand for public goods predictable, though only by chance is it Samuelson's efficient level. Albi, per the Public Finance summary, unit 4."
+   },
+   "id": "fisc-general-21-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cuándo el intercambio de votos aumenta el gasto de forma ineficiente?",
+    "en": "When does vote trading raise spending inefficiently?"
+   },
+   "a": {
+    "es": "Cuando los proyectos tienen beneficios totales menores que su costo: si en el ejemplo rindieran 500 en vez de 700 por un costo de 600, el intercambio los aprobaría igual. Albi, según el Resumen de Finanzas Públicas, unidad 4.",
+    "en": "When projects' total benefits are below their cost: if in the example they yielded 500 instead of 700 for a cost of 600, vote trading would still approve them. Albi, per the Public Finance summary, unit 4."
+   },
+   "id": "fisc-general-21-t4"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué condiciones hacen que un político que busca votos tome decisiones públicas eficientes?",
+    "en": "What conditions make a vote-seeking politician take efficient public decisions?"
+   },
+   "a": {
+    "es": "Que los efectos de las decisiones sean completamente visibles y que quien decide asuma tanto los beneficios como los costos políticos. Capello (2002).",
+    "en": "That the effects of decisions are fully visible and that the decision-maker bears both the political benefits and the political costs. Capello (2002)."
+   },
+   "id": "fisc-general-21-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la coparticipación federal puede inducir exceso de gasto provincial?",
+    "en": "Why can federal revenue sharing induce excessive provincial spending?"
+   },
+   "a": {
+    "es": "Porque es un caso de beneficios propios y costos ajenos: los gastos excesivos de unas provincias los pagan contribuyentes de otras. La salida es que cada jurisdicción solo gaste más si recauda más de los suyos. Capello (2002).",
+    "en": "Because it is a case of own benefits and others' costs: some provinces' excess spending is paid by taxpayers elsewhere. The fix is that each jurisdiction can spend more only if it collects more from its own taxpayers. Capello (2002)."
+   },
+   "id": "fisc-general-21-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué instituciones frenan las decisiones de beneficios rápidos y costos diferidos?",
+    "en": "Which institutions curb decisions with quick benefits and deferred costs?"
+   },
+   "a": {
+    "es": "Límites legales o constitucionales al déficit y al endeudamiento, tratamientos legales especiales para las decisiones previsionales y un banco central independiente. Capello (2002).",
+    "en": "Legal or constitutional limits on deficits and borrowing, special legal treatment for pension decisions and an independent central bank. Capello (2002)."
+   },
+   "id": "fisc-general-21-t7"
+  }
+ ]
+}

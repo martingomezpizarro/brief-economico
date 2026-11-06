@@ -1,0 +1,609 @@
+{
+ "id": "fisc-general-20",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Por qué interviene el Estado: el contrato, las fallas de mercado, la redistribución y quién recibe el gasto",
+ "bajada": "El Estado como salida del dilema del robo, la regla de Buchanan y Tullock para repartir tareas entre mercado y Estado, la condición de Samuelson, Pigou y Coase ante las externalidades, la redistribución como bien público y la incidencia del gasto social argentino, que baja el Gini de 0,54 a 0,43.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 3: «Rol del sector público», con resúmenes de García Viñuela, Albi, Stiglitz, Laffont, Garriga, Porto y Rosales (2015) y Gasparini (1999)",
+ "intro": "La unidad 3 del resumen de Finanzas Públicas de la FCE-UNC responde una sola pregunta desde varios ángulos: por qué existe el Estado y qué debería hacer. Arranca con la mirada contractualista de García Viñuela, que explica el Estado como una mejora de Pareto sobre el estado de naturaleza de Hobbes y delimita sus funciones con el criterio de costos de Buchanan y Tullock. Sigue con Albi y las fallas de mercado: las condiciones de eficiencia, los bienes públicos y la condición de Samuelson, los recursos de propiedad común y las externalidades, con sus remedios de Pigou y de Coase y la versión de equilibrio general de Laffont. Después pasa a la redistribución, que el resumen trata como un bien público. Cierra con tres lecturas aplicadas: la medición de eficiencia del sector público boliviano de Garriga, Porto y Rosales (2015), la incidencia distributiva del gasto social y de los impuestos en la Argentina de Gasparini (1999) y la discusión de Stiglitz sobre producción pública y burocracia. El propio resumen avisa que le faltan la competencia imperfecta, el monopolio natural y la información asimétrica.",
+ "secciones": [
+  {
+   "t": "El Estado como salida del dilema del robo",
+   "p": [
+    "García Viñuela parte de una pregunta: por qué individuos racionales que aman la libertad aceptan restringirla para crear el Estado. En el estado de naturaleza de Hobbes cada uno tiene libertad ilimitada, puede imponer costos a los demás y debe soportar los que le imponen, pero nadie tiene fuerza para someter a los otros por mucho tiempo. Siguiendo a Muller (1989), el resumen lo escribe como un juego entre dos vecinos, A y B, que pueden robar o no robar. Si ninguno roba, las utilidades son 9 para A y 7 para B; si A no roba y B sí, 2 y 8; si A roba y B no, 11 y 3; si ambos roban, 4 y 5.",
+    "Robar es estrategia dominante para los dos: A gana 11 en vez de 9 si B no roba y 4 en vez de 2 si B roba; B gana 8 en vez de 7 y 5 en vez de 3. El equilibrio de Nash es robar-robar, la anarquía hobbesiana, aunque ambos estarían mejor sin robar. Pasar de esa casilla a la de cooperación exige definir derechos de propiedad y un órgano que los haga cumplir. Por eso el Estado puede nacer por unanimidad: es una mejora de Pareto, porque al menos uno mejora y nadie empeora, siempre que lo que cueste el acuerdo no se coma la ganancia. Pero también necesita coacción, porque la tentación de no cooperar sigue ahí.",
+    "Si el juego se repite indefinidamente, cada jugador puede responder a la estrategia del otro y en grupos chicos se aprende a cooperar sin coacción. En grupos grandes y heterogéneos los incumplimientos cuestan más de detectar y castigar, y se vuelven necesarios los acuerdos explícitos y alguien que los haga cumplir. El mismo apartado cierra con el reverso: el pacto crea un Leviatán, una acumulación de poder coactivo capaz de aplastar a quienes lo firmaron. El Estado se defiende por las ganancias de bienestar que permite y se critica por la amenaza que sus poderes de coacción y redistribución suponen para la libertad y el mercado."
+   ]
+  },
+  {
+   "t": "Mercado o Estado: la regla de costos de Buchanan y Tullock",
+   "eq": [
+    "C = f(N_a),\\qquad D = g(N_a),\\qquad N_a \\le N",
+    "N_a^{*} = \\arg\\min_{N_a}\\; \\big[\\, C(N_a) + D(N_a) \\,\\big]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C\\): valor presente de los costos externos que el individuo espera sufrir por decisiones del grupo que lo perjudican; baja cuando \\(N_a\\) sube y es nulo con unanimidad.",
+      "en": "\\(C\\): present value of the external costs the individual expects from group decisions that harm him; it falls as \\(N_a\\) rises and is zero under unanimity."
+     },
+     {
+      "es": "\\(D\\): valor presente del costo de tomar la decisión (negociar, convencer, consumir tiempo y esfuerzo); sube con \\(N_a\\) y tiende a infinito si se pide unanimidad en un grupo grande.",
+      "en": "\\(D\\): present value of the decision-making cost (bargaining, persuading, time and effort); it rises with \\(N_a\\) and tends to infinity if unanimity is required in a large group."
+     },
+     {
+      "es": "\\(f(\\cdot)\\), \\(g(\\cdot)\\): funciones que vinculan cada costo con la regla de decisión; \\(f\\) es decreciente y \\(g\\) creciente.",
+      "en": "\\(f(\\cdot)\\), \\(g(\\cdot)\\): functions linking each cost to the decision rule; \\(f\\) is decreasing and \\(g\\) increasing."
+     },
+     {
+      "es": "\\(N_a\\): número de individuos cuyo apoyo se necesita para que un acuerdo sea vinculante; \\(N\\): tamaño del grupo.",
+      "en": "\\(N_a\\): number of individuals whose support is needed for an agreement to be binding; \\(N\\): size of the group."
+     }
+    ],
+    [
+     {
+      "es": "\\(N_a^{*}\\): regla de decisión óptima, la mayoría requerida que minimiza los costos de interdependencia social; el resumen la llama \\(R/N\\) en su gráfico.",
+      "en": "\\(N_a^{*}\\): optimal decision rule, the required majority that minimizes the costs of social interdependence; the summary calls it \\(R/N\\) in its chart."
+     },
+     {
+      "es": "\\(\\arg\\min\\): el valor de \\(N_a\\) que hace mínima la expresión entre corchetes.",
+      "en": "\\(\\arg\\min\\): the value of \\(N_a\\) that makes the bracketed expression smallest."
+     },
+     {
+      "es": "\\(C(N_a) + D(N_a)\\): costos de interdependencia social, la suma de costos externos y costos de decisión.",
+      "en": "\\(C(N_a) + D(N_a)\\): costs of social interdependence, the sum of external and decision-making costs."
+     }
+    ]
+   ],
+   "p": [
+    "Buchanan y Tullock (1962) proponen delimitar las funciones del Estado según cuánto cuesta eliminar el costo externo de las acciones individuales. Definen tres costos subjetivos: a, el perjuicio que el individuo espera de los demás si nadie regula su conducta; b, lo que costaría reducirlo con cooperación privada entre los afectados; y g, el costo mínimo de corregirlo con acción colectiva a través del Estado, que incluye las decisiones públicas adversas que se tomen sin unanimidad.",
+    "Ordenar los tres valores da seis casos. Si a es el menor, como al elegir con quién asociarse o qué religión profesar, conviene la libertad: remediar cuesta más que tolerar. Si b es el menor, conviene la cooperación privada: empresas, partidos, sindicatos, clubes, o la autorregulación de la violencia en la televisión infantil. Si g es el menor, conviene el Estado: con g menor que a y a menor que b está la contaminación del aire y el ruido, donde organizar a los perjudicados y negociar cuesta más que el daño; con g menor que b y b menor que a, la defensa, la seguridad y la justicia, que si el Estado no proveyera se cubrirían con acuerdos voluntarios. Esos dos últimos casos son las fallas de mercado. La justificación solo vale si el Estado decide con una regla menos exigente que la unanimidad; si no, g y b serían iguales.",
+    "Ahí entra el modelo constitucional. Toda regla por debajo de la unanimidad le impone al individuo un costo externo político, que cae a medida que se exige más apoyo. Pero conseguir más apoyo cuesta más. La regla óptima minimiza la suma de ambos, y la regulación estatal mejora el bienestar mientras esa suma sea menor que el costo a de no regular. Como los costos son subjetivos, ¿por qué elegirían todos reglas parecidas? El resumen responde con incertidumbre: si en la etapa constitucional nadie sabe si estará entre los ganadores o los perdedores futuros, es más fácil ponerse de acuerdo."
+   ]
+  },
+  {
+   "t": "Eficiencia en producción, en consumo y global",
+   "eq": [
+    "\\mathit{RMTS}^{X}_{KL} = \\mathit{RMTS}^{Y}_{KL},\\qquad \\mathit{RMTS}^{X}_{KL} = \\frac{\\mathit{Pmg}\\,L_x}{\\mathit{Pmg}\\,K_x}",
+    "\\mathit{RMS}^{A}_{XY} = \\mathit{RMS}^{B}_{XY} = \\mathit{RMT}_{XY}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RMTS}^{X}_{KL}\\), \\(\\mathit{RMTS}^{Y}_{KL}\\): relación marginal técnica de sustitución entre trabajo y capital en la industria de \\(X\\) y en la de \\(Y\\): cuánto capital puede reemplazar una unidad de trabajo sin cambiar la producción.",
+      "en": "\\(\\mathit{RMTS}^{X}_{KL}\\), \\(\\mathit{RMTS}^{Y}_{KL}\\): marginal rate of technical substitution between labor and capital in the \\(X\\) and \\(Y\\) industries: how much capital one unit of labor can replace without changing output."
+     },
+     {
+      "es": "\\(\\mathit{Pmg}\\,L_x\\), \\(\\mathit{Pmg}\\,K_x\\): productividad marginal del trabajo y del capital en la industria \\(X\\). El texto extraído del resumen tiene esta fracción desordenada; el orden trabajo sobre capital es lectura propia, coherente con la definición habitual.",
+      "en": "\\(\\mathit{Pmg}\\,L_x\\), \\(\\mathit{Pmg}\\,K_x\\): marginal product of labor and of capital in industry \\(X\\). The extracted text of the summary has this fraction scrambled; the labor-over-capital order is our own reading, consistent with the usual definition."
+     },
+     {
+      "es": "\\(K\\), \\(L\\): cantidades fijas de capital y trabajo que se reparten entre las dos industrias.",
+      "en": "\\(K\\), \\(L\\): fixed amounts of capital and labor split between the two industries."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{RMS}^{A}_{XY}\\), \\(\\mathit{RMS}^{B}_{XY}\\): relación marginal de sustitución entre \\(X\\) e \\(Y\\) de los consumidores \\(A\\) y \\(B\\), el cociente de sus utilidades marginales: cuánto \\(Y\\) cede cada uno por una unidad más de \\(X\\).",
+      "en": "\\(\\mathit{RMS}^{A}_{XY}\\), \\(\\mathit{RMS}^{B}_{XY}\\): marginal rate of substitution between \\(X\\) and \\(Y\\) for consumers \\(A\\) and \\(B\\), the ratio of their marginal utilities: how much \\(Y\\) each gives up for one more unit of \\(X\\)."
+     },
+     {
+      "es": "\\(\\mathit{RMT}_{XY}\\): relación marginal de transformación, el costo marginal físico de producir una unidad más de \\(X\\) medido en unidades de \\(Y\\) (pendiente de la frontera de posibilidades de producción).",
+      "en": "\\(\\mathit{RMT}_{XY}\\): marginal rate of transformation, the physical marginal cost of producing one more unit of \\(X\\) measured in units of \\(Y\\) (slope of the production possibilities frontier)."
+     }
+    ]
+   ],
+   "p": [
+    "Para Albi, el mercado puede dar resultados ineficientes o poco equitativos que solo la acción colectiva corrige, y el sector público es el candidato natural. Un sistema es eficiente si no desperdicia recursos. Eso pide dos cosas. Eficiencia en la producción: con capital y trabajo fijos, no se puede producir más de un bien sin producir menos de otro reasignando factores, lo que exige igualar entre industrias la tasa a la que el trabajo sustituye al capital. Eficiencia en el consumo: con cantidades fijas de bienes, no se puede mejorar a un consumidor sin empeorar a otro, lo que exige que ambos valoren igual un bien en términos del otro.",
+    "La eficiencia global junta las dos: las valoraciones marginales de todos los consumidores deben ser iguales entre sí y además iguales al costo marginal físico de producir un bien en términos del otro. Si esa igualdad no se cumple, el mecanismo de asignación falla. Los causantes típicos, según el resumen, son los bienes públicos, los recursos de propiedad común, las externalidades, la competencia imperfecta y la información imperfecta."
+   ]
+  },
+  {
+   "t": "Bienes públicos: suma vertical y condición de Samuelson",
+   "eq": [
+    "\\mathit{RMS}^{A}_{GY} + \\mathit{RMS}^{B}_{GY} = \\mathit{RMT}_{GY}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{RMS}^{A}_{GY}\\), \\(\\mathit{RMS}^{B}_{GY}\\): valoración marginal del bien público \\(G\\) en términos del bien privado \\(Y\\) para \\(A\\) y para \\(B\\): cuánto \\(Y\\) daría cada uno por una unidad más de \\(G\\); es su «demanda» del bien público.",
+      "en": "\\(\\mathit{RMS}^{A}_{GY}\\), \\(\\mathit{RMS}^{B}_{GY}\\): marginal valuation of the public good \\(G\\) in terms of the private good \\(Y\\) for \\(A\\) and \\(B\\): how much \\(Y\\) each would give for one more unit of \\(G\\); it is their «demand» for the public good."
+     },
+     {
+      "es": "Lado izquierdo: beneficio marginal social de la última unidad de \\(G\\), porque todos consumen esa misma unidad.",
+      "en": "Left-hand side: social marginal benefit of the last unit of \\(G\\), because everyone consumes that same unit."
+     },
+     {
+      "es": "\\(\\mathit{RMT}_{GY}\\): costo marginal de producir una unidad más de \\(G\\) en términos del bien privado \\(Y\\); hace de «oferta».",
+      "en": "\\(\\mathit{RMT}_{GY}\\): marginal cost of producing one more unit of \\(G\\) in terms of the private good \\(Y\\); it plays the role of «supply»."
+     }
+    ]
+   ],
+   "p": [
+    "Un bien público tiene dos rasgos: no rivalidad, porque el costo marginal de que se sume un consumidor es cero (los gastos militares no cambian cuando nace un niño), e imposibilidad de exclusión por precios (no se puede dejar a una persona fuera de la defensa ante un ataque). La defensa es de los pocos bienes públicos puros; la mayoría son impuros y cumplen alguna de las propiedades en alguna medida. Si el bien no es excluible, la provisión privada es imposible: cada uno prefiere no pagar y consumir lo que pagan los demás, el problema del free rider, y el bien termina sin producirse. Si es excluible, la provisión privada es posible pero ineficiente.",
+    "Con dos individuos, dos bienes privados y un bien público consumido en conjunto, maximizar la utilidad de A manteniendo la de B y respetando la tecnología da, para el bien privado, la condición conocida, y para el bien público la condición de Samuelson: la suma de las valoraciones marginales debe igualar el costo marginal. Gráficamente, la demanda agregada de un bien público se obtiene sumando en vertical las disposiciones a pagar de cada uno para cada nivel de provisión, y no en horizontal las cantidades a cada precio como en los bienes privados. En el óptimo todos consumen la misma cantidad y obtienen beneficios marginales distintos; con un bien privado, todos enfrentan el mismo precio y consumen cantidades distintas. Stiglitz llega a lo mismo con la curva de restos: la diferencia vertical entre la frontera de producción y la curva de indiferencia de A, que debe ser tangente a la de B.",
+    "Si el Estado conociera las demandas individuales, podría cobrarle a cada uno su valoración, los precios personalizados o de Lindahl. Pero nadie tiene incentivos a revelarla: si lo que paga depende de lo que declara, lo óptimo es declarar cero y ser free rider. Por eso el Estado tiene que usar otros mecanismos de provisión."
+   ]
+  },
+  {
+   "t": "Recursos comunes y externalidades: Pigou, Coase y Laffont",
+   "eq": [
+    "\\mathit{BMg}_{social} = \\mathit{BMg}_{privado} + \\mathit{Ext},\\qquad \\mathit{CMg}_{social} = \\mathit{CMg}_{privado} + \\mathit{Ext}",
+    "\\mathit{TMS}_C + \\frac{\\partial f^2}{\\partial X_1} = \\mathit{TMT}_{P1} + \\frac{\\partial f^2}{\\partial Y_1^1} = \\mathit{TMT}_{P2},\\qquad t^{*} = \\frac{\\partial f^2}{\\partial X_1},\\quad \\tau^{*} = \\frac{\\partial f^2}{\\partial Y_1^1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\mathit{BMg}\\): beneficio marginal de una unidad más del bien; privado es el del consumidor (la curva de demanda) y social suma el efecto sobre terceros.",
+      "en": "\\(\\mathit{BMg}\\): marginal benefit of one more unit of the good; private is the consumer's (the demand curve) and social adds the effect on third parties."
+     },
+     {
+      "es": "\\(\\mathit{CMg}\\): costo marginal de producir una unidad más; privado es el de la empresa (la curva de oferta) y social suma el daño o beneficio sobre terceros.",
+      "en": "\\(\\mathit{CMg}\\): marginal cost of producing one more unit; private is the firm's (the supply curve) and social adds the harm or benefit to third parties."
+     },
+     {
+      "es": "\\(\\mathit{Ext}\\): valor marginal de la externalidad, negativo o positivo según el caso; el resumen usa la misma palabra en ambas igualdades.",
+      "en": "\\(\\mathit{Ext}\\): marginal value of the externality, negative or positive depending on the case; the summary uses the same word in both equalities."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\mathit{TMS}_C\\): tasa marginal de sustitución en el consumo del individuo, el cociente de utilidades marginales de los bienes 1 y 2.",
+      "en": "\\(\\mathit{TMS}_C\\): the individual's marginal rate of substitution in consumption, the ratio of the marginal utilities of goods 1 and 2."
+     },
+     {
+      "es": "\\(\\mathit{TMT}_{P1}\\), \\(\\mathit{TMT}_{P2}\\): tasas marginales de transformación de las firmas 1 y 2, cuánto producto propio obtiene cada una por unidad del bien de la otra que usa como insumo.",
+      "en": "\\(\\mathit{TMT}_{P1}\\), \\(\\mathit{TMT}_{P2}\\): marginal rates of transformation of firms 1 and 2, how much own output each gets per unit of the other's good it uses as input."
+     },
+     {
+      "es": "\\(f^2\\): función de producción de la firma 2, que depende de su insumo, de la producción de la firma 1 y del consumo del bien 1.",
+      "en": "\\(f^2\\): production function of firm 2, which depends on its input, on firm 1's output and on consumption of good 1."
+     },
+     {
+      "es": "\\(X_1\\): consumo del bien 1; \\(Y_1^1\\): producción del bien 1 por la firma 1 (el supraíndice indica la firma).",
+      "en": "\\(X_1\\): consumption of good 1; \\(Y_1^1\\): output of good 1 by firm 1 (the superscript indicates the firm)."
+     },
+     {
+      "es": "\\(\\partial f^2/\\partial X_1\\), \\(\\partial f^2/\\partial Y_1^1\\): externalidad del consumo y de la producción sobre la firma 2, evaluadas en las cantidades óptimas.",
+      "en": "\\(\\partial f^2/\\partial X_1\\), \\(\\partial f^2/\\partial Y_1^1\\): consumption and production externalities on firm 2, evaluated at the optimal quantities."
+     },
+     {
+      "es": "\\(t^{*}\\): impuesto óptimo al consumidor; \\(\\tau^{*}\\): impuesto óptimo al productor; cada uno iguala la externalidad que corrige.",
+      "en": "\\(t^{*}\\): optimal tax on the consumer; \\(\\tau^{*}\\): optimal tax on the producer; each equals the externality it corrects."
+     }
+    ]
+   ],
+   "p": [
+    "Los recursos de propiedad común, como los bancos de pesca, los pastos comunales o el agua de los ríos, son parcialmente excluibles y parcialmente rivales. Se usan a costo cero, así que nadie computa el perjuicio que le causa a los demás al reducir lo disponible: hay sobreexplotación, poca inversión en renovarlos y riesgo de que desaparezcan. Un acuerdo entre todos los usuarios funcionaría con pocos, pero con muchos hay incentivos a romperlo; dividir el recurso tiene altos costos de vigilancia. Lo más factible, dice el resumen, es dar el derecho de propiedad a una sola empresa, cuyo máximo beneficio privado coincidiría con el social, o regular el número de usuarios y el volumen de explotación.",
+    "Las externalidades pecuniarias, que pasan por los precios, son eficientes. Las tecnológicas, que no pasan por los precios, no lo son. Con una externalidad negativa en la producción, como el humo de una fábrica, el costo marginal social supera al privado y se produce de más; un impuesto que eleve el costo privado hasta el social lleva la producción al nivel eficiente, y la ganancia neta es el triángulo entre ambas curvas. Con una externalidad negativa en el consumo, como el cigarrillo o el auto en hora pico, el beneficio social es menor que el privado y también se consume de más. Con externalidades positivas, como el manzanar y las abejas del vecino o la educación y la vacunación, se produce o consume de menos y el remedio es un subsidio.",
+    "El resumen ordena los remedios en tres. La legislación básica, según el teorema de Coase: si los derechos de propiedad están definidos, hay información perfecta y la transacción es chica, las partes negocian y llegan al nivel eficiente sin el Estado. En el ejemplo del fumador y el no fumador que comparten habitación, la cantidad eficiente sale igual se le dé el derecho a uno o al otro; lo que cambia es quién se queda con la ganancia. La regulación, que exige conocer costos y beneficios marginales que nadie quiere revelar. Y la financiación: impuestos correctivos o pigouvianos para las negativas y subsidios para las positivas.",
+    "Laffont lo lleva a equilibrio general con dos firmas que usan como insumo el bien de la otra y un consumidor. Sin externalidades, la solución competitiva y la del dictador benevolente coinciden: es el primer teorema del bienestar. Si la producción de la firma 2 depende además de la producción de la firma 1 y del consumo del bien 1, el mercado ignora esos efectos y el resultado es ineficiente; el óptimo de Pareto suma la externalidad del consumo a la tasa marginal de sustitución y la de la producción a la tasa de transformación de la firma 1. Un impuesto al consumidor y otro al productor iguales a cada externalidad hacen que el equilibrio competitivo replique ese óptimo, que es como el resumen presenta el segundo teorema del bienestar."
+   ]
+  },
+  {
+   "t": "La redistribución como bien público",
+   "eq": [
+    "U^A(R^A, R^B),\\qquad U^B(R^B),\\qquad R^A + R^B = \\bar R",
+    "\\max\\; W = W(U^A, U^B)\\quad \\text{sujeto a}\\quad U^A = G(U^B)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(U^A\\), \\(U^B\\): utilidad del individuo rico \\(A\\) y del pobre \\(B\\); la de \\(A\\) depende de su propia renta y, por altruismo, de la renta de \\(B\\).",
+      "en": "\\(U^A\\), \\(U^B\\): utility of the rich individual \\(A\\) and the poor one \\(B\\); \\(A\\)'s depends on its own income and, through altruism, on \\(B\\)'s income."
+     },
+     {
+      "es": "\\(R^A\\), \\(R^B\\): renta de cada uno; \\(\\bar R\\): renta total fija que se reparte entre los dos.",
+      "en": "\\(R^A\\), \\(R^B\\): each one's income; \\(\\bar R\\): fixed total income shared between the two."
+     }
+    ],
+    [
+     {
+      "es": "\\(W\\): función de bienestar social, que convierte las utilidades individuales en una medida de bienestar colectivo; sube si alguien mejora sin que otro empeore y prefiere repartos intermedios a extremos (aversión a la desigualdad).",
+      "en": "\\(W\\): social welfare function, which turns individual utilities into a measure of collective welfare; it rises if someone gains without anyone losing and prefers intermediate to extreme distributions (inequality aversion)."
+     },
+     {
+      "es": "\\(G(\\cdot)\\): frontera de posibilidades de utilidad, la máxima utilidad de \\(A\\) alcanzable para cada utilidad de \\(B\\). Aquí \\(G\\) ya no es el bien público de la sección anterior.",
+      "en": "\\(G(\\cdot)\\): utility possibilities frontier, the maximum utility of \\(A\\) attainable for each utility of \\(B\\). Here \\(G\\) is no longer the public good of the previous section."
+     }
+    ]
+   ],
+   "p": [
+    "Albi distingue tres filosofías: la libertaria, para la que la propiedad privada es un derecho natural y el impuesto redistributivo un robo; la colectivista, que sustituye la propiedad privada por la pública y planifica; y la social-liberal, en el medio, para la que la propiedad es un medio al servicio de metas colectivas y redistribuir es una función legítima del Estado. Desde esta última, el Estado puede canalizar la redistribución voluntaria o forzarla con impuestos y transferencias.",
+    "El modelo es simple. Un rico altruista dona hasta que lo que pierde de poder de compra se compensa con la satisfacción de ver mejor al pobre. Pero con muchos ricos y muchos pobres, la renta de los pobres funciona como un bien público puro: cada rico se beneficia cuando cualquier otro dona, así que espera que donen los demás. El resultado es una cantidad subóptima de redistribución, que justifica la intervención. El óptimo social es la tangencia entre la curva de indiferencia social y la frontera de posibilidades de utilidad, y el altruismo solo no llega ahí: hace falta redistribuir de forma coactiva.",
+    "Queda una salvedad. Si los impuestos distorsionan la elección entre trabajo y ocio, la frontera se corre hacia adentro y se pierde eficiencia. Vale la pena incurrir en ese costo, dice el resumen, siempre que la nueva frontera permita alcanzar una curva de indiferencia social más alta que la del mero altruismo."
+   ]
+  },
+  {
+   "t": "Cuánto rinde el gasto: Bolivia según Garriga, Porto y Rosales (2015)",
+   "eq": [
+    "W = W\\big[\\,X_1(P_1),\\, X_2(P_2),\\, \\ldots,\\, X_J(P_J)\\,\\big]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W\\): bienestar social; aquí se redefine como función de los indicadores de prestaciones públicas.",
+      "en": "\\(W\\): social welfare; here redefined as a function of public-service indicators."
+     },
+     {
+      "es": "\\(X_j\\): indicador socioeconómico del sector \\(j\\) que mide una prestación pública (salud, educación, vivienda y servicios urbanos), el output que demandan los ciudadanos.",
+      "en": "\\(X_j\\): socioeconomic indicator for sector \\(j\\) measuring a public service (health, education, housing and urban services), the output citizens demand."
+     },
+     {
+      "es": "\\(P_j\\): producción pública del sector \\(j\\), financiada con un gasto \\(G_j\\); \\(J\\): número de sectores.",
+      "en": "\\(P_j\\): public production in sector \\(j\\), financed with spending \\(G_j\\); \\(J\\): number of sectors."
+     },
+     {
+      "es": "La eficiencia de cada sector es el cociente entre su indicador de desempeño y su gasto en relación con el PIB; el resumen no da la fórmula exacta de ese cociente.",
+      "en": "Each sector's efficiency is the ratio of its performance indicator to its spending relative to GDP; the summary does not give the exact formula of that ratio."
+     }
+    ]
+   ],
+   "p": [
+    "Garriga, Porto y Rosales miden desempeño, costo y eficiencia del sector público boliviano en educación, salud y vivienda y servicios urbanos. Parten de que medir la calidad del sector público es complejo porque depende de objetivos y juicios de valor, y toman de Tanzi su definición: las características que permiten que el gobierno persiga sus objetivos de la forma más eficiente. Una buena calidad del sector público no garantiza buenas políticas, pero las facilita. Descartan los enfoques que miran solo insumos o solo productos y combinan gasto y resultados. Bolivia vivió grandes cambios: el retorno a la democracia en 1982, la Ley de Participación Popular de 1994, que descentralizó creando municipios y aumentando sus transferencias, y el cambio de gobierno de 2006 con la reforma constitucional de 2009.",
+    "Los resultados: entre 1992 y 2012 el desempeño agregado mejora entre 87,8% y 110%, según se pondere igual a todos los sectores o según su peso en el gasto, y mejora en todos los departamentos. El gasto en relación con el PIB sube 41% entre 1990-92 y 2006-2010; solo cae, 14%, en Tarija, porque su producto creció mucho con el precio de los hidrocarburos. La eficiencia mejora en salud (22,5%) y educación (88%) y empeora en vivienda y servicios urbanos (−19,5%); el indicador sintético mejora entre 32,9% y 48,9%. Hay convergencia: los sectores que arrancaron mejor crecen menos. Los autores asocian estas mejoras con la descentralización, porque la inversión pasó a responder a necesidades (los municipios con más analfabetismo invirtieron más en educación) y la sociedad civil se involucró en planificar y controlar. Lectura propia: es una asociación, no una estimación causal; el resumen no describe ningún contrafáctico."
+   ]
+  },
+  {
+   "t": "Quién recibe el gasto y quién paga: Gasparini (1999)",
+   "eq": [
+    "K_g = G(y^s) - C(g),\\qquad K_t = C(t) - G(y^s)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(K_g\\), \\(K_t\\): índices de Kakwani del gasto y de los impuestos, medidas de progresividad; positivos indican gasto o impuestos progresivos.",
+      "en": "\\(K_g\\), \\(K_t\\): Kakwani indices of spending and of taxes, measures of progressivity; positive values indicate progressive spending or taxes."
+     },
+     {
+      "es": "\\(G(y^s)\\): coeficiente de Gini del ingreso antes de la política social, entre 0 y 1; más alto es más desigual. \\(y^s\\): ese ingreso previo; el resumen no explica el supraíndice \\(s\\).",
+      "en": "\\(G(y^s)\\): Gini coefficient of income before social policy, between 0 and 1; higher means more unequal. \\(y^s\\): that pre-policy income; the summary does not explain the superscript \\(s\\)."
+     },
+     {
+      "es": "\\(C(g)\\): índice de concentración del gasto; negativo indica gasto pro-pobre.",
+      "en": "\\(C(g)\\): concentration index of spending; negative indicates pro-poor spending."
+     },
+     {
+      "es": "\\(C(t)\\): índice de concentración de los impuestos; según el resumen, positivo indica una estructura pro-pobre (la carga se concentra arriba).",
+      "en": "\\(C(t)\\): concentration index of taxes; according to the summary, positive indicates a pro-poor structure (the burden concentrates at the top)."
+     }
+    ]
+   ],
+   "p": [
+    "Gasparini estima cómo se reparten entre los estratos los beneficios del gasto social y la carga de los impuestos en la Argentina. La clave es separar dos clasificaciones: un gasto es pro-pobre si en valor absoluto aumenta hacia los estratos de menor ingreso, y progresivo si como proporción del ingreso crece hacia abajo. El estudio se limita al gasto social porque en defensa, justicia o administración no hay cómo identificar beneficiarios; como el gasto social es probablemente más pro-pobre que el resto, el impacto redistributivo queda sobreestimado.",
+    "El gasto en sectores sociales (educación, salud, vivienda, nutrición) es pro-pobre: el 20% más pobre recibe el 26,0% y el 20% más rico el 15,5%; por persona, $901 en el primer quintil y $539 en el último, un 40,2% menos. El gasto en seguros sociales (seguridad social, obras sociales, asignaciones familiares) es pro-rico: 9,6% para el primer quintil y 29,3% para el quinto, de $144 a $440 por persona, en parte porque se financia con criterio devolutivo y exige empleo estable. Pero como porcentaje del ingreso los dos son progresivos. Los impuestos son lo contrario: la recaudación crece hacia arriba (pro-pobres), pero la presión tributaria cae al subir el ingreso, así que son regresivos.",
+    "Juntando todo, los cuatro primeros quintiles reciben un subsidio neto que financia el quinto; para el primero equivale al 117,8% de su ingreso disponible, más que duplicándolo. El Gini pasa de 0,54 antes de la política social a 0,43 después: el gasto iguala y los impuestos desigualan un poco. Lectura propia: es incidencia contable de primer orden, sin cambios de comportamiento ni traslación de impuestos, de modo que mide quién recibe y quién paga, no qué pasaría sin el Estado."
+   ]
+  },
+  {
+   "t": "Financiar no es producir: Stiglitz y la burocracia",
+   "p": [
+    "Que haya fallas de mercado justifica que el Estado provea, no que produzca. Stiglitz separa quién financia de quién produce: producción pública de bienes privados (electricidad, ferrocarriles), producción pública de bienes públicos (educación, policía) y provisión pública con producción privada (servicios hospitalarios, recolección de basura, aviones del ejército). Su actividad productiva central es administrar leyes y programas, en una cadena que va del electorado a los representantes, de ellos a los funcionarios y de vuelta a los votantes, con grupos de presión en todas las etapas.",
+    "Las razones de la ineficiencia pública son organizativas (las empresas públicas no quiebran porque las subsidia el Estado, y no enfrentan competencia que revele preferencias) e individuales (salarios fijados por ley y no por productividad, y estabilidad en el empleo). Niskanen agrega que los funcionarios buscan poder, prestigio e influencia, todos ligados al tamaño de su organismo, así que maximizan su presupuesto: la competencia burocrática reemplaza a la de mercado. Las salidas, contratar empresas privadas por licitación o dar bonos a los usuarios, tienen sus propios problemas: pocos oferentes, riesgos que hay que compensar y corrupción en un caso; usuarios que no necesariamente juzgan mejor y más estratificación social, por ejemplo en educación, en el otro."
+   ]
+  }
+ ],
+ "claves": [
+  "En el dilema del robo, robar es dominante y el equilibrio de Nash es la anarquía; crear el Estado es una mejora de Pareto que necesita coacción.",
+  "Buchanan y Tullock: el Estado conviene cuando su costo de corregir la externalidad (g) es el menor; la regla óptima minimiza costos externos más costos de decisión.",
+  "Condición de Samuelson: la suma de las valoraciones marginales del bien público iguala su costo marginal; la demanda se suma en vertical.",
+  "Nadie revela su valoración si paga según lo que declara: el free rider impide los precios de Lindahl.",
+  "Coase: con derechos definidos, información perfecta y costos de transacción bajos, la negociación privada llega a la cantidad eficiente; la asignación del derecho solo cambia el reparto.",
+  "La redistribución es un bien público entre ricos altruistas, por eso el altruismo voluntario la deja corta.",
+  "Gasparini (1999): el gasto social es progresivo, los impuestos regresivos, y la política fiscal baja el Gini de 0,54 a 0,43.",
+  "Que el Estado provea no implica que produzca; Niskanen explica la ineficiencia burocrática por la maximización del presupuesto."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En el juego del robo entre A y B, ¿por qué el resultado es robar-robar aunque ambos prefieran no robar?",
+    "en": "In the theft game between A and B, why is the outcome steal-steal even though both prefer not stealing?"
+   },
+   "op": {
+    "es": [
+     "Porque robar es la estrategia dominante de cada uno, haga lo que haga el otro",
+     "Porque A tiene más fuerza que B",
+     "Porque el juego se repite indefinidamente",
+     "Porque no robar no es un óptimo de Pareto"
+    ],
+    "en": [
+     "Because stealing is each player's dominant strategy, whatever the other does",
+     "Because A is stronger than B",
+     "Because the game is repeated indefinitely",
+     "Because not stealing is not a Pareto optimum"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "A gana 11 en vez de 9 si B no roba y 4 en vez de 2 si B roba; B, 8 en vez de 7 y 5 en vez de 3. La repetición, en cambio, favorece la cooperación.",
+    "en": "A gets 11 instead of 9 if B does not steal and 4 instead of 2 if B steals; B, 8 instead of 7 and 5 instead of 3. Repetition, instead, favors cooperation."
+   },
+   "id": "fisc-general-20-q1"
+  },
+  {
+   "q": {
+    "es": "Según Buchanan y Tullock, ¿cuándo corresponde que una actividad la regule el Estado?",
+    "en": "According to Buchanan and Tullock, when should an activity be regulated by the state?"
+   },
+   "op": {
+    "es": [
+     "Cuando el costo externo de la libre iniciativa es el menor de los tres",
+     "Cuando la cooperación privada es la opción más barata",
+     "Cuando el costo de corregir la externalidad con acción colectiva es el menor de los tres",
+     "Siempre que exista alguna externalidad"
+    ],
+    "en": [
+     "When the external cost of free individual action is the smallest of the three",
+     "When private cooperation is the cheapest option",
+     "When the cost of correcting the externality through collective action is the smallest of the three",
+     "Whenever there is any externality"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los ordenamientos 5 y 6, con g como menor costo, son las fallas de mercado: contaminación y ruido, o defensa, seguridad y justicia.",
+    "en": "Orderings 5 and 6, with g as the lowest cost, are the market failures: pollution and noise, or defense, security and justice."
+   },
+   "id": "fisc-general-20-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo constitucional, ¿qué pasa con los costos externos y los costos de decisión cuando se exige más apoyo para aprobar una medida?",
+    "en": "In the constitutional model, what happens to external costs and decision costs when more support is required to pass a measure?"
+   },
+   "op": {
+    "es": [
+     "Ambos suben",
+     "Los externos bajan y los de decisión suben",
+     "Los externos suben y los de decisión bajan",
+     "Ambos bajan"
+    ],
+    "en": [
+     "Both rise",
+     "External costs fall and decision costs rise",
+     "External costs rise and decision costs fall",
+     "Both fall"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con unanimidad nadie puede ser perjudicado, pero negociar cuesta mucho más; la regla óptima minimiza la suma de ambos costos.",
+    "en": "Under unanimity nobody can be harmed, but bargaining costs much more; the optimal rule minimizes the sum of both costs."
+   },
+   "id": "fisc-general-20-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cómo se obtiene la demanda agregada de un bien público?",
+    "en": "How is the aggregate demand for a public good obtained?"
+   },
+   "op": {
+    "es": [
+     "Sumando en horizontal las cantidades demandadas a cada precio",
+     "Tomando la demanda del consumidor que más lo valora",
+     "Promediando las demandas individuales",
+     "Sumando en vertical las valoraciones de cada uno para cada nivel de provisión"
+    ],
+    "en": [
+     "Summing horizontally the quantities demanded at each price",
+     "Taking the demand of the consumer who values it most",
+     "Averaging individual demands",
+     "Summing vertically each person's valuation at each level of provision"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Como todos consumen la misma unidad, su valor social es la suma de las valoraciones; eso es la condición de Samuelson.",
+    "en": "Since everyone consumes the same unit, its social value is the sum of valuations; that is the Samuelson condition."
+   },
+   "id": "fisc-general-20-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el Estado no puede cobrar precios de Lindahl en la práctica?",
+    "en": "Why can't the state charge Lindahl prices in practice?"
+   },
+   "op": {
+    "es": [
+     "Porque si el pago depende de lo declarado, cada uno declara valoración nula",
+     "Porque los bienes públicos son rivales",
+     "Porque el costo marginal del bien público es cero",
+     "Porque la ley prohíbe precios distintos"
+    ],
+    "en": [
+     "Because if payment depends on what is declared, everyone declares zero valuation",
+     "Because public goods are rival",
+     "Because the marginal cost of the public good is zero",
+     "Because the law forbids different prices"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Es el problema del free rider: nadie tiene incentivos a revelar sus preferencias y el bien no se produciría.",
+    "en": "It is the free-rider problem: nobody has an incentive to reveal preferences and the good would not be produced."
+   },
+   "id": "fisc-general-20-q5"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo del fumador y el no fumador, ¿qué cambia según a quién se le asigne el derecho de propiedad?",
+    "en": "In the smoker and non-smoker example, what changes depending on who gets the property right?"
+   },
+   "op": {
+    "es": [
+     "La cantidad de humo que resulta de la negociación",
+     "Que se llegue o no a un acuerdo",
+     "El reparto de la ganancia de bienestar entre los dos",
+     "La necesidad de un impuesto pigouviano"
+    ],
+    "en": [
+     "The amount of smoke resulting from bargaining",
+     "Whether an agreement is reached at all",
+     "How the welfare gain is shared between the two",
+     "The need for a Pigouvian tax"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Según Coase, la cantidad eficiente se alcanza en ambos casos; la asignación del derecho solo decide quién le paga a quién.",
+    "en": "According to Coase, the efficient quantity is reached in both cases; the assignment of the right only decides who pays whom."
+   },
+   "id": "fisc-general-20-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el resumen dice que la redistribución se comporta como un bien público puro?",
+    "en": "Why does the summary say redistribution behaves like a pure public good?"
+   },
+   "op": {
+    "es": [
+     "Porque la producen empresas públicas",
+     "Porque cada rico altruista se beneficia cuando dona cualquier otro, y espera que donen los demás",
+     "Porque no tiene costos de eficiencia",
+     "Porque los pobres no pueden ser excluidos de votar"
+    ],
+    "en": [
+     "Because it is produced by public firms",
+     "Because each altruistic rich person benefits when anyone else donates, and waits for others to donate",
+     "Because it has no efficiency costs",
+     "Because the poor cannot be excluded from voting"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La renta del pobre entra en la utilidad de todos los ricos; el free rider deja la redistribución voluntaria por debajo del óptimo.",
+    "en": "The poor person's income enters every rich person's utility; free riding leaves voluntary redistribution below the optimum."
+   },
+   "id": "fisc-general-20-q7"
+  },
+  {
+   "q": {
+    "es": "Según Gasparini (1999), ¿cómo son los impuestos en la Argentina?",
+    "en": "According to Gasparini (1999), what are taxes like in Argentina?"
+   },
+   "op": {
+    "es": [
+     "Pro-ricos y progresivos",
+     "Pro-pobres y progresivos",
+     "Neutrales",
+     "Pro-pobres pero regresivos: la carga crece con el ingreso pero la presión tributaria cae"
+    ],
+    "en": [
+     "Pro-rich and progressive",
+     "Pro-poor and progressive",
+     "Neutral",
+     "Pro-poor but regressive: the burden rises with income but the tax pressure falls"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La recaudación aumenta hacia los quintiles altos, pero como porcentaje del ingreso disminuye; el Kakwani negativo lo confirma.",
+    "en": "Revenue rises toward the top quintiles but falls as a share of income; the negative Kakwani index confirms it."
+   },
+   "id": "fisc-general-20-q8"
+  }
+ ],
+ "palabras": 2829,
+ "tarjetas": [
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Cómo puede nacer el Estado por unanimidad entre individuos que aman la libertad?",
+    "en": "How can the state arise unanimously among freedom-loving individuals?"
+   },
+   "a": {
+    "es": "Porque pasar del equilibrio robar-robar a no robar mejora a todos: es una mejora de Pareto, aunque necesita coacción para frenar la tentación de no cooperar. García Viñuela, siguiendo a Muller (1989), en el Resumen de Finanzas Públicas (FCE-UNC), unidad 3.",
+    "en": "Because moving from the steal-steal equilibrium to not stealing makes everyone better off: a Pareto improvement, though it needs coercion to curb the temptation not to cooperate. García Viñuela, following Muller (1989), in the Public Finance summary (FCE-UNC), unit 3."
+   },
+   "id": "fisc-general-20-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué regla de decisión colectiva es óptima?",
+    "en": "Which collective decision rule is optimal?"
+   },
+   "a": {
+    "es": "La que minimiza la suma de los costos externos de decisiones adversas y los costos de tomar la decisión; conviene regular mientras esa suma sea menor que el costo de no regular. Buchanan y Tullock (1962), según el Resumen de Finanzas Públicas, unidad 3.",
+    "en": "The one that minimizes the sum of the external costs of adverse decisions and the costs of reaching the decision; regulating pays as long as that sum is below the cost of not regulating. Buchanan and Tullock (1962), per the Public Finance summary, unit 3."
+   },
+   "id": "fisc-general-20-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la condición de Samuelson?",
+    "en": "What is the Samuelson condition?"
+   },
+   "a": {
+    "es": "La regla de provisión eficiente de un bien público: la suma de las valoraciones marginales de todos los consumidores debe igualar su costo marginal. Albi y Stiglitz (curva de restos), según el Resumen de Finanzas Públicas, unidad 3.",
+    "en": "The efficient provision rule for a public good: the sum of all consumers' marginal valuations must equal its marginal cost. Albi and Stiglitz (residual curve), per the Public Finance summary, unit 3."
+   },
+   "id": "fisc-general-20-t3"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice el teorema de Coase?",
+    "en": "What does the Coase theorem say?"
+   },
+   "a": {
+    "es": "Que con derechos de propiedad definidos, información perfecta y costos de transacción bajos, los afectados negocian hasta la cantidad eficiente sin intervención; el Estado solo debe delimitar los derechos. Coase, según Albi en el Resumen de Finanzas Públicas, unidad 3.",
+    "en": "That with defined property rights, perfect information and low transaction costs, the parties bargain to the efficient quantity without intervention; the state only needs to define the rights. Coase, per Albi in the Public Finance summary, unit 3."
+   },
+   "id": "fisc-general-20-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué impuestos hacen que el equilibrio competitivo con externalidades sea óptimo de Pareto?",
+    "en": "Which taxes make the competitive equilibrium with externalities Pareto optimal?"
+   },
+   "a": {
+    "es": "Un impuesto al consumidor igual a la externalidad del consumo y otro al productor igual a la externalidad de la producción, evaluados en las cantidades óptimas. Laffont, según el Resumen de Finanzas Públicas, unidad 3.",
+    "en": "A consumer tax equal to the consumption externality and a producer tax equal to the production externality, evaluated at the optimal quantities. Laffont, per the Public Finance summary, unit 3."
+   },
+   "id": "fisc-general-20-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto cambia la desigualdad en la Argentina con el gasto social y los impuestos?",
+    "en": "How much does inequality in Argentina change with social spending and taxes?"
+   },
+   "a": {
+    "es": "El Gini cae de 0,54 a 0,43: el gasto social es progresivo y los impuestos regresivos, y el subsidio neto equivale al 117,8% del ingreso del primer quintil. Gasparini (1999).",
+    "en": "The Gini falls from 0.54 to 0.43: social spending is progressive and taxes regressive, and the net subsidy equals 117.8% of the first quintile's income. Gasparini (1999)."
+   },
+   "id": "fisc-general-20-t6"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cómo evolucionó la eficiencia del gasto público en Bolivia entre los noventa y la década de 2010?",
+    "en": "How did public spending efficiency in Bolivia evolve between the 1990s and the 2010s?"
+   },
+   "a": {
+    "es": "Mejoró en salud (22,5%) y educación (88%), empeoró en vivienda y servicios urbanos (−19,5%) y el indicador sintético subió entre 32,9% y 48,9%, asociado a la descentralización. Garriga, Porto y Rosales (2015).",
+    "en": "It improved in health (22.5%) and education (88%), worsened in housing and urban services (−19.5%), and the synthetic indicator rose between 32.9% and 48.9%, associated with decentralization. Garriga, Porto and Rosales (2015)."
+   },
+   "id": "fisc-general-20-t7"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la burocracia tiende a gastar de más?",
+    "en": "Why does bureaucracy tend to overspend?"
+   },
+   "a": {
+    "es": "Porque los funcionarios buscan poder, prestigio e influencia, ligados al tamaño de su organismo, y maximizan su presupuesto; la competencia burocrática reemplaza a la de mercado. Niskanen, según Stiglitz en el Resumen de Finanzas Públicas, unidad 3.",
+    "en": "Because officials seek power, prestige and influence, tied to the size of their agency, and maximize their budget; bureaucratic competition replaces market competition. Niskanen, per Stiglitz in the Public Finance summary, unit 3."
+   },
+   "id": "fisc-general-20-t8"
+  }
+ ]
+}
