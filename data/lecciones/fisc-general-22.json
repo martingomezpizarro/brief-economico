@@ -1,0 +1,528 @@
+{
+ "id": "fisc-general-22",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Cuánto y cómo gasta el Estado: eficiencia del gasto, análisis costo-beneficio, incidencia y bienes preferentes",
+ "bajada": "Por qué crece el gasto público y cuándo ese crecimiento es eficiente, cómo se mide la eficiencia técnica con regresiones y con DEA, cómo se eligen proyectos con VAN, ratio beneficio-costo, TIR y costo-eficacia, quién se beneficia del gasto y qué dilemas plantean la sanidad y la educación públicas.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 5: «El gasto público»",
+ "intro": "La unidad 5 del resumen de Finanzas Públicas de la FCE-UNC cambia de pregunta. Las unidades anteriores discutían por qué interviene el Estado y cómo decide; esta mira el lado del gasto. Arranca con un hecho del siglo XX: a medida que los países se desarrollaron, dedicaron una parte creciente de su renta a usos públicos. Eso plantea dos preguntas encadenadas, por qué aumenta el gasto y si esos aumentos son ineficientes, y el apunte sostiene que la respuesta a la primera determina en buena medida la segunda. Después ordena las herramientas para juzgar el gasto en dos familias: la eficiencia productiva, que toma las actividades públicas como dadas y pregunta si se hacen bien, y la eficiencia económica, que pregunta qué actividades conviene hacer comparando beneficios y costos. Cierra con la incidencia del gasto, es decir, quién gana con él, y con dos bienes preferentes, la sanidad y la educación, donde la discusión entre producción pública y privada se vuelve concreta. El apunte deja anotado que falta la parte de seguridad social.",
+ "secciones": [
+  {
+   "t": "Por qué crece el gasto y cuándo es eficiente",
+   "p": [
+    "El resumen divide las explicaciones del crecimiento del gasto en dos grupos. Las teorías de demanda atribuyen los aumentos a cambios en lo que piden quienes pueden alterar la provisión pública: el conjunto de los ciudadanos, el votante mediano o los grupos de presión. Las teorías de oferta los atribuyen a los mecanismos con que el propio sector público decide lo que ofrece.",
+    "La causa importa porque define el juicio de eficiencia. Según el apunte, los aumentos que vienen de las leyes de Wagner, del efecto desplazamiento o de la teoría de Baumol pueden ser eficientes. Los que se originan en las votaciones pueden no serlo, pero son legítimos, porque reflejan las preferencias colectivas a través de los mecanismos de decisión establecidos. Los que provienen del resto de las teorías son ineficientes y sería deseable eliminarlos. El apunte no desarrolla cada teoría. Lectura propia, para ubicarlas: Wagner asocia la demanda de servicios públicos al aumento del ingreso; el efecto desplazamiento alude a saltos del gasto en crisis que después no se revierten; Baumol, a que los servicios intensivos en trabajo, como la educación o la salud, encarecen su costo relativo porque su productividad crece menos; las teorías de oferta del resto incluyen, por ejemplo, la burocracia que maximiza su presupuesto, vista en la unidad anterior.",
+    "Para evaluar el gasto ya realizado hay dos niveles. La eficiencia productiva acepta lo que el Estado hace y pregunta si lo hace bien. La eficiencia económica va más atrás: determina qué actividades debe hacer el sector público comparando beneficios y costos."
+   ]
+  },
+  {
+   "t": "Eficiencia técnica y asignativa: medirla con regresiones",
+   "eq": [
+    "Y = \\prod_{i} x_i^{\\beta_i}",
+    "Y_j = f(x_j, \\beta)\\, e^{\\mu_j}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y\\): producto de la actividad pública que se analiza, por ejemplo licenciados por año de una universidad.",
+      "en": "\\(Y\\): output of the public activity under analysis, for example graduates per year of a university."
+     },
+     {
+      "es": "\\(x_i\\): cantidad del insumo \\(i\\) (profesores, horas, capital); \\(\\prod_i\\) es el producto de todos los factores.",
+      "en": "\\(x_i\\): quantity of input \\(i\\) (teachers, hours, capital); \\(\\prod_i\\) is the product over all factors."
+     },
+     {
+      "es": "\\(\\beta_i\\): elasticidad del producto respecto del insumo \\(i\\), el parámetro que se estima: cuánto sube en porcentaje \\(Y\\) si \\(x_i\\) sube 1 %.",
+      "en": "\\(\\beta_i\\): output elasticity with respect to input \\(i\\), the parameter to be estimated: by what percentage \\(Y\\) rises if \\(x_i\\) rises 1%."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_j\\): producto observado de la unidad productiva \\(j\\) (una escuela, un hospital). El apunte escribe el subíndice \\(i\\) en \\(Y\\) y \\(x\\) y \\(j\\) en \\(\\mu\\); acá se unifica en \\(j\\) (lectura propia).",
+      "en": "\\(Y_j\\): observed output of production unit \\(j\\) (a school, a hospital). The summary uses subscript \\(i\\) on \\(Y\\) and \\(x\\) and \\(j\\) on \\(\\mu\\); here they are unified as \\(j\\) (own reading)."
+     },
+     {
+      "es": "\\(f(x_j, \\beta)\\): función de producción estimada, por ejemplo la Cobb-Douglas de arriba, evaluada en los insumos de \\(j\\).",
+      "en": "\\(f(x_j, \\beta)\\): estimated production function, for example the Cobb-Douglas above, evaluated at unit \\(j\\)'s inputs."
+     },
+     {
+      "es": "\\(\\beta\\): vector de parámetros de la tecnología.",
+      "en": "\\(\\beta\\): vector of technology parameters."
+     },
+     {
+      "es": "\\(e^{\\mu_j}\\): término de perturbación; \\(\\mu_j\\) es la desviación de \\(j\\) respecto de la función estimada, que el método lee como ineficiencia técnica en orientación producto.",
+      "en": "\\(e^{\\mu_j}\\): disturbance term; \\(\\mu_j\\) is unit \\(j\\)'s deviation from the estimated function, which the method reads as technical inefficiency in output orientation."
+     }
+    ]
+   ],
+   "p": [
+    "El sector público es técnicamente eficiente cuando está sobre su frontera de posibilidades de producción: no puede producir más de un bien o servicio sin usar más insumos, ni producir lo mismo con menos. Es asignativamente eficiente cuando, además, minimiza el costo de lo que ofrece o, dado el gasto que maneja, maximiza el valor de lo que ofrece. La eficiencia asignativa implica la técnica y, encima, hacerlo de la forma más barata.",
+    "Medir cualquiera de las dos exige comparar el punto donde está una actividad, con sus insumos y productos, contra el mejor punto posible según la función de producción. Todo depende entonces de conocer esa función. La primera técnica es econométrica: se supone una forma funcional, como una Cobb-Douglas, y se estiman sus parámetros por regresión. La función estimada se toma como la tecnología más eficiente y la perturbación de cada unidad mide su ineficiencia.",
+    "El apunte marca dos límites. Primero, la regresión considera eficiente el comportamiento promedio, de modo que aparecen unidades más que eficientes por encima de la recta; se corrige desplazando la recta hacia arriba hasta una frontera como la que el gráfico llama f**. Segundo, toda la discrepancia se atribuye a ineficiencia, aunque parte puede deberse a factores que la ecuación no incluye."
+   ]
+  },
+  {
+   "t": "DEA: la frontera la marcan los mejores",
+   "p": [
+    "Los métodos de programación lineal resuelven los dos problemas de la regresión de otra manera. No construyen la frontera con el promedio sino con las unidades más eficientes, y son no paramétricos: no hay que suponer de antemano la forma de la función de producción, los datos la determinan. El más usado es el Análisis Envolvente de Datos, DEA.",
+    "Con un insumo y un producto, como profesores y licenciados de distintas universidades, se busca la función que envuelve a todos los puntos observados. La envolvente depende del supuesto sobre rendimientos a escala. En el ejemplo del apunte, con rendimientos constantes la frontera es el rayo 0e y quedan como ineficientes B, C y D; con rendimientos decrecientes la frontera es la línea quebrada 0ABg y solo C y D son ineficientes. Con un producto y dos insumos se arma la isocuanta envolvente de las unidades que producen lo mismo, y para un punto como D se mide la ineficiencia en orientación insumo: cuánto trabajo o capital usa de más para producir lo que logran las unidades eficientes.",
+    "Lectura propia: la elección de rendimientos no es un detalle técnico. Con rendimientos constantes, una escuela chica puede aparecer ineficiente solo por su tamaño; con rendimientos variables se le compara contra pares de escala parecida. El resultado de un ranking de eficiencia de hospitales o escuelas puede cambiar según ese supuesto."
+   ]
+  },
+  {
+   "t": "Análisis costo-beneficio: precios sombra y descuento",
+   "eq": [
+    "VA = \\frac{VF}{(1+d)^t}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(VA\\): valor actual, lo máximo que se pagaría hoy por recibir \\(VF\\) en el futuro, o la compensación mínima por ceder consumo presente.",
+      "en": "\\(VA\\): present value, the most one would pay today to receive \\(VF\\) in the future, or the minimum compensation for giving up present consumption."
+     },
+     {
+      "es": "\\(VF\\): valor futuro, el monto que se recibe o se paga dentro de \\(t\\) períodos.",
+      "en": "\\(VF\\): future value, the amount received or paid \\(t\\) periods from now."
+     },
+     {
+      "es": "\\(d\\): tasa de descuento por período; puede ser la tasa social de preferencia temporal o la de rendimiento de la inversión.",
+      "en": "\\(d\\): discount rate per period; it can be the social rate of time preference or the social rate of return on investment."
+     },
+     {
+      "es": "\\(t\\): número de períodos (por ejemplo años) hasta que ocurre el flujo.",
+      "en": "\\(t\\): number of periods (for example years) until the flow occurs."
+     }
+    ]
+   ],
+   "p": [
+    "La eficiencia económica se evalúa con el análisis costo-beneficio. Busca valorar en dinero las corrientes de beneficios y costos de cada alternativa, llevarlas a valor actual con una tasa de descuento y aplicar una regla de decisión que tenga en cuenta riesgos, incertidumbre y efectos redistributivos.",
+    "La pieza central es el precio sombra: el precio que refleja, en el margen, la valoración social de un recurso, bien o servicio. Si hay mercado, se parte del precio de mercado y se ajusta si hay distorsiones. Si se trata de intangibles sin mercado, como el ahorro de tiempo, el valor de la vida o el impacto ambiental, hacen falta técnicas especiales. Una es preguntar, para un costo, la compensación mínima que el afectado aceptaría para mantener su bienestar si el proyecto se hace, y para un beneficio, lo máximo que pagaría por obtenerlo.",
+    "Los flujos se descuentan. El apunte presenta dos candidatas para la tasa. La tasa marginal social de preferencia temporal mide a qué ritmo la comunidad está dispuesta a ceder consumo presente por futuro; es la pendiente de la curva de indiferencia intertemporal, y cuanto más alta, más se valoran los beneficios presentes. La tasa marginal social de rendimiento de la inversión mide a qué ritmo la comunidad puede transformar recursos presentes en futuros; es la pendiente de la curva de transformación. En equilibrio deberían coincidir, pero las imperfecciones de mercado las separan y entonces hay que elegir con cuál descontar. Lectura propia: la elección pesa más en proyectos largos, como una represa o una política climática, donde una diferencia de pocos puntos en la tasa cambia el signo del resultado."
+   ]
+  },
+  {
+   "t": "Reglas de decisión: VAN, beneficio-costo, TIR y costo-eficacia",
+   "eq": [
+    "VNA = \\sum_{t=0}^{T} \\frac{B_t - C_t}{(1+d)^t} > 0",
+    "\\frac{B}{C} > 1",
+    "\\sum_{t=0}^{T} \\frac{B_t - C_t}{(1+\\rho)^t} = 0 \\quad\\text{y se acepta si}\\quad \\rho > d"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(VNA\\): valor neto actual del proyecto (el apunte usa VNA; en la práctica se dice VAN).",
+      "en": "\\(VNA\\): net present value of the project (the summary writes VNA; NPV in English)."
+     },
+     {
+      "es": "\\(B_t\\): beneficios sociales del proyecto en el período \\(t\\), valuados a precios sombra.",
+      "en": "\\(B_t\\): social benefits of the project in period \\(t\\), valued at shadow prices."
+     },
+     {
+      "es": "\\(C_t\\): costos sociales del proyecto en el período \\(t\\).",
+      "en": "\\(C_t\\): social costs of the project in period \\(t\\)."
+     },
+     {
+      "es": "\\(d\\): tasa social de descuento; \\(t\\): período, desde \\(0\\) (hoy) hasta \\(T\\), el último año del proyecto.",
+      "en": "\\(d\\): social discount rate; \\(t\\): period, from \\(0\\) (today) to \\(T\\), the project's last year."
+     }
+    ],
+    [
+     {
+      "es": "\\(B\\): valor presente de los beneficios del proyecto.",
+      "en": "\\(B\\): present value of the project's benefits."
+     },
+     {
+      "es": "\\(C\\): valor presente de los costos; si el cociente supera 1, el proyecto es aceptable y el ratio sirve para ordenar proyectos.",
+      "en": "\\(C\\): present value of the costs; if the ratio exceeds 1 the project is acceptable, and the ratio ranks projects."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\rho\\): tasa interna de retorno (TIR), la tasa que hace nulo el valor neto actual.",
+      "en": "\\(\\rho\\): internal rate of return (IRR), the rate that makes net present value zero."
+     },
+     {
+      "es": "\\(B_t, C_t, t, T\\): como en la primera ecuación.",
+      "en": "\\(B_t, C_t, t, T\\): as in the first equation."
+     },
+     {
+      "es": "\\(d\\): tasa social de descuento; el proyecto se emprende si \\(\\rho\\) la supera.",
+      "en": "\\(d\\): social discount rate; the project goes ahead if \\(\\rho\\) exceeds it."
+     }
+    ]
+   ],
+   "p": [
+    "La regla más usada es el valor neto actual: elegir según la diferencia agregada entre beneficios y costos descontados. Con presupuesto variable, sin techo de gasto, se emprenden todos los proyectos con valor neto actual positivo. Si los proyectos son mutuamente excluyentes o el presupuesto está fijado, se elige el de mayor valor neto actual.",
+    "El ratio beneficio-costo acepta un proyecto si el valor presente de beneficios supera al de costos, y su utilidad es ordenar proyectos cuando los fondos públicos son limitados. La tasa interna de retorno es la tasa que iguala el valor presente de beneficios y costos; se aceptan los proyectos cuya tasa interna supera a la tasa social de descuento.",
+    "Cuando los beneficios no se pueden valorar en dinero pero los costos sí, se usa el análisis costo-eficacia: los costos se comparan con un indicador no monetario ligado al objetivo explícito del programa, como la reducción de la mortalidad. Hace falta fijar antes el nivel de efectividad buscado, para elegir el más barato, o el gasto disponible, para elegir el más efectivo. Un criterio es maximizar el cociente entre efectividad y costo. En el ejemplo del apunte, un programa produce 3 incubadoras con un costo de 100 y otro produce 5 con un costo de 200: el primero es más eficiente porque su cociente, 3 sobre 100, supera al del segundo, 5 sobre 200.",
+    "El apunte advierte no confundir estos indicadores con razones como alumnos por profesor o camillas por paciente, que vinculan un aspecto del servicio con un componente de su costo pero no dicen nada de eficiencia si no se sabe cuál es su valor óptimo. Lectura propia: las reglas no siempre coinciden. El ratio beneficio-costo favorece proyectos chicos con alto rendimiento por peso, mientras que el valor neto actual favorece al que más bienestar total agrega; con presupuesto fijo y proyectos divisibles, ordenar por ratio es lo correcto, pero con proyectos excluyentes manda el valor neto actual."
+   ]
+  },
+  {
+   "t": "Incidencia del gasto y residuo fiscal",
+   "eq": [
+    "RF_i = b_i - \\tau_i"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(RF_i\\): residuo fiscal del individuo o familia \\(i\\), el beneficio neto de la actuación pública. La notación es propia: el apunte lo define en palabras.",
+      "en": "\\(RF_i\\): fiscal residuum of individual or household \\(i\\), the net benefit from public action. The notation is ours: the summary defines it in words."
+     },
+     {
+      "es": "\\(b_i\\): beneficio que \\(i\\) obtiene del gasto público (incidencia del gasto).",
+      "en": "\\(b_i\\): benefit \\(i\\) obtains from public spending (spending incidence)."
+     },
+     {
+      "es": "\\(\\tau_i\\): lo que \\(i\\) pierde por los impuestos que financian ese gasto (incidencia de los impuestos).",
+      "en": "\\(\\tau_i\\): what \\(i\\) loses through the taxes that finance that spending (tax incidence)."
+     }
+    ]
+   ],
+   "p": [
+    "La incidencia del gasto es el análisis de quién se beneficia del gasto público y cuánto. Como el gasto se financia con impuestos que también afectan el bienestar, el efecto neto de la actuación pública sobre cada persona es la diferencia entre lo que recibe del gasto y lo que le cuestan los impuestos: el residuo fiscal.",
+    "Estimarlo no es tan simple como mirar a los beneficiarios directos, porque el gasto tiene efectos externos. La educación gratuita beneficia a los alumnos, pero también a los docentes que tienen más trabajo, a los editores que venden más libros y a la sociedad que se vuelve más culta. Esos efectos rara vez son monetarios y son difíciles de medir. También hay que decidir la unidad de análisis: el individuo o la familia.",
+    "Los estudios se concentran en el gasto social, que es el más progresivo. Dentro de él, las prestaciones monetarias redistribuyen más que las prestaciones en especie: la sanidad y la educación se ofrecen gratis a todos cualquiera sea su renta, mientras que las transferencias monetarias se limitan a personas con rentas muy bajas o nulas."
+   ]
+  },
+  {
+   "t": "Sanidad: seguro privado, producción pública y control del gasto",
+   "p": [
+    "Los bienes preferentes son las transferencias en especie que se consideran esenciales para una vida digna: sanidad, educación, vivienda. Para la sanidad hay consenso en que nadie debería empobrecer, ver mermada su salud o morir por falta de recursos. Pero eso no justifica por sí solo la provisión pública general: los seguros privados podrían cubrir a buena parte de la población y bastaría garantizar la cobertura de quien no puede pagarlos. El problema es que esos seguros no dan cobertura total y sufren selección adversa, entre otras fallas, por lo que es poco probable que alcancen solos el objetivo. Los sistemas públicos siguen dos modelos: el de seguridad social, financiado con impuestos sobre el trabajo que funcionan como prima obligatoria, y el de servicio nacional de salud, universal, gratuito y financiado con impuestos generales.",
+    "Sobre quién debe producir, el apunte enumera rasgos del mercado médico. Los pacientes saben poco sobre la calidad de lo que compran, así que difícilmente expulsen a los malos oferentes. Algunos tratamientos tienen costos fijos altos, lo que puede generar monopolios. Y en zonas de demanda débil, como las rurales, el sector privado no se instala. Estos rasgos favorecen la producción pública. Con producción privada pagada por el Estado, además, el gasto total escapa a su control: depende de cuántos protegidos demanden, los servicios privados son caros y buena parte de la demanda la decide el médico, no el paciente. Esa relación de agencia genera demanda inducida, a menudo excesiva para evitar juicios por mala praxis, y si el pago depende de una demanda que crea el propio prestador hay incentivos a recetar de más. La producción pública controla mejor el gasto total, pero al asignar peor los recursos ese control tiende a traducirse en prestaciones insuficientes y largas colas; la privada es probablemente más eficiente y da libertad de elección, a costa de gastos excesivos, monopolios y zonas sin cobertura.",
+    "Para mejorar el sistema público el apunte repasa tres propuestas. El copago o ticket moderador hace pagar al usuario una parte del costo para frenar la demanda excesiva de quien no percibe lo que cuesta el sistema o actúa como free rider; pero es regresivo, puede poner en riesgo la salud de quien ahorra en atención, y puede no servir si la demanda la inducen los médicos. Los modelos de competencia interna replican dentro del sistema público la disciplina del mercado de seguros, con tres principios: separar financiación, provisión y producción; hacer competir a unidades públicas y privadas; y dar libertad de elección al usuario. La flexibilización de la gestión da a los centros autonomía para contratar y comprar dentro de un presupuesto, con el riesgo de recortar calidad para bajar costos, que se contrarresta con controles de calidad ex post."
+   ]
+  },
+  {
+   "t": "Educación: capital humano, filtro y financiamiento universitario",
+   "p": [
+    "Hay amplio consenso en que el Estado debe favorecer la educación. En parte porque es un bien preferente, que permite disfrutar más de la lectura, la conversación o la cultura, y en parte porque cumple otros objetivos. Internaliza efectos externos: forma votantes informados que sostienen la democracia y crea cohesión social al transmitir un patrimonio cultural común. Y reduce la desigualdad, porque educación e ingresos están claramente correlacionados.",
+    "Esa correlación tiene dos lecturas. Para la teoría del capital humano de Gary Becker, la educación aumenta la productividad y por eso el ingreso: es una inversión con rendimientos futuros. Para otros autores, la educación no hace más productivo a nadie, sino que los empleadores, que no observan la productividad al contratar, la usan como indicador: es un filtro que revela habilidades innatas. Ambas aceptan que la educación sube los ingresos, pero la conclusión normativa cambia. Si vale el capital humano, el gasto educativo es eficiente; si la educación es un filtro, es ineficiente, porque es fácil imaginar filtros más baratos.",
+    "El Estado actúa distinto según el nivel. La primaria y la secundaria suelen ser obligatorias y gratuitas porque dan el mínimo para desenvolverse en la vida y sus beneficiarios dependen de padres que podrían no valorarla o no poder pagarla. La universitaria se deja a la elección individual: cada uno debería estudiar hasta que el precio marginal de un año más iguale su beneficio marginal. El problema es financiarlo, porque los bancos no prestan para inversiones intangibles e inembargables como el capital humano. Esa falla del mercado de capitales justifica gratuidad parcial, becas o préstamos. Con préstamos, solo estudian quienes esperan una rentabilidad mayor que el costo del crédito más el costo de oportunidad del tiempo, y el mercado laboral termina fijando la cantidad de graduados. La postura opuesta, que todo el que tenga la capacidad mínima acceda, es legítima, pero su costo de oportunidad puede ser muy alto y no garantiza que los graduados encuentren trabajo; el apunte propone un diseño a mitad de camino. Lectura propia: el caso argentino, con universidad gratuita y sin arancel, se ubica en el extremo de acceso irrestricto, y la discusión del apunte da los argumentos de ambos lados para evaluarlo."
+   ]
+  }
+ ],
+ "claves": [
+  "Las teorías del crecimiento del gasto se dividen en teorías de demanda (ciudadanos, votante mediano, grupos de presión) y de oferta (mecanismos de decisión pública); la causa define si el aumento es eficiente.",
+  "Eficiencia técnica: estar sobre la frontera de producción. Eficiencia asignativa: además, producir al menor costo; implica la técnica.",
+  "La regresión toma como eficiente el promedio y atribuye todo el error a ineficiencia; el DEA arma la frontera con las mejores unidades y no supone forma funcional, pero depende del supuesto de rendimientos a escala.",
+  "El costo-beneficio valora a precios sombra y descuenta con la tasa social de preferencia temporal o la de rendimiento de la inversión, que coinciden solo sin imperfecciones de mercado.",
+  "Reglas: VAN positivo (o el mayor si son excluyentes), beneficio-costo mayor que 1, TIR mayor que la tasa de descuento; si los beneficios no son monetizables, costo-eficacia.",
+  "Residuo fiscal = beneficio del gasto menos costo de los impuestos; las transferencias monetarias redistribuyen más que las en especie.",
+  "En sanidad, la información asimétrica y la demanda inducida por el médico complican la producción privada pagada por el Estado; la pública controla el gasto pero raciona con colas.",
+  "Si la educación es capital humano, el gasto es eficiente; si es solo un filtro, no. La falla del crédito para capital humano justifica becas o préstamos universitarios."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según el resumen, ¿qué aumentos del gasto público pueden ser ineficientes pero son legítimos?",
+    "en": "According to the summary, which increases in public spending may be inefficient but are legitimate?"
+   },
+   "op": {
+    "es": [
+     "Los derivados de la ley de Wagner",
+     "Los que se originan en las votaciones",
+     "Los causados por la teoría de Baumol",
+     "Los que provocan los grupos de presión dentro de la burocracia"
+    ],
+    "en": [
+     "Those derived from Wagner's law",
+     "Those originating in voting",
+     "Those caused by Baumol's theory",
+     "Those caused by pressure groups inside the bureaucracy"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Reflejan las preferencias colectivas a través de los mecanismos de decisión establecidos; Wagner, el efecto desplazamiento y Baumol pueden dar aumentos eficientes, y el resto son ineficientes.",
+    "en": "They reflect collective preferences through the established decision mechanisms; Wagner, the displacement effect and Baumol can produce efficient increases, and the rest are inefficient."
+   },
+   "id": "fisc-general-22-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué diferencia la eficiencia asignativa de la técnica?",
+    "en": "What distinguishes allocative from technical efficiency?"
+   },
+   "op": {
+    "es": [
+     "La asignativa exige estar sobre la frontera; la técnica, minimizar costos",
+     "Son equivalentes en el sector público",
+     "La asignativa exige además producir al menor costo, e implica la técnica",
+     "La técnica compara beneficios y costos sociales"
+    ],
+    "en": [
+     "Allocative requires being on the frontier; technical, minimizing costs",
+     "They are equivalent in the public sector",
+     "Allocative also requires producing at least cost, and implies technical efficiency",
+     "Technical compares social benefits and costs"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Técnica es no poder producir más sin más insumos; asignativa es eso y hacerlo de la forma más barata.",
+    "en": "Technical means being unable to produce more without more inputs; allocative is that plus doing it the cheapest way."
+   },
+   "id": "fisc-general-22-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es una debilidad de medir la eficiencia con una regresión, según el apunte?",
+    "en": "What is a weakness of measuring efficiency with a regression, per the summary?"
+   },
+   "op": {
+    "es": [
+     "Exige conocer los precios sombra de todos los insumos",
+     "Toma como eficiente el comportamiento promedio y atribuye todo el error a ineficiencia",
+     "No permite usar una función Cobb-Douglas",
+     "Solo sirve con un insumo y un producto"
+    ],
+    "en": [
+     "It requires knowing the shadow prices of all inputs",
+     "It treats average behaviour as efficient and attributes all the error to inefficiency",
+     "It cannot use a Cobb-Douglas function",
+     "It only works with one input and one output"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Aparecen unidades más que eficientes y parte del error puede venir de factores omitidos; se corrige en parte desplazando la recta hacia arriba.",
+    "en": "Units appear that are more than efficient, and part of the error may come from omitted factors; it is partly fixed by shifting the line upwards."
+   },
+   "id": "fisc-general-22-q3"
+  },
+  {
+   "q": {
+    "es": "En el ejemplo de DEA con un insumo y un producto, ¿qué pasa al pasar de rendimientos constantes a decrecientes?",
+    "en": "In the one-input, one-output DEA example, what happens when moving from constant to decreasing returns?"
+   },
+   "op": {
+    "es": [
+     "B deja de ser ineficiente: quedan ineficientes solo C y D",
+     "Todas las unidades pasan a ser eficientes",
+     "Aumenta el número de unidades ineficientes",
+     "La frontera deja de pasar por el origen"
+    ],
+    "en": [
+     "B is no longer inefficient: only C and D remain inefficient",
+     "All units become efficient",
+     "The number of inefficient units rises",
+     "The frontier no longer goes through the origin"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con rendimientos constantes la envolvente es 0e y son ineficientes B, C y D; con decrecientes es 0ABg y solo C y D.",
+    "en": "With constant returns the envelope is 0e and B, C and D are inefficient; with decreasing returns it is 0ABg and only C and D are."
+   },
+   "id": "fisc-general-22-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué mide la tasa marginal social de rendimiento de la inversión?",
+    "en": "What does the social marginal rate of return on investment measure?"
+   },
+   "op": {
+    "es": [
+     "La tasa a la que la comunidad está dispuesta a ceder consumo presente por futuro",
+     "La tasa que hace nulo el valor neto actual de un proyecto",
+     "El cociente entre efectividad y costo",
+     "La tasa a la que la comunidad puede transformar recursos presentes en futuros"
+    ],
+    "en": [
+     "The rate at which the community is willing to give up present for future consumption",
+     "The rate that makes a project's net present value zero",
+     "The ratio of effectiveness to cost",
+     "The rate at which the community can transform present into future resources"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es la pendiente de la curva de transformación; la de preferencia temporal es la pendiente de la curva de indiferencia. Solo coinciden sin imperfecciones de mercado.",
+    "en": "It is the slope of the transformation curve; the time-preference rate is the slope of the indifference curve. They coincide only without market imperfections."
+   },
+   "id": "fisc-general-22-q5"
+  },
+  {
+   "q": {
+    "es": "Con proyectos mutuamente excluyentes o presupuesto fijo, ¿qué regla propone el apunte?",
+    "en": "With mutually exclusive projects or a fixed budget, which rule does the summary propose?"
+   },
+   "op": {
+    "es": [
+     "Hacer todos los que tengan valor neto actual positivo",
+     "Elegir el de menor costo",
+     "Elegir el de mayor valor neto actual",
+     "Elegir el de mayor tasa de descuento"
+    ],
+    "en": [
+     "Undertake all those with positive net present value",
+     "Choose the cheapest",
+     "Choose the one with the highest net present value",
+     "Choose the one with the highest discount rate"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Sin techo de gasto se hacen todos los de valor neto actual positivo; con exclusión o presupuesto fijo, el de mayor valor.",
+    "en": "Without a spending cap all projects with positive net present value are undertaken; with exclusivity or a fixed budget, the one with the highest value."
+   },
+   "id": "fisc-general-22-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las transferencias monetarias redistribuyen más que la sanidad y la educación gratuitas?",
+    "en": "Why do cash transfers redistribute more than free health care and education?"
+   },
+   "op": {
+    "es": [
+     "Porque se financian con impuestos progresivos y las otras no",
+     "Porque se limitan a personas con rentas muy bajas, mientras que las en especie se dan a todos a costo cero",
+     "Porque no tienen efectos externos",
+     "Porque su residuo fiscal es siempre negativo"
+    ],
+    "en": [
+     "Because they are financed with progressive taxes and the others are not",
+     "Because they are limited to people with very low incomes, while in-kind benefits go to everyone at zero cost",
+     "Because they have no external effects",
+     "Because their fiscal residuum is always negative"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La sanidad y la educación se ofrecen a todos cualquiera sea su renta; las prestaciones monetarias se focalizan en rentas muy bajas o nulas.",
+    "en": "Health and education are offered to everyone regardless of income; cash benefits target very low or zero incomes."
+   },
+   "id": "fisc-general-22-q7"
+  },
+  {
+   "q": {
+    "es": "Si la educación funciona solo como filtro de habilidades innatas, ¿qué concluye el apunte sobre el gasto educativo?",
+    "en": "If education works only as a screen for innate ability, what does the summary conclude about education spending?"
+   },
+   "op": {
+    "es": [
+     "Que es eficiente porque sube los ingresos",
+     "Que debe ser íntegramente privado",
+     "Que sería ineficiente, porque es fácil imaginar filtros más baratos",
+     "Que solo se justifica en la universidad"
+    ],
+    "en": [
+     "That it is efficient because it raises incomes",
+     "That it should be fully private",
+     "That it would be inefficient, because cheaper screens are easy to imagine",
+     "That it is justified only at university"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Ambas teorías aceptan que la educación eleva los ingresos; si es capital humano el gasto es eficiente, si es filtro no.",
+    "en": "Both theories accept that education raises incomes; if it is human capital spending is efficient, if it is a screen it is not."
+   },
+   "id": "fisc-general-22-q8"
+  }
+ ],
+ "palabras": 2470,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un precio sombra en la evaluación de proyectos públicos?",
+    "en": "What is a shadow price in public project appraisal?"
+   },
+   "a": {
+    "es": "El precio que refleja, en el margen, la valoración social de un recurso, bien o servicio: se parte del precio de mercado ajustado por distorsiones o, para intangibles sin mercado, de la compensación mínima aceptada o la disposición máxima a pagar. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "The price reflecting, at the margin, the social value of a resource, good or service: market price adjusted for distortions or, for intangibles with no market, minimum accepted compensation or maximum willingness to pay. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el DEA puede dar un ranking de eficiencia distinto según los rendimientos a escala?",
+    "en": "Why can DEA give a different efficiency ranking depending on returns to scale?"
+   },
+   "a": {
+    "es": "Porque la frontera envolvente cambia: con rendimientos constantes es un rayo desde el origen y más unidades quedan debajo; con rendimientos decrecientes la frontera se quiebra y algunas unidades pasan a ser eficientes. En el ejemplo, B solo es ineficiente con rendimientos constantes. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "Because the enveloping frontier changes: with constant returns it is a ray from the origin and more units fall below it; with decreasing returns it kinks and some units become efficient. In the example, B is inefficient only under constant returns. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué reglas de decisión usa el análisis costo-beneficio para aceptar un proyecto público?",
+    "en": "Which decision rules does cost-benefit analysis use to accept a public project?"
+   },
+   "a": {
+    "es": "Valor neto actual positivo (o el mayor si son excluyentes o hay presupuesto fijo), ratio beneficio-costo mayor que 1, útil para ordenar con fondos limitados, y tasa interna de retorno mayor que la tasa social de descuento. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "Positive net present value (or the highest if exclusive or with a fixed budget), benefit-cost ratio above 1, useful for ranking with limited funds, and internal rate of return above the social discount rate. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "Un programa produce 3 incubadoras con un costo de 100 y otro 5 con un costo de 200. ¿Cuál es más eficiente con el criterio costo-eficacia?",
+    "en": "One programme produces 3 incubators at a cost of 100 and another 5 at a cost of 200. Which is more efficient under the cost-effectiveness criterion?"
+   },
+   "a": {
+    "es": "El primero, porque maximiza el cociente efectividad sobre costo: 3/100 es mayor que 5/200. Ejemplo del Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "The first, because it maximizes the effectiveness-to-cost ratio: 3/100 exceeds 5/200. Example from the Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el residuo fiscal?",
+    "en": "What is the fiscal residuum?"
+   },
+   "a": {
+    "es": "El beneficio neto de la actuación pública para una persona: lo que gana con el gasto público menos lo que pierde por los impuestos que lo financian. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "A person's net benefit from public action: what they gain from public spending minus what they lose through the taxes that finance it. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la producción privada de servicios de salud pagada por el Estado tiende a descontrolar el gasto?",
+    "en": "Why does privately produced health care paid for by the state tend to make spending run out of control?"
+   },
+   "a": {
+    "es": "Porque el gasto depende de cuántos protegidos demandan, los servicios privados son caros y buena parte de la demanda la decide el médico en una relación de agencia: si el pago depende de una demanda creada por el propio prestador, hay incentivos a recetar de más. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "Because spending depends on how many covered people demand care, private services are expensive and much of demand is decided by the doctor in an agency relationship: if payment depends on demand created by the provider, there are incentives to over-prescribe. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cuáles son los problemas del copago o ticket moderador en la sanidad pública?",
+    "en": "What are the problems with co-payments (moderating fees) in public health care?"
+   },
+   "a": {
+    "es": "Es regresivo, porque reducen la demanda sobre todo los de menor renta; quien ahorra en atención puede arriesgar su salud; y si la demanda la inducen los médicos, puede no reducirla. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "It is regressive, because lower-income people are the ones who cut demand; those who save on care may risk their health; and if demand is induced by doctors, it may not fall. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t7"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué falla de mercado justifica la intervención pública en la educación universitaria?",
+    "en": "Which market failure justifies public intervention in university education?"
+   },
+   "a": {
+    "es": "La imperfección del mercado de capitales: el sector privado no presta para inversiones intangibles e inembargables como el capital humano, así que quien no tiene recursos no puede financiar su nivel óptimo de educación. Justifica gratuidad parcial, becas o préstamos. Resumen de Finanzas Públicas (FCE-UNC), unidad 5.",
+    "en": "Capital market imperfection: the private sector does not lend for intangible, non-collateralizable investments such as human capital, so those without resources cannot fund their optimal education. It justifies partial free tuition, grants or loans. Public Finance summary (FCE-UNC), unit 5."
+   },
+   "id": "fisc-general-22-t8"
+  }
+ ]
+}

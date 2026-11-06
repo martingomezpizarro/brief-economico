@@ -1,0 +1,594 @@
+{
+ "id": "fisc-general-23",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Qué hace bueno a un impuesto: neutralidad, equidad, exceso de gravamen e incidencia",
+ "bajada": "Los cuatro objetivos del diseño tributario, los principios de beneficio, capacidad de pago y consumo, por qué solo el impuesto de suma fija no distorsiona, cómo se mide el exceso de gravamen y de qué depende, quién paga de verdad un impuesto y en qué se diferencian evasión y elusión.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 6: «Impuestos I», con remisión a Albi para los efectos sobre trabajo, ahorro e inversión",
+ "intro": "La unidad 6 del resumen de Finanzas Públicas de la FCE-UNC pasa del gasto al otro lado del presupuesto: los impuestos. Su punto de partida es que la recaudación no es neutral para la economía, porque influye en las decisiones de consumo, ahorro y trabajo y altera la distribución del bienestar. Para juzgar un impuesto hay que saber qué se le pide, y el apunte toma el consenso de que un sistema fiscal debe ser eficiente, equitativo, sencillo y flexible. Después de las definiciones básicas, el núcleo es analítico: un modelo de consumidor con dos bienes y ocio muestra que solo el impuesto de suma fija deja intactos los precios relativos, y que cualquier otro agrega a la carga directa un exceso de gravamen que crece con las elasticidades y más que proporcionalmente con la alícuota. La unidad cierra con la incidencia, es decir, quién soporta de verdad la carga, y con la evasión y la elusión.",
+ "secciones": [
+  {
+   "t": "Tributos, impuestos y sus elementos",
+   "eq": [
+    "\\text{Cuota} = \\text{Base imponible} \\times \\text{Tipo de gravamen}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "Cuota: cantidad que representa el gravamen, lo que se paga.",
+      "en": "Cuota (tax liability): the amount the levy represents, what is paid."
+     },
+     {
+      "es": "Base imponible: cuantificación y valoración del hecho imponible, en general una cantidad de dinero (por ejemplo, la ganancia del año).",
+      "en": "Base imponible (tax base): quantification and valuation of the taxable event, usually a sum of money (for example, the year's income)."
+     },
+     {
+      "es": "Tipo de gravamen: proporción o cantidad que se aplica sobre la base; puede ser fija o variable.",
+      "en": "Tipo de gravamen (tax rate): proportion or amount applied to the base; it can be fixed or variable."
+     }
+    ]
+   ],
+   "p": [
+    "El apunte distingue cuatro tributos. Los impuestos recaen sobre los contribuyentes sin mirar el beneficio individual que reciben de los bienes públicos que financian, aunque puede haber asignación específica. Las tasas se cobran a un contribuyente cuando el Estado le presta un servicio, aunque el costo no siempre se reparta en proporción al beneficio. Las contribuciones especiales se recaudan del grupo que se beneficia especialmente de un gasto, como los aportes previsionales, con la salvedad de que el beneficio puede no llegar, por ejemplo si el aportante muere antes de jubilarse. Las contribuciones por mejoras recaen sobre quienes vieron valorizados sus activos por una obra pública.",
+    "Un impuesto es lo que el sector público detrae coactivamente del sector privado para financiar la actividad pública en general. Hay dos clasificaciones. Los impuestos personales tienen en cuenta las características del contribuyente, como el de ganancias de personas físicas o un impuesto al gasto; los reales no distinguen entre individuos, como el inmobiliario o el IVA. Los directos gravan manifestaciones inmediatas de capacidad contributiva, como la ganancia o el patrimonio, y suelen ser difíciles de trasladar hacia adelante; los indirectos gravan manifestaciones mediatas, como el consumo, y suelen ser fáciles de trasladar.",
+    "Los elementos de un impuesto son el hecho imponible, la circunstancia que según la ley origina la obligación; el sujeto pasivo, la persona obligada por ley, que no necesariamente es quien termina soportando la carga; la base imponible; el tipo de gravamen; y la cuota, que resulta de multiplicar la base por el tipo."
+   ]
+  },
+  {
+   "t": "Los cuatro objetivos: eficiencia, equidad, sencillez y flexibilidad",
+   "eq": [
+    "C = R - A"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C\\): consumo del individuo en el período, la base de un impuesto al consumo.",
+      "en": "\\(C\\): the individual's consumption in the period, the base of a consumption tax."
+     },
+     {
+      "es": "\\(R\\): renta o ingreso del período, la base de un impuesto a la renta.",
+      "en": "\\(R\\): income in the period, the base of an income tax."
+     },
+     {
+      "es": "\\(A\\): ahorro del período. La identidad dice que gravar el consumo equivale a gravar la renta permitiendo deducir el ahorro.",
+      "en": "\\(A\\): saving in the period. The identity says taxing consumption is equivalent to taxing income while allowing saving to be deducted."
+     }
+    ]
+   ],
+   "p": [
+    "Un impuesto es eficiente si no fuerza decisiones inadecuadas desde el punto de vista de la asignación de recursos: si la asignación era Pareto óptima, debería seguir siéndolo después del impuesto. La condición es que no abra divergencias entre los precios relativos que guían a consumidores y productores. Un impuesto que la cumple se llama neutral; uno que la viola, distorsivo.",
+    "La equidad admite varios principios. El del beneficio pide que cada uno pague según lo que recibe de los bienes públicos, lo que elimina la redistribución; lo siguen las tasas y contribuciones. El de capacidad de pago pide que paguen más los mejor posicionados, en general según su renta; genera redistribución, con residuo fiscal positivo para los de abajo y negativo para los de arriba, y es el que siguen los impuestos. El de utilidad mide la posición económica por el bienestar y no por la renta. El del consumo propone gravar lo que cada uno consume. Sus defensores dicen que es más justo gravar lo que alguien retira de la sociedad que lo que aporta, que elimina la doble imposición del ahorro, cuyos intereses vuelven a pagar renta, y que al eximir el ahorro estimula la acumulación de capital, la producción y el crecimiento. Sus críticos responden que la renta no consumida igual da poder, seguridad e influencia, y que para evitar la doble imposición basta con eximir los rendimientos del ahorro en el impuesto a la renta.",
+    "Además, la equidad horizontal pide tratar igual a los iguales y no discriminar por razones no económicas como raza, sexo o religión; la dificultad es decidir quiénes son iguales. La equidad vertical pregunta cómo tratar a los desiguales: si A gana el doble que B, si debe pagar más del doble, exactamente el doble o lo mismo depende de la concepción de justicia distributiva.",
+    "Un sistema es sencillo cuando descansa en pocos impuestos de base amplia, sin reglas de valuación complicadas ni casos particulares. Eso reduce la presión fiscal indirecta, es decir, el costo de cumplir; reduce el fraude, porque la complejidad genera rechazo; y abarata la gestión y la recaudación. Es flexible cuando la recaudación se ajusta sola a las variaciones de la renta; si no lo es, con precios en alza el gobierno debe subir alícuotas por ley para no perder recaudación real, lo que demora y es impopular."
+   ]
+  },
+  {
+   "t": "El consumidor frente a cuatro impuestos",
+   "eq": [
+    "\\max\\; U(X, Y, H) \\quad \\text{s.a.} \\quad P_X X + P_Y Y = W(1 - H)",
+    "TMgS_{XY} = \\frac{P_X}{P_Y} = TMgT_{XY}, \\quad TMgS_{HX} = \\frac{W}{P_X} = TMgT_{HX}, \\quad TMgS_{HY} = \\frac{W}{P_Y} = TMgT_{HY}",
+    "P_X X + P_Y Y = W(1 - H) - T",
+    "TMgS_{XY} = \\frac{P_X(1+t_X)}{P_Y} \\neq TMgT_{XY}, \\qquad TMgS_{HX} = \\frac{W}{P_X(1+t_X)} \\neq TMgT_{HX}",
+    "TMgS_{HX} = \\frac{W}{(1+t_C)P_X} \\neq TMgT_{HX}, \\qquad TMgS_{HX} = \\frac{W(1-t_W)}{P_X} \\neq TMgT_{HX}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(U(X, Y, H)\\): utilidad del consumidor representativo.",
+      "en": "\\(U(X, Y, H)\\): utility of the representative consumer."
+     },
+     {
+      "es": "\\(X, Y\\): cantidades consumidas de los dos bienes.",
+      "en": "\\(X, Y\\): quantities consumed of the two goods."
+     },
+     {
+      "es": "\\(H\\): ocio, como fracción del tiempo disponible, normalizado a 1; \\(1 - H\\) son las horas trabajadas.",
+      "en": "\\(H\\): leisure, as a fraction of available time normalized to 1; \\(1 - H\\) is hours worked."
+     },
+     {
+      "es": "\\(P_X, P_Y\\): precios de los bienes; \\(W\\): salario por unidad de tiempo, de modo que \\(W(1-H)\\) es el ingreso laboral.",
+      "en": "\\(P_X, P_Y\\): prices of the goods; \\(W\\): wage per unit of time, so \\(W(1-H)\\) is labour income."
+     }
+    ],
+    [
+     {
+      "es": "\\(U(X, Y, H)\\): utilidad del consumidor representativo.",
+      "en": "\\(U(X, Y, H)\\): utility of the representative consumer."
+     },
+     {
+      "es": "\\(X, Y\\): cantidades consumidas de los dos bienes.",
+      "en": "\\(X, Y\\): quantities consumed of the two goods."
+     },
+     {
+      "es": "\\(H\\): ocio, como fracción del tiempo disponible, normalizado a 1; \\(1 - H\\) son las horas trabajadas.",
+      "en": "\\(H\\): leisure, as a fraction of available time normalized to 1; \\(1 - H\\) is hours worked."
+     },
+     {
+      "es": "\\(TMgS_{XY}\\): tasa marginal de sustitución entre \\(X\\) e \\(Y\\), cuánto \\(Y\\) está dispuesto a ceder el consumidor por una unidad más de \\(X\\); \\(TMgS_{HX}\\) y \\(TMgS_{HY}\\), lo mismo entre ocio y cada bien.",
+      "en": "\\(TMgS_{XY}\\): marginal rate of substitution between \\(X\\) and \\(Y\\), how much \\(Y\\) the consumer would give up for one more unit of \\(X\\); \\(TMgS_{HX}\\) and \\(TMgS_{HY}\\), the same between leisure and each good."
+     },
+     {
+      "es": "\\(TMgT_{XY}\\): tasa marginal de transformación, el costo relativo de producir \\(X\\) en términos de \\(Y\\) (el apunte la escribe a veces YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) entre ocio y cada bien.",
+      "en": "\\(TMgT_{XY}\\): marginal rate of transformation, the relative cost of producing \\(X\\) in terms of \\(Y\\) (the summary sometimes writes YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) between leisure and each good."
+     }
+    ],
+    [
+     {
+      "es": "\\(T\\): impuesto de suma fija, un monto que no depende de lo que el individuo consuma o trabaje.",
+      "en": "\\(T\\): lump-sum tax, an amount that does not depend on what the individual consumes or works."
+     },
+     {
+      "es": "\\(P_X, P_Y, W, X, Y, H\\): como en el problema sin gobierno; el impuesto solo desplaza la restricción hacia adentro, sin cambiar su pendiente.",
+      "en": "\\(P_X, P_Y, W, X, Y, H\\): as in the no-government problem; the tax only shifts the budget line inwards without changing its slope."
+     }
+    ],
+    [
+     {
+      "es": "\\(t_X\\): alícuota del impuesto selectivo sobre el consumo de \\(X\\); el consumidor paga \\(P_X(1+t_X)\\) y el productor recibe \\(P_X\\).",
+      "en": "\\(t_X\\): rate of the excise tax on \\(X\\); the consumer pays \\(P_X(1+t_X)\\) and the producer receives \\(P_X\\)."
+     },
+     {
+      "es": "\\(\\neq\\): la tasa a la que el consumidor está dispuesto a sustituir deja de igualar la tasa a la que la economía puede transformar; esa brecha es la distorsión.",
+      "en": "\\(\\neq\\): the rate at which the consumer is willing to substitute no longer equals the rate at which the economy can transform; that gap is the distortion."
+     },
+     {
+      "es": "\\(TMgS_{XY}\\): tasa marginal de sustitución entre \\(X\\) e \\(Y\\), cuánto \\(Y\\) está dispuesto a ceder el consumidor por una unidad más de \\(X\\); \\(TMgS_{HX}\\) y \\(TMgS_{HY}\\), lo mismo entre ocio y cada bien.",
+      "en": "\\(TMgS_{XY}\\): marginal rate of substitution between \\(X\\) and \\(Y\\), how much \\(Y\\) the consumer would give up for one more unit of \\(X\\); \\(TMgS_{HX}\\) and \\(TMgS_{HY}\\), the same between leisure and each good."
+     },
+     {
+      "es": "\\(TMgT_{XY}\\): tasa marginal de transformación, el costo relativo de producir \\(X\\) en términos de \\(Y\\) (el apunte la escribe a veces YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) entre ocio y cada bien.",
+      "en": "\\(TMgT_{XY}\\): marginal rate of transformation, the relative cost of producing \\(X\\) in terms of \\(Y\\) (the summary sometimes writes YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) between leisure and each good."
+     }
+    ],
+    [
+     {
+      "es": "\\(t_C\\): alícuota del impuesto general sobre el consumo, que grava por igual a \\(X\\) e \\(Y\\) pero no al ocio; la primera expresión es el caso con \\(t_C\\).",
+      "en": "\\(t_C\\): rate of the general consumption tax, levied equally on \\(X\\) and \\(Y\\) but not on leisure; the first expression is the \\(t_C\\) case."
+     },
+     {
+      "es": "\\(t_W\\): alícuota del impuesto sobre la renta salarial; \\(W(1-t_W)\\) es el salario neto que recibe el trabajador; la segunda expresión es el caso con \\(t_W\\).",
+      "en": "\\(t_W\\): rate of the tax on wage income; \\(W(1-t_W)\\) is the net wage the worker receives; the second expression is the \\(t_W\\) case."
+     },
+     {
+      "es": "\\(W, P_X\\): salario bruto y precio de \\(X\\) sin impuesto; en ambos casos \\(TMgS_{XY} = P_X/P_Y = TMgT_{XY}\\) no cambia (y lo mismo vale con \\(Y\\) en lugar de \\(X\\)).",
+      "en": "\\(W, P_X\\): gross wage and pre-tax price of \\(X\\); in both cases \\(TMgS_{XY} = P_X/P_Y = TMgT_{XY}\\) is unchanged (and the same holds with \\(Y\\) in place of \\(X\\))."
+     },
+     {
+      "es": "\\(TMgS_{XY}\\): tasa marginal de sustitución entre \\(X\\) e \\(Y\\), cuánto \\(Y\\) está dispuesto a ceder el consumidor por una unidad más de \\(X\\); \\(TMgS_{HX}\\) y \\(TMgS_{HY}\\), lo mismo entre ocio y cada bien.",
+      "en": "\\(TMgS_{XY}\\): marginal rate of substitution between \\(X\\) and \\(Y\\), how much \\(Y\\) the consumer would give up for one more unit of \\(X\\); \\(TMgS_{HX}\\) and \\(TMgS_{HY}\\), the same between leisure and each good."
+     },
+     {
+      "es": "\\(TMgT_{XY}\\): tasa marginal de transformación, el costo relativo de producir \\(X\\) en términos de \\(Y\\) (el apunte la escribe a veces YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) entre ocio y cada bien.",
+      "en": "\\(TMgT_{XY}\\): marginal rate of transformation, the relative cost of producing \\(X\\) in terms of \\(Y\\) (the summary sometimes writes YMgT); \\(TMgT_{HX}\\), \\(TMgT_{HY}\\) between leisure and each good."
+     }
+    ]
+   ],
+   "p": [
+    "El apunte usa un consumidor representativo cuya utilidad depende de dos bienes, X e Y, y del ocio H. Sin gobierno, maximiza la utilidad sujeto a que el gasto en bienes iguale el ingreso laboral. En el óptimo, cada tasa marginal de sustitución iguala el precio relativo correspondiente, que a su vez refleja la tasa marginal de transformación: el consumidor valora los bienes en el margen igual que lo que cuesta producirlos.",
+    "Con un impuesto de suma fija la restricción se desplaza en paralelo. Las condiciones de primer orden del lagrangiano reproducen las mismas igualdades: las tres tasas de sustitución siguen igualando a los precios relativos. Es el único impuesto no distorsivo: no afecta las decisiones de consumir y trabajar por cambios de precios relativos, produce solo efecto renta y ningún efecto sustitución.",
+    "Con un impuesto selectivo sobre X, el consumidor ve X más caro. La tasa de sustitución entre X e Y se iguala ahora a un precio relativo que incluye el impuesto y se separa de la de transformación: se consume más Y. La tasa entre ocio y X también se separa, porque el ocio se abarata en términos de X: se consume más ocio. El impuesto distorsiona las decisiones.",
+    "Con un impuesto general sobre el consumo a la tasa t_C sobre ambos bienes, la elección entre X e Y queda intacta porque el impuesto se cancela en el cociente de precios. Pero como el ocio no se puede gravar, el salario real en términos de cada bien cae: por efecto sustitución el agente trabaja menos, aunque por efecto renta tendería a trabajar más. Con un impuesto sobre la renta salarial a la tasa t_W pasa lo mismo: la elección entre bienes no cambia, pero el salario neto W(1 − t_W) baja e induce más ocio por efecto sustitución. Lectura propia: el modelo muestra por qué un IVA general y un impuesto proporcional al salario son, en este marco, equivalentes: ambos distorsionan solo la decisión entre trabajo y ocio."
+   ]
+  },
+  {
+   "t": "Exceso de gravamen: carga directa y pérdida adicional",
+   "eq": [
+    "E = \\frac{T\\,(q_{AI} - q_{DI})}{2}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E\\): exceso de gravamen, el área del triángulo de pérdida social neta.",
+      "en": "\\(E\\): excess burden, the area of the deadweight-loss triangle."
+     },
+     {
+      "es": "\\(T\\): impuesto por unidad, la altura del triángulo (la brecha entre precio de demanda y de oferta).",
+      "en": "\\(T\\): per-unit tax, the height of the triangle (the gap between demand and supply prices)."
+     },
+     {
+      "es": "\\(q_{AI}\\): cantidad consumida antes del impuesto; \\(q_{DI}\\): cantidad después del impuesto. El apunte escribe \\(q_{DI} - q_{AI}\\), que es negativo; acá se invierte para que el área sea positiva (lectura propia).",
+      "en": "\\(q_{AI}\\): quantity consumed before the tax; \\(q_{DI}\\): quantity after the tax. The summary writes \\(q_{DI} - q_{AI}\\), which is negative; it is reversed here so the area is positive (own reading)."
+     }
+    ]
+   ],
+   "p": [
+    "Todo impuesto reduce el bienestar por dos vías. La primera es la transferencia de renta al sector público por un monto igual a lo recaudado: la carga directa o efecto renta, inevitable e igual para todos los impuestos que recaudan lo mismo. La segunda aparece cuando el impuesto no es neutral: induce a abandonar las actividades más gravadas por las menos gravadas y causa una pérdida adicional, el exceso de gravamen o costo de ineficiencia, que viene del efecto sustitución. Como el efecto renta es inevitable, el diseño eficiente busca minimizar el exceso de gravamen para una recaudación dada.",
+    "La razón de fondo es que el equilibrio competitivo asigna eficientemente cuando consumidores y productores se guían por los mismos precios relativos, que señalan los costos relativos de producción. Un impuesto que abre una brecha mete en esos precios un componente fiscal y la gente decide en parte por razones tributarias.",
+    "El exceso de gravamen se define como el equivalente monetario de la caída del bienestar por encima de la que produciría un impuesto de suma fija de igual recaudación. Se mide con el excedente del consumidor, apoyado en tres postulados: el precio de demanda mide el valor marginal para el consumidor, el precio de oferta mide el costo marginal para el productor, y para la eficiencia la distribución de los costos entre personas es irrelevante.",
+    "El apunte lo muestra con un impuesto sobre X, usando Y como numerario. La variación equivalente responde a cuántas unidades de Y renunciaría el consumidor para evitar el impuesto: en el gráfico es GD. De eso, GF es la recaudación, que con un impuesto de suma fija equivalente sería toda la pérdida, y el resto, FD, es el exceso de gravamen. En el gráfico de oferta y demanda, el impuesto sube la oferta de CMg0 a CMg1; la pérdida total medida con la demanda compensada es el área NBCM, la recaudación es NBPM y el triángulo restante BPC es el exceso de gravamen. Con la demanda ordinaria el triángulo es BPA, que lo sobreestima en BAC. Lectura propia: la demanda compensada es la correcta porque aísla el efecto sustitución, que es justamente el que genera la ineficiencia."
+   ]
+  },
+  {
+   "t": "De qué depende el exceso de gravamen e imposición óptima",
+   "eq": [
+    "\\min\\; E \\quad \\text{s.a.} \\quad \\sum_{i=1}^{n} t_i\\, p_i\\, x_i = \\bar{T}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E\\): exceso de gravamen total del sistema, la suma de los triángulos de cada bien.",
+      "en": "\\(E\\): total excess burden of the system, the sum of each good's triangles."
+     },
+     {
+      "es": "\\(t_i\\): alícuota sobre el bien \\(i\\), la variable que elige el gobierno.",
+      "en": "\\(t_i\\): tax rate on good \\(i\\), the variable chosen by the government."
+     },
+     {
+      "es": "\\(p_i\\): precio del bien \\(i\\); \\(x_i\\): cantidad consumida; \\(t_i p_i x_i\\) es lo que recauda el impuesto sobre \\(i\\).",
+      "en": "\\(p_i\\): price of good \\(i\\); \\(x_i\\): quantity consumed; \\(t_i p_i x_i\\) is the revenue from the tax on \\(i\\)."
+     },
+     {
+      "es": "\\(n\\): número de bienes gravados; \\(\\bar{T}\\): recaudación requerida por el sector público.",
+      "en": "\\(n\\): number of taxed goods; \\(\\bar{T}\\): revenue required by the public sector."
+     }
+    ]
+   ],
+   "p": [
+    "Según el apunte, los costos de bienestar son mayores cuanto mayor es la elasticidad-precio de la demanda, mayor la elasticidad-precio de la oferta y mayor el tipo impositivo, y en este último caso de forma más que proporcional. Con dos demandas que cruzan en el mismo punto, la más elástica pierde más cantidad ante el mismo impuesto y su triángulo es mayor; lo mismo con dos ofertas. Con la alícuota, el gráfico divide el área en piezas iguales: con el impuesto T la pérdida es una pieza; al duplicarlo a 2T, la pérdida suma las piezas 1, 2, 3 y 4. Al duplicar la tasa la pérdida social neta se cuadruplica.",
+    "Lectura propia: esto es la regla conocida de que la pérdida crece con el cuadrado de la alícuota, porque tanto la base como la altura del triángulo crecen con el impuesto. Por eso suele ser preferible gravar muchas bases con alícuotas bajas que pocas con alícuotas altas.",
+    "De ahí sale el problema de la imposición óptima. Los impuestos de suma fija son los más eficientes, pero son difíciles de aplicar, fáciles de evadir y no son equitativos. Como la ineficiencia es inevitable, se busca el conjunto de impuestos que minimiza el exceso de gravamen para una recaudación dada: minimizar la suma de los triángulos sujeto a que la recaudación de todos los bienes alcance lo requerido. El apunte plantea el problema pero no lo resuelve. Lectura propia: su solución clásica, la regla de Ramsey, grava más los bienes de demanda inelástica, lo que choca con la equidad porque suelen ser bienes básicos."
+   ]
+  },
+  {
+   "t": "Incidencia: quién paga el impuesto",
+   "eq": [
+    "X_D(q) = X_S(p), \\qquad q = p = p_0",
+    "q_1 = p_1 + t, \\qquad p_1 < p_0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(X_D(q)\\): función de demanda del bien \\(X\\), que depende del precio que pagan los consumidores, \\(q\\).",
+      "en": "\\(X_D(q)\\): demand function for good \\(X\\), which depends on the price consumers pay, \\(q\\)."
+     },
+     {
+      "es": "\\(X_S(p)\\): función de oferta, que depende del precio que reciben los productores, \\(p\\).",
+      "en": "\\(X_S(p)\\): supply function, which depends on the price producers receive, \\(p\\)."
+     },
+     {
+      "es": "\\(p_0\\): precio de equilibrio inicial, sin impuestos, cuando ambos precios coinciden.",
+      "en": "\\(p_0\\): initial equilibrium price, without taxes, when both prices coincide."
+     }
+    ],
+    [
+     {
+      "es": "\\(t\\): impuesto unitario sobre el consumo de \\(X\\).",
+      "en": "\\(t\\): per-unit tax on the consumption of \\(X\\)."
+     },
+     {
+      "es": "\\(q_1\\): nuevo precio que pagan los consumidores, impuesto incluido.",
+      "en": "\\(q_1\\): new price paid by consumers, tax included."
+     },
+     {
+      "es": "\\(p_1\\): nuevo precio que reciben los productores, menor que \\(p_0\\): la diferencia es la parte del impuesto trasladada hacia atrás.",
+      "en": "\\(p_1\\): new price received by producers, lower than \\(p_0\\): the difference is the part of the tax shifted backwards."
+     }
+    ]
+   ],
+   "p": [
+    "La carga de un impuesto no la soporta necesariamente quien está obligado legalmente a pagarlo. El impuesto cambia el equilibrio y consumidores y productores reajustan sus decisiones, de modo que la pérdida de quien está formalmente gravado puede ser menor que la carga legal. El impuesto se traslada: hacia adelante, con precios de venta más altos, o hacia atrás, con menores remuneraciones del trabajo o el capital.",
+    "En un mercado competitivo sin impuestos, la cantidad demandada al precio de los consumidores iguala la ofrecida al precio de los productores, y ambos precios coinciden. Un impuesto unitario sobre el consumo desplaza la demanda hacia la izquierda. En el nuevo equilibrio los consumidores pagan el nuevo precio del productor más el impuesto, y el productor recibe menos que antes. Aunque la ley grava a los consumidores, estos trasladan parte de la carga a los productores al reducir la cantidad demandada: el precio adicional que pagan por unidad es menor que el impuesto. Si en cambio se grava la producción, los productores trasladan parte a los consumidores.",
+    "El reparto depende de las elasticidades. Con demanda inelástica u oferta infinitamente elástica, el precio del productor no cambia y los consumidores pagan todo. Con oferta inelástica o demanda infinitamente elástica, el precio del consumidor no cambia y la carga cae entera sobre los productores. La regla general, en la fórmula compacta del apunte, es que el impuesto tiende a ser trasladado por los agentes cuya oferta o demanda es más elástica y soportado por los de oferta o demanda más inelástica. Lectura propia: la incidencia no depende de quién paga legalmente; por eso discutir si un aporte lo paga el empleador o el empleado importa menos de lo que parece."
+   ]
+  },
+  {
+   "t": "Evasión y elusión",
+   "p": [
+    "La evasión tiene efectos distributivos: transfiere recursos de quienes cumplen a quienes defraudan. Para sostener la recaudación obliga a subir las alícuotas medias, lo que intensifica los desincentivos de los impuestos, y genera costos de inspección y sanción. Por eso la resistencia al fraude se volvió un criterio complementario para evaluar un sistema tributario, ligado a la equidad y a los costos administrativos.",
+    "¿Hasta dónde reducirla? El apunte menciona tres límites: el Estado de derecho acota las sanciones posibles, la economía sumergida genera empleo y los gobiernos dudan en atacarla, y la lucha contra el fraude consume recursos administrativos. La evasión abarca no declarar o no ingresar el impuesto, aplicar beneficios fiscales indebidos y no aplicar correctamente las leyes. La elusión, en cambio, usa disposiciones legales existentes, áreas grises o lagunas, para reducir o eliminar la carga.",
+    "Una forma de medir la evasión es comparar la presión tributaria legal, la recaudación teórica sobre el PBI si todos pagaran, con la efectiva, la recaudación observada sobre el PBI. La diferencia aproxima la evasión. El apunte remite a Albi para los efectos de los impuestos sobre el trabajo, el ahorro y la inversión."
+   ]
+  }
+ ],
+ "claves": [
+  "Objetivos del sistema fiscal: eficiencia, equidad, sencillez y flexibilidad.",
+  "Neutral es el impuesto que no abre brechas entre los precios relativos de consumidores y productores; distorsivo, el que sí.",
+  "Principios de equidad: beneficio (sin redistribución, tasas), capacidad de pago (los impuestos), utilidad y consumo (gravar la renta menos el ahorro).",
+  "Solo el impuesto de suma fija es no distorsivo: produce efecto renta pero no efecto sustitución.",
+  "El selectivo sobre X distorsiona la elección entre bienes y entre ocio y trabajo; el general al consumo y el impuesto al salario solo distorsionan la elección ocio-trabajo.",
+  "Exceso de gravamen = pérdida de bienestar por encima de la de un impuesto de suma fija de igual recaudación; se mide con la demanda compensada.",
+  "Crece con las elasticidades de oferta y demanda y más que proporcionalmente con la alícuota: duplicarla cuadruplica la pérdida.",
+  "La carga la soporta el lado más inelástico, sin importar a quién grave la ley; la evasión se aproxima por la brecha entre presión tributaria legal y efectiva."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distingue a un impuesto neutral según el apunte?",
+    "en": "What distinguishes a neutral tax according to the summary?"
+   },
+   "op": {
+    "es": [
+     "Que recauda lo mismo que el gasto que financia",
+     "Que no abre divergencias entre los precios relativos de consumidores y productores",
+     "Que grava a todos con la misma alícuota",
+     "Que se puede trasladar hacia adelante"
+    ],
+    "en": [
+     "It raises the same as the spending it finances",
+     "It opens no gap between the relative prices faced by consumers and producers",
+     "It taxes everyone at the same rate",
+     "It can be shifted forward"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si los precios relativos siguen siendo los mismos para ambos lados, la asignación eficiente se mantiene; si no, el impuesto es distorsivo.",
+    "en": "If relative prices remain the same for both sides the efficient allocation is preserved; otherwise the tax is distortionary."
+   },
+   "id": "fisc-general-23-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué principio de equidad implica que no haya redistribución?",
+    "en": "Which equity principle implies no redistribution?"
+   },
+   "op": {
+    "es": [
+     "Capacidad de pago",
+     "Utilidad",
+     "Beneficio",
+     "Equidad vertical"
+    ],
+    "en": [
+     "Ability to pay",
+     "Utility",
+     "Benefit",
+     "Vertical equity"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Cada uno paga según lo que recibe de los bienes públicos; lo siguen las tasas y contribuciones.",
+    "en": "Each pays according to what they receive from public goods; fees and contributions follow it."
+   },
+   "id": "fisc-general-23-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo del consumidor, ¿por qué el impuesto de suma fija es el único no distorsivo?",
+    "en": "In the consumer model, why is the lump-sum tax the only non-distortionary one?"
+   },
+   "op": {
+    "es": [
+     "Porque recauda más que los otros",
+     "Porque grava también el ocio",
+     "Porque se paga con trabajo",
+     "Porque desplaza la restricción en paralelo: solo efecto renta, sin efecto sustitución"
+    ],
+    "en": [
+     "Because it raises more than the others",
+     "Because it also taxes leisure",
+     "Because it is paid with labour",
+     "Because it shifts the budget line in parallel: only an income effect, no substitution effect"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las tres tasas marginales de sustitución siguen igualando a los precios relativos sin impuesto.",
+    "en": "All three marginal rates of substitution keep equalling the pre-tax relative prices."
+   },
+   "id": "fisc-general-23-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué decisión distorsiona un impuesto general sobre el consumo de ambos bienes?",
+    "en": "Which decision does a general consumption tax on both goods distort?"
+   },
+   "op": {
+    "es": [
+     "La elección entre X e Y",
+     "La elección entre ocio y consumo, porque el ocio no se puede gravar",
+     "Ninguna",
+     "Solo la decisión de ahorro"
+    ],
+    "en": [
+     "The choice between X and Y",
+     "The choice between leisure and consumption, because leisure cannot be taxed",
+     "None",
+     "Only the saving decision"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El impuesto se cancela en el precio relativo entre bienes, pero abarata el ocio: por efecto sustitución se trabaja menos.",
+    "en": "The tax cancels out in the relative price between goods, but makes leisure cheaper: by the substitution effect people work less."
+   },
+   "id": "fisc-general-23-q4"
+  },
+  {
+   "q": {
+    "es": "En el gráfico de oferta y demanda del apunte, ¿qué área es el exceso de gravamen medido con la demanda compensada?",
+    "en": "In the summary's supply-and-demand chart, which area is the excess burden measured with compensated demand?"
+   },
+   "op": {
+    "es": [
+     "NBPM",
+     "NBCM",
+     "BPC",
+     "BPA"
+    ],
+    "en": [
+     "NBPM",
+     "NBCM",
+     "BPC",
+     "BPA"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "NBCM es la pérdida total, NBPM la recaudación y el triángulo BPC el exceso; con la demanda ordinaria sería BPA, que sobreestima.",
+    "en": "NBCM is the total loss, NBPM the revenue and triangle BPC the excess; with ordinary demand it would be BPA, an overestimate."
+   },
+   "id": "fisc-general-23-q5"
+  },
+  {
+   "q": {
+    "es": "Según el apunte, si se duplica la alícuota, ¿qué pasa con la pérdida social neta?",
+    "en": "According to the summary, if the tax rate doubles, what happens to the deadweight loss?"
+   },
+   "op": {
+    "es": [
+     "Se duplica",
+     "Se cuadruplica",
+     "No cambia",
+     "Se reduce a la mitad"
+    ],
+    "en": [
+     "It doubles",
+     "It quadruples",
+     "It does not change",
+     "It halves"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con T la pérdida es una pieza; con 2T suma las piezas 1 a 4. Crece más que proporcionalmente con la alícuota.",
+    "en": "With T the loss is one piece; with 2T it adds pieces 1 to 4. It grows more than proportionally with the rate."
+   },
+   "id": "fisc-general-23-q6"
+  },
+  {
+   "q": {
+    "es": "Si la oferta de un bien es inelástica, ¿quién soporta un impuesto sobre su consumo?",
+    "en": "If the supply of a good is inelastic, who bears a tax on its consumption?"
+   },
+   "op": {
+    "es": [
+     "Los consumidores, porque la ley los grava",
+     "Se reparte por mitades",
+     "Los productores: el precio al consumidor no cambia",
+     "El Estado, porque no recauda"
+    ],
+    "en": [
+     "Consumers, because the law taxes them",
+     "It is split in half",
+     "Producers: the consumer price does not change",
+     "The state, because it collects nothing"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La carga recae sobre el lado más inelástico, sin importar a quién grave la ley.",
+    "en": "The burden falls on the more inelastic side, regardless of whom the law taxes."
+   },
+   "id": "fisc-general-23-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué distingue la elusión de la evasión?",
+    "en": "What distinguishes tax avoidance from tax evasion?"
+   },
+   "op": {
+    "es": [
+     "La elusión usa disposiciones legales existentes, áreas grises o lagunas, para reducir la carga",
+     "La elusión es no declarar el impuesto",
+     "La evasión siempre es legal",
+     "Solo la evasión afecta la recaudación"
+    ],
+    "en": [
+     "Avoidance uses existing legal provisions, grey areas or loopholes to reduce the burden",
+     "Avoidance is failing to file the tax",
+     "Evasion is always legal",
+     "Only evasion affects revenue"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La evasión es no declarar o no ingresar, aplicar beneficios indebidos o no aplicar bien las leyes; la elusión se apoya en la ley.",
+    "en": "Evasion is not filing or paying, misapplying tax benefits or misapplying the law; avoidance relies on the law."
+   },
+   "id": "fisc-general-23-q8"
+  }
+ ],
+ "palabras": 2233,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el exceso de gravamen de un impuesto?",
+    "en": "What is the excess burden of a tax?"
+   },
+   "a": {
+    "es": "El equivalente monetario de la caída del bienestar por encima de la que causaría un impuesto de suma fija de igual recaudación; nace del efecto sustitución que provocan los cambios de precios relativos. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "The money equivalent of the welfare loss beyond what a lump-sum tax raising the same revenue would cause; it arises from the substitution effect of relative price changes. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo afecta un impuesto selectivo sobre X las decisiones del consumidor?",
+    "en": "How does an excise tax on X affect the consumer's choices?"
+   },
+   "a": {
+    "es": "Separa la tasa marginal de sustitución entre X e Y de la de transformación, induciendo más consumo de Y, y abarata el ocio en términos de X, induciendo más ocio: distorsiona ambas decisiones. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "It drives the marginal rate of substitution between X and Y away from the rate of transformation, inducing more Y, and makes leisure cheaper in terms of X, inducing more leisure: it distorts both choices. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿De qué depende el tamaño del exceso de gravamen?",
+    "en": "What does the size of the excess burden depend on?"
+   },
+   "a": {
+    "es": "Crece con la elasticidad-precio de la demanda, con la elasticidad-precio de la oferta y con la alícuota, en este caso más que proporcionalmente: duplicar la tasa cuadruplica la pérdida social neta. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "It grows with the price elasticity of demand, the price elasticity of supply and the tax rate, the latter more than proportionally: doubling the rate quadruples the deadweight loss. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t3"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué argumentos se dan a favor de gravar el consumo en lugar de la renta?",
+    "en": "What arguments are given for taxing consumption instead of income?"
+   },
+   "a": {
+    "es": "Que es más justo gravar lo que alguien retira de la sociedad que lo que aporta, que elimina la doble imposición del ahorro y que, al eximirlo, estimula la acumulación de capital y el crecimiento. Los críticos responden que la renta no consumida igual da poder y que basta eximir los rendimientos del ahorro. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "That it is fairer to tax what someone takes from society than what they contribute, that it removes double taxation of saving and, by exempting saving, boosts capital accumulation and growth. Critics reply that unconsumed income still gives power and that exempting returns to saving is enough. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Quién soporta un impuesto en un mercado competitivo, según la incidencia de equilibrio parcial?",
+    "en": "Who bears a tax in a competitive market, according to partial-equilibrium incidence?"
+   },
+   "a": {
+    "es": "El lado más inelástico. Con demanda inelástica u oferta infinitamente elástica pagan todo los consumidores; con oferta inelástica o demanda infinitamente elástica, los productores. Quién está obligado por ley no decide la carga. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "The more inelastic side. With inelastic demand or perfectly elastic supply consumers pay it all; with inelastic supply or perfectly elastic demand, producers do. Who is legally liable does not determine the burden. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué ventajas tiene un sistema tributario sencillo?",
+    "en": "What are the advantages of a simple tax system?"
+   },
+   "a": {
+    "es": "Basado en pocos impuestos de base amplia, reduce la presión fiscal indirecta (el costo de cumplir), reduce el fraude que genera el rechazo a la complejidad y abarata la gestión y la recaudación. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "Based on a few broad-based taxes, it lowers indirect tax pressure (compliance costs), reduces the fraud that complexity provokes, and lowers administration and collection costs. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede aproximarse el nivel de evasión de una economía?",
+    "en": "How can an economy's level of tax evasion be approximated?"
+   },
+   "a": {
+    "es": "Comparando la presión tributaria legal, la recaudación teórica sobre el PBI si todos pagaran, con la efectiva, la recaudación observada sobre el PBI; la diferencia mide la evasión. Resumen de Finanzas Públicas (FCE-UNC), unidad 6.",
+    "en": "By comparing the legal tax burden, theoretical revenue over GDP if everyone paid, with the effective one, observed revenue over GDP; the gap measures evasion. Public Finance summary (FCE-UNC), unit 6."
+   },
+   "id": "fisc-general-23-t7"
+  }
+ ]
+}
