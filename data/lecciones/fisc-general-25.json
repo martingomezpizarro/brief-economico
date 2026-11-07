@@ -1,0 +1,514 @@
+{
+ "id": "fisc-general-25",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Qué nivel de gobierno hace qué: descentralización, transferencias y los problemas de la coparticipación argentina",
+ "bajada": "Cómo se reparten las funciones de asignación, distribución y estabilización entre Nación, provincias y municipios, qué dice el teorema de la descentralización, para qué sirven las transferencias y la igualación fiscal, y por qué Capello y Galassi ven en la ley 23.548 un mal diseño que se consolidó.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 9: «Federalismo fiscal», con resúmenes de Gabriela Lagos, «Revisión de la literatura del federalismo fiscal», y de Capello y Galassi (2009), «Los problemas actuales del federalismo fiscal argentino»",
+ "intro": "La unidad 9 del resumen de Finanzas Públicas de la FCE-UNC toma las tres funciones del sector público de Musgrave, asignación, distribución y estabilización, y hace la pregunta que define al federalismo fiscal: qué nivel de gobierno debe hacerse cargo de cada una. La primera parte sigue la revisión de la literatura de Gabriela Lagos. Su respuesta canónica es que la asignación conviene descentralizarla, porque los gobiernos cercanos pueden ajustar la provisión a preferencias distintas, mientras que la distribución y la estabilización conviene dejarlas en el nivel central, porque la movilidad de personas y la apertura de las economías regionales las vuelven ineficaces abajo. Si gastos y recursos no se asignan a los mismos niveles, aparecen desequilibrios verticales y horizontales que se corrigen con transferencias. La segunda parte resume a Capello y Galassi (2009), que aplican ese marco a la Argentina y encuentran que la coparticipación no resuelve bien ninguna de las dos brechas.",
+ "secciones": [
+  {
+   "t": "Tres funciones y un reparto entre niveles",
+   "p": [
+    "Musgrave da tres motivos por los que una economía sin sector público funcionaría mal. Asignaría mal los recursos, porque la competencia imperfecta, las externalidades, los bienes públicos y los bienes preferentes e indeseables hacen que se produzca de más en unas actividades y de menos en otras. Distribuiría la renta de un modo distinto del socialmente deseable, porque es improbable que la suma de intereses particulares dé un óptimo de bienestar social. Y no podría sostener a la vez empleo y producción altos y estables: hace falta intervenir para evitar recursos ociosos y los efectos perniciosos del gasto y la inflación a lo largo del ciclo.",
+    "De ahí las tres funciones: asegurar un uso eficiente de los recursos, una distribución equitativa de la renta y niveles altos de empleo con precios razonablemente estables. El federalismo fiscal agrega una segunda pregunta: una vez definidas las tareas del Estado, cómo repartirlas entre los distintos niveles de gobierno. El apunte la responde función por función."
+   ]
+  },
+  {
+   "t": "La función asignación y el teorema de la descentralización",
+   "eq": [
+    "W\\big(g_1^{*}, g_2^{*}, \\dots, g_J^{*}\\big) \\;\\geq\\; W\\big(\\bar g, \\bar g, \\dots, \\bar g\\big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W(\\cdot)\\): bienestar total del país como función del nivel de provisión del bien público en cada jurisdicción.",
+      "en": "\\(W(\\cdot)\\): the country's total welfare as a function of the level of public-good provision in each jurisdiction."
+     },
+     {
+      "es": "\\(g_j^{*}\\): nivel de consumo del bien que es eficiente en el sentido de Pareto para la jurisdicción \\(j\\), según las preferencias de sus residentes.",
+      "en": "\\(g_j^{*}\\): level of consumption of the good that is Pareto efficient for jurisdiction \\(j\\), given its residents' preferences."
+     },
+     {
+      "es": "\\(J\\): número de jurisdicciones; el subíndice \\(j\\) va de 1 a \\(J\\).",
+      "en": "\\(J\\): number of jurisdictions; the subscript \\(j\\) runs from 1 to \\(J\\)."
+     },
+     {
+      "es": "\\(\\bar g\\): un nivel único y uniforme de provisión para todas las jurisdicciones. La desigualdad vale en ausencia de ahorros de costos por centralizar y de efectos externos entre jurisdicciones. La notación es lectura propia; el apunte enuncia el teorema en palabras.",
+      "en": "\\(\\bar g\\): a single uniform level of provision for all jurisdictions. The inequality holds absent cost savings from centralization and spillovers across jurisdictions. Notation is our own reading; the summary states the theorem in words."
+     }
+    ]
+   ],
+   "p": [
+    "El sector público debe proveer bienes y servicios solo cuando lo hace mejor que el mercado, como con los bienes públicos, de consumo no rival y sin exclusión por precio, y con los bienes preferentes. La pregunta es quién. Para los bienes públicos puros, la provisión central reduce el costo por persona al maximizar el número de beneficiarios, pero baja el bienestar al imponer un mismo nivel a gente con preferencias distintas. Para los bienes cuyo beneficio se limita a un área, la provisión debería quedar en el nivel de gobierno que más se aproxime al área de beneficiarios, aunque la producción la haga el nivel central para aprovechar economías de escala. Para los bienes impuros con congestión, en el nivel que mejor se adapte al tamaño óptimo de usuarios.",
+    "El teorema de la descentralización ordena la idea: sin ahorros de costos por centralizar y sin efectos externos entre jurisdicciones, el bienestar es siempre al menos tan alto, y habitualmente más alto, si cada jurisdicción consume su propio nivel eficiente que si todas reciben un nivel uniforme. Aplicado al Estado, los servicios deben prestarse según las preferencias de los residentes del área que se beneficia. Además, los sistemas políticos descentralizados mejoran la asignación porque dan a los ciudadanos más maneras de revelar sus preferencias."
+   ]
+  },
+  {
+   "t": "Matices: escala, tamaño óptimo y costos de decidir",
+   "eq": [
+    "BMg(N) = CMg(N)",
+    "\\min_{N}\\; \\big[\\, CD(N) + CC(N) \\,\\big]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(BMg\\): beneficio marginal de proveer una unidad adicional del bien público local a los usuarios de la jurisdicción.",
+      "en": "\\(BMg\\): marginal benefit of providing one more unit of the local public good to the jurisdiction's users."
+     },
+     {
+      "es": "\\(CMg\\): costo marginal de esa unidad adicional.",
+      "en": "\\(CMg\\): marginal cost of that additional unit."
+     },
+     {
+      "es": "\\(N\\): número de usuarios o residentes. Con un bien congestionable, un usuario más con la misma provisión reduce la satisfacción de los demás; por eso, según King, se agregan unidades del bien hasta que el beneficio marginal iguale al costo marginal.",
+      "en": "\\(N\\): number of users or residents. With a congestible good, one more user at the same provision lowers everyone else's satisfaction; so, following King, units are added until marginal benefit equals marginal cost."
+     }
+    ],
+    [
+     {
+      "es": "\\(N\\): tamaño (población) de la jurisdicción que decide.",
+      "en": "\\(N\\): size (population) of the deciding jurisdiction."
+     },
+     {
+      "es": "\\(CD(N)\\): costos de tomar decisiones colectivas, que crecen con la población del grupo.",
+      "en": "\\(CD(N)\\): costs of collective decision-making, which rise with the group's population."
+     },
+     {
+      "es": "\\(CC(N)\\): costos de coordinación entre jurisdicciones, que crecen cuanto más se descentraliza, es decir, cuanto más chicas y numerosas son. La formulación con funciones de \\(N\\) es lectura propia; el apunte dice que debe minimizarse la suma de ambos costos.",
+      "en": "\\(CC(N)\\): coordination costs across jurisdictions, which rise the more decentralized the system, i.e. the smaller and more numerous jurisdictions are. Writing them as functions of \\(N\\) is our own reading; the summary says the sum of both costs should be minimized."
+     },
+     {
+      "es": "\\(\\min_N\\): se elige el tamaño que hace mínima la suma.",
+      "en": "\\(\\min_N\\): the size that minimizes the sum is chosen."
+     }
+    ]
+   ],
+   "p": [
+    "El apunte reúne varias críticas o matices al teorema. El principio de equivalencia fiscal de Olson: la producción descentralizada es eficiente solo si el territorio del gobierno que produce coincide con el área donde se sienten los beneficios. Las economías de escala: si el costo unitario cae con la cantidad, conviene asignar la provisión a un nivel superior, aunque eso depende de que quien provee sea también quien produce.",
+    "El tamaño óptimo de la jurisdicción depende de la población a abastecer. Tiebout lo resuelve con la agrupación voluntaria de consumidores-votantes según sus preferencias; Buchanan, con un tamaño óptimo para cada bien, más parecido a un club que a un territorio; King, con la congestión. A eso se suman los costos de decidir: las negociaciones colectivas cuestan más cuanto más grande es el grupo, pero descentralizar multiplica los costos de coordinación entre jurisdicciones, y lo eficiente es minimizar la suma.",
+    "Queda el problema de conocer las preferencias. Descartados los mecanismos directos, lo más general es suponer que cada gobierno ajusta la provisión a su votante mediano. La alternativa de Tiebout es el voto con los pies: la gente se muda a donde la relación entre impuesto pagado y beneficio recibido le resulta más satisfactoria, y esa decisión reemplaza la prueba de mercado de la disposición a pagar.",
+    "A favor de descentralizar la asignación pesan el alcance espacial limitado de muchos beneficios, el ajuste del presupuesto a las preferencias locales, con la posibilidad de elegir jurisdicción, más eficiencia del gasto al vincularlo con su financiamiento y competencia e innovación entre gobiernos, y la libertad de elección, que evita el uniformismo e incentiva la participación. A favor de centralizarla pesan las economías de escala, las externalidades entre municipios, la primacía del interés nacional para integrar el Estado, la equidad como criterio de asignación y la preeminencia del gobierno central en las decisiones."
+   ]
+  },
+  {
+   "t": "La función distribución: por qué arriba",
+   "eq": [
+    "UMg_A(y_A) = UMg_B(y_B)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(UMg_A, UMg_B\\): utilidad marginal de la renta de los individuos A y B.",
+      "en": "\\(UMg_A, UMg_B\\): marginal utility of income of individuals A and B."
+     },
+     {
+      "es": "\\(y_A, y_B\\): renta de cada uno. El criterio utilitarista transfiere renta del que más tiene al que menos hasta igualar las utilidades marginales; con utilidades iguales y decrecientes, eso iguala también las rentas, como dice el apunte (esa condición sobre las utilidades es lectura propia).",
+      "en": "\\(y_A, y_B\\): each one's income. The utilitarian criterion transfers income from richer to poorer until marginal utilities are equal; with identical, diminishing utility functions this also equalizes incomes, as the summary says (that condition on utilities is our own reading)."
+     }
+    ]
+   ],
+   "p": [
+    "La distribución es la función donde más claro aparece un objetivo social no económico: la equidad. El apunte enumera tres criterios de justicia. Los basados en la dotación: cada uno debe recibir lo que gana según sus factores. Los utilitaristas: maximizar el bienestar total o medio, lo que se logra igualando utilidades marginales. Los igualitarios: igualar utilidades o maximizar la del que menos tiene. Como responden a valores morales, cada comunidad los evaluará distinto, y la teoría tiene que decidir cuánta justicia se resigna a cambio de perder menos en la masa a repartir.",
+    "Casi todos asignan esta función al gobierno central. Si un gobierno subnacional con ciudadanos más pobres quiere dar los mismos servicios que sus vecinos, tiene que cobrarles más, contra el principio de capacidad de pago. Y redistribuir desde abajo tiene tres efectos negativos: distorsiona la localización de personas y empresas, que se mueven por razones fiscales; es ineficaz, porque la movilidad deshace lo que intenta; y es perverso, porque espanta a las rentas altas y atrae a las bajas. Además, los beneficios de redistribuir alcanzan a toda la sociedad, y centralizar evita choques entre gobiernos de distinto signo.",
+    "Del otro lado se señala la escasa eficacia redistributiva de los gobiernos centrales, por la dificultad de controlar capacidades económicas y evasión, y la idea de la redistribución como bien público local. Por eso muchos autores proponen un modelo dual: el nivel central redistribuye entre territorios y los gobiernos locales entre personas."
+   ]
+  },
+  {
+   "t": "La función estabilización",
+   "p": [
+    "La estabilidad se busca con control monetario y medidas fiscales, y la mayor parte de la doctrina la deja en el nivel central. Los argumentos: los instrumentos tienen que usarse de manera coherente, y descentralizarlos arriesga acciones de signo contrario y altos costos de coordinación; la política monetaria tradicionalmente no se cede a provincias y municipios, porque poder crear dinero los tentaría a financiar gasto emitiendo en lugar de pagar el costo político de cobrar impuestos; en economías tan abiertas como las regiones de un mismo país, buena parte del efecto de una medida fiscal se filtra a las demás y los multiplicadores son mucho menores; y la política presupuestaria implica endeudarse.",
+    "Lectura propia: en el texto el peligro de crear dinero aparece atribuido a «gobiernos centrales», pero por el contexto se refiere a los subcentrales, que son los que financiarían su gasto local emitiendo. A favor de descentralizar parte de la estabilización se mencionan la mayor capacidad inversora de los gobiernos subnacionales, el mejor ajuste de sus medidas a la economía de la zona y la eficacia de las políticas locales de promoción. La conclusión es que pueden descentralizarse los aspectos ligados al desarrollo local, con el Estado central garantizando que se cumplan los acuerdos de los gobiernos regionales."
+   ]
+  },
+  {
+   "t": "Recursos propios, transferencias y desequilibrios",
+   "eq": [
+    "\\frac{IP_c}{NG_c} = \\frac{IP_j}{NG_j} \\quad \\text{para toda jurisdicción subcentral } j"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(IP_c\\): ingresos potenciales del gobierno central, los que podría obtener con sus propias fuentes.",
+      "en": "\\(IP_c\\): potential revenue of the central government, what it could raise from its own sources."
+     },
+     {
+      "es": "\\(NG_c\\): necesidades de gasto del gobierno central asociadas a proveer un nivel estándar de bienes y servicios públicos.",
+      "en": "\\(NG_c\\): spending needs of the central government tied to providing a standard level of public goods and services."
+     },
+     {
+      "es": "\\(IP_j, NG_j\\): lo mismo para la jurisdicción subcentral \\(j\\).",
+      "en": "\\(IP_j, NG_j\\): the same for subcentral jurisdiction \\(j\\)."
+     },
+     {
+      "es": "El cociente mide el nivel de servicio al que accede cada gobierno: el equilibrio vertical exige que sea igual en todos los niveles; si el del centro es mayor, hay desequilibrio vertical a su favor. Lectura propia: el apunte también habla de igualar el cociente central a «la suma» de los cocientes subcentrales; acá se usa su definición de que todas las jurisdicciones accedan al mismo nivel de servicio.",
+      "en": "The ratio measures the level of service each government can reach: vertical balance requires it to be the same at every level; if the center's is higher, there is vertical imbalance in its favour. Our own reading: the summary also speaks of equating the central ratio to 'the sum' of subcentral ratios; here we use its definition that all jurisdictions reach the same level of service."
+     }
+    ]
+   ],
+   "p": [
+    "Los gobiernos subnacionales se financian con recursos propios o ajenos. Los propios son tributarios, que suponen poder crear o modificar impuestos, o no tributarios: endeudamiento, rentas del patrimonio, multas, precios públicos; los más importantes son los impuestos y la deuda. La distribución óptima da a cada nivel lo que necesita para sus tareas y deja ver a los ciudadanos cuánto les cuesta cada nivel. Hay consenso en buscar una imposición global armónica, vincular gasto e ingreso en cada nivel, evitar la exportación fiscal, reservar al centro los tributos más estabilizadores y redistributivos, y dejar a cada jurisdicción cierto margen para elegir gastos e ingresos.",
+    "Los recursos ajenos son transferencias de otros gobiernos. La distinción clave es entre las condicionadas, que deben usarse para un fin, y las incondicionadas, de libre uso. Sirven para tres cosas: internalizar externalidades, para lo que se adecuan las condicionadas; imponer las preferencias de quien las da y asegurar un mínimo uniforme de provisión en todo el país; y garantizar la suficiencia de recursos de quien las recibe. Los sistemas puros serían un único sistema impositivo central o sistemas independientes en cada nivel; los reales son mixtos y usan transferencias para corregir desequilibrios verticales, entre el Estado y los entes subcentrales, y horizontales, entre unidades del mismo nivel.",
+    "El desequilibrio vertical suele favorecer al centro, con excedente, mientras las regiones quedan en déficit. Las salidas son cinco: pasar competencias arriba, ceder impuestos, subir la presión sobre las bases propias, recortar servicios o transferir fondos del centro hasta igualar ingresos y necesidades. Según el apunte, solo la última no tiene costo político, y por eso es la más viable. El desequilibrio horizontal ocurre cuando las unidades de un nivel no pueden dar servicios parecidos con un esfuerzo fiscal medio, así que los ciudadanos reciben servicios distintos según dónde viven o pagan más donde la región es más pobre. Se corrige con igualación, que puede apuntar a la capacidad fiscal (que todos obtengan el mismo ingreso per cápita sin subir la presión), al esfuerzo fiscal (premiar a quienes recaudan por encima de la media e incentivar a los demás) o a las necesidades (compensar mayores costos de provisión por condiciones socioeconómicas o geográficas). Las disparidades de desarrollo, en cambio, le tocan al centro con subvenciones al capital productivo, sociedades de desarrollo regional o incentivos fiscales."
+   ]
+  },
+  {
+   "t": "Argentina según Capello y Galassi (2009): la brecha vertical",
+   "eq": [
+    "\\text{Masa coparticipable} = 42{,}34\\%\\ \\text{Nación} + 56{,}66\\%\\ \\text{Provincias} + 1\\%\\ \\text{ATN}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "Masa coparticipable: recaudación de los impuestos nacionales que la ley 23.548 manda repartir, excluidos los de comercio exterior, los que ya tenían otros regímenes de distribución o afectación específica y los destinados a inversiones, servicios u obras declaradas importantes.",
+      "en": "Shareable pool: revenue from national taxes that Law 23,548 requires to be shared, excluding foreign-trade taxes, those under prior distribution regimes or earmarked, and those assigned to investments, services or works declared important."
+     },
+     {
+      "es": "Nación y Provincias: porcentajes de la distribución primaria que la ley preveía transferir automáticamente a cada nivel, según el apunte.",
+      "en": "Nation and Provinces: shares of the primary distribution the law provided to transfer automatically to each level, according to the summary."
+     },
+     {
+      "es": "ATN: fondo de Aportes del Tesoro Nacional, para emergencias y desequilibrios financieros de las provincias. Lectura propia: el texto de la ley separa del tramo provincial un recupero del nivel relativo de algunas provincias; el apunte lo agrupa con las provincias.",
+      "en": "ATN: National Treasury Contributions fund, for provincial emergencies and financial imbalances. Our own reading: the text of the law sets apart from the provincial share a recovery fund for some provinces; the summary groups it with the provinces."
+     }
+    ]
+   ],
+   "p": [
+    "Para Capello y Galassi, el régimen fiscal federal argentino es un ejemplo de mal diseño institucional que se consolida porque nunca se juntan las voluntades para cambiarlo. La ley 20.221 dejó de regir en 1983; durante cuatro años las relaciones Nación-provincias fueron muy discrecionales y los Aportes del Tesoro Nacional pasaron de excepción a regla. La ley 23.548 se sancionó en 1988 como régimen transitorio y sigue vigente con muchas modificaciones, sin que se respetara el mandato constitucional de aprobar un nuevo régimen antes de 1996. La discrecionalidad alienta expectativas de salvataje, y estas, conductas fiscales insostenibles. La ley no resuelve bien ninguna de las dos brechas que justifican coparticipar: la vertical, compensar a los niveles que cedieron potestades tributarias al centro, que se queda con los impuestos más productivos; y la horizontal, compensar las diferencias de capacidad o necesidad fiscal entre provincias.",
+    "La brecha vertical trae cinco problemas. Armonización y presión: la falta de coordinación duplicó y triplicó gravámenes, con tres impuestos generales a las ventas, uno por nivel, e inmuebles gravados por provincias, municipios y, vía bienes personales, por la Nación; y al Tesoro le conviene crear impuestos no coparticipables, en general muy distorsivos, y bajar los coparticipables, para compartir el costo, lo que probablemente contribuyó a la suba de la presión tributaria. Concentración: el reparto previsto se desdibujó con regímenes especiales y la aparición de un actor no previsto, la ANSES, que recibe el 20,2% de los recursos tributarios nacionales, de modo que lo que llega a las provincias cayó a un mínimo.",
+    "Correspondencia fiscal: según Porto, que el área que recibe el beneficio cargue con los costos, que quien gasta sea quien recauda y que la responsabilidad de financiar coincida con la política. Si se cumplen, la restricción política y presupuestaria es fuerte. En la mayoría de las provincias los recursos propios no financian ni la mitad del gasto. Discrecionalidad: las transferencias discrecionales deberían ir a las provincias con más problemas, pero su distribución no muestra ninguna lógica de necesidad. Y salvatajes: los rescates nacionales ante crisis financieras o de deuda hacen que las provincias se despreocupen y gasten de forma inconsistente con sus recursos."
+   ]
+  },
+  {
+   "t": "La brecha horizontal y la macroeconomía",
+   "p": [
+    "La distribución secundaria, entre provincias, falla por dos razones: no hay un criterio objetivo explícito detrás del reparto y los coeficientes fijos, mantenidos por años, vuelven rígido el sistema. Lejos de nivelar, amplía la brecha: provincias con desarrollo parecido reciben ingresos por habitante muy distintos, y los recursos de origen nacional privilegian a las jurisdicciones de baja densidad poblacional, sean ricas o pobres. Si se cruzan los ingresos corrientes per cápita de las provincias con el porcentaje de hogares pobres, aparecen contradicciones con cualquier principio distributivo.",
+    "El segundo problema es de incentivos: a mayor transferencia por habitante, menor presión tributaria efectiva en Ingresos Brutos, aunque no menor presión legal. Las provincias más favorecidas por las transferencias se esfuerzan menos por cobrar. Lectura propia: la combinación de alícuota legal similar y recaudación efectiva menor apunta a la administración tributaria, no al diseño del impuesto.",
+    "Por último, la macroeconomía. Con poca conexión entre ingresos y gastos de cada nivel, hay menos margen para políticas anticíclicas. La política tributaria del consolidado sigue las necesidades de financiamiento de los gobiernos, los ingresos totales acompañan al PIB, no hay mecanismos que escapen al ciclo y todos los niveles tienen incentivos a gastar lo que entra. El resultado es un gasto muy procíclico y una escasa capacidad anticíclica. Lectura propia: es la otra cara de la función estabilización de la primera parte, que el marco teórico asigna al centro, pero cuyo cumplimiento requiere que el sistema de transferencias no traslade el ciclo a las provincias."
+   ]
+  }
+ ],
+ "claves": [
+  "Musgrave: asignación, distribución y estabilización; el federalismo fiscal pregunta qué nivel se hace cargo de cada una.",
+  "Teorema de la descentralización: sin ahorros de costos por centralizar ni externalidades, proveer el nivel eficiente de cada jurisdicción da al menos tanto bienestar como un nivel uniforme.",
+  "Matices: equivalencia fiscal (Olson), economías de escala, tamaño óptimo (Tiebout, Buchanan, King) y minimizar costos de decisión más costos de coordinación.",
+  "La distribución va arriba: redistribuir abajo distorsiona la localización, es ineficaz por la movilidad y espanta a las rentas altas; propuesta dual: centro entre territorios, locales entre personas.",
+  "La estabilización va arriba por coherencia de instrumentos, monopolio monetario y multiplicadores bajos en economías regionales abiertas.",
+  "Transferencias condicionadas para externalidades y mínimos uniformes; incondicionadas para suficiencia; la igualación apunta a capacidad, esfuerzo o necesidades.",
+  "Ley 23.548 (1988, transitoria): reparto primario previsto de 42,34% Nación, 56,66% provincias y 1% ATN, desdibujado por regímenes especiales y la ANSES.",
+  "Capello y Galassi: baja correspondencia fiscal, discrecionalidad sin lógica de necesidad, salvatajes, nivelación que favorece a provincias poco densas, menos esfuerzo recaudador y gasto procíclico."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué afirma el teorema de la descentralización?",
+    "en": "What does the decentralization theorem state?"
+   },
+   "op": {
+    "es": [
+     "Que la provisión central siempre es más barata",
+     "Que, sin ahorros de costos por centralizar ni externalidades, proveer el nivel eficiente en cada jurisdicción da al menos tanto bienestar como un nivel uniforme",
+     "Que los gobiernos locales deben redistribuir la renta",
+     "Que cada bien público debe producirlo el municipio"
+    ],
+    "en": [
+     "That central provision is always cheaper",
+     "That, absent cost savings from centralization and spillovers, providing each jurisdiction's efficient level yields at least as much welfare as a uniform level",
+     "That local governments should redistribute income",
+     "That every public good should be produced by the municipality"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El bienestar es al menos tan alto, y habitualmente más, si cada jurisdicción consume su nivel Pareto eficiente en lugar de uno único para todas.",
+    "en": "Welfare is at least as high, and usually higher, if each jurisdiction consumes its Pareto-efficient level instead of a single one for all."
+   },
+   "id": "fisc-general-25-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué dice el principio de equivalencia fiscal de Olson?",
+    "en": "What does Olson's principle of fiscal equivalence say?"
+   },
+   "op": {
+    "es": [
+     "Que cada nivel debe recaudar lo mismo",
+     "Que las transferencias deben ser incondicionadas",
+     "Que la producción descentralizada es eficiente si el territorio del gobierno coincide con el área de beneficios",
+     "Que los impuestos deben igualar a los beneficios individuales"
+    ],
+    "en": [
+     "That every level should raise the same revenue",
+     "That transfers should be unconditional",
+     "That decentralized production is efficient if the government's territory matches the area of benefits",
+     "That taxes should equal individual benefits"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Plantea la pregunta del tamaño adecuado de la jurisdicción: debe corresponder con el área donde se experimentan los beneficios.",
+    "en": "It raises the question of the right size of jurisdiction: it should match the area where the benefits are felt."
+   },
+   "id": "fisc-general-25-q2"
+  },
+  {
+   "q": {
+    "es": "En el «voto con los pies» de Tiebout, la mudanza de un ciudadano:",
+    "en": "In Tiebout's 'voting with the feet', a citizen's move:"
+   },
+   "op": {
+    "es": [
+     "Reemplaza la prueba de mercado y revela su demanda de bienes públicos",
+     "Reduce la congestión sin cambiar la provisión",
+     "Obliga al gobierno central a transferir fondos",
+     "Elimina la necesidad de cobrar impuestos"
+    ],
+    "en": [
+     "Replaces the market test and reveals their demand for public goods",
+     "Reduces congestion without changing provision",
+     "Forces the central government to transfer funds",
+     "Removes the need to levy taxes"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La gente se muda a donde la relación entre impuesto pagado y beneficio obtenido le resulta más satisfactoria; esa elección revela su disposición a pagar.",
+    "en": "People move where the ratio of tax paid to benefit received suits them best; that choice reveals their willingness to pay."
+   },
+   "id": "fisc-general-25-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la redistribución a cargo de gobiernos subcentrales tiene efectos «perversos» según el apunte?",
+    "en": "Why does redistribution by subcentral governments have 'perverse' effects according to the summary?"
+   },
+   "op": {
+    "es": [
+     "Porque reduce el gasto en bienes públicos",
+     "Porque incentiva la salida de las rentas altas y atrae a personas de menor capacidad económica",
+     "Porque obliga a emitir dinero",
+     "Porque aumenta los costos de coordinación"
+    ],
+    "en": [
+     "Because it cuts spending on public goods",
+     "Because it pushes high earners out and attracts people with less economic capacity",
+     "Because it forces money creation",
+     "Because it raises coordination costs"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con movilidad, el programa redistributivo local cambia la composición de la población en su contra; también es ineficaz y distorsiona la localización.",
+    "en": "With mobility, a local redistributive programme shifts the population mix against itself; it is also ineffective and distorts location."
+   },
+   "id": "fisc-general-25-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una medida fiscal anticíclica tiene menos efecto si la aplica una provincia?",
+    "en": "Why does a countercyclical fiscal measure have less effect if a province applies it?"
+   },
+   "op": {
+    "es": [
+     "Porque las provincias no pueden endeudarse",
+     "Porque sus impuestos son más progresivos",
+     "Porque en economías regionales abiertas buena parte del efecto se filtra a otras jurisdicciones y el multiplicador es menor",
+     "Porque la ley lo prohíbe"
+    ],
+    "en": [
+     "Because provinces cannot borrow",
+     "Because their taxes are more progressive",
+     "Because in open regional economies much of the effect leaks to other jurisdictions and the multiplier is smaller",
+     "Because the law forbids it"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Cuanto más abierta la economía, menor el impacto de la política sobre la demanda propia; es uno de los argumentos para centralizar la estabilización.",
+    "en": "The more open the economy, the smaller the policy's impact on its own demand; it is one argument for centralizing stabilization."
+   },
+   "id": "fisc-general-25-q5"
+  },
+  {
+   "q": {
+    "es": "Ante un desequilibrio vertical, ¿qué solución considera el apunte la más viable y por qué?",
+    "en": "Facing vertical imbalance, which solution does the summary consider most viable, and why?"
+   },
+   "op": {
+    "es": [
+     "Subir la presión tributaria provincial, porque es la más eficiente",
+     "Reducir los servicios, porque baja el gasto",
+     "Transferir competencias al centro, porque gana escala",
+     "Transferir fondos del centro, porque es la única sin costo político"
+    ],
+    "en": [
+     "Raise provincial taxes, because it is the most efficient",
+     "Cut services, because it lowers spending",
+     "Move responsibilities to the center, because it gains scale",
+     "Transfer funds from the center, because it is the only one without political cost"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las otras cuatro salidas (ceder competencias, ceder impuestos, subir presión, recortar servicios) tienen costo político.",
+    "en": "The other four options (giving up responsibilities, ceding taxes, raising pressure, cutting services) carry political cost."
+   },
+   "id": "fisc-general-25-q6"
+  },
+  {
+   "q": {
+    "es": "Según Capello y Galassi, ¿qué sesgo tiene el Tesoro Nacional al crear o bajar impuestos?",
+    "en": "According to Capello and Galassi, what bias does the National Treasury have when creating or cutting taxes?"
+   },
+   "op": {
+    "es": [
+     "Crear impuestos coparticipables y bajar los no coparticipables",
+     "No tiene sesgo porque los coeficientes son fijos",
+     "Crear solo impuestos al comercio exterior",
+     "Crear impuestos no coparticipables y bajar los coparticipables"
+    ],
+    "en": [
+     "Create shared taxes and cut unshared ones",
+     "It has no bias because coefficients are fixed",
+     "Create only foreign-trade taxes",
+     "Create unshared taxes and cut shared ones"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Así se queda con todo lo nuevo y comparte con las provincias el costo de las rebajas; los impuestos no coparticipables suelen ser muy distorsivos y difíciles de eliminar.",
+    "en": "That way it keeps all new revenue and shares the cost of cuts with provinces; unshared taxes tend to be highly distortionary and hard to remove."
+   },
+   "id": "fisc-general-25-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué evidencia citan Capello y Galassi de poco esfuerzo recaudador en las provincias?",
+    "en": "What evidence do Capello and Galassi cite of weak provincial revenue effort?"
+   },
+   "op": {
+    "es": [
+     "A mayor transferencia por habitante, menor presión tributaria efectiva en Ingresos Brutos, aunque no menor presión legal",
+     "Las provincias con más transferencias tienen alícuotas legales más bajas",
+     "Las provincias pobres recaudan más que las ricas",
+     "Ninguna provincia cobra Ingresos Brutos"
+    ],
+    "en": [
+     "The higher the transfer per head, the lower the effective (not the statutory) gross receipts tax burden",
+     "Provinces with more transfers have lower statutory rates",
+     "Poor provinces raise more than rich ones",
+     "No province levies the gross receipts tax"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La presión legal no difiere, pero la efectiva sí: las provincias más beneficiadas por transferencias cobran menos de lo que podrían.",
+    "en": "Statutory pressure does not differ but effective pressure does: provinces benefiting most from transfers collect less than they could."
+   },
+   "id": "fisc-general-25-q8"
+  }
+ ],
+ "palabras": 2288,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Cómo se reparten, en el enfoque tradicional, las tres funciones del Estado entre niveles de gobierno?",
+    "en": "In the traditional approach, how are the three functions of government split across levels?"
+   },
+   "a": {
+    "es": "La asignación conviene descentralizarla para ajustar la provisión a preferencias distintas; la distribución y la estabilización conviene centralizarlas, porque la movilidad y la apertura de las economías regionales las vuelven ineficaces abajo. Resumen de Finanzas Públicas (FCE-UNC), unidad 9, con Lagos.",
+    "en": "Allocation is best decentralized to match provision to differing preferences; distribution and stabilization are best centralized, because mobility and the openness of regional economies make them ineffective below. Public Finance summary (FCE-UNC), unit 9, following Lagos."
+   },
+   "id": "fisc-general-25-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué enuncia el teorema de la descentralización?",
+    "en": "What does the decentralization theorem state?"
+   },
+   "a": {
+    "es": "Sin ahorros de costos por proveer centralmente ni efectos externos entre jurisdicciones, el bienestar es al menos tan alto, y en general más, si cada jurisdicción recibe su nivel Pareto eficiente que con un nivel uniforme para todas. Resumen de Finanzas Públicas (FCE-UNC), unidad 9, con Lagos.",
+    "en": "Absent cost savings from central provision and spillovers across jurisdictions, welfare is at least as high, and usually higher, if each jurisdiction gets its Pareto-efficient level than with a uniform level for all. Public Finance summary (FCE-UNC), unit 9, following Lagos."
+   },
+   "id": "fisc-general-25-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se elige el tamaño de jurisdicción cuando importan los costos de decidir?",
+    "en": "How is jurisdiction size chosen when decision costs matter?"
+   },
+   "a": {
+    "es": "Minimizando la suma de los costos de decisión colectiva, que crecen con la población del grupo, y de los costos de coordinación entre jurisdicciones, que crecen al descentralizar. Resumen de Finanzas Públicas (FCE-UNC), unidad 9, con Lagos.",
+    "en": "By minimizing the sum of collective decision costs, which rise with group population, and coordination costs across jurisdictions, which rise with decentralization. Public Finance summary (FCE-UNC), unit 9, following Lagos."
+   },
+   "id": "fisc-general-25-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un gobierno subnacional pobre que redistribuye viola el principio de capacidad de pago?",
+    "en": "Why does a poor subnational government that redistributes violate the ability-to-pay principle?"
+   },
+   "a": {
+    "es": "Porque para dar los mismos servicios que sus vecinos más ricos debe cobrarles más impuestos a ciudadanos de menor renta. Resumen de Finanzas Públicas (FCE-UNC), unidad 9, con Lagos.",
+    "en": "Because to provide the same services as richer neighbours it must tax its lower-income citizens more heavily. Public Finance summary (FCE-UNC), unit 9, following Lagos."
+   },
+   "id": "fisc-general-25-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre igualar la capacidad fiscal, el esfuerzo fiscal y las necesidades?",
+    "en": "What is the difference between equalizing fiscal capacity, fiscal effort and needs?"
+   },
+   "a": {
+    "es": "La primera garantiza el mismo ingreso per cápita sin subir la presión; la segunda premia a quienes recaudan sobre la media e incentiva a los demás; la tercera compensa mayores costos de provisión por condiciones socioeconómicas o geográficas. Resumen de Finanzas Públicas (FCE-UNC), unidad 9, con Lagos.",
+    "en": "The first guarantees equal revenue per head without raising tax pressure; the second rewards those collecting above average and spurs the rest; the third offsets higher provision costs due to socioeconomic or geographic conditions. Public Finance summary (FCE-UNC), unit 9, following Lagos."
+   },
+   "id": "fisc-general-25-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué distribución primaria preveía la ley de coparticipación 23.548?",
+    "en": "What primary distribution did the revenue-sharing Law 23,548 provide?"
+   },
+   "a": {
+    "es": "De la masa coparticipable, 42,34% para la Nación, 56,66% para las provincias y 1% para el fondo de ATN; luego se desdibujó con regímenes especiales y con la ANSES, que recibe el 20,2% de los recursos tributarios nacionales. Capello y Galassi (2009), en el resumen de Finanzas Públicas (FCE-UNC), unidad 9.",
+    "en": "Of the shareable pool, 42.34% to the Nation, 56.66% to the provinces and 1% to the ATN fund; it later blurred through special regimes and ANSES, which receives 20.2% of national tax revenue. Capello and Galassi (2009), in the Public Finance summary (FCE-UNC), unit 9."
+   },
+   "id": "fisc-general-25-t6"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cuáles son las tres dimensiones de la correspondencia fiscal según Porto?",
+    "en": "What are Porto's three dimensions of fiscal correspondence?"
+   },
+   "a": {
+    "es": "Que el área que recibe el beneficio cargue con los costos, que quien gasta sea quien recauda y que la responsabilidad de financiar coincida con la política. En la mayoría de las provincias los recursos propios no cubren ni la mitad del gasto. Capello y Galassi (2009), en el resumen de Finanzas Públicas (FCE-UNC), unidad 9.",
+    "en": "That the area receiving the benefit bears the costs, that whoever spends also collects, and that financing responsibility matches political responsibility. In most provinces own revenue covers less than half of spending. Capello and Galassi (2009), in the Public Finance summary (FCE-UNC), unit 9."
+   },
+   "id": "fisc-general-25-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la coparticipación argentina, según Capello y Galassi, no nivela entre provincias?",
+    "en": "Why, according to Capello and Galassi, does Argentina's revenue sharing fail to equalize across provinces?"
+   },
+   "a": {
+    "es": "No tiene un criterio objetivo explícito y usa coeficientes fijos por años; privilegia a las provincias de baja densidad, ricas o pobres, y los ingresos per cápita no guardan relación con la pobreza. Capello y Galassi (2009), en el resumen de Finanzas Públicas (FCE-UNC), unidad 9.",
+    "en": "It has no explicit objective criterion and has used fixed coefficients for years; it favours low-density provinces, rich or poor, and revenue per head bears no relation to poverty. Capello and Galassi (2009), in the Public Finance summary (FCE-UNC), unit 9."
+   },
+   "id": "fisc-general-25-t8"
+  }
+ ]
+}

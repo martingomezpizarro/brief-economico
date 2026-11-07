@@ -1,0 +1,508 @@
+{
+ "id": "fisc-general-24",
+ "cat": "fisc-general",
+ "orden": 13,
+ "minutos": 15,
+ "titulo": "Qué gravar: la renta personal, la riqueza y el consumo, del concepto Haig-Simons al IVA",
+ "bajada": "Por qué la renta es la medida favorita de capacidad de pago y por qué cuesta gravarla entera, qué hacen las deducciones y la inflación con el impuesto a la renta, cómo se justifican (y se discuten) los impuestos al patrimonio, a las herencias y a los inmuebles, y por qué el IVA es mejor que Ingresos Brutos.",
+ "fuentes": [
+  1148
+ ],
+ "cita": "«Resumen Finanzas Públicas» (apunte de estudiantes de Finanzas Públicas, FCE-UNC, sin autor en el texto), unidad 7: «Impuestos II»",
+ "intro": "La unidad 6 del resumen de Finanzas Públicas de la FCE-UNC dio los criterios para juzgar un impuesto; la unidad 7 los aplica a las tres grandes bases que puede gravar un Estado: la renta, la riqueza y el consumo. Empieza por el impuesto a la renta personal, el más importante de las economías desarrolladas y el que más afecta las decisiones de ahorro, trabajo y riesgo. Su atractivo es que la renta es un buen indicador de capacidad de pago; su problema es que la renta ideal, la de Haig y Simons, incluye cosas que nadie sabe valuar, como el ocio o las ganancias de capital no realizadas. Después recorre los impuestos sobre la riqueza, cuyas justificaciones el apunte presenta una por una junto con sus objeciones, y termina con los impuestos indirectos: por qué un impuesto multifásico no acumulativo como el IVA evita los vicios de uno acumulativo como Ingresos Brutos.",
+ "secciones": [
+  {
+   "t": "La renta como medida de capacidad de pago",
+   "eq": [
+    "Y = C + \\Delta W"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y\\): renta extensiva o amplia del individuo en el período (Haig-Simons), en pesos.",
+      "en": "\\(Y\\): the individual's comprehensive income in the period (Haig-Simons), in currency units."
+     },
+     {
+      "es": "\\(C\\): valor de mercado del consumo del período: bienes y servicios comprados, autoconsumo, servicios de los bienes durables, retribuciones en especie y alguna valoración del ocio.",
+      "en": "\\(C\\): market value of consumption in the period: goods and services bought, own production consumed, services of durable goods, in-kind pay and some valuation of leisure."
+     },
+     {
+      "es": "\\(\\Delta W\\): cambio en el valor de la riqueza (los derechos de propiedad) entre el comienzo y el final del período; incluye las ganancias de capital, realizadas o no.",
+      "en": "\\(\\Delta W\\): change in the value of wealth (property rights) between the start and the end of the period; it includes capital gains, realized or not."
+     },
+     {
+      "es": "\\(\\Delta\\): operador de variación entre dos momentos del tiempo.",
+      "en": "\\(\\Delta\\): change operator between two points in time."
+     }
+    ]
+   ],
+   "p": [
+    "El impuesto a la renta personal es directo, personal y progresivo: grava la renta de un individuo en un período, normalmente el año, atendiendo a sus circunstancias personales y familiares. El apunte destaca que es la fuente de recursos más importante del sector público en las economías desarrolladas, que tiene gran capacidad recaudatoria y que es el impuesto con efectos más fuertes sobre las decisiones de ahorro, de oferta de trabajo y de aceptación de riesgos. Su importancia no viene solo de cuánto recauda, sino de que la renta se considera un buen indicador de capacidad de pago, de modo que gravarla permite cumplir el principio de equidad.",
+    "Hay dos maneras de decir qué es renta. El enfoque legal toma la lista que fija la norma: salarios, dividendos, alquileres, intereses de bonos, pensiones. El enfoque económico busca una definición ideal. Para Haig, la renta es el valor monetario del aumento neto de poder económico entre dos momentos; Simons la formula como la suma del consumo y del cambio en el valor de la riqueza. Es decir: lo que uno gastó más lo que se enriqueció. Con esa definición, las transferencias recibidas, públicas como una jubilación o privadas como una herencia, son renta, porque aumentan lo que el perceptor puede consumir o ahorrar. Y también lo son las ganancias de capital.",
+    "Dejarlas afuera tiene dos costos. Rompe la equidad horizontal, porque quien cobra intereses, dividendos o alquileres pagaría distinto que quien recibe lo mismo como suba del valor de sus activos. Y crea arbitraje: un incentivo a convertir rentas ordinarias en ganancias de capital para pagar menos. El problema es que la definición amplia es difícil de aplicar. Cuesta valuar el consumo que no pasa por el mercado, como lo que produce una granja para sí; los servicios de un durable, como la vivienda propia; el ocio, cuya no imposición desalienta la oferta de trabajo; las ganancias no realizadas, con precios volátiles; y las herencias, que exceden el año sobre el que se mide la renta."
+   ]
+  },
+  {
+   "t": "De la renta ideal a la renta fiscal",
+   "eq": [
+    "Y^{viv} = A^{m} - CF"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y^{viv}\\): renta imputada al propietario que habita su vivienda, la que en teoría debería gravarse.",
+      "en": "\\(Y^{viv}\\): income imputed to the owner who lives in their home, which in theory should be taxed."
+     },
+     {
+      "es": "\\(A^{m}\\): alquiler que la vivienda podría rendir según el mercado de alquiler.",
+      "en": "\\(A^{m}\\): rent the home could earn on the rental market."
+     },
+     {
+      "es": "\\(CF\\): costos financieros asociados a la vivienda (por ejemplo, los intereses de la hipoteca).",
+      "en": "\\(CF\\): financial costs tied to the home (for example, mortgage interest)."
+     }
+    ]
+   ],
+   "p": [
+    "Como la renta amplia no se puede aplicar tal cual, se la vuelve operativa de dos maneras: se incluyen solo los rendimientos y ganancias que la administración puede controlar, y se admiten gastos deducibles, deducciones en la base y deducciones en la cuota. Para que la base siga siendo lo bastante amplia, el apunte identifica cuatro áreas conflictivas.",
+    "La primera es la retribución en especie: seguros médicos, préstamos subsidiados, vivienda o transporte pagados por el empleador. Si no se gravan, dos personas con el mismo sueldo pero distintos beneficios pagan igual, lo que viola la equidad vertical; y quien cobra un sueldo y paga alquiler queda peor tratado que quien recibe la vivienda como parte del pago, lo que viola la horizontal. La segunda es la vivienda propia: el propietario que la habita debería tributar por el alquiler que podría obtener menos los costos financieros, porque su posición no difiere de la de quien invierte en acciones o en un inmueble que alquila. En general no se grava del todo, y se lo justifica por el deseo de fomentar la vivienda propia y por la dificultad de valuar la renta a imputar.",
+    "La tercera son las contribuciones de las empresas a seguros y fondos de pensión, que la mayoría de los países de la OCDE no incluyen en la renta. Convierten renta actual en renta futura: difieren la carga, distorsionan la decisión de ahorro e inversión y traen problemas administrativos; el beneficio fiscal suele depender de cuán voluntario sea el aporte, y busca fomentar el ahorro para la jubilación. La cuarta son las ganancias de capital. Hoy se gravan más que antes, para frenar la conversión de intereses y dividendos en ganancias, pero el temor a desalentar el ahorro o a la fuga de capitales llevó a tratos favorables, como alícuotas menores para las ganancias de largo plazo, que además corrigen en parte la inflación. Ese trato preferencial discrimina contra las rentas ordinarias, sesga la inversión hacia activos que rinden en forma de ganancia de capital y complica la administración."
+   ]
+  },
+  {
+   "t": "Deducciones en la base y en la cuota",
+   "eq": [
+    "\\Delta T^{base} = \\tau_m \\cdot D, \\qquad \\Delta T^{cuota} = K"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\Delta T^{base}\\): reducción del impuesto a pagar que produce una deducción de la base imponible.",
+      "en": "\\(\\Delta T^{base}\\): reduction in tax owed produced by a deduction from the tax base."
+     },
+     {
+      "es": "\\(\\tau_m\\): tipo marginal del contribuyente, la alícuota del último tramo que alcanza su renta.",
+      "en": "\\(\\tau_m\\): the taxpayer's marginal rate, the rate of the top bracket their income reaches."
+     },
+     {
+      "es": "\\(D\\): monto deducido de la base imponible, en pesos.",
+      "en": "\\(D\\): amount deducted from the tax base, in currency units."
+     },
+     {
+      "es": "\\(\\Delta T^{cuota}\\): reducción del impuesto que produce un crédito fiscal o deducción en la cuota.",
+      "en": "\\(\\Delta T^{cuota}\\): reduction in tax produced by a tax credit, a deduction from the liability."
+     },
+     {
+      "es": "\\(K\\): monto del crédito fiscal, que se resta directamente del impuesto y no depende de la renta. La notación es lectura propia; el apunte lo dice en palabras.",
+      "en": "\\(K\\): amount of the tax credit, subtracted directly from the tax and independent of income. The notation is our own reading; the summary states it in words."
+     }
+    ]
+   ],
+   "p": [
+    "Las desgravaciones toman dos formas. Las deducciones de la base reducen la base imponible y, por eso, operan al tipo marginal de cada contribuyente. Los créditos fiscales o deducciones en la cuota reducen directamente el impuesto y son independientes del nivel de renta. Lectura propia: con un impuesto progresivo, la misma deducción en la base le ahorra más a quien tiene un tipo marginal más alto, mientras que el crédito le ahorra a todos lo mismo; por eso la forma de la desgravación también decide su efecto distributivo.",
+    "El apunte agrupa las deducciones en cuatro categorías. Los gastos necesarios para obtener ingresos, como viajes, almuerzos de trabajo o cuotas a colegios profesionales, cuyo problema es que la administración necesitaría información costosa para comprobar que eran necesarios. Los gastos personales que reducen la capacidad de pago o refuerzan la capacidad de generar ingresos futuros, como la asistencia médica, ciertos seguros o las pérdidas por robo o incendio, deducibles por su magnitud y por ser obligatorios, aunque alteran incentivos. Los ajustes con finalidad incentivadora, como las deducciones por inversión inmobiliaria, vivienda propia, donaciones o ahorro de energía, criticados porque benefician a los ricos y distorsionan mercados. Y los ajustes por equidad, que gradúan el impuesto según hijos, incapacidades o vejez, porque esas circunstancias reducen en la práctica la capacidad de pago."
+   ]
+  },
+  {
+   "t": "Inflación e impuesto a la renta",
+   "eq": [
+    "E^{r}_t = \\frac{E}{P_t}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E^{r}_t\\): valor real, en el período \\(t\\), de una cantidad exenta, deducción fija o límite de tramo fijado en pesos.",
+      "en": "\\(E^{r}_t\\): real value, in period \\(t\\), of an exemption, fixed deduction or bracket threshold set in currency units."
+     },
+     {
+      "es": "\\(E\\): ese monto expresado en pesos corrientes, fijado por ley y no actualizado.",
+      "en": "\\(E\\): that amount in nominal currency, set by law and not updated."
+     },
+     {
+      "es": "\\(P_t\\): nivel de precios en el período \\(t\\); si sube y \\(E\\) no se ajusta, el valor real cae. Fórmula de lectura propia que resume el argumento del apunte.",
+      "en": "\\(P_t\\): price level in period \\(t\\); if it rises and \\(E\\) is not adjusted, the real value falls. Formula is our own reading summarizing the summary's argument."
+     }
+    ]
+   ],
+   "p": [
+    "La inflación golpea el impuesto a la renta por tres vías. Sobre la base imponible: reduce en términos reales los mínimos exentos y las deducciones fijas, y mide mal las rentas reales, sobre todo las del capital, que suelen estar fijadas en términos nominales. Lectura propia: un interés nominal que apenas compensa la inflación aparece como renta aunque el ahorrista no haya ganado poder de compra.",
+    "Sobre la progresividad efectiva: con escala nominal, un contribuyente cuya renta real no cambia salta a tramos más altos solo porque su renta nominal sube, y además pierde valor real lo que el impuesto exime o deduce para reforzar la progresividad. El resultado son aumentos impositivos reales que no corresponden a aumentos de capacidad de pago, y una distribución de la carga distinta de la que el legislador eligió. La corrección que propone el apunte es ajustar cada año esos montos.",
+    "Sobre la recaudación: cuando la inflación es muy alta, el impuesto se paga en el ejercicio siguiente al que se generó la renta, con pesos que valen menos, y la recaudación real cae; con deflación aguda pasa lo contrario. Lectura propia: es el mismo mecanismo que en la Argentina se conoce como efecto Olivera-Tanzi."
+   ]
+  },
+  {
+   "t": "Impuestos sobre la riqueza: patrimonio, herencias y transmisiones",
+   "p": [
+    "Algunos impuestos gravan la mera tenencia de riqueza (el impuesto al patrimonio) o de ciertas formas de riqueza (los inmuebles); otros gravan su transmisión gratuita (sucesiones y donaciones) u onerosa (transmisiones patrimoniales). La riqueza, en sentido amplio, es el valor de todos los activos que pueden generar ingresos monetarios o en especie, incluso el capital humano o el derecho a prestaciones de la seguridad social; como esos activos son difíciles de valuar y negociar, el impuesto al patrimonio grava solo el valor neto de los bienes y derechos convencionales. Es una figura de escasa recaudación que la inmensa mayoría de los países no tiene, por falta de claridad y alto costo administrativo.",
+    "El apunte presenta tres justificaciones, cada una con su objeción. Por eficiencia, gravar la riqueza empujaría a sacarla de usos improductivos como joyas, yates o pinturas; pero si alguien los prefiere es porque le dan más utilidad, y además el impuesto grava también los usos productivos. Por equidad, compensaría que el impuesto a la renta no alcanza las ganancias no realizadas ni parte de las rentas en especie; pero entonces la base deberían ser solo esos rendimientos, y gravarlos vía patrimonio choca con los mismos problemas de valuación y liquidez. También se dice que la riqueza da poder, prestigio y seguridad, y que su concentración podría traducirse en poder político; el apunte objeta que es discutible que la riqueza de la mayor parte de la población confiera poder político. Por último, ayudaría a fiscalizar el impuesto a la renta, porque el patrimonio delata rentas ocultadas; pero eso supone que quien evade pone lo evadido a su nombre y lo declara.",
+    "El impuesto a las sucesiones y donaciones grava la riqueza recibida gratis. Se lo defiende con un argumento moral, que el heredero no hizo mérito, y con uno igualitario, que las herencias limitan la igualdad de oportunidades y perpetúan la desigualdad. Friedman objeta el primero: tampoco hizo mérito quien nació con una gran voz, inteligencia o talento deportivo, y penalizar la herencia supone que es más ético que los padres gasten en sí mismos que dejarle algo a sus hijos. Contra el segundo, las personas difieren por muchas razones además de la herencia, y la riqueza heredada se divide entre herederos y generaciones y puede ser mal administrada. El impuesto a las transmisiones onerosas se defiende como registro y control, de gran recaudación y bajo costo, pero se lo critica porque grava operaciones, como la venta de un inmueble usado entre particulares, que muchas veces no revelan capacidad de pago."
+   ]
+  },
+  {
+   "t": "El impuesto inmobiliario",
+   "p": [
+    "Al impuesto sobre bienes inmuebles se lo justifica por eficiencia, equidad, sencillez y recaudación, y el apunte discute cada argumento. Eficiencia: grava factores inmóviles que casi no se deprecian, así que no pueden huir hacia otros usos. La afirmación depende del plazo y de quién lo aplica. Si todos los municipios lo aplican a la vez, en el corto plazo lo soportan los propietarios, sin cambiar alquileres ni asignación: es neutral. En el largo plazo suben los alquileres, cae el rendimiento del capital, se reduce el capital en el sector inmobiliario y deja de ser neutral. Si lo aplican solo algunos municipios, la gente se muda a donde no se grava, con pérdida de eficiencia.",
+    "Equidad: por capacidad de pago, el inmueble es parte de la riqueza; por beneficio, su valor depende de los servicios municipales, así que el impuesto sería un cuasi precio por ellos. Pero la vivienda es un bien necesario de demanda inelástica, de modo que los hogares de renta baja gastan en ella una proporción mayor de su renta y el impuesto resulta regresivo; además, el valor de la casa puede reflejar renta pasada y no presente. Y el principio del beneficio, aplicado a rajatabla, haría pagar el gasto a los más pobres cuando son ellos los que más se benefician, además de que el nexo entre servicios y valor de las viviendas es impreciso.",
+    "Gestión: la base no se oculta ni se mueve, pero hay que tasar las propiedades que no se vendieron hace poco, lo que es caro e inexacto y, si las diferencias entre valor real y fiscal no son uniformes, crea inequidad horizontal. Suficiencia y flexibilidad: no alcanza para financiar el gasto que cada municipio considera necesario ni crece al ritmo de la renta local. Y es un impuesto muy impopular."
+   ]
+  },
+  {
+   "t": "Impuestos al consumo: IVA contra Ingresos Brutos",
+   "eq": [
+    "T^{IVA}_i = \\tau\\,(V_i - CI_i) = \\tau V_i - \\tau CI_i",
+    "T^{IB} = \\sum_{i=1}^{n} \\tau\\, V_i"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(T^{IVA}_i\\): IVA que ingresa al fisco la empresa de la etapa \\(i\\) de la cadena productiva.",
+      "en": "\\(T^{IVA}_i\\): VAT that the firm at stage \\(i\\) of the production chain pays to the tax authority."
+     },
+     {
+      "es": "\\(\\tau\\): alícuota del impuesto, como proporción del precio de venta.",
+      "en": "\\(\\tau\\): tax rate, as a share of the sale price."
+     },
+     {
+      "es": "\\(V_i\\): ventas brutas de la etapa \\(i\\); \\(\\tau V_i\\) es el impuesto que la empresa cobra a sus clientes (débito fiscal, en la jerga argentina).",
+      "en": "\\(V_i\\): gross sales at stage \\(i\\); \\(\\tau V_i\\) is the tax the firm charges its customers (output tax)."
+     },
+     {
+      "es": "\\(CI_i\\): compras de insumos de la etapa \\(i\\); \\(\\tau CI_i\\) es el impuesto que le cobraron sus proveedores y que deduce (crédito fiscal).",
+      "en": "\\(CI_i\\): input purchases at stage \\(i\\); \\(\\tau CI_i\\) is the tax its suppliers charged it, which it deducts (input tax credit)."
+     },
+     {
+      "es": "\\(V_i - CI_i\\): valor añadido de la etapa, la base del IVA. La notación es lectura propia; el apunte define el valor añadido como ventas brutas menos insumos.",
+      "en": "\\(V_i - CI_i\\): value added at the stage, the VAT base. Notation is our own reading; the summary defines value added as gross sales minus inputs."
+     }
+    ],
+    [
+     {
+      "es": "\\(T^{IB}\\): recaudación total de un impuesto multifásico acumulativo como Ingresos Brutos a lo largo de la cadena.",
+      "en": "\\(T^{IB}\\): total revenue from a cumulative multi-stage tax such as Argentina's gross receipts tax (Ingresos Brutos) along the chain."
+     },
+     {
+      "es": "\\(\\sum_{i=1}^{n}\\): suma sobre las \\(n\\) etapas por las que pasa el bien hasta el consumidor final.",
+      "en": "\\(\\sum_{i=1}^{n}\\): sum over the \\(n\\) stages the good goes through before reaching the final consumer."
+     },
+     {
+      "es": "\\(\\tau\\): alícuota sobre las ventas brutas; \\(V_i\\): ventas brutas de la etapa \\(i\\), que ya incluyen el impuesto pagado en las etapas anteriores. Por eso la carga total crece con \\(n\\): lectura propia que formaliza el efecto cascada del apunte.",
+      "en": "\\(\\tau\\): rate on gross sales; \\(V_i\\): gross sales at stage \\(i\\), which already include the tax paid at earlier stages. Hence the total burden grows with \\(n\\): our own formalization of the summary's cascade effect."
+     }
+    ]
+   ],
+   "p": [
+    "Los impuestos indirectos gravan manifestaciones mediatas de capacidad contributiva, como el consumo, sin mirar la situación global de quien paga. Pueden ser especiales, sobre consumos específicos como cigarrillos o alcohol, o generales sobre las ventas; estos últimos pueden ser monofásicos, en una sola etapa, o multifásicos, en todas, y los multifásicos pueden ser acumulativos, como Ingresos Brutos, o no acumulativos, como el IVA. Sus ventajas: recaudan mucho, abaratan relativamente el ahorro, son más fáciles de administrar que los directos y le dejan poco margen de evasión al consumidor, aunque no a empresas y profesionales. Sus desventajas: se trasladan fácilmente a precios, generan ilusión fiscal y son globalmente regresivos, porque los de menores ingresos consumen una proporción mayor de su renta.",
+    "La imposición selectiva se justifica por cuatro motivos: cargar a una actividad sus costos sociales externos, como la contaminación, el alcohol o el tabaco; diferenciar alícuotas de forma óptima, gravando más los bienes de demanda rígida o complementarios del ocio, porque la uniformidad no es en general óptima; redistribuir gravando bienes suntuarios, a costa de la equidad horizontal entre personas de igual renta y distintos gustos; y proteger la industria nacional con impuestos a la importación.",
+    "Entre los generales, un impuesto monofásico en la etapa de fabricación o mayorista es sencillo y difícil de evadir, pero al trasladarse a las etapas siguientes altera sus decisiones; para minimizar costos de eficiencia, el monofásico conveniente es el minorista. Los multifásicos acumulativos no dejan recuperar el impuesto pagado a los proveedores: se vuelve un costo más que se acumula etapa a etapa, distorsiona precios relativos y, como la carga depende del número de etapas, incentiva la integración vertical. Los no acumulativos dejan deducir el impuesto soportado en las compras, la empresa actúa como mera recaudadora y la carga queda en general en el consumidor final.",
+    "Por eso el apunte prefiere el IVA. No produce piramidación, es decir, un aumento del precio final mayor que el impuesto soportado, ni efecto cascada; no depende del número de etapas; bien aplicado equivale a un impuesto minorista, pero es más difícil de ocultar porque compradores y vendedores tienen intereses opuestos, ya que todos quieren deducirlo; su red de facturas es una base de información para la fiscalización; y como las exportaciones están exentas y las importaciones lo pagan al entrar, no exporta carga a otros países. Su incidencia depende de las elasticidades de cada mercado. Ingresos Brutos, en cambio, piramida y acumula, es simple de definir y cumplir pero no permite cruzar información entre compradores y vendedores, tiene una regresividad difícil de medir por sus alícuotas múltiples, exporta carga a otras provincias (de ahí el Convenio Multilateral) y a otros países, porque es muy difícil reintegrarlo en las exportaciones, y encarece los bienes de capital, desalentando la inversión."
+   ]
+  }
+ ],
+ "claves": [
+  "Renta Haig-Simons: consumo más variación de la riqueza; incluye transferencias y ganancias de capital, pero el ocio, la vivienda propia y las ganancias no realizadas son difíciles de valuar.",
+  "No gravar las ganancias de capital rompe la equidad horizontal e incentiva convertir rentas ordinarias en ganancias.",
+  "Cuatro áreas conflictivas de la base: retribución en especie, vivienda propia, aportes a pensiones y ganancias de capital.",
+  "Las deducciones en la base operan al tipo marginal; los créditos en la cuota no dependen de la renta.",
+  "La inflación erosiona mínimos y deducciones fijos, empuja a tramos más altos sin aumento real y, si es intensa, licúa la recaudación diferida.",
+  "Patrimonio, herencias, transmisiones e inmuebles: cada justificación (eficiencia, equidad, control) tiene una objeción en el apunte.",
+  "El impuesto inmobiliario es neutral solo en el corto plazo y si lo aplican todos; la demanda inelástica de vivienda lo vuelve regresivo.",
+  "El IVA grava el valor añadido y evita cascada, piramidación e integración vertical; Ingresos Brutos acumula, exporta carga y encarece el capital."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según la definición de Simons, la renta de un período es:",
+    "en": "According to Simons's definition, income in a period is:"
+   },
+   "op": {
+    "es": [
+     "Los salarios más los intereses cobrados",
+     "El consumo más el cambio en el valor de la riqueza",
+     "Los ingresos que fija la ley como gravables",
+     "El consumo menos el ahorro"
+    ],
+    "en": [
+     "Wages plus interest received",
+     "Consumption plus the change in the value of wealth",
+     "The receipts the law lists as taxable",
+     "Consumption minus saving"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La renta extensiva suma el valor de mercado del consumo y la variación de los derechos de propiedad entre el comienzo y el final del período.",
+    "en": "Comprehensive income adds the market value of consumption and the change in property rights between the start and end of the period."
+   },
+   "id": "fisc-general-24-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué consecuencia tiene, según el apunte, no incluir las ganancias de capital en la renta gravable?",
+    "en": "According to the summary, what follows from leaving capital gains out of taxable income?"
+   },
+   "op": {
+    "es": [
+     "Mejora la equidad vertical",
+     "Elimina la doble imposición del ahorro",
+     "Incentiva convertir intereses y dividendos en ganancias de capital",
+     "Reduce la volatilidad de los precios de los activos"
+    ],
+    "en": [
+     "It improves vertical equity",
+     "It removes double taxation of saving",
+     "It encourages turning interest and dividends into capital gains",
+     "It reduces asset price volatility"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Además de romper la equidad horizontal, crea un arbitraje impositivo: conviene cobrar como ganancia de capital lo que sería renta ordinaria.",
+    "en": "Besides breaking horizontal equity, it creates tax arbitrage: it pays to receive as capital gains what would otherwise be ordinary income."
+   },
+   "id": "fisc-general-24-q2"
+  },
+  {
+   "q": {
+    "es": "Una deducción de la base imponible, a diferencia de un crédito en la cuota:",
+    "en": "A deduction from the tax base, unlike a credit against the liability:"
+   },
+   "op": {
+    "es": [
+     "Opera al tipo marginal del contribuyente",
+     "Es independiente del nivel de renta",
+     "Solo se aplica a gastos médicos",
+     "No reduce el impuesto a pagar"
+    ],
+    "en": [
+     "Works at the taxpayer's marginal rate",
+     "Is independent of the income level",
+     "Only applies to medical expenses",
+     "Does not reduce the tax owed"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Al achicar la base, ahorra el monto deducido por el tipo marginal; el crédito resta directamente del impuesto y no depende de la renta.",
+    "en": "By shrinking the base it saves the deducted amount times the marginal rate; a credit is subtracted from the tax directly and does not depend on income."
+   },
+   "id": "fisc-general-24-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la inflación altera la progresividad de un impuesto a la renta con escala nominal?",
+    "en": "Why does inflation alter the progressivity of an income tax with a nominal schedule?"
+   },
+   "op": {
+    "es": [
+     "Porque baja las alícuotas marginales",
+     "Porque adelanta los pagos al fisco",
+     "Porque exime las rentas del capital",
+     "Porque los contribuyentes con renta real constante pasan a tramos nominales más altos"
+    ],
+    "en": [
+     "Because it lowers marginal rates",
+     "Because it brings tax payments forward",
+     "Because it exempts capital income",
+     "Because taxpayers with constant real income move into higher nominal brackets"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Sube el impuesto real sin que suba la capacidad de pago; además pierden valor los mínimos y deducciones fijos. La corrección es ajustarlos cada año.",
+    "en": "Real tax rises without any rise in ability to pay; fixed exemptions and deductions also lose value. The fix is to adjust them every year."
+   },
+   "id": "fisc-general-24-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué objeción plantea el apunte al argumento de que el impuesto al patrimonio ayuda a fiscalizar el impuesto a la renta?",
+    "en": "What objection does the summary raise to the argument that a wealth tax helps enforce the income tax?"
+   },
+   "op": {
+    "es": [
+     "Que el patrimonio no se puede valuar",
+     "Que supone que quien evade pone lo evadido a su nombre y lo declara",
+     "Que la mayoría de los países lo usa con ese fin",
+     "Que recauda más que el impuesto a la renta"
+    ],
+    "en": [
+     "That wealth cannot be valued",
+     "That it assumes evaders put what they evaded in their own name and declare it",
+     "That most countries use it for that purpose",
+     "That it raises more than the income tax"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El patrimonio podría delatar rentas ocultas solo si el evasor lo registra y lo declara, algo poco probable.",
+    "en": "Wealth could reveal hidden income only if the evader registers and declares it, which is unlikely."
+   },
+   "id": "fisc-general-24-q5"
+  },
+  {
+   "q": {
+    "es": "Según el apunte, un impuesto inmobiliario aplicado por todos los municipios a la vez:",
+    "en": "According to the summary, a property tax applied by all municipalities at once:"
+   },
+   "op": {
+    "es": [
+     "Es neutral en el corto plazo y deja de serlo en el largo",
+     "Es neutral en el largo plazo y distorsivo en el corto",
+     "Nunca altera los alquileres",
+     "Provoca de inmediato la mudanza de familias"
+    ],
+    "en": [
+     "Is neutral in the short run and stops being so in the long run",
+     "Is neutral in the long run and distortionary in the short run",
+     "Never changes rents",
+     "Immediately makes families move"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "En el corto plazo lo soportan los propietarios; en el largo suben los alquileres, cae el rendimiento del capital y se reduce el capital inmobiliario. La mudanza aparece si lo aplican solo algunos.",
+    "en": "In the short run owners bear it; in the long run rents rise, the return on capital falls and real-estate capital shrinks. Relocation arises when only some apply it."
+   },
+   "id": "fisc-general-24-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué un impuesto multifásico acumulativo incentiva la integración vertical?",
+    "en": "Why does a cumulative multi-stage tax encourage vertical integration?"
+   },
+   "op": {
+    "es": [
+     "Porque exime a las empresas grandes",
+     "Porque permite deducir el impuesto de los insumos",
+     "Porque grava solo al minorista",
+     "Porque la carga total depende del número de etapas por las que pasa el bien"
+    ],
+    "en": [
+     "Because it exempts large firms",
+     "Because it allows deducting the tax on inputs",
+     "Because it only taxes the retailer",
+     "Because the total burden depends on the number of stages the good goes through"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Cada etapa paga sobre ventas brutas que ya traen el impuesto anterior; integrar etapas en una empresa reduce las transacciones gravadas.",
+    "en": "Each stage pays on gross sales that already carry the earlier tax; merging stages into one firm cuts the number of taxed transactions."
+   },
+   "id": "fisc-general-24-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja del IVA sobre un impuesto minorista destaca el apunte?",
+    "en": "Which advantage of VAT over a retail sales tax does the summary highlight?"
+   },
+   "op": {
+    "es": [
+     "Que recae solo sobre los productores",
+     "Que es progresivo respecto de la renta",
+     "Que es más difícil de ocultar porque compradores y vendedores tienen intereses opuestos",
+     "Que no se traslada a precios"
+    ],
+    "en": [
+     "It falls only on producers",
+     "It is progressive with respect to income",
+     "It is harder to hide because buyers and sellers have opposing interests",
+     "It is not passed on to prices"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Todos quieren deducir el IVA que pagaron, así que piden factura; la red de facturas además sirve para fiscalizar.",
+    "en": "Everyone wants to deduct the VAT they paid, so they ask for invoices; the invoice network also serves for enforcement."
+   },
+   "id": "fisc-general-24-q8"
+  }
+ ],
+ "palabras": 2430,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la renta extensiva de Haig-Simons y por qué cuesta aplicarla?",
+    "en": "What is Haig-Simons comprehensive income and why is it hard to apply?"
+   },
+   "a": {
+    "es": "Es el consumo más el aumento de la riqueza en el período, incluidas transferencias y ganancias de capital. Cuesta valuar el autoconsumo, los servicios de la vivienda propia, el ocio y las ganancias no realizadas, y las herencias exceden el año fiscal. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "It is consumption plus the increase in wealth over the period, including transfers and capital gains. Own production, owner-occupied housing services, leisure and unrealized gains are hard to value, and inheritances span more than the fiscal year. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué no gravar la retribución en especie viola la equidad horizontal?",
+    "en": "Why does not taxing in-kind pay violate horizontal equity?"
+   },
+   "a": {
+    "es": "Porque quien cobra sueldo y paga alquiler tributa más que quien recibe una vivienda similar como parte del pago, aunque su renta sea la misma. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "Because someone who earns a wage and pays rent is taxed more than someone who receives a similar home as part of their pay, though their income is the same. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿En qué se diferencia una deducción en la base de un crédito en la cuota?",
+    "en": "How does a deduction from the base differ from a credit against the liability?"
+   },
+   "a": {
+    "es": "La primera reduce la base imponible y ahorra según el tipo marginal de cada uno; el crédito se resta del impuesto y es independiente de la renta. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "The former reduces the tax base and saves according to each person's marginal rate; the credit is subtracted from the tax and is independent of income. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una inflación alta reduce la recaudación real del impuesto a la renta?",
+    "en": "Why does high inflation reduce the real yield of the income tax?"
+   },
+   "a": {
+    "es": "Porque el impuesto se paga en el ejercicio siguiente al que se generó la renta, con moneda que perdió valor; con deflación aguda ocurre lo contrario. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "Because the tax is paid in the year after the income was earned, in money that has lost value; with sharp deflation the opposite happens. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cómo responde Friedman al argumento moral a favor del impuesto a las herencias?",
+    "en": "How does Friedman answer the moral argument for inheritance taxation?"
+   },
+   "a": {
+    "es": "Tampoco hace mérito quien nace con una gran voz, inteligencia o talento deportivo; y penalizar la herencia supone que es más ético que los padres consuman a que dejen algo a sus hijos. Friedman, citado en el resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "Someone born with a great voice, intelligence or athletic talent did nothing to deserve it either; and penalizing bequests assumes it is more ethical for parents to consume than to leave something to their children. Friedman, cited in the Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué el impuesto inmobiliario puede ser regresivo?",
+    "en": "Why can the property tax be regressive?"
+   },
+   "a": {
+    "es": "Porque la vivienda es un bien necesario de demanda inelástica: los hogares de renta baja gastan en ella una proporción mayor de su renta. Además, el valor de la casa puede reflejar renta pasada y no presente. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "Because housing is a necessity with inelastic demand: low-income households spend a larger share of income on it. Also, a home's value may reflect past rather than current income. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué problemas tiene Ingresos Brutos frente al IVA?",
+    "en": "What problems does the gross receipts tax (Ingresos Brutos) have compared with VAT?"
+   },
+   "a": {
+    "es": "Piramida y acumula a lo largo de la cadena, no permite cruzar información entre compradores y vendedores, exporta carga a otras provincias y países porque no se reintegra en las exportaciones, y encarece los bienes de capital. Resumen de Finanzas Públicas (FCE-UNC), unidad 7.",
+    "en": "It pyramids and cascades along the chain, prevents cross-checking buyers and sellers, exports burden to other provinces and countries because it is not refunded on exports, and makes capital goods dearer. Public Finance summary (FCE-UNC), unit 7."
+   },
+   "id": "fisc-general-24-t7"
+  }
+ ]
+}
