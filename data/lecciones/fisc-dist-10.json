@@ -1,0 +1,647 @@
+{
+ "id": "fisc-dist-10",
+ "cat": "fisc-dist",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "Cómo se mide la pobreza: definiciones, líneas, NBI e índices FGT",
+ "bajada": "Qué se entiende por pobre, cómo se identifica con ingreso, consumo, líneas o necesidades insatisfechas, y qué axiomas cumplen el recuento, la brecha, el índice de Sen y la familia FGT, según la revisión de Feres y Mancero para la CEPAL.",
+ "fuentes": [
+  1154
+ ],
+ "cita": "Juan Carlos Feres y Xavier Mancero (2001), «Enfoques para la medición de la pobreza. Breve revisión de la literatura», CEPAL, serie Estudios estadísticos y prospectivos, n.º 4",
+ "intro": "Feres y Mancero (2001) escriben para la CEPAL una guía de la medición de la pobreza que sigue el orden de cualquier ejercicio empírico: primero qué se entiende por pobreza, después cómo se identifica a los pobres y al final cómo se agrega su situación en un índice. En la definición contraponen la pobreza como necesidad, como estándar de vida y como insuficiencia de recursos, y el debate entre lo absoluto y lo relativo, que Sen resuelve con las capacidades. En la identificación repasan los indicadores de bienestar, las líneas de pobreza calórica, por costo de necesidades básicas, relativa y subjetiva, y los métodos directos: las necesidades básicas insatisfechas y el índice de desarrollo humano. En la agregación presentan los axiomas que debe cumplir una buena medida y comparan el recuento, la brecha, el índice de Sen y la familia de Foster, Greer y Thorbecke. Su conclusión es que ningún método es completo por sí solo y que conviene combinarlos.",
+ "secciones": [
+  {
+   "t": "Qué es ser pobre: once acepciones y tres que usan los economistas",
+   "p": [
+    "Feres y Mancero ordenan la medición de la pobreza en dos operaciones que cualquier método tiene que resolver: identificar a quién se considera pobre y agregar el bienestar de esas personas en un número. Antes de las dos está la definición. Siguiendo a Spicker (1999), el término admite once interpretaciones: necesidad, estándar de vida, insuficiencia de recursos, carencia de seguridad básica, falta de titularidades, privación múltiple, exclusión, desigualdad, clase, dependencia y padecimiento inaceptable. Los estudios económicos se concentran casi solo en las tres primeras, porque para ellas hay indicadores razonables en las encuestas: la satisfacción de ciertas necesidades, el consumo y el ingreso disponible.",
+    "Las tres no son equivalentes. Como «necesidad», la pobreza es la carencia de bienes y servicios concretos, y no importa si el hogar tiene ingreso sino si las necesidades están cubiertas: de ahí sale el método de las necesidades básicas insatisfechas. Como «estándar de vida», es vivir con menos que un mínimo, que puede incluir cosas que nadie «necesita»: según Spicker, nadie necesita té, periódicos o conciertos, pero quien no puede comprarlos puede ser pobre. De ahí sale la línea por costo de necesidades básicas. Como «insuficiencia de recursos», cuenta tener con qué, y de ahí sale el método relativo."
+   ]
+  },
+  {
+   "t": "Capacidades, y la pelea entre pobreza absoluta y relativa",
+   "eq": [
+    "u = u\\big(c(q, x)\\big) = v(q, x)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(c(q, x)\\): capacidades de la persona, es decir, lo que puede hacer o ser con los bienes que tiene (en el ejemplo de Sen, transportarse gracias a una bicicleta).",
+      "en": "\\(c(q, x)\\): the person's capabilities, that is, what she can do or be with the goods she has (in Sen's example, getting around thanks to a bicycle)."
+     },
+     {
+      "es": "\\(q\\): cantidades consumidas de bienes.",
+      "en": "\\(q\\): quantities of goods consumed."
+     },
+     {
+      "es": "\\(x\\): características del hogar (tamaño, edades y similares) que condicionan qué capacidades dan esos bienes.",
+      "en": "\\(x\\): household characteristics (size, ages and the like) that condition which capabilities those goods deliver."
+     },
+     {
+      "es": "\\(u(\\cdot)\\): utilidad, que según Sen depende de las capacidades y no directamente de los bienes.",
+      "en": "\\(u(\\cdot)\\): utility, which according to Sen depends on capabilities and not directly on goods."
+     },
+     {
+      "es": "\\(v(q, x)\\): la misma utilidad escrita solo en función de bienes y características del hogar; es la reescritura de Ravallion (1998).",
+      "en": "\\(v(q, x)\\): the same utility written only as a function of goods and household characteristics; this is Ravallion's (1998) rewriting."
+     }
+    ]
+   ],
+   "p": [
+    "Amartya Sen (1984) discute que el nivel de vida sea la utilidad de consumir bienes. Propone una cadena: el bien tiene características, las características dan capacidades y las capacidades, a su vez, pueden dar utilidad. Una bicicleta es un medio de transporte, eso da la capacidad de moverse, y moverse puede dar satisfacción. El nivel de vida está en las capacidades: los bienes no lo constituyen, porque lo que alguien puede hacer con ellos depende de sus facultades e impedimentos, y la utilidad tampoco, porque es una reacción mental subjetiva. Su frase: un quejumbroso hombre rico puede ser menos feliz que un campesino contento, pero tiene un nivel de vida más alto.",
+    "Ravallion (1998) muestra que esto no choca con el análisis utilitarista. Si las capacidades dependen de los bienes consumidos y de las características del hogar, y la utilidad depende de las capacidades, la utilidad termina siendo una función de bienes y características, como en la ecuación de arriba. Las capacidades quedan como un paso intermedio entre el consumo y el bienestar, y medir con el consumo sigue siendo legítimo.",
+    "El enfoque relativo sostiene que las necesidades nacen de compararse con los demás: los estándares y las exigencias legales suben con la riqueza (en el campo un pobre puede vivir en una carpa, en la ciudad no, dice Streeten), y Townsend concluye que la línea debe depender del ingreso general. Sen responde que, si cae mucho el ingreso de un país y mucha gente pasa hambre sin que cambie la distribución, un relativista puro no registraría más pobreza, y que existe un «núcleo irreductible» de privación absoluta, como la inanición. Su síntesis: la pobreza es absoluta en el espacio de las capacidades y relativa en el de los bienes. No avergonzarse ante los demás es la misma capacidad en todas partes; los bienes que hacen falta para lograrlo cambian."
+   ]
+  },
+  {
+   "t": "El indicador de bienestar: ingreso, consumo y escalas de equivalencia",
+   "p": [
+    "Identificar a los pobres exige elegir una variable de bienestar, y los resultados son muy sensibles a esa elección. Ingreso y consumo son los más usados, y ninguno gana en la teoría. Si la utilidad depende solo del consumo presente, el consumo corriente es el mejor indicador (Ravallion, Glewwe y van der Gaag) y el ingreso es una aproximación que sobrestima el nivel de vida cuando la familia ahorra o está racionada y lo subestima cuando desahorra o se endeuda (Atkinson, 1991). Pero si el nivel de vida incluye el consumo futuro esperado (Altimir, 1979), el ingreso es mejor, y también lo es cuando la pobreza se entiende como falta de titularidades a un ingreso mínimo de libre uso.",
+    "En lo empírico tampoco hay veredicto. Deaton y Grosh (1999) prefieren el consumo cuando la encuesta cubre un período corto, porque el ingreso es más volátil y estacional. Chaudhuri y Ravallion (1994) evaluaron qué indicador ordena mejor a los pobres de largo plazo, lo que importa para focalizar: la teoría favorecía al consumo, pero en sus datos el ingreso se comportó mejor.",
+    "Luego está la unidad. El ingreso total del hogar trata igual a un hogar de seis y a uno de dos; el per cápita supone que cada miembro necesita lo mismo. Lo ideal es ajustar por una escala de equivalencia, un índice del costo relativo que enfrenta un hogar para tener el mismo bienestar que uno de referencia. Recoge necesidades distintas según edad y sexo y economías de escala, porque la vivienda o la calefacción se comparten: una pareja con dos hijos necesita gastar más que una pareja sola, pero no el doble. El problema es estimarla con funciones de demanda, que no bastan para identificar niveles de bienestar y pueden reproducir inequidades dentro del hogar.",
+    "Otros indicadores tienen usos acotados. La proporción del gasto en alimentos se apoya en la ley de Engel, pero varía también con la demografía, los precios y los gustos. Los nutricionales y antropométricos sirven para la desnutrición, pero la salud no es el bienestar. Las necesidades básicas describen qué falta y, como salen del censo, permiten mapas de pobreza. La recomendación, con Glewwe y van der Gaag, es atar la definición a la política que se quiere aplicar."
+   ]
+  },
+  {
+   "t": "Líneas de pobreza: calorías, canasta básica, método relativo",
+   "eq": [
+    "LP = \\dfrac{CBA}{s_A}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(LP\\): línea de pobreza, el gasto mínimo por persona (o por adulto equivalente) para no ser pobre, en moneda por período.",
+      "en": "\\(LP\\): poverty line, the minimum spending per person (or per adult equivalent) not to be poor, in currency per period."
+     },
+     {
+      "es": "\\(CBA\\): costo de la canasta básica de alimentos que cubre los requerimientos nutricionales.",
+      "en": "\\(CBA\\): cost of the basic food basket that covers nutritional requirements."
+     },
+     {
+      "es": "\\(s_A\\): proporción del gasto total que un grupo de referencia de la población destina a alimentos; su inversa \\(1/s_A\\) es el «multiplicador» de Orshansky. Los autores describen el cálculo en palabras; la notación es lectura propia.",
+      "en": "\\(s_A\\): share of total spending that a reference group of the population devotes to food; its inverse \\(1/s_A\\) is Orshansky's \"multiplier\". The authors describe the calculation in words; the notation is our own reading."
+     }
+    ]
+   ],
+   "p": [
+    "El enfoque indirecto llama pobre a quien no tiene recursos para cubrir sus necesidades; el directo, a quien de hecho no las cubre. El primero mira la capacidad de consumir, el segundo el consumo realizado, y por eso pueden clasificar distinto: con el directo puede ser pobre alguien con recursos suficientes, y con el indirecto puede no serlo alguien con varias necesidades sin cubrir. El indirecto usa líneas de pobreza: el ingreso o gasto mínimo para un nivel de vida adecuado.",
+    "La más simple es la calórica: la línea es el ingreso con el que se alcanza un consumo de calorías predeterminado, sea el ingreso medio de una submuestra de hogares cerca del requerimiento o el que surge de una regresión entre calorías e ingreso. Pide poca información y no obliga a fijar un componente no alimentario, pero la relación entre gasto y calorías cambia con gustos, actividad física y precios. Ravallion (1998) muestra el sesgo: con precios y gasto real parecidos, los hogares urbanos tienen gustos alimentarios más caros, compran menos calorías por peso y el método los declararía más pobres que a los rurales, aunque tengan más ingreso.",
+    "El método del costo de las necesidades básicas usa una canasta. La parte alimentaria debería minimizar el costo de los nutrientes con restricciones que la hagan compatible con lo que la gente come. Para la no alimentaria, en lugar de fijar mínimos de vivienda, vestido o transporte sin base teórica comparable, se divide el costo de la canasta alimentaria por la proporción del gasto en alimentos: el multiplicador de Orshansky de la ecuación. Ese atajo supone que quien cubre la alimentación cubre lo demás, ignora los bienes gratuitos del Estado y usa un coeficiente único aunque el gasto cambia con el ciclo de vida del hogar; Streeten agrega que mezcla un mínimo alimentario normativo con uno no alimentario observado.",
+    "Como todo esto tiene juicios de valor, Ravallion (1998) propone un intervalo de líneas, suponiendo que el gasto va primero a alimentos de supervivencia, después a bienes no alimentarios básicos y recién después a alimentos básicos; los autores advierten que la evidencia choca con esa secuencia, porque hay hogares por encima de la línea con necesidades sin cubrir. Una línea absoluta en bienes solo se ajusta por precios; absoluta à la Sen, hay que recalcularla cada tanto.",
+    "En los países desarrollados predomina la línea relativa, una fracción del ingreso medio o mediano. Se ajusta sola, pero eso supone una elasticidad de la línea respecto del ingreso medio igual a 1, y las líneas subjetivas sugieren que es menor: aproximadamente 0.6 en Estados Unidos, según Atkinson (1991). Además confunde pobreza con desigualdad (los países nórdicos tuvieron por décadas poca pobreza con enormes desigualdades en la propiedad), la fracción elegida es arbitraria y sirve mal para evaluar políticas."
+   ]
+  },
+  {
+   "t": "La línea subjetiva: que la gente diga cuánto necesita",
+   "eq": [
+    "\\ln y_{min} = a_0 + a_1 \\ln fs + a_2 \\ln y + e",
+    "\\ln y^{*}_{min} = \\dfrac{a_0 + a_1 \\ln fs}{1 - a_2}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(y_{min}\\): respuesta a la «pregunta de ingreso mínimo», el ingreso que el encuestado dice necesitar para vivir con su familia.",
+      "en": "\\(y_{min}\\): answer to the \"minimum income question\", the income the respondent says she needs to live with her family."
+     },
+     {
+      "es": "\\(fs\\): tamaño del hogar (número de miembros).",
+      "en": "\\(fs\\): household size (number of members)."
+     },
+     {
+      "es": "\\(y\\): ingreso neto efectivo del hogar.",
+      "en": "\\(y\\): the household's actual net income."
+     },
+     {
+      "es": "\\(a_0, a_1, a_2\\): coeficientes estimados por regresión; \\(a_2\\) mide cuánto sube el mínimo declarado cuando sube el ingreso propio, y \\(a_1\\) cuánto sube con el tamaño del hogar.",
+      "en": "\\(a_0, a_1, a_2\\): regression coefficients; \\(a_2\\) measures how much the stated minimum rises with one's own income, and \\(a_1\\) how much it rises with household size."
+     },
+     {
+      "es": "\\(e\\): término de error.",
+      "en": "\\(e\\): error term."
+     },
+     {
+      "es": "\\(\\ln\\): logaritmo natural.",
+      "en": "\\(\\ln\\): natural logarithm."
+     }
+    ],
+    [
+     {
+      "es": "\\(y^{*}_{min}\\): línea de pobreza subjetiva, el ingreso en el que lo que la gente dice necesitar coincide con lo que tiene; sale de igualar \\(y\\) con \\(y_{min}\\) e ignorar el error.",
+      "en": "\\(y^{*}_{min}\\): subjective poverty line, the income at which what people say they need equals what they have; it comes from setting \\(y\\) equal to \\(y_{min}\\) and ignoring the error."
+     },
+     {
+      "es": "\\(a_0, a_1, a_2, fs\\): los mismos coeficientes y el mismo tamaño del hogar de la ecuación anterior; hace falta \\(a_2 < 1\\) para que la línea esté bien definida (lectura propia).",
+      "en": "\\(a_0, a_1, a_2, fs\\): the same coefficients and household size as in the previous equation; \\(a_2 < 1\\) is needed for the line to be well defined (our own reading)."
+     }
+    ]
+   ],
+   "p": [
+    "Hagenaars y Van Praag (1985) señalan que tanto lo absoluto como lo relativo dependen de juicios del investigador: qué fracción de la media o qué canasta. El método subjetivo deja la definición a la población, bajo el supuesto de que cada individuo es el mejor juez de su propia situación. Se pregunta qué ingreso mínimo necesita la familia para vivir. Ese mínimo crece con el ingreso propio: quienes no llegan declaran un mínimo mayor que su ingreso, quienes están holgados uno menor, y los que apenas cubren sus necesidades declaran algo parecido a lo que tienen. La línea sale de ese último grupo.",
+    "Van Praag y otros (1980) estiman la primera ecuación por tamaño de hogar y obtienen la línea igualando el ingreso declarado con el efectivo, como en la segunda. Para que sea consistente, todos deben asociar «ingreso mínimo» al mismo nivel de utilidad; se comprueba con una función de bienestar individual del ingreso, cardinal y entre 0 y 1, cuyo valor en el mínimo declarado debe ser aproximadamente constante. Para los países europeos analizados no se rechaza esa hipótesis.",
+    "Citro y Michael (1995) enumeran los defectos: la redacción de la pregunta también es arbitraria, no se sabe si la gente piensa el ingreso con o sin impuestos, la varianza de las respuestas es muy alta y los encuestados pueden responder estratégicamente si la línea define la asistencia que reciben."
+   ]
+  },
+  {
+   "t": "El método directo: NBI e índice de desarrollo humano",
+   "eq": [
+    "I_{ij} = \\dfrac{X_{ij} - X_{min,j}}{X_{max,j} - X_{min,j}}, \\qquad IDH_j = \\tfrac{1}{3}\\,(I_{1j} + I_{2j} + I_{3j})"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I_{ij}\\): indicador de la dimensión \\(i\\) en el país \\(j\\), normalizado entre 0 y 1 (los autores lo llaman indicador de privación).",
+      "en": "\\(I_{ij}\\): indicator for dimension \\(i\\) in country \\(j\\), normalized between 0 and 1 (the authors call it a deprivation indicator)."
+     },
+     {
+      "es": "\\(i\\): dimensión del índice: 1 longevidad, 2 conocimiento, 3 nivel de vida decente.",
+      "en": "\\(i\\): index dimension: 1 longevity, 2 knowledge, 3 decent standard of living."
+     },
+     {
+      "es": "\\(X_{ij}\\): valor observado de la variable de esa dimensión (por ejemplo, esperanza de vida al nacer en años).",
+      "en": "\\(X_{ij}\\): observed value of that dimension's variable (for instance, life expectancy at birth in years)."
+     },
+     {
+      "es": "\\(X_{max,j}, X_{min,j}\\): valores máximo y mínimo de referencia de la variable; desde 1994 son normativos y fijos, por ejemplo entre 25 y 85 años para la esperanza de vida.",
+      "en": "\\(X_{max,j}, X_{min,j}\\): maximum and minimum reference values of the variable; since 1994 they are normative and fixed, e.g. between 25 and 85 years for life expectancy."
+     },
+     {
+      "es": "\\(IDH_j\\): índice de desarrollo humano del país \\(j\\), promedio simple de los tres indicadores.",
+      "en": "\\(IDH_j\\): human development index of country \\(j\\), simple average of the three indicators."
+     }
+    ]
+   ],
+   "p": [
+    "El método directo, dice Sen (1981), es otra conceptualización: se observan las condiciones de vida en lugar de inferirlas del ingreso. Su ejemplo: el asceta que ayuna en su costosa cama de clavos es pobre para el método directo y no para el del ingreso. En América Latina domina el de necesidades básicas insatisfechas, con indicadores asociados a la pobreza por ingreso; en la Argentina, según el INDEC (1984), el ingreso bajo la línea se relaciona con el hacinamiento y no con la tenencia de la vivienda. Las carencias habituales son hacinamiento, vivienda inadecuada, agua, servicio sanitario, inasistencia escolar y capacidad económica, por ejemplo un jefe con dos o menos años de educación y cuatro o más personas por ocupado.",
+    "Un hogar con alguna carencia queda con NBI, lo que mide hogares con necesidades sin cubrir, no necesariamente pobreza: no hay una regla para pasar del número de carencias a pobre o no pobre. Kaztman (1996) pide máxima desagregación geográfica (de ahí el censo), relación significativa con el ingreso, umbrales alcanzables, características estables y, entre dos indicadores equivalentes, el más simple. La gran ventaja es el censo, que permite mapas de carencias críticas para focalizar el gasto social. Las debilidades son serias: no capta la pobreza reciente de hogares que todavía cubren sus necesidades con recursos que se derrumbaron (en los años ochenta la NBI latinoamericana no empeoró pese a la caída del empleo y los salarios), los umbrales urbanos y rurales difieren, y al agregar el resultado depende de cuántas carencias se exigen, sube siempre que se agregan indicadores y requiere ponderadores arbitrarios.",
+    "Por eso los autores proponen usar NBI como complemento de la línea, cruzándolas en una matriz de 2 x 2. Pobres por ingreso y con NBI son la pobreza crónica; pobres por ingreso sin NBI, la pobreza reciente o de pauperizados; no pobres por ingreso con NBI, la pobreza inercial o estructural; y el cuarto grupo, hogares en condiciones de integración social. El método integrado (Boltvinik, 1990) va más allá y busca evitar contar dos veces lo mismo, pero necesita una encuesta especial.",
+    "El índice de desarrollo humano del PNUD, publicado desde 1990, es otra evaluación directa del bienestar, aunque no mide pobreza: promedia longevidad, conocimiento e ingreso per cápita en paridad de poder adquisitivo con rendimientos decrecientes. Hasta 1994 los extremos cambiaban cada año y no era comparable en el tiempo. Lo critican por el promedio arbitrario, la mala calidad de los datos y su alta correlación con el PIB per cápita (McGillivray y White, 1993), al que no logró reemplazar."
+   ]
+  },
+  {
+   "t": "Agregar: axiomas, recuento y brecha",
+   "eq": [
+    "H = \\dfrac{q}{n}",
+    "PG = \\dfrac{1}{n}\\sum_{i=1}^{q}\\left(\\dfrac{z - y_i}{z}\\right) = H \\cdot I, \\qquad I = \\dfrac{z - \\bar y}{z}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(H\\): índice de recuento (headcount), proporción de personas bajo la línea; mide la incidencia de la pobreza.",
+      "en": "\\(H\\): headcount index, share of people below the line; measures poverty incidence."
+     },
+     {
+      "es": "\\(q\\): número de personas con ingreso inferior a la línea de pobreza.",
+      "en": "\\(q\\): number of people with income below the poverty line."
+     },
+     {
+      "es": "\\(n\\): número total de personas de la población.",
+      "en": "\\(n\\): total number of people in the population."
+     }
+    ],
+    [
+     {
+      "es": "\\(PG\\): brecha de pobreza (poverty gap), distancia promedio de los pobres a la línea ponderada por la incidencia; mide la profundidad.",
+      "en": "\\(PG\\): poverty gap, average distance of the poor to the line weighted by incidence; measures depth."
+     },
+     {
+      "es": "\\(z\\): línea de pobreza, en moneda por persona y período.",
+      "en": "\\(z\\): poverty line, in currency per person and period."
+     },
+     {
+      "es": "\\(y_i\\): ingreso de la persona pobre \\(i\\); la suma recorre solo a los \\(q\\) pobres.",
+      "en": "\\(y_i\\): income of poor person \\(i\\); the sum runs only over the \\(q\\) poor."
+     },
+     {
+      "es": "\\(n, q, H\\): como en la ecuación anterior.",
+      "en": "\\(n, q, H\\): as in the previous equation."
+     },
+     {
+      "es": "\\(I\\): cociente de brecha de ingreso (income gap ratio), distancia proporcional entre la línea y el ingreso medio de los pobres.",
+      "en": "\\(I\\): income gap ratio, proportional distance between the line and the mean income of the poor."
+     },
+     {
+      "es": "\\(\\bar y\\): ingreso promedio de los pobres.",
+      "en": "\\(\\bar y\\): mean income of the poor."
+     }
+    ]
+   ],
+   "p": [
+    "Una vez identificados los pobres hace falta un número que resuma su situación, sabiendo que resumir oculta cosas. El enfoque axiomático de Sen (1976) exige condiciones. Axioma focal: la medida no responde al ingreso de los no pobres. Monotonicidad: sube si cae el ingreso de un pobre. Transferencia: sube si un pobre le pasa ingreso a otro menos pobre. Sensibilidad a transferencias (Kakwani, 1980): ese aumento es mayor cuanto más pobre es el donante, por su posición en el ranking (versión I) o por su ingreso (versión II). Y monotonicidad en subgrupos (Foster y otros, 1984): si sube la pobreza de un grupo, sube la total.",
+    "El ejemplo de los autores separa las dos versiones del axioma de Kakwani. En el grupo A los ingresos son $ 1000, $ 950 y $ 10; en el B, $ 1000, $ 950 y $ 900. Por posición, el más pobre de cada grupo pesa igual, porque ambos son terceros; por nivel, el de A pesa mucho más, porque tiene apenas $ 10.",
+    "Ravallion (1992) aclara que las medidas miran dimensiones distintas: el recuento, el predominio; la brecha, la profundidad; las posteriores, la severidad. El recuento es fácil de comunicar y es aditivamente separable, lo que lo hace útil para perfiles de pobreza, pero solo cumple el axioma focal: si todos los pobres se empobrecen, no se mueve. La brecha cumple focal y monotonicidad, pero no transferencia, porque un traspaso entre pobres deja igual la media. El cociente de brecha por sí solo es engañoso: si sale de la pobreza alguien apenas debajo de la línea, el ingreso medio de los pobres baja y la brecha relativa sube, aunque haya un pobre menos. Multiplicarlo por el recuento corrige el problema."
+   ]
+  },
+  {
+   "t": "Sen, Kakwani y la familia FGT",
+   "eq": [
+    "S = \\dfrac{2}{(q+1)\\,n z}\\sum_{i=1}^{q}(z - y_i)\\, r_i(y; z) \\;\\approx\\; H\\big[I + (1 - I)\\,G_p\\big]",
+    "P = \\dfrac{q}{n z \\sum_{i=1}^{q} i^{k}}\\sum_{i=1}^{q}(z - y_i)\\, r_i^{k}",
+    "P_\\alpha = \\dfrac{1}{n}\\sum_{i=1}^{q}\\left(\\dfrac{z - y_i}{z}\\right)^{\\alpha}, \\quad \\alpha \\ge 0; \\qquad P_2 = H\\big[I^2 + (1 - I)^2 C_p^2\\big]",
+    "P_\\alpha(y) = \\sum_{j=1}^{m}\\dfrac{n_j}{n}\\,P_\\alpha(y_j)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(S\\): índice de pobreza de Sen.",
+      "en": "\\(S\\): Sen poverty index."
+     },
+     {
+      "es": "\\(r_i(y; z)\\): posición de la persona \\(i\\) en el ordenamiento de ingresos de los pobres; da más peso a quien está más abajo según su rango, no según la distancia de su ingreso.",
+      "en": "\\(r_i(y; z)\\): position of person \\(i\\) in the income ranking of the poor; gives more weight to whoever is lower by rank, not by income distance."
+     },
+     {
+      "es": "\\(z, y_i, q, n, H, I\\): línea, ingreso del pobre \\(i\\), número de pobres, población, recuento y cociente de brecha, como antes.",
+      "en": "\\(z, y_i, q, n, H, I\\): line, income of poor person \\(i\\), number of poor, population, headcount and income gap ratio, as before."
+     },
+     {
+      "es": "\\(G_p\\): coeficiente de Gini de los ingresos de los pobres. La forma aproximada vale con muchos pobres; con pocos, \\((1-I)\\,G_p\\) se multiplica además por \\(q/(q+1)\\).",
+      "en": "\\(G_p\\): Gini coefficient of the incomes of the poor. The approximate form holds with many poor; with few, \\((1-I)\\,G_p\\) is further multiplied by \\(q/(q+1)\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(P\\): medida de Kakwani (1980).",
+      "en": "\\(P\\): Kakwani's (1980) measure."
+     },
+     {
+      "es": "\\(k\\): potencia, \\(k \\ge 0\\), a la que se eleva el rango; con \\(k = 1\\) la medida es el índice de Sen y con \\(k > 1\\) cumple la sensibilidad a transferencias por posición.",
+      "en": "\\(k\\): power, \\(k \\ge 0\\), applied to the rank; with \\(k = 1\\) the measure equals Sen's index and with \\(k > 1\\) it satisfies rank-based transfer sensitivity."
+     },
+     {
+      "es": "\\(\\sum i^{k}\\): suma de los rangos elevados a \\(k\\), que renormaliza el índice.",
+      "en": "\\(\\sum i^{k}\\): sum of ranks raised to \\(k\\), which renormalizes the index."
+     },
+     {
+      "es": "\\(r_i, z, y_i, q, n\\): como en la ecuación anterior.",
+      "en": "\\(r_i, z, y_i, q, n\\): as in the previous equation."
+     }
+    ],
+    [
+     {
+      "es": "\\(P_\\alpha\\): medida de Foster, Greer y Thorbecke (1984).",
+      "en": "\\(P_\\alpha\\): Foster, Greer and Thorbecke's (1984) measure."
+     },
+     {
+      "es": "\\(\\alpha\\): parámetro de «aversión a la desigualdad»: con \\(\\alpha = 0\\) se obtiene \\(H\\), con \\(\\alpha = 1\\) la brecha \\(PG\\), y con \\(\\alpha = 2\\) la severidad.",
+      "en": "\\(\\alpha\\): \"inequality aversion\" parameter: \\(\\alpha = 0\\) gives \\(H\\), \\(\\alpha = 1\\) the gap \\(PG\\), and \\(\\alpha = 2\\) severity."
+     },
+     {
+      "es": "\\(P_2\\): índice de severidad de la pobreza.",
+      "en": "\\(P_2\\): poverty severity index."
+     },
+     {
+      "es": "\\(C_p\\): coeficiente de variación de los ingresos de los pobres, con \\(C_p^2 = \\sum_{i=1}^{q}(\\bar y_p - y_i)^2 / (q\\,\\bar y_p^2)\\), donde \\(\\bar y_p\\) es el ingreso medio de los pobres.",
+      "en": "\\(C_p\\): coefficient of variation of the incomes of the poor, with \\(C_p^2 = \\sum_{i=1}^{q}(\\bar y_p - y_i)^2 / (q\\,\\bar y_p^2)\\), where \\(\\bar y_p\\) is the mean income of the poor."
+     },
+     {
+      "es": "\\(z, y_i, q, n, H, I\\): como antes.",
+      "en": "\\(z, y_i, q, n, H, I\\): as before."
+     }
+    ],
+    [
+     {
+      "es": "\\(m\\): número de subgrupos en que se divide la población; \\(j\\) indexa cada subgrupo.",
+      "en": "\\(m\\): number of subgroups the population is split into; \\(j\\) indexes each subgroup."
+     },
+     {
+      "es": "\\(n_j\\): tamaño del subgrupo \\(j\\); \\(n_j/n\\) es su peso en la población.",
+      "en": "\\(n_j\\): size of subgroup \\(j\\); \\(n_j/n\\) is its population weight."
+     },
+     {
+      "es": "\\(y_j\\): distribución de ingresos del subgrupo \\(j\\); \\(y\\), la de toda la población.",
+      "en": "\\(y_j\\): income distribution of subgroup \\(j\\); \\(y\\), that of the whole population."
+     },
+     {
+      "es": "\\(P_\\alpha(\\cdot)\\): la medida FGT aplicada a cada distribución. El texto escribe el índice de la suma como \\(i\\); aquí se usa \\(j\\) para que coincida con el subgrupo (lectura propia).",
+      "en": "\\(P_\\alpha(\\cdot)\\): the FGT measure applied to each distribution. The text writes the summation index as \\(i\\); here \\(j\\) is used to match the subgroup (our own reading)."
+     }
+    ]
+   ],
+   "p": [
+    "Sen (1976) construye su índice para cumplir el axioma de transferencia: pondera la brecha de cada pobre por su posición en el ranking. Cumple los tres primeros axiomas, y Foster (1984) verifica la monotonicidad: si cae el ingreso de un pobre sin alterar el ranking, alguna brecha crece y las demás quedan; si el ranking cambia, cada posición sigue asociada a una brecha y al menos una es mayor. Reescrito, el índice combina recuento, brecha y desigualdad entre los pobres: el Gini de los pobres es lo que lo hace sensible a una transferencia regresiva, y si todos los pobres tienen el mismo ingreso, el índice se reduce a H por I. Kakwani eleva el rango a una potencia k y renormaliza; con k > 1 cumple la sensibilidad a transferencias según la posición del donante.",
+    "La familia FGT es la brecha de pobreza con las distancias elevadas a α, de modo que pesa más quien está más lejos de la línea. Con α muy alto, la medida depende casi solo del más pobre. El miembro más usado es el de α = 2, la severidad, que se relaciona con el coeficiente de variación de los ingresos de los pobres como el índice de Sen con el Gini. Cumple monotonicidad para cualquier α > 0, transferencia (estricta y débil) para α > 1 y sensibilidad a transferencias basada en el ingreso para α > 2.",
+    "Su ventaja decisiva es la descomposición: la pobreza total es el promedio de la pobreza de cada subgrupo ponderado por su tamaño, como en la última ecuación. Con Sen o Kakwani, las contribuciones porcentuales de los subgrupos pueden no sumar 100%, y la pobreza total puede bajar aunque suba en todos los subgrupos. Foster (1984) aclara que FGT es una de muchas formas de cumplir los axiomas, pero que entre las disponibles solo FGT o sus renormalizaciones cumplen la monotonicidad en subgrupos.",
+    "La conclusión de Feres y Mancero es que la teoría no elige método: en los países desarrollados domina el enfoque relativo, en los menos desarrollados el costo de necesidades básicas o las NBI. En la agregación se prefiere FGT por sus descomposiciones, aunque ningún índice capta la multidimensionalidad, y recomiendan combinar métodos. Lectura propia: cuando los métodos discrepan sobre la evolución de la pobreza, como en los ochenta latinoamericanos, la matriz de 2 x 2 es más útil que cualquier índice único, porque muestra quiénes cambiaron de casilla."
+   ]
+  }
+ ],
+ "claves": [
+  "Medir pobreza tiene dos pasos: identificar a los pobres y agregar su bienestar en un índice.",
+  "Necesidad lleva a NBI, estándar de vida a la línea por costo de necesidades básicas, insuficiencia de recursos a la línea relativa.",
+  "Sen: la pobreza es absoluta en el espacio de las capacidades y relativa en el espacio de los bienes.",
+  "Ingreso y consumo no tienen un ganador teórico ni empírico; lo ideal es ajustar por una escala de equivalencia.",
+  "Línea por costo de necesidades básicas: canasta alimentaria por el multiplicador de Orshansky, con varios supuestos discutibles.",
+  "La línea relativa supone elasticidad 1 respecto del ingreso medio; las líneas subjetivas sugieren cerca de 0.6 en EE.UU.",
+  "NBI sirve para mapas censales y focalización, no para medir la evolución de la pobreza; cruzada con la línea da pobreza crónica, reciente e inercial.",
+  "Recuento solo cumple el axioma focal, la brecha no cumple transferencia, Sen sí; FGT agrega la descomposición por subgrupos."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Feres y Mancero, ¿qué dos elementos comporta cualquier medición de la pobreza?",
+    "en": "According to Feres and Mancero, which two elements does any poverty measurement involve?"
+   },
+   "op": {
+    "es": [
+     "Definir una canasta y actualizarla por inflación",
+     "Identificar a los pobres y agregar su bienestar en una medida",
+     "Medir el ingreso y el consumo por separado",
+     "Calcular el Gini y el recuento"
+    ],
+    "en": [
+     "Defining a basket and updating it for inflation",
+     "Identifying the poor and aggregating their welfare into a measure",
+     "Measuring income and consumption separately",
+     "Computing the Gini and the headcount"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La identificación decide quién es pobre; la agregación resume la situación de esas personas en un índice.",
+    "en": "Identification decides who is poor; aggregation summarizes those people's situation into an index."
+   },
+   "id": "fisc-dist-10-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo resuelve Sen el debate entre pobreza absoluta y relativa?",
+    "en": "How does Sen settle the debate between absolute and relative poverty?"
+   },
+   "op": {
+    "es": [
+     "La pobreza es relativa en todo espacio",
+     "La pobreza es absoluta en bienes y relativa en capacidades",
+     "La pobreza es absoluta en capacidades y relativa en bienes",
+     "La pobreza es un subconjunto de la desigualdad"
+    ],
+    "en": [
+     "Poverty is relative in every space",
+     "Poverty is absolute in goods and relative in capabilities",
+     "Poverty is absolute in capabilities and relative in goods",
+     "Poverty is a subset of inequality"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La falta de una capacidad no depende de lo que tengan otros, pero los bienes necesarios para lograrla cambian entre sociedades.",
+    "en": "Lacking a capability does not depend on what others have, but the goods needed to achieve it differ across societies."
+   },
+   "id": "fisc-dist-10-q2"
+  },
+  {
+   "q": {
+    "es": "Una escala de equivalencia reconoce que una pareja con dos hijos, para igual bienestar que una pareja sola, necesita gastar:",
+    "en": "An equivalence scale recognizes that a couple with two children, to reach the same welfare as a couple alone, needs to spend:"
+   },
+   "op": {
+    "es": [
+     "Lo mismo, como supone el ingreso total",
+     "El doble, como supone el ingreso per cápita",
+     "Menos, porque los niños no consumen",
+     "Más, pero no el doble"
+    ],
+    "en": [
+     "The same, as total income assumes",
+     "Twice as much, as per capita income assumes",
+     "Less, because children do not consume",
+     "More, but not twice as much"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los niños consumen menos que los adultos y hay bienes compartidos, como la vivienda o la calefacción: economías de escala.",
+    "en": "Children consume less than adults and some goods are shared, such as housing or heating: economies of scale."
+   },
+   "id": "fisc-dist-10-q3"
+  },
+  {
+   "q": {
+    "es": "En el método del multiplicador de Orshansky, la línea de pobreza se obtiene:",
+    "en": "In Orshansky's multiplier method, the poverty line is obtained by:"
+   },
+   "op": {
+    "es": [
+     "Dividiendo el costo de la canasta alimentaria por la proporción del gasto en alimentos",
+     "Multiplicando el ingreso medio por 0.6",
+     "Preguntando a los hogares cuánto necesitan",
+     "Sumando las necesidades insatisfechas"
+    ],
+    "en": [
+     "Dividing the cost of the food basket by the food share of spending",
+     "Multiplying mean income by 0.6",
+     "Asking households how much they need",
+     "Adding up unmet needs"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Se usa la proporción observada de gasto en alimentos de un grupo de referencia en lugar de fijar mínimos para cada necesidad no alimentaria.",
+    "en": "The observed food share of a reference group is used instead of setting minimums for each non-food need."
+   },
+   "id": "fisc-dist-10-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué supone mover la línea relativa uno a uno con el ingreso medio?",
+    "en": "What does moving the relative line one-for-one with mean income assume?"
+   },
+   "op": {
+    "es": [
+     "Que la línea es absoluta en términos de bienes",
+     "Una elasticidad de la línea respecto del ingreso medio igual a 1",
+     "Que el consumo es mejor que el ingreso",
+     "Que la pobreza no depende de la desigualdad"
+    ],
+    "en": [
+     "That the line is absolute in terms of goods",
+     "An elasticity of the line with respect to mean income equal to 1",
+     "That consumption beats income",
+     "That poverty does not depend on inequality"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las líneas subjetivas sugieren una elasticidad menor, cerca de 0.6 en Estados Unidos según Atkinson (1991).",
+    "en": "Subjective lines suggest a lower elasticity, about 0.6 in the United States according to Atkinson (1991)."
+   },
+   "id": "fisc-dist-10-q5"
+  },
+  {
+   "q": {
+    "es": "Al cruzar línea de pobreza y NBI, un hogar pobre por ingreso que no tiene necesidades básicas insatisfechas está en:",
+    "en": "When crossing the poverty line with UBN, a household that is income-poor but has no unmet basic needs is in:"
+   },
+   "op": {
+    "es": [
+     "Pobreza crónica",
+     "Pobreza inercial",
+     "Pobreza reciente",
+     "Integración social"
+    ],
+    "en": [
+     "Chronic poverty",
+     "Inertial poverty",
+     "Recent poverty",
+     "Social integration"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Son hogares pauperizados: perdieron ingresos pero todavía cubren sus necesidades. Por eso la NBI sola no capta la pobreza reciente.",
+    "en": "These are impoverished households: they lost income but still meet their needs. That is why UBN alone misses recent poverty."
+   },
+   "id": "fisc-dist-10-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué axioma no cumple la brecha de pobreza PG?",
+    "en": "Which axiom does the poverty gap PG fail?"
+   },
+   "op": {
+    "es": [
+     "El axioma focal",
+     "El de monotonicidad",
+     "Ninguno",
+     "El de transferencia"
+    ],
+    "en": [
+     "The focus axiom",
+     "Monotonicity",
+     "None",
+     "The transfer axiom"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Una transferencia de un pobre a otro menos pobre deja igual el ingreso medio de los pobres, y la PG no cambia.",
+    "en": "A transfer from a poor person to a less poor one leaves the mean income of the poor unchanged, and PG does not move."
+   },
+   "id": "fisc-dist-10-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la ventaja decisiva de las medidas FGT sobre las de Sen y Kakwani según el texto?",
+    "en": "According to the text, what is the decisive advantage of FGT measures over Sen's and Kakwani's?"
+   },
+   "op": {
+    "es": [
+     "Son aditivamente separables y cumplen la monotonicidad en subgrupos",
+     "No requieren línea de pobreza",
+     "Usan el rango en vez del ingreso",
+     "Son más fáciles de comunicar que el recuento"
+    ],
+    "en": [
+     "They are additively separable and satisfy subgroup monotonicity",
+     "They need no poverty line",
+     "They use rank instead of income",
+     "They are easier to communicate than the headcount"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La pobreza total es el promedio ponderado de la de cada subgrupo; con Sen o Kakwani las contribuciones pueden no sumar 100%.",
+    "en": "Total poverty is the weighted average of each subgroup's; with Sen or Kakwani the contributions may not add up to 100%."
+   },
+   "id": "fisc-dist-10-q8"
+  }
+ ],
+ "palabras": 2863,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre el método directo y el indirecto de identificación de los pobres?",
+    "en": "What is the difference between the direct and indirect methods of identifying the poor?"
+   },
+   "a": {
+    "es": "El directo mira el consumo efectivamente realizado y llama pobre a quien no cubre sus necesidades; el indirecto mira la capacidad de consumir y llama pobre a quien tiene un ingreso menor que la línea. Pueden clasificar distinto. Feres y Mancero (2001).",
+    "en": "The direct method looks at consumption actually achieved and calls poor whoever does not meet their needs; the indirect one looks at the capacity to consume and calls poor whoever has income below the line. They can classify differently. Feres and Mancero (2001)."
+   },
+   "id": "fisc-dist-10-t1"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué propone Sen para conciliar pobreza absoluta y relativa?",
+    "en": "What does Sen propose to reconcile absolute and relative poverty?"
+   },
+   "a": {
+    "es": "Que la pobreza es absoluta en el espacio de las capacidades y relativa en el de los bienes: no avergonzarse ante los demás es la misma capacidad en todas partes, pero los bienes que la permiten cambian. Sen, reseñado por Feres y Mancero (2001).",
+    "en": "That poverty is absolute in the space of capabilities and relative in the space of goods: not being ashamed before others is the same capability everywhere, but the goods that allow it change. Sen, as reviewed by Feres and Mancero (2001)."
+   },
+   "id": "fisc-dist-10-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué supuestos discutibles tiene el multiplicador de Orshansky?",
+    "en": "What questionable assumptions does Orshansky's multiplier make?"
+   },
+   "a": {
+    "es": "Que quien cubre la alimentación cubre lo demás, que no hay bienes gratuitos del Estado y que un único coeficiente sirve para hogares en distintas etapas del ciclo de vida; además mezcla un mínimo alimentario normativo con uno no alimentario observado (Streeten). Feres y Mancero (2001).",
+    "en": "That whoever covers food covers everything else, that there are no free state-provided goods and that a single coefficient fits households at different life-cycle stages; it also mixes a normative food minimum with an observed non-food one (Streeten). Feres and Mancero (2001)."
+   },
+   "id": "fisc-dist-10-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se obtiene la línea de pobreza subjetiva?",
+    "en": "How is the subjective poverty line obtained?"
+   },
+   "a": {
+    "es": "Se regresa el log del ingreso mínimo declarado sobre el log del tamaño del hogar y del ingreso propio, y se iguala el ingreso declarado con el efectivo: el log de la línea es \\((a_0 + a_1 \\ln fs)/(1 - a_2)\\), donde \\(a_0, a_1, a_2\\) son los coeficientes de la regresión y \\(fs\\) el tamaño del hogar. Van Praag y otros (1980), reseñados por Feres y Mancero (2001).",
+    "en": "The log of stated minimum income is regressed on the log of household size and own income, and stated income is set equal to actual income: the log of the line is \\((a_0 + a_1 \\ln fs)/(1 - a_2)\\), where \\(a_0, a_1, a_2\\) are the regression coefficients and \\(fs\\) household size. Van Praag et al. (1980), as reviewed by Feres and Mancero (2001)."
+   },
+   "id": "fisc-dist-10-t4"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué la NBI no sirve bien para seguir la evolución de la pobreza?",
+    "en": "Why is UBN poorly suited to tracking the evolution of poverty?"
+   },
+   "a": {
+    "es": "Porque no capta la pobreza reciente de hogares que perdieron ingresos pero aún cubren sus necesidades, porque las necesidades cambian en el tiempo y porque el resultado depende de cuántas carencias se exigen; en los ochenta la NBI latinoamericana no empeoró pese a la caída del empleo y los salarios. Feres y Mancero (2001), con Kaztman.",
+    "en": "Because it misses the recent poverty of households that lost income but still meet their needs, because needs change over time and because the result depends on how many deprivations are required; in the 1980s Latin American UBN did not worsen despite falling employment and wages. Feres and Mancero (2001), following Kaztman."
+   },
+   "id": "fisc-dist-10-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué exige el axioma de transferencia de una medida de pobreza?",
+    "en": "What does the transfer axiom require of a poverty measure?"
+   },
+   "a": {
+    "es": "Que la medida aumente si un pobre transfiere ingreso a otro menos pobre. El recuento y la brecha no lo cumplen; el índice de Sen sí, gracias al Gini de los pobres. Feres y Mancero (2001), sobre Sen (1976).",
+    "en": "That the measure rise if a poor person transfers income to a less poor one. The headcount and the gap fail it; Sen's index satisfies it thanks to the Gini of the poor. Feres and Mancero (2001), on Sen (1976)."
+   },
+   "id": "fisc-dist-10-t6"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué mide el parámetro α en la familia FGT?",
+    "en": "What does the parameter α measure in the FGT family?"
+   },
+   "a": {
+    "es": "La aversión a la desigualdad entre los pobres: con α = 0 da el recuento, con α = 1 la brecha y con α = 2 la severidad; cuanto mayor es α, más pesa quien está más lejos de la línea. Foster, Greer y Thorbecke (1984), reseñados por Feres y Mancero (2001).",
+    "en": "Inequality aversion among the poor: α = 0 gives the headcount, α = 1 the gap and α = 2 severity; the higher α, the more weight on those farthest below the line. Foster, Greer and Thorbecke (1984), as reviewed by Feres and Mancero (2001)."
+   },
+   "id": "fisc-dist-10-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué la descomposición por subgrupos importa para los perfiles de pobreza?",
+    "en": "Why does subgroup decomposition matter for poverty profiles?"
+   },
+   "a": {
+    "es": "Porque con FGT la pobreza total es el promedio de la de cada subgrupo ponderado por su tamaño y las contribuciones suman 100%; con Sen o Kakwani la pobreza total puede bajar aunque suba en todos los subgrupos. Feres y Mancero (2001), con Foster (1984).",
+    "en": "Because with FGT total poverty is the size-weighted average of each subgroup's and contributions add up to 100%; with Sen or Kakwani total poverty can fall even if it rises in every subgroup. Feres and Mancero (2001), following Foster (1984)."
+   },
+   "id": "fisc-dist-10-t8"
+  }
+ ]
+}

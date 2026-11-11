@@ -1,0 +1,606 @@
+{
+ "id": "fisc-politica-02",
+ "cat": "fisc-politica",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Estabilizar el ciclo: multiplicadores, el debate monetarista y reglas fiscales y monetarias",
+ "bajada": "Por qué la política fiscal y la monetaria no se pueden separar, qué discutían keynesianos y monetaristas y por qué, en un modelo de multiplicador y acelerador, la reacción fiscal parcial siempre amortigua el ciclo y la monetaria puede volverlo explosivo.",
+ "fuentes": [
+  1333
+ ],
+ "cita": "R. Burrows y T. Hitiris (1974), «Macroeconomic theory: a mathematical introduction», cap. 8: «The Business Cycle and Stabilization Policy», pp. 161-180",
+ "intro": "El capítulo 8 de «Macroeconomic theory: a mathematical introduction», de Burrows y Hitiris (1974), estudia la política de estabilización con un solo objetivo, el ingreso real, y tres instrumentos: gasto público, impuestos y dinero. Primero compara los multiplicadores de cada instrumento y muestra que la política fiscal y la monetaria no son independientes: el efecto de una depende de cómo se financie o se acompañe con la otra. Después revisa el debate entre keynesianos y monetaristas y concluye que el desacuerdo es más empírico que teórico, y analiza el caso límite monetarista de una demanda de dinero insensible al interés. Por último incorpora dinero y reglas de reacción a un modelo de multiplicador y acelerador. La política fiscal con reacción parcial siempre amortigua el ciclo; la monetaria también puede hacerlo, pero cuando la demanda de dinero es poco sensible al interés puede volverlo explosivo.",
+ "secciones": [
+  {
+   "t": "Un objetivo, tres instrumentos",
+   "p": [
+    "Si nadie intenta controlar la economía, muchas variables fluctúan a lo largo del ciclo. Burrows y Hitiris llaman política de estabilización a los intentos del gobierno de usar sus instrumentos para controlar esas variaciones de corto plazo. En la práctica al gobierno le importan solo algunas variables endógenas, las variables objetivo, como el desempleo, el nivel de precios, el ingreso real per cápita o el balance de pagos, y una evaluación realista exigiría modelos con varios instrumentos y varios objetivos estimados econométricamente. Para mantener la teoría simple, el capítulo supone un solo objetivo, el ingreso real, y tres instrumentos: el gasto público en bienes y servicios, la recaudación real del impuesto directo exógeno y la oferta nominal de dinero.",
+    "El capítulo tiene tres partes. Primero compara, con estática comparativa, los multiplicadores de cada instrumento para ver si su impacto sobre el ingreso difiere. Después hace una digresión sobre el debate entre keynesianos y monetaristas, que en los años en que se escribe el libro dominaba la discusión sobre estabilización. Al final cambia de enfoque: en lugar de tomar como dado el cambio de ingreso que hay que compensar, usa un modelo dinámico de multiplicador y acelerador en el que la política forma parte del proceso que genera el ingreso, y pregunta qué hace cada instrumento con el ciclo."
+   ]
+  },
+  {
+   "t": "Los multiplicadores dependen del modelo y del financiamiento",
+   "eq": [
+    "\\dfrac{\\partial Y}{\\partial \\bar G} = \\dfrac{1}{\\big[1 - C_Y(1 - T_Y) - I_Y\\big] + (C_r + I_r)\\dfrac{L_Y}{L_r}}",
+    "\\dfrac{\\partial Y}{\\partial \\bar G}d\\bar G + \\dfrac{\\partial Y}{\\partial \\bar M}d\\bar M = \\dfrac{1 + (C_r + I_r)\\dfrac{1}{L_r P}}{(1 - C_Y - I_Y) + (C_r + I_r)\\dfrac{L_Y}{L_r}}\\, d\\bar G"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\partial Y / \\partial \\bar G\\): multiplicador del gasto público, cuánto cambia el ingreso real de equilibrio por cada unidad de gasto adicional.",
+      "en": "\\(\\partial Y / \\partial \\bar G\\): government spending multiplier, how much equilibrium real income changes per extra unit of spending."
+     },
+     {
+      "es": "\\(C_Y\\): propensión marginal a consumir del ingreso disponible. Los símbolos se definen en capítulos anteriores del libro, que no forman parte de esta lectura; la interpretación es lectura propia.",
+      "en": "\\(C_Y\\): marginal propensity to consume out of disposable income. The symbols are defined in earlier chapters of the book, not part of this reading; the interpretation is our own reading."
+     },
+     {
+      "es": "\\(T_Y\\): tasa marginal del impuesto a los ingresos, la parte de cada unidad de ingreso adicional que se lleva el fisco.",
+      "en": "\\(T_Y\\): marginal income tax rate, the share of each extra unit of income taken by the government."
+     },
+     {
+      "es": "\\(I_Y\\): propensión marginal a invertir con respecto al ingreso.",
+      "en": "\\(I_Y\\): marginal propensity to invest with respect to income."
+     },
+     {
+      "es": "\\(C_r, I_r\\): sensibilidad del consumo y de la inversión a la tasa de interés (negativas).",
+      "en": "\\(C_r, I_r\\): sensitivity of consumption and investment to the interest rate (negative)."
+     },
+     {
+      "es": "\\(L_Y\\): sensibilidad de la demanda de dinero al ingreso (positiva); \\(L_r\\): sensibilidad de la demanda de dinero a la tasa de interés (negativa).",
+      "en": "\\(L_Y\\): sensitivity of money demand to income (positive); \\(L_r\\): sensitivity of money demand to the interest rate (negative)."
+     }
+    ],
+    [
+     {
+      "es": "\\(d\\bar G\\): aumento del gasto público; \\(d\\bar M\\): aumento de la oferta nominal de dinero con que se lo financia, de igual monto.",
+      "en": "\\(d\\bar G\\): increase in government spending; \\(d\\bar M\\): increase in the nominal money supply that finances it, of equal size."
+     },
+     {
+      "es": "\\(\\partial Y/\\partial \\bar M\\): multiplicador de la oferta de dinero sobre el ingreso.",
+      "en": "\\(\\partial Y/\\partial \\bar M\\): money supply multiplier on income."
+     },
+     {
+      "es": "\\(P\\): nivel de precios, que convierte el dinero nominal en real.",
+      "en": "\\(P\\): price level, which turns nominal money into real money."
+     },
+     {
+      "es": "\\(C_Y, I_Y, C_r, I_r, L_Y, L_r\\): como en la ecuación anterior. \\(T_Y\\) ya no aparece porque se lo fija en cero: el gobierno baja las alícuotas medias para neutralizar el aumento inducido de la recaudación.",
+      "en": "\\(C_Y, I_Y, C_r, I_r, L_Y, L_r\\): as in the previous equation. \\(T_Y\\) no longer appears because it is set to zero: the government lowers average tax rates to offset the induced rise in revenue."
+     }
+    ]
+   ],
+   "p": [
+    "Para compensar un cambio de ingreso, el gobierno necesita saber cuánto mueve el ingreso cada peso de gasto, y eso depende de dos cosas: la estructura del modelo y el instrumento usado. La tabla 8.1 del libro reúne los multiplicadores de los modelos de uno, dos y tres sectores (bienes; bienes y dinero; bienes, dinero y trabajo). Compararlos muestra lo fuerte que es el ceteris paribus del multiplicador simple. Con la oferta nominal de dinero fija, el multiplicador del gasto en el modelo de dos sectores es la primera ecuación. El segundo término del denominador es positivo, porque las sensibilidades al interés del gasto y de la demanda de dinero son negativas y la sensibilidad al ingreso es positiva, así que el multiplicador es menor que el de un sector: es el efecto de realimentación monetaria de la política fiscal expansiva. En el modelo de tres sectores pasa lo mismo, con un término que agrega el mercado de trabajo.",
+    "La conclusión es que política fiscal y monetaria no son independientes: el efecto de la fiscal depende de cómo se controle la oferta de dinero. Los autores lo hacen explícito con una restricción presupuestaria. Si no se puede emitir deuda ni subir impuestos, un aumento del gasto tiene que financiarse con más dinero. Además, como un presupuesto equilibrado ex ante se vuelve superavitario cuando el ingreso crece, el gobierno que debe respetar la restricción baja las alícuotas medias para neutralizar ese aumento inducido de la recaudación, el «fiscal drag». Formalmente eso equivale a poner en cero la tasa marginal del impuesto. El multiplicador resultante es la segunda ecuación.",
+    "Ese multiplicador es mayor que el fiscal por dos razones. Al gasto se suma el efecto expansivo del dinero nuevo, que aparece como el término positivo del numerador, y al eliminar la tasa marginal del impuesto el denominador se achica. Distintas formas de financiar dan multiplicadores distintos, como ya mostraba el multiplicador del presupuesto equilibrado, menor que el del gasto solo porque el impuesto retira fondos del sector privado.",
+    "Lo mismo vale al revés. El multiplicador monetario depende de la tasa del impuesto a los ingresos: si el gobierno contrae el dinero, cae el ingreso, cae la recaudación y, con el gasto constante, choca con su restricción presupuestaria. Aun sin restricción, el impuesto achica el multiplicador monetario porque es un estabilizador automático, una realimentación negativa como la que la oferta real de dinero ejerce sobre el multiplicador fiscal. Y si el gobierno quiere inyectar dinero sin retirar a cambio letras o bonos del sector privado, tiene que imprimirlo y gastarlo con un déficit fiscal. En muchos casos, concluyen, los dos instrumentos no pueden manejarse por separado."
+   ]
+  },
+  {
+   "t": "El debate monetarista: ¿teoría o datos?",
+   "p": [
+    "Los autores reconocen que la discusión pone a prueba la cordura de quien la sigue y se preguntan si el desacuerdo entre keynesianos y monetaristas es teórico o empírico. Nadie sostiene que el dinero sea irrelevante para el ingreso, el empleo y los precios: los keynesianos usan desde hace años modelos con sector monetario. La diferencia está en el canal. Para los keynesianos el dinero actúa a través de la tasa de interés de activos financieros de corto plazo, sustitutos cercanos del dinero, más el efecto Pigou sobre los saldos reales. Para los monetaristas el dinero sustituye tanto activos financieros como reales, de modo que más dinero altera los rendimientos de una gama amplia de activos. Si el dinero se tira desde un helicóptero, como postula Friedman, y es sustituto de activos reales, la gente compra bienes directamente; los keynesianos responden que lo realista es inyectarlo con operaciones de mercado abierto, que bajan la tasa de los bonos tanto más cuanto peor sustituto sea el dinero de los activos financieros.",
+    "En términos de los modelos formales, ambos dicen que el dinero llega al gasto por las tasas de rendimiento de algún grupo de activos, y eso no es un desacuerdo drástico. Por eso el modelo que Friedman presenta como representativo de los monetaristas tiene un sabor claramente keynesiano, y Hahn (1971) opina que nada en lo que dice Friedman obliga a cambiar la idea de que el dinero solo influye si cambia la riqueza o las tasas de interés. El propio Friedman sostiene que las diferencias son empíricas, no teóricas.",
+    "Burrows y Hitiris separan dos preguntas empíricas. La primera es si el control deliberado del dinero influyó de verdad sobre el ingreso nominal. Hay un primer tipo de evidencia sobre el entorno: la demanda de dinero fue estable en Estados Unidos y menos claramente en Gran Bretaña, con una sensibilidad al interés baja pero no nula, y el consumo y la inversión responden al interés. Eso refuta tanto la trampa de liquidez como la insensibilidad total que postula el monetarismo extremo. El segundo tipo de evidencia es si el dinero se movió de hecho por decisión de la autoridad. Laidler concluye que en Estados Unidos hubo períodos en que el dinero cambió independientemente del ingreso y que la causalidad, al menos en algunos casos, fue del dinero al ingreso. En Gran Bretaña es menos convincente: el Banco de Inglaterra, al fijar las tasas, dejó que el dinero acompañara a la demanda, con lo que la causalidad iría del ingreso al dinero, y los flujos de capital de corto plazo también movieron la cantidad de dinero.",
+    "La segunda pregunta es cuál instrumento pesa más. El argumento monetarista, de Friedman y Meiselman (1964), fue que el consumo se correlaciona más con el dinero que con el gasto exógeno. Los autores lo rebaten con dos razones: con restricción presupuestaria los instrumentos no se pueden separar, y la política fiscal no opera solo por el gasto exógeno, porque la tasa del impuesto entra en el multiplicador y afecta a la vez a la variable dependiente y a la independiente de esa correlación. Su resumen: el dinero afectó al ingreso en Estados Unidos y probablemente puede hacerlo en Gran Bretaña, aunque sus rezagos, que Friedman considera largos y variables, son inciertos; los instrumentos fiscales también mueven el ingreso; y no conviene verlos como rivales, sino coordinarlos, como muestra el problema del equilibrio interno y externo."
+   ]
+  },
+  {
+   "t": "El caso límite monetarista",
+   "eq": [
+    "\\dfrac{\\partial r}{\\partial Y} = -\\dfrac{L_Y}{L_r} > 0",
+    "\\dfrac{\\partial Y}{\\partial C_0} = \\dfrac{\\partial Y}{\\partial I_0} = \\dfrac{\\partial Y}{\\partial \\bar G} \\to 0, \\qquad \\dfrac{\\partial r}{\\partial \\bar G} \\to \\dfrac{-1}{C_r + I_r} > 0",
+    "\\dfrac{\\partial Y}{\\partial \\bar M} \\to \\dfrac{1}{L_Y} > 0 \\quad \\text{(con } L_r \\to 0\\text{)}, \\qquad \\dfrac{\\partial Y}{\\partial \\bar M} = \\dfrac{1}{\\big(1 - C_Y(1 - T_Y) - I_Y\\big)\\dfrac{L_r}{C_r + I_r} + L_Y} \\quad \\text{(en general)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\partial r/\\partial Y\\): pendiente de la curva LM, cuánto debe subir la tasa de interés cuando sube el ingreso para que la demanda de dinero siga igual a la oferta.",
+      "en": "\\(\\partial r/\\partial Y\\): slope of the LM curve, how much the interest rate must rise when income rises for money demand to stay equal to supply."
+     },
+     {
+      "es": "\\(r\\): tasa de interés sobre activos financieros; \\(Y\\): ingreso real.",
+      "en": "\\(r\\): interest rate on financial assets; \\(Y\\): real income."
+     },
+     {
+      "es": "\\(L_Y, L_r\\): sensibilidades de la demanda de dinero al ingreso y a la tasa de interés, como antes. El caso límite monetarista es \\(L_r \\to 0\\), que vuelve vertical a la LM.",
+      "en": "\\(L_Y, L_r\\): sensitivities of money demand to income and to the interest rate, as before. The monetarist limiting case is \\(L_r \\to 0\\), which makes the LM vertical."
+     }
+    ],
+    [
+     {
+      "es": "\\(C_0, I_0\\): componentes autónomos del consumo y de la inversión; \\(\\bar G\\): gasto público.",
+      "en": "\\(C_0, I_0\\): autonomous components of consumption and investment; \\(\\bar G\\): government spending."
+     },
+     {
+      "es": "\\(C_r, I_r\\): sensibilidades del consumo y la inversión al interés, negativas; por eso \\(-1/(C_r+I_r)\\) es positivo: más gasto solo sube la tasa.",
+      "en": "\\(C_r, I_r\\): interest sensitivities of consumption and investment, negative; hence \\(-1/(C_r+I_r)\\) is positive: more spending only raises the rate."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\partial Y/\\partial \\bar M\\): multiplicador monetario sobre el ingreso; en la primera expresión, en el caso límite; en la segunda, fuera de él.",
+      "en": "\\(\\partial Y/\\partial \\bar M\\): money multiplier on income; in the first expression, in the limiting case; in the second, outside it."
+     },
+     {
+      "es": "\\(C_Y, T_Y, I_Y, C_r, I_r, L_Y, L_r\\): como en las ecuaciones anteriores. El primer término del denominador de la segunda expresión es positivo, así que el multiplicador es menor que \\(1/L_Y\\).",
+      "en": "\\(C_Y, T_Y, I_Y, C_r, I_r, L_Y, L_r\\): as in previous equations. The first term in the denominator of the second expression is positive, so the multiplier is smaller than \\(1/L_Y\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Para llevar el debate a la teoría, los autores introducen en los modelos de dos y tres sectores el caso límite monetarista: la demanda de dinero no responde a la tasa de interés. La pendiente de la LM tiende entonces a infinito: la curva se vuelve vertical, porque si la demanda de dinero no depende del interés, hay un solo nivel de ingreso en el que iguala a la oferta dada.",
+    "La consecuencia más obvia es que los cambios en los planes de gasto, incluido el gasto público, no mueven el ingreso: todo su efecto recae sobre la tasa de interés, que sube lo necesario para recortar el gasto privado hasta el nivel compatible con el equilibrio monetario. Es la contracara teórica de la trampa de liquidez: así como la trampa neutraliza la política monetaria, este caso neutraliza la fiscal. La política monetaria, en cambio, conserva su signo, sube el ingreso y baja el interés, y gana tamaño: el multiplicador monetario pasa a ser la inversa de la sensibilidad de la demanda de dinero al ingreso, mayor que el multiplicador general porque desaparece el término positivo que lo achicaba.",
+    "En el modelo de tres sectores, si el ingreso de equilibrio de dos sectores está por debajo del pleno empleo, no hay un punto común entre IS, LM y el ingreso de pleno empleo. La política fiscal no puede cerrar la brecha, pero la monetaria sí, corriendo la LM a la derecha hasta el ingreso de pleno empleo."
+   ]
+  },
+  {
+   "t": "Un ciclo con dinero: multiplicador y acelerador",
+   "eq": [
+    "l_t = l_0 + l_Y Y_{t-1} + l_r r_t = \\bar M",
+    "I_t = a(C_t - C_{t-1}) + i_r r_t, \\qquad C_t = c_0 + c_Y Y_{t-1}",
+    "Y_t = \\left[(1 + a)c_Y - \\dfrac{i_r l_Y}{l_r}\\right] Y_{t-1} - a c_Y Y_{t-2} + (c_0 + \\bar G) - i_r\\left(\\dfrac{l_0 - \\bar M}{l_r}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(l_t\\): demanda de dinero en el período \\(t\\), igualada en cada período a la oferta \\(\\bar M\\).",
+      "en": "\\(l_t\\): money demand in period \\(t\\), equal in every period to supply \\(\\bar M\\)."
+     },
+     {
+      "es": "\\(l_0 > 0\\): componente autónomo de la demanda de dinero; \\(l_Y > 0\\): sensibilidad al ingreso del período anterior; \\(l_r < 0\\): sensibilidad a la tasa de interés corriente.",
+      "en": "\\(l_0 > 0\\): autonomous component of money demand; \\(l_Y > 0\\): sensitivity to last period's income; \\(l_r < 0\\): sensitivity to the current interest rate."
+     },
+     {
+      "es": "\\(Y_{t-1}\\): ingreso del período anterior; \\(r_t\\): tasa de interés del período \\(t\\).",
+      "en": "\\(Y_{t-1}\\): last period's income; \\(r_t\\): interest rate in period \\(t\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(I_t\\): inversión del período \\(t\\).",
+      "en": "\\(I_t\\): investment in period \\(t\\)."
+     },
+     {
+      "es": "\\(a\\): coeficiente del acelerador, cuánto se invierte por cada unidad de aumento del consumo.",
+      "en": "\\(a\\): accelerator coefficient, how much is invested per unit increase in consumption."
+     },
+     {
+      "es": "\\(i_r < 0\\): sensibilidad de la inversión a la tasa de interés; el consumo se supone insensible al interés.",
+      "en": "\\(i_r < 0\\): sensitivity of investment to the interest rate; consumption is assumed insensitive to interest."
+     },
+     {
+      "es": "\\(C_t\\): consumo; \\(c_0\\): consumo autónomo; \\(c_Y\\): propensión marginal a consumir del ingreso del período anterior.",
+      "en": "\\(C_t\\): consumption; \\(c_0\\): autonomous consumption; \\(c_Y\\): marginal propensity to consume out of last period's income."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): ingreso real en el período \\(t\\) y en los dos anteriores; es una ecuación en diferencias de segundo orden, con precios constantes.",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): real income in period \\(t\\) and the two previous ones; it is a second-order difference equation, with constant prices."
+     },
+     {
+      "es": "\\(\\bar G\\): gasto público exógeno; \\(\\bar M\\): oferta de dinero dada.",
+      "en": "\\(\\bar G\\): exogenous government spending; \\(\\bar M\\): given money supply."
+     },
+     {
+      "es": "\\(a, c_Y, c_0, i_r, l_0, l_Y, l_r\\): como en las ecuaciones anteriores. Como \\(i_r l_Y / l_r\\) es positivo, el coeficiente de \\(Y_{t-1}\\) es menor que sin dinero.",
+      "en": "\\(a, c_Y, c_0, i_r, l_0, l_Y, l_r\\): as in previous equations. Since \\(i_r l_Y / l_r\\) is positive, the coefficient on \\(Y_{t-1}\\) is smaller than without money."
+     }
+    ]
+   ],
+   "p": [
+    "El modelo de multiplicador y acelerador de Samuelson del capítulo anterior tenía el gasto público constante y no tenía dinero. Para estudiar la política en el tiempo hay que agregar un sector monetario y decidir cómo se mueven los instrumentos. La demanda de dinero depende de la tasa corriente y del ingreso del período anterior, y se supone que en cada período las tenencias deseadas de dinero se alcanzan. El nexo con el gasto es la sensibilidad de la inversión al interés: la inversión sigue al aumento del consumo, como en el acelerador, pero también cae cuando sube la tasa.",
+    "Despejando la tasa del sector monetario y reemplazándola, el ingreso sin política queda como la tercera ecuación. Comparada con la de un solo sector, el coeficiente del ingreso de dos períodos atrás no cambia, así que la frontera entre ciclos amortiguados y explosivos queda igual. El del ingreso del período anterior, en cambio, se achica, y eso empuja hacia arriba la frontera entre combinaciones de acelerador y propensión a consumir que dan ciclos y las que dan crecimiento o caída suaves: con dinero, hay más combinaciones que producen ciclos."
+   ]
+  },
+  {
+   "t": "Política fiscal anticíclica: amortigua y acelera el ciclo",
+   "eq": [
+    "G_t = G_0 + \\mu\\,(Y^{*} - Y_t^{N})",
+    "Y_t = (1 - \\mu)\\left[(1 + a)c_Y - \\dfrac{i_r l_Y}{l_r}\\right] Y_{t-1} - (1 - \\mu)\\,a c_Y Y_{t-2} + (1 - \\mu)(c_0 + G_0) + \\mu Y^{*} - (1 - \\mu)\\,i_r\\left(\\dfrac{l_0 - \\bar M}{l_r}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G_t\\): gasto público del período \\(t\\); \\(G_0\\): su componente exógeno.",
+      "en": "\\(G_t\\): government spending in period \\(t\\); \\(G_0\\): its exogenous component."
+     },
+     {
+      "es": "\\(\\mu\\): coeficiente de reacción fiscal, la fracción de la brecha que el gobierno intenta cerrar; se supone \\(0 < \\mu < 1\\), ajuste parcial.",
+      "en": "\\(\\mu\\): fiscal reaction coefficient, the share of the gap the government tries to close; \\(0 < \\mu < 1\\) is assumed, partial adjustment."
+     },
+     {
+      "es": "\\(Y^{*}\\): ingreso objetivo, constante, que se supone igual al de equilibrio.",
+      "en": "\\(Y^{*}\\): target income, constant, assumed equal to equilibrium income."
+     },
+     {
+      "es": "\\(Y_t^{N}\\): ingreso que habría en \\(t\\) sin política de estabilización en ese período, pronosticado sin error.",
+      "en": "\\(Y_t^{N}\\): income that would occur in \\(t\\) without stabilization policy that period, forecast without error."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): ingreso con la política fiscal operando, en \\(t\\) y en los dos períodos previos.",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): income with fiscal policy operating, in \\(t\\) and the two previous periods."
+     },
+     {
+      "es": "\\(\\mu, G_0, Y^{*}\\): como en la ecuación anterior; \\(a, c_Y, c_0, i_r, l_0, l_Y, l_r, \\bar M\\): como en el modelo sin política. Con \\(\\mu = 1\\) el ingreso quedaría fijo en el objetivo.",
+      "en": "\\(\\mu, G_0, Y^{*}\\): as in the previous equation; \\(a, c_Y, c_0, i_r, l_0, l_Y, l_r, \\bar M\\): as in the no-policy model. With \\(\\mu = 1\\) income would stay fixed at target."
+     }
+    ]
+   ],
+   "p": [
+    "La política fiscal es una función de reacción: el gobierno ajusta el gasto según la brecha entre el ingreso que habría sin política y un ingreso objetivo constante. Los autores suponen ajuste parcial, plausible por la cautela y por otros objetivos de política, y dejan de lado rezagos y errores de pronóstico para comparar los instrumentos en su versión más favorable. Si la reacción fuera total, el ingreso quedaría clavado en el objetivo. Con reacción parcial, la política multiplica por uno menos el coeficiente de reacción los dos coeficientes de la ecuación en diferencias, y así reduce su tamaño absoluto.",
+    "Sobre los caminos cíclicos hay tres efectos. La frontera entre ciclos amortiguados y explosivos sube, así que hay más combinaciones que amortiguan. Todo ciclo amortiguado se amortigua más, y los ciclos regulares pasan a ser amortiguados. Y la mayor amortiguación viene con mayor frecuencia: picos y valles llegan más rápido, un efecto que señaló primero Baumol (1961). Los autores no lo ven como un costo, porque la trayectoria estabilizada siempre tiene menor pendiente que la original y no impone mayores costos de ajuste.",
+    "El ejemplo numérico usa un acelerador de 2.0, una propensión a consumir de 0.5, una sensibilidad de la demanda de dinero al ingreso de 0.25, al interés de −5.0, de la inversión al interés de −1.5, una reacción fiscal igual a uno menos la propensión a consumir y un objetivo de ingreso de 52.0. La trayectoria sin política se reemplaza por otra bastante más amortiguada."
+   ]
+  },
+  {
+   "t": "Política monetaria: el mismo objetivo, otro riesgo",
+   "eq": [
+    "M_t = M_0 + m\\,(Y^{*} - Y_t^{N})",
+    "Y_t = \\left(1 - \\dfrac{i_r m}{l_r}\\right)\\left[(1 + a)c_Y - \\dfrac{i_r l_Y}{l_r}\\right] Y_{t-1} - \\left(1 - \\dfrac{i_r m}{l_r}\\right) a c_Y Y_{t-2} + \\left(1 - \\dfrac{i_r m}{l_r}\\right)\\left(c_0 + \\bar G - \\dfrac{i_r (l_0 - M_0)}{l_r} + \\dfrac{i_r m Y^{*}}{l_r}\\right)",
+    "1 - \\dfrac{i_r m}{l_r} > -1 \\;\\Longleftrightarrow\\; \\dfrac{l_r}{i_r} > \\tfrac{1}{2}\\,m"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(M_t\\): oferta de dinero del período \\(t\\); \\(M_0\\): componente exógeno, asociado al ingreso de equilibrio en el objetivo.",
+      "en": "\\(M_t\\): money supply in period \\(t\\); \\(M_0\\): exogenous component, associated with equilibrium income at target."
+     },
+     {
+      "es": "\\(m\\): coeficiente de reacción de la autoridad monetaria, con \\(0 < m < 1\\).",
+      "en": "\\(m\\): the monetary authority's reaction coefficient, with \\(0 < m < 1\\)."
+     },
+     {
+      "es": "\\(Y^{*}, Y_t^{N}\\): ingreso objetivo e ingreso sin política, como en la regla fiscal.",
+      "en": "\\(Y^{*}, Y_t^{N}\\): target income and no-policy income, as in the fiscal rule."
+     }
+    ],
+    [
+     {
+      "es": "\\(1 - i_r m / l_r\\): factor por el que la política monetaria multiplica los coeficientes; hace el papel de \\(1 - \\mu\\) en la política fiscal.",
+      "en": "\\(1 - i_r m / l_r\\): factor by which monetary policy multiplies the coefficients; it plays the role of \\(1 - \\mu\\) in fiscal policy."
+     },
+     {
+      "es": "\\(i_r, l_r, l_Y, l_0, a, c_Y, c_0, \\bar G\\): como en el modelo sin política; \\(m, M_0, Y^{*}\\): como en la regla monetaria.",
+      "en": "\\(i_r, l_r, l_Y, l_0, a, c_Y, c_0, \\bar G\\): as in the no-policy model; \\(m, M_0, Y^{*}\\): as in the monetary rule."
+     }
+    ],
+    [
+     {
+      "es": "La desigualdad es la condición para que la política monetaria no desestabilice: el factor debe ser mayor que −1. Como \\(i_r\\) y \\(l_r\\) son negativos, \\(l_r/i_r\\) es positivo; cuanto más chico es \\(l_r\\) en valor absoluto, o más grande \\(i_r\\), menor debe ser \\(m\\).",
+      "en": "The inequality is the condition for monetary policy not to destabilize: the factor must exceed −1. Since \\(i_r\\) and \\(l_r\\) are negative, \\(l_r/i_r\\) is positive; the smaller \\(l_r\\) in absolute value, or the larger \\(i_r\\), the smaller \\(m\\) must be."
+     }
+    ]
+   ],
+   "p": [
+    "La regla monetaria es análoga: la oferta de dinero se aparta de su nivel base según la brecha esperada. Hay una diferencia de stock y flujo. Si no hay brecha, el gobierno simplemente deja de gastar el excedente sobre el gasto base, pero el dinero emitido de más no se agota: la autoridad tiene que retirarlo activamente. Si la regla partiera de la oferta del período anterior en lugar de la base, la política pasada «se arrastraría» y la ecuación sería otra, solo tratable por simulación.",
+    "El efecto depende ahora del factor que multiplica los coeficientes en la segunda ecuación, y aquí aparece la diferencia clave. Con la política fiscal, que el coeficiente de reacción esté entre 0 y 1 alcanza para achicar los coeficientes. Con la monetaria no: los coeficientes se achican solo si el factor es mayor que −1. Si la inversión no responde al interés o la demanda de dinero es infinitamente sensible a él, el factor vale 1 y la política no hace nada, como predecían los casos límite. Pero si la inversión es muy sensible y la demanda de dinero casi insensible, justo el mundo monetarista, el factor puede caer por debajo de −1. Entonces la política monetaria reduce la amortiguación, vuelve explosivos los ciclos regulares y acelera los explosivos.",
+    "Mientras el factor sea mayor que −1, la política monetaria tiene los mismos tres efectos que la fiscal. Con los parámetros del ejemplo y una reacción monetaria de 0.33, la fiscal amortigua más rápido. Con una sensibilidad de la demanda de dinero al interés de −1.0 en lugar de −5.0, ambas amortiguan a una velocidad parecida. Lectura propia: con los números del libro, el factor fiscal es 0.5 y el monetario pasa de 0.901 a 0.505 al bajar esa sensibilidad, lo que explica el empate. La lección de los autores es que la eficacia de la estabilización depende de la estructura de la economía, y que sin estimaciones econométricas de las funciones de demanda de dinero e inversión no se puede cuantificar el impacto de los instrumentos.",
+    "El riesgo de desestabilizar es mayor en la política monetaria porque actúa de forma indirecta sobre el gasto, a través de dos parámetros además de la reacción. Por eso no basta con limitar la reacción a menos de uno: la condición es más severa. Si el factor vale cero, la estabilización es perfecta, lo que exige fijar la reacción en el cociente entre las dos sensibilidades al interés, algo que puede chocar con otros objetivos o con la cautela de la autoridad. El capítulo cierra recordando que solo se estudió el ajuste parcial: los rezagos y los errores de pronóstico del ingreso sin política aumentan la probabilidad de que la estabilización desestabilice. Lectura propia: es el mismo punto que Friedman hacía sobre los rezagos largos y variables, ahora derivado de los parámetros y no de la evidencia."
+   ]
+  }
+ ],
+ "claves": [
+  "Un objetivo (ingreso real) y tres instrumentos: gasto, impuesto directo y oferta nominal de dinero.",
+  "El multiplicador del gasto con dinero fijo es menor que el simple por la realimentación monetaria; financiado con emisión y sin fiscal drag, es mayor.",
+  "Los instrumentos fiscal y monetario no se pueden manejar por separado: restricción presupuestaria, estabilizadores automáticos y emisión vía déficit.",
+  "Keynesianos y monetaristas discrepan sobre el canal y, sobre todo, sobre parámetros empíricos; la evidencia refuta la trampa de liquidez y la insensibilidad total al interés.",
+  "Caso límite monetarista (LM vertical): la política fiscal no mueve el ingreso y la monetaria gana potencia.",
+  "Con dinero en el multiplicador-acelerador hay más combinaciones de parámetros que generan ciclos.",
+  "La política fiscal con reacción parcial siempre amortigua el ciclo, aunque aumenta su frecuencia.",
+  "La política monetaria puede desestabilizar si la reacción es grande frente al cociente entre las sensibilidades al interés de la demanda de dinero y de la inversión; el riesgo crece cuanto menos sensible al interés es la demanda de dinero."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué el multiplicador del gasto en el modelo de dos sectores, con dinero nominal fijo, es menor que el simple?",
+    "en": "Why is the spending multiplier in the two-sector model, with fixed nominal money, smaller than the simple one?"
+   },
+   "op": {
+    "es": [
+     "Porque el impuesto a los ingresos es cero",
+     "Porque el gasto sube la tasa de interés y desplaza gasto privado",
+     "Porque la propensión a consumir cae",
+     "Porque los precios suben"
+    ],
+    "en": [
+     "Because the income tax is zero",
+     "Because spending raises the interest rate and crowds out private spending",
+     "Because the propensity to consume falls",
+     "Because prices rise"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El término positivo que se suma en el denominador, hecho de las sensibilidades al interés del gasto y de la demanda de dinero y de la sensibilidad de esta al ingreso, es la realimentación monetaria de la política fiscal expansiva.",
+    "en": "The positive term added to the denominator, built from the interest sensitivities of spending and money demand and the income sensitivity of the latter, is the monetary feedback of expansionary fiscal policy."
+   },
+   "id": "fisc-politica-02-q1"
+  },
+  {
+   "q": {
+    "es": "Con restricción presupuestaria, un aumento del gasto financiado con dinero y con alícuotas que neutralizan el fiscal drag tiene un multiplicador:",
+    "en": "Under a budget constraint, a spending increase financed with money and with tax rates that offset fiscal drag has a multiplier that is:"
+   },
+   "op": {
+    "es": [
+     "Menor que el fiscal, porque sube la recaudación",
+     "Igual al del presupuesto equilibrado",
+     "Mayor que el fiscal, por el efecto del dinero nuevo y la eliminación de la tasa marginal del impuesto",
+     "Nulo, porque se compensan"
+    ],
+    "en": [
+     "Smaller than the fiscal one, because revenue rises",
+     "Equal to the balanced-budget one",
+     "Larger than the fiscal one, due to new money and removing the marginal tax rate",
+     "Zero, because effects cancel"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Se suma un término positivo en el numerador y el denominador se achica al poner en cero la tasa marginal del impuesto.",
+    "en": "A positive term is added to the numerator and the denominator shrinks when the marginal tax rate is set to zero."
+   },
+   "id": "fisc-politica-02-q2"
+  },
+  {
+   "q": {
+    "es": "Según Burrows y Hitiris, ¿qué refuta la evidencia sobre la demanda de dinero?",
+    "en": "According to Burrows and Hitiris, what does the evidence on money demand refute?"
+   },
+   "op": {
+    "es": [
+     "Que el dinero importe para el ingreso",
+     "La estabilidad de la demanda de dinero en EE.UU.",
+     "Que el consumo dependa del ingreso",
+     "Tanto la trampa de liquidez como la insensibilidad total de la demanda de dinero al interés"
+    ],
+    "en": [
+     "That money matters for income",
+     "The stability of money demand in the US",
+     "That consumption depends on income",
+     "Both the liquidity trap and total insensitivity of money demand to interest"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las estimaciones muestran una sensibilidad al interés no nula pero pequeña, lo que descarta ambos casos extremos.",
+    "en": "Estimates show a non-zero but small interest sensitivity, ruling out both extreme cases."
+   },
+   "id": "fisc-politica-02-q3"
+  },
+  {
+   "q": {
+    "es": "En el caso límite monetarista, con una demanda de dinero que no responde a la tasa de interés, un aumento del gasto público:",
+    "en": "In the monetarist limiting case, with money demand that does not respond to the interest rate, an increase in government spending:"
+   },
+   "op": {
+    "es": [
+     "No cambia el ingreso y solo sube la tasa de interés",
+     "Sube el ingreso y baja la tasa de interés",
+     "Sube el ingreso en la misma proporción que el multiplicador simple",
+     "Baja el ingreso"
+    ],
+    "en": [
+     "Leaves income unchanged and only raises the interest rate",
+     "Raises income and lowers the interest rate",
+     "Raises income by the simple multiplier",
+     "Lowers income"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con la LM vertical hay un solo ingreso compatible con el equilibrio monetario; la tasa sube hasta recortar el gasto privado.",
+    "en": "With a vertical LM there is only one income consistent with monetary equilibrium; the rate rises until private spending is cut back."
+   },
+   "id": "fisc-politica-02-q4"
+  },
+  {
+   "q": {
+    "es": "Al incorporar dinero al modelo de multiplicador y acelerador, ¿qué cambia?",
+    "en": "When money is added to the multiplier-accelerator model, what changes?"
+   },
+   "op": {
+    "es": [
+     "Se mueve la frontera entre ciclos amortiguados y explosivos",
+     "Desaparecen los ciclos",
+     "Aumentan las combinaciones de parámetros que generan ciclos",
+     "El coeficiente del ingreso de dos períodos atrás se duplica"
+    ],
+    "en": [
+     "The boundary between damped and explosive cycles moves",
+     "Cycles disappear",
+     "The parameter combinations that generate cycles increase",
+     "The coefficient on income two periods back doubles"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El coeficiente del ingreso del período anterior se achica y empuja hacia arriba la frontera entre ciclos y trayectorias suaves; el del ingreso de dos períodos atrás no cambia.",
+    "en": "The coefficient on last period's income shrinks and pushes up the boundary between cycles and smooth paths; the one on income two periods back is unchanged."
+   },
+   "id": "fisc-politica-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué efecto adicional tiene la política fiscal de ajuste parcial sobre el ciclo, además de amortiguarlo?",
+    "en": "What additional effect does partial-adjustment fiscal policy have on the cycle, besides damping it?"
+   },
+   "op": {
+    "es": [
+     "Lo vuelve explosivo",
+     "Reduce su frecuencia",
+     "Lo elimina por completo",
+     "Aumenta su frecuencia"
+    ],
+    "en": [
+     "It makes it explosive",
+     "It lowers its frequency",
+     "It eliminates it completely",
+     "It raises its frequency"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Picos y valles llegan más rápido (efecto señalado por Baumol, 1961), aunque los autores no lo ven como un costo porque la trayectoria tiene menor pendiente.",
+    "en": "Peaks and troughs come faster (an effect noted by Baumol, 1961), though the authors do not see it as a cost because the path has a lower gradient."
+   },
+   "id": "fisc-politica-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué no basta con que la reacción monetaria esté entre 0 y 1 para que la política estabilice?",
+    "en": "Why is a monetary reaction between 0 and 1 not enough for policy to stabilize?"
+   },
+   "op": {
+    "es": [
+     "Porque su efecto depende de un factor que combina la reacción con las sensibilidades al interés de la inversión y de la demanda de dinero, y que puede caer debajo de −1",
+     "Porque el dinero es un flujo",
+     "Porque la política monetaria siempre tiene rezagos en el modelo",
+     "Porque la oferta de dinero no afecta la inversión"
+    ],
+    "en": [
+     "Because its effect depends on a factor combining the reaction with the interest sensitivities of investment and money demand, which can fall below −1",
+     "Because money is a flow",
+     "Because monetary policy always has lags in the model",
+     "Because the money supply does not affect investment"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La política monetaria actúa indirectamente: el cociente entre la sensibilidad de la demanda de dinero al interés y la de la inversión debe superar la mitad del coeficiente de reacción.",
+    "en": "Monetary policy acts indirectly: the ratio of money demand's interest sensitivity to investment's must exceed half the reaction coefficient."
+   },
+   "id": "fisc-politica-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué reacción monetaria daría estabilización perfecta en el modelo?",
+    "en": "Which monetary reaction would deliver perfect stabilization in the model?"
+   },
+   "op": {
+    "es": [
+     "m = 1",
+     "m = l_r / i_r",
+     "m = 0",
+     "m = 1 − c_Y"
+    ],
+    "en": [
+     "m = 1",
+     "m = l_r / i_r",
+     "m = 0",
+     "m = 1 − c_Y"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Donde m es la reacción monetaria, l_r la sensibilidad de la demanda de dinero al interés, i_r la de la inversión y c_Y la propensión a consumir. Con ese valor de m, el factor que multiplica los coeficientes vale cero, el equivalente a una reacción fiscal completa: el ingreso queda constante en el objetivo.",
+    "en": "Where m is the monetary reaction, l_r money demand's interest sensitivity, i_r investment's and c_Y the propensity to consume. With that value of m, the factor multiplying the coefficients equals zero, the equivalent of a full fiscal reaction: income stays constant at target."
+   },
+   "id": "fisc-politica-02-q8"
+  }
+ ],
+ "palabras": 2538,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué no se pueden analizar por separado la política fiscal y la monetaria?",
+    "en": "Why can fiscal and monetary policy not be analysed separately?"
+   },
+   "a": {
+    "es": "Porque el efecto de la fiscal depende de cómo se controla el dinero, porque el gasto debe financiarse (con impuestos, deuda o emisión) y porque el impuesto a los ingresos achica el multiplicador monetario; inyectar dinero sin retirar bonos exige un déficit. Burrows y Hitiris (1974), cap. 8.",
+    "en": "Because the effect of fiscal policy depends on how money is controlled, because spending must be financed (by taxes, debt or money) and because the income tax shrinks the money multiplier; injecting money without withdrawing bonds requires a deficit. Burrows and Hitiris (1974), ch. 8."
+   },
+   "id": "fisc-politica-02-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el fiscal drag y cómo se lo neutraliza en el modelo?",
+    "en": "What is fiscal drag and how is it neutralized in the model?"
+   },
+   "a": {
+    "es": "Es el superávit que aparece cuando el ingreso crece y la recaudación inducida aumenta; un gobierno con restricción presupuestaria lo evita bajando las alícuotas medias, lo que equivale a fijar en cero la tasa marginal del impuesto. Burrows y Hitiris (1974).",
+    "en": "It is the surplus that appears as income grows and induced revenue rises; a government under a budget constraint avoids it by lowering average tax rates, equivalent to setting the marginal tax rate to zero. Burrows and Hitiris (1974)."
+   },
+   "id": "fisc-politica-02-t2"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿El desacuerdo entre keynesianos y monetaristas es teórico o empírico?",
+    "en": "Is the disagreement between Keynesians and monetarists theoretical or empirical?"
+   },
+   "a": {
+    "es": "Sobre todo empírico: ambos aceptan que el dinero actúa vía rendimientos de activos y discrepan en cuáles y, sobre todo, en el tamaño de parámetros como la sensibilidad de la demanda de dinero al interés. Burrows y Hitiris (1974), con Friedman (1970) y Hahn (1971).",
+    "en": "Mostly empirical: both accept that money works through asset yields and differ on which ones and, above all, on the size of parameters such as the interest sensitivity of money demand. Burrows and Hitiris (1974), citing Friedman (1970) and Hahn (1971)."
+   },
+   "id": "fisc-politica-02-t3"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué una mayor correlación del consumo con el dinero que con el gasto exógeno no prueba que la política monetaria sea más eficaz?",
+    "en": "Why does a higher correlation of consumption with money than with exogenous spending not prove monetary policy is more effective?"
+   },
+   "a": {
+    "es": "Porque con restricción presupuestaria los instrumentos no se separan y porque la política fiscal también opera por la tasa del impuesto, que afecta a la vez al consumo y al gasto exógeno de la correlación. Burrows y Hitiris (1974), sobre Friedman y Meiselman (1964).",
+    "en": "Because under a budget constraint the instruments cannot be separated and because fiscal policy also works through the tax rate, which affects both consumption and the exogenous spending in the correlation. Burrows and Hitiris (1974), on Friedman and Meiselman (1964)."
+   },
+   "id": "fisc-politica-02-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué pasa con la política fiscal y la monetaria si la demanda de dinero no responde al interés?",
+    "en": "What happens to fiscal and monetary policy if money demand does not respond to interest?"
+   },
+   "a": {
+    "es": "La LM es vertical: el gasto público no mueve el ingreso y solo sube la tasa, mientras que el multiplicador monetario crece hasta la inversa de la sensibilidad de la demanda de dinero al ingreso. Es la contracara de la trampa de liquidez. Burrows y Hitiris (1974).",
+    "en": "The LM is vertical: government spending does not move income and only raises the rate, while the money multiplier rises to the inverse of money demand's income sensitivity. It is the mirror image of the liquidity trap. Burrows and Hitiris (1974)."
+   },
+   "id": "fisc-politica-02-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué efectos tiene una política fiscal anticíclica de ajuste parcial en un modelo de multiplicador y acelerador?",
+    "en": "What effects does a partial-adjustment countercyclical fiscal policy have in a multiplier-accelerator model?"
+   },
+   "a": {
+    "es": "Amplía las combinaciones que dan ciclos amortiguados, amortigua más todo ciclo amortiguado y vuelve amortiguados los regulares, pero aumenta la frecuencia del ciclo. Burrows y Hitiris (1974), con Baumol (1961).",
+    "en": "It widens the combinations that yield damped cycles, damps every damped cycle further and turns regular cycles into damped ones, but raises the cycle's frequency. Burrows and Hitiris (1974), citing Baumol (1961)."
+   },
+   "id": "fisc-politica-02-t6"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la política monetaria anticíclica puede desestabilizar cuando la fiscal no?",
+    "en": "Why can countercyclical monetary policy destabilize when fiscal policy does not?"
+   },
+   "a": {
+    "es": "Porque actúa indirectamente, a través de la sensibilidad de la inversión y de la demanda de dinero al interés: si la inversión es muy sensible y la demanda de dinero casi insensible, el factor por el que la política multiplica los coeficientes de la ecuación del ingreso cae debajo de −1 y el ciclo se vuelve más explosivo. Burrows y Hitiris (1974).",
+    "en": "Because it acts indirectly, through the interest sensitivity of investment and money demand: if investment is very sensitive and money demand nearly insensitive, the factor by which policy multiplies the coefficients of the income equation falls below −1 and the cycle becomes more explosive. Burrows and Hitiris (1974)."
+   },
+   "id": "fisc-politica-02-t7"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué deja abierto el análisis dinámico de la estabilización que la estática comparativa no muestra?",
+    "en": "What does the dynamic analysis of stabilization reveal that comparative statics does not?"
+   },
+   "a": {
+    "es": "Que un instrumento potente en términos de multiplicador puede ser desestabilizador en el tiempo, y que los rezagos y los errores de pronóstico del ingreso sin política aumentan ese riesgo; por eso la eficacia depende de estimar bien los parámetros. Burrows y Hitiris (1974).",
+    "en": "That an instrument that is powerful in multiplier terms can be destabilizing over time, and that lags and forecast errors of no-policy income raise that risk; effectiveness therefore depends on estimating parameters well. Burrows and Hitiris (1974)."
+   },
+   "id": "fisc-politica-02-t8"
+  }
+ ]
+}
