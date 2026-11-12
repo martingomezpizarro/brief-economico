@@ -1,0 +1,505 @@
+{
+ "id": "fisc-sost-02",
+ "cat": "fisc-sost",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Déficit cero en un modelo de ciclo real: qué variable fiscal conviene ajustar",
+ "bajada": "Capello y Grión calibran un modelo de equilibrio general con gobierno para la Argentina de la Convertibilidad y preguntan cómo cumplir una regla de presupuesto equilibrado sin agrandar el ciclo: la respuesta es ajustar el gasto, no las alícuotas, y cuidarse de gravar el capital.",
+ "fuentes": [
+  1334
+ ],
+ "cita": "M. Capello y N. Grión (2001), «La economía argentina bajo una regla de presupuesto balanceado», FCE-UNC",
+ "intro": "En 1999 la Argentina aprobó una ley que obligaba a reducir el déficit fiscal hasta eliminarlo en 2003; en 2000 el plazo se estiró a 2005 y en 2001, sin acceso al crédito voluntario, llegó la Ley de Déficit Cero. Marcelo Capello y Néstor Grión, de la Universidad Nacional de Córdoba, se preguntan qué implica una regla de presupuesto balanceado (RPB) período a período para la volatilidad y para la recaudación. Primero repasan por qué los gobiernos se endeudan más de lo óptimo y qué costos tienen las reglas. Después construyen un modelo de ciclo real (RBC) con gobierno, impuestos distorsivos e inversión pública, lo calibran con datos trimestrales de 1991 a 2000 y simulan shocks de productividad bajo distintas formas de cumplir la regla. La conclusión: si el gobierno no puede endeudarse, el ajuste debe recaer sobre el gasto público, sobre todo el consumo público, y no sobre las alícuotas; y gravar el capital genera efecto Laffer a tasas muy bajas.",
+ "secciones": [
+  {
+   "t": "Por qué los gobiernos se sobreendeudan",
+   "p": [
+    "Los autores parten de una idea simple. La razón principal para que un gobierno central se endeude es hacer política contracíclica y suavizar el consumo público. Pero hay motivos para pensar que el endeudamiento suele ir más allá del óptimo. Frente a eso hay dos posturas. Una confía en la disciplina de mercado: calificadoras de riesgo, ningún salvataje y una restricción presupuestaria dura. Citando a Ter-Minassian (1997), los autores señalan que eso exige mercados libres, información adecuada y la imposibilidad creíble de un rescate, requisitos difíciles de encontrar. La otra postura son las reglas: límites legales o constitucionales al endeudamiento, a los servicios de la deuda sobre los ingresos, prohibiciones de financiar gasto corriente con deuda o requisitos de presupuesto equilibrado, como la enmienda Gramm-Rudman-Hollings de 1985 en Estados Unidos o las reglas de Maastricht.",
+    "Siguiendo a Alesina y Perotti (1995), ordenan las teorías del endeudamiento. En la teoría estándar del tax smoothing (Barro, 1979) el gobierno es un planificador benevolente: como los impuestos distorsionan y la pérdida de bienestar crece más que proporcionalmente con la alícuota, conviene mantener las tasas constantes y usar déficits y superávits como amortiguadores. En ese marco una RPB período a período es contraproducente. Los modelos de economía política explican por qué la deuda real es mayor: ilusión fiscal (los votantes sobreestiman el beneficio del gasto y subestiman los impuestos futuros, lo que vuelve asimétrico el suavizamiento), redistribución entre generaciones (Cukierman y Meltzer, 1989), el gobierno como Leviatán que maximiza rentas (Brennan y Buchanan, 1980), la deuda como arma estratégica contra el sucesor (Alesina y Tabellini, 1990), la guerra de desgaste entre grupos que demora el ajuste (Alesina y Drazen, 1991) y la inconsistencia temporal con tasas de descuento altas (Kydland y Prescott, 1977). Los autores sostienen que este último grupo de teorías, centrado en las imperfecciones del mercado político, es el marco adecuado para justificar reglas fiscales."
+   ]
+  },
+  {
+   "t": "El costo de atarse las manos",
+   "p": [
+    "Las reglas tienen costos. El más conocido es que amplifican el ciclo: obligan a recortar gasto o subir impuestos en la recesión y a hacer lo contrario en la expansión. King, Plosser y Rebelo (1988) muestran que en un modelo RBC la amplitud del ciclo crece cuando el gobierno sigue una RPB financiada con impuestos al ingreso. Bayoumi y Eichengreen (1995) estiman que en los estados de Estados Unidos las restricciones fiscales redujeron alrededor de 40% la sensibilidad del balance fiscal al ciclo, y que cerca del 90% de esa reducción viene de que el gasto público deja de moverse con el ciclo.",
+    "El segundo costo es teórico. Schmitt-Grohé y Uribe (1997) muestran que, en un modelo neoclásico con RPB financiada con un impuesto distorsivo al trabajo cuya tasa se ajusta, pueden aparecer fluctuaciones persistentes sin ningún shock a los fundamentos: el equilibrio queda indeterminado. Eso no pasa si las alícuotas son exógenas y el gasto es la variable que se ajusta, y por eso recomiendan esa forma de regla. Este resultado anticipa la conclusión de Capello y Grión."
+   ]
+  },
+  {
+   "t": "El modelo: hogares, firmas y un gobierno sin deuda",
+   "eq": [
+    "\\max\\; E_0 \\sum_{t=0}^{\\infty} \\beta^{t}\\, U\\big[c_t,\\, g_t,\\, 1 - l_t\\big], \\qquad u(c, g, l) = \\log(c + \\pi g) + \\gamma \\log(1 - l)",
+    "(1 + \\tau^{c}_t)c_t + (1 + \\tau^{i}_t)i_t = (1 - \\tau^{l}_t)w_t l_t + r_t k_t - \\tau^{k}_t(1 - \\delta)k_t - \\tau^{y}_t\\big[(1 - \\tau^{l}_t)w_t l_t + (r_t - \\delta)k_t - \\tau^{k}_t(1 - \\delta)k_t\\big] + T_t",
+    "y_t = \\lambda_t K_t^{\\alpha} L_t^{1-\\alpha} d_t^{\\theta}, \\qquad k_{t+1} = (1 - \\delta)k_t + i_t, \\qquad d_{t+1} = (1 - \\delta_g)d_t + p_t",
+    "g_t + p_t + T_t = \\tau^{c}_t c_t + \\tau^{i}_t i_t + \\tau^{l}_t w_t l_t + \\tau^{k}_t(1 - \\delta)k_t + \\tau^{y}_t\\big[(1 - \\tau^{l}_t)w_t l_t + (r_t - \\delta)k_t - \\tau^{k}_t(1 - \\delta)k_t\\big]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E_0\\): esperanza condicional a la información del período inicial; \\(\\beta\\): factor de descuento, entre 0 y 1.",
+      "en": "\\(E_0\\): expectation conditional on initial-period information; \\(\\beta\\): discount factor, between 0 and 1."
+     },
+     {
+      "es": "\\(c_t\\): consumo privado; \\(g_t\\): consumo público (exógeno); \\(l_t\\): horas trabajadas, normalizadas para que el tiempo total sea 1, así que \\(1 - l_t\\) es el ocio.",
+      "en": "\\(c_t\\): private consumption; \\(g_t\\): public consumption (exogenous); \\(l_t\\): hours worked, normalized so total time is 1, so \\(1 - l_t\\) is leisure."
+     },
+     {
+      "es": "\\(\\pi\\): grado de sustitución entre consumo privado y público: con \\(\\pi = 1\\) un peso más de \\(g\\) reemplaza un peso de \\(c\\); con \\(\\pi = 0\\), \\(g\\) no da utilidad.",
+      "en": "\\(\\pi\\): degree of substitution between private and public consumption: with \\(\\pi = 1\\) one more peso of \\(g\\) replaces one peso of \\(c\\); with \\(\\pi = 0\\), \\(g\\) yields no utility."
+     },
+     {
+      "es": "\\(\\gamma\\): peso del ocio en la utilidad.",
+      "en": "\\(\\gamma\\): weight of leisure in utility."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\tau^{c}_t, \\tau^{i}_t\\): alícuotas sobre consumo e inversión; \\(\\tau^{l}_t\\): impuesto al ingreso del trabajo (sobre todo aportes a la seguridad social); \\(\\tau^{k}_t\\): impuesto sobre el stock de capital neto de depreciación (no sobre su renta: Activos, Bienes Personales, Ganancia Mínima Presunta, Inmobiliario); \\(\\tau^{y}_t\\): impuesto a la renta total (Ganancias), igual para trabajo y capital.",
+      "en": "\\(\\tau^{c}_t, \\tau^{i}_t\\): tax rates on consumption and investment; \\(\\tau^{l}_t\\): labour income tax (mainly social security contributions); \\(\\tau^{k}_t\\): tax on the capital stock net of depreciation (not on its income); \\(\\tau^{y}_t\\): tax on total income, equal for labour and capital."
+     },
+     {
+      "es": "\\(i_t\\): inversión privada; \\(k_t\\): capital privado del hogar; \\(w_t, r_t\\): salario y renta del capital que paga la firma.",
+      "en": "\\(i_t\\): private investment; \\(k_t\\): household capital; \\(w_t, r_t\\): wage and rental rate of capital paid by the firm."
+     },
+     {
+      "es": "\\(\\delta\\): tasa de depreciación del capital privado, deducible de las bases de \\(\\tau^{k}\\) y \\(\\tau^{y}\\).",
+      "en": "\\(\\delta\\): depreciation rate of private capital, deductible from the \\(\\tau^{k}\\) and \\(\\tau^{y}\\) bases."
+     },
+     {
+      "es": "\\(T_t\\): transferencias de suma fija; positivas son subsidios, negativas impuestos de suma fija. En el modelo sin regla también recogen el déficit o superávit del período.",
+      "en": "\\(T_t\\): lump-sum transfers; positive are subsidies, negative are lump-sum taxes. Without the rule they also capture the period's deficit or surplus."
+     }
+    ],
+    [
+     {
+      "es": "\\(y_t\\): producto; \\(K_t, L_t\\): capital y trabajo contratados por la firma (en equilibrio \\(K = k\\), \\(L = l\\)).",
+      "en": "\\(y_t\\): output; \\(K_t, L_t\\): capital and labour hired by the firm (in equilibrium \\(K = k\\), \\(L = l\\))."
+     },
+     {
+      "es": "\\(\\lambda_t\\): factor tecnológico aleatorio (residuo de Solow); también capta términos del intercambio u otros shocks de oferta.",
+      "en": "\\(\\lambda_t\\): random technology factor (Solow residual); it also captures terms of trade or other supply shocks."
+     },
+     {
+      "es": "\\(\\alpha\\): participación del capital privado; \\(1 - \\alpha\\): del trabajo (rendimientos constantes en los factores privados).",
+      "en": "\\(\\alpha\\): private capital share; \\(1 - \\alpha\\): labour share (constant returns in private inputs)."
+     },
+     {
+      "es": "\\(d_t\\): stock de capital público, insumo exógeno que eleva la productividad; \\(\\theta\\): su elasticidad en la producción; \\(p_t\\): inversión pública; \\(\\delta_g\\): depreciación del capital público.",
+      "en": "\\(d_t\\): public capital stock, an exogenous input that raises productivity; \\(\\theta\\): its output elasticity; \\(p_t\\): public investment; \\(\\delta_g\\): public capital depreciation."
+     }
+    ],
+    [
+     {
+      "es": "Lado izquierdo: gasto del gobierno en consumo \\(g_t\\), inversión \\(p_t\\) y transferencias \\(T_t\\). Lado derecho: recaudación de cada impuesto, con los mismos símbolos que en la restricción del hogar.",
+      "en": "Left side: government spending on consumption \\(g_t\\), investment \\(p_t\\) and transfers \\(T_t\\). Right side: revenue from each tax, with the same symbols as in the household constraint."
+     },
+     {
+      "es": "La igualdad debe cumplirse en cada período: es la regla de presupuesto balanceado período a período.",
+      "en": "The equality must hold every period: it is the period-by-period balanced budget rule."
+     }
+    ]
+   ],
+   "p": [
+    "El marco es un modelo de equilibrio general dinámico y estocástico, en la línea de Kydland y Prescott (1982) y de Ellen McGrattan (1994), con dos agregados: más impuestos y la inversión pública como tercer insumo de la producción privada. La economía es cerrada y sin dinero. Los autores lo justifican porque la Convertibilidad casi anuló la política monetaria; admiten que una economía abierta habría sido más realista, y suponen que los shocks externos quedan capturados, en parte, en el shock tecnológico.",
+    "Un hogar representativo de vida infinita elige consumo, inversión y horas para maximizar la utilidad esperada descontada (primera ecuación), sujeto a su restricción presupuestaria (segunda) y a la ley de movimiento del capital. Las firmas producen con capital, trabajo y capital público (tercera ecuación) y pagan a cada factor su productividad marginal. El gobierno no optimiza: sigue secuencias exógenas de gasto, inversión e impuestos. Cada una sigue un proceso autorregresivo de orden uno alrededor de su media, igual que la productividad. Con la regla período a período (cuarta ecuación) algo tiene que ajustarse para cerrar la cuenta. En la versión sin regla esa variable son las transferencias, que también hacen de emisión o rescate de deuda: siguiendo a Barro (1974), cambiar transferencias de suma fija equivale a financiar con deuda.",
+    "Como hay impuestos distorsivos, el equilibrio competitivo no coincide con el del planificador, así que se resuelve la economía descentralizada. El estado estacionario sale de nueve ecuaciones con nueve incógnitas (producto, consumo, inversión, capital privado y público, horas, transferencias, salario y tasa de renta). La dinámica estocástica se resuelve escribiendo el problema como una ecuación de Bellman y aproximándolo de forma lineal cuadrática alrededor del estado estacionario, con programas en Matlab."
+   ]
+  },
+  {
+   "t": "Las dos condiciones de óptimo",
+   "eq": [
+    "\\dfrac{1 - l_t}{\\gamma\\,(c_t + \\pi g_t)} = \\dfrac{1 + \\tau^{c}_t}{(1 - \\tau^{y}_t)(1 - \\tau^{l}_t)\\,w_t}",
+    "\\dfrac{c_{t+1} + \\pi g_{t+1}}{\\beta\\,(c_t + \\pi g_t)} = \\dfrac{(1 - \\tau^{y}_t)(r_{t+1} - \\tau^{k}_t) + (\\tau^{y}_t + \\tau^{k}_t - \\tau^{y}_t\\tau^{k}_t)\\,\\delta + (1 + \\tau^{i}_t)(1 - \\delta)}{1 + \\tau^{i}_t}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "Lado izquierdo: cociente entre el ocio \\(1 - l_t\\) y el consumo efectivo \\(c_t + \\pi g_t\\), ponderado por \\(\\gamma\\) (peso del ocio).",
+      "en": "Left side: ratio of leisure \\(1 - l_t\\) to effective consumption \\(c_t + \\pi g_t\\), weighted by \\(\\gamma\\) (leisure weight)."
+     },
+     {
+      "es": "Lado derecho: inversa del salario neto de impuestos medido en bienes de consumo: \\(w_t\\) es el salario bruto, \\(\\tau^{l}_t\\) y \\(\\tau^{y}_t\\) los impuestos al trabajo y a la renta, y \\(\\tau^{c}_t\\) el impuesto al consumo que encarece lo que se compra con ese salario.",
+      "en": "Right side: inverse of the after-tax wage measured in consumption goods: \\(w_t\\) is the gross wage, \\(\\tau^{l}_t\\) and \\(\\tau^{y}_t\\) labour and income taxes, and \\(\\tau^{c}_t\\) the consumption tax that raises the price of what the wage buys."
+     }
+    ],
+    [
+     {
+      "es": "Lado izquierdo: crecimiento del consumo efectivo entre \\(t\\) y \\(t+1\\), dividido por el factor de descuento \\(\\beta\\).",
+      "en": "Left side: growth of effective consumption between \\(t\\) and \\(t+1\\), divided by the discount factor \\(\\beta\\)."
+     },
+     {
+      "es": "Numerador derecho: retorno bruto, neto de impuestos, de una unidad de capital: renta \\(r_{t+1}\\) menos el impuesto al stock \\(\\tau^{k}_t\\), gravada por \\(\\tau^{y}_t\\); más el ahorro fiscal por deducir la depreciación \\(\\delta\\); más el capital no depreciado, valuado a su costo \\(1 + \\tau^{i}_t\\).",
+      "en": "Right numerator: gross after-tax return on one unit of capital: rental \\(r_{t+1}\\) minus the stock tax \\(\\tau^{k}_t\\), taxed by \\(\\tau^{y}_t\\); plus the tax saving from deducting depreciation \\(\\delta\\); plus undepreciated capital, valued at its cost \\(1 + \\tau^{i}_t\\)."
+     },
+     {
+      "es": "Denominador: \\(1 + \\tau^{i}_t\\), costo de una unidad de inversión con impuesto. En estado estacionario el lado izquierdo vale \\(1/\\beta\\), y de ahí se calibra \\(\\beta\\).",
+      "en": "Denominator: \\(1 + \\tau^{i}_t\\), cost of one unit of investment including tax. In steady state the left side equals \\(1/\\beta\\), which is how \\(\\beta\\) is calibrated."
+     }
+    ]
+   ],
+   "p": [
+    "La primera condición es la oferta de trabajo: el hogar trabaja hasta que el valor del ocio frente al consumo iguala el salario neto de impuestos. Cualquier impuesto al consumo, al trabajo o a la renta abre una cuña y reduce las horas. La segunda es la ecuación de Euler: la tasa a la que el hogar está dispuesto a postergar consumo debe igualar el retorno neto del capital. El impuesto al stock de capital y el impuesto a la renta bajan ese retorno; la deducción de la depreciación lo compensa en parte. Estas dos condiciones explican los resultados: cuando el gobierno cierra su cuenta moviendo una alícuota, mueve la cuña de una de estas ecuaciones justo cuando la economía está siendo sacudida."
+   ]
+  },
+  {
+   "t": "Calibración: la Argentina de 1991 a 2000",
+   "eq": [
+    "X_t = (1 - \\rho_x)\\bar X + \\rho_x X_{t-1} + \\varepsilon^{x}_t, \\qquad \\sigma^{2}_{\\varepsilon, x} = (1 - \\rho_x^{2})\\,\\operatorname{var}(X_t)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(X_t\\): cada variable exógena del modelo: productividad \\(\\lambda\\), consumo e inversión públicos \\(g, p\\), y cada alícuota \\(\\tau^{j}\\).",
+      "en": "\\(X_t\\): each exogenous variable: productivity \\(\\lambda\\), public consumption and investment \\(g, p\\), and each tax rate \\(\\tau^{j}\\)."
+     },
+     {
+      "es": "\\(\\bar X\\): valor de estado estacionario, el promedio de 1991.II-2000.II (para \\(\\lambda\\) se fija en 1).",
+      "en": "\\(\\bar X\\): steady-state value, the 1991.II-2000.II average (for \\(\\lambda\\) it is set to 1)."
+     },
+     {
+      "es": "\\(\\rho_x\\): persistencia del shock, coeficiente de regresar la variable sobre su rezago.",
+      "en": "\\(\\rho_x\\): shock persistence, the coefficient from regressing the variable on its lag."
+     },
+     {
+      "es": "\\(\\varepsilon^{x}_t\\): innovación aleatoria; \\(\\sigma^{2}_{\\varepsilon,x}\\): su varianza; \\(\\operatorname{var}(X_t)\\): varianza de la serie sin tendencia.",
+      "en": "\\(\\varepsilon^{x}_t\\): random innovation; \\(\\sigma^{2}_{\\varepsilon,x}\\): its variance; \\(\\operatorname{var}(X_t)\\): variance of the detrended series."
+     }
+    ]
+   ],
+   "p": [
+    "Para calibrar, los autores eligen el período más homogéneo disponible, la Convertibilidad entre el segundo trimestre de 1991 y el segundo de 2000, con datos trimestrales a precios de 1993, y admiten que fue un período de cambio estructural y de shocks externos fuertes. Mezclan calibración y econometría. La depreciación sale de una estimación para Chile (Bergoeing y otros, 1999) y se supone igual para capital público y privado: 0,038 por trimestre. La tasa de interés de estado estacionario es la tasa real promedio de los plazos fijos de 30 a 59 días. El consumo público pesa 0,128 del producto y la inversión pública 0,019, para los tres niveles de gobierno. Las transferencias se construyen como recaudación menos consumo e inversión públicos, así que incluyen el déficit del período, que promedió 1,8% del PIB.",
+    "Las alícuotas son recaudación sobre base gravable. La del consumo (IVA, Internos, Combustibles e Ingresos Brutos sobre el consumo privado más las compras del gobierno) da 0,143; la del trabajo, 0,093; la de la renta, 0,035; la del stock de capital, 0,001; la de la inversión se fija en cero porque no se encontraron impuestos relevantes. El factor de descuento sale de la ecuación de Euler en estado estacionario: 0,986. La participación del capital es 0,448 y la del capital público, igualada a la razón inversión pública sobre producto, 0,019. La sustitución entre consumo público y privado se toma de McGrattan, que no la encuentra distinta de cero, y el peso del ocio, 2,597, se elige para que las horas de estado estacionario repliquen el 0,233 observado. Las persistencias de las alícuotas van de 0,15 (renta) a 0,84 (capital); la de la productividad es 0,6. Antes de calcularlas, las series se pasan a logaritmos, se desestacionalizan y se filtran con Hodrick-Prescott."
+   ]
+  },
+  {
+   "t": "¿Replica el modelo los datos?",
+   "p": [
+    "El primer ejercicio, todavía sin regla, compara los momentos simulados con los reales para tres modelos: el RBC con gobierno, el mismo sin impuesto al consumo y el RBC puro de Kydland y Prescott. Los tres exageran la volatilidad del producto: el desvío estándar del ciclo es 2,88% en los datos y 4,23% en el modelo con gobierno. Los tres subestiman la del consumo (3,21% en los datos, 0,96% en el modelo) y la del salario (3,62% contra 1,46%). Los autores atribuyen lo del consumo, en parte, a que la serie argentina incluye durables, que no pudieron separar. La inversión sale bien: su volatilidad relativa al producto es 3,27 en los datos y 3,28 en el modelo, y la correlación con el producto, 0,89 contra 0,97.",
+    "Hay dos fallas más. Los tres modelos dan correlaciones del producto con el salario y la renta del capital mucho mayores que las de los datos (0,25 y 0,17 en la realidad, más de 0,9 en los modelos), lo que los autores atribuyen a problemas de medición de la rentabilidad y a rigideces laborales. Y el modelo con impuesto al consumo da una correlación negativa entre producto y consumo, -0,47, cuando en los datos es 0,95: la alícuota argentina es tan alta que, ante un shock positivo, la inversión se dispara y desplaza consumo en el impacto; con un impuesto al consumo por debajo de 10% el problema desaparece. El balance de los autores es que el modelo replica bien solo algunas dimensiones, por la economía cerrada y sin dinero, la calidad de los datos, la alta volatilidad del período y el método lineal cuadrático, pero que sirve para conclusiones cualitativas.",
+    "Lectura propia: la volatilidad del producto de 4,23% contra 2,88% observada es una brecha grande para un modelo que después se usa para ordenar instrumentos según cuánta volatilidad agregan. La comparación entre reglas sigue siendo informativa porque todas comparten la misma calibración, pero las magnitudes conviene leerlas como órdenes de magnitud."
+   ]
+  },
+  {
+   "t": "Con la regla: qué pasa ante un shock de productividad",
+   "p": [
+    "Para imponer la regla, las transferencias dejan de ser la variable de ajuste. En el modelo con impuesto al consumo actúan como subsidio y se recortan 1,8 puntos del PIB, el déficit promedio; en el modelo sin ese impuesto actúan como impuesto de suma fija y suben lo mismo. Después quedan fijas, como si fueran jubilaciones comprometidas. El presupuesto tiene que cerrar cada trimestre moviendo una sola variable a la vez: el consumo público, la inversión pública o una de las alícuotas.",
+    "El experimento es un impulso-respuesta: desde el estado estacionario, la productividad sube 1% una sola vez y se siguen las variables durante 37 trimestres, el largo de la muestra. En el modelo sin impuesto al consumo, el producto sube entre 1,5% y 2% en el primer trimestre según el instrumento de ajuste, y vuelve cerca del estado estacionario en unos diez trimestres. La inversión sube entre 4% y 6% y vuelve rápido; el consumo sube poco, entre 0,17% y 0,45%, pero de forma más persistente. La renta del capital salta primero y desde el noveno trimestre queda por debajo de su valor de equilibrio: el capital acumulado se corrige lento, solo por depreciación, mientras su productividad se ajusta rápido. Con el trabajo pasa lo contrario: las horas se ajustan rápido y su productividad lento.",
+    "El orden de los instrumentos es la conclusión central. El producto fluctúa más cuando el presupuesto se cierra con el impuesto a la renta, y después con el impuesto al trabajo; en el modelo con impuesto al consumo el orden se invierte (primero trabajo, después renta). Fluctúa menos cuando se ajusta el consumo público, la inversión pública o el impuesto al stock de capital. El mecanismo pasa por las condiciones de óptimo: un shock positivo aumenta la recaudación; si el gobierno la devuelve bajando la alícuota del trabajo o de la renta, achica la cuña justo en la expansión y la amplifica, y la sube en la recesión. Si en cambio ajusta el gasto, las cuñas quedan quietas. Los autores lo resumen así: sin endeudamiento, el suavizamiento de impuestos tiene que venir de mover el consumo o la inversión públicos."
+   ]
+  },
+  {
+   "t": "Largo plazo: dónde aparece el efecto Laffer",
+   "p": [
+    "El último ejercicio compara estados estacionarios. Bajo la regla, cada alícuota se mueve de 0 a 1 y el consumo o la inversión públicos se ajustan para cerrar el presupuesto, y se mira qué pasa con la recaudación total y con la utilidad del hogar. Solo se informan los casos con efecto Laffer, en el modelo sin impuesto al consumo; el otro modelo se comporta parecido.",
+    "El efecto más fuerte aparece con el impuesto al stock de capital: con alícuotas por debajo de 10% la recaudación total ya empieza a caer, y el gasto público tiene que bajar con ella. Como el impuesto desalienta la acumulación de capital, la base se achica más rápido de lo que sube la tasa. Los autores lo vinculan con la literatura que concluye que gravar el capital es «una mala idea» (Atkeson, Chari y Kehoe, 1999). Con el impuesto al trabajo el máximo de recaudación aparece recién cerca de 0,8, un nivel difícil de ver en la realidad. En ambos casos subir la alícuota más allá de ese punto también baja la utilidad del hogar representativo.",
+    "En las reflexiones finales, Capello y Grión leen la Ley de Déficit Cero como el reconocimiento de que el gobierno argentino no supo usar la deuda con fines contracíclicos y que pesan mecanismos estratégicos que el modelo del gobierno benevolente no captura. Esperan que la regla aumente la amplitud de los ciclos, como en otros países, y proponen tres extensiones: mejores series (consumo durable, capital, horas), una economía abierta y un método de solución que funcione lejos del estado estacionario.",
+    "Lectura propia: el trabajo deja afuera el canal que en 2001 dominó la economía argentina, la deuda y el riesgo país, porque el gobierno del modelo no se endeuda ni enfrenta tasas que dependan de su solvencia. Además, la recomendación de ajustar el consumo público supone que su utilidad es casi nula (sustitución cercana a cero); si el gasto recortado en la recesión fuera valioso para los hogares, la comparación entre instrumentos cambiaría."
+   ]
+  }
+ ],
+ "claves": [
+  "La teoría del tax smoothing pide alícuotas constantes y déficits compensadores; la economía política explica por qué la deuda supera ese nivel y justifica reglas.",
+  "Las reglas de presupuesto balanceado tienen dos costos: amplifican el ciclo y, si se cumplen moviendo alícuotas, pueden generar indeterminación (Schmitt-Grohé y Uribe).",
+  "El modelo es un RBC cerrado y sin dinero con cinco impuestos, consumo e inversión públicos y capital público como insumo, calibrado para 1991.II-2000.II.",
+  "Replica bien la inversión y mal el consumo, el salario y la volatilidad del producto (4,23% simulado contra 2,88% observado).",
+  "Con la regla, ajustar el presupuesto con el impuesto a la renta o al trabajo es lo que más amplifica un shock de productividad; ajustar el gasto, lo que menos.",
+  "En el largo plazo, el impuesto al stock de capital muestra efecto Laffer con alícuotas menores a 10%; el del trabajo, recién cerca de 0,8."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según la teoría del tax smoothing (Barro, 1979), ¿qué hace un gobierno benevolente ante una recesión?",
+    "en": "Under tax smoothing theory (Barro, 1979), what does a benevolent government do in a recession?"
+   },
+   "op": {
+    "es": [
+     "Mantiene las alícuotas constantes y deja que aparezca un déficit",
+     "Sube las alícuotas para mantener el presupuesto equilibrado",
+     "Recorta el consumo público hasta equilibrar",
+     "Emite dinero para cubrir el faltante"
+    ],
+    "en": [
+     "Keeps tax rates constant and lets a deficit appear",
+     "Raises tax rates to keep the budget balanced",
+     "Cuts public consumption until the budget balances",
+     "Prints money to cover the gap"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Como los impuestos distorsionan y la pérdida de bienestar crece con la alícuota, conviene mantener las tasas constantes y usar déficits y superávits para amortiguar; una regla período a período es contraproducente en ese marco.",
+    "en": "Since taxes distort and welfare losses rise with the rate, it is better to keep rates constant and use deficits and surpluses as buffers; a period-by-period rule is counterproductive in that framework."
+   },
+   "id": "fisc-sost-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué encontraron Bayoumi y Eichengreen (1995) para los estados de Estados Unidos, según citan los autores?",
+    "en": "What did Bayoumi and Eichengreen (1995) find for US states, as cited by the authors?"
+   },
+   "op": {
+    "es": [
+     "Las reglas no cambiaron la respuesta fiscal al ciclo",
+     "Las reglas redujeron la sensibilidad sobre todo vía los impuestos",
+     "Las reglas aumentaron la deuda estatal",
+     "Las reglas redujeron alrededor de 40% la sensibilidad del balance fiscal al ciclo, sobre todo vía el gasto"
+    ],
+    "en": [
+     "Rules did not change the fiscal response to the cycle",
+     "Rules reduced sensitivity mainly through taxes",
+     "Rules raised state debt",
+     "Rules cut the cyclical sensitivity of the fiscal balance by about 40%, mostly through spending"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las restricciones redujeron cerca de 40% la sensibilidad del balance fiscal al ciclo, y alrededor del 90% de esa caída se debe a que el gasto público deja de moverse con el ciclo.",
+    "en": "The restrictions cut the fiscal balance's cyclical sensitivity by about 40%, and around 90% of that drop comes from public spending no longer moving with the cycle."
+   },
+   "id": "fisc-sost-02-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo sin regla, ¿qué papel cumplen las transferencias de suma fija?",
+    "en": "In the model without the rule, what role do lump-sum transfers play?"
+   },
+   "op": {
+    "es": [
+     "Son una variable exógena con shock propio",
+     "Financian solo la inversión pública",
+     "Cierran el presupuesto en cada período y hacen las veces de emisión o rescate de deuda",
+     "No existen"
+    ],
+    "en": [
+     "They are exogenous with their own shock",
+     "They finance only public investment",
+     "They close the budget each period and act like issuing or retiring debt",
+     "They do not exist"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Las transferencias se obtienen como residuo entre recaudación y gasto e incluyen el déficit; siguiendo a Barro (1974), cambiar transferencias de suma fija equivale a financiar con deuda.",
+    "en": "Transfers are the residual between revenue and spending and include the deficit; following Barro (1974), changing lump-sum transfers is equivalent to debt finance."
+   },
+   "id": "fisc-sost-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el modelo con impuesto al consumo da una correlación negativa entre producto y consumo?",
+    "en": "Why does the model with a consumption tax yield a negative output-consumption correlation?"
+   },
+   "op": {
+    "es": [
+     "Porque, con una alícuota alta, un shock positivo dispara la inversión y desplaza consumo en el impacto",
+     "Porque el consumo público sustituye al privado",
+     "Porque falta el dinero en el modelo",
+     "Porque el filtro de Hodrick-Prescott invierte el signo"
+    ],
+    "en": [
+     "Because, with a high rate, a positive shock makes investment surge and crowds out consumption on impact",
+     "Because public consumption substitutes for private consumption",
+     "Because money is missing from the model",
+     "Because the Hodrick-Prescott filter flips the sign"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los autores lo atribuyen al alto impuesto al consumo argentino (0,143): el salto de la productividad del capital eleva mucho la inversión y el consumo cae al principio; con una alícuota menor a 10% la correlación sale bien.",
+    "en": "The authors attribute it to Argentina's high consumption tax (0.143): the jump in capital productivity sharply raises investment and consumption falls at first; with a rate below 10% the correlation comes out right."
+   },
+   "id": "fisc-sost-02-q4"
+  },
+  {
+   "q": {
+    "es": "Bajo la regla, en el modelo sin impuesto al consumo, ¿con qué instrumento de ajuste fluctúa más el producto ante un shock de productividad?",
+    "en": "Under the rule, in the model without a consumption tax, which adjustment instrument makes output fluctuate most after a productivity shock?"
+   },
+   "op": {
+    "es": [
+     "El consumo público",
+     "La inversión pública",
+     "El impuesto a la renta",
+     "El impuesto al stock de capital"
+    ],
+    "en": [
+     "Public consumption",
+     "Public investment",
+     "The income tax",
+     "The capital stock tax"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La mayor volatilidad aparece cuando la variable endógena es el impuesto al ingreso, seguido del impuesto al trabajo; consumo público, inversión pública e impuesto al capital estabilizan más rápido.",
+    "en": "Volatility is highest when the endogenous variable is the income tax, followed by the labour tax; public consumption, public investment and the capital tax stabilize faster."
+   },
+   "id": "fisc-sost-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué ajustar una alícuota al trabajo o a la renta amplifica el ciclo bajo la regla?",
+    "en": "Why does adjusting a labour or income tax rate amplify the cycle under the rule?"
+   },
+   "op": {
+    "es": [
+     "Porque aumenta la deuda pública",
+     "Porque el gobierno deja de invertir",
+     "Porque el capital público se deprecia más rápido",
+     "Porque la recaudación sube en la expansión y, para equilibrar, la alícuota baja justo entonces, achicando la cuña cuando la economía ya crece"
+    ],
+    "en": [
+     "Because it raises public debt",
+     "Because the government stops investing",
+     "Because public capital depreciates faster",
+     "Because revenue rises in the boom and, to balance, the rate falls exactly then, shrinking the wedge as the economy already grows"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Es lectura propia del mecanismo, a partir de las condiciones de óptimo: la alícuota se mueve con el ciclo y refuerza el incentivo a trabajar o invertir en la expansión y lo debilita en la recesión; ajustar el gasto deja quietas las cuñas.",
+    "en": "This is our own reading of the mechanism, based on the optimality conditions: the rate moves with the cycle and strengthens the incentive to work or invest in booms and weakens it in recessions; adjusting spending leaves the wedges unchanged."
+   },
+   "id": "fisc-sost-02-q6"
+  },
+  {
+   "q": {
+    "es": "En la respuesta a un shock de productividad de 1%, ¿qué pasa con la renta del capital a partir del noveno trimestre?",
+    "en": "In the response to a 1% productivity shock, what happens to the return on capital from the ninth quarter on?"
+   },
+   "op": {
+    "es": [
+     "Sigue por encima de su estado estacionario",
+     "Se vuelve cero",
+     "Queda por debajo, porque el capital acumulado se corrige lento mientras su productividad se ajusta rápido",
+     "Oscila sin converger"
+    ],
+    "en": [
+     "It stays above steady state",
+     "It becomes zero",
+     "It falls below, because accumulated capital adjusts slowly while its productivity adjusts fast",
+     "It oscillates without converging"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El exceso de capital solo se corrige por depreciación, así que sigue alto cuando el producto ya volvió, y su rentabilidad queda por debajo del equilibrio.",
+    "en": "Excess capital is corrected only through depreciation, so it remains high after output has returned, and its return falls below equilibrium."
+   },
+   "id": "fisc-sost-02-q7"
+  },
+  {
+   "q": {
+    "es": "En el ejercicio de largo plazo, ¿dónde aparece el efecto Laffer más notorio?",
+    "en": "In the long-run exercise, where does the strongest Laffer effect appear?"
+   },
+   "op": {
+    "es": [
+     "En el impuesto al trabajo, con alícuotas cercanas a 0,1",
+     "En el impuesto al consumo, con alícuotas cercanas a 0,5",
+     "No aparece en ningún impuesto",
+     "En el impuesto al stock de capital, con alícuotas menores a 10%"
+    ],
+    "en": [
+     "In the labour tax, at rates near 0.1",
+     "In the consumption tax, at rates near 0.5",
+     "It appears in no tax",
+     "In the capital stock tax, at rates below 10%"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con alícuotas al capital por debajo de 10% la recaudación total ya empieza a caer, porque se desalienta la acumulación; en el trabajo el máximo aparece recién cerca de 0,8.",
+    "en": "With capital tax rates below 10% total revenue already starts falling, because accumulation is discouraged; for labour the peak comes only near 0.8."
+   },
+   "id": "fisc-sost-02-q8"
+  }
+ ],
+ "palabras": 2374,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "Si un gobierno no puede endeudarse y debe equilibrar el presupuesto cada período, ¿qué variable conviene ajustar para no amplificar el ciclo?",
+    "en": "If a government cannot borrow and must balance its budget every period, which variable should adjust to avoid amplifying the cycle?"
+   },
+   "a": {
+    "es": "El gasto público, preferentemente el consumo público, y no las alícuotas de los impuestos distorsivos: el suavizamiento de impuestos debe venir de mover el gasto. Capello y Grión (2001).",
+    "en": "Public spending, preferably public consumption, not distortionary tax rates: tax smoothing should come from moving spending. Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice la teoría del tax smoothing sobre déficits y alícuotas?",
+    "en": "What does tax smoothing theory say about deficits and tax rates?"
+   },
+   "a": {
+    "es": "Que un planificador benevolente mantiene constantes las alícuotas y usa déficits y superávits para absorber el ciclo, porque la pérdida por distorsión crece más que proporcionalmente con la tasa. Barro (1979), según Capello y Grión (2001).",
+    "en": "That a benevolent planner keeps rates constant and uses deficits and surpluses to absorb the cycle, since distortion losses rise more than proportionally with the rate. Barro (1979), as presented by Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t2"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cuáles son los dos costos principales de una regla de presupuesto balanceado?",
+    "en": "What are the two main costs of a balanced budget rule?"
+   },
+   "a": {
+    "es": "Amplifica el ciclo al forzar ajustes procíclicos (King, Plosser y Rebelo; Bayoumi y Eichengreen) y, si se cumple moviendo alícuotas, puede generar fluctuaciones sin shocks fundamentales (Schmitt-Grohé y Uribe). Capello y Grión (2001).",
+    "en": "It amplifies the cycle by forcing procyclical adjustments (King, Plosser and Rebelo; Bayoumi and Eichengreen) and, if met by moving tax rates, can generate fluctuations without fundamental shocks (Schmitt-Grohé and Uribe). Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t3"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se incorpora la inversión pública en un modelo de ciclo real con gobierno?",
+    "en": "How is public investment built into a real business cycle model with government?"
+   },
+   "a": {
+    "es": "Como un stock de capital público que entra como tercer insumo en la función de producción Cobb-Douglas de las firmas, con una elasticidad calibrada igual a la razón inversión pública sobre producto (0,019 para la Argentina de los noventa). Capello y Grión (2001), siguiendo a Baxter y King (1993).",
+    "en": "As a public capital stock entering firms' Cobb-Douglas production function as a third input, with an elasticity calibrated to the public investment to output ratio (0.019 for 1990s Argentina). Capello and Grión (2001), following Baxter and King (1993)."
+   },
+   "id": "fisc-sost-02-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tan bien replica un RBC con gobierno el ciclo argentino de la Convertibilidad?",
+    "en": "How well does an RBC model with government replicate Argentina's Convertibility cycle?"
+   },
+   "a": {
+    "es": "Parcialmente: acierta en la inversión (volatilidad relativa 3,28 contra 3,27) pero exagera la volatilidad del producto (4,23% contra 2,88%) y subestima la del consumo y el salario. Capello y Grión (2001).",
+    "en": "Partially: it gets investment right (relative volatility 3.28 vs 3.27) but overstates output volatility (4.23% vs 2.88%) and understates that of consumption and wages. Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿A partir de qué alícuota aparece el efecto Laffer en un impuesto al stock de capital?",
+    "en": "At what rate does the Laffer effect appear for a tax on the capital stock?"
+   },
+   "a": {
+    "es": "Con alícuotas menores a 10% la recaudación total ya empieza a caer, porque el impuesto frena la acumulación de capital; en el impuesto al trabajo el máximo aparece cerca de 0,8. Capello y Grión (2001).",
+    "en": "At rates below 10% total revenue already starts to fall, because the tax slows capital accumulation; for the labour tax the peak is near 0.8. Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo se pasó en la Argentina de una ley de reducción gradual del déficit a la Ley de Déficit Cero?",
+    "en": "How did Argentina move from a gradual deficit reduction law to the Zero Deficit Law?"
+   },
+   "a": {
+    "es": "La ley de 1999 fijaba eliminar el déficit en 2003; en 2000 se estiró a 2005; en 2001, sin acceso al crédito voluntario, el equilibrio pasó a ser obligado. Capello y Grión (2001).",
+    "en": "The 1999 law set eliminating the deficit by 2003; in 2000 it was pushed to 2005; in 2001, without access to voluntary credit, balance became forced. Capello and Grión (2001)."
+   },
+   "id": "fisc-sost-02-t7"
+  }
+ ]
+}

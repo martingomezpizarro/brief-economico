@@ -1,0 +1,366 @@
+{
+ "id": "fisc-ecopol-02",
+ "cat": "fisc-ecopol",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "Si el problema está en la política: diez situaciones en que los incentivos fallan",
+ "bajada": "Capello parte de un político que maximiza votos y pregunta cuándo ese cálculo deja de coincidir con el bien común: cuando costos o beneficios no se ven, se concentran en pocos, caen en otra jurisdicción o llegan después de la elección.",
+ "fuentes": [
+  1174
+ ],
+ "cita": "M. Capello (2002), «Si el problema está en la política, ¿por qué no apuntar a sus incentivos?», Cóctel de i-deas, IERAL de Fundación Mediterránea, octubre de 2002",
+ "intro": "Escrita en octubre de 2002, en plena crisis, esta nota de Marcelo Capello para el IERAL de Fundación Mediterránea parte de un diagnóstico extendido, que los problemas de la economía argentina nacen en la política, y le reprocha a ese diagnóstico no venir acompañado de propuestas. Capello adopta el supuesto de la teoría de las decisiones colectivas: el político busca votos, no el bienestar general. Eso no es un problema si los votantes ven todos los costos y beneficios de cada decisión y se los atribuyen a quien la tomó, porque entonces las elecciones alinean el interés del político con el bien común. La nota clasifica en cinco problemas, con dos casos cada uno, las situaciones en que esa alineación se rompe, y para varias propone remedios institucionales.",
+ "secciones": [
+  {
+   "t": "El cálculo político y cuándo funciona",
+   "p": [
+    "Para Capello, una visión realista de la política acepta que las decisiones públicas se toman con un análisis de beneficio y costo, pero medidos en votos: el beneficio son los votos que se espera ganar, el costo los que se espera perder en la próxima elección. La versión ideal dice que el político persigue el bienestar general; la realista, que busca la mayor cantidad de votos para llegar al poder o quedarse, porque ese es su trabajo. Las propuestas se dirigen al votante mediano.",
+    "Ese supuesto no condena al sistema. Si los votantes eligen según el beneficio que esperan de cada propuesta, el político tiene que ofrecer lo que la mayoría quiere, y el egoísmo de ambas partes termina en algo parecido al bien común: Capello lo compara con la mano invisible de Adam Smith trasladada al mercado político. Las condiciones son dos: que los efectos de la decisión sean del todo visibles y que quien la toma cargue tanto con su beneficio como con su costo político. Así, las elecciones y las encuestas funcionan como un sistema de premios y castigos.",
+    "La nota señala una divergencia que explica buena parte de la desconfianza entre economía y política. Ante un aumento del gasto, el beneficio político son los votos de los beneficiarios y el costo, el malestar de quienes pagan los impuestos. Lo que para el economista es un costo, más gasto, para el político puede ser un beneficio. De ahí las tensiones entre las alas política y económica de un mismo gobierno."
+   ]
+  },
+  {
+   "t": "Racionalidad y visibilidad",
+   "p": [
+    "Los primeros problemas son de racionalidad. El político irracional, que toma sistemáticamente decisiones que le cuestan más votos de los que le dan, se descarta: no ganaría ni duraría. El votante irracional es más relevante: el que no elige por los beneficios esperados de las propuestas ni por la gestión pasada, sino por otros factores, como el «voto cautivo» de quienes votan siempre igual, no necesariamente por ideología. Para esto Capello no ve muchas soluciones además del aprendizaje democrático y la educación.",
+    "Los problemas de visibilidad aparecen cuando el votante no advierte o no mide los costos o beneficios. Con costos poco visibles se votan cantidades exageradas de la política: el caso típico es más gasto financiado con impuestos escondidos en los precios, como el IVA o Ingresos Brutos, una forma de ilusión fiscal. El remedio es hacer visibles los costos: apoyarse más en impuestos directos (Ganancias, Bienes Personales, Propiedad) o en indirectos que el consumidor vea; por eso el IVA o un impuesto a las ventas finales es preferible a Ingresos Brutos, que no aparece en la factura. Con beneficios poco visibles ocurre lo contrario, hay suboferta: cloacas o prevención en salud. Para todo este grupo, Capello pone una condición previa: reglar la publicidad de los actos de gobierno y garantizar el acceso a la información pública."
+   ]
+  },
+  {
+   "t": "Cantidad e intensidad de los afectados",
+   "p": [
+    "Como se vota sí o no a un candidato y no se puede votar «mucho» o «poco», importa cuántos ganan y cuánto gana cada uno. Siguiendo la lógica de la acción colectiva de Mancur Olson, solo los muy afectados tienen incentivo a organizarse y presionar.",
+    "Primer caso: pocos beneficiados en mucho y muchos perjudicados en poco. Los primeros son votos casi seguros y los segundos difícilmente cambien su voto, así que estas políticas proliferan. El ejemplo es un fondo para un sector bien definido financiado con un pequeño aumento de un impuesto de base amplia, como el Fondo del Tabaco; otros son la contratación de empleados públicos o los planes de vivienda. Segundo caso: muchos beneficiados en poco y pocos perjudicados en mucho. Estas políticas casi nunca salen, por la oposición de los perjudicados y la indiferencia de los beneficiados: bajar aranceles a un sector o regular a empresas contaminantes."
+   ]
+  },
+  {
+   "t": "El espacio: beneficios propios, costos ajenos",
+   "p": [
+    "En un país federal deciden a la vez el gobierno nacional, las provincias y los municipios. Si una decisión da beneficios políticos en una jurisdicción y costos en otra, la primera vota y provee demasiado de esa política. El ejemplo de Capello es la coparticipación federal: el gasto excesivo de algunas provincias lo pagan contribuyentes de otras. El remedio es que cada jurisdicción solo pueda gastar más si recauda más de sus propios contribuyentes, para que internalice el costo político.",
+    "El caso inverso son los costos propios con beneficios ajenos, como un hospital de alta complejidad de una jurisdicción que también usan los vecinos de otra: la primera lo valora menos de lo que vale socialmente. Las salidas son que lo opere un nivel superior de gobierno o que la otra jurisdicción pague por el uso."
+   ]
+  },
+  {
+   "t": "El tiempo: el caso preferido de los populismos",
+   "p": [
+    "El costo y el beneficio de una decisión rara vez llegan juntos. El problema es que el político tiene certeza de permanecer solo cuatro años, así que el premio o el castigo pueden llegar cuando ya no está, y se rompe el vínculo que las elecciones deberían crear.",
+    "Con beneficios rápidos y costos diferidos se toman demasiadas decisiones de ese tipo. Para Capello es la situación preferida por los políticos oportunistas, porque «en materia económica el tiempo es el mejor aliado de los populismos». Los ejemplos son gasto financiado con deuda de mediano o largo plazo, bajas de impuestos con deuda, usar el ahorro previsional que debería pagar jubilaciones futuras, controlar precios incubando aumentos mayores, incumplir contratos y aprobar moratorias impositivas. La nota asocia la mayoría de las peores calamidades de la historia económica argentina con estos incentivos. Los remedios propuestos son límites legales o constitucionales al déficit y la deuda, tratamientos legales especiales para las decisiones previsionales y un Banco Central independiente.",
+    "Una nota al pie lleva el argumento más lejos: si un gasto insostenible va a existir de todos modos, sería preferible financiarlo con emisión antes que con deuda, porque la inflación la pagan, en general, las mismas autoridades que generan el problema, y es menos probable que todo termine en una hiperinflación. Capello recuerda que los mayores shocks inflacionarios argentinos fueron precedidos por fuertes aumentos del endeudamiento.",
+    "El caso inverso, costos rápidos y beneficios diferidos, describe reformas educativas e impositivas: pocos quieren implementarlas y no hay soluciones obvias."
+   ]
+  },
+  {
+   "t": "Problemas combinados y conclusiones",
+   "p": [
+    "Las decisiones más peligrosas combinan problemas. El traspaso de cajas previsionales provinciales a la Nación junta tiempo y espacio: antes del traspaso, las provincias tienen incentivo a jubilar masivamente a sus empleados, a veces con corrupción, porque el costo lo pagarán otras jurisdicciones y otras generaciones.",
+    "Entre las diez situaciones, Capello destaca la preferencia por políticas cuyos costos recaen sobre electorados de otras jurisdicciones o de generaciones futuras. Admite que también deben mejorar las instituciones encargadas de hacer cumplir las nuevas reglas, y cierra con Ortega y Gasset, «Argentinos, a las cosas»: en lugar de esperar a un nuevo profeta, construir mecanismos que encaucen los incentivos. Si la conciencia sobre esas soluciones se masifica, algún dirigente que quiera ser electo las propondrá.",
+    "Lectura propia: la taxonomía es un buen mapa de la literatura de elección pública (ilusión fiscal, Olson, federalismo fiscal, ciclo político e inconsistencia temporal), aunque la nota no la formaliza ni la contrasta con datos. Las reglas que propone para el problema del tiempo son las que analizan Capello y Grión en su modelo de presupuesto balanceado (fisc-sost-02), que muestra su costo: si se cumplen moviendo alícuotas, amplifican el ciclo. La nota de emisión antes que deuda es discutible: supone que la inflación tiene un costo político rápido y visible, pero el impuesto inflacionario es justamente uno de los menos visibles para el votante, el caso B.1 de la propia taxonomía."
+   ]
+  }
+ ],
+ "claves": [
+  "Supuesto: el político maximiza votos; eso basta para el bien común si los efectos son visibles y quien decide carga con beneficios y costos.",
+  "Racionalidad: el votante cautivo rompe el mecanismo; solo lo corrigen el aprendizaje democrático y la educación.",
+  "Visibilidad: costos ocultos (impuestos en los precios) llevan a sobreoferta; beneficios ocultos (cloacas, prevención), a suboferta.",
+  "Cantidad e intensidad: lo que beneficia mucho a pocos y cuesta poco a muchos prolifera; lo inverso casi no se hace (Olson).",
+  "Espacio: la coparticipación deja gastar a una provincia con impuestos de otras; el remedio es la correspondencia fiscal.",
+  "Tiempo: beneficios rápidos y costos diferidos son el terreno del populismo; remedios: límites a déficit y deuda, reglas previsionales, Banco Central independiente."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Capello, ¿cuándo un político que maximiza votos produce decisiones eficientes?",
+    "en": "According to Capello, when does a vote-maximizing politician produce efficient decisions?"
+   },
+   "op": {
+    "es": [
+     "Nunca, porque su objetivo es distinto del bien común",
+     "Cuando hay un solo nivel de gobierno",
+     "Cuando el Banco Central es independiente",
+     "Cuando los efectos son visibles y quien decide carga con el beneficio y el costo político"
+    ],
+    "en": [
+     "Never, because his goal differs from the common good",
+     "When there is a single level of government",
+     "When the central bank is independent",
+     "When effects are visible and the decision maker bears both political benefit and cost"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con esas dos condiciones, las elecciones funcionan como premios y castigos que alinean los incentivos individuales con el bienestar general, como una mano invisible del mercado político.",
+    "en": "Under those two conditions, elections work as rewards and punishments aligning individual incentives with general welfare, like an invisible hand in the political market."
+   },
+   "id": "fisc-ecopol-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué ejemplo da Capello de costos poco visibles?",
+    "en": "What example of low-visibility costs does Capello give?"
+   },
+   "op": {
+    "es": [
+     "El gasto financiado con impuestos incluidos en los precios, como IVA o Ingresos Brutos",
+     "Las obras de cloacas",
+     "La regulación ambiental",
+     "Las reformas educativas"
+    ],
+    "en": [
+     "Spending financed with taxes embedded in prices, such as VAT or turnover tax",
+     "Sewer works",
+     "Environmental regulation",
+     "Education reforms"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Los impuestos escondidos en los precios hacen que el votante subestime el costo y vote cantidades exageradas de gasto; es un caso de ilusión fiscal.",
+    "en": "Taxes hidden in prices lead voters to underestimate the cost and vote for excessive spending; it is a case of fiscal illusion."
+   },
+   "id": "fisc-ecopol-02-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Capello prefiere el IVA o un impuesto a las ventas finales a Ingresos Brutos?",
+    "en": "Why does Capello prefer VAT or a final sales tax to the turnover tax?"
+   },
+   "op": {
+    "es": [
+     "Porque recaudan más",
+     "Porque no distorsionan",
+     "Porque son más visibles para el consumidor: Ingresos Brutos no figura en la factura",
+     "Porque son provinciales"
+    ],
+    "en": [
+     "Because they raise more",
+     "Because they do not distort",
+     "Because they are more visible to consumers: turnover tax does not appear on the invoice",
+     "Because they are provincial"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El criterio es la visibilidad: entre los indirectos, son preferibles los que el consumidor final ve, para que perciba el costo de lo que vota.",
+    "en": "The criterion is visibility: among indirect taxes, those the final consumer sees are preferable, so voters perceive the cost of what they vote for."
+   },
+   "id": "fisc-ecopol-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de política suele proliferar por la asimetría en cantidad e intensidad de afectados?",
+    "en": "Which kind of policy tends to proliferate because of asymmetry in the number and intensity of those affected?"
+   },
+   "op": {
+    "es": [
+     "Bajar aranceles a un sector",
+     "Un fondo para un sector definido financiado con un pequeño aumento de un impuesto de base amplia",
+     "Regular empresas contaminantes",
+     "Reformas impositivas"
+    ],
+    "en": [
+     "Cutting tariffs for a sector",
+     "A fund for a defined sector financed with a small rise in a broad-based tax",
+     "Regulating polluting firms",
+     "Tax reforms"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Pocos beneficiados en mucho son votos casi seguros y muchos perjudicados en poco no cambian su voto, como en el Fondo del Tabaco; las otras opciones son el caso inverso o un problema de tiempo.",
+    "en": "A few who gain a lot are near-certain votes and many who lose a little do not switch, as with the Tobacco Fund; the other options are the reverse case or a timing problem."
+   },
+   "id": "fisc-ecopol-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué remedio propone Capello para el problema de beneficios propios y costos ajenos en la coparticipación?",
+    "en": "What remedy does Capello propose for the own-benefits, others'-costs problem in revenue sharing?"
+   },
+   "op": {
+    "es": [
+     "Aumentar la coparticipación",
+     "Financiar las provincias con emisión",
+     "Centralizar todo el gasto",
+     "Que cada jurisdicción solo pueda gastar más si recauda más de sus propios contribuyentes"
+    ],
+    "en": [
+     "Raise revenue sharing",
+     "Finance provinces with money printing",
+     "Centralize all spending",
+     "Let each jurisdiction spend more only if it raises more from its own taxpayers"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Así cada jurisdicción internaliza el costo político de su gasto, en lugar de trasladarlo a contribuyentes de otras.",
+    "en": "That way each jurisdiction internalizes the political cost of its spending instead of shifting it to taxpayers elsewhere."
+   },
+   "id": "fisc-ecopol-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el tiempo rompe el vínculo entre decisiones y premios electorales?",
+    "en": "Why does time break the link between decisions and electoral rewards?"
+   },
+   "op": {
+    "es": [
+     "Porque el político tiene certeza de permanecer solo cuatro años y costos o beneficios pueden llegar cuando ya no está",
+     "Porque los votantes olvidan rápido",
+     "Porque las elecciones son cada dos años",
+     "Porque las encuestas no miden costos"
+    ],
+    "en": [
+     "Because the politician is only sure of four years in office and costs or benefits may arrive after he leaves",
+     "Because voters forget quickly",
+     "Because elections are every two years",
+     "Because polls do not measure costs"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El desfase entre beneficio y costo no es el problema en sí; lo es que puedan caer fuera del mandato de quien decidió.",
+    "en": "The lag between benefit and cost is not the problem itself; the problem is that they may fall outside the decision maker's term."
+   },
+   "id": "fisc-ecopol-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué remedios institucionales sugiere Capello para los beneficios rápidos con costos diferidos?",
+    "en": "What institutional remedies does Capello suggest for quick benefits with deferred costs?"
+   },
+   "op": {
+    "es": [
+     "Más coparticipación y menos impuestos directos",
+     "Moratorias impositivas periódicas",
+     "Límites al déficit y la deuda, reglas especiales para lo previsional y un Banco Central independiente",
+     "Controles de precios"
+    ],
+    "en": [
+     "More revenue sharing and fewer direct taxes",
+     "Periodic tax amnesties",
+     "Limits on deficits and debt, special rules for pensions and an independent central bank",
+     "Price controls"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Esas reglas atan las decisiones con costo diferido; moratorias y controles de precios son, para Capello, ejemplos del problema, no del remedio.",
+    "en": "Those rules constrain decisions with deferred costs; amnesties and price controls are, for Capello, examples of the problem, not the remedy."
+   },
+   "id": "fisc-ecopol-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el traspaso de cajas previsionales provinciales a la Nación combina dos problemas?",
+    "en": "Why does transferring provincial pension funds to the nation combine two problems?"
+   },
+   "op": {
+    "es": [
+     "Combina visibilidad y racionalidad",
+     "Combina tiempo y espacio: antes del traspaso conviene jubilar masivamente porque el costo lo pagan otras jurisdicciones y otras generaciones",
+     "Combina cantidad y visibilidad",
+     "No combina problemas"
+    ],
+    "en": [
+     "It combines visibility and rationality",
+     "It combines time and space: before the transfer it pays to retire staff massively since others and future generations pay",
+     "It combines number and visibility",
+     "It combines no problems"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El costo previsional es diferido (tiempo) y además lo asume otra jurisdicción (espacio), lo que da un incentivo fuerte a jubilar masivamente antes del traspaso.",
+    "en": "The pension cost is deferred (time) and borne by another jurisdiction (space), giving a strong incentive to retire staff massively before the transfer."
+   },
+   "id": "fisc-ecopol-02-q8"
+  }
+ ],
+ "palabras": 1369,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Bajo qué condiciones la búsqueda de votos de los políticos conduce al bien común?",
+    "en": "Under what conditions does politicians' vote seeking lead to the common good?"
+   },
+   "a": {
+    "es": "Cuando los votantes ven todos los costos y beneficios de una decisión y se los atribuyen a quien la tomó: entonces las elecciones operan como premios y castigos, una mano invisible del mercado político. Capello (2002).",
+    "en": "When voters see all the costs and benefits of a decision and attribute them to whoever took it: elections then act as rewards and punishments, an invisible hand of the political market. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la ilusión fiscal por costos poco visibles y cómo se corrige?",
+    "en": "What is fiscal illusion from low-visibility costs and how is it corrected?"
+   },
+   "a": {
+    "es": "Es votar más gasto del debido porque se financia con impuestos escondidos en los precios; se corrige apoyando la recaudación en impuestos directos o en indirectos visibles para el consumidor. Capello (2002).",
+    "en": "It is voting for too much spending because it is financed by taxes hidden in prices; it is corrected by relying on direct taxes or on indirect taxes visible to consumers. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué prosperan las políticas que benefician mucho a pocos y cuestan poco a muchos?",
+    "en": "Why do policies that benefit a few a lot and cost many a little thrive?"
+   },
+   "a": {
+    "es": "Porque solo los muy afectados se organizan (Olson) y el voto es por sí o por no: los beneficiados son votos seguros y los perjudicados no cambian su voto por un costo pequeño. Capello (2002).",
+    "en": "Because only those heavily affected organize (Olson) and votes are yes or no: winners are safe votes and losers do not switch over a small cost. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t3"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué problema de incentivos genera la coparticipación federal de impuestos?",
+    "en": "What incentive problem does federal tax revenue sharing create?"
+   },
+   "a": {
+    "es": "Beneficios propios y costos ajenos: una provincia gasta de más porque lo pagan contribuyentes de otras; el remedio es que solo pueda gastar más si recauda más de los suyos. Capello (2002).",
+    "en": "Own benefits and others' costs: a province overspends because taxpayers elsewhere pay; the remedy is that it can spend more only if it raises more from its own. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el tiempo es «el mejor aliado de los populismos» en política económica?",
+    "en": "Why is time \"the best ally of populism\" in economic policy?"
+   },
+   "a": {
+    "es": "Porque el político tiene certeza de solo cuatro años y puede elegir decisiones de beneficio rápido y costo diferido (deuda, uso del ahorro previsional, controles de precios, moratorias) cuyo costo llega cuando ya no gobierna. Capello (2002).",
+    "en": "Because the politician is sure of only four years and can choose quick-benefit, deferred-cost decisions (debt, using pension savings, price controls, tax amnesties) whose cost arrives after he leaves. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t5"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Por qué, según Capello, un gasto insostenible sería preferible financiarlo con emisión antes que con deuda?",
+    "en": "Why, according to Capello, would unsustainable spending be better financed by money than by debt?"
+   },
+   "a": {
+    "es": "Porque con emisión el costo político lo paga en general la misma autoridad que creó el problema, y es menos probable una hiperinflación; los mayores shocks inflacionarios argentinos siguieron a fuertes aumentos de deuda. Capello (2002). Lectura propia: el impuesto inflacionario es poco visible, lo que debilita el argumento.",
+    "en": "Because with money the political cost usually falls on the same authority that created the problem, and hyperinflation is less likely; Argentina's largest inflation shocks followed big debt increases. Capello (2002). Our own reading: the inflation tax is not very visible, which weakens the argument."
+   },
+   "id": "fisc-ecopol-02-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué casi nadie impulsa reformas educativas o impositivas?",
+    "en": "Why does almost no one push education or tax reforms?"
+   },
+   "a": {
+    "es": "Porque tienen costos políticos rápidos y beneficios que llegan años después, quizá cuando quien las hizo ya no gobierna; Capello no ve soluciones obvias para este caso. Capello (2002).",
+    "en": "Because they have quick political costs and benefits that arrive years later, perhaps after their author has left office; Capello sees no obvious solution. Capello (2002)."
+   },
+   "id": "fisc-ecopol-02-t7"
+  }
+ ]
+}
