@@ -1,0 +1,544 @@
+{
+ "id": "fisc-dist-11",
+ "cat": "fisc-dist",
+ "orden": 6,
+ "minutos": 15,
+ "titulo": "Incidencia distributiva del gasto social y de los impuestos en la Argentina",
+ "bajada": "Cómo se asignan gastos e impuestos por estrato, qué miden los índices de Reynolds-Smolensky y de Kakwani, y por qué el presupuesto argentino de 1986-1997 bajaba el Gini entre 7,5 y 9 puntos sin cambiar su tendencia, según Gasparini.",
+ "fuentes": [
+  1155
+ ],
+ "cita": "Leonardo C. Gasparini (1999), «Incidencia distributiva del gasto público social y de la política tributaria en la Argentina», cap. V.1 de un volumen de FIEL sobre distribución del ingreso",
+ "intro": "Gasparini reúne los estudios de incidencia disponibles en la Argentina para estimar cuánto cambiaba la política fiscal la distribución del ingreso entre 1986 y 1997. No genera datos nuevos: toma la estructura de beneficiarios del gasto social de Flood et al. (1994), basada en la Encuesta Permanente de Hogares de 1992, y la incidencia de los impuestos de Gasparini (1998), basada en la encuesta de gastos de 1996-1997, y las proyecta sobre el presupuesto de cada año. Primero presenta el marco contable de la incidencia tradicional y los índices de Reynolds-Smolensky y de Kakwani; después analiza el gasto social, luego los impuestos y al final los combina. La conclusión es doble: el presupuesto reduce mucho la desigualdad en cada año, unos 7,5 a 9 puntos de Gini, pero no altera su patrón de evolución, y para lograr un impacto bastante mayor harían falta cambios estructurales profundos, no ajustes marginales.",
+ "secciones": [
+  {
+   "t": "Qué mide un estudio de incidencia y qué deja afuera",
+   "p": [
+    "La intervención estatal cambia el ingreso real de las personas y genera ganadores y perdedores. Un estudio de incidencia fiscal busca estimar cómo se reparten los beneficios del gasto y la carga de su financiamiento entre los estratos de la población. Lo ideal sería comparar el bienestar de cada persona hoy con el de un mundo contrafáctico sin Estado, pero ese ejercicio de estática comparativa es, en palabras del autor, de «formidables dificultades», y la literatura se conforma con algo más modesto.",
+    "En el lado del gasto, el método típico (benefit incidence analysis) reparte lo que cuesta cada programa según cuánto lo usa cada estrato. Si un programa gratuito de vacunación infantil cuesta cierto monto, el beneficio del primer quintil es ese costo multiplicado por la proporción de niños vacunados que viven en hogares de ese quintil. En el lado de los impuestos, se imputa la recaudación de cada tributo con un supuesto de incidencia: por ejemplo, que un impuesto a las ventas finales de un bien recae solo sobre quienes lo consumen, de modo que la carga de un estrato es la recaudación por su participación en el consumo del bien.",
+    "Hay dos limitaciones que conviene tener presentes desde el principio. La primera es que el trabajo integra estudios hechos con objetivos, fuentes y métodos distintos, y lo dice: gana una visión de conjunto a costa de rigor. La segunda es que solo considera el gasto social, porque para defensa, justicia o administración general no hay ni principios claros ni datos para identificar a los beneficiarios. Como el gasto social probablemente es más propobre que el resto, los resultados sobrestiman el impacto redistributivo total del Estado."
+   ]
+  },
+  {
+   "t": "El ingreso después del Estado: la contabilidad matricial",
+   "eq": [
+    "y^c = y^s + g - t",
+    "g = A_g \\cdot e",
+    "t = A_t \\cdot r"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(y^c\\): vector de ingresos con intervención fiscal, uno por individuo, hogar o estrato (dimensión N×1).",
+      "en": "\\(y^c\\): vector of incomes with fiscal intervention, one per individual, household or stratum (dimension N×1)."
+     },
+     {
+      "es": "\\(y^s\\): vector de ingresos sin intervención fiscal (N×1).",
+      "en": "\\(y^s\\): vector of incomes without fiscal intervention (N×1)."
+     },
+     {
+      "es": "\\(g\\): vector de gastos públicos asignados a cada individuo (N×1), en pesos.",
+      "en": "\\(g\\): vector of public spending assigned to each individual (N×1), in pesos."
+     },
+     {
+      "es": "\\(t\\): vector de la carga de las fuentes de financiamiento que soporta cada individuo (N×1).",
+      "en": "\\(t\\): vector of the burden of financing sources borne by each individual (N×1)."
+     },
+     {
+      "es": "\\(N\\): número de individuos, hogares o estratos de la economía.",
+      "en": "\\(N\\): number of individuals, households or strata in the economy."
+     }
+    ],
+    [
+     {
+      "es": "\\(e\\): vector de erogaciones por programa (dimensión P×1); sale de las estadísticas oficiales de gasto por finalidad.",
+      "en": "\\(e\\): vector of outlays by programme (dimension P×1); it comes from official statistics of spending by function."
+     },
+     {
+      "es": "\\(P\\): número de programas públicos.",
+      "en": "\\(P\\): number of public programmes."
+     },
+     {
+      "es": "\\(A_g\\): matriz N×P de asignación del gasto: cada columna dice qué fracción de un programa usa cada individuo; se estima con encuestas de hogares que preguntan por el uso de programas.",
+      "en": "\\(A_g\\): N×P spending allocation matrix: each column says what fraction of a programme each individual uses; it is estimated from household surveys that ask about programme use."
+     },
+     {
+      "es": "\\(\\cdot\\): producto de matriz por vector.",
+      "en": "\\(\\cdot\\): matrix-vector product."
+     }
+    ],
+    [
+     {
+      "es": "\\(r\\): vector de recaudación de cada impuesto o fuente alternativa de financiamiento (dimensión F×1).",
+      "en": "\\(r\\): vector of revenue from each tax or alternative financing source (dimension F×1)."
+     },
+     {
+      "es": "\\(F\\): número de fuentes de financiamiento.",
+      "en": "\\(F\\): number of financing sources."
+     },
+     {
+      "es": "\\(A_t\\): matriz N×F de asignación de impuestos, construida con supuestos de incidencia, encuestas de hogares y declaraciones juradas.",
+      "en": "\\(A_t\\): N×F tax allocation matrix, built from incidence assumptions, household surveys and tax returns."
+     }
+    ]
+   ],
+   "p": [
+    "Todo el análisis descansa en una identidad contable: el ingreso después del Estado es el ingreso antes del Estado más el gasto que se le imputa a cada persona menos los impuestos que se le imputan. Las dos matrices de asignación son las que hacen el trabajo: la del gasto se estima con datos de uso de programas y la de impuestos con supuestos sobre quién paga en definitiva cada tributo.",
+    "El efecto de la política fiscal se mide comparando dos distribuciones, la de \\(y^s\\) y la de \\(y^c\\). Notar que no es un equilibrio general: se supone que los precios y los ingresos de mercado no cambian por la presencia del Estado, y que el beneficio de un servicio vale lo que cuesta producirlo. Estos supuestos están implícitos en el método y el autor no los discute; señalarlos es lectura propia."
+   ]
+  },
+  {
+   "t": "Reynolds-Smolensky, Kakwani y el tamaño del presupuesto",
+   "eq": [
+    "RS = G(y^s) - C(y^c)",
+    "K_t = C(t) - G(y^s)",
+    "K_g = G(y^s) - C(g)",
+    "RS = \\tau\\,(K_t + K_g)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(RS\\): índice de Reynolds-Smolensky, el efecto redistributivo de la política fiscal medido en puntos de Gini.",
+      "en": "\\(RS\\): Reynolds-Smolensky index, the redistributive effect of fiscal policy measured in Gini points."
+     },
+     {
+      "es": "\\(G(y^s)\\): coeficiente de Gini de la distribución inicial, sin intervención fiscal.",
+      "en": "\\(G(y^s)\\): Gini coefficient of the initial distribution, without fiscal intervention."
+     },
+     {
+      "es": "\\(C(y^c)\\): índice de concentración del ingreso post-acción fiscal: un Gini calculado sobre la curva que acumula el ingreso post-fiscal ordenando a las personas según el ingreso pre-fiscal.",
+      "en": "\\(C(y^c)\\): concentration index of post-fiscal income: a Gini computed on the curve that cumulates post-fiscal income with people ranked by pre-fiscal income."
+     }
+    ],
+    [
+     {
+      "es": "\\(K_t\\): índice de progresividad de Kakwani de los impuestos; positivo si el impuesto es progresivo, negativo si es regresivo.",
+      "en": "\\(K_t\\): Kakwani progressivity index of taxes; positive if the tax is progressive, negative if regressive."
+     },
+     {
+      "es": "\\(C(t)\\): índice de concentración de la carga tributaria, calculado como un Gini pero sobre la curva de concentración de los impuestos.",
+      "en": "\\(C(t)\\): concentration index of the tax burden, computed like a Gini but on the tax concentration curve."
+     },
+     {
+      "es": "\\(G(y^s)\\): Gini del ingreso pre-fiscal, como arriba.",
+      "en": "\\(G(y^s)\\): Gini of pre-fiscal income, as above."
+     }
+    ],
+    [
+     {
+      "es": "\\(K_g\\): índice de Kakwani del gasto; positivo si el gasto es progresivo.",
+      "en": "\\(K_g\\): Kakwani index of spending; positive if spending is progressive."
+     },
+     {
+      "es": "\\(C(g)\\): índice de concentración de los beneficios del gasto; es negativo si el gasto se concentra en los estratos pobres.",
+      "en": "\\(C(g)\\): concentration index of spending benefits; it is negative if spending is concentrated in poor strata."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\tau\\): tamaño del presupuesto como proporción del ingreso total (en el trabajo, gasto social sobre ingreso disponible, \\(G/Y\\)).",
+      "en": "\\(\\tau\\): size of the budget as a share of total income (in the paper, social spending over disposable income, \\(G/Y\\))."
+     },
+     {
+      "es": "\\(K_t, K_g\\): índices de Kakwani de impuestos y gasto, como arriba. La fórmula vale con presupuesto equilibrado.",
+      "en": "\\(K_t, K_g\\): Kakwani indices of taxes and spending, as above. The formula holds with a balanced budget."
+     }
+    ]
+   ],
+   "p": [
+    "Un impuesto es progresivo cuando la carga como proporción del ingreso crece con el ingreso; un gasto es progresivo cuando el beneficio como proporción del ingreso cae con el ingreso. Se prueba que los impuestos y gastos progresivos (regresivos) dejan distribuciones más (menos) igualitarias. Al gasto se le suele pedir algo más: que sea propobre, es decir, que el beneficio en pesos caiga con el ingreso. Un gasto puede ser prorico y progresivo a la vez: si el rico recibe más pesos pero menos en proporción a su ingreso.",
+    "La progresividad se ve en las curvas de concentración, que miden para cada porcentaje más pobre de la población qué porcentaje acumulado de la carga o del gasto recibe. Los impuestos (gastos) son progresivos en toda la distribución si y solo si su curva está siempre por debajo (por encima) de la curva de Lorenz, un resultado que el autor atribuye al teorema de Jakobsson-Fellman. El índice de Kakwani resume esa distancia en un número.",
+    "La última ecuación es la que organiza todo el trabajo. Con presupuesto equilibrado, el efecto redistributivo es el producto de dos cosas: cuán progresivos son gastos e impuestos, y cuán grande es el presupuesto. Se puede verificar con los números de 1997: el Gini pre-fiscal era 0,375 y el índice de concentración del gasto social con seguridad social, -0,033, de modo que \\(K_g\\) = 0,408; la concentración de los impuestos era 0,355, de modo que \\(K_t\\) = -0,020; con un gasto social de 22,5% del ingreso disponible, el impacto es 0,225 × 0,388 ≈ 0,087, es decir, 8,7 puntos de Gini (la cuenta es lectura propia; el 0,087 está en el cuadro 5.1)."
+   ]
+  },
+  {
+   "t": "Un índice con juicios de valor explícitos",
+   "eq": [
+    "P_g = \\sum_i \\sigma_i \\left(\\frac{G_i}{G} - \\frac{Y_i}{Y}\\right), \\qquad P_t = \\sum_i \\sigma_i \\left(\\frac{Y_i}{Y} - \\frac{T_i}{T}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_g, P_t\\): índices de progresividad del gasto y de los impuestos propuestos por Gasparini y Porto (1995); positivos si el instrumento es progresivo.",
+      "en": "\\(P_g, P_t\\): progressivity indices for spending and taxes proposed by Gasparini and Porto (1995); positive if the instrument is progressive."
+     },
+     {
+      "es": "\\(G_i/G\\): participación del individuo \\(i\\) en los beneficios del gasto total.",
+      "en": "\\(G_i/G\\): share of individual \\(i\\) in total spending benefits."
+     },
+     {
+      "es": "\\(T_i/T\\): participación del individuo \\(i\\) en la carga impositiva total.",
+      "en": "\\(T_i/T\\): share of individual \\(i\\) in the total tax burden."
+     },
+     {
+      "es": "\\(Y_i/Y\\): participación del individuo \\(i\\) en el ingreso total.",
+      "en": "\\(Y_i/Y\\): share of individual \\(i\\) in total income."
+     },
+     {
+      "es": "\\(\\sigma_i\\): utilidad marginal social del ingreso del individuo \\(i\\); depende de los juicios de valor del analista y es mayor para los más pobres.",
+      "en": "\\(\\sigma_i\\): social marginal utility of individual \\(i\\)'s income; it depends on the analyst's value judgements and is larger for the poorer."
+     },
+     {
+      "es": "\\(\\sum_i\\): suma sobre todos los individuos. En el PDF la fórmula sale desordenada; el orden de las restas está reconstruido para que un gasto o impuesto progresivo dé un valor positivo, como en los cuadros (lectura propia).",
+      "en": "\\(\\sum_i\\): sum over all individuals. The formula is garbled in the PDF; the order of the subtractions is reconstructed so that a progressive spending or tax gives a positive value, as in the tables (own reading)."
+     }
+    ]
+   ],
+   "p": [
+    "El Kakwani compara curvas sin decir cuánto importa cada persona. Gasparini y Porto (1995) proponen una familia que hace explícita la ponderación: cada individuo pesa según la utilidad marginal social de su ingreso. En los cuadros se calcula con una función de bienestar CES y un parámetro de aversión a la desigualdad de 1 y de 2: con más aversión, el peso de los pobres crece y los valores del índice se disparan (en 1997, \\(P_g\\) es 3,08 con parámetro 1 y 47,26 con parámetro 2, para el gasto social con seguridad social).",
+    "Con estos índices los autores derivan una expresión análoga a la de Reynolds-Smolensky, pero para cambios en el índice de desigualdad de Atkinson. La ventaja es conceptual: la progresividad deja de ser una propiedad geométrica y pasa a ser una contribución al bienestar social bajo un juicio de valor declarado."
+   ]
+  },
+  {
+   "t": "El gasto social: grande, propobre y con una excepción",
+   "p": [
+    "En 1997 el gasto público consolidado de los tres niveles de gobierno fue de $ 87.670 millones, alrededor del 27% del PBI, a pesar de las privatizaciones de la década. En 1986-1997 ese gasto creció 18% en términos reales pero cayó como proporción del producto, hasta el punto más bajo de la serie. Lo que cambió fue la composición: la participación del gasto social en el total pasó de alrededor del 53% a fines de los ochenta a cerca del 65%. Entre puntas pocas funciones movieron su peso más de un punto (subieron seguridad social y educación superior; bajaron obras sociales, asignaciones familiares y vivienda), pero dentro de la década las oscilaciones fueron notorias.",
+    "La estructura de beneficiarios de 1992 muestra un gasto en sectores sociales propobre: el primer quintil recibe el 32,1% y el quinto el 11,8%. La educación elemental es el caso extremo (44,0% para el quintil 1 y 3,7% para el 5), seguida por promoción social (46,3% para el primer quintil), salud y educación media. En el otro extremo están la universidad (8,5% para el quintil 1 y 38,4% para el 5) y cultura, ciencia y técnica. Los seguros sociales también son en general propobres, con la excepción del programa más grande: la seguridad social, que da 9,9% al primer quintil y 26,5% al quinto. Como buena parte del sistema previsional es «devolutivo», su incidencia debería mirarse junto con la de los aportes que lo financian, y por eso el autor hace las cuentas con y sin él.",
+    "El ordenamiento importa. Flood et al. ordenan a las personas por ingreso per cápita familiar; la literatura más reciente prefiere el consumo ajustado por factores demográficos, porque es mejor indicador de bienestar y se subdeclara menos y de manera más pareja. Con consumo, el gasto social probablemente saldría más propobre, porque personas «intertemporalmente ricas» con ingresos bajos transitorios subirían de quintil."
+   ]
+  },
+  {
+   "t": "Qué pesó más: el tamaño o la progresividad del gasto",
+   "p": [
+    "Para estimar la evolución, Gasparini aplica la estructura de 1992 a los presupuestos de cada año. El ejercicio no capta cambios en la focalización de cada programa, pero sí los dos cambios que el gobierno controla más directamente: cómo se reparte el presupuesto entre funciones y cuánto se gasta. El índice de concentración del gasto social cayó en valor absoluto hasta principios de los noventa, porque perdieron peso educación básica, salud y promoción social frente a la seguridad social, y luego se recuperó sin volver a los niveles de mediados de los ochenta.",
+    "El resultado central de la sección: con impuestos proporcionales, el gasto social sin seguridad social baja el Gini entre 6 y 7 puntos cada año, y la seguridad social agrega alrededor de 2 puntos más. Es mucho: entre 1986 y 1997, un período de grandes cambios distributivos, el Gini pre-fiscal subió menos de 4 puntos (de 0,338 a 0,375). Y sin embargo el impacto fue bastante estable, porque la concentración del gasto, la desigualdad previa y el tamaño del gasto se movieron de manera que se compensaban. Una misma estructura de gasto aplicada sobre una distribución más desigual es, por construcción, más progresiva.",
+    "Las simulaciones sobre la distribución de 1997 separan las dos fuerzas. Si el gasto social se hubiera mantenido en el nivel real de 1986 con la estructura de 1997, el Gini habría bajado 6,4 puntos, frente a los 9,2 del impacto efectivo. Si se hubiera usado la estructura de 1986, más progresiva, con el tamaño de 1997, el impacto habría sido de 9,4 puntos, casi igual al real. Con 1991 como referencia los resultados son parecidos. La lectura del autor: los cambios en el nivel del gasto pesaron tanto o más que los cambios en su progresividad."
+   ]
+  },
+  {
+   "t": "Los impuestos: casi neutrales y algo regresivos",
+   "p": [
+    "La recaudación cayó en términos reales y como proporción del producto entre 1986 y 1989; tras la hiperinflación se recuperó con fuerza hasta 1992 y luego se estabilizó. La estructura cambió mucho: el IVA y Ganancias pasaron de rondar el 19% de la recaudación a fines de los ochenta a alrededor del 47%, mientras perdían peso combustibles, internos, los impuestos al patrimonio y, en los últimos años, los impuestos al trabajo. Algunos desaparecieron, como el impuesto a los débitos bancarios y las retenciones a las exportaciones.",
+    "Con la incidencia de 1996, la carga está concentrada en el quintil superior cualquiera sea el ordenamiento. Pero concentración no es progresividad. Ordenando por ingreso corriente, solo Ganancias de personas físicas (Kakwani 0,376) y Bienes Personales (0,377) son progresivos; los más regresivos son internos (-0,289), derechos de importación (-0,159), IVA (-0,138) y combustibles (-0,126), y el sistema total da -0,066. Ordenando por consumo, varios impuestos pasan a ser ligeramente progresivos y el sistema total da 0,040. El impuesto inflacionario, aproximado con datos de 1980-1990, tiene un Kakwani de -0,14, parecido al IVA: reemplazarlo por impuestos generales mejoraría algo la incidencia, aunque no mucho.",
+    "Proyectando la incidencia de 1996 a la estructura de cada año, la concentración de la carga subió entre 1986 y 1989 por el mayor peso de ganancias y patrimonio, pero como la distribución se volvió mucho más desigual, la regresividad aumentó. Desde 1992 la concentración volvió a subir por el reemplazo de impuestos al trabajo por Ganancias, pero la mayor desigualdad otra vez aumentó la regresividad: el Kakwani pasó de 0,014 en 1986 a -0,020 en 1997. Gasparini nota una relación positiva entre desigualdad y concentración impositiva, que puede venir del diseño de los impuestos (si el ingreso se redistribuye hacia alguien que ya paga Ganancias, la recaudación sube) o de una política más activa contra la evasión en épocas de más desigualdad."
+   ]
+  },
+  {
+   "t": "El presupuesto completo y cuánto costaría ir más lejos",
+   "p": [
+    "Combinando las dos partes, el presupuesto (gasto social más su financiamiento) es progresivo en todos los años y con todos los índices. La progresividad viene del gasto; los impuestos son aproximadamente neutrales. El impacto total sobre el Gini fluctuó entre 7,5 y 9 puntos: en 1997 el Gini pasa de 0,375 a 0,287. Pero la política fiscal desplaza la curva del Gini hacia abajo sin cambiar su forma: la desigualdad post-fiscal sube y baja con la pre-fiscal.",
+    "El ejercicio final pregunta qué haría falta para que el impacto de 1997 fuera de 10 puntos en lugar de 8,7, lo que llevaría la desigualdad post-fiscal a niveles de 1993. Con el tamaño y la progresividad impositiva dados, la concentración del gasto debería ser -0,090, muy por encima del máximo de la década: equivaldría a eliminar todos los subsidios implícitos en educación y salud del quintil 5 y la mitad de los del quintil 4 y dárselos a los quintiles 1 y 2. Con el gasto dado, la concentración de los impuestos debería llegar a 0,410: por ejemplo, eliminar combustibles, internos y todos los impuestos provinciales y reemplazarlos por más Ganancias sin bajar el mínimo no imponible. O el gasto social debería subir a cerca del 26% del ingreso. Solo si las tres variables hubieran tomado a la vez sus máximos de la década se habría llegado a los 10 puntos.",
+    "La conclusión es pesimista respecto de los retoques: pequeños ajustes no cambian mucho el impacto del presupuesto, y los cambios notorios en la desigualdad requieren reformas estructurales. Lectura propia: el análisis es de equilibrio parcial y de corto plazo, y por eso no puede decir nada de cómo esos cambios afectarían el ingreso pre-fiscal (por ejemplo, vía incentivos o vía la educación de los hijos de los quintiles bajos), que es justamente el canal por el que el gasto en educación podría cambiar la tendencia y no solo el nivel de la desigualdad."
+   ]
+  }
+ ],
+ "claves": [
+  "Incidencia tradicional: ingreso post-fiscal = ingreso pre-fiscal + gasto asignado - impuestos imputados, con matrices de asignación estimadas con encuestas y supuestos.",
+  "Reynolds-Smolensky mide el efecto redistributivo; Kakwani, la progresividad de gastos (G - C(g)) e impuestos (C(t) - G).",
+  "Con presupuesto equilibrado, RS = τ(Kt + Kg): importan tanto la progresividad como el tamaño del presupuesto.",
+  "El gasto social argentino es propobre salvo la seguridad social y la universidad; baja el Gini 6-7 puntos, más unos 2 con previsión.",
+  "Las simulaciones sugieren que el nivel del gasto pesó tanto o más que su progresividad.",
+  "Los impuestos están concentrados arriba pero son levemente regresivos por ingreso (Kakwani -0,066) y levemente progresivos por consumo (0,040).",
+  "El presupuesto baja el Gini entre 7,5 y 9 puntos cada año, pero no cambia su patrón de evolución.",
+  "Subir el impacto a 10 puntos exigiría cambios drásticos en focalización, estructura tributaria o tamaño del gasto."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "En un estudio tradicional de incidencia del gasto, ¿cómo se calcula el beneficio que recibe el primer quintil de un programa gratuito de vacunación?",
+    "en": "In a traditional spending incidence study, how is the benefit the first quintile receives from a free vaccination programme computed?"
+   },
+   "op": {
+    "es": [
+     "Como el número de niños vacunados del quintil por el precio de mercado de la vacuna",
+     "Como el costo total del programa por la proporción de niños vacunados que pertenecen al primer quintil",
+     "Como la disposición a pagar de las familias del quintil",
+     "Como el costo total dividido por cinco"
+    ],
+    "en": [
+     "As the number of vaccinated children in the quintile times the market price of the vaccine",
+     "As the total cost of the programme times the share of vaccinated children belonging to the first quintile",
+     "As the willingness to pay of the quintile's families",
+     "As the total cost divided by five"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Se reparte el costo del programa según el uso que hace cada estrato; es el ejemplo que usa Gasparini.",
+    "en": "The programme's cost is allocated according to each stratum's use; it is Gasparini's example."
+   },
+   "id": "fisc-dist-11-q1"
+  },
+  {
+   "q": {
+    "es": "El índice de Kakwani del gasto se define como \\(K_g = G(y^s) - C(g)\\), donde \\(G(y^s)\\) es el Gini pre-fiscal y \\(C(g)\\) el índice de concentración del gasto. Si en 1997 el Gini pre-fiscal es 0,375 y \\(C(g)\\) = -0,033, ¿cuánto vale \\(K_g\\)?",
+    "en": "The Kakwani index of spending is \\(K_g = G(y^s) - C(g)\\), where \\(G(y^s)\\) is the pre-fiscal Gini and \\(C(g)\\) the spending concentration index. If in 1997 the pre-fiscal Gini is 0.375 and \\(C(g)\\) = -0.033, what is \\(K_g\\)?"
+   },
+   "op": {
+    "es": [
+     "0,342",
+     "-0,408",
+     "0,408",
+     "0,012"
+    ],
+    "en": [
+     "0.342",
+     "-0.408",
+     "0.408",
+     "0.012"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "0,375 - (-0,033) = 0,408, el valor del cuadro 3.4 para 1997. Un gasto con concentración negativa (más para los pobres) tiene un Kakwani mayor que el propio Gini.",
+    "en": "0.375 - (-0.033) = 0.408, the value in Table 3.4 for 1997. Spending with negative concentration (more for the poor) has a Kakwani larger than the Gini itself."
+   },
+   "id": "fisc-dist-11-q2"
+  },
+  {
+   "q": {
+    "es": "Según la ecuación \\(RS = \\tau(K_t + K_g)\\), donde \\(RS\\) es el efecto redistributivo, \\(\\tau\\) el tamaño del presupuesto sobre el ingreso y \\(K_t, K_g\\) los índices de Kakwani de impuestos y gasto, ¿qué determina el impacto de la política fiscal?",
+    "en": "According to \\(RS = \\tau(K_t + K_g)\\), where \\(RS\\) is the redistributive effect, \\(\\tau\\) the budget size relative to income and \\(K_t, K_g\\) the Kakwani indices of taxes and spending, what determines the impact of fiscal policy?"
+   },
+   "op": {
+    "es": [
+     "Solo la progresividad de los impuestos",
+     "Solo el tamaño del gasto",
+     "La progresividad de gastos e impuestos y el tamaño del presupuesto",
+     "La diferencia entre gasto e impuestos, es decir, el déficit"
+    ],
+    "en": [
+     "Only the progressivity of taxes",
+     "Only the size of spending",
+     "The progressivity of spending and taxes and the size of the budget",
+     "The difference between spending and taxes, that is, the deficit"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con presupuesto equilibrado, el efecto es el producto del tamaño por la suma de las progresividades; Gasparini usa esta identidad para todo el trabajo.",
+    "en": "With a balanced budget, the effect is the product of size and the sum of progressivities; Gasparini uses this identity throughout."
+   },
+   "id": "fisc-dist-11-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué significa que un gasto sea prorico y a la vez progresivo?",
+    "en": "What does it mean for spending to be pro-rich and progressive at the same time?"
+   },
+   "op": {
+    "es": [
+     "Que el rico recibe más pesos, pero menos en proporción a su ingreso",
+     "Que el rico recibe menos pesos y más en proporción a su ingreso",
+     "Que se financia con impuestos progresivos",
+     "Es imposible: un gasto prorico siempre es regresivo"
+    ],
+    "en": [
+     "That the rich receive more pesos, but less as a share of their income",
+     "That the rich receive fewer pesos and more as a share of their income",
+     "That it is financed with progressive taxes",
+     "It is impossible: pro-rich spending is always regressive"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La progresividad se mide en proporción del ingreso; ser propobre exige además que el beneficio en pesos caiga con el ingreso.",
+    "en": "Progressivity is measured relative to income; being pro-poor also requires the benefit in pesos to fall with income."
+   },
+   "id": "fisc-dist-11-q4"
+  },
+  {
+   "q": {
+    "es": "Según la estructura de 1992 (Flood et al.), ¿qué programa social grande se aparta de la regla de gasto propobre?",
+    "en": "According to the 1992 structure (Flood et al.), which large social programme departs from the pro-poor rule?"
+   },
+   "op": {
+    "es": [
+     "Educación elemental",
+     "Seguridad social",
+     "Promoción social",
+     "Salud"
+    ],
+    "en": [
+     "Primary education",
+     "Social security",
+     "Social promotion",
+     "Health"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La seguridad social da 9,9% al primer quintil y 26,5% al quinto; además es el programa de mayor peso presupuestario.",
+    "en": "Social security gives 9.9% to the first quintile and 26.5% to the fifth; it is also the largest programme by budget."
+   },
+   "id": "fisc-dist-11-q5"
+  },
+  {
+   "q": {
+    "es": "En la simulación sobre la distribución de 1997, ¿qué sugiere que el gasto de 1986 en nivel dé un impacto de 6,4 puntos y la estructura de 1986 uno de 9,4, frente a 9,2 reales?",
+    "en": "In the simulation on the 1997 distribution, what does it suggest that 1986 spending in level gives an impact of 6.4 points and the 1986 structure one of 9.4, versus 9.2 actual?"
+   },
+   "op": {
+    "es": [
+     "Que la progresividad fue lo único que importó",
+     "Que los cambios en el nivel del gasto pesaron tanto o más que los cambios en su progresividad",
+     "Que el gasto de 1986 era regresivo",
+     "Que los impuestos explican toda la diferencia"
+    ],
+    "en": [
+     "That progressivity was all that mattered",
+     "That changes in the level of spending mattered as much as or more than changes in its progressivity",
+     "That 1986 spending was regressive",
+     "That taxes explain all the difference"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Cambiar el nivel mueve el impacto casi 3 puntos; cambiar la estructura apenas lo mueve. Es la lectura del autor.",
+    "en": "Changing the level moves the impact by almost 3 points; changing the structure barely moves it. This is the author's reading."
+   },
+   "id": "fisc-dist-11-q6"
+  },
+  {
+   "q": {
+    "es": "Ordenando por ingreso corriente en 1996, ¿qué impuestos resultan progresivos según Gasparini?",
+    "en": "Ranking by current income in 1996, which taxes are progressive according to Gasparini?"
+   },
+   "op": {
+    "es": [
+     "IVA e internos",
+     "Impuestos al trabajo y combustibles",
+     "Ingresos brutos e inmobiliario",
+     "Ganancias de personas físicas y Bienes Personales"
+    ],
+    "en": [
+     "VAT and excise taxes",
+     "Labour taxes and fuel",
+     "Gross receipts and property tax",
+     "Personal income tax and the personal assets tax"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Son los únicos con Kakwani positivo (0,376 y 0,377); el sistema total da -0,066 por ingreso y 0,040 por consumo.",
+    "en": "They are the only ones with a positive Kakwani (0.376 and 0.377); the whole system gives -0.066 by income and 0.040 by consumption."
+   },
+   "id": "fisc-dist-11-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué concluye el autor del ejercicio de llevar el impacto de 1997 a 10 puntos de Gini?",
+    "en": "What does the author conclude from the exercise of raising the 1997 impact to 10 Gini points?"
+   },
+   "op": {
+    "es": [
+     "Que bastaba con bajar el mínimo no imponible de Ganancias",
+     "Que pequeños ajustes alcanzaban",
+     "Que haría falta cambiar mucho la focalización, la estructura tributaria o el tamaño del gasto: hacen falta cambios estructurales",
+     "Que era imposible porque el presupuesto era regresivo"
+    ],
+    "en": [
+     "That lowering the income tax threshold was enough",
+     "That small adjustments sufficed",
+     "That focus, the tax structure or spending size would have to change a lot: structural changes are needed",
+     "That it was impossible because the budget was regressive"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Cada vía por separado exige valores fuera del rango de la década (concentración del gasto -0,090, de impuestos 0,410 o gasto de cerca del 26%).",
+    "en": "Each route alone requires values outside the decade's range (spending concentration -0.090, tax concentration 0.410 or spending near 26%)."
+   },
+   "id": "fisc-dist-11-q8"
+  }
+ ],
+ "palabras": 2227,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué hace un análisis de incidencia de beneficios (benefit incidence analysis)?",
+    "en": "What does a benefit incidence analysis do?"
+   },
+   "a": {
+    "es": "Reparte el costo de cada programa público entre los estratos de ingreso según cuánto lo usa cada uno, y suma esos beneficios al ingreso sin intervención fiscal. Gasparini (1999).",
+    "en": "It allocates the cost of each public programme across income strata according to how much each uses it, and adds those benefits to income without fiscal intervention. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Por qué el efecto redistributivo de un presupuesto depende de su tamaño además de su progresividad?",
+    "en": "Why does a budget's redistributive effect depend on its size as well as its progressivity?"
+   },
+   "a": {
+    "es": "Porque con presupuesto equilibrado el índice de Reynolds-Smolensky es el tamaño del presupuesto sobre el ingreso por la suma de los índices de Kakwani de gasto e impuestos. Gasparini (1999), siguiendo a Lambert (1993).",
+    "en": "Because with a balanced budget the Reynolds-Smolensky index equals budget size over income times the sum of the Kakwani indices of spending and taxes. Gasparini (1999), following Lambert (1993)."
+   },
+   "id": "fisc-dist-11-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cuándo es progresivo un impuesto en toda la distribución?",
+    "en": "When is a tax progressive throughout the distribution?"
+   },
+   "a": {
+    "es": "Cuando su curva de concentración está siempre por debajo de la curva de Lorenz del ingreso; para un gasto, siempre por encima. Gasparini (1999), citando el teorema de Jakobsson-Fellman.",
+    "en": "When its concentration curve lies always below the income Lorenz curve; for spending, always above. Gasparini (1999), citing the Jakobsson-Fellman theorem."
+   },
+   "id": "fisc-dist-11-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto reducía el gasto social la desigualdad en la Argentina de 1986-1997?",
+    "en": "How much did social spending reduce inequality in Argentina in 1986-1997?"
+   },
+   "a": {
+    "es": "Con impuestos proporcionales, entre 6 y 7 puntos de Gini sin la seguridad social y unos 2 puntos más con ella, cada año. Gasparini (1999).",
+    "en": "With proportional taxes, between 6 and 7 Gini points without social security and about 2 more with it, each year. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Es progresivo el sistema tributario argentino de mediados de los noventa?",
+    "en": "Was Argentina's tax system in the mid-1990s progressive?"
+   },
+   "a": {
+    "es": "Casi neutral: con la incidencia de 1996 el Kakwani total es -0,066 ordenando por ingreso y 0,040 ordenando por consumo; solo Ganancias de personas y Bienes Personales son claramente progresivos. Gasparini (1999).",
+    "en": "Nearly neutral: with 1996 incidence the overall Kakwani is -0.066 ranking by income and 0.040 ranking by consumption; only personal income tax and the personal assets tax are clearly progressive. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t5"
+  },
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la política fiscal argentina bajaba el nivel de la desigualdad pero no cambiaba su tendencia?",
+    "en": "Why did Argentine fiscal policy lower the level of inequality without changing its trend?"
+   },
+   "a": {
+    "es": "Porque la concentración del gasto, la de los impuestos, la desigualdad previa y el tamaño del gasto se movieron compensándose, y el impacto quedó entre 7,5 y 9 puntos de Gini todos los años. Gasparini (1999).",
+    "en": "Because spending concentration, tax concentration, prior inequality and spending size moved in offsetting ways, and the impact stayed between 7.5 and 9 Gini points every year. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué haría falta para que el presupuesto de 1997 bajara el Gini 10 puntos en vez de 8,7?",
+    "en": "What would it take for the 1997 budget to lower the Gini by 10 points instead of 8.7?"
+   },
+   "a": {
+    "es": "Por ejemplo, quitar todos los subsidios en educación y salud al quinto quintil y la mitad de los del cuarto para dárselos a los dos primeros, o reemplazar combustibles, internos e impuestos provinciales por Ganancias. Gasparini (1999).",
+    "en": "For example, removing all education and health subsidies to the fifth quintile and half of the fourth's and giving them to the first two, or replacing fuel, excise and provincial taxes with income tax. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué sesgo tiene medir la incidencia fiscal solo con el gasto social?",
+    "en": "What bias comes from measuring fiscal incidence with social spending only?"
+   },
+   "a": {
+    "es": "Sobrestima el impacto redistributivo del Estado, porque el gasto social probablemente es más propobre que defensa, justicia o administración, que quedan afuera por falta de datos. Gasparini (1999).",
+    "en": "It overstates the State's redistributive impact, because social spending is probably more pro-poor than defence, justice or administration, which are left out for lack of data. Gasparini (1999)."
+   },
+   "id": "fisc-dist-11-t8"
+  }
+ ]
+}

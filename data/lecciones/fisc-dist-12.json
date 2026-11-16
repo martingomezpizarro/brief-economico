@@ -1,0 +1,476 @@
+{
+ "id": "fisc-dist-12",
+ "cat": "fisc-dist",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "Después de Piketty: doce propuestas de Atkinson para reducir la desigualdad",
+ "bajada": "Qué enseña la caída de la desigualdad en la Europa de posguerra, cómo un modelo de Solow con robots explica que el crecimiento ya no llegue a los salarios, y qué doce políticas propone Atkinson, de la dirección del cambio técnico al ingreso de participación.",
+ "fuentes": [
+  1210
+ ],
+ "cita": "Anthony B. Atkinson (2014), «After Piketty?», The British Journal of Sociology, 65(4), pp. 619-638",
+ "intro": "Atkinson toma El capital en el siglo XXI de Piketty como punto de partida y pregunta qué hacer. Su respuesta son doce propuestas para reducir la desigualdad dentro de los países ricos, pensadas para el Reino Unido y, la última, para la Unión Europea. El argumento tiene tres pasos. Primero aclara el objetivo: no basta la igualdad de oportunidades, porque aun con una carrera justa los premios pueden ser demasiado desiguales. Después mira la historia: en la Europa de 1945-1979 la desigualdad cayó por el Estado de bienestar, por la menor concentración del capital y por la intervención en el mercado de trabajo. Por último, con un modelo de Solow ampliado con robots a la manera de Summers, muestra por qué hoy el crecimiento puede ir todo a las ganancias. Las propuestas abarcan el cambio técnico, la competencia, el empleo, los salarios y los impuestos al capital, el ahorro pequeño, una herencia mínima y un ingreso de participación; solo la mitad son de «gravar y gastar».",
+ "secciones": [
+  {
+   "t": "Qué desigualdad hay que reducir",
+   "p": [
+    "Atkinson distingue dos igualdades de oportunidades. La no competitiva asegura que todos puedan cumplir sus propios proyectos: todos pueden sacar el certificado de natación. La competitiva solo asegura que todos puedan largar en la misma carrera, donde los premios son desiguales. Este segundo caso es el típico, y ahí aparece la desigualdad de resultados: aun con una largada pareja, la estructura de premios puede ser demasiado desigual y la desigualdad ex post tiene que reducirse. Plantear el objetivo como reducir la desigualdad, y no como alcanzar un nivel ideal, permite acordar la dirección aunque no se acuerde el destino.",
+    "Reducir la desigualdad no es solo frenar la cima, que es el foco de Piketty. Importa igual lo que pasa con el 99% restante: por qué los países ricos no abolieron la pobreza, una meta en la que incluso los críticos del libro coinciden. Y además de la dimensión vertical hay desigualdades horizontales. Una es la de género, ausente en El capital: en el Reino Unido las mujeres son solo alrededor de 1 de cada 6 personas del 1% más rico. Otra es entre generaciones: el ingreso disponible de los hogares puede crecer menos que el producto, porque una fracción creciente se destina al cambio climático y la infraestructura; ya entre 1999 y 2008 el ingreso disponible británico creció menos que el PBI. Por eso no alcanza con decir que las generaciones futuras estarán mejor."
+   ]
+  },
+  {
+   "t": "La lección de la posguerra europea",
+   "p": [
+    "Mirar la historia sirve, dice Atkinson, como antídoto contra el pesimismo. Entre 1945 y 1979 el Gini cayó 4 puntos porcentuales o más en Dinamarca, Francia, Alemania, Italia, Países Bajos, Noruega, Suecia y el Reino Unido, una caída comparable a la suba del Gini estadounidense en los ochenta y noventa. Fue un período de crecimiento rápido, pero el crecimiento por sí solo no implica menos desigualdad. Atkinson identifica tres mecanismos.",
+    "El primero fue la redistribución: la expansión del Estado de bienestar financiada con impuestos progresivos. Cita a Marx, Nolan y Olivera: ninguna economía avanzada logró baja desigualdad o baja pobreza relativa con bajo gasto social. El segundo fue que el ingreso del capital se volvió menos desigual por dos vías: la participación del capital en el ingreso nacional caía (Heidensohn encontró una participación creciente del trabajo en muchos países entre 1948 y 1963) y la riqueza se desconcentraba. Entre 1945 y fines de los setenta, la participación del 1% más rico en la riqueza personal bajó de 39% a 26% en Dinamarca, de 33% a 22% en Francia, de 38% a 17% en Suecia y unos 20 puntos en el Reino Unido, donde pesó la «riqueza popular», sobre todo la vivienda propia.",
+    "El tercero fue la intervención en el mercado de trabajo. La posguerra no fue una edad dorada pareja: la dispersión salarial subió en el Reino Unido de mediados de los cincuenta a mediados de los sesenta y en Francia hasta 1968. Después los diferenciales se achicaron: en el Reino Unido el decil inferior subió un quinto respecto de la mediana entre 1968 y 1977; los Países Bajos subieron mucho el salario mínimo en 1974. Hubo salarios mínimos y un instrumento hoy olvidado, la política de ingresos: en 1975 el aumento permitido en el Reino Unido fue un monto fijo de £6 por semana para todos. Y las leyes de igual remuneración redujeron la brecha de género. Pero el contexto actual, con globalización y estancamiento europeo, es distinto, y no se sigue que las mismas medidas sean deseables o posibles hoy."
+   ]
+  },
+  {
+   "t": "El modelo: Solow con robots",
+   "eq": [
+    "Y = F(K, L)",
+    "Y = F\\big(K_1,\\; A L + B K_2\\big)",
+    "K_2 = 0 \\;\\text{ si }\\; \\frac{w}{r} < \\frac{A}{B}, \\qquad \\frac{w}{r} = \\frac{A}{B} \\;\\text{ si }\\; K_2 > 0",
+    "\\frac{wL}{rK} = \\frac{A/B}{K/L}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y\\): producto o ingreso nacional.",
+      "en": "\\(Y\\): national output or income."
+     },
+     {
+      "es": "\\(F(\\cdot)\\): función de producción agregada del modelo de Solow.",
+      "en": "\\(F(\\cdot)\\): aggregate production function of the Solow model."
+     },
+     {
+      "es": "\\(K\\): stock de capital.",
+      "en": "\\(K\\): capital stock."
+     },
+     {
+      "es": "\\(L\\): trabajo.",
+      "en": "\\(L\\): labour."
+     }
+    ],
+    [
+     {
+      "es": "\\(K_1\\): capital en su primer uso, como factor directo de producción; siempre se emplea.",
+      "en": "\\(K_1\\): capital in its first use, as a direct factor of production; it is always employed."
+     },
+     {
+      "es": "\\(K_2\\): capital en su segundo uso, que reemplaza o complementa el trabajo humano (robots, automatización); puede ser cero.",
+      "en": "\\(K_2\\): capital in its second use, replacing or supplementing human labour (robots, automation); it can be zero."
+     },
+     {
+      "es": "\\(A\\): productividad del trabajo humano, que depende de la tecnología.",
+      "en": "\\(A\\): productivity of human labour, which depends on technology."
+     },
+     {
+      "es": "\\(B\\): productividad del capital usado como sustituto del trabajo, que también depende de la tecnología.",
+      "en": "\\(B\\): productivity of capital used as a substitute for labour, which also depends on technology."
+     },
+     {
+      "es": "\\(AL + BK_2\\): «trabajo efectivo»: personas y robots son sustitutos perfectos dentro de este término (interpretación propia de la forma funcional).",
+      "en": "\\(AL + BK_2\\): «effective labour»: people and robots are perfect substitutes inside this term (own interpretation of the functional form)."
+     }
+    ],
+    [
+     {
+      "es": "\\(w\\): salario.",
+      "en": "\\(w\\): wage."
+     },
+     {
+      "es": "\\(r\\): tasa de retorno del capital, igual a su productividad marginal bajo competencia perfecta.",
+      "en": "\\(r\\): rate of return on capital, equal to its marginal product under perfect competition."
+     },
+     {
+      "es": "\\(A/B\\): valor crítico del cociente salario/retorno: por debajo no conviene usar robots; cuando se usan, el cociente queda fijo en ese valor.",
+      "en": "\\(A/B\\): critical value of the wage/return ratio: below it robots do not pay; once they are used, the ratio is pinned at that value."
+     }
+    ],
+    [
+     {
+      "es": "\\(wL\\): masa salarial, es decir, la parte del ingreso que va al trabajo.",
+      "en": "\\(wL\\): wage bill, that is, the part of income that goes to labour."
+     },
+     {
+      "es": "\\(rK\\): ingreso del capital.",
+      "en": "\\(rK\\): capital income."
+     },
+     {
+      "es": "\\(K/L\\): relación capital-trabajo, o capital por trabajador.",
+      "en": "\\(K/L\\): capital-labour ratio, or capital per worker."
+     },
+     {
+      "es": "\\(wL/rK\\): cociente entre la participación de los salarios y la del capital; con robots en uso, cae cuando sube \\(K/L\\).",
+      "en": "\\(wL/rK\\): ratio of the wage share to the capital share; with robots in use, it falls as \\(K/L\\) rises."
+     }
+    ]
+   ],
+   "p": [
+    "Lo notable de Piketty, según Atkinson, es que ubica la desigualdad dentro de la teoría económica corriente. El puente entre la macro y la distribución personal es la relación entre el stock de capital y su rendimiento. En el modelo de Solow con competencia perfecta, si sube el capital, lo que pasa con la participación del capital depende de la elasticidad de sustitución. Con una Cobb-Douglas, la elasticidad es 1, el retorno cae en la misma proporción que sube el capital y la participación no cambia; si la elasticidad es mayor (menor) que 1, el retorno cae menos (más) que proporcionalmente y la participación sube (baja). Piketty lee la suba reciente de la participación del capital como evidencia de una elasticidad mayor que 1.",
+    "Atkinson desarrolla una idea de Summers (2013): el capital tiene dos usos. Siempre se usa como capital propiamente dicho, pero también puede sumarse al trabajo humano, como un robot. Se usan robots solo si el trabajo es caro respecto del capital. La historia queda así: al principio rige Solow, el capital por trabajador sube, los salarios suben y el retorno baja. Cuando el cociente salario/retorno llega a su valor crítico, los robots empiezan a desplazar trabajadores. Desde ahí la economía sigue creciendo, pero el cociente salario/retorno queda clavado: el crecimiento ya no le llega a los asalariados, y la participación del capital sube, con independencia de la elasticidad de sustitución. Es la última ecuación: con \\(w/r\\) fijo, cuanto más capital por trabajador, menor la participación de los salarios.",
+    "El modelo junta dos fenómenos: la participación creciente del capital que señala Piketty y el estancamiento de la «clase media apretada» del debate público. Y como el ingreso del capital está más desigualmente repartido que el del trabajo, el corrimiento de participaciones aumenta la desigualdad personal. De ahí salen tres frentes: reequilibrar las participaciones a favor del trabajo, reducir la desigualdad salarial y reducir la del ingreso del capital. En una nota, Atkinson menciona la estimación de Frey y Osborne (2013): 47% de los empleos de EE.UU. son susceptibles de computarización."
+   ]
+  },
+  {
+   "t": "La tecnología no cae del cielo, y el poder de mercado importa",
+   "p": [
+    "La participación del capital depende del cociente \\(A/B\\), y la tecnología no es exógena: no solo cuánto progreso técnico hay sino en qué dirección va. Inventar robots es subir \\(B\\); esos recursos podrían haberse invertido en subir la productividad de los trabajadores, \\(A\\). Si la elección se hace solo según los intereses del capital, hay razones para esperar que favorezca reemplazar trabajo, entre otras cosas para reducir el conflicto laboral futuro. El gobierno no tiene por qué mirar desde afuera: valora el empleo, y en el sector público la productividad depende de cuánto se valore el servicio personal. Repartir viandas a ancianos con drones no da el contacto humano que para muchos es parte esencial del servicio; los recortes de austeridad que eliminan ese componente pasan ingreso del trabajo al capital.",
+    "Propuesta 1: que la dirección del cambio técnico sea una preocupación explícita de la política, favoreciendo innovaciones que aumenten la empleabilidad y la dimensión humana de los servicios. No alcanza con decir que la desigualdad se debe a fuerzas tecnológicas fuera de control. El Estado, como recuerda Mazzucato, ya financia la investigación básica que luego comercializan los privados.",
+    "Propuesta 2: reducir el poder de mercado en los mercados de consumo y reequilibrar el poder de negociación entre empleadores y trabajadores. El modelo anterior suponía competencia perfecta, y el monopolio casi no aparece en El capital: no cita a Baran y Sweezy ni el poder compensador de Galbraith. Para Atkinson, el cambio del poder relativo de capital y trabajo explica parte de la caída de la participación del capital en la posguerra y de su suba reciente; los márgenes sobre los consumidores y la debilidad sindical inflan la porción del capital. Añade, con el jurista Hsu, que el derecho tiene un sesgo favorable al capital."
+   ]
+  },
+  {
+   "t": "Salarios, empleo e impuesto a la renta",
+   "p": [
+    "Dentro del trabajo hubo una «explosión» de los salarios altos. En los cincuenta su efecto se amortiguaba con impuestos muy progresivos, cuyas alícuotas máximas luego bajaron. El gobierno británico sostuvo que la alícuota máxima que maximiza la recaudación es 40%, pero para Atkinson las alícuotas marginales también son una cuestión de equidad: si se considera injusta la «trampa de pobreza» y por eso el Universal Credit limita la tasa de retiro del beneficio a 65%, la alícuota marginal de los ricos debería ser la misma. Propuesta 3: una escala más progresiva del impuesto a la renta personal, con 65% para el 1% más rico.",
+    "Pero la posguerra enseña que también hay que actuar sobre los salarios antes de impuestos. Para Atkinson eso significa un salario vital en la base y un cambio de normas sobre los sueldos altos. Ante la objeción de que un salario vital aceleraría el reemplazo por robots, propone un respaldo. Propuesta 4: empleo garantizado por el Estado al salario vital para todo el que lo busque. Lo compara con el «demasiado grande para caer» de los bancos y recuerda que la ley Humphrey-Hawkins de 1978 en EE.UU. permitía crear un «reservorio de empleo público». Además, entre un cuarto y un tercio de los europeos pobres en edad de trabajar ya tienen empleo, de modo que más empleo no alcanza.",
+    "La objeción de las fuerzas del mercado, sigue, está sobreactuada: la oferta y la demanda a menudo solo fijan cotas a los salarios. En un modelo de búsqueda, una vez hecho el emparejamiento queda un excedente a repartir entre firma y trabajador, y ese reparto puede seguir principios éticos. Un ex CEO de Shell dijo que con la mitad de sueldo no habría dirigido peor la empresa, y con el doble no la habría dirigido mejor. Propuesta 5: códigos de remuneración ética, con la adopción como condición para venderle al sector público. Esos códigos deberían cubrir también desigualdades horizontales: entre 2008 y 2013 la mediana del salario real de tiempo completo cayó 6% en el Reino Unido, pero solo 2% para los mayores de 60, 8% para los de 30 a 39 y más de 10% para los de 22 a 29."
+   ]
+  },
+  {
+   "t": "Gravar el capital y las herencias",
+   "p": [
+    "Si la participación del capital sube, hay tres respuestas: gravar el capital, su renta o sus transferencias; fomentar la acumulación de los pequeños ahorristas; y aumentar el patrimonio neto del Estado, para que una parte mayor del ingreso del capital sea de toda la sociedad. Las tres se conectan, porque el patrimonio público solo crece con superávits fiscales, y eso pide más impuestos, sobre todo al capital.",
+    "Propuesta 6: gravar más la renta de inversiones reintroduciendo el alivio por ingreso ganado que el Reino Unido tuvo antes de 1973/74 (el recargo a la renta de inversiones duró hasta 1984). La alícuota máxima de 65% sería la misma para ambos ingresos, pero los primeros tramos de salarios pagarían menos. El ejemplo: subir la alícuota básica de 20% a 25%, reducir 20% el mínimo personal y descontar 20% de los salarios hasta el fin del tramo básico; el contribuyente que solo tiene salario o jubilación queda igual y sube el impuesto a la renta del capital para todos los demás.",
+    "Propuesta 7: estudiar de nuevo un impuesto anual a la riqueza, descartado en los setenta. La riqueza personal pasó de 3 veces el ingreso nacional en los setenta a más de 5; la vivienda propia explica cerca de la mitad de la suba y merece un trato aparte con una reforma del impuesto municipal, pero queda la otra mitad. El problema es la globalización: quizás haga falta acción conjunta en la UE e intercambio de información; Piketty califica de éxito mixto el impuesto francés. Propuesta 8: gravar todas las herencias y donaciones en vida que recibe cada persona, con un impuesto a las transferencias recibidas a lo largo de la vida o dentro del impuesto a la renta. El impuesto sucesorio británico recauda poco: en 2012-13 equivalía a cerca del 2% de lo recaudado por renta, contra 9% cincuenta años antes. Gravar lo recibido y no lo dejado incentiva a repartir la riqueza, lo que ayudaría con las brechas de género y entre generaciones."
+   ]
+  },
+  {
+   "t": "Ahorro pequeño, herencia mínima e ingreso de participación",
+   "p": [
+    "Muchos lectores de Piketty se extrañaron de que el retorno supere al crecimiento cuando sus ahorros rinden tasas reales negativas. Entre el retorno del capital y lo que recibe el hogar están los intermediarios, y esa cuña es el ingreso del sector financiero, a su vez muy desigual y responsable de parte de la suba de los ingresos más altos. Achicarla reduce la desigualdad dos veces. Propuesta 9: que el ahorro nacional estatal (National Savings) ofrezca un rendimiento real positivo garantizado, quizás subsidiado, hasta un máximo por persona. Hay margen para más competencia: EE.UU. tiene 60 veces más socios de cooperativas de crédito que el Reino Unido. Propuesta 10: fomentar instituciones que representen a ahorristas y deudores y un servicio público y gratuito de asesoramiento financiero independiente.",
+    "La herencia tiene mala prensa en El capital, pero el problema no es que exista sino que sea desigual: si todos heredaran lo mismo, buena parte de la preocupación desaparecería. Propuesta 11: una dotación de capital para todos al llegar a la adultez o más tarde. La idea viene de Thomas Paine, que en 1797 propuso pagar 15 libras a cada persona al cumplir 21 años, alrededor de la mitad del salario anual de un peón rural, según una nota del texto. Tuvo su versión británica en los child trust funds de 2005, abandonados por el gobierno de coalición; Atkinson propone introducirla gradualmente, con montos que crezcan con el año de nacimiento.",
+    "Propuesta 12, para la UE: un ingreso de participación como base de la protección social, empezando por un ingreso básico universal por hijo. Un ingreso básico reemplaza el mínimo no imponible y se descuenta de las transferencias existentes; siempre requiere una condición, y en vez de la ciudadanía, que sería discriminatoria y probablemente contraria al derecho europeo, Atkinson propone la participación social: empleo, estudio, búsqueda de trabajo, cuidado de niños o mayores o voluntariado. El primer paso sería un ingreso por hijo de, por ejemplo, 10% del ingreso mediano equivalente de cada país, frente al 7% que hoy paga el Reino Unido por el primer hijo; pagado a la madre, ayudaría además con la desigualdad de género."
+   ]
+  },
+  {
+   "t": "Un menú con complementariedades",
+   "p": [
+    "Las propuestas se presentan como un menú, pero se complementan: el salario vital, el empleo garantizado y el ingreso de participación van juntos, y la dotación de capital necesita el mejor rendimiento del ahorro pequeño y el poder compensador de los ahorristas. Los gastos nuevos deben balancearse con los recursos nuevos. Atkinson aclara que no da cifras ni costos, ni discute aquí los efectos sobre incentivos, competitividad y crecimiento, que deja para su libro siguiente, y cierra con Piketty: la historia de la distribución de la riqueza siempre fue profundamente política.",
+    "Lectura propia: el modelo con robots es más una parábola que una teoría estimada, y sus conclusiones dependen de suponer que robots y personas son sustitutos perfectos dentro del trabajo efectivo. La fuerza del artículo está en mover el debate desde los impuestos hacia la determinación del ingreso de mercado (tecnología, competencia, negociación), y su debilidad, reconocida por el autor, es que deja sin cuantificar los costos fiscales y los efectos de incentivos de un paquete muy amplio."
+   ]
+  }
+ ],
+ "claves": [
+  "Atkinson apunta a reducir la desigualdad de resultados, no solo a igualar oportunidades en una carrera con premios desiguales.",
+  "En la Europa de 1945-1979 la desigualdad cayó por Estado de bienestar, desconcentración del capital e intervención en el mercado de trabajo.",
+  "En el modelo de Solow-Summers, una vez que w/r llega a A/B los robots desplazan trabajo y el crecimiento va todo al capital.",
+  "La dirección del cambio técnico es endógena: la política puede favorecer innovaciones que suban la productividad del trabajo.",
+  "Propone 65% de alícuota máxima en renta, empleo garantizado al salario vital y códigos de remuneración ética.",
+  "Del lado del capital: alivio por ingreso ganado, estudiar un impuesto a la riqueza y gravar lo recibido por herencias y donaciones.",
+  "Del lado del ahorro: rendimiento real garantizado para pequeños ahorristas y una dotación de capital para todos.",
+  "Para la UE: un ingreso de participación que empiece por un ingreso básico por hijo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué distingue la igualdad de oportunidades competitiva de la no competitiva según Atkinson?",
+    "en": "What distinguishes competitive from non-competitive equality of opportunity according to Atkinson?"
+   },
+   "op": {
+    "es": [
+     "La competitiva da a todos la misma largada en una carrera con premios desiguales",
+     "La competitiva garantiza premios iguales",
+     "La no competitiva solo vale para el mercado de trabajo",
+     "No hay diferencia práctica"
+    ],
+    "en": [
+     "The competitive one gives everyone the same start in a race with unequal prizes",
+     "The competitive one guarantees equal prizes",
+     "The non-competitive one only applies to the labour market",
+     "There is no practical difference"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con la competitiva todos pueden correr, pero los premios son desiguales: por eso hay que mirar la desigualdad ex post.",
+    "en": "With the competitive kind everyone can race, but prizes are unequal: that is why ex post inequality matters."
+   },
+   "id": "fisc-dist-12-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál de estos NO es uno de los tres mecanismos que redujeron la desigualdad en la Europa de posguerra según Atkinson?",
+    "en": "Which of these is NOT one of the three mechanisms that reduced inequality in postwar Europe according to Atkinson?"
+   },
+   "op": {
+    "es": [
+     "El Estado de bienestar financiado con impuestos progresivos",
+     "La caída de la participación y la concentración del ingreso del capital",
+     "La intervención en el mercado de trabajo",
+     "La apertura comercial con países de salarios bajos"
+    ],
+    "en": [
+     "The welfare state financed with progressive taxes",
+     "The fall in the share and concentration of capital income",
+     "Intervention in the labour market",
+     "Trade opening with low-wage countries"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los tres mecanismos son redistribución, desconcentración del capital y salarios mínimos, política de ingresos e igual remuneración; la globalización aparece como algo que hace distinto el presente.",
+    "en": "The three mechanisms are redistribution, deconcentration of capital and minimum wages, incomes policy and equal pay; globalisation appears as something that makes today different."
+   },
+   "id": "fisc-dist-12-q2"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Solow con función Cobb-Douglas, \\(Y = F(K, L)\\) con elasticidad de sustitución 1, ¿qué pasa con la participación del capital si sube el stock de capital \\(K\\)? (\\(Y\\): producto; \\(L\\): trabajo.)",
+    "en": "In the Solow model with a Cobb-Douglas function, \\(Y = F(K, L)\\) with elasticity of substitution 1, what happens to the capital share when the capital stock \\(K\\) rises? (\\(Y\\): output; \\(L\\): labour.)"
+   },
+   "op": {
+    "es": [
+     "Sube",
+     "No cambia, porque el retorno cae en la misma proporción",
+     "Baja",
+     "Depende del ahorro"
+    ],
+    "en": [
+     "It rises",
+     "It does not change, because the return falls in the same proportion",
+     "It falls",
+     "It depends on saving"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con elasticidad 1 la participación es constante; si es mayor que 1, la participación del capital sube, que es la lectura de Piketty.",
+    "en": "With elasticity 1 the share is constant; if it exceeds 1, the capital share rises, which is Piketty's reading."
+   },
+   "id": "fisc-dist-12-q3"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Summers que usa Atkinson, \\(Y = F(K_1, AL + BK_2)\\), donde \\(K_2\\) es capital que sustituye trabajo, \\(A\\) y \\(B\\) son las productividades del trabajo y de los robots, \\(w\\) el salario y \\(r\\) el retorno del capital, ¿cuándo se usan robots?",
+    "en": "In the Summers model used by Atkinson, \\(Y = F(K_1, AL + BK_2)\\), where \\(K_2\\) is capital that substitutes for labour, \\(A\\) and \\(B\\) are the productivities of labour and robots, \\(w\\) the wage and \\(r\\) the return on capital, when are robots used?"
+   },
+   "op": {
+    "es": [
+     "Siempre, porque el capital es más productivo",
+     "Cuando \\(w/r\\) es menor que \\(A/B\\)",
+     "Cuando \\(w/r\\) alcanza \\(A/B\\); desde ahí el cociente queda fijo",
+     "Solo si la elasticidad de sustitución es menor que 1"
+    ],
+    "en": [
+     "Always, because capital is more productive",
+     "When \\(w/r\\) is below \\(A/B\\)",
+     "When \\(w/r\\) reaches \\(A/B\\); from then on the ratio stays fixed",
+     "Only if the elasticity of substitution is below 1"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Con \\(w/r < A/B\\), \\(K_2 = 0\\); cuando hay robots, \\(w/r = A/B\\) y el crecimiento ya no sube el salario relativo.",
+    "en": "With \\(w/r < A/B\\), \\(K_2 = 0\\); once robots are used, \\(w/r = A/B\\) and growth no longer raises the relative wage."
+   },
+   "id": "fisc-dist-12-q4"
+  },
+  {
+   "q": {
+    "es": "Con robots en uso, el cociente entre la participación de salarios y la del capital es \\(wL/rK = (A/B)/(K/L)\\), con \\(K/L\\) el capital por trabajador. ¿Qué pasa cuando la economía acumula capital?",
+    "en": "With robots in use, the ratio of the wage share to the capital share is \\(wL/rK = (A/B)/(K/L)\\), with \\(K/L\\) capital per worker. What happens as the economy accumulates capital?"
+   },
+   "op": {
+    "es": [
+     "La participación de los salarios sube",
+     "La participación del capital sube, con independencia de la elasticidad de sustitución",
+     "Las dos participaciones quedan constantes",
+     "El salario real sube más que el retorno"
+    ],
+    "en": [
+     "The wage share rises",
+     "The capital share rises, regardless of the elasticity of substitution",
+     "Both shares stay constant",
+     "The real wage rises more than the return"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con \\(A/B\\) fijo, más \\(K/L\\) achica el cociente: el crecimiento beneficia a las ganancias, el dilema distributivo de Atkinson.",
+    "en": "With \\(A/B\\) fixed, a higher \\(K/L\\) shrinks the ratio: growth benefits profits, Atkinson's distributional dilemma."
+   },
+   "id": "fisc-dist-12-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Atkinson propone una alícuota máxima de 65% en el impuesto a la renta?",
+    "en": "Why does Atkinson propose a 65% top income tax rate?"
+   },
+   "op": {
+    "es": [
+     "Porque es la tasa que maximiza la recaudación",
+     "Porque era la alícuota de 1979",
+     "Porque así lo calcula Piketty",
+     "Por equidad: es la tasa de retiro del Universal Credit, y los ricos deberían enfrentar la misma tasa marginal que los pobres"
+    ],
+    "en": [
+     "Because it is the revenue-maximising rate",
+     "Because it was the 1979 rate",
+     "Because Piketty calculates it",
+     "For fairness: it is the Universal Credit withdrawal rate, and the rich should face the same marginal rate as the poor"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El gobierno británico decía que la tasa que maximiza la recaudación es 40%; Atkinson usa un criterio de equidad entre tasas marginales.",
+    "en": "The UK government argued the revenue-maximising rate is 40%; Atkinson uses a fairness criterion across marginal rates."
+   },
+   "id": "fisc-dist-12-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué ventaja ve Atkinson en gravar las herencias según lo que recibe cada persona y no según lo que deja el causante?",
+    "en": "What advantage does Atkinson see in taxing inheritances by what each person receives rather than what the deceased leaves?"
+   },
+   "op": {
+    "es": [
+     "Da un incentivo directo a repartir más la riqueza",
+     "Recauda siempre más",
+     "Elimina la necesidad de umbrales",
+     "Evita gravar las donaciones en vida"
+    ],
+    "en": [
+     "It gives a direct incentive to spread wealth more widely",
+     "It always raises more revenue",
+     "It removes the need for thresholds",
+     "It avoids taxing gifts inter vivos"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si cada receptor tributa por lo recibido, conviene repartir entre más personas; Atkinson cree que eso ayudaría con las brechas de género y entre generaciones.",
+    "en": "If each recipient pays on what they receive, it pays to spread among more people; Atkinson thinks this would help with gender and intergenerational gaps."
+   },
+   "id": "fisc-dist-12-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué Atkinson prefiere un ingreso de participación a un ingreso básico universal condicionado a la ciudadanía?",
+    "en": "Why does Atkinson prefer a participation income to a universal basic income conditioned on citizenship?"
+   },
+   "op": {
+    "es": [
+     "Porque es más barato",
+     "Porque no necesita administración",
+     "Porque todo ingreso básico necesita una condición, y la ciudadanía sería discriminatoria y probablemente contraria al derecho de la UE",
+     "Porque excluye a quienes cuidan a familiares"
+    ],
+    "en": [
+     "Because it is cheaper",
+     "Because it needs no administration",
+     "Because any basic income needs a condition, and citizenship would be discriminatory and probably contrary to EU law",
+     "Because it excludes those caring for relatives"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Para Atkinson un ingreso universal es una quimera; la participación (empleo, estudio, cuidados, voluntariado) es una condición mejor, aunque requiere administración.",
+    "en": "For Atkinson a universal income is a chimera; participation (work, study, care, volunteering) is a better condition, though it requires administration."
+   },
+   "id": "fisc-dist-12-q8"
+  }
+ ],
+ "palabras": 2602,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué no alcanza la igualdad de oportunidades para justificar la desigualdad de ingresos?",
+    "en": "Why is equality of opportunity not enough to justify income inequality?"
+   },
+   "a": {
+    "es": "Porque la típica es competitiva: todos largan igual, pero en una carrera con premios desiguales, y la estructura de premios puede ser demasiado desigual. Atkinson (2014).",
+    "en": "Because the typical kind is competitive: everyone starts equal, but in a race with unequal prizes, and the prize structure can be too unequal. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t1"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué redujo la desigualdad en Europa entre 1945 y 1979?",
+    "en": "What reduced inequality in Europe between 1945 and 1979?"
+   },
+   "a": {
+    "es": "El Estado de bienestar con impuestos progresivos, la caída de la participación y la concentración del capital y la intervención en el mercado de trabajo (salarios mínimos, política de ingresos, igual remuneración). Atkinson (2014).",
+    "en": "The welfare state with progressive taxes, the fall in the share and concentration of capital, and labour market intervention (minimum wages, incomes policy, equal pay). Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo puede el crecimiento dejar de beneficiar a los asalariados en un modelo de Solow?",
+    "en": "How can growth stop benefiting wage-earners in a Solow model?"
+   },
+   "a": {
+    "es": "Si el capital puede sustituir trabajo como robot: cuando el cociente salario/retorno llega a A/B se usan robots, ese cociente queda fijo y la participación del capital sube con el capital por trabajador. Atkinson (2014), sobre Summers (2013).",
+    "en": "If capital can substitute for labour as robots: once the wage/return ratio reaches A/B robots are used, the ratio stays fixed and the capital share rises with capital per worker. Atkinson (2014), building on Summers (2013)."
+   },
+   "id": "fisc-dist-12-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la dirección del cambio técnico es un asunto de política distributiva?",
+    "en": "Why is the direction of technical change a matter of distributional policy?"
+   },
+   "a": {
+    "es": "Porque es endógena: invertir en subir la productividad de los robots (B) o la de los trabajadores (A) es una decisión, y si la toma solo el capital tiende a reemplazar trabajo. Atkinson (2014).",
+    "en": "Because it is endogenous: investing to raise robot productivity (B) or worker productivity (A) is a choice, and if capital alone makes it, it tends to replace labour. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t4"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué propone Atkinson para que un salario vital no acelere la automatización?",
+    "en": "What does Atkinson propose so that a living wage does not speed up automation?"
+   },
+   "a": {
+    "es": "Un respaldo: empleo garantizado por el Estado al salario vital para todo el que lo busque, como el reservorio de empleo público que autorizaba la ley Humphrey-Hawkins de 1978. Atkinson (2014).",
+    "en": "A backstop: state-guaranteed employment at the living wage for everyone who seeks it, like the reservoir of public employment authorised by the 1978 Humphrey-Hawkins Act. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué mejorar el rendimiento de los pequeños ahorristas reduce doblemente la desigualdad?",
+    "en": "Why does improving small savers' returns reduce inequality twice over?"
+   },
+   "a": {
+    "es": "Porque achica la cuña entre el retorno del capital y lo que recibe el hogar, que sube su ingreso, y esa cuña es el ingreso del sector financiero, muy concentrado en la cima. Atkinson (2014).",
+    "en": "Because it narrows the wedge between the return on capital and what households receive, raising their income, and that wedge is the income of the financial sector, highly concentrated at the top. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué es una herencia mínima y de dónde viene la idea?",
+    "en": "What is a minimum inheritance and where does the idea come from?"
+   },
+   "a": {
+    "es": "Una dotación de capital para todos al llegar a la adultez; Thomas Paine propuso en 1797 pagar 15 libras a cada persona a los 21 años, y el Reino Unido tuvo los child trust funds desde 2005. Atkinson (2014).",
+    "en": "A capital endowment for everyone on reaching adulthood; Thomas Paine proposed in 1797 to pay 15 pounds to everyone at 21, and the UK had child trust funds from 2005. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué le falta a El capital de Piketty según Atkinson?",
+    "en": "What is missing from Piketty's Capital according to Atkinson?"
+   },
+   "a": {
+    "es": "El género, la relación entre ingreso nacional e ingreso de los hogares, el poder de mercado y de negociación, y el lado del ahorro pequeño y la pobreza, además del foco en la cima. Atkinson (2014).",
+    "en": "Gender, the link between national income and household income, market and bargaining power, and the side of small savings and poverty, beyond the focus on the top. Atkinson (2014)."
+   },
+   "id": "fisc-dist-12-t8"
+  }
+ ]
+}
