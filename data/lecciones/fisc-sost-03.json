@@ -1,0 +1,429 @@
+{
+ "id": "fisc-sost-03",
+ "cat": "fisc-sost",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "Reglas fiscales subnacionales: qué funciona, qué no y qué dejó la pandemia",
+ "bajada": "Jiménez, Letelier, Ruelas y Bonet-Morón revisan la teoría, la evidencia empírica y la historia de las reglas fiscales para provincias y municipios: el contexto pesa más que la regla, los límites a la deuda funcionan mejor que los de déficit y la región llegó al COVID sin cláusulas de escape.",
+ "fuentes": [
+  1337
+ ],
+ "cita": "J. P. Jiménez, L. Letelier, I. Ruelas y J. Bonet-Morón (2021), «Reglas fiscales subnacionales: revisión empírica, experiencias internacionales y sus desafíos en la nueva institucionalidad fiscal post COVID», Documentos de Trabajo sobre Economía Regional y Urbana núm. 300, Banco de la República",
+ "intro": "En las últimas dos décadas las reglas fiscales se multiplicaron. Primero ataron a los gobiernos nacionales; después, a medida que la descentralización les pasó gasto e ingresos, se extendieron a provincias, estados, departamentos y municipios. Juan Pablo Jiménez (FLACSO y AIFIL), Leonardo Letelier (Universidad de Chile), Ignacio Ruelas (CIDE) y Jaime Bonet-Morón (Banco de la República) revisan por qué hacen falta reglas subnacionales, qué dice la evidencia empírica sobre su efecto, cómo están diseñadas en países federales y unitarios, avanzados y latinoamericanos, y cómo evolucionaron en América Latina en tres etapas. Escriben en 2021, con la pandemia como prueba de fuego: casi todos los países activaron cláusulas de escape débiles o directamente suspendieron sus reglas. El trabajo cierra con lecciones para Colombia. Es una revisión, no un trabajo econométrico propio: su valor está en ordenar la literatura y la experiencia.",
+ "secciones": [
+  {
+   "t": "El sesgo pro déficit de los gobiernos subnacionales",
+   "p": [
+    "La primera generación del federalismo fiscal (Oates, 1972) suponía gobiernos benevolentes: como las autoridades locales conocen mejor la realidad local, descentralizar mejora la asignación. Musgrave había dejado la estabilización macroeconómica en manos del gobierno central, y Weingast (1995) agregó que la autonomía para recaudar y gastar puede ser un mecanismo de rendición de cuentas que refuerza el equilibrio fiscal. Barro (1974) ofrece otro argumento contra la intervención: si los individuos anticipan los impuestos futuros que pagarán la deuda, la forma de financiamiento da igual. Pero la evidencia muestra que la gente subestima esos impuestos futuros, y entonces las decisiones de presupuesto importan.",
+    "¿Por qué un gobierno no las tomaría bien? La literatura de segunda generación (Oates, 2008) lo ve como interesado en conservar el poder y en las rentas del cargo, y la relación entre niveles de gobierno se vuelve un problema de agencia. Tres mecanismos empujan la deuda subnacional por encima del óptimo: la piscina común, porque cada jurisdicción disfruta beneficios cuyo costo no asume sola (Weingast y otros, 1981; Hallerberg, 2007); la inconsistencia temporal (Kydland y Prescott, 1977); y la garantía implícita de rescate del gobierno central, que genera riesgo moral."
+   ]
+  },
+  {
+   "t": "Para qué sirven y cómo deberían ser",
+   "p": [
+    "Las reglas no garantizan estabilidad fiscal, pero según el contexto pueden ayudar mucho. Jiménez y Ter-Minassian (2016) muestran que en Argentina, Bolivia, Brasil, Colombia, México y Perú el gasto subnacional fue procíclico entre 2003 y 2013, en parte por ingresos atados a recursos naturales, pero sobre todo por la falta o el mal diseño de mecanismos de control del déficit. Las reglas limitan la discrecionalidad y fortalecen la posición negociadora del gobierno central.",
+    "Eyraud y otros (2018) piden dos propiedades. La primera: no inducir gasto subóptimo para cumplir la meta. Como se tiende a recortar lo poco visible, las reglas pueden castigar la inversión; en Italia, el endurecimiento de 2007 del Pacto de Estabilidad Local redujo la inversión municipal (Venturini, 2020). La segunda: evitar el déficit sistemático sin quitar capacidad de respuesta ante shocks como la pandemia, lo que exige reglas simples y transparentes, fáciles de evaluar y con sanciones verificables, porque la complejidad abre la puerta a la contabilidad creativa y a los grupos de presión.",
+    "La historia tiene un hito: Maastricht en 1992. Tanzi (1996) advirtió que la descentralización podía poner en riesgo la estabilidad presupuestaria si no había un contrato claro entre niveles de gobierno. En América Latina las reglas de 1997-2003 fueron de primera generación, centradas en la sostenibilidad y la trayectoria de la deuda; las de 2003-2009 sumaron la distinción entre gasto corriente y de capital y entre déficit efectivo y estructural. Blanchard y otros (2021) proponen una tercera generación: reemplazar metas cuantitativas por un estándar de sostenibilidad juzgado ex post por un cuerpo colegiado, al estilo de Nueva Zelanda."
+   ]
+  },
+  {
+   "t": "Cómo se escriben las reglas: algunas fórmulas",
+   "eq": [
+    "\\frac{\\text{Déficit}_t}{\\text{PIB}_t} \\le 3\\%, \\qquad \\frac{\\text{Deuda}_t}{\\text{PIB}_t} \\le 60\\%",
+    "\\frac{S_t}{RC_t} \\le 15\\%, \\qquad g^{GP}_t \\le g^{PIB}_t",
+    "\\frac{D_t}{IC_t} \\le 80\\%",
+    "VFI = 1 - \\frac{\\text{Ingresos propios}}{\\text{Gasto subnacional}}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "Doble restricción del Tratado de Maastricht (1992) para los países de la Unión Europea: déficit fiscal máximo de 3% del PIB y deuda pública máxima de 60% del PIB; \\(t\\): año.",
+      "en": "Maastricht Treaty (1992) double constraint for European Union countries: maximum fiscal deficit of 3% of GDP and maximum public debt of 60% of GDP; \\(t\\): year."
+     },
+     {
+      "es": "Lectura propia: la escritura como desigualdades es nuestra; el texto la describe en palabras.",
+      "en": "Own reading: writing them as inequalities is ours; the text describes them in words."
+     }
+    ],
+    [
+     {
+      "es": "Régimen Federal de Responsabilidad Fiscal argentino de 2004 (Ley 25917). \\(S_t\\): servicios de la deuda provincial; \\(RC_t\\): recursos corrientes de la provincia; el cociente no puede superar 15%.",
+      "en": "Argentina's 2004 Federal Fiscal Responsibility Regime (Law 25917). \\(S_t\\): provincial debt service; \\(RC_t\\): the province's current revenues; the ratio cannot exceed 15%."
+     },
+     {
+      "es": "\\(g^{GP}_t\\): tasa de crecimiento del gasto primario; \\(g^{PIB}_t\\): tasa de crecimiento del PIB, que funciona como techo. La ley sumaba un balance equilibrado descontando ciertos gastos de capital.",
+      "en": "\\(g^{GP}_t\\): growth rate of primary spending; \\(g^{PIB}_t\\): GDP growth rate, which acts as a ceiling. The law added a balanced budget net of certain capital spending."
+     },
+     {
+      "es": "Lectura propia: el texto no indica si las tasas son nominales o reales.",
+      "en": "Own reading: the text does not say whether the rates are nominal or real."
+     }
+    ],
+    [
+     {
+      "es": "Límite de sostenibilidad de la Ley 358 de 1997 de Colombia (la «Ley de Semáforos»). \\(D_t\\): saldo de deuda de la entidad territorial; \\(IC_t\\): sus ingresos corrientes.",
+      "en": "Sustainability limit of Colombia's Law 358 of 1997 (the 'Traffic Light Law'). \\(D_t\\): debt stock of the territorial entity; \\(IC_t\\): its current revenues."
+     },
+     {
+      "es": "Durante la pandemia se recomendó llevar temporalmente el tope del 80% al 100%.",
+      "en": "During the pandemic a temporary rise of the cap from 80% to 100% was recommended."
+     }
+    ],
+    [
+     {
+      "es": "\\(VFI\\): desequilibrio fiscal vertical (vertical fiscal imbalance), según Lledó y otros (2018): mide qué parte del gasto subnacional no se financia con recursos propios.",
+      "en": "\\(VFI\\): vertical fiscal imbalance, following Lledó et al. (2018): measures how much of subnational spending is not financed with own resources."
+     },
+     {
+      "es": "Ingresos propios y gasto subnacional excluyen toda transferencia recibida o pagada a otros niveles. Con \\(VFI = 0\\) el nivel subnacional se autofinancia; cerca de 1 depende casi por completo de transferencias.",
+      "en": "Own revenue and subnational spending exclude any transfer received from or paid to other levels. With \\(VFI = 0\\) the subnational level is self-financed; near 1 it depends almost entirely on transfers."
+     },
+     {
+      "es": "Los autores usan una definición laxa de ingreso propio: el impuesto que el gobierno subnacional administra y cuyos recursos dispone, aunque no fije la alícuota; eso subestima la baja autonomía tributaria de la región.",
+      "en": "The authors use a loose definition of own revenue: taxes the subnational government administers and whose proceeds it keeps, even if it does not set the rate; this understates the region's low tax autonomy."
+     }
+    ]
+   ],
+   "p": [
+    "Las reglas se apoyan en pocos indicadores: el déficit efectivo o estructural, el stock de deuda sobre el PIB o sobre los ingresos, el servicio de la deuda sobre los recursos, el crecimiento del gasto. La regla de oro permite endeudarse solo para invertir. Al comparar países, los autores usan el desequilibrio fiscal vertical, que en el texto llaman también asimetría vertical: por encima de 0,50, el nivel subnacional depende de las transferencias para más de la mitad de su gasto."
+   ]
+  },
+  {
+   "t": "Qué dice la evidencia",
+   "p": [
+    "El resultado más recurrente de los estudios entre países es que el contexto pesa más que la regla: la capacidad de cobrar impuestos propios, la ausencia de rescates, un bajo desequilibrio vertical y las instituciones políticas (Rodden y Wibbels, 2002; Plekhanov y Singh). Bartolini y otros (2018), con 19 países de la OCDE entre 1980 y 2010, encuentran efecto de las reglas en el gobierno central pero no en el subnacional. Martínez-Vásquez y otros (2016), con 57 países, no encuentran efecto sobre la sostenibilidad subnacional, salvo la regla de oro. Lagos-Peña y otros (2020), con 28 países de la OCDE entre 1995 y 2014, hallan que las restricciones al endeudamiento funcionan y las de balance no. El metaanálisis de Heinemann y otros (2018) sobre 30 estudios concluye que las reglas subnacionales se asocian con menores déficits y, en menor medida, con menos deuda; muchos trabajos no corrigen la endogeneidad de las reglas.",
+    "En países federales la evidencia es abundante. En Canadá, Tapp (2013) muestra que las reglas más duras, sobre deuda o déficit, son más efectivas que las de gasto o ingreso, y reducen el déficit en 0,8% del PIB provincial y la deuda en 1,5%. En Estados Unidos, Poterba (1994) encuentra que los estados con normas más severas ajustan más rápido ante crisis, aunque la política del parlamento estadual también importa; Kelemen y Teo (2014) sostienen que lo decisivo no es la severidad sino la claridad, que el mercado premia en la prima de riesgo de los bonos.",
+    "En gobiernos locales, Grembi y otros (2016) aprovechan que Italia exceptuó en 2001 a los municipios de menos de 5.000 habitantes del Pacto de Estabilidad Local: tras la excepción la deuda municipal crece de forma significativa, lo que prueba que la regla mordía. En España las restricciones al endeudamiento municipal resultaron efectivas para la deuda (Cabasés y otros, 2007), pero las de déficit no financiero y resultado operativo tuvieron bajo cumplimiento (Benito y otros, 2015). En Colombia, Sánchez y Zenteno (2010) hallan que los límites al gasto de la Ley 617 de 2000 mejoraron el desempeño, más en departamentos que en municipios; Chamorro y Urrea (2016) encuentran que solo funcionó el límite a la deuda de la Ley de Semáforos. Y Letelier (2011) muestra que en Chile, donde los municipios no pueden endeudarse por ley, igual lo hacen con leasing, atraso a proveedores o aportes impagos.",
+    "Lectura propia: el Cuadro 1 del trabajo resume a Foremny (2014) diciendo que las reglas reducen el déficit solo en países unitarios, mientras el texto dice que el efecto significativo aparece solo entre los federales. El cuadro agrega que en los federales el déficit puede reducirse con más autonomía tributaria. Las dos lecturas se contradicen, así que conviene ir a la fuente antes de citar ese resultado."
+   ]
+  },
+  {
+   "t": "El mapa: federales, unitarios y la dependencia de transferencias",
+   "p": [
+    "Los países federales gastan en el nivel subnacional más del 30% del gasto del gobierno general, y los unitarios descentralizados de la región, como Colombia y Perú, más del 35%. Pero los ingresos cuentan otra historia. Los federales desarrollados, menos Australia y Bélgica, junto con Brasil, recaudan en el nivel subnacional más del 40% de los tributos; Brasil, 10% del PIB, el 41,7% del gobierno general. En el resto de América Latina el nivel subnacional recauda menos del 20%, y en Argentina, Bolivia, Ecuador, México y Perú las transferencias igualan o superan los recursos propios. México recauda cerca del 1% del PIB a nivel subnacional.",
+    "El diseño de las reglas sigue ese mapa. Donde el desequilibrio vertical supera 0,50, todas apuntan a controlar la deuda, y en América Latina predominan además los límites al crecimiento del gasto. En los federales de la OCDE con bajo desequilibrio (Estados Unidos, Canadá, Australia, Alemania) las reglas nacieron de los propios gobiernos subnacionales: todos los estados de Estados Unidos menos Vermont tienen presupuesto equilibrado en su constitución, y seis provincias canadienses adoptaron leyes contra el déficit entre 1993 y 1996. Donde los gobiernos subnacionales ejecutan más del 30% de la inversión pública predominan el balance presupuestario con regla de oro, cláusulas de escape e instituciones de monitoreo. En América Latina el monitoreo lo hacen ministerios de hacienda o consejos con opiniones no vinculantes; en Argentina, el Consejo Federal de Responsabilidad Fiscal puede sancionar desde la publicación de desvíos hasta la restricción de transferencias."
+   ]
+  },
+  {
+   "t": "América Latina en tres etapas",
+   "p": [
+    "Implementación. Las primeras reglas respondieron al endeudamiento subnacional de fines de los noventa, que en 2002 alcanzó 22% del PIB en Argentina y 20% en Brasil; en Colombia había llegado a 6,2% en 1995. Venían tras una primera ola descentralizadora que prometía eficiencia y rendición de cuentas. En los federales no podían imponerse unilateralmente, así que vinieron atadas a renegociaciones de deuda: en Brasil, la Unión asumió deudas a cambio de metas, retención automática de transferencias y luego la Ley de Responsabilidad Fiscal; en Argentina, la Ley de Convertibilidad Fiscal de 1999 y los acuerdos bilaterales de 2000, que perdieron vigencia con la salida de la convertibilidad. Colombia empezó con la Ley 358 de 1997.",
+    "Consolidación. Desde 2003 los ingresos crecieron por la actividad y las materias primas, sobre todo vía transferencias y no por más esfuerzo tributario propio, y la deuda subnacional cayó: en Colombia, de más de 6% del PIB en 2003 a casi 4,5% en 2009. Argentina aprobó en 2004 la Ley 25917, adherida por 21 de las 24 jurisdicciones, que al año excluyó también el gasto en educación. En Bolivia, el impuesto directo a los hidrocarburos recaudó en promedio 5,7 puntos del PIB y más del 90% se transfiere a departamentos y municipios. Perú, con la ley de 2003, fijó un déficit máximo de 1% del PIB y un crecimiento real del gasto de 3%, y extendió reglas a los gobiernos regionales y locales. Ante la crisis de 2008 Argentina excluyó del límite el gasto que promoviera la actividad, que era casi todo, y eliminó la regla de deuda: la ley quedó prácticamente irrelevante en lo cuantitativo.",
+    "Reformulación. La deuda tocó mínimos en 2012-2014 (4% del PIB en Argentina en 2014, 11% en Brasil y 4% en Colombia en 2012) y luego volvió a subir. La crisis de 2008-2009 dejó en claro las debilidades: cláusulas de escape débiles, sesgo contra la inversión, prociclicidad y falta de igualación territorial. Hubo respuestas: en Perú, una guía ex ante del déficit primario como porcentaje del PIB potencial (2013); consejos fiscales en Chile, Colombia y Perú, y en México la Ley de Disciplina Financiera de 2016, que exige aprobación de dos tercios de la legislatura estatal para endeudarse, limita la deuda a inversión productiva y refinanciamiento, crea un sistema de alertas y un registro único de deudas. Ecuador destinó el endeudamiento a gasto no permanente y limitó la deuda de los gobiernos autónomos, que igual creció 0,2 puntos del PIB."
+   ]
+  },
+  {
+   "t": "Lecciones post pandemia y el caso colombiano",
+   "p": [
+    "Con el COVID los gobiernos subnacionales quedaron en la primera línea, y casi todos los países activaron cláusulas de escape débiles o suspendieron las reglas. Argentina suspendió por ley de presupuesto los límites de endeudamiento; Brasil y México apoyaron con suspensión de pagos de deuda y liquidez; Perú suspendió las medidas correctivas; Colombia permitió endeudarse sin autorización del Ministerio de Hacienda y suspendió sanciones.",
+    "Los autores proponen reglas con mecanismos contracíclicos y tratamiento diferenciado del gasto de capital, marcos fiscales de mediano plazo que integren las finanzas de todos los niveles, consejos fiscales, cláusulas de escape y fondos de emergencia, sanciones que impliquen un costo para el funcionario y la administración responsables, e información fiscal subnacional pública y armonizada. Para Colombia la clave es la heterogeneidad: en las capitales los recursos propios son entre 50% y 70% de los ingresos, mientras que en los municipios pequeños, cerca del 90% del total, las transferencias llegan al 95%. Ante un shock, los grandes pierden ingresos propios procíclicos y, para cumplir la regla, recortan inversión. Por eso piden válvulas de escape diferenciadas por categoría de entidad.",
+    "Lectura propia: el trabajo es más convincente como mapa que como juicio. La evidencia que reúne sugiere que lo que más funciona es limitar la deuda y no prometer rescates, y que la regla perfecta no existe fuera de su contexto. Para Argentina, el caso más citado de regla suspendida y vaciada, la enseñanza es que una regla sin enforcement creíble ni cláusula de escape bien definida termina reescribiéndose en cada crisis."
+   ]
+  }
+ ],
+ "claves": [
+  "Los gobiernos subnacionales tienden a sobreendeudarse por piscina común, inconsistencia temporal y expectativa de rescate.",
+  "La evidencia empírica dice que el contexto (autonomía tributaria, no rescate, bajo desequilibrio vertical, política) pesa más que la regla.",
+  "Las restricciones a la deuda suelen funcionar mejor que las de balance o déficit; la claridad de la regla importa tanto como su severidad.",
+  "Desequilibrio fiscal vertical: VFI = 1 − ingresos propios / gasto subnacional; por encima de 0,50 las reglas se centran en la deuda.",
+  "América Latina: implementación (fines de los noventa), consolidación (desde 2003) y reformulación (desde la crisis de 2008).",
+  "La pandemia mostró la falta de cláusulas de escape y de trato diferenciado a la inversión; Colombia necesita válvulas por tipo de entidad."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según los autores, ¿qué mecanismos explican el sesgo de los gobiernos subnacionales a endeudarse por encima del óptimo?",
+    "en": "According to the authors, what mechanisms explain subnational governments' bias toward borrowing above the optimum?"
+   },
+   "op": {
+    "es": [
+     "La equivalencia ricardiana y la neutralidad de la deuda",
+     "La piscina común, la inconsistencia temporal y la expectativa de rescate del gobierno central",
+     "La alta autonomía tributaria y la baja dependencia de transferencias",
+     "Los tipos de cambio fijos"
+    ],
+    "en": [
+     "Ricardian equivalence and debt neutrality",
+     "The common pool, time inconsistency and expected central-government bailouts",
+     "High tax autonomy and low dependence on transfers",
+     "Fixed exchange rates"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Son los mecanismos de la segunda generación del federalismo fiscal; la equivalencia ricardiana (Barro) iría en contra de la necesidad de intervenir, y la alta autonomía tributaria es justamente un factor que favorece la disciplina.",
+    "en": "These are the mechanisms of second-generation fiscal federalism; Ricardian equivalence (Barro) would argue against the need to intervene, and high tax autonomy is precisely a factor that favors discipline."
+   },
+   "id": "fisc-sost-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el resultado más recurrente de los estudios empíricos entre países sobre reglas fiscales subnacionales?",
+    "en": "What is the most recurrent result of cross-country empirical studies on subnational fiscal rules?"
+   },
+   "op": {
+    "es": [
+     "Que las reglas de balance son siempre las más efectivas",
+     "Que las reglas no tienen ningún efecto en ningún nivel de gobierno",
+     "Que los factores de contexto suelen ser más importantes que la propia regla",
+     "Que las reglas solo funcionan en países de América Latina"
+    ],
+    "en": [
+     "That balance rules are always the most effective",
+     "That rules have no effect at any level of government",
+     "That context factors tend to matter more than the rule itself",
+     "That rules only work in Latin American countries"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Autonomía tributaria, ausencia de rescates, bajo desequilibrio vertical e instituciones políticas condicionan el resultado. Varios estudios hallan además que limitar la deuda funciona mejor que limitar el balance.",
+    "en": "Tax autonomy, absence of bailouts, low vertical imbalance and political institutions condition the outcome. Several studies also find that limiting debt works better than limiting the balance."
+   },
+   "id": "fisc-sost-03-q2"
+  },
+  {
+   "q": {
+    "es": "Si un gobierno subnacional gasta 100 y tiene ingresos propios por 30, ¿cuánto vale su desequilibrio fiscal vertical?",
+    "en": "If a subnational government spends 100 and has own revenue of 30, what is its vertical fiscal imbalance?"
+   },
+   "op": {
+    "es": [
+     "0,70",
+     "0,30",
+     "1,30",
+     "3,33"
+    ],
+    "en": [
+     "0.70",
+     "0.30",
+     "1.30",
+     "3.33"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "VFI = 1 − 30/100 = 0,70: el 70% del gasto se financia con transferencias. Supera el umbral de 0,50 que los autores usan para hablar de asimetría vertical alta.",
+    "en": "VFI = 1 − 30/100 = 0.70: 70% of spending is financed by transfers. It exceeds the 0.50 threshold the authors use for high vertical asymmetry."
+   },
+   "id": "fisc-sost-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestra el caso italiano analizado por Grembi y otros (2016)?",
+    "en": "What does the Italian case analyzed by Grembi et al. (2016) show?"
+   },
+   "op": {
+    "es": [
+     "Que el Pacto de Estabilidad Local no tuvo efecto alguno",
+     "Que la deuda municipal bajó tras derogar la regla",
+     "Que los municipios grandes eludieron la regla con leasing",
+     "Que, al exceptuar de la regla a los municipios de menos de 5.000 habitantes, su deuda creció significativamente: la regla era efectiva"
+    ],
+    "en": [
+     "That the Local Stability Pact had no effect at all",
+     "That municipal debt fell after the rule was repealed",
+     "That large municipalities circumvented the rule through leasing",
+     "That, after exempting municipalities under 5,000 inhabitants from the rule, their debt grew significantly: the rule was effective"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La excepción de 2001 funciona como experimento: si al sacar la regla la deuda sube, la regla estaba conteniéndola. El leasing es el caso chileno estudiado por Letelier (2011).",
+    "en": "The 2001 exemption works as an experiment: if debt rises when the rule is removed, the rule was containing it. Leasing is the Chilean case studied by Letelier (2011)."
+   },
+   "id": "fisc-sost-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué sostienen Kelemen y Teo (2014) sobre la efectividad de las reglas de los estados de Estados Unidos?",
+    "en": "What do Kelemen and Teo (2014) argue about the effectiveness of US state rules?"
+   },
+   "op": {
+    "es": [
+     "Que lo decisivo es la severidad y la amenaza judicial",
+     "Que lo decisivo es la claridad de la regla, que el mercado refleja en la prima de riesgo de los bonos",
+     "Que las reglas solo funcionan con un banco central independiente",
+     "Que las reglas autoimpuestas no tienen efecto"
+    ],
+    "en": [
+     "That severity and the judicial threat are decisive",
+     "That clarity of the rule is decisive, which the market reflects in bond risk premia",
+     "That rules only work with an independent central bank",
+     "That self-imposed rules have no effect"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Para Kelemen y Teo la efectividad no depende de la severidad ni de la probabilidad de juicio sino de la claridad, que genera señales de mercado. Poterba (1994), en cambio, asocia normas más severas con ajustes más rápidos.",
+    "en": "For Kelemen and Teo effectiveness depends not on severity or the probability of litigation but on clarity, which generates market signals. Poterba (1994), by contrast, links stricter rules with faster adjustment."
+   },
+   "id": "fisc-sost-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la ley argentina de responsabilidad fiscal quedó prácticamente irrelevante tras la crisis de 2008?",
+    "en": "Why did Argentina's fiscal responsibility law become practically irrelevant after the 2008 crisis?"
+   },
+   "op": {
+    "es": [
+     "Porque se excluyó del límite el gasto que promoviera la actividad, que era casi todo, y se eliminó la regla de deuda",
+     "Porque las provincias se autoimpusieron reglas más estrictas",
+     "Porque el Consejo Federal de Responsabilidad Fiscal fue disuelto en 2004",
+     "Porque la deuda provincial era nula"
+    ],
+    "en": [
+     "Because spending that promoted activity, nearly all of it, was excluded from the limit and the debt rule was eliminated",
+     "Because provinces imposed stricter rules on themselves",
+     "Because the Federal Fiscal Responsibility Council was dissolved in 2004",
+     "Because provincial debt was zero"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Las excepciones, pensadas para 2009-2010, se renovaron hasta 2016. Antes, en 2005, ya se había excluido el gasto en educación. El consejo se creó, no se disolvió, en 2004.",
+    "en": "The exceptions, meant for 2009-2010, were renewed until 2016. Earlier, in 2005, education spending had already been excluded. The council was created, not dissolved, in 2004."
+   },
+   "id": "fisc-sost-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué propone Blanchard y otros (2021) como tercera generación de reglas fiscales?",
+    "en": "What do Blanchard et al. (2021) propose as a third generation of fiscal rules?"
+   },
+   "op": {
+    "es": [
+     "Volver a metas simples de déficit y deuda como en Maastricht",
+     "Prohibir todo endeudamiento subnacional",
+     "Reemplazar las metas cuantitativas por un estándar de sostenibilidad evaluado ex post por un cuerpo colegiado",
+     "Atar el gasto al precio de las materias primas"
+    ],
+    "en": [
+     "Return to simple deficit and debt targets as in Maastricht",
+     "Ban all subnational borrowing",
+     "Replace quantitative targets with a sustainability standard assessed ex post by a collegiate body",
+     "Tie spending to commodity prices"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La idea es juzgar ex post la sostenibilidad considerando tasas de interés y crecimiento, con máxima transparencia, como en Nueva Zelanda. Los autores advierten que es un desafío mayor para los gobiernos subnacionales.",
+    "en": "The idea is to judge sustainability ex post considering interest and growth rates, with maximum transparency, as in New Zealand. The authors warn it is a greater challenge for subnational governments."
+   },
+   "id": "fisc-sost-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los autores piden válvulas de escape diferenciadas para las entidades territoriales de Colombia?",
+    "en": "Why do the authors call for differentiated escape valves for Colombia's territorial entities?"
+   },
+   "op": {
+    "es": [
+     "Porque los municipios pequeños tienen más recursos propios que las capitales",
+     "Porque todas las entidades dependen por igual de las transferencias",
+     "Porque la Ley de Semáforos no limita la deuda",
+     "Porque las entidades grandes dependen de ingresos propios procíclicos y, para cumplir la regla en una crisis, recortan inversión"
+    ],
+    "en": [
+     "Because small municipalities have more own resources than capitals",
+     "Because all entities depend equally on transfers",
+     "Because the Traffic Light Law does not limit debt",
+     "Because large entities depend on procyclical own revenue and, to meet the rule in a crisis, cut investment"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En las capitales los recursos propios son entre 50% y 70% de los ingresos; en los municipios pequeños las transferencias llegan al 95%. Un shock pega distinto en cada grupo, y una regla uniforme frena la inversión justo donde podría ser contracíclica.",
+    "en": "In capitals own resources are 50% to 70% of revenue; in small municipalities transfers reach 95%. A shock hits each group differently, and a uniform rule stops investment precisely where it could be countercyclical."
+   },
+   "id": "fisc-sost-03-q8"
+  }
+ ],
+ "palabras": 2055,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué hacen falta reglas fiscales para los gobiernos subnacionales?",
+    "en": "Why are fiscal rules needed for subnational governments?"
+   },
+   "a": {
+    "es": "Porque la piscina común, la inconsistencia temporal y la expectativa de rescate llevan a una deuda subnacional mayor que la óptima, y las reglas limitan esa discrecionalidad y fortalecen al gobierno central. Jiménez, Letelier, Ruelas y Bonet-Morón (2021).",
+    "en": "Because the common pool, time inconsistency and expected bailouts lead to subnational debt above the optimum, and rules limit that discretion and strengthen the central government. Jiménez, Letelier, Ruelas and Bonet-Morón (2021)."
+   },
+   "id": "fisc-sost-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué mide el desequilibrio fiscal vertical y cómo se calcula?",
+    "en": "What does vertical fiscal imbalance measure and how is it calculated?"
+   },
+   "a": {
+    "es": "La parte del gasto subnacional que no se financia con recursos propios: 1 menos ingresos propios sobre gasto subnacional, sin transferencias. Por encima de 0,50, la dependencia de transferencias es alta. Jiménez, Letelier, Ruelas y Bonet-Morón (2021), siguiendo a Lledó y otros (2018).",
+    "en": "The part of subnational spending not financed with own resources: 1 minus own revenue over subnational spending, excluding transfers. Above 0.50, dependence on transfers is high. Jiménez, Letelier, Ruelas and Bonet-Morón (2021), following Lledó et al. (2018)."
+   },
+   "id": "fisc-sost-03-t2"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué tipo de regla fiscal subnacional muestra más efectividad en la evidencia empírica?",
+    "en": "Which type of subnational fiscal rule shows more effectiveness in the empirical evidence?"
+   },
+   "a": {
+    "es": "Las restricciones al endeudamiento y la regla de oro, más que las metas de balance o déficit; y en todos los casos el contexto (autonomía tributaria, no rescate) pesa más que la regla. Jiménez, Letelier, Ruelas y Bonet-Morón (2021).",
+    "en": "Borrowing restrictions and the golden rule, more than balance or deficit targets; and in all cases context (tax autonomy, no bailout) matters more than the rule. Jiménez, Letelier, Ruelas and Bonet-Morón (2021)."
+   },
+   "id": "fisc-sost-03-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una regla fiscal estricta puede reducir la inversión pública subnacional?",
+    "en": "Why can a strict fiscal rule reduce subnational public investment?"
+   },
+   "a": {
+    "es": "Porque para cumplir la meta se recortan los gastos de poca visibilidad de corto plazo, como la inversión; en Italia el endurecimiento de 2007 del Pacto de Estabilidad Local bajó la inversión municipal. Jiménez, Letelier, Ruelas y Bonet-Morón (2021), citando a Venturini (2020).",
+    "en": "Because to meet the target governments cut spending with low short-run visibility, such as investment; in Italy the 2007 tightening of the Local Stability Pact lowered municipal investment. Jiménez, Letelier, Ruelas and Bonet-Morón (2021), citing Venturini (2020)."
+   },
+   "id": "fisc-sost-03-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo puede usarse una excepción legal para medir el efecto de una regla fiscal municipal?",
+    "en": "How can a legal exemption be used to measure the effect of a municipal fiscal rule?"
+   },
+   "a": {
+    "es": "Comparando municipios justo por debajo y por encima del umbral exceptuado: en Italia, tras liberar en 2001 a los de menos de 5.000 habitantes, su deuda creció significativamente, señal de que la regla era efectiva. Jiménez, Letelier, Ruelas y Bonet-Morón (2021), sobre Grembi y otros (2016).",
+    "en": "By comparing municipalities just below and above the exempted threshold: in Italy, after freeing those under 5,000 inhabitants in 2001, their debt grew significantly, a sign the rule was effective. Jiménez, Letelier, Ruelas and Bonet-Morón (2021), on Grembi et al. (2016)."
+   },
+   "id": "fisc-sost-03-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo evolucionaron las reglas fiscales subnacionales en América Latina?",
+    "en": "How did subnational fiscal rules evolve in Latin America?"
+   },
+   "a": {
+    "es": "En tres etapas: implementación a fines de los noventa, atada a renegociaciones de deuda; consolidación desde 2003, con más ingresos y menos deuda; y reformulación desde la crisis de 2008, buscando contraciclicidad, trato a la inversión y consejos fiscales. Jiménez, Letelier, Ruelas y Bonet-Morón (2021).",
+    "en": "In three stages: implementation in the late 1990s, tied to debt renegotiations; consolidation from 2003, with more revenue and less debt; and reformulation since the 2008 crisis, seeking countercyclicality, treatment of investment and fiscal councils. Jiménez, Letelier, Ruelas and Bonet-Morón (2021)."
+   },
+   "id": "fisc-sost-03-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué falla de diseño expuso la pandemia en las reglas fiscales subnacionales latinoamericanas?",
+    "en": "What design flaw did the pandemic expose in Latin American subnational fiscal rules?"
+   },
+   "a": {
+    "es": "La ausencia o debilidad de cláusulas de escape: casi todos los países las activaron o suspendieron las reglas, y Colombia, sin válvulas, tuvo que relajar por decreto deuda, gasto y sanciones. Jiménez, Letelier, Ruelas y Bonet-Morón (2021).",
+    "en": "The absence or weakness of escape clauses: almost all countries triggered them or suspended rules, and Colombia, lacking valves, had to relax debt, spending and sanctions by decree. Jiménez, Letelier, Ruelas and Bonet-Morón (2021)."
+   },
+   "id": "fisc-sost-03-t7"
+  }
+ ]
+}

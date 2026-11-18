@@ -1,0 +1,516 @@
+{
+ "id": "fisc-ecopol-03",
+ "cat": "fisc-ecopol",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "Desempeño, gasto y eficiencia: cómo medir qué rinde el sector público",
+ "bajada": "Porto, Garriga y Rosales proponen medir la eficiencia del Estado como resultado por peso gastado y la aplican a Bolivia entre 1992 y 2012: el desempeño en salud, educación y vivienda casi se duplicó, la eficiencia creció bastante menos y la descentralización aparece asociada a la mejora.",
+ "fuentes": [
+  1163
+ ],
+ "cita": "A. Porto, M. Garriga y W. Rosales, «Medidas de desempeño y eficiencia en el sector público. Un caso de estudio», Depto. de Economía, FCE-UNLP",
+ "intro": "Medir la calidad del sector público es difícil porque depende de qué se le pida al Estado. En un estado de servicios hay instrumentos objetivos; en un estado de bienestar, que además redistribuye, los objetivos dependen de juicios de valor (Musgrave, Tanzi). Alberto Porto, Marcelo Garriga y Walter Rosales, de la Universidad Nacional de La Plata, toman una sola dimensión de esa calidad, la eficiencia, y la definen como la relación entre lo que el gobierno logra y lo que gasta para lograrlo. Después la cuantifican para Bolivia, un país que entre 1990 y 2012 vivió una descentralización profunda: el gasto de departamentos y municipios duplicó su peso en el gasto total y, dentro del nivel subnacional, los municipios pasaron de un tercio a dos tercios. La pregunta de fondo es si ese cambio mejoró el desempeño, el costo y la eficiencia de la provisión de bienes públicos y cuasi públicos. La respuesta es una presunción favorable, con matices que solo aparecen cuando se mira el costo y no solo el resultado.",
+ "secciones": [
+  {
+   "t": "Bolivia: un Estado que crece y se descentraliza",
+   "p": [
+    "Entre 1990 y 2012 el gasto del sector público no financiero, con las empresas del Estado, pasó de 35,1% a 45,3% del PIB, y el del gobierno general, sin empresas, de 22,3% a 33,2%. Las empresas públicas explican la diferencia: rondaron el 11,6% del PIB hasta 1994, bajaron a 5,6% entre 1994 y 2006 y volvieron a 11,7% después, por las estatizaciones y el precio de los hidrocarburos.",
+    "Los autores destacan tres reformas y un hecho externo. La vuelta a la democracia en 1982, en plena crisis, priorizó la estabilización y programas sociales de emergencia. La Ley de Participación Popular de 1994 fue, según Zuazo, Faguet y Bonifaz, una descentralización «radical y repentina»: creó 311 municipios con autoridades electas (antes había unos 100 legales y solo 30 funcionaban de verdad), les transfirió salud, educación, caminos vecinales y otras competencias, subió su parte de los recursos coparticipables del 10% al 20% y la repartió por población en vez de por criterios políticos. En 1993 La Paz, Santa Cruz y Cochabamba recibían el 86% de la coparticipación; en 1995, el 27%. La ley también institucionalizó unas 12.000 organizaciones territoriales rurales y 8.000 barriales que planifican, controlan el gasto y reclaman, con comités de vigilancia en cada municipio. El tercer cambio fue el gobierno de 2006 y la Constitución de 2009, que reconoció a los pueblos indígena originario campesinos y orientó el gasto hacia lo social. El hecho externo fue el gas: en 2012 su precio superaba diez veces al de 2003 y la recaudación por hidrocarburos subió de 4,6% a 11,7% del PIB."
+   ]
+  },
+  {
+   "t": "Insumos, «D» output y «C» output",
+   "p": [
+    "Siguiendo a Gupta y otros (1997), hay tres maneras de medir el desempeño estatal. La primera mira los insumos: empleados o gasto por actividad. Falla porque esconde el sobreempleo y el sobregasto. La segunda mira los productos, y ahí importa una distinción de Bradford, Malt y Oates (1969): el «D» output es lo que el Estado produce directamente, como días u horas de clase; el «C» output es lo que el ciudadano valora, como los conocimientos que adquieren los alumnos. La tercera, la que adoptan los autores siguiendo a Afonso, Schuknecht y Tanzi (2003), combina resultados de tipo «C» con el gasto que los generó.",
+    "El argumento de fondo es una advertencia sobre la literatura aplicada reciente, que evalúa políticas solo por sus resultados. Una política puede tener beneficio positivo pero costos mayores, y si solo se mira el beneficio se termina recomendando expandir actividades ineficientes. Por eso los autores recuerdan a Pigou: los costos relevantes son los directos, lo que el contribuyente paga, y los indirectos, que suman los costos administrativos del Estado y de los contribuyentes y el costo de eficiencia de los impuestos."
+   ]
+  },
+  {
+   "t": "El marco: bienestar, gasto y eficiencia",
+   "eq": [
+    "W = W\\big[X_1(P_1),\\, X_2(P_2),\\, \\ldots,\\, X_J(P_J)\\big], \\qquad \\frac{\\partial W}{\\partial X_j} > 0, \\quad \\frac{\\partial^2 W}{\\partial X_j^2} < 0",
+    "W_i = \\sum_{j} a_j\\, X_{ij}(P_{ij}), \\quad \\sum_j a_j = 1; \\qquad G_i = \\sum_j G_{ij}(P_{ij})",
+    "E_{ij} = \\frac{W_{ij}}{G_{ij}}, \\qquad E_i = \\sum_j b_j \\frac{W_{ij}}{G_{ij}}, \\quad \\sum_j b_j = 1",
+    "\\frac{\\Delta W}{\\Delta G_1} = \\frac{\\text{variación en } W}{\\text{variación en } G_1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(W\\): bienestar social; \\(X_j\\): indicador socioeconómico de resultado en el sector \\(j\\) (salud, educación, infraestructura), el «C» output.",
+      "en": "\\(W\\): social welfare; \\(X_j\\): socioeconomic outcome indicator in sector \\(j\\) (health, education, infrastructure), the 'C' output."
+     },
+     {
+      "es": "\\(P_j\\): nivel de producción pública en el sector \\(j\\), el «D» output, que surge de una función de producción con insumos y sus precios; \\(j = 1, \\ldots, J\\) indexa los sectores.",
+      "en": "\\(P_j\\): level of public production in sector \\(j\\), the 'D' output, coming from a production function of inputs and their prices; \\(j = 1, \\ldots, J\\) indexes sectors."
+     },
+     {
+      "es": "Las derivadas dicen que más resultado siempre suma bienestar, pero cada vez menos (utilidad marginal decreciente).",
+      "en": "The derivatives say more outcome always adds welfare, but at a decreasing rate (diminishing marginal utility)."
+     }
+    ],
+    [
+     {
+      "es": "\\(W_i\\): impacto sobre el bienestar en la unidad \\(i\\); \\(i\\) puede ser un año, un país, un nivel de gobierno o una jurisdicción.",
+      "en": "\\(W_i\\): welfare impact in unit \\(i\\); \\(i\\) may be a year, a country, a level of government or a jurisdiction."
+     },
+     {
+      "es": "\\(a_j\\): ponderación del resultado del sector \\(j\\) en el bienestar; las ponderaciones suman 1.",
+      "en": "\\(a_j\\): weight of sector \\(j\\)'s outcome in welfare; weights add up to 1."
+     },
+     {
+      "es": "\\(G_{ij}\\): gasto en el sector \\(j\\) de la unidad \\(i\\); \\(G_i\\): gasto total. En la aplicación se mide en % del PIB.",
+      "en": "\\(G_{ij}\\): spending on sector \\(j\\) in unit \\(i\\); \\(G_i\\): total spending. In the application it is measured as % of GDP."
+     }
+    ],
+    [
+     {
+      "es": "\\(E_{ij}\\): eficiencia del sector \\(j\\) en la unidad \\(i\\), resultado ponderado por unidad de gasto; \\(W_{ij}\\): el aporte del sector \\(j\\) al bienestar.",
+      "en": "\\(E_{ij}\\): efficiency of sector \\(j\\) in unit \\(i\\), weighted outcome per unit of spending; \\(W_{ij}\\): sector \\(j\\)'s contribution to welfare."
+     },
+     {
+      "es": "\\(E_i\\): eficiencia global; \\(b_j\\): ponderación de la eficiencia de cada sector, que también suman 1.",
+      "en": "\\(E_i\\): overall efficiency; \\(b_j\\): weight of each sector's efficiency, which also add up to 1."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Delta\\): variación entre dos momentos; \\(\\Delta W / \\Delta G_1\\): cuánto cambia el bienestar por cada unidad adicional de gasto en el sector 1.",
+      "en": "\\(\\Delta\\): change between two moments; \\(\\Delta W / \\Delta G_1\\): how much welfare changes per additional unit of spending in sector 1."
+     },
+     {
+      "es": "Los autores suponen que todos los precios de los insumos están normalizados a 1 y no cambian en el período, de modo que la variación del gasto refleja la variación de la producción. En el paper la expresión se escribe desarmando la cadena \\(dW/dX_1 \\cdot dX_1/dP_1\\); acá se deja la versión en palabras que el propio texto da.",
+      "en": "The authors assume all input prices are normalized to 1 and do not change over the period, so changes in spending reflect changes in production. The paper writes the expression breaking down the chain \\(dW/dX_1 \\cdot dX_1/dP_1\\); here we keep the verbal version the text itself gives."
+     }
+    ]
+   ],
+   "p": [
+    "El desarrollo analítico es deliberadamente simple. El bienestar depende de resultados socioeconómicos, no de lo que el Estado hace: la función de producción relaciona insumos con el «D» output, pero en el bienestar entran los «C» outputs. Con eso se plantean tres preguntas: cuál es el impacto sobre el bienestar del producto público en cada sector y en total, cuánto gasto insume, y cuál es la eficiencia, la relación entre las dos cosas. El subíndice \\(i\\) permite comparar años para un mismo gobierno, países o niveles de gobierno en un año, o ambas cosas.",
+    "En la aplicación, el bienestar sectorial se aproxima con índices de desempeño (base 1992 = 100) y el costo con el gasto en % del PIB, también como índice. Los autores reconocen que son proxies y citan a Caplan (1998): mejor medir aproximadamente lo correcto que medir con precisión lo incorrecto."
+   ]
+  },
+  {
+   "t": "Ocho indicadores para tres sectores",
+   "eq": [
+    "D_{s,t} = \\frac{1}{n_s}\\sum_{k=1}^{n_s} 100\\,\\frac{x_{k,t}}{x_{k,1992}}, \\qquad x_{k,t} = \\begin{cases} \\text{indicador} & \\text{si más es mejor} \\\\ 1/\\text{indicador} & \\text{si más es peor} \\end{cases}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(D_{s,t}\\): índice de desempeño del sector \\(s\\) en el año \\(t\\), base 1992 = 100.",
+      "en": "\\(D_{s,t}\\): performance index of sector \\(s\\) in year \\(t\\), base 1992 = 100."
+     },
+     {
+      "es": "\\(n_s\\): cantidad de indicadores del sector: tres en salud y en vivienda y servicios urbanos, dos en educación; cada uno pesa lo mismo dentro de su sector.",
+      "en": "\\(n_s\\): number of indicators in the sector: three in health and in housing and urban services, two in education; each weighs the same within its sector."
+     },
+     {
+      "es": "\\(x_{k,t}\\): valor ajustado del indicador \\(k\\). Para mortalidad infantil, mortalidad materna y analfabetismo se usa la inversa, porque bajar la tasa es mejorar.",
+      "en": "\\(x_{k,t}\\): adjusted value of indicator \\(k\\). For infant mortality, maternal mortality and illiteracy the inverse is used, since a lower rate is an improvement."
+     },
+     {
+      "es": "Lectura propia: los autores describen el procedimiento con palabras y tablas; esta fórmula lo resume y reproduce los índices sectoriales de la Tabla 1.",
+      "en": "Own reading: the authors describe the procedure in words and tables; this formula summarizes it and reproduces the sector indices in Table 1."
+     }
+    ]
+   ],
+   "p": [
+    "Salud se mide con mortalidad infantil, mortalidad materna y esperanza de vida; educación, con la inversa del analfabetismo y los años promedio de estudio; vivienda y servicios urbanos, con el porcentaje de viviendas con electricidad de red, con agua por cañería de red y con descarga a alcantarillado. Los datos son de los censos de 1992, 2001 y 2012. La mortalidad infantil bajó de 75 a 54 y a 50 por mil nacidos vivos; la esperanza de vida subió de 60,03 a 67,15 años; los años de estudio, de 6,1 a 9,0; el analfabetismo cayó de 20,0% a 13,3% y a 5,1%; las viviendas con electricidad pasaron de 56,0% a 79,4%, con agua de 47,1% a 68,3% y con alcantarillado de 42,8% a 57,6%.",
+    "Los tres índices sectoriales se agregan en un indicador sintético de dos maneras: con pesos iguales o con pesos según la participación de cada sector en el gasto. En 2012 el sintético valía 187,8 o 210,5, es decir, el desempeño casi se duplicó. Creció a una tasa anual acumulativa de 3,8% entre puntas: 2,6% entre 1992 y 2001 y 4,6% entre 2001 y 2012.",
+    "Lectura propia: el uso de la inversa pesa mucho en educación. Pasar de 13,3% a 5,1% de analfabetismo casi triplica la inversa, y el subíndice termina en 393,1. Una mejora de unos ocho puntos porcentuales vale, en el índice, mucho más que la de electricidad o agua, y arrastra al sector educación a 270,6 y, con él, al sintético."
+   ]
+  },
+  {
+   "t": "Del desempeño a la eficiencia",
+   "eq": [
+    "E^{\\text{índice}}_{s,t} = 100 \\cdot \\frac{D_{s,t}/100}{\\bar{G}_{s,t}/100}",
+    "\\varepsilon^{\\text{arco}} = \\frac{\\Delta D / \\bar{D}}{\\Delta G / \\bar{G}}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(E^{\\text{índice}}_{s,t}\\): índice de eficiencia del sector \\(s\\) en \\(t\\), base 1992 = 100; \\(D_{s,t}\\): índice de desempeño.",
+      "en": "\\(E^{\\text{índice}}_{s,t}\\): efficiency index of sector \\(s\\) in \\(t\\), base 1992 = 100; \\(D_{s,t}\\): performance index."
+     },
+     {
+      "es": "\\(\\bar{G}_{s,t}\\): índice del gasto del sector en % del PIB, promediado y rezagado (1990-92, 1995-99 y 2006-2010 para 1992, 2001 y 2012) para dar tiempo a que el gasto produzca resultados y suavizar fluctuaciones anuales.",
+      "en": "\\(\\bar{G}_{s,t}\\): index of sector spending as % of GDP, averaged and lagged (1990-92, 1995-99 and 2006-2010 for 1992, 2001 and 2012) to let spending produce results and smooth annual swings."
+     },
+     {
+      "es": "Lectura propia: el paper no escribe esta fórmula, pero dividir el índice de desempeño por el de gasto reproduce la Tabla 3 (por ejemplo, 270,6 sobre 143,9 da 188,0 en educación).",
+      "en": "Own reading: the paper does not write this formula, but dividing the performance index by the spending index reproduces Table 3 (for example, 270.6 over 143.9 gives 188.0 in education)."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\varepsilon^{\\text{arco}}\\): elasticidad de arco desempeño-gasto, cuánto sube el desempeño en % por cada 1% de aumento del gasto entre dos puntos.",
+      "en": "\\(\\varepsilon^{\\text{arco}}\\): arc elasticity of performance to spending, how much performance rises in % per 1% rise in spending between two points."
+     },
+     {
+      "es": "\\(\\Delta D, \\Delta G\\): variaciones del desempeño y del gasto; \\(\\bar{D}, \\bar{G}\\): sus promedios entre los dos puntos.",
+      "en": "\\(\\Delta D, \\Delta G\\): changes in performance and spending; \\(\\bar{D}, \\bar{G}\\): their averages between the two points."
+     },
+     {
+      "es": "Lectura propia: los autores informan una elasticidad de 2,5 para educación sin escribir la fórmula; la versión de punto medio aplicada a los aumentos de 170,6% en desempeño y 43,9% en gasto da un valor cercano.",
+      "en": "Own reading: the authors report an elasticity of 2.5 for education without writing the formula; the midpoint version applied to the 170.6% rise in performance and 43.9% rise in spending gives a close value."
+     }
+    ]
+   ],
+   "p": [
+    "El gasto consolidado en los tres sectores pasó de 5,9% del PIB en 1990-92 a 6,6% en 1995-99 y a 8,3% en 2006-2010: subió 11,1% y 41,3% respecto de la base. En salud fue 1,7%, 1,3% y 2,1%; en educación, 3,7%, 4,1% y 5,3%; en vivienda y servicios básicos, 0,6%, 1,2% y 1,0%. El gasto en salud excluye la seguridad social y el de educación, las universidades.",
+    "Entre puntas, la eficiencia mejoró 22,5% en salud y 88% en educación y cayó 19,5% en vivienda y servicios urbanos. El sintético mejoró entre 32,9% y 48,9% según la ponderación. La mejora del desempeño, cercana a 90% o 110%, se achica bastante cuando se descuenta el costo: esa es la lección metodológica del trabajo. Los autores atribuyen la diferencia entre sectores a la tecnología de producción: en salud hay ganancias rápidas en mortalidad infantil y materna, aunque luego cuesta más llegar a poblaciones con necesidades complejas, mientras que en educación y en vivienda los resultados tardan más.",
+    "Para educación, el aumento de 88% surge de 170,6% más de desempeño con 43,9% más de gasto; la elasticidad de arco es 2,5, de modo que la eficiencia sube cuando sube el gasto. Lectura propia: el índice de salud de 2001, 182,6, refleja sobre todo que el gasto en salud medido en % del PIB cayó a 75,8 respecto de la base; con un denominador en % del PIB, la eficiencia también se mueve cuando cambia el PIB y no solo cuando cambia lo que se gasta."
+   ]
+  },
+  {
+   "t": "Departamentos: convergencia en desempeño, dispersión en eficiencia",
+   "eq": [
+    "\\ln\\!\\left(\\frac{Y_{d,2012}}{Y_{d,1992}}\\right) = \\alpha + \\eta\\,\\ln\\!\\left(\\frac{Y_{d,1992}}{\\bar{Y}_{1992}}\\right) + u_d"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y_{d,t}\\): desempeño, gasto o eficiencia del departamento \\(d\\) en el año \\(t\\); hay nueve departamentos, que incluyen a sus municipios.",
+      "en": "\\(Y_{d,t}\\): performance, spending or efficiency of department \\(d\\) in year \\(t\\); there are nine departments, including their municipalities."
+     },
+     {
+      "es": "\\(Y_{d,1992}/\\bar{Y}_{1992}\\): posición relativa inicial respecto del total del país (total = 100).",
+      "en": "\\(Y_{d,1992}/\\bar{Y}_{1992}\\): initial relative position with respect to the national total (total = 100)."
+     },
+     {
+      "es": "\\(\\alpha\\): constante; \\(\\eta\\): elasticidad del crecimiento respecto de la posición inicial; si es negativa, los que empiezan mejor crecen menos (convergencia); \\(u_d\\): error.",
+      "en": "\\(\\alpha\\): constant; \\(\\eta\\): elasticity of growth with respect to the initial position; if negative, those starting better grow less (convergence); \\(u_d\\): error."
+     },
+     {
+      "es": "Lectura propia: el paper solo dice que son regresiones MCO con las variables en logaritmo, con la variación en el tiempo como endógena y la posición inicial como exógena; esta especificación es una reconstrucción.",
+      "en": "Own reading: the paper only says these are OLS regressions with variables in logs, with the change over time as dependent and the initial position as regressor; this specification is a reconstruction."
+     }
+    ]
+   ],
+   "p": [
+    "A nivel departamental el desempeño mejoró en todos lados. Con pesos según el gasto, el país avanzó 112,7% entre 1992 y 2012; Pando se destacó con 267,4%. Las diferencias entre departamentos, medidas con el coeficiente de variación, se achicaron en salud y en vivienda y crecieron en educación. Los rezagados de 1992, como Pando, Chuquisaca y Potosí, son los que más crecieron, y Santa Cruz, que arrancaba primero, el que menos: un proceso de catch-up que los autores atribuyen a rendimientos decrecientes, porque mejorar donde ya se está bien es más caro.",
+    "El gasto también subió en casi todos. Entre 1990-92 y 2006-2010 solo bajó en Tarija, 14%, porque su producto geográfico creció mucho con el precio de los hidrocarburos. Y la eficiencia mejoró en la mayoría, con excepciones: con pesos iguales cae levemente en Chuquisaca y 20,8% en Beni; con pesos según el gasto, la única caída es la de Beni, de 1%. Departamentos que partían de una eficiencia parecida terminaron con variaciones muy distintas.",
+    "Las regresiones de la Tabla 10 dan elasticidades negativas y significativas para las tres variables: −0,94 para el desempeño (t de −2,52, p = 0,036), −2,99 para el gasto (t de −5,87, p = 0,001) y −1,38 para la eficiencia (t de −3,15, p = 0,02). Los autores advierten que con nueve observaciones no hay estimaciones robustas. Lectura propia: el título de la tabla dice crecimiento 1992-2001, mientras el texto y las figuras hablan de 1992-2012; y con tan pocos datos, parte de la convergencia puede ser regresión a la media."
+   ]
+  },
+  {
+   "t": "¿Fue la descentralización?",
+   "p": [
+    "La Tabla 3 agrega dos coeficientes de descentralización: el peso del gasto de municipios y departamentos en el gasto total sube de 100 a 158,5 y a 203,2, y el de los municipios dentro del subnacional, de 100 a 272,2 y a 447,1. Su evolución paralela a la eficiencia sugiere, preliminarmente, una asociación positiva. Coincide con Faguet (2004), que muestra que tras la Ley de Participación Popular la inversión dejó de concentrarse en las capitales y respondió a necesidades: los municipios con más analfabetismo invirtieron más en educación. El Banco Mundial subraya el papel de la sociedad civil organizada, y Faguet (2012) explica las diferencias entre municipios por la interacción de organizaciones ciudadanas, intereses económicos y actores políticos.",
+    "No todos coinciden. Mesa Gisbert sostiene que tras 2009 no hubo avances en la descentralización porque el gobierno era de concepción centralista; Inchauste (2008) no encuentra relación estrecha entre descentralización y logros en salud y educación; Ahmad y Brosio (2008) dudan de que las transferencias con asignación específica reflejen preferencias locales; De la Cruz, Pineda y Pöschl (2010) temen un mosaico de asignaciones propenso al despilfarro.",
+    "El boom del gas complicó el cuadro. La ley había fijado el reparto por población, igual per cápita, pero el impuesto a los hidrocarburos se distribuye donde están los yacimientos: Tarija recibió 4,5 veces las transferencias del promedio, Pando 4,3 veces y La Paz un 46% menos. El gasto departamental per cápita de Tarija llegó a 7 veces el promedio, mientras la correspondencia fiscal de los departamentos ronda el 5% y la municipal promedia 22,7%."
+   ]
+  },
+  {
+   "t": "Conclusión y límites",
+   "p": [
+    "La principal conclusión es una presunción de relación positiva entre la descentralización y el desempeño en salud, educación y vivienda, acompañada de más participación política. Los autores la leen con la frontera de Inman y Rubinfeld: participación y eficiencia suelen competir, pero partiendo de un régimen centralizado, descentralizar puede mejorar ambas, por la cercanía de gobiernos electos y por el teorema de la descentralización de Oates. La eficiencia confirma la mejora pero de menor magnitud y revela diferencias entre departamentos que el desempeño solo esconde. Queda pendiente explicar esas diferencias, incluido el cambio en el financiamiento por los hidrocarburos.",
+    "Lectura propia: el aporte más útil es metodológico, obligar a poner un denominador. Los límites son los de toda medición por índices: el resultado depende de qué indicadores y ponderaciones se elijan, los «C» outputs dependen también del ingreso, la urbanización y el gasto privado, y con tres censos y nueve departamentos no hay forma de separar el efecto de la descentralización del boom de recursos o del crecimiento. La asociación es sugerente, no causal, y los propios autores la llaman preliminar."
+   ]
+  }
+ ],
+ "claves": [
+  "Eficiencia = resultado («C» output) por unidad de gasto; mirar solo resultados puede recomendar expandir políticas con beneficio neto negativo.",
+  "«D» output es lo que el Estado produce (horas de clase); «C» output, lo que el ciudadano valora (conocimientos adquiridos).",
+  "Bolivia 1992-2012: el desempeño sintético en salud, educación y vivienda casi se duplicó (187,8 o 210,5 con base 100).",
+  "El gasto en esos sectores subió de 5,9% a 8,3% del PIB, así que la eficiencia mejoró menos: entre 32,9% y 48,9%; cayó en vivienda.",
+  "Entre departamentos hay convergencia: los que empezaban peor mejoraron más en desempeño, gasto y eficiencia (elasticidades negativas).",
+  "La descentralización de la Ley de Participación Popular aparece asociada a la mejora, como presunción; el boom del gas rompió el reparto igual per cápita."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cómo definen Porto, Garriga y Rosales la eficiencia del sector público?",
+    "en": "How do Porto, Garriga and Rosales define public-sector efficiency?"
+   },
+   "op": {
+    "es": [
+     "Como el gasto por habitante en cada función",
+     "Como la relación entre los resultados de la acción del gobierno y su costo",
+     "Como la cantidad de empleados públicos por servicio",
+     "Como el porcentaje del presupuesto ejecutado"
+    ],
+    "en": [
+     "As spending per inhabitant in each function",
+     "As the ratio between the results of government action and their cost",
+     "As the number of public employees per service",
+     "As the share of the budget actually executed"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Siguiendo a Afonso, Schuknecht y Tanzi, la eficiencia combina el desempeño (resultados de tipo «C») con el gasto en cada finalidad; las otras opciones miran solo insumos.",
+    "en": "Following Afonso, Schuknecht and Tanzi, efficiency combines performance ('C'-type outcomes) with spending on each function; the other options look only at inputs."
+   },
+   "id": "fisc-ecopol-03-q1"
+  },
+  {
+   "q": {
+    "es": "En la distinción de Bradford, Malt y Oates, ¿qué es el «C» output de la educación?",
+    "en": "In Bradford, Malt and Oates's distinction, what is the 'C' output of education?"
+   },
+   "op": {
+    "es": [
+     "Los días u horas de clase dictados",
+     "El gasto por alumno",
+     "Los conocimientos que adquieren los alumnos",
+     "La cantidad de escuelas construidas"
+    ],
+    "en": [
+     "Days or hours of class taught",
+     "Spending per student",
+     "The knowledge students acquire",
+     "The number of schools built"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El «D» output es lo que el Estado produce directamente, como horas de clase; el «C» output es lo que demandan los ciudadanos, el aprendizaje. En la función de bienestar entran los «C» outputs.",
+    "en": "The 'D' output is what the state produces directly, such as class hours; the 'C' output is what citizens demand, learning. 'C' outputs enter the welfare function."
+   },
+   "id": "fisc-ecopol-03-q2"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los autores critican evaluar políticas solo por sus resultados?",
+    "en": "Why do the authors criticize evaluating policies only by their results?"
+   },
+   "op": {
+    "es": [
+     "Porque los resultados nunca se pueden medir",
+     "Porque la teoría del bienestar no admite indicadores sociales",
+     "Porque los resultados dependen siempre del ciclo económico",
+     "Porque una política con beneficio positivo puede costar más de lo que rinde y se recomendaría expandir algo ineficiente"
+    ],
+    "en": [
+     "Because results can never be measured",
+     "Because welfare theory does not admit social indicators",
+     "Because results always depend on the business cycle",
+     "Because a policy with positive benefit may cost more than it yields, and something inefficient would be recommended for expansion"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Mirar solo beneficios es un enfoque parcial: el beneficio neto puede ser negativo. Por eso agregan el costo, con la idea de Pigou de costos directos e indirectos.",
+    "en": "Looking only at benefits is a partial approach: net benefit may be negative. Hence they add cost, with Pigou's idea of direct and indirect costs."
+   },
+   "id": "fisc-ecopol-03-q3"
+  },
+  {
+   "q": {
+    "es": "Si el índice de desempeño en educación llega a 270,6 y el de gasto en educación a 143,9 (base 100), ¿cuánto vale el índice de eficiencia?",
+    "en": "If the education performance index reaches 270.6 and the education spending index 143.9 (base 100), what is the efficiency index?"
+   },
+   "op": {
+    "es": [
+     "Alrededor de 188",
+     "Alrededor de 414",
+     "Alrededor de 127",
+     "Alrededor de 53"
+    ],
+    "en": [
+     "About 188",
+     "About 414",
+     "About 127",
+     "About 53"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La eficiencia es el cociente de los índices: 270,6 / 143,9 × 100 ≈ 188,0, una mejora de 88%, como en la Tabla 3. 414 sería sumar los índices y 127 restarlos.",
+    "en": "Efficiency is the ratio of indices: 270.6 / 143.9 × 100 ≈ 188.0, an 88% improvement, as in Table 3. 414 would be adding the indices and 127 subtracting them."
+   },
+   "id": "fisc-ecopol-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿En qué sector cayó la eficiencia en Bolivia entre 1992 y 2012 según el trabajo?",
+    "en": "In which sector did efficiency fall in Bolivia between 1992 and 2012 according to the paper?"
+   },
+   "op": {
+    "es": [
+     "Salud",
+     "Educación",
+     "Vivienda y servicios urbanos",
+     "En ninguno"
+    ],
+    "en": [
+     "Health",
+     "Education",
+     "Housing and urban services",
+     "None"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El desempeño en vivienda subió a 140,5 pero el gasto a 174,5, de modo que la eficiencia bajó 19,5%. Salud mejoró 22,5% y educación 88%.",
+    "en": "Housing performance rose to 140.5 but spending to 174.5, so efficiency fell 19.5%. Health improved 22.5% and education 88%."
+   },
+   "id": "fisc-ecopol-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué indica la elasticidad de −0,94 entre el crecimiento del desempeño y la posición inicial de los departamentos?",
+    "en": "What does the −0.94 elasticity between performance growth and departments' initial position indicate?"
+   },
+   "op": {
+    "es": [
+     "Que los departamentos que empezaban mejor crecieron menos: hay convergencia",
+     "Que los departamentos ricos mejoraron más",
+     "Que no hay relación entre las variables",
+     "Que el gasto no influye en el desempeño"
+    ],
+    "en": [
+     "That departments starting better grew less: there is convergence",
+     "That rich departments improved more",
+     "That there is no relation between the variables",
+     "That spending does not affect performance"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El signo negativo dice que mejor posición inicial va con menor crecimiento; los autores lo atribuyen a rendimientos decrecientes. Advierten que con nueve observaciones no hay estimaciones robustas.",
+    "en": "The negative sign says a better initial position goes with lower growth; the authors attribute it to diminishing returns. They warn that with nine observations estimates are not robust."
+   },
+   "id": "fisc-ecopol-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué cambió la Ley de Participación Popular de 1994 en el reparto de recursos?",
+    "en": "What did the 1994 Popular Participation Law change in resource sharing?"
+   },
+   "op": {
+    "es": [
+     "Eliminó la coparticipación y creó impuestos municipales",
+     "Repartió los recursos según la ubicación de los yacimientos",
+     "Concentró la coparticipación en las capitales departamentales",
+     "Llevó la parte municipal de los recursos coparticipables del 10% al 20% y la repartió por población"
+    ],
+    "en": [
+     "It eliminated revenue sharing and created municipal taxes",
+     "It shared resources according to the location of deposits",
+     "It concentrated revenue sharing in departmental capitals",
+     "It raised the municipal share of shared revenues from 10% to 20% and distributed it by population"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El criterio pasó a ser igual per cápita; en 1993 tres ciudades recibían el 86% y en 1995 el 27%. El reparto por yacimientos es lo que luego introdujo el impuesto a los hidrocarburos.",
+    "en": "The criterion became equal per capita; in 1993 three cities received 86% and in 1995 27%. Sharing by deposits is what the hydrocarbon tax later introduced."
+   },
+   "id": "fisc-ecopol-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Cómo afectó el boom de los hidrocarburos a la descentralización boliviana según los autores?",
+    "en": "How did the hydrocarbon boom affect Bolivian decentralization according to the authors?"
+   },
+   "op": {
+    "es": [
+     "Reforzó el reparto igual per cápita",
+     "Desvió las transferencias del criterio per cápita: Tarija recibió 4,5 veces el promedio y La Paz un 46% menos",
+     "Eliminó las transferencias a los departamentos",
+     "No tuvo efecto fiscal sobre los gobiernos subnacionales"
+    ],
+    "en": [
+     "It reinforced equal per-capita sharing",
+     "It diverted transfers from the per-capita criterion: Tarija received 4.5 times the average and La Paz 46% less",
+     "It eliminated transfers to departments",
+     "It had no fiscal effect on subnational governments"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los fondos del impuesto a los hidrocarburos se distribuyen donde están los yacimientos, lo que apartó el reparto de la igualdad per cápita que buscaba la ley de 1994.",
+    "en": "Hydrocarbon tax funds are distributed where the deposits are, which pulled sharing away from the equal per-capita goal of the 1994 law."
+   },
+   "id": "fisc-ecopol-03-q8"
+  }
+ ],
+ "palabras": 1959,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué medir solo el desempeño del sector público puede llevar a malas recomendaciones?",
+    "en": "Why can measuring only public-sector performance lead to bad recommendations?"
+   },
+   "a": {
+    "es": "Porque ignora el costo: una política puede tener beneficio positivo y beneficio neto negativo. La eficiencia, resultado por unidad de gasto, corrige ese sesgo. Porto, Garriga y Rosales.",
+    "en": "Because it ignores cost: a policy can have positive benefit and negative net benefit. Efficiency, outcome per unit of spending, corrects that bias. Porto, Garriga and Rosales."
+   },
+   "id": "fisc-ecopol-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué diferencia hay entre el «D» output y el «C» output de un servicio público?",
+    "en": "What is the difference between the 'D' output and the 'C' output of a public service?"
+   },
+   "a": {
+    "es": "El «D» output es lo que el Estado produce directamente (horas de clase); el «C» output es el resultado que valora el ciudadano (conocimientos adquiridos). Porto, Garriga y Rosales, siguiendo a Bradford, Malt y Oates (1969).",
+    "en": "The 'D' output is what the state produces directly (class hours); the 'C' output is the result citizens value (knowledge acquired). Porto, Garriga and Rosales, following Bradford, Malt and Oates (1969)."
+   },
+   "id": "fisc-ecopol-03-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se construye un índice de eficiencia sectorial del gasto público?",
+    "en": "How is a sector efficiency index of public spending built?"
+   },
+   "a": {
+    "es": "Se arma un índice de desempeño con indicadores de resultado (invirtiendo los que mejoran al bajar) y se lo divide por el índice del gasto del sector en % del PIB, con promedios rezagados. Porto, Garriga y Rosales.",
+    "en": "A performance index is built from outcome indicators (inverting those that improve when they fall) and divided by the index of sector spending as % of GDP, with lagged averages. Porto, Garriga and Rosales."
+   },
+   "id": "fisc-ecopol-03-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto mejoraron el desempeño y la eficiencia del gasto social en Bolivia entre 1992 y 2012?",
+    "en": "How much did performance and efficiency of social spending improve in Bolivia between 1992 and 2012?"
+   },
+   "a": {
+    "es": "El desempeño sintético casi se duplicó (187,8 o 210,5 con base 100), pero como el gasto subió de 5,9% a 8,3% del PIB, la eficiencia mejoró entre 32,9% y 48,9%, y cayó en vivienda. Porto, Garriga y Rosales.",
+    "en": "Synthetic performance almost doubled (187.8 or 210.5 with base 100), but as spending rose from 5.9% to 8.3% of GDP, efficiency improved between 32.9% and 48.9%, and fell in housing. Porto, Garriga and Rosales."
+   },
+   "id": "fisc-ecopol-03-t4"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Qué evidencia de convergencia entre departamentos bolivianos encuentran en desempeño, gasto y eficiencia?",
+    "en": "What evidence of convergence across Bolivian departments do they find in performance, spending and efficiency?"
+   },
+   "a": {
+    "es": "Regresiones MCO en logaritmos del crecimiento sobre la posición inicial dan elasticidades negativas y significativas: −0,94, −2,99 y −1,38; con nueve observaciones, los autores no las consideran robustas. Porto, Garriga y Rosales.",
+    "en": "OLS regressions in logs of growth on initial position give negative significant elasticities: −0.94, −2.99 and −1.38; with nine observations, the authors do not consider them robust. Porto, Garriga and Rosales."
+   },
+   "id": "fisc-ecopol-03-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué relación sugiere la experiencia boliviana entre descentralización y desempeño del sector público?",
+    "en": "What relation does the Bolivian experience suggest between decentralization and public-sector performance?"
+   },
+   "a": {
+    "es": "Una presunción de relación positiva: con la Ley de Participación Popular subieron el peso municipal en el gasto, el desempeño y la participación ciudadana, aunque la evidencia es preliminar y hay autores que discrepan. Porto, Garriga y Rosales.",
+    "en": "A presumption of a positive relation: with the Popular Participation Law the municipal share of spending, performance and citizen participation all rose, although the evidence is preliminary and some authors disagree. Porto, Garriga and Rosales."
+   },
+   "id": "fisc-ecopol-03-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué limitación tiene usar la inversa de una tasa como el analfabetismo en un índice de desempeño?",
+    "en": "What limitation does using the inverse of a rate such as illiteracy have in a performance index?"
+   },
+   "a": {
+    "es": "La inversa crece cada vez más rápido cuando la tasa se acerca a cero: en Bolivia, bajar el analfabetismo de 13,3% a 5,1% casi triplica el indicador y domina el índice de educación. Lectura propia sobre el método de Porto, Garriga y Rosales.",
+    "en": "The inverse grows ever faster as the rate approaches zero: in Bolivia, lowering illiteracy from 13.3% to 5.1% almost triples the indicator and dominates the education index. Own reading on Porto, Garriga and Rosales's method."
+   },
+   "id": "fisc-ecopol-03-t7"
+  }
+ ]
+}
