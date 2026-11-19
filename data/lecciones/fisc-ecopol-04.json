@@ -1,0 +1,479 @@
+{
+ "id": "fisc-ecopol-04",
+ "cat": "fisc-ecopol",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "¿Castigan las urnas el mal desempeño fiscal? Intendentes bonaerenses 1983-1995",
+ "bajada": "Alberto y Natalia Porto estudian 125 municipios de la Provincia de Buenos Aires y encuentran que, tras un período de aprendizaje democrático, los votantes premian la inversión municipal y castigan más en los distritos chicos: un argumento empírico a favor de confiar en la descentralización.",
+ "fuentes": [
+  1165
+ ],
+ "cita": "A. Porto y N. Porto (1999), «Desempeño fiscal y resultados electorales», Departamento de Economía, UNLP",
+ "intro": "Buena parte de la economía política fiscal de los noventa veía en la descentralización un problema: muchos niveles de gobierno compartiendo recursos comunes llevarían a gasto excesivo, déficit y deuda, y la solución sería concentrar poder en un planificador central. Alberto y Natalia Porto, de la Universidad Nacional de La Plata, ponen a prueba la idea opuesta: que el voto en las urnas puede disciplinar a los gobiernos locales sin necesidad de centralizar. El laboratorio son los 125 municipios de la Provincia de Buenos Aires, donde vivían 12,5 millones de personas según el censo de 1991 y donde, desde el retorno de la democracia en 1983, hubo cuatro elecciones de intendentes (1983, 1987, 1991 y 1995). La pregunta es si la probabilidad de que el partido del intendente pierda la intendencia depende de cómo evolucionaron las finanzas municipales. La respuesta, preliminar según los propios autores, es que sí, cada vez más: los votantes aprendieron a mirar la inversión municipal, castigan más en las comunidades chicas y dejaron de votar intendentes por arrastre del gobernador.",
+ "secciones": [
+  {
+   "t": "Tres modelos de descentralización",
+   "p": [
+    "Los autores ordenan la discusión en tres familias. La primera es Tiebout (1956), una respuesta a Samuelson: para los bienes públicos nacionales el mercado no revela preferencias y hay subprovisión, pero para los bienes públicos locales la movilidad, el «voto con los pies», funciona como el viaje de compras del consumidor. Información, competencia entre jurisdicciones y movilidad son las piezas del modelo. Como en el mercado de bienes privados, el resultado es eficiente pero no necesariamente equitativo, por lo que la descentralización necesita transferencias hacia las regiones más pobres (Buchanan, Oates).",
+    "La segunda familia son los modelos de determinantes políticos e institucionales de los resultados fiscales (Alesina y otros, Stein y otros, Velasco). Con varios niveles de gobierno y coparticipación, la recaudación se vuelve un «recurso común» y aparecen transferencias mayores a las óptimas, gasto local excesivo, poco uso del poder tributario propio, déficit y deuda. El mensaje, en su versión extrema, es que conviene un principal central fuerte: un Ejecutivo que prevalezca sobre el Congreso, un ministro de Economía que prevalezca en el Ejecutivo y gobernadores e intendentes del mismo partido. Los Porto señalan en nota que en la Argentina los escenarios más parecidos a ese, los gobiernos de 1946-1955 y de 1976-1983, no dieron buenos resultados fiscales.",
+    "La tercera familia pone en el centro las instituciones políticas de cada sociedad y el voto en las urnas. Siguiendo a Bird, distingue el juicio instrumental sobre la descentralización (gasto, deuda, crisis) del valor intrínseco: las decisiones locales pueden parecer erradas desde afuera, pero institucionalizan la participación de los afectados. Frey y Stutzer agregan otro «más»: la autonomía local se asocia a mayor felicidad de la gente."
+   ]
+  },
+  {
+   "t": "Condiciones y antecedentes: Peltzman y Besley-Case",
+   "p": [
+    "Para que los gobiernos locales funcionen bien, la literatura (Bahl y Linn, Bird y Rodríguez) pide autoridades elegidas democráticamente, tradición de decisión local, una burocracia profesional, relativo balance regional del ingreso o su incorporación a los objetivos fiscales, y competencia efectiva o por comparación, que depende de la autonomía local, de la correspondencia fiscal y de la información de los votantes.",
+    "La segunda pregunta es qué variables fiscales «miran» los votantes. Peltzman, para Estados Unidos, encontró que los votantes de elecciones a gobernador saben que el ingreso per cápita depende sobre todo de la política nacional, responden a variables que el gobernador controla, penalizan el crecimiento del presupuesto estatal y recuerdan los cuatro años previos a la elección; votan ex post y valoran las mejoras permanentes de bienestar, no las transitorias. Besley y Case (1995) muestran competencia por comparación (yardstick competition): un gobernador que sube impuestos cuando sus vecinos no lo hacen probablemente pierde, y como lo sabe, cuida que su presión tributaria no se aparte de la de ellos. Los Porto responden a la objeción de que eso llevaría a subprovisión de bienes públicos con que la misma competencia opera por el lado del gasto."
+   ]
+  },
+  {
+   "t": "Un modelo simple de voto retrospectivo",
+   "eq": [
+    "V_i = A_i + b\\,U_i + c\\,P_i + d\\,Y_i, \\qquad U_i = g(X_i)",
+    "\\Pr(\\text{cambio de partido}) = f(\\Delta U), \\qquad f'(\\cdot) < 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(V_i\\): probabilidad de que cambie el partido político a cargo de la municipalidad \\(i\\).",
+      "en": "\\(V_i\\): probability that the party in charge of municipality \\(i\\) changes."
+     },
+     {
+      "es": "\\(A_i\\): constante que recoge la probabilidad «normal» de cambio por otros motivos, por ejemplo que los ciudadanos prefieran la rotación en el poder per se.",
+      "en": "\\(A_i\\): constant capturing the 'normal' probability of change for other reasons, e.g. citizens preferring rotation in office per se."
+     },
+     {
+      "es": "\\(U_i\\): cambio en la utilidad de los votantes atribuible a la política fiscal municipal; \\(g(\\cdot)\\): función que lo vincula con \\(X_i\\), el cambio en las variables fiscales municipales.",
+      "en": "\\(U_i\\): change in voters' utility attributable to municipal fiscal policy; \\(g(\\cdot)\\): function linking it to \\(X_i\\), the change in municipal fiscal variables."
+     },
+     {
+      "es": "\\(P_i\\): población de la jurisdicción; \\(Y_i\\): variación del ingreso per cápita.",
+      "en": "\\(P_i\\): population of the jurisdiction; \\(Y_i\\): change in per capita income."
+     },
+     {
+      "es": "\\(b, c, d\\): parámetros que miden cuánto pesa cada factor en la probabilidad de cambio; el paper no les asigna nombre ni unidades.",
+      "en": "\\(b, c, d\\): parameters measuring how much each factor weighs in the probability of change; the paper gives them no name or units."
+     }
+    ],
+    [
+     {
+      "es": "\\(f(\\cdot)\\): función que transforma el cambio de utilidad en probabilidad de cambiar al partido gobernante.",
+      "en": "\\(f(\\cdot)\\): function turning the change in utility into a probability of replacing the governing party."
+     },
+     {
+      "es": "\\(\\Delta U\\): cambio en la utilidad debido a la política fiscal del partido en el gobierno, evaluado después de ejecutada.",
+      "en": "\\(\\Delta U\\): change in utility due to the governing party's fiscal policy, assessed after it is carried out."
+     },
+     {
+      "es": "\\(f' < 0\\): cuanto más mejora la utilidad, menor la probabilidad de que el partido pierda.",
+      "en": "\\(f' < 0\\): the more utility improves, the lower the probability that the party loses."
+     }
+    ]
+   ],
+   "p": [
+    "El modelo sigue a Peltzman y a Besley y Case. El voto sirve para disciplinar al partido en el poder; los votantes evalúan su desempeño con la información fiscal de su municipio y por su impacto sobre la utilidad, después de ejecutada la política. Ese cambio de utilidad, positivo o negativo, se traduce en la probabilidad de cambiar de partido mediante una función decreciente. La probabilidad de cambio depende entonces de una constante, del cambio de utilidad que generan las variables fiscales, de la población y de la variación del ingreso.",
+    "Una diferencia con Peltzman es la variable dependiente: él usa la participación del partido gobernante en el total de votos; los Porto usan un hecho binario, si el partido cambió o no tras la elección."
+   ]
+  },
+  {
+   "t": "Los hechos: uno de cada tres intendentes cambia de partido",
+   "p": [
+    "En 1987 cambiaron de partido 37 intendencias (29,6%), en 1991 36 (28,8%) y en 1995 39 (31,2%), con un promedio de 29,9%: alrededor de un tercio de los intendentes cambia de color en cada elección. Las elecciones de intendente coinciden con las de gobernador, y cada doce años con la de presidente, pero el voto se diferencia cada vez más. En 1987 el 92% de los cambios fue hacia el partido del gobernador triunfante; en 1991, el 64%; en 1995, el 56%. Esto contradice, para este caso, la idea de Prud'homme de que las elecciones locales son un mero ensayo de las nacionales, y sugiere aprendizaje.",
+    "La elección de 1995 es la más reveladora: presidente y gobernador siguieron siendo del mismo partido, y hasta las mismas personas, y aun así hubo 39 cambios en ambas direcciones: la UCR perdió 18 intendencias y ganó 13; el PJ perdió 15 y ganó 22.",
+    "El tamaño también importa. Sumando las tres elecciones, el mayor porcentaje de cambios, 37,5%, se dio en la sección electoral con menos habitantes, y el menor, alrededor de 19%, en la más poblada. La explicación propuesta es doble: en una comunidad chica se percibe mejor la gestión, y el poder de cada voto, 1/N con N la población, es mayor."
+   ]
+  },
+  {
+   "t": "El logit por elección",
+   "eq": [
+    "\\Pr(C_i = 1) = \\frac{e^{z_i}}{1 + e^{z_i}}, \\qquad z_i = \\beta_0 + \\beta_1\\,\\Delta GK_i + \\beta_2\\,\\Delta GT_i + \\beta_3\\,\\Delta COP_i + \\beta_4\\,POB_i \\;(+\\; \\delta\\,D_i)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C_i\\): variable binaria que vale 1 si el partido del intendente cambió tras la elección en el municipio \\(i\\) y 0 si no. La forma logística escrita es la estándar del logit; el paper no la escribe (lectura propia).",
+      "en": "\\(C_i\\): binary variable equal to 1 if the mayor's party changed after the election in municipality \\(i\\), 0 otherwise. The logistic form shown is the standard logit; the paper does not write it out (own reading)."
+     },
+     {
+      "es": "\\(z_i\\): índice lineal de las variables explicativas; \\(e\\): base de los logaritmos naturales.",
+      "en": "\\(z_i\\): linear index of the explanatory variables; \\(e\\): base of natural logarithms."
+     },
+     {
+      "es": "\\(\\Delta GK_i\\), \\(\\Delta GT_i\\): variación de los gastos de capital y de los gastos totales per cápita entre el año electoral y el promedio de los tres años previos (por ejemplo, 1987 contra 1984-86).",
+      "en": "\\(\\Delta GK_i\\), \\(\\Delta GT_i\\): change in per capita capital spending and total spending between the election year and the average of the previous three years (e.g. 1987 against 1984-86)."
+     },
+     {
+      "es": "\\(\\Delta COP_i\\): variación, medida igual, de la coparticipación provincial que recibe el municipio; \\(POB_i\\): población según el censo de 1991.",
+      "en": "\\(\\Delta COP_i\\): change, measured the same way, in the provincial revenue sharing received by the municipality; \\(POB_i\\): population in the 1991 census."
+     },
+     {
+      "es": "\\(D_i\\): dummy del Modelo I.2, igual a 1 si el partido ganador en el municipio coincide con el del gobernador triunfante; \\(\\beta_0, \\ldots, \\beta_4, \\delta\\): coeficientes a estimar (los de las variables fiscales y la población se reportan multiplicados por 1.000).",
+      "en": "\\(D_i\\): dummy in Model I.2, equal to 1 if the winning party in the municipality is the winning governor's party; \\(\\beta_0, \\ldots, \\beta_4, \\delta\\): coefficients to estimate (those on fiscal variables and population are reported multiplied by 1,000)."
+     }
+    ]
+   ],
+   "p": [
+    "Se eligieron tres variables fiscales. La coparticipación provincial, porque cuanto más se consiga para el municipio menos impuestos municipales habrá que pagar, o más bienes municipales habrá por el mismo pago. Los gastos de capital, porque son lo que el vecino ve todos los días (alumbrado, semáforos, pavimento, desagües) y representan una mejora permanente de bienestar. Y el gasto total, porque más gasto anticipa más impuestos. Se espera signo negativo para la coparticipación y los gastos de capital (reducen la probabilidad de cambio), positivo para el gasto total y negativo para la población. Para el ingreso se usaron dos proxies, el consumo residencial de energía eléctrica y los autos por habitante, por falta de datos de ingreso municipal.",
+    "Los estadísticos descriptivos ya anticipan el resultado: en los tres períodos la variación de los gastos de capital fue mayor en los municipios donde no cambió el partido, y la población promedio siempre fue menor donde sí cambió. Un test de Wilcoxon muestra distribuciones más parecidas entre ambos grupos en 1987 y 1991 que en 1995, cuando cinco de siete variables difieren.",
+    "En 1987 ninguna variable es significativa y el modelo tampoco en conjunto (chi cuadrado de 6,03 contra un valor crítico de 9,49); los gastos de capital son la variable más significativa, al 20%, y el gasto total tiene el signo contrario al esperado. En 1991 sigue sin haber significatividad, pero todos los signos ya son los esperados. En 1995 el modelo es significativo en conjunto (15,56), y los gastos de capital (coeficiente de −1,13, z de −2,14) y la población (−0,92, z de −2,24) son significativos al 4%; gasto total y coparticipación tienen el signo esperado sin ser significativos. Agregar una medida de eficiencia municipal (obtenida comparando el producto real con el estimado por una Cobb-Douglas) o las proxies de ingreso da signos esperados pero no significativos; siguiendo a Peltzman, los autores leen esto último como que los votantes entienden que su ingreso depende de la política nacional o provincial, no de la municipal."
+   ]
+  },
+  {
+   "t": "El arrastre del gobernador y el aprendizaje",
+   "p": [
+    "La dummy de coincidencia con el partido del gobernador solo es significativa en 1987: coeficiente de 0,48 con z de 5,23, y el modelo pasa a ser muy significativo (54,05). El signo positivo indica que la probabilidad de cambio era mayor donde el partido del gobernador era desafiante en la intendencia: la elección municipal de 1987 estuvo dominada por el arrastre provincial. En 1991 (0,07) y 1995 (−0,07) la dummy deja de ser significativa.",
+    "La lectura de conjunto es una historia de aprendizaje. A medida que pasa el tiempo el modelo es cada vez más significativo, los gastos de capital se vuelven la única variable fiscal individualmente significativa en el tercer período y los demás coeficientes se acercan a la relevancia. Los ciudadanos parecen votar mirando el desempeño fiscal, usar la información de los tres años previos, mirar cambios y no niveles, saber quién es responsable de qué, castigar la expansión del gasto total y premiar la obtención de coparticipación y la eficiencia municipal, en la misma dirección que Peltzman."
+   ]
+  },
+  {
+   "t": "El panel: parámetros comunes o por elección",
+   "eq": [
+    "LR = 2\\,\\big(\\ln L_{III} - \\ln L_{II}\\big)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(LR\\): estadístico de razón de verosimilitudes que compara un modelo restringido con uno no restringido; la fórmula es la estándar y el paper solo reporta su valor (lectura propia).",
+      "en": "\\(LR\\): likelihood ratio statistic comparing a restricted with an unrestricted model; the formula is the standard one and the paper only reports its value (own reading)."
+     },
+     {
+      "es": "\\(\\ln L_{II}\\): logaritmo de la verosimilitud del Modelo II, restringido, con los mismos parámetros para todos los municipios y elecciones.",
+      "en": "\\(\\ln L_{II}\\): log-likelihood of Model II, restricted, with the same parameters for all municipalities and elections."
+     },
+     {
+      "es": "\\(\\ln L_{III}\\): logaritmo de la verosimilitud del Modelo III, no restringido, que permite coeficientes distintos en cada elección pero iguales entre municipios.",
+      "en": "\\(\\ln L_{III}\\): log-likelihood of Model III, unrestricted, allowing different coefficients in each election but equal across municipalities."
+     }
+    ]
+   ],
+   "p": [
+    "Apilando las tres elecciones se obtienen 375 observaciones. El Modelo II supone parámetros homogéneos entre municipios y en el tiempo: los gastos de capital (−1,03, z de −2,90), el gasto total (2,30, z de 1,82) y la población (−0,39, z de −2,32) son significativos al 5% o al 10%, la coparticipación no, y la dummy del gobernador es positiva y significativa (0,17, z de 3,66). El Modelo III deja que los coeficientes cambien entre elecciones y reproduce casi los mismos signos y significatividades que los logit por separado.",
+    "El test de razón de verosimilitudes da 2,66 sin la dummy (log-verosimilitudes de −218,36 y −217,03): los dos modelos son muy parecidos. Con la dummy da 40,44 (−211,29 contra −191,07) y favorece al Modelo III, lo que los autores interpretan como consistente con el aprendizaje que acompaña el retorno y la permanencia de la democracia: el efecto de arrastre del gobernador no es el mismo en cada elección."
+   ]
+  },
+  {
+   "t": "Conclusión y límites",
+   "p": [
+    "La conclusión de los Porto es que la descentralización fiscal y los mecanismos democráticos, junto con la movilidad de bienes y factores, pueden volver menos necesarios los organismos fiscales centralizadores que proponen los modelos de political economy. Mejorar la información sobre el propio municipio y sobre los vecinos ayudaría a la competencia por comparación, y formas de democracia directa, que la reforma de la Constitución bonaerense de 1994 introdujo y que se había usado una sola vez, podrían mejorar el desempeño fiscal.",
+    "Los propios autores señalan dos debilidades: no tratan la simultaneidad entre lo que hacen los votantes y lo que hacen los políticos, y las variables fiscales pueden ser endógenas, sin datos municipales para corregirlo. Lectura propia: a eso se suma que la evidencia descansa en una sola elección con significatividad conjunta, que varias variables se reportan como «significativas» al 20%, que las proxies de ingreso son toscas y que un logit binario sobre el cambio de partido ignora márgenes de victoria. El hallazgo más robusto es el de los gastos de capital y la población, coherente con la idea de que se castiga lo que se ve y donde el voto pesa más; el salto de ahí a «confiar en la descentralización» es más una presunción razonable que una prueba."
+   ]
+  }
+ ],
+ "claves": [
+  "Alrededor de un tercio de los 125 intendentes bonaerenses cambió de partido en cada elección de 1987, 1991 y 1995 (promedio 29,9%).",
+  "El arrastre del gobernador cayó: 92% de los cambios fue hacia su partido en 1987, 64% en 1991 y 56% en 1995.",
+  "En 1995 la variación de los gastos de capital per cápita y la población reducen significativamente la probabilidad de que el partido del intendente pierda.",
+  "Se castiga más en los municipios chicos: mejor percepción de la gestión y mayor poder del voto (1/N, con N la población).",
+  "El modelo gana significatividad elección tras elección: los autores lo leen como aprendizaje democrático.",
+  "Límites reconocidos: simultaneidad entre votantes y políticos y posible endogeneidad de las variables fiscales."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué variable dependiente usan Porto y Porto en sus regresiones?",
+    "en": "What dependent variable do Porto and Porto use in their regressions?"
+   },
+   "op": {
+    "es": [
+     "La participación del partido gobernante en el total de votos",
+     "Una variable binaria que vale 1 si el partido del intendente cambió tras la elección",
+     "El margen de victoria del intendente",
+     "La variación del gasto total per cápita"
+    ],
+    "en": [
+     "The governing party's share of the total vote",
+     "A binary variable equal to 1 if the mayor's party changed after the election",
+     "The mayor's margin of victory",
+     "The change in per capita total spending"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Estiman un logit cuya variable dependiente es el cambio de partido; la participación en el total de votos es la variable de Peltzman.",
+    "en": "They estimate a logit whose dependent variable is the change of party; vote share is Peltzman's variable."
+   },
+   "id": "fisc-ecopol-04-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué suponen los autores que los votantes «miran» los gastos de capital municipales?",
+    "en": "Why do the authors assume voters 'look at' municipal capital spending?"
+   },
+   "op": {
+    "es": [
+     "Porque se financian con deuda provincial",
+     "Porque son la mayor parte del presupuesto municipal",
+     "Porque son visibles en la vida diaria y mejoran el bienestar de forma permanente",
+     "Porque los fija el gobernador"
+    ],
+    "en": [
+     "Because they are financed with provincial debt",
+     "Because they are the largest part of the municipal budget",
+     "Because they are visible in daily life and improve welfare permanently",
+     "Because the governor sets them"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Alumbrado, semáforos, pavimento y desagües se ven todos los días y son mejoras permanentes, el tipo de cambio que según Peltzman valoran los votantes.",
+    "en": "Lighting, traffic lights, paving and drains are seen every day and are permanent improvements, the kind of change Peltzman says voters value."
+   },
+   "id": "fisc-ecopol-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué signo esperan los autores para la variación del gasto total en el logit?",
+    "en": "What sign do the authors expect for the change in total spending in the logit?"
+   },
+   "op": {
+    "es": [
+     "Positivo: más gasto anticipa más impuestos y aumenta la probabilidad de cambio",
+     "Negativo: más gasto siempre se premia",
+     "Nulo: el gasto total no se observa",
+     "Depende del partido del gobernador"
+    ],
+    "en": [
+     "Positive: more spending signals more taxes and raises the probability of change",
+     "Negative: more spending is always rewarded",
+     "Zero: total spending is not observed",
+     "It depends on the governor's party"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Suponen que el ciudadano asocia más gasto con más impuestos; en 1987 el signo salió al revés, en 1991 y 1995 fue el esperado aunque no significativo.",
+    "en": "They assume citizens associate more spending with more taxes; in 1987 the sign came out reversed, in 1991 and 1995 it was as expected though not significant."
+   },
+   "id": "fisc-ecopol-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué muestra la caída del porcentaje de cambios hacia el partido del gobernador (92%, 64%, 56%)?",
+    "en": "What does the fall in the share of changes toward the governor's party (92%, 64%, 56%) show?"
+   },
+   "op": {
+    "es": [
+     "Que la UCR ganó todas las elecciones",
+     "Que las elecciones dejaron de coincidir",
+     "Que la coparticipación dejó de importar",
+     "Que los votantes diferencian cada vez más el voto municipal del provincial"
+    ],
+    "en": [
+     "That the UCR won every election",
+     "That elections stopped coinciding",
+     "That revenue sharing stopped mattering",
+     "That voters increasingly separate the municipal vote from the provincial one"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Las elecciones seguían coincidiendo; que menos cambios acompañen al gobernador indica diferenciación del voto y aprendizaje, contra la idea de Prud'homme.",
+    "en": "Elections still coincided; fewer changes following the governor indicate vote differentiation and learning, against Prud'homme's view."
+   },
+   "id": "fisc-ecopol-04-q4"
+  },
+  {
+   "q": {
+    "es": "En el logit de 1995, ¿qué variables resultan significativas al 4%?",
+    "en": "In the 1995 logit, which variables are significant at 4%?"
+   },
+   "op": {
+    "es": [
+     "Coparticipación y gasto total",
+     "La dummy del gobernador y la eficiencia",
+     "Gastos de capital y población",
+     "Autos y energía per cápita"
+    ],
+    "en": [
+     "Revenue sharing and total spending",
+     "The governor dummy and efficiency",
+     "Capital spending and population",
+     "Cars and energy per capita"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Gastos de capital (z de −2,14) y población (z de −2,24) son significativas; el resto tiene el signo esperado pero no es significativo.",
+    "en": "Capital spending (z of −2.14) and population (z of −2.24) are significant; the rest have the expected sign but are not significant."
+   },
+   "id": "fisc-ecopol-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo justifican los autores que la población reduzca la probabilidad de cambio?",
+    "en": "How do the authors justify population lowering the probability of change?"
+   },
+   "op": {
+    "es": [
+     "En municipios grandes hay más partidos",
+     "En comunidades chicas la gestión se percibe mejor y cada voto pesa más (1/N, con N la población)",
+     "Los municipios grandes reciben más coparticipación",
+     "En municipios grandes vota menos gente"
+    ],
+    "en": [
+     "Large municipalities have more parties",
+     "In small communities management is better perceived and each vote weighs more (1/N, with N the population)",
+     "Large municipalities receive more revenue sharing",
+     "Fewer people vote in large municipalities"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es el argumento de percepción y poder del voto; además, la sección electoral menos poblada tuvo el mayor porcentaje de cambios (37,5%).",
+    "en": "It is the perception and voting-power argument; the least populated electoral section also had the highest share of changes (37.5%)."
+   },
+   "id": "fisc-ecopol-04-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué indica el coeficiente positivo y muy significativo de la dummy del gobernador en 1987?",
+    "en": "What does the positive, highly significant governor dummy in 1987 indicate?"
+   },
+   "op": {
+    "es": [
+     "Que la elección municipal estuvo fuertemente influida por el arrastre de la elección provincial",
+     "Que los intendentes del partido del gobernador gastaron más",
+     "Que la coparticipación favoreció a la oposición",
+     "Que el modelo está mal especificado"
+    ],
+    "en": [
+     "That the municipal election was strongly driven by the provincial election's coattails",
+     "That mayors from the governor's party spent more",
+     "That revenue sharing favored the opposition",
+     "That the model is misspecified"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La probabilidad de cambio era mayor donde el partido del gobernador era desafiante; la dummy deja de ser significativa en 1991 y 1995.",
+    "en": "The probability of change was higher where the governor's party was the challenger; the dummy loses significance in 1991 and 1995."
+   },
+   "id": "fisc-ecopol-04-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué compara el test de razón de verosimilitudes del panel?",
+    "en": "What does the panel likelihood ratio test compare?"
+   },
+   "op": {
+    "es": [
+     "Logit contra probit",
+     "Municipios grandes contra chicos",
+     "Gastos de capital contra gasto total",
+     "Un modelo con parámetros comunes a las tres elecciones contra otro con parámetros por elección"
+    ],
+    "en": [
+     "Logit against probit",
+     "Large against small municipalities",
+     "Capital spending against total spending",
+     "A model with parameters common to the three elections against one with election-specific parameters"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Compara el Modelo II (restringido) con el III; da 2,66 sin la dummy y 40,44 con ella, a favor del modelo con parámetros por elección.",
+    "en": "It compares Model II (restricted) with Model III; it gives 2.66 without the dummy and 40.44 with it, favoring the election-specific model."
+   },
+   "id": "fisc-ecopol-04-q8"
+  }
+ ],
+ "palabras": 1855,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Puede el voto en las urnas disciplinar a los gobiernos locales sin centralizar la política fiscal?",
+    "en": "Can the ballot box discipline local governments without centralizing fiscal policy?"
+   },
+   "a": {
+    "es": "Según Porto y Porto, sí: en los municipios bonaerenses, tras un período de aprendizaje, la probabilidad de que el partido del intendente pierda depende de su desempeño fiscal, lo que vuelve menos necesarios los organismos centralizadores.",
+    "en": "According to Porto and Porto, yes: in Buenos Aires municipalities, after a learning period, the probability that the mayor's party loses depends on its fiscal performance, making centralizing bodies less necessary."
+   },
+   "id": "fisc-ecopol-04-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es la competencia por comparación (yardstick competition) entre gobiernos?",
+    "en": "What is yardstick competition between governments?"
+   },
+   "a": {
+    "es": "Los votantes juzgan a su gobierno comparándolo con los vecinos: quien sube impuestos cuando los demás no lo hacen pierde. Besley y Case (1995), citados por Porto y Porto, la documentan para gobernadores de Estados Unidos.",
+    "en": "Voters judge their government by comparing it with neighbors: whoever raises taxes when others don't loses. Besley and Case (1995), cited by Porto and Porto, document it for US governors."
+   },
+   "id": "fisc-ecopol-04-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se modela el voto retrospectivo sobre variables fiscales locales?",
+    "en": "How is retrospective voting on local fiscal variables modeled?"
+   },
+   "a": {
+    "es": "La probabilidad de cambio de partido depende de una constante, del cambio de utilidad generado por las variables fiscales, de la población y del ingreso; una función decreciente traduce mejoras de utilidad en menor probabilidad de cambio. Porto y Porto, siguiendo a Peltzman y Besley-Case.",
+    "en": "The probability of party change depends on a constant, the utility change produced by fiscal variables, population and income; a decreasing function turns utility gains into a lower probability of change. Porto and Porto, following Peltzman and Besley-Case."
+   },
+   "id": "fisc-ecopol-04-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué variable fiscal municipal parece pesar más en el voto a intendente?",
+    "en": "Which municipal fiscal variable seems to weigh most in mayoral voting?"
+   },
+   "a": {
+    "es": "La variación de los gastos de capital per cápita, la única significativa en 1995 y robusta en el panel: obras visibles con efecto permanente sobre el bienestar. Porto y Porto, municipios de Buenos Aires.",
+    "en": "The change in per capita capital spending, the only one significant in 1995 and robust in the panel: visible works with a permanent welfare effect. Porto and Porto, Buenos Aires municipalities."
+   },
+   "id": "fisc-ecopol-04-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Por qué el castigo electoral sería mayor en comunidades pequeñas?",
+    "en": "Why would electoral punishment be larger in small communities?"
+   },
+   "a": {
+    "es": "Porque la gestión se percibe mejor y el poder de cada voto (1/N, con N la población) es mayor; en Buenos Aires la sección electoral menos poblada tuvo 37,5% de cambios y la más poblada alrededor de 19%. Porto y Porto.",
+    "en": "Because management is better perceived and each vote's power (1/N, with N the population) is greater; in Buenos Aires the least populated electoral section had 37.5% changes and the most populated about 19%. Porto and Porto."
+   },
+   "id": "fisc-ecopol-04-t5"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se detecta el «arrastre» de una elección superior sobre la local?",
+    "en": "How is the coattail effect of a higher-level election on a local one detected?"
+   },
+   "a": {
+    "es": "Con una dummy de coincidencia entre el partido ganador local y el del gobernador: en 1987 fue muy significativa (z de 5,23) y luego dejó de serlo, señal de que los votantes aprendieron a separar el voto. Porto y Porto.",
+    "en": "With a dummy for coincidence between the local winner's party and the governor's: in 1987 it was highly significant (z of 5.23) and later lost significance, a sign that voters learned to split their vote. Porto and Porto."
+   },
+   "id": "fisc-ecopol-04-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué problema econométrico amenaza las regresiones de desempeño fiscal sobre resultados electorales?",
+    "en": "What econometric problem threatens regressions of electoral outcomes on fiscal performance?"
+   },
+   "a": {
+    "es": "La simultaneidad: los políticos eligen políticas anticipando cómo votan los ciudadanos, por lo que las variables fiscales pueden ser endógenas. Porto y Porto lo reconocen sin poder corregirlo por falta de datos municipales.",
+    "en": "Simultaneity: politicians choose policies anticipating how citizens vote, so fiscal variables may be endogenous. Porto and Porto acknowledge it but cannot correct it for lack of municipal data."
+   },
+   "id": "fisc-ecopol-04-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Cuán fuerte es la evidencia de que los votantes municipales premian el buen desempeño fiscal?",
+    "en": "How strong is the evidence that municipal voters reward good fiscal performance?"
+   },
+   "a": {
+    "es": "Moderada: solo la elección de 1995 es significativa en conjunto y varias variables lo son apenas al 20%; el resultado firme es el de gastos de capital y población. Lectura propia sobre Porto y Porto, que califican sus resultados de preliminares.",
+    "en": "Moderate: only the 1995 election is jointly significant and several variables only at 20%; the firm result is capital spending and population. Own reading on Porto and Porto, who call their results preliminary."
+   },
+   "id": "fisc-ecopol-04-t8"
+  }
+ ]
+}

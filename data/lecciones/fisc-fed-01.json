@@ -1,0 +1,527 @@
+{
+ "id": "fisc-fed-01",
+ "cat": "fisc-fed",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "Federalismo fiscal y equidad entre territorios: funciones, recursos y transferencias",
+ "bajada": "Gabriela Lagos Rodríguez repasa la teoría del federalismo fiscal desde la equidad interterritorial: qué nivel de gobierno debe asignar, redistribuir y estabilizar, con qué recursos, y cómo se calculan las transferencias que corrigen los desequilibrios verticales y horizontales.",
+ "fuentes": [
+  1186
+ ],
+ "cita": "M. G. Lagos Rodríguez, «Una revisión de la literatura del federalismo fiscal. Notas sobre la equidad interterritorial», Universidad de Castilla-La Mancha, documento de trabajo",
+ "intro": "En un Estado con varios niveles de gobierno hay dos preguntas inseparables: quién hace qué y con qué plata. Gabriela Lagos Rodríguez, de la Universidad de Castilla-La Mancha, revisa la respuesta que da el federalismo fiscal (o financiero) con un foco particular: la equidad entre territorios. Su lectura es que, en la distribución de funciones y recursos y sobre todo en las transferencias interterritoriales, la literatura le da preeminencia a la equidad por sobre la eficiencia. El recorrido parte de las tres funciones de Musgrave (asignación, distribución y estabilización) y de su reparto entre niveles de gobierno; sigue con las fuentes de financiación, propias y ajenas; y termina en el corazón técnico del trabajo, las fórmulas de transferencias que corrigen el desequilibrio vertical (entre el gobierno central y los subcentrales) y el horizontal (entre gobiernos del mismo nivel). Cierra con una crítica común a todas estas posiciones: tratan las relaciones intergubernamentales como si fueran estáticas, cuando los gobiernos regionales reaccionan a ellas.",
+ "secciones": [
+  {
+   "t": "Musgrave y el reparto territorial de funciones",
+   "p": [
+    "Para Musgrave una economía sin sector público funciona mal por tres razones: asigna recursos de forma ineficiente (competencia imperfecta, externalidades, bienes públicos, bienes preferentes), distribuye la renta de un modo que difiere del socialmente deseable y no garantiza por sí sola empleo alto y estable, como señaló Keynes. De ahí las tres funciones: asignación, distribución y estabilización. Con Fuentes Quintana, la autora aclara que los fallos de mercado son condición necesaria pero no suficiente para intervenir: hace falta comprobar que la intervención mejora el resultado.",
+    "La segunda cuestión es el reparto de esas funciones entre niveles. Lagos distingue la Economía Pública Local, que estudia relaciones horizontales entre comunidades del mismo rango, del federalismo fiscal, que suma las relaciones verticales entre niveles jerárquicos. El esquema funcional de Musgrave fue criticado, por ejemplo por Casahuga, porque supone que cada medida afecta un solo objetivo y que las funciones son perfectamente divisibles entre niveles; la autora igual lo usa como ordenador."
+   ]
+  },
+  {
+   "t": "Asignación: el caso para descentralizar",
+   "p": [
+    "Siguiendo a Castells, el nivel que debe proveer un bien depende de seis criterios: la provisión central abarata los bienes públicos puros pero uniforma la oferta; los bienes públicos locales deben proveerse por el nivel cuyo territorio coincida con el área de beneficio; las economías de escala empujan hacia arriba si quien provee también produce; pesan los costos de decisión; los bienes con congestión deben quedar en el nivel que se acerque al tamaño óptimo de usuarios; y los sistemas descentralizados revelan mejor las preferencias.",
+    "Detrás hay varias piezas teóricas. El teorema de la descentralización de Oates: sin ahorros de costo por centralizar y sin externalidades entre jurisdicciones, proveer en cada lugar el nivel eficiente da al menos tanto bienestar como un nivel uniforme; Casahuga, con los teoremas del votante mediano, mostró que no siempre se cumple. El principio de equivalencia fiscal de Olson: el territorio que produce debe coincidir con el que se beneficia, o aparecen externalidades y subproducción. El tamaño óptimo de la jurisdicción, con Tiebout, los clubes de Buchanan y la congestión de King. Y el mecanismo de decisión colectiva: como las preferencias no se observan, se supone que los gobiernos se acercan a las del votante medio.",
+    "El «voto con los pies» de Tiebout funciona solo bajo condiciones muy restrictivas (movilidad total, información perfecta, sin externalidades). Boadway lo cuestiona de raíz: si las demandas dependen también del ingreso, los de menor renta se mudarían a las regiones ricas, donde pagan menos por los servicios, y el resultado sería el contrario al previsto. A favor de descentralizar quedan la limitación espacial de los beneficios, el ajuste a las preferencias, la competencia e innovación y la participación; a favor de centralizar, las economías de escala, las externalidades, el interés nacional, la equidad y la inercia histórica."
+   ]
+  },
+  {
+   "t": "Distribución: por qué se centraliza, y sus matices",
+   "p": [
+    "La redistribución responde a un criterio ético, la equidad. Con Musgrave y Fuentes Quintana, la autora repasa cuatro criterios de justicia distributiva: los basados en la dotación (cada uno recibe lo que gana), los utilitaristas (transferir del que más tiene al que menos hasta igualar utilidades marginales), los igualitarios (igualar bienestar, el maximin de Rawls o mínimos de consumo, la «equidad categórica») y los mixtos, que garantizan un mínimo de renta con igualdad de partida.",
+    "La respuesta casi unánime es que debe redistribuir el gobierno central. Si un gobierno subcentral con población pobre intenta mantener servicios y transferencias como sus vecinos, debe cobrar más impuestos; con movilidad, las rentas altas y medias se van. Castells resume tres efectos negativos: distorsiona la localización de personas y empresas, es ineficaz porque se evita mudándose y tiene efectos perversos al expulsar rentas altas y atraer pobres. Oates agrega que la redistribución es un bien público nacional, y Buchanan, que sus reglas deben fijarse a nivel constitucional y solo el gobierno central puede sostenerlas.",
+    "Hay matices. Pauly ve la redistribución como un bien público local; Tresch propone un esquema dual, con el centro a cargo de la redistribución interterritorial y los gobiernos locales de la interpersonal; Grewal y Mathews introducen el excedente de localización: mientras el beneficio neto de quedarse (como consumidor, productor y contribuyente) supere los costos de mudarse, el gobierno local puede redistribuir sin provocar fuga. King propone una política nacional básica con margen local acotado."
+   ]
+  },
+  {
+   "t": "Estabilización y desarrollo regional",
+   "p": [
+    "La estabilización también recae, para la mayoría de la doctrina, en el gobierno central. Las razones: coherencia entre instrumentos (riesgo de acciones de signo contrario y altos costos de coordinación), la política monetaria vedada a regiones (crear dinero permitiría financiar gasto sin el costo político de cobrar impuestos), las filtraciones de demanda en economías regionales abiertas, que achican los multiplicadores, y el endeudamiento: la deuda local suscripta por residentes de otras regiones funciona como deuda externa, por lo que se recomienda usarla solo para proyectos con beneficios en el tiempo.",
+    "Castells observa que descentralizar la estabilización puede volverla ineficaz pero no necesariamente aumentar las perturbaciones, y Gramlich, al encontrar que la movilidad laboral en Estados Unidos no era tan alta, propone fondos de estabilización contracíclicos locales. Donde más espacio hay para los gobiernos subcentrales es en el desarrollo, que Fuentes Quintana integra a esta función: mayor capacidad inversora, medidas más adaptadas a la zona y eficacia de la promoción local, aunque con riesgo de competencia fiscal y con el centro como garante de un mecanismo compensador."
+   ]
+  },
+  {
+   "t": "Recursos propios, transferencias y el efecto adherencia",
+   "p": [
+    "Los gobiernos subcentrales se financian con recursos propios (impuestos, endeudamiento, patrimonio, precios públicos) o ajenos (transferencias). Los impuestos propios son los que mejor vinculan el pago con el beneficio y hacen visible el costo de cada nivel. Sobre qué impuestos descentralizar hay tres posiciones: la de Musgrave, que evita la movilidad fiscal; la de la efectividad fiscal, que prioriza combatir la evasión con participaciones en ingresos; y la de Brennan y Buchanan, que ve en la movilidad un límite a la actuación de los gobiernos subcentrales. Musgrave y Mitchell Polinsky resumen el consenso en cinco principios (diversidad, equivalencia, redistribución centralizada, neutralidad en la localización y estabilización centralizada) y tres complementarios.",
+    "Las transferencias pueden ser condicionadas (de suma fija o de igualación, abiertas o cerradas, por categorías o en bloque, por fórmula o a pedido) o incondicionales. La participación territorializada en impuestos nacionales corrige el desequilibrio vertical pero agranda el horizontal, porque recibe más quien más base tiene; por eso necesita subvenciones de nivelación o «perecuatorias». Oates suponía que una subvención general de suma fija equivale a una baja de impuestos locales del mismo monto; la evidencia que revisó Gramlich mostró que el gasto crece más con la subvención que con un aumento equivalente del ingreso local: el efecto adherencia o flypaper, que Oates atribuye a ilusión fiscal."
+   ]
+  },
+  {
+   "t": "El desequilibrio vertical y su transferencia",
+   "eq": [
+    "\\frac{IP_c}{N_c} = \\frac{\\sum_i IP_i}{\\sum_i N_i}",
+    "\\frac{e_c B_c}{N_c} = \\frac{e_i \\sum_i B_i}{\\sum_i N_i}",
+    "\\frac{e_c B_c - Q}{N_c} = \\frac{e_i \\sum_i B_i + Q}{\\sum_i N_i} \\;\\Rightarrow\\; Q = \\frac{e_c B_c \\dfrac{\\sum_i N_i}{N_c} - e_i \\sum_i B_i}{1 + \\dfrac{\\sum_i N_i}{N_c}}",
+    "\\sum_i N_i = e_i \\sum_i B_i + Q"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(IP_c\\), \\(N_c\\): ingresos potenciales y necesidades de gasto del gobierno central (\\(c\\)).",
+      "en": "\\(IP_c\\), \\(N_c\\): potential revenue and spending needs of the central government (\\(c\\))."
+     },
+     {
+      "es": "\\(IP_i\\), \\(N_i\\): ingresos potenciales y necesidades de gasto de la jurisdicción subcentral \\(i\\); \\(\\sum_i\\): suma sobre todas las jurisdicciones subcentrales.",
+      "en": "\\(IP_i\\), \\(N_i\\): potential revenue and spending needs of subcentral jurisdiction \\(i\\); \\(\\sum_i\\): sum over all subcentral jurisdictions."
+     },
+     {
+      "es": "La igualdad es la condición de equilibrio financiero: ambos niveles cubren la misma fracción de sus necesidades.",
+      "en": "The equality is the financial balance condition: both levels cover the same fraction of their needs."
+     }
+    ],
+    [
+     {
+      "es": "\\(e_c\\), \\(e_i\\): esfuerzo fiscal estándar del gobierno central y de los subcentrales, es decir, la proporción de la base que recaudan.",
+      "en": "\\(e_c\\), \\(e_i\\): standard tax effort of the central and subcentral governments, i.e. the share of the base they collect."
+     },
+     {
+      "es": "\\(B_c\\), \\(B_i\\): bases imponibles atribuidas al gobierno central y a cada jurisdicción subcentral. Cada lado es un «nivel de servicio»: ingresos potenciales sobre necesidades de gasto para un nivel estándar de servicios.",
+      "en": "\\(B_c\\), \\(B_i\\): tax bases assigned to the central government and to each subcentral jurisdiction. Each side is a 'service level': potential revenue over spending needs for a standard level of services."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q\\): transferencia general del gobierno central a los subcentrales; se resta de los recursos del centro y se suma a los de las regiones.",
+      "en": "\\(Q\\): general transfer from the central government to subcentral ones; it is subtracted from the center's resources and added to the regions'."
+     },
+     {
+      "es": "La segunda parte despeja \\(Q\\): es la transferencia que iguala el grado de cobertura de necesidades de ambos niveles. El despeje algebraico es directo a partir de la igualdad.",
+      "en": "The second part solves for \\(Q\\): it is the transfer that equalizes the degree of needs coverage of both levels. The algebra follows directly from the equality."
+     }
+    ],
+    [
+     {
+      "es": "Condición de que, con la transferencia, los ingresos de los gobiernos subcentrales cubran exactamente sus necesidades de gasto. Lectura propia: coincide con la ecuación anterior solo si el grado común de cobertura es 100%; el paper presenta ambas sin aclararlo.",
+      "en": "Condition that, with the transfer, subcentral revenues exactly cover their spending needs. Own reading: it coincides with the previous equation only if the common coverage ratio is 100%; the paper presents both without clarifying this."
+     }
+    ]
+   ],
+   "p": [
+    "Hay equilibrio financiero cuando los ingresos potenciales sobre las necesidades de gasto son iguales para el centro y para el conjunto de los gobiernos subcentrales. El desequilibrio vertical suele favorecer al centro: las estructuras fiscales se diseñan para aprovechar las ventajas de la unidad territorial mayor, sobre todo en distribución y estabilización, y además, como señala Castells, crecen las funciones regionales mientras las bases de los impuestos subcentrales son poco flexibles.",
+    "Si la cobertura regional no llega al 100%, hay cinco salidas: devolver competencias al centro, ceder impuestos, subir la presión sobre las bases propias, reducir servicios o recibir transferencias. Por el costo político de las cuatro primeras, la solución habitual son transferencias generales e incondicionales, porque la necesidad no se vincula con un servicio en particular. Su costo es conocido: se rompe la correspondencia entre ingresos y gastos, se recorta la autonomía y aparece ilusión fiscal en los ciudadanos, que no ven cuánto les cuesta lo que provee su gobierno regional."
+   ]
+  },
+  {
+   "t": "El desequilibrio horizontal: capacidad, esfuerzo y necesidad",
+   "eq": [
+    "e_s = \\frac{\\sum_{i=1}^{n} I_i}{\\sum_{i=1}^{n} B_i}, \\qquad CF_i = e_s\\,B_i, \\qquad CF_N = \\frac{\\sum I_i}{\\sum B_i}\\cdot\\frac{\\sum B_i}{\\sum P_i} = e_s\\,B_n",
+    "Q_i = CF_N - CF_i, \\qquad Q_{pc} = P_i\\left\\{\\frac{\\sum I_i}{\\sum B_i}\\cdot\\frac{\\sum B_i}{\\sum P_i} - \\frac{\\sum I_i}{\\sum B_i}\\cdot\\frac{B_i}{P_i}\\right\\}",
+    "e_i B_i + Q_i = e_i B_s \\;\\Rightarrow\\; Q_i = e_i \\sum B_i \\left(\\frac{P_i}{\\sum P_i} - \\frac{B_i}{\\sum B_i}\\right)",
+    "Q_i = \\left(D_i - \\frac{D_s}{P_s} P_i\\right) + \\left(I_i - P_i \\frac{I_s}{B_s}\\frac{B_i}{P_i}\\right) + \\left(P_i \\frac{G_s}{P_s}(1+\\gamma) - G_s\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(e_s\\): esfuerzo fiscal estándar o medio, ingresos sobre bases imponibles del conjunto de las \\(n\\) jurisdicciones; \\(I_i\\): ingresos percibidos por la jurisdicción \\(i\\); \\(B_i\\): su base imponible.",
+      "en": "\\(e_s\\): standard or average tax effort, revenue over tax bases for all \\(n\\) jurisdictions; \\(I_i\\): revenue collected by jurisdiction \\(i\\); \\(B_i\\): its tax base."
+     },
+     {
+      "es": "\\(CF_i\\): capacidad fiscal de \\(i\\), lo que recaudaría aplicando el esfuerzo medio a su base.",
+      "en": "\\(CF_i\\): fiscal capacity of \\(i\\), what it would collect applying the average effort to its base."
+     },
+     {
+      "es": "\\(CF_N\\): capacidad fiscal media nacional por habitante; \\(P_i\\): población de \\(i\\); \\(B_n\\): base imponible media por habitante (el paper no la define explícitamente; lectura propia a partir de la fórmula).",
+      "en": "\\(CF_N\\): national average fiscal capacity per inhabitant; \\(P_i\\): population of \\(i\\); \\(B_n\\): average tax base per inhabitant (the paper does not define it explicitly; own reading from the formula)."
+     }
+    ],
+    [
+     {
+      "es": "\\(Q_i\\): subvención igualadora de capacidad fiscal, la diferencia entre la capacidad media nacional y la de la jurisdicción.",
+      "en": "\\(Q_i\\): fiscal-capacity equalization grant, the gap between national average capacity and the jurisdiction's."
+     },
+     {
+      "es": "\\(Q_{pc}\\): la misma subvención ponderada por la población \\(P_i\\): la brecha per cápita entre la capacidad media y la propia, multiplicada por los habitantes. Lectura propia: el paper la llama «per cápita», pero al multiplicar por \\(P_i\\) el resultado es el monto total para la jurisdicción.",
+      "en": "\\(Q_{pc}\\): the same grant weighted by population \\(P_i\\): the per capita gap between average and own capacity, times inhabitants. Own reading: the paper calls it 'per capita', but multiplying by \\(P_i\\) gives the total amount for the jurisdiction."
+     }
+    ],
+    [
+     {
+      "es": "\\(e_i\\): esfuerzo fiscal que elige la jurisdicción \\(i\\); \\(B_s\\): base de la jurisdicción estándar, que aquí es la media (base nacional por habitante por la población de \\(i\\)).",
+      "en": "\\(e_i\\): tax effort chosen by jurisdiction \\(i\\); \\(B_s\\): base of the standard jurisdiction, here the average (national base per inhabitant times \\(i\\)'s population)."
+     },
+     {
+      "es": "\\(P_i / \\sum P_i\\): participación de \\(i\\) en la población; \\(B_i / \\sum B_i\\): su participación en la base. La transferencia es positiva si tiene más población que base relativa, y crece con su propio esfuerzo \\(e_i\\).",
+      "en": "\\(P_i / \\sum P_i\\): \\(i\\)'s share of population; \\(B_i / \\sum B_i\\): its share of the base. The transfer is positive if its population share exceeds its base share, and it grows with its own effort \\(e_i\\)."
+     }
+    ],
+    [
+     {
+      "es": "Fórmula por necesidades, con tres sumandos: diferencia de presupuesto a compensar, ajuste por diferencias de presión fiscal y ajuste por diferencias de gasto.",
+      "en": "Needs-based formula, with three terms: budget gap to compensate, adjustment for differences in tax pressure and adjustment for differences in spending."
+     },
+     {
+      "es": "\\(D\\): déficit presupuestario; \\(G\\): gasto público; \\(I\\): ingresos; el subíndice \\(s\\) indica la jurisdicción estándar o media y \\(i\\) la solicitante; \\(P_s\\), \\(B_s\\): población y base de la estándar.",
+      "en": "\\(D\\): budget deficit; \\(G\\): public spending; \\(I\\): revenue; subscript \\(s\\) marks the standard or average jurisdiction and \\(i\\) the applicant; \\(P_s\\), \\(B_s\\): population and base of the standard one."
+     },
+     {
+      "es": "\\(\\gamma\\): porcentaje de mayor costo de prestar los servicios en \\(i\\) respecto del promedio. Lectura propia: el último término resta \\(G_s\\) tal como lo escribe el paper; por la lógica del ajuste cabría esperar el gasto de la jurisdicción solicitante.",
+      "en": "\\(\\gamma\\): percentage by which providing services in \\(i\\) costs more than average. Own reading: the last term subtracts \\(G_s\\) as the paper writes it; by the logic of the adjustment one would expect the applicant's spending."
+     }
+    ]
+   ],
+   "p": [
+    "Hay desequilibrio horizontal cuando gobiernos del mismo nivel no pueden prestar servicios similares con un esfuerzo fiscal medio: ciudadanos iguales reciben trato fiscal distinto, lo que viola la equidad horizontal y, además, induce migraciones ineficientes. Las causas son diferencias de capacidad fiscal, de insumos necesarios para un nivel estándar de servicios o de costo de esos insumos. La autora prefiere llamar a los remedios «sistemas de equiparación fiscal interterritorial» y descarta igualar el gasto per cápita (atenta contra la autonomía) o la provisión efectiva.",
+    "La igualación de capacidad fiscal garantiza a cada jurisdicción los ingresos per cápita que obtendría con el esfuerzo medio. Se toma la media nacional, no la de los más ricos, para acotar el costo. Musgrave le objeta que no fomenta el esfuerzo fiscal propio. La igualación de esfuerzo fiscal corrige eso: asegura que cualquier jurisdicción pueda prestar, para el esfuerzo que elija, lo mismo que una jurisdicción estándar con ese esfuerzo, y King mostró que es superior en equidad horizontal. Su problema: premiar el esfuerzo puede llevar a que las regiones más pobres sean las que más presionan a sus ciudadanos. La igualación por necesidades, finalmente, compensa los mayores costos por habitante que imponen las condiciones socioeconómicas y geográficas."
+   ]
+  },
+  {
+   "t": "Fondos combinados: vertical más horizontal",
+   "eq": [
+    "Q_i = \\frac{N_i}{\\sum N_i}\\,F",
+    "Q_i = e_s \\sum B_i \\left(\\frac{N_i}{\\sum N_i} - \\frac{B_i}{\\sum B_i}\\right), \\qquad Q'_i = \\left(\\frac{N_i}{\\sum N_i} - \\frac{B_i}{\\sum B_i}\\right) Pr_s \\sum B_i"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Q_i\\): subvención vertical que recibe la jurisdicción \\(i\\); \\(N_i / \\sum N_i\\): su participación en las necesidades de gasto totales.",
+      "en": "\\(Q_i\\): vertical grant received by jurisdiction \\(i\\); \\(N_i / \\sum N_i\\): its share of total spending needs."
+     },
+     {
+      "es": "\\(F\\): fondo vertical, la suma de las transferencias a las jurisdicciones deficitarias.",
+      "en": "\\(F\\): vertical fund, the sum of transfers to deficit jurisdictions."
+     }
+    ],
+    [
+     {
+      "es": "Primera fórmula: igualación de capacidad fiscal con necesidades; reemplaza la participación en la población por la participación en las necesidades \\(N_i / \\sum N_i\\). Con \\(e_i\\) en lugar de \\(e_s\\) se obtiene la versión de igualación de esfuerzo. La jurisdicción estándar es la media.",
+      "en": "First formula: fiscal-capacity equalization with needs; it replaces the population share by the needs share \\(N_i / \\sum N_i\\). With \\(e_i\\) instead of \\(e_s\\) one gets the effort-equalization version. The standard jurisdiction is the average."
+     },
+     {
+      "es": "\\(Q'_i\\): dotación del fondo horizontal o «perecuatorio», proporcional a la participación en las necesidades e inversamente a la participación en la base; \\(Pr_s\\): presión fiscal estándar; \\(\\sum B_i\\): base imponible total.",
+      "en": "\\(Q'_i\\): allocation from the horizontal or 'perequation' fund, proportional to the needs share and inversely to the base share; \\(Pr_s\\): standard tax pressure; \\(\\sum B_i\\): total tax base."
+     }
+    ]
+   ],
+   "p": [
+    "En la práctica las fórmulas combinan necesidad y presión fiscal, y los fondos de «perecuación» buscan a la vez la equidad vertical y la horizontal. En la propuesta de Castells que la autora reproduce, un fondo vertical reparte recursos según la participación de cada jurisdicción en las necesidades de gasto, para asegurar la suficiencia; un segundo fondo horizontal, cerrado y de suma cero, se forma con aportes de autoridades de un nivel y se aplica a subvenciones para otras del mismo nivel, de modo que todas puedan atender sus necesidades con una presión similar a la media. El fondo total es la suma de ambos.",
+    "King prefiere también un programa de transferencias incondicionales para los dos desequilibrios, con una particularidad: las subvenciones positivas que reciben las zonas pobres no tienen por qué igualar las negativas que aportan las ricas; el Estado central se encarga de que el costo neto de la compensación sea siempre positivo."
+   ]
+  },
+  {
+   "t": "Corolario: una teoría estática",
+   "p": [
+    "El sistema descripto centraliza la redistribución y excluye la intervención subcentral, y se defiende también por eficiencia: las regiones que aportan ganan comercio y reducen congestión, y el Estado gana con el aumento de la riqueza de todos. Pero un planteo más realista prevé que cada región intentará minimizar sus aportes y maximizar lo que recibe, y tiene un arma: la información sobre sus necesidades y condiciones económicas, que el centro necesita para que la política funcione. Para la autora eso obliga a centralizar la redistribución con control total del Estado. Con Guihery, califica la redistribución del federalismo de estática: se apoya en el segundo teorema del bienestar para corregir disparidades antes de que actúe el mercado, sin modelar la reacción de los agentes. La agenda que propone es la Nueva Economía Institucional y las técnicas de cooperación intergubernamental.",
+    "Lectura propia: el texto es una buena guía de lectura de la tradición española del federalismo fiscal (Castells, Casahuga, Ruiz-Huerta, López Laborda), pero es una revisión normativa, sin evidencia empírica propia, y su tesis de la preeminencia de la equidad se afirma más que se demuestra. Las fórmulas son útiles para entender la lógica de capacidad, esfuerzo y necesidad, aunque tienen descuidos de notación (unidades per cápita y totales mezcladas). Y hay una tensión interna: el corolario reconoce que los gobiernos regionales manipulan información, pero la respuesta es más centralización, cuando la literatura posterior de restricción presupuestaria blanda y diseño de transferencias pone el acento en incentivos."
+   ]
+  }
+ ],
+ "claves": [
+  "Musgrave: asignación, distribución y estabilización; la doctrina tradicional descentraliza la asignación y centraliza las otras dos.",
+  "Teorema de la descentralización (Oates) y equivalencia fiscal (Olson): proveer según preferencias locales y hacer coincidir área de producción y de beneficio.",
+  "La redistribución subcentral, con movilidad, distorsiona la localización, se evade mudándose y puede expulsar rentas altas; matices: Pauly, Tresch, Grewal y Mathews.",
+  "Efecto adherencia (flypaper): una subvención eleva el gasto local más que un aumento equivalente del ingreso.",
+  "Desequilibrio vertical: se corrige con transferencias incondicionales que igualan la cobertura de necesidades de centro y regiones.",
+  "Desequilibrio horizontal: igualación de capacidad fiscal, de esfuerzo fiscal o por necesidades; en la práctica, fondos que combinan los tres criterios."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué afirma el teorema de la descentralización de Oates?",
+    "en": "What does Oates's decentralization theorem state?"
+   },
+   "op": {
+    "es": [
+     "Que todo bien público debe proveerlo el gobierno local",
+     "Que sin ahorros de costo por centralizar ni externalidades, proveer en cada jurisdicción su nivel eficiente da al menos tanto bienestar como un nivel uniforme",
+     "Que la redistribución local es siempre más eficiente",
+     "Que el votante mediano decide la provisión óptima"
+    ],
+    "en": [
+     "That every public good should be provided by local government",
+     "That without cost savings from centralization or externalities, providing each jurisdiction's efficient level gives at least as much welfare as a uniform level",
+     "That local redistribution is always more efficient",
+     "That the median voter decides optimal provision"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Es un argumento a favor de provisión diferenciada, no necesariamente de atribuirla a gobiernos subcentrales; Casahuga mostró que no siempre se cumple.",
+    "en": "It argues for differentiated provision, not necessarily for assigning it to subcentral governments; Casahuga showed it does not always hold."
+   },
+   "id": "fisc-fed-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué exige el principio de equivalencia fiscal de Olson?",
+    "en": "What does Olson's principle of fiscal equivalence require?"
+   },
+   "op": {
+    "es": [
+     "Que todos los impuestos sean proporcionales",
+     "Que la transferencia iguale la capacidad fiscal",
+     "Que el territorio que produce el bien coincida con el área donde se reciben sus beneficios",
+     "Que el gasto per cápita sea igual en todas las regiones"
+    ],
+    "en": [
+     "That all taxes be proportional",
+     "That the transfer equalize fiscal capacity",
+     "That the territory producing the good coincide with the area receiving its benefits",
+     "That per capita spending be equal in all regions"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Si no coinciden aparecen externalidades que llevan a subproducir servicios públicos.",
+    "en": "If they don't match, externalities arise that lead to underproduction of public services."
+   },
+   "id": "fisc-fed-01-q2"
+  },
+  {
+   "q": {
+    "es": "Según la crítica de Boadway al voto con los pies, ¿qué podría pasar si las demandas dependen del ingreso?",
+    "en": "According to Boadway's critique of voting with one's feet, what could happen if demands depend on income?"
+   },
+   "op": {
+    "es": [
+     "Los de menor renta se mudarían a las regiones ricas, donde pagan menos por los servicios",
+     "Los ricos se mudarían a regiones pobres",
+     "Nadie se mudaría",
+     "Se alcanzaría el óptimo de Tiebout más rápido"
+    ],
+    "en": [
+     "Lower-income people would move to rich regions, where they pay less for services",
+     "The rich would move to poor regions",
+     "Nobody would move",
+     "Tiebout's optimum would be reached faster"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El agrupamiento sería por renta además de por preferencias, y el resultado sería el contrario al previsto por Tiebout.",
+    "en": "Sorting would be by income as well as preferences, and the outcome would be the opposite of Tiebout's prediction."
+   },
+   "id": "fisc-fed-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál NO es uno de los efectos negativos de asignar la redistribución a gobiernos subcentrales, según Castells?",
+    "en": "Which is NOT one of the negative effects of assigning redistribution to subcentral governments, according to Castells?"
+   },
+   "op": {
+    "es": [
+     "Distorsionar la localización de personas y empresas",
+     "Ser ineficaz porque se evita cambiando de jurisdicción",
+     "Atraer pobres y expulsar rentas altas",
+     "Generar inflación por emisión de dinero local"
+    ],
+    "en": [
+     "Distorting the location of people and firms",
+     "Being ineffective because it is avoided by changing jurisdiction",
+     "Attracting the poor and driving out high incomes",
+     "Generating inflation through local money creation"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Los tres efectos son distorsión, ineficacia y efectos perversos; la emisión aparece en la discusión de estabilización, no de distribución.",
+    "en": "The three effects are distortion, ineffectiveness and perverse effects; money creation appears in the stabilization discussion, not distribution."
+   },
+   "id": "fisc-fed-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué es el efecto adherencia o flypaper?",
+    "en": "What is the flypaper effect?"
+   },
+   "op": {
+    "es": [
+     "Que las transferencias se quedan en el gobierno central",
+     "Que el gasto local crece más con una subvención que con un aumento equivalente del ingreso local",
+     "Que las regiones ricas reciben más participaciones",
+     "Que los impuestos locales se trasladan a otras regiones"
+    ],
+    "en": [
+     "That transfers stay with the central government",
+     "That local spending rises more with a grant than with an equivalent rise in local income",
+     "That rich regions receive more revenue sharing",
+     "That local taxes are shifted to other regions"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Gramlich lo mostró con la evidencia empírica; Oates lo atribuye a ilusión fiscal: los ciudadanos subestiman el costo de lo financiado con subvenciones.",
+    "en": "Gramlich showed it with empirical evidence; Oates attributes it to fiscal illusion: citizens underestimate the cost of grant-financed goods."
+   },
+   "id": "fisc-fed-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la participación territorializada en impuestos nacionales puede empeorar el desequilibrio horizontal?",
+    "en": "Why can territorialized revenue sharing worsen the horizontal imbalance?"
+   },
+   "op": {
+    "es": [
+     "Porque es condicionada",
+     "Porque la decide cada región",
+     "Porque recibe más quien más capacidad económica tiene",
+     "Porque se reparte por población"
+    ],
+    "en": [
+     "Because it is conditional",
+     "Because each region decides it",
+     "Because whoever has more economic capacity receives more",
+     "Because it is allocated by population"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Corrige el desequilibrio vertical pero amplía las diferencias entre regiones, por eso necesita subvenciones de nivelación.",
+    "en": "It corrects the vertical imbalance but widens differences between regions, so it needs equalization grants."
+   },
+   "id": "fisc-fed-01-q6"
+  },
+  {
+   "q": {
+    "es": "En la igualación de esfuerzo fiscal, ¿cuándo es positiva la transferencia a una jurisdicción?",
+    "en": "Under tax-effort equalization, when is the transfer to a jurisdiction positive?"
+   },
+   "op": {
+    "es": [
+     "Cuando su participación en la población supera su participación en la base imponible",
+     "Cuando su esfuerzo fiscal es nulo",
+     "Cuando su base supera la media",
+     "Siempre, por construcción"
+    ],
+    "en": [
+     "When its population share exceeds its tax-base share",
+     "When its tax effort is zero",
+     "When its base exceeds the average",
+     "Always, by construction"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La transferencia es el esfuerzo propio por la base total por la diferencia entre la participación en la población y en la base; si es pobre en base relativa, recibe.",
+    "en": "The transfer is own effort times total base times the gap between population share and base share; if relatively poor in base, it receives."
+   },
+   "id": "fisc-fed-01-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué critica el corolario de Lagos Rodríguez a todas las posiciones del federalismo fiscal?",
+    "en": "What does Lagos Rodríguez's conclusion criticize in all fiscal federalism positions?"
+   },
+   "op": {
+    "es": [
+     "Que ignoran la equidad",
+     "Que tratan las relaciones intergubernamentales de forma estática, sin considerar la reacción de los gobiernos regionales",
+     "Que no usan transferencias",
+     "Que proponen descentralizar la estabilización"
+    ],
+    "en": [
+     "That they ignore equity",
+     "That they treat intergovernmental relations statically, without considering regional governments' reactions",
+     "That they do not use transfers",
+     "That they propose decentralizing stabilization"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con Guihery, califica la redistribución como estática y propone la Nueva Economía Institucional como agenda.",
+    "en": "Following Guihery, she calls redistribution static and proposes New Institutional Economics as the agenda."
+   },
+   "id": "fisc-fed-01-q8"
+  }
+ ],
+ "palabras": 2021,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Qué objetivo prevalece en el diseño de las transferencias entre territorios según la literatura del federalismo fiscal?",
+    "en": "Which objective prevails in designing transfers between territories according to the fiscal federalism literature?"
+   },
+   "a": {
+    "es": "La equidad interterritorial por sobre la eficiencia, sobre todo en las transferencias. Es la tesis de la revisión de Gabriela Lagos Rodríguez.",
+    "en": "Interterritorial equity over efficiency, especially in transfers. It is the thesis of Gabriela Lagos Rodríguez's review."
+   },
+   "id": "fisc-fed-01-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es el residuo fiscal y qué exige la equidad en un sistema federal?",
+    "en": "What is the fiscal residuum and what does equity require in a federal system?"
+   },
+   "a": {
+    "es": "Es la diferencia entre el beneficio de los servicios públicos y la carga fiscal; para Buchanan, una estructura fiscal es equitativa si personas en situación similar tienen residuos similares. Lagos Rodríguez recoge también las objeciones de Musgrave.",
+    "en": "It is the gap between the benefit from public services and the tax burden; for Buchanan, a fiscal structure is equitable if people in similar situations have similar residua. Lagos Rodríguez also covers Musgrave's objections."
+   },
+   "id": "fisc-fed-01-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué margen tiene un gobierno local para redistribuir sin provocar la fuga de los ricos?",
+    "en": "How much room does a local government have to redistribute without driving out the rich?"
+   },
+   "a": {
+    "es": "El que da el excedente de localización de Grewal y Mathews: mientras el beneficio neto de quedarse (como consumidor, productor y contribuyente) supere los costos de mudarse, puede redistribuir. Lagos Rodríguez.",
+    "en": "The room given by Grewal and Mathews's locational surplus: as long as the net benefit of staying (as consumer, producer and taxpayer) exceeds moving costs, it can redistribute. Lagos Rodríguez."
+   },
+   "id": "fisc-fed-01-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la estabilización macroeconómica se asigna al gobierno central?",
+    "en": "Why is macroeconomic stabilization assigned to the central government?"
+   },
+   "a": {
+    "es": "Por la coherencia entre instrumentos, porque la política monetaria no puede delegarse a regiones, porque en economías regionales abiertas los multiplicadores se filtran y porque la deuda local funciona como deuda externa. Lagos Rodríguez, siguiendo a Ruiz-Huerta, Fuentes Quintana y Castells.",
+    "en": "Because of coherence among instruments, because monetary policy cannot be delegated to regions, because multipliers leak in open regional economies and because local debt works like external debt. Lagos Rodríguez, following Ruiz-Huerta, Fuentes Quintana and Castells."
+   },
+   "id": "fisc-fed-01-t4"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo se calcula la transferencia que corrige el desequilibrio vertical?",
+    "en": "How is the transfer correcting the vertical imbalance computed?"
+   },
+   "a": {
+    "es": "Como la que iguala ingresos potenciales sobre necesidades de gasto entre el centro y el conjunto de las regiones: se resta de los recursos centrales y se suma a los regionales. Lagos Rodríguez, con Castells y López Laborda.",
+    "en": "As the one equalizing potential revenue over spending needs between the center and the regions as a whole: subtracted from central resources and added to regional ones. Lagos Rodríguez, with Castells and López Laborda."
+   },
+   "id": "fisc-fed-01-t5"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿En qué se diferencia la igualación de capacidad fiscal de la de esfuerzo fiscal?",
+    "en": "How does fiscal-capacity equalization differ from tax-effort equalization?"
+   },
+   "a": {
+    "es": "La primera garantiza los ingresos que daría el esfuerzo medio, sin importar el esfuerzo propio; la segunda iguala lo que se obtiene con el esfuerzo que cada jurisdicción elige, y King la mostró superior en equidad horizontal. Lagos Rodríguez.",
+    "en": "The first guarantees the revenue the average effort would yield, regardless of own effort; the second equalizes what each jurisdiction gets with the effort it chooses, and King showed it superior in horizontal equity. Lagos Rodríguez."
+   },
+   "id": "fisc-fed-01-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo puede un sistema de transferencias atender a la vez el desequilibrio vertical y el horizontal?",
+    "en": "How can a transfer system address vertical and horizontal imbalances at once?"
+   },
+   "a": {
+    "es": "Con dos fondos: uno vertical repartido según la participación en las necesidades y uno horizontal de suma cero, proporcional a las necesidades e inverso a la base, según la propuesta de Castells que expone Lagos Rodríguez.",
+    "en": "With two funds: a vertical one allocated by share of needs and a zero-sum horizontal one, proportional to needs and inverse to the base, per the Castells proposal set out by Lagos Rodríguez."
+   },
+   "id": "fisc-fed-01-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué falla tiene la teoría clásica de la redistribución entre territorios?",
+    "en": "What flaw does the classic theory of redistribution between territories have?"
+   },
+   "a": {
+    "es": "Es estática: corrige disparidades de partida sin modelar que las regiones reaccionan, minimizan aportes y usan su información en provecho propio. Lagos Rodríguez, con Guihery; lectura propia: su respuesta de más centralización choca con la literatura posterior centrada en incentivos.",
+    "en": "It is static: it corrects initial disparities without modeling that regions react, minimize contributions and use their information to their advantage. Lagos Rodríguez, with Guihery; own reading: her answer of more centralization clashes with later incentive-focused literature."
+   },
+   "id": "fisc-fed-01-t8"
+  }
+ ]
+}
