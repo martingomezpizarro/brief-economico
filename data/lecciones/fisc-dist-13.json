@@ -1,0 +1,541 @@
+{
+ "id": "fisc-dist-13",
+ "cat": "fisc-dist",
+ "orden": 7,
+ "minutos": 15,
+ "titulo": "El fracaso distributivo argentino: integración, tecnología y política fiscal",
+ "bajada": "Leonardo Gasparini reconstruye treinta años de desigualdad creciente en la Argentina y concluye que la apertura de los noventa la empujó sobre todo por la vía del capital y la tecnología sesgada, no del comercio, en un país que no armó la red de protección para la transición.",
+ "fuentes": [
+  1291
+ ],
+ "cita": "L. Gasparini (2005), «El fracaso distributivo de Argentina: el papel de la integración y las políticas públicas», cap. 1 de G. Márquez (ed.), ¿Para bien o para mal? Debate sobre el impacto de la globalización en los mercados de trabajo de América Latina, BID",
+ "intro": "Durante los treinta años que siguieron a la Segunda Guerra Mundial, la Argentina fue una de las economías más igualitarias de América Latina, con pobreza no muy distinta de la de los países desarrollados. Las tres décadas siguientes fueron otra historia: entre 1974 y 2002 el coeficiente de Gini del ingreso per cápita familiar subió de 0,345 a 0,538 y la pobreza, con la línea oficial moderada, pasó de 5% a más de 50%. Según Gasparini, ningún otro país latinoamericano sufrió cambios tan radicales. El capítulo, escrito en el CEDLAS de la Universidad Nacional de La Plata para un debate del BID con el movimiento sindical sobre globalización y mercados de trabajo, ordena los hechos, busca sus determinantes directos en el mercado laboral y discute el papel de la integración a la economía mundial y de la política fiscal. Su tesis: la desigualdad no creció de manera pareja sino en cuatro episodios, dos crisis macroeconómicas (1988-1989 y 2001-2002), de efecto fuerte pero transitorio, y dos períodos de integración (fines de los setenta y buena parte de los noventa), de efecto más duradero. La integración pudo agravar la desigualdad en el corto y mediano plazo, pero el gobierno podía aliviar la transición y no lo hizo.",
+ "secciones": [
+  {
+   "t": "Treinta años de desigualdad creciente",
+   "eq": [
+    "y^{e}_{i} = \\dfrac{Y_h}{\\left(A + \\alpha_1 K_1 + \\alpha_2 K_2\\right)^{\\theta}}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(y^{e}_{i}\\): ingreso familiar equivalente del individuo \\(i\\), en pesos por adulto equivalente; es la variable cuya distribución mide el Gini del capítulo.",
+      "en": "\\(y^{e}_{i}\\): equivalent household income of individual \\(i\\), in pesos per adult equivalent; the variable whose distribution the chapter's Gini measures."
+     },
+     {
+      "es": "\\(Y_h\\): ingreso total de la familia \\(h\\) a la que pertenece el individuo.",
+      "en": "\\(Y_h\\): total income of household \\(h\\) to which the individual belongs."
+     },
+     {
+      "es": "\\(A\\): cantidad de adultos del hogar; \\(K_1\\): niños menores de 5 años; \\(K_2\\): niños de 6 a 14 años.",
+      "en": "\\(A\\): number of adults in the household; \\(K_1\\): children under 5; \\(K_2\\): children aged 6 to 14."
+     },
+     {
+      "es": "\\(\\alpha_1, \\alpha_2\\): peso de cada niño en adultos equivalentes (por ejemplo 0,5 y 0,75 en una de las variantes del Cuadro 1.4).",
+      "en": "\\(\\alpha_1, \\alpha_2\\): weight of each child in adult equivalents (e.g. 0.5 and 0.75 in one of the Table 1.4 variants)."
+     },
+     {
+      "es": "\\(\\theta\\): parámetro de economías de escala internas al hogar; cuanto menor que 1, más se abarata cada miembro adicional. En la serie principal Gasparini usa la escala oficial de adultos equivalentes y \\(\\theta = 0,8\\).",
+      "en": "\\(\\theta\\): parameter of economies of scale within the household; the further below 1, the cheaper each additional member. In the main series Gasparini uses the official adult-equivalent scale and \\(\\theta = 0.8\\)."
+     }
+    ]
+   ],
+   "p": [
+    "La fuente es la Encuesta Permanente de Hogares (EPH) del INDEC, que se releva en mayo y octubre, cubre 31 zonas urbanas donde reside el 70% de la población urbana y tiene unas 80.000 observaciones por onda. Solo el Gran Buenos Aires (GBA), donde vive cerca de un tercio de la población, tiene datos desde 1974, así que la serie larga es del GBA. La variable de bienestar es el ingreso familiar equivalente: el ingreso del hogar dividido por el número de adultos equivalentes elevado a un parámetro de economías de escala.",
+    "Con esa medida, el Gini del GBA subió de 0,324 en 1974 a 0,518 en 2003. La desigualdad se disparó en la segunda mitad de los setenta, se mantuvo en la primera mitad de los ochenta, saltó en la crisis de fines de esa década, bajó tras la estabilización sin volver al nivel previo, creció 6 puntos entre 1992 y 1998 y sumó 4 puntos más con la crisis de 2001-2002. La participación del decil más pobre cayó de 3% a 1,2% entre 1974 y 2003, y el cociente entre el decil más rico y el más pobre pasó de 8 a más de 30. La desigualdad de salarios horarios también creció, pero menos: 10 puntos de Gini entre 1974 y 2002, contra 19 del ingreso familiar equivalente.",
+    "Los resultados son robustos. Todos los índices (Theil, coeficiente de variación, Atkinson) muestran el mismo patrón, más marcado en los que pesan más la cola inferior. Entre los seis años elegidos como de relativa estabilidad (1974, 1980, 1986, 1992, 1998 y 2002) siempre hay dominancia de Lorenz del año anterior sobre el posterior, salvo entre 1980 y 1986. El patrón se repite en el agregado de 28 áreas urbanas (8 puntos de Gini entre 1992 y 2002, contra 10 en el GBA), con distintas escalas de adulto equivalente y dentro de grupos de edad. Comparada con la región, la Argentina pasó de estar con Costa Rica y Uruguay entre los países menos desiguales a dejar ese grupo: el aumento de su Gini en los noventa fue casi el doble del de Venezuela, segunda en el ranking. Con Uruguay, que tuvo treinta años de estabilidad distributiva, la distribución llegó a ser casi idéntica y hoy es marcadamente distinta."
+   ]
+  },
+  {
+   "t": "Pobreza, bienestar y polarización",
+   "eq": [
+    "FGT(\\alpha) = \\dfrac{1}{N}\\sum_{i=1}^{q}\\left(\\dfrac{z - y_i}{z}\\right)^{\\alpha}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(FGT(\\alpha)\\): índice de pobreza de Foster, Greer y Thorbecke. El capítulo reporta FGT(0), FGT(1) y FGT(2) pero no escribe la fórmula; la expresión es la definición estándar («lectura propia»).",
+      "en": "\\(FGT(\\alpha)\\): Foster-Greer-Thorbecke poverty index. The chapter reports FGT(0), FGT(1) and FGT(2) but does not write the formula; this is the standard definition ('own reading')."
+     },
+     {
+      "es": "\\(N\\): población total; \\(q\\): número de personas pobres (con ingreso por debajo de la línea); \\(i\\): cada persona pobre.",
+      "en": "\\(N\\): total population; \\(q\\): number of poor people (income below the line); \\(i\\): each poor person."
+     },
+     {
+      "es": "\\(z\\): línea de pobreza (aquí, la línea oficial moderada); \\(y_i\\): ingreso de la persona \\(i\\).",
+      "en": "\\(z\\): poverty line (here, the official moderate line); \\(y_i\\): income of person \\(i\\)."
+     },
+     {
+      "es": "\\(\\alpha\\): aversión a la pobreza. Con \\(\\alpha = 0\\) el índice es la proporción de pobres; con \\(\\alpha = 1\\), la brecha de pobreza; con \\(\\alpha = 2\\) pesa más a los más pobres entre los pobres.",
+      "en": "\\(\\alpha\\): poverty aversion. With \\(\\alpha = 0\\) the index is the headcount ratio; with \\(\\alpha = 1\\), the poverty gap; with \\(\\alpha = 2\\) it weighs the poorest of the poor more."
+     }
+    ]
+   ],
+   "p": [
+    "En el GBA la pobreza creció despacio en la primera mitad de los ochenta y se disparó con la hiperinflación. Tras una caída brusca a comienzos de los noventa, subió de 18% a 26% entre 1992 y 1998 pese a un crecimiento vigoroso, y la crisis la llevó a más de 50%: el FGT(0) pasó de 0,193 en mayo de 1992 a 0,543 en octubre de 2002. Las medidas que miran la profundidad de la pobreza (FGT(1) y FGT(2)) crecen todavía más. Gasparini advierte que la línea oficial está hoy cerca de la moda de la distribución, de modo que una mejora leve bajará mucho la pobreza medida, aunque seguirá muy por encima de su nivel histórico.",
+    "La desigualdad puede subir y el bienestar agregado mejorar si todos los ingresos crecen. No fue el caso: las curvas de incidencia del crecimiento, con ingresos ajustados a cuentas nacionales, tienen pendiente positiva en los cinco subperíodos, y el ingreso real de los percentiles más bajos cayó durante todo el período. Entre 1992 y 1998 el ingreso real del quintil más pobre cayó 5,4% mientras el del más rico subió 35,5%; entre 1998 y 2002 cayeron 37,4% y 9,1%. Por eso la evaluación de los noventa depende del juicio de valor: con una función de bienestar indiferente a la desigualdad (Bentham) el bienestar subió entre 1994 y 1998, mientras que con Atkinson(2), que pesa más la cola inferior, bajó considerablemente. En la recesión final todas las funciones coinciden en una caída fuerte.",
+    "Los índices de bipolarización de Wolfson y de Esteban, Gradín y Ray muestran que la distribución también se polarizó. Y no hay indicios de mayor movilidad que compense: a falta de datos de panel, el índice de movilidad educativa de Andersen (1 menos la proporción de la varianza de la brecha educativa explicada por la educación y el ingreso de los padres) no muestra mejoras en los noventa."
+   ]
+  },
+  {
+   "t": "Los determinantes directos: salarios, horas y empleo",
+   "eq": [
+    "w_{it} = X_{it}\\,\\beta_t + \\varepsilon_{it}",
+    "w^{*}_{i t_1} = X_{i t_1}\\,\\beta_{t_2} + \\varepsilon_{i t_1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(w_{it}\\): salario horario del individuo \\(i\\) en el momento \\(t\\).",
+      "en": "\\(w_{it}\\): hourly wage of individual \\(i\\) at time \\(t\\)."
+     },
+     {
+      "es": "\\(X_{it}\\): vector de características observables (típicamente edad, sexo y educación).",
+      "en": "\\(X_{it}\\): vector of observable characteristics (typically age, sex and education)."
+     },
+     {
+      "es": "\\(\\beta_t\\): vector de parámetros del año \\(t\\): los «precios» que el mercado paga por cada característica, por ejemplo el retorno a la educación.",
+      "en": "\\(\\beta_t\\): parameter vector for year \\(t\\): the 'prices' the market pays for each characteristic, e.g. the return to education."
+     },
+     {
+      "es": "\\(\\varepsilon_{it}\\): término de error; recoge factores no observables como habilidad, calidad de la educación o contactos.",
+      "en": "\\(\\varepsilon_{it}\\): error term; captures unobservables such as ability, quality of education or contacts."
+     }
+    ],
+    [
+     {
+      "es": "\\(w^{*}_{i t_1}\\): salario contrafáctico del individuo \\(i\\) en el año \\(t_1\\). El capítulo describe el procedimiento en palabras; esta escritura es «lectura propia».",
+      "en": "\\(w^{*}_{i t_1}\\): counterfactual wage of individual \\(i\\) in year \\(t_1\\). The chapter describes the procedure in words; this notation is 'own reading'."
+     },
+     {
+      "es": "\\(t_1, t_2\\): año base y año de comparación (por ejemplo 1992 y 1998).",
+      "en": "\\(t_1, t_2\\): base year and comparison year (e.g. 1992 and 1998)."
+     },
+     {
+      "es": "\\(\\beta_{t_2}\\): parámetros estimados en \\(t_2\\), aplicados a la población de \\(t_1\\); en el ejercicio se cambian de a uno (dummies educativas, dummy de hombre, edad y edad al cuadrado) manteniendo el resto en \\(t_1\\).",
+      "en": "\\(\\beta_{t_2}\\): parameters estimated in \\(t_2\\), applied to the \\(t_1\\) population; in the exercise they are changed one block at a time (education dummies, male dummy, age and age squared) keeping the rest at \\(t_1\\)."
+     },
+     {
+      "es": "\\(X_{i t_1}, \\varepsilon_{i t_1}\\): características y residuos observados en \\(t_1\\).",
+      "en": "\\(X_{i t_1}, \\varepsilon_{i t_1}\\): characteristics and residuals observed in \\(t_1\\)."
+     }
+    ]
+   ],
+   "p": [
+    "El ingreso de la EPH es sobre todo laboral, así que Gasparini busca los determinantes en el mercado de trabajo. Las ecuaciones de Mincer con corrección por selección muestran que los retornos a la educación cayeron para secundaria y superior entre 1980 y 1986, se estancaron hasta 1992 y en los noventa el perfil salario-educación se volvió mucho más convexo: se abrió la brecha entre los universitarios y el resto. Además, la dispersión del residuo, estable en los ochenta, aumentó mucho en los últimos diez años, lo que suele leerse como mayor retorno a activos no observados (habilidad, calidad educativa, contactos). Las horas trabajadas, estimadas con un modelo Tobit, también divergen: los no calificados trabajan menos horas que antes y los calificados más.",
+    "El desempleo pasó de alrededor de 2,5% entre 1974 y 1980 a casi 5% una década después y luego a 15%, con picos cercanos al 20% en el Tequila y en 2001-2002. Gasparini muestra que el salto de la tasa de «equilibrio» de 5% a 15% se debe sobre todo a una mayor participación laboral de mujeres y jóvenes frente a tasas de empleo rígidas. Ese desempleo afecta menos la distribución: si un joven entra al mercado sin conseguir trabajo, la tasa sube pero el ingreso del hogar no cambia.",
+    "Las microsimulaciones cuantifican cada factor. Se construye la distribución contrafáctica que habría habido en un año si algunos parámetros de las ecuaciones de salarios u horas hubieran tomado los valores de otro año, y la diferencia con la real mide el efecto de ese factor. Así, el Gini de los ingresos laborales subió 7,3 puntos entre 1992 y 1998, y si solo hubieran cambiado las dummies educativas habría subido en promedio 2,9 puntos. En los ochenta el cambio en los retornos a la educación fue igualador; en los noventa fue clave en el aumento. Los inobservables y los retornos educativos en horas fueron levemente igualadores en los ochenta y fuertemente desigualadores en los noventa; la brecha de género, la experiencia y el empleo casi no pesaron, y el cambio de la estructura educativa fue ligeramente desigualador porque el grupo universitario, chico, rico y disperso, creció."
+   ]
+  },
+  {
+   "t": "La integración de los noventa y sus dos canales",
+   "p": [
+    "Tras décadas de economía cerrada (con la excepción de fines de los setenta), el gobierno que asumió tras la hiperinflación de 1989 hizo en pocos años una batería de reformas: baja de aranceles y de barreras, Mercosur, Convertibilidad, privatizaciones y desregulaciones. Las importaciones de bienes pasaron de 4% del PIB en los ochenta a más de 10% en los noventa; la inversión extranjera directa, de 0,4% del PIB en 1970-1990 a 1,6% en 1991-1997. La inversión privada como proporción del PIB creció 44% entre los ochenta y los noventa, la edad promedio del stock de capital cayó de 8,8 años en 1989 a 5,9 en 1996 y las importaciones de bienes de capital pasaron de 8% de la inversión total en 1983-1990 a 30% en 1999. Con índices de Morley y otros, la Argentina aparece como uno de los reformadores más rápidos de la región, sin gradualismo ni mecanismos de transición: un verdadero shock tecnológico.",
+    "La teoría ofrece dos canales. El primero es la reasignación sectorial de Stolper-Samuelson: si la Argentina es relativamente abundante en recursos naturales y trabajo calificado frente al mundo y al Mercosur, la apertura desplaza producción y empleo hacia los sectores que los usan intensivamente, sube el retorno de los recursos naturales y se abre la brecha salarial. El segundo es intrasectorial: la apertura abarata el capital e introduce tecnologías nuevas; como el capital es más complementario del trabajo calificado y las tecnologías nuevas son intensivas en calificación, la demanda de calificados sube en todos los sectores y con ella la prima por calificación.",
+    "El efecto sobre la pobreza depende de cómo se combinan crecimiento y desigualdad. Gasparini recuerda el consenso bastante generalizado de que la integración trae más ingreso o crecimiento más rápido, y que el crecimiento está detrás de las historias exitosas de reducción de la pobreza, aunque cita visiones contrarias (Berry, Rodrik)."
+   ]
+  },
+  {
+   "t": "El trabajo empírico: comercio, capital y tecnología",
+   "eq": [
+    "\\ln w_{ijt} = \\sum_{e} \\gamma_e \\,(D_{ie}\\times M_{jt}) + \\sum_{e} \\delta_e\\,(D_{ie}\\times K_{j,t-k}) + Z_{ijt}\\,\\lambda + u_{ijt}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "Escritura «lectura propia» de la especificación que el capítulo describe en palabras (Galiani y Sanguinetti, ampliada por Acosta y Gasparini); los coeficientes son los del Cuadro 1.14.",
+      "en": "'Own reading' notation of the specification the chapter describes in words (Galiani and Sanguinetti, extended by Acosta and Gasparini); the coefficients are those of Table 1.14."
+     },
+     {
+      "es": "\\(\\ln w_{ijt}\\): logaritmo del salario horario del trabajador \\(i\\) del sector \\(j\\) en el año \\(t\\).",
+      "en": "\\(\\ln w_{ijt}\\): log hourly wage of worker \\(i\\) in sector \\(j\\) in year \\(t\\)."
+     },
+     {
+      "es": "\\(D_{ie}\\): dummy que vale 1 si el trabajador pertenece al grupo educativo \\(e\\) (no completó secundaria, secundaria completa, nivel superior).",
+      "en": "\\(D_{ie}\\): dummy equal to 1 if the worker belongs to education group \\(e\\) (did not finish secondary, secondary graduate, tertiary)."
+     },
+     {
+      "es": "\\(M_{jt}\\): penetración de importaciones en el sector del trabajador; \\(\\gamma_e\\): cuánto cambia el salario del grupo \\(e\\) cuando esa penetración aumenta.",
+      "en": "\\(M_{jt}\\): import penetration in the worker's sector; \\(\\gamma_e\\): how much group \\(e\\)'s wage changes when that penetration rises."
+     },
+     {
+      "es": "\\(K_{j,t-k}\\): medida de incorporación de capital (inversión) en el sector, con rezago \\(k\\) de 0, 1 o 3 años; \\(\\delta_e\\): efecto sobre el salario del grupo \\(e\\).",
+      "en": "\\(K_{j,t-k}\\): measure of capital incorporation (investment) in the sector, lagged \\(k\\) = 0, 1 or 3 years; \\(\\delta_e\\): effect on group \\(e\\)'s wage."
+     },
+     {
+      "es": "\\(Z_{ijt}\\): controles con sus coeficientes \\(\\lambda\\); \\(u_{ijt}\\): término de error.",
+      "en": "\\(Z_{ijt}\\): controls with coefficients \\(\\lambda\\); \\(u_{ijt}\\): error term."
+     }
+    ]
+   ],
+   "p": [
+    "La estructura sectorial cambió mucho. En el GBA la industria manufacturera abarcaba 38% de las horas trabajadas en 1974, 19% en 1998 y 15% en 2002; los servicios profesionales y empresariales más el sector público pasaron de 21% a 39% y a 46%. Las caídas de la industria de baja tecnología y las subas de los servicios profesionales fueron más fuertes en los dos períodos de apertura (1974-1980 y 1992-1998). La proporción de trabajadores sin secundaria en la fuerza laboral cayó de 67% en 1974 a 32,7% en 2002 y la de universitarios subió de 10,3% a 32,4%. En 1998, 61% de los trabajadores de la industria de baja tecnología no era calificado, contra 12% en el sector de negocios.",
+    "Una descomposición entre efectos «intersectoriales» (cambio de la estructura del empleo) e «intrasectoriales» (cambio en la intensidad de uso de cada tipo de trabajo dentro de cada sector), al estilo de Bound y Johnson, muestra que ambos jugaron contra los no calificados, pero los intrasectoriales fueron en general más fuertes, con su pico para los universitarios en 1992-1998. En los ochenta el sector público empujó la demanda de calificados sin subir la prima, porque demanda docentes, enfermeros y policías de menores salarios, las instituciones laborales eran activas y la oferta de universitarios creció con la democracia. En los dos períodos de liberalización, en cambio, el sesgo de la demanda subió la prima con instituciones laborales débiles.",
+    "La literatura sobre comercio encuentra efectos chicos. García Swartz ve salarios y precios moverse según Stolper-Samuelson pero duda del canal sectorial; Galiani y Sanguinetti hallan que la brecha creció más donde más penetraron las importaciones, pero eso explica apenas 10% del cambio de la prima; Cicowiez, con un modelo de equilibrio general computable, encuentra un efecto pequeño, y Porto (2002) concluye que, por el lado del consumo, los pobres fueron los principales beneficiarios de la baja de aranceles. Acosta y Gasparini agregan la inversión del sector: para 1992-1999, la incorporación de capital tiene coeficiente positivo y significativo para los universitarios (0,029 sin rezago) y negativo para quienes no completaron secundaria (-0,011); la penetración de importaciones explica 15% del cambio de la prima y la incorporación de capital alrededor de 60%. Coincide con Katz y Autor para Estados Unidos (20% comercio, 80% cambio tecnológico sesgado) y con Behrman y otros para 18 países latinoamericanos."
+   ]
+  },
+  {
+   "t": "Instituciones, capital y demografía",
+   "p": [
+    "Los dos períodos de mayor cambio distributivo coinciden con instituciones laborales débiles: en la segunda mitad de los setenta el régimen militar prohibió los sindicatos y en los noventa estuvieron pasivos por su alianza con el gobierno; el salario mínimo no fue relevante en ninguno. Gasparini aclara que no hay evidencia cuantitativa de ese efecto.",
+    "Las reformas también subieron los retornos de los factores no laborales. La participación de las fuentes no laborales en el PIB pasó de 36% en 1993 a 43% en 2000, pero en la EPH apenas de 2,1% a 2,8%. Como el capital se concentra en los hogares ricos, la encuesta subestima el nivel y el aumento de la desigualdad.",
+    "La demografía sumó lo suyo. En el GBA, el número promedio de niños menores de 12 años por hogar en el quintil más pobre subió de 1,33 en 1974 a 1,95 en 1998, mientras en el más rico bajó de 1,24 a 0,97. Marchionni y Gasparini estiman con microsimulaciones que el mayor tamaño de las familias pobres contribuyó sustancialmente a la pobreza y la desigualdad de los ochenta, y menos en los noventa."
+   ]
+  },
+  {
+   "t": "La política fiscal: progresiva, pero procíclica y sin red",
+   "eq": [
+    "G_a - G_b = g\\,(K_e + K_t)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G_a\\): coeficiente de Gini después de la política fiscal; \\(G_b\\): Gini antes de ella. La diferencia es el impacto redistributivo.",
+      "en": "\\(G_a\\): Gini coefficient after fiscal policy; \\(G_b\\): Gini before it. The difference is the redistributive impact."
+     },
+     {
+      "es": "\\(g\\): gasto público como proporción del ingreso disponible (tamaño del presupuesto).",
+      "en": "\\(g\\): public spending as a share of disposable income (budget size)."
+     },
+     {
+      "es": "\\(K_e\\), \\(K_t\\): índices de progresividad de Kakwani del gasto y de los impuestos; miden cuánto se apartan su distribución de la del ingreso. La suma resume la progresividad de la política fiscal.",
+      "en": "\\(K_e\\), \\(K_t\\): Kakwani progressivity indices of spending and taxes; they measure how far their distribution departs from that of income. Their sum summarizes fiscal policy progressivity."
+     },
+     {
+      "es": "Gasparini cita la identidad de Lambert (1993) tal como aquí se escribe y la usa para separar tamaño y progresividad; no discute el signo de cada término («lectura propia»: el impacto es mayor cuanto más grande y progresivo es el presupuesto).",
+      "en": "Gasparini cites Lambert's (1993) identity as written here and uses it to separate size and progressivity; he does not discuss each term's sign ('own reading': the impact is larger the bigger and more progressive the budget)."
+     }
+    ]
+   ],
+   "p": [
+    "Con la incidencia de Flood y otros y de la Dirección de Gastos Sociales Consolidados, Gasparini asigna el gasto y los impuestos por decil desde 1980. El gasto público social fue pro-pobre en todo el período (índice de concentración negativo) y su progresividad aumentó, sobre todo porque el ingreso se volvió más desigual. La carga tributaria se concentra en los estratos altos, pero en los noventa se concentró más despacio que el ingreso, así que el sistema tributario se volvió cada vez más regresivo. En los ochenta el impacto redistributivo varió con los cambios de tamaño del presupuesto y la composición de programas; en los noventa quedó estable. La política fiscal reduce el nivel de la desigualdad, pero no alteró su tendencia.",
+    "El gasto en programas focalizados creció en los ochenta, se desplomó en la crisis de fin de esa década y volvió a subir en los noventa, pero por pobre cayó en los ochenta y quedó más bajo en los noventa. Además es muy procíclico: según Braun y Di Gresia, la correlación cíclica entre PIB y gasto social fue de 0,42, contra 0,32 en América Latina y -0,10 en la OCDE, y el Banco Mundial estima una elasticidad de los programas focalizados al PIB de 1,86 en 1980-1997. Se recorta justo cuando más se necesita, por restricciones políticas para ahorrar en las expansiones, falta de crédito en las recesiones y pocos estabilizadores automáticos. La Argentina no usó el crecimiento de los noventa para ahorrar, ampliar la red de protección o reubicar y capacitar a los trabajadores desplazados."
+   ]
+  },
+  {
+   "t": "Por qué peor que el resto, y qué hacer",
+   "p": [
+    "Gasparini propone tres razones del peor desempeño argentino. La rapidez de la integración: un shock tecnológico y organizacional repentino pega más que una incorporación gradual con tiempo para capacitar y reasignar. La estructura previa: más industrializada y con más trabajo calificado que el resto de la región, lo que facilita adoptar tecnologías sesgadas y expone más a los sectores intensivos en trabajo no calificado frente a países como China. Y la demografía, cuyo efecto desigualador fue mayor que en el resto de América Latina. Las instituciones laborales debilitadas agravaron todo.",
+    "La conclusión es matizada. La evidencia vincula liberalización y desigualdad, pero no alcanza para oponerse a la globalización: países que se integraron más despacio no vieron grandes aumentos de la desigualdad, y la integración es un instrumento de crecimiento que muy probablemente reduce la pobreza. Lo que corresponde es regular el ritmo, dar a los pobres una red de protección adecuada y promover educación y capacitación; no hacerlo fortalece los argumentos contra la globalización y pone en peligro todo el proceso. El propio autor advierte que su lectura final es conjetural y en parte moldeada por impresiones personales.",
+    "Lectura propia: el mayor aporte del capítulo es separar crisis (shocks fuertes y reversibles) de integración (shocks más persistentes) y mostrar que el canal sectorial del comercio pesa poco frente al capital y la tecnología. La debilidad es de identificación: las reformas fueron simultáneas, la evidencia es mayormente descriptiva y el 60% atribuido a la inversión surge de una regresión entre sectores que puede confundir tecnología con otros cambios sectoriales. También queda abierta la pregunta de cuánto del deterioro de los noventa responde al tipo de cambio apreciado de la Convertibilidad, que abarató el capital importado y castigó a los transables intensivos en trabajo no calificado: el capítulo lo menciona como causa del abaratamiento del capital pero no lo trata como canal propio."
+   ]
+  }
+ ],
+ "claves": [
+  "Gini del ingreso per cápita familiar: de 0,345 a 0,538 entre 1974 y 2002; pobreza de 5% a más de 50%.",
+  "Cuatro episodios: dos crisis (1988-1989 y 2001-2002), de efecto fuerte y transitorio, y dos aperturas (fines de los setenta y 1992-1998), de efecto más duradero.",
+  "En 1992-1998 el ingreso real del quintil 1 cayó 5,4% y el del quintil 5 subió 35,5%: crecimiento que no favoreció a los pobres.",
+  "Los retornos a la educación y a los inobservables, y las horas de los calificados, explican buena parte del aumento de la desigualdad de los noventa.",
+  "El canal sectorial del comercio pesa poco (10% a 15% del cambio de la prima); la incorporación de capital explica alrededor de 60%.",
+  "El gasto social es progresivo pero muy procíclico (correlación 0,42 con el PIB) y no se armó una red para la transición."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Cuáles son, según Gasparini, los dos tipos de episodios que moldearon la distribución argentina desde los setenta?",
+    "en": "According to Gasparini, which two kinds of episodes shaped Argentina's distribution since the 1970s?"
+   },
+   "op": {
+    "es": [
+     "Las crisis macroeconómicas profundas y los períodos de integración económica",
+     "Los cambios de gobierno y las reformas tributarias",
+     "Las sequías y los ciclos de precios de las materias primas",
+     "Las devaluaciones y los controles de cambios"
+    ],
+    "en": [
+     "Deep macroeconomic crises and periods of economic integration",
+     "Changes of government and tax reforms",
+     "Droughts and commodity price cycles",
+     "Devaluations and exchange controls"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Las crisis (1988-1989 y 2001-2002) tienen efectos más marcados pero breves; las aperturas (fines de los setenta y noventa), efectos más perdurables.",
+    "en": "Crises (1988-1989 and 2001-2002) have sharper but shorter effects; openings (late 1970s and 1990s), more lasting ones."
+   },
+   "id": "fisc-dist-13-q1"
+  },
+  {
+   "q": {
+    "es": "Entre 1992 y 1998 la pobreza en el GBA pasó de 18% a 26%. ¿Qué la hace llamativa?",
+    "en": "Between 1992 and 1998 poverty in Greater Buenos Aires rose from 18% to 26%. What makes this striking?"
+   },
+   "op": {
+    "es": [
+     "Ocurrió durante una hiperinflación",
+     "Ocurrió a pesar de un vigoroso crecimiento económico",
+     "Se debió solo al cambio de la línea de pobreza",
+     "Fue acompañada por una caída de la desigualdad"
+    ],
+    "en": [
+     "It happened during a hyperinflation",
+     "It happened despite vigorous economic growth",
+     "It was due only to a change in the poverty line",
+     "It came with a fall in inequality"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El aumento de la desigualdad fue tan grande que la pobreza creció aun con el ingreso medio en alza.",
+    "en": "Inequality rose so much that poverty grew even as mean income increased."
+   },
+   "id": "fisc-dist-13-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué indica que todas las curvas de incidencia del crecimiento tengan pendiente positiva?",
+    "en": "What does it mean that all growth incidence curves slope upward?"
+   },
+   "op": {
+    "es": [
+     "Que el ingreso de todos los percentiles creció",
+     "Que la desigualdad fue constante",
+     "Que la pobreza bajó en todos los períodos",
+     "Que los percentiles más altos ganaron proporcionalmente más (o perdieron menos) que los más bajos"
+    ],
+    "en": [
+     "That income grew for every percentile",
+     "That inequality was constant",
+     "That poverty fell in every period",
+     "That higher percentiles gained proportionally more (or lost less) than lower ones"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Pendiente positiva significa que la variación proporcional del ingreso aumenta con el percentil: crecimiento que no favorece a los pobres.",
+    "en": "An upward slope means the proportional income change rises with the percentile: growth that does not favor the poor."
+   },
+   "id": "fisc-dist-13-q3"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el salto del desempleo de 5% a 15% tuvo un efecto distributivo menos obvio de lo esperable?",
+    "en": "Why did the jump in unemployment from 5% to 15% have a less obvious distributive effect than expected?"
+   },
+   "op": {
+    "es": [
+     "Porque el seguro de desempleo compensó todo el ingreso perdido",
+     "Porque se explica sobre todo por mayor participación laboral de mujeres y jóvenes, con tasas de empleo rígidas",
+     "Porque los desempleados eran todos de hogares ricos",
+     "Porque la EPH no mide el desempleo"
+    ],
+    "en": [
+     "Because unemployment insurance replaced all lost income",
+     "Because it is mostly explained by higher labor participation of women and youth, with rigid employment rates",
+     "Because the unemployed all came from rich households",
+     "Because the EPH does not measure unemployment"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Si un joven entra al mercado y no consigue trabajo, la tasa sube pero el ingreso del hogar no cambia.",
+    "en": "If a young person enters the market and finds no job, the rate rises but household income is unchanged."
+   },
+   "id": "fisc-dist-13-q4"
+  },
+  {
+   "q": {
+    "es": "En la microsimulación, el Gini de los ingresos laborales subió 7,3 puntos entre 1992 y 1998. ¿Cuánto habría subido si solo hubieran cambiado las dummies educativas de la ecuación de salarios?",
+    "en": "In the microsimulation, the Gini of labor income rose 7.3 points between 1992 and 1998. How much would it have risen if only the education dummies in the wage equation had changed?"
+   },
+   "op": {
+    "es": [
+     "Nada",
+     "0,7 puntos",
+     "7,3 puntos",
+     "2,9 puntos en promedio"
+    ],
+    "en": [
+     "Not at all",
+     "0.7 points",
+     "7.3 points",
+     "2.9 points on average"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El cambio en los retornos a la educación tuvo un efecto desigualador considerable: 2,9 de los 7,3 puntos.",
+    "en": "The change in returns to education had a sizable unequalizing effect: 2.9 of the 7.3 points."
+   },
+   "id": "fisc-dist-13-q5"
+  },
+  {
+   "q": {
+    "es": "Según Acosta y Gasparini (2003), ¿qué parte del cambio de la prima salarial de los calificados explican la penetración de importaciones y la incorporación de capital?",
+    "en": "According to Acosta and Gasparini (2003), what share of the change in the skill premium do import penetration and capital incorporation explain?"
+   },
+   "op": {
+    "es": [
+     "Importaciones 60%, capital 15%",
+     "Ambas alrededor de 50%",
+     "Importaciones 15%, capital alrededor de 60%",
+     "Ninguna de las dos es significativa"
+    ],
+    "en": [
+     "Imports 60%, capital 15%",
+     "Both around 50%",
+     "Imports 15%, capital around 60%",
+     "Neither is significant"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El canal del capital y la tecnología pesa mucho más que el del comercio, como en Katz y Autor para Estados Unidos.",
+    "en": "The capital-and-technology channel weighs far more than trade, as in Katz and Autor for the US."
+   },
+   "id": "fisc-dist-13-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la expansión del sector público en los ochenta no subió la prima salarial de los calificados?",
+    "en": "Why did the expansion of the public sector in the 1980s not raise the skill premium?"
+   },
+   "op": {
+    "es": [
+     "Porque demanda docentes, enfermeros y policías de menores salarios, las instituciones laborales eran activas y creció la oferta de universitarios",
+     "Porque el sector público contrata sobre todo trabajadores sin secundaria",
+     "Porque se congelaron todos los salarios por ley",
+     "Porque en los ochenta no hubo graduados universitarios"
+    ],
+    "en": [
+     "Because it demands lower-paid teachers, nurses and police, labor institutions were active and the supply of graduates grew",
+     "Because the public sector mostly hires workers without secondary schooling",
+     "Because all wages were frozen by law",
+     "Because there were no university graduates in the 1980s"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Gasparini ofrece esas tres razones; por eso una expansión del sector público desiguala menos que una del sector profesional o de negocios.",
+    "en": "Gasparini gives those three reasons; hence a public-sector expansion is less unequalizing than a professional or business-sector one."
+   },
+   "id": "fisc-dist-13-q7"
+  },
+  {
+   "q": {
+    "es": "En la identidad de Lambert \\(G_a - G_b = g(K_e + K_t)\\), ¿qué mide \\(g\\)?",
+    "en": "In Lambert's identity \\(G_a - G_b = g(K_e + K_t)\\), what does \\(g\\) measure?"
+   },
+   "op": {
+    "es": [
+     "La tasa de crecimiento del PIB",
+     "El índice de Gini del gasto",
+     "El gasto público como proporción del ingreso disponible",
+     "La elasticidad del gasto social al PIB"
+    ],
+    "en": [
+     "The GDP growth rate",
+     "The Gini index of spending",
+     "Public spending as a share of disposable income",
+     "The elasticity of social spending to GDP"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Donde: \\(G_a\\) y \\(G_b\\) son el Gini después y antes de la política fiscal, \\(g\\) el tamaño del presupuesto respecto del ingreso disponible y \\(K_e\\), \\(K_t\\) la progresividad de Kakwani del gasto y los impuestos.",
+    "en": "Where: \\(G_a\\) and \\(G_b\\) are the Gini after and before fiscal policy, \\(g\\) the budget size relative to disposable income and \\(K_e\\), \\(K_t\\) the Kakwani progressivity of spending and taxes."
+   },
+   "id": "fisc-dist-13-q8"
+  }
+ ],
+ "palabras": 2711,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Por qué la desigualdad argentina no debe leerse como una tendencia continua?",
+    "en": "Why should Argentine inequality not be read as a continuous trend?"
+   },
+   "a": {
+    "es": "Según Gasparini, porque creció en cuatro episodios: dos crisis macroeconómicas (1988-1989 y 2001-2002), con efectos fuertes pero reversibles, y dos aperturas (fines de los setenta y 1992-1998), con efectos más duraderos.",
+    "en": "According to Gasparini, because it rose in four episodes: two macro crises (1988-1989 and 2001-2002), with strong but reversible effects, and two openings (late 1970s and 1992-1998), with more lasting effects."
+   },
+   "id": "fisc-dist-13-t1"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué canales puede la apertura comercial aumentar la desigualdad salarial en un país como la Argentina?",
+    "en": "Through which channels can trade opening raise wage inequality in a country like Argentina?"
+   },
+   "a": {
+    "es": "Gasparini distingue la reasignación sectorial de Stolper-Samuelson hacia sectores intensivos en recursos naturales y trabajo calificado, y el canal intrasectorial: capital más barato y tecnologías nuevas complementarias del trabajo calificado suben su demanda en todos los sectores.",
+    "en": "Gasparini distinguishes Stolper-Samuelson sectoral reallocation toward sectors intensive in natural resources and skilled labor, and the within-sector channel: cheaper capital and new technologies complementary to skilled labor raise its demand in every sector."
+   },
+   "id": "fisc-dist-13-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se aísla con microsimulaciones el efecto de los retornos a la educación sobre la desigualdad?",
+    "en": "How do microsimulations isolate the effect of returns to education on inequality?"
+   },
+   "a": {
+    "es": "Gasparini estima ecuaciones de salarios y horas, aplica a la población de un año los coeficientes educativos de otro manteniendo lo demás constante, y compara la distribución contrafáctica con la real: entre 1992 y 1998 eso explica 2,9 de los 7,3 puntos que subió el Gini laboral.",
+    "en": "Gasparini estimates wage and hours equations, applies one year's education coefficients to another year's population holding the rest constant, and compares the counterfactual with the actual distribution: between 1992 and 1998 this explains 2.9 of the 7.3 points the labor-income Gini rose."
+   },
+   "id": "fisc-dist-13-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Pesó más el comercio o la tecnología en el aumento de la prima por calificación en los noventa?",
+    "en": "Did trade or technology weigh more in the rise of the skill premium in the 1990s?"
+   },
+   "a": {
+    "es": "Según Acosta y Gasparini, la tecnología: la penetración de importaciones explica 15% del cambio de la prima y la incorporación de capital alrededor de 60%, en línea con Galiani y Sanguinetti (10%) y con Katz y Autor para Estados Unidos.",
+    "en": "According to Acosta and Gasparini, technology: import penetration explains 15% of the change in the premium and capital incorporation about 60%, in line with Galiani and Sanguinetti (10%) and Katz and Autor for the US."
+   },
+   "id": "fisc-dist-13-t4"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Cómo puede un mismo período evaluarse como mejora o como deterioro del bienestar?",
+    "en": "How can the same period be judged as a welfare improvement or a deterioration?"
+   },
+   "a": {
+    "es": "Gasparini muestra que entre 1994 y 1998 el bienestar subió con una función indiferente a la desigualdad (Bentham) y bajó con Atkinson(2), que pesa más la cola inferior: el veredicto depende del juicio de valor sobre la desigualdad.",
+    "en": "Gasparini shows that between 1994 and 1998 welfare rose under an inequality-neutral function (Bentham) and fell under Atkinson(2), which weighs the lower tail more: the verdict depends on the value judgment about inequality."
+   },
+   "id": "fisc-dist-13-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Compensa la política fiscal argentina los cambios distributivos del mercado?",
+    "en": "Does Argentine fiscal policy offset market distributive changes?"
+   },
+   "a": {
+    "es": "Según Gasparini, no: el gasto social es progresivo y reduce el nivel de desigualdad, pero no cambió su tendencia, los impuestos se volvieron más regresivos y el gasto social es muy procíclico (correlación 0,42 con el PIB, contra -0,10 en la OCDE).",
+    "en": "According to Gasparini, no: social spending is progressive and lowers the level of inequality, but did not change its trend, taxes became more regressive and social spending is highly procyclical (0.42 correlation with GDP, versus -0.10 in the OECD)."
+   },
+   "id": "fisc-dist-13-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué debe hacer un gobierno que decide integrarse a la economía mundial?",
+    "en": "What should a government that decides to integrate into the world economy do?"
+   },
+   "a": {
+    "es": "Gasparini recomienda regular el ritmo de la integración, dar a los pobres una red de protección adecuada y promover educación y capacitación; no hacerlo, como en la Argentina, fortalece los argumentos contra la globalización y pone en riesgo todo el proceso.",
+    "en": "Gasparini recommends pacing integration, giving the poor an adequate safety net and promoting education and training; failing to do so, as in Argentina, strengthens the case against globalization and endangers the whole process."
+   },
+   "id": "fisc-dist-13-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límite tiene atribuir a la integración el aumento de la desigualdad argentina de los noventa?",
+    "en": "What is the limit of attributing Argentina's 1990s rise in inequality to integration?"
+   },
+   "a": {
+    "es": "El propio Gasparini lo advierte: las reformas fueron casi simultáneas, los datos son escasos y su lectura final es conjetural. Lectura propia: la evidencia es mayormente descriptiva y entre sectores, por lo que cuesta separar tecnología, apreciación cambiaria y otros cambios sectoriales.",
+    "en": "Gasparini himself warns: reforms were nearly simultaneous, data are scarce and his final reading is conjectural. Own reading: the evidence is mostly descriptive and cross-sector, so it is hard to separate technology, currency appreciation and other sectoral changes."
+   },
+   "id": "fisc-dist-13-t8"
+  }
+ ]
+}

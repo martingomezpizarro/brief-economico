@@ -1,0 +1,529 @@
+{
+ "id": "fisc-politica-03",
+ "cat": "fisc-politica",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "Tipo de cambio real y resultado fiscal: el enfoque de flujos de Romaniello",
+ "bajada": "Una depreciación real encarece la deuda en dólares, pero si el Estado recauda sobre bienes más transables que los que compra, también mejora su resultado primario. Gabriela Romaniello mide ese efecto precio relativo en Uruguay y encuentra que en 2002-2003 cubrió el 91% de los intereses del gobierno central.",
+ "fuentes": [
+  1341
+ ],
+ "cita": "G. Romaniello (2010), «Real Exchange Rate and Fiscal Outcomes: A Flow Approach», Revista de Economía, Banco Central del Uruguay, 17 (1)",
+ "intro": "La idea habitual en los países con deuda pública dolarizada es que una depreciación real es mala noticia fiscal: sube el peso de la deuda en moneda extranjera y de sus intereses. Gabriela Romaniello, del Banco Central del Uruguay, propone mirar también el otro lado: el flujo de ingresos y gastos. Si los ingresos públicos descansan relativamente más en bienes y servicios transables y los gastos (salarios y jubilaciones) en no transables, una suba del tipo de cambio real mejora el resultado primario medido a precios constantes. El Estado gana algo parecido a una mejora de términos de intercambio, una transferencia de recursos del resto de la sociedad al sector público. Para medirlo, descompone la variación del resultado primario del gobierno central y la seguridad social en un efecto cantidad y un efecto precios relativos, construyendo deflactores específicos de ingresos y gastos con las tablas de oferta y utilización de las cuentas nacionales. En la crisis uruguaya de 2002-2003, cuando el país perdió casi todo acceso al financiamiento, ese efecto precio fue grande: alcanzó para cubrir la mayor parte de los intereses de la deuda.",
+ "secciones": [
+  {
+   "t": "Stock contra flujo",
+   "eq": [
+    "d\\frac{D}{Y} = \\frac{PFD}{Y} - \\frac{D_d}{Y}\\,(g - r) - \\frac{D^{*}}{Y}\\left(g - \\left(r^{*} + \\dot q\\,\\omega\\right)\\right) - \\frac{M}{Y}\\left(\\dot P + g - \\dot v\\right) + \\frac{\\dot F}{Y}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(d\\,D/Y\\): variación del cociente deuda pública/PIB.",
+      "en": "\\(d\\,D/Y\\): change in the public debt-to-GDP ratio."
+     },
+     {
+      "es": "\\(PFD\\): déficit fiscal primario (gasto primario menos ingresos); \\(Y\\): PIB.",
+      "en": "\\(PFD\\): primary fiscal deficit (primary spending minus revenue); \\(Y\\): GDP."
+     },
+     {
+      "es": "\\(D_d\\): stock inicial de deuda en moneda local; \\(r\\): su tasa de interés real; \\(g\\): tasa de crecimiento real del PIB.",
+      "en": "\\(D_d\\): initial stock of domestic-currency debt; \\(r\\): its real interest rate; \\(g\\): real GDP growth rate."
+     },
+     {
+      "es": "\\(D^{*}\\): deuda en moneda extranjera; \\(r^{*}\\): su tasa de interés; \\(\\dot q\\): depreciación real; \\(\\omega\\): peso de los no transables en la canasta de gasto, que pondera la depreciación.",
+      "en": "\\(D^{*}\\): foreign-currency debt; \\(r^{*}\\): its interest rate; \\(\\dot q\\): real depreciation; \\(\\omega\\): share of non-tradables in the expenditure basket, which weights the depreciation."
+     },
+     {
+      "es": "\\(M\\): base monetaria; \\(\\dot P\\): tasa de inflación; \\(\\dot v\\): tasa de cambio de la velocidad de circulación del dinero. El término recoge el señoreaje.",
+      "en": "\\(M\\): monetary base; \\(\\dot P\\): inflation rate; \\(\\dot v\\): rate of change of money velocity. The term captures seigniorage."
+     },
+     {
+      "es": "\\(\\dot F\\): uso neto de activos de reserva.",
+      "en": "\\(\\dot F\\): net use of reserve assets."
+     }
+    ]
+   ],
+   "p": [
+    "En el enfoque de stock, a la Blanchard, la depreciación real pesa sobre la sostenibilidad por tres vías: aumenta la carga de intereses de la deuda en moneda extranjera; su efecto depende de la relación entre la composición por moneda de la deuda y la composición transable/no transable del PIB (Calvo, Izquierdo y Talvi: si toda la deuda está en dólares y el país solo produce transables, la depreciación no afecta la sostenibilidad; si solo produce no transables, la afecta mucho), y una deuda/PIB más alta eleva el riesgo de default, provoca salida de capitales y realimenta la depreciación.",
+    "La ley de movimiento de la deuda que Romaniello toma de Dinh (1999) muestra el déficit primario y sus fuentes de financiamiento: el exceso del crecimiento sobre la tasa real de la deuda local, el exceso del crecimiento sobre la tasa externa más la depreciación real para la deuda en moneda extranjera, el señoreaje y el uso de reservas. Ahí el tipo de cambio solo entra por el stock de deuda externa; nada dice sobre su efecto en el resultado primario mismo. Ese es el hueco que llena el enfoque de flujos.",
+    "Otros trabajos ya miraron flujos con métodos distintos. Anós Casero y Seshan simulan devaluaciones nominales en Djibouti y hallan ahorro fiscal de corto plazo con efectos adversos sobre la pobreza. Levy-Yeyati y Sturzenegger, con un enfoque de hoja de balance, estiman que en la Argentina una devaluación real permanente de 20% casi no cambia el patrimonio neto del Estado, porque la suba de la deuda se compensa con impuestos y gasto en salarios y jubilaciones, mientras que en Chile el patrimonio sube por el cobre. Para Uruguay, Cuitiño y Mailhos no obtienen resultados concluyentes con un VECM sobre el resultado primario."
+   ]
+  },
+  {
+   "t": "El déficit a precios constantes y los términos de intercambio del gobierno",
+   "eq": [
+    "\\overline{PFD} = \\frac{E - R}{P} = \\frac{P_E}{P}\\left[\\left(\\bar E - \\bar R\\right) - \\bar R\\,(\\varphi - 1)\\right], \\qquad \\varphi = \\frac{P_R}{P_E}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\overline{PFD}\\): déficit primario a precios constantes; \\(E\\) y \\(R\\): gasto e ingreso primarios nominales; \\(P\\): nivel general de precios (IPC o deflactor del PIB).",
+      "en": "\\(\\overline{PFD}\\): primary deficit at constant prices; \\(E\\) and \\(R\\): nominal primary spending and revenue; \\(P\\): general price level (CPI or GDP deflator)."
+     },
+     {
+      "es": "\\(P_E\\): deflactor específico del gasto público; \\(P_R\\): deflactor específico de los ingresos públicos.",
+      "en": "\\(P_E\\): specific deflator of public spending; \\(P_R\\): specific deflator of public revenue."
+     },
+     {
+      "es": "\\(\\bar E = E/P_E\\) y \\(\\bar R = R/P_R\\): gasto e ingreso reales, cada uno deflactado por su propio índice; \\(\\bar E - \\bar R\\) es el déficit primario real (\\(pfd\\)).",
+      "en": "\\(\\bar E = E/P_E\\) and \\(\\bar R = R/P_R\\): real spending and revenue, each deflated by its own index; \\(\\bar E - \\bar R\\) is the real primary deficit (\\(pfd\\))."
+     },
+     {
+      "es": "\\(\\varphi\\): precios relativos del gobierno, que la autora llama, por analogía con un país, «términos de intercambio» del gobierno. Si \\(\\varphi > 1\\), lo que el Estado grava se encareció más que lo que compra.",
+      "en": "\\(\\varphi\\): the government's relative prices, which the author calls, by analogy with a country, the government's 'terms of exchange'. If \\(\\varphi > 1\\), what the state taxes has become dearer than what it buys."
+     }
+    ]
+   ],
+   "p": [
+    "Siguiendo a Della Mea (2005), el punto de partida es el déficit primario nominal, gasto primario menos ingreso primario. Dividido por el nivel general de precios da el déficit a precios constantes. La clave es deflactar ingresos y gastos con índices propios. El cociente entre el deflactor de ingresos y el de gastos son los «términos de intercambio» del gobierno, y el poder de compra del ingreso público, el ingreso real multiplicado por esos términos, dice cuántos bienes del gasto puede pagar lo recaudado.",
+    "Reordenando, el déficit a precios constantes es igual al déficit real (en cantidades) menos el ingreso real multiplicado por la desviación de los términos de intercambio respecto de 1, todo escalado por el precio relativo entre el gasto público y el nivel general. Es decir, una parte del resultado es «cantidad» y otra es «precio»: si lo gravado se encarece respecto de lo comprado, el déficit a precios constantes baja aunque las cantidades no cambien."
+   ]
+  },
+  {
+   "t": "Tres factores: cantidad, términos de intercambio y deflactor del gasto",
+   "eq": [
+    "\\frac{d\\overline{PFD}}{dt} = \\underbrace{\\frac{P_E}{P}\\frac{d\\,pfd}{dt}}_{I} - \\underbrace{\\frac{P_E}{P}\\left[(\\varphi - 1)\\frac{d\\bar R}{dt} + \\bar R\\,\\frac{d\\varphi}{dt}\\right]}_{II} + \\underbrace{\\left[pfd - \\bar R(\\varphi - 1)\\right]\\frac{d(P_E/P)}{dt}}_{III}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(d\\overline{PFD}/dt\\): variación del déficit primario a precios constantes.",
+      "en": "\\(d\\overline{PFD}/dt\\): change in the primary deficit at constant prices."
+     },
+     {
+      "es": "\\(pfd = \\bar E - \\bar R\\): déficit primario real; \\(d\\,pfd/dt\\) es su variación (factor I, efecto cantidad).",
+      "en": "\\(pfd = \\bar E - \\bar R\\): real primary deficit; \\(d\\,pfd/dt\\) is its change (factor I, quantum effect)."
+     },
+     {
+      "es": "\\(\\varphi\\): términos de intercambio del gobierno (\\(P_R/P_E\\)); \\(\\bar R\\): ingreso real. El factor II combina el cambio del ingreso real con \\(\\varphi\\) dado y el cambio de \\(\\varphi\\) aplicado al ingreso real.",
+      "en": "\\(\\varphi\\): government terms of exchange (\\(P_R/P_E\\)); \\(\\bar R\\): real revenue. Factor II combines the change in real revenue at given \\(\\varphi\\) and the change in \\(\\varphi\\) applied to real revenue."
+     },
+     {
+      "es": "\\(P_E/P\\): precio del gasto público relativo al nivel general de precios; su variación define el factor III (deflactor del gasto).",
+      "en": "\\(P_E/P\\): price of public spending relative to the general price level; its change defines factor III (expenditure deflator)."
+     },
+     {
+      "es": "\\(t\\): tiempo. Los factores II y III juntos forman el efecto precios relativos.",
+      "en": "\\(t\\): time. Factors II and III together make up the relative price effect."
+     }
+    ]
+   ],
+   "p": [
+    "Derivando, la variación del déficit a precios constantes se separa en tres factores agrupados en dos efectos. El factor I, de cantidad, es la variación del déficit real: depende de decisiones de política (gasto discrecional, alícuotas) y de factores fuera del control del gobierno, como el nivel de actividad; el ejercicio no separa lo discrecional de lo que no lo es. El factor II, de términos de intercambio, recoge la distinta evolución de los precios de la base tributaria y de lo que el Estado compra, incluidos los factores: cuando lo gravado se encarece más, el gobierno gana, algo parecido a una transferencia intersectorial de la sociedad al sector público. El factor III, del deflactor del gasto, es análogo pero compara el precio del gasto público con el índice general. II y III forman el efecto precios relativos.",
+    "En la práctica se pasa a tiempo discreto con datos anuales a pesos constantes de 2000. No hay estimación econométrica: es una descomposición contable exacta, cuyo trabajo empírico está en construir los deflactores."
+   ]
+  },
+  {
+   "t": "Por qué el tipo de cambio real mueve los términos de intercambio del Estado",
+   "eq": [
+    "\\varphi = \\frac{IP_R}{IP_E} = \\frac{P_T^{\\alpha} P_N^{1-\\alpha}}{P_T^{\\beta} P_N^{1-\\beta}} = \\left(\\frac{P_T}{P_N}\\right)^{\\alpha-\\beta} = q^{\\alpha-\\beta}",
+    "\\frac{d\\varphi}{dq} \\geq 0 \\iff (\\alpha - \\beta) + q\\,\\ln(q)\\,\\frac{d(\\alpha-\\beta)}{dq} \\geq 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(IP_R\\), \\(IP_E\\): índices de precios de los ingresos y de los gastos públicos.",
+      "en": "\\(IP_R\\), \\(IP_E\\): price indices of public revenue and spending."
+     },
+     {
+      "es": "\\(P_T\\), \\(P_N\\): precios de los bienes transables y no transables.",
+      "en": "\\(P_T\\), \\(P_N\\): prices of tradable and non-tradable goods."
+     },
+     {
+      "es": "\\(\\alpha\\): peso de los transables en los ingresos públicos; \\(\\beta\\): peso de los transables en el gasto público.",
+      "en": "\\(\\alpha\\): weight of tradables in public revenue; \\(\\beta\\): weight of tradables in public spending."
+     },
+     {
+      "es": "\\(q = P_T/P_N\\): tipo de cambio real interno; una suba es una depreciación real.",
+      "en": "\\(q = P_T/P_N\\): internal real exchange rate; a rise is a real depreciation."
+     }
+    ],
+    [
+     {
+      "es": "\\(d\\varphi/dq\\): sensibilidad de los términos de intercambio del gobierno al tipo de cambio real.",
+      "en": "\\(d\\varphi/dq\\): sensitivity of the government's terms of exchange to the real exchange rate."
+     },
+     {
+      "es": "\\(\\ln(q)\\): logaritmo natural de \\(q\\) (en el paper, \\(L(q)\\)).",
+      "en": "\\(\\ln(q)\\): natural log of \\(q\\) (\\(L(q)\\) in the paper)."
+     },
+     {
+      "es": "\\(d(\\alpha-\\beta)/dq\\): cuánto cambia la diferencia de pesos cuando cambia \\(q\\); con pesos fijos es cero y la condición se reduce a \\(\\alpha > \\beta\\).",
+      "en": "\\(d(\\alpha-\\beta)/dq\\): how much the weight gap changes when \\(q\\) changes; with fixed weights it is zero and the condition reduces to \\(\\alpha > \\beta\\)."
+     }
+    ]
+   ],
+   "p": [
+    "Los deflactores de ingresos, gastos y nivel general son canastas ponderadas de transables y no transables. Si las ponderaciones fueran iguales, un cambio del tipo de cambio real no alteraría los precios relativos del Estado. Con pesos distintos, los términos de intercambio del gobierno son una potencia del tipo de cambio real, con exponente igual a la diferencia entre el peso de los transables en los ingresos y en el gasto.",
+    "Por eso una depreciación real mejora los términos de intercambio del Estado si los ingresos están más sesgados a transables que el gasto, y el efecto es más nítido cuanto más rígidas son esas participaciones. Si los pesos se mueven con el tipo de cambio, aparece el segundo término de la condición. Lo mismo vale, cambiando la canasta, para la relación entre el deflactor del gasto y el nivel general."
+   ]
+  },
+  {
+   "t": "Uruguay 2002: deuda dolarizada en plena crisis",
+   "eq": [
+    "\\dot D = \\frac{G}{Y_1} + \\left[\\frac{\\Delta S}{S_0}\\,(1-\\omega_D) - \\frac{\\Delta P}{P_0}\\right]\\frac{D_0}{Y_1} - \\frac{\\Delta \\bar Y}{\\bar Y_0}\\left(\\frac{P_1}{P_0}\\frac{D_0}{Y_1}\\right) + \\frac{O}{Y_1}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\dot D\\): variación del cociente deuda/PIB entre el período 0 y el 1 (fórmula en tiempo discreto de Della Mea).",
+      "en": "\\(\\dot D\\): change in the debt-to-GDP ratio between periods 0 and 1 (Della Mea's discrete-time formula)."
+     },
+     {
+      "es": "\\(G/Y_1\\): déficit fiscal global sobre el PIB nominal del período 1.",
+      "en": "\\(G/Y_1\\): overall fiscal deficit over period-1 nominal GDP."
+     },
+     {
+      "es": "\\(\\Delta S/S_0\\): variación porcentual del tipo de cambio nominal; \\(\\omega_D\\): el paper no lo define explícitamente; por el texto, \\(1-\\omega_D\\) es la proporción de deuda en moneda extranjera, así que \\(\\omega_D\\) sería la proporción en moneda local («lectura propia»).",
+      "en": "\\(\\Delta S/S_0\\): percentage change in the nominal exchange rate; \\(\\omega_D\\): not explicitly defined in the paper; from the text, \\(1-\\omega_D\\) is the foreign-currency share of debt, so \\(\\omega_D\\) would be the domestic-currency share ('own reading')."
+     },
+     {
+      "es": "\\(\\Delta P/P_0\\): variación del deflactor del PIB; el segundo término es el efecto cambiario sobre la deuda, neto de ese deflactor. \\(D_0\\): deuda inicial.",
+      "en": "\\(\\Delta P/P_0\\): change in the GDP deflator; the second term is the exchange-rate effect on debt, net of that deflator. \\(D_0\\): initial debt."
+     },
+     {
+      "es": "\\(\\Delta \\bar Y/\\bar Y_0\\): crecimiento del PIB real (efecto crecimiento); \\(P_1/P_0\\): variación de precios entre períodos.",
+      "en": "\\(\\Delta \\bar Y/\\bar Y_0\\): real GDP growth (growth effect); \\(P_1/P_0\\): price change between periods."
+     },
+     {
+      "es": "\\(O/Y_1\\): otros factores, como acumulación de activos del sector público no financiero y residuos.",
+      "en": "\\(O/Y_1\\): other factors, such as asset accumulation by the non-financial public sector and residuals."
+     }
+    ]
+   ],
+   "p": [
+    "A comienzos de la década la deuda del sector público no financiero era 35,9% del PIB, pero ajustada por la sobrevaluación cambiaria y el ciclo Roselli la estimó en 60%. Un 91% estaba en moneda extranjera y un 65% en manos de no residentes; 12% vencía en un año y 50% en los cinco siguientes, y la mitad era a tasa variable. La recesión empezó en 1999 con la devaluación de Brasil y tocó fondo en 2002-2003.",
+    "En junio de 2001 se duplicó el ancho de la banda cambiaria a 6% y la pauta de devaluación pasó a 1,2% mensual; en enero de 2002, tras la crisis argentina, la banda se llevó a 12%. La intervención de un banco con problemas de liquidez desató retiros masivos de depósitos; el Banco Central pasó de más de 3.000 millones de dólares de reservas a fines de 2001 a cerca de un quinto en julio de 2002, se perdió casi todo el acceso a los mercados y se acordó con el FMI, con feriado bancario y garantía de los depósitos a la vista. En junio de 2002 se dejó flotar el peso: entre enero y julio el tipo de cambio nominal saltó 58%, pero con recesión y deflación regional el traspaso a precios fue bajo y la inflación minorista promedió 13,9%.",
+    "La deuda llegó a 106% del PIB. Con la descomposición en tiempo discreto, el efecto cambiario es la principal fuente de variabilidad de corto plazo: por sí solo explicó un aumento de 30% del cociente en 2002. Por eso, desde 2003 la gestión de deuda emitió en pesos nominales e indexados al IPC y alargó plazos, y la deuda en moneda local pasó de casi cero a más de 21% del total."
+   ]
+  },
+  {
+   "t": "La evidencia: el efecto precio sostuvo el superávit",
+   "p": [
+    "Los ingresos del gobierno central y la seguridad social eran 28,6% del PIB al inicio y los gastos 29,1%. El 60% de los ingresos es no transable (aportes jubilatorios, IVA sobre no transables y otros); en el gasto la proporción no transable llega a 87,6%, porque todo salvo las compras de bienes y servicios es salario, jubilación o transferencia. Ambos están sesgados a no transables, pero el gasto más: justo la condición del modelo. Los ingresos reales son además más procíclicos: Ganón y Tiscordio hallan correlaciones cíclicas con el PIB de 0,7 para ingresos y 0,5 para gastos.",
+    "El Cuadro 1 descompone la variación del superávit primario en millones de pesos de 2000. En 2002 el efecto cantidad restó 7.114 millones: el ingreso real cayó 15,3% y el gasto solo 4,5%, aun con dos paquetes de ajuste, recortes de 29% del gasto no salarial y 28% de la inversión y una caída de 11,4% del salario real público. Pero el factor de términos de intercambio sumó 10.083 millones y el superávit mejoró 2.883 millones. En 2003 se repitió: cantidad -4.087, términos de intercambio +8.559, variación total +4.129. Ese año el tipo de cambio real efectivo multilateral subió 29,3% en promedio, tras depreciarse 6,4% el global y 43,9% el extrarregional en 2002.",
+    "Con la apreciación posterior el signo se invirtió: el factor de términos de intercambio restó 3.550 millones en 2005 y 3.504 en 2007, y el superávit pasó a depender del efecto cantidad, con ingresos reales creciendo 17,6% en 2004, 21,4% en 2005 y 6,3% en 2006. El factor del deflactor del gasto fue chico (por ejemplo -87 millones en 2002 y +842 en 2005): negativo cuando los salarios reales cayeron y positivo cuando el precio del gasto creció por encima de la inflación. El superávit primario pasó de -0,96% del PIB en 2001 a 4,99% en 2006."
+   ]
+  },
+  {
+   "t": "El efecto precio pagó los intereses",
+   "p": [
+    "La sensibilidad de los términos de intercambio al tipo de cambio real explica los años de crisis: en 2002 los precios ponderados de los no transables bajaron mientras los de los transables absorbieron casi toda la depreciación real, y en 2003 los transables subieron 15,8% y los no transables cayeron 2,4%. Aun así el efecto fue menor en 2003 que en 2002 porque se aplicó a un ingreso real más bajo. Desde 2004, con la apreciación, los términos de intercambio cayeron y su efecto negativo se atenuó solo porque el ingreso real crecía.",
+    "El resultado más llamativo está en el Cuadro 4. Las ganancias por términos de intercambio equivalieron a 118,9% de los intereses del gobierno central en 2002 y a 71,1% en 2003; juntando ambos años cubrieron el 91% de los intereses de la deuda. Fue, en palabras de la autora, una transferencia del resto de la sociedad al sector público que alivió la restricción de liquidez cuando no había financiamiento. Junto con el canje voluntario de mayo de 2003, con adhesión de 90% en la deuda internacional y 98% en la doméstica, que estiró los vencimientos más allá de 2010, permitió cumplir con los intereses y mejorar los indicadores de sostenibilidad."
+   ]
+  },
+  {
+   "t": "Conclusiones y límites",
+   "p": [
+    "Romaniello concluye que en Uruguay los ingresos públicos descansan en una canasta con algo más de no transables que de transables, pero relativamente más transable que el gasto. Por eso la depreciación de 2002-2003 generó grandes ganancias por precios relativos, claves para sostener el superávit primario cuando el financiamiento externo desapareció. Con la apreciación posterior el efecto se diluyó y hizo falta más esfuerzo fiscal en cantidades para mantener el superávit. Mientras tanto la deuda/PIB bajó en buena medida por la apreciación. El enfoque de flujos y el de stock tienden a moverse en sentidos opuestos: la depreciación que daña por el stock ayuda por el flujo, y viceversa. Como subproducto, la autora construyó deflactores mensuales para cada impuesto principal, útiles para monitorear la política fiscal.",
+    "Lectura propia: la descomposición es contable, no causal, y su resultado depende de clasificar cada impuesto y gasto como transable o no y de elegir sus deflactores, decisiones razonables pero discutibles (por ejemplo, tratar toda la inversión pública y las transferencias como no transables). Además, la «transferencia de la sociedad al Estado» tiene nombre propio: en buena medida es la caída del salario real de los empleados públicos y de las jubilaciones, que no siguieron a los precios de lo gravado. El efecto es un alivio de liquidez, no un almuerzo gratis, y depende de que la inflación no traslade rápido la depreciación a salarios: con indexación plena, desaparecería. Para la Argentina el argumento es directo: con retenciones e impuestos sobre transables y gasto en salarios y jubilaciones, una depreciación real mejora el resultado primario a precios constantes, aunque empeore la deuda."
+   ]
+  }
+ ],
+ "claves": [
+  "Una depreciación real mejora el resultado primario si los ingresos públicos están más sesgados a transables que el gasto.",
+  "Los términos de intercambio del gobierno (deflactor de ingresos sobre deflactor de gastos) suben con el tipo de cambio real si los transables pesan más en los ingresos que en el gasto.",
+  "La variación del déficit a precios constantes se separa en un efecto cantidad y un efecto precios relativos (términos de intercambio y deflactor del gasto).",
+  "En Uruguay, 87,6% del gasto y 60% de los ingresos del gobierno central y la seguridad social son no transables.",
+  "En 2002-2003 el factor de términos de intercambio sumó 10.083 y 8.559 millones de pesos de 2000 y cubrió el 91% de los intereses del gobierno central.",
+  "Los enfoques de stock y de flujos se mueven en sentidos opuestos: la depreciación encarece la deuda pero ayuda al resultado primario."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Bajo qué condición una depreciación real mejora el resultado primario en el modelo de Romaniello?",
+    "en": "Under what condition does a real depreciation improve the primary balance in Romaniello's model?"
+   },
+   "op": {
+    "es": [
+     "Si los ingresos públicos están relativamente más basados en transables que el gasto",
+     "Si la deuda pública está toda en moneda local",
+     "Si el gasto público está más sesgado a transables que los ingresos",
+     "Si la inflación supera a la depreciación"
+    ],
+    "en": [
+     "If public revenue relies relatively more on tradables than spending does",
+     "If all public debt is in domestic currency",
+     "If public spending is more biased toward tradables than revenue",
+     "If inflation exceeds the depreciation"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con \\(\\alpha > \\beta\\), donde \\(\\alpha\\) es el peso de los transables en los ingresos y \\(\\beta\\) en el gasto, los términos de intercambio del gobierno \\(\\varphi = q^{\\alpha-\\beta}\\) suben con el tipo de cambio real \\(q\\).",
+    "en": "With \\(\\alpha > \\beta\\), where \\(\\alpha\\) is the tradable weight in revenue and \\(\\beta\\) in spending, the government's terms of exchange \\(\\varphi = q^{\\alpha-\\beta}\\) rise with the real exchange rate \\(q\\)."
+   },
+   "id": "fisc-politica-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué son los «términos de intercambio» del gobierno (\\(\\varphi\\))?",
+    "en": "What are the government's 'terms of exchange' (\\(\\varphi\\))?"
+   },
+   "op": {
+    "es": [
+     "El cociente entre exportaciones e importaciones del país",
+     "La tasa de interés real de la deuda pública",
+     "El cociente entre deuda en moneda extranjera y deuda total",
+     "El cociente entre el deflactor de los ingresos públicos y el deflactor del gasto público"
+    ],
+    "en": [
+     "The ratio of the country's exports to imports",
+     "The real interest rate on public debt",
+     "The ratio of foreign-currency debt to total debt",
+     "The ratio of the public revenue deflator to the public spending deflator"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "\\(\\varphi = P_R/P_E\\), donde \\(P_R\\) es el deflactor de ingresos y \\(P_E\\) el de gastos; si sube, lo que el Estado grava se encarece respecto de lo que compra.",
+    "en": "\\(\\varphi = P_R/P_E\\), where \\(P_R\\) is the revenue deflator and \\(P_E\\) the spending deflator; if it rises, what the state taxes becomes dearer relative to what it buys."
+   },
+   "id": "fisc-politica-03-q2"
+  },
+  {
+   "q": {
+    "es": "En la descomposición de la variación del déficit a precios constantes, ¿qué forma el efecto precios relativos?",
+    "en": "In the decomposition of the change in the constant-price deficit, what makes up the relative price effect?"
+   },
+   "op": {
+    "es": [
+     "Solo el factor de cantidad",
+     "El factor de cantidad y el de términos de intercambio",
+     "El factor de términos de intercambio y el del deflactor del gasto",
+     "Los intereses de la deuda y el señoreaje"
+    ],
+    "en": [
+     "Only the quantum factor",
+     "The quantum and terms-of-exchange factors",
+     "The terms-of-exchange and expenditure-deflator factors",
+     "Debt interest and seigniorage"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El factor I es el efecto cantidad; los factores II (términos de intercambio) y III (deflactor del gasto) forman el efecto precios relativos.",
+    "en": "Factor I is the quantum effect; factors II (terms of exchange) and III (expenditure deflator) make up the relative price effect."
+   },
+   "id": "fisc-politica-03-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué proporción del gasto del gobierno central y la seguridad social uruguayos es no transable según la autora?",
+    "en": "What share of Uruguayan central government and social security spending is non-tradable according to the author?"
+   },
+   "op": {
+    "es": [
+     "40%",
+     "60%",
+     "87,6%",
+     "100%"
+    ],
+    "en": [
+     "40%",
+     "60%",
+     "87.6%",
+     "100%"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Todo el gasto salvo las compras de bienes y servicios se considera no transable: 87,6%. En los ingresos la proporción no transable es 60%.",
+    "en": "All spending except purchases of goods and services is treated as non-tradable: 87.6%. On the revenue side the non-tradable share is 60%."
+   },
+   "id": "fisc-politica-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué pasó en 2002 con los factores de la descomposición?",
+    "en": "What happened in 2002 to the decomposition factors?"
+   },
+   "op": {
+    "es": [
+     "Ambos factores fueron negativos y el superávit cayó",
+     "El efecto cantidad restó 7.114 millones, pero los términos de intercambio sumaron 10.083 y el superávit mejoró",
+     "El efecto cantidad explicó toda la mejora",
+     "El factor del deflactor del gasto fue el más importante"
+    ],
+    "en": [
+     "Both factors were negative and the surplus fell",
+     "The quantum effect subtracted 7,114 million, but terms of exchange added 10,083 and the surplus improved",
+     "The quantum effect explained the whole improvement",
+     "The expenditure-deflator factor was the most important"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El ingreso real cayó 15,3% y el gasto 4,5%, así que la cantidad jugó en contra; la depreciación real dio la mejora de 2.883 millones de pesos de 2000.",
+    "en": "Real revenue fell 15.3% and spending 4.5%, so quantity worked against; the real depreciation delivered the improvement of 2,883 million 2000 pesos."
+   },
+   "id": "fisc-politica-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué proporción de los intereses del gobierno central cubrieron las ganancias por términos de intercambio en 2002 y 2003 juntos?",
+    "en": "What share of central government interest did terms-of-exchange gains cover in 2002 and 2003 combined?"
+   },
+   "op": {
+    "es": [
+     "Alrededor de 30%",
+     "Alrededor de 50%",
+     "91%",
+     "Más de 150%"
+    ],
+    "en": [
+     "About 30%",
+     "About 50%",
+     "91%",
+     "More than 150%"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Fueron 118,9% de los intereses en 2002 y 71,1% en 2003; consolidando ambos años, 91%.",
+    "en": "They were 118.9% of interest in 2002 and 71.1% in 2003; consolidating both years, 91%."
+   },
+   "id": "fisc-politica-03-q6"
+  },
+  {
+   "q": {
+    "es": "En la ley de movimiento de la deuda que la autora toma de Dinh, ¿por dónde entra el tipo de cambio real?",
+    "en": "In the debt dynamics equation the author takes from Dinh, how does the real exchange rate enter?"
+   },
+   "op": {
+    "es": [
+     "Solo por el stock de deuda en moneda extranjera, vía la depreciación real \\(\\dot q\\)",
+     "Por el déficit primario",
+     "Por el señoreaje",
+     "No entra"
+    ],
+    "en": [
+     "Only through the foreign-currency debt stock, via real depreciation \\(\\dot q\\)",
+     "Through the primary deficit",
+     "Through seigniorage",
+     "It does not enter"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Donde \\(D^{*}\\) es la deuda en moneda extranjera, \\(r^{*}\\) su tasa, \\(\\dot q\\) la depreciación real y \\(\\omega\\) el peso de los no transables, el término \\(\\frac{D^{*}}{Y}(g-(r^{*}+\\dot q\\,\\omega))\\) es la única vía: nada dice del efecto sobre el resultado primario, que es lo que agrega el enfoque de flujos.",
+    "en": "Where \\(D^{*}\\) is foreign-currency debt, \\(r^{*}\\) its rate, \\(\\dot q\\) real depreciation and \\(\\omega\\) the non-tradable weight, the term \\(\\frac{D^{*}}{Y}(g-(r^{*}+\\dot q\\,\\omega))\\) is the only channel: it says nothing about the effect on the primary balance, which the flow approach adds."
+   },
+   "id": "fisc-politica-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué ocurrió con el factor de términos de intercambio cuando el peso uruguayo se apreció desde 2004-2005?",
+    "en": "What happened to the terms-of-exchange factor when the Uruguayan peso appreciated from 2004-2005?"
+   },
+   "op": {
+    "es": [
+     "Siguió sumando al superávit",
+     "Se volvió igual al factor de deflactor del gasto",
+     "Desapareció porque los pesos se igualaron",
+     "Pasó a restar (por ejemplo -3.550 millones en 2005) y el superávit dependió del efecto cantidad"
+    ],
+    "en": [
+     "It kept adding to the surplus",
+     "It became equal to the expenditure-deflator factor",
+     "It vanished because the weights equalized",
+     "It turned negative (e.g. -3,550 million in 2005) and the surplus relied on the quantum effect"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Con la apreciación los términos de intercambio cayeron y hizo falta más esfuerzo en cantidades para sostener el superávit.",
+    "en": "With appreciation the terms of exchange fell and more quantity effort was needed to sustain the surplus."
+   },
+   "id": "fisc-politica-03-q8"
+  }
+ ],
+ "palabras": 2017,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Puede una depreciación real mejorar las cuentas públicas en un país con deuda dolarizada?",
+    "en": "Can a real depreciation improve public finances in a country with dollarized debt?"
+   },
+   "a": {
+    "es": "Según Romaniello, sí por el lado del flujo: si los ingresos están relativamente más basados en transables que el gasto, la depreciación mejora el resultado primario a precios constantes y compensa en parte el mayor servicio de la deuda.",
+    "en": "According to Romaniello, yes on the flow side: if revenue relies relatively more on tradables than spending, depreciation improves the constant-price primary balance and partly offsets higher debt service."
+   },
+   "id": "fisc-politica-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué son los términos de intercambio de un gobierno?",
+    "en": "What are a government's terms of exchange?"
+   },
+   "a": {
+    "es": "Para Romaniello, el cociente entre el deflactor de sus ingresos y el de sus gastos: cuando lo que grava se encarece más que lo que compra, el gobierno gana una transferencia del resto de la sociedad, análoga a una mejora de términos de intercambio de un país.",
+    "en": "For Romaniello, the ratio of its revenue deflator to its spending deflator: when what it taxes gets dearer than what it buys, the government gains a transfer from the rest of society, analogous to a country's terms-of-trade improvement."
+   },
+   "id": "fisc-politica-03-t2"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Cómo depende la sensibilidad fiscal al tipo de cambio real de la composición de ingresos y gastos?",
+    "en": "How does fiscal sensitivity to the real exchange rate depend on revenue and spending composition?"
+   },
+   "a": {
+    "es": "Romaniello muestra que los términos de intercambio del Estado son \\(q^{\\alpha-\\beta}\\), con \\(\\alpha\\) y \\(\\beta\\) el peso de los transables en ingresos y gastos: suben con la depreciación si \\(\\alpha > \\beta\\), más nítidamente cuanto más rígidos son esos pesos.",
+    "en": "Romaniello shows the state's terms of exchange are \\(q^{\\alpha-\\beta}\\), with \\(\\alpha\\) and \\(\\beta\\) the tradable weights in revenue and spending: they rise with depreciation if \\(\\alpha > \\beta\\), more clearly the more rigid those weights."
+   },
+   "id": "fisc-politica-03-t3"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿En qué se separa la variación del resultado primario a precios constantes?",
+    "en": "Into what does the change in the constant-price primary balance split?"
+   },
+   "a": {
+    "es": "Romaniello la divide en un efecto cantidad (variación del déficit real) y un efecto precios relativos, formado por los términos de intercambio del gobierno y por el precio del gasto público frente al nivel general.",
+    "en": "Romaniello splits it into a quantum effect (change in the real deficit) and a relative price effect, made of the government's terms of exchange and the price of public spending relative to the general level."
+   },
+   "id": "fisc-politica-03-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto pesó el efecto precio relativo en la crisis uruguaya de 2002-2003?",
+    "en": "How much did the relative price effect weigh in Uruguay's 2002-2003 crisis?"
+   },
+   "a": {
+    "es": "Según Romaniello, sumó 10.083 y 8.559 millones de pesos de 2000 y cubrió el 91% de los intereses del gobierno central, compensando un efecto cantidad negativo cuando no había financiamiento externo.",
+    "en": "According to Romaniello, it added 10,083 and 8,559 million 2000 pesos and covered 91% of central government interest, offsetting a negative quantum effect when there was no external financing."
+   },
+   "id": "fisc-politica-03-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué los enfoques de stock y de flujos sobre el tipo de cambio real suelen dar señales opuestas?",
+    "en": "Why do the stock and flow approaches to the real exchange rate usually send opposite signals?"
+   },
+   "a": {
+    "es": "Romaniello lo muestra en Uruguay: la depreciación encarece la deuda dolarizada pero mejora el resultado primario; con la apreciación posterior la deuda/PIB bajó mientras el efecto precio restaba al superávit.",
+    "en": "Romaniello shows it for Uruguay: depreciation makes dollarized debt dearer but improves the primary balance; with the later appreciation debt-to-GDP fell while the price effect subtracted from the surplus."
+   },
+   "id": "fisc-politica-03-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límite tiene usar la depreciación real como fuente de alivio fiscal?",
+    "en": "What is the limit of using real depreciation as a source of fiscal relief?"
+   },
+   "a": {
+    "es": "Romaniello mide una descomposición contable que depende de clasificar ingresos y gastos como transables o no. Lectura propia: la ganancia es en buena medida caída del salario real público y de las jubilaciones, y se esfuma si la inflación traslada rápido la depreciación a esos pagos.",
+    "en": "Romaniello measures an accounting decomposition that depends on classifying revenue and spending as tradable or not. Own reading: the gain is largely a fall in real public wages and pensions, and it vanishes if inflation quickly passes depreciation into those payments."
+   },
+   "id": "fisc-politica-03-t7"
+  }
+ ]
+}
