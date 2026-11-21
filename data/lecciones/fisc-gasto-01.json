@@ -1,0 +1,505 @@
+{
+ "id": "fisc-gasto-01",
+ "cat": "fisc-gasto",
+ "orden": 2,
+ "minutos": 15,
+ "titulo": "¿Se hereda el uso de la seguridad social? Las culturas familiares de Dahl, Kostøl y Mogstad",
+ "bajada": "Que hijos de beneficiarios de pensiones por invalidez también las cobren no prueba causalidad. Con jueces de apelación asignados al azar en Noruega, Dahl, Kostøl y Mogstad muestran que cuando un padre obtiene la pensión, la participación de su hijo adulto sube 6 puntos en cinco años y 12 puntos en diez.",
+ "fuentes": [
+  1139
+ ],
+ "cita": "G. B. Dahl, A. R. Kostøl y M. Mogstad (2014), «Family Welfare Cultures», The Quarterly Journal of Economics, 129 (4), 1711-1752",
+ "intro": "Hay una correlación muy documentada: los hijos de quienes reciben programas sociales los usan más que el promedio. La discusión de fondo es si esa correlación es causal, una «cultura del bienestar» en la que el uso del programa se reproduce dentro de la familia, o si refleja factores comunes a padres e hijos (salud, barrio, escuela, capacidad de generar ingresos) que nada tienen que ver con el programa. Gordon Dahl, Andreas Kostøl y Magne Mogstad estudian el seguro por invalidez (DI, disability insurance) de Noruega, uno de los programas de transferencias más grandes de los países desarrollados, que pasó de cubrir al 2% a casi el 10% de la población adulta. Su estrategia aprovecha que los casos rechazados en primera instancia y apelados se asignan al azar a jueces, y que algunos jueces son sistemáticamente más benévolos. Así, que un padre obtenga la pensión depende en parte de la suerte. Usando esa variación como instrumento encuentran una relación causal fuerte entre generaciones, que crece con el tiempo y que viene acompañada de menos empleo de los hijos. El resultado importa para la política fiscal: una reforma que endurezca el acceso al programa tiene un efecto directo sobre los padres y otro, diferido, sobre sus hijos.",
+ "secciones": [
+  {
+   "t": "Correlación no es cultura",
+   "eq": [
+    "P_i^{c*} = \\alpha^{c} + \\beta^{c} P_i^{p} + \\delta^{c} x_i^{c} + \\varepsilon_i^{c}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_i^{c*}\\): demanda latente (y calificación latente) del hijo \\(i\\) por el programa; el hijo participa si \\(P_i^{c*} > 0\\).",
+      "en": "\\(P_i^{c*}\\): latent demand (and latent qualification) of child \\(i\\) for the program; the child participates if \\(P_i^{c*} > 0\\)."
+     },
+     {
+      "es": "\\(P_i^{p}\\): indicador de que el padre o la madre recibe el programa (el superíndice \\(p\\) marca al padre y \\(c\\) al hijo).",
+      "en": "\\(P_i^{p}\\): indicator that the parent receives the program (superscript \\(p\\) marks the parent and \\(c\\) the child)."
+     },
+     {
+      "es": "\\(\\beta^{c}\\): parámetro de cultura familiar del bienestar, el efecto causal del uso del padre sobre la participación del hijo.",
+      "en": "\\(\\beta^{c}\\): family welfare culture parameter, the causal effect of the parent's receipt on the child's participation."
+     },
+     {
+      "es": "\\(\\alpha^{c}\\): constante; \\(x_i^{c}\\): características observables (demográficas, de los padres, del hijo); \\(\\delta^{c}\\): sus coeficientes.",
+      "en": "\\(\\alpha^{c}\\): constant; \\(x_i^{c}\\): observable characteristics (demographic, parental, of the child); \\(\\delta^{c}\\): their coefficients."
+     },
+     {
+      "es": "\\(\\varepsilon_i^{c}\\): factores no observables del hijo, como su salud, su capacidad de generar ingresos o sus actitudes.",
+      "en": "\\(\\varepsilon_i^{c}\\): the child's unobservable factors, such as health, earnings capacity or attitudes."
+     }
+    ]
+   ],
+   "p": [
+    "Los autores definen una cultura familiar del bienestar como una situación en la que el uso de un programa por una generación causa mayor participación en la siguiente. La cultura puede operar por información, creencias o normas, siguiendo a Bertrand, Luttmer y Mullainathan (2000). En el modelo, la participación del hijo depende de que su padre reciba el programa y de otros factores observables y no observables.",
+    "El problema es que la misma ecuación puede escribirse para el padre en función del abuelo. La literatura previa documentó correlaciones intergeneracionales en el uso del DI (Bratberg, Nilsen y Vaage, para Noruega), pero, como resumen Black y Devereux (2011), mientras las correlaciones son claras, hay mucha menos evidencia de que exista una relación causal. Los intentos de instrumentar con niveles de beneficios o mercados laborales locales, o de usar efectos fijos familiares, no resolvieron el problema."
+   ]
+  },
+  {
+   "t": "Por qué una regresión simple no alcanza",
+   "eq": [
+    "P_i^{c*} = \\alpha^{c} + \\beta^{c}\\,\\mathbb{I}\\!\\left(\\alpha^{p} + \\beta^{p} P_i^{g} + \\delta^{p} x_i^{p} + \\varepsilon_i^{p} > 0\\right) + \\delta^{c} x_i^{c} + \\varepsilon_i^{c}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(P_i^{c*}\\), \\(\\alpha^{c}\\), \\(\\beta^{c}\\), \\(\\delta^{c}\\), \\(x_i^{c}\\), \\(\\varepsilon_i^{c}\\): como en la ecuación anterior, para el hijo.",
+      "en": "\\(P_i^{c*}\\), \\(\\alpha^{c}\\), \\(\\beta^{c}\\), \\(\\delta^{c}\\), \\(x_i^{c}\\), \\(\\varepsilon_i^{c}\\): as in the previous equation, for the child."
+     },
+     {
+      "es": "\\(\\mathbb{I}(\\cdot)\\): función indicadora, vale 1 si la condición entre paréntesis se cumple (el padre participa) y 0 si no.",
+      "en": "\\(\\mathbb{I}(\\cdot)\\): indicator function, equal to 1 if the condition in parentheses holds (the parent participates) and 0 otherwise."
+     },
+     {
+      "es": "\\(P_i^{g}\\): participación del abuelo o abuela del hijo \\(i\\) (superíndice \\(g\\)); \\(\\beta^{p}\\): efecto de esa participación sobre el padre.",
+      "en": "\\(P_i^{g}\\): participation of child \\(i\\)'s grandparent (superscript \\(g\\)); \\(\\beta^{p}\\): effect of that participation on the parent."
+     },
+     {
+      "es": "\\(\\alpha^{p}\\), \\(\\delta^{p}\\), \\(x_i^{p}\\), \\(\\varepsilon_i^{p}\\): constante, coeficientes, observables y no observables de la ecuación del padre.",
+      "en": "\\(\\alpha^{p}\\), \\(\\delta^{p}\\), \\(x_i^{p}\\), \\(\\varepsilon_i^{p}\\): constant, coefficients, observables and unobservables of the parent's equation."
+     }
+    ]
+   ],
+   "p": [
+    "Sustituyendo la ecuación del padre en la del hijo queda claro dónde está el sesgo: si los no observables del padre y del hijo están correlacionados una vez que se controla por lo observable, la estimación por mínimos cuadrados ordinarios (MCO) del parámetro de cultura está sesgada. Ejemplos de los autores: un bajo potencial de ingresos puede transmitirse por barrios malos o escuelas de baja calidad, y como la salud tiene un componente genético, ciertas dolencias reducen la capacidad de trabajo dentro de las familias sin relación alguna con el programa.",
+    "La ecuación es recursiva: incluye al abuelo, y si sus no observables también están correlacionados con los del hijo, el sesgo se suma. Para que MCO diera evidencia causal haría falta un conjunto exhaustivo de controles del hijo, del padre y de ambos pares de abuelos. Una regresión así no distingue dependencia de estado (el efecto causal de recibir el programa) de heterogeneidad no observada correlacionada entre generaciones."
+   ]
+  },
+  {
+   "t": "El experimento natural: jueces asignados al azar",
+   "p": [
+    "En Noruega el DI ofrece un reemplazo parcial de ingresos a quienes, antes de la edad de retiro, no pueden realizar una actividad sustancial remunerada por una incapacidad médica que duró al menos un año; casi todos pasan antes por la licencia por enfermedad, de hasta un año. Cerca del 75% de los pedidos se aprueba en la primera revisión. De los rechazados apela alrededor del 25%, ante jueces administrativos que solo ven evidencia escrita, sin contacto personal con el solicitante. Alrededor del 15% de las apelaciones se aprueba. Si el juez rechaza, se puede volver a pedir: el 75% de los rechazados reaplica y el 65% de ellos termina obteniendo la pensión.",
+    "Las apelaciones se tratan de forma centralizada en Oslo, en cuatro departamentos desde 1998, sin especialización por enfermedad ni región, y la asignación se hace «por sorteo», en la práctica por rotación según la fecha de llegada y el orden alfabético del apellido del juez. El solicitante no puede cambiar de juez. Como medida de benevolencia se usa la tasa de aprobación del juez en todos los otros casos que trató (un promedio que deja afuera el caso propio), depurada de efectos de año y departamento. Los 79 jueces de la muestra trataron en promedio 380 casos.",
+    "La prueba de aleatoriedad es la misma que se haría en un experimento. Las características del apelante (edad, sexo, educación, ingresos, experiencia, tipo de enfermedad) predicen muy bien si el caso se aprueba, pero no predicen la benevolencia del juez asignado: ninguna de las 19 variables es significativa al 5%, no son significativas en conjunto y explican solo el 0,35% de su variación. Por qué unos jueces son más benévolos importa poco: la experiencia explica una fracción menor y, mientras la asignación sea al azar, la razón no afecta la identificación."
+   ]
+  },
+  {
+   "t": "El modelo de dos etapas",
+   "eq": [
+    "A_i = \\alpha + \\gamma z_i + \\theta x_i + v_i",
+    "P_i = \\mu + \\beta A_i + \\lambda x_i + u_i",
+    "\\hat\\beta_{IV} = \\frac{\\text{forma reducida}}{\\text{primera etapa}} \\approx \\frac{0{,}055}{0{,}909} \\approx 0{,}061"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(A_i\\): indicador de que el padre o la madre obtiene el DI en la apelación.",
+      "en": "\\(A_i\\): indicator that the parent is allowed DI at the appeal."
+     },
+     {
+      "es": "\\(z_i\\): benevolencia del juez asignado (tasa de aprobación en sus otros casos, depurada de año y departamento); es el instrumento.",
+      "en": "\\(z_i\\): leniency of the assigned judge (allowance rate in the judge's other cases, net of year and department); it is the instrument."
+     },
+     {
+      "es": "\\(\\gamma\\): efecto de la benevolencia sobre la probabilidad de aprobación (primera etapa); \\(\\alpha\\): constante; \\(x_i\\): vector de controles; \\(\\theta\\): sus coeficientes; \\(v_i\\): error.",
+      "en": "\\(\\gamma\\): effect of leniency on the allowance probability (first stage); \\(\\alpha\\): constant; \\(x_i\\): vector of controls; \\(\\theta\\): their coefficients; \\(v_i\\): error."
+     }
+    ],
+    [
+     {
+      "es": "\\(P_i\\): indicador de que el hijo participa después en el DI.",
+      "en": "\\(P_i\\): indicator that the child subsequently participates in DI."
+     },
+     {
+      "es": "\\(\\beta\\): parámetro de cultura familiar: efecto de que el padre obtenga el DI por haber tocado un juez benévolo sobre la participación del hijo adulto. Si es un coeficiente aleatorio, se interpreta como un efecto local (LATE).",
+      "en": "\\(\\beta\\): family welfare culture parameter: effect on the adult child's participation of a parent being allowed DI because of a lenient judge. If it is a random coefficient, it is read as a local effect (LATE)."
+     },
+     {
+      "es": "\\(\\mu\\): constante; \\(\\lambda\\): coeficientes de los controles \\(x_i\\); \\(u_i\\): error.",
+      "en": "\\(\\mu\\): constant; \\(\\lambda\\): coefficients on the controls \\(x_i\\); \\(u_i\\): error."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\hat\\beta_{IV}\\): estimador de variables instrumentales de \\(\\beta\\). Lectura propia: la notación del cociente es nuestra; el paper dice que la columna IV divide la forma reducida por la primera etapa.",
+      "en": "\\(\\hat\\beta_{IV}\\): instrumental-variables estimator of \\(\\beta\\). Own reading: the ratio notation is ours; the paper says the IV column divides the reduced form by the first stage."
+     },
+     {
+      "es": "Forma reducida: efecto directo de \\(z_i\\) sobre \\(P_i\\) (0,055 para el DI del hijo a cinco años); primera etapa: efecto de \\(z_i\\) sobre \\(A_i\\) (0,909).",
+      "en": "Reduced form: direct effect of \\(z_i\\) on \\(P_i\\) (0.055 for child DI at five years); first stage: effect of \\(z_i\\) on \\(A_i\\) (0.909)."
+     }
+    ]
+   ],
+   "p": [
+    "Se estima por mínimos cuadrados en dos etapas (MC2E): la primera ecuación es la primera etapa y la segunda, la ecuación de interés. El parámetro de cultura capta todo efecto que pase por la aprobación del padre en la apelación: su participación en el programa, las reaplicaciones si es rechazado o cualquier otro cambio en su conducta. Como el instrumento se estima antes, no hace falta corregir los errores estándar: esa corrección es necesaria con regresores generados, no con instrumentos generados.",
+    "Los datos unen registros administrativos de toda la población: los ingresos al DI de 1967 a 2010, todas las apelaciones de 1989 a 2011 con la identidad del juez y del apelante, y los registros de Estadísticas de Noruega, que permiten vincular padres con hijos, hermanos, cónyuges y vecinos. La muestra base son 14.722 pares padre-hijo: padres que apelaron un rechazo entre 1989 y 2005, de 55 años o menos (para evitar la sustitución con retiros anticipados), con jueces de al menos 10 casos, e hijos de 18 años o más al momento de la decisión. Cada hijo se observa al menos 5 años, hasta 21, y 11 en promedio. Los padres que apelan son más a menudo mujeres, menos educados, nacidos afuera y con menos ingresos que el total de solicitantes; el 73% declara trastornos mentales o musculoesqueléticos, diagnósticos difíciles de verificar."
+   ]
+  },
+  {
+   "t": "El resultado: 6 puntos a cinco años, 12 a diez",
+   "p": [
+    "La benevolencia promedio es 0,15, con desvío de 0,06: un juez del percentil 90 aprueba cerca del 22% de los casos y uno del percentil 10, cerca del 9%. La primera etapa es casi uno a uno: si la tasa de aprobación del juez en otros casos sube 1 punto, la probabilidad de que apruebe al padre sube 0,91 puntos (0,909, error estándar 0,112), sin diferencia estadística con 1. Por eso la forma reducida y la estimación IV casi coinciden.",
+    "La forma reducida para el hijo es 0,055: si la benevolencia del juez del padre sube 10 puntos, la participación del hijo en el DI a cinco años sube cerca de medio punto, mucho frente a una tasa media del 3%. La estimación IV indica que cuando el padre obtiene el DI la participación del hijo a cinco años sube 6,1 puntos (0,061), y la probabilidad de haber estado alguna vez en el DI sube 11,8 puntos. Con controles los números casi no cambian (0,060 y 0,116), como debe pasar si la asignación es aleatoria.",
+    "Con un panel balanceado de 9.062 observaciones y 50 jueces, el efecto crece año a año y llega a 12 puntos diez años después de la decisión; sobre la solicitud del DI llega a 13 puntos. No es un adelantamiento de algo que iba a pasar igual: el efecto de largo plazo es aproximadamente el doble del de corto. Al reponderar para fijar la distribución de edades de los hijos en torno a los 30 años, la tendencia se mantiene: lo que importa es el tiempo transcurrido desde la aprobación del padre, no que los hijos envejezcan."
+   ]
+  },
+  {
+   "t": "Validez interna: exclusión, monotonía y robustez",
+   "p": [
+    "La aleatoriedad alcanza para leer causalmente la forma reducida, pero la estimación IV pide dos supuestos más. El de exclusión exige que el juez afecte al hijo solo a través de la decisión sobre el padre; ayuda que todo el trámite sea por escrito. Una amenaza sería que los jueces benévolos resolvieran más rápido, pero la benevolencia y el tiempo de resolución casi no están correlacionados, y controlar por ese tiempo no cambia el resultado. Además, el instrumento no se asocia con que el hijo haya cobrado licencias por enfermedad antes de la apelación: coeficiente 0,004 frente a un 24% de hijos que las habían cobrado.",
+    "El de monotonía exige que un caso aprobado por un juez estricto también lo sea por uno benévolo. Su implicancia testeable, primeras etapas no negativas en todas las submuestras, se cumple. Las variantes de la Tabla IV (un solo departamento antes de 1998, controles de mes, excluir padres fallecidos, incluir jueces con menos de 10 casos o excluir los de menos de 50, otra codificación de los reenvíos, sacar los casos posteriores a la reforma de 2004) dejan el efecto IV a cinco años entre 0,056 y 0,070."
+   ]
+  },
+  {
+   "t": "A quién se aplica el efecto y por qué MCO da casi cero",
+   "p": [
+    "El efecto es local: vale para los hijos de padres «cumplidores», los que habrían tenido otra decisión con otro juez. Comparando al juez más benévolo con el más estricto, los autores estiman que los hijos de cumplidores son cerca del 25% de la muestra, los de quienes siempre serían aprobados son unos pocos puntos porcentuales y más del 70% son hijos de quienes nunca serían aprobados. Entre los cumplidores pesan más los padres con baja educación (65% frente a 56% en toda la muestra) y los diagnósticos difíciles de verificar. Sin la aprobación del padre, solo alrededor del 3% de esos hijos habría estado alguna vez en el DI, menos que el 8% de todos los hijos de apelantes.",
+    "El efecto viene con menos trabajo: a cinco años, la aprobación del padre reduce 14 puntos la probabilidad de que el hijo tenga algún empleo (IV 0,137 sobre una media de 0,58); las caídas en trabajo de tiempo completo y en título universitario son grandes pero imprecisas. La regresión por MCO del DI del hijo sobre la aprobación del padre da apenas 0,01. La diferencia no es solo sesgo de selección: un test de sobreidentificación con diez instrumentos binarios rechaza efectos homogéneos. Los hijos de quienes siempre serían aprobados participan menos que los de cumplidores aprobados, y los de quienes nunca serían aprobados participan más que los de cumplidores rechazados; como estos últimos son cerca del 81% del grupo no tratado, el promedio MCO se acerca a cero.",
+    "Para la política, el efecto local es el relevante: las reformas que endurecen el acceso actúan sobre los casos marginales, que suelen ser rechazados primero y apelar. En una simulación que baja la benevolencia un quinto de desvío estándar, al principio casi toda la caída de beneficiarios viene de los padres; a los diez años, la menor participación de los hijos explica casi la mitad. Como pocos salen del DI y los hijos entran mucho más jóvenes, ese canal pesa en el gasto."
+   ]
+  },
+  {
+   "t": "Otras redes y el canal de las creencias",
+   "eq": [
+    "\\frac{d\\Pr(\\text{Apply} \\cap \\text{Same})}{dz} = \\underbrace{\\Pr(\\text{Same}\\mid\\text{Apply})\\,\\frac{d\\Pr(\\text{Apply})}{dz}}_{\\text{solicitud}} + \\underbrace{\\Pr(\\text{Apply})\\,\\frac{d\\Pr(\\text{Same}\\mid\\text{Apply})}{dz}}_{\\text{declaración}}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\Pr(\\text{Apply} \\cap \\text{Same})\\): probabilidad de que el hijo pida el DI y declare la misma enfermedad que su padre (misma primera letra del código CIE-10).",
+      "en": "\\(\\Pr(\\text{Apply} \\cap \\text{Same})\\): probability that the child applies for DI and reports the same disorder as the parent (same first letter of the ICD-10 code)."
+     },
+     {
+      "es": "\\(z\\): benevolencia del juez del padre; \\(d/dz\\): derivada total respecto de ella.",
+      "en": "\\(z\\): leniency of the parent's judge; \\(d/dz\\): total derivative with respect to it."
+     },
+     {
+      "es": "\\(\\Pr(\\text{Apply})\\): probabilidad de que el hijo pida el DI; \\(\\Pr(\\text{Same}\\mid\\text{Apply})\\): probabilidad de declarar la misma enfermedad dado que la pide.",
+      "en": "\\(\\Pr(\\text{Apply})\\): probability that the child applies; \\(\\Pr(\\text{Same}\\mid\\text{Apply})\\): probability of reporting the same disorder given that the child applies."
+     },
+     {
+      "es": "El primer término es el efecto de solicitar; el segundo, el efecto de declarar la misma enfermedad.",
+      "en": "The first term is the applying effect; the second, the reporting effect."
+     }
+    ]
+   ],
+   "p": [
+    "Con el mismo diseño los autores miran otras redes. El efecto sobre vecinos cercanos es casi nulo y preciso, gracias a una muestra grande; para cónyuges y hermanos las estimaciones son demasiado imprecisas para concluir. Dentro de la familia el vínculo no depende del arreglo de convivencia ni de la edad: el efecto IV es 0,080 para hijos que no viven con el padre y 0,075 para hijos de 25 años o más, y en hijos de 8 a 17 años la aprobación del padre sube la solicitud del DI diez años después (0,095).",
+    "¿Qué se transmite? No la información sobre cómo pedir o apelar, porque todos los padres de la muestra pasaron por ese trámite; tampoco la inversión de los padres en la niñez, porque los hijos ya eran adultos. Tampoco un menor estigma frente a la asistencia social en general: la aprobación del padre no cambia el uso de la asistencia social tradicional (IV 0,001), un programa muy estigmatizado. La hipótesis que queda es que cambian las creencias del hijo sobre la eficacia de intentar entrar al DI, o sus actitudes hacia ese programa en particular.",
+    "La descomposición da evidencia sugestiva: el 63% de los hijos inducidos a pedir el DI por un juez benévolo declara la misma enfermedad que su padre, y el efecto de declaración explica cerca de la mitad del efecto neto (53,0% en solicitudes, 49,6% en participación). Es consistente con hijos que actualizan al alza su probabilidad de ser aprobados si declaran la dolencia del padre, aunque esa actualización es errada: el padre fue aprobado por azar."
+   ]
+  },
+  {
+   "t": "Lectura propia: alcances y límites",
+   "p": [
+    "Lectura propia: el diseño es de lo más limpio que ofrece la economía aplicada para esta pregunta, pero el propio paper advierte que el efecto es local y que la información que transmite un padre aprobado en apelación puede diferir de la de un padre que entra al programa por beneficios más generosos. Tampoco dice si el efecto es bueno o malo en términos de bienestar: un hijo que entra al DI puede estar ganando un seguro que necesitaba. Para cualquier país que discuta cómo controlar el acceso a pensiones por invalidez, la Argentina incluida, la enseñanza es que los criterios de admisión tienen un costo fiscal que se multiplica en el tiempo y entre generaciones, y que las proyecciones de gasto que ignoran ese canal lo subestiman."
+   ]
+  }
+ ],
+ "claves": [
+  "La correlación intergeneracional en el uso de programas sociales puede reflejar no observables comunes y no una cultura del bienestar.",
+  "Dahl, Kostøl y Mogstad usan la asignación aleatoria de jueces de apelación del seguro por invalidez noruego como instrumento.",
+  "La benevolencia del juez se mide con su tasa de aprobación en los otros casos, depurada de año y departamento.",
+  "Cuando el padre obtiene la pensión, la participación del hijo adulto sube 6 puntos a cinco años y 12 a diez.",
+  "El efecto es local (LATE) para hijos de padres marginales; MCO da casi cero por heterogeneidad de efectos.",
+  "La aprobación del padre reduce 14 puntos el empleo del hijo y no cambia su uso de la asistencia social tradicional.",
+  "El canal sugerido son las creencias sobre la eficacia de pedir el DI: muchos hijos declaran la misma enfermedad que el padre."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Por qué una regresión por MCO del uso del programa del hijo sobre el del padre no identifica una cultura del bienestar?",
+    "en": "Why doesn't an OLS regression of the child's program use on the parent's identify a welfare culture?"
+   },
+   "op": {
+    "es": [
+     "Porque la participación del padre y la del hijo son variables binarias",
+     "Porque puede haber no observables correlacionados entre generaciones, como salud o barrio",
+     "Porque los hijos no pueden pedir el programa antes de los 30 años",
+     "Porque los registros noruegos no vinculan padres con hijos"
+    ],
+    "en": [
+     "Because the parent's and child's participation are binary variables",
+     "Because there may be unobservables correlated across generations, such as health or neighborhood",
+     "Because children cannot apply before age 30",
+     "Because Norwegian registers do not link parents and children"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Según los autores, si los factores no observables del padre y del hijo están correlacionados (genética de la salud, barrios, escuelas), MCO no distingue el efecto causal de la heterogeneidad no observada.",
+    "en": "According to the authors, if parent and child unobservables are correlated (genetic health, neighborhoods, schools), OLS cannot separate the causal effect from unobserved heterogeneity."
+   },
+   "id": "fisc-gasto-01-q1"
+  },
+  {
+   "q": {
+    "es": "¿Cómo miden los autores la benevolencia de un juez de apelación?",
+    "en": "How do the authors measure an appeal judge's leniency?"
+   },
+   "op": {
+    "es": [
+     "Con encuestas a los apelantes sobre el trato recibido",
+     "Con la antigüedad del juez en el tribunal",
+     "Con su tasa de aprobación en todos los otros casos que trató, depurada de año y departamento",
+     "Con el tiempo promedio que tarda en resolver"
+    ],
+    "en": [
+     "With surveys of appellants about how they were treated",
+     "With the judge's tenure at the court",
+     "With the judge's allowance rate in all other cases handled, net of year and department",
+     "With the judge's average processing time"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es un promedio que deja afuera el caso propio, regresado sobre dummies de año por departamento; el residuo es el instrumento.",
+    "en": "It is a leave-out mean regressed on year-by-department dummies; the residual is the instrument."
+   },
+   "id": "fisc-gasto-01-q2"
+  },
+  {
+   "q": {
+    "es": "¿Qué encontró la prueba de aleatoriedad de la Tabla I?",
+    "en": "What did the randomization test in Table I find?"
+   },
+   "op": {
+    "es": [
+     "Las características del apelante predicen el resultado del caso pero no la benevolencia del juez asignado",
+     "Las características del apelante predicen tanto el resultado como el juez asignado",
+     "Los jueces se especializan por tipo de enfermedad",
+     "Los apelantes más educados eligen jueces más benévolos"
+    ],
+    "en": [
+     "Appellant characteristics predict the case outcome but not the assigned judge's leniency",
+     "Appellant characteristics predict both the outcome and the assigned judge",
+     "Judges specialize by type of disorder",
+     "More educated appellants choose more lenient judges"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Ninguna de las 19 variables es significativa al 5% para explicar la benevolencia y en conjunto explican solo el 0,35% de su variación, aunque predicen bien si el caso se aprueba.",
+    "en": "None of the 19 variables is significant at 5% for leniency and together they explain only 0.35% of its variation, although they predict well whether the case is allowed."
+   },
+   "id": "fisc-gasto-01-q3"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es el efecto IV estimado de la aprobación del padre sobre la participación del hijo en el DI?",
+    "en": "What is the estimated IV effect of parental allowance on the child's DI participation?"
+   },
+   "op": {
+    "es": [
+     "Unos 0,5 puntos a cinco años",
+     "Unos 6 puntos a cinco años y 12 puntos a diez años",
+     "Unos 25 puntos a cinco años, que luego se disipan",
+     "Ningún efecto significativo"
+    ],
+    "en": [
+     "About 0.5 points at five years",
+     "About 6 points at five years and 12 points at ten years",
+     "About 25 points at five years, later dissipating",
+     "No significant effect"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El IV a cinco años es 0,061 y el efecto crece hasta 12 puntos a diez años; medio punto es la forma reducida ante 10 puntos más de benevolencia.",
+    "en": "The five-year IV is 0.061 and the effect grows to 12 points at ten years; half a point is the reduced form for 10 more points of leniency."
+   },
+   "id": "fisc-gasto-01-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la estimación IV y la forma reducida son casi iguales en este paper?",
+    "en": "Why are the IV estimate and the reduced form almost equal in this paper?"
+   },
+   "op": {
+    "es": [
+     "Porque no hay controles en la regresión",
+     "Porque el efecto sobre el hijo es cero",
+     "Porque la muestra es muy grande",
+     "Porque la primera etapa es cercana a 1"
+    ],
+    "en": [
+     "Because there are no controls in the regression",
+     "Because the effect on the child is zero",
+     "Because the sample is very large",
+     "Because the first stage is close to 1"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "La estimación IV divide la forma reducida por la primera etapa, que es 0,909 y no difiere estadísticamente de 1.",
+    "en": "The IV estimate divides the reduced form by the first stage, which is 0.909 and not statistically different from 1."
+   },
+   "id": "fisc-gasto-01-q5"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto se ve favorecido porque las apelaciones se resuelven solo por escrito?",
+    "en": "Which assumption is supported by appeals being decided only in writing?"
+   },
+   "op": {
+    "es": [
+     "Monotonía",
+     "Relevancia del instrumento",
+     "Exclusión: el juez afecta al hijo solo a través de la decisión sobre el padre",
+     "Homocedasticidad de los errores"
+    ],
+    "en": [
+     "Monotonicity",
+     "Instrument relevance",
+     "Exclusion: the judge affects the child only through the decision on the parent",
+     "Homoskedastic errors"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Como no hay contacto personal, lo único que padres e hijos observan del juez es si aprueba o rechaza; los autores además descartan efectos del tiempo de resolución.",
+    "en": "Since there is no personal contact, all parents and children observe from the judge is the decision; the authors also rule out effects of processing time."
+   },
+   "id": "fisc-gasto-01-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué la estimación por MCO (0,01) es mucho menor que la IV según los autores?",
+    "en": "Why is the OLS estimate (0.01) much smaller than the IV one according to the authors?"
+   },
+   "op": {
+    "es": [
+     "Por heterogeneidad de efectos: los hijos de padres marginales reaccionan más a la decisión, y el grupo no tratado está dominado por hijos de padres que nunca serían aprobados",
+     "Porque el instrumento es débil",
+     "Porque MCO usa una muestra distinta",
+     "Por error de medición en la benevolencia"
+    ],
+    "en": [
+     "Because of effect heterogeneity: children of marginal parents respond more, and the untreated group is dominated by children of never-takers",
+     "Because the instrument is weak",
+     "Because OLS uses a different sample",
+     "Because of measurement error in leniency"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Un test con diez instrumentos binarios rechaza efectos homogéneos; los hijos de quienes nunca serían aprobados (cerca del 81% del grupo no tratado) participan más que los de cumplidores rechazados, lo que empuja MCO hacia cero.",
+    "en": "A test with ten binary instruments rejects homogeneous effects; children of never-takers (about 81% of the untreated) participate more than those of untreated compliers, pushing OLS toward zero."
+   },
+   "id": "fisc-gasto-01-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué evidencia apoya que el canal sea un cambio de creencias sobre el DI y no un menor estigma frente a toda asistencia?",
+    "en": "What evidence supports a change in beliefs about DI rather than lower stigma toward all welfare?"
+   },
+   "op": {
+    "es": [
+     "Que el efecto aparece también entre vecinos",
+     "Que la aprobación del padre no cambia el uso de la asistencia social tradicional y muchos hijos declaran la misma enfermedad",
+     "Que el efecto desaparece después de cinco años",
+     "Que solo los hijos que viven con el padre reaccionan"
+    ],
+    "en": [
+     "That the effect also appears among neighbors",
+     "That parental allowance does not change use of traditional social assistance and many children report the same disorder",
+     "That the effect vanishes after five years",
+     "That only children living with the parent respond"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El efecto sobre la asistencia social es nulo (0,001) y el 63% de los hijos inducidos a pedir el DI declara la misma enfermedad del padre, con el efecto de declaración explicando cerca de la mitad.",
+    "en": "The effect on social assistance is nil (0.001) and 63% of induced child applicants report the parent's disorder, with the reporting effect explaining about half."
+   },
+   "id": "fisc-gasto-01-q8"
+  }
+ ],
+ "palabras": 2221,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Existe una cultura familiar del bienestar en el seguro por invalidez?",
+    "en": "Is there a family welfare culture in disability insurance?"
+   },
+   "a": {
+    "es": "Según Dahl, Kostøl y Mogstad, sí: en Noruega, cuando un padre obtiene la pensión por invalidez gracias a un juez benévolo, la participación de su hijo adulto sube 6 puntos en cinco años y 12 en diez.",
+    "en": "According to Dahl, Kostøl and Mogstad, yes: in Norway, when a parent is allowed disability insurance thanks to a lenient judge, the adult child's participation rises 6 points in five years and 12 in ten."
+   },
+   "id": "fisc-gasto-01-t1"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se identifica el efecto causal de un programa sobre la generación siguiente?",
+    "en": "How can the causal effect of a program on the next generation be identified?"
+   },
+   "a": {
+    "es": "Dahl, Kostøl y Mogstad usan como instrumento la benevolencia de jueces de apelación asignados al azar, medida por su tasa de aprobación en los otros casos, y estiman por mínimos cuadrados en dos etapas.",
+    "en": "Dahl, Kostøl and Mogstad use as instrument the leniency of randomly assigned appeal judges, measured by their allowance rate in other cases, and estimate by two-stage least squares."
+   },
+   "id": "fisc-gasto-01-t2"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué es un efecto local promedio (LATE) en un diseño con jueces?",
+    "en": "What is a local average treatment effect (LATE) in a judge design?"
+   },
+   "a": {
+    "es": "Para Dahl, Kostøl y Mogstad es el efecto sobre los hijos de padres cumplidores, los que habrían tenido otra decisión con otro juez; en su muestra son cerca del 25% de los hijos.",
+    "en": "For Dahl, Kostøl and Mogstad it is the effect on children of complier parents, who would have received a different decision from another judge; they are about 25% of children in their sample."
+   },
+   "id": "fisc-gasto-01-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué le pasa al empleo de los hijos cuando el padre entra al seguro por invalidez?",
+    "en": "What happens to children's employment when the parent enters disability insurance?"
+   },
+   "a": {
+    "es": "Dahl, Kostøl y Mogstad estiman que a cinco años la aprobación del padre reduce 14 puntos la probabilidad de que el hijo tenga algún empleo.",
+    "en": "Dahl, Kostøl and Mogstad estimate that five years on, parental allowance lowers the child's probability of any employment by 14 points."
+   },
+   "id": "fisc-gasto-01-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué canal se transmitiría el uso del seguro por invalidez de padres a hijos?",
+    "en": "Through which channel would disability insurance use pass from parents to children?"
+   },
+   "a": {
+    "es": "Dahl, Kostøl y Mogstad descartan la información sobre el trámite y la inversión en la niñez, y encuentran evidencia sugestiva de creencias sobre la eficacia de pedirlo: muchos hijos declaran la misma enfermedad que el padre.",
+    "en": "Dahl, Kostøl and Mogstad rule out information about the process and childhood investment, and find suggestive evidence of beliefs about the efficacy of applying: many children report the parent's disorder."
+   },
+   "id": "fisc-gasto-01-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué implica la transmisión intergeneracional para evaluar una reforma que endurece el acceso a una pensión?",
+    "en": "What does intergenerational transmission imply for assessing a reform tightening access to a pension?"
+   },
+   "a": {
+    "es": "Según la simulación de Dahl, Kostøl y Mogstad, al principio el ahorro viene de los padres, pero a los diez años la menor participación de los hijos explica casi la mitad de la caída de beneficiarios.",
+    "en": "According to Dahl, Kostøl and Mogstad's simulation, savings first come from parents, but after ten years lower child participation explains almost half of the drop in recipients."
+   },
+   "id": "fisc-gasto-01-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué no dice el paper sobre la cultura del bienestar?",
+    "en": "What does the paper not say about welfare culture?"
+   },
+   "a": {
+    "es": "Los propios Dahl, Kostøl y Mogstad advierten que el efecto es local y que no evalúan si es bueno o malo en términos de bienestar, porque no miden el valor del seguro frente a su costo.",
+    "en": "Dahl, Kostøl and Mogstad themselves warn that the effect is local and that they do not assess whether it improves welfare, since they do not weigh the insurance value against its cost."
+   },
+   "id": "fisc-gasto-01-t7"
+  }
+ ]
+}

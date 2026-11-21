@@ -1,0 +1,489 @@
+{
+ "id": "fisc-gasto-02",
+ "cat": "fisc-gasto",
+ "orden": 3,
+ "minutos": 15,
+ "titulo": "¿Sirve financiar startups con plata pública? Buenos Aires Emprende y la discontinuidad de Butler, Galassi y Ruffo",
+ "bajada": "Un subsidio de unos US$ 16.000 más un año de mentoría a emprendedores innovadores porteños subió 22 puntos la probabilidad de crear la empresa, mejoró mucho su supervivencia y sumó unos 3 empleos por firma. La evaluación usa la regla de corte en el puntaje de selección.",
+ "fuentes": [
+  1140
+ ],
+ "cita": "I. Butler, G. Galassi y H. Ruffo (2015), «Public funding for startups in Argentina: an impact evaluation», documento de trabajo (IERAL, European University Institute y UTDT), octubre de 2015",
+ "intro": "Una línea de la literatura de crecimiento sostiene que buena parte de las diferencias de productividad entre países se explica por la mala asignación del talento empresarial: personas capaces que no crean empresas, o que crean pocas y malas, por costos de entrada, restricciones financieras, el costo de oportunidad de dejar un salario o la falta de habilidades de gestión. Si es así, el Estado puede ayudar bajando esas barreras, pero también puede empeorar la asignación si subsidia a las firmas equivocadas o las mantiene vivas artificialmente. Inés Butler, Gabriela Galassi y Hernán Ruffo evalúan «Buenos Aires Emprende» (BAE), un programa de la Ciudad de Buenos Aires que da a emprendedores innovadores un aporte no reembolsable y un año de mentoría a través de instituciones de apoyo. La selección es por puntaje: los proyectos por encima de un corte entran. Esa regla permite usar un diseño de regresión discontinua con datos de una encuesta propia a beneficiarios y no beneficiarios. Encuentran efectos fuertes sobre la creación de empresas, su supervivencia y el empleo, y ninguno robusto sobre ventas o ingresos, con un costo por empleo bajo en comparación con otros programas.",
+ "secciones": [
+  {
+   "t": "El talento empresarial mal asignado",
+   "p": [
+    "Siguiendo a Hopenhayn (2014), los autores parten de que la mala asignación del talento empresarial y las distorsiones a la entrada de firmas son las principales fuerzas detrás de las diferencias de productividad entre países, y que corregirla podría elevar la productividad total de los factores de los países menos desarrollados hasta 25%. El problema se plantea como una elección ocupacional: ser asalariado o emprendedor, comparando ingresos y costos de cada opción.",
+    "Las barreras enumeradas son cuatro: costos y regulaciones de entrada, el costo de oportunidad de no trabajar por un salario (como en Lucas, 1978), las fricciones financieras (Banerjee y Newman; Buera, Kaboski y Shin) y la falta de habilidades o de información que reduce las ganancias esperadas (Bloom y otros). No solo afectan cuántas firmas se crean sino cuáles: con restricciones financieras, si la riqueza está en manos de emprendedores menos capaces, las firmas nuevas son peores; también pueden orientarse a sectores menos intensivos en capital, quedar en la informalidad o sobrevivir menos.",
+    "Programas como Startup Chile, Innpulsa Colombia o Yozma en Israel se justifican con ese diagnóstico. El riesgo, advierten los autores, es que una política mal diseñada sea otra fuente de mala asignación, si favorece firmas ineficientes o distorsiona su crecimiento. La señal de ese error serían firmas apoyadas con menor productividad, crecimiento y supervivencia."
+   ]
+  },
+  {
+   "t": "El programa: puntaje, corte y beneficios",
+   "p": [
+    "BAE funciona a pleno desde 2008, con una edición por año. Primero se eligen unas 10 instituciones de apoyo (ONG, universidades, entidades de emprendedorismo), que identifican candidatos, los ayudan con el plan de negocios y patrocinan en general unos 10 proyectos cada una. Luego el programa puntúa cada proyecto en dos dimensiones: viabilidad del proyecto, hasta 40 puntos, y capacidad emprendedora, hasta 60, evaluada por el personal del programa con psicólogos y entrevistas en profundidad sobre experiencia, liderazgo, compromiso y conocimiento del proyecto.",
+    "Entran todos los proyectos con 55 puntos o más (el corte varió levemente: 54 en 2009 y 60 en 2010, y los autores lo normalizan a 55). El beneficiario recibe un aporte no reembolsable de hasta 70.000 pesos, equivalentes a US$ 16.000 en 2011, o hasta el 40% de la inversión inicial. La institución patrocinante cobra 3.000 pesos por proyecto seleccionado y 2.200 pesos por mes de mentoría, hasta 12 meses; en total hasta el 35% de lo transferido al emprendedor, unos US$ 5.600. Entre 2008 y 2011 se presentaron 80, 115, 105 y 112 proyectos y se aprobaron 233; las transferencias crecieron de 1,8 a 3,2 millones de pesos por edición."
+   ]
+  },
+  {
+   "t": "La encuesta y el diseño de regresión discontinua",
+   "eq": [
+    "y_i = \\alpha + \\beta D_i + \\delta Z_i + \\gamma X_i + u_i",
+    "D_i = \\mathbb{1}\\left[S_i \\geq 55\\right]"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(y_i\\): resultado del emprendimiento \\(i\\) (creación, supervivencia, empleo, ventas o ingreso neto).",
+      "en": "\\(y_i\\): outcome of venture \\(i\\) (creation, survival, employment, sales or net income)."
+     },
+     {
+      "es": "\\(D_i\\): indicador de tratamiento, vale 1 si el proyecto fue beneficiario y 0 si no.",
+      "en": "\\(D_i\\): treatment indicator, equal to 1 if the project was a beneficiary and 0 otherwise."
+     },
+     {
+      "es": "\\(\\beta\\): efecto del programa sobre los proyectos cercanos al corte; es el parámetro de interés.",
+      "en": "\\(\\beta\\): effect of the program on projects near the cutoff; the parameter of interest."
+     },
+     {
+      "es": "\\(Z_i\\): función del puntaje (cuadrática en la especificación principal) que capta su efecto continuo sobre el resultado; \\(\\delta\\): sus coeficientes.",
+      "en": "\\(Z_i\\): function of the score (quadratic in the main specification) capturing its continuous effect on the outcome; \\(\\delta\\): its coefficients."
+     },
+     {
+      "es": "\\(X_i\\): controles adicionales (edad y su cuadrado, sexo, educación, sector y año de la edición); \\(\\gamma\\): sus coeficientes; \\(\\alpha\\): constante; \\(u_i\\): error.",
+      "en": "\\(X_i\\): additional controls (age and its square, gender, education, industry and edition year); \\(\\gamma\\): their coefficients; \\(\\alpha\\): constant; \\(u_i\\): error."
+     }
+    ],
+    [
+     {
+      "es": "\\(S_i\\): puntaje total del proyecto (viabilidad más capacidad emprendedora), normalizado para que el corte sea 55; es la variable de asignación.",
+      "en": "\\(S_i\\): total project score (viability plus entrepreneurial ability), normalized so the cutoff is 55; it is the running variable."
+     },
+     {
+      "es": "\\(\\mathbb{1}[\\cdot]\\): función indicadora. Lectura propia: los autores describen la regla en palabras; la notación es nuestra.",
+      "en": "\\(\\mathbb{1}[\\cdot]\\): indicator function. Own reading: the authors describe the rule in words; the notation is ours."
+     }
+    ]
+   ],
+   "p": [
+    "En 2012 los autores encuestaron a los más de 400 participantes de 2008-2011, beneficiarios o no. Respondieron 108: 68 beneficiarios y 40 no beneficiarios. Edad media de 36 años, cerca de 70% varones, 42% con título universitario y 40% con posgrado, un tercio en proyectos de informática, casi 60% con experiencia previa y un tercio con fracasos previos. No hay diferencias significativas entre beneficiarios y no beneficiarios en esas características. La distribución de puntajes de quienes respondieron es similar a la del universo, y un probit de la probabilidad de responder tiene un pseudo-R2 menor a 0,03 (test de razón de verosimilitud con p de 0,25).",
+    "Como la selección sigue una regla determinística sobre el puntaje, quienes quedaron justo arriba y justo abajo del corte deberían ser comparables, y si la relación entre puntaje y resultado es continua, el salto en el corte mide el efecto del programa. Los autores combinan un enfoque global, que usa todos los datos con un polinomio del puntaje y permite controles, con uno local, regresiones lineales a cada lado del corte con distintos anchos de banda. Prueban polinomios ordinarios y de Chebyshev de grado uno a tres y una submuestra con puntajes entre 45 y 65. Para variables binarias o de duración aplican la misma lógica a modelos logit y de riesgos proporcionales.",
+    "¿Y la manipulación? Los emprendedores no tienen forma evidente de manipular el puntaje. Si los evaluadores incorporaran señales privadas (red de contactos, carisma), el puntaje las recoge y controlar por él las neutraliza; y cualquier manipulación que no busque elegir a los mejores sesgaría el efecto hacia cero. Las covariables no saltan en el corte."
+   ]
+  },
+  {
+   "t": "Creación: de 63% a 97%",
+   "p": [
+    "La comparación cruda es fuerte: 63,2% de los no beneficiarios puso en marcha su proyecto, contra 97,0% de los beneficiarios. Parte de esa brecha podría deberse a la calidad del proyecto, por eso el logit controla por una función cuadrática del puntaje. El coeficiente del tratamiento es 2,10 (error estándar 1,26, significativo al 10%) y el efecto marginal es de 22 puntos porcentuales. Con controles, 2,03 y 20 puntos, menos preciso; en la submuestra de puntajes entre 45 y 65, 3,52 y 32 puntos.",
+    "Los autores concluyen que el programa sube entre 20 y 32 puntos la probabilidad de crear la empresa: sin BAE, alrededor del 22% de las firmas de los beneficiarios no habría existido, unas 50 empresas en las cuatro ediciones. Que casi el 40% de los no beneficiarios no haya arrancado indica que las barreras eran reales; si no lo fueran, la creación sería igual de alta en ambos grupos y el programa solo pagaría pérdidas de peso muerto, financiando lo que se habría hecho igual."
+   ]
+  },
+  {
+   "t": "Supervivencia y duración",
+   "eq": [
+    "\\log h(t \\mid X) = \\alpha_t + \\theta' X"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(h(t \\mid X)\\): tasa de riesgo, la probabilidad de que la firma cierre a una duración (edad en meses) \\(t\\), dadas sus características.",
+      "en": "\\(h(t \\mid X)\\): hazard rate, the probability that the firm closes at duration (age in months) \\(t\\), given its characteristics."
+     },
+     {
+      "es": "\\(\\alpha_t\\): riesgo base, que en el modelo de Cox no se especifica y se identifica después de estimar los coeficientes.",
+      "en": "\\(\\alpha_t\\): baseline hazard, left unspecified in the Cox model and identified after estimating the coefficients."
+     },
+     {
+      "es": "\\(X\\): variables explicativas, entre ellas el indicador de beneficiario y la función del puntaje; \\(\\theta\\): sus coeficientes (\\(\\theta'\\) indica el vector transpuesto). Un coeficiente negativo en el tratamiento implica más supervivencia.",
+      "en": "\\(X\\): explanatory variables, including the beneficiary indicator and the score function; \\(\\theta\\): their coefficients (\\(\\theta'\\) is the transposed vector). A negative treatment coefficient implies longer survival."
+     }
+    ]
+   ],
+   "p": [
+    "Entre los proyectos que arrancaron, seguían en el mercado a julio de 2012 el 92,3% de los beneficiarios y el 79,2% de los no beneficiarios. En el logit con el puntaje, el coeficiente es 4,16, significativo al 5%, con un efecto marginal de 33 puntos; con controles, 34 puntos, y cerca del corte, 48 puntos.",
+    "El análisis de duración aprovecha que las firmas nacieron en momentos distintos y que muchas siguen vivas (datos censurados a derecha). En el modelo de Cox el coeficiente del tratamiento es −2,36 con el puntaje, −2,52 con controles y −4,42 cerca del corte; con un modelo de Weibull los resultados son similares o más fuertes. El riesgo de salida de los beneficiarios es una décima parte del de los no beneficiarios. Según la simulación de los autores, la supervivencia a 24 meses sube de 43% a 92%. Para ellos, la mayor creación no se consiguió a costa de un grupo de firmas peores y efímeras."
+   ]
+  },
+  {
+   "t": "Empleo sí, ventas e ingresos no",
+   "p": [
+    "Ventas, ingresos y empleo solo se observan para las firmas creadas, y para 2011 solo para las que sobrevivieron. Como esa selección es más dura entre no beneficiarios, cabe esperar diferencias menores. En regresiones con el puntaje, los beneficiarios tienen 1,49 empleos más en el primer año (significativo al 10%), 2,36 con controles; en 2011 la estimación es mayor (3,07) pero imprecisa.",
+    "Con regresiones lineales locales y ancho de banda óptimo (Imbens y Kalyanaraman), el efecto es de 3,3 empleos en el primer año y 2,4 en 2011; con el doble de ancho de banda, 2,4 y 0,93, este último no significativo. Para descartar que el resultado refleje una preferencia de los evaluadores por equipos grandes, los autores restan los fundadores y el efecto sobre empleados no fundadores es aun mayor. En ventas e ingreso neto, deflactados y en logaritmos, no hay efectos significativos ni robustos: son variables muy dispersas."
+   ]
+  },
+  {
+   "t": "Impacto total y costo por empleo",
+   "eq": [
+    "I_i = c\\,F_i + (1 - c)\\,s_i\\,F_i",
+    "L_i = I_i\\,(e_i + l) + (F_i - I_i)\\,l",
+    "s(t) = \\exp\\!\\left(-\\lambda_0 e^{\\beta} t^{p}\\right) - \\exp\\!\\left(-\\lambda_0 t^{p}\\right)"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(I_i\\): firmas adicionales que existen gracias al programa en la edición \\(i\\).",
+      "en": "\\(I_i\\): additional firms that exist thanks to the program in edition \\(i\\)."
+     },
+     {
+      "es": "\\(F_i\\): número de beneficiarios de la edición \\(i\\); \\(c\\): efecto del programa sobre la tasa de creación.",
+      "en": "\\(F_i\\): number of beneficiaries of edition \\(i\\); \\(c\\): program effect on the creation rate."
+     },
+     {
+      "es": "\\(s_i\\): efecto del programa sobre la probabilidad de supervivencia de una firma creada tras la edición \\(i\\). El primer término cuenta las firmas que no se habrían creado; el segundo, las que se habrían creado pero habrían cerrado sin el programa.",
+      "en": "\\(s_i\\): program effect on the survival probability of a firm created after edition \\(i\\). The first term counts firms that would not have been created; the second, those that would have been created but closed without the program."
+     }
+    ],
+    [
+     {
+      "es": "\\(L_i\\): empleos creados por el programa en la edición \\(i\\).",
+      "en": "\\(L_i\\): jobs created by the program in edition \\(i\\)."
+     },
+     {
+      "es": "\\(e_i\\): empleo medio de las firmas adicionales, obtenido muestreando los datos; \\(l\\): efecto del programa sobre el empleo de las firmas que habrían existido igual.",
+      "en": "\\(e_i\\): mean employment of the additional firms, obtained by sampling the data; \\(l\\): program effect on employment in firms that would have existed anyway."
+     },
+     {
+      "es": "\\(F_i - I_i\\): beneficiarios cuya firma habría existido igual, que con el programa tienen \\(l\\) empleos más.",
+      "en": "\\(F_i - I_i\\): beneficiaries whose firm would have existed anyway, which have \\(l\\) more jobs with the program."
+     }
+    ],
+    [
+     {
+      "es": "\\(s(t)\\): efecto del programa sobre la supervivencia a la duración \\(t\\), en meses.",
+      "en": "\\(s(t)\\): program effect on survival at duration \\(t\\), in months."
+     },
+     {
+      "es": "\\(\\lambda_0\\): media, entre los beneficiarios, del exponencial de la predicción lineal del modelo de Weibull suponiendo que nadie fue tratado.",
+      "en": "\\(\\lambda_0\\): mean, among beneficiaries, of the exponential of the Weibull model's linear prediction assuming nobody was treated."
+     },
+     {
+      "es": "\\(\\beta\\): coeficiente del indicador de tratamiento en el modelo de duración (aquí no es el \\(\\beta\\) de la ecuación de discontinuidad); \\(p\\): parámetro de forma de la distribución de Weibull.",
+      "en": "\\(\\beta\\): coefficient on the treatment indicator in the duration model (not the \\(\\beta\\) of the discontinuity equation); \\(p\\): shape parameter of the Weibull distribution."
+     },
+     {
+      "es": "El primer término es la supervivencia esperada con el programa y el segundo, sin él. Se evalúa en 48, 36, 24 y 12 meses para las ediciones 2008 a 2011.",
+      "en": "The first term is expected survival with the program and the second, without it. It is evaluated at 48, 36, 24 and 12 months for the 2008 to 2011 editions."
+     }
+    ]
+   ],
+   "p": [
+    "Para el impacto agregado los autores eligen sus estimaciones preferidas (creación 2,10; riesgo de Weibull −2,33; empleo en 2011 3,07, con sus desvíos) y simulan 10.000 veces el escenario sin programa, sacando valores al azar de cada efecto. Suponen que no hay desplazamiento: el programa no le saca financiamiento ni mercado a otras firmas, un supuesto de equilibrio parcial razonable por su escala chica.",
+    "Resultado: sin BAE, en 2012 habrían existido 132 firmas menos y unos 1.000 empleos menos, con un rango de 200 a casi 2.000. Dividiendo el costo en transferencias por el empleo creado, cada puesto costó menos de US$ 4.000, unos tres meses del salario formal medio de 2011 (cerca de US$ 1.300). La adicionalidad, la proporción de firmas que no habrían existido sin el programa contando creación y supervivencia, ronda el 50%, dentro del rango de 15% a 85% que reporta Parker (2009), cuyas estimaciones de costo por empleo suelen superar los US$ 10.000.",
+    "Sobre los mecanismos, los no beneficiarios que no arrancaron citaron la falta de financiamiento; solo el 45% de los proyectos tuvo otra fuente aparte de BAE, y en el 70% de esos casos venía de familia y amigos. El aporte no reembolsable alivió la restricción de liquidez y bajó el costo de oportunidad de emprender para profesionales que podrían ganar buenos salarios. Los autores atribuyen el éxito a tres rasgos: el foco en identificar talento, el apoyo limitado en el tiempo, que no sostiene firmas improductivas con subsidios permanentes, y la combinación de dinero con mentoría, cuyos pesos relativos no pueden separar."
+   ]
+  },
+  {
+   "t": "Lectura propia: cuánto creerle",
+   "p": [
+    "Lectura propia: el diseño es atractivo, pero la base es chica (108 respuestas de más de 400, 59 en la submuestra cercana al corte) y autodeclarada, y varios efectos son significativos solo al 10% con errores estándar grandes. El cálculo de costo por empleo omite costos administrativos y se apoya en el efecto sobre el empleo de 2011, que en las regresiones no es significativo. El supuesto de cero desplazamiento es plausible para un programa chico, pero escalarlo cambiaría la cuenta. Aun así, la evidencia de que muchos no beneficiarios no arrancaron es una señal clara de restricciones a la entrada que un apoyo acotado puede levantar, y el diseño del programa (seleccionar talento, no sectores, y apoyar por un año) es una buena guía para no caer en «elegir ganadores y salvar perdedores»."
+   ]
+  }
+ ],
+ "claves": [
+  "La mala asignación del talento empresarial reduce la productividad; un programa público puede bajar barreras a la entrada o agravar la mala asignación.",
+  "BAE da a emprendedores innovadores un aporte no reembolsable de hasta US$ 16.000 y hasta un año de mentoría; entran los proyectos con 55 puntos o más.",
+  "La regla de corte permite un diseño de regresión discontinua con una encuesta a 108 beneficiarios y no beneficiarios.",
+  "El programa sube unos 22 puntos la probabilidad de crear la empresa (63% contra 97% en bruto).",
+  "El riesgo de cierre de los beneficiarios es una décima parte; la supervivencia a 24 meses pasa de 43% a 92%.",
+  "Los beneficiarios crean unos 2 a 3 empleos más; no hay efectos robustos en ventas ni ingresos.",
+  "La simulación da 132 firmas y unos 1.000 empleos adicionales, a menos de US$ 4.000 por empleo."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué regla del programa BAE permite usar un diseño de regresión discontinua?",
+    "en": "Which BAE program rule allows a regression discontinuity design?"
+   },
+   "op": {
+    "es": [
+     "Que los beneficiarios se sortean entre los inscriptos",
+     "Que entran todos los proyectos con un puntaje igual o mayor a un corte",
+     "Que solo pueden aplicar empresas con más de un año",
+     "Que el monto del aporte depende de la edad del emprendedor"
+    ],
+    "en": [
+     "That beneficiaries are drawn by lottery",
+     "That all projects with a score at or above a cutoff are admitted",
+     "That only firms older than one year can apply",
+     "That the grant amount depends on the entrepreneur's age"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La selección es determinística: se aprueba todo proyecto con 55 puntos o más, así que los proyectos justo arriba y justo abajo del corte son comparables.",
+    "en": "Selection is deterministic: every project with 55 points or more is approved, so projects just above and below the cutoff are comparable."
+   },
+   "id": "fisc-gasto-02-q1"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto identifica el efecto en una regresión discontinua?",
+    "en": "Which assumption identifies the effect in a regression discontinuity?"
+   },
+   "op": {
+    "es": [
+     "Que la relación entre el puntaje y el resultado es continua y los proyectos cerca del corte no difieren en lo esencial",
+     "Que el puntaje es independiente del resultado",
+     "Que todos los postulantes responden la encuesta",
+     "Que el programa se asigna al azar"
+    ],
+    "en": [
+     "That the score-outcome relation is continuous and projects near the cutoff do not differ essentially",
+     "That the score is independent of the outcome",
+     "That all applicants answer the survey",
+     "That the program is randomly assigned"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si la relación con el puntaje es continua, el salto en el corte se atribuye al programa; los autores verifican que las covariables no saltan en el corte.",
+    "en": "If the relation with the score is continuous, the jump at the cutoff is attributed to the program; the authors check that covariates do not jump there."
+   },
+   "id": "fisc-gasto-02-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuánto aumenta BAE la probabilidad de crear la empresa según el logit con puntaje cuadrático?",
+    "en": "How much does BAE raise the probability of creating the firm according to the logit with a quadratic score?"
+   },
+   "op": {
+    "es": [
+     "34 puntos porcentuales",
+     "3 puntos porcentuales",
+     "22 puntos porcentuales",
+     "97 puntos porcentuales"
+    ],
+    "en": [
+     "34 percentage points",
+     "3 percentage points",
+     "22 percentage points",
+     "97 percentage points"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El coeficiente del logit es 2,10 y el efecto marginal, 22 puntos; cerca del corte sube a 32. El 97% es la tasa bruta de creación de los beneficiarios.",
+    "en": "The logit coefficient is 2.10 and the marginal effect 22 points; near the cutoff it rises to 32. The 97% is beneficiaries' raw creation rate."
+   },
+   "id": "fisc-gasto-02-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué indica un coeficiente negativo del tratamiento en el modelo de Cox de este paper?",
+    "en": "What does a negative treatment coefficient in this paper's Cox model indicate?"
+   },
+   "op": {
+    "es": [
+     "Que los beneficiarios venden menos",
+     "Que el programa reduce el empleo",
+     "Que la muestra está sesgada",
+     "Que los beneficiarios tienen menor riesgo de cerrar y sobreviven más"
+    ],
+    "en": [
+     "That beneficiaries sell less",
+     "That the program reduces employment",
+     "That the sample is biased",
+     "That beneficiaries have a lower hazard of closing and survive longer"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El modelo explica la tasa de riesgo de cierre; con coeficientes de −2,36 a −4,42, el riesgo de los beneficiarios es una décima parte del de los no beneficiarios.",
+    "en": "The model explains the closing hazard; with coefficients from −2.36 to −4.42, beneficiaries' hazard is one tenth that of non-beneficiaries."
+   },
+   "id": "fisc-gasto-02-q4"
+  },
+  {
+   "q": {
+    "es": "¿Sobre qué resultados de desempeño encuentran los autores efectos significativos?",
+    "en": "On which performance outcomes do the authors find significant effects?"
+   },
+   "op": {
+    "es": [
+     "Ventas e ingreso neto, pero no empleo",
+     "Empleo, pero no ventas ni ingreso neto",
+     "Ventas, empleo e ingreso neto",
+     "Ninguno"
+    ],
+    "en": [
+     "Sales and net income, but not employment",
+     "Employment, but not sales or net income",
+     "Sales, employment and net income",
+     "None"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Los beneficiarios tienen unos 2 a 3 empleos más; ventas e ingresos, muy dispersos, no muestran efectos significativos ni robustos.",
+    "en": "Beneficiaries have about 2 to 3 more jobs; sales and income, highly dispersed, show no significant or robust effects."
+   },
+   "id": "fisc-gasto-02-q5"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el puntaje del programa sirve aunque los evaluadores pudieran observar señales privadas del emprendedor?",
+    "en": "Why is the score useful even if evaluators could observe private signals about the entrepreneur?"
+   },
+   "op": {
+    "es": [
+     "Porque las señales privadas no afectan el éxito",
+     "Porque los evaluadores no conocen el corte",
+     "Porque esas señales entrarían en el puntaje, que se usa como control, y una manipulación ajena a elegir a los mejores sesgaría el efecto hacia cero",
+     "Porque los emprendedores eligen su puntaje"
+    ],
+    "en": [
+     "Because private signals do not affect success",
+     "Because evaluators do not know the cutoff",
+     "Because those signals would enter the score, used as a control, and manipulation unrelated to picking the best would bias the effect toward zero",
+     "Because entrepreneurs choose their score"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Es el argumento de los autores contra la manipulación: lo que el evaluador ve queda capturado en el puntaje, y desvíos de la regla de elegir a los mejores achicarían el efecto estimado.",
+    "en": "This is the authors' argument against manipulation: what evaluators see is captured by the score, and departures from picking the best would shrink the estimate."
+   },
+   "id": "fisc-gasto-02-q6"
+  },
+  {
+   "q": {
+    "es": "¿Qué es la «adicionalidad» de un programa de apoyo a emprendedores?",
+    "en": "What is the 'additionality' of an entrepreneurship support program?"
+   },
+   "op": {
+    "es": [
+     "El aumento neto de firmas que genera, descontando las que se habrían creado igual y las desplazadas",
+     "El monto extra que aportan los inversores privados",
+     "La suma de transferencias y mentoría",
+     "El número de instituciones patrocinantes"
+    ],
+    "en": [
+     "The net increase in firms it generates, excluding those that would have been created anyway and those displaced",
+     "The extra amount private investors contribute",
+     "The sum of grants and mentoring",
+     "The number of sponsoring institutions"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Siguiendo a Parker (2009), descuenta pérdidas de peso muerto y desplazamiento; los autores estiman una adicionalidad de cerca del 50% para BAE.",
+    "en": "Following Parker (2009), it nets out deadweight and displacement; the authors estimate additionality of about 50% for BAE."
+   },
+   "id": "fisc-gasto-02-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué supuesto clave hacen los autores al simular el impacto total de 132 firmas y unos 1.000 empleos?",
+    "en": "What key assumption do the authors make when simulating the total impact of 132 firms and about 1,000 jobs?"
+   },
+   "op": {
+    "es": [
+     "Que los beneficiarios no reciben mentoría",
+     "Que no hay desplazamiento: el programa no quita financiamiento ni mercado a otras firmas",
+     "Que todas las firmas sobreviven",
+     "Que las ventas crecen 22%"
+    ],
+    "en": [
+     "That beneficiaries receive no mentoring",
+     "That there is no displacement: the program takes no financing or market from other firms",
+     "That all firms survive",
+     "That sales grow 22%"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Lo justifican por la escala chica del programa, como un enfoque de equilibrio parcial; con un programa más grande el supuesto sería menos creíble.",
+    "en": "They justify it by the program's small scale, as a partial-equilibrium approach; with a larger program the assumption would be less credible."
+   },
+   "id": "fisc-gasto-02-q8"
+  }
+ ],
+ "palabras": 1752,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Puede un programa público chico mejorar la asignación del talento empresarial?",
+    "en": "Can a small public program improve the allocation of entrepreneurial talent?"
+   },
+   "a": {
+    "es": "Según Butler, Galassi y Ruffo, sí: Buenos Aires Emprende subió la creación de empresas, su supervivencia y el empleo con un aporte acotado y un año de mentoría, sin sostener firmas improductivas.",
+    "en": "According to Butler, Galassi and Ruffo, yes: Buenos Aires Emprende raised firm creation, survival and employment with a limited grant and a year of mentoring, without propping up unproductive firms."
+   },
+   "id": "fisc-gasto-02-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué la mala asignación del talento empresarial reduce la productividad?",
+    "en": "Why does misallocation of entrepreneurial talent lower productivity?"
+   },
+   "a": {
+    "es": "Butler, Galassi y Ruffo, siguiendo a Hopenhayn, explican que costos de entrada, restricciones financieras, costo de oportunidad y falta de habilidades impiden que personas capaces creen firmas, y hacen que se creen pocas y peores.",
+    "en": "Butler, Galassi and Ruffo, following Hopenhayn, explain that entry costs, financial constraints, opportunity costs and missing skills keep able people from creating firms, and lead to few and worse firms."
+   },
+   "id": "fisc-gasto-02-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se evalúa un programa que selecciona por puntaje?",
+    "en": "How is a program that selects by score evaluated?"
+   },
+   "a": {
+    "es": "Butler, Galassi y Ruffo usan una regresión discontinua: comparan proyectos a ambos lados del corte de 55 puntos controlando por el puntaje, con polinomios globales y regresiones lineales locales.",
+    "en": "Butler, Galassi and Ruffo use a regression discontinuity: they compare projects on both sides of the 55-point cutoff controlling for the score, with global polynomials and local linear regressions."
+   },
+   "id": "fisc-gasto-02-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Cuánto cambia la supervivencia de una startup con apoyo público?",
+    "en": "How much does public support change a startup's survival?"
+   },
+   "a": {
+    "es": "Para Buenos Aires Emprende, Butler, Galassi y Ruffo estiman que el riesgo de cierre de los beneficiarios es una décima parte y que la supervivencia a 24 meses pasa de 43% a 92%.",
+    "en": "For Buenos Aires Emprende, Butler, Galassi and Ruffo estimate beneficiaries' closing hazard at one tenth and survival at 24 months rising from 43% to 92%."
+   },
+   "id": "fisc-gasto-02-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué un aporte no reembolsable puede destrabar la creación de empresas innovadoras?",
+    "en": "Why can a non-refundable grant unlock the creation of innovative firms?"
+   },
+   "a": {
+    "es": "Según Butler, Galassi y Ruffo, alivia restricciones de liquidez (solo 45% de los proyectos tenía otro financiamiento, sobre todo de familia y amigos) y baja el costo de oportunidad de dejar un buen salario.",
+    "en": "According to Butler, Galassi and Ruffo, it eases liquidity constraints (only 45% of projects had other financing, mostly from family and friends) and lowers the opportunity cost of leaving a good salary."
+   },
+   "id": "fisc-gasto-02-t5"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Qué rasgos de diseño evitan que un programa de emprendedorismo distorsione la asignación?",
+    "en": "Which design features keep an entrepreneurship program from distorting allocation?"
+   },
+   "a": {
+    "es": "Butler, Galassi y Ruffo destacan tres: seleccionar talento en lugar de sectores, apoyar por un tiempo limitado y combinar dinero con mentoría; así se evita «elegir ganadores y salvar perdedores».",
+    "en": "Butler, Galassi and Ruffo highlight three: selecting talent rather than sectors, supporting for a limited time and combining money with mentoring; this avoids 'picking winners and saving losers'."
+   },
+   "id": "fisc-gasto-02-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límites tiene el cálculo de costo por empleo de un programa de startups?",
+    "en": "What are the limits of a startup program's cost-per-job figure?"
+   },
+   "a": {
+    "es": "Butler, Galassi y Ruffo reconocen que su cifra de menos de US$ 4.000 por empleo omite costos administrativos y supone que no hay desplazamiento de otras firmas, algo razonable solo por la escala chica del programa.",
+    "en": "Butler, Galassi and Ruffo acknowledge that their figure of under US$ 4,000 per job omits administrative costs and assumes no displacement of other firms, reasonable only given the program's small scale."
+   },
+   "id": "fisc-gasto-02-t7"
+  }
+ ]
+}
