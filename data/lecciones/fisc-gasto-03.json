@@ -1,0 +1,460 @@
+{
+ "id": "fisc-gasto-03",
+ "cat": "fisc-gasto",
+ "orden": 1,
+ "minutos": 15,
+ "titulo": "¿Estabiliza el gasto social en América Latina? La prociclicidad medida por Ruiz del Castillo",
+ "bajada": "Con datos de la CEPAL por finalidad y función, el gasto social de la región resulta más procíclico que el gasto total: elasticidad de 1,43 contra 0,87 respecto del PIB. El autor repasa por qué pasa y qué diseño de redes de protección podría convertirlas en estabilizadores automáticos.",
+ "fuentes": [
+  1160
+ ],
+ "cita": "R. Ruiz del Castillo (2010), «Sobre la evolución del gasto público social en América Latina y su papel para la estabilización económica», CEPAL, Serie Macroeconomía del desarrollo n.º 102, Santiago de Chile, abril de 2010",
+ "intro": "Entre 2003 y 2008 América Latina creció cerca de 5% por año, con superávits externos y fiscales casi sin precedentes, y aun así siguió teniendo un producto muy volátil. Esa volatilidad castiga más a los pobres, que tienen empleos informales, poco acceso al crédito y pocos activos para suavizar el consumo, y que en una crisis pierden educación, salud y nutrición con efectos de largo plazo. La recomendación básica de la política fiscal es moderar el gasto en las expansiones y sostenerlo en las recesiones. Ramiro Ruiz del Castillo, en un documento de la CEPAL, pregunta si el gasto social de la región hace eso. Primero repasa la teoría de la estabilización fiscal (discrecional y automática), después describe la evolución del gasto entre 1990 y 2008 y, como aporte propio, estima con un modelo de corrección de errores la elasticidad de largo plazo de cada componente del gasto social respecto del PIB, abierto por finalidad y función. La respuesta es que no: el gasto social es más procíclico que el gasto total, y la educación lo es más que el gasto social en su conjunto. El cierre discute cómo diseñar redes de protección que funcionen como estabilizadores automáticos.",
+ "secciones": [
+  {
+   "t": "Estabilizar con el presupuesto: discrecional o automático",
+   "p": [
+    "El punto de partida es la clasificación de Musgrave: la política fiscal sirve para asignar recursos, redistribuir el ingreso y estabilizar. Algunos autores sostienen que la estabilización es una función «residual», condicionada por las decisiones sobre tamaño y estructura del gasto que se toman por las otras dos. La crisis de 2008-2009, en la que países ricos y emergentes usaron paquetes fiscales, volvió a poner la estabilización en el centro.",
+    "El Estado estabiliza por dos vías. Como productor de bienes y servicios, si su consumo e inversión hacen que la demanda nacional fluctúe menos que la privada. Como redistribuidor, si impuestos y transferencias hacen que el ingreso disponible privado fluctúe menos que el ingreso nacional. Y puede hacerlo con medidas discrecionales o dejando operar los estabilizadores automáticos: impuestos a la renta, IVA, impuesto a las ganancias de las empresas y transferencias por desempleo, que responden al ciclo sin que nadie decida nada.",
+    "Sobre la efectividad, el autor recorre el debate conocido. En la visión keynesiana el multiplicador es mayor que uno; el desplazamiento de demanda privada por tasas y tipo de cambio lo achica, y en Mundell-Fleming con tipo de cambio flexible y movilidad perfecta de capitales el desplazamiento es completo, mientras que con tipo de cambio fijo la expansión fiscal es más efectiva. La equivalencia ricardiana la vuelve inefectiva si el déficit anticipa impuestos futuros. A esto suma que en países de menores ingresos la propensión a consumir es más alta (multiplicador mayor) y que, pasado cierto nivel de deuda, la expansión puede ser contractiva por la prima de riesgo.",
+    "La política discrecional tiene rezagos de diseño, aprobación y ejecución, sobre todo en compras e inversión, por eso los cambios en impuestos y transferencias serían más efectivos; además, con tipo de cambio fijo y sin acceso al crédito puede verse forzada a ajustar, y deja margen a gobiernos de «vista corta». Blinder (2006) y Taylor (2000) le reservan un lugar en recesiones largas o con tasas cercanas a cero. Los estabilizadores automáticos no tienen esos rezagos, son previsibles y funcionan mejor cuanto más grande es el sector público. Pero el texto enumera por qué pueden no funcionar: dependen de la respuesta del consumo, pueden operar más en las caídas que en los auges, son débiles con baja presión tributaria y poco peso del impuesto a la renta (el caso latinoamericano), casi no hay seguros de desempleo grandes en países en desarrollo, otros gastos procíclicos pueden anularlos y no sirven ante shocks de oferta."
+   ]
+  },
+  {
+   "t": "Las finanzas públicas de la región, 1990-2008",
+   "p": [
+    "La región pasó de déficits globales persistentes desde comienzos de los noventa a superávits primarios desde 2004 y globales en los años siguientes. La crisis cortó la racha: el resultado global pasó de un superávit de 0,3% del PIB en 2007 a un déficit de 0,4% en 2008, golpeando sobre todo a los exportadores de productos básicos. La deuda del gobierno central, que había superado el 50% del PIB a comienzos de los noventa y casi llegó a 60% en 2002, quedó en torno al 30%.",
+    "La recaudación promedio subió de 15,6% del PIB en 1990-1995 a 16,3% en 1996-2000, 17,4% en 2001-2005 y 20% en 2006-2007, empujada por el IVA (que reemplazó a los impuestos al comercio exterior), en menor medida por el impuesto a la renta y, hasta 2008, por los ingresos de productos básicos.",
+    "El gasto del gobierno central creció desde comienzos de los 2000 hasta quedar en 2008 casi 5 puntos del PIB por encima del promedio de los noventa (34,2% más que en 1990). El gasto de capital fue mayor en los 2000 que en los noventa (3,2% contra 2,8% del PIB), pero la inversión física no creció: promedió 2% del PIB en cada década. El gasto corriente subió 2 puntos (15,5% contra 13,5% del PIB en 2000-2007), por salarios (de 4,2% a 4,7%), intereses (de 2,2% a 2,4%, pese a la mejora fiscal) y sobre todo transferencias (de 5% a 6,3%).",
+    "El gasto social pasó de 9,7% a 12,6% del PIB entre 1990 y 2007, un aumento de poco más de 32%, con casos como Brasil (de casi 11% a 15%) o México (de 6% a 11%). Por componente, lo que más creció fue educación (37% en promedio); vivienda y otros, que incluye la asistencia focalizada y ronda el 1% del PIB, subió 29%; seguridad social, 25%; y salud apenas 11%."
+   ]
+  },
+  {
+   "t": "Lo que ya decía la literatura",
+   "p": [
+    "Desde Gavin y Perotti (1997) la conclusión es casi unánime: en la región el consumo del gobierno cae y los impuestos suben en las recesiones, al revés que en la OCDE. Perry y otros (2008) encuentran que la política discrecional fue procíclica y que no hubo ajustes cuando subía la deuda, y que los estabilizadores automáticos son más débiles que en los países industrializados por el menor tamaño del sector público y el bajo peso del impuesto a la renta. Bello y Jiménez (2008), con datos trimestrales de 1990-2006 para nueve países, encuentran política procíclica en Argentina, Bolivia, Colombia, México, Perú, Uruguay y Venezuela, y acíclica en Chile y Brasil: en ningún caso contracíclica.",
+    "Para el gasto social, Aldunate y Martner (2006) encuentran alta prociclicidad, mayor donde el gasto social de partida era bajo. Hicks y Wodon (2001) describen gobiernos «pro pobres pero cortos de vista»: el gasto social crece rápido en las expansiones, pero el gasto focalizado por pobre cae el doble que el producto en las recesiones. Braun y Di Gresia (2003), en cambio, encuentran que el gasto social es menos procíclico que el total. Lo que faltaba, dice el autor, era abrir el gasto social por finalidad y función."
+   ]
+  },
+  {
+   "t": "El modelo: una elasticidad de largo plazo",
+   "eq": [
+    "G = A\\,Y^{\\delta}, \\qquad g = a + \\delta\\, y",
+    "g_{it} = \\mu + \\alpha\\, g_{i,t-1} + \\beta_0\\, y_{it} + \\beta_1\\, y_{i,t-1} + \\varepsilon_t, \\qquad \\delta = \\frac{\\beta_0 + \\beta_1}{1 - \\alpha}",
+    "\\Delta g_{it} = \\mu + \\beta_0\\, \\Delta y_{it} + \\gamma\\left[g_{i,t-1} - \\delta\\, y_{t-1}\\right] + \\varepsilon_t, \\qquad \\gamma = \\alpha - 1"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G\\): gasto público en términos reales (en el trabajo, dólares constantes de 2000); \\(g\\): su logaritmo.",
+      "en": "\\(G\\): real public spending (in the paper, constant 2000 US dollars); \\(g\\): its logarithm."
+     },
+     {
+      "es": "\\(Y\\): nivel de actividad real (PIB); \\(y\\): su logaritmo.",
+      "en": "\\(Y\\): real activity level (GDP); \\(y\\): its logarithm."
+     },
+     {
+      "es": "\\(\\delta\\): elasticidad constante de largo plazo del gasto respecto del producto. Si es positiva, el gasto sube con el ingreso; si es mayor que 1, sube más rápido que el ingreso (el autor lo vincula con la ley de Wagner).",
+      "en": "\\(\\delta\\): constant long-run elasticity of spending with respect to output. If positive, spending rises with income; if above 1, it rises faster than income (the author links this to Wagner's law)."
+     },
+     {
+      "es": "\\(A\\): constante de escala de la relación de equilibrio; \\(a\\): su logaritmo.",
+      "en": "\\(A\\): scale constant of the equilibrium relation; \\(a\\): its logarithm."
+     }
+    ],
+    [
+     {
+      "es": "\\(g_{it}\\): logaritmo del gasto de la categoría \\(i\\) (gasto total, social, educación, salud, seguridad social, vivienda y otros) en el año \\(t\\); \\(g_{i,t-1}\\): el del año anterior.",
+      "en": "\\(g_{it}\\): log of spending in category \\(i\\) (total, social, education, health, social security, housing and other) in year \\(t\\); \\(g_{i,t-1}\\): the previous year's."
+     },
+     {
+      "es": "\\(y_{it}\\), \\(y_{i,t-1}\\): logaritmo del PIB en \\(t\\) y en \\(t-1\\).",
+      "en": "\\(y_{it}\\), \\(y_{i,t-1}\\): log of GDP in \\(t\\) and \\(t-1\\)."
+     },
+     {
+      "es": "\\(\\mu\\): constante; \\(\\alpha\\): persistencia del gasto (peso del gasto pasado); \\(\\beta_0\\): respuesta del gasto al PIB del mismo año; \\(\\beta_1\\): respuesta al PIB del año anterior; \\(\\varepsilon_t\\): error.",
+      "en": "\\(\\mu\\): constant; \\(\\alpha\\): spending persistence (weight of past spending); \\(\\beta_0\\): response of spending to same-year GDP; \\(\\beta_1\\): response to previous-year GDP; \\(\\varepsilon_t\\): error."
+     },
+     {
+      "es": "\\(\\delta = (\\beta_0+\\beta_1)/(1-\\alpha)\\): la elasticidad de largo plazo que surge de resolver la ecuación en el estado estacionario, cuando gasto y producto ya no cambian.",
+      "en": "\\(\\delta = (\\beta_0+\\beta_1)/(1-\\alpha)\\): the long-run elasticity obtained by solving the equation at the steady state, when spending and output no longer change."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\Delta\\): variación entre un año y el anterior; \\(\\Delta g_{it}\\) y \\(\\Delta y_{it}\\) son, aproximadamente, las tasas de crecimiento del gasto y del PIB.",
+      "en": "\\(\\Delta\\): change from one year to the next; \\(\\Delta g_{it}\\) and \\(\\Delta y_{it}\\) are approximately the growth rates of spending and GDP."
+     },
+     {
+      "es": "\\(\\beta_0\\): elasticidad de corto plazo del gasto al producto (cuánto reacciona el gasto en el año al crecimiento del PIB).",
+      "en": "\\(\\beta_0\\): short-run elasticity of spending to output (how much spending reacts within the year to GDP growth)."
+     },
+     {
+      "es": "\\(g_{i,t-1} - \\delta y_{t-1}\\): desvío del gasto respecto de su equilibrio de largo plazo el año anterior (término de corrección de errores).",
+      "en": "\\(g_{i,t-1} - \\delta y_{t-1}\\): deviation of spending from its long-run equilibrium in the previous year (error-correction term)."
+     },
+     {
+      "es": "\\(\\gamma = \\alpha - 1\\): velocidad a la que el gasto corrige los desequilibrios pasados; es negativa si el gasto vuelve a su equilibrio.",
+      "en": "\\(\\gamma = \\alpha - 1\\): speed at which spending corrects past disequilibria; it is negative if spending returns to equilibrium."
+     },
+     {
+      "es": "\\(\\mu\\), \\(\\delta\\), \\(\\varepsilon_t\\): constante, elasticidad de largo plazo y error, como antes.",
+      "en": "\\(\\mu\\), \\(\\delta\\), \\(\\varepsilon_t\\): constant, long-run elasticity and error, as before."
+     }
+    ]
+   ],
+   "p": [
+    "El autor sigue la metodología de Akitoby, Clements y otros (2006). Supone una relación de equilibrio de largo plazo entre gasto y producto con elasticidad constante. Si el gasto se ajusta de a poco a ese equilibrio, responde a los cambios transitorios del producto y se mueve gradualmente hacia él, lo que se modela con un rezago distribuido autorregresivo: el gasto de hoy depende del de ayer y del PIB de hoy y de ayer.",
+    "Reordenada, la ecuación queda como un modelo de corrección de errores. El coeficiente sobre el crecimiento del PIB mide la reacción de corto plazo; el término entre corchetes recoge cuánto se había apartado el gasto de su nivel de equilibrio, y su coeficiente, la velocidad de corrección. Para estimar, el autor escribe ese término con dos coeficientes separados, uno para el gasto rezagado y otro para el PIB rezagado, y recupera la elasticidad de largo plazo como cociente entre ambos.",
+    "La lectura de la elasticidad es directa para la pregunta del trabajo: una elasticidad mayor que 1 significa que un componente del gasto sube (y cae) proporcionalmente más que el PIB; una cercana a cero, que es acíclico; una negativa, que va contra el ciclo."
+   ]
+  },
+  {
+   "t": "Estimación y resultados: el gasto social amplifica el ciclo",
+   "p": [
+    "Los datos son series anuales de la División de Desarrollo Social de la CEPAL, por finalidad y función, desde 1980 hasta 2006 para algunos países y desde 1990 para otros, en dólares de 2000. Como gasto y PIB no son estacionarios, una regresión en niveles podría ser espuria. El test de Dickey-Fuller ampliado indica que los logaritmos son integrados de orden uno (estacionarios en diferencias), y los tests de Bartlett y de Portmanteau coinciden. Luego se estima el modelo de corrección de errores para cada país y componente, y solo se reportan las elasticidades cuando los coeficientes son significativos. Como chequeo, el test de causalidad de Granger (vía test de Wald) no objeta los resultados.",
+    "Para el agregado de América Latina y el Caribe, el cuadro da una elasticidad de 0,8733 para el gasto total, 1,4341 para el gasto social, 1,7675 para educación y 1,2800 para salud. Las conclusiones del autor son tres. Primero, tanto el gasto total como el social son procíclicos en la región y en la mayoría de los países, en línea con la literatura. Segundo, el gasto social es más procíclico que el gasto total, lo contrario de lo deseable. Tercero, por componente, el más procíclico es vivienda y otros, la seguridad social lo es mucho en varios países, la educación lo es más que el gasto social en su conjunto y la salud también es procíclica.",
+    "Por país hay mucha dispersión y muchas celdas vacías. Paraguay, por ejemplo, muestra elasticidades de 2,9133 para el gasto total y 3,0383 para el social; Chile, de 0,6611 y 0,7606, con educación en 1,2112. Aparecen también valores negativos y valores extremos en vivienda y seguridad social, como 7,4837 para la seguridad social en México o -6,1470 en El Salvador."
+   ]
+  },
+  {
+   "t": "Por qué el gasto es procíclico",
+   "p": [
+    "El autor agrupa las explicaciones en cuatro. Instrumentos débiles: los ingresos siguen al ciclo, más en los países que dependen de recursos primarios de precio volátil, y es difícil saber en qué parte del ciclo está la economía, porque las brechas de producto son sensibles a los datos y a sus revisiones, lo que lleva a errores sistemáticos. Economía política: el «efecto voracidad» de Tornell y Lane (1999), por el que los ingresos extraordinarios desatan una pelea por apropiárselos, y la debilidad institucional que señalan Talvi y Végh (2005); además, es fácil contratar y subir sueldos públicos en una recesión, y muy difícil bajarlos en un auge.",
+    "Financiamiento: en la región las recesiones vienen con menor acceso a los mercados, justo cuando más se necesita, y la deuda en moneda extranjera y de corto plazo lo empeora. Con mercados de capital incompletos, si el gobierno solo puede emitir deuda no contingente, la política óptima termina siendo procíclica. Para el gasto social en particular, el autor agrega dos causas empíricas: el peso de los salarios en educación y salud (y salarios públicos procíclicos, como muestran Bello y Jiménez) y el peso del gasto previsional, cuyo financiamiento con contribuciones e impuestos sigue al ciclo. La prociclicidad de vivienda, que es obra pública, sugiere que ese gasto no se comportó de manera «keynesiana» y respalda las dudas sobre los rezagos del gasto discrecional."
+   ]
+  },
+  {
+   "t": "Redes de protección como estabilizadores automáticos",
+   "p": [
+    "¿Cómo debería comportarse cada componente? El gasto debería ser acíclico o contracíclico. Educación y salud, universales e intensivas en salarios, tienden a subir en los auges, pero al menos no deberían caer en las recesiones, cuando más familias pierden acceso a servicios privados o a la cobertura del empleo formal. Aun así no son estabilizadores automáticos: su papel estabilizador, si lo tienen, es discrecional. La vivienda, focalizada pero en especie, tampoco sirve: aunque la demanda de viviendas subsidiadas suba en una recesión, el presupuesto y la oferta tardan mucho en responder.",
+    "Donde sí ve potencial es en las redes de protección focalizadas que atienden perturbaciones transitorias. Siguiendo a Hicks y Wodon (2001), deberían tener cobertura suficiente, buena focalización con reglas claras de entrada y salida, instituciones establecidas, más financiamiento en las crisis (idealmente automático, con disparadores como el desempleo o la pobreza), entrega rápida, complementar y no reemplazar la protección privada, y reducirse cuando pasa la crisis. Los candidatos son el empleo de emergencia en obras intensivas en mano de obra, los fondos sociales locales, la asistencia alimentaria focalizada y las transferencias condicionadas. Con reglas así, en una recesión más personas califican y el gasto sube, y cuando la economía mejora el gasto baja solo.",
+    "Las propuestas generales incluyen agrandar los estabilizadores (seguro de desempleo, más impuesto a la renta personal), deuda en moneda local o indexada al PIB y ahorro en los buenos tiempos con reglas fiscales. Pero una regla de balance fijo es procíclica (en un auge manda gastar el 100% del ingreso extra), igual que atar el gasto al PIB o fijar pisos de gasto social como porcentaje del PIB, que caen cuando cae el producto; por eso las reglas deberían fijarse sobre resultados estructurales. El autor propone disparadores de cobertura, una especie de regla de Taylor para las transferencias, y advierte sus costos: menos margen discrecional, riesgo de que los gastos crezcan sin freno si hay indexación, déficits que «explotan» en recesiones profundas con estados de bienestar generosos (Lindbeck, 1997) y programas que, al volverse permanentes para beneficiarios «inempleables», dejan de achicarse después de la crisis. También recuerda que estos programas son chicos en relación con el PIB, así que su efecto estabilizador es real pero menor que el de los grandes seguros de desempleo europeos."
+   ]
+  },
+  {
+   "t": "Lectura propia: qué tan firme es la evidencia",
+   "p": [
+    "Lectura propia: el diagnóstico es valioso porque baja al detalle por finalidad, pero la evidencia econométrica es frágil. Las elasticidades salen de series anuales cortas (a veces desde 1990), país por país, sin errores estándar en el cuadro y reportando solo los valores significativos, lo que sesga la imagen hacia resultados fuertes. Hay valores implausibles (elasticidades de 7 o de -6) y la fila de Argentina es idéntica a la del agregado regional, lo que sugiere un error de armado del cuadro. En la ecuación reparametrizada el texto define el coeficiente del PIB rezagado como el producto de la velocidad de ajuste por la elasticidad; con el término de corrección escrito como está, ese coeficiente es el producto con signo negativo, y la elasticidad se recupera como menos el cociente. Por último, una elasticidad de largo plazo mayor que 1 indica que el gasto crece más que el PIB en el largo plazo (algo compatible con la ley de Wagner y con la expansión del gasto social en la región); para hablar de prociclicidad en sentido estricto haría falta mirar la respuesta de corto plazo o los componentes cíclicos, como hacen Bello y Jiménez. Las recomendaciones sobre redes de protección, en cambio, se sostienen bien por sí mismas."
+   ]
+  }
+ ],
+ "claves": [
+  "La política fiscal estabiliza como productora (demanda pública menos volátil que la privada) y como redistribuidora (ingreso disponible menos volátil que el nacional), por vía discrecional o por estabilizadores automáticos.",
+  "En América Latina los estabilizadores automáticos son débiles: sector público chico, poco impuesto a la renta y casi sin seguros de desempleo.",
+  "El gasto social de la región subió de 9,7% a 12,6% del PIB entre 1990 y 2007; lo que más creció fue educación y lo que menos, salud.",
+  "Con un modelo de corrección de errores sobre datos de la CEPAL, la elasticidad regional respecto del PIB es 0,87 para el gasto total y 1,43 para el social: el gasto social es más procíclico.",
+  "Educación (1,77) resulta más procíclica que el gasto social en su conjunto; vivienda y otros es el componente más procíclico.",
+  "Las causas: ingresos volátiles, dificultad para medir el ciclo, presiones políticas, falta de crédito en las recesiones y rigidez de salarios y jubilaciones.",
+  "Las redes de protección focalizadas, con reglas de entrada y salida y disparadores automáticos, podrían funcionar como estabilizadores, aunque son chicas respecto del PIB."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Ruiz del Castillo, ¿cuándo estabiliza la política fiscal en su rol de redistribuidora?",
+    "en": "According to Ruiz del Castillo, when does fiscal policy stabilize in its redistributive role?"
+   },
+   "op": {
+    "es": [
+     "Cuando el ingreso disponible privado fluctúa menos que el ingreso nacional a lo largo del ciclo",
+     "Cuando el gasto público crece al mismo ritmo que el PIB",
+     "Cuando el resultado fiscal global se mantiene constante",
+     "Cuando la recaudación del IVA aumenta en las recesiones"
+    ],
+    "en": [
+     "When private disposable income fluctuates less than national income over the cycle",
+     "When public spending grows at the same pace as GDP",
+     "When the overall fiscal balance stays constant",
+     "When VAT revenue rises in recessions"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Por medio de impuestos y transferencias, la política fiscal estabiliza si atenúa las fluctuaciones del ingreso disponible privado respecto de las del ingreso nacional.",
+    "en": "Through taxes and transfers, fiscal policy stabilizes if it dampens fluctuations in private disposable income relative to national income."
+   },
+   "id": "fisc-gasto-03-q1"
+  },
+  {
+   "q": {
+    "es": "¿Por qué los estabilizadores automáticos son más débiles en América Latina que en los países industrializados?",
+    "en": "Why are automatic stabilizers weaker in Latin America than in industrialized countries?"
+   },
+   "op": {
+    "es": [
+     "Porque la región tiene tipos de cambio flexibles",
+     "Porque los bancos centrales de la región son independientes",
+     "Por el menor tamaño del sector público, el bajo peso del impuesto a la renta y la ausencia de seguros de desempleo grandes",
+     "Porque la deuda pública de la región es mayoritariamente en moneda local"
+    ],
+    "en": [
+     "Because the region has flexible exchange rates",
+     "Because the region's central banks are independent",
+     "Because of the smaller public sector, the low weight of income tax and the absence of large unemployment insurance schemes",
+     "Because the region's public debt is mostly in local currency"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "El texto señala bajas elasticidades y participaciones tributarias, poco impuesto a la renta y seguros de desempleo de escasa dimensión, todo lo cual reduce la respuesta automática del presupuesto.",
+    "en": "The text points to low tax elasticities and tax shares, little income tax and small unemployment insurance schemes, all of which reduce the automatic response of the budget."
+   },
+   "id": "fisc-gasto-03-q2"
+  },
+  {
+   "q": {
+    "es": "Entre 1990 y 2007, ¿qué componente del gasto social de la región creció más?",
+    "en": "Between 1990 and 2007, which component of the region's social spending grew the most?"
+   },
+   "op": {
+    "es": [
+     "Salud",
+     "Seguridad social",
+     "Vivienda y otros",
+     "Educación"
+    ],
+    "en": [
+     "Health",
+     "Social security",
+     "Housing and other",
+     "Education"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Educación creció 37% en promedio y fue el componente que más impulsó el aumento; vivienda subió 29%, seguridad social 25% y salud solo 11%.",
+    "en": "Education grew 37% on average and was the main driver of the increase; housing rose 29%, social security 25% and health only 11%."
+   },
+   "id": "fisc-gasto-03-q3"
+  },
+  {
+   "q": {
+    "es": "En el modelo de corrección de errores, ¿qué mide el coeficiente γ que acompaña al desvío del gasto respecto de su equilibrio?",
+    "en": "In the error-correction model, what does the coefficient γ on the deviation of spending from equilibrium measure?"
+   },
+   "op": {
+    "es": [
+     "La elasticidad de largo plazo del gasto al PIB",
+     "La velocidad a la que el gasto corrige los desequilibrios pasados",
+     "La elasticidad de corto plazo del gasto al PIB",
+     "La tasa de crecimiento tendencial del PIB"
+    ],
+    "en": [
+     "The long-run elasticity of spending to GDP",
+     "The speed at which spending corrects past disequilibria",
+     "The short-run elasticity of spending to GDP",
+     "The trend growth rate of GDP"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "γ = α − 1 es la tasa a la que el gasto se ajusta a los desvíos del año anterior respecto del equilibrio de largo plazo. Donde: α es la persistencia del gasto (peso del gasto del año anterior), β₀ la elasticidad de corto plazo del gasto al PIB y δ la de largo plazo.",
+    "en": "γ = α − 1 is the rate at which spending adjusts to the previous year's deviations from long-run equilibrium. Where: α is spending persistence (weight of last year's spending), β₀ the short-run elasticity of spending to GDP and δ the long-run one."
+   },
+   "id": "fisc-gasto-03-q4"
+  },
+  {
+   "q": {
+    "es": "¿Por qué el autor aplica primero el test de Dickey-Fuller ampliado a las series?",
+    "en": "Why does the author first apply the augmented Dickey-Fuller test to the series?"
+   },
+   "op": {
+    "es": [
+     "Para elegir los países de la muestra",
+     "Para medir la brecha de producto",
+     "Para evitar regresiones espurias con series no estacionarias",
+     "Para corregir la autocorrelación de los errores"
+    ],
+    "en": [
+     "To choose the countries in the sample",
+     "To measure the output gap",
+     "To avoid spurious regressions with non-stationary series",
+     "To correct error autocorrelation"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Gasto y PIB no son estacionarios; el test muestra que los logaritmos son integrados de orden uno, por eso el modelo trabaja con diferencias y un término de corrección de errores.",
+    "en": "Spending and GDP are non-stationary; the test shows the logs are integrated of order one, so the model works with differences and an error-correction term."
+   },
+   "id": "fisc-gasto-03-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la conclusión central del cuadro de elasticidades para el agregado regional?",
+    "en": "What is the central conclusion of the elasticity table for the regional aggregate?"
+   },
+   "op": {
+    "es": [
+     "El gasto social es más procíclico que el gasto total (1,43 contra 0,87)",
+     "El gasto social es acíclico y el gasto total, procíclico",
+     "Todos los componentes del gasto social son contracíclicos",
+     "La salud es el componente más procíclico"
+    ],
+    "en": [
+     "Social spending is more procyclical than total spending (1.43 versus 0.87)",
+     "Social spending is acyclical and total spending procyclical",
+     "All social spending components are countercyclical",
+     "Health is the most procyclical component"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "La elasticidad regional del gasto social (1,4341) supera a la del gasto total (0,8733), lo contrario del patrón deseable; el componente más procíclico es vivienda y otros.",
+    "en": "The regional elasticity of social spending (1.4341) exceeds that of total spending (0.8733), the opposite of the desirable pattern; the most procyclical component is housing and other."
+   },
+   "id": "fisc-gasto-03-q6"
+  },
+  {
+   "q": {
+    "es": "¿Por qué una regla de balance fiscal fijo no resuelve la prociclicidad, según el texto?",
+    "en": "Why does a fixed fiscal balance rule not solve procyclicality, according to the text?"
+   },
+   "op": {
+    "es": [
+     "Porque obliga a endeudarse en moneda extranjera",
+     "Porque en un auge manda gastar todo el ingreso adicional, lo que empuja más la demanda",
+     "Porque prohíbe las transferencias focalizadas",
+     "Porque solo se aplica a los gobiernos subnacionales"
+    ],
+    "en": [
+     "Because it forces borrowing in foreign currency",
+     "Because in a boom it calls for spending all the extra revenue, which pushes demand further",
+     "Because it bans targeted transfers",
+     "Because it applies only to subnational governments"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Con balance fijo, en una expansión el gasto sube con el 100% de los ingresos adicionales; por eso la literatura propone reglas sobre resultados estructurales o cíclicamente ajustados.",
+    "en": "With a fixed balance, in an expansion spending rises with 100% of the extra revenue; hence the literature proposes rules on structural or cyclically adjusted balances."
+   },
+   "id": "fisc-gasto-03-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué tipo de gasto social ve el autor como mejor candidato a estabilizador automático?",
+    "en": "Which type of social spending does the author see as the best candidate for an automatic stabilizer?"
+   },
+   "op": {
+    "es": [
+     "La vivienda social, porque su demanda sube en las recesiones",
+     "La educación básica, por su peso salarial",
+     "Las jubilaciones indexadas",
+     "Las redes de protección focalizadas con reglas de entrada y salida y disparadores automáticos"
+    ],
+    "en": [
+     "Social housing, because its demand rises in recessions",
+     "Basic education, because of its wage weight",
+     "Indexed pensions",
+     "Targeted safety nets with entry and exit rules and automatic triggers"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Si más personas califican cuando la economía cae y menos cuando se recupera, el gasto se mueve solo contra el ciclo. La vivienda en especie responde con demasiado rezago y educación y salud no son estabilizadores automáticos.",
+    "en": "If more people qualify when the economy falls and fewer when it recovers, spending moves against the cycle on its own. In-kind housing responds with too long a lag, and education and health are not automatic stabilizers."
+   },
+   "id": "fisc-gasto-03-q8"
+  }
+ ],
+ "palabras": 2429,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Ayuda el gasto social a estabilizar el ciclo en América Latina?",
+    "en": "Does social spending help stabilize the cycle in Latin America?"
+   },
+   "a": {
+    "es": "Según Ruiz del Castillo, no: el gasto social de la región es procíclico, y más que el gasto total, así que amplifica el ciclo en lugar de moderarlo.",
+    "en": "According to Ruiz del Castillo, no: the region's social spending is procyclical, more so than total spending, so it amplifies the cycle rather than dampening it."
+   },
+   "id": "fisc-gasto-03-t1"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué distingue a un estabilizador automático de una medida fiscal discrecional?",
+    "en": "What distinguishes an automatic stabilizer from a discretionary fiscal measure?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo explica que el estabilizador responde al ciclo sin decisión explícita del gobierno (impuesto a la renta, IVA, seguro de desempleo), sin rezagos de implementación y de manera previsible; la medida discrecional requiere decidir, aprobar y ejecutar.",
+    "en": "Ruiz del Castillo explains that a stabilizer responds to the cycle without an explicit government decision (income tax, VAT, unemployment insurance), with no implementation lags and predictably; a discretionary measure must be decided, approved and executed."
+   },
+   "id": "fisc-gasto-03-t2"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se estima la elasticidad de largo plazo del gasto respecto del PIB con series no estacionarias?",
+    "en": "How is the long-run elasticity of spending to GDP estimated with non-stationary series?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo, siguiendo a Akitoby y Clements, verifica con Dickey-Fuller que las series son I(1) y estima un modelo de corrección de errores: el crecimiento del gasto depende del crecimiento del PIB y del desvío del año anterior respecto del equilibrio de largo plazo.",
+    "en": "Ruiz del Castillo, following Akitoby and Clements, checks with Dickey-Fuller that the series are I(1) and estimates an error-correction model: spending growth depends on GDP growth and on last year's deviation from long-run equilibrium."
+   },
+   "id": "fisc-gasto-03-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué componente del gasto social latinoamericano resulta más procíclico?",
+    "en": "Which component of Latin American social spending is most procyclical?"
+   },
+   "a": {
+    "es": "Para Ruiz del Castillo es vivienda y otros; la seguridad social es muy procíclica en varios países y la educación (elasticidad regional de 1,77) lo es más que el gasto social en su conjunto.",
+    "en": "For Ruiz del Castillo it is housing and other; social security is highly procyclical in several countries, and education (regional elasticity of 1.77) more so than social spending as a whole."
+   },
+   "id": "fisc-gasto-03-t4"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el gasto en educación y salud tiende a ser procíclico?",
+    "en": "Why does spending on education and health tend to be procyclical?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo lo atribuye al peso de los salarios en esos rubros y a que los salarios públicos son procíclicos: es fácil subirlos en los auges y políticamente muy difícil bajarlos.",
+    "en": "Ruiz del Castillo attributes it to the weight of wages in those items and to procyclical public wages: they are easy to raise in booms and politically very hard to cut."
+   },
+   "id": "fisc-gasto-03-t5"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué la falta de crédito en las recesiones vuelve procíclica la política fiscal?",
+    "en": "Why does lack of credit in recessions make fiscal policy procyclical?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo explica que en la región las caídas del producto vienen con menor acceso a los mercados, y si el gobierno solo puede emitir deuda no contingente (y en moneda extranjera y de corto plazo), la política óptima termina siendo procíclica.",
+    "en": "Ruiz del Castillo explains that in the region output falls come with reduced market access, and if the government can only issue non-contingent debt (in foreign currency and short-term), optimal policy ends up procyclical."
+   },
+   "id": "fisc-gasto-03-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Cómo podría una transferencia condicionada funcionar como estabilizador automático?",
+    "en": "How could a conditional transfer work as an automatic stabilizer?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo propone que su cobertura suba sola cuando indicadores como el desempleo o la brecha de pobreza superan un disparador, y baje cuando la economía mejora, como una regla de Taylor para el gasto social.",
+    "en": "Ruiz del Castillo proposes that its coverage rise automatically when indicators such as unemployment or the poverty gap exceed a trigger, and fall when the economy improves, like a Taylor rule for social spending."
+   },
+   "id": "fisc-gasto-03-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué límites tienen las redes de protección como estabilizadores?",
+    "en": "What limits do safety nets have as stabilizers?"
+   },
+   "a": {
+    "es": "Ruiz del Castillo advierte que son chicas en relación con el PIB, que la indexación puede hacer crecer el gasto sin freno y que, si atienden a beneficiarios permanentes, no se achican cuando pasa la crisis.",
+    "en": "Ruiz del Castillo warns that they are small relative to GDP, that indexation can make spending grow unchecked, and that if they serve permanent beneficiaries they do not shrink once the crisis passes."
+   },
+   "id": "fisc-gasto-03-t8"
+  }
+ ]
+}

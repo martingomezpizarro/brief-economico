@@ -1,0 +1,518 @@
+{
+ "id": "fisc-gasto-04",
+ "cat": "fisc-gasto",
+ "orden": 4,
+ "minutos": 15,
+ "titulo": "¿Quién se queda con la rebaja de impuestos de los mini-jobs? La reforma alemana según Galassi",
+ "bajada": "La reforma de 2003 abarató el trabajo de bajos ingresos en Alemania. Los mini-jobbers terminaron trabajando 10% menos horas sin mejorar su salario neto por hora, lo que sugiere que la rebaja quedó en las empresas. A los desocupados e inactivos, en cambio, un año en un mini-job les subió 12 puntos la probabilidad de pasar a un empleo regular.",
+ "fuentes": [
+  1141
+ ],
+ "cita": "G. Galassi (2018), «The German Mini-Job reform: Intended and unintended consequences for low-earning workers», documento de trabajo, European University Institute e IZA, 12 de abril de 2018",
+ "intro": "Las políticas de «welfare-to-work» quieren ayudar a los pobres y al mismo tiempo empujarlos a trabajar: dan beneficios condicionados a tener empleo. En abril de 2003 Alemania amplió las exenciones de contribuciones a la seguridad social e impuesto a la renta para los empleos de bajos ingresos, los mini-jobs (hasta 400 euros brutos por mes) y los nuevos midi-jobs (hasta 800). La literatura se ocupó del efecto sobre el empleo. Gabriela Galassi mira dos efectos no buscados. Uno: si los trabajadores pagan menos impuestos, ¿cobran más en mano, o la rebaja la captura la empresa? Dos: un mini-job, ¿es un trampolín hacia un empleo mejor o un callejón sin salida? Con el panel socioeconómico alemán (SOEP) de 2000 a 2007 estima modelos de efectos fijos y compara de dos maneras: grupos a los que suelen apuntar estas políticas contra los demás, y mini y midi-jobbers contra trabajadores parecidos elegidos por emparejamiento. La conclusión tiene dos caras: como política contra la pobreza la reforma no funcionó, pero como puente al empleo para quienes no trabajaban, sí.",
+ "secciones": [
+  {
+   "t": "La reforma Hartz II y la explosión de los mini-jobs",
+   "p": [
+    "La reforma de los mini-jobs fue parte del paquete Hartz, aplicado de a poco entre 2003 y 2005 para subir la participación laboral. Antes de 2003 los mini-jobs existían pero estaban limitados a 15 horas semanales y 325 euros brutos por mes, y debían ser la única fuente de ingreso: el trabajador no pagaba contribuciones ni impuesto a la renta, y el empleador pagaba 22% sobre el salario bruto. Por encima del umbral se aplicaban las contribuciones normales (21% para trabajador y empleador) más el impuesto a la renta.",
+    "La reforma subió el tope a 400 euros, eliminó el límite de horas y llevó la contribución del empleador a 25%. Creó además los midi-jobs, entre 400 y 800 euros, donde la contribución del trabajador sube linealmente y la del empleador es la normal. Los empleos secundarios también podían calificar. Según las estadísticas oficiales, los mini-jobs pasaron de unos 4 millones en 2003 a más de 7 millones en 2007; con los midi-jobs suman 8,5 millones, 25% del empleo privado. Los mini-jobbers tienen seguro de salud y vacaciones pagas, pero no aportes jubilatorios.",
+    "El diseño moldea la distribución de ingresos: hay una gran acumulación de trabajadores justo en el tope mensual, que se mueve de 325 a 400 euros con la reforma. En 2005 un mini-job principal tenía en promedio 14 horas semanales, similar al part-time regular (13), pero un salario neto por hora de 10 euros contra 19. Mini y midi-jobs absorbieron dos tercios de quienes estaban inactivos o desocupados antes de la reforma. Y la salida de los mini-jobs hacia empleos mejor pagos cayó de 33% a 21%, mientras la permanencia en ellos subió de 48% a 63%."
+   ]
+  },
+  {
+   "t": "La teoría: incidencia del impuesto entre dos sectores",
+   "eq": [
+    "w_j = W_j\\,(1-\\tau_j), \\qquad (1+s) \\equiv \\frac{1-\\tau_1}{1-\\tau_2}, \\qquad \\hat W_1 = \\hat w_1 - \\hat s",
+    "\\hat N_1 - \\hat N_2 = \\sigma\\,(\\hat W_2 - \\hat W_1), \\qquad \\hat N_j = \\gamma\\, \\hat w_j",
+    "\\frac{\\hat w_1 - \\hat w_2}{\\hat s} = \\frac{\\sigma}{\\gamma+\\sigma}, \\qquad \\frac{\\hat W_1 - \\hat W_2}{\\hat s} = -\\frac{\\gamma}{\\gamma+\\sigma}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(j\\): sector del mercado de trabajo; \\(j=1\\) es el de bajos ingresos (mini y midi-jobs) y \\(j=2\\) el empleo regular.",
+      "en": "\\(j\\): labor market sector; \\(j=1\\) is the low-earnings sector (mini and midi-jobs) and \\(j=2\\) regular employment."
+     },
+     {
+      "es": "\\(w_j\\): salario neto que se lleva el trabajador; \\(W_j\\): costo laboral que paga la empresa.",
+      "en": "\\(w_j\\): net take-home wage of the worker; \\(W_j\\): labor cost paid by the firm."
+     },
+     {
+      "es": "\\(\\tau_j\\): cuña tributaria del sector (contribuciones e impuesto a la renta de empleador y trabajador), con \\(\\tau_1 < \\tau_2\\).",
+      "en": "\\(\\tau_j\\): sector tax wedge (employer and employee contributions and income tax), with \\(\\tau_1 < \\tau_2\\)."
+     },
+     {
+      "es": "\\(s\\): subsidio implícito que surge de la diferencia de cuñas entre sectores.",
+      "en": "\\(s\\): implicit subsidy arising from the difference in wedges between sectors."
+     },
+     {
+      "es": "El sombrero (\\(\\hat{\\ }\\)) indica cambio porcentual: \\(\\hat W_1 = dW_1/W_1\\), \\(\\hat w_1 = dw_1/w_1\\), \\(\\hat s = ds/(1+s)\\).",
+      "en": "The hat (\\(\\hat{\\ }\\)) denotes percentage change: \\(\\hat W_1 = dW_1/W_1\\), \\(\\hat w_1 = dw_1/w_1\\), \\(\\hat s = ds/(1+s)\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(N_j\\): cantidad de trabajo del sector \\(j\\); \\(\\hat N_j\\): su cambio porcentual.",
+      "en": "\\(N_j\\): amount of labor in sector \\(j\\); \\(\\hat N_j\\): its percentage change."
+     },
+     {
+      "es": "\\(\\sigma\\): elasticidad de sustitución en la producción entre trabajo de bajos ingresos y trabajo regular (positiva si son sustitutos).",
+      "en": "\\(\\sigma\\): elasticity of substitution in production between low-earnings and regular labor (positive if they are substitutes)."
+     },
+     {
+      "es": "\\(\\gamma\\): elasticidad (constante) de la oferta de trabajo respecto del salario neto, que se supone no negativa.",
+      "en": "\\(\\gamma\\): (constant) elasticity of labor supply with respect to the net wage, assumed non-negative."
+     },
+     {
+      "es": "\\(\\hat W_j\\), \\(\\hat w_j\\): cambios porcentuales del costo laboral y del salario neto, como antes.",
+      "en": "\\(\\hat W_j\\), \\(\\hat w_j\\): percentage changes in labor cost and net wage, as before."
+     }
+    ],
+    [
+     {
+      "es": "\\((\\hat w_1 - \\hat w_2)/\\hat s\\): cuánto crece el salario neto del sector subsidiado respecto del regular por cada punto de subsidio; es la parte de la rebaja que captura el trabajador.",
+      "en": "\\((\\hat w_1 - \\hat w_2)/\\hat s\\): how much the net wage in the subsidized sector grows relative to the regular one per point of subsidy; it is the share of the tax cut captured by the worker."
+     },
+     {
+      "es": "\\((\\hat W_1 - \\hat W_2)/\\hat s\\): cuánto cae el costo laboral relativo del sector subsidiado; es la parte que captura la empresa.",
+      "en": "\\((\\hat W_1 - \\hat W_2)/\\hat s\\): how much the relative labor cost of the subsidized sector falls; it is the share captured by the firm."
+     },
+     {
+      "es": "\\(\\sigma\\), \\(\\gamma\\): elasticidad de sustitución y de oferta de trabajo, como antes. Las dos fracciones suman 1 en valor absoluto: la rebaja se reparte entre trabajador y empresa.",
+      "en": "\\(\\sigma\\), \\(\\gamma\\): elasticity of substitution and of labor supply, as before. The two fractions add up to 1 in absolute value: the cut is split between worker and firm."
+     }
+    ]
+   ],
+   "p": [
+    "La intuición viene del gráfico de oferta y demanda. Bajar el impuesto en el sector de bajos ingresos achica la cuña entre lo que paga la empresa y lo que cobra el trabajador: el costo laboral baja y el salario neto sube, en proporciones que dependen de las elasticidades. Pero además los agentes reaccionan. Las empresas pueden crear más empleos baratos o reemplazar empleo regular por mini-jobs, lo que empuja la demanda y los salarios hacia arriba. Del lado de la oferta, gente que no trabajaba entra a trabajar algunas horas, y gente que ya trabajaba reduce horas para quedar dentro del régimen ventajoso: la oferta se corre hacia afuera en el sector de bajos ingresos, lo que presiona los salarios netos hacia abajo aunque se paguen menos impuestos.",
+    "Galassi formaliza con la teoría de incidencia de Fullerton y Metcalf (2002): competencia perfecta, un bien final producido con trabajo de los dos sectores con rendimientos constantes, y una oferta de trabajo que surge de una utilidad cuasilineal con elasticidad constante. Resolviendo, la fracción del subsidio que va al salario neto es la elasticidad de sustitución sobre la suma de las dos elasticidades, y la que baja el costo laboral es la elasticidad de oferta sobre esa misma suma. Cuanto más elástica la oferta de trabajo, más se queda la empresa; cuanto más sustituibles los dos tipos de trabajo, más se lleva el trabajador.",
+    "La conclusión teórica es que el efecto sobre el salario neto es ambiguo y quién se apropia de la rebaja es una pregunta empírica. Si el salario neto sube, la política sirve contra la pobreza; si solo baja el costo de la empresa, no se puede decir que los trabajadores estén mejor."
+   ]
+  },
+  {
+   "t": "Trampolín o callejón sin salida",
+   "eq": [
+    "\\alpha_E^{NM} = \\alpha_E + (1-\\alpha_E)\\,\\alpha_E = \\alpha_E\\,(2-\\alpha_E), \\qquad \\text{trampolín si } \\alpha_E^{M} \\geq \\alpha_E^{NM}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(\\alpha_E\\): probabilidad, en cada período, de que un desocupado o inactivo reciba una oferta de empleo regular (menor que 1, porque el empleo regular es más caro para la empresa).",
+      "en": "\\(\\alpha_E\\): per-period probability that an unemployed or inactive person receives a regular job offer (below 1, because regular employment is costlier for the firm)."
+     },
+     {
+      "es": "\\(\\alpha_E^{NM}\\): probabilidad de tener un empleo regular al cabo de dos períodos para quien no tomó un mini o midi-job.",
+      "en": "\\(\\alpha_E^{NM}\\): probability of holding regular employment after two periods for someone who did not take a mini or midi-job."
+     },
+     {
+      "es": "\\(\\alpha_E^{M}\\): probabilidad de pasar a un empleo regular en el segundo período para quien tuvo un mini o midi-job en el primero.",
+      "en": "\\(\\alpha_E^{M}\\): probability of moving into regular employment in the second period for someone who held a mini or midi-job in the first."
+     }
+    ]
+   ],
+   "p": [
+    "Para la segunda pregunta el modelo es un esquema de tres períodos. Todos empiezan sin trabajo y aceptan la primera oferta. En el primer período un grupo al azar recibe con seguridad una oferta de mini o midi-job; el resto recibe una oferta de empleo regular con alguna probabilidad, y si no, vuelve a intentar en el segundo período. El empleo regular es un estado absorbente.",
+    "Quien toma un mini-job puede ganar apego al mercado laboral, información, hábitos de trabajo o chances de ascenso; pero también pierde tiempo de búsqueda y puede quedar marcado por la señal de baja productividad o motivación (Moffitt, 1983). Si al final su probabilidad de llegar a un empleo regular es al menos igual a la de quien siguió buscando, el mini-job es un trampolín; si no, es un callejón sin salida."
+   ]
+  },
+  {
+   "t": "Datos y estrategia: efectos fijos y diferencias en diferencias",
+   "eq": [
+    "Y_{it} = \\alpha_i + \\lambda_t + \\delta\\, D_{it} + X_{it}'\\beta + u_{it}",
+    "Y_{it} = \\alpha_i' + \\lambda_t' + \\sum_{t=00}^{02} \\phi_t'\\, \\text{Year}_t \\times D_i + X_{it}'\\beta' + \\varepsilon_{it}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y_{it}\\): resultado del individuo \\(i\\) en el año \\(t\\) (participación, empleo, empleo regular, ingreso mensual bruto o neto, horas semanales, salario neto por hora, cambio de empleo).",
+      "en": "\\(Y_{it}\\): outcome of individual \\(i\\) in year \\(t\\) (participation, employment, regular employment, gross or net monthly earnings, weekly hours, net hourly wage, job change)."
+     },
+     {
+      "es": "\\(\\alpha_i\\): efecto fijo individual, que capta inobservables constantes como la motivación o el salario de reserva; \\(\\lambda_t\\): efecto fijo de año.",
+      "en": "\\(\\alpha_i\\): individual fixed effect, capturing constant unobservables such as motivation or reservation wage; \\(\\lambda_t\\): year fixed effect."
+     },
+     {
+      "es": "\\(D_{it}\\): tratamiento; vale 1 desde que el individuo entra a un mini o midi-job después de 2003. En la estrategia de grupos se reemplaza por \\(Z_{it}\\), que vale 1 después de la reforma para el grupo objetivo.",
+      "en": "\\(D_{it}\\): treatment; equals 1 from the individual's first entry into a mini or midi-job after 2003. In the group strategy it is replaced by \\(Z_{it}\\), equal to 1 after the reform for the target group."
+     },
+     {
+      "es": "\\(\\delta\\): efecto de interés; con \\(D_{it}\\) es el efecto promedio sobre los tratados (ATT), con \\(Z_{it}\\) es el efecto de la intención de tratar (ITT).",
+      "en": "\\(\\delta\\): effect of interest; with \\(D_{it}\\) it is the average treatment effect on the treated (ATT), with \\(Z_{it}\\) the intention-to-treat effect (ITT)."
+     },
+     {
+      "es": "\\(X_{it}\\): controles que cambian en el tiempo (este u oeste del país, estar solo, número de hijos, jefe de hogar, hogar con dos ingresos, educación); \\(\\beta\\): sus coeficientes; \\(u_{it}\\): error.",
+      "en": "\\(X_{it}\\): time-varying controls (East or West Germany, single, number of children, household head, dual-earner household, education); \\(\\beta\\): their coefficients; \\(u_{it}\\): error."
+     }
+    ],
+    [
+     {
+      "es": "\\(\\text{Year}_t\\): indicadores de los años previos a la reforma, 2000 a 2002.",
+      "en": "\\(\\text{Year}_t\\): indicators for the pre-reform years, 2000 to 2002."
+     },
+     {
+      "es": "\\(D_i\\): indicador fijo en el tiempo de pertenecer al grupo de tratamiento.",
+      "en": "\\(D_i\\): time-invariant indicator of belonging to the treatment group."
+     },
+     {
+      "es": "\\(\\phi_t'\\): diferencia de tendencia entre tratados y comparación en cada año previo; si no se rechaza que todos son cero, se aceptan tendencias paralelas.",
+      "en": "\\(\\phi_t'\\): trend difference between treated and comparison units in each pre-reform year; if it is not rejected that all are zero, parallel trends are accepted."
+     },
+     {
+      "es": "\\(\\alpha_i'\\), \\(\\lambda_t'\\), \\(X_{it}\\), \\(\\beta'\\), \\(\\varepsilon_{it}\\): efectos fijos, controles, coeficientes y error, análogos a la ecuación anterior.",
+      "en": "\\(\\alpha_i'\\), \\(\\lambda_t'\\), \\(X_{it}\\), \\(\\beta'\\), \\(\\varepsilon_{it}\\): fixed effects, controls, coefficients and error, analogous to the previous equation."
+     }
+    ]
+   ],
+   "p": [
+    "Los mini y midi-jobbers no son una muestra al azar: hay más mujeres, personas solas, no jefes de hogar, baja educación, hogares más pobres y con más hijos, y más gente que venía de recibir asistencia. Por eso Galassi usa el panel balanceado del SOEP para 2000-2007 y estima modelos de efectos fijos, que controlan las diferencias constantes entre personas, y compara tendencias entre un grupo tratado y uno de comparación. El supuesto clave es el de tendencias paralelas: sin reforma, los dos grupos habrían evolucionado igual. Se testea en los años previos, 2000 a 2002.",
+    "La primera estrategia compara grupos que suelen ser objetivo de estas políticas (mujeres, jóvenes de 35 años o menos, padres o madres solos, trabajadores secundarios y personas con secundario o menos) contra el resto, en población de 25 a 54 años y excluyendo 2003, año de la reforma. Da un efecto de intención de tratar. La segunda arma un grupo de comparación por emparejamiento exacto aproximado (coarsened exact matching) con variables previas a la reforma: sexo, edad, condición de inmigrante, hijos, ingreso del hogar, educación, experiencia e ingresos. De 8.917 personas del panel, 4.518 trabajan todo el período y 1.422 estaban sin trabajo en 2002; tras el emparejamiento quedan 407 tratados y 654 controles entre los que trabajan, y 110 y 109 entre los que no. El balance mejora mucho, al costo de quedarse con 23% y 15% de las muestras originales."
+   ]
+  },
+  {
+   "t": "Ganadores y perdedores por grupo",
+   "p": [
+    "Para las mujeres, la reforma subió la participación 4 puntos y el empleo 5 puntos respecto de los varones, un tercio de la brecha previa, pero bajó 4 puntos su proporción en empleos regulares. Sus ingresos y horas no cambiaron, y la tasa de cambio de empleo cayó 3 puntos, quizá por mayor estabilidad.",
+    "Los jóvenes son los ganadores: su participación sube 3 puntos, cerrando buena parte de una brecha de 5, y sus ingresos mensuales suben 8 puntos en bruto y 4 en neto, lo que achica en unos 50 euros una brecha de unos 140. La rotación cae 6 puntos. Es coherente con un aumento de la demanda por trabajadores jóvenes.",
+    "Para padres y madres solos casi nada es significativo (es un grupo chico, 5% de la muestra), salvo que su salario por hora cae 10% y sus horas suben 11%, así que el ingreso no mejora. Los trabajadores secundarios pierden ingresos frente a los primarios por un menor salario horario. Y las personas de baja educación ven caer 5 puntos sus ingresos mensuales netos y brutos, sobre todo por el salario por hora. El test de tendencias paralelas no rechaza en casi todos los casos, con excepciones en ingresos netos por educación y en horas para varios grupos."
+   ]
+  },
+  {
+   "t": "Emparejamiento: menos horas, mismo salario por hora",
+   "p": [
+    "Entre quienes trabajaron todo el período, los mínimos cuadrados simples dan efectos grandes y negativos, en parte mecánicos porque un mini-job tiene por definición un tope de ingreso. Con efectos fijos los efectos se achican, y en la muestra emparejada un poco más. El ingreso neto mensual cae 7% para mini-jobbers y 2% para midi-jobbers respecto del empleo regular, unos 70 y 20 euros por mes sobre una media de 1.000, aunque los coeficientes no son precisos. Las horas caen 10% para mini-jobbers (unas 3 horas sobre un promedio de 32) y 4% para midi-jobbers (no significativo). El salario neto por hora, de 7 euros en promedio, cae 1% y 6%, sin significancia estadística.",
+    "Es decir: la gente trabaja menos horas para aprovechar el régimen, pero su salario neto por hora no sube aunque pague menos impuestos. Además, entrar a un mini-job aumenta 25% la probabilidad de sufrir un recorte del salario bruto, y 14% en un midi-job, sin efecto claro sobre el cambio de empleo. La lectura de la autora es que las empresas bajan directamente la remuneración bruta, con menos horas o menos salario horario, para quedarse con la ventaja tributaria, como encontró Azmat para el crédito fiscal británico, que también se liquida en el recibo de sueldo y es muy visible para el empleador."
+   ]
+  },
+  {
+   "t": "Desocupados e inactivos: el mini-job como período de prueba",
+   "p": [
+    "Para quienes estaban sin trabajo antes de la reforma, la selección es muy fuerte: por mínimos cuadrados, el mini-job se asocia con menos chances de empleo regular, pero en la muestra emparejada con efectos fijos el signo se da vuelta. Un año en un mini-job sube 12 puntos (significativo) la probabilidad de tener un empleo regular, frente a una probabilidad incondicional de 14% en toda la muestra y 18% desde 2004. Con dos años o más el efecto se achica y deja de ser significativo. En los midi-jobs pasa lo contrario: el efecto crece con el tiempo y llega a 12 puntos con dos rezagos, aunque impreciso.",
+    "La interpretación es que el mini-job funciona como período de prueba: el trabajador acepta poca paga y pocas horas para señalar capacidad y ganas, y la empresa lo usa para filtrar. Si se queda demasiado, la señal se vuelve negativa y aparece un efecto de encierro. El midi-job, mejor pago y con más horas, permitiría acumular capital humano con el tiempo. Por grupos, el encierro aparece en mujeres, habitantes del este y padres o madres solos.",
+    "Los resultados aguantan varias variantes: usar solo mini y midi-jobs como empleo principal, contar los mini-jobs previos a la reforma (aquí el efecto sobre los desocupados pierde significancia), un diferencias en diferencias estándar y una comparación solo entre part-timers. Un ejercicio de intensidad del tratamiento por sector, al estilo de Duflo, muestra que un sector con 10% más empleos de bajos ingresos antes de la reforma tiene después un salario neto por hora entre 0,7% y 0,9% menor, sin significancia. Sobre equilibrio general, si los dos tipos de trabajo son sustitutos, el grupo de comparación también sufrió presión salarial y las estimaciones serían conservadoras."
+   ]
+  },
+  {
+   "t": "Lectura propia: alcance de la evidencia",
+   "p": [
+    "Lectura propia: la pregunta es muy relevante para cualquier diseño de subsidios al empleo de bajos ingresos, también en la Argentina, y la combinación de efectos fijos con emparejamiento es razonable, pero la evidencia es más sugerente que concluyente. Los efectos centrales sobre salarios no son estadísticamente significativos, así que la conclusión de que la empresa se queda con toda la rebaja descansa más en la ausencia de un aumento que en una caída medida con precisión. Las muestras emparejadas son chicas (110 tratados entre los desocupados) y retienen pocas observaciones. El tratamiento no es aleatorio: entrar a un mini-job es una elección, y la autora reconoce que el efecto trampolín podría reflejar que entran los más capaces, algo que la empresa ve y el econometrista no. En el modelo teórico, la ecuación que el texto da para el cambio relativo del empleo aparece invertida: combinando la definición de la elasticidad de sustitución con el cambio relativo del costo laboral, el cociente correcto es el producto de las dos elasticidades sobre su suma. Y hay una pequeña inconsistencia entre la sección de resultados, que da 12 puntos para los midi-jobs con dos rezagos, y la conclusión, que ubica un efecto similar después del tercer año."
+   ]
+  }
+ ],
+ "claves": [
+  "La reforma alemana de 2003 subió el tope de los mini-jobs a 400 euros, eliminó el límite de horas y creó los midi-jobs hasta 800 euros, con menor carga tributaria para el trabajador.",
+  "En teoría de incidencia, la parte de la rebaja que llega al salario neto crece con la sustituibilidad entre trabajo de bajos ingresos y regular y cae con la elasticidad de la oferta de trabajo: cuanto más elástica la oferta, más se queda la empresa.",
+  "Galassi usa el SOEP 2000-2007 con efectos fijos, comparando grupos objetivo y, por emparejamiento, mini-jobbers contra trabajadores similares.",
+  "Mujeres y jóvenes ganan participación; los jóvenes también ingresos. Padres o madres solos y personas de baja educación sufren caídas del salario por hora.",
+  "En la muestra emparejada, los mini-jobbers trabajan 10% menos horas y su salario neto por hora no sube: la evidencia es coherente con que la empresa captura la rebaja.",
+  "Entrar a un mini-job sube 25% la probabilidad de un recorte del salario bruto (14% en midi-jobs).",
+  "Para desocupados e inactivos, un año en un mini-job sube 12 puntos la probabilidad de un empleo regular; quedarse más tiempo encierra."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "¿Qué cambió la reforma alemana de 2003 en los mini-jobs?",
+    "en": "What did the 2003 German reform change in mini-jobs?"
+   },
+   "op": {
+    "es": [
+     "Los prohibió como empleo secundario",
+     "Subió el tope a 400 euros mensuales, eliminó el límite de 15 horas y creó los midi-jobs",
+     "Bajó a cero la contribución del empleador",
+     "Les otorgó aportes jubilatorios completos"
+    ],
+    "en": [
+     "It banned them as secondary jobs",
+     "It raised the cap to 400 euros a month, removed the 15-hour limit and created midi-jobs",
+     "It cut the employer contribution to zero",
+     "It granted them full pension contributions"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "El tope pasó de 325 a 400 euros, se eliminó el límite de horas, la contribución del empleador subió a 25% y se creó la categoría midi-job entre 400 y 800 euros; además, los empleos secundarios podían calificar.",
+    "en": "The cap went from 325 to 400 euros, the hours limit was removed, the employer contribution rose to 25% and the midi-job category between 400 and 800 euros was created; secondary jobs could also qualify."
+   },
+   "id": "fisc-gasto-04-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo de incidencia, si la oferta de trabajo de bajos ingresos es muy elástica (γ grande), ¿quién se queda con la mayor parte de la rebaja?",
+    "en": "In the incidence model, if low-earnings labor supply is very elastic (large γ), who captures most of the tax cut?"
+   },
+   "op": {
+    "es": [
+     "El trabajador, porque su salario neto sube más",
+     "Nadie: la rebaja se pierde en ineficiencia",
+     "La empresa, porque baja su costo laboral",
+     "El Estado, por mayor recaudación"
+    ],
+    "en": [
+     "The worker, because the net wage rises more",
+     "No one: the cut is lost to inefficiency",
+     "The firm, because its labor cost falls",
+     "The state, through higher revenue"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La caída relativa del costo laboral es γ/(γ+σ) del subsidio y la suba relativa del salario neto, σ/(γ+σ). Donde: γ es la elasticidad de la oferta de trabajo respecto del salario neto y σ la elasticidad de sustitución entre trabajo de bajos ingresos y regular. Con γ grande, casi todo el subsidio baja el costo de la empresa.",
+    "en": "The relative fall in labor cost is γ/(γ+σ) of the subsidy and the relative rise in the net wage σ/(γ+σ). Where: γ is the elasticity of labor supply with respect to the net wage and σ the elasticity of substitution between low-earnings and regular labor. With large γ, almost all of the subsidy lowers the firm's cost."
+   },
+   "id": "fisc-gasto-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuándo es un mini-job un «trampolín» en el modelo de Galassi?",
+    "en": "When is a mini-job a «stepping-stone» in Galassi's model?"
+   },
+   "op": {
+    "es": [
+     "Cuando paga más que el empleo regular",
+     "Cuando dura más de dos años",
+     "Cuando el trabajador recibe asistencia social al mismo tiempo",
+     "Cuando la probabilidad de llegar a un empleo regular tras el mini-job es al menos la de quien siguió buscando"
+    ],
+    "en": [
+     "When it pays more than regular employment",
+     "When it lasts more than two years",
+     "When the worker receives social assistance at the same time",
+     "When the probability of reaching regular employment after the mini-job is at least that of someone who kept searching"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Se compara αE^M con αE(2−αE). Donde: αE es la probabilidad por período de recibir una oferta de empleo regular, αE(2−αE) la de conseguirlo en dos rondas de búsqueda sin pasar por un mini-job y αE^M la de llegar a él después de un mini-job. Si αE^M es mayor o igual, es trampolín; si no, callejón sin salida.",
+    "en": "αE^M is compared with αE(2−αE). Where: αE is the per-period probability of receiving a regular job offer, αE(2−αE) that of getting one in two search rounds without a mini-job, and αE^M that of reaching it after a mini-job. If αE^M is greater or equal it is a stepping-stone; otherwise a dead-end."
+   },
+   "id": "fisc-gasto-04-q3"
+  },
+  {
+   "q": {
+    "es": "¿Qué controlan los efectos fijos individuales en el modelo de Galassi?",
+    "en": "What do the individual fixed effects control for in Galassi's model?"
+   },
+   "op": {
+    "es": [
+     "Inobservables constantes en el tiempo, como la motivación o el salario de reserva",
+     "Los shocks macroeconómicos de cada año",
+     "Los cambios de educación durante el período",
+     "La selección por variables que cambian después de la reforma"
+    ],
+    "en": [
+     "Time-invariant unobservables, such as motivation or reservation wage",
+     "Each year's macroeconomic shocks",
+     "Changes in education during the period",
+     "Selection on variables that change after the reform"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "El efecto fijo individual absorbe lo que distingue a cada persona y no cambia en el tiempo; los shocks de cada año los capta el efecto fijo de año.",
+    "en": "The individual fixed effect absorbs what distinguishes each person and does not change over time; year shocks are captured by the year fixed effect."
+   },
+   "id": "fisc-gasto-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué grupo resultó el más beneficiado por la reforma, según la comparación por grupos objetivo?",
+    "en": "Which group benefited most from the reform, according to the target-group comparison?"
+   },
+   "op": {
+    "es": [
+     "Las personas de baja educación",
+     "Los padres o madres solos",
+     "Los jóvenes, con más participación e ingresos",
+     "Los trabajadores secundarios"
+    ],
+    "en": [
+     "Low-educated people",
+     "Single parents",
+     "Young people, with higher participation and earnings",
+     "Secondary workers"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "Los jóvenes suben 3 puntos su participación y 8 y 4 puntos sus ingresos brutos y netos; los de baja educación pierden 5 puntos de ingreso y los padres o madres solos ven caer su salario por hora.",
+    "en": "Young people raise participation by 3 points and gross and net earnings by 8 and 4 points; the low-educated lose 5 points of earnings and single parents see their hourly wage fall."
+   },
+   "id": "fisc-gasto-04-q5"
+  },
+  {
+   "q": {
+    "es": "En la muestra emparejada de trabajadores, ¿qué pasa con los mini-jobbers?",
+    "en": "In the matched sample of workers, what happens to mini-jobbers?"
+   },
+   "op": {
+    "es": [
+     "Trabajan más horas y cobran más por hora",
+     "Trabajan cerca de 10% menos horas y su salario neto por hora no sube",
+     "Mantienen las horas y su salario neto por hora sube 25%",
+     "Pasan todos a empleos regulares"
+    ],
+    "en": [
+     "They work more hours and earn more per hour",
+     "They work about 10% fewer hours and their net hourly wage does not rise",
+     "They keep their hours and their net hourly wage rises 25%",
+     "They all move to regular jobs"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Las horas caen 10% y el salario neto por hora no cambia significativamente pese a la menor carga tributaria, coherente con que la empresa captura la rebaja. El 25% es la mayor probabilidad de sufrir un recorte del salario bruto.",
+    "en": "Hours fall 10% and the net hourly wage does not change significantly despite the lower tax burden, consistent with the firm capturing the cut. The 25% is the higher probability of a gross pay cut."
+   },
+   "id": "fisc-gasto-04-q6"
+  },
+  {
+   "q": {
+    "es": "Para quienes no trabajaban antes de la reforma, ¿qué efecto tiene pasar un año en un mini-job?",
+    "en": "For those not working before the reform, what is the effect of spending one year in a mini-job?"
+   },
+   "op": {
+    "es": [
+     "Baja la probabilidad de empleo regular por el estigma",
+     "No tiene ningún efecto",
+     "Solo aumenta las horas trabajadas",
+     "Sube 12 puntos la probabilidad de tener un empleo regular"
+    ],
+    "en": [
+     "It lowers the probability of regular employment due to stigma",
+     "It has no effect",
+     "It only increases hours worked",
+     "It raises the probability of holding regular employment by 12 points"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "En la muestra emparejada con efectos fijos el efecto es de 12 puntos y significativo, frente a una probabilidad incondicional de 14%; con dos años o más deja de ser significativo, lo que sugiere un efecto de encierro.",
+    "en": "In the matched fixed-effects sample the effect is 12 points and significant, against an unconditional probability of 14%; with two or more years it stops being significant, suggesting a lock-in effect."
+   },
+   "id": "fisc-gasto-04-q7"
+  },
+  {
+   "q": {
+    "es": "¿Por qué las estimaciones sobre ingresos podrían ser conservadoras según la discusión de equilibrio general?",
+    "en": "Why might the earnings estimates be conservative according to the general equilibrium discussion?"
+   },
+   "op": {
+    "es": [
+     "Porque si los dos tipos de trabajo son sustitutos, el grupo de comparación también sufrió presión a la baja sobre sus salarios",
+     "Porque el SOEP sobrerrepresenta a los trabajadores de altos ingresos",
+     "Porque la reforma subió el salario mínimo legal",
+     "Porque los mini-jobbers tienen aportes jubilatorios"
+    ],
+    "en": [
+     "Because if the two types of labor are substitutes, the comparison group also faced downward pressure on wages",
+     "Because the SOEP overrepresents high earners",
+     "Because the reform raised the statutory minimum wage",
+     "Because mini-jobbers have pension contributions"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Si las empresas reemplazaron empleo regular por mini-jobs, también cayó la demanda por trabajadores regulares, lo que achica la diferencia medida entre tratados y comparación.",
+    "en": "If firms replaced regular jobs with mini-jobs, demand for regular workers also fell, which shrinks the measured gap between treated and comparison groups."
+   },
+   "id": "fisc-gasto-04-q8"
+  }
+ ],
+ "palabras": 2034,
+ "tarjetas": [
+  {
+   "tipo": "idea",
+   "q": {
+    "es": "¿Sirven los subsidios tributarios al empleo de bajos ingresos para combatir la pobreza?",
+    "en": "Do tax subsidies to low-earning jobs help fight poverty?"
+   },
+   "a": {
+    "es": "Según Galassi, en el caso alemán no: los mini-jobbers no mejoraron su salario neto pese a pagar menos impuestos; pero sí ayudaron a los desocupados e inactivos a pasar a mejores empleos.",
+    "en": "According to Galassi, in the German case no: mini-jobbers did not improve their net wage despite paying lower taxes; but they did help the unemployed and inactive move into better jobs."
+   },
+   "id": "fisc-gasto-04-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿De qué depende quién captura una rebaja de impuestos al trabajo en un sector?",
+    "en": "What determines who captures a labor tax cut in one sector?"
+   },
+   "a": {
+    "es": "Galassi, con la teoría de incidencia de Fullerton y Metcalf, muestra que depende de dos elasticidades: la de la oferta de trabajo y la de sustitución entre sectores. El trabajador se lleva más cuanto más sustituibles son los dos tipos de trabajo; la empresa, cuanto más elástica es la oferta.",
+    "en": "Galassi, using Fullerton and Metcalf's incidence theory, shows it depends on two elasticities: that of labor supply and that of substitution between sectors. The worker gets more the more substitutable the two types of labor are; the firm, the more elastic labor supply is."
+   },
+   "id": "fisc-gasto-04-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué una rebaja de impuestos puede bajar el salario neto de los beneficiarios?",
+    "en": "Why can a tax cut lower beneficiaries' net wage?"
+   },
+   "a": {
+    "es": "Galassi explica que la rebaja atrae a inactivos y lleva a otros a reducir horas para entrar al régimen: la oferta en el sector de bajos ingresos se corre hacia afuera y presiona los salarios netos a la baja.",
+    "en": "Galassi explains that the cut draws in inactive people and leads others to cut hours to enter the scheme: supply in the low-earnings sector shifts out and pushes net wages down."
+   },
+   "id": "fisc-gasto-04-t3"
+  },
+  {
+   "tipo": "econometria",
+   "q": {
+    "es": "¿Cómo se identifica el efecto de tomar un mini-job si la entrada no es aleatoria?",
+    "en": "How is the effect of taking a mini-job identified if entry is not random?"
+   },
+   "a": {
+    "es": "Galassi combina efectos fijos individuales y de año con un grupo de comparación armado por emparejamiento exacto aproximado en variables previas a la reforma, y testea tendencias paralelas en 2000-2002.",
+    "en": "Galassi combines individual and year fixed effects with a comparison group built by coarsened exact matching on pre-reform variables, and tests parallel trends in 2000-2002."
+   },
+   "id": "fisc-gasto-04-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué pasó con las horas y los salarios de los mini-jobbers tras la reforma alemana?",
+    "en": "What happened to mini-jobbers' hours and wages after the German reform?"
+   },
+   "a": {
+    "es": "Galassi encuentra que sus horas cayeron 10%, su salario neto por hora no subió y entrar a un mini-job elevó 25% la probabilidad de un recorte del salario bruto: la rebaja parece haber quedado en las empresas.",
+    "en": "Galassi finds their hours fell 10%, their net hourly wage did not rise, and entering a mini-job raised the probability of a gross pay cut by 25%: the cut seems to have stayed with firms."
+   },
+   "id": "fisc-gasto-04-t5"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Es un empleo subsidiado de bajos ingresos un trampolín o un callejón sin salida?",
+    "en": "Is a subsidized low-earning job a stepping-stone or a dead-end?"
+   },
+   "a": {
+    "es": "Para Galassi, un trampolín si es breve: un año en un mini-job sube 12 puntos la probabilidad de empleo regular, pero quedarse más tiempo genera encierro; los midi-jobs, en cambio, ayudan más con el tiempo.",
+    "en": "For Galassi, a stepping-stone if brief: one year in a mini-job raises the probability of regular employment by 12 points, but staying longer causes lock-in; midi-jobs instead help more over time."
+   },
+   "id": "fisc-gasto-04-t6"
+  },
+  {
+   "tipo": "aplicacion",
+   "q": {
+    "es": "¿Por qué importa que el beneficio se liquide en el recibo de sueldo?",
+    "en": "Why does it matter that the benefit is paid through the payslip?"
+   },
+   "a": {
+    "es": "Galassi, siguiendo a Azmat, señala que un beneficio visible para el empleador facilita que este se lo apropie, ajustando horas o salario bruto, como ocurrió con los mini-jobs y con el crédito fiscal británico.",
+    "en": "Galassi, following Azmat, notes that a benefit visible to the employer makes it easier for the employer to appropriate it by adjusting hours or gross pay, as with mini-jobs and the British tax credit."
+   },
+   "id": "fisc-gasto-04-t7"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué limita la fuerza de la evidencia sobre los mini-jobs?",
+    "en": "What limits the strength of the mini-job evidence?"
+   },
+   "a": {
+    "es": "Galassi reconoce que las muestras emparejadas son chicas, que varios coeficientes son imprecisos y que el efecto trampolín podría reflejar que entran a los mini-jobs los desocupados más hábiles.",
+    "en": "Galassi acknowledges the matched samples are small, several coefficients are imprecise, and the stepping-stone effect might reflect the most skilled jobless entering mini-jobs."
+   },
+   "id": "fisc-gasto-04-t8"
+  }
+ ]
+}
