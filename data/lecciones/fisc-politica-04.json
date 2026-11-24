@@ -1,0 +1,537 @@
+{
+ "id": "fisc-politica-04",
+ "cat": "fisc-politica",
+ "orden": 5,
+ "minutos": 15,
+ "titulo": "Multiplicador-acelerador con dinero y política fiscal: más ciclos y menos estabilidad de lo que se creía",
+ "bajada": "Por qué una raíz característica negativa también hace oscilar al ingreso y cómo, al tenerla en cuenta, el modelo de Samuelson con sector monetario y reacción fiscal resulta más cíclico y más propenso a la inestabilidad de lo que concluían Burrows y Hitiris.",
+ "fuentes": [
+  1336
+ ],
+ "cita": "J. M. Oviedo, «Interacciones entre el multiplicador-acelerador y política fiscal», Departamento de Estadística y Matemática, Universidad Nacional de Córdoba",
+ "intro": "Jorge Mauricio Oviedo, del Departamento de Estadística y Matemática de la Universidad Nacional de Córdoba, relee el capítulo 8 de Burrows y Hitiris (1974), que extiende el modelo de multiplicador y acelerador de Samuelson con un sector monetario y con una regla de política fiscal anticíclica. Su punto es técnico pero con consecuencias económicas: una ecuación en diferencias de segundo orden no oscila solo cuando sus raíces son complejas, también lo hace cuando al menos una raíz es real y negativa. Burrows y Hitiris miraron solo el primer caso y además omitieron una de las condiciones de estabilidad. Rehaciendo el análisis, Oviedo concluye que el sector monetario y la política fiscal vuelven al modelo más cíclico de lo que decían esos autores y, para ciertos parámetros, menos estable. Lo muestra con álgebra y con simulaciones hechas en Mathematica 4.0.",
+ "secciones": [
+  {
+   "t": "Cuándo oscila y cuándo converge una ecuación en diferencias",
+   "eq": [
+    "Y_t + p_1 Y_{t-1} + p_2 Y_{t-2} = p_3",
+    "Y_t = A_1 b_1^{\\,t} + A_2 b_2^{\\,t} + \\dfrac{p_3}{1 + p_1 + p_2}, \\qquad x^2 + p_1 x + p_2 = 0",
+    "1 - p_2 > 0, \\qquad 1 - p_1 + p_2 > 0, \\qquad 1 + p_1 + p_2 > 0"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): valor de la variable (en el paper, el ingreso) en el período \\(t\\) y en los dos anteriores.",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): value of the variable (in the paper, income) in period \\(t\\) and the two previous ones."
+     },
+     {
+      "es": "\\(p_1, p_2\\): coeficientes constantes que resumen los parámetros del modelo; \\(p_3\\): término constante (en los modelos, el gasto autónomo).",
+      "en": "\\(p_1, p_2\\): constant coefficients that summarize the model's parameters; \\(p_3\\): constant term (in the models, autonomous spending)."
+     }
+    ],
+    [
+     {
+      "es": "\\(b_1, b_2\\): raíces características, las soluciones del polinomio de la derecha; deciden si la trayectoria converge y si oscila.",
+      "en": "\\(b_1, b_2\\): characteristic roots, the solutions of the polynomial on the right; they decide whether the path converges and whether it oscillates."
+     },
+     {
+      "es": "\\(A_1, A_2\\): constantes que el paper no define; lectura propia: se fijan con los dos valores iniciales de la variable.",
+      "en": "\\(A_1, A_2\\): constants the paper does not define; our own reading: they are pinned down by the variable's two initial values."
+     },
+     {
+      "es": "\\(p_3/(1+p_1+p_2)\\): valor de equilibrio estacionario, al que tiende la variable si la solución es convergente.",
+      "en": "\\(p_3/(1+p_1+p_2)\\): stationary equilibrium value, which the variable approaches if the solution converges."
+     },
+     {
+      "es": "\\(x\\): incógnita del polinomio característico; \\(p_1, p_2\\): como en la ecuación anterior.",
+      "en": "\\(x\\): unknown of the characteristic polynomial; \\(p_1, p_2\\): as in the previous equation."
+     }
+    ],
+    [
+     {
+      "es": "\\(p_1, p_2\\): los coeficientes de la ecuación en diferencias. Las tres desigualdades juntas son necesarias y suficientes para que ambas raíces sean menores que uno en valor absoluto, es decir, para que la trayectoria converja.",
+      "en": "\\(p_1, p_2\\): the coefficients of the difference equation. The three inequalities together are necessary and sufficient for both roots to be smaller than one in absolute value, that is, for the path to converge."
+     }
+    ]
+   ],
+   "p": [
+    "Los modelos de multiplicador y acelerador se resumen en una ecuación en diferencias de segundo orden con coeficientes constantes: el ingreso de hoy depende del de los dos períodos anteriores (primera ecuación). Su solución combina potencias de las dos raíces del polinomio característico con un valor de equilibrio (segunda ecuación). Todo lo que importa sobre la dinámica está en esas raíces.",
+    "Para la convergencia Oviedo usa dos teoremas. El primero dice que la solución es estable si las dos raíces son menores que uno en valor absoluto. Como con parámetros no numéricos eso es difícil de verificar, el segundo lo traduce a tres desigualdades sobre los coeficientes (tercera ecuación), que juntas son condición necesaria y suficiente.",
+    "La pieza clave del trabajo es la regla de ciclicidad. La trayectoria oscila si se da al menos uno de dos casos: raíces complejas con parte imaginaria no nula, o al menos una raíz real negativa. Una raíz negativa elevada a potencias sucesivas cambia de signo período a período, así que el ingreso salta de un lado a otro de su equilibrio aun sin raíces complejas. Según Oviedo, este segundo caso fue en general ignorado en los análisis teóricos, entre ellos el de Burrows, y esa omisión es la que cambia las conclusiones."
+   ]
+  },
+  {
+   "t": "Samuelson: el mapa de cinco regiones",
+   "eq": [
+    "Y_t = C_t + I_t + G_0, \\qquad C_t = cY_{t-1}, \\qquad I_t = a\\,(C_t - C_{t-1})",
+    "Y_t - c(1 + a)\\,Y_{t-1} + a c\\, Y_{t-2} = G_0",
+    "\\text{ciclos: } c < \\dfrac{4a}{(1 + a)^2}, \\qquad \\text{estabilidad: } c < \\dfrac{1}{a}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(Y_t\\): ingreso nacional en el período \\(t\\); \\(C_t\\): consumo; \\(I_t\\): inversión inducida; \\(G_0\\): gasto público, exógeno y constante.",
+      "en": "\\(Y_t\\): national income in period \\(t\\); \\(C_t\\): consumption; \\(I_t\\): induced investment; \\(G_0\\): government spending, exogenous and constant."
+     },
+     {
+      "es": "\\(c\\): propensión marginal a consumir, con \\(0 < c < 1\\); el consumo responde al ingreso del período anterior.",
+      "en": "\\(c\\): marginal propensity to consume, with \\(0 < c < 1\\); consumption responds to last period's income."
+     },
+     {
+      "es": "\\(a > 0\\): coeficiente del acelerador, cuánto se invierte por cada unidad de aumento del consumo.",
+      "en": "\\(a > 0\\): accelerator coefficient, how much is invested per unit increase in consumption."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): ingreso en \\(t\\) y en los dos períodos previos; \\(a, c, G_0\\): como arriba. Aquí \\(p_1 = -c(1+a)\\) y \\(p_2 = ac\\).",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): income in \\(t\\) and the two previous periods; \\(a, c, G_0\\): as above. Here \\(p_1 = -c(1+a)\\) and \\(p_2 = ac\\)."
+     }
+    ],
+    [
+     {
+      "es": "\\(c, a\\): propensión marginal a consumir y acelerador. La primera desigualdad hace negativo el discriminante, \\((1+a)^2c^2 - 4ac\\), y por eso las raíces son complejas; la segunda viene de \\(1 - p_2 > 0\\), y es la única de las tres condiciones de estabilidad que puede fallar.",
+      "en": "\\(c, a\\): marginal propensity to consume and accelerator. The first inequality makes the discriminant, \\((1+a)^2c^2 - 4ac\\), negative, so the roots are complex; the second comes from \\(1 - p_2 > 0\\) and is the only one of the three stability conditions that can fail."
+     }
+    ]
+   ],
+   "p": [
+    "Samuelson agregó a un modelo keynesiano simple una inversión que reacciona a los cambios del consumo (primera ecuación). Reemplazando, el ingreso queda como una ecuación en diferencias de segundo orden no homogénea (segunda ecuación). En este modelo no hay raíces negativas: con los signos de los parámetros, la raíz mayor es positiva y, como el producto de las raíces es positivo, cuando son reales la menor también lo es. Entonces los ciclos aparecen si y solo si las raíces son complejas, lo que da la primera condición de la tercera ecuación.",
+    "En estabilidad, de las tres desigualdades del teorema dos se cumplen siempre: una pide que la propensión a consumir sea mayor que un número negativo y la otra que sea menor que uno. Solo queda una condición necesaria y suficiente: que la propensión a consumir sea menor que la inversa del acelerador.",
+    "Como ambas condiciones dependen solo de la propensión a consumir y del acelerador, Oviedo las dibuja juntas en un plano con esos dos parámetros, con la curva de ciclos, la frontera de estabilidad y el techo de la propensión a consumir en uno. Quedan cinco regiones: trayectorias monótonamente convergentes, cíclicamente convergentes, ciclos regulares sobre la frontera de estabilidad, cíclicamente divergentes y, por encima de ambas curvas, monótonas. Lectura propia: el texto llama «convergentes» a las trayectorias de esta última región, pero como está por encima de la frontera de estabilidad deberían ser monótonamente divergentes; también numera dos veces como «Región Uno»."
+   ]
+  },
+  {
+   "t": "Con dinero: la raíz negativa que faltaba",
+   "eq": [
+    "C_t = C_0 + cY_{t-1}, \\qquad I_t = a\\,(C_t - C_{t-1}) + I_r\\, i_t, \\qquad M_0 = L_0 + L_y Y_{t-1} + L_r\\, i_t",
+    "Y_t - \\big[(1 + a)c - K\\big]\\,Y_{t-1} + a c\\, Y_{t-2} = C_0 + G_0, \\qquad K \\equiv \\dfrac{I_r L_y}{L_r}",
+    "\\text{ciclos: } \\big[(1 + a)c - K\\big]^2 < 4ac \\;\\;\\text{o}\\;\\; c < \\dfrac{K}{1 + a}",
+    "\\text{estabilidad: } \\dfrac{K - 1}{1 + 2a} < c < \\dfrac{1}{a}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(C_0\\): consumo autónomo; \\(c\\): propensión marginal a consumir; \\(a\\): acelerador.",
+      "en": "\\(C_0\\): autonomous consumption; \\(c\\): marginal propensity to consume; \\(a\\): accelerator."
+     },
+     {
+      "es": "\\(i_t\\): tasa de interés corriente; \\(I_r < 0\\): sensibilidad de la inversión a la tasa de interés, el nexo entre el sector real y el financiero.",
+      "en": "\\(i_t\\): current interest rate; \\(I_r < 0\\): sensitivity of investment to the interest rate, the link between the real and financial sectors."
+     },
+     {
+      "es": "\\(M_0\\): oferta monetaria, constante; \\(L_0\\): componente autónomo de la demanda de dinero.",
+      "en": "\\(M_0\\): money supply, constant; \\(L_0\\): autonomous component of money demand."
+     },
+     {
+      "es": "\\(L_y > 0\\): sensibilidad de la demanda de dinero al ingreso del período anterior (el autor la llama elasticidad); \\(L_r < 0\\): sensibilidad de la demanda de dinero a la tasa de interés.",
+      "en": "\\(L_y > 0\\): sensitivity of money demand to last period's income (the author calls it an elasticity); \\(L_r < 0\\): sensitivity of money demand to the interest rate."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): ingreso en \\(t\\) y en los dos períodos previos; \\(G_0\\): gasto público exógeno; \\(a, c, C_0\\): como arriba.",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): income in \\(t\\) and the two previous periods; \\(G_0\\): exogenous government spending; \\(a, c, C_0\\): as above."
+     },
+     {
+      "es": "\\(K \\equiv I_r L_y / L_r\\): abreviatura que el autor introduce en el apéndice; como \\(I_r < 0\\), \\(L_y > 0\\) y \\(L_r < 0\\), es positiva. Mide cuánto frena el sector monetario a la inversión cuando sube el ingreso: más ingreso, más demanda de dinero, más tasa, menos inversión.",
+      "en": "\\(K \\equiv I_r L_y / L_r\\): shorthand the author introduces in the appendix; since \\(I_r < 0\\), \\(L_y > 0\\) and \\(L_r < 0\\), it is positive. It measures how much the monetary sector brakes investment when income rises: more income, more money demand, a higher rate, less investment."
+     },
+     {
+      "es": "Lectura propia: el paper escribe solo \\(C_0 + G_0\\) a la derecha; al despejar la tasa del mercado de dinero aparece además una constante, \\(I_r (M_0 - L_0)/L_r\\), que cambia el nivel de equilibrio pero no las raíces ni las condiciones de ciclo y estabilidad.",
+      "en": "Our own reading: the paper writes only \\(C_0 + G_0\\) on the right; solving for the rate from the money market also yields a constant, \\(I_r (M_0 - L_0)/L_r\\), which shifts the equilibrium level but not the roots or the cycle and stability conditions."
+     }
+    ],
+    [
+     {
+      "es": "\\(a, c, K\\): como arriba. La primera desigualdad (condición 9 del paper) da raíces complejas; la segunda (condición 10) hace negativo el coeficiente \\((1+a)c - K\\), y con él la suma de las raíces, de modo que hay raíces reales negativas.",
+      "en": "\\(a, c, K\\): as above. The first inequality (the paper's condition 9) gives complex roots; the second (condition 10) makes the coefficient \\((1+a)c - K\\), and with it the sum of the roots, negative, so there are negative real roots."
+     }
+    ],
+    [
+     {
+      "es": "\\(a, c, K\\): como arriba. La cota superior (condición 11) viene de \\(1 - p_2 > 0\\) y es la de Samuelson; la inferior (condición 12) viene de \\(1 - p_1 + p_2 > 0\\) y es nueva. La tercera condición del teorema pide \\(c < 1 + K\\) y siempre se cumple.",
+      "en": "\\(a, c, K\\): as above. The upper bound (condition 11) comes from \\(1 - p_2 > 0\\) and is Samuelson's; the lower one (condition 12) comes from \\(1 - p_1 + p_2 > 0\\) and is new. The theorem's third condition requires \\(c < 1 + K\\) and always holds."
+     }
+    ]
+   ],
+   "p": [
+    "La primera extensión de Burrows y Hitiris agrega un sector monetario (primera ecuación). La demanda de dinero depende de la tasa corriente y del ingreso del período anterior, la oferta es constante, y la inversión, además de seguir al consumo, cae cuando sube la tasa. Despejando la tasa y reemplazando, el ingreso vuelve a ser una ecuación en diferencias de segundo orden (segunda ecuación). Lo único que cambia respecto de Samuelson es el coeficiente del ingreso del período anterior, que se achica en el término que el autor abrevia como K: cuando sube el ingreso, sube la demanda de dinero, sube la tasa y se frena la inversión.",
+    "Ese cambio abre la puerta a una raíz negativa. Si el freno monetario es mayor que el empuje del multiplicador y el acelerador, es decir, si la propensión a consumir es lo bastante baja frente a K, la suma de las raíces se vuelve negativa y el ingreso oscila aunque las raíces sean reales (tercera ecuación). Y la misma razón agrega una cota inferior a la estabilidad (cuarta ecuación): con una propensión a consumir demasiado baja frente al freno monetario, la oscilación se vuelve explosiva.",
+    "Oviedo señala que Burrows y Hitiris no consideraron ni la raíz negativa (condición 10) ni la cota inferior (condición 12). Por eso concluyeron que el dinero no mueve la frontera entre estabilidad e inestabilidad y que solo agranda la zona de ciclos por raíces complejas. Las conclusiones revisadas son dos: para ciertos parámetros el modelo se vuelve más inestable y es más cíclico de lo que esos autores establecen. En su gráfico, un punto que según Burrows y Hitiris daría una trayectoria monótonamente convergente produce en la simulación una trayectoria cíclica y divergente."
+   ]
+  },
+  {
+   "t": "Con política fiscal: estabiliza menos de lo prometido",
+   "eq": [
+    "G_t = G_0 + u\\,(Y^{*} - Y_t^{N})",
+    "Y_t - (1 - u)\\big[(1 + a)c - K\\big]\\,Y_{t-1} + (1 - u)\\,a c\\, Y_{t-2} = C_0 + G_0",
+    "\\text{ciclos: } (1 - u)^2\\big[(1 + a)c - K\\big]^2 < 4ac\\,(1 - u) \\;\\;\\text{o}\\;\\; c < \\dfrac{K}{1 + a}",
+    "\\text{estabilidad: } \\dfrac{(1 - u)K - 1}{(1 - u)(1 + 2a)} < c < \\dfrac{1}{a(1 - u)}"
+   ],
+   "donde": [
+    [
+     {
+      "es": "\\(G_t\\): gasto público en \\(t\\); \\(G_0\\): su componente exógeno.",
+      "en": "\\(G_t\\): government spending in \\(t\\); \\(G_0\\): its exogenous component."
+     },
+     {
+      "es": "\\(u\\): coeficiente de reacción del gobierno ante la brecha de ingreso, con \\(0 < u < 1\\): las autoridades reaccionan solo parcialmente.",
+      "en": "\\(u\\): the government's reaction coefficient to the income gap, with \\(0 < u < 1\\): authorities react only partially."
+     },
+     {
+      "es": "\\(Y^{*}\\): ingreso objetivo, que se toma igual al equilibrio de largo plazo.",
+      "en": "\\(Y^{*}\\): target income, taken to equal the long-run equilibrium."
+     },
+     {
+      "es": "\\(Y_t^{N}\\): el paper lo llama nivel de ingreso actual; lectura propia, siguiendo a Burrows y Hitiris: es el ingreso que habría en \\(t\\) sin la política de ese período.",
+      "en": "\\(Y_t^{N}\\): the paper calls it the current income level; our own reading, following Burrows and Hitiris: it is the income that would occur in \\(t\\) without that period's policy."
+     }
+    ],
+    [
+     {
+      "es": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): ingreso con la política operando; \\(u\\): reacción fiscal; \\(a, c, K, C_0, G_0\\): como en el modelo con dinero. La política multiplica por \\((1-u)\\) los dos coeficientes.",
+      "en": "\\(Y_t, Y_{t-1}, Y_{t-2}\\): income with the policy operating; \\(u\\): fiscal reaction; \\(a, c, K, C_0, G_0\\): as in the model with money. The policy multiplies both coefficients by \\((1-u)\\)."
+     },
+     {
+      "es": "Lectura propia: como antes, el paper deja a la derecha solo \\(C_0 + G_0\\); los términos constantes que faltan (entre ellos \\(uY^{*}\\)) no afectan las raíces.",
+      "en": "Our own reading: as before, the paper leaves only \\(C_0 + G_0\\) on the right; the missing constant terms (including \\(uY^{*}\\)) do not affect the roots."
+     }
+    ],
+    [
+     {
+      "es": "\\(u, a, c, K\\): como arriba. La primera desigualdad (condición 13) da raíces complejas; la segunda (condición 14) da raíces reales negativas y es la misma que sin política, porque \\(1 - u > 0\\) no cambia el signo del coeficiente.",
+      "en": "\\(u, a, c, K\\): as above. The first inequality (condition 13) gives complex roots; the second (condition 14) gives negative real roots and is the same as without policy, because \\(1 - u > 0\\) does not change the coefficient's sign."
+     }
+    ],
+    [
+     {
+      "es": "\\(u, a, c, K\\): como arriba. La cota superior es la condición 15 y la inferior la 16; la inferior solo es positiva, y por lo tanto restrictiva, si \\((1 - u)K > 1\\).",
+      "en": "\\(u, a, c, K\\): as above. The upper bound is condition 15 and the lower one condition 16; the lower one is positive, and hence binding, only if \\((1 - u)K > 1\\)."
+     }
+    ]
+   ],
+   "p": [
+    "La segunda extensión agrega una función de reacción: el gobierno aumenta el gasto en una fracción de la brecha entre un ingreso objetivo y el ingreso efectivo (primera ecuación). El resultado es que los dos coeficientes de la ecuación en diferencias quedan multiplicados por uno menos el coeficiente de reacción (segunda ecuación).",
+    "En ciclos, la política achica el lado izquierdo del discriminante más que el derecho, así que más combinaciones de parámetros dan raíces complejas, y la zona de raíces negativas sigue estando (tercera ecuación). En estabilidad, la cota superior sube y la inferior baja respecto del modelo con dinero sin política, pero la inferior no desaparece (cuarta ecuación). La tercera condición del teorema se cumple siempre. Lectura propia: rehaciendo el álgebra, esa tercera cota queda como la inversa de uno menos la reacción más K, no como escribe el paper, pero en ambos casos es mayor que uno y no restringe nada.",
+    "Burrows y Hitiris concluían que con política el modelo es aún más cíclico que con dinero sin política y que es más estable. Oviedo coincide en lo primero y va más lejos: el modelo es todavía más cíclico de lo que ellos predicen, porque hay que sumar las raíces negativas. En lo segundo los corrige: la política fiscal hace al modelo menos estable de lo que predicen esos autores cuando uno menos la reacción, multiplicado por K, supera uno, aunque más estable que el modelo con dinero y sin política, una vez revisado. De nuevo, la simulación de un punto que para Burrows y Hitiris sería monótono y convergente muestra un ingreso cíclico y divergente.",
+    "Lectura propia: en esta sección el texto dice que los autores ignoraron las condiciones 13 y 16, pero por el paralelo con la sección anterior y con el apéndice, la condición omitida parece ser la 14, la de la raíz negativa; la 13 es la de raíces complejas, que sí estaba en Burrows y Hitiris."
+   ]
+  },
+  {
+   "t": "Qué deja el trabajo",
+   "p": [
+    "La conclusión de Oviedo es que el sector monetario y la política fiscal anticíclica, en el modelo de multiplicador y acelerador, producen más ciclos que los que predice el análisis de Burrows y Hitiris y abren una mayor posibilidad de comportamiento inestable. La causa es doble: haber ignorado que una raíz real negativa también genera oscilaciones y haber omitido una de las tres condiciones de estabilidad. El trabajo no tiene datos ni estimaciones; su método es algebraico, con simulaciones animadas que el autor ofrece enviar por correo porque no entraban en un apéndice.",
+    "Lectura propia: la oscilación por raíz negativa es de un tipo distinto a la del ciclo clásico. Con raíces complejas el ingreso sube y baja con una periodicidad que depende de los parámetros; con una raíz negativa salta de un lado al otro del equilibrio período a período, un serrucho de dos períodos. Que eso ocurra exige un freno monetario muy fuerte frente a una propensión a consumir baja, y vale la pena preguntarse si es una región empíricamente relevante. Pero el punto lógico del autor se sostiene: si el objetivo es clasificar trayectorias, no se puede dejar afuera ese caso.",
+    "Lectura propia: la lección de política es que una regla anticíclica de reacción parcial no garantiza estabilidad por sí sola. Su efecto depende de cómo interactúa con el canal monetario, y en el brief del capítulo 8 de Burrows y Hitiris la conclusión era que la política fiscal siempre amortigua el ciclo. Leídos juntos, los dos trabajos muestran cuánto puede cambiar una conclusión de política por una condición matemática omitida."
+   ]
+  }
+ ],
+ "claves": [
+  "Una ecuación en diferencias de segundo orden oscila con raíces complejas o con al menos una raíz real negativa; el segundo caso suele ignorarse.",
+  "La estabilidad exige tres desigualdades sobre los coeficientes, que juntas son necesarias y suficientes.",
+  "En Samuelson no hay raíces negativas: los ciclos requieren raíces complejas y la estabilidad solo pide que la propensión a consumir sea menor que la inversa del acelerador.",
+  "Con dinero, el freno monetario (K) puede volver negativa la suma de las raíces y agrega una cota inferior a la estabilidad.",
+  "Burrows y Hitiris omitieron la raíz negativa y esa cota: el modelo con dinero es más cíclico y, para ciertos parámetros, más inestable de lo que concluían.",
+  "La reacción fiscal parcial multiplica ambos coeficientes por uno menos la reacción: agranda la zona de ciclos y amplía la de estabilidad, pero no elimina la cota inferior.",
+  "La política fiscal es menos estabilizadora de lo que decían Burrows y Hitiris cuando el freno monetario, multiplicado por uno menos la reacción, supera uno.",
+  "El método es algebraico y con simulaciones en Mathematica 4.0; no hay datos ni estimaciones."
+ ],
+ "preguntas": [
+  {
+   "q": {
+    "es": "Según Oviedo, ¿en qué casos la solución de una ecuación en diferencias de segundo orden oscila?",
+    "en": "According to Oviedo, when does the solution of a second-order difference equation oscillate?"
+   },
+   "op": {
+    "es": [
+     "Solo cuando las raíces son complejas",
+     "Cuando hay raíces complejas o al menos una raíz real negativa",
+     "Cuando alguna raíz es mayor que uno en valor absoluto",
+     "Cuando el término constante es negativo"
+    ],
+    "en": [
+     "Only when the roots are complex",
+     "When there are complex roots or at least one negative real root",
+     "When some root is greater than one in absolute value",
+     "When the constant term is negative"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "La regla tiene dos casos: raíces complejas con parte imaginaria no nula, o al menos una raíz real negativa, que cambia de signo período a período. El segundo caso es el que, según el autor, se suele ignorar.",
+    "en": "The rule has two cases: complex roots with non-zero imaginary part, or at least one negative real root, which changes sign every period. The second case is the one the author says is usually ignored."
+   },
+   "id": "fisc-politica-04-q1"
+  },
+  {
+   "q": {
+    "es": "En el modelo de Samuelson, ¿por qué no hay ciclos por raíces negativas?",
+    "en": "In Samuelson's model, why are there no cycles from negative roots?"
+   },
+   "op": {
+    "es": [
+     "Porque el gasto público es constante",
+     "Porque el acelerador es menor que uno",
+     "Porque con los signos de los parámetros, cuando las raíces son reales ambas son no negativas",
+     "Porque el modelo no tiene raíces reales"
+    ],
+    "en": [
+     "Because government spending is constant",
+     "Because the accelerator is less than one",
+     "Because, given the parameters' signs, when the roots are real both are non-negative",
+     "Because the model has no real roots"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "La raíz mayor es positiva y, como el producto de las raíces (el acelerador por la propensión a consumir) es positivo, la menor también lo es. Por eso los ciclos requieren raíces complejas.",
+    "en": "The larger root is positive and, since the product of the roots (accelerator times propensity to consume) is positive, the smaller one is too. Hence cycles require complex roots."
+   },
+   "id": "fisc-politica-04-q2"
+  },
+  {
+   "q": {
+    "es": "¿Cuál es la condición necesaria y suficiente de estabilidad en el modelo de Samuelson?",
+    "en": "What is the necessary and sufficient stability condition in Samuelson's model?"
+   },
+   "op": {
+    "es": [
+     "Que la propensión a consumir sea menor que la inversa del acelerador",
+     "Que la propensión a consumir sea menor que uno",
+     "Que el discriminante sea negativo",
+     "Que el acelerador sea mayor que uno"
+    ],
+    "en": [
+     "That the propensity to consume be smaller than the inverse of the accelerator",
+     "That the propensity to consume be smaller than one",
+     "That the discriminant be negative",
+     "That the accelerator be greater than one"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "De las tres desigualdades del teorema, dos se cumplen siempre; solo queda la que viene de uno menos el producto del acelerador y la propensión a consumir, que debe ser positivo.",
+    "en": "Of the theorem's three inequalities, two always hold; only the one requiring one minus the product of accelerator and propensity to consume to be positive remains."
+   },
+   "id": "fisc-politica-04-q3"
+  },
+  {
+   "q": {
+    "es": "Al agregar el sector monetario, ¿qué hace posible una raíz negativa?",
+    "en": "When the monetary sector is added, what makes a negative root possible?"
+   },
+   "op": {
+    "es": [
+     "Que la oferta de dinero crezca",
+     "Que el término K, el freno monetario a la inversión, supere al empuje de multiplicador y acelerador",
+     "Que la propensión a consumir sea mayor que uno",
+     "Que la demanda de dinero no dependa del ingreso"
+    ],
+    "en": [
+     "That the money supply grows",
+     "That the term K, the monetary brake on investment, exceeds the push of multiplier and accelerator",
+     "That the propensity to consume exceeds one",
+     "That money demand does not depend on income"
+    ]
+   },
+   "ok": 1,
+   "exp": {
+    "es": "Al coeficiente del ingreso rezagado, que en Samuelson es la propensión a consumir por uno más el acelerador, se le resta el freno monetario K. Si la propensión a consumir es lo bastante baja frente a ese freno, el coeficiente y la suma de las raíces se vuelven negativos.",
+    "en": "The monetary brake K is subtracted from the coefficient on lagged income, which in Samuelson is the propensity to consume times one plus the accelerator. If the propensity to consume is low enough relative to that brake, the coefficient and the sum of the roots turn negative."
+   },
+   "id": "fisc-politica-04-q4"
+  },
+  {
+   "q": {
+    "es": "¿Qué condiciones omitieron Burrows y Hitiris en el modelo con dinero, según Oviedo?",
+    "en": "Which conditions did Burrows and Hitiris omit in the model with money, according to Oviedo?"
+   },
+   "op": {
+    "es": [
+     "La de raíces complejas y la cota superior de estabilidad",
+     "Ninguna: solo cometieron errores de cálculo",
+     "La de equilibrio del mercado de dinero",
+     "La de raíz negativa y la cota inferior de estabilidad"
+    ],
+    "en": [
+     "The complex-roots condition and the upper stability bound",
+     "None: they only made computational errors",
+     "The money market equilibrium condition",
+     "The negative-root condition and the lower stability bound"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "Son las condiciones 10 y 12. Al omitirlas, concluyeron que la frontera de estabilidad no cambia y que solo crece la zona de ciclos por raíces complejas.",
+    "en": "They are conditions 10 and 12. By omitting them, they concluded the stability frontier does not change and that only the complex-root cycle zone grows."
+   },
+   "id": "fisc-politica-04-q5"
+  },
+  {
+   "q": {
+    "es": "¿Cómo entra la política fiscal anticíclica en la ecuación en diferencias?",
+    "en": "How does counter-cyclical fiscal policy enter the difference equation?"
+   },
+   "op": {
+    "es": [
+     "Multiplica ambos coeficientes por uno menos el coeficiente de reacción",
+     "Suma el coeficiente de reacción al acelerador",
+     "Elimina el término del ingreso de dos períodos atrás",
+     "Cambia el signo de K"
+    ],
+    "en": [
+     "It multiplies both coefficients by one minus the reaction coefficient",
+     "It adds the reaction coefficient to the accelerator",
+     "It removes the term in income two periods back",
+     "It changes the sign of K"
+    ]
+   },
+   "ok": 0,
+   "exp": {
+    "es": "Con la regla de reacción parcial, los coeficientes del ingreso de uno y dos períodos atrás quedan multiplicados por uno menos el coeficiente de reacción, que está entre cero y uno.",
+    "en": "With the partial reaction rule, the coefficients on income one and two periods back are multiplied by one minus the reaction coefficient, which lies between zero and one."
+   },
+   "id": "fisc-politica-04-q6"
+  },
+  {
+   "q": {
+    "es": "Según las conclusiones revisadas, ¿cuándo la política fiscal hace al modelo menos estable de lo que predicen Burrows y Hitiris?",
+    "en": "According to the revised conclusions, when does fiscal policy make the model less stable than Burrows and Hitiris predict?"
+   },
+   "op": {
+    "es": [
+     "Siempre",
+     "Cuando la reacción es total",
+     "Cuando uno menos la reacción, multiplicado por K, es mayor que uno",
+     "Nunca: siempre es más estable"
+    ],
+    "en": [
+     "Always",
+     "When the reaction is full",
+     "When one minus the reaction, times K, exceeds one",
+     "Never: it is always more stable"
+    ]
+   },
+   "ok": 2,
+   "exp": {
+    "es": "En ese caso la cota inferior de estabilidad es positiva y deja afuera combinaciones que Burrows y Hitiris consideraban estables. Aun así, el modelo con política es más estable que el revisado sin política.",
+    "en": "In that case the lower stability bound is positive and excludes combinations Burrows and Hitiris considered stable. Even so, the model with policy is more stable than the revised one without policy."
+   },
+   "id": "fisc-politica-04-q7"
+  },
+  {
+   "q": {
+    "es": "¿Qué método usa Oviedo para sostener sus conclusiones?",
+    "en": "What method does Oviedo use to support his conclusions?"
+   },
+   "op": {
+    "es": [
+     "Estimaciones econométricas con datos argentinos",
+     "Encuestas a responsables de política",
+     "Calibración de un modelo de equilibrio general",
+     "Álgebra de ecuaciones en diferencias y simulaciones en Mathematica 4.0"
+    ],
+    "en": [
+     "Econometric estimates with Argentine data",
+     "Surveys of policymakers",
+     "Calibration of a general equilibrium model",
+     "Difference-equation algebra and simulations in Mathematica 4.0"
+    ]
+   },
+   "ok": 3,
+   "exp": {
+    "es": "El trabajo es teórico: deriva condiciones necesarias y suficientes y las ilustra con simulaciones animadas de trayectorias del ingreso.",
+    "en": "The paper is theoretical: it derives necessary and sufficient conditions and illustrates them with animated simulations of income paths."
+   },
+   "id": "fisc-politica-04-q8"
+  }
+ ],
+ "palabras": 1465,
+ "tarjetas": [
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Por qué una raíz característica real y negativa hace oscilar el ingreso?",
+    "en": "Why does a negative real characteristic root make income oscillate?"
+   },
+   "a": {
+    "es": "Porque sus potencias sucesivas cambian de signo, así que el ingreso salta de un lado al otro del equilibrio aun sin raíces complejas; Oviedo sostiene que este caso suele ignorarse en los análisis teóricos.",
+    "en": "Because its successive powers change sign, so income jumps from one side of equilibrium to the other even without complex roots; Oviedo argues this case is usually ignored in theoretical analyses."
+   },
+   "id": "fisc-politica-04-t1"
+  },
+  {
+   "tipo": "modelo",
+   "q": {
+    "es": "¿Qué condiciones de ciclo y estabilidad tiene el multiplicador-acelerador de Samuelson?",
+    "en": "What are the cycle and stability conditions of Samuelson's multiplier-accelerator?"
+   },
+   "a": {
+    "es": "Hay ciclos si la propensión a consumir es menor que cuatro veces el acelerador dividido por el cuadrado de uno más el acelerador, y estabilidad si es menor que la inversa del acelerador; combinadas dan cinco regiones de trayectorias. Oviedo, sobre Samuelson (1939).",
+    "en": "There are cycles if the propensity to consume is below four times the accelerator divided by the square of one plus the accelerator, and stability if it is below the inverse of the accelerator; combined they give five path regions. Oviedo, on Samuelson (1939)."
+   },
+   "id": "fisc-politica-04-t2"
+  },
+  {
+   "tipo": "mecanismo",
+   "q": {
+    "es": "¿Por qué el sector monetario frena la dinámica del multiplicador-acelerador?",
+    "en": "Why does the monetary sector brake multiplier-accelerator dynamics?"
+   },
+   "a": {
+    "es": "Con oferta de dinero fija, más ingreso eleva la demanda de dinero y la tasa, y la tasa frena la inversión; eso resta el término K al coeficiente del ingreso rezagado. Oviedo, sobre Burrows y Hitiris.",
+    "en": "With a fixed money supply, higher income raises money demand and the rate, and the rate brakes investment; that subtracts the term K from the coefficient on lagged income. Oviedo, on Burrows and Hitiris."
+   },
+   "id": "fisc-politica-04-t3"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Qué cambia cuando se tienen en cuenta la raíz negativa y la cota inferior de estabilidad en el modelo con dinero?",
+    "en": "What changes when the negative root and the lower stability bound are considered in the model with money?"
+   },
+   "a": {
+    "es": "El modelo resulta más cíclico y, para ciertos parámetros, más inestable de lo que concluyeron Burrows y Hitiris, que creían que el dinero no movía la frontera de estabilidad. Oviedo.",
+    "en": "The model turns out more cyclical and, for some parameters, more unstable than Burrows and Hitiris concluded, who believed money did not move the stability frontier. Oviedo."
+   },
+   "id": "fisc-politica-04-t4"
+  },
+  {
+   "tipo": "resultado",
+   "q": {
+    "es": "¿Una regla fiscal anticíclica de reacción parcial garantiza la estabilidad del ingreso en el multiplicador-acelerador con dinero?",
+    "en": "Does a partial-reaction counter-cyclical fiscal rule guarantee income stability in the multiplier-accelerator with money?"
+   },
+   "a": {
+    "es": "No: amplía la zona estable respecto del modelo sin política, pero si el freno monetario K, multiplicado por uno menos la reacción, supera uno, la cota inferior sigue activa y el modelo es menos estable de lo que predecían Burrows y Hitiris. Oviedo.",
+    "en": "No: it widens the stable zone relative to the no-policy model, but if the monetary brake K, times one minus the reaction, exceeds one, the lower bound remains active and the model is less stable than Burrows and Hitiris predicted. Oviedo."
+   },
+   "id": "fisc-politica-04-t5"
+  },
+  {
+   "tipo": "concepto",
+   "q": {
+    "es": "¿Qué dice el segundo teorema de estabilidad para ecuaciones en diferencias de segundo orden?",
+    "en": "What does the second stability theorem for second-order difference equations say?"
+   },
+   "a": {
+    "es": "Que la solución converge si y solo si se cumplen tres desigualdades sobre los dos coeficientes de la ecuación, sin necesidad de calcular las raíces; sirve cuando los parámetros no son numéricos. Oviedo lo usa en toda la revisión.",
+    "en": "That the solution converges if and only if three inequalities on the equation's two coefficients hold, without computing the roots; useful when parameters are not numerical. Oviedo uses it throughout."
+   },
+   "id": "fisc-politica-04-t6"
+  },
+  {
+   "tipo": "critica",
+   "q": {
+    "es": "¿Qué tan relevante es en la práctica la oscilación por raíz negativa?",
+    "en": "How relevant in practice is oscillation from a negative root?"
+   },
+   "a": {
+    "es": "Lectura propia: produce un serrucho de dos períodos y requiere un freno monetario fuerte frente a una propensión a consumir baja; Oviedo prueba que no se puede omitir al clasificar trayectorias, no que sea frecuente.",
+    "en": "Our own reading: it produces a two-period sawtooth and requires a strong monetary brake relative to a low propensity to consume; Oviedo proves it cannot be omitted when classifying paths, not that it is frequent."
+   },
+   "id": "fisc-politica-04-t7"
+  }
+ ]
+}
